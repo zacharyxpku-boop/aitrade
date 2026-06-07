@@ -1,0 +1,1134 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TradeGym AI - 交易教育训练场</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-frame">
+      <aside class="rail" aria-label="产品导航">
+        <section class="brand">
+          <p class="eyebrow">核心定位</p>
+          <h3>AI 交易教育训练场</h3>
+          <p>一句话：用历史行情练判断、复盘和风控；不荐股、不出实盘信号、不承诺收益、不接真实资金。</p>
+          <div class="hero-stats">
+            <div><span>今日完成</span><strong id="todayDone">0</strong></div>
+            <div><span>连续训练</span><strong id="streakDays">0 天</strong></div>
+            <div><span>纪律分</span><strong id="disciplineScore">--</strong></div>
+          </div>
+          <p id="habitStatus" class="muted-note">点“一键进入试用”，系统会自动登录演示账号。当前是本地 demo / mock provider，不是真实投顾或实盘系统。</p>
+
+          <section class="panel compliance-ack-panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">试用边界</p>
+                <h3>教育训练风险确认</h3>
+              </div>
+              <button id="acknowledgeCompliance" type="button">我已了解</button>
+            </div>
+            <p id="complianceStatus">登录后确认：这里只练学习流程，不看策略赚不赚钱。</p>
+            <ul id="complianceChecklist" class="clean-list"></ul>
+          </section>
+
+          <section class="panel" id="onboardingPanel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">用户试用路径</p>
+                <h3>用户试用流程</h3>
+              </div>
+              <button id="onboardingNext" type="button">继续</button>
+            </div>
+            <p id="onboardingStatus">用户不用看文档，按这条路径走完即可。</p>
+            <ol class="clean-list compact-trial-list">
+              <li>一键进入试用</li>
+              <li>做一题训练</li>
+              <li>看回放和 AI 复盘</li>
+              <li>做回测误区练习</li>
+              <li>提交反馈</li>
+            </ol>
+            <div id="onboardingSteps" class="attempt-log"></div>
+          </section>
+
+          <section class="panel" id="notificationPanel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">下一步</p>
+                <h3>练习和反馈提醒</h3>
+              </div>
+              <button id="refreshNotifications" type="button">刷新</button>
+            </div>
+            <p id="notificationStatus">登录后显示下一步训练和反馈提醒。</p>
+            <div id="notificationList" class="attempt-log"></div>
+          </section>
+
+          <section class="panel" id="achievementPanel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">学习反馈</p>
+                <h3>训练里程碑</h3>
+              </div>
+              <button id="refreshAchievements" type="button">刷新</button>
+            </div>
+            <p id="achievementStatus">完成训练后，这里只显示学习进步，不显示收益承诺。</p>
+            <div id="achievementList" class="attempt-log"></div>
+          </section>
+
+          <div class="grid three">
+            <article class="card">
+              <h3>1. 开始训练</h3>
+              <p>完成 3 道价格行为训练题，至少写一次止损或观望条件。</p>
+              <button type="button" data-jump="trainer">开始训练</button>
+            </article>
+            <article class="card">
+              <h3>2. 历史回放</h3>
+              <p>隐藏未来走势，只用当时能看到的信息做判断，训练“不偷看答案”。</p>
+              <button type="button" data-jump="replay">进入回放</button>
+            </article>
+            <article class="card">
+              <h3>3. AI复盘</h3>
+              <p>系统不评价你有没有猜中涨跌，而是评价结构、环境、风控和纪律。</p>
+              <button type="button" data-jump="coach">查看画像</button>
+            </article>
+          </div>
+
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">不要看错</p>
+                <h3>试用时只评估学习流程</h3>
+              </div>
+            </div>
+            <div class="loop-row">
+              <span>登录</span>
+              <span>训练</span>
+              <span>回放</span>
+              <span>AI复盘</span>
+              <span>回测误区</span>
+              <span>反馈</span>
+            </div>
+          </section>
+        </section>
+        <nav class="nav-list" aria-label="功能导航">
+          <button class="nav-item" type="button" data-view="dashboard">试用首页</button>
+          <button class="nav-item" type="button" data-view="trainer">1 开始训练</button>
+          <button class="nav-item" type="button" data-view="replay">回放/回测误区</button>
+          <button class="nav-item" type="button" data-view="coach">AI复盘</button>
+          <button class="nav-item" type="button" data-view="curriculum">课程路径</button>
+          <button class="nav-item" type="button" data-view="community">最后 反馈</button>
+          <button class="nav-item nav-item-secondary" type="button" data-view="ops">管理员检查</button>
+        </nav>
+      </aside>
+
+      <main class="workspace">
+        <div class="topbar">
+          <div>
+            <p class="eyebrow" id="viewEyebrow">Commercial Learning Workspace</p>
+            <h2 id="viewTitle">Learning Overview</h2>
+          </div>
+          <div class="billing-actions">
+            <span class="badge" id="accountPlan">访客</span>
+            <button id="loginDemo" type="button">一键进入试用</button>
+            <button id="logoutDemo" type="button">退出</button>
+          </div>
+        </div>
+
+        <section class="view" id="dashboardView" aria-label="学习首页">
+          <section class="hero-panel friend-hero">
+            <div>
+              <p class="eyebrow">用户试用</p>
+              <h3>AI 交易教育训练场，不荐股，不实盘。</h3>
+              <p>你要看的不是“策略赚不赚钱”，而是这个流程能不能帮你练清楚：看到什么、为什么判断、错了怎么复盘、下次怎么改。</p>
+              <div class="hero-actions">
+                <button id="friendStartLogin" type="button">一键进入试用</button>
+                <button type="button" data-jump="trainer">开始训练</button>
+              <button type="button" data-jump="replay">回放/回测误区</button>
+              <button type="button" data-jump="community">提交反馈</button>
+              </div>
+            </div>
+            <div class="trial-card">
+              <strong>试用路径</strong>
+              <ol class="clean-list">
+                <li>一键进入试用</li>
+                <li>做一题 K 线训练</li>
+                <li>看历史回放，不偷看未来</li>
+                <li>读 AI 复盘，只看学习反馈</li>
+                <li>完成回测误区练习</li>
+                <li>提交一句试用反馈</li>
+              </ol>
+                <p class="muted-note">当前默认是本地演示 AI；没有 API Key 时不会调用真实大模型。</p>
+            </div>
+          </section>
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">用户试用说明</p>
+                <h3>100 字试用说明</h3>
+              </div>
+            </div>
+            <p id="friendTrialIntro">这是一个 AI 交易教育训练场，只用历史行情练判断、风控和复盘，不荐股、不出实盘信号。试用时请按一键进入、训练、回放、AI复盘、回测误区、反馈走一遍，不要看策略赚不赚钱，只看这个学习流程是否清楚、有用、愿意继续练。</p>
+          </section>
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">运行模式</p>
+                <h3>当前运行模式</h3>
+              </div>
+              <button id="friendCheckProvider" type="button">检查 AI 模式</button>
+            </div>
+            <div id="friendProviderStatus" class="attempt-log">
+              <p>当前是本地 demo AI / mock provider。没有 API Key 时不调用真实大模型；以后接入真实 LLM，也只做教育复盘，不输出交易建议。</p>
+            </div>
+          </section>
+        </section>
+
+        <section class="view" id="curriculumView" aria-label="课程路径">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Curriculum</p>
+              <h3>从小白到自建交易学习框架</h3>
+            </div>
+            <span class="badge">课程 + 题库 + 陪练</span>
+          </div>
+          <div id="moduleGrid" class="grid two"></div>
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Course Packages</p>
+                <h3>Published learning products</h3>
+              </div>
+              <button id="refreshCourseCatalog" type="button">Refresh packages</button>
+            </div>
+            <div id="courseCatalogList" class="attempt-log"></div>
+          </section>
+        </section>
+
+        <section class="view" id="trainerView" aria-label="每日训练">
+          <div class="trainer-layout">
+            <section class="main-card">
+              <div class="section-head">
+                <div>
+                  <p class="eyebrow" id="lessonTag">教学演示数据</p>
+                  <h3 id="scenarioTitle">训练题</h3>
+                </div>
+                <span class="badge" id="dataBadge">Mock OHLCV</span>
+              </div>
+
+              <div class="market-layout">
+                <div class="chart-card">
+                  <div class="chart-toolbar">
+                    <strong id="symbolLabel">DEMO</strong>
+                    <span id="timeframeLabel">15m</span>
+                    <span>隐藏未来</span>
+                  </div>
+                  <svg id="candleChart" role="img" aria-label="教学用K线图"></svg>
+                </div>
+                <div class="context-card">
+                  <h4>当时可见信息</h4>
+                  <dl>
+                    <div><dt>技术面</dt><dd id="technicalContext"></dd></div>
+                    <div><dt>消息/事件</dt><dd id="newsContext"></dd></div>
+                    <div><dt>情绪面</dt><dd id="sentimentContext"></dd></div>
+                    <div><dt>Source</dt><dd id="sourceDisclosure"></dd></div>
+                  </dl>
+                </div>
+              </div>
+
+              <div class="decision-area">
+                <div>
+                  <h4 id="questionText">你现在怎么做？</h4>
+                  <div id="options" class="option-grid"></div>
+                </div>
+                <div class="plan-block">
+                  <label for="planInput">交易理由、止损或观望条件</label>
+                  <textarea id="planInput" rows="5" placeholder="写清楚：为什么做/不做？错了哪里认错？仓位为什么合理？"></textarea>
+                  <button id="submitBtn" type="button">提交训练</button>
+                </div>
+              </div>
+            </section>
+
+            <aside class="side-stack">
+              <section class="card">
+                <h3>今日进度</h3>
+                <strong class="big-number" id="progressText">1 / 3</strong>
+                <div class="progress-track"><span id="progressBar"></span></div>
+              </section>
+              <section class="card feedback-card" id="feedbackPanel" hidden>
+                <p class="eyebrow">AI复盘教练</p>
+                <h3 id="feedbackTitle"></h3>
+                <p id="feedbackBody"></p>
+                <div class="score-grid">
+                  <div><span>结构</span><strong id="scoreStructure">--</strong></div>
+                  <div><span>环境</span><strong id="scoreContext">--</strong></div>
+                  <div><span>风控</span><strong id="scoreRisk">--</strong></div>
+                </div>
+                <div id="mistakeTags" class="tag-list"></div>
+                <button id="nextBtn" type="button">下一题</button>
+                <div id="trainingResultActions" class="attempt-log"></div>
+              </section>
+            </aside>
+          </div>
+        </section>
+
+        <section class="view" id="replayView" aria-label="历史行情回放">
+          <div class="replay-layout">
+            <section class="main-card">
+              <div class="section-head">
+                <div>
+                  <p class="eyebrow">Market Replay</p>
+                  <h3 id="replayTitle">历史场景回放</h3>
+                </div>
+                <span class="badge">非实盘</span>
+              </div>
+              <svg id="replayChart" role="img" aria-label="历史回放K线图"></svg>
+              <div class="replay-controls">
+                <button id="replayPrev" type="button">上一步</button>
+                <button id="replayNext" type="button">播放下一根</button>
+                <button id="replayReset" type="button">重置</button>
+              </div>
+            </section>
+            <aside class="side-stack">
+              <section class="card">
+                <h3>回放规则</h3>
+                <p>只显示当前时点之前的数据。训练的是判断过程，不是猜后视镜答案。</p>
+              </section>
+              <section class="card">
+                <h3>模拟交易单</h3>
+                <label for="replayPlan">你的计划</label>
+                <textarea id="replayPlan" rows="5" placeholder="例如：观望，除非重新站上前高；若入场，止损放在区间下沿。"></textarea>
+                <button id="saveReplayPlan" type="button">保存回放笔记</button>
+              </section>
+              <section class="card">
+                <h3>Paper Trade Journal</h3>
+                <p class="muted-note">Teaching simulation only. No real money, broker connection, live signal, or investment advice.</p>
+                <div class="field-row">
+                  <label for="paperTradeSide">Decision</label>
+                  <select id="paperTradeSide">
+                    <option value="watch">Watch / no trade</option>
+                    <option value="long">Simulated long</option>
+                    <option value="short">Simulated short</option>
+                  </select>
+                  <label for="paperTradeRisk">Risk %</label>
+                  <input id="paperTradeRisk" type="number" min="0.1" max="5" step="0.1" value="1" />
+                </div>
+                <label for="paperTradeThesis">Thesis</label>
+                <textarea id="paperTradeThesis" rows="3" placeholder="What pattern, context, or rule are you practicing?"></textarea>
+                <label for="paperTradeInvalidation">Invalidation / stop plan</label>
+                <textarea id="paperTradeInvalidation" rows="3" placeholder="What would prove this simulated plan wrong?"></textarea>
+                <label for="paperTradeContext">News / sentiment boundary</label>
+                <textarea id="paperTradeContext" rows="3" placeholder="What news, sentiment, or macro context matters here, and why is it not a buy/sell signal?"></textarea>
+                <button id="submitPaperTrade" type="button">Save paper trade</button>
+                <div id="paperTradeResult" class="attempt-log"></div>
+              </section>
+            </aside>
+          </div>
+          <section class="panel">
+            <h3>Paper Trade History</h3>
+            <div id="paperTradeLog" class="attempt-log"></div>
+          </section>
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Evidence Integrity</p>
+                <h3>Price, backtest, context, and risk completeness</h3>
+              </div>
+              <button id="refreshEvidenceIntegrity" type="button">Refresh evidence audit</button>
+            </div>
+            <div id="evidenceIntegrityPanel" class="attempt-log">
+              <p>Review whether learning evidence is complete before any coach discussion. Education only; no signals.</p>
+            </div>
+          </section>
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Backtest Classroom</p>
+                <h3>教育试用准备检查</h3>
+              </div>
+              <div class="billing-actions">
+                <button id="refreshBacktestClassroom" type="button">Refresh classroom metrics</button>
+                <button id="exportBacktestLiteracyJson" type="button">Brief JSON</button>
+                <button id="exportBacktestLiteracyCsv" type="button">Brief CSV</button>
+                <button id="exportBacktestLiteracyMd" type="button">Brief MD</button>
+              </div>
+            </div>
+            <div id="backtestClassroomPanel" class="attempt-log">
+              <p>Save paper trades to review classroom-only metrics. No live signals or return promises.</p>
+            </div>
+            <div id="backtestMisconceptionPanel" class="attempt-log"></div>
+          </section>
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Market Context Classroom</p>
+                <h3>News, sentiment, and event-risk discipline</h3>
+              </div>
+              <button id="refreshContextClassroom" type="button">Refresh context review</button>
+            </div>
+            <div id="contextClassroomPanel" class="attempt-log">
+              <p>Complete chart drills to review whether news and sentiment stayed as context only.</p>
+            </div>
+            <div id="contextMisconceptionPanel" class="attempt-log"></div>
+          </section>
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Source Transparency Classroom</p>
+                <h3>Demo data, licenses, and no-signal boundaries</h3>
+              </div>
+              <button id="refreshSourceClassroom" type="button">Refresh source review</button>
+            </div>
+            <div id="sourceClassroomPanel" class="attempt-log">
+              <p>Review source labels before treating any chart, OCR, or news context as learning material.</p>
+            </div>
+            <div id="sourceMisconceptionPanel" class="attempt-log"></div>
+          </section>
+        </section>
+
+        <section class="view" id="coachView" aria-label="AI coaching and learner profile">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">AI Coach</p>
+              <h3>Learner mistake profile and next lesson</h3>
+            </div>
+          </div>
+          <div class="grid two">
+            <section class="panel">
+              <h3>Frequent mistakes</h3>
+              <div id="profileTags" class="profile-tags"></div>
+            </section>
+            <section class="panel">
+              <h3>AI suggestions</h3>
+              <p id="nextPathText">Complete training first. The system will recommend the next lesson from mistake tags.</p>
+              <div id="learningPathPanel" class="attempt-log"></div>
+            </section>
+          </div>
+          <section class="panel">
+            <h3>Training records</h3>
+            <div id="attemptLog" class="attempt-log"></div>
+          </section>
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Learning Product Path</p>
+                <h3>Course package next steps</h3>
+              </div>
+              <button id="refreshLearnerCoursePath" type="button">Refresh path</button>
+            </div>
+            <div id="learnerCoursePathList" class="attempt-log"></div>
+          </section>
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Assignments</p>
+                <h3>Teacher-assigned practice</h3>
+              </div>
+              <button id="refreshAssignments" type="button">Refresh assignments</button>
+            </div>
+            <div id="assignmentList" class="attempt-log"></div>
+          </section>
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Coach Report</p>
+                <h3>Learning report</h3>
+              </div>
+              <button id="refreshCoachReport" type="button">Refresh report</button>
+            </div>
+            <div id="coachReportPanel" class="attempt-log"></div>
+          </section>
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Learner Export</p>
+                <h3>Progress report</h3>
+              </div>
+              <button id="refreshProgressReport" type="button">Export learning report</button>
+            </div>
+            <div id="progressReportPanel" class="attempt-log"></div>
+          </section>
+          <section class="panel">
+            <h3>Coach Reviews</h3>
+            <div id="coachReviewList" class="attempt-log"></div>
+          </section>
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Coach Session</p>
+                <h3>Book an education review</h3>
+              </div>
+              <button id="refreshCoachSessionBookings" type="button">Refresh bookings</button>
+            </div>
+            <div class="cms-form">
+              <label for="coachSessionTopic">Topic</label>
+              <input id="coachSessionTopic" type="text" value="Education-only replay and risk-plan review" />
+              <label for="coachSessionWindow">Preferred window</label>
+              <input id="coachSessionWindow" type="text" value="Next weekday evening" />
+              <label for="coachSessionGoal">Learning goal</label>
+              <textarea id="coachSessionGoal" rows="4">I want a coach to review my learning evidence, replay notes, and risk-plan writing. I am not asking for a stock recommendation, live signal, or real-money trading instruction.</textarea>
+              <button id="requestCoachSession" type="button">Request coach session</button>
+            </div>
+            <p id="coachSessionBookingStatus">Coach sessions are education appointments only.</p>
+            <div id="coachSessionBookingList" class="attempt-log"></div>
+          </section>
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Support Desk</p>
+                <h3>Education product support</h3>
+              </div>
+              <button id="refreshSupportTickets" type="button">Refresh tickets</button>
+            </div>
+            <div class="cms-form">
+              <label for="supportCategory">Category</label>
+              <select id="supportCategory">
+                <option value="learning">Learning question</option>
+                <option value="coach_service">Coach service</option>
+                <option value="billing">Billing</option>
+                <option value="account">Account</option>
+                <option value="content">Content issue</option>
+                <option value="technical">Technical issue</option>
+              </select>
+              <label for="supportSubject">Subject</label>
+              <input id="supportSubject" type="text" value="Need help with my education-only learning path" />
+              <label for="supportMessage">Message</label>
+              <textarea id="supportMessage" rows="4">I need help understanding the next education drill and how to improve my risk-plan writing. I am not asking for a stock recommendation or live trading signal.</textarea>
+              <button id="createSupportTicket" type="button">Submit support ticket</button>
+            </div>
+            <p id="supportTicketStatus">Support is for product and education service only.</p>
+            <div id="supportTicketList" class="attempt-log"></div>
+          </section>
+        </section>
+        <section class="view" id="communityView" aria-label="用户试用反馈">
+          <section class="panel friend-feedback-panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">用户试用反馈</p>
+                <h3>只看学习流程有没有帮助</h3>
+              </div>
+            </div>
+            <p>不用评价策略能不能赚钱。请只按真实感受写三句话：哪里卡住、哪里有用、还愿不愿意再练一次。</p>
+            <div class="cms-form friend-feedback-form">
+              <label for="friendFeedbackConfusing">哪里看不懂？</label>
+              <textarea id="friendFeedbackConfusing" rows="3" placeholder="比如：按钮太多、回放不知道点哪里、AI复盘文字太长。"></textarea>
+              <label for="friendFeedbackHelpful">哪一步有帮助？</label>
+              <textarea id="friendFeedbackHelpful" rows="3" placeholder="比如：先写风险边界、看错因、回测误区提醒。"></textarea>
+              <label for="friendFeedbackContinue">你愿不愿意再练一次？为什么？</label>
+              <textarea id="friendFeedbackContinue" rows="3" placeholder="写愿意或不愿意都可以，重点是原因。"></textarea>
+              <button id="friendSubmitFeedback" type="button">提交试用反馈</button>
+            </div>
+            <p id="friendFeedbackStatus" class="muted-note">反馈只用于改进学习流程，不用于判断策略收益。</p>
+          </section>
+        </section>
+
+        <section class="view" id="billingView" aria-label="subscription plans">
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Entitlement</p>
+                <h3>Current access</h3>
+              </div>
+              <button id="refreshEntitlement" type="button">Refresh access</button>
+            </div>
+            <div class="check-grid" id="entitlementGrid">
+              <span>Login to view access</span>
+            </div>
+            <p id="billingStatus">Local demo upgrades do not create real charges.</p>
+            <button id="buyCoachReviewAddon" type="button">Buy extra coach review</button>
+            <button id="cancelSubscription" type="button">Cancel subscription</button>
+            <button id="requestRefund" type="button">Request refund review</button>
+          </section>
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Subscription Ledger</p>
+                <h3>Orders and subscription states</h3>
+              </div>
+              <span class="badge">local simulated payment</span>
+            </div>
+            <div class="check-grid" id="subscriptionPanel">
+              <span>No active subscription</span>
+            </div>
+            <div id="orderLog" class="attempt-log billing-log">
+              <p>No orders yet.</p>
+            </div>
+            <div class="section-head compact-head">
+              <div>
+                <p class="eyebrow">Receipts</p>
+                <h3>Local receipts</h3>
+              </div>
+              <button id="refreshReceipts" type="button">Refresh receipts</button>
+            </div>
+            <div id="receiptLog" class="attempt-log billing-log">
+              <p>No receipts yet.</p>
+            </div>
+          </section>
+          <div class="pricing-grid">
+            <article class="price-card">
+              <h3>Starter</h3>
+              <strong>Free</strong>
+              <p>Three daily education drills, basic review, and no live trading signals.</p>
+              <button type="button" data-plan="Starter">Switch to Starter</button>
+            </article>
+            <article class="price-card featured">
+              <h3>Pro</h3>
+              <strong>Demo $99/mo</strong>
+              <p>Full question bank, historical replay, AI learner profile, and weekly education reports.</p>
+              <button type="button" data-plan="Pro">Upgrade to Pro</button>
+            </article>
+            <article class="price-card">
+              <h3>Coach</h3>
+              <strong>Demo $499/mo</strong>
+              <p>Pro plus group coaching and one human education review per month.</p>
+              <button type="button" data-plan="Coach">Upgrade to Coach</button>
+            </article>
+          </div>
+        </section>
+
+        <section class="view" id="opsView" aria-label="operations console">
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Live Metrics</p>
+                <h3>Operating metrics</h3>
+              </div>
+              <button id="refreshMetrics" type="button">Refresh metrics</button>
+            </div>
+            <div class="check-grid" id="opsMetrics">
+              <span>Waiting for service data</span>
+            </div>
+            <div id="activationFunnelList" class="attempt-log"></div>
+            <div class="section-head compact-head">
+              <div>
+                <p class="eyebrow">Activation Ops</p>
+                <h3>Intervention tasks</h3>
+              </div>
+              <button id="refreshActivationInterventions" type="button">Refresh interventions</button>
+            </div>
+            <div id="activationInterventionList" class="attempt-log"></div>
+          </section>
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Revenue Ops</p>
+                <h3>Subscription and service risk</h3>
+              </div>
+              <button id="refreshRevenueOps" type="button">Refresh revenue ops</button>
+            </div>
+            <p id="revenueOpsStatus">Login as admin to inspect revenue and service risk.</p>
+            <div id="revenueOpsList" class="attempt-log"></div>
+            <div class="section-head compact-head">
+              <div>
+                <p class="eyebrow">Action History</p>
+                <h3>Revenue ops effects</h3>
+              </div>
+              <button id="refreshRevenueOpsActions" type="button">Refresh actions</button>
+            </div>
+            <div id="revenueOpsActionList" class="attempt-log"></div>
+          </section>
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Revenue Ledger</p>
+                <h3>收入与退款台账</h3>
+              </div>
+              <button id="refreshRevenueLedger" type="button">Refresh revenue</button>
+            </div>
+            <div id="revenueLedger" class="attempt-log billing-log">
+              <p>Login as admin to view revenue ledger.</p>
+            </div>
+            <div class="section-head compact-head">
+              <div>
+                <p class="eyebrow">Billing Compliance</p>
+                <h3>Invoice, tax, and reconciliation gaps</h3>
+              </div>
+              <button id="refreshBillingCompliance" type="button">Refresh billing gaps</button>
+            </div>
+            <div id="billingComplianceQueue" class="attempt-log billing-log">
+              <p>Login as admin to inspect billing compliance gaps.</p>
+            </div>
+          </section>
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Education Trial Readiness</p>
+                <h3>教育试用检查</h3>
+              </div>
+              <div class="billing-actions">
+                <button id="refreshProductReadiness" type="button">Refresh product readiness</button>
+                <button id="exportPrototypeScorecardJson" type="button">Scorecard JSON</button>
+                <button id="exportPrototypeScorecardCsv" type="button">Scorecard CSV</button>
+                <button id="exportPrototypeScorecardMd" type="button">Scorecard Brief</button>
+                <button id="exportTrialKickoffJson" type="button">Kickoff JSON</button>
+                <button id="exportTrialKickoffCsv" type="button">Kickoff CSV</button>
+                <button id="exportTrialKickoffMd" type="button">Kickoff Brief</button>
+                <button id="createTrialKickoffActions" type="button">Create kickoff actions</button>
+                <button id="exportTrialRoomJson" type="button">Room JSON</button>
+                <button id="exportTrialRoomCsv" type="button">Room CSV</button>
+                <button id="exportTrialRoomMd" type="button">Room Brief</button>
+                <button id="exportTrialRoomProgressMd" type="button">Room Progress</button>
+                <button id="sendTrialRoom" type="button">Send room</button>
+                <button id="exportLaunchOpsJson" type="button">Launch JSON</button>
+                <button id="exportLaunchOpsCsv" type="button">Launch CSV</button>
+                <button id="exportLaunchOpsMd" type="button">Launch Brief</button>
+                <button id="createLaunchOpsActions" type="button">Create launch actions</button>
+                <button id="exportCustomerTrialJson" type="button">Trial JSON</button>
+                <button id="exportCustomerTrialCsv" type="button">Trial CSV</button>
+                <button id="exportCustomerTrialMd" type="button">Trial Brief</button>
+                <button id="sendCustomerTrialPacket" type="button">Send trial packet</button>
+                <button id="exportReadinessEvidenceJson" type="button">Export JSON</button>
+                <button id="exportReadinessEvidenceCsv" type="button">Export CSV</button>
+                <button id="exportPilotHandoffJson" type="button">Pilot JSON</button>
+                <button id="exportPilotHandoffCsv" type="button">Pilot CSV</button>
+                <button id="exportPilotRenewalJson" type="button">Renewal JSON</button>
+                <button id="exportPilotRenewalCsv" type="button">Renewal CSV</button>
+                <button id="exportPilotRenewalMd" type="button">Renewal Brief</button>
+                <button id="exportPilotExpansionJson" type="button">Expansion JSON</button>
+                <button id="exportPilotExpansionCsv" type="button">Expansion CSV</button>
+                <button id="exportPilotExpansionMd" type="button">Expansion Brief</button>
+                <button id="exportNextStepEngagementJson" type="button">Next-step JSON</button>
+                <button id="exportNextStepEngagementCsv" type="button">Next-step CSV</button>
+                <button id="exportNextStepEngagementMd" type="button">Next-step Brief</button>
+                <button id="savePilotExpansionLaunchBrief" type="button">Save launch brief</button>
+                <button id="createPilotRenewalBrief" type="button">Save brief</button>
+                <button id="savePilotExpansionPlan" type="button">Save expansion plan</button>
+                <button id="createPilotSuccessActions" type="button">Create pilot actions</button>
+              </div>
+            </div>
+            <p id="productReadinessStatus">登录管理员后检查教育试用流程；这些检查不证明交易效果或实盘可用。</p>
+            <div id="productReadinessList" class="attempt-log"></div>
+            <div class="section-head compact-head">
+              <div>
+                <p class="eyebrow">Remediation</p>
+                <h3>Readiness follow-up tasks</h3>
+              </div>
+              <button id="createReadinessTasks" type="button">Create gap tasks</button>
+            </div>
+            <div id="readinessRemediationList" class="attempt-log"></div>
+          </section>
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Non-live Readiness</p>
+                <h3>非实盘上线检查</h3>
+              </div>
+              <button id="refreshReadiness" type="button">Refresh readiness</button>
+            </div>
+            <p id="readinessStatus">Waiting for system readiness checks.</p>
+            <div class="check-grid" id="readinessGrid">
+              <span>AI coach</span>
+              <span>Email</span>
+              <span>Payment</span>
+              <span>Audit</span>
+            </div>
+          </section>
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Data Governance</p>
+                <h3>Market, news, and question data sources</h3>
+              </div>
+              <div class="billing-actions">
+                <button id="refreshDataSources" type="button">Refresh data sources</button>
+                <button id="refreshDatasetManifest" type="button">Dataset manifest</button>
+                <button id="exportDatasetManifestMd" type="button">Dataset MD</button>
+                <button id="refreshOpenSourceMap" type="button">Open-source map</button>
+                <button id="refreshOpenSourceReviews" type="button">Reference reviews</button>
+                <button id="exportOpenSourceMapCsv" type="button">Map CSV</button>
+                <button id="exportOpenSourceMapMd" type="button">Map MD</button>
+              </div>
+            </div>
+            <p id="dataSourceStatus">Login as admin to inspect data source governance.</p>
+            <div id="dataSourceGrid" class="attempt-log"></div>
+            <div id="dataGovernanceQueue" class="attempt-log"></div>
+          </section>
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Teaching Evolution Lab</p>
+                <h3>语义防跑偏与教学样本进化</h3>
+              </div>
+              <button id="refreshTeachingEvolutionLab" type="button">Refresh lab</button>
+            </div>
+            <p id="teachingEvolutionLabStatus">Login as admin to review semantic guardrails, teaching samples, and anti-hallucination prompts.</p>
+            <div id="teachingEvolutionLabList" class="attempt-log"></div>
+          </section>
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Scenario Review</p>
+                <h3>Content approval gate</h3>
+              </div>
+              <button id="refreshScenarioReviews" type="button">Refresh scenarios</button>
+            </div>
+            <p id="scenarioReviewStatus">Login as admin to approve training scenarios.</p>
+            <div id="scenarioReviewList" class="attempt-log"></div>
+          </section>
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">User Governance</p>
+                <h3>Admin user and role management</h3>
+              </div>
+              <button id="refreshAdminUsers" type="button">Refresh users</button>
+            </div>
+            <div class="cms-form filter-grid">
+              <input id="adminUserSearch" type="search" placeholder="Search email, name, or account id" aria-label="search users" />
+              <select id="adminUserStatusFilter" aria-label="user status filter">
+                <option value="">All statuses</option>
+                <option value="active">active</option>
+                <option value="disabled">disabled</option>
+                <option value="deleted">deleted</option>
+              </select>
+              <select id="adminUserRoleFilter" aria-label="user role filter">
+                <option value="">All roles</option>
+                <option value="student">student</option>
+                <option value="admin">admin</option>
+              </select>
+            </div>
+            <p id="adminUserStatus">Login as admin to manage users.</p>
+            <div id="adminUserList" class="attempt-log"></div>
+          </section>
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Coach Console</p>
+                <h3>Teacher review queue</h3>
+              </div>
+              <div class="billing-actions">
+                <button id="exportEvidencePacketsJson" type="button">Export evidence JSON</button>
+                <button id="exportEvidencePacketsCsv" type="button">Export evidence CSV</button>
+                <button id="bulkContextRiskFollowups" type="button">Bulk context follow-ups</button>
+                <button id="bulkChartEvidenceFollowups" type="button">Bulk chart evidence</button>
+                <button id="bulkLearningActionQueue" type="button">Process top actions</button>
+                <button id="refreshCoachConsole" type="button">Refresh reports</button>
+              </div>
+            </div>
+            <div class="cms-form filter-grid">
+              <input id="coachConsoleSearch" type="search" placeholder="Search learner email, name, or id" aria-label="search coach reports" />
+            </div>
+            <p id="coachConsoleStatus">Login as admin to review learner reports.</p>
+            <div id="educationServiceHealthPanel" class="attempt-log"></div>
+            <div id="learningActionOutcomePanel" class="attempt-log"></div>
+            <div id="learningActionQueueList" class="attempt-log"></div>
+            <div id="coachConsoleList" class="attempt-log"></div>
+            <div id="coachProgressReportPanel" class="attempt-log"></div>
+            <div class="section-head compact-head">
+              <div>
+                <p class="eyebrow">Service Delivery</p>
+                <h3>Coach follow-through funnel</h3>
+              </div>
+              <div class="billing-actions">
+                <button id="createServiceSlaActions" type="button">Create SLA actions</button>
+                <button id="bulkServiceFollowups" type="button">Create batch follow-ups</button>
+                <button id="refreshServiceDelivery" type="button">Refresh delivery</button>
+              </div>
+            </div>
+            <p id="serviceDeliveryStatus">Login as admin to inspect report delivery follow-through.</p>
+            <div id="serviceDeliveryList" class="attempt-log"></div>
+            <div class="section-head compact-head">
+              <div>
+                <p class="eyebrow">Support Queue</p>
+                <h3>Customer help desk</h3>
+              </div>
+              <div class="billing-actions">
+                <button id="exportSupportSlaJson" type="button">Support JSON</button>
+                <button id="exportSupportSlaCsv" type="button">Support CSV</button>
+                <button id="exportSupportSlaMd" type="button">Support Brief</button>
+                <button id="refreshAdminSupportTickets" type="button">Refresh support</button>
+              </div>
+            </div>
+            <div class="cms-form filter-grid">
+              <input id="adminSupportSearch" type="search" placeholder="Search support tickets" aria-label="search support tickets" />
+              <select id="adminSupportStatus" aria-label="support ticket status">
+                <option value="all">All statuses</option>
+                <option value="open">Open</option>
+                <option value="triaged">Triaged</option>
+                <option value="waiting_on_learner">Waiting on learner</option>
+                <option value="resolved">Resolved</option>
+                <option value="closed">Closed</option>
+              </select>
+            </div>
+            <p id="adminSupportStatusText">Login as admin to manage customer support tickets.</p>
+            <div id="adminSupportTicketList" class="attempt-log"></div>
+            <div class="section-head compact-head">
+              <div>
+                <p class="eyebrow">Coach Sessions</p>
+                <h3>Education appointment scheduling</h3>
+              </div>
+              <button id="refreshAdminCoachSessions" type="button">Refresh sessions</button>
+            </div>
+            <div class="cms-form filter-grid">
+              <input id="adminCoachSessionSearch" type="search" placeholder="Search session bookings" aria-label="search coach session bookings" />
+              <select id="adminCoachSessionStatus" aria-label="coach session status">
+                <option value="all">All statuses</option>
+                <option value="requested">Requested</option>
+                <option value="confirmed">Confirmed</option>
+                <option value="completed">Completed</option>
+                <option value="canceled">Canceled</option>
+              </select>
+            </div>
+            <p id="adminCoachSessionStatusText">Login as admin to schedule coach sessions.</p>
+            <div id="adminCoachSessionList" class="attempt-log"></div>
+            <div class="section-head compact-head">
+              <div>
+                <p class="eyebrow">Review Tasks</p>
+                <h3>Teacher service delivery</h3>
+              </div>
+              <button id="refreshCoachTasks" type="button">Refresh tasks</button>
+            </div>
+            <div id="coachTaskList" class="attempt-log"></div>
+            <div class="section-head compact-head">
+              <div>
+                <p class="eyebrow">Cohorts</p>
+                <h3>Group practice delivery</h3>
+              </div>
+              <div class="billing-actions">
+                <button id="exportLearningRecordsJson" type="button">Learning JSON</button>
+                <button id="exportLearningRecordsCsv" type="button">Learning CSV</button>
+                <button id="exportLearningRecordsMd" type="button">Learning Brief</button>
+                <button id="refreshRosterHandoffs" type="button">Roster handoffs</button>
+                <button id="viewRosterOnboardingProgress" type="button">Roster Progress</button>
+                <button id="exportRosterOnboardingProgressCsv" type="button">Roster CSV</button>
+                <button id="exportRosterOnboardingProgressMd" type="button">Roster Brief</button>
+                <button id="viewProcurementProgress" type="button">Procurement Progress</button>
+                <button id="exportProcurementProgressCsv" type="button">Progress CSV</button>
+                <button id="exportProcurementProgressMd" type="button">Progress Brief</button>
+                <button id="exportProcurementProgressMeetingBrief" type="button">Meeting Brief</button>
+                <button id="createProcurementMeetingActions" type="button">Meeting Actions</button>
+                <button id="refreshCohorts" type="button">Refresh cohorts</button>
+              </div>
+            </div>
+            <div class="cms-form filter-grid">
+              <input id="cohortName" type="text" value="Starter price-action cohort" aria-label="cohort name" />
+              <textarea id="cohortMembers" rows="3" placeholder="learner email or account id, one per line" aria-label="cohort members">student@tradegym.local</textarea>
+              <button id="createCohort" type="button">Create cohort</button>
+              <textarea id="rosterImportRows" rows="4" placeholder="email,name,plan per line" aria-label="roster import rows">new-learner@tradegym.local,New Learner,Starter</textarea>
+              <button id="importRoster" type="button">Import roster</button>
+            </div>
+            <p id="cohortStatus">Create a cohort, then assign reviewed practice to the group.</p>
+            <div id="cohortList" class="attempt-log"></div>
+            <div id="rosterHandoffList" class="attempt-log"></div>
+          </section>
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">AI Governance</p>
+                <h3>AI review governance queue</h3>
+              </div>
+              <button id="refreshReviewQueue" type="button">Refresh queue</button>
+            </div>
+            <p id="aiCoachStatus">Waiting for AI service status.</p>
+            <div id="reviewQueue" class="attempt-log"></div>
+          </section>
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Education Model Runs</p>
+                <h3>Tutoring plan audit records</h3>
+              </div>
+              <div class="billing-actions">
+                <button id="refreshEducationModelRuns" type="button">Refresh runs</button>
+                <button id="exportEducationModelRunsJson" type="button">Export JSON</button>
+                <button id="exportEducationModelRunsCsv" type="button">Export CSV</button>
+              </div>
+            </div>
+            <p id="educationModelRunStatus">Login as admin to inspect tutoring-plan dry runs.</p>
+            <div id="educationModelRunList" class="attempt-log"></div>
+          </section>
+          <section class="panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Audit Trail</p>
+                <h3>Operations audit log</h3>
+              </div>
+              <div class="billing-actions">
+                <button id="refreshAuditLog" type="button">Refresh audit</button>
+                <button id="refreshAuditIntegrity" type="button">Check integrity</button>
+                <button id="sealAuditIntegrity" type="button">Seal current logs</button>
+                <button id="exportAuditJson" type="button">Export JSON</button>
+                <button id="exportAuditCsv" type="button">Export CSV</button>
+              </div>
+            </div>
+            <div class="cms-form filter-grid">
+              <select id="auditTypeFilter" aria-label="audit type filter">
+                <option value="">All audit types</option>
+                <option value="account_registered">account_registered</option>
+                <option value="compliance_acknowledged">compliance_acknowledged</option>
+                <option value="billing_addon_checkout_session_created">billing_addon_checkout_session_created</option>
+                <option value="billing_webhook_processed">billing_webhook_processed</option>
+                <option value="content_processing_job_created">content_processing_job_created</option>
+                <option value="content_processing_item_reviewed">content_processing_item_reviewed</option>
+                <option value="ai_coach_feedback">ai_coach_feedback</option>
+                <option value="coach_review_task_created">coach_review_task_created</option>
+                <option value="coach_review_task_updated">coach_review_task_updated</option>
+                <option value="practice_assignment_created">practice_assignment_created</option>
+                <option value="practice_assignment_completed">practice_assignment_completed</option>
+                <option value="cohort_created">cohort_created</option>
+                <option value="roster_import_created">roster_import_created</option>
+                <option value="roster_import_handoff_exported">roster_import_handoff_exported</option>
+                <option value="cohort_assignment_created">cohort_assignment_created</option>
+                <option value="course_enrollment_created">course_enrollment_created</option>
+                <option value="course_package_assignment_created">course_package_assignment_created</option>
+                <option value="cohort_course_package_assigned">cohort_course_package_assigned</option>
+                <option value="course_package_created">course_package_created</option>
+                <option value="course_package_published">course_package_published</option>
+                <option value="course_progress_marked">course_progress_marked</option>
+                <option value="completion_report_issued">completion_report_issued</option>
+                <option value="admin_user_updated">admin_user_updated</option>
+                <option value="account_deletion_requested">account_deletion_requested</option>
+                <option value="account_deletion_request_processed">account_deletion_request_processed</option>
+              </select>
+              <input id="auditUserFilter" type="search" placeholder="User id, email, or operator" aria-label="audit user filter" />
+              <select id="auditStatusFilter" aria-label="audit moderation status filter">
+                <option value="">All review states</option>
+                <option value="approved">approved</option>
+                <option value="needs_review">needs_review</option>
+                <option value="processing">processing</option>
+                <option value="resolved">resolved</option>
+                <option value="rejected">rejected</option>
+              </select>
+              <input id="auditFromFilter" type="date" aria-label="audit from date" />
+              <input id="auditToFilter" type="date" aria-label="audit to date" />
+            </div>
+            <p class="muted-note" id="auditIntegrityStatus">Local audit logs support product operations. This prototype does not yet provide an immutable ledger.</p>
+            <div id="auditLog" class="attempt-log"></div>
+          </section>
+          <div class="grid two">
+            <section class="panel">
+              <p class="eyebrow">Auth</p>
+              <h3>演示登录</h3>
+              <p>学生账号：student@tradegym.local / demo123；管理员账号：admin@tradegym.local / admin123。</p>
+              <div class="cms-form">
+                <input id="loginEmail" type="email" value="admin@tradegym.local" aria-label="登录邮箱" />
+                <input id="loginPassword" type="password" value="admin123" aria-label="登录密码" />
+                <button id="loginSubmit" type="button">登录为管理员</button>
+              </div>
+              <p id="loginStatus">未登录</p>
+              <div class="cms-form account-lifecycle">
+                <input id="registerName" type="text" value="Demo Learner" aria-label="register name" />
+                <input id="registerEmail" type="email" value="learner-demo@tradegym.local" aria-label="register email" />
+                <input id="registerPassword" type="password" value="demo12345" aria-label="register password" />
+                <label class="check-line">
+                  <input id="legalAcceptance" type="checkbox" />
+                  <span>I accept the <a href="/terms.html" target="_blank">Terms</a>, <a href="/privacy.html" target="_blank">Privacy Policy</a>, and <a href="/risk-disclosure.html" target="_blank">Risk Disclosure</a>.</span>
+                </label>
+                <button id="registerSubmit" type="button">Register learner</button>
+                <input id="verifyToken" type="text" placeholder="local verification token" aria-label="verification token" />
+                <button id="verifyEmailSubmit" type="button">Verify email</button>
+                <input id="resetEmail" type="email" value="learner-demo@tradegym.local" aria-label="reset email" />
+                <button id="resetRequest" type="button">Request reset</button>
+                <input id="resetToken" type="text" placeholder="local reset token" aria-label="reset token" />
+                <input id="resetPassword" type="password" value="demo67890" aria-label="new password" />
+                <button id="resetConfirm" type="button">Confirm reset</button>
+                <button id="exportAccountData" type="button">Export my data</button>
+                <textarea id="deleteAccountReason" rows="2" placeholder="Deletion reason, optional" aria-label="delete account reason"></textarea>
+                <button id="requestAccountDeletion" type="button">Request account deletion</button>
+              </div>
+              <p id="accountLifecycleStatus">Local account lifecycle uses simulated email tokens.</p>
+            </section>
+            <section class="panel">
+              <p class="eyebrow">Question CMS</p>
+              <h3>发布训练题</h3>
+              <div class="cms-form">
+                <input id="cmsTitle" type="text" value="教研新增：回踩失败怎么处理？" aria-label="题目标题" />
+                <input id="cmsTag" type="text" value="价格行为 · 回踩失败" aria-label="题目标签" />
+                <textarea id="cmsQuestion" rows="3" aria-label="题目问题">价格突破后回踩跌回区间内，新手更应该训练什么？</textarea>
+                <textarea id="cmsOptions" rows="4" aria-label="题目选项">继续追多
+承认突破失败，等待新结构
+立刻重仓做空
+不设止损扛着</textarea>
+                <button id="generateScenarioDraft" type="button">Generate teaching draft</button>
+                <button id="publishScenario" type="button">Submit for review</button>
+              </div>
+              <p id="publishStatus">Admin login required. New scenarios enter review before learner training.</p>
+            </section>
+            <section class="panel">
+              <p class="eyebrow">Content Pipeline</p>
+              <h3>内容生产管线</h3>
+              <div class="cms-form">
+                <input id="contentSourceTitle" type="text" value="Failed breakout video transcript" aria-label="content source title" />
+                <select id="contentSourceType" aria-label="content source type">
+                  <option value="course_note">Course note</option>
+                  <option value="video_transcript">Video transcript</option>
+                  <option value="ocr_text">OCR text</option>
+                  <option value="chart_screenshot_ocr">Chart screenshot OCR</option>
+                </select>
+                <textarea id="contentSourceText" rows="4" aria-label="content source text">Video transcript demo: when a breakout falls back into the prior range, the learner should identify invalidation, reduce risk, and wait for a new structure. This is teaching demo text, not a live buy or sell signal.</textarea>
+                <button id="createContentSource" type="button">Create content source</button>
+                <button id="createChartScreenshotIntake" type="button">Create chart screenshot intake</button>
+                <button id="processContentSource" type="button">Run processing</button>
+                <button id="runContentPipelineDemo" type="button">Run demo pipeline</button>
+                <button id="refreshContentSources" type="button">Refresh sources</button>
+              </div>
+              <p id="contentSourceStatus">Content sources track transcript/OCR fallback alignment and source review.</p>
+              <div id="contentSourceList" class="attempt-log"></div>
+              <div class="section-head compact-head">
+                <div>
+                  <p class="eyebrow">Processing Jobs</p>
+                  <h3>OCR/transcript alignment</h3>
+                </div>
+                <button id="refreshContentJobs" type="button">Refresh jobs</button>
+              </div>
+              <p id="contentJobStatus">Processing jobs turn raw notes, transcript, or OCR text into reviewed concepts and scenario prompts.</p>
+              <div id="contentJobList" class="attempt-log"></div>
+              <div class="cms-form">
+                <input id="knowledgeTitle" type="text" value="Failed breakout and invalidation" aria-label="knowledge title" />
+                <textarea id="knowledgeSource" rows="4" aria-label="course note source">When a breakout falls back into the prior range, learners should practice naming the invalidation condition, reducing risk, and waiting for a new structure instead of defending the first idea.</textarea>
+                <button id="distillKnowledge" type="button">Distill knowledge point</button>
+              </div>
+              <p id="knowledgeStatus">Use course notes, lesson transcripts, or internal teaching notes to create reviewed knowledge points.</p>
+              <div id="knowledgeList" class="attempt-log"></div>
+              <div class="section-head compact-head">
+                <div>
+                  <p class="eyebrow">Course Package</p>
+                  <h3>Versioned learning product</h3>
+                </div>
+                <button id="refreshCoursePackages" type="button">Refresh packages</button>
+              </div>
+              <div class="cms-form">
+                <input id="coursePackageTitle" type="text" value="Price Action Starter Pack" aria-label="course package title" />
+                <input id="coursePackagePrice" type="number" min="0" step="1" value="9900" aria-label="course package price cents" />
+                <button id="createCoursePackage" type="button">Create package</button>
+              </div>
+              <p id="coursePackageStatus">Packages combine reviewed knowledge points and approved scenarios into a sellable education product.</p>
+              <div id="coursePackageList" class="attempt-log"></div>
+              <ol class="clean-list">
+                <li>授权课程/公开资料/内部讲义入库</li>
+                <li>知识点结构化：概念、误区、训练目标</li>
+                <li>生成训练题：图表、选项、讲解、标签</li>
+                <li>教研审核：合规、版权、难度、答案质量</li>
+                <li>发布到学习路径</li>
+              </ol>
+            </section>
+            <section class="panel">
+              <p class="eyebrow">Data Readiness</p>
+              <h3>数据与开源参考</h3>
+              <ul class="clean-list">
+                <li>OpenBB：行情、宏观、新闻数据聚合</li>
+                <li>backtesting.py / backtrader：轻量回测参考</li>
+                <li>vectorbt：批量训练场景验证</li>
+                <li>FinGPT：金融文本与情绪结构化参考</li>
+                <li>Qlib / Lean：后期研究平台参考</li>
+              </ul>
+            </section>
+          </div>
+          <section class="panel">
+            <h3>上线前必须完成</h3>
+            <div class="check-grid" id="publishChecklist">
+              <span>用户系统</span>
+              <span>支付订阅</span>
+              <span>题库CMS</span>
+              <span>AI调用审计</span>
+              <span>内容版权授权</span>
+              <span>合规免责声明</span>
+              <span>数据源授权</span>
+              <span>风控词拦截</span>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
