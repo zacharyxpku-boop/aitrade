@@ -25,6 +25,8 @@
   ],
   "env": {
     "APP_ENV": "vercel",
+    "APP_BASE_URL": "https://aitrade-ll84.vercel.app",
+    "COOKIE_SECURE": "true",
     "TRADEGYM_SQLITE_PATH": "/tmp/tradegym.sqlite"
   }
 }
