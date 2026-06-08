@@ -482,6 +482,72 @@ ol {
   height: 340px;
 }
 
+.timeframe-stack {
+  border-top: 1px solid var(--line);
+  padding: 14px;
+}
+
+.timeframe-stack-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.timeframe-stack-head div {
+  display: grid;
+  gap: 4px;
+}
+
+.timeframe-stack-head strong,
+.timeframe-card-head strong {
+  font-size: 14px;
+}
+
+.timeframe-stack-head span,
+.timeframe-card-head span,
+.timeframe-card p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.timeframe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.timeframe-card {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px;
+  background: #fff;
+}
+
+.timeframe-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.timeframe-card svg {
+  display: block;
+  width: 100%;
+  height: 112px;
+  border-radius: 6px;
+  background: #fbfcf8;
+}
+
+.timeframe-card p {
+  margin: 0;
+}
+
 .context-card {
   padding: 16px;
 }
@@ -935,6 +1001,7 @@ textarea {
   .grid.two,
   .grid.three,
   .market-layout,
+  .timeframe-grid,
   .decision-area,
   .pricing-grid,
   .check-grid,

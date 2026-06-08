@@ -26,6 +26,7 @@ const nodes = {
   symbolLabel: document.querySelector("#symbolLabel"),
   timeframeLabel: document.querySelector("#timeframeLabel"),
   chart: document.querySelector("#candleChart"),
+  multiTimeframePanel: document.querySelector("#multiTimeframePanel"),
   technicalContext: document.querySelector("#technicalContext"),
   newsContext: document.querySelector("#newsContext"),
   sentimentContext: document.querySelector("#sentimentContext"),
@@ -554,6 +555,7 @@ function renderTrainer() {
   if (nodes.trainingResultActions) nodes.trainingResultActions.innerHTML = "";
   renderOptions(lesson);
   renderCandles(nodes.chart, lesson.candles);
+  renderMultiTimeframePanel(lesson);
 }
 
 function renderOptions(lesson) {
@@ -573,16 +575,18 @@ function renderOptions(lesson) {
   });
 }
 
-function renderCandles(target, candles) {
-  const width = 760;
-  const height = 340;
-  const padding = 28;
+function renderCandles(target, candles, options = {}) {
+  if (!target || !Array.isArray(candles) || !candles.length) return;
+  const width = options.width || 760;
+  const height = options.height || 340;
+  const padding = options.padding || 28;
   const values = candles.flat();
   const min = Math.min(...values);
   const max = Math.max(...values);
-  const scaleY = (value) => height - padding - ((value - min) / (max - min)) * (height - padding * 2);
+  const range = Math.max(1, max - min);
+  const scaleY = (value) => height - padding - ((value - min) / range) * (height - padding * 2);
   const step = (width - padding * 2) / candles.length;
-  const bodyWidth = Math.max(7, step * 0.52);
+  const bodyWidth = Math.max(options.minBodyWidth || 7, step * 0.52);
   const grid = Array.from({ length: 5 }, (_, index) => {
     const y = padding + index * ((height - padding * 2) / 4);
     return `<line x1="${padding}" x2="${width - padding}" y1="${y}" y2="${y}" stroke="#e5e9e1" />`;
@@ -605,6 +609,96 @@ function renderCandles(target, candles) {
     .join("");
   target.setAttribute("viewBox", `0 0 ${width} ${height}`);
   target.innerHTML = `${grid}${bars}`;
+}
+
+function aggregateCandles(candles, groupSize) {
+  if (!Array.isArray(candles) || candles.length < 2) return candles || [];
+  const groups = [];
+  for (let index = 0; index < candles.length; index += groupSize) {
+    const slice = candles.slice(index, index + groupSize);
+    if (!slice.length) continue;
+    const open = slice[0][0];
+    const close = slice[slice.length - 1][3];
+    const high = Math.max(...slice.map((item) => item[1]));
+    const low = Math.min(...slice.map((item) => item[2]));
+    groups.push([open, high, low, close]);
+  }
+  return groups.length >= 2 ? groups : candles;
+}
+
+function describeFrame(candles, role) {
+  if (!Array.isArray(candles) || candles.length < 2) return "先确认结构和失效位，再进入训练。";
+  const first = candles[0];
+  const last = candles[candles.length - 1];
+  const direction = last[3] > first[0] ? "上行后回落" : last[3] < first[0] ? "回落结构" : "横盘整理";
+  const lastCloseBelowHigh = last[3] < Math.max(...candles.map((item) => item[1]));
+  if (role === "方向过滤") return `${direction}，先判断大背景，不直接下结论。`;
+  if (role === "结构定位") return lastCloseBelowHigh ? "靠近前高后回落，训练标出区间和失效条件。" : "结构仍在延续，训练等待下一根确认。";
+  return "只在执行周期写训练动作、止损或观望条件。";
+}
+
+function buildTimeframeFrames(lesson) {
+  const candles = lesson.candles || [];
+  const daily = aggregateCandles(candles, 6);
+  const fourHour = aggregateCandles(candles, 3);
+  return [
+    {
+      label: "高周期背景",
+      timeframe: "1D教学压缩",
+      role: "方向过滤",
+      candles: daily,
+      note: describeFrame(daily, "方向过滤"),
+    },
+    {
+      label: "中周期结构",
+      timeframe: "4H教学压缩",
+      role: "结构定位",
+      candles: fourHour,
+      note: describeFrame(fourHour, "结构定位"),
+    },
+    {
+      label: "执行周期",
+      timeframe: lesson.timeframe || "15m",
+      role: "训练作答",
+      candles,
+      note: describeFrame(candles, "训练作答"),
+    },
+  ];
+}
+
+function renderMultiTimeframePanel(lesson) {
+  if (!nodes.multiTimeframePanel) return;
+  const frames = buildTimeframeFrames(lesson);
+  nodes.multiTimeframePanel.innerHTML = `
+    <div class="timeframe-stack-head">
+      <div>
+        <strong>多周期教学框架</strong>
+        <span>先看背景，再看结构，最后才做当前周期训练。</span>
+      </div>
+      <span class="tag warn">演示压缩视图</span>
+    </div>
+    <div class="timeframe-grid">
+      ${frames.map((frame, index) => `
+        <article class="timeframe-card">
+          <div class="timeframe-card-head">
+            <strong>${escapeHtml(frame.label)}</strong>
+            <span>${escapeHtml(frame.timeframe)}</span>
+          </div>
+          <svg data-timeframe-chart="${index}" role="img" aria-label="${escapeHtml(frame.label)}K线教学图"></svg>
+          <p>${escapeHtml(frame.role)}：${escapeHtml(frame.note)}</p>
+        </article>
+      `).join("")}
+    </div>
+    <p class="muted-note">当前是内部演示片段生成的多周期教学视角；正式历史回顾需要接入授权 1D / 4H / 15m 行情、历史新闻和情绪数据。</p>
+  `;
+  frames.forEach((frame, index) => {
+    renderCandles(nodes.multiTimeframePanel.querySelector(`[data-timeframe-chart="${index}"]`), frame.candles, {
+      width: 240,
+      height: 112,
+      padding: 12,
+      minBodyWidth: 4,
+    });
+  });
 }
 
 async function submitDecision() {
