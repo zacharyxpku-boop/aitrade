@@ -671,6 +671,7 @@ function renderTrainer() {
   renderChartReadingGuide(chartGuide);
   renderMultiTimeframePanel(lesson);
   renderContextTimeline(lesson);
+  renderDecisionScaffold(lesson);
 }
 
 function trainingFocusStage() {
@@ -685,23 +686,46 @@ function trainingFlowState() {
       plan: nodes.planInput?.value || "",
     });
   }
+  const plan = nodes.planInput?.value || "";
+  const mentionsStructure = /结构|区间|趋势|前高|前低|压制|支撑|回踩|突破|横盘/.test(plan);
+  const mentionsInvalidation = /失效|认错|跌回|放弃|不成立|等待|观望/.test(plan);
+  const mentionsContext = /消息|新闻|情绪|事件|背景|热度|财报|来源/.test(plan);
   const key = !nodes.feedbackPanel?.hidden
     ? "review"
-    : state.selected != null && nodes.planInput?.value.trim()
+    : state.selected != null && plan.trim()
       ? "submit"
       : state.selected != null
-        ? "write"
-        : "read";
+        ? "choose"
+        : mentionsContext
+          ? "context"
+          : mentionsInvalidation
+            ? "invalidation"
+            : mentionsStructure
+              ? "structure"
+              : "observe";
   const steps = [
-    { key: "read", label: "先读图", text: "只看结构、前高、失效位和隐藏未来。", target: "#multiTimeframePanel" },
-    { key: "choose", label: "再选择", text: "选择不是买卖建议，只是课堂判断。", target: "#multiTimeframePanel" },
-    { key: "write", label: "写证据", text: "按“看到什么→怎么判断→哪里认错→不做什么”写。", target: "#decisionArea" },
-    { key: "review", label: "看错因", text: "提交后只看最大问题和下一步练习。", target: "#feedbackPanel" },
+    { key: "observe", label: "观察K线", text: "只看当时可见信息，不看结果。", target: "#chartReadingGuide" },
+    { key: "structure", label: "标结构/背景", text: "写清趋势、区间、前高或压制。", target: "#decisionScaffold" },
+    { key: "invalidation", label: "写失效条件", text: "先说明哪里代表自己错了。", target: "#decisionScaffold" },
+    { key: "context", label: "分清消息情绪", text: "背景不是行动理由。", target: "#contextTimeline" },
+    { key: "choose", label: "选择并写计划", text: "最后才选答案，补完整计划。", target: "#decisionArea" },
+    { key: "review", label: "AI复盘", text: "只评价学习过程和下一题。", target: "#feedbackPanel" },
   ];
+  const activeIndex = Math.max(0, steps.findIndex((item) => item.key === key));
   return {
     key,
-    activeIndex: key === "read" ? 0 : key === "write" || key === "submit" ? 2 : 3,
-    summary: key === "read" ? "先别急着选答案，先把图看懂。" : key === "write" ? "已经选择了，现在把理由写成可复盘证据。" : key === "submit" ? "补齐证据后提交，AI 只评价学习过程。" : "看这次最大问题，然后去回放同一题。",
+    activeIndex: key === "submit" ? 4 : activeIndex,
+    summary: key === "observe"
+      ? "先别急着选答案，先把当时可见信息看懂。"
+      : key === "structure"
+        ? "已经开始写结构，下一步要补失效条件。"
+        : key === "invalidation"
+          ? "失效条件出现了，再检查消息和情绪有没有被误用。"
+          : key === "context"
+            ? "背景边界有了，现在可以选择课堂答案并写完整计划。"
+            : key === "choose" || key === "submit"
+              ? "选择只是课堂判断，提交前确认计划里有结构、失效、情绪边界。"
+              : "看这次最大问题，然后去回放同一题。",
     steps,
     educationOnly: true,
     productionReady: false,
@@ -722,7 +746,7 @@ function renderTrainingFocusRail() {
   const flow = trainingFlowState();
   rail.innerHTML = `
     <div>
-      <strong>本题只按 4 步走</strong>
+      <strong>本题只按 6 步走</strong>
       <span>${escapeHtml(flow.summary)}</span>
     </div>
     <div class="training-focus-steps">
@@ -739,14 +763,18 @@ function renderTrainingFocusRail() {
 
 function renderTeachingIntro(lesson) {
   if (!nodes.teachingIntroPanel) return;
-  const focus = lesson.tag || "价格行为训练";
+  const focus = lesson.teachingGoal || lesson.tag || "价格行为训练";
+  const chapter = lesson.chapter || "价格行为基础";
+  const framework = Array.isArray(lesson.teachingFramework) ? lesson.teachingFramework : [];
+  const checklist = Array.isArray(lesson.observationChecklist) ? lesson.observationChecklist : [];
+  const lessonSteps = Array.isArray(lesson.lessonSteps) ? lesson.lessonSteps : [];
   const timeframe = lesson.timeframe || "当前周期";
   nodes.teachingIntroPanel.classList.toggle("is-expanded", state.teachingDetailsExpanded);
   nodes.teachingIntroPanel.innerHTML = `
     <div class="teaching-intro-head">
       <div>
         <p class="eyebrow">教学导入</p>
-        <h4>先看 1 个目标和 1 个好答案格式，再做题。</h4>
+        <h4>${escapeHtml(chapter)}：先学框架，再做这一题。</h4>
       </div>
       <div class="teaching-head-actions">
         <span class="tag warn">不是荐股</span>
@@ -754,49 +782,113 @@ function renderTeachingIntro(lesson) {
       </div>
     </div>
     <div class="teaching-goal">
-      <strong>今天练：${escapeHtml(focus)}</strong>
-      <span>目标不是猜涨跌，而是写清楚结构、失效条件、仓位边界和环境干扰。</span>
+      <strong>本题目标：${escapeHtml(focus)}</strong>
+      <span>${escapeHtml(lesson.moduleGoal || "目标不是猜涨跌，而是写清楚结构、失效条件、仓位边界和环境干扰。")}</span>
     </div>
     <div class="answer-coach">
       <div>
         <strong>好答案长这样</strong>
-        <span>我看到前高附近回落，所以先承认突破假设可能失效；如果重新站回关键区间再复盘，否则等待新结构。新闻和情绪只记录为背景。</span>
+        <span>${escapeHtml(lesson.goodAnswerExample || "我看到前高附近回落，所以先承认突破假设可能失效；如果重新站回关键区间再复盘，否则等待新结构。新闻和情绪只记录为背景。")}</span>
       </div>
     </div>
     <div class="teaching-detail-stack">
       <div class="teaching-mini-lesson">
         <div>
-          <strong>先讲一个例子</strong>
-          <span>如果价格冲过前高又跌回区间，你不能只写“突破了”。更好的读法是：突破假设变弱，我要先找失效位，等重新站回或出现新结构。</span>
+          <strong>这一节先讲什么</strong>
+          <span>${escapeHtml(framework[0] || "如果价格冲过前高又跌回区间，你不能只写“突破了”。更好的读法是：突破假设变弱，我要先找失效位，等重新站回或出现新结构。")}</span>
         </div>
         <div>
           <strong>这题要抓的常见误判</strong>
-          <span>看到一根大阳线就追、把热闹新闻当理由、没有写错了在哪里认错、回放时用未来走势倒推答案。</span>
+          <span>${escapeHtml(lesson.commonMistake || "看到一根大阳线就追、把热闹新闻当理由、没有写错了在哪里认错、回放时用未来走势倒推答案。")}</span>
         </div>
       </div>
       <ol class="teaching-steps">
-        <li><strong>先看大背景</strong><span>高周期只回答“现在大概处在什么环境”，不要直接得出买卖结论。</span></li>
-        <li><strong>再看中周期结构</strong><span>找区间、前高前低、突破是否失效，先知道错了在哪里认错。</span></li>
-        <li><strong>最后看 ${escapeHtml(timeframe)}</strong><span>执行周期只用来写训练动作：做、不做、等待，和对应的止损或观望条件。</span></li>
-        <li><strong>新闻和情绪只当背景</strong><span>它们训练你识别偏见和事件风险，不是买卖信号。</span></li>
+        ${(lessonSteps.length ? lessonSteps : [
+          { label: "先看大背景", text: "高周期只回答“现在大概处在什么环境”，不要直接得出买卖结论。" },
+          { label: "再看中周期结构", text: "找区间、前高前低、突破是否失效，先知道错了在哪里认错。" },
+          { label: `最后看 ${timeframe}`, text: "执行周期只用来写训练动作：做、不做、等待，和对应的止损或观望条件。" },
+          { label: "新闻和情绪只当背景", text: "它们训练你识别偏见和事件风险，不是买卖信号。" },
+        ]).map((item) => `<li><strong>${escapeHtml(item.label)}</strong><span>${escapeHtml(item.text)}</span></li>`).join("")}
       </ol>
       <div class="answer-coach">
         <div>
           <strong>坏答案长这样</strong>
-          <span>感觉会继续走，先冲进去再说。没有结构、没有失效条件，也没有说明消息和情绪是不是干扰。</span>
+          <span>${escapeHtml(lesson.badAnswerExample || "感觉会继续走，先冲进去再说。没有结构、没有失效条件，也没有说明消息和情绪是不是干扰。")}</span>
         </div>
       </div>
       <div class="teaching-checklist">
         <strong>作答前检查 4 句话</strong>
-        <span>我看到什么结构？</span>
-        <span>哪一根或哪一段说明我可能错了？</span>
-        <span>我现在不做什么？</span>
-        <span>新闻/情绪只是背景，还是被我当成理由了？</span>
+        ${(checklist.length ? checklist : [
+          "我看到什么结构？",
+          "哪一根或哪一段说明我可能错了？",
+          "我现在不做什么？",
+          "新闻/情绪只是背景，还是被我当成理由了？",
+        ]).map((item) => `<span>${escapeHtml(item)}</span>`).join("")}
+      </div>
+      <div class="answer-coach">
+        <div>
+          <strong>边界说明</strong>
+          <span>${escapeHtml(lesson.boundaryNote || "当前是教育训练，不提供荐股、实时信号、收益承诺或真实资金交易指导。")}</span>
+        </div>
       </div>
     </div>
     <div class="teaching-intro-actions">
       <button type="button" data-scroll-target="#multiTimeframePanel">看多周期读图</button>
       <button type="button" data-scroll-target="#decisionArea">开始当前题训练</button>
+    </div>
+  `;
+}
+
+function renderDecisionScaffold(lesson) {
+  const decisionArea = document.querySelector("#decisionArea");
+  if (!decisionArea) return;
+  let panel = document.querySelector("#decisionScaffold");
+  if (!panel) {
+    panel = document.createElement("section");
+    panel.id = "decisionScaffold";
+    panel.className = "decision-scaffold";
+    decisionArea.insertAdjacentElement("beforebegin", panel);
+  }
+  const checklist = Array.isArray(lesson.observationChecklist) ? lesson.observationChecklist : [];
+  const steps = [
+    {
+      label: "观察",
+      title: "先看当时可见K线",
+      body: checklist[0] || "我现在看到的结构是什么？",
+    },
+    {
+      label: "结构",
+      title: lesson.chapter || "标结构/背景",
+      body: lesson.correctTrainingAction || "写清楚趋势、区间、前高/前低和等待条件。",
+    },
+    {
+      label: "失效",
+      title: "哪里说明我错了",
+      body: checklist[1] || "哪一根或哪一段说明原判断不成立？",
+    },
+    {
+      label: "情绪",
+      title: "消息只做背景",
+      body: checklist[2] || "新闻和情绪只做背景，不写成行动理由。",
+    },
+  ];
+  panel.innerHTML = `
+    <div class="decision-scaffold-head">
+      <div>
+        <p class="eyebrow">作答脚手架</p>
+        <h4>先把这 4 格想清楚，再选答案。</h4>
+      </div>
+      <span class="tag warn">教育训练</span>
+    </div>
+    <div class="decision-scaffold-grid">
+      ${steps.map((item, index) => `
+        <article>
+          <b>${index + 1}</b>
+          <span>${escapeHtml(item.label)}</span>
+          <strong>${escapeHtml(item.title)}</strong>
+          <small>${escapeHtml(item.body)}</small>
+        </article>
+      `).join("")}
     </div>
   `;
 }
@@ -1348,10 +1440,53 @@ function renderMultiTimeframePanel(lesson) {
   });
 }
 
+function reviewTrainingPlanText(text = "") {
+  const value = String(text || "").trim();
+  return {
+    hasStructure: /结构|区间|趋势|前高|前低|压制|支撑|回踩|突破|横盘|高周期|中周期/.test(value),
+    hasInvalidation: /失效|认错|跌回|放弃|不成立|等待|观望|破位|站回|确认/.test(value),
+    hasContext: /消息|新闻|情绪|事件|背景|热度|财报|来源|当时|未知|不可见/.test(value),
+    longEnough: value.length >= 40,
+  };
+}
+
+function missingTrainingPlanItems(review = {}) {
+  const items = [];
+  if (!review.hasStructure) items.push("补一句你看到的结构：趋势、区间、前高/前低或压制位置。");
+  if (!review.hasInvalidation) items.push("补一句哪里说明自己错了：跌回哪里、破坏什么、什么时候放弃。");
+  if (!review.hasContext) items.push("补一句消息/情绪边界：它只是背景，还是被你当成理由了。");
+  if (!review.longEnough) items.push("答案太短，再按“看到什么 → 怎么判断 → 哪里认错 → 不做什么”写完整。");
+  return items;
+}
+
 async function submitDecision() {
   if (state.selected === null) {
     nodes.planInput.focus();
     nodes.planInput.placeholder = "先选择一个判断，再写一句理由、止损或观望条件。";
+    return;
+  }
+  const planReview = reviewTrainingPlanText(nodes.planInput.value);
+  const missingItems = missingTrainingPlanItems(planReview);
+  if (missingItems.length) {
+    nodes.feedbackPanel.hidden = false;
+    nodes.feedbackTitle.textContent = "先补完整训练计划";
+    nodes.feedbackBody.textContent = "这不是答题闯关。先把观察、结构、失效条件和消息/情绪边界写完整，再提交给 AI 复盘。";
+    if (nodes.trainingResultActions) {
+      nodes.trainingResultActions.innerHTML = `
+        <article class="coach-review-card" aria-label="提交前教学检查">
+          <div>
+            <p class="eyebrow">提交前检查</p>
+            <h4>你还缺 ${missingItems.length} 块学习证据</h4>
+          </div>
+          <ul class="clean-list">
+            ${missingItems.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+          </ul>
+          <small>系统只评价学习过程，不评价策略收益，也不输出实盘建议。</small>
+        </article>
+      `;
+    }
+    renderTrainingFocusRail();
+    nodes.planInput.focus();
     return;
   }
   nodes.submitBtn.disabled = true;

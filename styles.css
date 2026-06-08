@@ -1320,7 +1320,7 @@ dd {
 
 .training-focus-steps {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 8px;
 }
 
@@ -1369,6 +1369,76 @@ dd {
 .training-focus-steps button.is-done {
   background: #f7fbf4;
   color: var(--ink);
+}
+
+.decision-scaffold {
+  display: grid;
+  gap: 12px;
+  margin: 16px 0 0;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fffdf7;
+}
+
+.decision-scaffold-head {
+  display: flex;
+  gap: 12px;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.decision-scaffold-head h4 {
+  margin: 2px 0 0;
+}
+
+.decision-scaffold-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.decision-scaffold-grid article {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 4px 8px;
+  align-items: start;
+  min-height: 112px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.decision-scaffold-grid b {
+  display: inline-grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  background: var(--soft);
+  color: var(--accent-strong);
+  font-size: 12px;
+}
+
+.decision-scaffold-grid span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.decision-scaffold-grid strong,
+.decision-scaffold-grid small {
+  grid-column: 1 / -1;
+}
+
+.decision-scaffold-grid strong {
+  color: var(--ink);
+}
+
+.decision-scaffold-grid small {
+  color: var(--muted);
+  line-height: 1.5;
 }
 
 .trial-flow-actions {
@@ -1937,6 +2007,15 @@ textarea {
 
   .training-focus-steps {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .decision-scaffold-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .decision-scaffold-head {
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .chart-reading-guide > div {
