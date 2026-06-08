@@ -489,6 +489,9 @@ GET  /api/billing/subscription     当前用户订阅状态
 - `payment-provider.js` 默认 `PAYMENT_PROVIDER=local`，只跑本地模拟支付状态机；生产环境必须切换为真实支付 provider，并验证 webhook 签名。
 - `market-data-provider.js` 默认 `MARKET_DATA_PROVIDER=demo`，生成合成教学 K 线；生产环境必须接授权行情数据，并明确延迟/实时属性。
 - `news-provider.js` 默认 `NEWS_PROVIDER=demo`，生成教学演示新闻/情绪背景；生产环境必须接授权新闻/事件数据、保留来源和时间戳。
+- 公开数据预览支持 Stooq 日线 CSV 和 GDELT 新闻检索，用于验证 ingestion 管线、来源标签和授权复核流程；公开可访问不等于商业授权，默认仍保持 `productionReady:false`。
+- `/api/admin/public-data-candidates` 输出 Stooq、GDELT、SEC EDGAR、Alpha Vantage 等候选源的用途、Key 要求、授权状态和复核清单。
+- `/api/admin/public-data-preview` 拉取 Stooq 日线和 GDELT 新闻样本，只做数据管线验证，不证明生产授权、交易效果或实盘可用。
 - `knowledge-distiller.js` 默认 `KNOWLEDGE_DISTILLER_PROVIDER=rule-based`，把课程笔记、讲义或转写稿拆成知识点草稿；生产环境仍需版权、教研、合规和幻觉检查。
 - 内容源台账支持 `course_note`、`video_transcript`、`ocr_text`，会记录授权状态、fallback 文本分段、OCR/对齐状态和人工审核要求。
 - `question-generator.js` 默认 `QUESTION_GENERATOR_PROVIDER=rule-based`，用确定性模板生成训练题草稿；生产环境仍需教研和合规审核后才能发布。

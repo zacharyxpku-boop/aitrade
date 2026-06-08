@@ -120,6 +120,8 @@ const nodes = {
   createReadinessTasks: document.querySelector("#createReadinessTasks"),
   readinessRemediationList: document.querySelector("#readinessRemediationList"),
   refreshDataSources: document.querySelector("#refreshDataSources"),
+  refreshPublicDataCandidates: document.querySelector("#refreshPublicDataCandidates"),
+  previewPublicData: document.querySelector("#previewPublicData"),
   refreshDatasetManifest: document.querySelector("#refreshDatasetManifest"),
   exportDatasetManifestMd: document.querySelector("#exportDatasetManifestMd"),
   refreshOpenSourceMap: document.querySelector("#refreshOpenSourceMap"),
@@ -841,10 +843,10 @@ function renderFeedback(feedback, nextTraining = null, courseProgressUpdates = s
   const habit = state.data.habit || {};
   const achievements = state.data.achievements || {};
   const courseProgressHtml = courseProgressUpdates.length
-    ? courseProgressUpdates.map((item) => `<span>Course progress: ${escapeHtml(item.coursePackageTitle)} ${item.progress?.percent ?? 0}% (${item.progress?.completedItems ?? 0}/${item.progress?.totalItems ?? 0})</span>`).join("")
-    : "<span>No course package progress linked to this drill.</span>";
+    ? courseProgressUpdates.map((item) => `<span>学习包进度：${escapeHtml(item.coursePackageTitle)} ${item.progress?.percent ?? 0}% (${item.progress?.completedItems ?? 0}/${item.progress?.totalItems ?? 0})</span>`).join("")
+    : "<span>这题暂未绑定学习包进度。</span>";
   const contextReviewHtml = feedback.contextReview
-    ? `<span>Context discipline ${feedback.contextReview.score}: ${escapeHtml(feedback.contextReview.summary)}</span>`
+    ? `<span>环境边界 ${feedback.contextReview.score}: ${escapeHtml(feedback.contextReview.summary)}</span>`
     : "";
   nodes.feedbackTitle.textContent = feedback.title;
   nodes.feedbackBody.textContent = feedback.body;
@@ -1010,11 +1012,11 @@ function renderBacktestClassroom(classroom = state.data.backtestClassroom) {
         <div class="attempt-row">
           <div>
             <strong>${escapeHtml(item.label || "general_practice")}</strong>
-            <span>${item.sampleSize ?? 0} sample(s) / win rate ${item.winRatePct ?? 0}% / expectancy ${item.expectancyR ?? 0}R / drawdown ${item.maxDrawdownR ?? 0}R</span>
-            <span>Average discipline: ${item.averageDiscipline ?? "not enough records"}</span>
+            <span>${item.sampleSize ?? 0} 条样本 / 做对比例 ${item.winRatePct ?? 0}% / 平均结果 ${item.expectancyR ?? 0}R / 最大回撤 ${item.maxDrawdownR ?? 0}R</span>
+            <span>平均纪律分：${item.averageDiscipline ?? "样本不足"}</span>
             ${(item.warnings || []).map((warning) => `<span>${escapeHtml(warning)}</span>`).join("")}
           </div>
-          <span class="tag warn">Pattern review</span>
+          <span class="tag warn">模式复盘</span>
         </div>
       `).join("")}
     `
@@ -1022,9 +1024,18 @@ function renderBacktestClassroom(classroom = state.data.backtestClassroom) {
   nodes.backtestClassroomPanel.innerHTML = `
     <div class="score-grid">
       <div><span>样本</span><strong>${metrics.sampleSize ?? 0}</strong></div>
-      <div><span>胜率</span><strong>${metrics.winRatePct ?? 0}%</strong></div>
-      <div><span>期望</span><strong>${metrics.expectancyR ?? 0}R</strong></div>
-      <div><span>回撤</span><strong>${metrics.maxDrawdownR ?? 0}R</strong></div>
+      <div><span>做对比例</span><strong>${metrics.winRatePct ?? 0}%</strong></div>
+      <div><span>平均结果</span><strong>${metrics.expectancyR ?? 0}R</strong></div>
+      <div><span>最大回落</span><strong>${metrics.maxDrawdownR ?? 0}R</strong></div>
+    </div>
+    <div class="attempt-row">
+      <div>
+        <strong>先用人话理解回测</strong>
+        <span>样本：只做了几次练习，太少就不能下结论。</span>
+        <span>做对比例：不是赚钱概率，只是这批练习里有多少次按规则做对。</span>
+        <span>平均结果和最大回落：只帮你检查纪律，不证明未来会怎样。</span>
+      </div>
+      <span class="tag warn">新手解释</span>
     </div>
     <div class="attempt-row">
       <div>
@@ -1038,7 +1049,7 @@ function renderBacktestClassroom(classroom = state.data.backtestClassroom) {
       <div>
         <strong>回测可信度：${escapeHtml(reliabilityAudit.grade || "unreviewed")}</strong>
         ${(reliabilityAudit.interpretation || []).map((item) => `<span>${escapeHtml(item)}</span>`).join("")}
-        ${(reliabilityAudit.riskFlags || []).slice(0, 4).map((item) => `<span>Risk flag: ${escapeHtml(item)}</span>`).join("")}
+        ${(reliabilityAudit.riskFlags || []).slice(0, 4).map((item) => `<span>风险提醒：${escapeHtml(item)}</span>`).join("")}
         <span>${escapeHtml(reliabilityAudit.constraints?.[1] || "Reliability is education evidence quality only, not a signal or strategy score.")}</span>
       </div>
       <span class="tag danger">不是策略评分</span>
@@ -1046,21 +1057,21 @@ function renderBacktestClassroom(classroom = state.data.backtestClassroom) {
     ${literacyBrief ? `
       <div class="attempt-row">
         <div>
-          <strong>Backtest literacy brief</strong>
-          <span>Sample ${literacyBrief.summary?.sampleSize || 0} / reliability ${escapeHtml(literacyBrief.summary?.reliabilityGrade || "unreviewed")} / risk flags ${literacyBrief.summary?.riskFlags || 0} / setup groups ${literacyBrief.summary?.setupGroups || 0}</span>
+          <strong>回测理解说明</strong>
+          <span>样本 ${literacyBrief.summary?.sampleSize || 0} / 可信度 ${escapeHtml(literacyBrief.summary?.reliabilityGrade || "未复核")} / 风险提醒 ${literacyBrief.summary?.riskFlags || 0} / 场景分组 ${literacyBrief.summary?.setupGroups || 0}</span>
           ${(literacyBrief.learnerBrief || []).slice(0, 3).map((item) => `<span>${escapeHtml(item)}</span>`).join("")}
           <div class="mini-list">${literacyRows}</div>
           <span>${escapeHtml(literacyBrief.constraints?.[2] || "Metrics are education diagnostics, not strategy proof.")}</span>
         </div>
-        <span class="tag warn">Metric literacy</span>
+        <span class="tag warn">指标识读</span>
       </div>
     ` : ""}
     <div class="attempt-row">
       <div>
         <strong>模拟假设</strong>
-        <span>${escapeHtml(assumptions.executionModel || "classroom replay")} / ${escapeHtml(assumptions.priceSource || "demo scenario candles")}</span>
-        <span>Fees ${friction.feesIncluded ? "included" : "excluded"} / spread ${friction.spreadIncluded ? "included" : "excluded"} / slippage ${friction.slippageIncluded ? "included" : "excluded"} / partial fills ${friction.partialFillsIncluded ? "included" : "excluded"}</span>
-        <span>Sample quality: ${escapeHtml(sampleModel.currentQuality || classroom.sampleQuality || "practice_sample_only")}; setup comparison needs ${sampleModel.minimumForSetupComparison ?? 20}+ records.</span>
+        <span>${escapeHtml(assumptions.executionModel || "课堂回放")} / ${escapeHtml(assumptions.priceSource || "演示场景K线")}</span>
+        <span>手续费 ${friction.feesIncluded ? "已考虑" : "未考虑"} / 点差 ${friction.spreadIncluded ? "已考虑" : "未考虑"} / 滑点 ${friction.slippageIncluded ? "已考虑" : "未考虑"} / 部分成交 ${friction.partialFillsIncluded ? "已考虑" : "未考虑"}</span>
+        <span>样本质量：${escapeHtml(sampleModel.currentQuality || classroom.sampleQuality || "仅练习样本")}; 对比同类结构至少需要 ${sampleModel.minimumForSetupComparison ?? 20}+ 条记录。</span>
         <span>${escapeHtml(contextModel.note || "News and sentiment are context boundaries, not trade permission.")}</span>
         <span>${escapeHtml(riskModel.note || "Risk metrics are classroom discipline checks, not real-money readiness.")}</span>
       </div>
@@ -3300,6 +3311,78 @@ async function refreshDataSources() {
     nodes.dataSourceStatus.textContent = `Data source governance requires admin login: ${error.message}`;
     nodes.dataSourceGrid.innerHTML = "";
     if (nodes.dataGovernanceQueue) nodes.dataGovernanceQueue.innerHTML = "";
+  }
+}
+
+async function refreshPublicDataCandidates() {
+  if (!nodes.dataSourceGrid || !nodes.dataSourceStatus) return;
+  try {
+    const result = await api("/api/admin/public-data-candidates");
+    nodes.dataSourceStatus.textContent = `公开数据候选源：${result.summary.total} 个，免 Key 预览 ${result.summary.noKeyPreview} 个；全部仍需授权/法务复核。`;
+    const rows = (result.sources || []).map((item) => `
+      <div class="attempt-row">
+        <div>
+          <strong>${escapeHtml(item.name)}</strong>
+          <span>${escapeHtml(item.type)} / ${escapeHtml(item.access)} / ${item.keyRequired ? "需要 API Key" : "免 Key 预览"}</span>
+          <span>${escapeHtml(item.useInProduct || "")}</span>
+          <span>授权状态：${escapeHtml(item.licenseStatus || "未复核")}</span>
+          <span>复核项：${(item.requiredReview || []).map(escapeHtml).join(" / ")}</span>
+        </div>
+        <span class="tag danger">${item.productionReady ? "ready" : "需复核"}</span>
+      </div>
+    `).join("");
+    nodes.dataSourceGrid.innerHTML = `
+      <div class="attempt-row ops-row">
+        <div>
+          <strong>公开数据不等于商业授权</strong>
+          ${(result.constraints || []).map((item) => `<span>${escapeHtml(item)}</span>`).join("")}
+        </div>
+        <span class="tag danger">productionReady:false</span>
+      </div>
+      ${rows}
+    `;
+  } catch (error) {
+    nodes.dataSourceStatus.textContent = `公开数据候选源检查失败：${escapeHtml(error.message)}`;
+  }
+}
+
+async function previewPublicData() {
+  if (!nodes.dataSourceGrid || !nodes.dataSourceStatus) return;
+  try {
+    nodes.dataSourceStatus.textContent = "正在拉取公开数据预览：Stooq 日线 + GDELT 新闻...";
+    const result = await api("/api/admin/public-data-preview?symbol=aapl.us&query=Apple%20market%20earnings");
+    const marketRows = (result.market?.rows || []).slice(-5).map((row) => `
+      <span>${escapeHtml(row.date)} O:${row.open} H:${row.high} L:${row.low} C:${row.close}</span>
+    `).join("");
+    const newsRows = (result.news?.articles || []).slice(0, 5).map((item) => `
+      <span>${escapeHtml(item.seenDate || "no-date")} / ${escapeHtml(item.domain || "unknown")} / ${escapeHtml(item.title || "untitled")}</span>
+    `).join("");
+    nodes.dataSourceStatus.textContent = `公开数据预览完成：${result.market?.rows?.length || 0} 条日线，${result.news?.articles?.length || 0} 条新闻；仍非生产授权数据。`;
+    nodes.dataSourceGrid.innerHTML = `
+      <div class="attempt-row">
+        <div>
+          <strong>Stooq 日线预览：${escapeHtml(result.market?.symbol || "aapl.us")}</strong>
+          <span>来源：${escapeHtml(result.market?.sourceUrl || "")}</span>
+          <span>授权状态：${escapeHtml(result.market?.licenseStatus || "未复核")}</span>
+          <span>拉取状态：${escapeHtml(result.market?.status || "unknown")}${result.market?.error ? ` / ${escapeHtml(result.market.error)}` : ""}</span>
+          ${marketRows || "<span>当前没有可展示的日线样本。</span>"}
+        </div>
+        <span class="tag danger">非生产授权</span>
+      </div>
+      <div class="attempt-row">
+        <div>
+          <strong>GDELT 新闻预览：${escapeHtml(result.news?.query || "")}</strong>
+          <span>来源：${escapeHtml(result.news?.sourceUrl || "")}</span>
+          <span>授权状态：${escapeHtml(result.news?.licenseStatus || "未复核")}</span>
+          <span>拉取状态：${escapeHtml(result.news?.status || "unknown")}${result.news?.error ? ` / ${escapeHtml(result.news.error)}` : ""}</span>
+          ${newsRows || "<span>当前没有可展示的新闻样本。</span>"}
+        </div>
+        <span class="tag danger">需版权复核</span>
+      </div>
+      <p class="muted-note">${escapeHtml(result.constraints?.[0] || "公开数据预览只用于管线验证，不证明商业授权。")}</p>
+    `;
+  } catch (error) {
+    nodes.dataSourceStatus.textContent = `公开数据预览失败：${escapeHtml(error.message)}。候选源仍可用于后续授权评估。`;
   }
 }
 
@@ -7577,7 +7660,7 @@ async function submitFriendTrialFeedback() {
     });
     state.data.supportTickets = result.tickets || [result.ticket];
     renderSupportTickets(state.data.supportTickets);
-    nodes.friendFeedbackStatus.textContent = "已提交。谢谢，下一步我们会优先看哪里卡住、哪里有帮助。";
+    nodes.friendFeedbackStatus.textContent = "已提交。下一步建议：回到训练再做一题，重点观察刚才卡住的环节；我们会优先看哪里不清楚、哪里有帮助。";
   } catch (error) {
     nodes.friendFeedbackStatus.textContent = `提交失败：${escapeHtml(error.message)}`;
   } finally {
@@ -8220,6 +8303,8 @@ function bindEvents() {
     updateReadinessTask(button.dataset.readinessTaskId, button.dataset.readinessTaskStatus);
   });
   nodes.refreshDataSources?.addEventListener("click", refreshDataSources);
+  nodes.refreshPublicDataCandidates?.addEventListener("click", refreshPublicDataCandidates);
+  nodes.previewPublicData?.addEventListener("click", previewPublicData);
   nodes.refreshTeachingEvolutionLab?.addEventListener("click", refreshTeachingEvolutionLab);
   nodes.refreshDatasetManifest?.addEventListener("click", refreshDatasetManifest);
   nodes.exportDatasetManifestMd?.addEventListener("click", () => exportDatasetManifest("md"));

@@ -9,6 +9,7 @@ const { buildLearningPath } = require("./learning-path-engine");
 const marketDataProvider = require("./market-data-provider");
 const newsProvider = require("./news-provider");
 const paymentProvider = require("./payment-provider");
+const { publicDataCandidateManifest } = require("./public-data-sources");
 const questionGenerator = require("./question-generator");
 const { readDb, writeDb } = require("./storage");
 const {
@@ -15271,6 +15272,57 @@ async function handleApi(req, res, pathname) {
   if (req.method === "GET" && pathname === "/api/admin/data-sources") {
     if (!requireAdmin(res, session)) return;
     sendJson(res, 200, dataSourceGovernance(db));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/admin/public-data-candidates") {
+    if (!requireAdmin(res, session)) return;
+    sendJson(res, 200, publicDataCandidateManifest());
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/admin/public-data-preview") {
+    if (!requireAdmin(res, session)) return;
+    const url = new URL(req.url, `http://${req.headers.host || "localhost"}`);
+    const symbol = String(url.searchParams.get("symbol") || "aapl.us").trim();
+    const query = String(url.searchParams.get("query") || symbol || "market volatility").trim();
+    const [marketResult, newsResult] = await Promise.allSettled([
+      marketDataProvider.getPublicDailyCandles({ symbol, limit: 60 }),
+      newsProvider.getPublicNewsEvents({ query, maxRecords: 5 }),
+    ]);
+    const market = marketResult.status === "fulfilled"
+      ? { status: "available", ...marketResult.value }
+      : {
+          status: "blocked",
+          provider: "stooq_daily_csv",
+          providerMode: "public-preview",
+          error: marketResult.reason?.message || "Market preview failed",
+          productionReady: false,
+          educationOnly: true,
+        };
+    const news = newsResult.status === "fulfilled"
+      ? { status: "available", ...newsResult.value }
+      : {
+          status: "blocked",
+          provider: "gdelt_doc_api",
+          providerMode: "public-preview",
+          error: newsResult.reason?.message || "News preview failed",
+          productionReady: false,
+          educationOnly: true,
+        };
+    sendJson(res, 200, {
+      generatedAt: new Date().toISOString(),
+      market,
+      news,
+      manifest: publicDataCandidateManifest(),
+      educationOnly: true,
+      productionReady: false,
+      constraints: [
+        "This preview tests public data ingestion only; it does not prove commercial licensing or production readiness.",
+        "Keep source labels visible and complete legal/provider review before learner-facing historical datasets use these sources.",
+        "Preview data must not become stock recommendations, live signals, return promises, broker actions, auto-trading inputs, or real-money instructions.",
+      ],
+    });
     return;
   }
 

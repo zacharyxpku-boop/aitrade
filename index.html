@@ -142,7 +142,7 @@
               <p>你要看的不是“策略赚不赚钱”，而是这个流程能不能帮你练清楚：看到什么、为什么判断、错了怎么复盘、下次怎么改。</p>
               <div class="hero-actions">
                 <button id="friendStartLogin" type="button">一键进入试用</button>
-                <button type="button" data-jump="trainer">开始训练</button>
+                <button type="button" data-jump="trainer">从教学导入开始</button>
               <button type="button" data-jump="replay">回放/回测误区</button>
               <button type="button" data-jump="community">提交反馈</button>
               </div>
@@ -151,6 +151,8 @@
               <strong>试用路径</strong>
               <ol class="clean-list">
                 <li>一键进入试用</li>
+                <li>先看教学导入</li>
+                <li>按多周期读图</li>
                 <li>做一题 K 线训练</li>
                 <li>看教学回放，不偷看未来</li>
                 <li>读 AI 复盘，只看学习反馈</li>
@@ -158,6 +160,28 @@
                 <li>提交一句试用反馈</li>
               </ol>
                 <p class="muted-note">当前默认是本地演示 AI 和演示行情/新闻/情绪；没有 API Key 时不会调用真实大模型。</p>
+            </div>
+          </section>
+          <section class="panel trial-fit-panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">适合谁</p>
+                <h3>不是教你下单，是教你复盘自己的判断</h3>
+              </div>
+            </div>
+            <div class="grid three trial-fit-grid">
+              <div>
+                <strong>适合</strong>
+                <p>刚开始学看K线、经常凭感觉追、亏了说不清原因的人。</p>
+              </div>
+              <div>
+                <strong>3次训练后带走</strong>
+                <p>会按“背景、结构、执行、风险、情绪干扰”写一段完整复盘。</p>
+              </div>
+              <div>
+                <strong>不适合</strong>
+                <p>想要荐股、实盘买卖点、收益承诺或自动交易的人。</p>
+              </div>
             </div>
           </section>
           <section class="panel">
@@ -734,6 +758,8 @@
               </div>
               <div class="billing-actions">
                 <button id="refreshDataSources" type="button">Refresh data sources</button>
+                <button id="refreshPublicDataCandidates" type="button">Public candidates</button>
+                <button id="previewPublicData" type="button">Preview public data</button>
                 <button id="refreshDatasetManifest" type="button">Dataset manifest</button>
                 <button id="exportDatasetManifestMd" type="button">Dataset MD</button>
                 <button id="refreshOpenSourceMap" type="button">Open-source map</button>
