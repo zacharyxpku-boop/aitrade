@@ -479,7 +479,8 @@ GET  /api/billing/subscription     当前用户订阅状态
 - 训练提交会记录 provider、promptVersion、moderationStatus、输入/输出合规审核结果。
 - 运营后台显示 AI provider 状态、fallback 模式和待人工复核数量。
 - 管理员可通过 `/api/admin/review-queue` 查看待复核 AI 输出。
-- 后续接 OpenAI / Claude / 自研模型时，只需要替换 provider 层，业务 API 不变。
+- 已支持可选 `AI_COACH_PROVIDER=openai|anthropic` adapter；没有 `AI_COACH_API_KEY`、请求失败、JSON 不可用或输出触发合规拦截时，会自动回退到本地教育反馈。
+- 外部 LLM 只能输出学习过程反馈，不能输出荐股、实盘买卖建议、收益承诺、券商接入、自动交易或真实资金指导；业务 API 保持不变，`productionReady` 仍为 false。
 
 当前生产化配置：
 

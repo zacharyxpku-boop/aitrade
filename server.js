@@ -17174,12 +17174,12 @@ async function handleApi(req, res, pathname) {
       return;
     }
 
-    const feedback = generateTrainingFeedback({ scenario, selectedIndex, plan: body.plan || "" });
+    const feedback = await generateTrainingFeedback({ scenario, selectedIndex, plan: body.plan || "" });
     const contextReview = assessContextDiscipline({ scenario, plan: body.plan || "" });
     feedback.scores[1] = contextReview.score;
     feedback.tags = [...new Set([...(feedback.tags || []), ...contextReview.tags])];
     feedback.contextReview = contextReview;
-    feedback.body = `${feedback.body} Context discipline: ${contextReview.summary}`;
+    feedback.body = `${feedback.body} 环境边界：${contextReview.summary}`;
     const attempt = {
       id: crypto.randomUUID(),
       userId: session.userId,

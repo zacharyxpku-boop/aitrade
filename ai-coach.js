@@ -2,6 +2,8 @@ const { config } = require("./config");
 
 const PROVIDER = config.aiCoach.provider;
 const PROMPT_VERSION = "tradegym-coach-v1";
+const DEFAULT_OPENAI_MODEL = "gpt-4o-mini";
+const DEFAULT_ANTHROPIC_MODEL = "claude-3-5-haiku-latest";
 
 const bannedTerms = ["买入", "卖出", "梭哈", "稳赚", "保证收益", "荐股", "跟单", "实盘信号"];
 
@@ -38,7 +40,7 @@ function diagnosePlanGap({ correct, plan }) {
   return gaps[0] || "这次主要做对的是：先写过程，再写动作，没有把单根K线当成全部依据。";
 }
 
-function generateTrainingFeedback({ scenario, selectedIndex, plan }) {
+function buildRuleBasedTrainingFeedback({ scenario, selectedIndex, plan, fallbackReason = "" }) {
   const correct = selectedIndex === scenario.answer;
   const planScore = scorePlan(plan);
   const inputReview = reviewCompliance(plan);
@@ -73,7 +75,118 @@ function generateTrainingFeedback({ scenario, selectedIndex, plan }) {
       input: inputReview,
       output: outputReview,
     },
+    fallbackReason,
   };
+}
+
+function coachPrompt({ scenario, selectedIndex, plan }) {
+  return [
+    "你是 AI 交易教育训练场的复盘教练，只能做教育反馈。",
+    "禁止荐股、禁止实盘买卖建议、禁止收益承诺、禁止券商/真实资金/自动交易指导。",
+    "只评价学习过程：结构、失效条件、风险边界、新闻情绪是否被误当依据。",
+    "请输出 JSON，字段为 title, body, tags, nextPath。",
+    `题目：${scenario.title}`,
+    `问题：${scenario.question}`,
+    `用户选择：${scenario.options[selectedIndex] || ""}`,
+    `标准训练选项：${scenario.options[scenario.answer] || ""}`,
+    `用户计划：${plan || "未填写"}`,
+    `场景技术背景：${scenario.technical || ""}`,
+    `新闻背景：${scenario.news || ""}`,
+    `情绪背景：${scenario.sentiment || ""}`,
+  ].join("\n");
+}
+
+function safeParseJson(text) {
+  const source = String(text || "").trim();
+  try {
+    return JSON.parse(source);
+  } catch {
+    const match = source.match(/\{[\s\S]*\}/);
+    return match ? JSON.parse(match[0]) : null;
+  }
+}
+
+async function callOpenAiCoach(prompt) {
+  const response = await fetch("https://api.openai.com/v1/chat/completions", {
+    method: "POST",
+    headers: {
+      "content-type": "application/json",
+      authorization: `Bearer ${config.aiCoach.apiKey}`,
+    },
+    body: JSON.stringify({
+      model: config.aiCoach.model || DEFAULT_OPENAI_MODEL,
+      temperature: 0.2,
+      response_format: { type: "json_object" },
+      messages: [
+        { role: "system", content: "You are an education-only trading learning coach. Return strict JSON only." },
+        { role: "user", content: prompt },
+      ],
+    }),
+  });
+  if (!response.ok) throw new Error(`OpenAI coach request failed: ${response.status}`);
+  const payload = await response.json();
+  return payload.choices?.[0]?.message?.content || "";
+}
+
+async function callAnthropicCoach(prompt) {
+  const response = await fetch("https://api.anthropic.com/v1/messages", {
+    method: "POST",
+    headers: {
+      "content-type": "application/json",
+      "x-api-key": config.aiCoach.apiKey,
+      "anthropic-version": "2023-06-01",
+    },
+    body: JSON.stringify({
+      model: config.aiCoach.model || DEFAULT_ANTHROPIC_MODEL,
+      max_tokens: 500,
+      temperature: 0.2,
+      system: "You are an education-only trading learning coach. Return strict JSON only.",
+      messages: [{ role: "user", content: prompt }],
+    }),
+  });
+  if (!response.ok) throw new Error(`Anthropic coach request failed: ${response.status}`);
+  const payload = await response.json();
+  return (payload.content || []).map((item) => item.text || "").join("\n");
+}
+
+async function generateTrainingFeedback({ scenario, selectedIndex, plan }) {
+  const base = buildRuleBasedTrainingFeedback({ scenario, selectedIndex, plan });
+  if (PROVIDER === "mock") return base;
+  if (!["openai", "anthropic"].includes(PROVIDER)) {
+    return buildRuleBasedTrainingFeedback({ scenario, selectedIndex, plan, fallbackReason: `Unsupported provider: ${PROVIDER}` });
+  }
+  if (!config.aiCoach.apiKey) {
+    return buildRuleBasedTrainingFeedback({ scenario, selectedIndex, plan, fallbackReason: `${PROVIDER} API key missing; used local education fallback.` });
+  }
+  try {
+    const raw = PROVIDER === "openai"
+      ? await callOpenAiCoach(coachPrompt({ scenario, selectedIndex, plan }))
+      : await callAnthropicCoach(coachPrompt({ scenario, selectedIndex, plan }));
+    const parsed = safeParseJson(raw);
+    if (!parsed?.body) throw new Error("External coach did not return usable JSON body");
+    const body = String(parsed.body || "").slice(0, 1200);
+    const outputReview = reviewCompliance(`${parsed.title || ""} ${body} ${(parsed.tags || []).join(" ")} ${parsed.nextPath || ""}`);
+    if (!outputReview.passed) {
+      return buildRuleBasedTrainingFeedback({ scenario, selectedIndex, plan, fallbackReason: `External output blocked: ${outputReview.hits.join("、")}` });
+    }
+    return {
+      ...base,
+      provider: PROVIDER,
+      promptVersion: PROMPT_VERSION,
+      title: String(parsed.title || base.title).slice(0, 120),
+      body,
+      tags: Array.isArray(parsed.tags) && parsed.tags.length ? parsed.tags.map(String).slice(0, 6) : base.tags,
+      nextPath: String(parsed.nextPath || base.nextPath).slice(0, 400),
+      moderationStatus: base.complianceReview.input.passed ? "approved" : "needs_review",
+      complianceReview: {
+        input: base.complianceReview.input,
+        output: outputReview,
+      },
+      externalProviderUsed: true,
+    };
+  } catch (error) {
+    return buildRuleBasedTrainingFeedback({ scenario, selectedIndex, plan, fallbackReason: error.message || "External coach failed; used local education fallback." });
+  }
 }
 
 function replayTagsForReview(review) {
@@ -81,10 +194,14 @@ function replayTagsForReview(review) {
 }
 
 function providerStatus() {
+  const externalConfigured = ["openai", "anthropic"].includes(PROVIDER) && Boolean(config.aiCoach.apiKey);
   return {
     provider: PROVIDER,
     promptVersion: PROMPT_VERSION,
-    mode: PROVIDER === "mock" ? "fallback" : "external",
+    mode: externalConfigured ? "external" : "fallback",
+    model: config.aiCoach.model || (PROVIDER === "anthropic" ? DEFAULT_ANTHROPIC_MODEL : PROVIDER === "openai" ? DEFAULT_OPENAI_MODEL : "local-rule-based"),
+    apiKeyConfigured: Boolean(config.aiCoach.apiKey),
+    productionReady: false,
   };
 }
 

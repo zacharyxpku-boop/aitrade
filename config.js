@@ -30,6 +30,8 @@ const config = {
   },
   aiCoach: {
     provider: env("AI_COACH_PROVIDER", "mock"),
+    apiKey: env("AI_COACH_API_KEY", ""),
+    model: env("AI_COACH_MODEL", ""),
   },
   email: {
     provider: env("EMAIL_PROVIDER", "local"),
