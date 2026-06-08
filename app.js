@@ -9,6 +9,11 @@
   data: null,
   trialAccessPending: false,
   trialAccessPromise: null,
+  lastCompletedTraining: null,
+  lastTrainingDiagnosis: null,
+  coachDetailsExpanded: false,
+  teachingDetailsExpanded: false,
+  selectedLearnerTrack: "beginner",
 };
 
 const nodes = {
@@ -26,6 +31,7 @@ const nodes = {
   symbolLabel: document.querySelector("#symbolLabel"),
   timeframeLabel: document.querySelector("#timeframeLabel"),
   chart: document.querySelector("#candleChart"),
+  trainingLevelPanel: document.querySelector("#trainingLevelPanel"),
   teachingIntroPanel: document.querySelector("#teachingIntroPanel"),
   multiTimeframePanel: document.querySelector("#multiTimeframePanel"),
   technicalContext: document.querySelector("#technicalContext"),
@@ -359,6 +365,48 @@ const viewMeta = {
   ops: ["管理员", "试用检查台"],
 };
 
+function trialFlowState() {
+  return window.TradeGymTrialFlow.stateFrom({
+    view: state.view,
+    attempts: state.data?.attempts || [],
+    replayNotes: state.data?.replayNotes || [],
+    paperTrades: state.data?.paperTrades || [],
+  });
+}
+
+function renderTrialFlowGuide() {
+  const workspace = document.querySelector(".workspace");
+  const topbar = document.querySelector(".topbar");
+  if (!workspace || !topbar) return;
+  let guide = document.querySelector("#trialFlowGuide");
+  if (!guide) {
+    guide = document.createElement("section");
+    guide.id = "trialFlowGuide";
+    guide.className = "trial-flow-guide";
+    topbar.insertAdjacentElement("afterend", guide);
+  }
+  const flow = trialFlowState();
+  const flowSteps = flow.steps || window.TradeGymTrialFlow.steps || [];
+  const currentStep = flowSteps[flow.currentIndex] || flowSteps[0];
+  guide.innerHTML = `
+    <div class="trial-flow-summary">
+      <strong>当前步骤：${escapeHtml(currentStep.label)}</strong>
+      <span>${escapeHtml(currentStep.hint)}</span>
+    </div>
+    <div class="trial-flow-steps" role="list" aria-label="学习流程">
+      ${flowSteps.map((step, index) => {
+        const status = flow.completedKeys.has(step.key) ? "done" : index === flow.currentIndex ? "current" : "next";
+        return `
+          <button type="button" role="listitem" class="trial-flow-step is-${status}" data-jump="${escapeHtml(step.view)}" title="${escapeHtml(step.hint)}">
+            <span>${index + 1}</span>
+            <b>${escapeHtml(step.label)}</b>
+          </button>
+        `;
+      }).join("")}
+    </div>
+  `;
+}
+
 async function api(path, options = {}) {
   const response = await fetch(path, {
     ...options,
@@ -434,9 +482,61 @@ function setView(view) {
   const [eyebrow, title] = viewMeta[view];
   nodes.viewEyebrow.textContent = eyebrow;
   nodes.viewTitle.textContent = title;
+  renderTrialFlowGuide();
+  renderCoachCompactMode();
   if (view === "ops" && state.data?.session?.role === "admin") {
     renderOps();
   }
+}
+
+function renderCoachCompactMode() {
+  const coachView = document.querySelector("#coachView");
+  if (!coachView) return;
+  coachView.classList.toggle("coach-compact", !state.coachDetailsExpanded);
+  renderCoachSharpDiagnosis(coachView);
+  let toggle = document.querySelector("#coachDetailsToggle");
+  const anchor = coachView.querySelector(".grid.two");
+  if (!toggle && anchor) {
+    toggle = document.createElement("div");
+    toggle.id = "coachDetailsToggle";
+    toggle.className = "coach-details-toggle";
+    anchor.insertAdjacentElement("afterend", toggle);
+  }
+  if (!toggle) return;
+  toggle.innerHTML = `
+    <div>
+      <strong>${state.coachDetailsExpanded ? "详细学习档案已展开" : "默认只看 AI 复盘重点"}</strong>
+      <span>${state.coachDetailsExpanded ? "下面是完整学习记录、报告和支持入口。" : "试用时先看错因和下一步；学习记录、报告和支持入口先折叠，避免信息过载。"}</span>
+    </div>
+    <button type="button" data-coach-details-toggle>${state.coachDetailsExpanded ? "收起详细档案" : "展开详细学习档案"}</button>
+  `;
+}
+
+function renderCoachSharpDiagnosis(coachView) {
+  const anchor = coachView.querySelector(".grid.two");
+  if (!anchor) return;
+  let panel = document.querySelector("#coachSharpDiagnosis");
+  if (!panel) {
+    panel = document.createElement("section");
+    panel.id = "coachSharpDiagnosis";
+    panel.className = "panel sharp-diagnosis-card";
+    anchor.insertAdjacentElement("beforebegin", panel);
+  }
+  const diagnosis = state.lastTrainingDiagnosis;
+  if (!diagnosis) {
+    panel.innerHTML = `
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">AI 复盘重点</p>
+          <h3>先完成一题，系统会抓你的具体错因。</h3>
+        </div>
+        <span class="tag warn">教育反馈</span>
+      </div>
+      <p class="muted-note">这里不会评价策略收益，只会检查偷看未来、理由空泛、缺少失效条件、把情绪当理由等学习过程问题。</p>
+    `;
+    return;
+  }
+  panel.innerHTML = sharpDiagnosisHtml(diagnosis, "AI 复盘重点");
 }
 
 function currentScenario() {
@@ -444,6 +544,7 @@ function currentScenario() {
 }
 
 function renderAll() {
+  renderTrialFlowGuide();
   renderModules();
   refreshCourseCatalog();
   renderTrainer();
@@ -557,43 +658,140 @@ function renderTrainer() {
   nodes.planInput.value = "";
   nodes.feedbackPanel.hidden = true;
   if (nodes.trainingResultActions) nodes.trainingResultActions.innerHTML = "";
+  renderTrainingFocusRail();
+  renderTrainingLevelPanel(lesson);
   renderTeachingIntro(lesson);
   renderOptions(lesson);
-  renderCandles(nodes.chart, lesson.candles, { annotations: buildChartAnnotations(lesson.candles) });
+  const chartGuide = buildChartGuide(lesson.candles);
+  renderCandles(nodes.chart, lesson.candles, {
+    annotations: chartGuide.annotations,
+    callouts: chartGuide.callouts,
+    hiddenFutureCount: chartGuide.hiddenFutureCount,
+  });
+  renderChartReadingGuide(chartGuide);
   renderMultiTimeframePanel(lesson);
   renderContextTimeline(lesson);
+}
+
+function trainingFocusStage() {
+  return trainingFlowState().key;
+}
+
+function trainingFlowState() {
+  if (window.TradeGymTrainingFlow?.stageFrom) {
+    return window.TradeGymTrainingFlow.stageFrom({
+      feedbackVisible: !nodes.feedbackPanel?.hidden,
+      selected: state.selected,
+      plan: nodes.planInput?.value || "",
+    });
+  }
+  const key = !nodes.feedbackPanel?.hidden
+    ? "review"
+    : state.selected != null && nodes.planInput?.value.trim()
+      ? "submit"
+      : state.selected != null
+        ? "write"
+        : "read";
+  const steps = [
+    { key: "read", label: "先读图", text: "只看结构、前高、失效位和隐藏未来。", target: "#multiTimeframePanel" },
+    { key: "choose", label: "再选择", text: "选择不是买卖建议，只是课堂判断。", target: "#multiTimeframePanel" },
+    { key: "write", label: "写证据", text: "按“看到什么→怎么判断→哪里认错→不做什么”写。", target: "#decisionArea" },
+    { key: "review", label: "看错因", text: "提交后只看最大问题和下一步练习。", target: "#feedbackPanel" },
+  ];
+  return {
+    key,
+    activeIndex: key === "read" ? 0 : key === "write" || key === "submit" ? 2 : 3,
+    summary: key === "read" ? "先别急着选答案，先把图看懂。" : key === "write" ? "已经选择了，现在把理由写成可复盘证据。" : key === "submit" ? "补齐证据后提交，AI 只评价学习过程。" : "看这次最大问题，然后去回放同一题。",
+    steps,
+    educationOnly: true,
+    productionReady: false,
+  };
+}
+
+function renderTrainingFocusRail() {
+  const mainCard = document.querySelector("#trainerView .main-card");
+  const anchor = document.querySelector("#trainerView .section-head");
+  if (!mainCard || !anchor) return;
+  let rail = document.querySelector("#trainingFocusRail");
+  if (!rail) {
+    rail = document.createElement("section");
+    rail.id = "trainingFocusRail";
+    rail.className = "training-focus-rail";
+    anchor.insertAdjacentElement("afterend", rail);
+  }
+  const flow = trainingFlowState();
+  rail.innerHTML = `
+    <div>
+      <strong>本题只按 4 步走</strong>
+      <span>${escapeHtml(flow.summary)}</span>
+    </div>
+    <div class="training-focus-steps">
+      ${flow.steps.map((item, index) => `
+        <button type="button" class="${index === flow.activeIndex ? "is-current" : index < flow.activeIndex ? "is-done" : ""}" data-scroll-target="${escapeHtml(item.target)}">
+          <b>${index + 1}</b>
+          <span>${escapeHtml(item.label)}</span>
+          <small>${escapeHtml(item.text)}</small>
+        </button>
+      `).join("")}
+    </div>
+  `;
 }
 
 function renderTeachingIntro(lesson) {
   if (!nodes.teachingIntroPanel) return;
   const focus = lesson.tag || "价格行为训练";
   const timeframe = lesson.timeframe || "当前周期";
+  nodes.teachingIntroPanel.classList.toggle("is-expanded", state.teachingDetailsExpanded);
   nodes.teachingIntroPanel.innerHTML = `
     <div class="teaching-intro-head">
       <div>
         <p class="eyebrow">教学导入</p>
-        <h4>今天先学会怎么读图，再做题。</h4>
+        <h4>先看 1 个目标和 1 个好答案格式，再做题。</h4>
       </div>
-      <span class="tag warn">不是荐股</span>
+      <div class="teaching-head-actions">
+        <span class="tag warn">不是荐股</span>
+        <button type="button" data-teaching-details-toggle>${state.teachingDetailsExpanded ? "收起讲课细节" : "展开例子/反例"}</button>
+      </div>
     </div>
     <div class="teaching-goal">
       <strong>今天练：${escapeHtml(focus)}</strong>
       <span>目标不是猜涨跌，而是写清楚结构、失效条件、仓位边界和环境干扰。</span>
     </div>
-    <ol class="teaching-steps">
-      <li><strong>先看大背景</strong><span>高周期只回答“现在大概处在什么环境”，不要直接得出买卖结论。</span></li>
-      <li><strong>再看中周期结构</strong><span>找区间、前高前低、突破是否失效，先知道错了在哪里认错。</span></li>
-      <li><strong>最后看 ${escapeHtml(timeframe)}</strong><span>执行周期只用来写训练动作：做、不做、等待，和对应的止损或观望条件。</span></li>
-      <li><strong>新闻和情绪只当背景</strong><span>它们训练你识别偏见和事件风险，不是买卖信号。</span></li>
-    </ol>
     <div class="answer-coach">
       <div>
         <strong>好答案长这样</strong>
-        <span>我看到前高附近回落，先承认突破假设可能失效；如果重新站回关键区间再复盘，否则等待新结构。新闻和情绪只记录为背景。</span>
+        <span>我看到前高附近回落，所以先承认突破假设可能失效；如果重新站回关键区间再复盘，否则等待新结构。新闻和情绪只记录为背景。</span>
       </div>
-      <div>
-        <strong>坏答案长这样</strong>
-        <span>感觉会继续走，先冲进去再说。没有结构、没有失效条件，也没有说明消息和情绪是不是干扰。</span>
+    </div>
+    <div class="teaching-detail-stack">
+      <div class="teaching-mini-lesson">
+        <div>
+          <strong>先讲一个例子</strong>
+          <span>如果价格冲过前高又跌回区间，你不能只写“突破了”。更好的读法是：突破假设变弱，我要先找失效位，等重新站回或出现新结构。</span>
+        </div>
+        <div>
+          <strong>这题要抓的常见误判</strong>
+          <span>看到一根大阳线就追、把热闹新闻当理由、没有写错了在哪里认错、回放时用未来走势倒推答案。</span>
+        </div>
+      </div>
+      <ol class="teaching-steps">
+        <li><strong>先看大背景</strong><span>高周期只回答“现在大概处在什么环境”，不要直接得出买卖结论。</span></li>
+        <li><strong>再看中周期结构</strong><span>找区间、前高前低、突破是否失效，先知道错了在哪里认错。</span></li>
+        <li><strong>最后看 ${escapeHtml(timeframe)}</strong><span>执行周期只用来写训练动作：做、不做、等待，和对应的止损或观望条件。</span></li>
+        <li><strong>新闻和情绪只当背景</strong><span>它们训练你识别偏见和事件风险，不是买卖信号。</span></li>
+      </ol>
+      <div class="answer-coach">
+        <div>
+          <strong>坏答案长这样</strong>
+          <span>感觉会继续走，先冲进去再说。没有结构、没有失效条件，也没有说明消息和情绪是不是干扰。</span>
+        </div>
+      </div>
+      <div class="teaching-checklist">
+        <strong>作答前检查 4 句话</strong>
+        <span>我看到什么结构？</span>
+        <span>哪一根或哪一段说明我可能错了？</span>
+        <span>我现在不做什么？</span>
+        <span>新闻/情绪只是背景，还是被我当成理由了？</span>
       </div>
     </div>
     <div class="teaching-intro-actions">
@@ -615,9 +813,21 @@ function renderOptions(lesson) {
       state.selected = index;
       document.querySelectorAll(".option-btn").forEach((item) => item.setAttribute("aria-pressed", "false"));
       button.setAttribute("aria-pressed", "true");
+      renderTrainingFocusRail();
     });
     nodes.options.appendChild(button);
   });
+}
+
+function trainingPlanExample(lesson = currentScenario()) {
+  const symbol = lesson?.symbol || "当前标的";
+  const timeframe = lesson?.timeframe || "当前周期";
+  return [
+    `我看到 ${symbol} ${timeframe} 正在前高/区间附近，需要先确认有没有跌回区间。`,
+    "我的课堂判断是：先按结构写证据，不把单根K线、新闻热度或情绪当成行动理由。",
+    "如果价格重新跌回区间，或者我找不到清楚的失效位，就承认这次判断不成立。",
+    "我现在不做真实交易动作，只记录这是教育训练答案，下一步去同题回放检查有没有偷看未来。",
+  ].join("\n");
 }
 
 function renderCandles(target, candles, options = {}) {
@@ -636,6 +846,9 @@ function renderCandles(target, candles, options = {}) {
     const y = padding + index * ((height - padding * 2) / 4);
     return `<line x1="${padding}" x2="${width - padding}" y1="${y}" y2="${y}" stroke="#e5e9e1" />`;
   }).join("");
+  const hiddenFutureCount = Math.max(0, Math.min(options.hiddenFutureCount || 0, candles.length - 1));
+  const visibleCount = candles.length - hiddenFutureCount;
+  const hiddenStartX = padding + visibleCount * step;
   const bars = candles
     .map(([open, high, low, close], index) => {
       const x = padding + index * step + step / 2;
@@ -658,41 +871,377 @@ function renderCandles(target, candles, options = {}) {
       const dash = annotation.dash ? `stroke-dasharray="${annotation.dash}"` : "";
       return `
         <line x1="${padding}" x2="${width - padding}" y1="${y}" y2="${y}" stroke="${annotation.color}" stroke-width="1.5" ${dash} />
-        <text x="${padding + 8}" y="${Math.max(14, y - 6)}" fill="${annotation.color}" font-size="${options.annotationFontSize || 13}" font-weight="700">${annotation.label}</text>
+        <text x="${padding + 8}" y="${Math.max(14, y - 6)}" fill="${annotation.color}" font-size="${options.annotationFontSize || 13}" font-weight="700">${escapeHtml(annotation.label)}</text>
       `;
     })
     .join("");
-  const futureLabel = options.annotations?.length
-    ? `<text x="${width - padding - 72}" y="${padding - 8}" fill="#687166" font-size="13" font-weight="700">未来隐藏</text>`
+  const callouts = (options.callouts || [])
+    .map((callout) => {
+      const index = Math.max(0, Math.min(candles.length - 1, callout.index ?? 0));
+      const x = padding + index * step + step / 2;
+      const y = scaleY(callout.value);
+      const labelY = Math.max(26, y - 24);
+      return `
+        <circle cx="${x}" cy="${y}" r="4.5" fill="${callout.color}" stroke="#fff" stroke-width="2" />
+        <line x1="${x}" x2="${x + 34}" y1="${y - 6}" y2="${labelY}" stroke="${callout.color}" stroke-width="1.4" />
+        <rect x="${Math.min(width - 176, x + 38)}" y="${labelY - 16}" width="138" height="24" rx="5" fill="#fffdf4" stroke="${callout.color}" />
+        <text x="${Math.min(width - 168, x + 46)}" y="${labelY}" fill="${callout.color}" font-size="12" font-weight="700">${escapeHtml(callout.label)}</text>
+      `;
+    })
+    .join("");
+  const futureMask = hiddenFutureCount
+    ? `
+      <rect x="${hiddenStartX}" y="${padding}" width="${width - padding - hiddenStartX}" height="${height - padding * 2}" rx="8" fill="#f4efe2" opacity="0.86" />
+      <line x1="${hiddenStartX}" x2="${hiddenStartX}" y1="${padding}" y2="${height - padding}" stroke="#8b6f22" stroke-width="1.5" stroke-dasharray="5 5" />
+      <text x="${hiddenStartX + 10}" y="${padding + 24}" fill="#6f5a1f" font-size="13" font-weight="800">隐藏未来</text>
+      <text x="${hiddenStartX + 10}" y="${padding + 44}" fill="#6f5a1f" font-size="12">先按左侧已知K线作答</text>
+    `
     : "";
   target.setAttribute("viewBox", `0 0 ${width} ${height}`);
-  target.innerHTML = `${grid}${annotations}${bars}${futureLabel}`;
+  target.innerHTML = `${grid}${annotations}${bars}${callouts}${futureMask}`;
 }
 
-function buildChartAnnotations(candles = []) {
+function buildChartGuide(candles = []) {
   if (!Array.isArray(candles) || candles.length < 6) return [];
-  const priorCandles = candles.slice(0, Math.max(2, candles.length - 3));
+  const hiddenFutureCount = Math.min(3, Math.max(1, Math.floor(candles.length / 5)));
+  const visibleCandles = candles.slice(0, candles.length - hiddenFutureCount);
+  const priorCandles = visibleCandles.slice(0, Math.max(2, visibleCandles.length - 3));
+  const pullbackWindow = visibleCandles.slice(-4);
   const recentCandles = candles.slice(-6);
   const priorHigh = Math.max(...priorCandles.map((item) => item[1]));
+  const pullbackLow = Math.min(...pullbackWindow.map((item) => item[2]));
   const invalidationZone = Math.min(...recentCandles.map((item) => item[2]));
-  const lastClose = candles[candles.length - 1][3];
-  return [
-    { value: priorHigh, label: "前高/结构压力", color: "#8b6f22", dash: "5 5" },
-    { value: lastClose, label: "当前收盘", color: "#1f6f50" },
-    { value: invalidationZone, label: "失效观察区", color: "#b7473f", dash: "4 4" },
-  ];
+  const currentClose = visibleCandles[visibleCandles.length - 1][3];
+  const pullbackIndex = Math.max(0, candles.length - hiddenFutureCount - 2);
+  return {
+    hiddenFutureCount,
+    annotations: [
+      { value: priorHigh, label: "前高/结构压力", color: "#8b6f22", dash: "5 5" },
+      { value: currentClose, label: "当前已知收盘", color: "#1f6f50" },
+      { value: invalidationZone, label: "失效观察区", color: "#b7473f", dash: "4 4" },
+    ],
+    callouts: [
+      { index: pullbackIndex, value: pullbackLow, label: "跌回区间？先降级假设", color: "#b7473f" },
+    ],
+    guideItems: [
+      { label: "前高", text: "先看价格是不是只碰到压力，别一看到突破就下结论。" },
+      { label: "跌回区间", text: "如果冲高后回到区间，训练里要写“突破假设变弱”。" },
+      { label: "失效位", text: "先写哪里说明自己错了，再谈下一步怎么练。" },
+      { label: "隐藏未来", text: "右侧遮住的是当时还不知道的结果，不能拿来倒推答案。" },
+    ],
+  };
+}
+
+function renderChartReadingGuide(chartGuide) {
+  const chartCard = nodes.chart?.closest(".chart-card");
+  if (!chartCard || !chartGuide?.guideItems?.length) return;
+  let panel = chartCard.querySelector("#chartReadingGuide");
+  if (!panel) {
+    panel = document.createElement("div");
+    panel.id = "chartReadingGuide";
+    panel.className = "chart-reading-guide";
+    nodes.chart.insertAdjacentElement("afterend", panel);
+  }
+  panel.innerHTML = `
+    <strong>看图顺序：先圈位置，再写认错点。</strong>
+    <div>
+      ${chartGuide.guideItems.map((item) => `
+        <span><b>${escapeHtml(item.label)}</b>${escapeHtml(item.text)}</span>
+      `).join("")}
+    </div>
+  `;
 }
 
 function renderContextTimeline(lesson) {
   if (!nodes.contextTimeline) return;
+  const hasDemoLabel = /演示|demo|教学/i.test([lesson.news, lesson.sentiment, lesson.sourceTransparency?.learnerLabel].filter(Boolean).join(" "));
   nodes.contextTimeline.innerHTML = `
     <strong>事件时间边界</strong>
     <div class="timeline-grid">
       <span><b>当时可见</b>${escapeHtml(lesson.news || "无真实新闻。")} ${escapeHtml(lesson.sentiment || "情绪只作背景。")}</span>
-      <span><b>事后不可用</b>不能用未来K线、事后新闻或结果倒推当前判断。</span>
-      <span><b>训练目的</b>检查自己有没有把消息、情绪或热度误当成动作依据。</span>
+      <span><b>当时不可确定</b>新闻会不会继续发酵、情绪会不会反转、下一根K线怎么走，当时都不知道。</span>
+      <span><b>事后不可用</b>不能用未来K线、事后新闻或结果倒推当前判断；回放时先遮住结果。</span>
+      <span><b>学习用法</b>只检查自己有没有被热度、恐惧或兴奋带偏，不把它写成行动理由。</span>
     </div>
+    <p class="muted-note">${hasDemoLabel ? "当前为教学演示事件，不是真实授权新闻流；正式历史回顾需要保留来源、时间戳和当时可见性。" : "事件信息只做学习上下文，不输出预测或行动建议。"}</p>
   `;
+}
+
+function trainingStageMeta(level = "starter") {
+  const map = {
+    starter: {
+      label: "入门",
+      focus: "看结构和失效",
+      currentStep: "先把前高、跌回区间、认错点写清楚。",
+      nextStep: "下一步进入多周期和消息情绪干扰。",
+    },
+    builder: {
+      label: "进阶",
+      focus: "多周期 + 消息情绪边界",
+      currentStep: "先分清高周期背景、中周期结构和当前周期动作。",
+      nextStep: "下一步进入综合复盘和回测误区。",
+    },
+    advanced: {
+      label: "综合",
+      focus: "回放、复盘和指标误区",
+      currentStep: "把训练、回放、模拟记录和回测理解串起来。",
+      nextStep: "继续做复盘专项，检查证据是否完整。",
+    },
+  };
+  return map[level] || map.starter;
+}
+
+function scenarioTrainingLevel(scenario = {}, index = 0) {
+  const text = [scenario.id, scenario.title, scenario.tag, scenario.timeframe, ...(scenario.tags || [])]
+    .filter(Boolean)
+    .join(" ");
+  if (/复盘专项|偷看未来|回放|hindsight|replay/i.test(text)) return "replay_special";
+  if (/消息|新闻|情绪|sentiment|event|1h|60m/i.test(text)) return "advanced_context";
+  if (/区间|30m|回踩|等待/.test(text)) return "builder_structure";
+  if (index >= 3) return "integrated_review";
+  return "starter_structure";
+}
+
+function trainingLevelMap(scenarios = state.data?.scenarios || [], currentScenarioId = state.data?.scenarios?.[state.scenarioIndex]?.id) {
+  const levels = [
+    {
+      key: "starter_structure",
+      label: "入门",
+      focus: "前高、区间、失效位",
+      target: "先能说清楚图上发生了什么，错了在哪里认错。",
+    },
+    {
+      key: "builder_structure",
+      label: "进阶",
+      focus: "多周期和等待条件",
+      target: "能把背景、结构、执行周期分开，不急着下结论。",
+    },
+    {
+      key: "advanced_context",
+      label: "综合",
+      focus: "新闻/情绪干扰",
+      target: "能说明消息和情绪只是背景，不是行动理由。",
+    },
+    {
+      key: "replay_special",
+      label: "复盘专项",
+      focus: "回放、回测误区、证据完整性",
+      target: "做完题后回放刚才那题，并用指标误区检查自己有没有乱下结论。",
+      virtualCount: 3,
+    },
+  ];
+  const scenarioLevels = scenarios.map((scenario, index) => ({
+    scenario,
+    level: scenarioTrainingLevel(scenario, index),
+  }));
+  return levels.map((level) => {
+    const items = scenarioLevels.filter((item) => item.level === level.key);
+    return {
+      ...level,
+      count: items.length + (level.virtualCount || 0),
+      current: items.some((item) => item.scenario.id === currentScenarioId),
+      examples: items.slice(0, 2).map((item) => item.scenario.title),
+    };
+  });
+}
+
+function renderTrainingLevelPanel(lesson = currentScenario()) {
+  if (!nodes.trainingLevelPanel) return;
+  const levels = trainingLevelMap(state.data?.scenarios || [], lesson?.id);
+  const totalScenarioCount = state.data?.scenarios?.length || 0;
+  nodes.trainingLevelPanel.innerHTML = `
+    <div class="training-level-head">
+      <div>
+        <p class="eyebrow">训练层级</p>
+        <h4>当前开放 ${totalScenarioCount} 道演示题，按入门、进阶、综合、复盘专项走。</h4>
+      </div>
+      <span class="tag warn">题库仍需扩充</span>
+    </div>
+    <div class="training-level-grid">
+      ${levels.map((level) => `
+        <article class="training-level-card ${level.current ? "is-current" : ""}">
+          <strong>${escapeHtml(level.label)}</strong>
+          <span>${escapeHtml(level.focus)}</span>
+          <span>${escapeHtml(level.target)}</span>
+          <span>${level.count} 个练习入口${level.examples.length ? `：${level.examples.map(escapeHtml).join(" / ")}` : ""}</span>
+        </article>
+      `).join("")}
+    </div>
+    <p class="muted-note">这是试用题库地图，不是完整商业题库；后续需要继续补各层级题量和授权历史数据。</p>
+  `;
+}
+
+function visibleMistakeDiagnosis(feedback = {}, attempt = {}) {
+  if (feedback.diagnosis?.primary) return `你这次最大问题是：${feedback.diagnosis.primary}`;
+  const scores = feedback.scores || [];
+  const contextScore = feedback.contextReview?.score ?? scores[1] ?? 0;
+  const riskScore = scores[2] ?? 0;
+  const plan = String(attempt.plan || "").trim();
+  if (feedback.correct === false) return "你这次最大问题是：图上结构判断和题目要求不匹配，先回到前高、跌回区间和失效位。";
+  if (riskScore < 70) return "你这次最大问题是：没有写清楚哪里认错、风险怎么收住，答案像结论不像训练计划。";
+  if (contextScore < 70) return "你这次最大问题是：消息和情绪边界不够清楚，容易把背景当成行动理由。";
+  if (plan.length < 35) return "你这次最大问题是：理由太短，缺少“看到什么、怎么判断、错了哪里认错、我不做什么”。";
+  return "这次过程基本合格，下一步要把同一套检查表放到回放里验证，避免靠结果倒推。";
+}
+
+function buildSharpDiagnosis(feedback = {}, lastTraining = {}) {
+  const scores = feedback.scores || [];
+  const rawItems = [
+    ...(feedback.diagnosis?.tags || []),
+    ...(feedback.diagnosis?.allMessages || []),
+    ...(feedback.tags || []),
+    feedback.body,
+    lastTraining.biggestIssue,
+  ].filter(Boolean).map((item) => String(item));
+  const source = rawItems.join(" ");
+  const categories = [
+    {
+      key: "hindsight",
+      label: "偷看未来 / 事后倒推",
+      match: /偷看|未来|倒推|事后|结果|后来|hindsight|replay/i,
+      problem: "你可能用了后面才知道的结果，反过来解释当时的判断。",
+      check: "下次先写“当时我不知道什么”，再看后续走势。",
+    },
+    {
+      key: "thin_reasoning",
+      label: "理由空泛",
+      match: /理由|空泛|太短|证据|结论|thin|reason/i,
+      problem: "答案像一句结论，还没有写出可复盘证据。",
+      check: "下次必须写：看到什么、怎么判断、哪里认错、现在不做什么。",
+    },
+    {
+      key: "invalidation",
+      label: "没有失效条件",
+      match: /失效|认错|止损|风险|边界|invalidation|risk/i,
+      problem: "你还没写清楚什么情况说明自己错了。",
+      check: "下次先写认错点，再写下一步练习动作。",
+    },
+    {
+      key: "sentiment",
+      label: "把情绪当理由",
+      match: /情绪|消息|新闻|热度|背景|sentiment|context/i,
+      problem: "消息和情绪容易被写成行动理由，而不是背景和偏见检查。",
+      check: "下次把新闻/情绪只放在背景栏，不写成判断依据。",
+    },
+    {
+      key: "structure",
+      label: "结构判断不匹配",
+      match: /结构|突破|区间|前高|跌回|形态|structure/i,
+      problem: "图上位置还没读清楚，就急着得出方向判断。",
+      check: "下次先圈前高、跌回区间和失效观察区。",
+    },
+  ];
+  const hits = categories.filter((item) => item.match.test(source));
+  if (!hits.length) {
+    if (feedback.correct === false) hits.push(categories.find((item) => item.key === "structure"));
+    else if ((scores[2] ?? 100) < 70) hits.push(categories.find((item) => item.key === "invalidation"));
+    else if ((feedback.contextReview?.score ?? scores[1] ?? 100) < 70) hits.push(categories.find((item) => item.key === "sentiment"));
+    else hits.push({
+      key: "process_ok",
+      label: "过程基本合格",
+      problem: "这次已经开始按训练过程作答，不只是猜方向。",
+      check: "下次把同一张检查表带到回放里验证。",
+    });
+  }
+  const unique = [];
+  hits.forEach((item) => {
+    if (item && !unique.some((existing) => existing.key === item.key)) unique.push(item);
+  });
+  const primary = unique[0];
+  return {
+    primary,
+    items: unique.slice(0, 4),
+    evidence: feedback.diagnosis?.allMessages?.[0] || lastTraining.biggestIssue || visibleMistakeDiagnosis(feedback),
+    boundary: "只评价学习过程，不评价策略收益，也不生成实盘信号。",
+  };
+}
+
+function sharpDiagnosisHtml(diagnosis, eyebrow = "本题错因雷达") {
+  return `
+    <div class="sharp-diagnosis-head">
+      <div>
+        <p class="eyebrow">${escapeHtml(eyebrow)}</p>
+        <h4>最大问题：${escapeHtml(diagnosis.primary.label)}</h4>
+        <span>${escapeHtml(diagnosis.primary.problem)}</span>
+      </div>
+      <span class="tag danger">先改过程</span>
+    </div>
+    <div class="sharp-diagnosis-grid">
+      ${diagnosis.items.map((item) => `
+        <article>
+          <strong>${escapeHtml(item.label)}</strong>
+          <span>${escapeHtml(item.problem)}</span>
+          <small>${escapeHtml(item.check)}</small>
+        </article>
+      `).join("")}
+    </div>
+    <p class="muted-note">证据：${escapeHtml(diagnosis.evidence)} ${escapeHtml(diagnosis.boundary)}</p>
+  `;
+}
+
+function firstAhaMoment(feedback = {}, lastTraining = {}) {
+  const scores = feedback.scores || [];
+  const structureScore = scores[0] ?? 0;
+  const contextScore = feedback.contextReview?.score ?? scores[1] ?? 0;
+  const riskScore = scores[2] ?? 0;
+  const tags = (feedback.tags || []).join(" ");
+  if (feedback.correct === false || structureScore < 70 || /结构|突破|区间|前高/.test(tags)) {
+    return {
+      habit: "你可能一看到突破或大K线，就急着判断方向。",
+      correction: "这题要先问：价格有没有重新跌回区间？如果跌回去，突破假设就要降级。",
+      check: "下次先圈前高、跌回区间和失效位，再选择答案。",
+    };
+  }
+  if (riskScore < 70 || /风险|止损|失效|仓位|认错/.test(tags)) {
+    return {
+      habit: "你可能会先写看法，但没写“我错了在哪里停”。",
+      correction: "训练重点不是猜对，而是先把认错点和不做条件写出来。",
+      check: "下次答案必须包含：哪里认错、什么情况不做、风险边界是什么。",
+    };
+  }
+  if (contextScore < 70 || /消息|新闻|情绪|热度/.test(tags)) {
+    return {
+      habit: "你可能会把新闻热度或情绪当成行动理由。",
+      correction: "消息和情绪只能帮你解释背景，不能替代图上结构和失效条件。",
+      check: "下次把新闻写进“背景”栏，不写进“我为什么行动”。",
+    };
+  }
+  if (/偷看|未来|倒推|回放/.test(tags) || /偷看|未来|倒推/.test(lastTraining.biggestIssue || "")) {
+    return {
+      habit: "你可能会用后面发生的走势，反过来美化当时的判断。",
+      correction: "回放时只能用当时看得到的信息，后面的K线要先遮住。",
+      check: "下次先写当时不知道什么，再看后续走势。",
+    };
+  }
+  return {
+    habit: "你这次已经开始像复盘一样写答案，而不是只猜涨跌。",
+    correction: "继续把同一张检查表带到回放里：结构、失效、背景、不做条件。",
+    check: "下次目标不是更快答题，而是让别人看得懂你的判断过程。",
+  };
+}
+
+function nextPracticeText({ feedback = {}, nextTraining = null, learningPath = null } = {}) {
+  const reasonText = nextTrainingReasonText(nextTraining);
+  if (nextTraining?.scenario) return `下一题专练：${nextTraining.scenario.title}。${reasonText}`;
+  if (learningPath?.recommendedScenario) return `下一题专练：${learningPath.recommendedScenario.title}。`;
+  if (feedback.contextReview?.score < 70) return "下一题专练：消息/情绪只当背景，不能写成行动理由。";
+  if ((feedback.scores || [])[2] < 70) return "下一题专练：写清楚失效条件、风险边界和不做的条件。";
+  return "下一题专练：用同一张检查表再做一次，确认不是靠感觉作答。";
+}
+
+function nextTrainingReasonText(nextTraining = null) {
+  const focus = nextTraining?.profileFocus ? `因为你的画像里出现了“${nextTraining.profileFocus}”。` : "";
+  const map = {
+    "profile_gap:hindsight_replay": "因为刚才暴露出偷看未来或事后归因风险。",
+    "profile_gap:context_boundary": "因为刚才容易把消息/情绪当成行动理由。",
+    "profile_gap:invalidation": "因为刚才失效条件或认错点不够清楚。",
+    "profile_gap:waiting_confirmation": "因为刚才等待确认条件不够清楚。",
+    "profile_gap:risk_boundary": "因为刚才风险边界不够清楚。",
+    "profile_gap:thin_reasoning": "因为刚才理由太短，像结论不像训练计划。",
+    first_uncompleted_scenario: "按训练路径进入下一道未完成题。",
+    all_available_scenarios_practiced: "全部可见题都练过了，建议回到回放复盘。",
+  };
+  return map[nextTraining?.reason] || focus || "按当前学习路径推荐。";
 }
 
 function aggregateCandles(candles, groupSize) {
@@ -725,10 +1274,12 @@ function buildTimeframeFrames(lesson) {
   const candles = lesson.candles || [];
   const daily = aggregateCandles(candles, 6);
   const fourHour = aggregateCandles(candles, 3);
+  const oneHour = aggregateCandles(candles, 2);
   return [
     {
       label: "高周期背景",
       timeframe: "1D教学压缩",
+      licensedTimeframeRequired: "1D 授权历史K线",
       role: "方向过滤",
       candles: daily,
       note: describeFrame(daily, "方向过滤"),
@@ -736,13 +1287,23 @@ function buildTimeframeFrames(lesson) {
     {
       label: "中周期结构",
       timeframe: "4H教学压缩",
+      licensedTimeframeRequired: "4H 授权历史K线",
       role: "结构定位",
       candles: fourHour,
       note: describeFrame(fourHour, "结构定位"),
     },
     {
+      label: "过渡周期",
+      timeframe: "1H教学压缩",
+      licensedTimeframeRequired: "1H 授权历史K线",
+      role: "节奏确认",
+      candles: oneHour,
+      note: describeFrame(oneHour, "结构定位"),
+    },
+    {
       label: "执行周期",
       timeframe: lesson.timeframe || "15m",
+      licensedTimeframeRequired: `${lesson.timeframe || "15m"} 授权历史K线`,
       role: "训练作答",
       candles,
       note: describeFrame(candles, "训练作答"),
@@ -768,12 +1329,14 @@ function renderMultiTimeframePanel(lesson) {
             <strong>${escapeHtml(frame.label)}</strong>
             <span>${escapeHtml(frame.timeframe)}</span>
           </div>
+          <span class="timeframe-source-chip">教学压缩 / 非授权历史周期</span>
           <svg data-timeframe-chart="${index}" role="img" aria-label="${escapeHtml(frame.label)}K线教学图"></svg>
           <p>${escapeHtml(frame.role)}：${escapeHtml(frame.note)}</p>
+          <p class="timeframe-license-note">正式版需要：${escapeHtml(frame.licensedTimeframeRequired)}，并保留来源、时间戳、延迟/实时状态。</p>
         </article>
       `).join("")}
     </div>
-    <p class="muted-note">当前是内部演示片段生成的多周期教学视角；正式历史回顾需要接入授权 1D / 4H / 15m 行情、历史新闻和情绪数据。</p>
+    <p class="muted-note">当前是内部演示片段生成的多周期教学视角，不是真实 1D / 4H / 1H / 15m 历史行情拼接；正式历史回顾需要接入授权行情、历史新闻和情绪数据。</p>
   `;
   frames.forEach((frame, index) => {
     renderCandles(nodes.multiTimeframePanel.querySelector(`[data-timeframe-chart="${index}"]`), frame.candles, {
@@ -816,6 +1379,22 @@ async function submitDecision() {
     state.data.achievements = result.achievements || state.data.achievements;
     state.data.entitlement = result.entitlement;
     state.data.learningPath = result.learningPath;
+    state.lastCompletedTraining = {
+      scenarioId: lesson.id,
+      attemptId: result.attempt?.id || null,
+      title: lesson.title,
+      symbol: lesson.symbol,
+      timeframe: lesson.timeframe,
+      selectedText: result.attempt?.selectedText || "",
+      biggestIssue: visibleMistakeDiagnosis(result.feedback, result.attempt),
+      nextPractice: nextPracticeText({
+        feedback: result.feedback,
+        nextTraining: result.nextTraining,
+        learningPath: result.learningPath,
+      }),
+      createdAt: result.attempt?.createdAt || new Date().toISOString(),
+    };
+    state.lastTrainingDiagnosis = buildSharpDiagnosis(result.feedback, state.lastCompletedTraining);
     renderFeedback(result.feedback, result.nextTraining, result.courseProgressUpdates || []);
     renderProfile();
     renderDashboard();
@@ -842,32 +1421,52 @@ async function submitDecision() {
 function renderFeedback(feedback, nextTraining = null, courseProgressUpdates = state.data.courseProgressUpdates || []) {
   const habit = state.data.habit || {};
   const achievements = state.data.achievements || {};
+  const stage = trainingStageMeta(state.data.learningPath?.level);
+  const lastTraining = state.lastCompletedTraining || {};
   const courseProgressHtml = courseProgressUpdates.length
     ? courseProgressUpdates.map((item) => `<span>学习包进度：${escapeHtml(item.coursePackageTitle)} ${item.progress?.percent ?? 0}% (${item.progress?.completedItems ?? 0}/${item.progress?.totalItems ?? 0})</span>`).join("")
     : "<span>这题暂未绑定学习包进度。</span>";
   const contextReviewHtml = feedback.contextReview
     ? `<span>环境边界 ${feedback.contextReview.score}: ${escapeHtml(feedback.contextReview.summary)}</span>`
     : "";
+  const aha = firstAhaMoment(feedback, lastTraining);
   nodes.feedbackTitle.textContent = feedback.title;
   nodes.feedbackBody.textContent = feedback.body;
   nodes.scoreStructure.textContent = `${feedback.scores[0]}`;
   nodes.scoreContext.textContent = `${feedback.scores[1]}`;
   nodes.scoreRisk.textContent = `${feedback.scores[2]}`;
   nodes.mistakeTags.innerHTML = feedback.tags
-    .map((tag, index) => `<span class="tag ${index === 0 ? "danger" : "warn"}">${tag}</span>`)
+    .map((tag, index) => `<span class="tag ${index === 0 ? "danger" : "warn"}">${escapeHtml(displayProfileTag(tag))}</span>`)
     .join("");
   nodes.nextPathText.textContent = feedback.nextPath;
   if (nodes.trainingResultActions) {
+    const sharpDiagnosis = state.lastTrainingDiagnosis || buildSharpDiagnosis(feedback, lastTraining);
     nodes.trainingResultActions.innerHTML = `
+      <article class="sharp-diagnosis-card" aria-label="本题错因雷达">
+        ${sharpDiagnosisHtml(sharpDiagnosis)}
+      </article>
+      <article class="aha-moment-card" aria-label="本题指出的看图习惯">
+        <div>
+          <p class="eyebrow">这题抓到的习惯</p>
+          <h4>${escapeHtml(aha.habit)}</h4>
+        </div>
+        <span><b>怎么改：</b>${escapeHtml(aha.correction)}</span>
+        <span><b>下一题检查：</b>${escapeHtml(aha.check)}</span>
+        <small>这不是收益评价，也不是交易建议；它只指出你的学习过程哪里需要改。</small>
+      </article>
       <div class="attempt-row trial-next-row">
         <div>
-          <strong>训练完成，下一步按顺序走</strong>
-          <span>${feedback.nextPath}</span>
+          <strong>${escapeHtml(stage.label)}训练完成：${escapeHtml(stage.focus)}</strong>
+          <span>${escapeHtml(lastTraining.biggestIssue || visibleMistakeDiagnosis(feedback))}</span>
+          <span>${escapeHtml(lastTraining.nextPractice || nextPracticeText({ feedback, nextTraining, learningPath: state.data.learningPath }))}</span>
+          <span>本题：${escapeHtml(lastTraining.title || currentScenario().title)} / ${escapeHtml(lastTraining.symbol || currentScenario().symbol)} / ${escapeHtml(lastTraining.timeframe || currentScenario().timeframe)}</span>
+          <span>阶段提示：${escapeHtml(stage.currentStep)} ${escapeHtml(stage.nextStep)}</span>
+          <span>${escapeHtml(feedback.nextPath || "按顺序完成回放、AI复盘、回测误区和反馈。")}</span>
           <span>今日 ${habit.todayDone ?? 0}/${habit.dailyGoal || 3}，连续 ${habit.streakDays ?? 0} 天，状态 ${habit.status || "in_progress"}</span>
           <span>${achievements.latestUnlocked ? `新里程碑：${achievements.latestUnlocked.title}` : `里程碑 ${achievements.unlockedCount || 0}/${achievements.totalCount || 0}`}</span>
           ${contextReviewHtml}
           ${courseProgressHtml}
-          <span>${nextTraining?.scenario ? `下一题：${nextTraining.scenario.title} / ${nextTraining.reason}` : "暂无下一题，先去回放和AI复盘。"}</span>
+          <span>${nextTraining?.scenario ? `下一题：${nextTraining.scenario.title} / ${nextTrainingReasonText(nextTraining)}` : "暂无下一题，先去回放和AI复盘。"}</span>
         </div>
         <span class="tag warn">只做教育训练</span>
       </div>
@@ -880,13 +1479,63 @@ function renderFeedback(feedback, nextTraining = null, courseProgressUpdates = s
     `;
   }
   nodes.feedbackPanel.hidden = false;
+  renderTrainingFocusRail();
 }
 
 function renderReplay() {
   const lesson = currentScenario();
   const step = Math.max(4, Math.min(state.replayStep, lesson.candles.length));
-  nodes.replayTitle.textContent = `${lesson.symbol} 回放 ${step}/${lesson.candles.length} 根K线`;
+  const isLastTraining = state.lastCompletedTraining?.scenarioId === lesson.id;
+  nodes.replayTitle.textContent = isLastTraining
+    ? `正在回放你刚才完成的题：${lesson.symbol} ${step}/${lesson.candles.length} 根K线`
+    : `${lesson.symbol} 回放 ${step}/${lesson.candles.length} 根K线`;
+  renderReplayBridge(lesson, { step, isLastTraining });
+  if (nodes.replayPlan) {
+    nodes.replayPlan.placeholder = isLastTraining
+      ? `围绕刚才那题复盘：${state.lastCompletedTraining.biggestIssue || "先写可见证据、失效条件和不做条件。"}`
+      : "写下你在当前回放点看到的结构、失效条件、消息/情绪边界和不做条件。";
+  }
+  if (nodes.paperTradeThesis && isLastTraining) {
+    nodes.paperTradeThesis.placeholder = "按刚才那题复盘：我当时看到什么结构？我有没有用未来结果倒推？";
+  }
+  if (nodes.paperTradeInvalidation && isLastTraining) {
+    nodes.paperTradeInvalidation.placeholder = "写清楚刚才那题错在哪里认错，不写真实止损建议。";
+  }
+  if (nodes.paperTradeContext && isLastTraining) {
+    nodes.paperTradeContext.placeholder = "刚才那题里的新闻/情绪只作为背景，不写成买卖理由。";
+  }
   renderCandles(nodes.replayChart, lesson.candles.slice(0, step));
+}
+
+function renderReplayBridge(lesson, { step, isLastTraining } = {}) {
+  if (!nodes.replayChart) return;
+  let bridge = document.querySelector("#replayTrainingBridge");
+  if (!bridge) {
+    bridge = document.createElement("section");
+    bridge.id = "replayTrainingBridge";
+    bridge.className = "replay-training-bridge";
+    nodes.replayChart.insertAdjacentElement("beforebegin", bridge);
+  }
+  const lastTraining = state.lastCompletedTraining || {};
+  const issue = isLastTraining
+    ? lastTraining.biggestIssue || "先检查刚才答案有没有写清结构、失效条件和不做条件。"
+    : "当前不是刚才完成的题；如要同题复盘，请先从训练结果页点“去回放/回测误区”。";
+  const mission = isLastTraining
+    ? "这次回放只验证一件事：你能不能在不知道后续走势时，重新写出当时可见证据和认错点。"
+    : "这里仍然只做教学回放，不用未来K线、事后新闻或结果反推答案。";
+  bridge.innerHTML = `
+    <div>
+      <p class="eyebrow">${isLastTraining ? "同题回放" : "教学回放"}</p>
+      <h4>${escapeHtml(isLastTraining ? `回到刚才那题：${lesson.title}` : `${lesson.title}`)}</h4>
+      <span>${escapeHtml(lesson.symbol || "")} / ${escapeHtml(lesson.timeframe || "")} / 当前只看到 ${step || 0} 根K线</span>
+    </div>
+    <div class="replay-bridge-grid">
+      <span><b>刚才最大问题</b>${escapeHtml(issue)}</span>
+      <span><b>这次回放任务</b>${escapeHtml(mission)}</span>
+      <span><b>写答案格式</b>当时看到什么 → 还不知道什么 → 错了在哪里停 → 我现在不做什么</span>
+    </div>
+    <small>回放只训练过程，不评价策略收益，不输出荐股、实盘信号或真实资金动作。</small>
+  `;
 }
 
 function renderPaperTrades() {
@@ -896,17 +1545,23 @@ function renderPaperTrades() {
     ? trades.slice(0, 8).map((item) => `
       <div class="attempt-row">
         <div>
-          <strong>${item.side} / ${item.scenarioTitle}</strong>
-          <span>${formatTime(item.createdAt)} / ${item.evaluation.simulatedR}R / 风险 ${item.riskPercent}%</span>
+          <strong>${paperTradeSideLabel(item.side)} / ${escapeHtml(item.scenarioTitle || "课堂回放")}</strong>
+          <span>${formatTime(item.createdAt)} / 模拟结果 ${escapeHtml(String(item.evaluation.simulatedR))}R / 课堂风险标记 ${escapeHtml(String(item.riskPercent))}%</span>
           ${item.contextReview ? `<span>环境边界 ${item.contextReview.score}: ${escapeHtml(item.contextReview.summary)}</span>` : ""}
           ${item.replayDebrief ? `<span>回放复盘 ${item.replayDebrief.processScore}: ${escapeHtml(item.replayDebrief.decisionQuality)} / ${escapeHtml(item.replayDebrief.nextPractice?.[0] || "按同一张检查表再回放一次。")}</span>` : ""}
-          <span>${item.evaluation.note}</span>
+          <span>${escapeHtml(item.evaluation.note)}</span>
           ${item.replayDebrief ? `<div class="billing-actions"><button type="button" data-replay-debrief-followup="${escapeHtml(item.id)}">生成复盘跟进</button></div>` : ""}
         </div>
         <span class="tag ${item.evaluation.disciplineScore >= 70 ? "warn" : "danger"}">${item.evaluation.disciplineScore}</span>
       </div>
     `).join("")
-    : "<p>还没有模拟记录。先在回放区保存一次教学模拟。</p>";
+    : "<p>还没有课堂记录。先在回放区保存一次教育模拟。</p>";
+}
+
+function paperTradeSideLabel(side = "") {
+  if (side === "long") return "模拟做多";
+  if (side === "short") return "模拟做空";
+  return "观望 / 不做";
 }
 
 async function createReplayDebriefFollowup(paperTradeId) {
@@ -924,12 +1579,12 @@ async function createReplayDebriefFollowup(paperTradeId) {
       `
         <div class="attempt-row ops-row">
           <div>
-            <strong>Replay debrief coach follow-up ${result.reused ? "reused" : "created"}</strong>
-            <span>${escapeHtml(result.task.focus || "Replay debrief follow-up")} / ${escapeHtml(result.task.priority || "normal")} / ${escapeHtml(result.task.status || "open")}</span>
-            <span>Process ${result.task.replayDebrief?.processScore ?? "-"} / ${escapeHtml(result.task.replayDebrief?.decisionQuality || "review")}</span>
-            <span>${escapeHtml(result.constraints?.[1] || "Coach follow-up reviews education process evidence only.")}</span>
+            <strong>复盘跟进已${result.reused ? "复用" : "生成"}</strong>
+            <span>${escapeHtml(result.task.focus || "回放复盘跟进")} / ${escapeHtml(result.task.priority || "普通")} / ${escapeHtml(result.task.status || "待处理")}</span>
+            <span>过程分 ${result.task.replayDebrief?.processScore ?? "-"} / ${escapeHtml(result.task.replayDebrief?.decisionQuality || "等待复盘")}</span>
+            <span>${escapeHtml(result.constraints?.[1] || "教练跟进只复盘教育过程证据。")}</span>
           </div>
-          <span class="tag warn">coach</span>
+          <span class="tag warn">教育复盘</span>
         </div>
       `
     );
@@ -937,7 +1592,7 @@ async function createReplayDebriefFollowup(paperTradeId) {
     await refreshCoachReport();
     await refreshProgressReport();
   } catch (error) {
-    nodes.paperTradeResult.insertAdjacentHTML("afterbegin", `<p>Replay debrief follow-up failed: ${escapeHtml(error.message)}</p>`);
+    nodes.paperTradeResult.insertAdjacentHTML("afterbegin", `<p>复盘跟进生成失败：${escapeHtml(error.message)}</p>`);
   }
 }
 
@@ -1005,6 +1660,78 @@ function renderBacktestClassroom(classroom = state.data.backtestClassroom) {
       <span>${escapeHtml(item.next || "")}</span>
     </div>
   `).join("");
+  const sampleSize = Number(metrics.sampleSize || 0);
+  const metricPlainText = [
+    {
+      metric: "样本",
+      value: `${metrics.sampleSize ?? 0}`,
+      plain: sampleSize < 20 ? "练习次数还少，只能看自己有没有按流程写。" : "样本开始变多，但仍然只能比较学习纪律。",
+    },
+    {
+      metric: "做对比例",
+      value: `${metrics.winRatePct ?? 0}%`,
+      plain: "不是赚钱概率，只是这批练习里有多少次按课堂规则做对。",
+    },
+    {
+      metric: "平均结果",
+      value: `${metrics.expectancyR ?? 0}R`,
+      plain: "只是一组课堂记录的平均值，不能推出未来会怎样。",
+    },
+    {
+      metric: "最大回落",
+      value: `${metrics.maxDrawdownR ?? 0}R`,
+      plain: "提醒你过程里可能承受的回撤压力，不是实盘风险额度。",
+    },
+  ];
+  const backtestEverydayLessons = [
+    {
+      title: "样本量",
+      analogy: sampleSize < 20 ? "像只问了 3 个摊位就判断整个菜场都涨价。" : "像问了足够多摊位，才开始比较哪类菜更稳定。",
+      takeaway: sampleSize < 20 ? "现在只能说“我练得还少”，不能说这套方法有效。" : "样本多一点后，也只能比较学习纪律，不能证明未来收益。",
+    },
+    {
+      title: "做对比例",
+      analogy: "像今天挑菜 10 次有 6 次没买贵，不等于明天一定还便宜。",
+      takeaway: "它只说明这批练习里有多少次按规则做对，不是赚钱概率。",
+    },
+    {
+      title: "过拟合",
+      analogy: "像背熟一张试卷答案，看起来全对，换张卷子就不会了。",
+      takeaway: "如果规则只适合这几根 K 线，就是背答案，不是真会。",
+    },
+  ];
+  const everydayLessonHtml = `
+    <section class="backtest-plain-lesson" aria-label="回测指标人话解释">
+      <div>
+        <p class="eyebrow">菜场版回测三句话</p>
+        <h4>先别问“能不能赚钱”，先问这 3 个问题。</h4>
+      </div>
+      <ol class="clean-list">
+        <li>我问了几个摊位？样本太少，就不能说整个菜场都涨价。</li>
+        <li>我是不是只背熟了今天这张卷子？只适合这一段 K 线，就是过拟合。</li>
+        <li>我有没有偷看答案？用结果倒推理由，回测就变成讲故事。</li>
+      </ol>
+      <small>这里的指标只帮你检查学习纪律，不证明策略有效，不输出实盘信号。</small>
+    </section>
+    <div class="backtest-metric-plain-grid">
+      ${metricPlainText.map((item) => `
+        <article>
+          <span>${escapeHtml(item.metric)}</span>
+          <strong>${escapeHtml(item.value)}</strong>
+          <small>${escapeHtml(item.plain)}</small>
+        </article>
+      `).join("")}
+    </div>
+    <div class="backtest-everyday-grid">
+      ${backtestEverydayLessons.map((item) => `
+        <article class="backtest-everyday-card">
+          <strong>${escapeHtml(item.title)}</strong>
+          <span>${escapeHtml(item.analogy)}</span>
+          <b>${escapeHtml(item.takeaway)}</b>
+        </article>
+      `).join("")}
+    </div>
+  `;
   const setupDiagnosticsHtml = setupDiagnostics.length
     ? `
       <div class="section-kicker">Setup diagnostics</div>
@@ -1028,15 +1755,7 @@ function renderBacktestClassroom(classroom = state.data.backtestClassroom) {
       <div><span>平均结果</span><strong>${metrics.expectancyR ?? 0}R</strong></div>
       <div><span>最大回落</span><strong>${metrics.maxDrawdownR ?? 0}R</strong></div>
     </div>
-    <div class="attempt-row">
-      <div>
-        <strong>先用人话理解回测</strong>
-        <span>样本：只做了几次练习，太少就不能下结论。</span>
-        <span>做对比例：不是赚钱概率，只是这批练习里有多少次按规则做对。</span>
-        <span>平均结果和最大回落：只帮你检查纪律，不证明未来会怎样。</span>
-      </div>
-      <span class="tag warn">新手解释</span>
-    </div>
+    ${everydayLessonHtml}
     <div class="attempt-row">
       <div>
         <strong>${escapeHtml(classroom.sampleQuality || "practice_sample_only")}</strong>
@@ -1104,7 +1823,7 @@ async function exportBacktestLiteracyBrief(format) {
     const response = await fetch(`/api/backtest/literacy-brief/export?format=${encodeURIComponent(format)}`);
     if (!response.ok) {
       const payload = await response.json();
-      throw new Error(payload.error || "Backtest literacy brief export failed");
+      throw new Error(payload.error || "回测误区摘要生成失败");
     }
     const text = await response.text();
     nodes.backtestClassroomPanel.insertAdjacentHTML(
@@ -1112,8 +1831,8 @@ async function exportBacktestLiteracyBrief(format) {
       `
         <div class="attempt-row">
           <div>
-            <strong>Backtest literacy brief (${format.toUpperCase()})</strong>
-            <span>Education metric-literacy export only. No stock recommendation, live signal, return promise, broker connection, auto-trading, or real-money instruction.</span>
+            <strong>回测误区学习摘要（${format.toUpperCase()}）</strong>
+            <span>只用于理解样本、胜率、平均结果和回撤这些学习指标；不荐股、不出实盘信号、不承诺收益、不接券商、不指导真实资金。</span>
           </div>
           <span class="tag warn">${text.length} bytes</span>
         </div>
@@ -1121,7 +1840,7 @@ async function exportBacktestLiteracyBrief(format) {
       `
     );
   } catch (error) {
-    nodes.backtestClassroomPanel.insertAdjacentHTML("afterbegin", `<p>Backtest literacy export failed: ${escapeHtml(error.message)}</p>`);
+    nodes.backtestClassroomPanel.insertAdjacentHTML("afterbegin", `<p>回测误区摘要生成失败：${escapeHtml(error.message)}</p>`);
   }
 }
 
@@ -1150,6 +1869,7 @@ function renderBacktestMisconception(drill = state.data.backtestClassroom?.misco
         <div>
           <strong>${escapeHtml(feedback.title)}</strong>
           <span>${escapeHtml(feedback.body)}</span>
+          <span>${feedback.correct ? "这类题的关键不是找会赚钱的指标，而是先问：样本够不够、有没有偷看答案、规则换个场景还成立吗。" : "先别急着相信胜率。回到三个问题：问了多少样本？是不是只背了这段行情？有没有把结果当原因？"}</span>
           <span>${escapeHtml(feedback.nextStep)}</span>
         </div>
         <span class="tag warn">只做教育训练</span>
@@ -1403,60 +2123,109 @@ async function submitSourceMisconception(selectedIndex) {
   }
 }
 
+function displayProfileTag(tag = "") {
+  const text = String(tag || "");
+  const exact = {
+    "context-aware": "有写环境背景",
+    "context-missing": "没写环境背景",
+    "sentiment-boundary-clear": "情绪边界清楚",
+    "sentiment-as-signal-risk": "把情绪当信号",
+    "risk-context-linked": "风险和背景有连接",
+    "risk-context-gap": "风险和背景脱节",
+    "risk-plan-needs-review": "风险计划要复查",
+    "decision-process-discipline": "决策过程纪律",
+  };
+  if (exact[text]) return exact[text];
+  if (/risk|invalidation|止损|失效|风险|认错/i.test(text)) return text.replace(/risk/ig, "风险").replace(/invalidation/ig, "失效");
+  if (/sentiment|情绪/i.test(text)) return text.replace(/sentiment/ig, "情绪");
+  if (/context|背景|环境/i.test(text)) return text.replace(/context/ig, "环境");
+  return text;
+}
+
 function renderProfile() {
   const entries = Object.entries(state.data.profile).sort((a, b) => b[1] - a[1]);
   nodes.profileTags.innerHTML = entries.length
-    ? entries.map(([tag, count], index) => `<span class="tag ${index < 2 ? "danger" : "warn"}">${tag} x${count}</span>`).join("")
-    : '<span class="tag">No profile yet</span>';
+    ? entries.map(([tag, count], index) => `<span class="tag ${index < 2 ? "danger" : "warn"}">${escapeHtml(displayProfileTag(tag))} x${count}</span>`).join("")
+    : '<span class="tag">还没有错因画像</span>';
   nodes.attemptLog.innerHTML = state.data.attempts.length
     ? state.data.attempts.map((item) => `
       <div class="attempt-row">
         <div>
-          <strong>${item.title}</strong>
-          <span>${formatTime(item.createdAt)} / ${item.selectedText || item.type}</span>
+          <strong>${escapeHtml(item.title)}</strong>
+          <span>${formatTime(item.createdAt)} / ${escapeHtml(item.selectedText || item.type)}</span>
         </div>
-        <span class="tag ${item.correct ? "warn" : "danger"}">${item.correct ? "Framework ok" : "Needs correction"}</span>
+        <span class="tag ${item.correct ? "warn" : "danger"}">${item.correct ? "过程合格" : "需要修正"}</span>
       </div>
     `).join("")
-    : '<p>No training records yet. Complete daily practice to build a user profile.</p>';
+    : '<p>还没有训练记录。完成一题后会生成错因画像。</p>';
 }
 
 function renderLearningPath(path = state.data.learningPath) {
   if (!nodes.learningPathPanel) return;
+  const lastTraining = state.lastCompletedTraining;
   if (!path) {
-    nodes.learningPathPanel.innerHTML = "<p>Complete one training task to generate a learning path.</p>";
+    nodes.learningPathPanel.innerHTML = lastTraining
+      ? `
+        <div class="attempt-row trial-next-row">
+          <div>
+            <strong>已收到刚才训练：${escapeHtml(lastTraining.title || "当前题")}</strong>
+            <span>${escapeHtml(lastTraining.biggestIssue || "先看刚才答案里的结构、失效条件和不做条件。")}</span>
+            <span>${escapeHtml(lastTraining.nextPractice || "下一步去同题回放，检查自己有没有用未来结果倒推。")}</span>
+          </div>
+          <span class="tag warn">AI复盘</span>
+        </div>
+      `
+      : "<p>先完成一题训练，系统会生成错因画像和下一步练习。</p>";
     return;
   }
-  nodes.nextPathText.textContent = path.recommendedKnowledgePoint
+  const rawNextPath = path.recommendedKnowledgePoint
     ? path.recommendedKnowledgePoint.learningObjective
-    : path.nextActions?.[0] || "Complete one training task to generate a learning path.";
+    : path.nextActions?.[0] || "";
+  nodes.nextPathText.textContent = lastTraining
+    ? `${lastTraining.biggestIssue || "已收到刚才训练。"} ${lastTraining.nextPractice || "下一步去同题回放和 AI 复盘。"}`
+    : rawNextPath || "先完成一题训练，系统会生成错因画像和下一步练习。";
+  const stage = trainingStageMeta(path.level);
+  const weakTags = (path.weakTags || []).slice(0, 3).map((item) => `${item.tag} x${item.count}`).join(" / ");
+  const weakPointText = weakTags
+    || lastTraining?.biggestIssue
+    || path.focus
+    || "先完成一题训练生成画像";
+  const safePathActions = (path.nextActions || []).map((item) => {
+    const text = String(item || "");
+    if (lastTraining && /先完成一题训练|Complete one training|生成错因画像/i.test(text)) {
+      return lastTraining.nextPractice || "回放刚才那题，先写当时可见证据、认错点和不做条件。";
+    }
+    return text;
+  });
   nodes.learningPathPanel.innerHTML = `
-    <div class="attempt-row">
+    <div class="attempt-row trial-next-row">
       <div>
-        <strong>Focus: ${path.focus}</strong>
-        <span>Level ${path.level} / education-only recommendation</span>
+        <strong>${escapeHtml(stage.label)}阶段：${escapeHtml(stage.focus)}</strong>
+        <span>${escapeHtml(stage.currentStep)}</span>
+        <span>${escapeHtml(stage.nextStep)}</span>
+        <span>当前薄弱点：${escapeHtml(weakPointText)}</span>
       </div>
-      <span class="tag warn">No signals</span>
+      <span class="tag warn">非信号</span>
     </div>
     ${path.recommendedKnowledgePoint ? `
       <div class="attempt-row">
         <div>
-          <strong>${path.recommendedKnowledgePoint.title}</strong>
-          <span>${path.recommendedKnowledgePoint.learningObjective}</span>
+          <strong>先补一段课：${escapeHtml(path.recommendedKnowledgePoint.title)}</strong>
+          <span>${escapeHtml(path.recommendedKnowledgePoint.learningObjective)}</span>
         </div>
-        <span class="tag">Knowledge</span>
+        <span class="tag">教学</span>
       </div>
     ` : ""}
     ${path.recommendedScenario ? `
       <div class="attempt-row">
         <div>
-          <strong>${path.recommendedScenario.title}</strong>
-          <span>${path.recommendedScenario.tag}</span>
+          <strong>再练一题：${escapeHtml(path.recommendedScenario.title)}</strong>
+          <span>${escapeHtml(path.recommendedScenario.tag)}</span>
         </div>
-        <span class="tag">Practice</span>
+        <span class="tag">训练</span>
       </div>
     ` : ""}
-    <ol class="clean-list">${(path.nextActions || []).map((item) => `<li>${item}</li>`).join("")}</ol>
+    <ol class="clean-list">${safePathActions.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ol>
   `;
 }
 
@@ -1514,11 +2283,19 @@ function renderCoachReport(report = state.data.coachReport) {
     nodes.coachReportPanel.innerHTML = "<p>Login and complete practice to generate a coach report.</p>";
     return;
   }
+  const lastTraining = state.lastCompletedTraining;
+  const safeNextActions = (report.nextActions || []).map((item) => {
+    const text = String(item || "");
+    if (lastTraining && /先完成一题训练|Complete one training|generate.*coach report/i.test(text)) {
+      return lastTraining.nextPractice || "回放刚才那题，先写当时可见证据、认错点和不做条件。";
+    }
+    return text;
+  });
   const topMistakes = report.topMistakes?.length
-    ? report.topMistakes.map((item) => `<span class="tag danger">${item.tag} x${item.count}</span>`).join("")
+    ? report.topMistakes.map((item) => `<span class="tag danger">${escapeHtml(displayProfileTag(item.tag))} x${item.count}</span>`).join("")
     : '<span class="tag">No repeated mistake yet</span>';
   const riskFlags = report.riskFlags?.length
-    ? report.riskFlags.map((item) => `<span class="tag warn">${item}</span>`).join("")
+    ? report.riskFlags.map((item) => `<span class="tag warn">${escapeHtml(displayProfileTag(item))}</span>`).join("")
     : '<span class="tag warn">No major risk flag</span>';
   nodes.coachReportPanel.innerHTML = `
     <div class="attempt-row">
@@ -1538,7 +2315,7 @@ function renderCoachReport(report = state.data.coachReport) {
     </div>
     <div class="profile-tags">${topMistakes}</div>
     <div class="profile-tags">${riskFlags}</div>
-    <ol class="clean-list">${(report.nextActions || []).map((item) => `<li>${item}</li>`).join("")}</ol>
+    <ol class="clean-list">${safeNextActions.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ol>
     <p class="muted-note">${report.constraints?.[0] || "No investment advice."}</p>
   `;
 }
@@ -1625,7 +2402,7 @@ function renderProgressReport(report = state.data?.progressReport) {
     ? achievements.map((item) => `<span class="tag warn">${escapeHtml(item.title)}</span>`).join("")
     : '<span class="tag">No milestone unlocked yet</span>';
   const mistakeHtml = report.topMistakes?.length
-    ? report.topMistakes.slice(0, 5).map((item) => `<span class="tag danger">${escapeHtml(item.tag)} x${item.count}</span>`).join("")
+    ? report.topMistakes.slice(0, 5).map((item) => `<span class="tag danger">${escapeHtml(displayProfileTag(item.tag))} x${item.count}</span>`).join("")
     : '<span class="tag">No repeated mistake yet</span>';
   const courseHtml = report.coursePackages?.length
     ? report.coursePackages.slice(0, 4).map((item) => `
@@ -1642,7 +2419,7 @@ function renderProgressReport(report = state.data?.progressReport) {
   const completionReportHtml = report.completionReports?.length
     ? report.completionReports.slice(0, 4).map((item) => {
       const mistakeTags = item.practiceSummary?.topMistakeTags?.length
-        ? item.practiceSummary.topMistakeTags.slice(0, 4).map((tag) => `<span class="tag danger">${escapeHtml(tag.tag)} x${tag.count}</span>`).join("")
+        ? item.practiceSummary.topMistakeTags.slice(0, 4).map((tag) => `<span class="tag danger">${escapeHtml(displayProfileTag(tag.tag))} x${tag.count}</span>`).join("")
         : '<span class="tag">No repeated mistake in this package</span>';
       return `
         <div class="attempt-row completion-report-card">
@@ -1829,7 +2606,7 @@ function renderEducationModelContext(context) {
     ? context.prohibitedUses.slice(0, 4).map((item) => `<span>${escapeHtml(item)}</span>`).join("")
     : "<span>No trading advice, signals, return promises, or real-money trading.</span>";
   const mistakes = context.learningSignals?.topMistakes?.length
-    ? context.learningSignals.topMistakes.slice(0, 4).map((item) => `<span class="tag danger">${escapeHtml(item.tag)} x${item.count}</span>`).join("")
+    ? context.learningSignals.topMistakes.slice(0, 4).map((item) => `<span class="tag danger">${escapeHtml(displayProfileTag(item.tag))} x${item.count}</span>`).join("")
     : '<span class="tag">No repeated mistake yet</span>';
   return `
     <div class="section-head compact-head">
@@ -2111,6 +2888,135 @@ async function refreshAssignments() {
   }
 }
 
+function renderTrialOutcomePromise() {
+  const dashboard = document.querySelector("#dashboardView");
+  const anchor = document.querySelector(".friend-hero");
+  if (!dashboard || !anchor) return;
+  let panel = document.querySelector("#trialOutcomePromise");
+  if (!panel) {
+    panel = document.createElement("section");
+    panel.id = "trialOutcomePromise";
+    panel.className = "panel trial-outcome-promise";
+    anchor.insertAdjacentElement("afterend", panel);
+  }
+  const attempts = state.data?.attempts || [];
+  const trainingAttempts = attempts.filter((item) => item.type === "training");
+  const latestTraining = state.lastCompletedTraining || null;
+  const replayDone = (state.data?.replayNotes || []).length > 0;
+  const misconceptionDone = attempts.some((item) => item.type === "backtest_misconception");
+  const track = learnerTrackMeta(state.selectedLearnerTrack);
+  const outcomeRows = buildTrackOutcomeRows(track, { trainingAttempts, latestTraining, replayDone });
+  const ahaText = latestTraining
+    ? (latestTraining.biggestIssue || "第一题已经暴露出：需要补结构、认错点或风险边界。")
+    : "第一题不会问你“会不会赚钱”，而是马上抓：你有没有结构、认错点、风险边界和情绪边界。";
+  panel.innerHTML = `
+    <div class="learner-track-picker" aria-label="选择学习起点">
+      <div>
+        <p class="eyebrow">先选你是哪类用户</p>
+        <h3>不同起点，只看不同学习结果。</h3>
+        <span>${escapeHtml(track.summary)}</span>
+      </div>
+      <div class="learner-track-options">
+        ${learnerTrackOptions().map((item) => `
+          <button type="button" class="${item.key === track.key ? "is-selected" : ""}" data-learner-track="${escapeHtml(item.key)}">
+            <b>${escapeHtml(item.label)}</b>
+            <span>${escapeHtml(item.short)}</span>
+          </button>
+        `).join("")}
+      </div>
+    </div>
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">练完 3 次带走什么</p>
+        <h3>${escapeHtml(track.promise)}</h3>
+      </div>
+      <span class="tag warn">教育训练</span>
+    </div>
+    <div class="trial-outcome-grid">
+      <article>
+        <strong>本次试用重点</strong>
+        <span>${escapeHtml(track.focus)}</span>
+      </article>
+      <article>
+        <strong>第一题 aha</strong>
+        <span>${escapeHtml(ahaText)}</span>
+      </article>
+      <article>
+        <strong>不是给你什么</strong>
+        <span>不荐股、不输出实盘买卖点、不承诺胜率或收益，也不连接券商。</span>
+      </article>
+    </div>
+    <div class="trial-outcome-checklist">
+      ${outcomeRows.map((item) => `
+        <div class="trial-outcome-item ${item.done ? "is-done" : ""}">
+          <b>${item.done ? "已开始" : "待完成"}</b>
+          <span>${escapeHtml(item.label)}</span>
+          <small>${escapeHtml(item.proof)}</small>
+        </div>
+      `).join("")}
+    </div>
+    <p class="muted-note">${misconceptionDone ? "你已经开始检查回测误区；继续看流程是否帮助你发现自己的判断习惯。" : "建议按顶部流程走完：训练一题、回放同一题、看 AI 复盘、再做回测误区。"} 普通课程主要讲知识，回放工具主要给数据；这里专门把一次模糊判断拆成证据、错因、同题回放和下一题练习。</p>
+  `;
+}
+
+function learnerTrackOptions() {
+  return [
+    {
+      key: "beginner",
+      label: "刚开始看 K 线",
+      short: "先把图读明白",
+      summary: "你不需要先懂很多术语，本次只练：先找位置、再写理由、最后说清楚哪里认错。",
+      promise: "小白练完 3 次，至少能按一张检查表说清楚自己看到了什么。",
+      focus: "少讲术语，先建立读图顺序：前高、区间、跌回、失效位、隐藏未来。",
+      outcomes: [
+        "用自己的话写出一段完整训练计划",
+        "指出图上一个前高、区间或失效观察区",
+        "完成一次不偷看未来的同题回放",
+      ],
+    },
+    {
+      key: "technical",
+      label: "技术派入门",
+      short: "练结构和证据",
+      summary: "你可能懂突破、支撑、回踩，但本次只检查：结论有没有证据，失效条件有没有写。",
+      promise: "技术派练完 3 次，要把“看起来会走”改成“证据、条件、失效”。",
+      focus: "把技术词变成可复盘证据：结构、确认、失效、观望条件，而不是追一个形态答案。",
+      outcomes: [
+        "把一个技术判断拆成看到什么、怎么判断",
+        "写出一个让判断失效的价格行为条件",
+        "在 AI 复盘里找到一个理由空泛或证据不足的问题",
+      ],
+    },
+    {
+      key: "postloss",
+      label: "亏损后想复盘",
+      short: "找错因和纪律",
+      summary: "你不需要证明策略能赚钱，本次只看：亏损时是不是没有认错点、被情绪带偏、或用结果倒推。",
+      promise: "复盘型用户练完 3 次，至少能说出一次判断失控发生在哪里。",
+      focus: "把“亏了但说不清”拆成错因：偷看未来、理由空泛、没有失效条件、把情绪当理由。",
+      outcomes: [
+        "说出本题最大错因，而不是只看分数",
+        "写出一个不做或停止继续判断的条件",
+        "提交反馈后得到下一次复盘练习方向",
+      ],
+    },
+  ];
+}
+
+function learnerTrackMeta(key = state.selectedLearnerTrack) {
+  return learnerTrackOptions().find((item) => item.key === key) || learnerTrackOptions()[0];
+}
+
+function buildTrackOutcomeRows(track, progress) {
+  const [first, second, third] = track.outcomes;
+  const { trainingAttempts, latestTraining, replayDone } = progress;
+  return [
+    { label: first, done: trainingAttempts.length >= 1, proof: trainingAttempts.length ? `已完成 ${trainingAttempts.length} 题` : "先完成第一题" },
+    { label: second, done: Boolean(latestTraining), proof: latestTraining?.biggestIssue || "等 AI 复盘指出最大问题" },
+    { label: third, done: replayDone || track.key === "postloss" && Boolean(state.data?.trialFeedbackRecommendation), proof: replayDone ? "已有回放笔记" : "做完第一题后去回放" },
+  ];
+}
+
 function renderDashboard() {
   const habit = state.data.habit || {};
   nodes.todayDone.textContent = `${habit.todayDone ?? state.data.user.todayDone ?? 0} / ${habit.dailyGoal || 3}`;
@@ -2119,6 +3025,7 @@ function renderDashboard() {
   if (nodes.habitStatus) {
     nodes.habitStatus.textContent = habit.nextAction || "先登录，再记录每天的训练和复盘。";
   }
+  renderTrialOutcomePromise();
 }
 
 function renderOnboarding(onboarding = state.data.onboarding) {
@@ -3251,13 +4158,24 @@ async function refreshFriendProviderStatus() {
   try {
     const result = await api("/api/system/readiness");
     nodes.friendProviderStatus.innerHTML = `
-      <div class="attempt-row">
-        <div>
-          <strong>${result.productionReady ? "外部 AI 检查中" : "本地 demo / mock provider"}</strong>
-          <span>没有 API Key 时，这里用本地演示 AI 和演示行情，不会调用真实大模型。</span>
-          <span>以后即使接真实 LLM，也只做教育复盘，不允许输出荐股、买卖信号或实盘建议。</span>
-        </div>
-        <span class="tag danger">非实盘</span>
+      <div class="readiness-boundary-grid">
+        <article>
+          <strong>${result.productionReady ? "外部 Provider 检查中" : "本地 demo / mock provider"}</strong>
+          <span>当前 AI：${escapeHtml(result.providers?.aiCoach || "mock")}；没有 API Key 时只用本地规则复盘。</span>
+          <span class="tag danger">productionReady:${String(Boolean(result.productionReady))}</span>
+        </article>
+        <article>
+          <strong>数据状态</strong>
+          <span>行情：${escapeHtml(result.providers?.marketData || "demo")}；新闻/情绪：${escapeHtml(result.providers?.news || "demo")}。当前只证明学习流程可试，不证明商业授权。</span>
+        </article>
+        <article>
+          <strong>生产化缺口</strong>
+          <span>还需要授权历史行情、授权新闻/情绪、真实 LLM 输出审计、题库扩容、部署监控和运营告警。</span>
+        </article>
+        <article>
+          <strong>教育边界</strong>
+          <span>即使以后接真实 LLM，也只做教育复盘，不允许输出荐股、买卖信号、收益承诺或真实资金指导。</span>
+        </article>
       </div>
     `;
   } catch (error) {
@@ -3318,23 +4236,24 @@ async function refreshPublicDataCandidates() {
   if (!nodes.dataSourceGrid || !nodes.dataSourceStatus) return;
   try {
     const result = await api("/api/admin/public-data-candidates");
-    nodes.dataSourceStatus.textContent = `公开数据候选源：${result.summary.total} 个，免 Key 预览 ${result.summary.noKeyPreview} 个；全部仍需授权/法务复核。`;
+    nodes.dataSourceStatus.textContent = `公开数据候选源：${result.summary.total} 个；可先做历史事件上下文 ${result.summary.authorizedPublicContext || 0} 个；真实多周期 K 线仍需授权行情合同。`;
     const rows = (result.sources || []).map((item) => `
       <div class="attempt-row">
         <div>
           <strong>${escapeHtml(item.name)}</strong>
           <span>${escapeHtml(item.type)} / ${escapeHtml(item.access)} / ${item.keyRequired ? "需要 API Key" : "免 Key 预览"}</span>
           <span>${escapeHtml(item.useInProduct || "")}</span>
+          <span>授权层级：${escapeHtml(item.authorizationTier || "未分层")}</span>
           <span>授权状态：${escapeHtml(item.licenseStatus || "未复核")}</span>
           <span>复核项：${(item.requiredReview || []).map(escapeHtml).join(" / ")}</span>
         </div>
-        <span class="tag danger">${item.productionReady ? "ready" : "需复核"}</span>
+        <span class="tag ${item.authorizedForEducationPreview ? "warn" : "danger"}">${item.authorizedForEducationPreview ? "上下文可预览" : "不能直接上线"}</span>
       </div>
     `).join("");
     nodes.dataSourceGrid.innerHTML = `
       <div class="attempt-row ops-row">
         <div>
-          <strong>公开数据不等于商业授权</strong>
+          <strong>公开数据分两类：事件上下文可以先做，行情 K 线必须授权</strong>
           ${(result.constraints || []).map((item) => `<span>${escapeHtml(item)}</span>`).join("")}
         </div>
         <span class="tag danger">productionReady:false</span>
@@ -3349,7 +4268,7 @@ async function refreshPublicDataCandidates() {
 async function previewPublicData() {
   if (!nodes.dataSourceGrid || !nodes.dataSourceStatus) return;
   try {
-    nodes.dataSourceStatus.textContent = "正在拉取公开数据预览：Stooq 日线 + GDELT 新闻...";
+    nodes.dataSourceStatus.textContent = "正在拉取公开数据预览：Stooq 只验管线，GDELT/SEC 验历史事件上下文，Alpha Vantage 无 Key 时明确阻断。";
     const result = await api("/api/admin/public-data-preview?symbol=aapl.us&query=Apple%20market%20earnings");
     const marketRows = (result.market?.rows || []).slice(-5).map((row) => `
       <span>${escapeHtml(row.date)} O:${row.open} H:${row.high} L:${row.low} C:${row.close}</span>
@@ -3357,27 +4276,59 @@ async function previewPublicData() {
     const newsRows = (result.news?.articles || []).slice(0, 5).map((item) => `
       <span>${escapeHtml(item.seenDate || "no-date")} / ${escapeHtml(item.domain || "unknown")} / ${escapeHtml(item.title || "untitled")}</span>
     `).join("");
-    nodes.dataSourceStatus.textContent = `公开数据预览完成：${result.market?.rows?.length || 0} 条日线，${result.news?.articles?.length || 0} 条新闻；仍非生产授权数据。`;
+    const filingRows = (result.officialFilings?.filings || []).slice(0, 5).map((item) => `
+      <span>${escapeHtml(item.filingDate || "no-date")} / ${escapeHtml(item.form || "form")} / ${escapeHtml(item.companyName || item.cik || "")}</span>
+    `).join("");
+    const alphaMarketRows = (result.alphaMarket?.rows || []).slice(-3).map((row) => `
+      <span>${escapeHtml(row.date)} O:${row.open} H:${row.high} L:${row.low} C:${row.close}</span>
+    `).join("");
+    const alphaNewsRows = (result.alphaNews?.articles || []).slice(0, 3).map((item) => `
+      <span>${escapeHtml(item.timePublished || "no-date")} / ${escapeHtml(item.source || "unknown")} / ${escapeHtml(item.overallSentimentLabel || "no-label")} / ${escapeHtml(item.title || "untitled")}</span>
+    `).join("");
+    nodes.dataSourceStatus.textContent = `公开数据预览完成：Stooq ${result.market?.status || "unknown"}，GDELT ${result.news?.status || "unknown"}，SEC ${result.officialFilings?.status || "unknown"}，Alpha ${result.alphaMarket?.status || "blocked"}/${result.alphaNews?.status || "blocked"}；事件上下文可先做教学预览，真实 K 线仍需授权合同。`;
     nodes.dataSourceGrid.innerHTML = `
       <div class="attempt-row">
         <div>
           <strong>Stooq 日线预览：${escapeHtml(result.market?.symbol || "aapl.us")}</strong>
           <span>来源：${escapeHtml(result.market?.sourceUrl || "")}</span>
           <span>授权状态：${escapeHtml(result.market?.licenseStatus || "未复核")}</span>
+          <span>授权层级：${escapeHtml(result.market?.authorizationTier || "未分层")}</span>
           <span>拉取状态：${escapeHtml(result.market?.status || "unknown")}${result.market?.error ? ` / ${escapeHtml(result.market.error)}` : ""}</span>
           ${marketRows || "<span>当前没有可展示的日线样本。</span>"}
         </div>
-        <span class="tag danger">非生产授权</span>
+        <span class="tag danger">仅验管线</span>
       </div>
       <div class="attempt-row">
         <div>
           <strong>GDELT 新闻预览：${escapeHtml(result.news?.query || "")}</strong>
           <span>来源：${escapeHtml(result.news?.sourceUrl || "")}</span>
           <span>授权状态：${escapeHtml(result.news?.licenseStatus || "未复核")}</span>
+          <span>授权层级：${escapeHtml(result.news?.authorizationTier || "未分层")}</span>
           <span>拉取状态：${escapeHtml(result.news?.status || "unknown")}${result.news?.error ? ` / ${escapeHtml(result.news.error)}` : ""}</span>
           ${newsRows || "<span>当前没有可展示的新闻样本。</span>"}
         </div>
-        <span class="tag danger">需版权复核</span>
+        <span class="tag warn">上下文预览</span>
+      </div>
+      <div class="attempt-row">
+        <div>
+          <strong>SEC EDGAR 公告事件：${escapeHtml(result.officialFilings?.cik || "0000320193")}</strong>
+          <span>来源：${escapeHtml(result.officialFilings?.sourceUrl || "")}</span>
+          <span>授权状态：${escapeHtml(result.officialFilings?.licenseStatus || "官方公开源，仍需 fair-access/User-Agent/归因复核")}</span>
+          <span>授权层级：${escapeHtml(result.officialFilings?.authorizationTier || "未分层")}</span>
+          <span>拉取状态：${escapeHtml(result.officialFilings?.status || "unknown")}${result.officialFilings?.error ? ` / ${escapeHtml(result.officialFilings.error)}` : ""}</span>
+          ${filingRows || "<span>当前没有可展示的公告事件样本。</span>"}
+        </div>
+        <span class="tag warn">官方上下文</span>
+      </div>
+      <div class="attempt-row">
+        <div>
+          <strong>Alpha Vantage 行情/新闻情绪</strong>
+          <span>行情状态：${escapeHtml(result.alphaMarket?.status || "blocked")}${result.alphaMarket?.error ? ` / ${escapeHtml(result.alphaMarket.error)}` : ""}</span>
+          <span>新闻情绪状态：${escapeHtml(result.alphaNews?.status || "blocked")}${result.alphaNews?.error ? ` / ${escapeHtml(result.alphaNews.error)}` : ""}</span>
+          ${alphaMarketRows || "<span>没有 MARKET_DATA_API_KEY 时不会伪造行情样本。</span>"}
+          ${alphaNewsRows || "<span>没有 NEWS_API_KEY 时不会伪造新闻/情绪样本。</span>"}
+        </div>
+        <span class="tag danger">Key/条款复核</span>
       </div>
       <p class="muted-note">${escapeHtml(result.constraints?.[0] || "公开数据预览只用于管线验证，不证明商业授权。")}</p>
     `;
@@ -6544,9 +7495,22 @@ async function refreshReviewQueue() {
   if (!nodes.reviewQueue) return;
   try {
     const result = await api("/api/admin/review-queue");
-    nodes.aiCoachStatus.textContent = `Provider: ${result.aiCoach.provider} / Mode: ${result.aiCoach.mode} / Prompt: ${result.aiCoach.promptVersion}`;
+    const providerAudit = result.aiCoachProviderAudit || {};
+    const providerSummary = providerAudit.summary || {};
+    nodes.aiCoachStatus.textContent = `Provider: ${result.aiCoach.provider} / Mode: ${result.aiCoach.mode} / Prompt: ${result.aiCoach.promptVersion} / fallback ${providerSummary.fallbackUsed || 0} / external ${providerSummary.externalProviderUsed || 0}`;
+    const providerAuditHtml = `
+      <div class="attempt-row">
+        <div>
+          <strong>AI provider 审计</strong>
+          <span>最近 ${providerSummary.totalRecent || 0} 次；fallback ${providerSummary.fallbackUsed || 0}；external ${providerSummary.externalProviderUsed || 0}；needs review ${providerSummary.needsReview || 0}</span>
+          <span>当前：${escapeHtml(result.aiCoach.mode || "fallback")} / ${escapeHtml(result.aiCoach.model || "local-rule-based")} / key ${result.aiCoach.apiKeyConfigured ? "configured" : "missing"} / productionReady:false</span>
+          ${(providerAudit.recentRuns || []).slice(0, 3).map((run) => `<span>${formatTime(run.createdAt)} / ${escapeHtml(run.provider || "mock")} / ${escapeHtml(run.mode || "fallback")} / input ${escapeHtml(run.inputComplianceStatus || "not_checked")} / output ${escapeHtml(run.outputComplianceStatus || "not_checked")}${run.fallbackReason ? ` / ${escapeHtml(run.fallbackReason)}` : ""}</span>`).join("")}
+        </div>
+        <span class="tag warn">教育复盘</span>
+      </div>
+    `;
     nodes.reviewQueue.innerHTML = result.items.length
-      ? result.items.map((item) => `
+      ? providerAuditHtml + result.items.map((item) => `
         <div class="attempt-row">
           <div>
             <strong>${item.type}</strong>
@@ -6561,7 +7525,7 @@ async function refreshReviewQueue() {
           ` : '<span class="tag danger">Review</span>'}
         </div>
       `).join("")
-      : "<p>No review items.</p>";
+      : `${providerAuditHtml}<p>No review items.</p>`;
   } catch (error) {
     nodes.aiCoachStatus.textContent = `Review queue requires admin login: ${error.message}`;
     nodes.reviewQueue.innerHTML = "";
@@ -7631,6 +8595,56 @@ async function startFriendTrial() {
   await ensureTrialAccess({ redirect: true });
 }
 
+function trialFeedbackNextPractice({ confusing = "", helpful = "", continueReason = "" } = {}) {
+  const text = [confusing, helpful, continueReason].join(" ");
+  if (/回放|未来|结果|偷看|倒推/.test(text)) {
+    return {
+      category: "回放复盘卡住",
+      nextPractice: "复盘专项：反偷看未来",
+      reason: "先写当时可见证据，再揭示后续走势，避免用结果倒推理由。",
+      successCheck: "下一次答案里必须出现：当时知道什么、还不知道什么、错了在哪里停。",
+    };
+  }
+  if (/消息|新闻|情绪|事件|热度/.test(text)) {
+    return {
+      category: "新闻情绪边界不清",
+      nextPractice: "综合：事件时间线",
+      reason: "只区分当时知道什么、事后才知道什么，不把热度当行动理由。",
+      successCheck: "下一次只允许把消息和情绪写成背景，不允许写成买卖理由。",
+    };
+  }
+  if (/止损|失效|认错|风险|仓位/.test(text)) {
+    return {
+      category: "认错点和风险边界不清",
+      nextPractice: "入门：前高没站稳",
+      reason: "专门练认错点、失效位和风险边界，先知道错在哪里停。",
+      successCheck: "下一次答案里必须写出：哪里认错、什么情况不做、风险边界是什么。",
+    };
+  }
+  if (/按钮|太多|不知道|看不懂|路径|复杂|乱/.test(text)) {
+    return {
+      category: "学习路径不够清楚",
+      nextPractice: "固定路径再走一遍",
+      reason: "按教学导入、多周期、作答、回放、AI复盘、回测误区的顺序走，不跳后台入口。",
+      successCheck: "下一次只看当前页面高亮步骤，能说清楚下一步点哪里就算通过。",
+    };
+  }
+  if (/愿意|有帮助|继续/.test(text)) {
+    return {
+      category: "可以继续加练",
+      nextPractice: "再做一题，但只盯一个目标",
+      reason: "把注意力收窄到一张检查表，别同时追求看图、消息、回测都学会。",
+      successCheck: "下一次答案里必须包含：看到什么、哪里认错、我不做什么。",
+    };
+  }
+  return {
+    category: "需要补基础表达",
+    nextPractice: "入门题再做一遍",
+    reason: "先确认自己能写出结构、失效条件和不做条件，再进入新闻情绪或回放。",
+    successCheck: "下一次用固定格式回答：我看到什么 → 我怎么判断 → 错了在哪里认错 → 我不做什么。",
+  };
+}
+
 async function submitFriendTrialFeedback() {
   if (!nodes.friendFeedbackStatus) return;
   const confusing = nodes.friendFeedbackConfusing?.value.trim() || "";
@@ -7660,7 +8674,22 @@ async function submitFriendTrialFeedback() {
     });
     state.data.supportTickets = result.tickets || [result.ticket];
     renderSupportTickets(state.data.supportTickets);
-    nodes.friendFeedbackStatus.textContent = "已提交。下一步建议：回到训练再做一题，重点观察刚才卡住的环节；我们会优先看哪里不清楚、哪里有帮助。";
+    const nextPractice = trialFeedbackNextPractice({ confusing, helpful, continueReason });
+    state.data.trialFeedbackRecommendation = {
+      ...nextPractice,
+      educationOnly: true,
+      productionReady: false,
+    };
+    nodes.friendFeedbackStatus.innerHTML = `
+      <article class="feedback-next-card" aria-label="反馈后的下一步训练">
+        <strong>已提交，系统已把反馈转成下一步训练。</strong>
+        <span><b>问题归类：</b>${escapeHtml(nextPractice.category)}</span>
+        <span><b>推荐练习：</b>${escapeHtml(nextPractice.nextPractice)}</span>
+        <span><b>为什么：</b>${escapeHtml(nextPractice.reason)}</span>
+        <span><b>下次怎样算更好：</b>${escapeHtml(nextPractice.successCheck)}</span>
+        <small>这只评价学习流程，不评价策略收益，不生成荐股、实盘信号或真实资金动作。</small>
+      </article>
+    `;
   } catch (error) {
     nodes.friendFeedbackStatus.textContent = `提交失败：${escapeHtml(error.message)}`;
   } finally {
@@ -7911,7 +8940,7 @@ async function submitPaperTrade() {
   const invalidation = nodes.paperTradeInvalidation.value.trim();
   const marketContext = nodes.paperTradeContext?.value.trim() || "";
   if (!thesis || !invalidation || !marketContext) {
-    if (nodes.paperTradeResult) nodes.paperTradeResult.innerHTML = "<p>Thesis, invalidation plan, and news/sentiment boundary are required.</p>";
+    if (nodes.paperTradeResult) nodes.paperTradeResult.innerHTML = "<p>请先写完整：练习理由、失效/认错条件、消息/情绪边界。</p>";
     return;
   }
   nodes.submitPaperTrade.disabled = true;
@@ -7944,7 +8973,7 @@ async function submitPaperTrade() {
       <div class="attempt-row">
         <div>
           <strong>已保存教学模拟记录</strong>
-          <span>${result.paperTrade.evaluation.simulatedR}R / 纪律分 ${result.paperTrade.evaluation.disciplineScore}</span>
+          <span>模拟结果 ${escapeHtml(String(result.paperTrade.evaluation.simulatedR))}R / 纪律分 ${result.paperTrade.evaluation.disciplineScore}</span>
           <span>环境边界 ${result.paperTrade.contextReview?.score ?? "-"}：${escapeHtml(result.paperTrade.contextReview?.summary || "已保存消息/情绪边界，等待复盘。")}</span>
           ${debrief ? `<span>回放复盘 ${debrief.processScore}：${escapeHtml(debrief.decisionQuality)} / 决策时点 ${debrief.revealStep}，隐藏K线 ${debrief.hiddenCandlesBeforeDecision}</span>` : ""}
           ${debrief ? `<span>下一步练习：${escapeHtml(debrief.nextPractice?.[0] || "按同一张检查表再回放一次。")}</span>` : ""}
@@ -7981,7 +9010,39 @@ function bindEvents() {
     if (!button) return;
     document.querySelector(button.dataset.scrollTarget)?.scrollIntoView({ behavior: "smooth", block: "start" });
   });
+  document.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-coach-details-toggle]");
+    if (!button) return;
+    state.coachDetailsExpanded = !state.coachDetailsExpanded;
+    renderCoachCompactMode();
+  });
+  document.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-learner-track]");
+    if (!button) return;
+    state.selectedLearnerTrack = button.dataset.learnerTrack || "beginner";
+    renderTrialOutcomePromise();
+  });
+  document.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-teaching-details-toggle]");
+    if (!button) return;
+    state.teachingDetailsExpanded = !state.teachingDetailsExpanded;
+    renderTeachingIntro(currentScenario());
+  });
+  document.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-plan-helper]");
+    if (!button || !nodes.planInput) return;
+    if (button.dataset.planHelper === "clear") {
+      nodes.planInput.value = "";
+      nodes.planInput.focus();
+      renderTrainingFocusRail();
+      return;
+    }
+    nodes.planInput.value = trainingPlanExample(currentScenario());
+    nodes.planInput.focus();
+    renderTrainingFocusRail();
+  });
   nodes.submitBtn.addEventListener("click", submitDecision);
+  nodes.planInput?.addEventListener("input", renderTrainingFocusRail);
   nodes.refreshAchievements?.addEventListener("click", refreshAchievements);
   nodes.onboardingNext?.addEventListener("click", async () => {
     const nextView = nodes.onboardingNext.dataset.nextView || state.data?.onboarding?.nextView || "dashboard";
@@ -8054,7 +9115,14 @@ function bindEvents() {
       setView("trainer");
     }
     if (button.dataset.trainingResultAction === "coach") setView("coach");
-    if (button.dataset.trainingResultAction === "replay") setView("replay");
+    if (button.dataset.trainingResultAction === "replay") {
+      if (state.lastCompletedTraining?.scenarioId) {
+        selectScenarioById(state.lastCompletedTraining.scenarioId);
+      } else {
+        renderReplay();
+      }
+      setView("replay");
+    }
     if (button.dataset.trainingResultAction === "feedback") setView("community");
   });
   nodes.replayPrev.addEventListener("click", () => {

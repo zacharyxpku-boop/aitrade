@@ -37,10 +37,17 @@ function buildLearningPath({ profile = {}, attempts = [], knowledgePoints = [], 
   const recentMistake = attempts.find((item) => item.correct === false) || null;
   const trainingLeft = entitlement?.remaining?.training ?? null;
   const focus = knowledgePoint?.concept || weakTag;
+  const level = completedTraining < 3 ? "starter" : completedTraining < 10 ? "builder" : "advanced";
+  const stage = level === "starter"
+    ? { label: "入门", focus: "看结构和失效", objective: "先把前高、跌回区间、认错点和观望条件写清楚。" }
+    : level === "builder"
+      ? { label: "进阶", focus: "多周期 + 消息情绪边界", objective: "分清高周期背景、中周期结构、当前周期动作，以及消息情绪只是背景。" }
+      : { label: "综合", focus: "回放、复盘和指标误区", objective: "把训练答案、回放记录、模拟样本和回测误区串成一条学习证据链。" };
   return {
     generatedAt: new Date().toISOString(),
     educationOnly: true,
-    level: completedTraining < 3 ? "starter" : completedTraining < 10 ? "builder" : "advanced",
+    level,
+    stage,
     focus,
     weakTags: tags,
     recommendedKnowledgePoint: knowledgePoint ? {
@@ -56,19 +63,21 @@ function buildLearningPath({ profile = {}, attempts = [], knowledgePoints = [], 
     } : null,
     nextActions: [
       knowledgePoint
-        ? `Review knowledge point: ${knowledgePoint.title}`
-        : "Complete one daily training scenario to create an error profile",
+        ? `先补课：${knowledgePoint.title}`
+        : "先完成一题训练，系统才能生成错因画像",
       scenario
-        ? `Practice scenario: ${scenario.title}`
-        : "Generate or publish a teaching scenario before assigning practice",
+        ? `再练一题：${scenario.title}`
+        : "先发布一题教学场景，再进入训练",
       recentMistake
-        ? `Rewrite the plan from your last weak attempt: ${recentMistake.title}`
-        : "Write a plan that includes structure, invalidation, and risk limit",
+        ? `重写上一次薄弱题的训练计划：${recentMistake.title}`
+        : "写一份包含结构、失效条件、风险边界和不做条件的训练计划",
+      `当前阶段目标：${stage.objective}`,
     ],
     constraints: [
-      "Education-only learning path.",
+      "只做教育学习路径。",
       "No stock recommendation, live signal, guaranteed return, or real-money trading instruction.",
-      trainingLeft == null ? "Login required to calculate remaining daily practice." : `Daily training left: ${trainingLeft}`,
+      "不提供荐股、实时信号、收益承诺或真实资金交易指导。",
+      trainingLeft == null ? "需要登录后计算今日剩余训练次数。" : `今日剩余训练次数：${trainingLeft}`,
     ],
   };
 }

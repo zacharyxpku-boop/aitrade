@@ -4,6 +4,7 @@ const PROVIDER = config.aiCoach.provider;
 const PROMPT_VERSION = "tradegym-coach-v1";
 const DEFAULT_OPENAI_MODEL = "gpt-4o-mini";
 const DEFAULT_ANTHROPIC_MODEL = "claude-3-5-haiku-latest";
+const DEFAULT_DEEPSEEK_MODEL = "deepseek-chat";
 
 const bannedTerms = ["买入", "卖出", "梭哈", "稳赚", "保证收益", "荐股", "跟单", "实盘信号"];
 
@@ -28,16 +29,30 @@ function scorePlan(plan) {
   return Math.min(score, 96);
 }
 
-function diagnosePlanGap({ correct, plan }) {
+function diagnosePlanGapDetails({ correct, plan }) {
   const text = String(plan || "");
   const gaps = [];
-  if (!correct) gaps.push("选项和题目结构不匹配，先回到图上找失效位置。");
-  if (!/止损|失效|认错|跌破|放弃|不成立/.test(text)) gaps.push("没有写清楚哪里认错。");
-  if (!/仓位|小仓|轻仓|不重仓|风险/.test(text)) gaps.push("没有说明风险边界。");
-  if (!/观望|等待|确认|回踩|不做|先不/.test(text)) gaps.push("没有写出等待或不做的条件。");
-  if (!/新闻|消息|情绪|事件|背景|干扰/.test(text)) gaps.push("没有把消息和情绪放回背景框架。");
-  if (text.length < 28) gaps.push("理由太短，更像结论，不像训练计划。");
-  return gaps[0] || "这次主要做对的是：先写过程，再写动作，没有把单根K线当成全部依据。";
+  if (!correct) gaps.push({ tag: "结构判断不匹配", message: "选项和题目结构不匹配，先回到图上找失效位置。" });
+  if (/(结果|后来|事后|最终|回头看|未来|证明)/.test(text) && !/(当时|可见|不知道|不能用|事后不可用|隐藏未来)/.test(text)) {
+    gaps.push({ tag: "偷看未来风险", message: "有偷看未来或事后归因的风险：先写当时可见证据，再看结果。" });
+  }
+  if (!/止损|失效|认错|跌破|放弃|不成立/.test(text)) gaps.push({ tag: "缺失失效条件", message: "没有写清楚哪里认错。" });
+  if (/(新闻|消息|情绪|热度).*(所以|因此|就).*(做|追|进|加|冲)/.test(text)) {
+    gaps.push({ tag: "情绪当行动理由", message: "把消息或情绪写成了行动理由；它只能做背景和偏见检查。" });
+  }
+  if (!/仓位|小仓|轻仓|不重仓|风险/.test(text)) gaps.push({ tag: "风险边界薄弱", message: "没有说明风险边界。" });
+  if (!/观望|等待|确认|回踩|不做|先不/.test(text)) gaps.push({ tag: "等待条件缺失", message: "没有写出等待或不做的条件。" });
+  if (!/新闻|消息|情绪|事件|背景|干扰/.test(text)) gaps.push({ tag: "情绪边界缺失", message: "没有把消息和情绪放回背景框架。" });
+  if (text.length < 28) gaps.push({ tag: "理由空泛", message: "理由太短，更像结论，不像训练计划。" });
+  return {
+    message: gaps[0]?.message || "这次主要做对的是：先写过程，再写动作，没有把单根K线当成全部依据。",
+    tags: gaps.map((item) => item.tag),
+    allMessages: gaps.map((item) => item.message),
+  };
+}
+
+function diagnosePlanGap({ correct, plan }) {
+  return diagnosePlanGapDetails({ correct, plan }).message;
 }
 
 function buildRuleBasedTrainingFeedback({ scenario, selectedIndex, plan, fallbackReason = "" }) {
@@ -53,7 +68,8 @@ function buildRuleBasedTrainingFeedback({ scenario, selectedIndex, plan, fallbac
   const planSignal = planScore >= 80
     ? "你的计划里包含了等待、止损或仓位意识，训练质量较好。"
     : "你的计划还不够完整，真实训练里必须写清楚失效条件和仓位理由。";
-  const planGap = diagnosePlanGap({ correct, plan });
+  const gapDetails = diagnosePlanGapDetails({ correct, plan });
+  const planGap = gapDetails.message;
   const compliance = inputReview.passed
     ? "本次复盘保持在教学范围内。"
     : `${inputReview.message}，系统不会生成实盘买卖建议。`;
@@ -69,13 +85,25 @@ function buildRuleBasedTrainingFeedback({ scenario, selectedIndex, plan, fallbac
     title: correct ? scenario.feedbackTitle : "这次判断需要修正",
     body,
     scores,
-    tags: inputReview.passed ? scenario.tags : [...scenario.tags, "合规风险话术"],
+    tags: inputReview.passed ? [...new Set([...(scenario.tags || []), ...gapDetails.tags])] : [...new Set([...(scenario.tags || []), ...gapDetails.tags, "合规风险话术"])],
+    diagnosis: {
+      primary: planGap,
+      tags: gapDetails.tags,
+      allMessages: gapDetails.allMessages,
+    },
     nextPath: scenario.nextPath,
     complianceReview: {
       input: inputReview,
       output: outputReview,
     },
     fallbackReason,
+    providerRun: providerRunSnapshot({
+      fallbackReason,
+      externalAttempted: false,
+      externalProviderUsed: false,
+      inputReview,
+      outputReview,
+    }),
   };
 }
 
@@ -128,6 +156,28 @@ async function callOpenAiCoach(prompt) {
   return payload.choices?.[0]?.message?.content || "";
 }
 
+async function callDeepSeekCoach(prompt) {
+  const response = await fetch("https://api.deepseek.com/chat/completions", {
+    method: "POST",
+    headers: {
+      "content-type": "application/json",
+      authorization: `Bearer ${config.aiCoach.apiKey}`,
+    },
+    body: JSON.stringify({
+      model: config.aiCoach.model || DEFAULT_DEEPSEEK_MODEL,
+      temperature: 0.2,
+      response_format: { type: "json_object" },
+      messages: [
+        { role: "system", content: "You are an education-only trading learning coach. Return strict JSON only." },
+        { role: "user", content: prompt },
+      ],
+    }),
+  });
+  if (!response.ok) throw new Error(`DeepSeek coach request failed: ${response.status}`);
+  const payload = await response.json();
+  return payload.choices?.[0]?.message?.content || "";
+}
+
 async function callAnthropicCoach(prompt) {
   const response = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
@@ -152,7 +202,7 @@ async function callAnthropicCoach(prompt) {
 async function generateTrainingFeedback({ scenario, selectedIndex, plan }) {
   const base = buildRuleBasedTrainingFeedback({ scenario, selectedIndex, plan });
   if (PROVIDER === "mock") return base;
-  if (!["openai", "anthropic"].includes(PROVIDER)) {
+  if (!["openai", "anthropic", "deepseek"].includes(PROVIDER)) {
     return buildRuleBasedTrainingFeedback({ scenario, selectedIndex, plan, fallbackReason: `Unsupported provider: ${PROVIDER}` });
   }
   if (!config.aiCoach.apiKey) {
@@ -161,7 +211,9 @@ async function generateTrainingFeedback({ scenario, selectedIndex, plan }) {
   try {
     const raw = PROVIDER === "openai"
       ? await callOpenAiCoach(coachPrompt({ scenario, selectedIndex, plan }))
-      : await callAnthropicCoach(coachPrompt({ scenario, selectedIndex, plan }));
+      : PROVIDER === "deepseek"
+        ? await callDeepSeekCoach(coachPrompt({ scenario, selectedIndex, plan }))
+        : await callAnthropicCoach(coachPrompt({ scenario, selectedIndex, plan }));
     const parsed = safeParseJson(raw);
     if (!parsed?.body) throw new Error("External coach did not return usable JSON body");
     const body = String(parsed.body || "").slice(0, 1200);
@@ -182,6 +234,12 @@ async function generateTrainingFeedback({ scenario, selectedIndex, plan }) {
         input: base.complianceReview.input,
         output: outputReview,
       },
+      providerRun: providerRunSnapshot({
+        externalAttempted: true,
+        externalProviderUsed: true,
+        inputReview: base.complianceReview.input,
+        outputReview,
+      }),
       externalProviderUsed: true,
     };
   } catch (error) {
@@ -194,13 +252,16 @@ function replayTagsForReview(review) {
 }
 
 function providerStatus() {
-  const externalConfigured = ["openai", "anthropic"].includes(PROVIDER) && Boolean(config.aiCoach.apiKey);
+  const externalConfigured = ["openai", "anthropic", "deepseek"].includes(PROVIDER) && Boolean(config.aiCoach.apiKey);
   return {
     provider: PROVIDER,
     promptVersion: PROMPT_VERSION,
     mode: externalConfigured ? "external" : "fallback",
-    model: config.aiCoach.model || (PROVIDER === "anthropic" ? DEFAULT_ANTHROPIC_MODEL : PROVIDER === "openai" ? DEFAULT_OPENAI_MODEL : "local-rule-based"),
+    model: providerModelName(),
     apiKeyConfigured: Boolean(config.aiCoach.apiKey),
+    externalConfigured,
+    fallbackAvailable: true,
+    complianceFilter: "education-only-output-review",
     productionReady: false,
   };
 }
@@ -211,3 +272,31 @@ module.exports = {
   replayTagsForReview,
   reviewCompliance,
 };
+
+function providerModelName() {
+  if (PROVIDER === "anthropic") return config.aiCoach.model || DEFAULT_ANTHROPIC_MODEL;
+  if (PROVIDER === "deepseek") return config.aiCoach.model || DEFAULT_DEEPSEEK_MODEL;
+  if (PROVIDER === "openai") return config.aiCoach.model || DEFAULT_OPENAI_MODEL;
+  return "local-rule-based";
+}
+
+function providerRunSnapshot({ fallbackReason = "", externalAttempted = false, externalProviderUsed = false, inputReview = null, outputReview = null } = {}) {
+  const externalConfigured = ["openai", "anthropic", "deepseek"].includes(PROVIDER) && Boolean(config.aiCoach.apiKey);
+  return {
+    provider: PROVIDER,
+    mode: externalProviderUsed ? "external" : "fallback",
+    model: providerModelName(),
+    promptVersion: PROMPT_VERSION,
+    apiKeyConfigured: Boolean(config.aiCoach.apiKey),
+    externalConfigured,
+    externalAttempted,
+    externalProviderUsed,
+    fallbackUsed: !externalProviderUsed,
+    fallbackReason: fallbackReason || (!externalConfigured ? "mock_or_missing_key_local_fallback" : ""),
+    moderationStatus: inputReview?.passed === false || outputReview?.passed === false ? "needs_review" : "approved",
+    inputComplianceStatus: inputReview?.status || "not_checked",
+    outputComplianceStatus: outputReview?.status || "not_checked",
+    educationOnly: true,
+    productionReady: false,
+  };
+}

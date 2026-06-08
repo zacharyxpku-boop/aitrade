@@ -1,6 +1,28 @@
 const path = require("node:path");
+const fs = require("node:fs");
 
 const root = __dirname;
+
+function loadLocalEnv() {
+  const envPath = path.join(root, ".env");
+  if (!fs.existsSync(envPath)) return;
+  const lines = fs.readFileSync(envPath, "utf8").split(/\r?\n/);
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith("#")) continue;
+    const index = trimmed.indexOf("=");
+    if (index <= 0) continue;
+    const key = trimmed.slice(0, index).trim();
+    if (!/^[A-Z0-9_]+$/.test(key) || process.env[key] != null) continue;
+    let value = trimmed.slice(index + 1).trim();
+    if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
+      value = value.slice(1, -1);
+    }
+    process.env[key] = value;
+  }
+}
+
+loadLocalEnv();
 
 function env(name, fallback = "") {
   return process.env[name] || fallback;
@@ -44,9 +66,12 @@ const config = {
   },
   marketData: {
     provider: env("MARKET_DATA_PROVIDER", "demo"),
+    apiKey: env("MARKET_DATA_API_KEY", ""),
   },
   news: {
     provider: env("NEWS_PROVIDER", "demo"),
+    apiKey: env("NEWS_API_KEY", ""),
+    secUserAgent: env("SEC_EDGAR_USER_AGENT", "TradeGym education-only public data preview contact local-demo@tradegym.local"),
   },
   questionGenerator: {
     provider: env("QUESTION_GENERATOR_PROVIDER", "rule-based"),

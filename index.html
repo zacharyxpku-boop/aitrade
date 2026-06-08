@@ -89,7 +89,7 @@
             <article class="card">
               <h3>3. AI复盘</h3>
               <p>系统不评价你有没有猜中涨跌，而是评价结构、环境、风控和纪律。</p>
-              <button type="button" data-jump="coach">查看画像</button>
+              <button type="button" data-jump="coach">看 AI复盘</button>
             </article>
           </div>
 
@@ -116,7 +116,7 @@
           <button class="nav-item" type="button" data-view="replay">回放/回测误区</button>
           <button class="nav-item" type="button" data-view="coach">AI复盘</button>
           <button class="nav-item" type="button" data-view="curriculum">课程路径</button>
-          <button class="nav-item" type="button" data-view="community">最后 反馈</button>
+          <button class="nav-item" type="button" data-view="community">提交反馈</button>
           <button class="nav-item nav-item-secondary" type="button" data-view="ops" hidden>管理员检查</button>
         </nav>
       </aside>
@@ -139,7 +139,7 @@
             <div>
               <p class="eyebrow">用户试用</p>
               <h3>AI 交易教育训练场，不荐股，不实盘。</h3>
-              <p>你要看的不是“策略赚不赚钱”，而是这个流程能不能帮你练清楚：看到什么、为什么判断、错了怎么复盘、下次怎么改。</p>
+              <p>给刚开始看 K 线、经常凭感觉追、亏了说不清原因的人，用“读图、作答、回放、复盘、再练”的闭环，把一次模糊判断拆成可改进的学习证据。</p>
               <div class="hero-actions">
                 <button id="friendStartLogin" type="button">一键进入试用</button>
                 <button type="button" data-jump="trainer">从教学导入开始</button>
@@ -172,15 +172,37 @@
             <div class="grid three trial-fit-grid">
               <div>
                 <strong>适合</strong>
-                <p>刚开始学看K线、经常凭感觉追、亏了说不清原因的人。</p>
+                <p>零基础小白、技术派入门者、亏损后想复盘但说不清错因的人。</p>
               </div>
               <div>
                 <strong>3次训练后带走</strong>
-                <p>会按“背景、结构、执行、风险、情绪干扰”写一段完整复盘。</p>
+                <p>能写出 1 段完整训练计划、指出 1 个认错点、完成 1 次不偷看未来的回放。</p>
               </div>
               <div>
                 <strong>不适合</strong>
                 <p>想要荐股、实盘买卖点、收益承诺或自动交易的人。</p>
+              </div>
+            </div>
+          </section>
+          <section class="panel product-difference-panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">为什么不是普通课程</p>
+                <h3>课程讲知识，回放工具给图；这里逼你把判断写成证据。</h3>
+              </div>
+            </div>
+            <div class="grid three">
+              <div>
+                <strong>普通课程</strong>
+                <p>你可能听懂了概念，但不知道自己下一次看图会错在哪里。</p>
+              </div>
+              <div>
+                <strong>普通回放</strong>
+                <p>你可以拖 K 线，但容易偷偷看结果，再倒推一个听起来合理的理由。</p>
+              </div>
+              <div>
+                <strong>这个训练场</strong>
+                <p>先写结构、失效、风险和情绪边界，再看回放和 AI 复盘，专门抓你的判断习惯。</p>
               </div>
             </div>
           </section>
@@ -202,7 +224,24 @@
               <button id="friendCheckProvider" type="button">检查 AI 模式</button>
             </div>
             <div id="friendProviderStatus" class="attempt-log">
-              <p>当前是本地 demo AI / mock provider。没有 API Key 时不调用真实大模型；以后接入真实 LLM，也只做教育复盘，不输出交易建议。</p>
+              <div class="readiness-boundary-grid">
+                <article>
+                  <strong>现在可以试什么</strong>
+                  <span>学习流程：教学导入、K线训练、同题回放、AI复盘、回测误区和反馈闭环。</span>
+                </article>
+                <article>
+                  <strong>当前是什么数据</strong>
+                  <span>本地 demo AI / mock provider + 演示行情、新闻、情绪背景；没有 API Key 时不调用真实大模型。</span>
+                </article>
+                <article>
+                  <strong>还没生产化什么</strong>
+                  <span>授权历史行情、授权新闻/情绪、真实 LLM 审计、题库规模、部署监控都还没商业化闭环。</span>
+                </article>
+                <article>
+                  <strong>绝对不做什么</strong>
+                  <span>不荐股、不出实盘信号、不承诺收益、不接券商、不指导真实资金。</span>
+                </article>
+              </div>
             </div>
           </section>
         </section>
@@ -210,7 +249,7 @@
         <section class="view" id="curriculumView" aria-label="课程路径">
           <div class="section-head">
             <div>
-              <p class="eyebrow">Curriculum</p>
+              <p class="eyebrow">课程路径</p>
               <h3>从小白到自建交易学习框架</h3>
             </div>
             <span class="badge">课程 + 题库 + 陪练</span>
@@ -239,6 +278,7 @@
                 <span class="badge" id="dataBadge">演示K线</span>
               </div>
 
+              <section id="trainingLevelPanel" class="training-level-panel" aria-label="训练层级地图"></section>
               <section id="teachingIntroPanel" class="teaching-intro" aria-label="训练前教学导入"></section>
 
               <div class="market-layout">
@@ -269,8 +309,13 @@
                   <div id="options" class="option-grid"></div>
                 </div>
                 <div class="plan-block">
-                  <label for="planInput">交易理由、止损或观望条件</label>
-                  <textarea id="planInput" rows="5" placeholder="写清楚：为什么做/不做？错了哪里认错？仓位为什么合理？"></textarea>
+                  <label for="planInput">训练计划、认错点或观望条件</label>
+                  <textarea id="planInput" rows="5" placeholder="按这个格式写：我看到什么 → 我怎么判断 → 错了在哪里认错 → 我现在不做什么。"></textarea>
+                  <div class="plan-helper-actions" aria-label="训练答案辅助">
+                    <button type="button" data-plan-helper="example">填入学习示例</button>
+                    <button type="button" data-plan-helper="clear">清空重写</button>
+                  </div>
+                  <p class="plan-helper-note">示例只帮你学习表达格式，不是交易建议，也不是实盘计划。</p>
                   <button id="submitBtn" type="button">提交训练</button>
                 </div>
               </div>
@@ -322,7 +367,7 @@
                 <p>只显示当前时点之前的数据。训练的是判断过程，不是猜后视镜答案。</p>
               </section>
               <section class="card">
-                <h3>模拟交易单</h3>
+                <h3>课堂模拟记录</h3>
                 <label for="replayPlan">你的计划</label>
                 <textarea id="replayPlan" rows="5" placeholder="例如：观望，除非重新站上前高；若入场，止损放在区间下沿。"></textarea>
                 <button id="saveReplayPlan" type="button">保存回放笔记</button>
@@ -337,22 +382,22 @@
                     <option value="long">模拟做多</option>
                     <option value="short">模拟做空</option>
                   </select>
-                  <label for="paperTradeRisk">Risk %</label>
+                  <label for="paperTradeRisk">课堂风险标记</label>
                   <input id="paperTradeRisk" type="number" min="0.1" max="5" step="0.1" value="1" />
                 </div>
                 <label for="paperTradeThesis">练习理由</label>
                 <textarea id="paperTradeThesis" rows="3" placeholder="你在练什么结构、环境或规则？"></textarea>
-                <label for="paperTradeInvalidation">失效/止损计划</label>
+                <label for="paperTradeInvalidation">失效/认错条件</label>
                 <textarea id="paperTradeInvalidation" rows="3" placeholder="什么情况说明这个模拟计划错了？"></textarea>
                 <label for="paperTradeContext">消息/情绪边界</label>
                 <textarea id="paperTradeContext" rows="3" placeholder="消息和情绪只是背景，不是买卖信号。这里写清为什么。"></textarea>
-                <button id="submitPaperTrade" type="button">保存模拟记录</button>
+                <button id="submitPaperTrade" type="button">保存课堂记录</button>
                 <div id="paperTradeResult" class="attempt-log"></div>
               </section>
             </aside>
           </div>
           <section class="panel">
-            <h3>模拟记录历史</h3>
+            <h3>课堂记录历史</h3>
             <div id="paperTradeLog" class="attempt-log"></div>
           </section>
           <section class="panel">
@@ -375,8 +420,8 @@
               </div>
               <div class="billing-actions">
                 <button id="refreshBacktestClassroom" type="button">刷新误区练习</button>
-                <button id="exportBacktestLiteracyJson" type="button">导出 JSON</button>
-                <button id="exportBacktestLiteracyCsv" type="button">导出 CSV</button>
+                <button id="exportBacktestLiteracyJson" type="button">查看结构化摘要</button>
+                <button id="exportBacktestLiteracyCsv" type="button">查看表格摘要</button>
                 <button id="exportBacktestLiteracyMd" type="button">导出说明</button>
               </div>
             </div>
@@ -1159,6 +1204,8 @@
         </section>
       </main>
     </div>
+    <script src="./trial-flow-state.js"></script>
+    <script src="./training-flow-state.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>

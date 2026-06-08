@@ -7,7 +7,8 @@
     "start": "node server.js",
     "verify": "node --check server.js && node --check app.js && node scripts/verify-api.mjs",
     "smoke:trial-room": "node scripts/smoke-customer-trial-room.mjs",
-    "check:completion": "node scripts/check-code-side-completion.mjs"
+    "check:completion": "node scripts/check-code-side-completion.mjs",
+    "seed:public-preview": "node scripts/seed-public-preview-scenarios.mjs"
   },
   "engines": {
     "node": "22.x"

@@ -5593,11 +5593,60 @@ function nextTrainingRecommendation(db, userId) {
   const attempts = userAttempts(db, userId).filter((item) => item.type === "training");
   const completedScenarioIds = new Set(attempts.map((item) => item.scenarioId));
   const scenarios = publicScenarios(db);
-  const scenario = scenarios.find((item) => !completedScenarioIds.has(item.id)) || scenarios[0] || null;
+  const profile = db.profiles?.[userId] || {};
+  const focusRules = [
+    {
+      tags: ["偷看未来风险", "复盘专项", "反事后归因"],
+      match: /(复盘专项|偷看未来|反事后|回放|证据顺序)/,
+      reason: "profile_gap:hindsight_replay",
+    },
+    {
+      tags: ["情绪当行动理由", "情绪边界缺失", "事件风险", "情绪过热"],
+      match: /(事件时间线|消息|新闻|情绪|事件风险|综合)/,
+      reason: "profile_gap:context_boundary",
+    },
+    {
+      tags: ["缺失失效条件", "失效条件", "结构判断不匹配"],
+      match: /(失效|前高|突破失败|入门)/,
+      reason: "profile_gap:invalidation",
+    },
+    {
+      tags: ["等待条件缺失", "等待确认", "多周期"],
+      match: /(多周期|等待|回踩|进阶)/,
+      reason: "profile_gap:waiting_confirmation",
+    },
+    {
+      tags: ["风险边界薄弱", "仓位控制"],
+      match: /(风险|仓位|失效|入门|事件)/,
+      reason: "profile_gap:risk_boundary",
+    },
+    {
+      tags: ["理由空泛"],
+      match: /(入门|结构|失效|前高)/,
+      reason: "profile_gap:thin_reasoning",
+    },
+  ];
+  const rankedProfileTags = Object.entries(profile).sort((a, b) => b[1] - a[1]).map(([tag]) => tag);
+  let scenario = null;
+  let reason = "first_uncompleted_scenario";
+  for (const tag of rankedProfileTags) {
+    const rule = focusRules.find((item) => item.tags.includes(tag));
+    if (!rule) continue;
+    scenario = scenarios.find((item) => !completedScenarioIds.has(item.id) && rule.match.test([item.id, item.title, item.tag, ...(item.tags || [])].join(" "))) || null;
+    if (scenario) {
+      reason = rule.reason;
+      break;
+    }
+  }
+  if (!scenario) {
+    scenario = scenarios.find((item) => !completedScenarioIds.has(item.id)) || scenarios[0] || null;
+    reason = scenario && completedScenarioIds.has(scenario.id) ? "all_available_scenarios_practiced" : "first_uncompleted_scenario";
+  }
   return {
     scenario,
     scenarioIndex: scenario ? scenarios.findIndex((item) => item.id === scenario.id) : -1,
-    reason: scenario && completedScenarioIds.has(scenario.id) ? "all_available_scenarios_practiced" : "first_uncompleted_scenario",
+    reason,
+    profileFocus: reason.startsWith("profile_gap:") ? rankedProfileTags.find((tag) => focusRules.some((rule) => rule.reason === reason && rule.tags.includes(tag))) || null : null,
     completedScenarioIds: [...completedScenarioIds],
   };
 }
@@ -15159,6 +15208,53 @@ function requireAdmin(res, session) {
   return true;
 }
 
+function demoTrialSession(db) {
+  const account = (db.accounts || []).find((item) => item.email === "student@tradegym.local")
+    || (db.accounts || []).find((item) => item.id === "demo-user")
+    || {
+      id: "demo-user",
+      email: "student@tradegym.local",
+      name: "演示学员",
+      role: "student",
+      plan: "Pro Trial",
+    };
+  return {
+    userId: account.id,
+    email: account.email,
+    name: account.name,
+    role: "student",
+    plan: account.plan || "Pro Trial",
+    loggedInAt: new Date().toISOString(),
+    trialAutoSession: true,
+  };
+}
+
+function isPublicTrialLearnerPath(pathname) {
+  return [
+    "/api/attempts",
+    "/api/replay-notes",
+    "/api/paper-trades",
+    "/api/backtest/misconception-attempts",
+    "/api/context/misconception-attempts",
+    "/api/source-transparency/misconception-attempts",
+    "/api/support/tickets",
+    "/api/context/classroom",
+    "/api/learning/evidence-integrity",
+    "/api/source-transparency/classroom",
+    "/api/backtest/classroom",
+  ].includes(pathname);
+}
+
+function ensureDemoTrialCompliance(db, session) {
+  if (session?.email !== "student@tradegym.local") return;
+  const account = (db.accounts || []).find((item) => item.id === session.userId);
+  if (!account || account.complianceVersion === complianceVersion) return;
+  const now = new Date().toISOString();
+  account.complianceAckAt = now;
+  account.complianceVersion = complianceVersion;
+  account.updatedAt = now;
+}
+
 function reviewQueue(db) {
   const deletionRequestIds = new Set((db.deletionRequests || []).map((item) => item.id));
   const openDeletionRequests = (db.deletionRequests || [])
@@ -15248,7 +15344,13 @@ function anonymizeAccountForDeletion(db, userId, requestId) {
 
 async function handleApi(req, res, pathname) {
   const db = await readDb();
-  const { token, session } = sessionFromRequest(db, req);
+  const sessionInfo = sessionFromRequest(db, req);
+  const token = sessionInfo.token;
+  let session = sessionInfo.session;
+  if (!session && isPublicTrialLearnerPath(pathname)) {
+    session = demoTrialSession(db);
+  }
+  ensureDemoTrialCompliance(db, session);
 
   if (req.method === "GET" && pathname === "/api/bootstrap") {
     sendJson(res, 200, publicDb(db, session));
@@ -15285,10 +15387,15 @@ async function handleApi(req, res, pathname) {
     if (!requireAdmin(res, session)) return;
     const url = new URL(req.url, `http://${req.headers.host || "localhost"}`);
     const symbol = String(url.searchParams.get("symbol") || "aapl.us").trim();
+    const alphaSymbol = String(url.searchParams.get("alphaSymbol") || "AAPL").trim();
+    const cik = String(url.searchParams.get("cik") || "0000320193").trim();
     const query = String(url.searchParams.get("query") || symbol || "market volatility").trim();
-    const [marketResult, newsResult] = await Promise.allSettled([
+    const [marketResult, alphaMarketResult, newsResult, secResult, alphaNewsResult] = await Promise.allSettled([
       marketDataProvider.getPublicDailyCandles({ symbol, limit: 60 }),
+      marketDataProvider.getAlphaVantageDailyCandles({ symbol: alphaSymbol, limit: 60 }),
       newsProvider.getPublicNewsEvents({ query, maxRecords: 5 }),
+      newsProvider.getSecFilingEvents({ cik, limit: 8 }),
+      newsProvider.getAlphaVantageNewsSentiment({ tickers: alphaSymbol, limit: 5 }),
     ]);
     const market = marketResult.status === "fulfilled"
       ? { status: "available", ...marketResult.value }
@@ -15296,7 +15403,19 @@ async function handleApi(req, res, pathname) {
           status: "blocked",
           provider: "stooq_daily_csv",
           providerMode: "public-preview",
+          authorizationTier: "unverified_public_market_data",
           error: marketResult.reason?.message || "Market preview failed",
+          productionReady: false,
+          educationOnly: true,
+        };
+    const alphaMarket = alphaMarketResult.status === "fulfilled"
+      ? { status: "available", ...alphaMarketResult.value }
+      : {
+          status: "blocked",
+          provider: "alpha_vantage_daily",
+          providerMode: "api-key-preview",
+          authorizationTier: "api_key_terms_review_required",
+          error: alphaMarketResult.reason?.message || "Alpha Vantage market preview failed",
           productionReady: false,
           educationOnly: true,
         };
@@ -15306,19 +15425,46 @@ async function handleApi(req, res, pathname) {
           status: "blocked",
           provider: "gdelt_doc_api",
           providerMode: "public-preview",
+          authorizationTier: "public_terms_allow_commercial_context_metadata",
           error: newsResult.reason?.message || "News preview failed",
+          productionReady: false,
+          educationOnly: true,
+        };
+    const officialFilings = secResult.status === "fulfilled"
+      ? { status: "available", ...secResult.value }
+      : {
+          status: "blocked",
+          provider: "sec_edgar_submissions",
+          providerMode: "official-public-preview",
+          authorizationTier: "official_public_context_api",
+          error: secResult.reason?.message || "SEC EDGAR preview failed",
+          productionReady: false,
+          educationOnly: true,
+        };
+    const alphaNews = alphaNewsResult.status === "fulfilled"
+      ? { status: "available", ...alphaNewsResult.value }
+      : {
+          status: "blocked",
+          provider: "alpha_vantage_news_sentiment",
+          providerMode: "api-key-preview",
+          authorizationTier: "api_key_terms_review_required",
+          error: alphaNewsResult.reason?.message || "Alpha Vantage news preview failed",
           productionReady: false,
           educationOnly: true,
         };
     sendJson(res, 200, {
       generatedAt: new Date().toISOString(),
       market,
+      alphaMarket,
       news,
+      officialFilings,
+      alphaNews,
       manifest: publicDataCandidateManifest(),
       educationOnly: true,
       productionReady: false,
       constraints: [
         "This preview tests public data ingestion only; it does not prove commercial licensing or production readiness.",
+        "GDELT/SEC can be used first as historical event-context metadata with attribution; real multi-timeframe candles require a licensed market-data contract before learner-facing production use.",
         "Keep source labels visible and complete legal/provider review before learner-facing historical datasets use these sources.",
         "Preview data must not become stock recommendations, live signals, return promises, broker actions, auto-trading inputs, or real-money instructions.",
       ],
@@ -15661,6 +15807,7 @@ async function handleApi(req, res, pathname) {
       scenario,
       scenarioIndex: recommendation.scenarioIndex,
       reason: recommendation.reason,
+      profileFocus: recommendation.profileFocus || null,
       constraints: [
         "Next training is an education-only practice recommendation.",
         "It is not a live signal, stock recommendation, return promise, or real-money trading instruction.",
@@ -17193,6 +17340,7 @@ async function handleApi(req, res, pathname) {
       scores: feedback.scores,
       tags: feedback.tags,
       contextReview,
+      aiCoachProviderRun: feedback.providerRun || null,
       createdAt: new Date().toISOString(),
     };
     db.attempts.unshift(attempt);
@@ -17221,8 +17369,14 @@ async function handleApi(req, res, pathname) {
       scenarioId: scenario.id,
       provider: feedback.provider,
       promptVersion: feedback.promptVersion,
+      providerRun: feedback.providerRun || null,
+      fallbackUsed: feedback.providerRun?.fallbackUsed ?? Boolean(feedback.fallbackReason),
+      fallbackReason: feedback.providerRun?.fallbackReason || feedback.fallbackReason || "",
+      externalProviderUsed: Boolean(feedback.externalProviderUsed || feedback.providerRun?.externalProviderUsed),
       moderationStatus: feedback.moderationStatus,
       complianceReview: feedback.complianceReview,
+      educationOnly: true,
+      productionReady: false,
       createdAt: attempt.createdAt,
     });
     completedAssignments.forEach((assignment) => {
@@ -17293,6 +17447,7 @@ async function handleApi(req, res, pathname) {
           },
           scenarioIndex: recommendation.scenarioIndex,
           reason: recommendation.reason,
+          profileFocus: recommendation.profileFocus || null,
           educationOnly: true,
         } : null;
       })(),
@@ -23907,7 +24062,42 @@ async function handleApi(req, res, pathname) {
 
   if (req.method === "GET" && pathname === "/api/admin/review-queue") {
     if (!requireAdmin(res, session)) return;
-    sendJson(res, 200, { items: reviewQueue(db), aiCoach: providerStatus() });
+    const aiCoachRuns = (db.auditLogs || [])
+      .filter((item) => item.type === "ai_coach_feedback")
+      .slice(0, 20)
+      .map((item) => ({
+        id: item.id,
+        createdAt: item.createdAt,
+        provider: item.provider,
+        promptVersion: item.promptVersion,
+        moderationStatus: item.moderationStatus,
+        mode: item.providerRun?.mode || (item.externalProviderUsed ? "external" : "fallback"),
+        model: item.providerRun?.model || "",
+        fallbackUsed: item.fallbackUsed ?? item.providerRun?.fallbackUsed ?? false,
+        fallbackReason: item.fallbackReason || item.providerRun?.fallbackReason || "",
+        externalProviderUsed: item.externalProviderUsed || item.providerRun?.externalProviderUsed || false,
+        inputComplianceStatus: item.providerRun?.inputComplianceStatus || item.complianceReview?.input?.status || "not_checked",
+        outputComplianceStatus: item.providerRun?.outputComplianceStatus || item.complianceReview?.output?.status || "not_checked",
+        educationOnly: true,
+        productionReady: false,
+      }));
+    sendJson(res, 200, {
+      items: reviewQueue(db),
+      aiCoach: providerStatus(),
+      aiCoachProviderAudit: {
+        recentRuns: aiCoachRuns,
+        summary: {
+          totalRecent: aiCoachRuns.length,
+          fallbackUsed: aiCoachRuns.filter((item) => item.fallbackUsed).length,
+          externalProviderUsed: aiCoachRuns.filter((item) => item.externalProviderUsed).length,
+          needsReview: aiCoachRuns.filter((item) => item.moderationStatus === "needs_review").length,
+        },
+        constraints: [
+          "AI coach provider audit is education-only operational evidence.",
+          "Fallback or external provider usage must not become stock recommendations, live signals, return promises, broker workflows, auto-trading, or real-money trading instructions.",
+        ],
+      },
+    });
     return;
   }
 

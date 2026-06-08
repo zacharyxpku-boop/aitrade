@@ -322,12 +322,13 @@ try {
     readiness.status !== 200 ||
     readiness.data.providers?.email !== "local" ||
     readiness.data.providers?.payment !== "local" ||
-    readiness.data.providers?.aiCoach !== "mock" ||
+    !["mock", "openai", "anthropic", "deepseek"].includes(readiness.data.providers?.aiCoach) ||
     readiness.data.providers?.marketData !== "demo" ||
     readiness.data.providers?.news !== "demo" ||
     readiness.data.providers?.questionGenerator !== "rule-based" ||
     readiness.data.providers?.knowledgeDistiller !== "rule-based" ||
     readiness.data.productionReady !== false ||
+    readiness.data.aiCoach?.productionReady !== false ||
     readiness.data.audit?.immutableLedger === true
   ) {
     throw new Error("system readiness API failed");
@@ -821,15 +822,22 @@ try {
     throw new Error("anonymous content source release packet access was not blocked");
   }
 
-  const blockedAttempt = await request("/api/attempts", {
+  const anonymousTrialAttempt = await request("/api/attempts", {
     method: "POST",
     body: {
       scenarioId: boot.data.scenarios[0].id,
       selectedIndex: boot.data.scenarios[0].answer,
-      plan: "未登录尝试提交。",
+      plan: "Public trial direct submit: education evidence, invalidation, and no real-money action.",
     },
   });
-  if (blockedAttempt.status !== 401) throw new Error("unauthenticated attempt was not blocked");
+  if (
+    anonymousTrialAttempt.status !== 201 ||
+    anonymousTrialAttempt.data.user?.id !== "demo-user" ||
+    anonymousTrialAttempt.data.feedback?.providerRun?.productionReady !== false ||
+    anonymousTrialAttempt.data.attempt?.userId !== "demo-user"
+  ) {
+    throw new Error("anonymous education trial attempt did not use the demo learner fallback safely");
+  }
 
   const blockedProgressReport = await request("/api/learner/progress-report");
   if (blockedProgressReport.status !== 401) throw new Error("unauthenticated progress report was not blocked");

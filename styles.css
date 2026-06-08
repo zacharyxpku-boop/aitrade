@@ -316,6 +316,270 @@ ol {
   font-size: 16px;
 }
 
+.trial-outcome-promise {
+  display: grid;
+  gap: 14px;
+}
+
+.learner-track-picker {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.85fr) minmax(0, 1.4fr);
+  gap: 12px;
+  align-items: stretch;
+  border: 1px solid #dfd4b3;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fffdf4;
+}
+
+.learner-track-picker > div:first-child {
+  display: grid;
+  gap: 6px;
+  align-content: start;
+}
+
+.learner-track-picker h3 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+.learner-track-picker span {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+.learner-track-options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.learner-track-options button {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  min-height: 84px;
+  align-content: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px;
+  background: #fff;
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+}
+
+.learner-track-options button.is-selected {
+  border-color: var(--accent);
+  background: #edf8f1;
+  box-shadow: inset 0 0 0 1px rgba(32, 136, 91, 0.24);
+}
+
+.learner-track-options b {
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+.trial-outcome-grid,
+.trial-outcome-checklist {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.trial-outcome-grid article,
+.trial-outcome-item {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px;
+  background: #fff;
+  line-height: 1.55;
+}
+
+.trial-outcome-grid strong,
+.trial-outcome-item span {
+  color: var(--ink);
+}
+
+.trial-outcome-grid span,
+.trial-outcome-item small {
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
+.trial-outcome-item b {
+  width: fit-content;
+  border-radius: 999px;
+  padding: 3px 8px;
+  background: #fff5e3;
+  color: #8a5a00;
+  font-size: 12px;
+}
+
+.trial-outcome-item.is-done b {
+  background: #edf8f1;
+  color: var(--accent);
+}
+
+.readiness-boundary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.readiness-boundary-grid article {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px;
+  background: #fff;
+}
+
+.readiness-boundary-grid strong {
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.readiness-boundary-grid span {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+.sharp-diagnosis-card {
+  display: grid;
+  gap: 12px;
+  border: 1px solid #e0c3be;
+  border-radius: 8px;
+  padding: 14px;
+  background: #fff8f6;
+}
+
+.sharp-diagnosis-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.sharp-diagnosis-head > div {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+}
+
+.sharp-diagnosis-head h4 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+.sharp-diagnosis-head span,
+.sharp-diagnosis-grid span,
+.sharp-diagnosis-grid small {
+  color: var(--muted);
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+.sharp-diagnosis-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.sharp-diagnosis-grid article {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  border: 1px solid #ead4d0;
+  border-radius: 8px;
+  padding: 10px;
+  background: #fff;
+}
+
+.sharp-diagnosis-grid strong {
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.sharp-diagnosis-grid small {
+  font-size: 12px;
+}
+
+#friendFeedbackStatus {
+  display: grid;
+  gap: 6px;
+}
+
+.feedback-next-card {
+  display: grid;
+  gap: 8px;
+  border: 1px solid #b8dcc6;
+  border-radius: 8px;
+  padding: 14px;
+  background: #f2fbf5;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
+.feedback-next-card strong {
+  font-size: 15px;
+}
+
+.feedback-next-card span,
+.feedback-next-card small {
+  line-height: 1.55;
+}
+
+.feedback-next-card b {
+  color: var(--accent);
+}
+
+.feedback-next-card small {
+  color: var(--muted);
+}
+
+.aha-moment-card {
+  display: grid;
+  gap: 9px;
+  border: 1px solid #f0c36d;
+  border-radius: 8px;
+  padding: 14px;
+  background: #fff8ea;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
+.aha-moment-card h4 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.aha-moment-card span,
+.aha-moment-card small {
+  line-height: 1.55;
+}
+
+.aha-moment-card b {
+  color: #8a5a00;
+}
+
+.aha-moment-card small {
+  color: var(--muted);
+}
+
 .friend-feedback-panel {
   max-width: 860px;
 }
@@ -417,6 +681,38 @@ ol {
   margin: 0 0 10px;
 }
 
+.coach-details-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 14px 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px;
+  background: #fff;
+}
+
+.coach-details-toggle div {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.coach-details-toggle span {
+  color: var(--muted);
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+#coachView.coach-compact > section.panel {
+  display: none;
+}
+
+#coachView.coach-compact > #coachSharpDiagnosis {
+  display: grid;
+}
+
 .section-head {
   display: flex;
   align-items: flex-start;
@@ -456,6 +752,100 @@ ol {
   gap: 16px;
 }
 
+.training-level-panel {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px;
+  background: #fbfcf8;
+}
+
+.training-level-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.training-level-head h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.training-level-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.replay-training-bridge {
+  display: grid;
+  gap: 10px;
+  margin: 8px 0 12px;
+  border: 1px solid #b8dcc6;
+  border-radius: 8px;
+  padding: 14px;
+  background: #f2fbf5;
+}
+
+.replay-training-bridge h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.replay-training-bridge span,
+.replay-training-bridge small {
+  color: var(--muted);
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+.replay-bridge-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.replay-bridge-grid span {
+  display: grid;
+  gap: 5px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px;
+  background: #fff;
+}
+
+.replay-bridge-grid b {
+  color: var(--accent);
+  font-size: 13px;
+}
+
+.training-level-card {
+  display: grid;
+  gap: 5px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px;
+  background: #fff;
+}
+
+.training-level-card.is-current {
+  border-color: var(--accent);
+  outline: 3px solid rgba(32, 136, 91, 0.14);
+}
+
+.training-level-card strong {
+  font-size: 14px;
+}
+
+.training-level-card span {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
 .teaching-intro {
   display: grid;
   gap: 14px;
@@ -474,6 +864,22 @@ ol {
   gap: 12px;
 }
 
+.teaching-head-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.teaching-detail-stack {
+  display: none;
+  gap: 12px;
+}
+
+.teaching-intro.is-expanded .teaching-detail-stack {
+  display: grid;
+}
+
 .teaching-intro-head h4,
 .teaching-goal strong {
   margin: 0;
@@ -486,9 +892,50 @@ ol {
 }
 
 .teaching-goal span,
+.teaching-mini-lesson span,
+.teaching-checklist span,
 .teaching-steps span {
   color: var(--muted);
   line-height: 1.65;
+}
+
+.teaching-mini-lesson,
+.teaching-checklist {
+  display: grid;
+  gap: 10px;
+}
+
+.teaching-mini-lesson {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.teaching-mini-lesson > div,
+.teaching-checklist {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px;
+  background: #fff;
+}
+
+.teaching-mini-lesson strong,
+.teaching-checklist strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.teaching-mini-lesson span,
+.teaching-checklist span {
+  display: block;
+  font-size: 13px;
+}
+
+.teaching-checklist {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.teaching-checklist strong {
+  grid-column: 1 / -1;
 }
 
 .teaching-steps {
@@ -520,7 +967,7 @@ ol {
 
 .answer-coach {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 10px;
 }
 
@@ -574,6 +1021,43 @@ ol {
   height: 340px;
 }
 
+.chart-reading-guide {
+  display: grid;
+  gap: 10px;
+  border-top: 1px solid var(--line);
+  padding: 12px 14px 14px;
+  background: #fffdf5;
+}
+
+.chart-reading-guide > strong {
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.chart-reading-guide > div {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.chart-reading-guide span {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  border: 1px solid #e8ddbd;
+  border-radius: 8px;
+  padding: 9px;
+  background: #fff;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.chart-reading-guide b {
+  color: var(--ink);
+  font-size: 13px;
+}
+
 .timeframe-stack {
   border-top: 1px solid var(--line);
   padding: 14px;
@@ -607,7 +1091,7 @@ ol {
 
 .timeframe-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 10px;
 }
 
@@ -638,6 +1122,21 @@ ol {
 
 .timeframe-card p {
   margin: 0;
+}
+
+.timeframe-source-chip,
+.timeframe-license-note {
+  border-radius: 8px;
+  padding: 7px 8px;
+  background: #fff7e8;
+  color: #805b00;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.timeframe-license-note {
+  background: #f7f8f4;
+  color: var(--muted);
 }
 
 .context-card {
@@ -720,6 +1219,158 @@ dd {
   background: #f7fbf4;
 }
 
+.trial-flow-guide {
+  display: grid;
+  gap: 10px;
+  margin: 0 0 16px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.trial-flow-summary {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  justify-content: space-between;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.trial-flow-summary strong {
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.trial-flow-steps {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.trial-flow-step {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 6px;
+  align-items: center;
+  min-height: 38px;
+  padding: 7px 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--soft);
+  color: var(--muted);
+  text-align: left;
+}
+
+.trial-flow-step span {
+  display: inline-grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.trial-flow-step b {
+  overflow: hidden;
+  color: inherit;
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.trial-flow-step.is-current {
+  border-color: var(--accent);
+  background: #edf8f1;
+  color: var(--ink);
+}
+
+.trial-flow-step.is-done {
+  background: #f7fbf4;
+  color: var(--ink);
+}
+
+.training-focus-rail {
+  display: grid;
+  gap: 10px;
+  margin: 12px 0 14px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.training-focus-rail > div:first-child {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  justify-content: space-between;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.training-focus-rail strong {
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.training-focus-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.training-focus-steps button {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 4px 8px;
+  align-items: start;
+  min-height: 74px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--soft);
+  color: var(--muted);
+  text-align: left;
+}
+
+.training-focus-steps b {
+  display: inline-grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: #fff;
+  color: inherit;
+  font-size: 12px;
+}
+
+.training-focus-steps span {
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.training-focus-steps small {
+  grid-column: 2;
+  overflow-wrap: anywhere;
+  line-height: 1.45;
+}
+
+.training-focus-steps button.is-current {
+  border-color: var(--accent);
+  background: #edf8f1;
+  color: var(--ink);
+}
+
+.training-focus-steps button.is-done {
+  background: #f7fbf4;
+  color: var(--ink);
+}
+
 .trial-flow-actions {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -749,9 +1400,105 @@ dd {
   background: #edf8f1;
 }
 
+.backtest-everyday-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.backtest-plain-lesson {
+  display: grid;
+  gap: 10px;
+  border: 1px solid #dfd4b3;
+  border-radius: 8px;
+  padding: 14px;
+  background: #fffdf4;
+}
+
+.backtest-plain-lesson h4 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 18px;
+}
+
+.backtest-plain-lesson small {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.backtest-metric-plain-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.backtest-metric-plain-grid article {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px;
+  background: #fff;
+}
+
+.backtest-metric-plain-grid span,
+.backtest-metric-plain-grid small {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.backtest-metric-plain-grid strong {
+  color: var(--ink);
+  font-size: 18px;
+}
+
+.backtest-everyday-card {
+  display: grid;
+  gap: 6px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  line-height: 1.55;
+}
+
+.backtest-everyday-card strong {
+  color: var(--ink);
+}
+
+.backtest-everyday-card span {
+  color: var(--muted);
+}
+
+.backtest-everyday-card b {
+  color: var(--ink);
+  font-size: 13px;
+}
+
 .plan-block {
   display: grid;
   gap: 10px;
+}
+
+.plan-helper-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.plan-helper-actions button {
+  min-height: 36px;
+  padding: 8px 10px;
+}
+
+.plan-helper-note {
+  margin: -2px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
 }
 
 .field-row {
@@ -1122,7 +1869,17 @@ textarea {
   .grid.two,
   .grid.three,
   .market-layout,
+  .learner-track-picker,
   .timeframe-grid,
+  .training-level-grid,
+  .trial-outcome-grid,
+  .trial-outcome-checklist,
+  .readiness-boundary-grid,
+  .backtest-metric-plain-grid,
+  .backtest-everyday-grid,
+  .replay-bridge-grid,
+  .teaching-mini-lesson,
+  .teaching-checklist,
   .teaching-steps,
   .answer-coach,
   .decision-area,
@@ -1138,7 +1895,15 @@ textarea {
     grid-template-columns: 1fr;
   }
 
+  .learner-track-options {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .topbar,
+  .training-level-head,
+  .teaching-intro-head,
+  .teaching-head-actions,
+  .coach-details-toggle,
   .section-head {
     flex-direction: column;
     align-items: stretch;
@@ -1156,6 +1921,30 @@ textarea {
 
   .trial-flow-actions {
     grid-template-columns: 1fr;
+  }
+
+  .trial-flow-summary {
+    display: grid;
+  }
+
+  .training-focus-rail > div:first-child {
+    display: grid;
+  }
+
+  .trial-flow-steps {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .training-focus-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .chart-reading-guide > div {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sharp-diagnosis-head {
+    display: grid;
   }
 
   .score-grid {
@@ -1176,5 +1965,29 @@ textarea {
   .topbar .billing-actions button,
   .topbar .billing-actions .badge {
     flex: 1 1 140px;
+  }
+
+  .trial-flow-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .learner-track-options {
+    grid-template-columns: 1fr;
+  }
+
+  .trial-flow-step {
+    min-height: 40px;
+  }
+
+  .training-focus-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-reading-guide > div {
+    grid-template-columns: 1fr;
+  }
+
+  .sharp-diagnosis-grid {
+    grid-template-columns: 1fr;
   }
 }

@@ -353,6 +353,7 @@ function readDb() {
     deletionRequests: getState("deletionRequests", []),
     educationModelRuns: getState("educationModelRuns", []),
     coachSessionBookings: getState("coachSessionBookings", []),
+    publicPreviewSeedRuns: getState("publicPreviewSeedRuns", []),
     accounts,
     sessions,
     passwordResets,
@@ -439,6 +440,7 @@ function writeDb(next) {
     setState(database, "deletionRequests", next.deletionRequests || []);
     setState(database, "educationModelRuns", next.educationModelRuns || []);
     setState(database, "coachSessionBookings", next.coachSessionBookings || []);
+    setState(database, "publicPreviewSeedRuns", next.publicPreviewSeedRuns || []);
 
     const insertAccount = database.prepare(`
       INSERT INTO accounts (
