@@ -6273,9 +6273,9 @@ function scenarioSourceTransparency(scenario) {
     demoData: isDemo,
     educationOnly: source.educationOnly !== false,
     notSignal: true,
-    learnerLabel: `${isDemo ? "内部演示K线，不是已授权真实历史行情" : "已授权历史教学行情"}；行情 ${marketLicense}；新闻 ${newsLicense}；只做教育训练，不是实盘信号或交易建议。`,
+    learnerLabel: `${isDemo ? "当前为内部演示K线和演示新闻/情绪，不是已授权真实历史数据" : "已授权历史教学行情、新闻和情绪数据"}；行情 ${marketLicense}；新闻 ${newsLicense}；历史回顾只做教育训练，不是实盘信号或交易建议。`,
     constraints: [
-      "Demo scenarios use internal teaching candles unless a licensed historical market-data provider is attached.",
+      "Demo scenarios use internal teaching candles plus demo news/sentiment unless licensed historical market, news, and sentiment providers are attached.",
       "It is not a stock recommendation, live buy/sell signal, return promise, broker workflow, or real-money trading instruction.",
     ],
   };
@@ -13562,16 +13562,16 @@ function buildSourceTransparencyClassroom({ scenarios = [], attempts = [] } = {}
   const weakAttempts = sourceAttempts.filter((item) => item.correct === false);
   const drill = {
     id: "demo_label_not_signal",
-    prompt: "一个场景标注：'内部演示K线，不是已授权真实历史行情；只做教育训练，不是实盘信号。' 这是什么意思？",
+    prompt: "一个场景标注：'当前为内部演示K线和演示新闻/情绪，不是已授权真实历史数据；历史回顾只做教育训练，不是实盘信号。' 这是什么意思？",
     options: [
-      "It is safe for education practice only; it is not a recommendation, live signal, or proof of licensed production data.",
-      "It means the app found a live buy/sell opportunity but hides the signal wording.",
-      "It means the backtest result can be treated as expected future return.",
+      "只能作为教育练习材料；它不是荐股、实盘信号，也不能证明已经接入授权生产数据。",
+      "说明系统发现了实时买卖机会，只是把信号文字隐藏了。",
+      "说明回测结果可以当成未来预期收益。",
     ],
     answer: 0,
     misconception: "demo_label_as_signal",
-    explanation: "Source labels explain where teaching material came from and what it cannot be used for. Demo/internal-demo labels do not create market permission, production licensing, or return evidence.",
-    requiredPrinciple: "Source transparency is a learner safety label, not a trading signal, recommendation, or production-data certification.",
+    explanation: "来源标签只说明教学材料来自哪里、不能拿来做什么。演示或内部演示标签不等于市场权限、生产授权或收益证据。",
+    requiredPrinciple: "来源透明是学习安全标签，不是交易信号、荐股建议或生产数据认证。",
     educationOnly: true,
   };
   return {

@@ -8,6 +8,7 @@
   adminCoursePackages: [],
   data: null,
   trialAccessPending: false,
+  trialAccessPromise: null,
 };
 
 const nodes = {
@@ -368,26 +369,54 @@ async function api(path, options = {}) {
   return payload;
 }
 
-async function loadBootstrap() {
+async function loadBootstrap({ render = true } = {}) {
   state.data = await api("/api/bootstrap");
-  renderAll();
+  if (render) renderAll();
 }
 
 async function ensureTrialAccess({ redirect = false } = {}) {
-  if (state.data?.session || state.trialAccessPending) return;
-  state.trialAccessPending = true;
-  try {
-    await login("student@tradegym.local", "demo123");
+  if (state.data?.session) {
     if (!state.data?.compliance?.acknowledged) {
       await acknowledgeCompliance();
-    }
-    if (nodes.habitStatus) {
-      nodes.habitStatus.textContent = "已进入试用模式。直接按训练、回放、AI复盘、回测误区、反馈走完即可。";
+      await loadBootstrap();
     }
     if (redirect) setView("trainer");
-  } finally {
-    state.trialAccessPending = false;
+    return state.data.session;
   }
+  if (!state.trialAccessPromise) {
+    state.trialAccessPending = true;
+    setTrialEntryPending(true);
+    state.trialAccessPromise = (async () => {
+      await loginTrialAccount();
+      if (!state.data?.compliance?.acknowledged) {
+        await acknowledgeCompliance();
+        await loadBootstrap({ render: false });
+      }
+      if (!state.data?.session) {
+        throw new Error("试用会话没有建立成功，请刷新后重试。");
+      }
+      renderAll();
+      if (nodes.habitStatus) {
+        nodes.habitStatus.textContent = "已进入试用模式。直接按训练、回放、AI复盘、回测误区、反馈走完即可。";
+      }
+      return state.data.session;
+    })().finally(() => {
+      state.trialAccessPending = false;
+      state.trialAccessPromise = null;
+      setTrialEntryPending(false);
+    });
+  }
+  const session = await state.trialAccessPromise;
+  if (redirect) setView("trainer");
+  return session;
+}
+
+function setTrialEntryPending(isPending) {
+  [nodes.loginDemo, nodes.friendStartLogin].forEach((button) => {
+    if (!button) return;
+    button.disabled = isPending;
+    button.textContent = isPending ? "正在进入试用..." : "一键进入试用";
+  });
 }
 
 function setView(view) {
@@ -7328,6 +7357,17 @@ async function login(email, password) {
   }
 }
 
+async function loginTrialAccount() {
+  const result = await api("/api/auth/login", {
+    method: "POST",
+    body: JSON.stringify({ email: "student@tradegym.local", password: "demo123" }),
+  });
+  state.data = state.data || {};
+  state.data.session = result.session;
+  state.data.user = result.user;
+  await loadBootstrap({ render: false });
+}
+
 async function startFriendTrial() {
   await ensureTrialAccess({ redirect: true });
 }
@@ -8425,11 +8465,6 @@ async function boot() {
   bindEvents();
   setView("dashboard");
   try {
-    await api("/api/auth/login", {
-      method: "POST",
-      body: JSON.stringify({ email: "student@tradegym.local", password: "demo123" }),
-    });
-    await loadBootstrap();
     await ensureTrialAccess();
   } catch (error) {
     nodes.viewTitle.textContent = "Service not started";
