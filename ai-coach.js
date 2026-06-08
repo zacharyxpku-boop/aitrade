@@ -26,6 +26,18 @@ function scorePlan(plan) {
   return Math.min(score, 96);
 }
 
+function diagnosePlanGap({ correct, plan }) {
+  const text = String(plan || "");
+  const gaps = [];
+  if (!correct) gaps.push("选项和题目结构不匹配，先回到图上找失效位置。");
+  if (!/止损|失效|认错|跌破|放弃|不成立/.test(text)) gaps.push("没有写清楚哪里认错。");
+  if (!/仓位|小仓|轻仓|不重仓|风险/.test(text)) gaps.push("没有说明风险边界。");
+  if (!/观望|等待|确认|回踩|不做|先不/.test(text)) gaps.push("没有写出等待或不做的条件。");
+  if (!/新闻|消息|情绪|事件|背景|干扰/.test(text)) gaps.push("没有把消息和情绪放回背景框架。");
+  if (text.length < 28) gaps.push("理由太短，更像结论，不像训练计划。");
+  return gaps[0] || "这次主要做对的是：先写过程，再写动作，没有把单根K线当成全部依据。";
+}
+
 function generateTrainingFeedback({ scenario, selectedIndex, plan }) {
   const correct = selectedIndex === scenario.answer;
   const planScore = scorePlan(plan);
@@ -39,10 +51,11 @@ function generateTrainingFeedback({ scenario, selectedIndex, plan }) {
   const planSignal = planScore >= 80
     ? "你的计划里包含了等待、止损或仓位意识，训练质量较好。"
     : "你的计划还不够完整，真实训练里必须写清楚失效条件和仓位理由。";
+  const planGap = diagnosePlanGap({ correct, plan });
   const compliance = inputReview.passed
     ? "本次复盘保持在教学范围内。"
     : `${inputReview.message}，系统不会生成实盘买卖建议。`;
-  const body = `${scenario.feedback} ${planSignal} ${compliance}`;
+  const body = `${scenario.feedback} 最大问题：${planGap} ${planSignal} ${compliance}`;
   const outputReview = reviewCompliance(body);
   const moderationStatus = inputReview.passed && outputReview.passed ? "approved" : "needs_review";
 

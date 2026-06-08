@@ -32,6 +32,7 @@ const nodes = {
   newsContext: document.querySelector("#newsContext"),
   sentimentContext: document.querySelector("#sentimentContext"),
   sourceDisclosure: document.querySelector("#sourceDisclosure"),
+  contextTimeline: document.querySelector("#contextTimeline"),
   questionText: document.querySelector("#questionText"),
   options: document.querySelector("#options"),
   planInput: document.querySelector("#planInput"),
@@ -556,8 +557,9 @@ function renderTrainer() {
   if (nodes.trainingResultActions) nodes.trainingResultActions.innerHTML = "";
   renderTeachingIntro(lesson);
   renderOptions(lesson);
-  renderCandles(nodes.chart, lesson.candles);
+  renderCandles(nodes.chart, lesson.candles, { annotations: buildChartAnnotations(lesson.candles) });
   renderMultiTimeframePanel(lesson);
+  renderContextTimeline(lesson);
 }
 
 function renderTeachingIntro(lesson) {
@@ -582,6 +584,16 @@ function renderTeachingIntro(lesson) {
       <li><strong>最后看 ${escapeHtml(timeframe)}</strong><span>执行周期只用来写训练动作：做、不做、等待，和对应的止损或观望条件。</span></li>
       <li><strong>新闻和情绪只当背景</strong><span>它们训练你识别偏见和事件风险，不是买卖信号。</span></li>
     </ol>
+    <div class="answer-coach">
+      <div>
+        <strong>好答案长这样</strong>
+        <span>我看到前高附近回落，先承认突破假设可能失效；如果重新站回关键区间再复盘，否则等待新结构。新闻和情绪只记录为背景。</span>
+      </div>
+      <div>
+        <strong>坏答案长这样</strong>
+        <span>感觉会继续走，先冲进去再说。没有结构、没有失效条件，也没有说明消息和情绪是不是干扰。</span>
+      </div>
+    </div>
     <div class="teaching-intro-actions">
       <button type="button" data-scroll-target="#multiTimeframePanel">看多周期读图</button>
       <button type="button" data-scroll-target="#decisionArea">开始当前题训练</button>
@@ -638,8 +650,47 @@ function renderCandles(target, candles, options = {}) {
       `;
     })
     .join("");
+  const annotations = (options.annotations || [])
+    .map((annotation) => {
+      const y = scaleY(annotation.value);
+      const dash = annotation.dash ? `stroke-dasharray="${annotation.dash}"` : "";
+      return `
+        <line x1="${padding}" x2="${width - padding}" y1="${y}" y2="${y}" stroke="${annotation.color}" stroke-width="1.5" ${dash} />
+        <text x="${padding + 8}" y="${Math.max(14, y - 6)}" fill="${annotation.color}" font-size="${options.annotationFontSize || 13}" font-weight="700">${annotation.label}</text>
+      `;
+    })
+    .join("");
+  const futureLabel = options.annotations?.length
+    ? `<text x="${width - padding - 72}" y="${padding - 8}" fill="#687166" font-size="13" font-weight="700">未来隐藏</text>`
+    : "";
   target.setAttribute("viewBox", `0 0 ${width} ${height}`);
-  target.innerHTML = `${grid}${bars}`;
+  target.innerHTML = `${grid}${annotations}${bars}${futureLabel}`;
+}
+
+function buildChartAnnotations(candles = []) {
+  if (!Array.isArray(candles) || candles.length < 6) return [];
+  const priorCandles = candles.slice(0, Math.max(2, candles.length - 3));
+  const recentCandles = candles.slice(-6);
+  const priorHigh = Math.max(...priorCandles.map((item) => item[1]));
+  const invalidationZone = Math.min(...recentCandles.map((item) => item[2]));
+  const lastClose = candles[candles.length - 1][3];
+  return [
+    { value: priorHigh, label: "前高/结构压力", color: "#8b6f22", dash: "5 5" },
+    { value: lastClose, label: "当前收盘", color: "#1f6f50" },
+    { value: invalidationZone, label: "失效观察区", color: "#b7473f", dash: "4 4" },
+  ];
+}
+
+function renderContextTimeline(lesson) {
+  if (!nodes.contextTimeline) return;
+  nodes.contextTimeline.innerHTML = `
+    <strong>事件时间边界</strong>
+    <div class="timeline-grid">
+      <span><b>当时可见</b>${escapeHtml(lesson.news || "无真实新闻。")} ${escapeHtml(lesson.sentiment || "情绪只作背景。")}</span>
+      <span><b>事后不可用</b>不能用未来K线、事后新闻或结果倒推当前判断。</span>
+      <span><b>训练目的</b>检查自己有没有把消息、情绪或热度误当成动作依据。</span>
+    </div>
+  `;
 }
 
 function aggregateCandles(candles, groupSize) {

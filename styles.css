@@ -518,6 +518,31 @@ ol {
   font-size: 13px;
 }
 
+.answer-coach {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.answer-coach div {
+  display: grid;
+  gap: 6px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px;
+  background: #fff;
+}
+
+.answer-coach strong {
+  font-size: 14px;
+}
+
+.answer-coach span {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.65;
+}
+
 .teaching-intro-actions {
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -637,6 +662,35 @@ dt {
 
 dd {
   margin: 0;
+}
+
+.context-timeline {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+}
+
+.timeline-grid {
+  display: grid;
+  gap: 8px;
+}
+
+.timeline-grid span {
+  display: grid;
+  gap: 3px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px;
+  background: #fff;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.timeline-grid b {
+  color: var(--ink);
 }
 
 .decision-area {
@@ -1070,6 +1124,7 @@ textarea {
   .market-layout,
   .timeframe-grid,
   .teaching-steps,
+  .answer-coach,
   .decision-area,
   .pricing-grid,
   .check-grid,
