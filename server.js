@@ -1,6 +1,7 @@
 const http = require("node:http");
 const path = require("node:path");
 const crypto = require("node:crypto");
+const fsSync = require("node:fs");
 const fs = require("node:fs/promises");
 const { config, readiness } = require("./config");
 const emailProvider = require("./email-provider");
@@ -35,6 +36,25 @@ const mime = {
   ".js": "text/javascript; charset=utf-8",
   ".json": "application/json; charset=utf-8",
   ".png": "image/png",
+};
+
+const bundledStaticAssets = {
+  "/styles.css": {
+    contentType: mime[".css"],
+    data: fsSync.readFileSync(path.join(root, "styles.css")),
+  },
+  "/app.js": {
+    contentType: mime[".js"],
+    data: fsSync.readFileSync(path.join(root, "app.js")),
+  },
+  "/trial-flow-state.js": {
+    contentType: mime[".js"],
+    data: fsSync.readFileSync(path.join(root, "trial-flow-state.js")),
+  },
+  "/training-flow-state.js": {
+    contentType: mime[".js"],
+    data: fsSync.readFileSync(path.join(root, "training-flow-state.js")),
+  },
 };
 
 function sendJson(res, status, payload, extraHeaders = {}) {
@@ -25501,6 +25521,17 @@ async function handleApi(req, res, pathname) {
 }
 
 async function serveStatic(req, res, pathname) {
+  const assetPath = pathname.match(/\/(styles\.css|app\.js|trial-flow-state\.js|training-flow-state\.js)$/)?.[0]?.replace(/^.*\//, "/");
+  const bundledAsset = bundledStaticAssets[assetPath || pathname];
+  if (bundledAsset) {
+    res.writeHead(200, {
+      "content-type": bundledAsset.contentType || "application/octet-stream",
+      "cache-control": "public, max-age=60",
+    });
+    res.end(bundledAsset.data);
+    return;
+  }
+
   const relative = ["/", "/trial", "/friend-trial"].includes(pathname) ? "index.html" : pathname.slice(1);
   const filePath = path.normalize(path.join(root, relative));
   if (!filePath.startsWith(root)) {
