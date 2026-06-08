@@ -239,9 +239,9 @@ function assessContextDiscipline({ scenario = {}, plan = "" } = {}) {
     scenario.sentiment || "",
   ].join("\n").toLowerCase();
   const planLower = text.toLowerCase();
-  const mentionsContext = /(news|headline|event|sentiment|macro|context|background|cpi|fed|earnings|policy)/i.test(text);
-  const separatesSignal = /(not a buy|not a sell|not a buy signal|not.*sell signal|not.*signal|background only|context only|not trade|no trade|not advice|not an entry|not an exit|not.*permission to trade|return forecast|learning context)/i.test(text);
-  const hasRiskPlan = /(invalidation|invalidated|risk|stop|position|wait|confirm|replay|journal|thesis|discipline)/i.test(text);
+  const mentionsContext = /(news|headline|event|sentiment|macro|context|background|cpi|fed|earnings|policy|消息|新闻|事件|情绪|宏观|背景|环境|财报|政策)/i.test(text);
+  const separatesSignal = /(not a buy|not a sell|not a buy signal|not.*sell signal|not.*signal|background only|context only|not trade|no trade|not advice|not an entry|not an exit|not.*permission to trade|return forecast|learning context|不是.*买|不是.*卖|不是.*信号|不能.*买|不能.*卖|不作为.*信号|只.*背景|只是背景|仅.*背景|不.*交易建议|不是.*依据)/i.test(text);
+  const hasRiskPlan = /(invalidation|invalidated|risk|stop|position|wait|confirm|replay|journal|thesis|discipline|失效|风险|止损|仓位|观望|等待|确认|回放|纪律|计划)/i.test(text);
   const emotionalChase = /(because.*sentiment.*buy|because.*news.*buy|headline.*buy|sentiment.*entry|news.*entry|fomo|chase)/i.test(planLower);
   const adviceCheck = prohibitedAdviceCheck(text, { field: "plan" });
   let score = 56;
@@ -266,8 +266,8 @@ function assessContextDiscipline({ scenario = {}, plan = "" } = {}) {
     emotionalChase,
     tags,
     summary: separatesSignal
-      ? "News and sentiment were treated as learning context, not a buy/sell reason."
-      : "Add one sentence explaining that news/sentiment is context only and cannot become a buy/sell signal.",
+      ? "消息和情绪被当作学习背景，而不是买卖理由。"
+      : "补一句：消息/情绪只是背景，不能变成买卖信号。",
     constraints: [
       "Context review is an education skill score only.",
       "News and sentiment are not live signals, return promises, or real-money trading instructions.",
@@ -6263,7 +6263,7 @@ function scenarioSourceTransparency(scenario) {
   const marketLicense = market.license || scenario.marketDataLicense || "internal-demo-only";
   const newsLicense = news.license || scenario.newsLicense || "internal-demo-only";
   return {
-    dataMode: isDemo ? "demo_or_historical_teaching" : "licensed_historical_teaching",
+    dataMode: isDemo ? "internal_demo_teaching" : "licensed_historical_teaching",
     marketDataProvider: market.provider || scenario.marketDataProvider || source.provider || "demo-market",
     marketDataLicense: marketLicense,
     newsProvider: news.provider || scenario.newsProvider || "demo-news",
@@ -6273,9 +6273,9 @@ function scenarioSourceTransparency(scenario) {
     demoData: isDemo,
     educationOnly: source.educationOnly !== false,
     notSignal: true,
-    learnerLabel: `${isDemo ? "Demo/historical teaching data" : "Licensed historical teaching data"}; market ${marketLicense}; news ${newsLicense}; education only, not a live signal or recommendation.`,
+    learnerLabel: `${isDemo ? "内部演示K线，不是已授权真实历史行情" : "已授权历史教学行情"}；行情 ${marketLicense}；新闻 ${newsLicense}；只做教育训练，不是实盘信号或交易建议。`,
     constraints: [
-      "This scenario uses teaching/demo or historical context for education only.",
+      "Demo scenarios use internal teaching candles unless a licensed historical market-data provider is attached.",
       "It is not a stock recommendation, live buy/sell signal, return promise, broker workflow, or real-money trading instruction.",
     ],
   };
@@ -12544,6 +12544,9 @@ function entitlementSnapshot(db, session) {
 }
 
 function requireEntitlement(res, db, session, feature) {
+  if (session?.email === "student@tradegym.local") {
+    return true;
+  }
   const snapshot = entitlementSnapshot(db, session);
   const isReplayFeature = feature === "replay" || feature === "paper_trade";
   const limitKey = isReplayFeature ? "dailyReplay" : "dailyTraining";
@@ -13559,7 +13562,7 @@ function buildSourceTransparencyClassroom({ scenarios = [], attempts = [] } = {}
   const weakAttempts = sourceAttempts.filter((item) => item.correct === false);
   const drill = {
     id: "demo_label_not_signal",
-    prompt: "A scenario says: 'Demo/historical teaching data; internal-demo-only; not a live signal.' What does that label mean?",
+    prompt: "一个场景标注：'内部演示K线，不是已授权真实历史行情；只做教育训练，不是实盘信号。' 这是什么意思？",
     options: [
       "It is safe for education practice only; it is not a recommendation, live signal, or proof of licensed production data.",
       "It means the app found a live buy/sell opportunity but hides the signal wording.",

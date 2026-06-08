@@ -12,13 +12,13 @@
         <section class="brand">
           <p class="eyebrow">核心定位</p>
           <h3>AI 交易教育训练场</h3>
-          <p>一句话：用历史行情练判断、复盘和风控；不荐股、不出实盘信号、不承诺收益、不接真实资金。</p>
+          <p>一句话：用演示K线练判断、复盘和风控；不荐股、不出实盘信号、不承诺收益、不接真实资金。</p>
           <div class="hero-stats">
             <div><span>今日完成</span><strong id="todayDone">0</strong></div>
             <div><span>连续训练</span><strong id="streakDays">0 天</strong></div>
             <div><span>纪律分</span><strong id="disciplineScore">--</strong></div>
           </div>
-          <p id="habitStatus" class="muted-note">点“一键进入试用”，系统会自动登录演示账号。当前是本地 demo / mock provider，不是真实投顾或实盘系统。</p>
+          <p id="habitStatus" class="muted-note">打开后自动进入试用模式。当前是本地 demo / mock provider，不是真实投顾或实盘系统。</p>
 
           <section class="panel compliance-ack-panel">
             <div class="section-head">
@@ -28,7 +28,7 @@
               </div>
               <button id="acknowledgeCompliance" type="button">我已了解</button>
             </div>
-            <p id="complianceStatus">登录后确认：这里只练学习流程，不看策略赚不赚钱。</p>
+            <p id="complianceStatus">试用中自动确认：这里只练学习流程，不看策略赚不赚钱。</p>
             <ul id="complianceChecklist" class="clean-list"></ul>
           </section>
 
@@ -59,7 +59,7 @@
               </div>
               <button id="refreshNotifications" type="button">刷新</button>
             </div>
-            <p id="notificationStatus">登录后显示下一步训练和反馈提醒。</p>
+            <p id="notificationStatus">进入试用后显示下一步训练和反馈提醒。</p>
             <div id="notificationList" class="attempt-log"></div>
           </section>
 
@@ -82,8 +82,8 @@
               <button type="button" data-jump="trainer">开始训练</button>
             </article>
             <article class="card">
-              <h3>2. 历史回放</h3>
-              <p>隐藏未来走势，只用当时能看到的信息做判断，训练“不偷看答案”。</p>
+              <h3>2. 教学回放</h3>
+              <p>隐藏后续走势，只用当时能看到的演示信息做判断，训练“不偷看答案”。</p>
               <button type="button" data-jump="replay">进入回放</button>
             </article>
             <article class="card">
@@ -101,7 +101,7 @@
               </div>
             </div>
             <div class="loop-row">
-              <span>登录</span>
+              <span>进入</span>
               <span>训练</span>
               <span>回放</span>
               <span>AI复盘</span>
@@ -117,20 +117,20 @@
           <button class="nav-item" type="button" data-view="coach">AI复盘</button>
           <button class="nav-item" type="button" data-view="curriculum">课程路径</button>
           <button class="nav-item" type="button" data-view="community">最后 反馈</button>
-          <button class="nav-item nav-item-secondary" type="button" data-view="ops">管理员检查</button>
+          <button class="nav-item nav-item-secondary" type="button" data-view="ops" hidden>管理员检查</button>
         </nav>
       </aside>
 
       <main class="workspace">
         <div class="topbar">
           <div>
-            <p class="eyebrow" id="viewEyebrow">Commercial Learning Workspace</p>
-            <h2 id="viewTitle">Learning Overview</h2>
+            <p class="eyebrow" id="viewEyebrow">用户试用</p>
+            <h2 id="viewTitle">学习流程总览</h2>
           </div>
           <div class="billing-actions">
             <span class="badge" id="accountPlan">访客</span>
             <button id="loginDemo" type="button">一键进入试用</button>
-            <button id="logoutDemo" type="button">退出</button>
+            <button id="logoutDemo" type="button" hidden>退出</button>
           </div>
         </div>
 
@@ -152,7 +152,7 @@
               <ol class="clean-list">
                 <li>一键进入试用</li>
                 <li>做一题 K 线训练</li>
-                <li>看历史回放，不偷看未来</li>
+                <li>看教学回放，不偷看未来</li>
                 <li>读 AI 复盘，只看学习反馈</li>
                 <li>完成回测误区练习</li>
                 <li>提交一句试用反馈</li>
@@ -167,7 +167,7 @@
                 <h3>100 字试用说明</h3>
               </div>
             </div>
-            <p id="friendTrialIntro">这是一个 AI 交易教育训练场，只用历史行情练判断、风控和复盘，不荐股、不出实盘信号。试用时请按一键进入、训练、回放、AI复盘、回测误区、反馈走一遍，不要看策略赚不赚钱，只看这个学习流程是否清楚、有用、愿意继续练。</p>
+            <p id="friendTrialIntro">这是一个 AI 交易教育训练场，当前只用内部演示K线练判断、风控和复盘，不荐股、不出实盘信号。试用时请按一键进入、训练、回放、AI复盘、回测误区、反馈走一遍，不要看策略赚不赚钱，只看这个学习流程是否清楚、有用、愿意继续练。</p>
           </section>
           <section class="panel">
             <div class="section-head">
@@ -212,7 +212,7 @@
                   <p class="eyebrow" id="lessonTag">教学演示数据</p>
                   <h3 id="scenarioTitle">训练题</h3>
                 </div>
-                <span class="badge" id="dataBadge">Mock OHLCV</span>
+                <span class="badge" id="dataBadge">演示K线</span>
               </div>
 
               <div class="market-layout">
@@ -230,7 +230,7 @@
                     <div><dt>技术面</dt><dd id="technicalContext"></dd></div>
                     <div><dt>消息/事件</dt><dd id="newsContext"></dd></div>
                     <div><dt>情绪面</dt><dd id="sentimentContext"></dd></div>
-                    <div><dt>Source</dt><dd id="sourceDisclosure"></dd></div>
+                    <div><dt>来源</dt><dd id="sourceDisclosure"></dd></div>
                   </dl>
                 </div>
               </div>
@@ -271,17 +271,17 @@
           </div>
         </section>
 
-        <section class="view" id="replayView" aria-label="历史行情回放">
+        <section class="view" id="replayView" aria-label="教学K线回放">
           <div class="replay-layout">
             <section class="main-card">
               <div class="section-head">
                 <div>
-                  <p class="eyebrow">Market Replay</p>
-                  <h3 id="replayTitle">历史场景回放</h3>
+                  <p class="eyebrow">历史回放</p>
+                  <h3 id="replayTitle">教学场景回放</h3>
                 </div>
                 <span class="badge">非实盘</span>
               </div>
-              <svg id="replayChart" role="img" aria-label="历史回放K线图"></svg>
+              <svg id="replayChart" role="img" aria-label="教学回放K线图"></svg>
               <div class="replay-controls">
                 <button id="replayPrev" type="button">上一步</button>
                 <button id="replayNext" type="button">播放下一根</button>
@@ -300,202 +300,202 @@
                 <button id="saveReplayPlan" type="button">保存回放笔记</button>
               </section>
               <section class="card">
-                <h3>Paper Trade Journal</h3>
-                <p class="muted-note">Teaching simulation only. No real money, broker connection, live signal, or investment advice.</p>
+                <h3>模拟记录</h3>
+                <p class="muted-note">只做教学模拟。没有真实资金、券商连接、实盘信号或投资建议。</p>
                 <div class="field-row">
-                  <label for="paperTradeSide">Decision</label>
+                  <label for="paperTradeSide">判断</label>
                   <select id="paperTradeSide">
-                    <option value="watch">Watch / no trade</option>
-                    <option value="long">Simulated long</option>
-                    <option value="short">Simulated short</option>
+                    <option value="watch">观望 / 不做</option>
+                    <option value="long">模拟做多</option>
+                    <option value="short">模拟做空</option>
                   </select>
                   <label for="paperTradeRisk">Risk %</label>
                   <input id="paperTradeRisk" type="number" min="0.1" max="5" step="0.1" value="1" />
                 </div>
-                <label for="paperTradeThesis">Thesis</label>
-                <textarea id="paperTradeThesis" rows="3" placeholder="What pattern, context, or rule are you practicing?"></textarea>
-                <label for="paperTradeInvalidation">Invalidation / stop plan</label>
-                <textarea id="paperTradeInvalidation" rows="3" placeholder="What would prove this simulated plan wrong?"></textarea>
-                <label for="paperTradeContext">News / sentiment boundary</label>
-                <textarea id="paperTradeContext" rows="3" placeholder="What news, sentiment, or macro context matters here, and why is it not a buy/sell signal?"></textarea>
-                <button id="submitPaperTrade" type="button">Save paper trade</button>
+                <label for="paperTradeThesis">练习理由</label>
+                <textarea id="paperTradeThesis" rows="3" placeholder="你在练什么结构、环境或规则？"></textarea>
+                <label for="paperTradeInvalidation">失效/止损计划</label>
+                <textarea id="paperTradeInvalidation" rows="3" placeholder="什么情况说明这个模拟计划错了？"></textarea>
+                <label for="paperTradeContext">消息/情绪边界</label>
+                <textarea id="paperTradeContext" rows="3" placeholder="消息和情绪只是背景，不是买卖信号。这里写清为什么。"></textarea>
+                <button id="submitPaperTrade" type="button">保存模拟记录</button>
                 <div id="paperTradeResult" class="attempt-log"></div>
               </section>
             </aside>
           </div>
           <section class="panel">
-            <h3>Paper Trade History</h3>
+            <h3>模拟记录历史</h3>
             <div id="paperTradeLog" class="attempt-log"></div>
           </section>
           <section class="panel">
             <div class="section-head">
               <div>
-                <p class="eyebrow">Evidence Integrity</p>
-                <h3>Price, backtest, context, and risk completeness</h3>
+                <p class="eyebrow">学习证据</p>
+                <h3>价格、回测、环境和风控是否写完整</h3>
               </div>
-              <button id="refreshEvidenceIntegrity" type="button">Refresh evidence audit</button>
+              <button id="refreshEvidenceIntegrity" type="button">刷新证据检查</button>
             </div>
             <div id="evidenceIntegrityPanel" class="attempt-log">
-              <p>Review whether learning evidence is complete before any coach discussion. Education only; no signals.</p>
+              <p>先检查学习证据是否完整。这里只做教育训练，不给实盘信号。</p>
             </div>
           </section>
           <section class="panel">
             <div class="section-head">
               <div>
-                <p class="eyebrow">Backtest Classroom</p>
+                <p class="eyebrow">回测误区</p>
                 <h3>教育试用准备检查</h3>
               </div>
               <div class="billing-actions">
-                <button id="refreshBacktestClassroom" type="button">Refresh classroom metrics</button>
-                <button id="exportBacktestLiteracyJson" type="button">Brief JSON</button>
-                <button id="exportBacktestLiteracyCsv" type="button">Brief CSV</button>
-                <button id="exportBacktestLiteracyMd" type="button">Brief MD</button>
+                <button id="refreshBacktestClassroom" type="button">刷新误区练习</button>
+                <button id="exportBacktestLiteracyJson" type="button">导出 JSON</button>
+                <button id="exportBacktestLiteracyCsv" type="button">导出 CSV</button>
+                <button id="exportBacktestLiteracyMd" type="button">导出说明</button>
               </div>
             </div>
             <div id="backtestClassroomPanel" class="attempt-log">
-              <p>Save paper trades to review classroom-only metrics. No live signals or return promises.</p>
+              <p>保存模拟记录后，再检查回测样本、指标误读和风险边界。没有实盘信号或收益承诺。</p>
             </div>
             <div id="backtestMisconceptionPanel" class="attempt-log"></div>
           </section>
           <section class="panel">
             <div class="section-head">
               <div>
-                <p class="eyebrow">Market Context Classroom</p>
-                <h3>News, sentiment, and event-risk discipline</h3>
+                <p class="eyebrow">消息和情绪</p>
+                <h3>消息、情绪和事件风险只当背景</h3>
               </div>
-              <button id="refreshContextClassroom" type="button">Refresh context review</button>
+              <button id="refreshContextClassroom" type="button">刷新环境检查</button>
             </div>
             <div id="contextClassroomPanel" class="attempt-log">
-              <p>Complete chart drills to review whether news and sentiment stayed as context only.</p>
+              <p>完成训练后检查：你有没有把消息和情绪误当成买卖依据。</p>
             </div>
             <div id="contextMisconceptionPanel" class="attempt-log"></div>
           </section>
           <section class="panel">
             <div class="section-head">
               <div>
-                <p class="eyebrow">Source Transparency Classroom</p>
-                <h3>Demo data, licenses, and no-signal boundaries</h3>
+                <p class="eyebrow">来源透明</p>
+                <h3>演示数据、来源和非信号边界</h3>
               </div>
-              <button id="refreshSourceClassroom" type="button">Refresh source review</button>
+              <button id="refreshSourceClassroom" type="button">刷新来源检查</button>
             </div>
             <div id="sourceClassroomPanel" class="attempt-log">
-              <p>Review source labels before treating any chart, OCR, or news context as learning material.</p>
+              <p>先看清数据来源，再把图表、OCR 或新闻背景当作学习材料。</p>
             </div>
             <div id="sourceMisconceptionPanel" class="attempt-log"></div>
           </section>
         </section>
 
-        <section class="view" id="coachView" aria-label="AI coaching and learner profile">
+        <section class="view" id="coachView" aria-label="AI复盘和学习画像">
           <div class="section-head">
             <div>
-              <p class="eyebrow">AI Coach</p>
-              <h3>Learner mistake profile and next lesson</h3>
+              <p class="eyebrow">AI 复盘</p>
+              <h3>错因画像和下一步练习</h3>
             </div>
           </div>
           <div class="grid two">
             <section class="panel">
-              <h3>Frequent mistakes</h3>
+              <h3>常见错因</h3>
               <div id="profileTags" class="profile-tags"></div>
             </section>
             <section class="panel">
-              <h3>AI suggestions</h3>
-              <p id="nextPathText">Complete training first. The system will recommend the next lesson from mistake tags.</p>
+              <h3>AI 复盘建议</h3>
+              <p id="nextPathText">先完成一题训练，系统会根据错因推荐下一步练习。</p>
               <div id="learningPathPanel" class="attempt-log"></div>
             </section>
           </div>
           <section class="panel">
-            <h3>Training records</h3>
+            <h3>训练记录</h3>
             <div id="attemptLog" class="attempt-log"></div>
           </section>
           <section class="panel">
             <div class="section-head">
               <div>
-                <p class="eyebrow">Learning Product Path</p>
-                <h3>Course package next steps</h3>
+                <p class="eyebrow">学习路径</p>
+                <h3>下一步课程练习</h3>
               </div>
-              <button id="refreshLearnerCoursePath" type="button">Refresh path</button>
+              <button id="refreshLearnerCoursePath" type="button">刷新路径</button>
             </div>
             <div id="learnerCoursePathList" class="attempt-log"></div>
           </section>
           <section class="panel">
             <div class="section-head">
               <div>
-                <p class="eyebrow">Assignments</p>
-                <h3>Teacher-assigned practice</h3>
+                <p class="eyebrow">练习任务</p>
+                <h3>推荐练习</h3>
               </div>
-              <button id="refreshAssignments" type="button">Refresh assignments</button>
+              <button id="refreshAssignments" type="button">刷新任务</button>
             </div>
             <div id="assignmentList" class="attempt-log"></div>
           </section>
           <section class="panel">
             <div class="section-head">
               <div>
-                <p class="eyebrow">Coach Report</p>
-                <h3>Learning report</h3>
+                <p class="eyebrow">复盘报告</p>
+                <h3>学习报告</h3>
               </div>
-              <button id="refreshCoachReport" type="button">Refresh report</button>
+              <button id="refreshCoachReport" type="button">刷新报告</button>
             </div>
             <div id="coachReportPanel" class="attempt-log"></div>
           </section>
           <section class="panel">
             <div class="section-head">
               <div>
-                <p class="eyebrow">Learner Export</p>
-                <h3>Progress report</h3>
+                <p class="eyebrow">学习进度</p>
+                <h3>进度报告</h3>
               </div>
-              <button id="refreshProgressReport" type="button">Export learning report</button>
+              <button id="refreshProgressReport" type="button">生成报告</button>
             </div>
             <div id="progressReportPanel" class="attempt-log"></div>
           </section>
           <section class="panel">
-            <h3>Coach Reviews</h3>
+            <h3>教练复盘记录</h3>
             <div id="coachReviewList" class="attempt-log"></div>
           </section>
           <section class="panel">
             <div class="section-head">
               <div>
-                <p class="eyebrow">Coach Session</p>
-                <h3>Book an education review</h3>
+                <p class="eyebrow">教练预约</p>
+                <h3>预约一次教育复盘</h3>
               </div>
-              <button id="refreshCoachSessionBookings" type="button">Refresh bookings</button>
+              <button id="refreshCoachSessionBookings" type="button">刷新预约</button>
             </div>
             <div class="cms-form">
-              <label for="coachSessionTopic">Topic</label>
-              <input id="coachSessionTopic" type="text" value="Education-only replay and risk-plan review" />
-              <label for="coachSessionWindow">Preferred window</label>
-              <input id="coachSessionWindow" type="text" value="Next weekday evening" />
-              <label for="coachSessionGoal">Learning goal</label>
-              <textarea id="coachSessionGoal" rows="4">I want a coach to review my learning evidence, replay notes, and risk-plan writing. I am not asking for a stock recommendation, live signal, or real-money trading instruction.</textarea>
-              <button id="requestCoachSession" type="button">Request coach session</button>
+              <label for="coachSessionTopic">主题</label>
+              <input id="coachSessionTopic" type="text" value="回放记录和风控计划教育复盘" />
+              <label for="coachSessionWindow">希望时间</label>
+              <input id="coachSessionWindow" type="text" value="下一个工作日晚上" />
+              <label for="coachSessionGoal">学习目标</label>
+              <textarea id="coachSessionGoal" rows="4">我想让教练复盘我的学习证据、回放笔记和风控计划写法。我不是在索要荐股、实盘信号或真实资金交易指导。</textarea>
+              <button id="requestCoachSession" type="button">提交预约</button>
             </div>
-            <p id="coachSessionBookingStatus">Coach sessions are education appointments only.</p>
+            <p id="coachSessionBookingStatus">教练预约只用于教育复盘。</p>
             <div id="coachSessionBookingList" class="attempt-log"></div>
           </section>
           <section class="panel">
             <div class="section-head">
               <div>
-                <p class="eyebrow">Support Desk</p>
-                <h3>Education product support</h3>
+                <p class="eyebrow">使用反馈</p>
+                <h3>学习产品支持</h3>
               </div>
-              <button id="refreshSupportTickets" type="button">Refresh tickets</button>
+              <button id="refreshSupportTickets" type="button">刷新反馈</button>
             </div>
             <div class="cms-form">
-              <label for="supportCategory">Category</label>
+              <label for="supportCategory">类型</label>
               <select id="supportCategory">
-                <option value="learning">Learning question</option>
-                <option value="coach_service">Coach service</option>
-                <option value="billing">Billing</option>
-                <option value="account">Account</option>
-                <option value="content">Content issue</option>
-                <option value="technical">Technical issue</option>
+                <option value="learning">学习问题</option>
+                <option value="coach_service">教练服务</option>
+                <option value="billing">付费问题</option>
+                <option value="account">账号问题</option>
+                <option value="content">内容问题</option>
+                <option value="technical">技术问题</option>
               </select>
-              <label for="supportSubject">Subject</label>
-              <input id="supportSubject" type="text" value="Need help with my education-only learning path" />
-              <label for="supportMessage">Message</label>
-              <textarea id="supportMessage" rows="4">I need help understanding the next education drill and how to improve my risk-plan writing. I am not asking for a stock recommendation or live trading signal.</textarea>
-              <button id="createSupportTicket" type="button">Submit support ticket</button>
+              <label for="supportSubject">标题</label>
+              <input id="supportSubject" type="text" value="需要帮助理解下一步学习练习" />
+              <label for="supportMessage">内容</label>
+              <textarea id="supportMessage" rows="4">我想知道下一步该怎么练，以及如何改进风控计划写法。我不是在索要荐股或实盘信号。</textarea>
+              <button id="createSupportTicket" type="button">提交反馈</button>
             </div>
-            <p id="supportTicketStatus">Support is for product and education service only.</p>
+            <p id="supportTicketStatus">这里仅处理产品使用和教育服务问题。</p>
             <div id="supportTicketList" class="attempt-log"></div>
           </section>
         </section>

@@ -7,6 +7,7 @@
   selectedContentSourceId: null,
   adminCoursePackages: [],
   data: null,
+  trialAccessPending: false,
 };
 
 const nodes = {
@@ -372,6 +373,23 @@ async function loadBootstrap() {
   renderAll();
 }
 
+async function ensureTrialAccess({ redirect = false } = {}) {
+  if (state.data?.session || state.trialAccessPending) return;
+  state.trialAccessPending = true;
+  try {
+    await login("student@tradegym.local", "demo123");
+    if (!state.data?.compliance?.acknowledged) {
+      await acknowledgeCompliance();
+    }
+    if (nodes.habitStatus) {
+      nodes.habitStatus.textContent = "已进入试用模式。直接按训练、回放、AI复盘、回测误区、反馈走完即可。";
+    }
+    if (redirect) setView("trainer");
+  } finally {
+    state.trialAccessPending = false;
+  }
+}
+
 function setView(view) {
   state.view = view;
   document.querySelectorAll(".view").forEach((item) => item.classList.remove("is-active"));
@@ -382,6 +400,9 @@ function setView(view) {
   const [eyebrow, title] = viewMeta[view];
   nodes.viewEyebrow.textContent = eyebrow;
   nodes.viewTitle.textContent = title;
+  if (view === "ops" && state.data?.session?.role === "admin") {
+    renderOps();
+  }
 }
 
 function currentScenario() {
@@ -415,7 +436,6 @@ function renderAll() {
   renderCoachSessionBookings();
   renderSupportTickets(state.data.supportTickets || []);
   renderAssignments();
-  renderOps();
   renderSession();
   refreshBacktestClassroom();
   refreshMarketContextClassroom();
@@ -561,11 +581,12 @@ function renderCandles(target, candles) {
 async function submitDecision() {
   if (state.selected === null) {
     nodes.planInput.focus();
-    nodes.planInput.placeholder = "Select one decision, then write a short reason.";
+    nodes.planInput.placeholder = "先选择一个判断，再写一句理由、止损或观望条件。";
     return;
   }
   nodes.submitBtn.disabled = true;
   try {
+    await ensureTrialAccess();
     const lesson = currentScenario();
     const result = await api("/api/attempts", {
       method: "POST",
@@ -602,8 +623,10 @@ async function submitDecision() {
     await refreshProgressReport();
   } catch (error) {
     nodes.feedbackPanel.hidden = false;
-    nodes.feedbackTitle.textContent = "Submission failed";
-    nodes.feedbackBody.textContent = error.message;
+    nodes.feedbackTitle.textContent = "提交失败";
+    nodes.feedbackBody.textContent = error.message === "Login required"
+      ? "试用会话没有建立成功，请点页面顶部“一键进入试用”后重试。"
+      : error.message;
   } finally {
     nodes.submitBtn.disabled = false;
   }
@@ -629,22 +652,23 @@ function renderFeedback(feedback, nextTraining = null, courseProgressUpdates = s
   nodes.nextPathText.textContent = feedback.nextPath;
   if (nodes.trainingResultActions) {
     nodes.trainingResultActions.innerHTML = `
-      <div class="attempt-row">
+      <div class="attempt-row trial-next-row">
         <div>
-          <strong>Training complete</strong>
+          <strong>训练完成，下一步按顺序走</strong>
           <span>${feedback.nextPath}</span>
-          <span>Today ${habit.todayDone ?? 0}/${habit.dailyGoal || 3} / streak ${habit.streakDays ?? 0} day(s) / ${habit.status || "in_progress"}</span>
-          <span>${achievements.latestUnlocked ? `Achievement unlocked: ${achievements.latestUnlocked.title}` : `${achievements.unlockedCount || 0}/${achievements.totalCount || 0} achievements unlocked`}</span>
+          <span>今日 ${habit.todayDone ?? 0}/${habit.dailyGoal || 3}，连续 ${habit.streakDays ?? 0} 天，状态 ${habit.status || "in_progress"}</span>
+          <span>${achievements.latestUnlocked ? `新里程碑：${achievements.latestUnlocked.title}` : `里程碑 ${achievements.unlockedCount || 0}/${achievements.totalCount || 0}`}</span>
           ${contextReviewHtml}
           ${courseProgressHtml}
-          <span>${nextTraining?.scenario ? `Next drill: ${nextTraining.scenario.title} / ${nextTraining.reason}` : "No next drill available yet."}</span>
+          <span>${nextTraining?.scenario ? `下一题：${nextTraining.scenario.title} / ${nextTraining.reason}` : "暂无下一题，先去回放和AI复盘。"}</span>
         </div>
-        <span class="tag warn">Education only</span>
+        <span class="tag warn">只做教育训练</span>
       </div>
-      <div class="billing-actions">
-        ${nextTraining?.scenario ? `<button type="button" data-training-result-action="next" data-scenario-id="${nextTraining.scenario.id}">Practice next drill</button>` : ""}
-        <button type="button" data-training-result-action="coach">View coach profile</button>
-        <button type="button" data-training-result-action="replay">Open replay gym</button>
+      <div class="trial-flow-actions">
+        <button type="button" data-training-result-action="replay">去回放/回测误区</button>
+        <button type="button" data-training-result-action="coach">看 AI 复盘</button>
+        ${nextTraining?.scenario ? `<button type="button" data-training-result-action="next" data-scenario-id="${nextTraining.scenario.id}">再练一题</button>` : ""}
+        <button type="button" data-training-result-action="feedback">提交反馈</button>
       </div>
     `;
   }
@@ -654,7 +678,7 @@ function renderFeedback(feedback, nextTraining = null, courseProgressUpdates = s
 function renderReplay() {
   const lesson = currentScenario();
   const step = Math.max(4, Math.min(state.replayStep, lesson.candles.length));
-  nodes.replayTitle.textContent = `${lesson.symbol} replay ${step}/${lesson.candles.length} candles`;
+  nodes.replayTitle.textContent = `${lesson.symbol} 回放 ${step}/${lesson.candles.length} 根K线`;
   renderCandles(nodes.replayChart, lesson.candles.slice(0, step));
 }
 
@@ -666,16 +690,16 @@ function renderPaperTrades() {
       <div class="attempt-row">
         <div>
           <strong>${item.side} / ${item.scenarioTitle}</strong>
-          <span>${formatTime(item.createdAt)} / ${item.evaluation.simulatedR}R / risk ${item.riskPercent}%</span>
-          ${item.contextReview ? `<span>Context discipline ${item.contextReview.score}: ${escapeHtml(item.contextReview.summary)}</span>` : ""}
-          ${item.replayDebrief ? `<span>Replay debrief ${item.replayDebrief.processScore}: ${escapeHtml(item.replayDebrief.decisionQuality)} / ${escapeHtml(item.replayDebrief.nextPractice?.[0] || "Repeat one replay with the same checklist.")}</span>` : ""}
+          <span>${formatTime(item.createdAt)} / ${item.evaluation.simulatedR}R / 风险 ${item.riskPercent}%</span>
+          ${item.contextReview ? `<span>环境边界 ${item.contextReview.score}: ${escapeHtml(item.contextReview.summary)}</span>` : ""}
+          ${item.replayDebrief ? `<span>回放复盘 ${item.replayDebrief.processScore}: ${escapeHtml(item.replayDebrief.decisionQuality)} / ${escapeHtml(item.replayDebrief.nextPractice?.[0] || "按同一张检查表再回放一次。")}</span>` : ""}
           <span>${item.evaluation.note}</span>
-          ${item.replayDebrief ? `<div class="billing-actions"><button type="button" data-replay-debrief-followup="${escapeHtml(item.id)}">Create coach follow-up</button></div>` : ""}
+          ${item.replayDebrief ? `<div class="billing-actions"><button type="button" data-replay-debrief-followup="${escapeHtml(item.id)}">生成复盘跟进</button></div>` : ""}
         </div>
         <span class="tag ${item.evaluation.disciplineScore >= 70 ? "warn" : "danger"}">${item.evaluation.disciplineScore}</span>
       </div>
     `).join("")
-    : "<p>No paper trades yet. Save a teaching simulation from the replay gym.</p>";
+    : "<p>还没有模拟记录。先在回放区保存一次教学模拟。</p>";
 }
 
 async function createReplayDebriefFollowup(paperTradeId) {
@@ -713,17 +737,17 @@ async function createReplayDebriefFollowup(paperTradeId) {
 function renderEvidenceIntegrity(audit = state.data.evidenceIntegrity) {
   if (!nodes.evidenceIntegrityPanel) return;
   if (!audit) {
-    nodes.evidenceIntegrityPanel.innerHTML = "<p>Login and complete drills to review education evidence completeness.</p>";
+    nodes.evidenceIntegrityPanel.innerHTML = "<p>完成训练和回放后，这里会检查学习证据是否完整。</p>";
     return;
   }
   const summary = audit.summary || {};
   const dimensions = audit.dimensions || [];
   nodes.evidenceIntegrityPanel.innerHTML = `
     <div class="score-grid">
-      <div><span>Status</span><strong>${escapeHtml(summary.status || "unreviewed")}</strong></div>
-      <div><span>Weak areas</span><strong>${summary.weakDimensions ?? 0}</strong></div>
-      <div><span>Chart drills</span><strong>${summary.trainingAttempts ?? 0}</strong></div>
-      <div><span>Paper samples</span><strong>${summary.paperTradeSamples ?? 0}</strong></div>
+      <div><span>状态</span><strong>${escapeHtml(summary.status || "unreviewed")}</strong></div>
+      <div><span>薄弱项</span><strong>${summary.weakDimensions ?? 0}</strong></div>
+      <div><span>图表训练</span><strong>${summary.trainingAttempts ?? 0}</strong></div>
+      <div><span>模拟样本</span><strong>${summary.paperTradeSamples ?? 0}</strong></div>
     </div>
     ${dimensions.map((item) => `
       <div class="attempt-row">
@@ -747,14 +771,14 @@ async function refreshEvidenceIntegrity() {
     state.data.evidenceIntegrity = result.audit;
     renderEvidenceIntegrity(result.audit);
   } catch (error) {
-    nodes.evidenceIntegrityPanel.innerHTML = `<p>Evidence integrity audit requires login and compliance acknowledgement: ${error.message}</p>`;
+    nodes.evidenceIntegrityPanel.innerHTML = `<p>证据检查暂时失败：${error.message}</p>`;
   }
 }
 
 function renderBacktestClassroom(classroom = state.data.backtestClassroom) {
   if (!nodes.backtestClassroomPanel) return;
   if (!classroom) {
-    nodes.backtestClassroomPanel.innerHTML = "<p>Login and save paper trades to review classroom metrics.</p>";
+    nodes.backtestClassroomPanel.innerHTML = "<p>先保存一次模拟记录，再检查回测指标是否被误读。</p>";
     renderBacktestMisconception(null);
     return;
   }
@@ -792,10 +816,10 @@ function renderBacktestClassroom(classroom = state.data.backtestClassroom) {
     : "";
   nodes.backtestClassroomPanel.innerHTML = `
     <div class="score-grid">
-      <div><span>Sample</span><strong>${metrics.sampleSize ?? 0}</strong></div>
-      <div><span>Win rate</span><strong>${metrics.winRatePct ?? 0}%</strong></div>
-      <div><span>Expectancy</span><strong>${metrics.expectancyR ?? 0}R</strong></div>
-      <div><span>Max drawdown</span><strong>${metrics.maxDrawdownR ?? 0}R</strong></div>
+      <div><span>样本</span><strong>${metrics.sampleSize ?? 0}</strong></div>
+      <div><span>胜率</span><strong>${metrics.winRatePct ?? 0}%</strong></div>
+      <div><span>期望</span><strong>${metrics.expectancyR ?? 0}R</strong></div>
+      <div><span>回撤</span><strong>${metrics.maxDrawdownR ?? 0}R</strong></div>
     </div>
     <div class="attempt-row">
       <div>
@@ -803,16 +827,16 @@ function renderBacktestClassroom(classroom = state.data.backtestClassroom) {
         ${(classroom.interpretation || []).map((item) => `<span>${escapeHtml(item)}</span>`).join("")}
         <span>${escapeHtml(classroom.constraints?.[2] || "Metrics are learning diagnostics, not future performance proof.")}</span>
       </div>
-      <span class="tag warn">Education only</span>
+      <span class="tag warn">只做教育训练</span>
     </div>
     <div class="attempt-row">
       <div>
-        <strong>Backtest reliability: ${escapeHtml(reliabilityAudit.grade || "unreviewed")}</strong>
+        <strong>回测可信度：${escapeHtml(reliabilityAudit.grade || "unreviewed")}</strong>
         ${(reliabilityAudit.interpretation || []).map((item) => `<span>${escapeHtml(item)}</span>`).join("")}
         ${(reliabilityAudit.riskFlags || []).slice(0, 4).map((item) => `<span>Risk flag: ${escapeHtml(item)}</span>`).join("")}
         <span>${escapeHtml(reliabilityAudit.constraints?.[1] || "Reliability is education evidence quality only, not a signal or strategy score.")}</span>
       </div>
-      <span class="tag danger">No strategy score</span>
+      <span class="tag danger">不是策略评分</span>
     </div>
     ${literacyBrief ? `
       <div class="attempt-row">
@@ -828,14 +852,14 @@ function renderBacktestClassroom(classroom = state.data.backtestClassroom) {
     ` : ""}
     <div class="attempt-row">
       <div>
-        <strong>Simulation assumptions</strong>
+        <strong>模拟假设</strong>
         <span>${escapeHtml(assumptions.executionModel || "classroom replay")} / ${escapeHtml(assumptions.priceSource || "demo scenario candles")}</span>
         <span>Fees ${friction.feesIncluded ? "included" : "excluded"} / spread ${friction.spreadIncluded ? "included" : "excluded"} / slippage ${friction.slippageIncluded ? "included" : "excluded"} / partial fills ${friction.partialFillsIncluded ? "included" : "excluded"}</span>
         <span>Sample quality: ${escapeHtml(sampleModel.currentQuality || classroom.sampleQuality || "practice_sample_only")}; setup comparison needs ${sampleModel.minimumForSetupComparison ?? 20}+ records.</span>
         <span>${escapeHtml(contextModel.note || "News and sentiment are context boundaries, not trade permission.")}</span>
         <span>${escapeHtml(riskModel.note || "Risk metrics are classroom discipline checks, not real-money readiness.")}</span>
       </div>
-      <span class="tag danger">Not executable</span>
+      <span class="tag danger">不能实盘执行</span>
     </div>
     ${assumptionChecklist.length ? `<ol class="clean-list">${assumptionChecklist.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ol>` : ""}
     ${(reliabilityAudit.nextLearningActions || []).length ? `<ol class="clean-list">${reliabilityAudit.nextLearningActions.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ol>` : ""}
@@ -854,7 +878,7 @@ async function refreshBacktestClassroom() {
     state.data.backtestLiteracyBrief = brief.brief;
     renderBacktestClassroom(result.classroom);
   } catch (error) {
-    nodes.backtestClassroomPanel.innerHTML = `<p>Backtest classroom requires login and compliance acknowledgement: ${error.message}</p>`;
+    nodes.backtestClassroomPanel.innerHTML = `<p>回测误区练习暂时失败：${error.message}</p>`;
   }
 }
 
@@ -894,11 +918,11 @@ function renderBacktestMisconception(drill = state.data.backtestClassroom?.misco
   nodes.backtestMisconceptionPanel.innerHTML = `
     <div class="attempt-row">
       <div>
-        <strong>Metric misconception drill</strong>
+        <strong>回测指标误区练习</strong>
         <span>${escapeHtml(drill.prompt)}</span>
         <span>${escapeHtml(drill.requiredPrinciple || "Backtest metrics are education diagnostics only.")}</span>
       </div>
-      <span class="tag warn">No signal</span>
+      <span class="tag warn">不是信号</span>
     </div>
     <div class="option-grid">
       ${drill.options.map((option, index) => `
@@ -912,7 +936,7 @@ function renderBacktestMisconception(drill = state.data.backtestClassroom?.misco
           <span>${escapeHtml(feedback.body)}</span>
           <span>${escapeHtml(feedback.nextStep)}</span>
         </div>
-        <span class="tag warn">Education only</span>
+        <span class="tag warn">只做教育训练</span>
       </div>
     ` : ""}
   `;
@@ -921,6 +945,7 @@ function renderBacktestMisconception(drill = state.data.backtestClassroom?.misco
 async function submitBacktestMisconception(selectedIndex) {
   if (!nodes.backtestMisconceptionPanel) return;
   try {
+    await ensureTrialAccess();
     const result = await api("/api/backtest/misconception-attempts", {
       method: "POST",
       body: JSON.stringify({ selectedIndex }),
@@ -947,7 +972,7 @@ async function submitBacktestMisconception(selectedIndex) {
 function renderMarketContextClassroom(classroom = state.data.marketContextClassroom) {
   if (!nodes.contextClassroomPanel) return;
   if (!classroom) {
-    nodes.contextClassroomPanel.innerHTML = "<p>Login and complete chart drills to review market-context discipline.</p>";
+    nodes.contextClassroomPanel.innerHTML = "<p>完成图表训练后，这里会检查你有没有把消息/情绪当成买卖信号。</p>";
     renderContextMisconception(null);
     return;
   }
@@ -956,28 +981,28 @@ function renderMarketContextClassroom(classroom = state.data.marketContextClassr
   const contextRiskItems = (riskSummary.riskItems || []).filter((item) => Number(item.count || 0) > 0).slice(0, 3);
   nodes.contextClassroomPanel.innerHTML = `
     <div class="score-grid">
-      <div><span>Scenarios</span><strong>${coverage.approvedScenarios ?? 0}</strong></div>
-      <div><span>Context attempts</span><strong>${coverage.contextAttempts ?? 0}</strong></div>
-      <div><span>Weak boundary</span><strong>${coverage.weakBoundaryAttempts ?? 0}</strong></div>
-      <div><span>Avg context</span><strong>${coverage.averageContextDiscipline ?? "-"}</strong></div>
+      <div><span>场景</span><strong>${coverage.approvedScenarios ?? 0}</strong></div>
+      <div><span>环境练习</span><strong>${coverage.contextAttempts ?? 0}</strong></div>
+      <div><span>边界薄弱</span><strong>${coverage.weakBoundaryAttempts ?? 0}</strong></div>
+      <div><span>环境分</span><strong>${coverage.averageContextDiscipline ?? "-"}</strong></div>
     </div>
     <div class="attempt-row">
       <div>
-        <strong>News and sentiment are context, not signal</strong>
+        <strong>消息和情绪是背景，不是信号</strong>
         ${(classroom.interpretation || []).map((item) => `<span>${escapeHtml(item)}</span>`).join("")}
         <span>${escapeHtml(classroom.constraints?.[1] || "No stock recommendation, live signal, or market prediction.")}</span>
       </div>
-      <span class="tag warn">No signal</span>
+      <span class="tag warn">不是信号</span>
     </div>
     <div class="attempt-row">
       <div>
-        <strong>Context risk summary</strong>
+        <strong>环境风险总结</strong>
         <span>${escapeHtml(riskSummary.operatingStatus || "needs_context_evidence")} / wrong misconception attempts ${riskSummary.wrongMisconceptionAttempts ?? 0}</span>
         ${riskSummary.dominantRisk ? `<span>Dominant risk: ${escapeHtml(riskSummary.dominantRisk.label)} - ${escapeHtml(riskSummary.dominantRisk.educationResponse)}</span>` : "<span>No dominant context-risk pattern yet; keep collecting education evidence.</span>"}
         ${(riskSummary.coachActions || []).slice(0, 3).map((item) => `<span>${escapeHtml(item)}</span>`).join("")}
         <span>${escapeHtml(riskSummary.constraints?.[1] || "Not sentiment scoring, market prediction, signal, or recommendation.")}</span>
       </div>
-      <span class="tag danger">Not prediction</span>
+      <span class="tag danger">不是预测</span>
     </div>
     ${contextRiskItems.length ? `
       <div class="section-kicker">Observed context risks</div>
@@ -1004,7 +1029,7 @@ async function refreshMarketContextClassroom() {
     state.data.marketContextClassroom = result.classroom;
     renderMarketContextClassroom(result.classroom);
   } catch (error) {
-    nodes.contextClassroomPanel.innerHTML = `<p>Market context classroom requires login and compliance acknowledgement: ${error.message}</p>`;
+    nodes.contextClassroomPanel.innerHTML = `<p>消息/情绪检查暂时失败：${error.message}</p>`;
   }
 }
 
@@ -1017,11 +1042,11 @@ function renderContextMisconception(drill = state.data.marketContextClassroom?.d
   nodes.contextMisconceptionPanel.innerHTML = `
     <div class="attempt-row">
       <div>
-        <strong>Context misconception drill</strong>
+        <strong>消息/情绪误区练习</strong>
         <span>${escapeHtml(drill.prompt)}</span>
         <span>${escapeHtml(drill.requiredPrinciple || "Market context is a learning input, not a trading signal.")}</span>
       </div>
-      <span class="tag warn">Education only</span>
+      <span class="tag warn">只做教育训练</span>
     </div>
     <div class="option-grid">
       ${drill.options.map((option, index) => `
@@ -1035,7 +1060,7 @@ function renderContextMisconception(drill = state.data.marketContextClassroom?.d
           <span>${escapeHtml(feedback.body)}</span>
           <span>${escapeHtml(feedback.nextStep)}</span>
         </div>
-        <span class="tag warn">Education only</span>
+        <span class="tag warn">只做教育训练</span>
       </div>
     ` : ""}
   `;
@@ -1044,6 +1069,7 @@ function renderContextMisconception(drill = state.data.marketContextClassroom?.d
 async function submitContextMisconception(selectedIndex) {
   if (!nodes.contextMisconceptionPanel) return;
   try {
+    await ensureTrialAccess();
     const result = await api("/api/context/misconception-attempts", {
       method: "POST",
       body: JSON.stringify({ selectedIndex }),
@@ -1065,25 +1091,25 @@ async function submitContextMisconception(selectedIndex) {
 function renderSourceTransparencyClassroom(classroom = state.data.sourceTransparencyClassroom) {
   if (!nodes.sourceClassroomPanel) return;
   if (!classroom) {
-    nodes.sourceClassroomPanel.innerHTML = "<p>Login and refresh source review to inspect learner-facing labels.</p>";
+    nodes.sourceClassroomPanel.innerHTML = "<p>刷新后检查数据来源标签，避免把演示数据误当真实信号。</p>";
     renderSourceMisconception(null);
     return;
   }
   const coverage = classroom.coverage || {};
   nodes.sourceClassroomPanel.innerHTML = `
     <div class="score-grid">
-      <div><span>Scenarios</span><strong>${coverage.approvedScenarios ?? 0}</strong></div>
-      <div><span>Demo labels</span><strong>${coverage.demoScenarios ?? 0}</strong></div>
-      <div><span>Internal demo</span><strong>${coverage.internalDemoLicenses ?? 0}</strong></div>
-      <div><span>Weak attempts</span><strong>${coverage.weakSourceBoundaryAttempts ?? 0}</strong></div>
+      <div><span>场景</span><strong>${coverage.approvedScenarios ?? 0}</strong></div>
+      <div><span>演示标签</span><strong>${coverage.demoScenarios ?? 0}</strong></div>
+      <div><span>内部演示</span><strong>${coverage.internalDemoLicenses ?? 0}</strong></div>
+      <div><span>边界薄弱</span><strong>${coverage.weakSourceBoundaryAttempts ?? 0}</strong></div>
     </div>
     <div class="attempt-row">
       <div>
-        <strong>Source labels are safety labels, not signals</strong>
+        <strong>来源标签是安全边界，不是信号</strong>
         ${(classroom.interpretation || []).map((item) => `<span>${escapeHtml(item)}</span>`).join("")}
         <span>${escapeHtml(classroom.constraints?.[1] || "Demo labels are not recommendations, live signals, or production data licenses.")}</span>
       </div>
-      <span class="tag warn">No signal</span>
+      <span class="tag warn">不是信号</span>
     </div>
     <ol class="clean-list">${(classroom.nextActions || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ol>
   `;
@@ -1097,7 +1123,7 @@ async function refreshSourceTransparencyClassroom() {
     state.data.sourceTransparencyClassroom = result.classroom;
     renderSourceTransparencyClassroom(result.classroom);
   } catch (error) {
-    nodes.sourceClassroomPanel.innerHTML = `<p>Source transparency classroom requires login and compliance acknowledgement: ${escapeHtml(error.message)}</p>`;
+    nodes.sourceClassroomPanel.innerHTML = `<p>来源检查暂时失败：${escapeHtml(error.message)}</p>`;
   }
 }
 
@@ -1110,11 +1136,11 @@ function renderSourceMisconception(drill = state.data.sourceTransparencyClassroo
   nodes.sourceMisconceptionPanel.innerHTML = `
     <div class="attempt-row">
       <div>
-        <strong>Source-label misconception drill</strong>
+        <strong>来源标签误区练习</strong>
         <span>${escapeHtml(drill.prompt)}</span>
         <span>${escapeHtml(drill.requiredPrinciple || "Source labels are safety boundaries, not signals.")}</span>
       </div>
-      <span class="tag warn">Education only</span>
+      <span class="tag warn">只做教育训练</span>
     </div>
     <div class="option-grid">
       ${drill.options.map((option, index) => `
@@ -1128,7 +1154,7 @@ function renderSourceMisconception(drill = state.data.sourceTransparencyClassroo
           <span>${escapeHtml(feedback.body)}</span>
           <span>${escapeHtml(feedback.nextStep)}</span>
         </div>
-        <span class="tag warn">Education only</span>
+        <span class="tag warn">只做教育训练</span>
       </div>
     ` : ""}
   `;
@@ -1137,6 +1163,7 @@ function renderSourceMisconception(drill = state.data.sourceTransparencyClassroo
 async function submitSourceMisconception(selectedIndex) {
   if (!nodes.sourceMisconceptionPanel) return;
   try {
+    await ensureTrialAccess();
     const result = await api("/api/source-transparency/misconception-attempts", {
       method: "POST",
       body: JSON.stringify({ selectedIndex }),
@@ -2074,7 +2101,7 @@ function selectScenarioById(scenarioId) {
 function renderCompliance(compliance = state.data.compliance) {
   if (!nodes.complianceStatus || !nodes.complianceChecklist) return;
   if (!compliance) {
-    nodes.complianceStatus.textContent = "登录后确认教育风险说明。";
+    nodes.complianceStatus.textContent = "进入试用后自动确认教育风险说明。";
     nodes.complianceChecklist.innerHTML = "";
     if (nodes.acknowledgeCompliance) nodes.acknowledgeCompliance.disabled = true;
     return;
@@ -2092,7 +2119,7 @@ function renderCompliance(compliance = state.data.compliance) {
 
 function renderSession() {
   const session = state.data.session;
-  const roleLabel = session?.role === "admin" ? "管理员" : session?.role === "student" ? "学生演示账号" : "访客";
+  const roleLabel = session?.role === "admin" ? "管理员" : session?.role === "student" ? "试用模式" : "试用入口";
   nodes.accountPlan.textContent = roleLabel;
   if (nodes.loginStatus) {
     nodes.loginStatus.textContent = session
@@ -7296,15 +7323,13 @@ async function login(email, password) {
   renderSession();
   await loadBootstrap();
   await refreshEntitlement();
-  await refreshMetrics();
+  if (state.data?.session?.role === "admin") {
+    await refreshMetrics();
+  }
 }
 
 async function startFriendTrial() {
-  await login("student@tradegym.local", "demo123");
-  setView("trainer");
-  if (nodes.habitStatus) {
-    nodes.habitStatus.textContent = "已进入演示账号。先做一题训练，再去回放、AI复盘和反馈。";
-  }
+  await ensureTrialAccess({ redirect: true });
 }
 
 async function submitFriendTrialFeedback() {
@@ -7319,9 +7344,7 @@ async function submitFriendTrialFeedback() {
   try {
     nodes.friendSubmitFeedback.disabled = true;
     nodes.friendFeedbackStatus.textContent = "正在提交反馈...";
-    if (!state.data?.session) {
-      await login("student@tradegym.local", "demo123");
-    }
+    await ensureTrialAccess();
     const message = [
       `哪里看不懂：${confusing || "未填写"}`,
       `哪一步有帮助：${helpful || "未填写"}`,
@@ -7559,6 +7582,7 @@ async function saveReplayNote() {
   }
   nodes.saveReplayPlan.disabled = true;
   try {
+    await ensureTrialAccess();
     const result = await api("/api/replay-notes", {
       method: "POST",
       body: JSON.stringify({
@@ -7593,6 +7617,7 @@ async function submitPaperTrade() {
   }
   nodes.submitPaperTrade.disabled = true;
   try {
+    await ensureTrialAccess();
     const result = await api("/api/paper-trades", {
       method: "POST",
       body: JSON.stringify({
@@ -7619,14 +7644,14 @@ async function submitPaperTrade() {
     nodes.paperTradeResult.innerHTML = `
       <div class="attempt-row">
         <div>
-          <strong>Saved education-only simulation</strong>
-          <span>${result.paperTrade.evaluation.simulatedR}R / discipline ${result.paperTrade.evaluation.disciplineScore}</span>
-          <span>Context discipline ${result.paperTrade.contextReview?.score ?? "-"}: ${escapeHtml(result.paperTrade.contextReview?.summary || "Context boundary saved for review.")}</span>
-          ${debrief ? `<span>Replay debrief ${debrief.processScore}: ${escapeHtml(debrief.decisionQuality)} / reveal step ${debrief.revealStep}, hidden candles ${debrief.hiddenCandlesBeforeDecision}</span>` : ""}
-          ${debrief ? `<span>Next practice: ${escapeHtml(debrief.nextPractice?.[0] || "Repeat one replay with the same checklist.")}</span>` : ""}
+          <strong>已保存教学模拟记录</strong>
+          <span>${result.paperTrade.evaluation.simulatedR}R / 纪律分 ${result.paperTrade.evaluation.disciplineScore}</span>
+          <span>环境边界 ${result.paperTrade.contextReview?.score ?? "-"}：${escapeHtml(result.paperTrade.contextReview?.summary || "已保存消息/情绪边界，等待复盘。")}</span>
+          ${debrief ? `<span>回放复盘 ${debrief.processScore}：${escapeHtml(debrief.decisionQuality)} / 决策时点 ${debrief.revealStep}，隐藏K线 ${debrief.hiddenCandlesBeforeDecision}</span>` : ""}
+          ${debrief ? `<span>下一步练习：${escapeHtml(debrief.nextPractice?.[0] || "按同一张检查表再回放一次。")}</span>` : ""}
           <span>${result.paperTrade.evaluation.constraints[1]}</span>
         </div>
-        <span class="tag warn">Demo</span>
+        <span class="tag warn">演示</span>
       </div>
     `;
     renderPaperTrades();
@@ -7726,6 +7751,7 @@ function bindEvents() {
     }
     if (button.dataset.trainingResultAction === "coach") setView("coach");
     if (button.dataset.trainingResultAction === "replay") setView("replay");
+    if (button.dataset.trainingResultAction === "feedback") setView("community");
   });
   nodes.replayPrev.addEventListener("click", () => {
     state.replayStep = Math.max(4, state.replayStep - 1);
@@ -8399,7 +8425,12 @@ async function boot() {
   bindEvents();
   setView("dashboard");
   try {
+    await api("/api/auth/login", {
+      method: "POST",
+      body: JSON.stringify({ email: "student@tradegym.local", password: "demo123" }),
+    });
     await loadBootstrap();
+    await ensureTrialAccess();
   } catch (error) {
     nodes.viewTitle.textContent = "Service not started";
     document.querySelector(".hero-panel h3").textContent = "Start the SaaS service with npm.cmd start";

@@ -308,7 +308,10 @@ try {
     !boot.data.scenarios?.some((scenario) => (
       scenario.sourceTransparency?.educationOnly === true &&
       scenario.sourceTransparency?.notSignal === true &&
-      scenario.sourceTransparency?.learnerLabel?.includes("not a live signal")
+      (
+        scenario.sourceTransparency?.learnerLabel?.includes("not a live signal") ||
+        scenario.sourceTransparency?.learnerLabel?.includes("不是实盘信号")
+      )
     ))
   ) {
     throw new Error("learner-facing source transparency missing from bootstrap scenarios");

@@ -446,7 +446,7 @@ ol {
 .trainer-layout,
 .replay-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 320px;
+  grid-template-columns: minmax(0, 1fr);
   gap: 16px;
 }
 
@@ -518,6 +518,31 @@ dd {
 .score-grid {
   display: grid;
   gap: 10px;
+}
+
+.side-stack {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  align-content: start;
+}
+
+.feedback-card {
+  grid-column: 1 / -1;
+}
+
+.trial-next-row {
+  background: #f7fbf4;
+}
+
+.trial-flow-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.trial-flow-actions button {
+  width: 100%;
+  min-height: 46px;
 }
 
 .option-btn {
@@ -937,5 +962,29 @@ textarea {
   .attempt-row,
   .mini-row {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .trial-flow-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .score-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .score-grid,
+  .hero-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar .billing-actions {
+    width: 100%;
+  }
+
+  .topbar .billing-actions button,
+  .topbar .billing-actions .badge {
+    flex: 1 1 140px;
   }
 }
