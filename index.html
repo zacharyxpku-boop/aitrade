@@ -195,10 +195,10 @@
           <section class="panel">
             <div class="section-head">
               <div>
-                <p class="eyebrow">Course Packages</p>
-                <h3>Published learning products</h3>
+                <p class="eyebrow">学习包</p>
+                <h3>已发布的学习产品</h3>
               </div>
-              <button id="refreshCourseCatalog" type="button">Refresh packages</button>
+              <button id="refreshCourseCatalog" type="button">刷新学习包</button>
             </div>
             <div id="courseCatalogList" class="attempt-log"></div>
           </section>
@@ -214,6 +214,8 @@
                 </div>
                 <span class="badge" id="dataBadge">演示K线</span>
               </div>
+
+              <section id="teachingIntroPanel" class="teaching-intro" aria-label="训练前教学导入"></section>
 
               <div class="market-layout">
                 <div class="chart-card">
@@ -236,7 +238,7 @@
                 </div>
               </div>
 
-              <div class="decision-area">
+              <div class="decision-area" id="decisionArea">
                 <div>
                   <h4 id="questionText">你现在怎么做？</h4>
                   <div id="options" class="option-grid"></div>

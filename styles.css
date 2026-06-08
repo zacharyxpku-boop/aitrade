@@ -456,6 +456,73 @@ ol {
   gap: 16px;
 }
 
+.teaching-intro {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 16px;
+  border: 1px solid #cfe3d5;
+  border-radius: 8px;
+  padding: 16px;
+  background: #f5fbf6;
+}
+
+.teaching-intro-head,
+.teaching-intro-actions {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.teaching-intro-head h4,
+.teaching-goal strong {
+  margin: 0;
+  font-size: 18px;
+}
+
+.teaching-goal {
+  display: grid;
+  gap: 6px;
+}
+
+.teaching-goal span,
+.teaching-steps span {
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.teaching-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.teaching-steps li {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px;
+  background: #fff;
+}
+
+.teaching-steps strong {
+  font-size: 14px;
+}
+
+.teaching-steps span {
+  font-size: 13px;
+}
+
+.teaching-intro-actions {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
 .chart-card,
 .context-card {
   border: 1px solid var(--line);
@@ -1002,6 +1069,7 @@ textarea {
   .grid.three,
   .market-layout,
   .timeframe-grid,
+  .teaching-steps,
   .decision-area,
   .pricing-grid,
   .check-grid,

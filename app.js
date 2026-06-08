@@ -26,6 +26,7 @@ const nodes = {
   symbolLabel: document.querySelector("#symbolLabel"),
   timeframeLabel: document.querySelector("#timeframeLabel"),
   chart: document.querySelector("#candleChart"),
+  teachingIntroPanel: document.querySelector("#teachingIntroPanel"),
   multiTimeframePanel: document.querySelector("#multiTimeframePanel"),
   technicalContext: document.querySelector("#technicalContext"),
   newsContext: document.querySelector("#newsContext"),
@@ -481,7 +482,7 @@ function renderModules() {
         <p class="eyebrow">${item.level}</p>
         <h3>${item.title}</h3>
         <p>${item.outcome}</p>
-        <span class="badge">${item.lessons} lessons</span>
+        <span class="badge">${item.lessons} 节课</span>
       </article>
     `)
     .join("");
@@ -510,14 +511,14 @@ async function refreshCourseCatalog() {
             <span>${item.constraints[1]}</span>
           </div>
           <div class="billing-actions">
-            ${item.knowledgePoints.map((kp) => `<button type="button" data-course-progress="knowledge" data-course-package-id="${item.id}" data-knowledge-point-id="${kp.id}">${item.progress.completedKnowledgePointIds.includes(kp.id) ? "Reviewed" : "Mark reviewed"}</button>`).join("")}
-            <span class="tag ${item.canAccess ? "warn" : "danger"}">${item.canAccess ? "Full access" : "Upgrade"}</span>
+            ${item.knowledgePoints.map((kp) => `<button type="button" data-course-progress="knowledge" data-course-package-id="${item.id}" data-knowledge-point-id="${kp.id}">${item.progress.completedKnowledgePointIds.includes(kp.id) ? "已学习" : "标记已学"}</button>`).join("")}
+            <span class="tag ${item.canAccess ? "warn" : "danger"}">${item.canAccess ? "可学习" : "待解锁"}</span>
           </div>
         </div>
       `).join("")
-      : "<p>No published course packages yet.</p>";
+      : "<p>还没有已发布的学习包。</p>";
   } catch (error) {
-    nodes.courseCatalogList.innerHTML = `<p>Course packages require login: ${error.message}</p>`;
+    nodes.courseCatalogList.innerHTML = `<p>学习包需要先进入试用：${error.message}</p>`;
   }
 }
 
@@ -532,7 +533,7 @@ async function markCourseKnowledgeReviewed(coursePackageId, knowledgePointId) {
     await refreshAssignments();
     renderLearnerCoursePath();
   } catch (error) {
-    nodes.courseCatalogList.innerHTML = `<p>Could not update course progress: ${error.message}</p>`;
+    nodes.courseCatalogList.innerHTML = `<p>学习进度更新失败：${error.message}</p>`;
   }
 }
 
@@ -553,9 +554,39 @@ function renderTrainer() {
   nodes.planInput.value = "";
   nodes.feedbackPanel.hidden = true;
   if (nodes.trainingResultActions) nodes.trainingResultActions.innerHTML = "";
+  renderTeachingIntro(lesson);
   renderOptions(lesson);
   renderCandles(nodes.chart, lesson.candles);
   renderMultiTimeframePanel(lesson);
+}
+
+function renderTeachingIntro(lesson) {
+  if (!nodes.teachingIntroPanel) return;
+  const focus = lesson.tag || "价格行为训练";
+  const timeframe = lesson.timeframe || "当前周期";
+  nodes.teachingIntroPanel.innerHTML = `
+    <div class="teaching-intro-head">
+      <div>
+        <p class="eyebrow">教学导入</p>
+        <h4>今天先学会怎么读图，再做题。</h4>
+      </div>
+      <span class="tag warn">不是荐股</span>
+    </div>
+    <div class="teaching-goal">
+      <strong>今天练：${escapeHtml(focus)}</strong>
+      <span>目标不是猜涨跌，而是写清楚结构、失效条件、仓位边界和环境干扰。</span>
+    </div>
+    <ol class="teaching-steps">
+      <li><strong>先看大背景</strong><span>高周期只回答“现在大概处在什么环境”，不要直接得出买卖结论。</span></li>
+      <li><strong>再看中周期结构</strong><span>找区间、前高前低、突破是否失效，先知道错了在哪里认错。</span></li>
+      <li><strong>最后看 ${escapeHtml(timeframe)}</strong><span>执行周期只用来写训练动作：做、不做、等待，和对应的止损或观望条件。</span></li>
+      <li><strong>新闻和情绪只当背景</strong><span>它们训练你识别偏见和事件风险，不是买卖信号。</span></li>
+    </ol>
+    <div class="teaching-intro-actions">
+      <button type="button" data-scroll-target="#multiTimeframePanel">看多周期读图</button>
+      <button type="button" data-scroll-target="#decisionArea">开始当前题训练</button>
+    </div>
+  `;
 }
 
 function renderOptions(lesson) {
@@ -7810,6 +7841,11 @@ function bindEvents() {
   });
   document.querySelectorAll("[data-jump]").forEach((button) => {
     button.addEventListener("click", () => setView(button.dataset.jump));
+  });
+  document.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-scroll-target]");
+    if (!button) return;
+    document.querySelector(button.dataset.scrollTarget)?.scrollIntoView({ behavior: "smooth", block: "start" });
   });
   nodes.submitBtn.addEventListener("click", submitDecision);
   nodes.refreshAchievements?.addEventListener("click", refreshAchievements);
