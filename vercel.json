@@ -2,6 +2,22 @@
   "version": 2,
   "builds": [
     {
+      "src": "styles.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "app.js",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "trial-flow-state.js",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "training-flow-state.js",
+      "use": "@vercel/static"
+    },
+    {
       "src": "server.js",
       "use": "@vercel/node",
       "config": {
@@ -20,6 +36,26 @@
     }
   ],
   "routes": [
+    {
+      "src": "/styles.css",
+      "dest": "/styles.css"
+    },
+    {
+      "src": "/app.js",
+      "dest": "/app.js"
+    },
+    {
+      "src": "/trial-flow-state.js",
+      "dest": "/trial-flow-state.js"
+    },
+    {
+      "src": "/training-flow-state.js",
+      "dest": "/training-flow-state.js"
+    },
+    {
+      "src": "/(trial|friend-trial)/(styles.css|app.js|trial-flow-state.js|training-flow-state.js)",
+      "dest": "/$2"
+    },
     {
       "src": "/(.*)",
       "dest": "server.js"
