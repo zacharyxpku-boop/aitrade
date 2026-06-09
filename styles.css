@@ -1779,6 +1779,33 @@ ol {
   font-size: 13px;
 }
 
+.teaching-contract-map {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.teaching-contract-map article {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+  border: 1px solid #d8e2d6;
+  border-radius: 8px;
+  padding: 10px;
+  background: #fff;
+}
+
+.teaching-contract-map b {
+  color: var(--ink);
+  font-size: 13px;
+}
+
+.teaching-contract-map span {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
 .lesson-snapshot {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.3fr);
@@ -3393,6 +3420,7 @@ textarea {
   .mistake-relay-map,
   .lesson-snapshot,
   .lesson-snapshot-steps,
+  .teaching-contract-map,
   .teaching-mini-lesson,
   .teaching-checklist,
   .teaching-steps,

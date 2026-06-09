@@ -262,6 +262,14 @@ async function runViewport(name, width, height, mobile = false) {
         && historicalContextText.includes("历史情境包")
         && historicalContextText.includes("当时可见")
         && historicalContextText.includes("事后不可用");
+      const teachingContractMap = document.querySelector(".teaching-contract-map");
+      const teachingContractText = teachingContractMap?.innerText || "";
+      const teachingContractOk = Boolean(teachingContractMap)
+        && teachingContractMap.querySelectorAll("article").length === 4
+        && teachingContractText.includes("先看什么")
+        && teachingContractText.includes("为什么看")
+        && teachingContractText.includes("常见错法")
+        && teachingContractText.includes("提交后批改");
       const questionBankQuality = document.querySelector(".question-bank-quality");
       const questionBankQualityOk = Boolean(questionBankQuality)
         && questionBankQuality.querySelectorAll(".question-bank-quality-grid span").length === 4
@@ -360,6 +368,7 @@ async function runViewport(name, width, height, mobile = false) {
         hasReplayContext: replayText.includes("新闻") || replayText.includes("情绪"),
         professionalReadingOk,
         historicalContextOk,
+        teachingContractOk,
         questionBankQualityOk,
         learnerDataCredibilityOk,
         shortPlanSubmitOk,
@@ -380,6 +389,7 @@ async function runViewport(name, width, height, mobile = false) {
     if (!result.hasReplayContext) throw new Error(`${name} missing news/sentiment context in replay`);
     if (!result.professionalReadingOk) throw new Error(`${name} missing professional multi-timeframe reading map`);
     if (!result.historicalContextOk) throw new Error(`${name} missing historical context package`);
+    if (!result.teachingContractOk) throw new Error(`${name} missing teaching contract map`);
     if (!result.questionBankQualityOk) throw new Error(`${name} missing question bank quality map`);
     if (!result.learnerDataCredibilityOk) throw new Error(`${name} missing learner data credibility summary`);
     if (!result.shortPlanSubmitOk) throw new Error(`${name} short training plan did not submit into coach review`);

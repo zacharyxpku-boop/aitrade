@@ -1154,6 +1154,24 @@ function renderTeachingIntro(lesson) {
       <strong>本题目标：${escapeHtml(focus)}</strong>
       <span>${escapeHtml(lesson.moduleGoal || "目标不是猜涨跌，而是写清楚结构、失效条件、仓位边界和环境干扰。")}</span>
     </div>
+    <div class="teaching-contract-map" aria-label="本题学习契约">
+      <article>
+        <b>先看什么</b>
+        <span>D1/H4 看背景，H1/${escapeHtml(timeframe)} 看当前结构，再看当时可见的新闻/情绪。</span>
+      </article>
+      <article>
+        <b>为什么看</b>
+        <span>训练你把“看到的位置、失效条件、未知信息”分开，不用后面走势倒推理由。</span>
+      </article>
+      <article>
+        <b>常见错法</b>
+        <span>${escapeHtml(lesson.commonMistake || "只盯一根K线、把热点消息当行动理由、没有写清哪里认错。")}</span>
+      </article>
+      <article>
+        <b>提交后批改</b>
+        <span>AI 只批改结构证据、消息/情绪边界、失效条件和下一次训练，不评价收益。</span>
+      </article>
+    </div>
     <div class="professional-reading-map" aria-label="专业读图顺序">
       <div class="professional-reading-head">
         <strong>专业读图顺序</strong>
