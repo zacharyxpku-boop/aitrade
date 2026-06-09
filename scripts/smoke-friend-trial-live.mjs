@@ -77,6 +77,8 @@ requireIncludes("live app.js", app.text, [
   "learner-data-credibility",
   "training-plan-gap-card",
   "Post-submit learning panel refresh skipped",
+  "friendlyApiErrorMessage",
+  "需要先进入学习体验",
   "courseRoadmapHtml",
   "sourceCardHtml",
   "educationOnly",

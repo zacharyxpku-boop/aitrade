@@ -331,6 +331,13 @@ async function runViewport(name, width, height, mobile = false) {
 
       const finalText = document.body.innerText;
       const forbidden = ["朋友试用", "推荐买入", "推荐卖出", "保证收益", "连接券商", "自动下单"].filter((word) => finalText.includes(word));
+      const rawErrors = [
+        "Login required",
+        "Admin session required",
+        "API request failed",
+        "Current compliance version must be accepted",
+        "{\"error\"",
+      ].filter((word) => finalText.includes(word));
       const backendEnglish = [
         "Mark next knowledge reviewed",
         "Practice package drill",
@@ -364,6 +371,7 @@ async function runViewport(name, width, height, mobile = false) {
         todayDone: document.querySelector("#todayDone")?.textContent || "",
         states: state,
         forbidden,
+        rawErrors,
         backendEnglish,
       };
     })()`);
@@ -381,6 +389,7 @@ async function runViewport(name, width, height, mobile = false) {
     if (!result.hasFeedbackConfirmation) throw new Error(`${name} feedback confirmation missing`);
     if (!result.curriculumHasLearningCopy) throw new Error(`${name} missing curriculum learning copy`);
     if (result.forbidden.length) throw new Error(`${name} forbidden visible words: ${result.forbidden.join(", ")}`);
+    if (result.rawErrors.length) throw new Error(`${name} raw backend error visible: ${result.rawErrors.join(", ")}`);
     if (result.backendEnglish.length) throw new Error(`${name} backend English in curriculum: ${result.backendEnglish.join(", ")}`);
     return result;
   } finally {

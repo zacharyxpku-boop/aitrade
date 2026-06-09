@@ -407,6 +407,20 @@ function renderTrialFlowGuide() {
   `;
 }
 
+function friendlyApiErrorMessage(payload = {}, status = 0) {
+  const raw = String(payload.error || "").trim();
+  if (raw === "Login required") return "需要先进入学习体验，请点击“开始学习”后重试。";
+  if (raw === "Admin session required") return "这个功能需要管理员权限，当前学习体验不开放。";
+  if (raw === "Plan limit reached") return "当前体验次数已用完，请先完成回放和复盘，再继续下一轮训练。";
+  if (raw === "Current compliance version must be accepted") return "需要先确认教育边界：本产品不荐股、不实盘、不承诺收益。";
+  if (raw === "Invalid selectedIndex") return "请先选择一个训练判断，再提交给 AI 复盘。";
+  if (raw === "Scenario not found") return "当前训练题没有加载成功，请刷新后重试。";
+  if (raw === "Scenario not approved for learner training") return "这道训练题还没通过教学审核，请先练其它题。";
+  if (/failed|error|requires login|required/i.test(raw)) return "这个步骤暂时没有完成，请回到学习入口后重试。";
+  if (status >= 500) return "服务暂时开小差，请稍后重试。";
+  return raw || "请求暂时失败，请稍后重试。";
+}
+
 async function api(path, options = {}) {
   const response = await fetch(path, {
     ...options,
@@ -417,7 +431,11 @@ async function api(path, options = {}) {
   });
   const payload = await response.json();
   if (!response.ok) {
-    throw new Error(payload.error || "API request failed");
+    const error = new Error(friendlyApiErrorMessage(payload, response.status));
+    error.code = payload.error || "API request failed";
+    error.status = response.status;
+    error.payload = payload;
+    throw error;
   }
   return payload;
 }
@@ -2125,7 +2143,7 @@ async function submitDecision() {
   } catch (error) {
     nodes.feedbackPanel.hidden = false;
     nodes.feedbackTitle.textContent = "提交失败";
-    nodes.feedbackBody.textContent = error.message === "Login required"
+    nodes.feedbackBody.textContent = error.code === "Login required"
       ? "学习体验会话没有建立成功，请点页面顶部“开始学习”后重试。"
       : error.message;
   } finally {
@@ -3327,7 +3345,7 @@ async function refreshCoachReport() {
     state.data.coachReport = result.report;
     renderCoachReport(result.report);
   } catch (error) {
-    nodes.coachReportPanel.innerHTML = `<p>Coach report requires login: ${error.message}</p>`;
+    nodes.coachReportPanel.innerHTML = `<p>AI复盘暂时没有加载完整学习记录：${escapeHtml(error.message)}</p>`;
   }
 }
 
@@ -3691,7 +3709,7 @@ async function refreshProgressReport() {
     renderProgressReport(result.report);
     await refreshNotifications();
   } catch (error) {
-    nodes.progressReportPanel.innerHTML = `<p>Progress report requires login: ${escapeHtml(error.message)}</p>`;
+    nodes.progressReportPanel.innerHTML = `<p>学习进度报告暂时没有加载：${escapeHtml(error.message)}</p>`;
   }
 }
 
@@ -4176,7 +4194,7 @@ async function refreshNotifications() {
     state.data.notifications = result;
     renderNotifications(result);
   } catch (error) {
-    if (nodes.notificationStatus) nodes.notificationStatus.textContent = `Notifications require login: ${error.message}`;
+    if (nodes.notificationStatus) nodes.notificationStatus.textContent = `学习提醒暂时没有加载：${error.message}`;
   }
 }
 
