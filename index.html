@@ -7078,10 +7078,17 @@ async function submitDecision() {
     renderEntitlement();
     renderLearningPath();
     renderAssignments();
-    await refreshNotifications();
-    await refreshCourseCatalog();
-    await refreshCoachReport();
-    await refreshProgressReport();
+    Promise.allSettled([
+      refreshNotifications(),
+      refreshCourseCatalog(),
+      refreshCoachReport(),
+      refreshProgressReport(),
+    ]).then((results) => {
+      const failures = results.filter((item) => item.status === "rejected");
+      if (failures.length) {
+        console.warn("Post-submit learning panel refresh skipped", failures.map((item) => item.reason?.message || item.reason));
+      }
+    });
   } catch (error) {
     nodes.feedbackPanel.hidden = false;
     nodes.feedbackTitle.textContent = "提交失败";

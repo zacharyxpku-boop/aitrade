@@ -11,6 +11,26 @@ async function fetchText(path) {
   return { url, status: response.status, text };
 }
 
+async function fetchJson(path, options = {}) {
+  const url = `${baseUrl}${path}`;
+  const response = await fetch(url, {
+    ...options,
+    headers: {
+      "content-type": "application/json",
+      "user-agent": "TradeGym live smoke/1.0",
+      ...(options.headers || {}),
+    },
+  });
+  const text = await response.text();
+  let data = null;
+  try {
+    data = JSON.parse(text);
+  } catch {
+    throw new Error(`${url} did not return JSON: ${text.slice(0, 200)}`);
+  }
+  return { url, status: response.status, data, text };
+}
+
 function requireIncludes(label, text, checks) {
   const missing = checks.filter((item) => !text.includes(item));
   if (missing.length) {
@@ -56,6 +76,7 @@ requireIncludes("live app.js", app.text, [
   "question-bank-quality",
   "learner-data-credibility",
   "training-plan-gap-card",
+  "Post-submit learning panel refresh skipped",
   "courseRoadmapHtml",
   "sourceCardHtml",
   "educationOnly",
@@ -72,6 +93,36 @@ requireIncludes("live styles.css", styles.text, [
   ".learner-data-credibility",
   ".training-plan-gap-card",
 ]);
+
+const bootstrap = await fetchJson("/api/bootstrap");
+if (bootstrap.status !== 200 || !bootstrap.data.scenarios?.[0]?.id) {
+  throw new Error(`live bootstrap failed: ${bootstrap.status}`);
+}
+const scenario = bootstrap.data.scenarios[0];
+const attempt = await fetchJson("/api/attempts", {
+  method: "POST",
+  body: JSON.stringify({
+    scenarioId: scenario.id,
+    selectedIndex: 0,
+    plan: "live smoke short training plan",
+  }),
+});
+if (attempt.status !== 201 || !attempt.data.feedback || !attempt.data.attempt?.id) {
+  throw new Error(`live training submit failed: ${attempt.status} ${attempt.text.slice(0, 300)}`);
+}
+
+const postSubmitEndpoints = [
+  "/api/notifications",
+  "/api/course-packages",
+];
+const postSubmitChecks = [];
+for (const endpoint of postSubmitEndpoints) {
+  const result = await fetchJson(endpoint);
+  postSubmitChecks.push({ endpoint, status: result.status });
+  if (result.status !== 200) {
+    throw new Error(`live post-submit endpoint failed: ${endpoint} ${result.status} ${result.text.slice(0, 300)}`);
+  }
+}
 
 requireExcludes("live /friend-trial", page.text, [
   "朋友试用",
@@ -100,6 +151,11 @@ console.log(JSON.stringify({
   styles: {
     status: styles.status,
     bytes: styles.text.length,
+  },
+  liveTrainingSubmit: {
+    status: attempt.status,
+    attemptId: attempt.data.attempt.id,
+    postSubmitChecks,
   },
   productionReady: false,
   educationOnly: true,
