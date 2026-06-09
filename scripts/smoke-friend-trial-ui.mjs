@@ -255,6 +255,13 @@ async function runViewport(name, width, height, mobile = false) {
         && professionalReadingText.includes("D1 / H4")
         && professionalReadingText.includes("H1 /")
         && /M15|15m/i.test(professionalReadingText);
+      const historicalContextPackage = document.querySelector(".historical-context-strip");
+      const historicalContextText = document.querySelector("#contextTimeline")?.innerText || "";
+      const historicalContextOk = Boolean(historicalContextPackage)
+        && historicalContextPackage.querySelectorAll("span").length === 4
+        && historicalContextText.includes("历史情境包")
+        && historicalContextText.includes("当时可见")
+        && historicalContextText.includes("事后不可用");
       const trainerSourceOk = Boolean(trainerSourceCard)
         && trainerSourceCard.querySelectorAll(".source-trust-grid article").length >= 3
         && trainerSourceText.includes("行情K线")
@@ -330,6 +337,7 @@ async function runViewport(name, width, height, mobile = false) {
         hasProviderLabel: providerLabelSeen,
         hasReplayContext: replayText.includes("新闻") || replayText.includes("情绪"),
         professionalReadingOk,
+        historicalContextOk,
         trainerSourceOk,
         replaySourceOk,
         hasBoundaryCopy: boundaryCopySeen,
@@ -345,6 +353,7 @@ async function runViewport(name, width, height, mobile = false) {
     if (!result.hasProviderLabel) throw new Error(`${name} missing demo/mock provider label`);
     if (!result.hasReplayContext) throw new Error(`${name} missing news/sentiment context in replay`);
     if (!result.professionalReadingOk) throw new Error(`${name} missing professional multi-timeframe reading map`);
+    if (!result.historicalContextOk) throw new Error(`${name} missing historical context package`);
     if (!result.trainerSourceOk) throw new Error(`${name} missing trainer source transparency card`);
     if (!result.replaySourceOk) throw new Error(`${name} missing replay source transparency card`);
     if (!result.hasBoundaryCopy) throw new Error(`${name} missing education-only boundary copy`);

@@ -2056,6 +2056,50 @@ dd {
   padding-top: 14px;
 }
 
+.historical-context-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.historical-context-head > div {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.historical-context-head span,
+.historical-context-strip span,
+.historical-context-task span {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.historical-context-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.historical-context-strip span,
+.historical-context-task {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  border: 1px solid #d5e6d7;
+  border-radius: 8px;
+  padding: 10px;
+  background: #f8fbf5;
+}
+
+.historical-context-strip b,
+.historical-context-task b {
+  color: var(--ink);
+  font-size: 13px;
+}
+
 .timeline-grid {
   display: grid;
   gap: 8px;
@@ -3244,6 +3288,7 @@ textarea {
   .grid.three,
   .market-layout,
   .learner-track-picker,
+  .historical-context-strip,
   .professional-reading-grid,
   .timeframe-grid,
   .training-level-grid,

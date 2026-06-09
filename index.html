@@ -2063,6 +2063,50 @@ dd {
   padding-top: 14px;
 }
 
+.historical-context-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.historical-context-head > div {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.historical-context-head span,
+.historical-context-strip span,
+.historical-context-task span {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.historical-context-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.historical-context-strip span,
+.historical-context-task {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  border: 1px solid #d5e6d7;
+  border-radius: 8px;
+  padding: 10px;
+  background: #f8fbf5;
+}
+
+.historical-context-strip b,
+.historical-context-task b {
+  color: var(--ink);
+  font-size: 13px;
+}
+
 .timeline-grid {
   display: grid;
   gap: 8px;
@@ -3251,6 +3295,7 @@ textarea {
   .grid.three,
   .market-layout,
   .learner-track-picker,
+  .historical-context-strip,
   .professional-reading-grid,
   .timeframe-grid,
   .training-level-grid,
@@ -6342,13 +6387,36 @@ function renderChartReadingGuide(chartGuide) {
 function renderContextTimeline(lesson) {
   if (!nodes.contextTimeline) return;
   const hasDemoLabel = /演示|demo|教学/i.test([lesson.news, lesson.sentiment, lesson.sourceTransparency?.learnerLabel].filter(Boolean).join(" "));
+  const timeframe = lesson.timeframe || "当前周期";
+  const source = lesson.source || {};
+  const market = source.marketData || {};
+  const newsSource = source.news || {};
+  const marketLabel = `${market.provider || "demo-market"} / ${market.license || "internal-demo-only"}`;
+  const newsLabel = `${newsSource.provider || "demo-news"} / ${newsSource.license || "internal-demo-only"}`;
   nodes.contextTimeline.innerHTML = `
+    <div class="historical-context-head">
+      <div>
+        <strong>历史情境包</strong>
+        <span>这题先复原“当时能知道什么”，再训练结构和错因。</span>
+      </div>
+      <span class="tag warn">教育回顾</span>
+    </div>
+    <div class="historical-context-strip" aria-label="历史情境包摘要">
+      <span><b>标的/周期</b>${escapeHtml(lesson.symbol || "DEMO")} / ${escapeHtml(timeframe)}</span>
+      <span><b>行情来源</b>${escapeHtml(marketLabel)}</span>
+      <span><b>新闻情绪来源</b>${escapeHtml(newsLabel)}</span>
+      <span><b>训练目标</b>${escapeHtml(lesson.teachingGoal || lesson.tag || "结构、失效和情绪边界")}</span>
+    </div>
     <strong>事件时间边界</strong>
     <div class="timeline-grid">
       <span><b>当时可见</b>${escapeHtml(lesson.news || "无真实新闻。")} ${escapeHtml(lesson.sentiment || "情绪只作背景。")}</span>
       <span><b>当时不可确定</b>新闻会不会继续发酵、情绪会不会反转、下一根K线怎么走，当时都不知道。</span>
       <span><b>事后不可用</b>不能用未来K线、事后新闻或结果倒推当前判断；回放时先遮住结果。</span>
       <span><b>学习用法</b>只检查自己有没有被热度、恐惧或兴奋带偏，不把它写成行动理由。</span>
+    </div>
+    <div class="historical-context-task">
+      <b>本题交付物</b>
+      <span>写出结构、失效条件、消息/情绪边界和不做条件；AI 只批改学习过程，不输出买卖建议。</span>
     </div>
     <p class="muted-note">${hasDemoLabel ? "当前为教学演示事件，不是真实授权新闻流；正式历史回顾需要保留来源、时间戳和当时可见性。" : "事件信息只做学习上下文，不输出预测或行动建议。"}</p>
   `;
