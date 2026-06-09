@@ -1618,10 +1618,39 @@ function trainingLevelMap(scenarios = state.data?.scenarios || [], currentScenar
   });
 }
 
+function scenarioQualitySummary(scenarios = state.data?.scenarios || []) {
+  const levels = trainingLevelMap(scenarios);
+  const demoCount = scenarios.filter((scenario) => {
+    const source = scenario.source || {};
+    return source.isDemo !== false || source.marketData?.isDemo === true || source.news?.isDemo === true;
+  }).length;
+  const sourceLabeledCount = scenarios.filter((scenario) => {
+    const source = scenario.source || {};
+    return Boolean(source.provider || source.marketData?.provider || source.news?.provider);
+  }).length;
+  const contextCount = scenarios.filter((scenario) => /消息|新闻|情绪|sentiment|event|财报|热度/i.test([
+    scenario.id,
+    scenario.title,
+    scenario.tag,
+    scenario.news,
+    scenario.sentiment,
+    ...(scenario.tags || []),
+  ].filter(Boolean).join(" "))).length;
+  return {
+    total: scenarios.length,
+    demoCount,
+    sourceLabeledCount,
+    contextCount,
+    levelCount: levels.filter((level) => level.count > 0).length,
+    levelLabels: levels.filter((level) => level.count > 0).map((level) => level.label),
+  };
+}
+
 function renderTrainingLevelPanel(lesson = currentScenario()) {
   if (!nodes.trainingLevelPanel) return;
   const levels = trainingLevelMap(state.data?.scenarios || [], lesson?.id);
   const totalScenarioCount = state.data?.scenarios?.length || 0;
+  const quality = scenarioQualitySummary(state.data?.scenarios || []);
   nodes.trainingLevelPanel.innerHTML = `
     <div class="training-level-head">
       <div>
@@ -1640,7 +1669,19 @@ function renderTrainingLevelPanel(lesson = currentScenario()) {
         </article>
       `).join("")}
     </div>
-    <p class="muted-note">这是体验题库地图，不是完整商业题库；后续需要继续补各层级题量和授权历史数据。</p>
+    <div class="question-bank-quality" aria-label="题库质量地图">
+      <div>
+        <strong>题库质量地图</strong>
+        <span>当前是可试用题库，不是完整商业题库。先看覆盖和缺口，再进入练习。</span>
+      </div>
+      <div class="question-bank-quality-grid">
+        <span><b>层级覆盖</b>${quality.levelCount} 类：${quality.levelLabels.join(" / ") || "待补"}</span>
+        <span><b>新闻情绪题</b>${quality.contextCount} 道带事件/情绪背景；只训练边界，不当信号。</span>
+        <span><b>来源标签</b>${quality.sourceLabeledCount}/${quality.total} 道有来源记录；demo 必须继续显式标注。</span>
+        <span><b>授权缺口</b>${quality.demoCount} 道仍是演示/公开预览级数据，商业化前要补授权历史源。</span>
+      </div>
+    </div>
+    <p class="muted-note">这是体验题库地图，不是完整商业题库；后续需要继续补各层级题量、真实历史时间戳、授权行情、授权新闻和情绪数据。</p>
   `;
 }
 

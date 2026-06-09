@@ -1372,6 +1372,48 @@ ol {
   line-height: 1.45;
 }
 
+.question-bank-quality {
+  display: grid;
+  gap: 10px;
+  border: 1px solid #d8e1d7;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fff;
+}
+
+.question-bank-quality > div:first-child {
+  display: grid;
+  gap: 4px;
+}
+
+.question-bank-quality > div:first-child span,
+.question-bank-quality-grid span {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.question-bank-quality-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.question-bank-quality-grid span {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px;
+  background: #f8fbf5;
+}
+
+.question-bank-quality-grid b {
+  color: var(--ink);
+  font-size: 13px;
+}
+
 .today-practice-plan {
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
@@ -3289,6 +3331,7 @@ textarea {
   .market-layout,
   .learner-track-picker,
   .historical-context-strip,
+  .question-bank-quality-grid,
   .professional-reading-grid,
   .timeframe-grid,
   .training-level-grid,
