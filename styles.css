@@ -814,6 +814,17 @@ ol {
   color: var(--accent);
 }
 
+.feedback-next-actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.feedback-next-actions button {
+  min-width: 0;
+  padding: 9px 10px;
+}
+
 .feedback-next-card small {
   color: var(--muted);
 }
@@ -3465,6 +3476,7 @@ textarea {
   .lesson-snapshot,
   .lesson-snapshot-steps,
   .teaching-contract-map,
+  .feedback-next-actions,
   .teaching-mini-lesson,
   .teaching-checklist,
   .teaching-steps,

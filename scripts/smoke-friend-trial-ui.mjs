@@ -338,6 +338,12 @@ async function runViewport(name, width, height, mobile = false) {
           || text.includes("反馈后的下一步");
       }, "feedback confirmation");
       const feedbackConfirmed = Boolean(document.querySelector("#friendFeedbackStatus .feedback-next-card"));
+      const feedbackNextActions = document.querySelector("#friendFeedbackStatus .feedback-next-actions");
+      const feedbackNextActionsOk = Boolean(feedbackNextActions)
+        && feedbackNextActions.querySelectorAll("button").length === 3
+        && Boolean(feedbackNextActions.querySelector('[data-jump="replay"]'))
+        && Boolean(feedbackNextActions.querySelector('[data-jump="trainer"]'))
+        && Boolean(feedbackNextActions.querySelector('[data-jump="curriculum"]'));
       snapshot("afterFeedback");
 
       click('.nav-item[data-view="curriculum"]');
@@ -385,6 +391,7 @@ async function runViewport(name, width, height, mobile = false) {
         replayHomeworkOk,
         hasBoundaryCopy: boundaryCopySeen,
         hasFeedbackConfirmation: feedbackConfirmed,
+        feedbackNextActionsOk,
         curriculumHasLearningCopy: curriculumText.includes("课程路径") || curriculumText.includes("学习路径"),
         todayDone: document.querySelector("#todayDone")?.textContent || "",
         states: state,
@@ -407,6 +414,7 @@ async function runViewport(name, width, height, mobile = false) {
     if (!result.replayHomeworkOk) throw new Error(`${name} missing same-scenario replay homework`);
     if (!result.hasBoundaryCopy) throw new Error(`${name} missing education-only boundary copy`);
     if (!result.hasFeedbackConfirmation) throw new Error(`${name} feedback confirmation missing`);
+    if (!result.feedbackNextActionsOk) throw new Error(`${name} missing feedback next-step actions`);
     if (!result.curriculumHasLearningCopy) throw new Error(`${name} missing curriculum learning copy`);
     if (result.forbidden.length) throw new Error(`${name} forbidden visible words: ${result.forbidden.join(", ")}`);
     if (result.rawErrors.length) throw new Error(`${name} raw backend error visible: ${result.rawErrors.join(", ")}`);

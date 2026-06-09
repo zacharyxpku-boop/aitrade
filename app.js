@@ -9752,6 +9752,11 @@ async function submitFriendTrialFeedback() {
         <span><b>推荐练习：</b>${escapeHtml(nextPractice.nextPractice)}</span>
         <span><b>为什么：</b>${escapeHtml(nextPractice.reason)}</span>
         <span><b>下次怎样算更好：</b>${escapeHtml(nextPractice.successCheck)}</span>
+        <div class="feedback-next-actions" aria-label="反馈后的行动按钮">
+          <button type="button" data-jump="replay">回放同题</button>
+          <button type="button" data-jump="trainer">再练一题</button>
+          <button type="button" data-jump="curriculum">看课程路径</button>
+        </div>
         <small>这只评价学习流程，不评价策略收益，不生成荐股、实盘信号或真实资金动作。</small>
       </article>
     `;
