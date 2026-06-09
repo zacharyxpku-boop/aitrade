@@ -1648,6 +1648,54 @@ ol {
   gap: 6px;
 }
 
+.professional-reading-map {
+  display: grid;
+  gap: 10px;
+  border: 1px solid #bfd9ca;
+  border-radius: 8px;
+  padding: 12px;
+  background: #ffffff;
+}
+
+.professional-reading-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.professional-reading-head strong {
+  font-size: 15px;
+}
+
+.professional-reading-head span,
+.professional-reading-grid span {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.professional-reading-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.professional-reading-grid article {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px;
+  background: #f9fcf6;
+}
+
+.professional-reading-grid b {
+  color: var(--ink);
+  font-size: 13px;
+}
+
 .lesson-snapshot {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.3fr);
@@ -3196,6 +3244,7 @@ textarea {
   .grid.three,
   .market-layout,
   .learner-track-picker,
+  .professional-reading-grid,
   .timeframe-grid,
   .training-level-grid,
   .trial-outcome-grid,

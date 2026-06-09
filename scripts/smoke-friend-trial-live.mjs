@@ -51,6 +51,7 @@ requireIncludes("live /friend-trial", page.text, [
 requireIncludes("live app.js", app.text, [
   "course-roadmap",
   "source-trust-card",
+  "professional-reading-map",
   "courseRoadmapHtml",
   "sourceCardHtml",
   "educationOnly",
@@ -61,6 +62,7 @@ requireIncludes("live styles.css", styles.text, [
   ".course-roadmap",
   ".source-trust-card",
   ".source-trust-grid",
+  ".professional-reading-map",
 ]);
 
 requireExcludes("live /friend-trial", page.text, [
