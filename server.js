@@ -12412,8 +12412,8 @@ function achievementSummary(db, userId) {
   const definitions = [
     {
       id: "first_drill",
-      title: "First K-line drill",
-      description: "Complete one education-only chart decision drill.",
+      title: "完成第一题K线训练",
+      description: "完成一次只用于学习的看图判断练习。",
       unlocked: attempts.length >= 1,
       progress: Math.min(1, attempts.length),
       target: 1,
@@ -12421,8 +12421,8 @@ function achievementSummary(db, userId) {
     },
     {
       id: "daily_three",
-      title: "Daily training target",
-      description: "Complete three drills in one day.",
+      title: "完成今日训练目标",
+      description: "一天内完成三次学习训练。",
       unlocked: habit.todayDone >= habit.dailyGoal,
       progress: Math.min(habit.todayDone, habit.dailyGoal),
       target: habit.dailyGoal,
@@ -12430,8 +12430,8 @@ function achievementSummary(db, userId) {
     },
     {
       id: "risk_80",
-      title: "Risk discipline 80+",
-      description: "Score 80 or higher on risk discipline in a training drill.",
+      title: "风险纪律达到80分",
+      description: "在训练题里把失效条件、观望条件或风险边界写清楚。",
       unlocked: highRiskScore,
       progress: highRiskScore ? 1 : 0,
       target: 1,
@@ -12439,8 +12439,8 @@ function achievementSummary(db, userId) {
     },
     {
       id: "first_replay",
-      title: "First replay note",
-      description: "Save one historical replay note without future candles.",
+      title: "完成第一次同题回放",
+      description: "保存一次不偷看未来K线的历史回放笔记。",
       unlocked: replayNotes.length >= 1,
       progress: Math.min(1, replayNotes.length),
       target: 1,
@@ -12448,8 +12448,8 @@ function achievementSummary(db, userId) {
     },
     {
       id: "first_paper_trade",
-      title: "First paper trade journal",
-      description: "Save one simulated paper trade journal entry.",
+      title: "保存第一次课堂记录",
+      description: "保存一次模拟课堂记录，用来复盘判断过程。",
       unlocked: paperTrades.length >= 1,
       progress: Math.min(1, paperTrades.length),
       target: 1,
@@ -12457,8 +12457,8 @@ function achievementSummary(db, userId) {
     },
     {
       id: "course_complete",
-      title: "Course completion report",
-      description: "Finish a published course package and receive an education-only completion report.",
+      title: "完成一个学习包",
+      description: "完成已发布学习包，并生成只用于教育复盘的完成报告。",
       unlocked: completionReports.length >= 1,
       progress: Math.min(1, completionReports.length),
       target: 1,
@@ -12476,7 +12476,7 @@ function achievementSummary(db, userId) {
     achievements: definitions,
     constraints: [
       "Achievements reward learning behavior only.",
-      "They are not trading skill certification, profitability evidence, investment advice, or real-money readiness.",
+      "它们不是交易能力认证、盈利证据、投资建议或真实资金准备度。",
     ],
     educationOnly: true,
   };
@@ -12961,25 +12961,25 @@ function buildBacktestClassroom({ paperTrades = [], replayNotes = [] } = {}) {
   const misconceptionDrill = {
     id: sampleSize < 20 ? "small_sample_win_rate" : "overfit_expectancy",
     prompt: sampleSize < 20
-      ? `Your journal has ${sampleSize} paper trade sample(s) and a ${winRatePct}% win rate. What is the safest education-only interpretation?`
-      : `Your classroom sample has ${sampleSize} paper trades and ${expectancyR}R expectancy. What should you check before trusting the rule?`,
+      ? `你的课堂记录里只有 ${sampleSize} 条练习样本，胜率显示为 ${winRatePct}%。最安全的教育解释是什么？`
+      : `你的课堂样本有 ${sampleSize} 条记录，期望值是 ${expectancyR}R。相信这条规则前，应该先检查什么？`,
     options: sampleSize < 20
       ? [
-          "The sample is too small; use it to review habits, not to claim a working strategy.",
-          "The win rate proves the setup is ready for real-money trading.",
-          "A positive-looking metric means the app found a live signal.",
+          "样本太少，只能用来复盘自己的习惯，不能证明策略有效。",
+          "胜率已经证明这套方法可以用于真实资金交易。",
+          "指标看起来不错，说明系统发现了实时信号。",
         ]
       : [
-          "Check out-of-sample evidence and process consistency; do not optimize only to this journal.",
-          "Expectancy proves future profitability if it is above zero.",
-          "Drawdown no longer matters once win rate is acceptable.",
+          "检查样本外证据和过程一致性，不能只围绕这批记录调参。",
+          "只要期望值大于 0，就能证明未来会盈利。",
+          "胜率看起来可以后，回撤就不重要了。",
         ],
     answer: 0,
     misconception: sampleSize < 20 ? "win_rate_sample_size" : "overfitting_expectancy",
     explanation: sampleSize < 20
-      ? "Win rate is only a description of saved classroom examples. Small samples cannot prove a strategy, future return, or real-money readiness."
-      : "Backtest-style metrics can be overfit to the examples you already saw. Education review should separate process quality, sample size, and out-of-sample evidence.",
-    requiredPrinciple: "Backtest metrics are learning diagnostics only, not investment advice, live signals, or return promises.",
+      ? "胜率只是对已保存课堂样本的描述。小样本不能证明策略有效、未来收益或真实资金可用。"
+      : "回测式指标可能只适配已经看过的样本。教育复盘要分清过程质量、样本数量和样本外证据。",
+    requiredPrinciple: "回测指标只用于学习诊断，不是投资建议、实时信号或收益承诺。",
     educationOnly: true,
   };
   return {
@@ -13444,25 +13444,25 @@ function buildMarketContextClassroom({ scenarios = [], attempts = [] } = {}) {
   const drill = {
     id: weakBoundaryAttempts.length ? "headline_as_signal_boundary" : "context_confirming_bias",
     prompt: weakBoundaryAttempts.length
-      ? "A learner says: 'The news is bullish, so I should buy now.' What is the safest education-only response?"
-      : "A chart setup and a positive headline appear together. What should the learner do with the headline?",
+      ? "有学习者说：“新闻是利好，所以我现在应该买。”最安全的教育回应是什么？"
+      : "一个图形结构和一条偏正面的新闻同时出现。学习者应该怎么处理这条新闻？",
     options: weakBoundaryAttempts.length
       ? [
-          "Treat the headline as context only; ask for price structure, invalidation, risk size, and a no-trade alternative.",
-          "Use the headline as a live buy signal if sentiment is strong enough.",
-          "Ignore risk planning because news explains the move.",
+          "只把新闻当背景；继续要求写价格结构、失效条件、课堂风险边界和不做的方案。",
+          "如果情绪足够强，就把新闻当成实时买入信号。",
+          "新闻已经解释了走势，所以可以忽略风险计划。",
         ]
       : [
-          "Use the headline to check assumptions and bias, but never as a standalone buy/sell reason.",
-          "Convert the headline into a market prediction for the next candle.",
-          "Raise simulated risk because the news confirms the setup.",
+          "用新闻检查假设和偏见，但不能把它单独当成买卖理由。",
+          "把新闻转换成下一根K线的市场预测。",
+          "因为新闻确认了图形，所以提高课堂风险标记。",
         ],
     answer: 0,
     misconception: weakBoundaryAttempts.length ? "headline_chasing" : "confirmation_bias",
     explanation: weakBoundaryAttempts.length
-      ? "News and sentiment can explain context, timing risk, or uncertainty. They cannot become stock recommendations, live signals, or real-money instructions."
-      : "A headline is useful when it exposes assumptions and alternative explanations. It is unsafe when it becomes proof, prediction, or permission to increase risk.",
-    requiredPrinciple: "Market context is a learning input, not a trading signal, asset recommendation, or return forecast.",
+      ? "新闻和情绪可以帮助理解背景、时点风险和不确定性，但不能变成荐股、实时信号或真实资金操作指令。"
+      : "新闻有用，是因为它能暴露假设和其他解释；一旦变成证明、预测或加风险的理由，就不安全。",
+    requiredPrinciple: "市场背景是学习输入，不是交易信号、资产推荐或收益预测。",
     educationOnly: true,
   };
   return {

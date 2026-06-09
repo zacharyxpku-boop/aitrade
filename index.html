@@ -121,6 +121,21 @@ button:hover {
   padding: 18px;
   overflow-y: auto;
   overflow-x: hidden;
+  box-shadow: 0 10px 26px rgba(16, 24, 21, 0.05);
+}
+
+.rail .panel,
+.rail .card {
+  box-shadow: none;
+}
+
+.rail .compliance-ack-panel,
+.rail #onboardingPanel {
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.rail .hero-stats div {
+  box-shadow: none;
 }
 
 .brand h1,
@@ -202,8 +217,22 @@ ol {
 }
 
 .workspace {
+  display: flex;
+  flex-direction: column;
   min-width: 0;
   padding: 18px;
+}
+
+.topbar {
+  order: 1;
+}
+
+#trialFlowGuide {
+  order: 2;
+}
+
+.view {
+  order: 3;
 }
 
 .topbar {
@@ -290,6 +319,155 @@ ol {
   max-width: 680px;
 }
 
+.product-hero {
+  position: relative;
+  overflow: hidden;
+  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+  gap: 22px;
+  border-color: #c9d5cc;
+  background:
+    linear-gradient(120deg, rgba(16, 24, 21, 0.92), rgba(22, 65, 54, 0.9)),
+    var(--ink);
+  color: #fff;
+}
+
+.product-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 38px 38px;
+}
+
+.product-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.product-hero .eyebrow {
+  color: #f7cf72;
+}
+
+.product-hero h3 {
+  max-width: 780px;
+  color: #fff;
+  font-size: clamp(34px, 5vw, 58px);
+  line-height: 1.02;
+}
+
+.product-hero p {
+  max-width: 720px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 17px;
+}
+
+.product-positioning-line {
+  margin: 0;
+  color: #fff !important;
+  font-size: 18px !important;
+  font-weight: 900;
+}
+
+.product-hero-copy {
+  display: grid;
+  align-content: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.hero-boundary-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 2px;
+}
+
+.hero-boundary-strip span {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  padding: 7px 10px;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.product-hero .hero-actions button {
+  min-height: 46px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.product-hero .hero-actions button:first-child {
+  background: #f7c85e;
+  color: #172018;
+}
+
+.product-hero-map {
+  gap: 14px;
+  border-color: rgba(247, 200, 94, 0.26);
+  background: rgba(8, 22, 18, 0.74);
+  color: #fff;
+  box-shadow: none;
+}
+
+.product-hero-map strong {
+  color: #fff;
+}
+
+.product-hero-map .muted-note {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.hero-flow-map {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.hero-flow-map span {
+  min-width: 0;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  padding: 8px 6px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 900;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.hero-training-lens {
+  display: grid;
+  gap: 8px;
+}
+
+.hero-training-lens article {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  border: 1px solid rgba(247, 200, 94, 0.18);
+  border-radius: 8px;
+  padding: 11px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.hero-training-lens b {
+  color: #f7cf72;
+}
+
+.hero-training-lens span {
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -315,6 +493,26 @@ ol {
 .trial-card strong {
   font-size: 18px;
   overflow-wrap: anywhere;
+}
+
+.product-hero .product-hero-map {
+  border-color: rgba(247, 200, 94, 0.26);
+  background: rgba(8, 22, 18, 0.78);
+  color: #fff;
+  backdrop-filter: none;
+}
+
+.product-hero .product-hero-map strong {
+  color: #fff;
+}
+
+.product-hero .product-hero-map .muted-note {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.product-hero .hero-training-lens article {
+  border-color: rgba(247, 200, 94, 0.2);
+  background: rgba(255, 255, 255, 0.06);
 }
 
 #friendTrialIntro {
@@ -395,6 +593,33 @@ ol {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 10px;
+}
+
+.trial-training-map {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.trial-training-map article {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+  border: 1px solid #cbd8d0;
+  border-radius: 8px;
+  padding: 12px;
+  background: #f8faf4;
+}
+
+.trial-training-map b {
+  color: var(--ink);
+}
+
+.trial-training-map span {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
 }
 
 .trial-outcome-grid article,
@@ -505,6 +730,43 @@ ol {
   gap: 8px;
 }
 
+.correction-path-card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1fr) minmax(0, 1fr);
+  gap: 10px;
+  border: 1px solid #b8dcc6;
+  border-radius: 8px;
+  padding: 12px;
+  background: #f4fbf6;
+}
+
+.correction-path-card > div,
+.correction-path-card > span {
+  min-width: 0;
+}
+
+.correction-path-card > div {
+  display: grid;
+  gap: 5px;
+}
+
+.correction-path-card strong {
+  color: var(--ink);
+  line-height: 1.45;
+}
+
+.correction-path-card > span {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+.correction-path-card b,
+.correction-mini {
+  color: var(--accent-strong);
+}
+
 .sharp-diagnosis-grid article {
   display: grid;
   gap: 5px;
@@ -522,6 +784,12 @@ ol {
 
 .sharp-diagnosis-grid small {
   font-size: 12px;
+}
+
+.correction-mini {
+  border-top: 1px solid #ead4d0;
+  padding-top: 6px;
+  font-weight: 800;
 }
 
 #friendFeedbackStatus {
@@ -557,6 +825,146 @@ ol {
   color: var(--muted);
 }
 
+.mistake-trend-card {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  border: 1px solid #b8dcc6;
+  border-radius: 8px;
+  padding: 14px;
+  background: #f3fbf6;
+  overflow-wrap: anywhere;
+}
+
+.mistake-trend-card > div,
+.mistake-trend-card article {
+  min-width: 0;
+}
+
+.mistake-trend-card > div {
+  display: grid;
+  gap: 6px;
+  grid-column: 1 / -1;
+}
+
+.mistake-trend-card h4 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.mistake-trend-card article {
+  display: grid;
+  gap: 6px;
+  border: 1px solid #d5e6d7;
+  border-radius: 8px;
+  padding: 10px;
+  background: #fff;
+}
+
+.mistake-trend-card strong {
+  color: var(--ink);
+  font-size: 13px;
+}
+
+.mistake-trend-card span,
+.mistake-trend-card small {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.mistake-trend-card small {
+  grid-column: 1 / -1;
+  border-top: 1px solid #d5e6d7;
+  padding-top: 8px;
+}
+
+#learningPathPanel .mistake-trend-card {
+  grid-template-columns: 1fr;
+}
+
+.course-roadmap {
+  display: grid;
+  gap: 12px;
+  border: 1px solid #b8dcc6;
+  border-radius: 8px;
+  padding: 14px;
+  background: #f5fbf6;
+  overflow-wrap: anywhere;
+}
+
+.course-roadmap-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.course-roadmap-head > div {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+}
+
+.course-roadmap h4 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.course-roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.course-roadmap-grid article {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+  border: 1px solid #d5e6d7;
+  border-radius: 8px;
+  padding: 10px;
+  background: #fff;
+}
+
+.course-roadmap-grid article.is-current {
+  border-color: var(--accent);
+  background: #f0faf3;
+}
+
+.course-roadmap-grid b {
+  display: inline-grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 12px;
+}
+
+.course-roadmap-grid strong {
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.course-roadmap span,
+.course-roadmap small {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.course-roadmap > small {
+  border-top: 1px solid #d5e6d7;
+  padding-top: 8px;
+}
+
 .aha-moment-card {
   display: grid;
   gap: 9px;
@@ -587,8 +995,89 @@ ol {
   color: var(--muted);
 }
 
+.coach-review-sheet {
+  position: relative;
+  display: grid;
+  gap: 12px;
+  border: 1px solid #dfd4b3;
+  border-radius: 8px;
+  padding: 14px;
+  background: #fffdf4;
+}
+
+.coach-review-stamp {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  transform: rotate(-3deg);
+  border: 2px solid rgba(183, 71, 63, 0.5);
+  border-radius: 6px;
+  padding: 4px 8px;
+  color: var(--danger);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.coach-review-sheet h4 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.coach-review-sheet h3 {
+  margin: 0;
+  font-size: 21px;
+  line-height: 1.3;
+}
+
+.coach-review-sheet-compact {
+  margin-bottom: 12px;
+}
+
+.coach-review-sheet dl {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.coach-review-sheet dt {
+  color: #8a5a00;
+  font-size: 12px;
+}
+
+.coach-review-sheet dd {
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
 .friend-feedback-panel {
   max-width: 860px;
+}
+
+.feedback-scope-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 14px 0;
+}
+
+.feedback-scope-grid span {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  border: 1px solid #d9e2d5;
+  border-radius: 8px;
+  padding: 12px;
+  background: #f8fbf5;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.feedback-scope-grid b {
+  color: var(--ink);
+  font-size: 14px;
 }
 
 .friend-feedback-form {
@@ -659,6 +1148,43 @@ ol {
   flex: 0 0 auto;
   white-space: nowrap;
   overflow-wrap: normal;
+}
+
+.rail .compliance-ack-panel,
+.rail #onboardingPanel,
+.rail #notificationPanel,
+.rail #achievementPanel,
+.rail .brand > .grid,
+.rail .brand > .panel:not(.compliance-ack-panel):not(#onboardingPanel):not(#notificationPanel):not(#achievementPanel) {
+  display: none;
+}
+
+.rail .brand {
+  display: grid;
+  gap: 14px;
+}
+
+.rail .brand > p:not(.eyebrow):not(#habitStatus) {
+  margin-bottom: 0;
+}
+
+.rail #habitStatus {
+  margin: 0;
+  padding: 10px;
+  border: 1px solid #d5e6d7;
+  border-radius: 8px;
+  background: #f5faf4;
+  color: var(--accent-strong);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.rail .nav-list {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding-top: 4px;
+  background: rgba(255, 255, 255, 0.96);
 }
 
 .grid {
@@ -853,6 +1379,233 @@ ol {
   line-height: 1.45;
 }
 
+.today-practice-plan {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 12px;
+  align-items: stretch;
+  margin: 0 0 16px;
+  border: 1px solid #b8dcc6;
+  border-radius: 8px;
+  padding: 14px;
+  background: #f4fbf6;
+}
+
+.today-practice-plan > div,
+.today-practice-plan article {
+  min-width: 0;
+}
+
+.today-practice-plan h4 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.today-practice-plan > div:first-child,
+.today-practice-plan article {
+  display: grid;
+  gap: 6px;
+}
+
+.today-practice-plan article {
+  border: 1px solid #d5e6d7;
+  border-radius: 8px;
+  padding: 10px;
+  background: #fff;
+}
+
+.today-micro-lesson {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  border: 1px solid #d5e6d7;
+  border-radius: 8px;
+  padding: 12px;
+  background: #ffffff;
+}
+
+.today-micro-lesson > div,
+.today-micro-lesson article {
+  min-width: 0;
+}
+
+.today-micro-lesson > div {
+  display: grid;
+  gap: 5px;
+  align-content: start;
+}
+
+.today-micro-lesson article {
+  border-color: #e1eadf;
+  background: #f9fcf7;
+}
+
+.today-micro-lesson b {
+  color: var(--accent-strong);
+  font-size: 13px;
+}
+
+.mistake-relay-map {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  border: 1px solid #dfd4b3;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fffdf4;
+}
+
+.mistake-relay-map.is-paused {
+  border-color: #c98f32;
+  background: #fff8e8;
+}
+
+.mistake-relay-map.is-paused > div {
+  border-left: 3px solid #a76300;
+  padding-left: 10px;
+}
+
+.mistake-relay-map.is-paused b {
+  background: #a76300;
+}
+
+.mistake-relay-map > div,
+.mistake-relay-map article {
+  min-width: 0;
+}
+
+.mistake-relay-map > div {
+  display: grid;
+  gap: 5px;
+  align-content: start;
+}
+
+.mistake-relay-map > div strong {
+  color: var(--ink);
+  line-height: 1.4;
+}
+
+.mistake-relay-map article {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 5px 8px;
+  border: 1px solid #eadfbf;
+  border-radius: 8px;
+  padding: 10px;
+  background: #fff;
+}
+
+.mistake-relay-map b {
+  display: inline-grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: #8a5a00;
+  color: #fff;
+  font-size: 12px;
+}
+
+.mistake-relay-map article strong {
+  align-self: center;
+  color: var(--ink);
+  font-size: 13px;
+}
+
+.mistake-relay-map article span {
+  grid-column: 1 / -1;
+}
+
+.today-practice-plan strong {
+  color: var(--ink);
+  font-size: 13px;
+}
+
+.today-practice-plan span,
+.today-practice-plan small,
+.today-micro-lesson span,
+.mistake-relay-map span {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+.today-practice-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.today-practice-actions button {
+  min-width: 150px;
+}
+
+.today-practice-plan > small {
+  grid-column: 1 / -1;
+  border-top: 1px solid #d5e6d7;
+  padding-top: 8px;
+}
+
+.source-trust-card-shell {
+  margin: 0 0 16px;
+}
+
+.source-trust-card {
+  display: grid;
+  gap: 12px;
+  border: 1px solid #cfd9df;
+  border-radius: 8px;
+  padding: 14px;
+  background: #f7fafb;
+}
+
+.source-trust-card h4 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.source-trust-card span,
+.source-trust-card small,
+.source-trust-card p {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+.source-trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.source-trust-grid article {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+  border: 1px solid #dce5e8;
+  border-radius: 8px;
+  padding: 10px;
+  background: #fff;
+}
+
+.source-trust-grid strong {
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.source-trust-grid .tag {
+  width: fit-content;
+}
+
 .teaching-intro {
   display: grid;
   gap: 14px;
@@ -887,6 +1640,10 @@ ol {
   display: grid;
 }
 
+.teaching-intro:not(.is-expanded) > .answer-coach {
+  display: none;
+}
+
 .teaching-intro-head h4,
 .teaching-goal strong {
   margin: 0;
@@ -896,6 +1653,85 @@ ol {
 .teaching-goal {
   display: grid;
   gap: 6px;
+}
+
+.lesson-snapshot {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.3fr);
+  gap: 10px;
+  border: 1px solid #bcd9c5;
+  border-radius: 8px;
+  padding: 12px;
+  background: #ffffff;
+}
+
+.lesson-snapshot-main,
+.lesson-snapshot-steps,
+.lesson-answer-template {
+  min-width: 0;
+}
+
+.lesson-snapshot-main {
+  display: grid;
+  gap: 7px;
+  border-right: 1px solid var(--line);
+  padding-right: 12px;
+}
+
+.lesson-kicker {
+  width: fit-content;
+  border-radius: 999px;
+  padding: 4px 8px;
+  background: #ecf6ef;
+  color: var(--accent-strong);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.lesson-snapshot-main strong {
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.lesson-snapshot-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.lesson-snapshot-steps span {
+  display: grid;
+  gap: 5px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px;
+  background: #f9fcf6;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.lesson-snapshot-steps b {
+  color: var(--ink);
+  font-size: 13px;
+}
+
+.lesson-answer-template {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.lesson-answer-template b {
+  color: var(--ink);
 }
 
 .teaching-goal span,
@@ -1026,6 +1862,7 @@ ol {
   display: block;
   width: 100%;
   height: 340px;
+  background: #fbfcf8;
 }
 
 .chart-reading-guide {
@@ -1236,6 +2073,33 @@ dd {
   background: #fff;
 }
 
+body[data-current-view="dashboard"] #trialFlowGuide {
+  margin: 14px 0 18px;
+  border-color: #cbd8d0;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: none;
+}
+
+body[data-current-view="dashboard"] .topbar {
+  display: none;
+}
+
+body[data-current-view="dashboard"] #trialFlowGuide {
+  order: 4;
+}
+
+body[data-current-view="dashboard"] #dashboardView {
+  order: 1;
+}
+
+body:not([data-current-view="dashboard"]) #loginDemo {
+  display: none;
+}
+
+body:not([data-current-view="dashboard"]) .topbar {
+  align-items: center;
+}
+
 .trial-flow-summary {
   display: flex;
   gap: 8px;
@@ -1309,6 +2173,316 @@ dd {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fff;
+}
+
+.training-quick-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.training-quick-actions button {
+  min-height: 36px;
+}
+
+.training-quick-actions button:first-child,
+.today-practice-actions button:first-child {
+  background: #f7c85e;
+  color: #172018;
+}
+
+#trainerView .main-card {
+  position: relative;
+  overflow: hidden;
+}
+
+#trainerView .main-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 5px;
+  background: linear-gradient(90deg, #f7c85e, #20885b, #101815);
+}
+
+#trainerView .main-card > *,
+#replayView .main-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.training-level-panel,
+.teaching-intro,
+.market-layout,
+.decision-area,
+#feedbackPanel {
+  scroll-margin-top: 18px;
+}
+
+.chart-card,
+.context-card,
+.plan-block {
+  min-width: 0;
+}
+
+.plan-block {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+  border: 1px solid #cbd8d0;
+  border-radius: 8px;
+  padding: 14px;
+  background: #f8faf4;
+}
+
+.plan-block label {
+  color: var(--ink);
+  font-weight: 900;
+}
+
+.plan-helper-note {
+  margin: 0;
+  font-size: 13px;
+}
+
+#trainerView .main-card,
+#replayView .main-card,
+#coachView .panel:first-child,
+.friend-feedback-panel {
+  border-color: #cbd8d0;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 250, 244, 0.96));
+}
+
+#replayView .main-card,
+#coachView .panel,
+#communityView .panel {
+  position: relative;
+  overflow: hidden;
+}
+
+#replayView .main-card::before,
+#coachView .panel::before,
+#communityView .panel::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 4px;
+  background: linear-gradient(90deg, #101815, #20885b, #f7c85e);
+}
+
+#coachView .panel::before,
+#communityView .panel::before {
+  height: 3px;
+  opacity: 0.65;
+}
+
+#replayView .side-stack .card,
+#coachView .panel,
+#communityView .panel {
+  border-color: #cbd8d0;
+  box-shadow: 0 10px 26px rgba(16, 24, 21, 0.05);
+}
+
+#replayView .side-stack .card h3,
+#coachView .panel h3,
+#communityView .panel h3 {
+  letter-spacing: 0;
+}
+
+#replayView label,
+#communityView label,
+#coachView label {
+  color: var(--ink);
+  font-weight: 900;
+}
+
+#replayView textarea,
+#communityView textarea,
+#coachView textarea,
+#coachView input {
+  border-color: #cbd8d0;
+  background: #fff;
+}
+
+#replayView .side-stack textarea {
+  min-height: 92px;
+}
+
+#replayView .side-stack .card {
+  gap: 9px;
+}
+
+#replayView .side-stack .muted-note {
+  margin: 0;
+}
+
+.replay-note-card {
+  background: #fffdf4;
+}
+
+.replay-record-card {
+  background: #f8faf4;
+}
+
+.inline-stamp {
+  display: inline-flex;
+  margin-left: 8px;
+  border: 1px solid #e4c990;
+  border-radius: 999px;
+  padding: 3px 8px;
+  color: var(--warn);
+  background: #fff8e8;
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+.replay-record-card .field-row {
+  margin: 6px 0;
+}
+
+.replay-record-card label {
+  font-size: 13px;
+}
+
+.coach-empty-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.coach-empty-grid article {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 5px 8px;
+  min-width: 0;
+  border: 1px solid #cbd8d0;
+  border-radius: 8px;
+  padding: 12px;
+  background: #f8faf4;
+}
+
+.coach-empty-grid b {
+  display: inline-grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: #fff;
+  font-size: 12px;
+}
+
+.coach-empty-grid strong {
+  align-self: center;
+  color: var(--ink);
+}
+
+.coach-empty-grid span {
+  grid-column: 1 / -1;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+#trainerView .section-head,
+#replayView .section-head,
+#coachView > .section-head,
+.friend-feedback-panel .section-head {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 12px;
+}
+
+.market-layout {
+  align-items: start;
+}
+
+.chart-card {
+  overflow: hidden;
+  border-color: #cbd8d0;
+  background:
+    linear-gradient(180deg, #ffffff, #f7faf5);
+}
+
+.chart-toolbar {
+  border-bottom: 1px solid var(--line);
+  background: #f6f9f4;
+}
+
+.chart-toolbar strong {
+  color: var(--ink);
+  font-size: 15px;
+}
+
+.chart-toolbar span {
+  border-radius: 999px;
+  padding: 4px 8px;
+  background: #edf8f1;
+  color: var(--accent-strong);
+  font-weight: 800;
+}
+
+.context-card {
+  border-color: #dfd4b3;
+  background: #fffdf4;
+}
+
+.context-card dd {
+  color: var(--ink);
+}
+
+.teaching-intro,
+.decision-scaffold,
+.training-focus-rail,
+.backtest-plain-lesson,
+.sharp-diagnosis-card {
+  box-shadow: 0 10px 26px rgba(16, 24, 21, 0.05);
+}
+
+.plan-block textarea,
+.friend-feedback-form textarea,
+#replayPlan,
+#paperTradeThesis,
+#paperTradeInvalidation,
+#paperTradeContext {
+  width: 100%;
+  max-width: 100%;
+  border-color: #cbd8d0;
+  background: #fff;
+}
+
+.plan-helper-actions,
+.replay-controls,
+.billing-actions {
+  min-width: 0;
+}
+
+.replay-time-rail {
+  position: relative;
+  height: 28px;
+  overflow: hidden;
+  border: 1px solid #d8e1d7;
+  border-radius: 999px;
+  background: #f3f6ef;
+}
+
+.replay-time-rail span {
+  position: absolute;
+  inset: 0 auto 0 0;
+  display: block;
+  min-width: 8px;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #f7c85e, #20885b);
+}
+
+.replay-time-rail b {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  height: 100%;
+  place-items: center;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 900;
 }
 
 .training-focus-rail > div:first-child {
@@ -1397,6 +2571,62 @@ dd {
 
 .decision-scaffold-head h4 {
   margin: 2px 0 0;
+}
+
+.pre-answer-warning {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  align-items: stretch;
+}
+
+.pre-answer-warning > div,
+.pre-answer-warning article {
+  min-width: 0;
+  border: 1px solid #e0d5b7;
+  border-radius: 8px;
+  padding: 11px;
+  background: #fffaf0;
+}
+
+.pre-answer-warning > div {
+  display: grid;
+  gap: 5px;
+}
+
+.pre-answer-warning strong {
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.pre-answer-warning > div span {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.pre-answer-warning article {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 7px;
+  align-items: start;
+}
+
+.pre-answer-warning b {
+  display: inline-grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: #8a5a00;
+  color: #fff;
+  font-size: 12px;
+}
+
+.pre-answer-warning article span {
+  color: var(--ink);
+  font-size: 12px;
+  line-height: 1.55;
 }
 
 .decision-scaffold-grid {
@@ -1882,6 +3112,10 @@ textarea {
     grid-template-columns: 1fr;
   }
 
+  .product-hero {
+    grid-template-columns: 1fr;
+  }
+
   .rail {
     position: static;
     max-height: none;
@@ -1901,6 +3135,19 @@ textarea {
     max-width: 100%;
     padding: 12px;
     overflow: hidden;
+  }
+
+  body[data-current-view="dashboard"] #dashboardView {
+    order: 1;
+  }
+
+  body[data-current-view="dashboard"] .topbar {
+    order: 2;
+    margin-top: 12px;
+  }
+
+  body[data-current-view="dashboard"] #trialFlowGuide {
+    order: 3;
   }
 
   .rail {
@@ -1938,6 +3185,15 @@ textarea {
     line-height: 1.22;
   }
 
+  .product-hero h3 {
+    font-size: 36px;
+    line-height: 1.08;
+  }
+
+  .product-hero p {
+    font-size: 15px;
+  }
+
   .topbar h2 {
     font-size: 28px;
     line-height: 1.18;
@@ -1951,10 +3207,20 @@ textarea {
   .training-level-grid,
   .trial-outcome-grid,
   .trial-outcome-checklist,
+  .trial-training-map,
+  .coach-empty-grid,
   .readiness-boundary-grid,
   .backtest-metric-plain-grid,
   .backtest-everyday-grid,
   .replay-bridge-grid,
+  .pre-answer-warning,
+  .correction-path-card,
+  .mistake-trend-card,
+  .today-practice-plan,
+  .today-micro-lesson,
+  .mistake-relay-map,
+  .lesson-snapshot,
+  .lesson-snapshot-steps,
   .teaching-mini-lesson,
   .teaching-checklist,
   .teaching-steps,
@@ -2000,6 +3266,31 @@ textarea {
     grid-template-columns: 1fr;
   }
 
+  .training-quick-actions,
+  .today-practice-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #todayPracticePlan .today-micro-lesson,
+  #todayPracticePlan .mistake-relay-map,
+  #todayPracticePlan > small {
+    display: none;
+  }
+
+  #todayPracticePlan {
+    gap: 10px;
+  }
+
+  #multiTimeframePanel .timeframe-grid {
+    display: none;
+  }
+
+  #multiTimeframePanel {
+    max-height: 220px;
+    overflow: hidden;
+  }
+
   .trial-flow-summary {
     display: grid;
   }
@@ -2008,16 +3299,49 @@ textarea {
     display: grid;
   }
 
+  .lesson-snapshot-main {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+    padding-right: 0;
+    padding-bottom: 10px;
+  }
+
   .trial-flow-steps {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(7, minmax(88px, 1fr));
+    overflow-x: auto;
+    padding-bottom: 2px;
+    scrollbar-width: thin;
+  }
+
+  .hero-flow-map {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .training-focus-steps {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(118px, 1fr));
+    overflow-x: auto;
+    padding-bottom: 2px;
+    scrollbar-width: thin;
+  }
+
+  .training-focus-steps button {
+    min-height: 58px;
   }
 
   .decision-scaffold-grid {
     grid-template-columns: 1fr;
+  }
+
+  .source-trust-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .course-roadmap-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .course-roadmap-head {
+    display: grid;
   }
 
   .decision-scaffold-head {
@@ -2054,7 +3378,52 @@ textarea {
   }
 
   .trial-flow-steps {
+    grid-template-columns: repeat(7, minmax(86px, 1fr));
+  }
+
+  .trial-flow-guide {
+    padding: 10px;
+  }
+
+  .trial-flow-step {
+    min-height: 36px;
+    padding: 6px 7px;
+  }
+
+  .product-hero {
+    padding: 16px;
+  }
+
+  .product-hero-copy {
+    gap: 10px;
+  }
+
+  .product-hero h3 {
+    font-size: 31px;
+  }
+
+  .product-hero .product-hero-map {
+    display: none;
+  }
+
+  .product-hero p:not(.product-positioning-line) {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .product-hero .hero-actions {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .hero-flow-map {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-boundary-strip span {
+    flex: 1 1 120px;
+    text-align: center;
   }
 
   .learner-track-options {
@@ -2066,7 +3435,17 @@ textarea {
   }
 
   .training-focus-steps {
+    grid-template-columns: repeat(6, minmax(112px, 1fr));
+  }
+
+  .coach-review-sheet dl {
     grid-template-columns: 1fr;
+  }
+
+  .coach-review-stamp {
+    position: static;
+    width: fit-content;
+    transform: none;
   }
 
   .chart-reading-guide > div {
@@ -2074,6 +3453,10 @@ textarea {
   }
 
   .sharp-diagnosis-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feedback-scope-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -2092,31 +3475,31 @@ textarea {
             <div><span>连续训练</span><strong id="streakDays">0 天</strong></div>
             <div><span>纪律分</span><strong id="disciplineScore">--</strong></div>
           </div>
-          <p id="habitStatus" class="muted-note">打开后自动进入试用模式。当前是本地 demo / mock provider，不是真实投顾或实盘系统。</p>
+          <p id="habitStatus" class="muted-note">打开后自动进入学习体验。当前是本地 demo / mock provider，不是真实投顾或实盘系统。</p>
 
           <section class="panel compliance-ack-panel">
             <div class="section-head">
               <div>
-                <p class="eyebrow">试用边界</p>
+                <p class="eyebrow">教育边界</p>
                 <h3>教育训练风险确认</h3>
               </div>
               <button id="acknowledgeCompliance" type="button">我已了解</button>
             </div>
-            <p id="complianceStatus">试用中自动确认：这里只练学习流程，不看策略赚不赚钱。</p>
+            <p id="complianceStatus">进入后自动确认：这里只练学习流程，不看策略赚不赚钱。</p>
             <ul id="complianceChecklist" class="clean-list"></ul>
           </section>
 
           <section class="panel" id="onboardingPanel">
             <div class="section-head">
               <div>
-                <p class="eyebrow">用户试用路径</p>
-                <h3>用户试用流程</h3>
+                <p class="eyebrow">学习路径</p>
+                <h3>一次完整训练流程</h3>
               </div>
               <button id="onboardingNext" type="button">继续</button>
             </div>
-            <p id="onboardingStatus">用户不用看文档，按这条路径走完即可。</p>
+            <p id="onboardingStatus">不用看文档，按这条路径走完即可。</p>
             <ol class="clean-list compact-trial-list">
-              <li>一键进入试用</li>
+              <li>开始学习</li>
               <li>做一题训练</li>
               <li>看回放和 AI 复盘</li>
               <li>做回测误区练习</li>
@@ -2133,7 +3516,7 @@ textarea {
               </div>
               <button id="refreshNotifications" type="button">刷新</button>
             </div>
-            <p id="notificationStatus">进入试用后显示下一步训练和反馈提醒。</p>
+            <p id="notificationStatus">进入学习体验后显示下一步训练和反馈提醒。</p>
             <div id="notificationList" class="attempt-log"></div>
           </section>
 
@@ -2171,7 +3554,7 @@ textarea {
             <div class="section-head">
               <div>
                 <p class="eyebrow">不要看错</p>
-                <h3>试用时只评估学习流程</h3>
+                <h3>体验时只评估学习流程</h3>
               </div>
             </div>
             <div class="loop-row">
@@ -2185,7 +3568,7 @@ textarea {
           </section>
         </section>
         <nav class="nav-list" aria-label="功能导航">
-          <button class="nav-item" type="button" data-view="dashboard">试用首页</button>
+          <button class="nav-item" type="button" data-view="dashboard">学习首页</button>
           <button class="nav-item" type="button" data-view="trainer">1 开始训练</button>
           <button class="nav-item" type="button" data-view="replay">回放/回测误区</button>
           <button class="nav-item" type="button" data-view="coach">AI复盘</button>
@@ -2198,42 +3581,53 @@ textarea {
       <main class="workspace">
         <div class="topbar">
           <div>
-            <p class="eyebrow" id="viewEyebrow">用户试用</p>
+            <p class="eyebrow" id="viewEyebrow">学习入口</p>
             <h2 id="viewTitle">学习流程总览</h2>
           </div>
           <div class="billing-actions">
             <span class="badge" id="accountPlan">访客</span>
-            <button id="loginDemo" type="button">一键进入试用</button>
+            <button id="loginDemo" type="button">开始学习</button>
             <button id="logoutDemo" type="button" hidden>退出</button>
           </div>
         </div>
 
         <section class="view" id="dashboardView" aria-label="学习首页">
-          <section class="hero-panel friend-hero">
-            <div>
-              <p class="eyebrow">用户试用</p>
-              <h3>AI 交易教育训练场，不荐股，不实盘。</h3>
-              <p>给刚开始看 K 线、经常凭感觉追、亏了说不清原因的人，用“读图、作答、回放、复盘、再练”的闭环，把一次模糊判断拆成可改进的学习证据。</p>
+          <section class="hero-panel friend-hero product-hero">
+            <div class="product-hero-copy">
+              <p class="eyebrow">AI 交易教育训练场</p>
+              <h3>先学会复盘判断，不追涨跌答案。</h3>
+              <p class="product-positioning-line">AI 交易教育训练场，不荐股，不实盘。</p>
+              <p>用历史行情片段、新闻情绪背景和 AI 教练反馈，把一次模糊看图拆成：结构、失效、消息边界、回放证据和下一次训练。</p>
               <div class="hero-actions">
-                <button id="friendStartLogin" type="button">一键进入试用</button>
-                <button type="button" data-jump="trainer">从教学导入开始</button>
-              <button type="button" data-jump="replay">回放/回测误区</button>
-              <button type="button" data-jump="community">提交反馈</button>
+                <button id="friendStartLogin" type="button">开始训练</button>
+                <button type="button" data-jump="trainer">看教学导入</button>
+                <button type="button" data-jump="replay">看回放误区</button>
+                <button type="button" data-jump="community">提交反馈</button>
+              </div>
+              <div class="hero-boundary-strip" aria-label="产品边界">
+                <span>不荐股</span>
+                <span>不实盘</span>
+                <span>不承诺收益</span>
+                <span>不接券商</span>
               </div>
             </div>
-            <div class="trial-card">
-              <strong>试用路径</strong>
-              <ol class="clean-list">
-                <li>一键进入试用</li>
-                <li>先看教学导入</li>
-                <li>按多周期读图</li>
-                <li>做一题 K 线训练</li>
-                <li>看教学回放，不偷看未来</li>
-                <li>读 AI 复盘，只看学习反馈</li>
-                <li>完成回测误区练习</li>
-                <li>提交一句试用反馈</li>
-              </ol>
-                <p class="muted-note">当前默认是本地演示 AI 和演示行情/新闻/情绪；没有 API Key 时不会调用真实大模型。</p>
+            <div class="trial-card product-hero-map">
+              <strong>一次完整训练这样走</strong>
+              <div class="hero-flow-map">
+                <span>进入</span>
+                <span>教学</span>
+                <span>训练</span>
+                <span>回放</span>
+                <span>AI复盘</span>
+                <span>误区</span>
+                <span>反馈</span>
+              </div>
+              <div class="hero-training-lens">
+                <article><b>D1 / H4</b><span>先看大背景，不直接下结论</span></article>
+                <article><b>H1 / M15</b><span>再看结构、失效和等待条件</span></article>
+                <article><b>新闻 / 情绪</b><span>只做背景，不当行动理由</span></article>
+              </div>
+              <p class="muted-note">当前默认使用演示行情、新闻、情绪和本地 demo AI / mock provider；真实商业化需要授权历史数据和输出审计。</p>
             </div>
           </section>
           <section class="panel trial-fit-panel">
@@ -2283,11 +3677,11 @@ textarea {
           <section class="panel">
             <div class="section-head">
               <div>
-                <p class="eyebrow">用户试用说明</p>
-                <h3>100 字试用说明</h3>
+                <p class="eyebrow">学习体验说明</p>
+                <h3>开始前看这一段</h3>
               </div>
             </div>
-            <p id="friendTrialIntro">这是一个 AI 交易教育训练场，当前用内部演示K线、演示新闻和情绪背景练判断、风控和复盘；正式历史回顾要接授权历史行情、新闻和情绪数据。不荐股、不出实盘信号。试用时按一键进入、训练、回放、AI复盘、回测误区、反馈走一遍，只看学习流程是否清楚、有用、愿意继续练。</p>
+            <p id="friendTrialIntro">这是一个 AI 交易教育训练场，当前用演示K线、演示新闻和情绪背景练判断、风控和复盘；正式历史回顾要接授权历史行情、新闻和情绪数据。不荐股、不出实盘信号。体验时按开始学习、训练、回放、AI复盘、回测误区、反馈走一遍，只看学习流程是否清楚、有用、愿意继续练。</p>
           </section>
           <section class="panel">
             <div class="section-head">
@@ -2440,21 +3834,21 @@ textarea {
                 <h3>回放规则</h3>
                 <p>只显示当前时点之前的数据。训练的是判断过程，不是猜后视镜答案。</p>
               </section>
-              <section class="card">
+              <section class="card replay-note-card">
                 <h3>课堂模拟记录</h3>
                 <label for="replayPlan">你的计划</label>
                 <textarea id="replayPlan" rows="5" placeholder="例如：观望，除非重新站上前高；若入场，止损放在区间下沿。"></textarea>
                 <button id="saveReplayPlan" type="button">保存回放笔记</button>
               </section>
-              <section class="card">
-                <h3>模拟记录</h3>
+              <section class="card replay-record-card">
+                <h3>模拟记录 <span class="inline-stamp">学习记录，不是下单</span></h3>
                 <p class="muted-note">只做教学模拟。没有真实资金、券商连接、实盘信号或投资建议。</p>
                 <div class="field-row">
                   <label for="paperTradeSide">判断</label>
                   <select id="paperTradeSide">
                     <option value="watch">观望 / 不做</option>
-                    <option value="long">模拟做多</option>
-                    <option value="short">模拟做空</option>
+                    <option value="long">课堂看多假设</option>
+                    <option value="short">课堂看空假设</option>
                   </select>
                   <label for="paperTradeRisk">课堂风险标记</label>
                   <input id="paperTradeRisk" type="number" min="0.1" max="5" step="0.1" value="1" />
@@ -2646,15 +4040,20 @@ textarea {
             <div id="supportTicketList" class="attempt-log"></div>
           </section>
         </section>
-        <section class="view" id="communityView" aria-label="用户试用反馈">
+        <section class="view" id="communityView" aria-label="学习体验反馈">
           <section class="panel friend-feedback-panel">
             <div class="section-head">
               <div>
-                <p class="eyebrow">用户试用反馈</p>
+                <p class="eyebrow">学习体验反馈</p>
                 <h3>只看学习流程有没有帮助</h3>
               </div>
             </div>
             <p>不用评价策略能不能赚钱。请只按真实感受写三句话：哪里卡住、哪里有用、还愿不愿意再练一次。</p>
+            <div class="feedback-scope-grid" aria-label="反馈范围">
+              <span><b>看懂了吗</b>入口、教学导入、按钮下一步是否清楚。</span>
+              <span><b>有帮助吗</b>训练、回放、AI批改是否帮你发现问题。</span>
+              <span><b>还想练吗</b>这套流程是否值得继续做下一题。</span>
+            </div>
             <div class="cms-form friend-feedback-form">
               <label for="friendFeedbackConfusing">哪里看不懂？</label>
               <textarea id="friendFeedbackConfusing" rows="3" placeholder="比如：按钮太多、回放不知道点哪里、AI复盘文字太长。"></textarea>
@@ -2662,7 +4061,7 @@ textarea {
               <textarea id="friendFeedbackHelpful" rows="3" placeholder="比如：先写风险边界、看错因、回测误区提醒。"></textarea>
               <label for="friendFeedbackContinue">你愿不愿意再练一次？为什么？</label>
               <textarea id="friendFeedbackContinue" rows="3" placeholder="写愿意或不愿意都可以，重点是原因。"></textarea>
-              <button id="friendSubmitFeedback" type="button">提交试用反馈</button>
+              <button id="friendSubmitFeedback" type="button">提交学习反馈</button>
             </div>
             <p id="friendFeedbackStatus" class="muted-note">反馈只用于改进学习流程，不用于判断策略收益。</p>
           </section>
@@ -3744,7 +5143,7 @@ const nodes = {
 };
 
 const viewMeta = {
-  dashboard: ["用户试用", "先看学习流程，不看收益"],
+  dashboard: ["学习入口", "先看学习流程，不看收益"],
   curriculum: ["课程路径", "交易学习框架"],
   trainer: ["第一步", "K 线训练"],
   replay: ["第二步", "历史回放和回测误区"],
@@ -3839,7 +5238,7 @@ async function ensureTrialAccess({ redirect = false } = {}) {
       }
       renderAll();
       if (nodes.habitStatus) {
-        nodes.habitStatus.textContent = "已进入试用模式。直接按训练、回放、AI复盘、回测误区、反馈走完即可。";
+        nodes.habitStatus.textContent = "已进入学习体验。按训练、回放、AI复盘、回测误区、反馈走完即可。";
       }
       return state.data.session;
     })().finally(() => {
@@ -3857,12 +5256,13 @@ function setTrialEntryPending(isPending) {
   [nodes.loginDemo, nodes.friendStartLogin].forEach((button) => {
     if (!button) return;
     button.disabled = isPending;
-    button.textContent = isPending ? "正在进入试用..." : "一键进入试用";
+    button.textContent = isPending ? "正在进入..." : "开始学习";
   });
 }
 
 function setView(view) {
   state.view = view;
+  document.body.dataset.currentView = view;
   document.querySelectorAll(".view").forEach((item) => item.classList.remove("is-active"));
   document.querySelector(`#${view}View`)?.classList.add("is-active");
   document.querySelectorAll(".nav-item").forEach((item) => {
@@ -3895,7 +5295,7 @@ function renderCoachCompactMode() {
   toggle.innerHTML = `
     <div>
       <strong>${state.coachDetailsExpanded ? "详细学习档案已展开" : "默认只看 AI 复盘重点"}</strong>
-      <span>${state.coachDetailsExpanded ? "下面是完整学习记录、报告和支持入口。" : "试用时先看错因和下一步；学习记录、报告和支持入口先折叠，避免信息过载。"}</span>
+      <span>${state.coachDetailsExpanded ? "下面是完整学习记录、报告和支持入口。" : "体验时先看错因和下一步；学习记录、报告和支持入口先折叠，避免信息过载。"}</span>
     </div>
     <button type="button" data-coach-details-toggle>${state.coachDetailsExpanded ? "收起详细档案" : "展开详细学习档案"}</button>
   `;
@@ -3917,19 +5317,111 @@ function renderCoachSharpDiagnosis(coachView) {
       <div class="section-head">
         <div>
           <p class="eyebrow">AI 复盘重点</p>
-          <h3>先完成一题，系统会抓你的具体错因。</h3>
+          <h3>AI 教练只盯过程，不判断涨跌。</h3>
         </div>
         <span class="tag warn">教育反馈</span>
       </div>
-      <p class="muted-note">这里不会评价策略收益，只会检查偷看未来、理由空泛、缺少失效条件、把情绪当理由等学习过程问题。</p>
+      <div class="coach-empty-grid">
+        <article><b>1</b><strong>看结构</strong><span>你有没有先写前高、区间、跌回和失效观察区。</span></article>
+        <article><b>2</b><strong>抓错因</strong><span>检查理由空泛、偷看未来、没有认错点、把情绪当理由。</span></article>
+        <article><b>3</b><strong>给下一题</strong><span>只推荐下一次学习训练，不输出买卖建议或实盘信号。</span></article>
+      </div>
+      <p class="muted-note">完成第一题后，这里会显示具体错因画像和下一步练习。这里不会评价策略收益。</p>
     `;
     return;
   }
-  panel.innerHTML = sharpDiagnosisHtml(diagnosis, "AI 复盘重点");
+  const lastTraining = state.lastCompletedTraining || {};
+  panel.innerHTML = `
+    <article class="coach-review-sheet coach-review-sheet-compact" aria-label="最近一次AI教练批改单">
+      <span class="coach-review-stamp">过程批改</span>
+      <div>
+        <p class="eyebrow">AI 教练批改单</p>
+        <h3>刚才这题，先看你哪里容易误判。</h3>
+      </div>
+      <dl>
+        <div><dt>本题</dt><dd>${escapeHtml(lastTraining.title || currentScenario().title)} / ${escapeHtml(lastTraining.symbol || currentScenario().symbol)} / ${escapeHtml(lastTraining.timeframe || currentScenario().timeframe)}</dd></div>
+        <div><dt>最大问题</dt><dd>${escapeHtml(lastTraining.biggestIssue || diagnosis.problem)}</dd></div>
+        <div><dt>下一次只改一件事</dt><dd>${escapeHtml(lastTraining.nextPractice || diagnosis.check)}</dd></div>
+      </dl>
+    </article>
+    ${sharpDiagnosisHtml(diagnosis, "AI 复盘重点")}
+  `;
 }
 
 function currentScenario() {
   return state.data.scenarios[state.scenarioIndex];
+}
+
+function displayLearningStatus(value = "") {
+  const raw = String(value || "").trim();
+  const normalized = raw.toLowerCase().replace(/\s+/g, "_").replace(/-/g, "_");
+  const map = {
+    blocked_pre_metric: "样本太少，先不要读指标",
+    too_small_for_any_conclusion: "样本太少，不能下结论",
+    practice_sample_only: "仅用于课堂练习",
+    pre_metric_practice: "先积累课堂记录",
+    metric_literacy_only: "只用于指标识读",
+    practice_sample_reviewable_not_predictive: "可用于复盘讨论，不能预测未来",
+    unreviewed: "未复核",
+    needs_context_evidence: "需要补充环境证据",
+    sufficient_for_learning_review: "足够用于学习复盘",
+    too_small_for_strategy_claims: "样本太少，不能做策略结论",
+    boundary_gap: "背景边界不足",
+    sample_too_small_for_strategy_claims: "样本太少，不能做策略结论",
+  };
+  return map[raw] || map[normalized] || raw.replace(/_/g, " ");
+}
+
+function displayLearningText(text = "") {
+  const raw = String(text || "");
+  const exact = {
+    "Backtest and paper-trade sample evidence": "回测和课堂记录样本证据",
+    "News and sentiment boundary evidence": "新闻和情绪边界证据",
+    "Save at least five paper trades with thesis, invalidation, and context boundary.": "至少保存 5 条包含判断理由、失效条件和背景边界的课堂记录。",
+    "Save paper trades with thesis and invalidation to build discipline evidence.": "保存带有判断理由和失效条件的课堂记录，用来积累纪律证据。",
+    "Win rate, expectancy, and drawdown are learning diagnostics and cannot prove future profitability.": "做对比例、平均结果和最大回落只用于学习诊断，不能证明未来收益。",
+    "Expectancy and drawdown are learning diagnostics until fees, slippage, spread, execution assumptions, and source provenance are reviewed.": "在手续费、滑点、点差、执行假设和数据来源复核前，平均结果和回落都只能当学习诊断。",
+    "Add news/sentiment context notes before interpreting why a replay outcome felt convincing.": "解释回放结果为什么看起来有说服力前，先补新闻和情绪背景边界。",
+    "Ask for one news/sentiment boundary note before discussing the metric panel.": "讨论指标面板前，先要求写一条新闻/情绪边界说明。",
+    "Win rate, expectancy, drawdown, and setup diagnostics are not strategy proof or future performance evidence.": "做对比例、平均结果、回落和形态诊断都不是策略证明或未来表现证据。",
+    "Review repeated mistake tags before adding harder scenarios.": "加更难题目前，先复盘反复出现的错因标签。",
+    "Collect more examples across setup types before comparing metrics.": "比较指标前，先积累更多不同结构的练习样本。",
+    "Reliability audit is for education evidence quality only.": "可信度检查只看学习证据质量。",
+    "Reliability is education evidence quality only, not a signal or strategy score.": "可信度只表示学习证据质量，不是信号或策略评分。",
+    "Metrics are learning diagnostics, not future performance proof.": "指标只用于学习诊断，不是未来表现证明。",
+    "Metrics are education diagnostics, not strategy proof.": "指标只用于教育诊断，不是策略证明。",
+    "News and sentiment are context boundaries, not trade permission.": "新闻和情绪只用于判断背景边界，不是交易许可。",
+    "Risk metrics are classroom discipline checks, not real-money readiness.": "风险指标只检查课堂纪律，不代表真实资金准备度。",
+    "No dominant context-risk pattern yet; keep collecting education evidence.": "暂未发现主要环境风险模式，继续积累学习证据。",
+    "Not sentiment scoring, market prediction, signal, or recommendation.": "不是情绪打分、市场预测、信号或推荐。",
+  };
+  if (exact[raw]) return exact[raw];
+  const winRate = raw.match(/^Win rate ([\d.]+)% is a classroom description of (\d+) saved paper-trade record\(s\), not strategy evidence\.$/);
+  if (winRate) return `做对比例 ${winRate[1]}% 只描述 ${winRate[2]} 条课堂记录，不能证明策略有效。`;
+  const learnerWinRate = raw.match(/^Your win rate is a description of (\d+) saved classroom journal record\(s\), not proof that a setup works\.$/);
+  if (learnerWinRate) return `你的做对比例只描述 ${learnerWinRate[1]} 条课堂记录，不能证明某个形态有效。`;
+  const expectancy = raw.match(/^Expectancy ([\d.-]+)R and max drawdown ([\d.-]+)R are practice-review numbers, not expected future results\.$/);
+  if (expectancy) return `平均结果 ${expectancy[1]}R、最大回落 ${expectancy[2]}R 只是练习复盘数字，不是未来预期。`;
+  const paperSamples = raw.match(/^(\d+) paper trade sample\(s\)$/);
+  if (paperSamples) return `${paperSamples[1]} 条课堂记录样本`;
+  const reliability = raw.match(/^Reliability\s+(.+)$/i);
+  if (reliability) return `可信度：${displayLearningStatus(reliability[1])}`;
+  const sampleQuality = raw.match(/^Sample quality\s+(.+)$/i);
+  if (sampleQuality) return `样本质量：${displayLearningStatus(sampleQuality[1])}`;
+  const contextAttempts = raw.match(/^(\d+) context-reviewed attempt\(s\)$/);
+  if (contextAttempts) return `${contextAttempts[1]} 次已检查背景边界的练习`;
+  const weakBoundary = raw.match(/^(\d+) weak boundary attempt\(s\)$/);
+  if (weakBoundary) return `${weakBoundary[1]} 次背景边界薄弱练习`;
+  const wrongContext = raw.match(/^(\d+) wrong context misconception attempt\(s\)$/);
+  if (wrongContext) return `${wrongContext[1]} 次消息/情绪误区错误`;
+  const winRateOnly = raw.match(/^Win rate ([\d.]+)% only describes (\d+) saved classroom paper trade\(s\)\.$/);
+  if (winRateOnly) return `做对比例 ${winRateOnly[1]}% 只描述 ${winRateOnly[2]} 条课堂记录。`;
+  if (/^sample too small for strategy claims$/i.test(raw)) return "样本太少，不能做策略结论。";
+  if (/^close-to-close classroom replay$/i.test(raw)) return "课堂收盘到收盘回放";
+  if (/^saved demo or historical scenario candles$/i.test(raw)) return "已保存的演示或历史场景K线";
+  const observed = raw.match(/^(\d+) observed item\(s\)$/);
+  if (observed) return `${observed[1]} 条观察记录`;
+  return displayLearningStatus(raw);
 }
 
 function renderAll() {
@@ -3995,13 +5487,13 @@ async function refreshCourseCatalog() {
         <div class="attempt-row">
           <div>
             <strong>${item.title}</strong>
-            <span>${item.access} / ${item.enrolled ? "enrolled" : "not enrolled"} / requires ${item.requiredPlan} / your plan ${item.learnerPlan}</span>
-            <span>${item.coursePackageAssignment ? `Assigned ${formatTime(item.coursePackageAssignment.createdAt)}${item.coursePackageAssignment.dueAt ? ` / due ${item.coursePackageAssignment.dueAt}` : ""}` : "No teacher package assignment yet"}</span>
-            <span>Progress ${item.progress.percent}% (${item.progress.completedItems}/${item.progress.totalItems})</span>
-            <span>${item.completionReport ? `Completion report issued ${formatTime(item.completionReport.createdAt)} / risk discipline ${item.completionReport.practiceSummary.averageRiskDiscipline ?? "--"}` : "Completion report unlocks at 100% education progress"}</span>
-            <span>Knowledge ${item.knowledgePoints.length}${item.lockedCounts.knowledgePoints ? ` + ${item.lockedCounts.knowledgePoints} locked` : ""}; scenarios ${item.scenarios.length}${item.lockedCounts.scenarios ? ` + ${item.lockedCounts.scenarios} locked` : ""}</span>
-            <span>${item.knowledgePoints.map((kp) => kp.title).join(" / ") || "No preview knowledge point"}</span>
-            <span>${item.constraints[1]}</span>
+            <span>${courseAccessLabel(item)} / 当前方案：${escapeHtml(item.learnerPlan || "体验")}${item.requiredPlan ? ` / 解锁要求：${escapeHtml(item.requiredPlan)}` : ""}</span>
+            <span>${courseAssignmentText(item)}</span>
+            <span>${courseProgressText(item)}</span>
+            <span>${courseCompletionText(item)}</span>
+            <span>${courseScopeText(item)}</span>
+            <span>${item.knowledgePoints.map((kp) => kp.title).join(" / ") || "先看课程导入，再进入第一道训练题。"}</span>
+            <span>${escapeHtml(item.constraints?.[1] || "只做教育训练，不输出交易建议。")}</span>
           </div>
           <div class="billing-actions">
             ${item.knowledgePoints.map((kp) => `<button type="button" data-course-progress="knowledge" data-course-package-id="${item.id}" data-knowledge-point-id="${kp.id}">${item.progress.completedKnowledgePointIds.includes(kp.id) ? "已学习" : "标记已学"}</button>`).join("")}
@@ -4011,7 +5503,7 @@ async function refreshCourseCatalog() {
       `).join("")
       : "<p>还没有已发布的学习包。</p>";
   } catch (error) {
-    nodes.courseCatalogList.innerHTML = `<p>学习包需要先进入试用：${error.message}</p>`;
+    nodes.courseCatalogList.innerHTML = `<p>学习包需要先进入学习体验：${error.message}</p>`;
   }
 }
 
@@ -4048,6 +5540,7 @@ function renderTrainer() {
   nodes.feedbackPanel.hidden = true;
   if (nodes.trainingResultActions) nodes.trainingResultActions.innerHTML = "";
   renderTrainingFocusRail();
+  renderTodayPracticePlan(lesson);
   renderTrainingLevelPanel(lesson);
   renderTeachingIntro(lesson);
   renderOptions(lesson);
@@ -4061,6 +5554,91 @@ function renderTrainer() {
   renderMultiTimeframePanel(lesson);
   renderContextTimeline(lesson);
   renderDecisionScaffold(lesson);
+  renderScenarioSourceCard(lesson, "trainer");
+}
+
+function sourceStatusLabel(value = "") {
+  const text = String(value || "").toLowerCase();
+  if (/licensed|authorized|授权/.test(text)) return "已授权";
+  if (/public|preview|stooq|gdelt|sec|公开/.test(text)) return "公开预览";
+  if (/demo|mock|internal|manual|teaching|演示|教学/.test(text)) return "演示";
+  return "待复核";
+}
+
+function sourceCardRows(lesson = {}) {
+  const source = lesson.source || {};
+  const transparency = lesson.sourceTransparency || {};
+  const market = source.marketData || {};
+  const news = source.news || {};
+  const marketProvider = market.provider || lesson.marketDataProvider || source.provider || "demo";
+  const marketMode = market.mode || lesson.sourceMode || "teaching-demo";
+  const marketLicense = market.license || lesson.marketDataLicense || transparency.licenseStatus || "internal-demo-only";
+  const newsProvider = news.provider || lesson.newsProvider || "demo";
+  const newsMode = news.mode || "teaching-demo";
+  const newsLicense = news.license || lesson.newsLicense || "internal-demo-only";
+  const aiProvider = state.data?.aiCoach?.provider || state.data?.providerStatus?.provider || "local demo AI";
+  const aiMode = state.data?.aiCoach?.mode || state.data?.providerStatus?.mode || "mock provider";
+  return [
+    {
+      label: "行情K线",
+      status: sourceStatusLabel(`${marketProvider} ${marketMode} ${marketLicense} ${transparency.learnerLabel || ""}`),
+      body: `${marketProvider} / ${marketMode} / ${marketLicense}`,
+      note: "用于读图训练；正式历史回顾需要授权行情、时间戳和延迟/实时状态。",
+    },
+    {
+      label: "新闻/情绪",
+      status: sourceStatusLabel(`${newsProvider} ${newsMode} ${newsLicense} ${lesson.news || ""} ${lesson.sentiment || ""}`),
+      body: `${newsProvider} / ${newsMode} / ${newsLicense}`,
+      note: "只做当时背景和偏见检查，不作为行动理由。",
+    },
+    {
+      label: "AI批改",
+      status: /local|demo|mock|fallback/i.test(`${aiProvider} ${aiMode}`) ? "本地演示" : "外部模型",
+      body: `${aiProvider} / ${aiMode}`,
+      note: "只评价学习过程；不荐股、不出实盘信号、不承诺收益。",
+    },
+  ];
+}
+
+function sourceCardHtml(lesson = {}, variant = "trainer") {
+  const title = variant === "replay" ? "本次回放的数据边界" : "本题数据来源";
+  const subtitle = variant === "replay"
+    ? "回放时仍然只看当时可见信息，不能用事后数据倒推。"
+    : "先确认这题用的是什么数据，再开始判断。";
+  return `
+    <section class="source-trust-card" aria-label="${escapeHtml(title)}">
+      <div>
+        <p class="eyebrow">来源透明</p>
+        <h4>${escapeHtml(title)}</h4>
+        <span>${escapeHtml(subtitle)}</span>
+      </div>
+      <div class="source-trust-grid">
+        ${sourceCardRows(lesson).map((item) => `
+          <article>
+            <span class="tag warn">${escapeHtml(item.status)}</span>
+            <strong>${escapeHtml(item.label)}</strong>
+            <small>${escapeHtml(item.body)}</small>
+            <p>${escapeHtml(item.note)}</p>
+          </article>
+        `).join("")}
+      </div>
+      <small>当前产品仍是教育原型：demo/公开预览/待授权数据必须清楚标注，不能包装成真实交易信号。</small>
+    </section>
+  `;
+}
+
+function renderScenarioSourceCard(lesson = currentScenario(), variant = "trainer") {
+  const anchor = variant === "replay" ? document.querySelector("#replayTrainingBridge") : document.querySelector("#contextTimeline");
+  if (!anchor) return;
+  const id = variant === "replay" ? "replaySourceTrustCard" : "scenarioSourceTrustCard";
+  let panel = document.querySelector(`#${id}`);
+  if (!panel) {
+    panel = document.createElement("section");
+    panel.id = id;
+    panel.className = "source-trust-card-shell";
+    anchor.insertAdjacentElement(variant === "replay" ? "afterend" : "beforebegin", panel);
+  }
+  panel.innerHTML = sourceCardHtml(lesson, variant);
 }
 
 function trainingFocusStage() {
@@ -4138,6 +5716,11 @@ function renderTrainingFocusRail() {
       <strong>本题只按 6 步走</strong>
       <span>${escapeHtml(flow.summary)}</span>
     </div>
+    <div class="training-quick-actions" aria-label="快速开始训练">
+      <button type="button" data-quick-start-answer>先做题</button>
+      <button type="button" data-scroll-target="#teachingIntroPanel">先看教学</button>
+      <button type="button" data-scroll-target="#chartReadingGuide">先看图</button>
+    </div>
     <div class="training-focus-steps">
       ${flow.steps.map((item, index) => `
         <button type="button" class="${index === flow.activeIndex ? "is-current" : index < flow.activeIndex ? "is-done" : ""}" data-scroll-target="${escapeHtml(item.target)}">
@@ -4150,6 +5733,162 @@ function renderTrainingFocusRail() {
   `;
 }
 
+function buildTodayPracticePlan(currentLesson = currentScenario()) {
+  const trend = buildMistakeTrendPlan(state.data.profile || {}, state.data.attempts || [], state.lastCompletedTraining);
+  const recommended = state.data.learningPath?.recommendedScenario;
+  const scenario = recommended || currentLesson;
+  const isCurrent = scenario?.id === currentLesson?.id;
+  const lessonForPlan = scenario || currentLesson;
+  const framework = Array.isArray(lessonForPlan?.teachingFramework) ? lessonForPlan.teachingFramework : [];
+  const checklist = Array.isArray(lessonForPlan?.observationChecklist) ? lessonForPlan.observationChecklist : [];
+  const title = trend?.active ? trend.focus : "今日先完成一题完整训练";
+  const reason = trend?.active
+    ? trend.why
+    : "先建立第一条学习记录，系统才能生成错因画像和下一步专项。";
+  const drill = trend?.active
+    ? trend.drill
+    : "按教学导入、作答、回放、AI复盘、反馈走完整闭环。";
+  return {
+    title,
+    reason,
+    drill,
+    scenario,
+    isCurrent,
+    relay: buildMistakeRelayPlan(),
+    microLesson: {
+      concept: framework[0] || lessonForPlan?.moduleGoal || "先读结构，再写失效条件，最后处理消息和情绪背景。",
+      counterExample: lessonForPlan?.badAnswerExample || lessonForPlan?.commonMistake || "感觉会继续走，先冲进去再说；没有结构、没有失效条件，也没有说明消息和情绪是不是干扰。",
+      template: (checklist.length ? checklist.slice(0, 3).join(" → ") : "我看到什么结构 → 哪里说明我错了 → 我现在不做什么"),
+    },
+    boundary: "这里只安排学习训练，不荐股、不出实盘信号、不评价策略收益。",
+  };
+}
+
+function renderTodayPracticePlan(currentLesson = currentScenario()) {
+  const anchor = document.querySelector("#trainingFocusRail");
+  if (!anchor) return;
+  let panel = document.querySelector("#todayPracticePlan");
+  if (!panel) {
+    panel = document.createElement("section");
+    panel.id = "todayPracticePlan";
+    panel.className = "today-practice-plan";
+    anchor.insertAdjacentElement("afterend", panel);
+  }
+  const plan = buildTodayPracticePlan(currentLesson);
+  const scenario = plan.scenario || currentLesson;
+  panel.innerHTML = `
+    <div>
+      <p class="eyebrow">今日专项</p>
+      <h4>${escapeHtml(plan.title)}</h4>
+      <span>${escapeHtml(plan.reason)}</span>
+    </div>
+    <article>
+      <strong>推荐练习</strong>
+      <span>${escapeHtml(scenario?.title || currentLesson.title)} / ${escapeHtml(scenario?.symbol || currentLesson.symbol || "")} ${escapeHtml(scenario?.timeframe || currentLesson.timeframe || "")}</span>
+      <small>${escapeHtml(plan.drill)}</small>
+    </article>
+    <div class="today-micro-lesson" aria-label="60秒微课">
+      <div>
+        <p class="eyebrow">60 秒微课</p>
+        <strong>先学一个概念，再开始练。</strong>
+      </div>
+      <article>
+        <b>概念</b>
+        <span>${escapeHtml(plan.microLesson.concept)}</span>
+      </article>
+      <article>
+        <b>反例</b>
+        <span>${escapeHtml(plan.microLesson.counterExample)}</span>
+      </article>
+      <article>
+        <b>作答模板</b>
+        <span>${escapeHtml(plan.microLesson.template)}</span>
+      </article>
+    </div>
+    <div class="mistake-relay-map ${plan.relay.shouldReplayFirst ? "is-paused" : ""}" aria-label="错因接力图">
+      <div>
+        <p class="eyebrow">错因接力</p>
+        <strong>${escapeHtml(plan.relay.title)}</strong>
+        <span>${escapeHtml(plan.relay.summary)}</span>
+      </div>
+      ${plan.relay.steps.map((item, index) => `
+        <article>
+          <b>${index + 1}</b>
+          <strong>${escapeHtml(item.label)}</strong>
+          <span>${escapeHtml(item.text)}</span>
+        </article>
+      `).join("")}
+    </div>
+    <div class="today-practice-actions">
+      <button type="button" data-quick-start-answer>直接开始作答</button>
+      ${plan.isCurrent ? `<button type="button" data-scroll-target="#teachingIntroPanel">从教学导入开始</button>` : `<button type="button" data-today-practice-scenario="${escapeHtml(scenario.id)}">切到推荐题</button>`}
+      <button type="button" data-scroll-target="#decisionScaffold">看作答脚手架</button>
+    </div>
+    <small>${escapeHtml(plan.boundary)}</small>
+  `;
+}
+
+function buildMistakeRelayPlan() {
+  const lastTraining = state.lastCompletedTraining || null;
+  const diagnosis = state.lastTrainingDiagnosis?.primary || null;
+  const cadence = learningCadenceGate();
+  if (!lastTraining && !diagnosis) {
+    return {
+      title: "先完成第一题，系统才会开始追踪错因。",
+      summary: "第一题之后，这里会显示“上一题错因如何影响下一题草稿”。",
+      steps: [
+        { label: "先做一题", text: "用微课模板写完整训练答案。" },
+        { label: "AI批改", text: "系统只找过程问题，不看收益。" },
+        { label: "下一题接力", text: "下一次草稿会带上上次最大错因。" },
+      ],
+    };
+  }
+  return {
+    title: cadence.shouldReplayFirst ? "先别急着做新题，回放同题重写一遍。" : "系统正在追着你的错因训练。",
+    summary: cadence.shouldReplayFirst
+      ? cadence.reason
+      : "下一次填入学习示例时，会把上一题批改写进草稿开头。",
+    steps: [
+      { label: "上次错因", text: lastTraining?.biggestIssue || diagnosis?.problem || "上一题暴露出过程问题。" },
+      { label: cadence.shouldReplayFirst ? "先重写" : "本题草稿", text: cadence.shouldReplayFirst ? "先回放刚才那题，用本次只改一件事重写答案。" : (lastTraining?.nextPractice || diagnosis?.check || "这次只改一个学习动作。") },
+      { label: "回放验证", text: "检查是否还在犯同一类错，再决定要不要做新题。" },
+    ],
+    shouldReplayFirst: cadence.shouldReplayFirst,
+  };
+}
+
+function learningCadenceGate() {
+  const diagnosisKey = state.lastTrainingDiagnosis?.primary?.key || "";
+  const lastText = [
+    state.lastCompletedTraining?.biggestIssue,
+    state.lastCompletedTraining?.nextPractice,
+    state.lastTrainingDiagnosis?.primary?.label,
+    state.lastTrainingDiagnosis?.primary?.problem,
+  ].filter(Boolean).join(" ");
+  const profile = state.data?.profile || {};
+  const attempts = (state.data?.attempts || []).filter((item) => item.type === "training");
+  const keyHints = {
+    hindsight: /偷看|未来|倒推|事后|回放|hindsight/i,
+    invalidation: /失效|认错|风险|止损|invalidation|risk/i,
+    sentiment: /情绪|消息|新闻|热度|背景|sentiment|context/i,
+    thin_reasoning: /理由|证据|空泛|太短|thin|reason/i,
+    structure: /结构|突破|区间|前高|跌回|structure/i,
+  };
+  const activeKey = Object.keys(keyHints).find((key) => (
+    diagnosisKey === key || keyHints[key].test(lastText)
+  ));
+  if (!activeKey) return { shouldReplayFirst: false, reason: "当前先按推荐路径继续训练。" };
+  const profileHit = Object.entries(profile).some(([tag, count]) => Number(count) >= 2 && keyHints[activeKey].test(tag));
+  const recentHit = attempts.slice(0, 3).filter((attempt) => (attempt.tags || []).some((tag) => keyHints[activeKey].test(tag))).length >= 2;
+  const shouldReplayFirst = profileHit || recentHit;
+  return {
+    shouldReplayFirst,
+    reason: shouldReplayFirst
+      ? "同类错因已经反复出现，先回放同题重写，比继续刷新题更有学习价值。"
+      : "当前先按推荐路径继续训练。",
+  };
+}
+
 function renderTeachingIntro(lesson) {
   if (!nodes.teachingIntroPanel) return;
   const focus = lesson.teachingGoal || lesson.tag || "价格行为训练";
@@ -4158,6 +5897,17 @@ function renderTeachingIntro(lesson) {
   const checklist = Array.isArray(lesson.observationChecklist) ? lesson.observationChecklist : [];
   const lessonSteps = Array.isArray(lesson.lessonSteps) ? lesson.lessonSteps : [];
   const timeframe = lesson.timeframe || "当前周期";
+  const primaryLesson = framework[0] || "先判断价格是在推进、停顿还是回到区间，再写哪里说明自己错了。";
+  const quickSteps = (lessonSteps.length ? lessonSteps : [
+    { label: "看结构", text: "先标区间、前高前低和当前价格位置。" },
+    { label: "找失效", text: "写出哪一段走势说明原判断不成立。" },
+    { label: "控冲动", text: "新闻和情绪只当背景，不当行动理由。" },
+  ]).slice(0, 3);
+  const answerTemplate = (checklist.length ? checklist.slice(0, 3) : [
+    "我看到什么结构？",
+    "哪里说明我可能错了？",
+    "我现在不做什么？",
+  ]);
   nodes.teachingIntroPanel.classList.toggle("is-expanded", state.teachingDetailsExpanded);
   nodes.teachingIntroPanel.innerHTML = `
     <div class="teaching-intro-head">
@@ -4173,6 +5923,24 @@ function renderTeachingIntro(lesson) {
     <div class="teaching-goal">
       <strong>本题目标：${escapeHtml(focus)}</strong>
       <span>${escapeHtml(lesson.moduleGoal || "目标不是猜涨跌，而是写清楚结构、失效条件、仓位边界和环境干扰。")}</span>
+    </div>
+    <div class="lesson-snapshot" aria-label="本题学习卡">
+      <div class="lesson-snapshot-main">
+        <span class="lesson-kicker">先学这一句</span>
+        <strong>${escapeHtml(primaryLesson)}</strong>
+      </div>
+      <div class="lesson-snapshot-steps">
+        ${quickSteps.map((item, index) => `
+          <span>
+            <b>${index + 1}. ${escapeHtml(item.label || item.title || `步骤 ${index + 1}`)}</b>
+            ${escapeHtml(item.text || item.prompt || item.description || "按课堂检查表写出可复盘证据。")}
+          </span>
+        `).join("")}
+      </div>
+      <div class="lesson-answer-template">
+        <b>作答模板</b>
+        <span>${answerTemplate.map(escapeHtml).join(" → ")}</span>
+      </div>
     </div>
     <div class="answer-coach">
       <div>
@@ -4239,6 +6007,7 @@ function renderDecisionScaffold(lesson) {
     decisionArea.insertAdjacentElement("beforebegin", panel);
   }
   const checklist = Array.isArray(lesson.observationChecklist) ? lesson.observationChecklist : [];
+  const mistakes = buildPreAnswerMistakes(lesson);
   const steps = [
     {
       label: "观察",
@@ -4269,6 +6038,18 @@ function renderDecisionScaffold(lesson) {
       </div>
       <span class="tag warn">教育训练</span>
     </div>
+    <div class="pre-answer-warning" aria-label="提交前常见错误预警">
+      <div>
+        <strong>提交前先避开这 3 个错</strong>
+        <span>这一步是课堂纠错，不评价策略能不能赚钱。</span>
+      </div>
+      ${mistakes.map((item, index) => `
+        <article>
+          <b>${index + 1}</b>
+          <span>${escapeHtml(item)}</span>
+        </article>
+      `).join("")}
+    </div>
     <div class="decision-scaffold-grid">
       ${steps.map((item, index) => `
         <article>
@@ -4280,6 +6061,21 @@ function renderDecisionScaffold(lesson) {
       `).join("")}
     </div>
   `;
+}
+
+function buildPreAnswerMistakes(lesson = {}) {
+  const rawMistake = String(lesson.commonMistake || "").trim();
+  const items = [];
+  if (rawMistake) items.push(rawMistake);
+  items.push("只写“会涨/会跌/感觉强”，但没有写当时看到的结构。");
+  items.push("没有写失效条件：哪里说明自己错了、什么时候停止维护原判断。");
+  const contextText = [lesson.news, lesson.sentiment, lesson.teachingGoal, lesson.moduleGoal, lesson.tag].filter(Boolean).join(" ");
+  if (/新闻|消息|情绪|热度|财报|事件/.test(contextText)) {
+    items.push("把新闻或情绪热度当成行动理由，而不是当作背景和偏见检查。");
+  } else {
+    items.push("回放时用后面的走势倒推当时判断，看起来合理但不可复盘。");
+  }
+  return [...new Set(items)].slice(0, 3);
 }
 
 function renderOptions(lesson) {
@@ -4303,11 +6099,29 @@ function renderOptions(lesson) {
 function trainingPlanExample(lesson = currentScenario()) {
   const symbol = lesson?.symbol || "当前标的";
   const timeframe = lesson?.timeframe || "当前周期";
+  const plan = buildTodayPracticePlan(lesson);
+  const concept = plan.microLesson?.concept || "先读结构，再写失效条件，最后处理消息和情绪背景。";
+  const checklist = Array.isArray(lesson?.observationChecklist) ? lesson.observationChecklist : [];
+  const structurePrompt = checklist[0] || "我看到什么结构？";
+  const invalidationPrompt = checklist[1] || "哪里说明我可能错了？";
+  const contextPrompt = checklist[2] || "消息/情绪只是背景，还是被我当成理由了？";
+  const lastTraining = state.lastCompletedTraining || null;
+  const lastDiagnosis = state.lastTrainingDiagnosis?.primary || null;
+  const adaptiveLines = lastTraining
+    ? [
+      `【上次批改提醒】${lastTraining.biggestIssue || lastDiagnosis?.problem || "上一题提示：先把结构、失效条件和不做条件写清楚。"}`,
+      `【本次只改一件事】${lastTraining.nextPractice || lastDiagnosis?.check || "这次先把当时可见证据写完整，再进入回放。"}`
+    ]
+    : [
+      "【本次只改一件事】先把微课模板写完整：结构、判断、失效、背景/不做。"
+    ];
   return [
-    `我看到 ${symbol} ${timeframe} 正在前高/区间附近，需要先确认有没有跌回区间。`,
-    "我的课堂判断是：先按结构写证据，不把单根K线、新闻热度或情绪当成行动理由。",
-    "如果价格重新跌回区间，或者我找不到清楚的失效位，就承认这次判断不成立。",
-    "我现在不做真实交易动作，只记录这是教育训练答案，下一步去同题回放检查有没有偷看未来。",
+    `【60秒微课概念】${concept}`,
+    ...adaptiveLines,
+    `【结构】${structurePrompt} 我看到 ${symbol} ${timeframe} 正在前高/区间附近，先确认价格有没有重新跌回区间。`,
+    `【判断】我的课堂判断是：先按结构写证据，不把单根K线、新闻热度或情绪当成行动理由。`,
+    `【失效】${invalidationPrompt} 如果价格重新跌回区间，或者我找不到清楚的失效位，就承认这次判断不成立。`,
+    `【背景/不做】${contextPrompt} 我现在不做真实交易动作，只记录这是教育训练答案，下一步去同题回放检查有没有偷看未来。`,
   ].join("\n");
 }
 
@@ -4323,9 +6137,28 @@ function renderCandles(target, candles, options = {}) {
   const scaleY = (value) => height - padding - ((value - min) / range) * (height - padding * 2);
   const step = (width - padding * 2) / candles.length;
   const bodyWidth = Math.max(options.minBodyWidth || 7, step * 0.52);
+  const background = `
+    <rect x="0" y="0" width="${width}" height="${height}" rx="0" fill="#fbfcf8" />
+    <rect x="${padding}" y="${padding}" width="${width - padding * 2}" height="${height - padding * 2}" rx="10" fill="#ffffff" stroke="#e1e7dd" />
+  `;
   const grid = Array.from({ length: 5 }, (_, index) => {
     const y = padding + index * ((height - padding * 2) / 4);
-    return `<line x1="${padding}" x2="${width - padding}" y1="${y}" y2="${y}" stroke="#e5e9e1" />`;
+    const value = max - index * (range / 4);
+    return `
+      <line x1="${padding}" x2="${width - padding}" y1="${y}" y2="${y}" stroke="#e5e9e1" />
+      <text x="${width - padding + 6}" y="${y + 4}" fill="#7c8881" font-size="11" font-weight="700">${value.toFixed(1)}</text>
+    `;
+  }).join("");
+  const verticalGrid = Array.from({ length: Math.min(6, candles.length) }, (_, index) => {
+    const x = padding + index * ((width - padding * 2) / Math.max(1, Math.min(6, candles.length) - 1));
+    return `<line x1="${x}" x2="${x}" y1="${padding}" y2="${height - padding}" stroke="#eef2eb" />`;
+  }).join("");
+  const volatilityMax = Math.max(1, ...candles.map(([open, high, low, close]) => Math.max(Math.abs(close - open), high - low)));
+  const volumeBars = candles.map(([open, high, low, close], index) => {
+    const x = padding + index * step + step / 2;
+    const barHeight = Math.max(4, ((Math.max(Math.abs(close - open), high - low) / volatilityMax) * 34));
+    const color = close >= open ? "rgba(32, 136, 91, 0.28)" : "rgba(183, 71, 63, 0.24)";
+    return `<rect x="${x - bodyWidth / 2}" y="${height - padding - barHeight}" width="${bodyWidth}" height="${barHeight}" rx="2" fill="${color}" />`;
   }).join("");
   const hiddenFutureCount = Math.max(0, Math.min(options.hiddenFutureCount || 0, candles.length - 1));
   const visibleCount = candles.length - hiddenFutureCount;
@@ -4379,7 +6212,7 @@ function renderCandles(target, candles, options = {}) {
     `
     : "";
   target.setAttribute("viewBox", `0 0 ${width} ${height}`);
-  target.innerHTML = `${grid}${annotations}${bars}${callouts}${futureMask}`;
+  target.innerHTML = `${background}${grid}${verticalGrid}${volumeBars}${annotations}${bars}${callouts}${futureMask}`;
 }
 
 function buildChartGuide(candles = []) {
@@ -4548,7 +6381,7 @@ function renderTrainingLevelPanel(lesson = currentScenario()) {
         </article>
       `).join("")}
     </div>
-    <p class="muted-note">这是试用题库地图，不是完整商业题库；后续需要继续补各层级题量和授权历史数据。</p>
+    <p class="muted-note">这是体验题库地图，不是完整商业题库；后续需要继续补各层级题量和授权历史数据。</p>
   `;
 }
 
@@ -4582,6 +6415,9 @@ function buildSharpDiagnosis(feedback = {}, lastTraining = {}) {
       match: /偷看|未来|倒推|事后|结果|后来|hindsight|replay/i,
       problem: "你可能用了后面才知道的结果，反过来解释当时的判断。",
       check: "下次先写“当时我不知道什么”，再看后续走势。",
+      drill: "回放专项：遮住后半段K线，只写当时可见证据和未知信息。",
+      template: "当时我只知道__，还不知道__，所以我只能__。",
+      next: "去回放页，把同一题按时间顺序重写一次。",
     },
     {
       key: "thin_reasoning",
@@ -4589,6 +6425,9 @@ function buildSharpDiagnosis(feedback = {}, lastTraining = {}) {
       match: /理由|空泛|太短|证据|结论|thin|reason/i,
       problem: "答案像一句结论，还没有写出可复盘证据。",
       check: "下次必须写：看到什么、怎么判断、哪里认错、现在不做什么。",
+      drill: "表达专项：把一句结论拆成“观察、判断、认错、不做”四句。",
+      template: "我看到__，所以暂时判断__；如果__，我承认错；现在不做__。",
+      next: "回到训练页，用作答模板重写当前题。",
     },
     {
       key: "invalidation",
@@ -4596,6 +6435,9 @@ function buildSharpDiagnosis(feedback = {}, lastTraining = {}) {
       match: /失效|认错|止损|风险|边界|invalidation|risk/i,
       problem: "你还没写清楚什么情况说明自己错了。",
       check: "下次先写认错点，再写下一步练习动作。",
+      drill: "认错专项：先写失效位，再写课堂判断。",
+      template: "如果价格__，说明我的判断不成立；在此之前我只__。",
+      next: "下一题只看失效条件是否写清楚，不追求答得快。",
     },
     {
       key: "sentiment",
@@ -4603,6 +6445,9 @@ function buildSharpDiagnosis(feedback = {}, lastTraining = {}) {
       match: /情绪|消息|新闻|热度|背景|sentiment|context/i,
       problem: "消息和情绪容易被写成行动理由，而不是背景和偏见检查。",
       check: "下次把新闻/情绪只放在背景栏，不写成判断依据。",
+      drill: "情绪边界专项：把新闻/情绪改写成“可能影响我判断的背景”。",
+      template: "消息/情绪说明__，但不能替代结构；我的判断仍以__为准。",
+      next: "去回放页核对当时可见信息，不用事后新闻补理由。",
     },
     {
       key: "structure",
@@ -4610,6 +6455,9 @@ function buildSharpDiagnosis(feedback = {}, lastTraining = {}) {
       match: /结构|突破|区间|前高|跌回|形态|structure/i,
       problem: "图上位置还没读清楚，就急着得出方向判断。",
       check: "下次先圈前高、跌回区间和失效观察区。",
+      drill: "读图专项：先标前高、区间、跌回位置，再写课堂判断。",
+      template: "当前价格在__附近；如果__，结构就降级；所以我先__。",
+      next: "下一题先完成读图标注，再选择答案。",
     },
   ];
   const hits = categories.filter((item) => item.match.test(source));
@@ -4622,6 +6470,9 @@ function buildSharpDiagnosis(feedback = {}, lastTraining = {}) {
       label: "过程基本合格",
       problem: "这次已经开始按训练过程作答，不只是猜方向。",
       check: "下次把同一张检查表带到回放里验证。",
+      drill: "稳定性专项：换一题继续用同一张检查表，确认不是偶然写对。",
+      template: "结构__；失效__；背景__；我现在不做__。",
+      next: "再练一题，检查是否还能保持同样的表达顺序。",
     });
   }
   const unique = [];
@@ -4638,14 +6489,23 @@ function buildSharpDiagnosis(feedback = {}, lastTraining = {}) {
 }
 
 function sharpDiagnosisHtml(diagnosis, eyebrow = "本题错因雷达") {
+  const primary = diagnosis.primary || {};
   return `
     <div class="sharp-diagnosis-head">
       <div>
         <p class="eyebrow">${escapeHtml(eyebrow)}</p>
-        <h4>最大问题：${escapeHtml(diagnosis.primary.label)}</h4>
-        <span>${escapeHtml(diagnosis.primary.problem)}</span>
+        <h4>最大问题：${escapeHtml(primary.label || "过程待复盘")}</h4>
+        <span>${escapeHtml(primary.problem || "先把这次判断拆成可复盘证据。")}</span>
       </div>
       <span class="tag danger">先改过程</span>
+    </div>
+    <div class="correction-path-card" aria-label="纠错练习路径">
+      <div>
+        <p class="eyebrow">纠错练习</p>
+        <strong>${escapeHtml(primary.drill || "用同一张检查表重写当前题。")}</strong>
+      </div>
+      <span><b>重写句式：</b>${escapeHtml(primary.template || "我看到__，如果__说明我错，所以现在只__。")}</span>
+      <span><b>下一步：</b>${escapeHtml(primary.next || primary.check || "先去回放页按时间顺序复盘。")}</span>
     </div>
     <div class="sharp-diagnosis-grid">
       ${diagnosis.items.map((item) => `
@@ -4653,6 +6513,7 @@ function sharpDiagnosisHtml(diagnosis, eyebrow = "本题错因雷达") {
           <strong>${escapeHtml(item.label)}</strong>
           <span>${escapeHtml(item.problem)}</span>
           <small>${escapeHtml(item.check)}</small>
+          <small class="correction-mini">${escapeHtml(item.drill || item.next || "用训练模板重写一次。")}</small>
         </article>
       `).join("")}
     </div>
@@ -4935,7 +6796,7 @@ async function submitDecision() {
     nodes.feedbackPanel.hidden = false;
     nodes.feedbackTitle.textContent = "提交失败";
     nodes.feedbackBody.textContent = error.message === "Login required"
-      ? "试用会话没有建立成功，请点页面顶部“一键进入试用”后重试。"
+      ? "学习体验会话没有建立成功，请点页面顶部“开始学习”后重试。"
       : error.message;
   } finally {
     nodes.submitBtn.disabled = false;
@@ -4965,7 +6826,23 @@ function renderFeedback(feedback, nextTraining = null, courseProgressUpdates = s
   nodes.nextPathText.textContent = feedback.nextPath;
   if (nodes.trainingResultActions) {
     const sharpDiagnosis = state.lastTrainingDiagnosis || buildSharpDiagnosis(feedback, lastTraining);
+    const cadence = learningCadenceGate();
+    const nextActionHtml = !cadence.shouldReplayFirst && nextTraining?.scenario
+      ? `<button type="button" data-training-result-action="next" data-scenario-id="${nextTraining.scenario.id}">再练一题</button>`
+      : "";
     nodes.trainingResultActions.innerHTML = `
+      <article class="coach-review-sheet" aria-label="AI教练批改单">
+        <span class="coach-review-stamp">过程批改</span>
+        <div>
+          <p class="eyebrow">AI 教练批改单</p>
+          <h4>这次不看对错输赢，只批改判断过程。</h4>
+        </div>
+        <dl>
+          <div><dt>证据</dt><dd>${escapeHtml(lastTraining.title || currentScenario().title)} / ${escapeHtml(lastTraining.symbol || currentScenario().symbol)} / ${escapeHtml(lastTraining.timeframe || currentScenario().timeframe)}</dd></div>
+          <div><dt>最大问题</dt><dd>${escapeHtml(lastTraining.biggestIssue || visibleMistakeDiagnosis(feedback))}</dd></div>
+          <div><dt>下一次只改一件事</dt><dd>${escapeHtml(lastTraining.nextPractice || nextPracticeText({ feedback, nextTraining, learningPath: state.data.learningPath }))}</dd></div>
+        </dl>
+      </article>
       <article class="sharp-diagnosis-card" aria-label="本题错因雷达">
         ${sharpDiagnosisHtml(sharpDiagnosis)}
       </article>
@@ -4990,14 +6867,14 @@ function renderFeedback(feedback, nextTraining = null, courseProgressUpdates = s
           <span>${achievements.latestUnlocked ? `新里程碑：${achievements.latestUnlocked.title}` : `里程碑 ${achievements.unlockedCount || 0}/${achievements.totalCount || 0}`}</span>
           ${contextReviewHtml}
           ${courseProgressHtml}
-          <span>${nextTraining?.scenario ? `下一题：${nextTraining.scenario.title} / ${nextTrainingReasonText(nextTraining)}` : "暂无下一题，先去回放和AI复盘。"}</span>
+          <span>${cadence.shouldReplayFirst ? cadence.reason : (nextTraining?.scenario ? `下一题：${nextTraining.scenario.title} / ${nextTrainingReasonText(nextTraining)}` : "暂无下一题，先去回放和AI复盘。")}</span>
         </div>
         <span class="tag warn">只做教育训练</span>
       </div>
       <div class="trial-flow-actions">
-        <button type="button" data-training-result-action="replay">去回放/回测误区</button>
+        <button type="button" data-training-result-action="replay">${cadence.shouldReplayFirst ? "先回放同题重写" : "去回放/回测误区"}</button>
         <button type="button" data-training-result-action="coach">看 AI 复盘</button>
-        ${nextTraining?.scenario ? `<button type="button" data-training-result-action="next" data-scenario-id="${nextTraining.scenario.id}">再练一题</button>` : ""}
+        ${nextActionHtml}
         <button type="button" data-training-result-action="feedback">提交反馈</button>
       </div>
     `;
@@ -5028,6 +6905,7 @@ function renderReplay() {
   if (nodes.paperTradeContext && isLastTraining) {
     nodes.paperTradeContext.placeholder = "刚才那题里的新闻/情绪只作为背景，不写成买卖理由。";
   }
+  renderScenarioSourceCard(lesson, "replay");
   renderCandles(nodes.replayChart, lesson.candles.slice(0, step));
 }
 
@@ -5047,11 +6925,16 @@ function renderReplayBridge(lesson, { step, isLastTraining } = {}) {
   const mission = isLastTraining
     ? "这次回放只验证一件事：你能不能在不知道后续走势时，重新写出当时可见证据和认错点。"
     : "这里仍然只做教学回放，不用未来K线、事后新闻或结果反推答案。";
+  const progress = Math.max(0, Math.min(100, Math.round((Number(step || 0) / Math.max(1, lesson.candles?.length || 1)) * 100)));
   bridge.innerHTML = `
     <div>
       <p class="eyebrow">${isLastTraining ? "同题回放" : "教学回放"}</p>
       <h4>${escapeHtml(isLastTraining ? `回到刚才那题：${lesson.title}` : `${lesson.title}`)}</h4>
       <span>${escapeHtml(lesson.symbol || "")} / ${escapeHtml(lesson.timeframe || "")} / 当前只看到 ${step || 0} 根K线</span>
+    </div>
+    <div class="replay-time-rail" aria-label="历史回放进度">
+      <span style="width:${progress}%"></span>
+      <b>${progress}%</b>
     </div>
     <div class="replay-bridge-grid">
       <span><b>刚才最大问题</b>${escapeHtml(issue)}</span>
@@ -5083,8 +6966,8 @@ function renderPaperTrades() {
 }
 
 function paperTradeSideLabel(side = "") {
-  if (side === "long") return "模拟做多";
-  if (side === "short") return "模拟做空";
+  if (side === "long") return "课堂看多假设";
+  if (side === "short") return "课堂看空假设";
   return "观望 / 不做";
 }
 
@@ -5130,7 +7013,7 @@ function renderEvidenceIntegrity(audit = state.data.evidenceIntegrity) {
   const dimensions = audit.dimensions || [];
   nodes.evidenceIntegrityPanel.innerHTML = `
     <div class="score-grid">
-      <div><span>状态</span><strong>${escapeHtml(summary.status || "unreviewed")}</strong></div>
+      <div><span>状态</span><strong>${escapeHtml(displayLearningStatus(summary.status || "unreviewed"))}</strong></div>
       <div><span>薄弱项</span><strong>${summary.weakDimensions ?? 0}</strong></div>
       <div><span>图表训练</span><strong>${summary.trainingAttempts ?? 0}</strong></div>
       <div><span>模拟样本</span><strong>${summary.paperTradeSamples ?? 0}</strong></div>
@@ -5139,14 +7022,14 @@ function renderEvidenceIntegrity(audit = state.data.evidenceIntegrity) {
       <div class="attempt-row">
         <div>
           <strong>${escapeHtml(item.label)}</strong>
-          ${(item.evidence || []).map((evidence) => `<span>${escapeHtml(evidence)}</span>`).join("")}
-          <span>${escapeHtml(item.nextAction || "Continue education-only evidence collection.")}</span>
+          ${(item.evidence || []).map((evidence) => `<span>${escapeHtml(displayLearningText(evidence))}</span>`).join("")}
+          <span>${escapeHtml(displayLearningText(item.nextAction || "Continue education-only evidence collection."))}</span>
         </div>
-        <span class="tag ${String(item.status || "").includes("needs") || String(item.status || "").includes("too_small") ? "danger" : "warn"}">${escapeHtml(item.status || "unreviewed")}</span>
+        <span class="tag ${String(item.status || "").includes("needs") || String(item.status || "").includes("too_small") ? "danger" : "warn"}">${escapeHtml(displayLearningStatus(item.status || "unreviewed"))}</span>
       </div>
     `).join("")}
-    <ol class="clean-list">${(audit.nextLearningActions || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ol>
-    <p class="muted-note">${escapeHtml(audit.constraints?.[1] || "Education audit only; no stock recommendation, live signal, or real-money trading instruction.")}</p>
+    <ol class="clean-list">${(audit.nextLearningActions || []).map((item) => `<li>${escapeHtml(displayLearningText(item))}</li>`).join("")}</ol>
+    <p class="muted-note">${escapeHtml(displayLearningText(audit.constraints?.[1] || "Education audit only; no stock recommendation, live signal, or real-money trading instruction."))}</p>
   `;
 }
 
@@ -5180,8 +7063,8 @@ function renderBacktestClassroom(classroom = state.data.backtestClassroom) {
   const literacyBrief = state.data.backtestLiteracyBrief;
   const literacyRows = (literacyBrief?.rows || []).slice(0, 4).map((item) => `
     <div class="mini-row">
-      <span>${escapeHtml(item.section)} / ${escapeHtml(item.item)} / ${escapeHtml(item.status)}</span>
-      <span>${escapeHtml(item.next || "")}</span>
+      <span>${escapeHtml(displayLearningText(item.section))} / ${escapeHtml(displayLearningText(item.item))} / ${escapeHtml(displayLearningStatus(item.status))}</span>
+      <span>${escapeHtml(displayLearningText(item.next || ""))}</span>
     </div>
   `).join("");
   const sampleSize = Number(metrics.sampleSize || 0);
@@ -5282,18 +7165,18 @@ function renderBacktestClassroom(classroom = state.data.backtestClassroom) {
     ${everydayLessonHtml}
     <div class="attempt-row">
       <div>
-        <strong>${escapeHtml(classroom.sampleQuality || "practice_sample_only")}</strong>
-        ${(classroom.interpretation || []).map((item) => `<span>${escapeHtml(item)}</span>`).join("")}
-        <span>${escapeHtml(classroom.constraints?.[2] || "Metrics are learning diagnostics, not future performance proof.")}</span>
+        <strong>${escapeHtml(displayLearningStatus(classroom.sampleQuality || "practice_sample_only"))}</strong>
+        ${(classroom.interpretation || []).map((item) => `<span>${escapeHtml(displayLearningText(item))}</span>`).join("")}
+        <span>${escapeHtml(displayLearningText(classroom.constraints?.[2] || "Metrics are learning diagnostics, not future performance proof."))}</span>
       </div>
       <span class="tag warn">只做教育训练</span>
     </div>
     <div class="attempt-row">
       <div>
-        <strong>回测可信度：${escapeHtml(reliabilityAudit.grade || "unreviewed")}</strong>
-        ${(reliabilityAudit.interpretation || []).map((item) => `<span>${escapeHtml(item)}</span>`).join("")}
-        ${(reliabilityAudit.riskFlags || []).slice(0, 4).map((item) => `<span>风险提醒：${escapeHtml(item)}</span>`).join("")}
-        <span>${escapeHtml(reliabilityAudit.constraints?.[1] || "Reliability is education evidence quality only, not a signal or strategy score.")}</span>
+        <strong>回测可信度：${escapeHtml(displayLearningStatus(reliabilityAudit.grade || "unreviewed"))}</strong>
+        ${(reliabilityAudit.interpretation || []).map((item) => `<span>${escapeHtml(displayLearningText(item))}</span>`).join("")}
+        ${(reliabilityAudit.riskFlags || []).slice(0, 4).map((item) => `<span>风险提醒：${escapeHtml(displayLearningText(item))}</span>`).join("")}
+        <span>${escapeHtml(displayLearningText(reliabilityAudit.constraints?.[1] || "Reliability is education evidence quality only, not a signal or strategy score."))}</span>
       </div>
       <span class="tag danger">不是策略评分</span>
     </div>
@@ -5301,10 +7184,10 @@ function renderBacktestClassroom(classroom = state.data.backtestClassroom) {
       <div class="attempt-row">
         <div>
           <strong>回测理解说明</strong>
-          <span>样本 ${literacyBrief.summary?.sampleSize || 0} / 可信度 ${escapeHtml(literacyBrief.summary?.reliabilityGrade || "未复核")} / 风险提醒 ${literacyBrief.summary?.riskFlags || 0} / 场景分组 ${literacyBrief.summary?.setupGroups || 0}</span>
-          ${(literacyBrief.learnerBrief || []).slice(0, 3).map((item) => `<span>${escapeHtml(item)}</span>`).join("")}
+          <span>样本 ${literacyBrief.summary?.sampleSize || 0} / 可信度 ${escapeHtml(displayLearningStatus(literacyBrief.summary?.reliabilityGrade || "未复核"))} / 风险提醒 ${literacyBrief.summary?.riskFlags || 0} / 场景分组 ${literacyBrief.summary?.setupGroups || 0}</span>
+          ${(literacyBrief.learnerBrief || []).slice(0, 3).map((item) => `<span>${escapeHtml(displayLearningText(item))}</span>`).join("")}
           <div class="mini-list">${literacyRows}</div>
-          <span>${escapeHtml(literacyBrief.constraints?.[2] || "Metrics are education diagnostics, not strategy proof.")}</span>
+          <span>${escapeHtml(displayLearningText(literacyBrief.constraints?.[2] || "Metrics are education diagnostics, not strategy proof."))}</span>
         </div>
         <span class="tag warn">指标识读</span>
       </div>
@@ -5314,16 +7197,16 @@ function renderBacktestClassroom(classroom = state.data.backtestClassroom) {
         <strong>模拟假设</strong>
         <span>${escapeHtml(assumptions.executionModel || "课堂回放")} / ${escapeHtml(assumptions.priceSource || "演示场景K线")}</span>
         <span>手续费 ${friction.feesIncluded ? "已考虑" : "未考虑"} / 点差 ${friction.spreadIncluded ? "已考虑" : "未考虑"} / 滑点 ${friction.slippageIncluded ? "已考虑" : "未考虑"} / 部分成交 ${friction.partialFillsIncluded ? "已考虑" : "未考虑"}</span>
-        <span>样本质量：${escapeHtml(sampleModel.currentQuality || classroom.sampleQuality || "仅练习样本")}; 对比同类结构至少需要 ${sampleModel.minimumForSetupComparison ?? 20}+ 条记录。</span>
-        <span>${escapeHtml(contextModel.note || "News and sentiment are context boundaries, not trade permission.")}</span>
-        <span>${escapeHtml(riskModel.note || "Risk metrics are classroom discipline checks, not real-money readiness.")}</span>
+        <span>样本质量：${escapeHtml(displayLearningStatus(sampleModel.currentQuality || classroom.sampleQuality || "仅练习样本"))}; 对比同类结构至少需要 ${sampleModel.minimumForSetupComparison ?? 20}+ 条记录。</span>
+        <span>${escapeHtml(displayLearningText(contextModel.note || "News and sentiment are context boundaries, not trade permission."))}</span>
+        <span>${escapeHtml(displayLearningText(riskModel.note || "Risk metrics are classroom discipline checks, not real-money readiness."))}</span>
       </div>
       <span class="tag danger">不能实盘执行</span>
     </div>
     ${assumptionChecklist.length ? `<ol class="clean-list">${assumptionChecklist.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ol>` : ""}
-    ${(reliabilityAudit.nextLearningActions || []).length ? `<ol class="clean-list">${reliabilityAudit.nextLearningActions.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ol>` : ""}
+    ${(reliabilityAudit.nextLearningActions || []).length ? `<ol class="clean-list">${reliabilityAudit.nextLearningActions.map((item) => `<li>${escapeHtml(displayLearningText(item))}</li>`).join("")}</ol>` : ""}
     ${setupDiagnosticsHtml}
-    <ol class="clean-list">${(classroom.nextActions || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ol>
+    <ol class="clean-list">${(classroom.nextActions || []).map((item) => `<li>${escapeHtml(displayLearningText(item))}</li>`).join("")}</ol>
   `;
   renderBacktestMisconception(classroom.misconceptionDrill);
 }
@@ -5379,7 +7262,7 @@ function renderBacktestMisconception(drill = state.data.backtestClassroom?.misco
       <div>
         <strong>回测指标误区练习</strong>
         <span>${escapeHtml(drill.prompt)}</span>
-        <span>${escapeHtml(drill.requiredPrinciple || "Backtest metrics are education diagnostics only.")}</span>
+        <span>${escapeHtml(displayLearningText(drill.requiredPrinciple || "Backtest metrics are education diagnostics only."))}</span>
       </div>
       <span class="tag warn">不是信号</span>
     </div>
@@ -5449,31 +7332,31 @@ function renderMarketContextClassroom(classroom = state.data.marketContextClassr
     <div class="attempt-row">
       <div>
         <strong>消息和情绪是背景，不是信号</strong>
-        ${(classroom.interpretation || []).map((item) => `<span>${escapeHtml(item)}</span>`).join("")}
-        <span>${escapeHtml(classroom.constraints?.[1] || "No stock recommendation, live signal, or market prediction.")}</span>
+        ${(classroom.interpretation || []).map((item) => `<span>${escapeHtml(displayLearningText(item))}</span>`).join("")}
+        <span>${escapeHtml(displayLearningText(classroom.constraints?.[1] || "No stock recommendation, live signal, or market prediction."))}</span>
       </div>
       <span class="tag warn">不是信号</span>
     </div>
     <div class="attempt-row">
       <div>
         <strong>环境风险总结</strong>
-        <span>${escapeHtml(riskSummary.operatingStatus || "needs_context_evidence")} / wrong misconception attempts ${riskSummary.wrongMisconceptionAttempts ?? 0}</span>
-        ${riskSummary.dominantRisk ? `<span>Dominant risk: ${escapeHtml(riskSummary.dominantRisk.label)} - ${escapeHtml(riskSummary.dominantRisk.educationResponse)}</span>` : "<span>No dominant context-risk pattern yet; keep collecting education evidence.</span>"}
-        ${(riskSummary.coachActions || []).slice(0, 3).map((item) => `<span>${escapeHtml(item)}</span>`).join("")}
-        <span>${escapeHtml(riskSummary.constraints?.[1] || "Not sentiment scoring, market prediction, signal, or recommendation.")}</span>
+        <span>${escapeHtml(displayLearningStatus(riskSummary.operatingStatus || "needs_context_evidence"))} / 错误理解 ${riskSummary.wrongMisconceptionAttempts ?? 0} 次</span>
+        ${riskSummary.dominantRisk ? `<span>主要风险：${escapeHtml(displayLearningText(riskSummary.dominantRisk.label))} - ${escapeHtml(displayLearningText(riskSummary.dominantRisk.educationResponse))}</span>` : `<span>${escapeHtml(displayLearningText("No dominant context-risk pattern yet; keep collecting education evidence."))}</span>`}
+        ${(riskSummary.coachActions || []).slice(0, 3).map((item) => `<span>${escapeHtml(displayLearningText(item))}</span>`).join("")}
+        <span>${escapeHtml(displayLearningText(riskSummary.constraints?.[1] || "Not sentiment scoring, market prediction, signal, or recommendation."))}</span>
       </div>
       <span class="tag danger">不是预测</span>
     </div>
     ${contextRiskItems.length ? `
-      <div class="section-kicker">Observed context risks</div>
+      <div class="section-kicker">已观察到的环境风险</div>
       ${contextRiskItems.map((item) => `
         <div class="attempt-row">
           <div>
             <strong>${escapeHtml(item.label)}</strong>
-            <span>${item.count} observed item(s)</span>
-            <span>${escapeHtml(item.educationResponse)}</span>
+            <span>${escapeHtml(displayLearningText(`${item.count} observed item(s)`))}</span>
+            <span>${escapeHtml(displayLearningText(item.educationResponse))}</span>
           </div>
-          <span class="tag warn">Coach cue</span>
+          <span class="tag warn">教练提示</span>
         </div>
       `).join("")}
     ` : ""}
@@ -5687,9 +7570,11 @@ function renderProfile() {
 function renderLearningPath(path = state.data.learningPath) {
   if (!nodes.learningPathPanel) return;
   const lastTraining = state.lastCompletedTraining;
+  const trend = buildMistakeTrendPlan(state.data.profile || {}, state.data.attempts || [], lastTraining);
   if (!path) {
     nodes.learningPathPanel.innerHTML = lastTraining
       ? `
+        ${mistakeTrendPlanHtml(trend)}
         <div class="attempt-row trial-next-row">
           <div>
             <strong>已收到刚才训练：${escapeHtml(lastTraining.title || "当前题")}</strong>
@@ -5721,7 +7606,28 @@ function renderLearningPath(path = state.data.learningPath) {
     }
     return text;
   });
+  const primaryCoursePackage = learnerCoursePathItems()[0] || {
+    title: "价格行为入门路线",
+    canAccess: true,
+    progress: {
+      percent: lastTraining ? 20 : 0,
+      completedItems: lastTraining ? 1 : 0,
+      totalItems: 7,
+      completedKnowledgePointIds: [],
+      completedScenarioIds: lastTraining ? [lastTraining.scenarioId] : [],
+      completedBacktestDrillIds: [],
+      completedContextDrillIds: [],
+      completedSourceTransparencyDrillIds: [],
+    },
+    knowledgePoints: path.recommendedKnowledgePoint ? [path.recommendedKnowledgePoint] : [],
+    scenarios: path.recommendedScenario ? [path.recommendedScenario] : [],
+    backtestDrills: [{ id: "backtest_misconception", title: "样本太少时，不读胜率和收益" }],
+    contextDrills: [{ id: "context_boundary", title: "新闻和情绪只做背景边界" }],
+    sourceTransparencyDrills: [{ id: "source_label", title: "确认 demo、公开预览或授权标签" }],
+  };
   nodes.learningPathPanel.innerHTML = `
+    ${mistakeTrendPlanHtml(trend)}
+    ${courseRoadmapHtml(primaryCoursePackage, { path, lastTraining })}
     <div class="attempt-row trial-next-row">
       <div>
         <strong>${escapeHtml(stage.label)}阶段：${escapeHtml(stage.focus)}</strong>
@@ -5753,6 +7659,219 @@ function renderLearningPath(path = state.data.learningPath) {
   `;
 }
 
+function courseAccessLabel(item = {}) {
+  if (item.canAccess) return item.enrolled ? "正在学习" : "可开始";
+  return "先预览";
+}
+
+function courseAssignmentText(item = {}) {
+  if (item.coursePackageAssignment) {
+    return `已安排：${formatTime(item.coursePackageAssignment.createdAt)}${item.coursePackageAssignment.dueAt ? ` / 截止 ${item.coursePackageAssignment.dueAt}` : ""}`;
+  }
+  if (item.enrolled) return "已加入学习路径";
+  return "可作为下一段课程预览";
+}
+
+function courseProgressText(item = {}) {
+  const progress = item.progress || {};
+  return `课程进度 ${progress.percent || 0}%：已完成 ${progress.completedItems || 0}/${progress.totalItems || 0} 个学习节点`;
+}
+
+function courseCompletionText(item = {}) {
+  return item.completionReport
+    ? `结课复盘已生成：${formatTime(item.completionReport.createdAt)} / 纪律分 ${item.completionReport.practiceSummary.averageRiskDiscipline ?? "--"}`
+    : "完成全部学习节点后，才生成结课复盘。";
+}
+
+function courseScopeText(item = {}) {
+  const knowledgeTotal = (item.knowledgePoints || []).length;
+  const scenarioTotal = (item.scenarios || []).length;
+  const lockedKnowledge = item.lockedCounts?.knowledgePoints || 0;
+  const lockedScenarios = item.lockedCounts?.scenarios || 0;
+  return `本段包含 ${knowledgeTotal} 个概念、${scenarioTotal} 道训练题${lockedKnowledge || lockedScenarios ? `；另有 ${lockedKnowledge + lockedScenarios} 个节点待解锁` : ""}`;
+}
+
+function courseRoadmapNodes(item = {}, path = state.data.learningPath, lastTraining = state.lastCompletedTraining) {
+  const progress = item.progress || {};
+  const nextKnowledge = (item.knowledgePoints || []).find((kp) => !(progress.completedKnowledgePointIds || []).includes(kp.id));
+  const nextScenario = (item.scenarios || []).find((scenario) => !(progress.completedScenarioIds || []).includes(scenario.id));
+  const nextBacktestDrill = (item.backtestDrills || []).find((drill) => !(progress.completedBacktestDrillIds || []).includes(drill.id));
+  const nextContextDrill = (item.contextDrills || []).find((drill) => !(progress.completedContextDrillIds || []).includes(drill.id));
+  const nextSourceDrill = (item.sourceTransparencyDrills || []).find((drill) => !(progress.completedSourceTransparencyDrillIds || []).includes(drill.id));
+  const pct = Number(progress.percent || 0);
+  return [
+    {
+      step: "1",
+      title: "先学概念",
+      body: nextKnowledge ? nextKnowledge.title : path?.recommendedKnowledgePoint?.title || "结构、失效和消息边界",
+      status: nextKnowledge ? "当前" : "已完成",
+    },
+    {
+      step: "2",
+      title: "再做训练",
+      body: nextScenario ? nextScenario.title : path?.recommendedScenario?.title || "完成一题课堂判断",
+      status: nextScenario ? "当前" : "已完成",
+    },
+    {
+      step: "3",
+      title: "同题回放",
+      body: lastTraining ? "回放刚才那题，写当时知道和不知道什么。" : "完成第一题后解锁同题回放。",
+      status: lastTraining ? "当前" : "待完成",
+    },
+    {
+      step: "4",
+      title: "回测误区",
+      body: nextBacktestDrill ? nextBacktestDrill.title : "样本太少时不能读胜率或收益。",
+      status: nextBacktestDrill ? "待完成" : "已覆盖",
+    },
+    {
+      step: "5",
+      title: "新闻情绪",
+      body: nextContextDrill ? nextContextDrill.title : "消息和情绪只做背景，不替代结构。",
+      status: nextContextDrill ? "待完成" : "已覆盖",
+    },
+    {
+      step: "6",
+      title: "来源透明",
+      body: nextSourceDrill ? nextSourceDrill.title : "确认 demo、公开预览或授权数据标签。",
+      status: nextSourceDrill ? "待完成" : "已覆盖",
+    },
+    {
+      step: "7",
+      title: "结课复盘",
+      body: item.completionReport ? "已生成结课复盘。" : `当前 ${pct}%：先补齐前面节点。`,
+      status: item.completionReport ? "已完成" : "未完成",
+    },
+  ];
+}
+
+function courseRoadmapHtml(item = {}, options = {}) {
+  const nodes = courseRoadmapNodes(item, options.path, options.lastTraining);
+  return `
+    <section class="course-roadmap" aria-label="课程路线图">
+      <div class="course-roadmap-head">
+        <div>
+          <p class="eyebrow">课程路线图</p>
+          <h4>${escapeHtml(item.title || "当前学习路径")}</h4>
+          <span>${courseProgressText(item)}</span>
+        </div>
+        <span class="tag warn">教育训练</span>
+      </div>
+      <div class="course-roadmap-grid">
+        ${nodes.map((node) => `
+          <article class="${node.status === "当前" ? "is-current" : ""}">
+            <b>${escapeHtml(node.step)}</b>
+            <strong>${escapeHtml(node.title)}</strong>
+            <span>${escapeHtml(node.body)}</span>
+            <small>${escapeHtml(node.status)}</small>
+          </article>
+        `).join("")}
+      </div>
+      <small>这条路线只安排学习任务，不评价策略收益，不输出实盘信号。</small>
+    </section>
+  `;
+}
+
+function buildMistakeTrendPlan(profile = {}, attempts = [], lastTraining = null) {
+  const profileEntries = Object.entries(profile || {})
+    .map(([tag, count]) => ({ tag, count: Number(count) || 0 }))
+    .filter((item) => item.count > 0)
+    .sort((a, b) => b.count - a.count)
+    .slice(0, 3);
+  const trainingAttempts = (attempts || []).filter((item) => item.type === "training").slice(0, 6);
+  const recentTags = trainingAttempts.flatMap((item) => item.tags || []);
+  const recentCounts = recentTags.reduce((acc, tag) => {
+    acc[tag] = (acc[tag] || 0) + 1;
+    return acc;
+  }, {});
+  const top = profileEntries[0] || Object.entries(recentCounts)
+    .map(([tag, count]) => ({ tag, count }))
+    .sort((a, b) => b.count - a.count)[0] || null;
+  const fallbackText = lastTraining?.biggestIssue || "";
+  const plan = mistakeTrendPrescription(top?.tag || fallbackText);
+  const repeated = top ? (recentCounts[top.tag] || 0) : 0;
+  return {
+    active: Boolean(top || fallbackText),
+    tag: top?.tag || "当前题错因",
+    label: top ? displayProfileTag(top.tag) : "当前题错因",
+    count: top?.count || 1,
+    repeated,
+    recentAttemptCount: trainingAttempts.length,
+    ...plan,
+  };
+}
+
+function mistakeTrendPrescription(tag = "") {
+  const text = String(tag || "");
+  if (/偷看|未来|倒推|hindsight|replay|回放/i.test(text)) {
+    return {
+      focus: "反偷看未来专项",
+      why: "你需要先固定“当时可见信息”，再看后续走势。",
+      drill: "连续做 2 次回放遮挡练习，每次先写当时不知道什么。",
+      template: "当时我只知道__，还不知道__，所以我只能__。",
+    };
+  }
+  if (/context|背景|sentiment|情绪|新闻|消息|热度|财报/i.test(text)) {
+    return {
+      focus: "消息情绪边界专项",
+      why: "你容易把背景写成行动理由，需要把它放回偏见检查栏。",
+      drill: "下一题只训练一句话：消息说明背景，但不能替代结构和失效条件。",
+      template: "消息/情绪说明__，但我的判断仍以__为准。",
+    };
+  }
+  if (/risk|invalidation|失效|风险|认错|止损/i.test(text)) {
+    return {
+      focus: "失效条件专项",
+      why: "你需要先写哪里说明自己错了，再写课堂判断。",
+      drill: "下一题先写失效位，不写清楚就不进入选择。",
+      template: "如果价格__，说明判断不成立；在此之前我只__。",
+    };
+  }
+  if (/thin|reason|理由|证据|空泛|太短/i.test(text)) {
+    return {
+      focus: "表达证据专项",
+      why: "你的答案需要从一句结论拆成可复盘证据链。",
+      drill: "把答案拆成四句：看到什么、怎么判断、哪里认错、不做什么。",
+      template: "我看到__，所以暂时判断__；如果__，我承认错；现在不做__。",
+    };
+  }
+  return {
+    focus: "结构读图专项",
+    why: "先把前高、区间、跌回和等待条件标清楚，再写判断。",
+    drill: "下一题先完成读图标注，再选择课堂答案。",
+    template: "当前价格在__附近；如果__，结构就降级；所以我先__。",
+  };
+}
+
+function mistakeTrendPlanHtml(trend) {
+  if (!trend?.active) return "";
+  const repeatedText = trend.recentAttemptCount
+    ? `最近 ${trend.recentAttemptCount} 次训练里出现 ${trend.repeated || 1} 次相关错因。`
+    : "完成更多题后，这里会变成更稳定的跨题画像。";
+  return `
+    <section class="mistake-trend-card" aria-label="跨题错因趋势">
+      <div>
+        <p class="eyebrow">跨题学习路径</p>
+        <h4>${escapeHtml(trend.focus)}</h4>
+        <span>${escapeHtml(repeatedText)} 累计画像：${escapeHtml(trend.label)} x${trend.count}。</span>
+      </div>
+      <article>
+        <strong>为什么先练这个</strong>
+        <span>${escapeHtml(trend.why)}</span>
+      </article>
+      <article>
+        <strong>下一步专项</strong>
+        <span>${escapeHtml(trend.drill)}</span>
+      </article>
+      <article>
+        <strong>重写句式</strong>
+        <span>${escapeHtml(trend.template)}</span>
+      </article>
+      <small>这里只规划学习路径，不评价策略收益，不输出实盘信号。</small>
+    </section>
+  `;
+}
+
 function learnerCoursePathItems() {
   const packages = state.data.coursePackages || [];
   const active = packages.filter((item) => item.enrolled || item.coursePackageAssignment || item.progress?.completedItems > 0);
@@ -5770,30 +7889,31 @@ function renderLearnerCoursePath() {
       const nextContextDrill = (item.contextDrills || []).find((drill) => !(item.progress?.completedContextDrillIds || []).includes(drill.id));
       const nextSourceDrill = (item.sourceTransparencyDrills || []).find((drill) => !(item.progress?.completedSourceTransparencyDrillIds || []).includes(drill.id));
       return `
+        ${courseRoadmapHtml(item, { path: state.data.learningPath, lastTraining: state.lastCompletedTraining })}
         <div class="attempt-row">
           <div>
             <strong>${escapeHtml(item.title)}</strong>
-            <span>${item.progress?.percent || 0}% complete / ${item.progress?.completedItems || 0} of ${item.progress?.totalItems || 0}</span>
-            <span>${item.coursePackageAssignment ? `Teacher assigned ${formatTime(item.coursePackageAssignment.createdAt)}` : item.enrolled ? "Enrolled learning product" : "Available course package"}</span>
-            <span>${nextKnowledge ? `Next knowledge: ${escapeHtml(nextKnowledge.title)}` : "All visible knowledge reviewed."}</span>
-            <span>${nextScenario ? `Next drill: ${escapeHtml(nextScenario.title)}` : "No visible drill remaining."}</span>
-            <span>${nextBacktestDrill ? `Next metric drill: ${escapeHtml(nextBacktestDrill.title)}` : "Backtest metric drill complete."}</span>
-            <span>${nextContextDrill ? `Next context drill: ${escapeHtml(nextContextDrill.title)}` : "Market context drill complete."}</span>
-            <span>${nextSourceDrill ? `Next source label drill: ${escapeHtml(nextSourceDrill.title)}` : "Source transparency drill complete."}</span>
-            <span>${escapeHtml(item.constraints?.[1] || "Education-only; no signals or real-money trading.")}</span>
+            <span>${courseProgressText(item)}</span>
+            <span>${courseAssignmentText(item)}</span>
+            <span>${nextKnowledge ? `下一段概念：${escapeHtml(nextKnowledge.title)}` : "可见概念已学完。"}</span>
+            <span>${nextScenario ? `下一道训练：${escapeHtml(nextScenario.title)}` : "当前可见训练题已完成。"}</span>
+            <span>${nextBacktestDrill ? `下一步误区练习：${escapeHtml(nextBacktestDrill.title)}` : "回测指标误区已练完。"}</span>
+            <span>${nextContextDrill ? `下一步背景练习：${escapeHtml(nextContextDrill.title)}` : "新闻/情绪背景练习已完成。"}</span>
+            <span>${nextSourceDrill ? `下一步来源练习：${escapeHtml(nextSourceDrill.title)}` : "数据来源标签练习已完成。"}</span>
+            <span>${escapeHtml(item.constraints?.[1] || "只做教育训练，不输出交易建议。")}</span>
           </div>
           <div class="billing-actions">
-            ${nextKnowledge ? `<button type="button" data-course-progress="knowledge" data-course-package-id="${escapeHtml(item.id)}" data-knowledge-point-id="${escapeHtml(nextKnowledge.id)}">Mark next knowledge reviewed</button>` : ""}
-            ${nextScenario ? `<button type="button" data-course-scenario-id="${escapeHtml(nextScenario.id)}">Practice package drill</button>` : ""}
-            ${nextBacktestDrill ? `<button type="button" data-course-backtest-drill="${escapeHtml(nextBacktestDrill.id)}">Open metric drill</button>` : ""}
-            ${nextContextDrill ? `<button type="button" data-course-context-drill="${escapeHtml(nextContextDrill.id)}">Open context drill</button>` : ""}
-            ${nextSourceDrill ? `<button type="button" data-course-source-drill="${escapeHtml(nextSourceDrill.id)}">Open source drill</button>` : ""}
-            <span class="tag ${item.canAccess ? "warn" : "danger"}">${item.canAccess ? "Learning path" : "Preview"}</span>
+            ${nextKnowledge ? `<button type="button" data-course-progress="knowledge" data-course-package-id="${escapeHtml(item.id)}" data-knowledge-point-id="${escapeHtml(nextKnowledge.id)}">标记概念已学</button>` : ""}
+            ${nextScenario ? `<button type="button" data-course-scenario-id="${escapeHtml(nextScenario.id)}">练这道题</button>` : ""}
+            ${nextBacktestDrill ? `<button type="button" data-course-backtest-drill="${escapeHtml(nextBacktestDrill.id)}">练回测误区</button>` : ""}
+            ${nextContextDrill ? `<button type="button" data-course-context-drill="${escapeHtml(nextContextDrill.id)}">练新闻/情绪边界</button>` : ""}
+            ${nextSourceDrill ? `<button type="button" data-course-source-drill="${escapeHtml(nextSourceDrill.id)}">看数据来源</button>` : ""}
+            <span class="tag ${item.canAccess ? "warn" : "danger"}">${item.canAccess ? "学习路径" : "仅预览"}</span>
           </div>
         </div>
       `;
     }).join("")
-    : "<p>Login and refresh packages to see course package next steps.</p>";
+    : "<p>进入学习体验后，这里会显示课程路径和下一步训练。</p>";
 }
 
 async function refreshLearnerCoursePath() {
@@ -6449,6 +8569,24 @@ function renderTrialOutcomePromise() {
         `).join("")}
       </div>
     </div>
+    <div class="trial-training-map" aria-label="训练坐标">
+      <article>
+        <b>价格结构</b>
+        <span>先写趋势、区间、前高前低，不直接猜涨跌。</span>
+      </article>
+      <article>
+        <b>多周期</b>
+        <span>D1/H4 看背景，H1/M15 看结构和失效。</span>
+      </article>
+      <article>
+        <b>新闻情绪</b>
+        <span>只记录背景和偏见风险，不当作行动理由。</span>
+      </article>
+      <article>
+        <b>AI复盘</b>
+        <span>只指出学习过程问题，不给实盘建议。</span>
+      </article>
+    </div>
     <div class="section-head">
       <div>
         <p class="eyebrow">练完 3 次带走什么</p>
@@ -6458,7 +8596,7 @@ function renderTrialOutcomePromise() {
     </div>
     <div class="trial-outcome-grid">
       <article>
-        <strong>本次试用重点</strong>
+        <strong>本次体验重点</strong>
         <span>${escapeHtml(track.focus)}</span>
       </article>
       <article>
@@ -6543,7 +8681,9 @@ function buildTrackOutcomeRows(track, progress) {
 
 function renderDashboard() {
   const habit = state.data.habit || {};
-  nodes.todayDone.textContent = `${habit.todayDone ?? state.data.user.todayDone ?? 0} / ${habit.dailyGoal || 3}`;
+  const dailyGoal = habit.dailyGoal || 3;
+  const todayDone = habit.todayDone ?? state.data.user.todayDone ?? 0;
+  nodes.todayDone.textContent = `${Math.min(todayDone, dailyGoal)} / ${dailyGoal}`;
   nodes.streakDays.textContent = `${habit.streakDays ?? state.data.user.streakDays ?? 0} 天`;
   nodes.disciplineScore.textContent = habit.averageRiskDiscipline ?? state.data.user.disciplineScore ?? "--";
   if (nodes.habitStatus) {
@@ -6561,7 +8701,7 @@ function renderOnboarding(onboarding = state.data.onboarding) {
     return;
   }
   nodes.onboardingStatus.textContent = onboarding.status === "completed"
-    ? "这条试用流程已走完，可以提交反馈。"
+    ? "这条学习流程已走完，可以提交反馈。"
     : "下一步：按“继续”进入当前练习。";
   nodes.onboardingSteps.innerHTML = "";
   if (nodes.onboardingNext) {
@@ -6640,7 +8780,7 @@ function renderNotifications(summary = state.data.notifications) {
     nodes.notificationList.innerHTML = "";
     return;
   }
-  nodes.notificationStatus.textContent = `${summary.summary?.total || 0} open item(s), ${summary.summary?.unread || 0} unread note(s), ${summary.summary?.openAssignments || 0} practice assignment(s), ${summary.summary?.activationInterventions || 0} activation follow-up(s), ${summary.summary?.nextLearningProducts || 0} next step(s), ${summary.summary?.coachSessions || 0} coach session(s), ${summary.summary?.supportReplies || 0} support replie(s).`;
+  nodes.notificationStatus.textContent = `待处理 ${summary.summary?.total || 0} 项：未读 ${summary.summary?.unread || 0}、练习 ${summary.summary?.openAssignments || 0}、下一步 ${summary.summary?.nextLearningProducts || 0}、教练预约 ${summary.summary?.coachSessions || 0}、支持回复 ${summary.summary?.supportReplies || 0}。`;
   nodes.notificationList.innerHTML = summary.notifications?.length
     ? summary.notifications.map((item) => `
       <div class="attempt-row">
@@ -6667,7 +8807,7 @@ function renderNotifications(summary = state.data.notifications) {
         </div>
       </div>
     `).join("")
-    : "<p>No open coach notes or assigned practice.</p>";
+    : "<p>当前没有新的教练提醒或分配练习。先完成一题训练，再看回放和 AI 复盘。</p>";
 }
 
 async function refreshNotifications() {
@@ -6691,15 +8831,15 @@ function renderAchievements(summary = state.data.achievements) {
     nodes.achievementList.innerHTML = "";
     return;
   }
-  nodes.achievementStatus.textContent = `${summary.unlockedCount}/${summary.totalCount} unlocked${summary.latestUnlocked ? ` / latest: ${summary.latestUnlocked.title}` : ""}`;
+  nodes.achievementStatus.textContent = `已完成 ${summary.unlockedCount}/${summary.totalCount}${summary.latestUnlocked ? ` / 最新：${summary.latestUnlocked.title}` : ""}`;
   nodes.achievementList.innerHTML = (summary.achievements || []).map((item) => `
     <div class="attempt-row">
       <div>
         <strong>${item.title}</strong>
         <span>${item.description}</span>
-        <span>Progress ${item.progress}/${item.target}${item.unlockedAt ? ` / unlocked ${formatTime(item.unlockedAt)}` : ""}</span>
+        <span>进度 ${item.progress}/${item.target}${item.unlockedAt ? ` / 完成于 ${formatTime(item.unlockedAt)}` : ""}</span>
       </div>
-      <span class="tag ${item.unlocked ? "warn" : ""}">${item.status}</span>
+      <span class="tag ${item.unlocked ? "warn" : ""}">${item.unlocked ? "已完成" : "未完成"}</span>
     </div>
   `).join("");
 }
@@ -6748,7 +8888,7 @@ function selectScenarioById(scenarioId) {
 function renderCompliance(compliance = state.data.compliance) {
   if (!nodes.complianceStatus || !nodes.complianceChecklist) return;
   if (!compliance) {
-    nodes.complianceStatus.textContent = "进入试用后自动确认教育风险说明。";
+    nodes.complianceStatus.textContent = "进入学习体验后自动确认教育风险说明。";
     nodes.complianceChecklist.innerHTML = "";
     if (nodes.acknowledgeCompliance) nodes.acknowledgeCompliance.disabled = true;
     return;
@@ -6766,7 +8906,7 @@ function renderCompliance(compliance = state.data.compliance) {
 
 function renderSession() {
   const session = state.data.session;
-  const roleLabel = session?.role === "admin" ? "管理员" : session?.role === "student" ? "试用模式" : "试用入口";
+  const roleLabel = session?.role === "admin" ? "管理员" : session?.role === "student" ? "学习体验" : "学习入口";
   nodes.accountPlan.textContent = roleLabel;
   if (nodes.loginStatus) {
     nodes.loginStatus.textContent = session
@@ -7703,7 +9843,7 @@ async function refreshFriendProviderStatus() {
       </div>
     `;
   } catch (error) {
-    nodes.friendProviderStatus.innerHTML = `<p>AI 模式检查失败：${escapeHtml(error.message)}。当前仍按本地 demo / mock provider 试用处理。</p>`;
+    nodes.friendProviderStatus.innerHTML = `<p>AI 模式检查失败：${escapeHtml(error.message)}。当前仍按本地 demo / mock provider 体验处理。</p>`;
   }
 }
 
@@ -12186,13 +14326,13 @@ async function submitFriendTrialFeedback() {
       `哪里看不懂：${confusing || "未填写"}`,
       `哪一步有帮助：${helpful || "未填写"}`,
       `是否愿意再练一次：${continueReason || "未填写"}`,
-      "说明：这是一条用户试用反馈，只评价学习流程，不评价策略收益。",
+      "说明：这是一条学习体验反馈，只评价学习流程，不评价策略收益。",
     ].join("\n");
     const result = await api("/api/support/tickets", {
       method: "POST",
       body: JSON.stringify({
         category: "learning",
-        subject: "用户试用反馈：学习流程是否有帮助",
+        subject: "学习体验反馈：学习流程是否有帮助",
         message,
       }),
     });
@@ -12530,9 +14670,31 @@ function bindEvents() {
     button.addEventListener("click", () => setView(button.dataset.jump));
   });
   document.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-jump]");
+    if (!button) return;
+    event.preventDefault();
+    setView(button.dataset.jump);
+  });
+  document.addEventListener("click", (event) => {
     const button = event.target.closest("[data-scroll-target]");
     if (!button) return;
     document.querySelector(button.dataset.scrollTarget)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+  document.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-quick-start-answer]");
+    if (!button) return;
+    if (state.selected === null) {
+      const firstTrainingOption = nodes.options?.querySelector(".option-btn");
+      firstTrainingOption?.click();
+    }
+    if (nodes.planInput && !nodes.planInput.value.trim()) {
+      nodes.planInput.value = trainingPlanExample(currentScenario());
+      renderTrainingFocusRail();
+    }
+    document.querySelector("#decisionArea")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    setTimeout(() => {
+      nodes.planInput?.focus();
+    }, 250);
   });
   document.addEventListener("click", (event) => {
     const button = event.target.closest("[data-coach-details-toggle]");
@@ -12551,6 +14713,12 @@ function bindEvents() {
     if (!button) return;
     state.teachingDetailsExpanded = !state.teachingDetailsExpanded;
     renderTeachingIntro(currentScenario());
+  });
+  document.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-today-practice-scenario]");
+    if (!button) return;
+    selectScenarioById(button.dataset.todayPracticeScenario);
+    document.querySelector("#teachingIntroPanel")?.scrollIntoView({ behavior: "smooth", block: "start" });
   });
   document.addEventListener("click", (event) => {
     const button = event.target.closest("[data-plan-helper]");

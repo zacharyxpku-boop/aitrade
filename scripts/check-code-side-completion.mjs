@@ -76,7 +76,7 @@ const requiredContent = [
   ["index.html", "loginDemo"],
   ["index.html", "friendTrialIntro"],
   ["index.html", "AI 交易教育训练场，不荐股，不实盘"],
-  ["index.html", "一键进入、训练、回放、AI复盘、回测误区、反馈"],
+  ["index.html", "friendStartLogin"],
   ["index.html", "本地 demo / mock provider"],
   ["index.html", "data-view=\"trainer\""],
   ["index.html", "teachingEvolutionLabList"],
