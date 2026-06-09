@@ -1646,11 +1646,26 @@ function scenarioQualitySummary(scenarios = state.data?.scenarios || []) {
   };
 }
 
+function learnerDataCredibilitySummary(scenarios = state.data?.scenarios || []) {
+  const sources = scenarios.map((scenario) => scenario.source || {});
+  const marketSources = sources.map((source) => source.marketData || {});
+  const newsSources = sources.map((source) => source.news || {});
+  const demoMarket = marketSources.filter((source) => source.isDemo !== false || source.license === "internal-demo-only" || !source.license).length;
+  const demoNews = newsSources.filter((source) => source.isDemo !== false || source.license === "internal-demo-only" || !source.license).length;
+  return {
+    eventContextReady: "GDELT / SEC 可先做历史事件上下文预览，但要保留来源、时间戳和引用边界。",
+    marketPipelinePreview: `${demoMarket}/${scenarios.length || 0} 道题仍是演示行情；Stooq/公开行情只用于管线预览，不证明商业授权。`,
+    newsContextPreview: `${demoNews}/${scenarios.length || 0} 道题仍是演示新闻/情绪；真实新闻情绪进入产品前要做条款、归因和留存复核。`,
+    contractGap: "真实 1D/4H/H1/15m 历史K线训练，需要授权行情供应商、展示/缓存权利和延迟/实时状态披露。",
+  };
+}
+
 function renderTrainingLevelPanel(lesson = currentScenario()) {
   if (!nodes.trainingLevelPanel) return;
   const levels = trainingLevelMap(state.data?.scenarios || [], lesson?.id);
   const totalScenarioCount = state.data?.scenarios?.length || 0;
   const quality = scenarioQualitySummary(state.data?.scenarios || []);
+  const dataCredibility = learnerDataCredibilitySummary(state.data?.scenarios || []);
   nodes.trainingLevelPanel.innerHTML = `
     <div class="training-level-head">
       <div>
@@ -1679,6 +1694,18 @@ function renderTrainingLevelPanel(lesson = currentScenario()) {
         <span><b>新闻情绪题</b>${quality.contextCount} 道带事件/情绪背景；只训练边界，不当信号。</span>
         <span><b>来源标签</b>${quality.sourceLabeledCount}/${quality.total} 道有来源记录；demo 必须继续显式标注。</span>
         <span><b>授权缺口</b>${quality.demoCount} 道仍是演示/公开预览级数据，商业化前要补授权历史源。</span>
+      </div>
+    </div>
+    <div class="learner-data-credibility" aria-label="数据可信度摘要">
+      <div>
+        <strong>数据可信度摘要</strong>
+        <span>公开数据可以先帮你复原历史背景，但不能冒充已授权商业行情。</span>
+      </div>
+      <div class="learner-data-credibility-grid">
+        <span><b>事件上下文</b>${escapeHtml(dataCredibility.eventContextReady)}</span>
+        <span><b>行情预览</b>${escapeHtml(dataCredibility.marketPipelinePreview)}</span>
+        <span><b>新闻情绪</b>${escapeHtml(dataCredibility.newsContextPreview)}</span>
+        <span><b>授权缺口</b>${escapeHtml(dataCredibility.contractGap)}</span>
       </div>
     </div>
     <p class="muted-note">这是体验题库地图，不是完整商业题库；后续需要继续补各层级题量、真实历史时间戳、授权行情、授权新闻和情绪数据。</p>

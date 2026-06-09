@@ -268,6 +268,12 @@ async function runViewport(name, width, height, mobile = false) {
         && [...questionBankQuality.querySelectorAll(".question-bank-quality-grid span")].every((item) => (
           item.querySelector("b")?.innerText.trim().length >= 2 && item.innerText.trim().length >= 8
         ));
+      const learnerDataCredibility = document.querySelector(".learner-data-credibility");
+      const learnerDataCredibilityOk = Boolean(learnerDataCredibility)
+        && learnerDataCredibility.querySelectorAll(".learner-data-credibility-grid span").length === 4
+        && [...learnerDataCredibility.querySelectorAll(".learner-data-credibility-grid span")].every((item) => (
+          item.querySelector("b")?.innerText.trim().length >= 2 && item.innerText.trim().length >= 12
+        ));
       const trainerSourceOk = Boolean(trainerSourceCard)
         && trainerSourceCard.querySelectorAll(".source-trust-grid article").length >= 3
         && trainerSourceText.includes("行情K线")
@@ -345,6 +351,7 @@ async function runViewport(name, width, height, mobile = false) {
         professionalReadingOk,
         historicalContextOk,
         questionBankQualityOk,
+        learnerDataCredibilityOk,
         trainerSourceOk,
         replaySourceOk,
         hasBoundaryCopy: boundaryCopySeen,
@@ -362,6 +369,7 @@ async function runViewport(name, width, height, mobile = false) {
     if (!result.professionalReadingOk) throw new Error(`${name} missing professional multi-timeframe reading map`);
     if (!result.historicalContextOk) throw new Error(`${name} missing historical context package`);
     if (!result.questionBankQualityOk) throw new Error(`${name} missing question bank quality map`);
+    if (!result.learnerDataCredibilityOk) throw new Error(`${name} missing learner data credibility summary`);
     if (!result.trainerSourceOk) throw new Error(`${name} missing trainer source transparency card`);
     if (!result.replaySourceOk) throw new Error(`${name} missing replay source transparency card`);
     if (!result.hasBoundaryCopy) throw new Error(`${name} missing education-only boundary copy`);

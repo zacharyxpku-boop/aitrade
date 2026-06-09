@@ -54,6 +54,7 @@ requireIncludes("live app.js", app.text, [
   "professional-reading-map",
   "historical-context-strip",
   "question-bank-quality",
+  "learner-data-credibility",
   "courseRoadmapHtml",
   "sourceCardHtml",
   "educationOnly",
@@ -67,6 +68,7 @@ requireIncludes("live styles.css", styles.text, [
   ".professional-reading-map",
   ".historical-context-strip",
   ".question-bank-quality",
+  ".learner-data-credibility",
 ]);
 
 requireExcludes("live /friend-trial", page.text, [
