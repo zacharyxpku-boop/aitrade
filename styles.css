@@ -1373,6 +1373,49 @@ ol {
   font-size: 13px;
 }
 
+.replay-homework-card {
+  display: grid;
+  gap: 9px;
+  border: 1px solid #d6e6d1;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fff;
+}
+
+.replay-homework-card > strong {
+  color: var(--ink);
+}
+
+.replay-homework-card ol {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.replay-homework-card li {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 9px;
+  background: #f9fcf6;
+}
+
+.replay-homework-card b {
+  color: var(--accent-strong);
+  font-size: 13px;
+}
+
+.replay-homework-card span {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
 .training-level-card {
   display: grid;
   gap: 5px;
@@ -3412,6 +3455,7 @@ textarea {
   .backtest-metric-plain-grid,
   .backtest-everyday-grid,
   .replay-bridge-grid,
+  .replay-homework-card ol,
   .pre-answer-warning,
   .correction-path-card,
   .mistake-trend-card,

@@ -2333,6 +2333,15 @@ function renderReplayBridge(lesson, { step, isLastTraining } = {}) {
       <span><b>这次回放任务</b>${escapeHtml(mission)}</span>
       <span><b>写答案格式</b>当时看到什么 → 还不知道什么 → 错了在哪里停 → 我现在不做什么</span>
     </div>
+    <div class="replay-homework-card" aria-label="同题回放作业">
+      <strong>同题回放作业</strong>
+      <ol>
+        <li><b>遮住未来</b><span>当前只看 ${step || 0} 根K线，先写当时可见证据。</span></li>
+        <li><b>重写答案</b><span>不用刚才的结论，重新写结构、失效条件和不做条件。</span></li>
+        <li><b>对照批改</b><span>只检查刚才 AI 指出的最大问题有没有被修正。</span></li>
+        <li><b>带回复盘</b><span>保存回放笔记后，再去 AI 复盘看下一次训练任务。</span></li>
+      </ol>
+    </div>
     <small>回放只训练过程，不评价策略收益，不输出荐股、实盘信号或真实资金动作。</small>
   `;
 }

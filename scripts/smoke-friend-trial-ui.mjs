@@ -311,6 +311,14 @@ async function runViewport(name, width, height, mobile = false) {
         && replaySourceText.includes("行情K线")
         && replaySourceText.includes("新闻/情绪")
         && replaySourceText.includes("AI批改");
+      const replayHomeworkCard = document.querySelector(".replay-homework-card");
+      const replayHomeworkText = replayHomeworkCard?.innerText || "";
+      const replayHomeworkOk = Boolean(replayHomeworkCard)
+        && replayHomeworkCard.querySelectorAll("li").length === 4
+        && replayHomeworkText.includes("遮住未来")
+        && replayHomeworkText.includes("重写答案")
+        && replayHomeworkText.includes("对照批改")
+        && replayHomeworkText.includes("带回复盘");
 
       click('.nav-item[data-view="coach"]');
       await waitFor(() => document.body.innerText.includes("AI复盘") || document.body.innerText.includes("AI 复盘"), "coach view");
@@ -374,6 +382,7 @@ async function runViewport(name, width, height, mobile = false) {
         shortPlanSubmitOk,
         trainerSourceOk,
         replaySourceOk,
+        replayHomeworkOk,
         hasBoundaryCopy: boundaryCopySeen,
         hasFeedbackConfirmation: feedbackConfirmed,
         curriculumHasLearningCopy: curriculumText.includes("课程路径") || curriculumText.includes("学习路径"),
@@ -395,6 +404,7 @@ async function runViewport(name, width, height, mobile = false) {
     if (!result.shortPlanSubmitOk) throw new Error(`${name} short training plan did not submit into coach review`);
     if (!result.trainerSourceOk) throw new Error(`${name} missing trainer source transparency card`);
     if (!result.replaySourceOk) throw new Error(`${name} missing replay source transparency card`);
+    if (!result.replayHomeworkOk) throw new Error(`${name} missing same-scenario replay homework`);
     if (!result.hasBoundaryCopy) throw new Error(`${name} missing education-only boundary copy`);
     if (!result.hasFeedbackConfirmation) throw new Error(`${name} feedback confirmation missing`);
     if (!result.curriculumHasLearningCopy) throw new Error(`${name} missing curriculum learning copy`);

@@ -77,6 +77,7 @@ requireIncludes("live app.js", app.text, [
   "question-bank-quality",
   "learner-data-credibility",
   "training-plan-gap-card",
+  "replay-homework-card",
   "Post-submit learning panel refresh skipped",
   "friendlyApiErrorMessage",
   "需要先进入学习体验",
@@ -96,6 +97,7 @@ requireIncludes("live styles.css", styles.text, [
   ".question-bank-quality",
   ".learner-data-credibility",
   ".training-plan-gap-card",
+  ".replay-homework-card",
 ]);
 
 const bootstrap = await fetchJson("/api/bootstrap");
