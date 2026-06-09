@@ -2038,34 +2038,25 @@ function missingTrainingPlanItems(review = {}) {
 
 async function submitDecision() {
   if (state.selected === null) {
-    nodes.planInput.focus();
-    nodes.planInput.placeholder = "先选择一个判断，再写一句理由、止损或观望条件。";
+    nodes.feedbackPanel.hidden = false;
+    nodes.feedbackTitle.textContent = "先选一个训练判断";
+    nodes.feedbackBody.textContent = "先点一个选项，再提交给 AI 复盘。训练计划可以先写得不完整，系统会在复盘里指出缺口。";
+    if (nodes.trainingResultActions) {
+      nodes.trainingResultActions.innerHTML = `
+        <article class="coach-review-card" aria-label="提交前选择提示">
+          <div>
+            <p class="eyebrow">还差一步</p>
+            <h4>请选择 A / B / C 中的一个训练动作</h4>
+          </div>
+          <small>这里不是实盘下单，也不是让你证明策略赚钱；只是记录你此刻的学习判断。</small>
+        </article>
+      `;
+    }
+    nodes.options?.scrollIntoView({ behavior: "smooth", block: "center" });
     return;
   }
   const planReview = reviewTrainingPlanText(nodes.planInput.value);
   const missingItems = missingTrainingPlanItems(planReview);
-  if (missingItems.length) {
-    nodes.feedbackPanel.hidden = false;
-    nodes.feedbackTitle.textContent = "先补完整训练计划";
-    nodes.feedbackBody.textContent = "这不是答题闯关。先把观察、结构、失效条件和消息/情绪边界写完整，再提交给 AI 复盘。";
-    if (nodes.trainingResultActions) {
-      nodes.trainingResultActions.innerHTML = `
-        <article class="coach-review-card" aria-label="提交前教学检查">
-          <div>
-            <p class="eyebrow">提交前检查</p>
-            <h4>你还缺 ${missingItems.length} 块学习证据</h4>
-          </div>
-          <ul class="clean-list">
-            ${missingItems.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
-          </ul>
-          <small>系统只评价学习过程，不评价策略收益，也不输出实盘建议。</small>
-        </article>
-      `;
-    }
-    renderTrainingFocusRail();
-    nodes.planInput.focus();
-    return;
-  }
   nodes.submitBtn.disabled = true;
   try {
     await ensureTrialAccess();
@@ -2105,6 +2096,11 @@ async function submitDecision() {
         learningPath: result.learningPath,
       }),
       createdAt: result.attempt?.createdAt || new Date().toISOString(),
+      missingPlanItems: missingItems,
+    };
+    result.feedback.trainingPlanReview = {
+      missingItems,
+      review: planReview,
     };
     state.lastTrainingDiagnosis = buildSharpDiagnosis(result.feedback, state.lastCompletedTraining);
     renderFeedback(result.feedback, result.nextTraining, result.courseProgressUpdates || []);
@@ -2154,6 +2150,31 @@ function renderFeedback(feedback, nextTraining = null, courseProgressUpdates = s
   if (nodes.trainingResultActions) {
     const sharpDiagnosis = state.lastTrainingDiagnosis || buildSharpDiagnosis(feedback, lastTraining);
     const cadence = learningCadenceGate();
+    const missingPlanItems = Array.isArray(feedback.trainingPlanReview?.missingItems)
+      ? feedback.trainingPlanReview.missingItems
+      : [];
+    const planGapHtml = missingPlanItems.length
+      ? `
+        <article class="training-plan-gap-card" aria-label="训练计划缺口">
+          <div>
+            <p class="eyebrow">已提交，下面是学习缺口</p>
+            <h4>你的训练能继续，但计划还缺 ${missingPlanItems.length} 项证据</h4>
+          </div>
+          <ul class="clean-list">
+            ${missingPlanItems.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+          </ul>
+          <small>这不是提交失败；这是 AI 复盘把答案拆开批改，帮助你下一次写得更完整。</small>
+        </article>
+      `
+      : `
+        <article class="training-plan-gap-card is-pass" aria-label="训练计划缺口">
+          <div>
+            <p class="eyebrow">训练计划通过基础检查</p>
+            <h4>观察、失效和消息/情绪边界都有记录。</h4>
+          </div>
+          <small>继续去回放页按时间顺序验证，避免用未来走势倒推。</small>
+        </article>
+      `;
     const nextActionHtml = !cadence.shouldReplayFirst && nextTraining?.scenario
       ? `<button type="button" data-training-result-action="next" data-scenario-id="${nextTraining.scenario.id}">再练一题</button>`
       : "";
@@ -2170,6 +2191,7 @@ function renderFeedback(feedback, nextTraining = null, courseProgressUpdates = s
           <div><dt>下一次只改一件事</dt><dd>${escapeHtml(lastTraining.nextPractice || nextPracticeText({ feedback, nextTraining, learningPath: state.data.learningPath }))}</dd></div>
         </dl>
       </article>
+      ${planGapHtml}
       <article class="sharp-diagnosis-card" aria-label="本题错因雷达">
         ${sharpDiagnosisHtml(sharpDiagnosis)}
       </article>

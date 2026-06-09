@@ -281,12 +281,15 @@ async function runViewport(name, width, height, mobile = false) {
         && /demo|mock|internal-demo|演示|本地演示/i.test(trainerSourceText);
       snapshot("afterStart");
 
-      click("[data-quick-start-answer]");
+      click("#options .option-btn");
+      setValue("#planInput", "先观望");
       await waitFor(() => [...document.querySelectorAll("#options .option-btn")].some((item) => item.getAttribute("aria-pressed") === "true"), "quick answer option");
-      snapshot("afterQuick");
+      snapshot("afterShortPlan");
 
       click("#submitBtn");
       await waitFor(() => document.querySelector("#feedbackPanel")?.innerText.includes("AI 教练批改单"), "coach review sheet");
+      const shortPlanSubmitOk = Boolean(document.querySelector(".coach-review-sheet"))
+        && Boolean(document.querySelector(".training-plan-gap-card"));
       snapshot("afterSubmit");
 
       click('[data-training-result-action="replay"]');
@@ -352,6 +355,7 @@ async function runViewport(name, width, height, mobile = false) {
         historicalContextOk,
         questionBankQualityOk,
         learnerDataCredibilityOk,
+        shortPlanSubmitOk,
         trainerSourceOk,
         replaySourceOk,
         hasBoundaryCopy: boundaryCopySeen,
@@ -370,6 +374,7 @@ async function runViewport(name, width, height, mobile = false) {
     if (!result.historicalContextOk) throw new Error(`${name} missing historical context package`);
     if (!result.questionBankQualityOk) throw new Error(`${name} missing question bank quality map`);
     if (!result.learnerDataCredibilityOk) throw new Error(`${name} missing learner data credibility summary`);
+    if (!result.shortPlanSubmitOk) throw new Error(`${name} short training plan did not submit into coach review`);
     if (!result.trainerSourceOk) throw new Error(`${name} missing trainer source transparency card`);
     if (!result.replaySourceOk) throw new Error(`${name} missing replay source transparency card`);
     if (!result.hasBoundaryCopy) throw new Error(`${name} missing education-only boundary copy`);

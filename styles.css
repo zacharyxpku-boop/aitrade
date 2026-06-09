@@ -988,6 +988,31 @@ ol {
   color: var(--muted);
 }
 
+.training-plan-gap-card {
+  display: grid;
+  gap: 10px;
+  border: 1px solid #eed3a7;
+  border-radius: 8px;
+  padding: 14px;
+  background: #fff8ec;
+}
+
+.training-plan-gap-card h4 {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.35;
+}
+
+.training-plan-gap-card small {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.training-plan-gap-card.is-pass {
+  border-color: #cfe3d6;
+  background: #f4fbf6;
+}
+
 .coach-review-sheet {
   position: relative;
   display: grid;
