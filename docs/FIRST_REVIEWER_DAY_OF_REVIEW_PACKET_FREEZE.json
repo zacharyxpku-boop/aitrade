@@ -1,0 +1,746 @@
+{
+  "generatedAt": "2026-06-19T09:39:02.134Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "freezeReady": true,
+  "freezeMode": "frozen_pre_write_day_of_review_packet",
+  "realStatusPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "realStatusOverlayPresent": false,
+  "frozenSteps": 40,
+  "missingFieldRows": 0,
+  "crossLinksChecked": 6,
+  "failedCrossLinks": 0,
+  "completeNoteCards": 0,
+  "approvalReviewCandidates": 0,
+  "internalTrialReady": false,
+  "launchReady": false,
+  "freezeRows": [
+    {
+      "order": 1,
+      "phase": "Operator index",
+      "inputFile": "docs/FIRST_REVIEWER_OPERATOR_INDEX.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-operator-index",
+      "humanAction": "Start from the operator index before opening other first-reviewer files.",
+      "expectedOutput": "Future validation output only unless a deliberately human-created real overlay exists.",
+      "failureRoute": "Stop if the step is treated as executable evidence while the real overlay is absent.",
+      "category": "future_post_write_validation_gate",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 2,
+      "phase": "One-page runbook",
+      "inputFile": "docs/FIRST_REVIEWER_ONE_PAGE_RUNBOOK.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-one-page-runbook",
+      "humanAction": "Use this as the printable day-of-review sequence and hard-stop checklist.",
+      "expectedOutput": "Future validation output only unless a deliberately human-created real overlay exists.",
+      "failureRoute": "Stop if the step is treated as executable evidence while the real overlay is absent.",
+      "category": "future_post_write_validation_gate",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 3,
+      "phase": "Runbook misuse guard",
+      "inputFile": "docs/FIRST_REVIEWER_RUNBOOK_NEGATIVE_CASES.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-runbook-negative-cases",
+      "humanAction": "Keep the runbook misuse negative cases passing before using the runbook in review preparation.",
+      "expectedOutput": "Generated control output only; temporary files may be used, real overlay must remain absent.",
+      "failureRoute": "Stop if temporary control output touches the real overlay or creates readiness, release, approval, or grade promotion.",
+      "category": "temporary_control_output_only",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 4,
+      "phase": "Pre-write sample dossier",
+      "inputFile": "docs/FIRST_REVIEWER_PREWRITE_SAMPLE_DOSSIER.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-prewrite-sample-dossier",
+      "humanAction": "Use the dossier as a read-only handoff packet for the first 12 lesson cards and gate sequence.",
+      "expectedOutput": "Future validation output only unless a deliberately human-created real overlay exists.",
+      "failureRoute": "Stop if the step is treated as executable evidence while the real overlay is absent.",
+      "category": "future_post_write_validation_gate",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 5,
+      "phase": "Filled-notes positive control v2",
+      "inputFile": "docs/FIRST_REVIEWER_FILLED_NOTES_POSITIVE_CONTROL_V2.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-filled-notes-positive-control-v2",
+      "humanAction": "Use the temporary-file control to verify complete notes can become separate-approval candidates only.",
+      "expectedOutput": "Generated control output only; temporary files may be used, real overlay must remain absent.",
+      "failureRoute": "Stop if temporary control output touches the real overlay or creates readiness, release, approval, or grade promotion.",
+      "category": "temporary_control_output_only",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 6,
+      "phase": "Post-write approval drill",
+      "inputFile": "docs/FIRST_REVIEWER_POST_WRITE_APPROVAL_DRILL.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-post-write-approval-drill",
+      "humanAction": "Use the temporary drill to verify approval-review candidates remain blocked from release, launch, grade promotion, and production readiness.",
+      "expectedOutput": "Generated control output only; temporary files may be used, real overlay must remain absent.",
+      "failureRoute": "Stop if temporary control output touches the real overlay or creates readiness, release, approval, or grade promotion.",
+      "category": "temporary_control_output_only",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 7,
+      "phase": "Direct-candidate post-write drill",
+      "inputFile": "docs/FIRST_REVIEWER_DIRECT_CANDIDATE_POST_WRITE_DRILL.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-direct-candidate-post-write-drill",
+      "humanAction": "Use the temporary drill to validate sourceFitNotes boundaries for BEA, BLS, CFTC, and SEC candidate rows.",
+      "expectedOutput": "Generated control output only; temporary files may be used, real overlay must remain absent.",
+      "failureRoute": "Stop if temporary control output touches the real overlay or creates readiness, release, approval, or grade promotion.",
+      "category": "temporary_control_output_only",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 8,
+      "phase": "Post-write validation simulator",
+      "inputFile": "docs/FIRST_REVIEWER_POST_WRITE_VALIDATION_SIMULATOR.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-post-write-validation-simulator",
+      "humanAction": "Use the temporary simulator to rehearse completion, evidence intake, separate approval, and release-drift guards after a future overlay exists.",
+      "expectedOutput": "Generated control output only; temporary files may be used, real overlay must remain absent.",
+      "failureRoute": "Stop if temporary control output touches the real overlay or creates readiness, release, approval, or grade promotion.",
+      "category": "temporary_control_output_only",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 9,
+      "phase": "Sequence consistency gate",
+      "inputFile": "docs/FIRST_REVIEWER_SEQUENCE_CONSISTENCY.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-sequence-consistency",
+      "humanAction": "Use the sequence gate to confirm execution steps, operator phases, post-write commands, and packet order remain contiguous.",
+      "expectedOutput": "Generated control output only; temporary files may be used, real overlay must remain absent.",
+      "failureRoute": "Stop if temporary control output touches the real overlay or creates readiness, release, approval, or grade promotion.",
+      "category": "temporary_control_output_only",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 10,
+      "phase": "Day-of-review packet freeze",
+      "inputFile": "docs/FIRST_REVIEWER_DAY_OF_REVIEW_PACKET_FREEZE.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-day-of-review-packet-freeze",
+      "humanAction": "Use the frozen packet to confirm every first-reviewer step has input, expected output, failure route, and forbidden actions.",
+      "expectedOutput": "Future validation output only unless a deliberately human-created real overlay exists.",
+      "failureRoute": "Stop if the step is treated as executable evidence while the real overlay is absent.",
+      "category": "future_post_write_validation_gate",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 11,
+      "phase": "Orient",
+      "inputFile": "docs/FIRST_REVIEWER_HUMAN_EXECUTION_BUNDLE.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-human-execution-bundle",
+      "humanAction": "Use this page as the reviewer execution order after the operator index.",
+      "expectedOutput": "Future validation output only unless a deliberately human-created real overlay exists.",
+      "failureRoute": "Stop if the step is treated as executable evidence while the real overlay is absent.",
+      "category": "future_post_write_validation_gate",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 12,
+      "phase": "Printable checklist",
+      "inputFile": "docs/FIRST_REVIEWER_PRINTABLE_CHECKLIST_PACK.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-printable-checklist-pack",
+      "humanAction": "Print or open the per-lesson checklist pack for manual tracking.",
+      "expectedOutput": "Orientation/index output only; next reviewer file is identified.",
+      "failureRoute": "Stop if the index points to missing files, missing commands, or unclear next actions.",
+      "category": "orientation_or_index",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 13,
+      "phase": "Handoff",
+      "inputFile": "docs/FIRST_REVIEWER_HANDOFF.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-handoff",
+      "humanAction": "Confirm scope, commands, and disallowed status language.",
+      "expectedOutput": "Future validation output only unless a deliberately human-created real overlay exists.",
+      "failureRoute": "Stop if the step is treated as executable evidence while the real overlay is absent.",
+      "category": "future_post_write_validation_gate",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 14,
+      "phase": "Worksheet",
+      "inputFile": "docs/FIRST_REVIEWER_WORKSHEET.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-worksheet",
+      "humanAction": "Review 12 lessons, starting with the 2 high-risk rows.",
+      "expectedOutput": "Reviewer-facing input or checklist only; no real notes, approval, release, or grade change.",
+      "failureRoute": "Stop and rewrite the reviewer instruction if it could be mistaken for completed notes or approval.",
+      "category": "manual_review_input_scaffold",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 15,
+      "phase": "Source roles",
+      "inputFile": "docs/FIRST_REVIEWER_SOURCE_ROLE_DECISION_TABLE.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-source-role-decision-table",
+      "humanAction": "Classify source families before note-taking.",
+      "expectedOutput": "Reviewer-facing input or checklist only; no real notes, approval, release, or grade change.",
+      "failureRoute": "Stop and rewrite the reviewer instruction if it could be mistaken for completed notes or approval.",
+      "category": "manual_review_input_scaffold",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 16,
+      "phase": "Direct candidates",
+      "inputFile": "docs/FIRST_REVIEWER_DIRECT_CANDIDATE_CONFIRMATION_CHECKLIST.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-direct-candidate-confirmation-checklist",
+      "humanAction": "Confirm or downgrade the 5 direct candidates.",
+      "expectedOutput": "Reviewer-facing input or checklist only; no real notes, approval, release, or grade change.",
+      "failureRoute": "Stop and rewrite the reviewer instruction if it could be mistaken for completed notes or approval.",
+      "category": "manual_review_input_scaffold",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 17,
+      "phase": "Blank notes",
+      "inputFile": "docs/FIRST_REVIEWER_HUMAN_NOTE_STARTER_TEMPLATE.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-human-note-starter-template",
+      "humanAction": "Use the 72 blank fields as the note map.",
+      "expectedOutput": "Reviewer-facing input or checklist only; no real notes, approval, release, or grade change.",
+      "failureRoute": "Stop and rewrite the reviewer instruction if it could be mistaken for completed notes or approval.",
+      "category": "manual_review_input_scaffold",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 18,
+      "phase": "Safe examples",
+      "inputFile": "docs/FIRST_REVIEWER_SAFE_NOTE_EXAMPLES.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-safe-note-examples",
+      "humanAction": "Read examples for style only.",
+      "expectedOutput": "Reviewer-facing input or checklist only; no real notes, approval, release, or grade change.",
+      "failureRoute": "Stop and rewrite the reviewer instruction if it could be mistaken for completed notes or approval.",
+      "category": "manual_review_input_scaffold",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 19,
+      "phase": "Start gate",
+      "inputFile": "docs/FIRST_REVIEWER_HUMAN_REVIEW_START_CHECKLIST.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-human-review-start-checklist",
+      "humanAction": "Complete manual boxes before any real overlay write.",
+      "expectedOutput": "Manual gate remains blocked until explicit human note-taking decision exists.",
+      "failureRoute": "Stop if write/start permission appears without explicit human reviewer intent.",
+      "category": "manual_decision_gate",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 20,
+      "phase": "Creation gate",
+      "inputFile": "docs/FIRST_REVIEWER_REAL_OVERLAY_CREATION_CHECKLIST.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-real-overlay-creation-checklist",
+      "humanAction": "Preview and intentionally decide whether a human will start note-taking.",
+      "expectedOutput": "Manual gate remains blocked until explicit human note-taking decision exists.",
+      "failureRoute": "Stop if write/start permission appears without explicit human reviewer intent.",
+      "category": "manual_decision_gate",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 21,
+      "phase": "Post-write route",
+      "inputFile": "docs/FIRST_REVIEWER_POST_WRITE_VALIDATION_PLAYBOOK.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-post-write-validation-playbook",
+      "humanAction": "After real overlay creation, run the validation sequence.",
+      "expectedOutput": "Manual gate remains blocked until explicit human note-taking decision exists.",
+      "failureRoute": "Stop if write/start permission appears without explicit human reviewer intent.",
+      "category": "manual_decision_gate",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 22,
+      "phase": "Diff audit",
+      "inputFile": "docs/FIRST_REVIEWER_REAL_OVERLAY_DIFF_AUDIT.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-real-overlay-diff-audit",
+      "humanAction": "Compare any real overlay with the blank template.",
+      "expectedOutput": "Future validation output only unless a deliberately human-created real overlay exists.",
+      "failureRoute": "Stop if the step is treated as executable evidence while the real overlay is absent.",
+      "category": "future_post_write_validation_gate",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 23,
+      "phase": "Evidence intake",
+      "inputFile": "docs/FIRST_REVIEWER_EVIDENCE_INTAKE_SUMMARY.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-evidence-intake-summary",
+      "humanAction": "Summarize complete notes, blockers, direct-candidate status, and candidates for separate approval review.",
+      "expectedOutput": "Manual gate remains blocked until explicit human note-taking decision exists.",
+      "failureRoute": "Stop if write/start permission appears without explicit human reviewer intent.",
+      "category": "manual_decision_gate",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 24,
+      "phase": "Separate approval gate",
+      "inputFile": "docs/FIRST_REVIEWER_SEPARATE_APPROVAL_REVIEW_GATE.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-separate-approval-review-gate",
+      "humanAction": "Keep complete-note candidates behind a separate manual approval review.",
+      "expectedOutput": "Future validation output only unless a deliberately human-created real overlay exists.",
+      "failureRoute": "Stop if the step is treated as executable evidence while the real overlay is absent.",
+      "category": "future_post_write_validation_gate",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 25,
+      "phase": "Release drift guard",
+      "inputFile": "docs/FIRST_REVIEWER_RELEASE_READINESS_NEGATIVE_CASES.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-release-readiness-negative-cases",
+      "humanAction": "Prove approval/release/production/commercial-ready drift is rejected.",
+      "expectedOutput": "Generated control output only; temporary files may be used, real overlay must remain absent.",
+      "failureRoute": "Stop if temporary control output touches the real overlay or creates readiness, release, approval, or grade promotion.",
+      "category": "temporary_control_output_only",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 26,
+      "phase": "Launch readiness dashboard",
+      "inputFile": "docs/FIRST_REVIEWER_LAUNCH_READINESS_DASHBOARD.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-launch-readiness-dashboard",
+      "humanAction": "Review current blockers to internal trial, launch, and production readiness.",
+      "expectedOutput": "Manual gate remains blocked until explicit human note-taking decision exists.",
+      "failureRoute": "Stop if write/start permission appears without explicit human reviewer intent.",
+      "category": "manual_decision_gate",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 27,
+      "phase": "Rehearsal checklist",
+      "inputFile": "docs/FIRST_REVIEWER_REHEARSAL_CHECKLIST.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-rehearsal-checklist",
+      "humanAction": "Practice the 12 lesson cards, 72 note fields, and 5 direct-candidate decisions before real note-taking.",
+      "expectedOutput": "Reviewer-facing input or checklist only; no real notes, approval, release, or grade change.",
+      "failureRoute": "Stop and rewrite the reviewer instruction if it could be mistaken for completed notes or approval.",
+      "category": "manual_review_input_scaffold",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 28,
+      "phase": "Direct candidate decisions",
+      "inputFile": "docs/FIRST_REVIEWER_DIRECT_CANDIDATE_DECISION_WORKSHEET.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-direct-candidate-decision-worksheet",
+      "humanAction": "Use the blank worksheet to decide confirm, downgrade, or blocked for each direct-candidate source role.",
+      "expectedOutput": "Reviewer-facing input or checklist only; no real notes, approval, release, or grade change.",
+      "failureRoute": "Stop and rewrite the reviewer instruction if it could be mistaken for completed notes or approval.",
+      "category": "manual_review_input_scaffold",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 29,
+      "phase": "Source-fit decision summary",
+      "inputFile": "docs/FIRST_REVIEWER_SOURCE_FIT_DECISION_SUMMARY.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-source-fit-decision-summary",
+      "humanAction": "Use the one-page summary to compare confirm, downgrade, and block criteria before writing sourceFitNotes.",
+      "expectedOutput": "Reviewer-facing input or checklist only; no real notes, approval, release, or grade change.",
+      "failureRoute": "Stop and rewrite the reviewer instruction if it could be mistaken for completed notes or approval.",
+      "category": "manual_review_input_scaffold",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 30,
+      "phase": "SourceFitNotes card pack",
+      "inputFile": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_CARD_PACK.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-source-fit-notes-card-pack",
+      "humanAction": "Print or copy the blank sourceFitNotes cards for the 5 direct candidates and leave all fields empty until real review.",
+      "expectedOutput": "Reviewer-facing input or checklist only; no real notes, approval, release, or grade change.",
+      "failureRoute": "Stop and rewrite the reviewer instruction if it could be mistaken for completed notes or approval.",
+      "category": "manual_review_input_scaffold",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 31,
+      "phase": "SourceFitNotes card misuse guard",
+      "inputFile": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_CARD_NEGATIVE_CASES.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-source-fit-notes-card-negative-cases",
+      "humanAction": "Run simulated pollution cases before any future sourceFitNotes are written.",
+      "expectedOutput": "Generated control output only; temporary files may be used, real overlay must remain absent.",
+      "failureRoute": "Stop if temporary control output touches the real overlay or creates readiness, release, approval, or grade promotion.",
+      "category": "temporary_control_output_only",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 32,
+      "phase": "SourceFitNotes positive matrix",
+      "inputFile": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_POSITIVE_MATRIX.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-source-fit-notes-positive-matrix",
+      "humanAction": "Read sample-only confirm, downgrade, and block note shapes before future human note writing.",
+      "expectedOutput": "Manual gate remains blocked until explicit human note-taking decision exists.",
+      "failureRoute": "Stop if write/start permission appears without explicit human reviewer intent.",
+      "category": "manual_decision_gate",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 33,
+      "phase": "Source fit notes acceptance",
+      "inputFile": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_ACCEPTANCE.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-source-fit-notes-acceptance",
+      "humanAction": "After future real sourceFitNotes are written, check that each note has a valid decision, source role, claim, rewrite action, and no unsafe wording.",
+      "expectedOutput": "Reviewer-facing input or checklist only; no real notes, approval, release, or grade change.",
+      "failureRoute": "Stop and rewrite the reviewer instruction if it could be mistaken for completed notes or approval.",
+      "category": "manual_review_input_scaffold",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 34,
+      "phase": "Real overlay preflight",
+      "inputFile": "docs/FIRST_REVIEWER_REAL_OVERLAY_PREFLIGHT_SUMMARY.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-real-overlay-preflight-summary",
+      "humanAction": "Before any explicit write initializer, review the final manual and machine gates across start, creation, direct-candidate, sourceFitNotes, diff-audit, intake, and launch-readiness checks.",
+      "expectedOutput": "Reviewer-facing input or checklist only; no real notes, approval, release, or grade change.",
+      "failureRoute": "Stop and rewrite the reviewer instruction if it could be mistaken for completed notes or approval.",
+      "category": "manual_review_input_scaffold",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 35,
+      "phase": "Write readiness lock",
+      "inputFile": "docs/FIRST_REVIEWER_REAL_OVERLAY_WRITE_READINESS_LOCK.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-real-overlay-write-readiness-lock",
+      "humanAction": "Use the generated lock as the final hard stop before any real overlay write command.",
+      "expectedOutput": "Manual gate remains blocked until explicit human note-taking decision exists.",
+      "failureRoute": "Stop if write/start permission appears without explicit human reviewer intent.",
+      "category": "manual_decision_gate",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 36,
+      "phase": "Write authorization preview",
+      "inputFile": "docs/FIRST_REVIEWER_REAL_OVERLAY_WRITE_AUTHORIZATION_PREVIEW.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-real-overlay-write-authorization-preview",
+      "humanAction": "Use the generated preview to separate machine-checked gates from missing human authorization before any write command.",
+      "expectedOutput": "Orientation/index output only; next reviewer file is identified.",
+      "failureRoute": "Stop if the index points to missing files, missing commands, or unclear next actions.",
+      "category": "orientation_or_index",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 37,
+      "phase": "Day-zero write handoff",
+      "inputFile": "docs/FIRST_REVIEWER_DAY_ZERO_WRITE_HANDOFF.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-day-zero-write-handoff",
+      "humanAction": "Use the one-page handoff to review pre-write commands, human authorization blockers, write-command preview, and future post-write validation order.",
+      "expectedOutput": "Manual gate remains blocked until explicit human note-taking decision exists.",
+      "failureRoute": "Stop if write/start permission appears without explicit human reviewer intent.",
+      "category": "manual_decision_gate",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 38,
+      "phase": "Dry-run bundle audit",
+      "inputFile": "docs/FIRST_REVIEWER_REAL_OVERLAY_DRY_RUN_BUNDLE_AUDIT.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-real-overlay-dry-run-bundle-audit",
+      "humanAction": "Run the consistency audit tying dry-run, overwrite protection, day-zero handoff, final rehearsal, authorization preview, and write locks together.",
+      "expectedOutput": "Reviewer-facing input or checklist only; no real notes, approval, release, or grade change.",
+      "failureRoute": "Stop and rewrite the reviewer instruction if it could be mistaken for completed notes or approval.",
+      "category": "manual_review_input_scaffold",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 39,
+      "phase": "Post-write command pack",
+      "inputFile": "docs/FIRST_REVIEWER_POST_WRITE_COMMAND_PACK.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-post-write-command-pack",
+      "humanAction": "After a future real overlay exists, run the strict validation order and failure routes without skipping gates.",
+      "expectedOutput": "Future validation output only unless a deliberately human-created real overlay exists.",
+      "failureRoute": "Stop if the step is treated as executable evidence while the real overlay is absent.",
+      "category": "future_post_write_validation_gate",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    },
+    {
+      "order": 40,
+      "phase": "Final gates",
+      "inputFile": "docs/REVIEWER_NOTE_QUALITY_LINT.md",
+      "checkCommand": "npm.cmd run check:curriculum-review",
+      "humanAction": "Run note lint, completion audit, curriculum review, knowledge checks, browser checks, and full verify.",
+      "expectedOutput": "Future validation output only unless a deliberately human-created real overlay exists.",
+      "failureRoute": "Stop if the step is treated as executable evidence while the real overlay is absent.",
+      "category": "future_post_write_validation_gate",
+      "forbiddenActions": [
+        "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+        "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+        "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+        "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+        "Do not use yellow, red, or research_only sources as learner-facing evidence."
+      ]
+    }
+  ],
+  "crossLinkRows": [
+    {
+      "name": "dry-run includes freeze file",
+      "passed": true
+    },
+    {
+      "name": "dry-run includes freeze command",
+      "passed": true
+    },
+    {
+      "name": "progress dashboard includes freeze status",
+      "passed": true
+    },
+    {
+      "name": "human execution bundle points to freeze",
+      "passed": true
+    },
+    {
+      "name": "operator index points to freeze",
+      "passed": true
+    },
+    {
+      "name": "pre-write dossier includes freeze",
+      "passed": true
+    }
+  ],
+  "globalForbiddenActions": [
+    "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json from this freeze packet.",
+    "Do not treat generated prompts, examples, drills, simulators, checklists, or this freeze packet as real reviewer notes.",
+    "Do not approve lessons, set learnerFacingRelease:true, set productionReady:true, or promote generated drafts to commercial_ready.",
+    "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+    "Do not use yellow, red, or research_only sources as learner-facing evidence."
+  ],
+  "sourceReports": {
+    "dryRunPacket": "docs/FIRST_REVIEWER_DRY_RUN_PACKET.json",
+    "progressDashboard": "docs/FIRST_REVIEWER_PROGRESS_DASHBOARD.json",
+    "humanExecutionBundle": "docs/FIRST_REVIEWER_HUMAN_EXECUTION_BUNDLE.json",
+    "operatorIndex": "docs/FIRST_REVIEWER_OPERATOR_INDEX.json",
+    "onePageRunbook": "docs/FIRST_REVIEWER_ONE_PAGE_RUNBOOK.json",
+    "prewriteSampleDossier": "docs/FIRST_REVIEWER_PREWRITE_SAMPLE_DOSSIER.json",
+    "sequenceConsistency": "docs/FIRST_REVIEWER_SEQUENCE_CONSISTENCY.json",
+    "launchReadinessDashboard": "docs/FIRST_REVIEWER_LAUNCH_READINESS_DASHBOARD.json"
+  },
+  "boundary": "This day-of-review packet freeze is reviewer-facing operations scaffolding only. It does not create docs/LESSON_BATCH_REVIEW_STATUS.json, fill human notes, confirm source use, approve lessons, publish learner-facing content, change grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, guide real-money decisions, grant internal-trial readiness, launch the course, or make the product production-ready."
+}

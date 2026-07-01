@@ -1,0 +1,440 @@
+{
+  "generatedAt": "2026-06-21T22:43:54.848Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "fixtureOnly": true,
+  "templateStatus": "pack_05_positive_lint_fixture",
+  "sourceFillPack": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_05.json",
+  "packId": "local_course_p0_human_fill_pack_05",
+  "totalEntries": 4,
+  "manualTranscriptionEntries": 4,
+  "sourceReplacementEntries": 0,
+  "filledEntries": 4,
+  "readyForValidationEntries": 4,
+  "targetTaskIds": [
+    "absorb_manual_transcription_05",
+    "absorb_manual_transcription_06",
+    "absorb_manual_transcription_07",
+    "absorb_manual_transcription_08"
+  ],
+  "targetDocumentIds": [
+    "corpus_1313"
+  ],
+  "targetPageNumbers": [
+    5,
+    6,
+    7,
+    8
+  ],
+  "inputEntries": [
+    {
+      "id": "input_copy_absorb_manual_transcription_05",
+      "reviewEntryId": "review_absorb_manual_transcription_05",
+      "taskId": "absorb_manual_transcription_05",
+      "sourcePackCardId": "fill_pack_05_absorb_manual_transcription_05",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1313",
+      "pageNumber": 5,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1313/page-05.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1313/page-05.png",
+      "candidateId": "candidate_batch_02_page_01",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "positive_lint_fixture_ready",
+      "reviewerName": "Codex pack 05 lint positive-control fixture",
+      "reviewedAt": "2026-06-21T00:00:00.000Z",
+      "packQualityRequirements": {
+        "riskTermFlags": [
+          "profit_loss_language",
+          "cycle_switching_language",
+          "specific_price_levels",
+          "indicator_parameter_language",
+          "signal_language"
+        ],
+        "riskRewriteChecklist": [
+          {
+            "flag": "profit_loss_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "cycle_switching_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "specific_price_levels",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "indicator_parameter_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "signal_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          }
+        ],
+        "qualityLintRules": [
+          "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+          "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+          "riskRewriteNotes must address every riskTermFlag before validation, especially signal_language, execution_strategy_language, pending_order_language, stop_loss_language, target_area_language, profit_loss_language.",
+          "publicReferenceNotes must name public grounding needed for terminology, chart examples, cycle concepts, or case-study claims.",
+          "originalityNotes must confirm private course wording was not copied into learner-facing content."
+        ],
+        "uncertainRegions": [
+          "Exact numeric levels and percentage references need human confirmation.",
+          "The first chart annotations and several short bullets are partially legible."
+        ],
+        "candidateSummary": "This page should be rewritten as a study checklist for evidence validity: learners compare completed versus unfinished structures, review when cycle switching creates confusion, and treat indicator/level references as examples for observation rather than instructions.",
+        "warning": "Do not copy machine candidate text as human transcription. Verify against the high-resolution preview."
+      },
+      "manualInput": {
+        "humanTranscription": "Positive-control fixture only. A real reviewer would place the human-verified transcription from the high-resolution preview here. This placeholder proves the filled-copy lint and dry-run validation flow for corpus_1313; it is not private course transcription.",
+        "humanSummary": "Fixture-only education summary: cycle-switching, false precision, and case-review material should become neutral study prompts without signals, execution steps, targets, stops, or profit/loss claims.",
+        "uncertainWords": [
+          "fixture_only_not_private_course_transcription"
+        ],
+        "publicReferenceNotes": "Public reference needed: verify multi-timeframe, chart-pattern, indicator, cycle, terminology, and case-study claims against Wikipedia, official documentation, or open educational references before learner-facing use.",
+        "originalityNotes": "Original rewrite required: not copied from private course wording or the machine candidate; paraphrase as original education-only chart-literacy content.",
+        "riskRewriteNotes": "profit_loss_language: rewrite or remove this risk before learner-facing use. cycle_switching_language: rewrite or remove this risk before learner-facing use. specific_price_levels: rewrite or remove this risk before learner-facing use. indicator_parameter_language: rewrite or remove this risk before learner-facing use. signal_language: rewrite or remove this risk before learner-facing use.",
+        "checklist": {
+          "visualTextCaptured": "done",
+          "chartLabelsCaptured": "done",
+          "unclearAreasFlagged": "done",
+          "noTradingAdviceAdded": "done",
+          "publicSourceGroundingReady": "done",
+          "originalRewriteReady": "done"
+        }
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal_language, execution_strategy_language, pending_order_language, stop_loss_language, target_area_language, profit_loss_language.",
+        "Public reference notes identify terminology, chart examples, cycle concepts, or case-study claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_05_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_06",
+      "reviewEntryId": "review_absorb_manual_transcription_06",
+      "taskId": "absorb_manual_transcription_06",
+      "sourcePackCardId": "fill_pack_05_absorb_manual_transcription_06",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1313",
+      "pageNumber": 6,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1313/page-06.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1313/page-06.png",
+      "candidateId": "candidate_batch_02_page_02",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "positive_lint_fixture_ready",
+      "reviewerName": "Codex pack 05 lint positive-control fixture",
+      "reviewedAt": "2026-06-21T00:00:00.000Z",
+      "packQualityRequirements": {
+        "riskTermFlags": [
+          "execution_strategy_language",
+          "pending_order_language",
+          "retracement_level_language",
+          "signal_confirmation_language",
+          "small_cycle_language",
+          "risk_control_language"
+        ],
+        "riskRewriteChecklist": [
+          {
+            "flag": "execution_strategy_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "pending_order_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "retracement_level_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "signal_confirmation_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "small_cycle_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "risk_control_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          }
+        ],
+        "qualityLintRules": [
+          "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+          "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+          "riskRewriteNotes must address every riskTermFlag before validation, especially signal_language, execution_strategy_language, pending_order_language, stop_loss_language, target_area_language, profit_loss_language.",
+          "publicReferenceNotes must name public grounding needed for terminology, chart examples, cycle concepts, or case-study claims.",
+          "originalityNotes must confirm private course wording was not copied into learner-facing content."
+        ],
+        "uncertainRegions": [
+          "Some chart labels and exact retracement ranges require human verification.",
+          "The execution-strategy bullets must be carefully rewritten to avoid instructions."
+        ],
+        "candidateSummary": "This page can support an education-only lesson on structural confirmation and false precision: learners identify when a visible pattern still lacks sufficient evidence, then explain why very small-cycle signals and fragmented setups can create review errors.",
+        "warning": "Do not copy machine candidate text as human transcription. Verify against the high-resolution preview."
+      },
+      "manualInput": {
+        "humanTranscription": "Positive-control fixture only. A real reviewer would place the human-verified transcription from the high-resolution preview here. This placeholder proves the filled-copy lint and dry-run validation flow for corpus_1313; it is not private course transcription.",
+        "humanSummary": "Fixture-only education summary: cycle-switching, false precision, and case-review material should become neutral study prompts without signals, execution steps, targets, stops, or profit/loss claims.",
+        "uncertainWords": [
+          "fixture_only_not_private_course_transcription"
+        ],
+        "publicReferenceNotes": "Public reference needed: verify multi-timeframe, chart-pattern, indicator, cycle, terminology, and case-study claims against Wikipedia, official documentation, or open educational references before learner-facing use.",
+        "originalityNotes": "Original rewrite required: not copied from private course wording or the machine candidate; paraphrase as original education-only chart-literacy content.",
+        "riskRewriteNotes": "execution_strategy_language: rewrite or remove this risk before learner-facing use. pending_order_language: rewrite or remove this risk before learner-facing use. retracement_level_language: rewrite or remove this risk before learner-facing use. signal_confirmation_language: rewrite or remove this risk before learner-facing use. small_cycle_language: rewrite or remove this risk before learner-facing use. risk_control_language: rewrite or remove this risk before learner-facing use.",
+        "checklist": {
+          "visualTextCaptured": "done",
+          "chartLabelsCaptured": "done",
+          "unclearAreasFlagged": "done",
+          "noTradingAdviceAdded": "done",
+          "publicSourceGroundingReady": "done",
+          "originalRewriteReady": "done"
+        }
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal_language, execution_strategy_language, pending_order_language, stop_loss_language, target_area_language, profit_loss_language.",
+        "Public reference notes identify terminology, chart examples, cycle concepts, or case-study claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_05_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_07",
+      "reviewEntryId": "review_absorb_manual_transcription_07",
+      "taskId": "absorb_manual_transcription_07",
+      "sourcePackCardId": "fill_pack_05_absorb_manual_transcription_07",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1313",
+      "pageNumber": 7,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1313/page-07.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1313/page-07.png",
+      "candidateId": "candidate_batch_02_page_03",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "positive_lint_fixture_ready",
+      "reviewerName": "Codex pack 05 lint positive-control fixture",
+      "reviewedAt": "2026-06-21T00:00:00.000Z",
+      "packQualityRequirements": {
+        "riskTermFlags": [
+          "signal_confirmation_language",
+          "support_position_language",
+          "position_management_language",
+          "cycle_switching_language",
+          "difficulty_rating_language"
+        ],
+        "riskRewriteChecklist": [
+          {
+            "flag": "signal_confirmation_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "support_position_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "position_management_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "cycle_switching_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "difficulty_rating_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          }
+        ],
+        "qualityLintRules": [
+          "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+          "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+          "riskRewriteNotes must address every riskTermFlag before validation, especially signal_language, execution_strategy_language, pending_order_language, stop_loss_language, target_area_language, profit_loss_language.",
+          "publicReferenceNotes must name public grounding needed for terminology, chart examples, cycle concepts, or case-study claims.",
+          "originalityNotes must confirm private course wording was not copied into learner-facing content."
+        ],
+        "uncertainRegions": [
+          "Some table cells are small and require reviewer verification.",
+          "Star ratings are visible but should be treated as source difficulty hints, not product grading until reviewed."
+        ],
+        "candidateSummary": "This page is useful as a structured curriculum map: convert the source table into a learner-facing concept taxonomy covering cycle relationship, pattern recognition, review mistakes, uncertainty, and difficulty level without preserving operational trade actions.",
+        "warning": "Do not copy machine candidate text as human transcription. Verify against the high-resolution preview."
+      },
+      "manualInput": {
+        "humanTranscription": "Positive-control fixture only. A real reviewer would place the human-verified transcription from the high-resolution preview here. This placeholder proves the filled-copy lint and dry-run validation flow for corpus_1313; it is not private course transcription.",
+        "humanSummary": "Fixture-only education summary: cycle-switching, false precision, and case-review material should become neutral study prompts without signals, execution steps, targets, stops, or profit/loss claims.",
+        "uncertainWords": [
+          "fixture_only_not_private_course_transcription"
+        ],
+        "publicReferenceNotes": "Public reference needed: verify multi-timeframe, chart-pattern, indicator, cycle, terminology, and case-study claims against Wikipedia, official documentation, or open educational references before learner-facing use.",
+        "originalityNotes": "Original rewrite required: not copied from private course wording or the machine candidate; paraphrase as original education-only chart-literacy content.",
+        "riskRewriteNotes": "signal_confirmation_language: rewrite or remove this risk before learner-facing use. support_position_language: rewrite or remove this risk before learner-facing use. position_management_language: rewrite or remove this risk before learner-facing use. cycle_switching_language: rewrite or remove this risk before learner-facing use. difficulty_rating_language: rewrite or remove this risk before learner-facing use.",
+        "checklist": {
+          "visualTextCaptured": "done",
+          "chartLabelsCaptured": "done",
+          "unclearAreasFlagged": "done",
+          "noTradingAdviceAdded": "done",
+          "publicSourceGroundingReady": "done",
+          "originalRewriteReady": "done"
+        }
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal_language, execution_strategy_language, pending_order_language, stop_loss_language, target_area_language, profit_loss_language.",
+        "Public reference notes identify terminology, chart examples, cycle concepts, or case-study claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_05_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_08",
+      "reviewEntryId": "review_absorb_manual_transcription_08",
+      "taskId": "absorb_manual_transcription_08",
+      "sourcePackCardId": "fill_pack_05_absorb_manual_transcription_08",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1313",
+      "pageNumber": 8,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1313/page-08.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1313/page-08.png",
+      "candidateId": "candidate_batch_02_page_04",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "positive_lint_fixture_ready",
+      "reviewerName": "Codex pack 05 lint positive-control fixture",
+      "reviewedAt": "2026-06-21T00:00:00.000Z",
+      "packQualityRequirements": {
+        "riskTermFlags": [
+          "entry_language",
+          "target_area_language",
+          "stop_loss_language",
+          "profit_loss_language",
+          "specific_price_levels",
+          "case_study_language"
+        ],
+        "riskRewriteChecklist": [
+          {
+            "flag": "entry_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "target_area_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "stop_loss_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "profit_loss_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "specific_price_levels",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "case_study_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          }
+        ],
+        "qualityLintRules": [
+          "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+          "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+          "riskRewriteNotes must address every riskTermFlag before validation, especially signal_language, execution_strategy_language, pending_order_language, stop_loss_language, target_area_language, profit_loss_language.",
+          "publicReferenceNotes must name public grounding needed for terminology, chart examples, cycle concepts, or case-study claims.",
+          "originalityNotes must confirm private course wording was not copied into learner-facing content."
+        ],
+        "uncertainRegions": [
+          "The table starts mid-row from the previous page; reviewer should merge it with page 7 before final transcription.",
+          "Specific level ranges and case labels require human confirmation."
+        ],
+        "candidateSummary": "This page can become a reviewer-only source for a lesson-map appendix: summarize cycle-switching logic and case-analysis vocabulary as conceptual review prompts, while replacing target/stop/profit wording with neutral evidence, uncertainty, and risk-boundary language.",
+        "warning": "Do not copy machine candidate text as human transcription. Verify against the high-resolution preview."
+      },
+      "manualInput": {
+        "humanTranscription": "Positive-control fixture only. A real reviewer would place the human-verified transcription from the high-resolution preview here. This placeholder proves the filled-copy lint and dry-run validation flow for corpus_1313; it is not private course transcription.",
+        "humanSummary": "Fixture-only education summary: cycle-switching, false precision, and case-review material should become neutral study prompts without signals, execution steps, targets, stops, or profit/loss claims.",
+        "uncertainWords": [
+          "fixture_only_not_private_course_transcription"
+        ],
+        "publicReferenceNotes": "Public reference needed: verify multi-timeframe, chart-pattern, indicator, cycle, terminology, and case-study claims against Wikipedia, official documentation, or open educational references before learner-facing use.",
+        "originalityNotes": "Original rewrite required: not copied from private course wording or the machine candidate; paraphrase as original education-only chart-literacy content.",
+        "riskRewriteNotes": "entry_language: rewrite or remove this risk before learner-facing use. target_area_language: rewrite or remove this risk before learner-facing use. stop_loss_language: rewrite or remove this risk before learner-facing use. profit_loss_language: rewrite or remove this risk before learner-facing use. specific_price_levels: rewrite or remove this risk before learner-facing use. case_study_language: rewrite or remove this risk before learner-facing use.",
+        "checklist": {
+          "visualTextCaptured": "done",
+          "chartLabelsCaptured": "done",
+          "unclearAreasFlagged": "done",
+          "noTradingAdviceAdded": "done",
+          "publicSourceGroundingReady": "done",
+          "originalRewriteReady": "done"
+        }
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal_language, execution_strategy_language, pending_order_language, stop_loss_language, target_area_language, profit_loss_language.",
+        "Public reference notes identify terminology, chart examples, cycle concepts, or case-study claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_05_input_then_apply_dry_run_only"
+    }
+  ],
+  "usage": [
+    "This fixture proves pack 05 filled-copy lint can pass a structurally complete input.",
+    "Do not apply this fixture with --write.",
+    "Do not use fixture text as absorbed course content."
+  ],
+  "completionRule": "This input copy template is only a blank carrier for pack 05. It is not ready until a human reviewer fills all required fields, every risk flag is addressed, validation succeeds, and apply dry-run reports ready entries with writtenEntries:0.",
+  "boundary": "Pack 05 positive lint fixture is pipeline validation material only. It is not a human transcription of private course content, must not be written to the real overlay, does not approve learner-facing release, and does not provide trading advice, stock recommendations, live signals, return promises, broker workflows, automation, or real-money guidance."
+}

@@ -1,0 +1,956 @@
+{
+  "generatedAt": "2026-06-22T04:53:17.551Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "mergePreviewStatus": "packet_021_merge_preview_blocked_missing_ready_packet_input",
+  "mergePreviewMode": "dry_run_packet_input_copy_to_full_source_fit_draft_mapping",
+  "packetId": "node-public-source-fit-batch-021-packet",
+  "batchId": "node-public-source-fit-batch-021",
+  "module": "交易区间",
+  "packetInputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_021_INPUT_COPY_TEMPLATE.json",
+  "packetValidationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_021_INPUT_COPY_TEMPLATE_VALIDATION.json",
+  "fullDraftInputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+  "fullValidationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_VALIDATION.json",
+  "packetRows": 12,
+  "fullDraftRows": 1638,
+  "fullValidationRows": 1638,
+  "mappedRows": 12,
+  "missingTargetRows": 0,
+  "readyRows": 0,
+  "blockedRows": 12,
+  "packetValidationStatus": "blocked_missing_real_reviewer_source_fit_input",
+  "packetReadyRows": 0,
+  "packetBlockedRows": 12,
+  "packetMissingFieldRows": 12,
+  "packetForbiddenHitRows": 0,
+  "packetRealHumanInputEntries": 0,
+  "fullDraftReadyRowsBeforeMerge": 0,
+  "fullDraftBlockedRowsBeforeMerge": 1638,
+  "mergeAllowedNow": false,
+  "writeAllowedNow": false,
+  "manualAuthorizationRequired": true,
+  "mergeRows": [
+    {
+      "packetRowIndex": 0,
+      "targetFullDraftRowIndex": 1524,
+      "reviewId": "knv2_0342::corpus_0472",
+      "nodeId": "knv2_0342",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/0/reviewerDecision",
+          "to": "/rows/1524/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/0/sourceFitNotes",
+          "to": "/rows/1524/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/0/citationUse",
+          "to": "/rows/1524/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/0/reviewerName",
+          "to": "/rows/1524/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/0/reviewedAt",
+          "to": "/rows/1524/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/0/realHumanInput",
+          "to": "/rows/1524/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 1,
+      "targetFullDraftRowIndex": 1525,
+      "reviewId": "knv2_0342::corpus_0017",
+      "nodeId": "knv2_0342",
+      "documentId": "corpus_0017",
+      "sourceName": "Federal Reserve FOMC Calendars",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/1/reviewerDecision",
+          "to": "/rows/1525/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/1/sourceFitNotes",
+          "to": "/rows/1525/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/1/citationUse",
+          "to": "/rows/1525/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/1/reviewerName",
+          "to": "/rows/1525/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/1/reviewedAt",
+          "to": "/rows/1525/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/1/realHumanInput",
+          "to": "/rows/1525/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 2,
+      "targetFullDraftRowIndex": 1526,
+      "reviewId": "knv2_0342::corpus_0396",
+      "nodeId": "knv2_0342",
+      "documentId": "corpus_0396",
+      "sourceName": "A singular stochastic control approach for optimal pairs trading with proportional transaction costs",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/2/reviewerDecision",
+          "to": "/rows/1526/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/2/sourceFitNotes",
+          "to": "/rows/1526/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/2/citationUse",
+          "to": "/rows/1526/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/2/reviewerName",
+          "to": "/rows/1526/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/2/reviewedAt",
+          "to": "/rows/1526/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/2/realHumanInput",
+          "to": "/rows/1526/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 3,
+      "targetFullDraftRowIndex": 1527,
+      "reviewId": "knv2_0342::corpus_0447",
+      "nodeId": "knv2_0342",
+      "documentId": "corpus_0447",
+      "sourceName": "Wikipedia: Bollinger Bands",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/3/reviewerDecision",
+          "to": "/rows/1527/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/3/sourceFitNotes",
+          "to": "/rows/1527/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/3/citationUse",
+          "to": "/rows/1527/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/3/reviewerName",
+          "to": "/rows/1527/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/3/reviewedAt",
+          "to": "/rows/1527/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/3/realHumanInput",
+          "to": "/rows/1527/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 4,
+      "targetFullDraftRowIndex": 1528,
+      "reviewId": "knv2_0342::corpus_0445",
+      "nodeId": "knv2_0342",
+      "documentId": "corpus_0445",
+      "sourceName": "Wikipedia: Market trend",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/4/reviewerDecision",
+          "to": "/rows/1528/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/4/sourceFitNotes",
+          "to": "/rows/1528/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/4/citationUse",
+          "to": "/rows/1528/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/4/reviewerName",
+          "to": "/rows/1528/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/4/reviewedAt",
+          "to": "/rows/1528/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/4/realHumanInput",
+          "to": "/rows/1528/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 5,
+      "targetFullDraftRowIndex": 1529,
+      "reviewId": "knv2_0342::corpus_0439",
+      "nodeId": "knv2_0342",
+      "documentId": "corpus_0439",
+      "sourceName": "Wikipedia: Mean reversion (finance)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/5/reviewerDecision",
+          "to": "/rows/1529/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/5/sourceFitNotes",
+          "to": "/rows/1529/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/5/citationUse",
+          "to": "/rows/1529/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/5/reviewerName",
+          "to": "/rows/1529/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/5/reviewedAt",
+          "to": "/rows/1529/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/5/realHumanInput",
+          "to": "/rows/1529/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 6,
+      "targetFullDraftRowIndex": 1596,
+      "reviewId": "knv2_0354::corpus_0472",
+      "nodeId": "knv2_0354",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/6/reviewerDecision",
+          "to": "/rows/1596/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/6/sourceFitNotes",
+          "to": "/rows/1596/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/6/citationUse",
+          "to": "/rows/1596/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/6/reviewerName",
+          "to": "/rows/1596/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/6/reviewedAt",
+          "to": "/rows/1596/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/6/realHumanInput",
+          "to": "/rows/1596/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 7,
+      "targetFullDraftRowIndex": 1597,
+      "reviewId": "knv2_0354::corpus_0017",
+      "nodeId": "knv2_0354",
+      "documentId": "corpus_0017",
+      "sourceName": "Federal Reserve FOMC Calendars",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/7/reviewerDecision",
+          "to": "/rows/1597/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/7/sourceFitNotes",
+          "to": "/rows/1597/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/7/citationUse",
+          "to": "/rows/1597/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/7/reviewerName",
+          "to": "/rows/1597/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/7/reviewedAt",
+          "to": "/rows/1597/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/7/realHumanInput",
+          "to": "/rows/1597/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 8,
+      "targetFullDraftRowIndex": 1598,
+      "reviewId": "knv2_0354::corpus_0396",
+      "nodeId": "knv2_0354",
+      "documentId": "corpus_0396",
+      "sourceName": "A singular stochastic control approach for optimal pairs trading with proportional transaction costs",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/8/reviewerDecision",
+          "to": "/rows/1598/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/8/sourceFitNotes",
+          "to": "/rows/1598/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/8/citationUse",
+          "to": "/rows/1598/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/8/reviewerName",
+          "to": "/rows/1598/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/8/reviewedAt",
+          "to": "/rows/1598/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/8/realHumanInput",
+          "to": "/rows/1598/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 9,
+      "targetFullDraftRowIndex": 1599,
+      "reviewId": "knv2_0354::corpus_0447",
+      "nodeId": "knv2_0354",
+      "documentId": "corpus_0447",
+      "sourceName": "Wikipedia: Bollinger Bands",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/9/reviewerDecision",
+          "to": "/rows/1599/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/9/sourceFitNotes",
+          "to": "/rows/1599/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/9/citationUse",
+          "to": "/rows/1599/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/9/reviewerName",
+          "to": "/rows/1599/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/9/reviewedAt",
+          "to": "/rows/1599/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/9/realHumanInput",
+          "to": "/rows/1599/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 10,
+      "targetFullDraftRowIndex": 1600,
+      "reviewId": "knv2_0354::corpus_0445",
+      "nodeId": "knv2_0354",
+      "documentId": "corpus_0445",
+      "sourceName": "Wikipedia: Market trend",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/10/reviewerDecision",
+          "to": "/rows/1600/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/10/sourceFitNotes",
+          "to": "/rows/1600/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/10/citationUse",
+          "to": "/rows/1600/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/10/reviewerName",
+          "to": "/rows/1600/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/10/reviewedAt",
+          "to": "/rows/1600/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/10/realHumanInput",
+          "to": "/rows/1600/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 11,
+      "targetFullDraftRowIndex": 1601,
+      "reviewId": "knv2_0354::corpus_0439",
+      "nodeId": "knv2_0354",
+      "documentId": "corpus_0439",
+      "sourceName": "Wikipedia: Mean reversion (finance)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/11/reviewerDecision",
+          "to": "/rows/1601/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/11/sourceFitNotes",
+          "to": "/rows/1601/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/11/citationUse",
+          "to": "/rows/1601/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/11/reviewerName",
+          "to": "/rows/1601/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/11/reviewedAt",
+          "to": "/rows/1601/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/11/realHumanInput",
+          "to": "/rows/1601/realHumanInput"
+        }
+      }
+    }
+  ],
+  "sampleMergeRows": [
+    {
+      "packetRowIndex": 0,
+      "targetFullDraftRowIndex": 1524,
+      "reviewId": "knv2_0342::corpus_0472",
+      "nodeId": "knv2_0342",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/0/reviewerDecision",
+          "to": "/rows/1524/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/0/sourceFitNotes",
+          "to": "/rows/1524/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/0/citationUse",
+          "to": "/rows/1524/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/0/reviewerName",
+          "to": "/rows/1524/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/0/reviewedAt",
+          "to": "/rows/1524/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/0/realHumanInput",
+          "to": "/rows/1524/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 1,
+      "targetFullDraftRowIndex": 1525,
+      "reviewId": "knv2_0342::corpus_0017",
+      "nodeId": "knv2_0342",
+      "documentId": "corpus_0017",
+      "sourceName": "Federal Reserve FOMC Calendars",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/1/reviewerDecision",
+          "to": "/rows/1525/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/1/sourceFitNotes",
+          "to": "/rows/1525/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/1/citationUse",
+          "to": "/rows/1525/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/1/reviewerName",
+          "to": "/rows/1525/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/1/reviewedAt",
+          "to": "/rows/1525/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/1/realHumanInput",
+          "to": "/rows/1525/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 2,
+      "targetFullDraftRowIndex": 1526,
+      "reviewId": "knv2_0342::corpus_0396",
+      "nodeId": "knv2_0342",
+      "documentId": "corpus_0396",
+      "sourceName": "A singular stochastic control approach for optimal pairs trading with proportional transaction costs",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/2/reviewerDecision",
+          "to": "/rows/1526/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/2/sourceFitNotes",
+          "to": "/rows/1526/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/2/citationUse",
+          "to": "/rows/1526/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/2/reviewerName",
+          "to": "/rows/1526/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/2/reviewedAt",
+          "to": "/rows/1526/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/2/realHumanInput",
+          "to": "/rows/1526/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 3,
+      "targetFullDraftRowIndex": 1527,
+      "reviewId": "knv2_0342::corpus_0447",
+      "nodeId": "knv2_0342",
+      "documentId": "corpus_0447",
+      "sourceName": "Wikipedia: Bollinger Bands",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/3/reviewerDecision",
+          "to": "/rows/1527/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/3/sourceFitNotes",
+          "to": "/rows/1527/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/3/citationUse",
+          "to": "/rows/1527/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/3/reviewerName",
+          "to": "/rows/1527/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/3/reviewedAt",
+          "to": "/rows/1527/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/3/realHumanInput",
+          "to": "/rows/1527/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 4,
+      "targetFullDraftRowIndex": 1528,
+      "reviewId": "knv2_0342::corpus_0445",
+      "nodeId": "knv2_0342",
+      "documentId": "corpus_0445",
+      "sourceName": "Wikipedia: Market trend",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/4/reviewerDecision",
+          "to": "/rows/1528/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/4/sourceFitNotes",
+          "to": "/rows/1528/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/4/citationUse",
+          "to": "/rows/1528/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/4/reviewerName",
+          "to": "/rows/1528/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/4/reviewedAt",
+          "to": "/rows/1528/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/4/realHumanInput",
+          "to": "/rows/1528/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 5,
+      "targetFullDraftRowIndex": 1529,
+      "reviewId": "knv2_0342::corpus_0439",
+      "nodeId": "knv2_0342",
+      "documentId": "corpus_0439",
+      "sourceName": "Wikipedia: Mean reversion (finance)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/5/reviewerDecision",
+          "to": "/rows/1529/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/5/sourceFitNotes",
+          "to": "/rows/1529/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/5/citationUse",
+          "to": "/rows/1529/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/5/reviewerName",
+          "to": "/rows/1529/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/5/reviewedAt",
+          "to": "/rows/1529/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/5/realHumanInput",
+          "to": "/rows/1529/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 6,
+      "targetFullDraftRowIndex": 1596,
+      "reviewId": "knv2_0354::corpus_0472",
+      "nodeId": "knv2_0354",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/6/reviewerDecision",
+          "to": "/rows/1596/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/6/sourceFitNotes",
+          "to": "/rows/1596/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/6/citationUse",
+          "to": "/rows/1596/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/6/reviewerName",
+          "to": "/rows/1596/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/6/reviewedAt",
+          "to": "/rows/1596/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/6/realHumanInput",
+          "to": "/rows/1596/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 7,
+      "targetFullDraftRowIndex": 1597,
+      "reviewId": "knv2_0354::corpus_0017",
+      "nodeId": "knv2_0354",
+      "documentId": "corpus_0017",
+      "sourceName": "Federal Reserve FOMC Calendars",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/7/reviewerDecision",
+          "to": "/rows/1597/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/7/sourceFitNotes",
+          "to": "/rows/1597/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/7/citationUse",
+          "to": "/rows/1597/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/7/reviewerName",
+          "to": "/rows/1597/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/7/reviewedAt",
+          "to": "/rows/1597/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/7/realHumanInput",
+          "to": "/rows/1597/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 8,
+      "targetFullDraftRowIndex": 1598,
+      "reviewId": "knv2_0354::corpus_0396",
+      "nodeId": "knv2_0354",
+      "documentId": "corpus_0396",
+      "sourceName": "A singular stochastic control approach for optimal pairs trading with proportional transaction costs",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/8/reviewerDecision",
+          "to": "/rows/1598/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/8/sourceFitNotes",
+          "to": "/rows/1598/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/8/citationUse",
+          "to": "/rows/1598/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/8/reviewerName",
+          "to": "/rows/1598/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/8/reviewedAt",
+          "to": "/rows/1598/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/8/realHumanInput",
+          "to": "/rows/1598/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 9,
+      "targetFullDraftRowIndex": 1599,
+      "reviewId": "knv2_0354::corpus_0447",
+      "nodeId": "knv2_0354",
+      "documentId": "corpus_0447",
+      "sourceName": "Wikipedia: Bollinger Bands",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/9/reviewerDecision",
+          "to": "/rows/1599/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/9/sourceFitNotes",
+          "to": "/rows/1599/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/9/citationUse",
+          "to": "/rows/1599/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/9/reviewerName",
+          "to": "/rows/1599/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/9/reviewedAt",
+          "to": "/rows/1599/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/9/realHumanInput",
+          "to": "/rows/1599/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 10,
+      "targetFullDraftRowIndex": 1600,
+      "reviewId": "knv2_0354::corpus_0445",
+      "nodeId": "knv2_0354",
+      "documentId": "corpus_0445",
+      "sourceName": "Wikipedia: Market trend",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/10/reviewerDecision",
+          "to": "/rows/1600/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/10/sourceFitNotes",
+          "to": "/rows/1600/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/10/citationUse",
+          "to": "/rows/1600/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/10/reviewerName",
+          "to": "/rows/1600/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/10/reviewedAt",
+          "to": "/rows/1600/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/10/realHumanInput",
+          "to": "/rows/1600/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 11,
+      "targetFullDraftRowIndex": 1601,
+      "reviewId": "knv2_0354::corpus_0439",
+      "nodeId": "knv2_0354",
+      "documentId": "corpus_0439",
+      "sourceName": "Wikipedia: Mean reversion (finance)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/11/reviewerDecision",
+          "to": "/rows/1601/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/11/sourceFitNotes",
+          "to": "/rows/1601/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/11/citationUse",
+          "to": "/rows/1601/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/11/reviewerName",
+          "to": "/rows/1601/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/11/reviewedAt",
+          "to": "/rows/1601/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/11/realHumanInput",
+          "to": "/rows/1601/realHumanInput"
+        }
+      }
+    }
+  ],
+  "commands": [
+    "npm.cmd run build:knowledge-node-public-source-fit-review-packet-021-suite",
+    "npm.cmd run check:knowledge-node-public-source-fit-review-packet-021-suite"
+  ],
+  "completionRule": "Packet 021 merge preview becomes ready only when the packet input copy validates every row as real human input, every packet row maps to the full 1638-row draft, forbidden hits are zero, learnerCitationApproved:false, copiedTextApproved:false, and a separate manual merge/write authorization exists.",
+  "boundary": "Packet 021 merge preview is dry-run reviewer operations only. It does not write the full source-fit draft, create human judgments, approve copied text, approve learner-facing citations, write lessons, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, or production readiness."
+}

@@ -1,0 +1,634 @@
+{
+  "generatedAt": "2026-06-21T18:43:54.716Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "purpose": "Manual reviewer status template. Copy to LESSON_BATCH_REVIEW_STATUS.json only when a human is ready to record review notes; leave approval and release fields unchanged.",
+  "instructions": [
+    "Keep approvalStatus:not_approved and learnerFacingRelease:false.",
+    "Fill notes only after original rewriting, source-fit review, fact check, boundary check, and copying-risk review are actually performed.",
+    "Do not mark a batch ready_for_separate_human_approval_review until every lesson card in that batch has all required notes and humanReviewerInitials.",
+    "Do not use this template to mark lessons commercial_ready or learner-facing ready."
+  ],
+  "batches": [
+    {
+      "batchId": "rewrite_batch_01",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "reviewStatus": "not_started",
+      "lessonCards": [
+        {
+          "lessonId": "lesson_knv2_0044",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0068",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0128",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0140",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0054",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0019",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        }
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_02",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "reviewStatus": "not_started",
+      "lessonCards": [
+        {
+          "lessonId": "lesson_knv2_0187",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0006",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0018",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0030",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0024",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0132",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        }
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_03",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "reviewStatus": "not_started",
+      "lessonCards": [
+        {
+          "lessonId": "lesson_knv2_0156",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0240",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0004",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0040",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0052",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0088",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        }
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_04",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "reviewStatus": "not_started",
+      "lessonCards": [
+        {
+          "lessonId": "lesson_knv2_0014",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0086",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0057",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0189",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0321",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0003",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        }
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "reviewStatus": "not_started",
+      "lessonCards": [
+        {
+          "lessonId": "lesson_knv2_0075",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0087",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0159",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0011",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0059",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0167",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        }
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_06",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "reviewStatus": "not_started",
+      "lessonCards": [
+        {
+          "lessonId": "lesson_knv2_0275",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0007",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0031",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0010",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0022",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0034",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        }
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_07",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "reviewStatus": "not_started",
+      "lessonCards": [
+        {
+          "lessonId": "lesson_knv2_0046",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0002",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0026",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0005",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0017",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0029",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        }
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_08",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "reviewStatus": "not_started",
+      "lessonCards": [
+        {
+          "lessonId": "lesson_knv2_0041",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0037",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0049",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0061",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0073",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0009",
+          "trackingStatus": "not_started",
+          "originalRewriteNotes": "",
+          "sourceFitNotes": "",
+          "factCheckNotes": "",
+          "boundaryCheckNotes": "",
+          "copyingRiskNotes": "",
+          "humanReviewerInitials": "",
+          "mustRemainStructuralDraft": true
+        }
+      ]
+    }
+  ],
+  "boundary": "This template is blank reviewer input scaffolding. It is not evidence of completed human review, final approval, learner-facing release, or commercial readiness."
+}

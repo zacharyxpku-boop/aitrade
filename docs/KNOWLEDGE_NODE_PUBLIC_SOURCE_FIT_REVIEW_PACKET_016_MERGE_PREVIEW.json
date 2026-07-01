@@ -1,0 +1,2780 @@
+{
+  "generatedAt": "2026-06-22T04:50:12.245Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "mergePreviewStatus": "packet_016_merge_preview_blocked_missing_ready_packet_input",
+  "mergePreviewMode": "dry_run_packet_input_copy_to_full_source_fit_draft_mapping",
+  "packetId": "node-public-source-fit-batch-016-packet",
+  "batchId": "node-public-source-fit-batch-016",
+  "module": "回测误区",
+  "packetInputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_016_INPUT_COPY_TEMPLATE.json",
+  "packetValidationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_016_INPUT_COPY_TEMPLATE_VALIDATION.json",
+  "fullDraftInputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+  "fullValidationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_VALIDATION.json",
+  "packetRows": 60,
+  "fullDraftRows": 1638,
+  "fullValidationRows": 1638,
+  "mappedRows": 60,
+  "missingTargetRows": 0,
+  "readyRows": 0,
+  "blockedRows": 60,
+  "packetValidationStatus": "blocked_missing_real_reviewer_source_fit_input",
+  "packetReadyRows": 0,
+  "packetBlockedRows": 60,
+  "packetMissingFieldRows": 60,
+  "packetForbiddenHitRows": 0,
+  "packetRealHumanInputEntries": 0,
+  "fullDraftReadyRowsBeforeMerge": 0,
+  "fullDraftBlockedRowsBeforeMerge": 1638,
+  "mergeAllowedNow": false,
+  "writeAllowedNow": false,
+  "manualAuthorizationRequired": true,
+  "mergeRows": [
+    {
+      "packetRowIndex": 0,
+      "targetFullDraftRowIndex": 132,
+      "reviewId": "knv2_0106::corpus_0472",
+      "nodeId": "knv2_0106",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/0/reviewerDecision",
+          "to": "/rows/132/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/0/sourceFitNotes",
+          "to": "/rows/132/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/0/citationUse",
+          "to": "/rows/132/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/0/reviewerName",
+          "to": "/rows/132/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/0/reviewedAt",
+          "to": "/rows/132/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/0/realHumanInput",
+          "to": "/rows/132/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 1,
+      "targetFullDraftRowIndex": 133,
+      "reviewId": "knv2_0106::corpus_0102",
+      "nodeId": "knv2_0106",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/1/reviewerDecision",
+          "to": "/rows/133/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/1/sourceFitNotes",
+          "to": "/rows/133/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/1/citationUse",
+          "to": "/rows/133/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/1/reviewerName",
+          "to": "/rows/133/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/1/reviewedAt",
+          "to": "/rows/133/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/1/realHumanInput",
+          "to": "/rows/133/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 2,
+      "targetFullDraftRowIndex": 134,
+      "reviewId": "knv2_0106::corpus_0215",
+      "nodeId": "knv2_0106",
+      "documentId": "corpus_0215",
+      "sourceName": "AlgoXpert Alpha Research Framework. A Rigorous IS WFA OOS Protocol for Mitigating Overfitting in Quantitative Strategies",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/2/reviewerDecision",
+          "to": "/rows/134/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/2/sourceFitNotes",
+          "to": "/rows/134/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/2/citationUse",
+          "to": "/rows/134/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/2/reviewerName",
+          "to": "/rows/134/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/2/reviewedAt",
+          "to": "/rows/134/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/2/realHumanInput",
+          "to": "/rows/134/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 3,
+      "targetFullDraftRowIndex": 135,
+      "reviewId": "knv2_0106::corpus_0452",
+      "nodeId": "knv2_0106",
+      "documentId": "corpus_0452",
+      "sourceName": "Wikipedia: Backtesting",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/3/reviewerDecision",
+          "to": "/rows/135/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/3/sourceFitNotes",
+          "to": "/rows/135/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/3/citationUse",
+          "to": "/rows/135/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/3/reviewerName",
+          "to": "/rows/135/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/3/reviewedAt",
+          "to": "/rows/135/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/3/realHumanInput",
+          "to": "/rows/135/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 4,
+      "targetFullDraftRowIndex": 136,
+      "reviewId": "knv2_0106::corpus_0415",
+      "nodeId": "knv2_0106",
+      "documentId": "corpus_0415",
+      "sourceName": "Wikipedia: Cross-validation (statistics)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/4/reviewerDecision",
+          "to": "/rows/136/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/4/sourceFitNotes",
+          "to": "/rows/136/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/4/citationUse",
+          "to": "/rows/136/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/4/reviewerName",
+          "to": "/rows/136/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/4/reviewedAt",
+          "to": "/rows/136/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/4/realHumanInput",
+          "to": "/rows/136/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 5,
+      "targetFullDraftRowIndex": 137,
+      "reviewId": "knv2_0106::corpus_0455",
+      "nodeId": "knv2_0106",
+      "documentId": "corpus_0455",
+      "sourceName": "Wikipedia: Data dredging",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/5/reviewerDecision",
+          "to": "/rows/137/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/5/sourceFitNotes",
+          "to": "/rows/137/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/5/citationUse",
+          "to": "/rows/137/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/5/reviewerName",
+          "to": "/rows/137/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/5/reviewedAt",
+          "to": "/rows/137/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/5/realHumanInput",
+          "to": "/rows/137/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 6,
+      "targetFullDraftRowIndex": 204,
+      "reviewId": "knv2_0118::corpus_0472",
+      "nodeId": "knv2_0118",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/6/reviewerDecision",
+          "to": "/rows/204/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/6/sourceFitNotes",
+          "to": "/rows/204/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/6/citationUse",
+          "to": "/rows/204/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/6/reviewerName",
+          "to": "/rows/204/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/6/reviewedAt",
+          "to": "/rows/204/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/6/realHumanInput",
+          "to": "/rows/204/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 7,
+      "targetFullDraftRowIndex": 205,
+      "reviewId": "knv2_0118::corpus_0102",
+      "nodeId": "knv2_0118",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/7/reviewerDecision",
+          "to": "/rows/205/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/7/sourceFitNotes",
+          "to": "/rows/205/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/7/citationUse",
+          "to": "/rows/205/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/7/reviewerName",
+          "to": "/rows/205/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/7/reviewedAt",
+          "to": "/rows/205/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/7/realHumanInput",
+          "to": "/rows/205/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 8,
+      "targetFullDraftRowIndex": 206,
+      "reviewId": "knv2_0118::corpus_0215",
+      "nodeId": "knv2_0118",
+      "documentId": "corpus_0215",
+      "sourceName": "AlgoXpert Alpha Research Framework. A Rigorous IS WFA OOS Protocol for Mitigating Overfitting in Quantitative Strategies",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/8/reviewerDecision",
+          "to": "/rows/206/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/8/sourceFitNotes",
+          "to": "/rows/206/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/8/citationUse",
+          "to": "/rows/206/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/8/reviewerName",
+          "to": "/rows/206/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/8/reviewedAt",
+          "to": "/rows/206/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/8/realHumanInput",
+          "to": "/rows/206/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 9,
+      "targetFullDraftRowIndex": 207,
+      "reviewId": "knv2_0118::corpus_0452",
+      "nodeId": "knv2_0118",
+      "documentId": "corpus_0452",
+      "sourceName": "Wikipedia: Backtesting",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/9/reviewerDecision",
+          "to": "/rows/207/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/9/sourceFitNotes",
+          "to": "/rows/207/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/9/citationUse",
+          "to": "/rows/207/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/9/reviewerName",
+          "to": "/rows/207/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/9/reviewedAt",
+          "to": "/rows/207/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/9/realHumanInput",
+          "to": "/rows/207/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 10,
+      "targetFullDraftRowIndex": 208,
+      "reviewId": "knv2_0118::corpus_0415",
+      "nodeId": "knv2_0118",
+      "documentId": "corpus_0415",
+      "sourceName": "Wikipedia: Cross-validation (statistics)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/10/reviewerDecision",
+          "to": "/rows/208/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/10/sourceFitNotes",
+          "to": "/rows/208/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/10/citationUse",
+          "to": "/rows/208/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/10/reviewerName",
+          "to": "/rows/208/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/10/reviewedAt",
+          "to": "/rows/208/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/10/realHumanInput",
+          "to": "/rows/208/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 11,
+      "targetFullDraftRowIndex": 209,
+      "reviewId": "knv2_0118::corpus_0455",
+      "nodeId": "knv2_0118",
+      "documentId": "corpus_0455",
+      "sourceName": "Wikipedia: Data dredging",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/11/reviewerDecision",
+          "to": "/rows/209/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/11/sourceFitNotes",
+          "to": "/rows/209/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/11/citationUse",
+          "to": "/rows/209/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/11/reviewerName",
+          "to": "/rows/209/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/11/reviewedAt",
+          "to": "/rows/209/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/11/realHumanInput",
+          "to": "/rows/209/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 12,
+      "targetFullDraftRowIndex": 270,
+      "reviewId": "knv2_0130::corpus_0472",
+      "nodeId": "knv2_0130",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/12/reviewerDecision",
+          "to": "/rows/270/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/12/sourceFitNotes",
+          "to": "/rows/270/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/12/citationUse",
+          "to": "/rows/270/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/12/reviewerName",
+          "to": "/rows/270/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/12/reviewedAt",
+          "to": "/rows/270/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/12/realHumanInput",
+          "to": "/rows/270/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 13,
+      "targetFullDraftRowIndex": 271,
+      "reviewId": "knv2_0130::corpus_0102",
+      "nodeId": "knv2_0130",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/13/reviewerDecision",
+          "to": "/rows/271/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/13/sourceFitNotes",
+          "to": "/rows/271/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/13/citationUse",
+          "to": "/rows/271/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/13/reviewerName",
+          "to": "/rows/271/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/13/reviewedAt",
+          "to": "/rows/271/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/13/realHumanInput",
+          "to": "/rows/271/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 14,
+      "targetFullDraftRowIndex": 272,
+      "reviewId": "knv2_0130::corpus_0215",
+      "nodeId": "knv2_0130",
+      "documentId": "corpus_0215",
+      "sourceName": "AlgoXpert Alpha Research Framework. A Rigorous IS WFA OOS Protocol for Mitigating Overfitting in Quantitative Strategies",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/14/reviewerDecision",
+          "to": "/rows/272/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/14/sourceFitNotes",
+          "to": "/rows/272/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/14/citationUse",
+          "to": "/rows/272/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/14/reviewerName",
+          "to": "/rows/272/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/14/reviewedAt",
+          "to": "/rows/272/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/14/realHumanInput",
+          "to": "/rows/272/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 15,
+      "targetFullDraftRowIndex": 273,
+      "reviewId": "knv2_0130::corpus_0452",
+      "nodeId": "knv2_0130",
+      "documentId": "corpus_0452",
+      "sourceName": "Wikipedia: Backtesting",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/15/reviewerDecision",
+          "to": "/rows/273/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/15/sourceFitNotes",
+          "to": "/rows/273/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/15/citationUse",
+          "to": "/rows/273/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/15/reviewerName",
+          "to": "/rows/273/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/15/reviewedAt",
+          "to": "/rows/273/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/15/realHumanInput",
+          "to": "/rows/273/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 16,
+      "targetFullDraftRowIndex": 274,
+      "reviewId": "knv2_0130::corpus_0415",
+      "nodeId": "knv2_0130",
+      "documentId": "corpus_0415",
+      "sourceName": "Wikipedia: Cross-validation (statistics)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/16/reviewerDecision",
+          "to": "/rows/274/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/16/sourceFitNotes",
+          "to": "/rows/274/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/16/citationUse",
+          "to": "/rows/274/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/16/reviewerName",
+          "to": "/rows/274/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/16/reviewedAt",
+          "to": "/rows/274/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/16/realHumanInput",
+          "to": "/rows/274/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 17,
+      "targetFullDraftRowIndex": 275,
+      "reviewId": "knv2_0130::corpus_0455",
+      "nodeId": "knv2_0130",
+      "documentId": "corpus_0455",
+      "sourceName": "Wikipedia: Data dredging",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/17/reviewerDecision",
+          "to": "/rows/275/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/17/sourceFitNotes",
+          "to": "/rows/275/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/17/citationUse",
+          "to": "/rows/275/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/17/reviewerName",
+          "to": "/rows/275/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/17/reviewedAt",
+          "to": "/rows/275/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/17/realHumanInput",
+          "to": "/rows/275/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 18,
+      "targetFullDraftRowIndex": 342,
+      "reviewId": "knv2_0142::corpus_0472",
+      "nodeId": "knv2_0142",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/18/reviewerDecision",
+          "to": "/rows/342/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/18/sourceFitNotes",
+          "to": "/rows/342/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/18/citationUse",
+          "to": "/rows/342/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/18/reviewerName",
+          "to": "/rows/342/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/18/reviewedAt",
+          "to": "/rows/342/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/18/realHumanInput",
+          "to": "/rows/342/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 19,
+      "targetFullDraftRowIndex": 343,
+      "reviewId": "knv2_0142::corpus_0102",
+      "nodeId": "knv2_0142",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/19/reviewerDecision",
+          "to": "/rows/343/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/19/sourceFitNotes",
+          "to": "/rows/343/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/19/citationUse",
+          "to": "/rows/343/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/19/reviewerName",
+          "to": "/rows/343/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/19/reviewedAt",
+          "to": "/rows/343/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/19/realHumanInput",
+          "to": "/rows/343/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 20,
+      "targetFullDraftRowIndex": 344,
+      "reviewId": "knv2_0142::corpus_0215",
+      "nodeId": "knv2_0142",
+      "documentId": "corpus_0215",
+      "sourceName": "AlgoXpert Alpha Research Framework. A Rigorous IS WFA OOS Protocol for Mitigating Overfitting in Quantitative Strategies",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/20/reviewerDecision",
+          "to": "/rows/344/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/20/sourceFitNotes",
+          "to": "/rows/344/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/20/citationUse",
+          "to": "/rows/344/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/20/reviewerName",
+          "to": "/rows/344/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/20/reviewedAt",
+          "to": "/rows/344/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/20/realHumanInput",
+          "to": "/rows/344/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 21,
+      "targetFullDraftRowIndex": 345,
+      "reviewId": "knv2_0142::corpus_0452",
+      "nodeId": "knv2_0142",
+      "documentId": "corpus_0452",
+      "sourceName": "Wikipedia: Backtesting",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/21/reviewerDecision",
+          "to": "/rows/345/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/21/sourceFitNotes",
+          "to": "/rows/345/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/21/citationUse",
+          "to": "/rows/345/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/21/reviewerName",
+          "to": "/rows/345/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/21/reviewedAt",
+          "to": "/rows/345/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/21/realHumanInput",
+          "to": "/rows/345/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 22,
+      "targetFullDraftRowIndex": 346,
+      "reviewId": "knv2_0142::corpus_0415",
+      "nodeId": "knv2_0142",
+      "documentId": "corpus_0415",
+      "sourceName": "Wikipedia: Cross-validation (statistics)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/22/reviewerDecision",
+          "to": "/rows/346/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/22/sourceFitNotes",
+          "to": "/rows/346/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/22/citationUse",
+          "to": "/rows/346/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/22/reviewerName",
+          "to": "/rows/346/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/22/reviewedAt",
+          "to": "/rows/346/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/22/realHumanInput",
+          "to": "/rows/346/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 23,
+      "targetFullDraftRowIndex": 347,
+      "reviewId": "knv2_0142::corpus_0455",
+      "nodeId": "knv2_0142",
+      "documentId": "corpus_0455",
+      "sourceName": "Wikipedia: Data dredging",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/23/reviewerDecision",
+          "to": "/rows/347/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/23/sourceFitNotes",
+          "to": "/rows/347/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/23/citationUse",
+          "to": "/rows/347/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/23/reviewerName",
+          "to": "/rows/347/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/23/reviewedAt",
+          "to": "/rows/347/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/23/realHumanInput",
+          "to": "/rows/347/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 24,
+      "targetFullDraftRowIndex": 414,
+      "reviewId": "knv2_0154::corpus_0472",
+      "nodeId": "knv2_0154",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/24/reviewerDecision",
+          "to": "/rows/414/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/24/sourceFitNotes",
+          "to": "/rows/414/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/24/citationUse",
+          "to": "/rows/414/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/24/reviewerName",
+          "to": "/rows/414/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/24/reviewedAt",
+          "to": "/rows/414/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/24/realHumanInput",
+          "to": "/rows/414/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 25,
+      "targetFullDraftRowIndex": 415,
+      "reviewId": "knv2_0154::corpus_0102",
+      "nodeId": "knv2_0154",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/25/reviewerDecision",
+          "to": "/rows/415/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/25/sourceFitNotes",
+          "to": "/rows/415/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/25/citationUse",
+          "to": "/rows/415/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/25/reviewerName",
+          "to": "/rows/415/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/25/reviewedAt",
+          "to": "/rows/415/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/25/realHumanInput",
+          "to": "/rows/415/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 26,
+      "targetFullDraftRowIndex": 416,
+      "reviewId": "knv2_0154::corpus_0215",
+      "nodeId": "knv2_0154",
+      "documentId": "corpus_0215",
+      "sourceName": "AlgoXpert Alpha Research Framework. A Rigorous IS WFA OOS Protocol for Mitigating Overfitting in Quantitative Strategies",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/26/reviewerDecision",
+          "to": "/rows/416/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/26/sourceFitNotes",
+          "to": "/rows/416/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/26/citationUse",
+          "to": "/rows/416/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/26/reviewerName",
+          "to": "/rows/416/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/26/reviewedAt",
+          "to": "/rows/416/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/26/realHumanInput",
+          "to": "/rows/416/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 27,
+      "targetFullDraftRowIndex": 417,
+      "reviewId": "knv2_0154::corpus_0452",
+      "nodeId": "knv2_0154",
+      "documentId": "corpus_0452",
+      "sourceName": "Wikipedia: Backtesting",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/27/reviewerDecision",
+          "to": "/rows/417/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/27/sourceFitNotes",
+          "to": "/rows/417/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/27/citationUse",
+          "to": "/rows/417/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/27/reviewerName",
+          "to": "/rows/417/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/27/reviewedAt",
+          "to": "/rows/417/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/27/realHumanInput",
+          "to": "/rows/417/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 28,
+      "targetFullDraftRowIndex": 418,
+      "reviewId": "knv2_0154::corpus_0415",
+      "nodeId": "knv2_0154",
+      "documentId": "corpus_0415",
+      "sourceName": "Wikipedia: Cross-validation (statistics)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/28/reviewerDecision",
+          "to": "/rows/418/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/28/sourceFitNotes",
+          "to": "/rows/418/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/28/citationUse",
+          "to": "/rows/418/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/28/reviewerName",
+          "to": "/rows/418/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/28/reviewedAt",
+          "to": "/rows/418/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/28/realHumanInput",
+          "to": "/rows/418/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 29,
+      "targetFullDraftRowIndex": 419,
+      "reviewId": "knv2_0154::corpus_0455",
+      "nodeId": "knv2_0154",
+      "documentId": "corpus_0455",
+      "sourceName": "Wikipedia: Data dredging",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/29/reviewerDecision",
+          "to": "/rows/419/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/29/sourceFitNotes",
+          "to": "/rows/419/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/29/citationUse",
+          "to": "/rows/419/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/29/reviewerName",
+          "to": "/rows/419/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/29/reviewedAt",
+          "to": "/rows/419/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/29/realHumanInput",
+          "to": "/rows/419/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 30,
+      "targetFullDraftRowIndex": 486,
+      "reviewId": "knv2_0166::corpus_0472",
+      "nodeId": "knv2_0166",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/30/reviewerDecision",
+          "to": "/rows/486/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/30/sourceFitNotes",
+          "to": "/rows/486/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/30/citationUse",
+          "to": "/rows/486/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/30/reviewerName",
+          "to": "/rows/486/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/30/reviewedAt",
+          "to": "/rows/486/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/30/realHumanInput",
+          "to": "/rows/486/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 31,
+      "targetFullDraftRowIndex": 487,
+      "reviewId": "knv2_0166::corpus_0102",
+      "nodeId": "knv2_0166",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/31/reviewerDecision",
+          "to": "/rows/487/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/31/sourceFitNotes",
+          "to": "/rows/487/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/31/citationUse",
+          "to": "/rows/487/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/31/reviewerName",
+          "to": "/rows/487/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/31/reviewedAt",
+          "to": "/rows/487/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/31/realHumanInput",
+          "to": "/rows/487/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 32,
+      "targetFullDraftRowIndex": 488,
+      "reviewId": "knv2_0166::corpus_0215",
+      "nodeId": "knv2_0166",
+      "documentId": "corpus_0215",
+      "sourceName": "AlgoXpert Alpha Research Framework. A Rigorous IS WFA OOS Protocol for Mitigating Overfitting in Quantitative Strategies",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/32/reviewerDecision",
+          "to": "/rows/488/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/32/sourceFitNotes",
+          "to": "/rows/488/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/32/citationUse",
+          "to": "/rows/488/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/32/reviewerName",
+          "to": "/rows/488/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/32/reviewedAt",
+          "to": "/rows/488/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/32/realHumanInput",
+          "to": "/rows/488/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 33,
+      "targetFullDraftRowIndex": 489,
+      "reviewId": "knv2_0166::corpus_0452",
+      "nodeId": "knv2_0166",
+      "documentId": "corpus_0452",
+      "sourceName": "Wikipedia: Backtesting",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/33/reviewerDecision",
+          "to": "/rows/489/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/33/sourceFitNotes",
+          "to": "/rows/489/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/33/citationUse",
+          "to": "/rows/489/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/33/reviewerName",
+          "to": "/rows/489/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/33/reviewedAt",
+          "to": "/rows/489/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/33/realHumanInput",
+          "to": "/rows/489/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 34,
+      "targetFullDraftRowIndex": 490,
+      "reviewId": "knv2_0166::corpus_0415",
+      "nodeId": "knv2_0166",
+      "documentId": "corpus_0415",
+      "sourceName": "Wikipedia: Cross-validation (statistics)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/34/reviewerDecision",
+          "to": "/rows/490/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/34/sourceFitNotes",
+          "to": "/rows/490/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/34/citationUse",
+          "to": "/rows/490/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/34/reviewerName",
+          "to": "/rows/490/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/34/reviewedAt",
+          "to": "/rows/490/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/34/realHumanInput",
+          "to": "/rows/490/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 35,
+      "targetFullDraftRowIndex": 491,
+      "reviewId": "knv2_0166::corpus_0455",
+      "nodeId": "knv2_0166",
+      "documentId": "corpus_0455",
+      "sourceName": "Wikipedia: Data dredging",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/35/reviewerDecision",
+          "to": "/rows/491/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/35/sourceFitNotes",
+          "to": "/rows/491/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/35/citationUse",
+          "to": "/rows/491/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/35/reviewerName",
+          "to": "/rows/491/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/35/reviewedAt",
+          "to": "/rows/491/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/35/realHumanInput",
+          "to": "/rows/491/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 36,
+      "targetFullDraftRowIndex": 558,
+      "reviewId": "knv2_0178::corpus_0472",
+      "nodeId": "knv2_0178",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/36/reviewerDecision",
+          "to": "/rows/558/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/36/sourceFitNotes",
+          "to": "/rows/558/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/36/citationUse",
+          "to": "/rows/558/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/36/reviewerName",
+          "to": "/rows/558/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/36/reviewedAt",
+          "to": "/rows/558/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/36/realHumanInput",
+          "to": "/rows/558/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 37,
+      "targetFullDraftRowIndex": 559,
+      "reviewId": "knv2_0178::corpus_0102",
+      "nodeId": "knv2_0178",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/37/reviewerDecision",
+          "to": "/rows/559/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/37/sourceFitNotes",
+          "to": "/rows/559/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/37/citationUse",
+          "to": "/rows/559/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/37/reviewerName",
+          "to": "/rows/559/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/37/reviewedAt",
+          "to": "/rows/559/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/37/realHumanInput",
+          "to": "/rows/559/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 38,
+      "targetFullDraftRowIndex": 560,
+      "reviewId": "knv2_0178::corpus_0215",
+      "nodeId": "knv2_0178",
+      "documentId": "corpus_0215",
+      "sourceName": "AlgoXpert Alpha Research Framework. A Rigorous IS WFA OOS Protocol for Mitigating Overfitting in Quantitative Strategies",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/38/reviewerDecision",
+          "to": "/rows/560/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/38/sourceFitNotes",
+          "to": "/rows/560/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/38/citationUse",
+          "to": "/rows/560/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/38/reviewerName",
+          "to": "/rows/560/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/38/reviewedAt",
+          "to": "/rows/560/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/38/realHumanInput",
+          "to": "/rows/560/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 39,
+      "targetFullDraftRowIndex": 561,
+      "reviewId": "knv2_0178::corpus_0452",
+      "nodeId": "knv2_0178",
+      "documentId": "corpus_0452",
+      "sourceName": "Wikipedia: Backtesting",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/39/reviewerDecision",
+          "to": "/rows/561/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/39/sourceFitNotes",
+          "to": "/rows/561/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/39/citationUse",
+          "to": "/rows/561/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/39/reviewerName",
+          "to": "/rows/561/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/39/reviewedAt",
+          "to": "/rows/561/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/39/realHumanInput",
+          "to": "/rows/561/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 40,
+      "targetFullDraftRowIndex": 562,
+      "reviewId": "knv2_0178::corpus_0415",
+      "nodeId": "knv2_0178",
+      "documentId": "corpus_0415",
+      "sourceName": "Wikipedia: Cross-validation (statistics)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/40/reviewerDecision",
+          "to": "/rows/562/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/40/sourceFitNotes",
+          "to": "/rows/562/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/40/citationUse",
+          "to": "/rows/562/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/40/reviewerName",
+          "to": "/rows/562/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/40/reviewedAt",
+          "to": "/rows/562/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/40/realHumanInput",
+          "to": "/rows/562/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 41,
+      "targetFullDraftRowIndex": 563,
+      "reviewId": "knv2_0178::corpus_0455",
+      "nodeId": "knv2_0178",
+      "documentId": "corpus_0455",
+      "sourceName": "Wikipedia: Data dredging",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/41/reviewerDecision",
+          "to": "/rows/563/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/41/sourceFitNotes",
+          "to": "/rows/563/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/41/citationUse",
+          "to": "/rows/563/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/41/reviewerName",
+          "to": "/rows/563/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/41/reviewedAt",
+          "to": "/rows/563/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/41/realHumanInput",
+          "to": "/rows/563/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 42,
+      "targetFullDraftRowIndex": 624,
+      "reviewId": "knv2_0190::corpus_0472",
+      "nodeId": "knv2_0190",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/42/reviewerDecision",
+          "to": "/rows/624/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/42/sourceFitNotes",
+          "to": "/rows/624/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/42/citationUse",
+          "to": "/rows/624/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/42/reviewerName",
+          "to": "/rows/624/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/42/reviewedAt",
+          "to": "/rows/624/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/42/realHumanInput",
+          "to": "/rows/624/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 43,
+      "targetFullDraftRowIndex": 625,
+      "reviewId": "knv2_0190::corpus_0102",
+      "nodeId": "knv2_0190",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/43/reviewerDecision",
+          "to": "/rows/625/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/43/sourceFitNotes",
+          "to": "/rows/625/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/43/citationUse",
+          "to": "/rows/625/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/43/reviewerName",
+          "to": "/rows/625/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/43/reviewedAt",
+          "to": "/rows/625/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/43/realHumanInput",
+          "to": "/rows/625/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 44,
+      "targetFullDraftRowIndex": 626,
+      "reviewId": "knv2_0190::corpus_0215",
+      "nodeId": "knv2_0190",
+      "documentId": "corpus_0215",
+      "sourceName": "AlgoXpert Alpha Research Framework. A Rigorous IS WFA OOS Protocol for Mitigating Overfitting in Quantitative Strategies",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/44/reviewerDecision",
+          "to": "/rows/626/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/44/sourceFitNotes",
+          "to": "/rows/626/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/44/citationUse",
+          "to": "/rows/626/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/44/reviewerName",
+          "to": "/rows/626/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/44/reviewedAt",
+          "to": "/rows/626/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/44/realHumanInput",
+          "to": "/rows/626/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 45,
+      "targetFullDraftRowIndex": 627,
+      "reviewId": "knv2_0190::corpus_0452",
+      "nodeId": "knv2_0190",
+      "documentId": "corpus_0452",
+      "sourceName": "Wikipedia: Backtesting",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/45/reviewerDecision",
+          "to": "/rows/627/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/45/sourceFitNotes",
+          "to": "/rows/627/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/45/citationUse",
+          "to": "/rows/627/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/45/reviewerName",
+          "to": "/rows/627/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/45/reviewedAt",
+          "to": "/rows/627/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/45/realHumanInput",
+          "to": "/rows/627/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 46,
+      "targetFullDraftRowIndex": 628,
+      "reviewId": "knv2_0190::corpus_0415",
+      "nodeId": "knv2_0190",
+      "documentId": "corpus_0415",
+      "sourceName": "Wikipedia: Cross-validation (statistics)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/46/reviewerDecision",
+          "to": "/rows/628/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/46/sourceFitNotes",
+          "to": "/rows/628/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/46/citationUse",
+          "to": "/rows/628/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/46/reviewerName",
+          "to": "/rows/628/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/46/reviewedAt",
+          "to": "/rows/628/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/46/realHumanInput",
+          "to": "/rows/628/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 47,
+      "targetFullDraftRowIndex": 629,
+      "reviewId": "knv2_0190::corpus_0455",
+      "nodeId": "knv2_0190",
+      "documentId": "corpus_0455",
+      "sourceName": "Wikipedia: Data dredging",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/47/reviewerDecision",
+          "to": "/rows/629/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/47/sourceFitNotes",
+          "to": "/rows/629/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/47/citationUse",
+          "to": "/rows/629/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/47/reviewerName",
+          "to": "/rows/629/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/47/reviewedAt",
+          "to": "/rows/629/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/47/realHumanInput",
+          "to": "/rows/629/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 48,
+      "targetFullDraftRowIndex": 696,
+      "reviewId": "knv2_0202::corpus_0472",
+      "nodeId": "knv2_0202",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/48/reviewerDecision",
+          "to": "/rows/696/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/48/sourceFitNotes",
+          "to": "/rows/696/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/48/citationUse",
+          "to": "/rows/696/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/48/reviewerName",
+          "to": "/rows/696/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/48/reviewedAt",
+          "to": "/rows/696/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/48/realHumanInput",
+          "to": "/rows/696/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 49,
+      "targetFullDraftRowIndex": 697,
+      "reviewId": "knv2_0202::corpus_0102",
+      "nodeId": "knv2_0202",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/49/reviewerDecision",
+          "to": "/rows/697/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/49/sourceFitNotes",
+          "to": "/rows/697/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/49/citationUse",
+          "to": "/rows/697/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/49/reviewerName",
+          "to": "/rows/697/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/49/reviewedAt",
+          "to": "/rows/697/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/49/realHumanInput",
+          "to": "/rows/697/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 50,
+      "targetFullDraftRowIndex": 698,
+      "reviewId": "knv2_0202::corpus_0215",
+      "nodeId": "knv2_0202",
+      "documentId": "corpus_0215",
+      "sourceName": "AlgoXpert Alpha Research Framework. A Rigorous IS WFA OOS Protocol for Mitigating Overfitting in Quantitative Strategies",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/50/reviewerDecision",
+          "to": "/rows/698/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/50/sourceFitNotes",
+          "to": "/rows/698/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/50/citationUse",
+          "to": "/rows/698/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/50/reviewerName",
+          "to": "/rows/698/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/50/reviewedAt",
+          "to": "/rows/698/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/50/realHumanInput",
+          "to": "/rows/698/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 51,
+      "targetFullDraftRowIndex": 699,
+      "reviewId": "knv2_0202::corpus_0452",
+      "nodeId": "knv2_0202",
+      "documentId": "corpus_0452",
+      "sourceName": "Wikipedia: Backtesting",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/51/reviewerDecision",
+          "to": "/rows/699/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/51/sourceFitNotes",
+          "to": "/rows/699/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/51/citationUse",
+          "to": "/rows/699/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/51/reviewerName",
+          "to": "/rows/699/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/51/reviewedAt",
+          "to": "/rows/699/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/51/realHumanInput",
+          "to": "/rows/699/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 52,
+      "targetFullDraftRowIndex": 700,
+      "reviewId": "knv2_0202::corpus_0415",
+      "nodeId": "knv2_0202",
+      "documentId": "corpus_0415",
+      "sourceName": "Wikipedia: Cross-validation (statistics)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/52/reviewerDecision",
+          "to": "/rows/700/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/52/sourceFitNotes",
+          "to": "/rows/700/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/52/citationUse",
+          "to": "/rows/700/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/52/reviewerName",
+          "to": "/rows/700/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/52/reviewedAt",
+          "to": "/rows/700/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/52/realHumanInput",
+          "to": "/rows/700/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 53,
+      "targetFullDraftRowIndex": 701,
+      "reviewId": "knv2_0202::corpus_0455",
+      "nodeId": "knv2_0202",
+      "documentId": "corpus_0455",
+      "sourceName": "Wikipedia: Data dredging",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/53/reviewerDecision",
+          "to": "/rows/701/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/53/sourceFitNotes",
+          "to": "/rows/701/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/53/citationUse",
+          "to": "/rows/701/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/53/reviewerName",
+          "to": "/rows/701/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/53/reviewedAt",
+          "to": "/rows/701/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/53/realHumanInput",
+          "to": "/rows/701/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 54,
+      "targetFullDraftRowIndex": 768,
+      "reviewId": "knv2_0214::corpus_0472",
+      "nodeId": "knv2_0214",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/54/reviewerDecision",
+          "to": "/rows/768/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/54/sourceFitNotes",
+          "to": "/rows/768/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/54/citationUse",
+          "to": "/rows/768/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/54/reviewerName",
+          "to": "/rows/768/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/54/reviewedAt",
+          "to": "/rows/768/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/54/realHumanInput",
+          "to": "/rows/768/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 55,
+      "targetFullDraftRowIndex": 769,
+      "reviewId": "knv2_0214::corpus_0102",
+      "nodeId": "knv2_0214",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/55/reviewerDecision",
+          "to": "/rows/769/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/55/sourceFitNotes",
+          "to": "/rows/769/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/55/citationUse",
+          "to": "/rows/769/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/55/reviewerName",
+          "to": "/rows/769/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/55/reviewedAt",
+          "to": "/rows/769/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/55/realHumanInput",
+          "to": "/rows/769/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 56,
+      "targetFullDraftRowIndex": 770,
+      "reviewId": "knv2_0214::corpus_0215",
+      "nodeId": "knv2_0214",
+      "documentId": "corpus_0215",
+      "sourceName": "AlgoXpert Alpha Research Framework. A Rigorous IS WFA OOS Protocol for Mitigating Overfitting in Quantitative Strategies",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/56/reviewerDecision",
+          "to": "/rows/770/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/56/sourceFitNotes",
+          "to": "/rows/770/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/56/citationUse",
+          "to": "/rows/770/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/56/reviewerName",
+          "to": "/rows/770/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/56/reviewedAt",
+          "to": "/rows/770/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/56/realHumanInput",
+          "to": "/rows/770/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 57,
+      "targetFullDraftRowIndex": 771,
+      "reviewId": "knv2_0214::corpus_0452",
+      "nodeId": "knv2_0214",
+      "documentId": "corpus_0452",
+      "sourceName": "Wikipedia: Backtesting",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/57/reviewerDecision",
+          "to": "/rows/771/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/57/sourceFitNotes",
+          "to": "/rows/771/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/57/citationUse",
+          "to": "/rows/771/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/57/reviewerName",
+          "to": "/rows/771/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/57/reviewedAt",
+          "to": "/rows/771/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/57/realHumanInput",
+          "to": "/rows/771/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 58,
+      "targetFullDraftRowIndex": 772,
+      "reviewId": "knv2_0214::corpus_0415",
+      "nodeId": "knv2_0214",
+      "documentId": "corpus_0415",
+      "sourceName": "Wikipedia: Cross-validation (statistics)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/58/reviewerDecision",
+          "to": "/rows/772/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/58/sourceFitNotes",
+          "to": "/rows/772/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/58/citationUse",
+          "to": "/rows/772/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/58/reviewerName",
+          "to": "/rows/772/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/58/reviewedAt",
+          "to": "/rows/772/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/58/realHumanInput",
+          "to": "/rows/772/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 59,
+      "targetFullDraftRowIndex": 773,
+      "reviewId": "knv2_0214::corpus_0455",
+      "nodeId": "knv2_0214",
+      "documentId": "corpus_0455",
+      "sourceName": "Wikipedia: Data dredging",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/59/reviewerDecision",
+          "to": "/rows/773/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/59/sourceFitNotes",
+          "to": "/rows/773/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/59/citationUse",
+          "to": "/rows/773/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/59/reviewerName",
+          "to": "/rows/773/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/59/reviewedAt",
+          "to": "/rows/773/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/59/realHumanInput",
+          "to": "/rows/773/realHumanInput"
+        }
+      }
+    }
+  ],
+  "sampleMergeRows": [
+    {
+      "packetRowIndex": 0,
+      "targetFullDraftRowIndex": 132,
+      "reviewId": "knv2_0106::corpus_0472",
+      "nodeId": "knv2_0106",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/0/reviewerDecision",
+          "to": "/rows/132/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/0/sourceFitNotes",
+          "to": "/rows/132/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/0/citationUse",
+          "to": "/rows/132/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/0/reviewerName",
+          "to": "/rows/132/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/0/reviewedAt",
+          "to": "/rows/132/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/0/realHumanInput",
+          "to": "/rows/132/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 1,
+      "targetFullDraftRowIndex": 133,
+      "reviewId": "knv2_0106::corpus_0102",
+      "nodeId": "knv2_0106",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/1/reviewerDecision",
+          "to": "/rows/133/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/1/sourceFitNotes",
+          "to": "/rows/133/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/1/citationUse",
+          "to": "/rows/133/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/1/reviewerName",
+          "to": "/rows/133/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/1/reviewedAt",
+          "to": "/rows/133/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/1/realHumanInput",
+          "to": "/rows/133/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 2,
+      "targetFullDraftRowIndex": 134,
+      "reviewId": "knv2_0106::corpus_0215",
+      "nodeId": "knv2_0106",
+      "documentId": "corpus_0215",
+      "sourceName": "AlgoXpert Alpha Research Framework. A Rigorous IS WFA OOS Protocol for Mitigating Overfitting in Quantitative Strategies",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/2/reviewerDecision",
+          "to": "/rows/134/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/2/sourceFitNotes",
+          "to": "/rows/134/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/2/citationUse",
+          "to": "/rows/134/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/2/reviewerName",
+          "to": "/rows/134/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/2/reviewedAt",
+          "to": "/rows/134/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/2/realHumanInput",
+          "to": "/rows/134/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 3,
+      "targetFullDraftRowIndex": 135,
+      "reviewId": "knv2_0106::corpus_0452",
+      "nodeId": "knv2_0106",
+      "documentId": "corpus_0452",
+      "sourceName": "Wikipedia: Backtesting",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/3/reviewerDecision",
+          "to": "/rows/135/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/3/sourceFitNotes",
+          "to": "/rows/135/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/3/citationUse",
+          "to": "/rows/135/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/3/reviewerName",
+          "to": "/rows/135/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/3/reviewedAt",
+          "to": "/rows/135/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/3/realHumanInput",
+          "to": "/rows/135/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 4,
+      "targetFullDraftRowIndex": 136,
+      "reviewId": "knv2_0106::corpus_0415",
+      "nodeId": "knv2_0106",
+      "documentId": "corpus_0415",
+      "sourceName": "Wikipedia: Cross-validation (statistics)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/4/reviewerDecision",
+          "to": "/rows/136/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/4/sourceFitNotes",
+          "to": "/rows/136/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/4/citationUse",
+          "to": "/rows/136/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/4/reviewerName",
+          "to": "/rows/136/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/4/reviewedAt",
+          "to": "/rows/136/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/4/realHumanInput",
+          "to": "/rows/136/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 5,
+      "targetFullDraftRowIndex": 137,
+      "reviewId": "knv2_0106::corpus_0455",
+      "nodeId": "knv2_0106",
+      "documentId": "corpus_0455",
+      "sourceName": "Wikipedia: Data dredging",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/5/reviewerDecision",
+          "to": "/rows/137/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/5/sourceFitNotes",
+          "to": "/rows/137/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/5/citationUse",
+          "to": "/rows/137/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/5/reviewerName",
+          "to": "/rows/137/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/5/reviewedAt",
+          "to": "/rows/137/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/5/realHumanInput",
+          "to": "/rows/137/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 6,
+      "targetFullDraftRowIndex": 204,
+      "reviewId": "knv2_0118::corpus_0472",
+      "nodeId": "knv2_0118",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/6/reviewerDecision",
+          "to": "/rows/204/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/6/sourceFitNotes",
+          "to": "/rows/204/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/6/citationUse",
+          "to": "/rows/204/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/6/reviewerName",
+          "to": "/rows/204/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/6/reviewedAt",
+          "to": "/rows/204/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/6/realHumanInput",
+          "to": "/rows/204/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 7,
+      "targetFullDraftRowIndex": 205,
+      "reviewId": "knv2_0118::corpus_0102",
+      "nodeId": "knv2_0118",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/7/reviewerDecision",
+          "to": "/rows/205/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/7/sourceFitNotes",
+          "to": "/rows/205/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/7/citationUse",
+          "to": "/rows/205/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/7/reviewerName",
+          "to": "/rows/205/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/7/reviewedAt",
+          "to": "/rows/205/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/7/realHumanInput",
+          "to": "/rows/205/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 8,
+      "targetFullDraftRowIndex": 206,
+      "reviewId": "knv2_0118::corpus_0215",
+      "nodeId": "knv2_0118",
+      "documentId": "corpus_0215",
+      "sourceName": "AlgoXpert Alpha Research Framework. A Rigorous IS WFA OOS Protocol for Mitigating Overfitting in Quantitative Strategies",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/8/reviewerDecision",
+          "to": "/rows/206/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/8/sourceFitNotes",
+          "to": "/rows/206/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/8/citationUse",
+          "to": "/rows/206/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/8/reviewerName",
+          "to": "/rows/206/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/8/reviewedAt",
+          "to": "/rows/206/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/8/realHumanInput",
+          "to": "/rows/206/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 9,
+      "targetFullDraftRowIndex": 207,
+      "reviewId": "knv2_0118::corpus_0452",
+      "nodeId": "knv2_0118",
+      "documentId": "corpus_0452",
+      "sourceName": "Wikipedia: Backtesting",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/9/reviewerDecision",
+          "to": "/rows/207/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/9/sourceFitNotes",
+          "to": "/rows/207/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/9/citationUse",
+          "to": "/rows/207/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/9/reviewerName",
+          "to": "/rows/207/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/9/reviewedAt",
+          "to": "/rows/207/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/9/realHumanInput",
+          "to": "/rows/207/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 10,
+      "targetFullDraftRowIndex": 208,
+      "reviewId": "knv2_0118::corpus_0415",
+      "nodeId": "knv2_0118",
+      "documentId": "corpus_0415",
+      "sourceName": "Wikipedia: Cross-validation (statistics)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/10/reviewerDecision",
+          "to": "/rows/208/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/10/sourceFitNotes",
+          "to": "/rows/208/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/10/citationUse",
+          "to": "/rows/208/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/10/reviewerName",
+          "to": "/rows/208/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/10/reviewedAt",
+          "to": "/rows/208/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/10/realHumanInput",
+          "to": "/rows/208/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 11,
+      "targetFullDraftRowIndex": 209,
+      "reviewId": "knv2_0118::corpus_0455",
+      "nodeId": "knv2_0118",
+      "documentId": "corpus_0455",
+      "sourceName": "Wikipedia: Data dredging",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/11/reviewerDecision",
+          "to": "/rows/209/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/11/sourceFitNotes",
+          "to": "/rows/209/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/11/citationUse",
+          "to": "/rows/209/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/11/reviewerName",
+          "to": "/rows/209/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/11/reviewedAt",
+          "to": "/rows/209/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/11/realHumanInput",
+          "to": "/rows/209/realHumanInput"
+        }
+      }
+    }
+  ],
+  "commands": [
+    "npm.cmd run build:knowledge-node-public-source-fit-review-packet-016-suite",
+    "npm.cmd run check:knowledge-node-public-source-fit-review-packet-016-suite"
+  ],
+  "completionRule": "Packet 016 merge preview becomes ready only when the packet input copy validates every row as real human input, every packet row maps to the full 1638-row draft, forbidden hits are zero, learnerCitationApproved:false, copiedTextApproved:false, and a separate manual merge/write authorization exists.",
+  "boundary": "Packet 016 merge preview is dry-run reviewer operations only. It does not write the full source-fit draft, create human judgments, approve copied text, approve learner-facing citations, write lessons, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, or production readiness."
+}

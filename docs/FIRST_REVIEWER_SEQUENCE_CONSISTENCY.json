@@ -1,0 +1,286 @@
+{
+  "generatedAt": "2026-06-19T09:45:09.344Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "sequenceGateReady": true,
+  "realStatusPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "realStatusOverlayPresent": false,
+  "orderRows": [
+    {
+      "name": "human execution steps",
+      "rows": 41,
+      "firstOrder": 1,
+      "lastOrder": 41,
+      "duplicateOrders": [],
+      "missingOrders": [],
+      "passed": true
+    },
+    {
+      "name": "operator phase rows",
+      "rows": 29,
+      "firstOrder": 1,
+      "lastOrder": 29,
+      "duplicateOrders": [],
+      "missingOrders": [],
+      "passed": true
+    },
+    {
+      "name": "post-write command rows",
+      "rows": 12,
+      "firstOrder": 1,
+      "lastOrder": 12,
+      "duplicateOrders": [],
+      "missingOrders": [],
+      "passed": true
+    },
+    {
+      "name": "dry-run command order",
+      "rows": 46,
+      "firstOrder": 1,
+      "lastOrder": 46,
+      "duplicateOrders": [],
+      "missingOrders": [],
+      "passed": true
+    },
+    {
+      "name": "pre-write packet order",
+      "rows": 22,
+      "firstOrder": 1,
+      "lastOrder": 22,
+      "duplicateOrders": [],
+      "missingOrders": [],
+      "passed": true
+    }
+  ],
+  "crossLinkRows": [
+    {
+      "name": "dry-run includes sequence report file",
+      "passed": true,
+      "evidence": "docs/FIRST_REVIEWER_SEQUENCE_CONSISTENCY.md"
+    },
+    {
+      "name": "dry-run includes sequence command",
+      "passed": true,
+      "evidence": "npm.cmd run check:first-reviewer-sequence-consistency"
+    },
+    {
+      "name": "progress dashboard includes sequence status",
+      "passed": true,
+      "evidence": "statusBoard.Sequence consistency gate"
+    },
+    {
+      "name": "human execution bundle points to sequence report",
+      "passed": true,
+      "evidence": "docs/FIRST_REVIEWER_SEQUENCE_CONSISTENCY.md"
+    },
+    {
+      "name": "operator index points to sequence report",
+      "passed": true,
+      "evidence": "docs/FIRST_REVIEWER_SEQUENCE_CONSISTENCY.md"
+    },
+    {
+      "name": "pre-write dossier includes sequence report",
+      "passed": true,
+      "evidence": "docs/FIRST_REVIEWER_SEQUENCE_CONSISTENCY.md"
+    },
+    {
+      "name": "dry-run includes source-fit decision summary file",
+      "passed": true,
+      "evidence": "docs/FIRST_REVIEWER_SOURCE_FIT_DECISION_SUMMARY.md"
+    },
+    {
+      "name": "dry-run includes source-fit decision summary command",
+      "passed": true,
+      "evidence": "npm.cmd run check:first-reviewer-source-fit-decision-summary"
+    },
+    {
+      "name": "progress dashboard includes source-fit decision summary status",
+      "passed": true,
+      "evidence": "statusBoard.Source-fit decision summary"
+    },
+    {
+      "name": "human execution bundle points to source-fit decision summary",
+      "passed": true,
+      "evidence": "docs/FIRST_REVIEWER_SOURCE_FIT_DECISION_SUMMARY.md"
+    },
+    {
+      "name": "operator index points to source-fit decision summary",
+      "passed": true,
+      "evidence": "docs/FIRST_REVIEWER_SOURCE_FIT_DECISION_SUMMARY.md"
+    },
+    {
+      "name": "pre-write dossier includes source-fit decision summary",
+      "passed": true,
+      "evidence": "docs/FIRST_REVIEWER_SOURCE_FIT_DECISION_SUMMARY.md"
+    },
+    {
+      "name": "dry-run includes sourceFitNotes card pack file",
+      "passed": true,
+      "evidence": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_CARD_PACK.md"
+    },
+    {
+      "name": "dry-run includes sourceFitNotes card pack command",
+      "passed": true,
+      "evidence": "npm.cmd run check:first-reviewer-source-fit-notes-card-pack"
+    },
+    {
+      "name": "progress dashboard includes sourceFitNotes card pack status",
+      "passed": true,
+      "evidence": "statusBoard.SourceFitNotes card pack"
+    },
+    {
+      "name": "human execution bundle points to sourceFitNotes card pack",
+      "passed": true,
+      "evidence": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_CARD_PACK.md"
+    },
+    {
+      "name": "operator index points to sourceFitNotes card pack",
+      "passed": true,
+      "evidence": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_CARD_PACK.md"
+    },
+    {
+      "name": "pre-write dossier includes sourceFitNotes card pack",
+      "passed": true,
+      "evidence": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_CARD_PACK.md"
+    },
+    {
+      "name": "dry-run includes sourceFitNotes card negative cases file",
+      "passed": true,
+      "evidence": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_CARD_NEGATIVE_CASES.md"
+    },
+    {
+      "name": "dry-run includes sourceFitNotes card negative cases command",
+      "passed": true,
+      "evidence": "npm.cmd run check:first-reviewer-source-fit-notes-card-negative-cases"
+    },
+    {
+      "name": "progress dashboard includes sourceFitNotes card negative cases status",
+      "passed": true,
+      "evidence": "statusBoard.SourceFitNotes card negative cases"
+    },
+    {
+      "name": "human execution bundle points to sourceFitNotes card negative cases",
+      "passed": true,
+      "evidence": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_CARD_NEGATIVE_CASES.md"
+    },
+    {
+      "name": "operator index points to sourceFitNotes card negative cases",
+      "passed": true,
+      "evidence": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_CARD_NEGATIVE_CASES.md"
+    },
+    {
+      "name": "pre-write dossier includes sourceFitNotes card negative cases",
+      "passed": true,
+      "evidence": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_CARD_NEGATIVE_CASES.md"
+    },
+    {
+      "name": "dry-run includes sourceFitNotes positive matrix file",
+      "passed": true,
+      "evidence": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_POSITIVE_MATRIX.md"
+    },
+    {
+      "name": "dry-run includes sourceFitNotes positive matrix command",
+      "passed": true,
+      "evidence": "npm.cmd run check:first-reviewer-source-fit-notes-positive-matrix"
+    },
+    {
+      "name": "progress dashboard includes sourceFitNotes positive matrix status",
+      "passed": true,
+      "evidence": "statusBoard.SourceFitNotes positive matrix"
+    },
+    {
+      "name": "human execution bundle points to sourceFitNotes positive matrix",
+      "passed": true,
+      "evidence": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_POSITIVE_MATRIX.md"
+    },
+    {
+      "name": "operator index points to sourceFitNotes positive matrix",
+      "passed": true,
+      "evidence": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_POSITIVE_MATRIX.md"
+    },
+    {
+      "name": "pre-write dossier includes sourceFitNotes positive matrix",
+      "passed": true,
+      "evidence": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_POSITIVE_MATRIX.md"
+    },
+    {
+      "name": "dry-run includes sourceFitNotes human-fill preflight file",
+      "passed": true,
+      "evidence": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_HUMAN_FILL_PREFLIGHT.md"
+    },
+    {
+      "name": "dry-run includes sourceFitNotes human-fill preflight command",
+      "passed": true,
+      "evidence": "npm.cmd run check:first-reviewer-source-fit-notes-human-fill-preflight"
+    },
+    {
+      "name": "progress dashboard includes sourceFitNotes human-fill preflight status",
+      "passed": true,
+      "evidence": "statusBoard.SourceFitNotes human-fill preflight"
+    },
+    {
+      "name": "human execution bundle points to sourceFitNotes human-fill preflight",
+      "passed": true,
+      "evidence": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_HUMAN_FILL_PREFLIGHT.md"
+    },
+    {
+      "name": "operator index points to sourceFitNotes human-fill preflight",
+      "passed": true,
+      "evidence": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_HUMAN_FILL_PREFLIGHT.md"
+    },
+    {
+      "name": "pre-write dossier includes sourceFitNotes human-fill preflight",
+      "passed": true,
+      "evidence": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_HUMAN_FILL_PREFLIGHT.md"
+    },
+    {
+      "name": "dry-run includes dry-run bundle audit file",
+      "passed": true,
+      "evidence": "docs/FIRST_REVIEWER_REAL_OVERLAY_DRY_RUN_BUNDLE_AUDIT.md"
+    },
+    {
+      "name": "dry-run includes dry-run bundle audit command",
+      "passed": true,
+      "evidence": "npm.cmd run check:first-reviewer-real-overlay-dry-run-bundle-audit"
+    },
+    {
+      "name": "progress dashboard includes dry-run bundle audit status",
+      "passed": true,
+      "evidence": "statusBoard.Dry-run bundle audit"
+    },
+    {
+      "name": "human execution bundle points to dry-run bundle audit",
+      "passed": true,
+      "evidence": "docs/FIRST_REVIEWER_REAL_OVERLAY_DRY_RUN_BUNDLE_AUDIT.md"
+    },
+    {
+      "name": "operator index points to dry-run bundle audit",
+      "passed": true,
+      "evidence": "docs/FIRST_REVIEWER_REAL_OVERLAY_DRY_RUN_BUNDLE_AUDIT.md"
+    },
+    {
+      "name": "pre-write dossier includes dry-run bundle audit",
+      "passed": true,
+      "evidence": "docs/FIRST_REVIEWER_REAL_OVERLAY_DRY_RUN_BUNDLE_AUDIT.md"
+    },
+    {
+      "name": "dry-run bundle audit remains write-blocked",
+      "passed": true,
+      "evidence": "writeAllowedNow:false; humanAuthorizationRecorded:false"
+    }
+  ],
+  "failedChecks": 0,
+  "sourceReports": {
+    "dryRunPacket": "docs/FIRST_REVIEWER_DRY_RUN_PACKET.json",
+    "progressDashboard": "docs/FIRST_REVIEWER_PROGRESS_DASHBOARD.json",
+    "humanExecutionBundle": "docs/FIRST_REVIEWER_HUMAN_EXECUTION_BUNDLE.json",
+    "operatorIndex": "docs/FIRST_REVIEWER_OPERATOR_INDEX.json",
+    "postWriteCommandPack": "docs/FIRST_REVIEWER_POST_WRITE_COMMAND_PACK.json",
+    "prewriteSampleDossier": "docs/FIRST_REVIEWER_PREWRITE_SAMPLE_DOSSIER.json",
+    "realOverlayDryRunBundleAudit": "docs/FIRST_REVIEWER_REAL_OVERLAY_DRY_RUN_BUNDLE_AUDIT.json"
+  },
+  "boundary": "This sequence consistency gate only checks first-reviewer operations ordering and cross-links. It does not create docs/LESSON_BATCH_REVIEW_STATUS.json, fill human notes, confirm source use, approve lessons, publish learner-facing content, change grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, guide real-money decisions, grant internal-trial readiness, launch the course, or make the product production-ready."
+}

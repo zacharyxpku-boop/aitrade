@@ -1,0 +1,956 @@
+{
+  "generatedAt": "2026-06-22T04:53:22.401Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "mergePreviewStatus": "packet_024_merge_preview_blocked_missing_ready_packet_input",
+  "mergePreviewMode": "dry_run_packet_input_copy_to_full_source_fit_draft_mapping",
+  "packetId": "node-public-source-fit-batch-024-packet",
+  "batchId": "node-public-source-fit-batch-024",
+  "module": "交易心理",
+  "packetInputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_024_INPUT_COPY_TEMPLATE.json",
+  "packetValidationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_024_INPUT_COPY_TEMPLATE_VALIDATION.json",
+  "fullDraftInputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+  "fullValidationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_VALIDATION.json",
+  "packetRows": 12,
+  "fullDraftRows": 1638,
+  "fullValidationRows": 1638,
+  "mappedRows": 12,
+  "missingTargetRows": 0,
+  "readyRows": 0,
+  "blockedRows": 12,
+  "packetValidationStatus": "blocked_missing_real_reviewer_source_fit_input",
+  "packetReadyRows": 0,
+  "packetBlockedRows": 12,
+  "packetMissingFieldRows": 12,
+  "packetForbiddenHitRows": 0,
+  "packetRealHumanInputEntries": 0,
+  "fullDraftReadyRowsBeforeMerge": 0,
+  "fullDraftBlockedRowsBeforeMerge": 1638,
+  "mergeAllowedNow": false,
+  "writeAllowedNow": false,
+  "manualAuthorizationRequired": true,
+  "mergeRows": [
+    {
+      "packetRowIndex": 0,
+      "targetFullDraftRowIndex": 1560,
+      "reviewId": "knv2_0348::corpus_0459",
+      "nodeId": "knv2_0348",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/0/reviewerDecision",
+          "to": "/rows/1560/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/0/sourceFitNotes",
+          "to": "/rows/1560/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/0/citationUse",
+          "to": "/rows/1560/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/0/reviewerName",
+          "to": "/rows/1560/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/0/reviewedAt",
+          "to": "/rows/1560/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/0/realHumanInput",
+          "to": "/rows/1560/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 1,
+      "targetFullDraftRowIndex": 1561,
+      "reviewId": "knv2_0348::corpus_0063",
+      "nodeId": "knv2_0348",
+      "documentId": "corpus_0063",
+      "sourceName": "BLS Handbook Import Export",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/1/reviewerDecision",
+          "to": "/rows/1561/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/1/sourceFitNotes",
+          "to": "/rows/1561/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/1/citationUse",
+          "to": "/rows/1561/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/1/reviewerName",
+          "to": "/rows/1561/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/1/reviewedAt",
+          "to": "/rows/1561/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/1/realHumanInput",
+          "to": "/rows/1561/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 2,
+      "targetFullDraftRowIndex": 1562,
+      "reviewId": "knv2_0348::corpus_0352",
+      "nodeId": "knv2_0348",
+      "documentId": "corpus_0352",
+      "sourceName": "A quantum double-or-nothing game: The Kelly Criterion for Spins",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/2/reviewerDecision",
+          "to": "/rows/1562/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/2/sourceFitNotes",
+          "to": "/rows/1562/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/2/citationUse",
+          "to": "/rows/1562/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/2/reviewerName",
+          "to": "/rows/1562/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/2/reviewedAt",
+          "to": "/rows/1562/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/2/realHumanInput",
+          "to": "/rows/1562/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 3,
+      "targetFullDraftRowIndex": 1563,
+      "reviewId": "knv2_0348::corpus_0462",
+      "nodeId": "knv2_0348",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/3/reviewerDecision",
+          "to": "/rows/1563/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/3/sourceFitNotes",
+          "to": "/rows/1563/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/3/citationUse",
+          "to": "/rows/1563/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/3/reviewerName",
+          "to": "/rows/1563/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/3/reviewedAt",
+          "to": "/rows/1563/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/3/realHumanInput",
+          "to": "/rows/1563/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 4,
+      "targetFullDraftRowIndex": 1564,
+      "reviewId": "knv2_0348::corpus_0465",
+      "nodeId": "knv2_0348",
+      "documentId": "corpus_0465",
+      "sourceName": "Wikipedia: Disposition effect",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/4/reviewerDecision",
+          "to": "/rows/1564/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/4/sourceFitNotes",
+          "to": "/rows/1564/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/4/citationUse",
+          "to": "/rows/1564/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/4/reviewerName",
+          "to": "/rows/1564/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/4/reviewedAt",
+          "to": "/rows/1564/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/4/realHumanInput",
+          "to": "/rows/1564/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 5,
+      "targetFullDraftRowIndex": 1565,
+      "reviewId": "knv2_0348::corpus_0427",
+      "nodeId": "knv2_0348",
+      "documentId": "corpus_0427",
+      "sourceName": "Wikipedia: Efficient-market hypothesis",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/5/reviewerDecision",
+          "to": "/rows/1565/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/5/sourceFitNotes",
+          "to": "/rows/1565/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/5/citationUse",
+          "to": "/rows/1565/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/5/reviewerName",
+          "to": "/rows/1565/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/5/reviewedAt",
+          "to": "/rows/1565/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/5/realHumanInput",
+          "to": "/rows/1565/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 6,
+      "targetFullDraftRowIndex": 1632,
+      "reviewId": "knv2_0360::corpus_0459",
+      "nodeId": "knv2_0360",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/6/reviewerDecision",
+          "to": "/rows/1632/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/6/sourceFitNotes",
+          "to": "/rows/1632/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/6/citationUse",
+          "to": "/rows/1632/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/6/reviewerName",
+          "to": "/rows/1632/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/6/reviewedAt",
+          "to": "/rows/1632/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/6/realHumanInput",
+          "to": "/rows/1632/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 7,
+      "targetFullDraftRowIndex": 1633,
+      "reviewId": "knv2_0360::corpus_0063",
+      "nodeId": "knv2_0360",
+      "documentId": "corpus_0063",
+      "sourceName": "BLS Handbook Import Export",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/7/reviewerDecision",
+          "to": "/rows/1633/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/7/sourceFitNotes",
+          "to": "/rows/1633/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/7/citationUse",
+          "to": "/rows/1633/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/7/reviewerName",
+          "to": "/rows/1633/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/7/reviewedAt",
+          "to": "/rows/1633/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/7/realHumanInput",
+          "to": "/rows/1633/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 8,
+      "targetFullDraftRowIndex": 1634,
+      "reviewId": "knv2_0360::corpus_0352",
+      "nodeId": "knv2_0360",
+      "documentId": "corpus_0352",
+      "sourceName": "A quantum double-or-nothing game: The Kelly Criterion for Spins",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/8/reviewerDecision",
+          "to": "/rows/1634/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/8/sourceFitNotes",
+          "to": "/rows/1634/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/8/citationUse",
+          "to": "/rows/1634/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/8/reviewerName",
+          "to": "/rows/1634/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/8/reviewedAt",
+          "to": "/rows/1634/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/8/realHumanInput",
+          "to": "/rows/1634/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 9,
+      "targetFullDraftRowIndex": 1635,
+      "reviewId": "knv2_0360::corpus_0462",
+      "nodeId": "knv2_0360",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/9/reviewerDecision",
+          "to": "/rows/1635/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/9/sourceFitNotes",
+          "to": "/rows/1635/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/9/citationUse",
+          "to": "/rows/1635/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/9/reviewerName",
+          "to": "/rows/1635/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/9/reviewedAt",
+          "to": "/rows/1635/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/9/realHumanInput",
+          "to": "/rows/1635/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 10,
+      "targetFullDraftRowIndex": 1636,
+      "reviewId": "knv2_0360::corpus_0465",
+      "nodeId": "knv2_0360",
+      "documentId": "corpus_0465",
+      "sourceName": "Wikipedia: Disposition effect",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/10/reviewerDecision",
+          "to": "/rows/1636/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/10/sourceFitNotes",
+          "to": "/rows/1636/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/10/citationUse",
+          "to": "/rows/1636/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/10/reviewerName",
+          "to": "/rows/1636/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/10/reviewedAt",
+          "to": "/rows/1636/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/10/realHumanInput",
+          "to": "/rows/1636/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 11,
+      "targetFullDraftRowIndex": 1637,
+      "reviewId": "knv2_0360::corpus_0427",
+      "nodeId": "knv2_0360",
+      "documentId": "corpus_0427",
+      "sourceName": "Wikipedia: Efficient-market hypothesis",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/11/reviewerDecision",
+          "to": "/rows/1637/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/11/sourceFitNotes",
+          "to": "/rows/1637/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/11/citationUse",
+          "to": "/rows/1637/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/11/reviewerName",
+          "to": "/rows/1637/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/11/reviewedAt",
+          "to": "/rows/1637/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/11/realHumanInput",
+          "to": "/rows/1637/realHumanInput"
+        }
+      }
+    }
+  ],
+  "sampleMergeRows": [
+    {
+      "packetRowIndex": 0,
+      "targetFullDraftRowIndex": 1560,
+      "reviewId": "knv2_0348::corpus_0459",
+      "nodeId": "knv2_0348",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/0/reviewerDecision",
+          "to": "/rows/1560/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/0/sourceFitNotes",
+          "to": "/rows/1560/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/0/citationUse",
+          "to": "/rows/1560/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/0/reviewerName",
+          "to": "/rows/1560/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/0/reviewedAt",
+          "to": "/rows/1560/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/0/realHumanInput",
+          "to": "/rows/1560/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 1,
+      "targetFullDraftRowIndex": 1561,
+      "reviewId": "knv2_0348::corpus_0063",
+      "nodeId": "knv2_0348",
+      "documentId": "corpus_0063",
+      "sourceName": "BLS Handbook Import Export",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/1/reviewerDecision",
+          "to": "/rows/1561/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/1/sourceFitNotes",
+          "to": "/rows/1561/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/1/citationUse",
+          "to": "/rows/1561/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/1/reviewerName",
+          "to": "/rows/1561/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/1/reviewedAt",
+          "to": "/rows/1561/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/1/realHumanInput",
+          "to": "/rows/1561/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 2,
+      "targetFullDraftRowIndex": 1562,
+      "reviewId": "knv2_0348::corpus_0352",
+      "nodeId": "knv2_0348",
+      "documentId": "corpus_0352",
+      "sourceName": "A quantum double-or-nothing game: The Kelly Criterion for Spins",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/2/reviewerDecision",
+          "to": "/rows/1562/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/2/sourceFitNotes",
+          "to": "/rows/1562/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/2/citationUse",
+          "to": "/rows/1562/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/2/reviewerName",
+          "to": "/rows/1562/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/2/reviewedAt",
+          "to": "/rows/1562/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/2/realHumanInput",
+          "to": "/rows/1562/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 3,
+      "targetFullDraftRowIndex": 1563,
+      "reviewId": "knv2_0348::corpus_0462",
+      "nodeId": "knv2_0348",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/3/reviewerDecision",
+          "to": "/rows/1563/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/3/sourceFitNotes",
+          "to": "/rows/1563/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/3/citationUse",
+          "to": "/rows/1563/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/3/reviewerName",
+          "to": "/rows/1563/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/3/reviewedAt",
+          "to": "/rows/1563/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/3/realHumanInput",
+          "to": "/rows/1563/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 4,
+      "targetFullDraftRowIndex": 1564,
+      "reviewId": "knv2_0348::corpus_0465",
+      "nodeId": "knv2_0348",
+      "documentId": "corpus_0465",
+      "sourceName": "Wikipedia: Disposition effect",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/4/reviewerDecision",
+          "to": "/rows/1564/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/4/sourceFitNotes",
+          "to": "/rows/1564/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/4/citationUse",
+          "to": "/rows/1564/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/4/reviewerName",
+          "to": "/rows/1564/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/4/reviewedAt",
+          "to": "/rows/1564/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/4/realHumanInput",
+          "to": "/rows/1564/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 5,
+      "targetFullDraftRowIndex": 1565,
+      "reviewId": "knv2_0348::corpus_0427",
+      "nodeId": "knv2_0348",
+      "documentId": "corpus_0427",
+      "sourceName": "Wikipedia: Efficient-market hypothesis",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/5/reviewerDecision",
+          "to": "/rows/1565/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/5/sourceFitNotes",
+          "to": "/rows/1565/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/5/citationUse",
+          "to": "/rows/1565/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/5/reviewerName",
+          "to": "/rows/1565/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/5/reviewedAt",
+          "to": "/rows/1565/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/5/realHumanInput",
+          "to": "/rows/1565/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 6,
+      "targetFullDraftRowIndex": 1632,
+      "reviewId": "knv2_0360::corpus_0459",
+      "nodeId": "knv2_0360",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/6/reviewerDecision",
+          "to": "/rows/1632/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/6/sourceFitNotes",
+          "to": "/rows/1632/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/6/citationUse",
+          "to": "/rows/1632/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/6/reviewerName",
+          "to": "/rows/1632/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/6/reviewedAt",
+          "to": "/rows/1632/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/6/realHumanInput",
+          "to": "/rows/1632/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 7,
+      "targetFullDraftRowIndex": 1633,
+      "reviewId": "knv2_0360::corpus_0063",
+      "nodeId": "knv2_0360",
+      "documentId": "corpus_0063",
+      "sourceName": "BLS Handbook Import Export",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/7/reviewerDecision",
+          "to": "/rows/1633/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/7/sourceFitNotes",
+          "to": "/rows/1633/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/7/citationUse",
+          "to": "/rows/1633/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/7/reviewerName",
+          "to": "/rows/1633/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/7/reviewedAt",
+          "to": "/rows/1633/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/7/realHumanInput",
+          "to": "/rows/1633/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 8,
+      "targetFullDraftRowIndex": 1634,
+      "reviewId": "knv2_0360::corpus_0352",
+      "nodeId": "knv2_0360",
+      "documentId": "corpus_0352",
+      "sourceName": "A quantum double-or-nothing game: The Kelly Criterion for Spins",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/8/reviewerDecision",
+          "to": "/rows/1634/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/8/sourceFitNotes",
+          "to": "/rows/1634/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/8/citationUse",
+          "to": "/rows/1634/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/8/reviewerName",
+          "to": "/rows/1634/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/8/reviewedAt",
+          "to": "/rows/1634/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/8/realHumanInput",
+          "to": "/rows/1634/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 9,
+      "targetFullDraftRowIndex": 1635,
+      "reviewId": "knv2_0360::corpus_0462",
+      "nodeId": "knv2_0360",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/9/reviewerDecision",
+          "to": "/rows/1635/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/9/sourceFitNotes",
+          "to": "/rows/1635/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/9/citationUse",
+          "to": "/rows/1635/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/9/reviewerName",
+          "to": "/rows/1635/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/9/reviewedAt",
+          "to": "/rows/1635/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/9/realHumanInput",
+          "to": "/rows/1635/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 10,
+      "targetFullDraftRowIndex": 1636,
+      "reviewId": "knv2_0360::corpus_0465",
+      "nodeId": "knv2_0360",
+      "documentId": "corpus_0465",
+      "sourceName": "Wikipedia: Disposition effect",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/10/reviewerDecision",
+          "to": "/rows/1636/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/10/sourceFitNotes",
+          "to": "/rows/1636/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/10/citationUse",
+          "to": "/rows/1636/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/10/reviewerName",
+          "to": "/rows/1636/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/10/reviewedAt",
+          "to": "/rows/1636/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/10/realHumanInput",
+          "to": "/rows/1636/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 11,
+      "targetFullDraftRowIndex": 1637,
+      "reviewId": "knv2_0360::corpus_0427",
+      "nodeId": "knv2_0360",
+      "documentId": "corpus_0427",
+      "sourceName": "Wikipedia: Efficient-market hypothesis",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/11/reviewerDecision",
+          "to": "/rows/1637/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/11/sourceFitNotes",
+          "to": "/rows/1637/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/11/citationUse",
+          "to": "/rows/1637/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/11/reviewerName",
+          "to": "/rows/1637/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/11/reviewedAt",
+          "to": "/rows/1637/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/11/realHumanInput",
+          "to": "/rows/1637/realHumanInput"
+        }
+      }
+    }
+  ],
+  "commands": [
+    "npm.cmd run build:knowledge-node-public-source-fit-review-packet-024-suite",
+    "npm.cmd run check:knowledge-node-public-source-fit-review-packet-024-suite"
+  ],
+  "completionRule": "Packet 024 merge preview becomes ready only when the packet input copy validates every row as real human input, every packet row maps to the full 1638-row draft, forbidden hits are zero, learnerCitationApproved:false, copiedTextApproved:false, and a separate manual merge/write authorization exists.",
+  "boundary": "Packet 024 merge preview is dry-run reviewer operations only. It does not write the full source-fit draft, create human judgments, approve copied text, approve learner-facing citations, write lessons, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, or production readiness."
+}

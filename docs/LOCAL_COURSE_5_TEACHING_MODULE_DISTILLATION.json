@@ -1,0 +1,2232 @@
+{
+  "generatedAt": "2026-06-24T17:10:34.998Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "writeAllowedNow": false,
+  "distillationStatus": "course_5_teaching_module_distillation_ready_private_design_release_blocked",
+  "distillationMode": "absorbed_course_5_sources_to_paraphrase_only_lesson_seeds",
+  "sourceIntake": "docs/LOCAL_COURSE_5_DOCUMENT_INTAKE.json",
+  "sourceSynthesis": "docs/LOCAL_COURSE_5_MODULE_SYNTHESIS.json",
+  "sourceFollowupAudit": "docs/LOCAL_COURSE_5_FOLLOWUP_ABSORPTION_CONTROL_AUDIT.json",
+  "sourceReviewerTemplate": "docs/reviewer-inputs/LOCAL_COURSE_5_FOLLOWUP_REAL_REVIEWER_INPUT_TEMPLATE.json",
+  "totalFiles": 134,
+  "uniquePrimaryRows": 131,
+  "textAbsorbedRows": 82,
+  "followupRequiredRows": 49,
+  "totalExtractedChars": 15315443,
+  "modules": 13,
+  "modulesWithLessonSeeds": 13,
+  "totalLessonSeeds": 52,
+  "modulesWithEvidenceAnchors": 12,
+  "totalEvidenceAnchors": 96,
+  "modulesBlockedByVisualOrOcr": 11,
+  "readyReviewerNotes": 0,
+  "acceptedForModuleDistillationRows": 0,
+  "acceptedForDeletionReadinessRows": 0,
+  "sourceFolderMayBeDeleted": false,
+  "learnerReadyModules": 0,
+  "moduleRows": [
+    {
+      "moduleId": "chart_pattern_encyclopedia",
+      "moduleLabel": "Chart Pattern Encyclopedia",
+      "sourceDocumentRows": 91,
+      "textAbsorbedRows": 66,
+      "followupRows": 25,
+      "visualSampleRows": 69,
+      "imageEntries": 9718,
+      "p0OrNonP0DraftRows": 255,
+      "lessonSeedRows": [
+        {
+          "lessonSeedId": "course5_chart_pattern_encyclopedia_lesson_seed_01",
+          "lessonTitle": "Pattern taxonomy as reference, not prediction",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "channel",
+            "chart",
+            "range",
+            "wedge"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_chart_pattern_encyclopedia_lesson_seed_02",
+          "lessonTitle": "Pattern examples grouped by context",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "channel",
+            "chart",
+            "range",
+            "wedge"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_chart_pattern_encyclopedia_lesson_seed_03",
+          "lessonTitle": "Visual checklist for pattern recognition",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "channel",
+            "chart",
+            "range",
+            "wedge"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_chart_pattern_encyclopedia_lesson_seed_04",
+          "lessonTitle": "Archive-to-module workflow for chart examples",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "channel",
+            "chart",
+            "range",
+            "wedge"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        }
+      ],
+      "lessonSeedCount": 4,
+      "conceptSignalRows": [
+        {
+          "concept": "channel",
+          "signalCountInSampledText": 834,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "chart",
+          "signalCountInSampledText": 755,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "range",
+          "signalCountInSampledText": 602,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "wedge",
+          "signalCountInSampledText": 489,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "flag",
+          "signalCountInSampledText": 464,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "pattern",
+          "signalCountInSampledText": 173,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "double",
+          "signalCountInSampledText": 122,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "triangle",
+          "signalCountInSampledText": 96,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        }
+      ],
+      "evidenceAnchors": [
+        {
+          "recordId": "course5_13b367b73d6e0e77bf62c6c7",
+          "relativePath": "Al Brooks Price Action 2018 图表.pdf",
+          "charCount": 2273399,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_13b367b73d6e0e77bf62c6c7.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_86088eefb8e8b14da3fe4b53",
+          "relativePath": "Al brooks 图表百科-v1.pdf",
+          "charCount": 1770963,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_86088eefb8e8b14da3fe4b53.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_79ca3cac1d1bb89e7edd3101",
+          "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/阿布价格行为学（基础篇）_01-36（新版统一尺寸).pdf",
+          "charCount": 1218691,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_79ca3cac1d1bb89e7edd3101.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_3f41d3f08b5a0f00e0167f75",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/How to trade price action manual.pdf",
+          "charCount": 177645,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_3f41d3f08b5a0f00e0167f75.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_a389e587e17016d09b838212",
+          "relativePath": "How to trade price action manual.pdf",
+          "charCount": 177645,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_a389e587e17016d09b838212.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_a6650d6127eb1e59a1389872",
+          "relativePath": "价格行为（全套 持续更新中）_文件目录.txt",
+          "charCount": 86263,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_a6650d6127eb1e59a1389872.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_1f0d958fca15d2d94d297cfe",
+          "relativePath": "5、阿布图表百科（学完视频再看，特别多）/7、The-Brooks-Encyclopedia-of-Chart-Patterns-Index(百科索引+机翻).xlsx",
+          "charCount": 78258,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_1f0d958fca15d2d94d297cfe.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_fd0d98d0f86146edf60e5b34",
+          "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/google翻译版（机翻）/拆分版/百科幻灯片-16-google机翻.pdf",
+          "charCount": 40849,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_fd0d98d0f86146edf60e5b34.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        }
+      ],
+      "evidenceAnchorCount": 8,
+      "unresolvedVisualOrOcrGate": true,
+      "reviewerNextGate": "resolve_visual_or_ocr_cards_then_accept_distill_or_archive",
+      "teachingModuleCandidateStatus": "private_teaching_module_seed_ready_for_reviewer_distillation",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "moduleId": "price_action_foundations",
+      "moduleLabel": "Price Action Foundations",
+      "sourceDocumentRows": 82,
+      "textAbsorbedRows": 78,
+      "followupRows": 4,
+      "visualSampleRows": 0,
+      "imageEntries": 0,
+      "p0OrNonP0DraftRows": 18,
+      "lessonSeedRows": [
+        {
+          "lessonSeedId": "course5_price_action_foundations_lesson_seed_01",
+          "lessonTitle": "Market structure and always-in context",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "bar",
+            "market",
+            "close",
+            "gap"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_price_action_foundations_lesson_seed_02",
+          "lessonTitle": "Bars, closes, tails, gaps, and pressure",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "bar",
+            "market",
+            "close",
+            "gap"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_price_action_foundations_lesson_seed_03",
+          "lessonTitle": "Reading trader expectation versus chart evidence",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "bar",
+            "market",
+            "close",
+            "gap"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_price_action_foundations_lesson_seed_04",
+          "lessonTitle": "Foundational decision hygiene for educational chart review",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "bar",
+            "market",
+            "close",
+            "gap"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        }
+      ],
+      "lessonSeedCount": 4,
+      "conceptSignalRows": [
+        {
+          "concept": "bar",
+          "signalCountInSampledText": 5888,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "market",
+          "signalCountInSampledText": 1587,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "close",
+          "signalCountInSampledText": 755,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "gap",
+          "signalCountInSampledText": 481,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "probability",
+          "signalCountInSampledText": 221,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "context",
+          "signalCountInSampledText": 152,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "pressure",
+          "signalCountInSampledText": 86,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "always in",
+          "signalCountInSampledText": 67,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        }
+      ],
+      "evidenceAnchors": [
+        {
+          "recordId": "course5_13b367b73d6e0e77bf62c6c7",
+          "relativePath": "Al Brooks Price Action 2018 图表.pdf",
+          "charCount": 2273399,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_13b367b73d6e0e77bf62c6c7.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_bdda02f6b4eb7fe8f67dcc86",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/2. Trading Price Action_Ranges价格行为交易之区间篇.pdf",
+          "charCount": 1319180,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_bdda02f6b4eb7fe8f67dcc86.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_61380f71c4fdc086dcd1919c",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/3. Trading Price Action_Reversals价格行为交易之反转篇.pdf",
+          "charCount": 1232007,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_61380f71c4fdc086dcd1919c.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_79ca3cac1d1bb89e7edd3101",
+          "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/阿布价格行为学（基础篇）_01-36（新版统一尺寸).pdf",
+          "charCount": 1218691,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_79ca3cac1d1bb89e7edd3101.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_545ec9ba1857d91671cf5c52",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/1. Trading Price Action_Trends价格行为交易之趋势篇.pdf",
+          "charCount": 962375,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_545ec9ba1857d91671cf5c52.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_c212bcbf5df87b08117dd589",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/Reading Price Charts Bar by Bar The Technical Analysis of Price Action for the Serious Trader (Al Br.pdf",
+          "charCount": 839465,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_c212bcbf5df87b08117dd589.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_02c82ff12187ddb0d7ff6ef7",
+          "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/阿布价格行为学（进阶篇）_37-52（新版统一尺寸).pdf",
+          "charCount": 778749,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_02c82ff12187ddb0d7ff6ef7.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_38dfbf92af7fbbe9df1ff598",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/文字版PDF/02高级篇中 AL Brooks《价格行为交易之区间篇》.pdf",
+          "charCount": 415740,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_38dfbf92af7fbbe9df1ff598.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        }
+      ],
+      "evidenceAnchorCount": 8,
+      "unresolvedVisualOrOcrGate": true,
+      "reviewerNextGate": "resolve_visual_or_ocr_cards_then_accept_distill_or_archive",
+      "teachingModuleCandidateStatus": "private_teaching_module_seed_ready_for_reviewer_distillation",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "moduleId": "course_slides_alignment",
+      "moduleLabel": "Course 1-4 Slide Alignment",
+      "sourceDocumentRows": 67,
+      "textAbsorbedRows": 64,
+      "followupRows": 3,
+      "visualSampleRows": 9,
+      "imageEntries": 0,
+      "p0OrNonP0DraftRows": 27,
+      "lessonSeedRows": [
+        {
+          "lessonSeedId": "course5_course_slides_alignment_lesson_seed_01",
+          "lessonTitle": "Map Course 1-4 slide concepts to module order",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "course",
+            "video",
+            "slide",
+            "definition"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_course_slides_alignment_lesson_seed_02",
+          "lessonTitle": "Identify slide-only visual gaps",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "course",
+            "video",
+            "slide",
+            "definition"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_course_slides_alignment_lesson_seed_03",
+          "lessonTitle": "Use slide sequence as curriculum spine",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "course",
+            "video",
+            "slide",
+            "definition"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_course_slides_alignment_lesson_seed_04",
+          "lessonTitle": "Separate source notes from original teaching copy",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "course",
+            "video",
+            "slide",
+            "definition"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        }
+      ],
+      "lessonSeedCount": 4,
+      "conceptSignalRows": [
+        {
+          "concept": "course",
+          "signalCountInSampledText": 930,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "video",
+          "signalCountInSampledText": 900,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "slide",
+          "signalCountInSampledText": 577,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "definition",
+          "signalCountInSampledText": 5,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "glossary",
+          "signalCountInSampledText": 1,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "lesson",
+          "signalCountInSampledText": 0,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        }
+      ],
+      "evidenceAnchors": [
+        {
+          "recordId": "course5_79ca3cac1d1bb89e7edd3101",
+          "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/阿布价格行为学（基础篇）_01-36（新版统一尺寸).pdf",
+          "charCount": 1218691,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_79ca3cac1d1bb89e7edd3101.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_02c82ff12187ddb0d7ff6ef7",
+          "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/阿布价格行为学（进阶篇）_37-52（新版统一尺寸).pdf",
+          "charCount": 778749,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_02c82ff12187ddb0d7ff6ef7.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_a6650d6127eb1e59a1389872",
+          "relativePath": "价格行为（全套 持续更新中）_文件目录.txt",
+          "charCount": 86263,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_a6650d6127eb1e59a1389872.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_625d634e4accd689d0a44df7",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/How to trade price action manual-机翻版.pdf",
+          "charCount": 61064,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_625d634e4accd689d0a44df7.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_faad5e7e64f1aa35c52dae11",
+          "relativePath": "How to trade price action manual-机翻版.pdf",
+          "charCount": 61064,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_faad5e7e64f1aa35c52dae11.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_fd0d98d0f86146edf60e5b34",
+          "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/google翻译版（机翻）/拆分版/百科幻灯片-16-google机翻.pdf",
+          "charCount": 40849,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_fd0d98d0f86146edf60e5b34.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_ca798add5702e9c2f37c92db",
+          "relativePath": "5、阿布图表百科（学完视频再看，特别多）/1、阿布图表百科全书-拆分版/百科幻灯片-13.pdf",
+          "charCount": 38968,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_ca798add5702e9c2f37c92db.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_8204af4e3a76e094dfb1c77f",
+          "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/google翻译版（机翻）/拆分版/百科幻灯片-13-google机翻.pdf",
+          "charCount": 38968,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_8204af4e3a76e094dfb1c77f.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        }
+      ],
+      "evidenceAnchorCount": 8,
+      "unresolvedVisualOrOcrGate": true,
+      "reviewerNextGate": "resolve_visual_or_ocr_cards_then_accept_distill_or_archive",
+      "teachingModuleCandidateStatus": "private_teaching_module_seed_ready_for_reviewer_distillation",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "moduleId": "terminology_glossary",
+      "moduleLabel": "Terminology And Glossary",
+      "sourceDocumentRows": 57,
+      "textAbsorbedRows": 51,
+      "followupRows": 6,
+      "visualSampleRows": 15,
+      "imageEntries": 2,
+      "p0OrNonP0DraftRows": 46,
+      "lessonSeedRows": [
+        {
+          "lessonSeedId": "course5_terminology_glossary_lesson_seed_01",
+          "lessonTitle": "Core abbreviations and definitions",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "low",
+            "high",
+            "entry",
+            "always in"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_terminology_glossary_lesson_seed_02",
+          "lessonTitle": "Term disambiguation across modules",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "low",
+            "high",
+            "entry",
+            "always in"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_terminology_glossary_lesson_seed_03",
+          "lessonTitle": "Glossary cards for learner review",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "low",
+            "high",
+            "entry",
+            "always in"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_terminology_glossary_lesson_seed_04",
+          "lessonTitle": "Public-source grounding for terms",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "low",
+            "high",
+            "entry",
+            "always in"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        }
+      ],
+      "lessonSeedCount": 4,
+      "conceptSignalRows": [
+        {
+          "concept": "low",
+          "signalCountInSampledText": 1514,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "high",
+          "signalCountInSampledText": 1024,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "entry",
+          "signalCountInSampledText": 289,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "always in",
+          "signalCountInSampledText": 107,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "term",
+          "signalCountInSampledText": 34,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "definition",
+          "signalCountInSampledText": 8,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "glossary",
+          "signalCountInSampledText": 3,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        }
+      ],
+      "evidenceAnchors": [
+        {
+          "recordId": "course5_13b367b73d6e0e77bf62c6c7",
+          "relativePath": "Al Brooks Price Action 2018 图表.pdf",
+          "charCount": 2273399,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_13b367b73d6e0e77bf62c6c7.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_79ca3cac1d1bb89e7edd3101",
+          "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/阿布价格行为学（基础篇）_01-36（新版统一尺寸).pdf",
+          "charCount": 1218691,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_79ca3cac1d1bb89e7edd3101.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_c212bcbf5df87b08117dd589",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/Reading Price Charts Bar by Bar The Technical Analysis of Price Action for the Serious Trader (Al Br.pdf",
+          "charCount": 839465,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_c212bcbf5df87b08117dd589.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_02c82ff12187ddb0d7ff6ef7",
+          "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/阿布价格行为学（进阶篇）_37-52（新版统一尺寸).pdf",
+          "charCount": 778749,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_02c82ff12187ddb0d7ff6ef7.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_38dfbf92af7fbbe9df1ff598",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/文字版PDF/02高级篇中 AL Brooks《价格行为交易之区间篇》.pdf",
+          "charCount": 415740,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_38dfbf92af7fbbe9df1ff598.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_8b2a27d097bf83858a076cc3",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/文字版PDF/高级波段技术分析.epub",
+          "charCount": 391446,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_8b2a27d097bf83858a076cc3.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_3be252b880994d62526b6301",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/文字版PDF/03高级篇下 AL Brooks《价格行为交易之反转篇》.pdf",
+          "charCount": 383294,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_3be252b880994d62526b6301.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_ccc26f578cfeb5e718cb40fe",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/文字版PDF/01高级篇上 AL Brooks《价格行为交易之趋势篇》.pdf",
+          "charCount": 361435,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_ccc26f578cfeb5e718cb40fe.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        }
+      ],
+      "evidenceAnchorCount": 8,
+      "unresolvedVisualOrOcrGate": true,
+      "reviewerNextGate": "resolve_visual_or_ocr_cards_then_accept_distill_or_archive",
+      "teachingModuleCandidateStatus": "private_teaching_module_seed_ready_for_reviewer_distillation",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "moduleId": "reversals",
+      "moduleLabel": "Reversals",
+      "sourceDocumentRows": 33,
+      "textAbsorbedRows": 25,
+      "followupRows": 8,
+      "visualSampleRows": 18,
+      "imageEntries": 868,
+      "p0OrNonP0DraftRows": 54,
+      "lessonSeedRows": [
+        {
+          "lessonSeedId": "course5_reversals_lesson_seed_01",
+          "lessonTitle": "Reversal setup anatomy",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "reversal",
+            "wedge",
+            "failed",
+            "climax"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_reversals_lesson_seed_02",
+          "lessonTitle": "Climax, failed breakout, and second-entry logic",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "reversal",
+            "wedge",
+            "failed",
+            "climax"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_reversals_lesson_seed_03",
+          "lessonTitle": "Distinguishing reversal from pullback",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "reversal",
+            "wedge",
+            "failed",
+            "climax"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_reversals_lesson_seed_04",
+          "lessonTitle": "Reversal examples for after-the-fact education",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "reversal",
+            "wedge",
+            "failed",
+            "climax"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        }
+      ],
+      "lessonSeedCount": 4,
+      "conceptSignalRows": [
+        {
+          "concept": "reversal",
+          "signalCountInSampledText": 1284,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "wedge",
+          "signalCountInSampledText": 531,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "failed",
+          "signalCountInSampledText": 335,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "climax",
+          "signalCountInSampledText": 283,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "double top",
+          "signalCountInSampledText": 72,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "double bottom",
+          "signalCountInSampledText": 64,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "second entry",
+          "signalCountInSampledText": 6,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        }
+      ],
+      "evidenceAnchors": [
+        {
+          "recordId": "course5_13b367b73d6e0e77bf62c6c7",
+          "relativePath": "Al Brooks Price Action 2018 图表.pdf",
+          "charCount": 2273399,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_13b367b73d6e0e77bf62c6c7.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_86088eefb8e8b14da3fe4b53",
+          "relativePath": "Al brooks 图表百科-v1.pdf",
+          "charCount": 1770963,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_86088eefb8e8b14da3fe4b53.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_bdda02f6b4eb7fe8f67dcc86",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/2. Trading Price Action_Ranges价格行为交易之区间篇.pdf",
+          "charCount": 1319180,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_bdda02f6b4eb7fe8f67dcc86.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_61380f71c4fdc086dcd1919c",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/3. Trading Price Action_Reversals价格行为交易之反转篇.pdf",
+          "charCount": 1232007,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_61380f71c4fdc086dcd1919c.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_79ca3cac1d1bb89e7edd3101",
+          "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/阿布价格行为学（基础篇）_01-36（新版统一尺寸).pdf",
+          "charCount": 1218691,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_79ca3cac1d1bb89e7edd3101.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_545ec9ba1857d91671cf5c52",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/1. Trading Price Action_Trends价格行为交易之趋势篇.pdf",
+          "charCount": 962375,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_545ec9ba1857d91671cf5c52.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_c212bcbf5df87b08117dd589",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/Reading Price Charts Bar by Bar The Technical Analysis of Price Action for the Serious Trader (Al Br.pdf",
+          "charCount": 839465,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_c212bcbf5df87b08117dd589.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_02c82ff12187ddb0d7ff6ef7",
+          "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/阿布价格行为学（进阶篇）_37-52（新版统一尺寸).pdf",
+          "charCount": 778749,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_02c82ff12187ddb0d7ff6ef7.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        }
+      ],
+      "evidenceAnchorCount": 8,
+      "unresolvedVisualOrOcrGate": true,
+      "reviewerNextGate": "resolve_visual_or_ocr_cards_then_accept_distill_or_archive",
+      "teachingModuleCandidateStatus": "private_teaching_module_seed_ready_for_reviewer_distillation",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "moduleId": "trends_and_channels",
+      "moduleLabel": "Trends And Channels",
+      "sourceDocumentRows": 31,
+      "textAbsorbedRows": 25,
+      "followupRows": 6,
+      "visualSampleRows": 9,
+      "imageEntries": 933,
+      "p0OrNonP0DraftRows": 57,
+      "lessonSeedRows": [
+        {
+          "lessonSeedId": "course5_trends_and_channels_lesson_seed_01",
+          "lessonTitle": "Trend strength and channel behavior",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "trend",
+            "strong",
+            "breakout",
+            "pullback"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_trends_and_channels_lesson_seed_02",
+          "lessonTitle": "Pullbacks, failed breakouts, and trend resumption",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "trend",
+            "strong",
+            "breakout",
+            "pullback"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_trends_and_channels_lesson_seed_03",
+          "lessonTitle": "Transition from trend to range",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "trend",
+            "strong",
+            "breakout",
+            "pullback"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_trends_and_channels_lesson_seed_04",
+          "lessonTitle": "Trend-reading drills without signal claims",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "trend",
+            "strong",
+            "breakout",
+            "pullback"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        }
+      ],
+      "lessonSeedCount": 4,
+      "conceptSignalRows": [
+        {
+          "concept": "trend",
+          "signalCountInSampledText": 2934,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "strong",
+          "signalCountInSampledText": 1021,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "breakout",
+          "signalCountInSampledText": 1016,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "pullback",
+          "signalCountInSampledText": 754,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "channel",
+          "signalCountInSampledText": 738,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "weak",
+          "signalCountInSampledText": 192,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "micro channel",
+          "signalCountInSampledText": 104,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        }
+      ],
+      "evidenceAnchors": [
+        {
+          "recordId": "course5_13b367b73d6e0e77bf62c6c7",
+          "relativePath": "Al Brooks Price Action 2018 图表.pdf",
+          "charCount": 2273399,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_13b367b73d6e0e77bf62c6c7.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_86088eefb8e8b14da3fe4b53",
+          "relativePath": "Al brooks 图表百科-v1.pdf",
+          "charCount": 1770963,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_86088eefb8e8b14da3fe4b53.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_bdda02f6b4eb7fe8f67dcc86",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/2. Trading Price Action_Ranges价格行为交易之区间篇.pdf",
+          "charCount": 1319180,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_bdda02f6b4eb7fe8f67dcc86.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_61380f71c4fdc086dcd1919c",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/3. Trading Price Action_Reversals价格行为交易之反转篇.pdf",
+          "charCount": 1232007,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_61380f71c4fdc086dcd1919c.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_79ca3cac1d1bb89e7edd3101",
+          "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/阿布价格行为学（基础篇）_01-36（新版统一尺寸).pdf",
+          "charCount": 1218691,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_79ca3cac1d1bb89e7edd3101.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_545ec9ba1857d91671cf5c52",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/1. Trading Price Action_Trends价格行为交易之趋势篇.pdf",
+          "charCount": 962375,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_545ec9ba1857d91671cf5c52.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_c212bcbf5df87b08117dd589",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/Reading Price Charts Bar by Bar The Technical Analysis of Price Action for the Serious Trader (Al Br.pdf",
+          "charCount": 839465,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_c212bcbf5df87b08117dd589.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_02c82ff12187ddb0d7ff6ef7",
+          "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/阿布价格行为学（进阶篇）_37-52（新版统一尺寸).pdf",
+          "charCount": 778749,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_02c82ff12187ddb0d7ff6ef7.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        }
+      ],
+      "evidenceAnchorCount": 8,
+      "unresolvedVisualOrOcrGate": true,
+      "reviewerNextGate": "resolve_visual_or_ocr_cards_then_accept_distill_or_archive",
+      "teachingModuleCandidateStatus": "private_teaching_module_seed_ready_for_reviewer_distillation",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "moduleId": "trading_ranges",
+      "moduleLabel": "Trading Ranges",
+      "sourceDocumentRows": 27,
+      "textAbsorbedRows": 25,
+      "followupRows": 2,
+      "visualSampleRows": 0,
+      "imageEntries": 843,
+      "p0OrNonP0DraftRows": 36,
+      "lessonSeedRows": [
+        {
+          "lessonSeedId": "course5_trading_ranges_lesson_seed_01",
+          "lessonTitle": "Range formation and two-sided trading pressure",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "reversal",
+            "breakout",
+            "range",
+            "test"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_trading_ranges_lesson_seed_02",
+          "lessonTitle": "Support, resistance, and failed continuation",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "reversal",
+            "breakout",
+            "range",
+            "test"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_trading_ranges_lesson_seed_03",
+          "lessonTitle": "Breakout attempts inside ranges",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "reversal",
+            "breakout",
+            "range",
+            "test"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_trading_ranges_lesson_seed_04",
+          "lessonTitle": "Range examples for scenario classification",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "reversal",
+            "breakout",
+            "range",
+            "test"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        }
+      ],
+      "lessonSeedCount": 4,
+      "conceptSignalRows": [
+        {
+          "concept": "reversal",
+          "signalCountInSampledText": 1284,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "breakout",
+          "signalCountInSampledText": 1016,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "range",
+          "signalCountInSampledText": 713,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "test",
+          "signalCountInSampledText": 337,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "sideways",
+          "signalCountInSampledText": 139,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "support",
+          "signalCountInSampledText": 103,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "resistance",
+          "signalCountInSampledText": 100,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        }
+      ],
+      "evidenceAnchors": [
+        {
+          "recordId": "course5_13b367b73d6e0e77bf62c6c7",
+          "relativePath": "Al Brooks Price Action 2018 图表.pdf",
+          "charCount": 2273399,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_13b367b73d6e0e77bf62c6c7.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_86088eefb8e8b14da3fe4b53",
+          "relativePath": "Al brooks 图表百科-v1.pdf",
+          "charCount": 1770963,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_86088eefb8e8b14da3fe4b53.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_bdda02f6b4eb7fe8f67dcc86",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/2. Trading Price Action_Ranges价格行为交易之区间篇.pdf",
+          "charCount": 1319180,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_bdda02f6b4eb7fe8f67dcc86.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_61380f71c4fdc086dcd1919c",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/3. Trading Price Action_Reversals价格行为交易之反转篇.pdf",
+          "charCount": 1232007,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_61380f71c4fdc086dcd1919c.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_79ca3cac1d1bb89e7edd3101",
+          "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/阿布价格行为学（基础篇）_01-36（新版统一尺寸).pdf",
+          "charCount": 1218691,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_79ca3cac1d1bb89e7edd3101.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_545ec9ba1857d91671cf5c52",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/1. Trading Price Action_Trends价格行为交易之趋势篇.pdf",
+          "charCount": 962375,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_545ec9ba1857d91671cf5c52.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_c212bcbf5df87b08117dd589",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/Reading Price Charts Bar by Bar The Technical Analysis of Price Action for the Serious Trader (Al Br.pdf",
+          "charCount": 839465,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_c212bcbf5df87b08117dd589.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_02c82ff12187ddb0d7ff6ef7",
+          "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/阿布价格行为学（进阶篇）_37-52（新版统一尺寸).pdf",
+          "charCount": 778749,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_02c82ff12187ddb0d7ff6ef7.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        }
+      ],
+      "evidenceAnchorCount": 8,
+      "unresolvedVisualOrOcrGate": true,
+      "reviewerNextGate": "resolve_visual_or_ocr_cards_then_accept_distill_or_archive",
+      "teachingModuleCandidateStatus": "private_teaching_module_seed_ready_for_reviewer_distillation",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "moduleId": "trade_management",
+      "moduleLabel": "Trade Management",
+      "sourceDocumentRows": 26,
+      "textAbsorbedRows": 24,
+      "followupRows": 2,
+      "visualSampleRows": 0,
+      "imageEntries": 0,
+      "p0OrNonP0DraftRows": 6,
+      "lessonSeedRows": [
+        {
+          "lessonSeedId": "course5_trade_management_lesson_seed_01",
+          "lessonTitle": "Educational framing for stop and target discussion",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "stop",
+            "risk",
+            "exit",
+            "target"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_trade_management_lesson_seed_02",
+          "lessonTitle": "Managing uncertainty after entry in historical examples",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "stop",
+            "risk",
+            "exit",
+            "target"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_trade_management_lesson_seed_03",
+          "lessonTitle": "Scaling and exit concepts as risk vocabulary",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "stop",
+            "risk",
+            "exit",
+            "target"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_trade_management_lesson_seed_04",
+          "lessonTitle": "Trade management without live instruction",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "stop",
+            "risk",
+            "exit",
+            "target"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        }
+      ],
+      "lessonSeedCount": 4,
+      "conceptSignalRows": [
+        {
+          "concept": "stop",
+          "signalCountInSampledText": 382,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "risk",
+          "signalCountInSampledText": 255,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "exit",
+          "signalCountInSampledText": 236,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "target",
+          "signalCountInSampledText": 110,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "reward",
+          "signalCountInSampledText": 85,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "scale",
+          "signalCountInSampledText": 40,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "management",
+          "signalCountInSampledText": 18,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        }
+      ],
+      "evidenceAnchors": [
+        {
+          "recordId": "course5_13b367b73d6e0e77bf62c6c7",
+          "relativePath": "Al Brooks Price Action 2018 图表.pdf",
+          "charCount": 2273399,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_13b367b73d6e0e77bf62c6c7.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_86088eefb8e8b14da3fe4b53",
+          "relativePath": "Al brooks 图表百科-v1.pdf",
+          "charCount": 1770963,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_86088eefb8e8b14da3fe4b53.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_bdda02f6b4eb7fe8f67dcc86",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/2. Trading Price Action_Ranges价格行为交易之区间篇.pdf",
+          "charCount": 1319180,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_bdda02f6b4eb7fe8f67dcc86.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_61380f71c4fdc086dcd1919c",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/3. Trading Price Action_Reversals价格行为交易之反转篇.pdf",
+          "charCount": 1232007,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_61380f71c4fdc086dcd1919c.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_79ca3cac1d1bb89e7edd3101",
+          "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/阿布价格行为学（基础篇）_01-36（新版统一尺寸).pdf",
+          "charCount": 1218691,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_79ca3cac1d1bb89e7edd3101.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_545ec9ba1857d91671cf5c52",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/1. Trading Price Action_Trends价格行为交易之趋势篇.pdf",
+          "charCount": 962375,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_545ec9ba1857d91671cf5c52.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_c212bcbf5df87b08117dd589",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/Reading Price Charts Bar by Bar The Technical Analysis of Price Action for the Serious Trader (Al Br.pdf",
+          "charCount": 839465,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_c212bcbf5df87b08117dd589.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_02c82ff12187ddb0d7ff6ef7",
+          "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/阿布价格行为学（进阶篇）_37-52（新版统一尺寸).pdf",
+          "charCount": 778749,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_02c82ff12187ddb0d7ff6ef7.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        }
+      ],
+      "evidenceAnchorCount": 8,
+      "unresolvedVisualOrOcrGate": true,
+      "reviewerNextGate": "resolve_visual_or_ocr_cards_then_accept_distill_or_archive",
+      "teachingModuleCandidateStatus": "private_teaching_module_seed_ready_for_reviewer_distillation",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "moduleId": "bar_by_bar_reading",
+      "moduleLabel": "Bar-By-Bar Reading",
+      "sourceDocumentRows": 25,
+      "textAbsorbedRows": 21,
+      "followupRows": 4,
+      "visualSampleRows": 3,
+      "imageEntries": 691,
+      "p0OrNonP0DraftRows": 33,
+      "lessonSeedRows": [
+        {
+          "lessonSeedId": "course5_bar_by_bar_reading_lesson_seed_01",
+          "lessonTitle": "Sequential bar interpretation",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "close",
+            "signal bar",
+            "tail",
+            "bear bar"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_bar_by_bar_reading_lesson_seed_02",
+          "lessonTitle": "Bull and bear bar pressure",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "close",
+            "signal bar",
+            "tail",
+            "bear bar"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_bar_by_bar_reading_lesson_seed_03",
+          "lessonTitle": "Context before pattern labels",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "close",
+            "signal bar",
+            "tail",
+            "bear bar"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_bar_by_bar_reading_lesson_seed_04",
+          "lessonTitle": "Bar-by-bar annotation practice",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "close",
+            "signal bar",
+            "tail",
+            "bear bar"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        }
+      ],
+      "lessonSeedCount": 4,
+      "conceptSignalRows": [
+        {
+          "concept": "close",
+          "signalCountInSampledText": 804,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "signal bar",
+          "signalCountInSampledText": 325,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "tail",
+          "signalCountInSampledText": 242,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "bear bar",
+          "signalCountInSampledText": 92,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "bar by bar",
+          "signalCountInSampledText": 88,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "entry bar",
+          "signalCountInSampledText": 88,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "bull bar",
+          "signalCountInSampledText": 84,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        }
+      ],
+      "evidenceAnchors": [
+        {
+          "recordId": "course5_bdda02f6b4eb7fe8f67dcc86",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/2. Trading Price Action_Ranges价格行为交易之区间篇.pdf",
+          "charCount": 1319180,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_bdda02f6b4eb7fe8f67dcc86.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_61380f71c4fdc086dcd1919c",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/3. Trading Price Action_Reversals价格行为交易之反转篇.pdf",
+          "charCount": 1232007,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_61380f71c4fdc086dcd1919c.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_79ca3cac1d1bb89e7edd3101",
+          "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/阿布价格行为学（基础篇）_01-36（新版统一尺寸).pdf",
+          "charCount": 1218691,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_79ca3cac1d1bb89e7edd3101.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_545ec9ba1857d91671cf5c52",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/1. Trading Price Action_Trends价格行为交易之趋势篇.pdf",
+          "charCount": 962375,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_545ec9ba1857d91671cf5c52.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_c212bcbf5df87b08117dd589",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/Reading Price Charts Bar by Bar The Technical Analysis of Price Action for the Serious Trader (Al Br.pdf",
+          "charCount": 839465,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_c212bcbf5df87b08117dd589.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_02c82ff12187ddb0d7ff6ef7",
+          "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/阿布价格行为学（进阶篇）_37-52（新版统一尺寸).pdf",
+          "charCount": 778749,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_02c82ff12187ddb0d7ff6ef7.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_38dfbf92af7fbbe9df1ff598",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/文字版PDF/02高级篇中 AL Brooks《价格行为交易之区间篇》.pdf",
+          "charCount": 415740,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_38dfbf92af7fbbe9df1ff598.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_8b2a27d097bf83858a076cc3",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/文字版PDF/高级波段技术分析.epub",
+          "charCount": 391446,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_8b2a27d097bf83858a076cc3.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        }
+      ],
+      "evidenceAnchorCount": 8,
+      "unresolvedVisualOrOcrGate": true,
+      "reviewerNextGate": "resolve_visual_or_ocr_cards_then_accept_distill_or_archive",
+      "teachingModuleCandidateStatus": "private_teaching_module_seed_ready_for_reviewer_distillation",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "moduleId": "breakouts_and_pullbacks",
+      "moduleLabel": "Breakouts And Pullbacks",
+      "sourceDocumentRows": 25,
+      "textAbsorbedRows": 24,
+      "followupRows": 1,
+      "visualSampleRows": 0,
+      "imageEntries": 691,
+      "p0OrNonP0DraftRows": 24,
+      "lessonSeedRows": [
+        {
+          "lessonSeedId": "course5_breakouts_and_pullbacks_lesson_seed_01",
+          "lessonTitle": "Breakout context and follow-through",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "breakout",
+            "pullback",
+            "stop",
+            "entry"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_breakouts_and_pullbacks_lesson_seed_02",
+          "lessonTitle": "Pullback quality after breakout",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "breakout",
+            "pullback",
+            "stop",
+            "entry"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_breakouts_and_pullbacks_lesson_seed_03",
+          "lessonTitle": "Failed breakout as a learning pattern",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "breakout",
+            "pullback",
+            "stop",
+            "entry"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_breakouts_and_pullbacks_lesson_seed_04",
+          "lessonTitle": "Breakout review rubrics for historical charts",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "breakout",
+            "pullback",
+            "stop",
+            "entry"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        }
+      ],
+      "lessonSeedCount": 4,
+      "conceptSignalRows": [
+        {
+          "concept": "breakout",
+          "signalCountInSampledText": 1160,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "pullback",
+          "signalCountInSampledText": 881,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "stop",
+          "signalCountInSampledText": 445,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "entry",
+          "signalCountInSampledText": 392,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "follow-through",
+          "signalCountInSampledText": 136,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "failed breakout",
+          "signalCountInSampledText": 64,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        }
+      ],
+      "evidenceAnchors": [
+        {
+          "recordId": "course5_13b367b73d6e0e77bf62c6c7",
+          "relativePath": "Al Brooks Price Action 2018 图表.pdf",
+          "charCount": 2273399,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_13b367b73d6e0e77bf62c6c7.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_bdda02f6b4eb7fe8f67dcc86",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/2. Trading Price Action_Ranges价格行为交易之区间篇.pdf",
+          "charCount": 1319180,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_bdda02f6b4eb7fe8f67dcc86.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_61380f71c4fdc086dcd1919c",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/3. Trading Price Action_Reversals价格行为交易之反转篇.pdf",
+          "charCount": 1232007,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_61380f71c4fdc086dcd1919c.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_79ca3cac1d1bb89e7edd3101",
+          "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/阿布价格行为学（基础篇）_01-36（新版统一尺寸).pdf",
+          "charCount": 1218691,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_79ca3cac1d1bb89e7edd3101.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_545ec9ba1857d91671cf5c52",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/1. Trading Price Action_Trends价格行为交易之趋势篇.pdf",
+          "charCount": 962375,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_545ec9ba1857d91671cf5c52.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_c212bcbf5df87b08117dd589",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/Reading Price Charts Bar by Bar The Technical Analysis of Price Action for the Serious Trader (Al Br.pdf",
+          "charCount": 839465,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_c212bcbf5df87b08117dd589.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_02c82ff12187ddb0d7ff6ef7",
+          "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/阿布价格行为学（进阶篇）_37-52（新版统一尺寸).pdf",
+          "charCount": 778749,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_02c82ff12187ddb0d7ff6ef7.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_38dfbf92af7fbbe9df1ff598",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/文字版PDF/02高级篇中 AL Brooks《价格行为交易之区间篇》.pdf",
+          "charCount": 415740,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_38dfbf92af7fbbe9df1ff598.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        }
+      ],
+      "evidenceAnchorCount": 8,
+      "unresolvedVisualOrOcrGate": true,
+      "reviewerNextGate": "resolve_visual_or_ocr_cards_then_accept_distill_or_archive",
+      "teachingModuleCandidateStatus": "private_teaching_module_seed_ready_for_reviewer_distillation",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "moduleId": "risk_management",
+      "moduleLabel": "Risk Management",
+      "sourceDocumentRows": 23,
+      "textAbsorbedRows": 23,
+      "followupRows": 0,
+      "visualSampleRows": 0,
+      "imageEntries": 0,
+      "p0OrNonP0DraftRows": 0,
+      "lessonSeedRows": [
+        {
+          "lessonSeedId": "course5_risk_management_lesson_seed_01",
+          "lessonTitle": "Risk language and position-sizing boundaries",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "stop",
+            "probability",
+            "risk",
+            "loss"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_risk_management_lesson_seed_02",
+          "lessonTitle": "Invalidation, uncertainty, and loss containment",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "stop",
+            "probability",
+            "risk",
+            "loss"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_risk_management_lesson_seed_03",
+          "lessonTitle": "Why examples must avoid profit promises",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "stop",
+            "probability",
+            "risk",
+            "loss"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_risk_management_lesson_seed_04",
+          "lessonTitle": "Risk review as a learner checklist",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "stop",
+            "probability",
+            "risk",
+            "loss"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        }
+      ],
+      "lessonSeedCount": 4,
+      "conceptSignalRows": [
+        {
+          "concept": "stop",
+          "signalCountInSampledText": 382,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "probability",
+          "signalCountInSampledText": 283,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "risk",
+          "signalCountInSampledText": 255,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "loss",
+          "signalCountInSampledText": 183,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "position",
+          "signalCountInSampledText": 130,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "reward",
+          "signalCountInSampledText": 85,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "uncertainty",
+          "signalCountInSampledText": 53,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        }
+      ],
+      "evidenceAnchors": [
+        {
+          "recordId": "course5_13b367b73d6e0e77bf62c6c7",
+          "relativePath": "Al Brooks Price Action 2018 图表.pdf",
+          "charCount": 2273399,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_13b367b73d6e0e77bf62c6c7.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_86088eefb8e8b14da3fe4b53",
+          "relativePath": "Al brooks 图表百科-v1.pdf",
+          "charCount": 1770963,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_86088eefb8e8b14da3fe4b53.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_bdda02f6b4eb7fe8f67dcc86",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/2. Trading Price Action_Ranges价格行为交易之区间篇.pdf",
+          "charCount": 1319180,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_bdda02f6b4eb7fe8f67dcc86.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_61380f71c4fdc086dcd1919c",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/3. Trading Price Action_Reversals价格行为交易之反转篇.pdf",
+          "charCount": 1232007,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_61380f71c4fdc086dcd1919c.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_79ca3cac1d1bb89e7edd3101",
+          "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/阿布价格行为学（基础篇）_01-36（新版统一尺寸).pdf",
+          "charCount": 1218691,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_79ca3cac1d1bb89e7edd3101.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_545ec9ba1857d91671cf5c52",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/1. Trading Price Action_Trends价格行为交易之趋势篇.pdf",
+          "charCount": 962375,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_545ec9ba1857d91671cf5c52.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_c212bcbf5df87b08117dd589",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/Reading Price Charts Bar by Bar The Technical Analysis of Price Action for the Serious Trader (Al Br.pdf",
+          "charCount": 839465,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_c212bcbf5df87b08117dd589.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_02c82ff12187ddb0d7ff6ef7",
+          "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/阿布价格行为学（进阶篇）_37-52（新版统一尺寸).pdf",
+          "charCount": 778749,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_02c82ff12187ddb0d7ff6ef7.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        }
+      ],
+      "evidenceAnchorCount": 8,
+      "unresolvedVisualOrOcrGate": false,
+      "reviewerNextGate": "review_text_evidence_then_paraphrase_and_public_ground",
+      "teachingModuleCandidateStatus": "private_teaching_module_seed_ready_for_reviewer_distillation",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "moduleId": "psychology_and_discipline",
+      "moduleLabel": "Psychology And Discipline",
+      "sourceDocumentRows": 16,
+      "textAbsorbedRows": 16,
+      "followupRows": 0,
+      "visualSampleRows": 0,
+      "imageEntries": 0,
+      "p0OrNonP0DraftRows": 0,
+      "lessonSeedRows": [
+        {
+          "lessonSeedId": "course5_psychology_and_discipline_lesson_seed_01",
+          "lessonTitle": "Discipline, patience, and cognitive bias",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "trap",
+            "hope",
+            "discipline",
+            "patience"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_psychology_and_discipline_lesson_seed_02",
+          "lessonTitle": "Hope versus chart evidence",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "trap",
+            "hope",
+            "discipline",
+            "patience"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_psychology_and_discipline_lesson_seed_03",
+          "lessonTitle": "Emotional traps in historical review",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "trap",
+            "hope",
+            "discipline",
+            "patience"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_psychology_and_discipline_lesson_seed_04",
+          "lessonTitle": "Process notes for deliberate practice",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [
+            "trap",
+            "hope",
+            "discipline",
+            "patience"
+          ],
+          "sourceEvidenceMode": "absorbed_text_plus_source_anchors",
+          "releaseStatus": "blocked_not_learner_facing"
+        }
+      ],
+      "lessonSeedCount": 4,
+      "conceptSignalRows": [
+        {
+          "concept": "trap",
+          "signalCountInSampledText": 40,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "hope",
+          "signalCountInSampledText": 16,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "discipline",
+          "signalCountInSampledText": 12,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "patience",
+          "signalCountInSampledText": 6,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "fear",
+          "signalCountInSampledText": 4,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "denial",
+          "signalCountInSampledText": 0,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "psychology",
+          "signalCountInSampledText": 0,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        }
+      ],
+      "evidenceAnchors": [
+        {
+          "recordId": "course5_61380f71c4fdc086dcd1919c",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/3. Trading Price Action_Reversals价格行为交易之反转篇.pdf",
+          "charCount": 1232007,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_61380f71c4fdc086dcd1919c.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_545ec9ba1857d91671cf5c52",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/1. Trading Price Action_Trends价格行为交易之趋势篇.pdf",
+          "charCount": 962375,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_545ec9ba1857d91671cf5c52.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_38dfbf92af7fbbe9df1ff598",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/文字版PDF/02高级篇中 AL Brooks《价格行为交易之区间篇》.pdf",
+          "charCount": 415740,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_38dfbf92af7fbbe9df1ff598.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_8b2a27d097bf83858a076cc3",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/文字版PDF/高级波段技术分析.epub",
+          "charCount": 391446,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_8b2a27d097bf83858a076cc3.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_3be252b880994d62526b6301",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/文字版PDF/03高级篇下 AL Brooks《价格行为交易之反转篇》.pdf",
+          "charCount": 383294,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_3be252b880994d62526b6301.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_ccc26f578cfeb5e718cb40fe",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/文字版PDF/01高级篇上 AL Brooks《价格行为交易之趋势篇》.pdf",
+          "charCount": 361435,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_ccc26f578cfeb5e718cb40fe.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_38595921ac889a3dab6f99a7",
+          "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/Reading Price Charts Bar by Bar The Technical Analysis of Price Action for the Serious Trader (Al Brooks) (机翻版)_Password_Removed.pdf",
+          "charCount": 341083,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_38595921ac889a3dab6f99a7.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        },
+        {
+          "recordId": "course5_c8962ea2ef21a2033fcb0fd5",
+          "relativePath": "Reading Price Charts Bar by Bar The Technical Analysis of Price Action for the Serious Trader (Al Brooks) (机翻版).pdf",
+          "charCount": 341083,
+          "textArtifact": "docs/local-course-5-extracted-text/course5_c8962ea2ef21a2033fcb0fd5.txt",
+          "evidenceRole": "private_source_anchor_for_reviewer_paraphrase_not_direct_copy",
+          "reviewStatus": "needs_reviewer_distillation"
+        }
+      ],
+      "evidenceAnchorCount": 8,
+      "unresolvedVisualOrOcrGate": false,
+      "reviewerNextGate": "review_text_evidence_then_paraphrase_and_public_ground",
+      "teachingModuleCandidateStatus": "private_teaching_module_seed_ready_for_reviewer_distillation",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "moduleId": "unclassified_supplement",
+      "moduleLabel": "Unclassified Supplement",
+      "sourceDocumentRows": 2,
+      "textAbsorbedRows": 0,
+      "followupRows": 2,
+      "visualSampleRows": 13,
+      "imageEntries": 278,
+      "p0OrNonP0DraftRows": 13,
+      "lessonSeedRows": [
+        {
+          "lessonSeedId": "course5_unclassified_supplement_lesson_seed_01",
+          "lessonTitle": "Classify remaining supplemental sources",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [],
+          "sourceEvidenceMode": "visual_or_inventory_only_requires_ocr_or_human_review",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_unclassified_supplement_lesson_seed_02",
+          "lessonTitle": "Decide archive-only versus module contribution",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [],
+          "sourceEvidenceMode": "visual_or_inventory_only_requires_ocr_or_human_review",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_unclassified_supplement_lesson_seed_03",
+          "lessonTitle": "Review low-text visual pages",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [],
+          "sourceEvidenceMode": "visual_or_inventory_only_requires_ocr_or_human_review",
+          "releaseStatus": "blocked_not_learner_facing"
+        },
+        {
+          "lessonSeedId": "course5_unclassified_supplement_lesson_seed_04",
+          "lessonTitle": "Record source retention decisions",
+          "teachingUse": "private_curriculum_design_seed_requires_paraphrase_public_grounding_and_review",
+          "primaryConceptSignals": [],
+          "sourceEvidenceMode": "visual_or_inventory_only_requires_ocr_or_human_review",
+          "releaseStatus": "blocked_not_learner_facing"
+        }
+      ],
+      "lessonSeedCount": 4,
+      "conceptSignalRows": [
+        {
+          "concept": "chart",
+          "signalCountInSampledText": 0,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "review",
+          "signalCountInSampledText": 0,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "source",
+          "signalCountInSampledText": 0,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "supplement",
+          "signalCountInSampledText": 0,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        },
+        {
+          "concept": "visual",
+          "signalCountInSampledText": 0,
+          "evidenceMode": "keyword_signal_only_needs_reviewer_paraphrase"
+        }
+      ],
+      "evidenceAnchors": [],
+      "evidenceAnchorCount": 0,
+      "unresolvedVisualOrOcrGate": true,
+      "reviewerNextGate": "resolve_visual_or_ocr_cards_then_accept_distill_or_archive",
+      "teachingModuleCandidateStatus": "module_seed_blocked_until_visual_or_ocr_review",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    }
+  ],
+  "commands": [
+    "npm.cmd run build:local-course-5-teaching-module-distillation",
+    "npm.cmd run check:local-course-5-teaching-module-distillation",
+    "npm.cmd run verify"
+  ],
+  "completionRule": "Course 5 is closer to teachable absorption when every synthesized module has lesson seeds, evidence anchors, concept signals, unresolved visual/OCR gates, and locked release status. This still does not prove learner-facing readiness or source-folder deletion readiness.",
+  "boundary": "Course 5 teaching module distillation is private reviewer-facing education design. It converts absorbed local documents into paraphrase-only lesson seeds, evidence anchors, source gaps, and review tasks. It is not learner-facing, not publication-cleared, and does not copy private source wording, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, write authorization, learner release, or production readiness."
+}

@@ -1,0 +1,77 @@
+{
+  "generatedAt": "2026-06-19T09:47:09.853Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "realStatusPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "realStatusOverlayPresent": false,
+  "realReadyBatches": 0,
+  "negativeCases": 12,
+  "negativeCasesPassed": 12,
+  "dryRunWroteStatusOverlay": false,
+  "initProtectionCases": 3,
+  "initProtectionPassed": 3,
+  "positiveControlReadyBatches": 1,
+  "positiveControlRealOverlayTouched": false,
+  "gateRows": [
+    {
+      "name": "real_status_overlay_absent",
+      "status": "passing",
+      "evidence": "docs/LESSON_BATCH_REVIEW_STATUS.json does not exist; completion audit statusOverlayPresent:false",
+      "blocks": "accidental claims of real human review, approval, or release",
+      "allows": "blank-template and worksheet preparation only",
+      "sourceReport": "docs/LESSON_BATCH_COMPLETION_AUDIT.json"
+    },
+    {
+      "name": "dry_run_initializer",
+      "status": "passing",
+      "evidence": "mode:dry_run; wroteStatusOverlay:false; notesFilled:0",
+      "blocks": "creating reviewer-status files during preview",
+      "allows": "safe preview of the first reviewer status overlay",
+      "sourceReport": "docs/LESSON_BATCH_REVIEW_STATUS_INIT_DRY_RUN.json"
+    },
+    {
+      "name": "overwrite_protection",
+      "status": "passing",
+      "evidence": "3/3 protection cases passed",
+      "blocks": "overwriting existing reviewer notes without an explicit separate force path",
+      "allows": "temporary protection checks that leave the real overlay untouched",
+      "sourceReport": "docs/LESSON_BATCH_REVIEW_STATUS_INIT_PROTECTION.json"
+    },
+    {
+      "name": "negative_status_cases",
+      "status": "passing",
+      "evidence": "12/12 unsafe or incomplete cases rejected",
+      "blocks": "approval claims, release flags, production readiness, grade overrides, sample overlays, unknown rows, and missing notes",
+      "allows": "only structurally valid, boundary-preserving reviewer tracking",
+      "sourceReport": "docs/LESSON_BATCH_STATUS_NEGATIVE_CASES.json"
+    },
+    {
+      "name": "positive_completed_notes_control",
+      "status": "passing_temp_only",
+      "evidence": "temporary readyBatches:1; realStatusOverlayTouched:false",
+      "blocks": "treating examples as real reviewer evidence",
+      "allows": "proving the completion audit can pass when real required notes eventually exist",
+      "sourceReport": "docs/LESSON_BATCH_COMPLETED_NOTES_EXAMPLE.json"
+    },
+    {
+      "name": "first_reviewer_handoff_alignment",
+      "status": "passing",
+      "evidence": "12 worksheet lessons; 2 high-risk lessons; statusOverlayPresent:false",
+      "blocks": "starting with broad unsorted review work or unsafe status words",
+      "allows": "bounded review of rewrite_batch_01 and rewrite_batch_05",
+      "sourceReport": "docs/FIRST_REVIEWER_HANDOFF.json"
+    }
+  ],
+  "requiredReports": {
+    "completionAudit": "docs/LESSON_BATCH_COMPLETION_AUDIT.json",
+    "negativeCases": "docs/LESSON_BATCH_STATUS_NEGATIVE_CASES.json",
+    "dryRun": "docs/LESSON_BATCH_REVIEW_STATUS_INIT_DRY_RUN.json",
+    "initProtection": "docs/LESSON_BATCH_REVIEW_STATUS_INIT_PROTECTION.json",
+    "completedNotesExample": "docs/LESSON_BATCH_COMPLETED_NOTES_EXAMPLE.json",
+    "firstReviewerHandoff": "docs/FIRST_REVIEWER_HANDOFF.json"
+  },
+  "boundary": "This summary is a reviewer-status gate matrix only. It does not approve lessons, publish learner-facing content, change grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, or guide real-money decisions."
+}

@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-06-19T09:47:06.498Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "positiveControlReady": true,
+  "temporaryBatchId": "rewrite_batch_01",
+  "temporaryLessonCards": 6,
+  "completionReadyBatches": 1,
+  "intakeCompleteNoteCards": 6,
+  "intakeApprovalCandidates": 6,
+  "separateApprovalCandidates": 6,
+  "autoApprovedLessons": 0,
+  "learnerFacingReleaseCandidates": 0,
+  "commercialReadyPromotions": 0,
+  "productionReadyClaims": 0,
+  "realStatusOverlayTouched": false,
+  "requiredNoteFields": [
+    "originalRewriteNotes",
+    "sourceFitNotes",
+    "factCheckNotes",
+    "boundaryCheckNotes",
+    "copyingRiskNotes",
+    "humanReviewerInitials"
+  ],
+  "validatedFlow": [
+    "Temporary overlay fills all six required note fields for one first-reviewer batch.",
+    "Completion audit accepts the temporary batch as ready_for_separate_human_approval_review.",
+    "Evidence intake counts complete note cards as candidates only.",
+    "Separate approval gate receives candidates but creates zero auto approvals, release candidates, grade promotions, or production claims.",
+    "Real docs/LESSON_BATCH_REVIEW_STATUS.json remains absent."
+  ],
+  "boundary": "This positive control uses temporary files only. It does not create real reviewer notes, approve lessons, publish learner-facing content, change grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, guide real-money decisions, grant internal-trial readiness, or make the product production-ready."
+}

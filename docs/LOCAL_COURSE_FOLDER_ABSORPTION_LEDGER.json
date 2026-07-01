@@ -1,0 +1,866 @@
+{
+  "generatedAt": "2026-06-22T06:09:24.146Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "ledgerStatus": "folder_absorption_ledger_all_current_pdfs_accounted_release_blocked",
+  "ledgerMode": "physical_folder_to_manifest_corpus_node_absorption_ledger",
+  "sourceRoot": "C:\\Users\\86136\\Desktop\\投资",
+  "sourceRootAvailable": true,
+  "physicalFiles": 302,
+  "physicalPdfFiles": 302,
+  "nonPdfFiles": 0,
+  "totalMb": 1011.47,
+  "directories": 19,
+  "uniquePdfHashes": 298,
+  "duplicatePdfFiles": 4,
+  "manifestPdfFiles": 302,
+  "manifestUniquePdfFiles": 298,
+  "corpusDocsForCurrentUniqueHashes": 298,
+  "mappedUniquePdfFiles": 298,
+  "unmappedUniquePdfFiles": 0,
+  "totalDocumentNodeMatches": 2375,
+  "matchedKnowledgeNodes": 360,
+  "readyForRewriteReviewNodes": 360,
+  "lowOrThinExtractionMappedDocs": 9,
+  "lowExtractionDocs": 5,
+  "manualTranscriptionPages": 19,
+  "sourceReplacementCandidates": 3,
+  "publicReferenceReadyModules": 12,
+  "modules": 12,
+  "learnerFacingAllowedDocs": 0,
+  "productionReadyDocs": 0,
+  "writeAllowedNow": false,
+  "manualAuthorizationRequired": true,
+  "extensionRows": [
+    {
+      "extension": ".pdf",
+      "files": 302,
+      "uniqueHashes": 298,
+      "totalMb": 1011.47,
+      "absorptionStatus": "covered_by_pdf_private_research_pipeline"
+    }
+  ],
+  "directoryRows": [
+    {
+      "directory": "专享05裸K篇",
+      "physicalFiles": 39,
+      "uniqueHashes": 39,
+      "duplicateFiles": 0,
+      "mappedUniqueFiles": 39,
+      "unmappedUniqueFiles": 0,
+      "lowOrThinExtractionFiles": 0,
+      "totalMb": 133.35,
+      "matchedModules": [
+        "多周期分析",
+        "反转",
+        "风险管理",
+        "交易区间",
+        "交易心理",
+        "趋势",
+        "市场结构",
+        "突破",
+        "图表阅读基础",
+        "新闻/情绪/事件偏见"
+      ],
+      "nodeMatches": 312,
+      "absorptionStatus": "all_unique_files_mapped_private_research_only",
+      "nextGate": "reviewer_distillation_and_public_grounding_before_any_learner_facing_use",
+      "sampleFiles": [
+        "专享05裸K篇/01_0601-【正课】裸K先导基础_ev_笔记.pdf",
+        "专享05裸K篇/02_0602-【正课】反转K线详解_笔记(1).pdf",
+        "专享05裸K篇/03_0603-【正课】怎么数K线_笔记(1).pdf",
+        "专享05裸K篇/04_0604-【复训】价格行为基础复盘_笔记.pdf",
+        "专享05裸K篇/05_0605-【正课】简单回调_笔记(1).pdf"
+      ]
+    },
+    {
+      "directory": "专享11缠论篇",
+      "physicalFiles": 35,
+      "uniqueHashes": 35,
+      "duplicateFiles": 0,
+      "mappedUniqueFiles": 35,
+      "unmappedUniqueFiles": 0,
+      "lowOrThinExtractionFiles": 0,
+      "totalMb": 109.1,
+      "matchedModules": [
+        "多周期分析",
+        "反转",
+        "风险管理",
+        "交易区间",
+        "趋势",
+        "市场结构",
+        "突破",
+        "图表阅读基础",
+        "K线与价格行为"
+      ],
+      "nodeMatches": 280,
+      "absorptionStatus": "all_unique_files_mapped_private_research_only",
+      "nextGate": "reviewer_distillation_and_public_grounding_before_any_learner_facing_use",
+      "sampleFiles": [
+        "专享11缠论篇/01_第00讲：先导课-认识缠论_笔记(2).pdf",
+        "专享11缠论篇/02_第1讲：缠论中的K线和合并_笔记.pdf",
+        "专享11缠论篇/03_1301-【复训】复训K线合并_笔记(1).pdf",
+        "专享11缠论篇/04_第2讲：缠论中的分型及强弱_笔记.pdf",
+        "专享11缠论篇/05_1302-【复训】复训顶底分型_笔记.pdf"
+      ]
+    },
+    {
+      "directory": "专享07庄家篇",
+      "physicalFiles": 33,
+      "uniqueHashes": 33,
+      "duplicateFiles": 0,
+      "mappedUniqueFiles": 33,
+      "unmappedUniqueFiles": 0,
+      "lowOrThinExtractionFiles": 1,
+      "totalMb": 116.83,
+      "matchedModules": [
+        "多周期分析",
+        "反转",
+        "交易区间",
+        "交易心理",
+        "趋势",
+        "市场结构",
+        "突破",
+        "图表阅读基础",
+        "新闻/情绪/事件偏见",
+        "K线与价格行为"
+      ],
+      "nodeMatches": 264,
+      "absorptionStatus": "all_unique_files_mapped_private_research_only",
+      "nextGate": "manual_transcription_or_source_replacement_for_low_extraction_rows",
+      "sampleFiles": [
+        "专享07庄家篇/01_0801-【正课】-初识庄家思维_笔记(1).pdf",
+        "专享07庄家篇/02_0802-【复训】-实盘求证庄家操盘过程新手常见问题_笔记(1).pdf",
+        "专享07庄家篇/03_0803-【正课】-庄家内部是怎么运行的_笔记.pdf",
+        "专享07庄家篇/04_0804-【复训】-在影片中学习庄家思维_笔记.pdf",
+        "专享07庄家篇/05_0805-【复训】-庄家的钱从哪来学员行情打卡及财富密码_笔记.pdf"
+      ]
+    },
+    {
+      "directory": "专享13附属篇",
+      "physicalFiles": 28,
+      "uniqueHashes": 27,
+      "duplicateFiles": 1,
+      "mappedUniqueFiles": 27,
+      "unmappedUniqueFiles": 0,
+      "lowOrThinExtractionFiles": 1,
+      "totalMb": 55.88,
+      "matchedModules": [
+        "多周期分析",
+        "反转",
+        "风险管理",
+        "交易区间",
+        "交易心理",
+        "趋势",
+        "市场结构",
+        "突破",
+        "K线与价格行为"
+      ],
+      "nodeMatches": 216,
+      "absorptionStatus": "all_unique_files_mapped_private_research_only",
+      "nextGate": "manual_transcription_or_source_replacement_for_low_extraction_rows",
+      "sampleFiles": [
+        "专享13附属篇/01_加钟1：如何多周期分析趋势_笔记(1).pdf",
+        "专享13附属篇/02_加钟2：识别假突破_笔记.pdf",
+        "专享13附属篇/03_加钟3：小何做单回测_笔记.pdf",
+        "专享13附属篇/04_加钟4：日常复盘21-09-20-以太坊_笔记.pdf",
+        "专享13附属篇/05_加钟5：日常复盘21-09-21 各个现货入场机会_笔记.pdf"
+      ]
+    },
+    {
+      "directory": "专享09提升篇",
+      "physicalFiles": 24,
+      "uniqueHashes": 24,
+      "duplicateFiles": 0,
+      "mappedUniqueFiles": 24,
+      "unmappedUniqueFiles": 0,
+      "lowOrThinExtractionFiles": 0,
+      "totalMb": 72.42,
+      "matchedModules": [
+        "多周期分析",
+        "反转",
+        "风险管理",
+        "交易区间",
+        "交易心理",
+        "趋势",
+        "市场结构",
+        "突破"
+      ],
+      "nodeMatches": 192,
+      "absorptionStatus": "all_unique_files_mapped_private_research_only",
+      "nextGate": "reviewer_distillation_and_public_grounding_before_any_learner_facing_use",
+      "sampleFiles": [
+        "专享09提升篇/01_1001-【正课】-深入复盘逐K分析（背景是上涨的震荡区间在下跌通道中持_笔记.pdf",
+        "专享09提升篇/02_1002-【正课】-深入复盘逐K分析（震荡调整后的突破往往是真突破交易交_笔记(1).pdf",
+        "专享09提升篇/03_1003-【正课】-深入复盘逐K分析（交易区间内的交易）_笔记.pdf",
+        "专享09提升篇/04_1004-【正课】-深入复盘-逐K分析（交易区间内的交易）_笔记(6).pdf",
+        "专享09提升篇/05_1005-【正课】-深入复盘-逐K分析（复杂回调-楔形三推）_笔记.pdf"
+      ]
+    },
+    {
+      "directory": "专享12订单篇",
+      "physicalFiles": 22,
+      "uniqueHashes": 22,
+      "duplicateFiles": 0,
+      "mappedUniqueFiles": 22,
+      "unmappedUniqueFiles": 0,
+      "lowOrThinExtractionFiles": 0,
+      "totalMb": 79.36,
+      "matchedModules": [
+        "多周期分析",
+        "风险管理",
+        "回测误区",
+        "交易区间",
+        "交易心理",
+        "趋势",
+        "市场结构",
+        "突破",
+        "图表阅读基础",
+        "K线与价格行为"
+      ],
+      "nodeMatches": 176,
+      "absorptionStatus": "all_unique_files_mapped_private_research_only",
+      "nextGate": "reviewer_distillation_and_public_grounding_before_any_learner_facing_use",
+      "sampleFiles": [
+        "专享12订单篇/01_第0讲-先导课：认识订单流_笔记.pdf",
+        "专享12订单篇/02_第1讲：流动性原理_笔记(1).pdf",
+        "专享12订单篇/03_1401-【复训】复训流动性原理及结构_笔记(1).pdf",
+        "专享12订单篇/04_第2讲：订单流基本概念_笔记(1).pdf",
+        "专享12订单篇/05_1402-【复训】复训基本概念和名词解释_笔记(1).pdf"
+      ]
+    },
+    {
+      "directory": "系统课02进阶",
+      "physicalFiles": 19,
+      "uniqueHashes": 19,
+      "duplicateFiles": 0,
+      "mappedUniqueFiles": 19,
+      "unmappedUniqueFiles": 0,
+      "lowOrThinExtractionFiles": 3,
+      "totalMb": 37.91,
+      "matchedModules": [
+        "多周期分析",
+        "反转",
+        "风险管理",
+        "回测误区",
+        "交易区间",
+        "交易心理",
+        "趋势",
+        "突破"
+      ],
+      "nodeMatches": 149,
+      "absorptionStatus": "all_unique_files_mapped_private_research_only",
+      "nextGate": "manual_transcription_or_source_replacement_for_low_extraction_rows",
+      "sampleFiles": [
+        "系统课02进阶/01_9101：集训不是一时，而是一世_笔记.pdf",
+        "系统课02进阶/02_9102：复盘2个简单回调的风格问题_笔记(1).pdf",
+        "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+        "系统课02进阶/04_9104：讲个小案例（简单回调） 打个小广告 两个小商机_笔记(1).pdf",
+        "系统课02进阶/05_9105：复盘SUSHI 分享软件 如何管理订单_笔记.pdf"
+      ]
+    },
+    {
+      "directory": "全套交易系统",
+      "physicalFiles": 13,
+      "uniqueHashes": 12,
+      "duplicateFiles": 1,
+      "mappedUniqueFiles": 12,
+      "unmappedUniqueFiles": 0,
+      "lowOrThinExtractionFiles": 1,
+      "totalMb": 24.06,
+      "matchedModules": [
+        "多周期分析",
+        "反转",
+        "风险管理",
+        "交易区间",
+        "趋势",
+        "市场结构",
+        "突破",
+        "新闻/情绪/事件偏见",
+        "K线与价格行为"
+      ],
+      "nodeMatches": 96,
+      "absorptionStatus": "all_unique_files_mapped_private_research_only",
+      "nextGate": "manual_transcription_or_source_replacement_for_low_extraction_rows",
+      "sampleFiles": [
+        "全套交易系统/01_9001-初中毕业集训（分辨趋势）_笔记(1).pdf",
+        "全套交易系统/01_第1讲：课前说明（这套课对我有啥用）_笔记(1).pdf",
+        "全套交易系统/02_第2讲：一定（如何判断当前的趋势）_笔记(2).pdf",
+        "全套交易系统/03_第3讲：一定（实盘讲解现在能不能入场交易）_笔记.pdf",
+        "全套交易系统/04_第4讲：二找（价格从哪来要到哪去）_笔记(1).pdf"
+      ]
+    },
+    {
+      "directory": "根目录PDF",
+      "physicalFiles": 11,
+      "uniqueHashes": 11,
+      "duplicateFiles": 0,
+      "mappedUniqueFiles": 11,
+      "unmappedUniqueFiles": 0,
+      "lowOrThinExtractionFiles": 1,
+      "totalMb": 57.56,
+      "matchedModules": [
+        "多周期分析",
+        "反转",
+        "风险管理",
+        "回测误区",
+        "交易区间",
+        "交易心理",
+        "趋势",
+        "市场结构",
+        "突破",
+        "图表阅读基础"
+      ],
+      "nodeMatches": 88,
+      "absorptionStatus": "all_unique_files_mapped_private_research_only",
+      "nextGate": "manual_transcription_or_source_replacement_for_low_extraction_rows",
+      "sampleFiles": [
+        "价格行为学 - 供给需求腿 (Supply - Demand Legs) 交易策略 - forecho's Blog.pdf",
+        "价格行为学 - Rose 的 Caveman (野人) 交易策略 - forecho's Blog.pdf",
+        "价格行为学 - Rose 的 Gap Bar - forecho's Blog.pdf",
+        "价格行为学 - Rose 的 Mother Bar (孕线) 策略 - forecho's Blog.pdf",
+        "价格行为学 - Rose 的 MTR (主趋势反转) - forecho's Blog.pdf"
+      ]
+    },
+    {
+      "directory": "专享04指标篇",
+      "physicalFiles": 11,
+      "uniqueHashes": 11,
+      "duplicateFiles": 0,
+      "mappedUniqueFiles": 11,
+      "unmappedUniqueFiles": 0,
+      "lowOrThinExtractionFiles": 0,
+      "totalMb": 47.45,
+      "matchedModules": [
+        "多周期分析",
+        "反转",
+        "风险管理",
+        "回测误区",
+        "交易区间",
+        "交易心理",
+        "趋势",
+        "市场结构",
+        "突破",
+        "图表阅读基础"
+      ],
+      "nodeMatches": 88,
+      "absorptionStatus": "all_unique_files_mapped_private_research_only",
+      "nextGate": "reviewer_distillation_and_public_grounding_before_any_learner_facing_use",
+      "sampleFiles": [
+        "专享04指标篇/01_0401-【正课】-重新认识MACD_笔记.pdf",
+        "专享04指标篇/02_0402-【复训】-MACD金死叉顶底背离复训_笔记(1).pdf",
+        "专享04指标篇/03_0403-【正课】-MACD形态（1)_笔记.pdf",
+        "专享04指标篇/04_0404-【正课】-MACD形态（2）_笔记(1).pdf",
+        "专享04指标篇/05_0405-【复训】-复训MACD形态_笔记.pdf"
+      ]
+    },
+    {
+      "directory": "专享02基础篇",
+      "physicalFiles": 10,
+      "uniqueHashes": 9,
+      "duplicateFiles": 1,
+      "mappedUniqueFiles": 9,
+      "unmappedUniqueFiles": 0,
+      "lowOrThinExtractionFiles": 0,
+      "totalMb": 55.72,
+      "matchedModules": [
+        "多周期分析",
+        "风险管理",
+        "交易区间",
+        "趋势",
+        "市场结构",
+        "突破",
+        "图表阅读基础"
+      ],
+      "nodeMatches": 72,
+      "absorptionStatus": "all_unique_files_mapped_private_research_only",
+      "nextGate": "reviewer_distillation_and_public_grounding_before_any_learner_facing_use",
+      "sampleFiles": [
+        "专享02基础篇/01_0201-【正课】-K线背后的奥秘_笔记(1).pdf",
+        "专享02基础篇/02_0202-【正课】-12金K（1）_笔记.pdf",
+        "专享02基础篇/03_0203-【正课】-12金K（2）_笔记(1).pdf",
+        "专享02基础篇/04_0204-【正课】-12金K（3）_笔记.pdf",
+        "专享02基础篇/05_0205-【正课】12金K（4）_笔记.pdf"
+      ]
+    },
+    {
+      "directory": "专享10谐波篇",
+      "physicalFiles": 10,
+      "uniqueHashes": 10,
+      "duplicateFiles": 0,
+      "mappedUniqueFiles": 10,
+      "unmappedUniqueFiles": 0,
+      "lowOrThinExtractionFiles": 0,
+      "totalMb": 29.92,
+      "matchedModules": [
+        "反转",
+        "风险管理",
+        "交易区间",
+        "趋势",
+        "市场结构",
+        "突破"
+      ],
+      "nodeMatches": 80,
+      "absorptionStatus": "all_unique_files_mapped_private_research_only",
+      "nextGate": "reviewer_distillation_and_public_grounding_before_any_learner_facing_use",
+      "sampleFiles": [
+        "专享10谐波篇/01_第1讲：初识谐波交易法_笔记(3).pdf",
+        "专享10谐波篇/02_第2讲：最简单的AB=CD形态_笔记(2).pdf",
+        "专享10谐波篇/03_第3讲：伽特利形态_笔记.pdf",
+        "专享10谐波篇/04_第4讲：蝙蝠形态及其变异_笔记.pdf",
+        "专享10谐波篇/05_第5讲：蝴蝶形态及其变异_笔记.pdf"
+      ]
+    },
+    {
+      "directory": "专享03形态篇",
+      "physicalFiles": 9,
+      "uniqueHashes": 9,
+      "duplicateFiles": 0,
+      "mappedUniqueFiles": 9,
+      "unmappedUniqueFiles": 0,
+      "lowOrThinExtractionFiles": 0,
+      "totalMb": 43.89,
+      "matchedModules": [
+        "多周期分析",
+        "反转",
+        "风险管理",
+        "回测误区",
+        "交易区间",
+        "趋势",
+        "市场结构",
+        "突破",
+        "图表阅读基础"
+      ],
+      "nodeMatches": 72,
+      "absorptionStatus": "all_unique_files_mapped_private_research_only",
+      "nextGate": "reviewer_distillation_and_public_grounding_before_any_learner_facing_use",
+      "sampleFiles": [
+        "专享03形态篇/01_0301-【正课】-形态背后的奥秘头肩顶底_笔记(1).pdf",
+        "专享03形态篇/02_0302-【正课】-V形顶底双重顶底三重顶底_笔记.pdf",
+        "专享03形态篇/03_0303-【正课】-圆弧顶底菱形顶底反转形态收尾_笔记.pdf",
+        "专享03形态篇/04_0305-【正课】-三角形中继形态_笔记.pdf",
+        "专享03形态篇/05_0306-【正课】-扩散形态矩形中继_笔记(1).pdf"
+      ]
+    },
+    {
+      "directory": "专享06心理篇",
+      "physicalFiles": 8,
+      "uniqueHashes": 8,
+      "duplicateFiles": 0,
+      "mappedUniqueFiles": 8,
+      "unmappedUniqueFiles": 0,
+      "lowOrThinExtractionFiles": 0,
+      "totalMb": 34.48,
+      "matchedModules": [
+        "多周期分析",
+        "反转",
+        "风险管理",
+        "交易区间",
+        "交易心理",
+        "突破"
+      ],
+      "nodeMatches": 64,
+      "absorptionStatus": "all_unique_files_mapped_private_research_only",
+      "nextGate": "reviewer_distillation_and_public_grounding_before_any_learner_facing_use",
+      "sampleFiles": [
+        "专享06心理篇/01_第1讲：为什么要学交易心理_笔记.pdf",
+        "专享06心理篇/02_0701-【复训】交易中常见的认知偏差_笔记.pdf",
+        "专享06心理篇/03_第2讲：常见的心理障碍有哪些_笔记.pdf",
+        "专享06心理篇/04_0702-【复训】对自己负责_笔记.pdf",
+        "专享06心理篇/05_第3讲：如何跨越交易心理障碍_笔记(1).pdf"
+      ]
+    },
+    {
+      "directory": "K线怎么看",
+      "physicalFiles": 8,
+      "uniqueHashes": 8,
+      "duplicateFiles": 0,
+      "mappedUniqueFiles": 8,
+      "unmappedUniqueFiles": 0,
+      "lowOrThinExtractionFiles": 2,
+      "totalMb": 14.89,
+      "matchedModules": [
+        "多周期分析",
+        "反转",
+        "风险管理",
+        "交易区间",
+        "趋势",
+        "突破",
+        "图表阅读基础",
+        "K线与价格行为"
+      ],
+      "nodeMatches": 58,
+      "absorptionStatus": "all_unique_files_mapped_private_research_only",
+      "nextGate": "manual_transcription_or_source_replacement_for_low_extraction_rows",
+      "sampleFiles": [
+        "K线怎么看/02_第2讲：精讲十字星_笔记(2).pdf",
+        "K线怎么看/03_第3讲：常见的入场信号-反转金K（1）_笔记.pdf",
+        "K线怎么看/04_第4讲：常见的入场信号-反转金K（2）_笔记.pdf",
+        "K线怎么看/05_第5讲：常见的持仓信号-进攻金K（1）_笔记.pdf",
+        "K线怎么看/06_第6讲：常见的持仓信号-进攻金K（2）_笔记.pdf"
+      ]
+    },
+    {
+      "directory": "系统课01初级",
+      "physicalFiles": 7,
+      "uniqueHashes": 7,
+      "duplicateFiles": 0,
+      "mappedUniqueFiles": 7,
+      "unmappedUniqueFiles": 0,
+      "lowOrThinExtractionFiles": 0,
+      "totalMb": 33.47,
+      "matchedModules": [
+        "多周期分析",
+        "交易区间",
+        "交易心理",
+        "趋势",
+        "市场结构",
+        "突破",
+        "图表阅读基础",
+        "新闻/情绪/事件偏见"
+      ],
+      "nodeMatches": 56,
+      "absorptionStatus": "all_unique_files_mapped_private_research_only",
+      "nextGate": "reviewer_distillation_and_public_grounding_before_any_learner_facing_use",
+      "sampleFiles": [
+        "系统课01初级/01_9001-初中毕业集训（分辨趋势）_笔记(1).pdf",
+        "系统课01初级/02_9002-初中毕业集训（找关键位）_笔记.pdf",
+        "系统课01初级/03_9003-初中毕业集训（入场信号）_笔记.pdf",
+        "系统课01初级/04_9004-初中毕业集训（刻意练习1）_笔记.pdf",
+        "系统课01初级/05_9005-初中毕业集训（刻意练习2）_笔记.pdf"
+      ]
+    },
+    {
+      "directory": "系统课03高级",
+      "physicalFiles": 6,
+      "uniqueHashes": 6,
+      "duplicateFiles": 0,
+      "mappedUniqueFiles": 6,
+      "unmappedUniqueFiles": 0,
+      "lowOrThinExtractionFiles": 0,
+      "totalMb": 22.84,
+      "matchedModules": [
+        "交易区间",
+        "趋势",
+        "突破",
+        "K线与价格行为"
+      ],
+      "nodeMatches": 48,
+      "absorptionStatus": "all_unique_files_mapped_private_research_only",
+      "nextGate": "reviewer_distillation_and_public_grounding_before_any_learner_facing_use",
+      "sampleFiles": [
+        "系统课03高级/01-【复训】公布“大学毕业”02期集训计划_笔记.pdf",
+        "系统课03高级/02-【正课】价格行为加餐课-高潮_笔记.pdf",
+        "系统课03高级/03-【正课】价格行为加餐课-缺口_笔记.pdf",
+        "系统课03高级/04-【正课】价格行为加餐课-IOI形态外包K线_笔记.pdf",
+        "系统课03高级/05-【正课】关于反转K线的重叠度问题_笔记(1).pdf"
+      ]
+    },
+    {
+      "directory": "专享01认知篇",
+      "physicalFiles": 6,
+      "uniqueHashes": 6,
+      "duplicateFiles": 0,
+      "mappedUniqueFiles": 6,
+      "unmappedUniqueFiles": 0,
+      "lowOrThinExtractionFiles": 0,
+      "totalMb": 27.99,
+      "matchedModules": [
+        "多周期分析",
+        "反转",
+        "交易区间",
+        "趋势",
+        "市场结构",
+        "突破",
+        "图表阅读基础"
+      ],
+      "nodeMatches": 48,
+      "absorptionStatus": "all_unique_files_mapped_private_research_only",
+      "nextGate": "reviewer_distillation_and_public_grounding_before_any_learner_facing_use",
+      "sampleFiles": [
+        "专享01认知篇/01_0101-【正课】-课前说明_笔记.pdf",
+        "专享01认知篇/02_0102-【正课】-普通人能不能通过交易赚钱_笔记.pdf",
+        "专享01认知篇/03_0103-【正课】-交易市场中的道法术器_笔记.pdf",
+        "专享01认知篇/04_0104-【正课】-常用的交易术语_笔记(1).pdf",
+        "专享01认知篇/05_0105-【正课】-市场的真相_笔记.pdf"
+      ]
+    },
+    {
+      "directory": "专享08系统篇",
+      "physicalFiles": 3,
+      "uniqueHashes": 3,
+      "duplicateFiles": 0,
+      "mappedUniqueFiles": 3,
+      "unmappedUniqueFiles": 0,
+      "lowOrThinExtractionFiles": 0,
+      "totalMb": 14.34,
+      "matchedModules": [
+        "风险管理",
+        "回测误区",
+        "交易心理",
+        "突破"
+      ],
+      "nodeMatches": 24,
+      "absorptionStatus": "all_unique_files_mapped_private_research_only",
+      "nextGate": "reviewer_distillation_and_public_grounding_before_any_learner_facing_use",
+      "sampleFiles": [
+        "专享08系统篇/01_0901-【正课】-仓位管理-初中班_笔记.pdf",
+        "专享08系统篇/02_0902-【正课】-交易纪律交易心态_笔记.pdf",
+        "专享08系统篇/03_0903-【正课】-如何搭建交易系统_笔记.pdf"
+      ]
+    }
+  ],
+  "duplicateRows": [
+    {
+      "relativePath": "全套交易系统/08_第8讲：制定我的计划（我应该投入多少本金）_笔记(1).pdf",
+      "duplicateOf": "全套交易系统/08_第8讲：制定我的计划（我应该投入多少本金）_笔记.pdf",
+      "sha256": "30ca74c6e306ae67c55eeff0f136c1baa68b782c27d3bca435377684c7d4811b",
+      "bytes": 2089471
+    },
+    {
+      "relativePath": "系统课01初级/01_9001-初中毕业集训（分辨趋势）_笔记(1).pdf",
+      "duplicateOf": "全套交易系统/01_9001-初中毕业集训（分辨趋势）_笔记(1).pdf",
+      "sha256": "8d7732f0a7a5ba5aca8260b69214f894f8e42c5df7258361fb8c72a4654d124c",
+      "bytes": 4064727
+    },
+    {
+      "relativePath": "专享02基础篇/07_0207-【复训】-12金K（6）_笔记(1).pdf",
+      "duplicateOf": "专享02基础篇/07_0207-【复训】-12金K（6）_笔记.pdf",
+      "sha256": "456768542ff3a00c971bd50dc2e953811d3e1fdb1dc081eea357b6eb4e76ba44",
+      "bytes": 8971296
+    },
+    {
+      "relativePath": "专享13附属篇/27_加钟27：如何区分顺势还是逆势_笔记(1).pdf",
+      "duplicateOf": "专享13附属篇/27_加钟27：如何区分顺势还是逆势_笔记.pdf",
+      "sha256": "373de75cfea15ae7c9e659d36ea2d8e5df659cfa2a37a3d3eb6ca5308d612453",
+      "bytes": 1984646
+    }
+  ],
+  "unmappedUniqueRows": [],
+  "extractionAttentionRows": [
+    {
+      "relativePath": "全套交易系统/01_第1讲：课前说明（这套课对我有啥用）_笔记(1).pdf",
+      "documentId": "corpus_1292",
+      "extractionBucket": "thin_extraction_reviewer_attention",
+      "charCount": 1244,
+      "textExtraction": "full",
+      "nextGate": "manual_transcription_or_source_replacement_before_rewrite_use"
+    },
+    {
+      "relativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "documentId": "corpus_1313",
+      "extractionBucket": "needs_manual_transcription_or_replacement_review",
+      "charCount": 124,
+      "textExtraction": "partial",
+      "nextGate": "manual_transcription_or_source_replacement_before_rewrite_use"
+    },
+    {
+      "relativePath": "系统课02进阶/06_9106：这个算不算简单回调？ 如何准确数波段_笔记.pdf",
+      "documentId": "corpus_1316",
+      "extractionBucket": "thin_extraction_reviewer_attention",
+      "charCount": 1226,
+      "textExtraction": "full",
+      "nextGate": "manual_transcription_or_source_replacement_before_rewrite_use"
+    },
+    {
+      "relativePath": "系统课02进阶/19_9119：高中毕业集训总结年后展望_笔记.pdf",
+      "documentId": "corpus_1329",
+      "extractionBucket": "needs_manual_transcription_or_replacement_review",
+      "charCount": 12,
+      "textExtraction": "partial",
+      "nextGate": "manual_transcription_or_source_replacement_before_rewrite_use"
+    },
+    {
+      "relativePath": "专享07庄家篇/14_0814-【复训】-分析行情挖掘机会_笔记.pdf",
+      "documentId": "corpus_1431",
+      "extractionBucket": "needs_manual_transcription_or_replacement_review",
+      "charCount": 12,
+      "textExtraction": "partial",
+      "nextGate": "manual_transcription_or_source_replacement_before_rewrite_use"
+    },
+    {
+      "relativePath": "专享13附属篇/17_加钟17：行情分析11-05-BTC做单机会_笔记(1).pdf",
+      "documentId": "corpus_1561",
+      "extractionBucket": "thin_extraction_reviewer_attention",
+      "charCount": 1152,
+      "textExtraction": "full",
+      "nextGate": "manual_transcription_or_source_replacement_before_rewrite_use"
+    },
+    {
+      "relativePath": "K线怎么看/06_第6讲：常见的持仓信号-进攻金K（2）_笔记.pdf",
+      "documentId": "corpus_1577",
+      "extractionBucket": "needs_manual_transcription_or_replacement_review",
+      "charCount": 12,
+      "textExtraction": "partial",
+      "nextGate": "manual_transcription_or_source_replacement_before_rewrite_use"
+    },
+    {
+      "relativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "documentId": "corpus_1580",
+      "extractionBucket": "needs_manual_transcription_or_replacement_review",
+      "charCount": 185,
+      "textExtraction": "partial",
+      "nextGate": "manual_transcription_or_source_replacement_before_rewrite_use"
+    },
+    {
+      "relativePath": "Scalp剥头皮进阶成长笔记.pdf",
+      "documentId": "corpus_1581",
+      "extractionBucket": "thin_extraction_reviewer_attention",
+      "charCount": 1119,
+      "textExtraction": "full",
+      "nextGate": "manual_transcription_or_source_replacement_before_rewrite_use"
+    }
+  ],
+  "topPhysicalFiles": [
+    {
+      "relativePath": "量价分析：量价分析创始人威科夫的盘口解读方法安娜库林.pdf",
+      "mb": 25.905,
+      "directory": "根目录PDF",
+      "mappedToCorpus": true,
+      "duplicateOf": ""
+    },
+    {
+      "relativePath": "VWAP.pdf",
+      "mb": 9.883,
+      "directory": "根目录PDF",
+      "mappedToCorpus": true,
+      "duplicateOf": ""
+    },
+    {
+      "relativePath": "专享02基础篇/07_0207-【复训】-12金K（6）_笔记.pdf",
+      "mb": 8.556,
+      "directory": "专享02基础篇",
+      "mappedToCorpus": true,
+      "duplicateOf": ""
+    },
+    {
+      "relativePath": "专享02基础篇/07_0207-【复训】-12金K（6）_笔记(1).pdf",
+      "mb": 8.556,
+      "directory": "专享02基础篇",
+      "mappedToCorpus": true,
+      "duplicateOf": "专享02基础篇/07_0207-【复训】-12金K（6）_笔记.pdf"
+    },
+    {
+      "relativePath": "价格行为学 - Rose 的 MTR (主趋势反转) - forecho's Blog.pdf",
+      "mb": 7.249,
+      "directory": "根目录PDF",
+      "mappedToCorpus": true,
+      "duplicateOf": ""
+    },
+    {
+      "relativePath": "专享03形态篇/01_0301-【正课】-形态背后的奥秘头肩顶底_笔记(1).pdf",
+      "mb": 6.89,
+      "directory": "专享03形态篇",
+      "mappedToCorpus": true,
+      "duplicateOf": ""
+    },
+    {
+      "relativePath": "系统课01初级/04_9004-初中毕业集训（刻意练习1）_笔记.pdf",
+      "mb": 6.861,
+      "directory": "系统课01初级",
+      "mappedToCorpus": true,
+      "duplicateOf": ""
+    },
+    {
+      "relativePath": "专享03形态篇/02_0302-【正课】-V形顶底双重顶底三重顶底_笔记.pdf",
+      "mb": 6.841,
+      "directory": "专享03形态篇",
+      "mappedToCorpus": true,
+      "duplicateOf": ""
+    },
+    {
+      "relativePath": "专享03形态篇/05_0306-【正课】-扩散形态矩形中继_笔记(1).pdf",
+      "mb": 6.835,
+      "directory": "专享03形态篇",
+      "mappedToCorpus": true,
+      "duplicateOf": ""
+    },
+    {
+      "relativePath": "专享02基础篇/03_0203-【正课】-12金K（2）_笔记(1).pdf",
+      "mb": 6.634,
+      "directory": "专享02基础篇",
+      "mappedToCorpus": true,
+      "duplicateOf": ""
+    },
+    {
+      "relativePath": "专享05裸K篇/08_0608-【正课】通道_笔记(1).pdf",
+      "mb": 6.254,
+      "directory": "专享05裸K篇",
+      "mappedToCorpus": true,
+      "duplicateOf": ""
+    },
+    {
+      "relativePath": "专享04指标篇/09_0409-【复训】-复训布林带基本用法及形态_笔记(1).pdf",
+      "mb": 6.247,
+      "directory": "专享04指标篇",
+      "mappedToCorpus": true,
+      "duplicateOf": ""
+    },
+    {
+      "relativePath": "专享01认知篇/01_0101-【正课】-课前说明_笔记.pdf",
+      "mb": 6.2,
+      "directory": "专享01认知篇",
+      "mappedToCorpus": true,
+      "duplicateOf": ""
+    },
+    {
+      "relativePath": "专享11缠论篇/35_1317-【复训】缠论收尾课_笔记(1).pdf",
+      "mb": 6.178,
+      "directory": "专享11缠论篇",
+      "mappedToCorpus": true,
+      "duplicateOf": ""
+    },
+    {
+      "relativePath": "专享11缠论篇/27_1313-【复训】结合律的实际应用_笔记.pdf",
+      "mb": 6.16,
+      "directory": "专享11缠论篇",
+      "mappedToCorpus": true,
+      "duplicateOf": ""
+    },
+    {
+      "relativePath": "专享12订单篇/18_1408-【复训】用订单流搭建交易系统_笔记.pdf",
+      "mb": 6.099,
+      "directory": "专享12订单篇",
+      "mappedToCorpus": true,
+      "duplicateOf": ""
+    },
+    {
+      "relativePath": "专享06心理篇/02_0701-【复训】交易中常见的认知偏差_笔记.pdf",
+      "mb": 6.059,
+      "directory": "专享06心理篇",
+      "mappedToCorpus": true,
+      "duplicateOf": ""
+    },
+    {
+      "relativePath": "专享05裸K篇/16_0616-【复训】-复训交易区间_笔记.pdf",
+      "mb": 6.059,
+      "directory": "专享05裸K篇",
+      "mappedToCorpus": true,
+      "duplicateOf": ""
+    },
+    {
+      "relativePath": "系统课03高级/06-【正课】“大学毕业”02期集训总结_笔记(1).pdf",
+      "mb": 6.058,
+      "directory": "系统课03高级",
+      "mappedToCorpus": true,
+      "duplicateOf": ""
+    },
+    {
+      "relativePath": "专享07庄家篇/02_0802-【复训】-实盘求证庄家操盘过程新手常见问题_笔记(1).pdf",
+      "mb": 5.961,
+      "directory": "专享07庄家篇",
+      "mappedToCorpus": true,
+      "duplicateOf": ""
+    }
+  ],
+  "commands": [
+    "npm.cmd run build:local-course-folder-absorption-ledger",
+    "npm.cmd run check:local-course-folder-absorption-ledger",
+    "npm.cmd run check:local-course-source-sync-audit",
+    "npm.cmd run check:local-course-document-absorption-map"
+  ],
+  "completionRule": "This ledger is complete when every current file in the local investment course folder is accounted for by extension, duplicate hash, manifest row, private corpus document, and knowledge-node mapping. It does not approve learner-facing release or replace human review.",
+  "boundary": "Local course folder absorption ledger for reviewer-facing education-only governance. It proves current private PDFs are accounted for in the private research layer, but it does not make private PDFs learner-facing citations, approve lessons, generate reviewer notes, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, or production readiness."
+}

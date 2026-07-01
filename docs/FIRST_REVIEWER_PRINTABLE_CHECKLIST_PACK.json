@@ -1,0 +1,923 @@
+{
+  "generatedAt": "2026-06-19T09:47:11.814Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "packReady": true,
+  "realStatusPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "realStatusOverlayPresent": false,
+  "targetBatches": [
+    "rewrite_batch_01",
+    "rewrite_batch_05"
+  ],
+  "lessonChecklists": 12,
+  "highRiskLessons": 2,
+  "noteFieldCheckboxes": 72,
+  "directCandidatesToConfirm": 5,
+  "sourceRefsToInspect": 10,
+  "cards": [
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0044",
+      "module": "多周期分析",
+      "topic": "M15细节",
+      "riskLevel": "medium",
+      "rewritePriority": "P0",
+      "currentGrade": "structural_draft",
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "CFTC",
+        "SEC"
+      ],
+      "sourceRefsToInspect": [],
+      "directCandidateFamilies": [],
+      "directCandidateRows": 0,
+      "noteFields": [
+        {
+          "field": "originalRewriteNotes",
+          "readyWhen": "Reviewer has decided the original education rewrite angle and confirmed it remains structural_draft.",
+          "currentBlocker": "No real human rewrite-angle decision exists yet.",
+          "prompt": "Describe the original education rewrite angle after source roles are confirmed."
+        },
+        {
+          "field": "sourceFitNotes",
+          "readyWhen": "Reviewer has confirmed each source family as direct evidence, boundary-only context, or unsuitable.",
+          "currentBlocker": "Source roles are still prompts and require human confirmation.",
+          "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval."
+        },
+        {
+          "field": "factCheckNotes",
+          "readyWhen": "Reviewer has checked claims against source metadata and marked unresolved claims to remove.",
+          "currentBlocker": "No real fact-check pass exists yet.",
+          "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles."
+        },
+        {
+          "field": "boundaryCheckNotes",
+          "readyWhen": "Reviewer has checked no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+          "currentBlocker": "No real safety-boundary pass exists yet.",
+          "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording."
+        },
+        {
+          "field": "copyingRiskNotes",
+          "readyWhen": "Reviewer has checked notes and rewrite prose for no copied external source body text.",
+          "currentBlocker": "No real copying-risk pass exists yet.",
+          "prompt": "Confirm no external source body text is copied into notes or lesson prose."
+        },
+        {
+          "field": "humanReviewerInitials",
+          "readyWhen": "Reviewer has actually completed the required review work for the lesson.",
+          "currentBlocker": "Human initials must remain blank until real review work is complete.",
+          "prompt": "Fill only after real human review work is performed."
+        }
+      ],
+      "safetyBoxes": [
+        "No approval, final-ready, learner-facing-ready, commercial-ready, or production-ready wording.",
+        "No buy/sell/hold, entry/exit signal, performance, win-rate, backtest-profit, or real-money guidance.",
+        "No broker/order workflow, automation, agency endorsement, or copied source body text.",
+        "Yellow, red, and research_only sources remain out of learner-facing evidence."
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0068",
+      "module": "多周期分析",
+      "topic": "D1背景",
+      "riskLevel": "high",
+      "rewritePriority": "P0",
+      "currentGrade": "structural_draft",
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "CFTC",
+        "Investor.gov"
+      ],
+      "sourceRefsToInspect": [
+        {
+          "sourceId": "src_real_11201",
+          "name": "CFTC AI Trading Bots Advisory",
+          "url": "https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/AITradingBots.html",
+          "family": "CFTC",
+          "sourceType": "official-docs",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "timeframe"
+        },
+        {
+          "sourceId": "src_real_11211",
+          "name": "CFTC Commodity ETP Risks",
+          "url": "https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/CustomerAdvisory_CommodityETPs.htm",
+          "family": "CFTC",
+          "sourceType": "official-docs",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "timeframe"
+        },
+        {
+          "sourceId": "src_real_10571",
+          "name": "CFTC Large Trader Reporting",
+          "url": "https://www.cftc.gov/IndustryOversight/MarketSurveillance/LargeTraderReportingProgram/index.htm",
+          "family": "CFTC",
+          "sourceType": "official-docs",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "indicator_pattern_taxonomy"
+        },
+        {
+          "sourceId": "src_real_10956",
+          "name": "Investor.gov Glossary Diversification",
+          "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/diversification",
+          "family": "Investor.gov",
+          "sourceType": "education-reference",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "Green indicator_pattern_taxonomy authority context and boundary reference; not copied learner-facing content."
+        },
+        {
+          "sourceId": "src_real_10297",
+          "name": "CFTC Market Surveillance",
+          "url": "https://www.cftc.gov/IndustryOversight/MarketSurveillance/index.htm",
+          "family": "CFTC",
+          "sourceType": "official-docs",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "Green indicator_pattern_taxonomy authority context and boundary reference; not copied learner-facing content."
+        }
+      ],
+      "directCandidateFamilies": [
+        "CFTC"
+      ],
+      "directCandidateRows": 1,
+      "noteFields": [
+        {
+          "field": "originalRewriteNotes",
+          "readyWhen": "Reviewer has decided the original education rewrite angle and confirmed it remains structural_draft.",
+          "currentBlocker": "No real human rewrite-angle decision exists yet.",
+          "prompt": "Describe the original education rewrite angle after source roles are confirmed."
+        },
+        {
+          "field": "sourceFitNotes",
+          "readyWhen": "Reviewer has confirmed each source family as direct evidence, boundary-only context, or unsuitable.",
+          "currentBlocker": "Source roles are still prompts and require human confirmation.",
+          "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval."
+        },
+        {
+          "field": "factCheckNotes",
+          "readyWhen": "Reviewer has checked claims against source metadata and marked unresolved claims to remove.",
+          "currentBlocker": "No real fact-check pass exists yet.",
+          "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles."
+        },
+        {
+          "field": "boundaryCheckNotes",
+          "readyWhen": "Reviewer has checked no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+          "currentBlocker": "No real safety-boundary pass exists yet.",
+          "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording."
+        },
+        {
+          "field": "copyingRiskNotes",
+          "readyWhen": "Reviewer has checked notes and rewrite prose for no copied external source body text.",
+          "currentBlocker": "No real copying-risk pass exists yet.",
+          "prompt": "Confirm no external source body text is copied into notes or lesson prose."
+        },
+        {
+          "field": "humanReviewerInitials",
+          "readyWhen": "Reviewer has actually completed the required review work for the lesson.",
+          "currentBlocker": "Human initials must remain blank until real review work is complete.",
+          "prompt": "Fill only after real human review work is performed."
+        }
+      ],
+      "safetyBoxes": [
+        "No approval, final-ready, learner-facing-ready, commercial-ready, or production-ready wording.",
+        "No buy/sell/hold, entry/exit signal, performance, win-rate, backtest-profit, or real-money guidance.",
+        "No broker/order workflow, automation, agency endorsement, or copied source body text.",
+        "Yellow, red, and research_only sources remain out of learner-facing evidence."
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0128",
+      "module": "多周期分析",
+      "topic": "D1背景",
+      "riskLevel": "medium",
+      "rewritePriority": "P0",
+      "currentGrade": "structural_draft",
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "CFTC",
+        "Federal Reserve",
+        "Investor.gov"
+      ],
+      "sourceRefsToInspect": [],
+      "directCandidateFamilies": [],
+      "directCandidateRows": 0,
+      "noteFields": [
+        {
+          "field": "originalRewriteNotes",
+          "readyWhen": "Reviewer has decided the original education rewrite angle and confirmed it remains structural_draft.",
+          "currentBlocker": "No real human rewrite-angle decision exists yet.",
+          "prompt": "Describe the original education rewrite angle after source roles are confirmed."
+        },
+        {
+          "field": "sourceFitNotes",
+          "readyWhen": "Reviewer has confirmed each source family as direct evidence, boundary-only context, or unsuitable.",
+          "currentBlocker": "Source roles are still prompts and require human confirmation.",
+          "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval."
+        },
+        {
+          "field": "factCheckNotes",
+          "readyWhen": "Reviewer has checked claims against source metadata and marked unresolved claims to remove.",
+          "currentBlocker": "No real fact-check pass exists yet.",
+          "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles."
+        },
+        {
+          "field": "boundaryCheckNotes",
+          "readyWhen": "Reviewer has checked no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+          "currentBlocker": "No real safety-boundary pass exists yet.",
+          "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording."
+        },
+        {
+          "field": "copyingRiskNotes",
+          "readyWhen": "Reviewer has checked notes and rewrite prose for no copied external source body text.",
+          "currentBlocker": "No real copying-risk pass exists yet.",
+          "prompt": "Confirm no external source body text is copied into notes or lesson prose."
+        },
+        {
+          "field": "humanReviewerInitials",
+          "readyWhen": "Reviewer has actually completed the required review work for the lesson.",
+          "currentBlocker": "Human initials must remain blank until real review work is complete.",
+          "prompt": "Fill only after real human review work is performed."
+        }
+      ],
+      "safetyBoxes": [
+        "No approval, final-ready, learner-facing-ready, commercial-ready, or production-ready wording.",
+        "No buy/sell/hold, entry/exit signal, performance, win-rate, backtest-profit, or real-money guidance.",
+        "No broker/order workflow, automation, agency endorsement, or copied source body text.",
+        "Yellow, red, and research_only sources remain out of learner-facing evidence."
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0140",
+      "module": "多周期分析",
+      "topic": "H4结构",
+      "riskLevel": "medium",
+      "rewritePriority": "P0",
+      "currentGrade": "structural_draft",
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "BEA",
+        "CFTC",
+        "Investor.gov",
+        "Treasury"
+      ],
+      "sourceRefsToInspect": [],
+      "directCandidateFamilies": [],
+      "directCandidateRows": 0,
+      "noteFields": [
+        {
+          "field": "originalRewriteNotes",
+          "readyWhen": "Reviewer has decided the original education rewrite angle and confirmed it remains structural_draft.",
+          "currentBlocker": "No real human rewrite-angle decision exists yet.",
+          "prompt": "Describe the original education rewrite angle after source roles are confirmed."
+        },
+        {
+          "field": "sourceFitNotes",
+          "readyWhen": "Reviewer has confirmed each source family as direct evidence, boundary-only context, or unsuitable.",
+          "currentBlocker": "Source roles are still prompts and require human confirmation.",
+          "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval."
+        },
+        {
+          "field": "factCheckNotes",
+          "readyWhen": "Reviewer has checked claims against source metadata and marked unresolved claims to remove.",
+          "currentBlocker": "No real fact-check pass exists yet.",
+          "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles."
+        },
+        {
+          "field": "boundaryCheckNotes",
+          "readyWhen": "Reviewer has checked no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+          "currentBlocker": "No real safety-boundary pass exists yet.",
+          "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording."
+        },
+        {
+          "field": "copyingRiskNotes",
+          "readyWhen": "Reviewer has checked notes and rewrite prose for no copied external source body text.",
+          "currentBlocker": "No real copying-risk pass exists yet.",
+          "prompt": "Confirm no external source body text is copied into notes or lesson prose."
+        },
+        {
+          "field": "humanReviewerInitials",
+          "readyWhen": "Reviewer has actually completed the required review work for the lesson.",
+          "currentBlocker": "Human initials must remain blank until real review work is complete.",
+          "prompt": "Fill only after real human review work is performed."
+        }
+      ],
+      "safetyBoxes": [
+        "No approval, final-ready, learner-facing-ready, commercial-ready, or production-ready wording.",
+        "No buy/sell/hold, entry/exit signal, performance, win-rate, backtest-profit, or real-money guidance.",
+        "No broker/order workflow, automation, agency endorsement, or copied source body text.",
+        "Yellow, red, and research_only sources remain out of learner-facing evidence."
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0054",
+      "module": "交易区间",
+      "topic": "区间突破",
+      "riskLevel": "medium",
+      "rewritePriority": "P0",
+      "currentGrade": "structural_draft",
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "BEA",
+        "CFTC",
+        "Federal Reserve",
+        "Project Gutenberg",
+        "Treasury"
+      ],
+      "sourceRefsToInspect": [],
+      "directCandidateFamilies": [],
+      "directCandidateRows": 0,
+      "noteFields": [
+        {
+          "field": "originalRewriteNotes",
+          "readyWhen": "Reviewer has decided the original education rewrite angle and confirmed it remains structural_draft.",
+          "currentBlocker": "No real human rewrite-angle decision exists yet.",
+          "prompt": "Describe the original education rewrite angle after source roles are confirmed."
+        },
+        {
+          "field": "sourceFitNotes",
+          "readyWhen": "Reviewer has confirmed each source family as direct evidence, boundary-only context, or unsuitable.",
+          "currentBlocker": "Source roles are still prompts and require human confirmation.",
+          "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval."
+        },
+        {
+          "field": "factCheckNotes",
+          "readyWhen": "Reviewer has checked claims against source metadata and marked unresolved claims to remove.",
+          "currentBlocker": "No real fact-check pass exists yet.",
+          "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles."
+        },
+        {
+          "field": "boundaryCheckNotes",
+          "readyWhen": "Reviewer has checked no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+          "currentBlocker": "No real safety-boundary pass exists yet.",
+          "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording."
+        },
+        {
+          "field": "copyingRiskNotes",
+          "readyWhen": "Reviewer has checked notes and rewrite prose for no copied external source body text.",
+          "currentBlocker": "No real copying-risk pass exists yet.",
+          "prompt": "Confirm no external source body text is copied into notes or lesson prose."
+        },
+        {
+          "field": "humanReviewerInitials",
+          "readyWhen": "Reviewer has actually completed the required review work for the lesson.",
+          "currentBlocker": "Human initials must remain blank until real review work is complete.",
+          "prompt": "Fill only after real human review work is performed."
+        }
+      ],
+      "safetyBoxes": [
+        "No approval, final-ready, learner-facing-ready, commercial-ready, or production-ready wording.",
+        "No buy/sell/hold, entry/exit signal, performance, win-rate, backtest-profit, or real-money guidance.",
+        "No broker/order workflow, automation, agency endorsement, or copied source body text.",
+        "Yellow, red, and research_only sources remain out of learner-facing evidence."
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0019",
+      "module": "反转",
+      "topic": "衰竭证据",
+      "riskLevel": "medium",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "BLS",
+        "Federal Reserve",
+        "Project Gutenberg",
+        "Treasury",
+        "federalregister.gov"
+      ],
+      "sourceRefsToInspect": [],
+      "directCandidateFamilies": [],
+      "directCandidateRows": 0,
+      "noteFields": [
+        {
+          "field": "originalRewriteNotes",
+          "readyWhen": "Reviewer has decided the original education rewrite angle and confirmed it remains structural_draft.",
+          "currentBlocker": "No real human rewrite-angle decision exists yet.",
+          "prompt": "Describe the original education rewrite angle after source roles are confirmed."
+        },
+        {
+          "field": "sourceFitNotes",
+          "readyWhen": "Reviewer has confirmed each source family as direct evidence, boundary-only context, or unsuitable.",
+          "currentBlocker": "Source roles are still prompts and require human confirmation.",
+          "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval."
+        },
+        {
+          "field": "factCheckNotes",
+          "readyWhen": "Reviewer has checked claims against source metadata and marked unresolved claims to remove.",
+          "currentBlocker": "No real fact-check pass exists yet.",
+          "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles."
+        },
+        {
+          "field": "boundaryCheckNotes",
+          "readyWhen": "Reviewer has checked no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+          "currentBlocker": "No real safety-boundary pass exists yet.",
+          "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording."
+        },
+        {
+          "field": "copyingRiskNotes",
+          "readyWhen": "Reviewer has checked notes and rewrite prose for no copied external source body text.",
+          "currentBlocker": "No real copying-risk pass exists yet.",
+          "prompt": "Confirm no external source body text is copied into notes or lesson prose."
+        },
+        {
+          "field": "humanReviewerInitials",
+          "readyWhen": "Reviewer has actually completed the required review work for the lesson.",
+          "currentBlocker": "Human initials must remain blank until real review work is complete.",
+          "prompt": "Fill only after real human review work is performed."
+        }
+      ],
+      "safetyBoxes": [
+        "No approval, final-ready, learner-facing-ready, commercial-ready, or production-ready wording.",
+        "No buy/sell/hold, entry/exit signal, performance, win-rate, backtest-profit, or real-money guidance.",
+        "No broker/order workflow, automation, agency endorsement, or copied source body text.",
+        "Yellow, red, and research_only sources remain out of learner-facing evidence."
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0075",
+      "module": "K线与价格行为",
+      "topic": "组合K线",
+      "riskLevel": "medium",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "BEA",
+        "Investor.gov",
+        "Project Gutenberg",
+        "SEC",
+        "Treasury"
+      ],
+      "sourceRefsToInspect": [],
+      "directCandidateFamilies": [],
+      "directCandidateRows": 0,
+      "noteFields": [
+        {
+          "field": "originalRewriteNotes",
+          "readyWhen": "Reviewer has decided the original education rewrite angle and confirmed it remains structural_draft.",
+          "currentBlocker": "No real human rewrite-angle decision exists yet.",
+          "prompt": "Describe the original education rewrite angle after source roles are confirmed."
+        },
+        {
+          "field": "sourceFitNotes",
+          "readyWhen": "Reviewer has confirmed each source family as direct evidence, boundary-only context, or unsuitable.",
+          "currentBlocker": "Source roles are still prompts and require human confirmation.",
+          "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval."
+        },
+        {
+          "field": "factCheckNotes",
+          "readyWhen": "Reviewer has checked claims against source metadata and marked unresolved claims to remove.",
+          "currentBlocker": "No real fact-check pass exists yet.",
+          "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles."
+        },
+        {
+          "field": "boundaryCheckNotes",
+          "readyWhen": "Reviewer has checked no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+          "currentBlocker": "No real safety-boundary pass exists yet.",
+          "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording."
+        },
+        {
+          "field": "copyingRiskNotes",
+          "readyWhen": "Reviewer has checked notes and rewrite prose for no copied external source body text.",
+          "currentBlocker": "No real copying-risk pass exists yet.",
+          "prompt": "Confirm no external source body text is copied into notes or lesson prose."
+        },
+        {
+          "field": "humanReviewerInitials",
+          "readyWhen": "Reviewer has actually completed the required review work for the lesson.",
+          "currentBlocker": "Human initials must remain blank until real review work is complete.",
+          "prompt": "Fill only after real human review work is performed."
+        }
+      ],
+      "safetyBoxes": [
+        "No approval, final-ready, learner-facing-ready, commercial-ready, or production-ready wording.",
+        "No buy/sell/hold, entry/exit signal, performance, win-rate, backtest-profit, or real-money guidance.",
+        "No broker/order workflow, automation, agency endorsement, or copied source body text.",
+        "Yellow, red, and research_only sources remain out of learner-facing evidence."
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0087",
+      "module": "K线与价格行为",
+      "topic": "流动性扫过",
+      "riskLevel": "high",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "BEA",
+        "BLS",
+        "CFTC",
+        "SEC",
+        "Treasury"
+      ],
+      "sourceRefsToInspect": [
+        {
+          "sourceId": "src_real_11186",
+          "name": "SEC Developer Resources",
+          "url": "https://www.sec.gov/about/developer-resources",
+          "family": "SEC",
+          "sourceType": "official-docs",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "chart_reading"
+        },
+        {
+          "sourceId": "src_real_11209",
+          "name": "CFTC Phony Trading Websites",
+          "url": "https://www.cftc.gov/LearnAndProtect/FraudAwarenessPrevention/CFTCFraudAdvisories/fraudadv_phonywebsites",
+          "family": "CFTC",
+          "sourceType": "official-docs",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "range"
+        },
+        {
+          "sourceId": "src_real_10152",
+          "name": "BLS PPI",
+          "url": "https://www.bls.gov/ppi/",
+          "family": "BLS",
+          "sourceType": "official-docs",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "chart_reading"
+        },
+        {
+          "sourceId": "src_real_10310",
+          "name": "BEA Data Application Programming Interface",
+          "url": "https://apps.bea.gov/api/",
+          "family": "BEA",
+          "sourceType": "official-docs",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "Green chart_price_action authority context and boundary reference; not copied learner-facing content."
+        },
+        {
+          "sourceId": "src_real_10157",
+          "name": "US Treasury Daily Treasury Rates",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView",
+          "family": "Treasury",
+          "sourceType": "official-docs",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "Green chart_price_action authority context and boundary reference; not copied learner-facing content."
+        }
+      ],
+      "directCandidateFamilies": [
+        "BEA",
+        "BLS",
+        "CFTC",
+        "SEC"
+      ],
+      "directCandidateRows": 4,
+      "noteFields": [
+        {
+          "field": "originalRewriteNotes",
+          "readyWhen": "Reviewer has decided the original education rewrite angle and confirmed it remains structural_draft.",
+          "currentBlocker": "No real human rewrite-angle decision exists yet.",
+          "prompt": "Describe the original education rewrite angle after source roles are confirmed."
+        },
+        {
+          "field": "sourceFitNotes",
+          "readyWhen": "Reviewer has confirmed each source family as direct evidence, boundary-only context, or unsuitable.",
+          "currentBlocker": "Source roles are still prompts and require human confirmation.",
+          "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval."
+        },
+        {
+          "field": "factCheckNotes",
+          "readyWhen": "Reviewer has checked claims against source metadata and marked unresolved claims to remove.",
+          "currentBlocker": "No real fact-check pass exists yet.",
+          "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles."
+        },
+        {
+          "field": "boundaryCheckNotes",
+          "readyWhen": "Reviewer has checked no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+          "currentBlocker": "No real safety-boundary pass exists yet.",
+          "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording."
+        },
+        {
+          "field": "copyingRiskNotes",
+          "readyWhen": "Reviewer has checked notes and rewrite prose for no copied external source body text.",
+          "currentBlocker": "No real copying-risk pass exists yet.",
+          "prompt": "Confirm no external source body text is copied into notes or lesson prose."
+        },
+        {
+          "field": "humanReviewerInitials",
+          "readyWhen": "Reviewer has actually completed the required review work for the lesson.",
+          "currentBlocker": "Human initials must remain blank until real review work is complete.",
+          "prompt": "Fill only after real human review work is performed."
+        }
+      ],
+      "safetyBoxes": [
+        "No approval, final-ready, learner-facing-ready, commercial-ready, or production-ready wording.",
+        "No buy/sell/hold, entry/exit signal, performance, win-rate, backtest-profit, or real-money guidance.",
+        "No broker/order workflow, automation, agency endorsement, or copied source body text.",
+        "Yellow, red, and research_only sources remain out of learner-facing evidence."
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0159",
+      "module": "K线与价格行为",
+      "topic": "形态语境",
+      "riskLevel": "medium",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "BEA",
+        "Investor.gov",
+        "SEC",
+        "Treasury"
+      ],
+      "sourceRefsToInspect": [],
+      "directCandidateFamilies": [],
+      "directCandidateRows": 0,
+      "noteFields": [
+        {
+          "field": "originalRewriteNotes",
+          "readyWhen": "Reviewer has decided the original education rewrite angle and confirmed it remains structural_draft.",
+          "currentBlocker": "No real human rewrite-angle decision exists yet.",
+          "prompt": "Describe the original education rewrite angle after source roles are confirmed."
+        },
+        {
+          "field": "sourceFitNotes",
+          "readyWhen": "Reviewer has confirmed each source family as direct evidence, boundary-only context, or unsuitable.",
+          "currentBlocker": "Source roles are still prompts and require human confirmation.",
+          "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval."
+        },
+        {
+          "field": "factCheckNotes",
+          "readyWhen": "Reviewer has checked claims against source metadata and marked unresolved claims to remove.",
+          "currentBlocker": "No real fact-check pass exists yet.",
+          "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles."
+        },
+        {
+          "field": "boundaryCheckNotes",
+          "readyWhen": "Reviewer has checked no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+          "currentBlocker": "No real safety-boundary pass exists yet.",
+          "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording."
+        },
+        {
+          "field": "copyingRiskNotes",
+          "readyWhen": "Reviewer has checked notes and rewrite prose for no copied external source body text.",
+          "currentBlocker": "No real copying-risk pass exists yet.",
+          "prompt": "Confirm no external source body text is copied into notes or lesson prose."
+        },
+        {
+          "field": "humanReviewerInitials",
+          "readyWhen": "Reviewer has actually completed the required review work for the lesson.",
+          "currentBlocker": "Human initials must remain blank until real review work is complete.",
+          "prompt": "Fill only after real human review work is performed."
+        }
+      ],
+      "safetyBoxes": [
+        "No approval, final-ready, learner-facing-ready, commercial-ready, or production-ready wording.",
+        "No buy/sell/hold, entry/exit signal, performance, win-rate, backtest-profit, or real-money guidance.",
+        "No broker/order workflow, automation, agency endorsement, or copied source body text.",
+        "Yellow, red, and research_only sources remain out of learner-facing evidence."
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0011",
+      "module": "风险管理",
+      "topic": "失效条件",
+      "riskLevel": "low",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "CFTC",
+        "Federal Reserve",
+        "SEC",
+        "nist.gov"
+      ],
+      "sourceRefsToInspect": [],
+      "directCandidateFamilies": [],
+      "directCandidateRows": 0,
+      "noteFields": [
+        {
+          "field": "originalRewriteNotes",
+          "readyWhen": "Reviewer has decided the original education rewrite angle and confirmed it remains structural_draft.",
+          "currentBlocker": "No real human rewrite-angle decision exists yet.",
+          "prompt": "Describe the original education rewrite angle after source roles are confirmed."
+        },
+        {
+          "field": "sourceFitNotes",
+          "readyWhen": "Reviewer has confirmed each source family as direct evidence, boundary-only context, or unsuitable.",
+          "currentBlocker": "Source roles are still prompts and require human confirmation.",
+          "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval."
+        },
+        {
+          "field": "factCheckNotes",
+          "readyWhen": "Reviewer has checked claims against source metadata and marked unresolved claims to remove.",
+          "currentBlocker": "No real fact-check pass exists yet.",
+          "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles."
+        },
+        {
+          "field": "boundaryCheckNotes",
+          "readyWhen": "Reviewer has checked no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+          "currentBlocker": "No real safety-boundary pass exists yet.",
+          "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording."
+        },
+        {
+          "field": "copyingRiskNotes",
+          "readyWhen": "Reviewer has checked notes and rewrite prose for no copied external source body text.",
+          "currentBlocker": "No real copying-risk pass exists yet.",
+          "prompt": "Confirm no external source body text is copied into notes or lesson prose."
+        },
+        {
+          "field": "humanReviewerInitials",
+          "readyWhen": "Reviewer has actually completed the required review work for the lesson.",
+          "currentBlocker": "Human initials must remain blank until real review work is complete.",
+          "prompt": "Fill only after real human review work is performed."
+        }
+      ],
+      "safetyBoxes": [
+        "No approval, final-ready, learner-facing-ready, commercial-ready, or production-ready wording.",
+        "No buy/sell/hold, entry/exit signal, performance, win-rate, backtest-profit, or real-money guidance.",
+        "No broker/order workflow, automation, agency endorsement, or copied source body text.",
+        "Yellow, red, and research_only sources remain out of learner-facing evidence."
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0059",
+      "module": "风险管理",
+      "topic": "边界语言",
+      "riskLevel": "low",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "CFTC",
+        "Investor.gov",
+        "SEC"
+      ],
+      "sourceRefsToInspect": [],
+      "directCandidateFamilies": [],
+      "directCandidateRows": 0,
+      "noteFields": [
+        {
+          "field": "originalRewriteNotes",
+          "readyWhen": "Reviewer has decided the original education rewrite angle and confirmed it remains structural_draft.",
+          "currentBlocker": "No real human rewrite-angle decision exists yet.",
+          "prompt": "Describe the original education rewrite angle after source roles are confirmed."
+        },
+        {
+          "field": "sourceFitNotes",
+          "readyWhen": "Reviewer has confirmed each source family as direct evidence, boundary-only context, or unsuitable.",
+          "currentBlocker": "Source roles are still prompts and require human confirmation.",
+          "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval."
+        },
+        {
+          "field": "factCheckNotes",
+          "readyWhen": "Reviewer has checked claims against source metadata and marked unresolved claims to remove.",
+          "currentBlocker": "No real fact-check pass exists yet.",
+          "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles."
+        },
+        {
+          "field": "boundaryCheckNotes",
+          "readyWhen": "Reviewer has checked no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+          "currentBlocker": "No real safety-boundary pass exists yet.",
+          "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording."
+        },
+        {
+          "field": "copyingRiskNotes",
+          "readyWhen": "Reviewer has checked notes and rewrite prose for no copied external source body text.",
+          "currentBlocker": "No real copying-risk pass exists yet.",
+          "prompt": "Confirm no external source body text is copied into notes or lesson prose."
+        },
+        {
+          "field": "humanReviewerInitials",
+          "readyWhen": "Reviewer has actually completed the required review work for the lesson.",
+          "currentBlocker": "Human initials must remain blank until real review work is complete.",
+          "prompt": "Fill only after real human review work is performed."
+        }
+      ],
+      "safetyBoxes": [
+        "No approval, final-ready, learner-facing-ready, commercial-ready, or production-ready wording.",
+        "No buy/sell/hold, entry/exit signal, performance, win-rate, backtest-profit, or real-money guidance.",
+        "No broker/order workflow, automation, agency endorsement, or copied source body text.",
+        "Yellow, red, and research_only sources remain out of learner-facing evidence."
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0167",
+      "module": "风险管理",
+      "topic": "可复盘计划",
+      "riskLevel": "low",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "CFTC",
+        "Investor.gov",
+        "SEC"
+      ],
+      "sourceRefsToInspect": [],
+      "directCandidateFamilies": [],
+      "directCandidateRows": 0,
+      "noteFields": [
+        {
+          "field": "originalRewriteNotes",
+          "readyWhen": "Reviewer has decided the original education rewrite angle and confirmed it remains structural_draft.",
+          "currentBlocker": "No real human rewrite-angle decision exists yet.",
+          "prompt": "Describe the original education rewrite angle after source roles are confirmed."
+        },
+        {
+          "field": "sourceFitNotes",
+          "readyWhen": "Reviewer has confirmed each source family as direct evidence, boundary-only context, or unsuitable.",
+          "currentBlocker": "Source roles are still prompts and require human confirmation.",
+          "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval."
+        },
+        {
+          "field": "factCheckNotes",
+          "readyWhen": "Reviewer has checked claims against source metadata and marked unresolved claims to remove.",
+          "currentBlocker": "No real fact-check pass exists yet.",
+          "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles."
+        },
+        {
+          "field": "boundaryCheckNotes",
+          "readyWhen": "Reviewer has checked no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+          "currentBlocker": "No real safety-boundary pass exists yet.",
+          "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording."
+        },
+        {
+          "field": "copyingRiskNotes",
+          "readyWhen": "Reviewer has checked notes and rewrite prose for no copied external source body text.",
+          "currentBlocker": "No real copying-risk pass exists yet.",
+          "prompt": "Confirm no external source body text is copied into notes or lesson prose."
+        },
+        {
+          "field": "humanReviewerInitials",
+          "readyWhen": "Reviewer has actually completed the required review work for the lesson.",
+          "currentBlocker": "Human initials must remain blank until real review work is complete.",
+          "prompt": "Fill only after real human review work is performed."
+        }
+      ],
+      "safetyBoxes": [
+        "No approval, final-ready, learner-facing-ready, commercial-ready, or production-ready wording.",
+        "No buy/sell/hold, entry/exit signal, performance, win-rate, backtest-profit, or real-money guidance.",
+        "No broker/order workflow, automation, agency endorsement, or copied source body text.",
+        "Yellow, red, and research_only sources remain out of learner-facing evidence."
+      ]
+    }
+  ],
+  "globalReviewBoxes": [
+    "Use this pack only after reading the human execution bundle.",
+    "Start with the high-risk lesson in each target batch.",
+    "Resolve direct candidates before filling sourceFitNotes.",
+    "Keep all generated prompts and examples out of real reviewer notes unless actual human review supports them.",
+    "Keep every lesson structural_draft until separate human rewrite and factual review are complete.",
+    "Run completion, diff audit, note lint, curriculum review, knowledge checks, browser checks, and full verify after any real overlay write."
+  ],
+  "sourceReports": {
+    "dryRunPacket": "docs/FIRST_REVIEWER_DRY_RUN_PACKET.json",
+    "progressDashboard": "docs/FIRST_REVIEWER_PROGRESS_DASHBOARD.json",
+    "humanExecutionBundle": "docs/FIRST_REVIEWER_HUMAN_EXECUTION_BUNDLE.json",
+    "worksheet": "docs/FIRST_REVIEWER_WORKSHEET.json",
+    "noteReadinessMatrix": "docs/FIRST_REVIEWER_NOTE_READINESS_MATRIX.json",
+    "sourceRoleDecisionTable": "docs/FIRST_REVIEWER_SOURCE_ROLE_DECISION_TABLE.json",
+    "directCandidateChecklist": "docs/FIRST_REVIEWER_DIRECT_CANDIDATE_CONFIRMATION_CHECKLIST.json",
+    "safeNoteExamples": "docs/FIRST_REVIEWER_SAFE_NOTE_EXAMPLES.json"
+  },
+  "boundary": "This printable checklist pack is reviewer-facing manual scaffolding only. It does not create docs/LESSON_BATCH_REVIEW_STATUS.json, fill human notes, approve lessons, publish learner-facing content, change lesson grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, or guide real-money decisions."
+}

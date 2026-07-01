@@ -1,0 +1,96 @@
+{
+  "generatedAt": "2026-06-19T09:47:11.418Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "startAllowedNow": false,
+  "startBlockedBy": [
+    "This repository cannot prove an explicit human decision to begin real note-taking.",
+    "Manual checklist boxes must be completed outside generated scaffolding before write mode is used."
+  ],
+  "realStatusPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "realStatusOverlayPresent": false,
+  "targetBatches": [
+    "rewrite_batch_01",
+    "rewrite_batch_05"
+  ],
+  "lessonCards": 12,
+  "blankNoteFields": 72,
+  "directCandidatesToConfirm": 5,
+  "manualChecklistItems": [
+    {
+      "id": "reviewer_named",
+      "label": "A human reviewer is identified and ready to record real notes.",
+      "status": "manual_required",
+      "evidence": "No generated artifact can prove this.",
+      "manualAction": "Write reviewer identity outside this generated checklist before creating the overlay."
+    },
+    {
+      "id": "scope_confirmed",
+      "label": "The reviewer confirms the scope is only rewrite_batch_01 and rewrite_batch_05.",
+      "status": "manual_required",
+      "evidence": "rewrite_batch_01, rewrite_batch_05 are the current target batches.",
+      "manualAction": "Do not expand scope during first real note-taking."
+    },
+    {
+      "id": "direct_candidates_resolved",
+      "label": "The reviewer has read the 5 direct-candidate source rows and will confirm or downgrade them before sourceFitNotes.",
+      "status": "manual_required",
+      "evidence": "5 candidates and 8 source refs are queued.",
+      "manualAction": "Resolve source roles before filling sourceFitNotes."
+    },
+    {
+      "id": "notes_start_blank",
+      "label": "The reviewer confirms all 72 required note fields start blank.",
+      "status": "manual_required",
+      "evidence": "72 blank fields and 0 prefilled fields.",
+      "manualAction": "Do not paste generated examples into real notes."
+    },
+    {
+      "id": "safe_examples_understood",
+      "label": "The reviewer understands safe examples are sample-only guidance.",
+      "status": "manual_required",
+      "evidence": "4 safe examples and 5 rejected categories are available.",
+      "manualAction": "Use examples as style guidance only, not as real review evidence."
+    },
+    {
+      "id": "boundary_accepted",
+      "label": "The reviewer accepts education-only and non-production boundaries.",
+      "status": "manual_required",
+      "evidence": "All checked artifacts keep approvalStatus:not_approved, learnerFacingRelease:false, and productionReady:false.",
+      "manualAction": "Stop if any note suggests advice, signal, performance, broker/order, automation, or real-money guidance."
+    },
+    {
+      "id": "write_command_intentional",
+      "label": "The reviewer intentionally chooses whether to run the write initializer.",
+      "status": "manual_required",
+      "evidence": "Preview command is npm.cmd run init:first-reviewer-status-overlay:dry-run; write command is npm.cmd run init:first-reviewer-status-overlay:write.",
+      "manualAction": "Run write mode only after all manual boxes are checked."
+    }
+  ],
+  "previewCommand": "npm.cmd run init:first-reviewer-status-overlay:dry-run",
+  "writeCommandAfterManualApproval": "npm.cmd run init:first-reviewer-status-overlay:write",
+  "postWriteValidationCommand": "npm.cmd run check:lesson-batch-completion && npm.cmd run check:reviewer-note-quality-lint && npm.cmd run check:curriculum-review",
+  "sourceReports": {
+    "dryRunPacket": "docs/FIRST_REVIEWER_DRY_RUN_PACKET.json",
+    "progressDashboard": "docs/FIRST_REVIEWER_PROGRESS_DASHBOARD.json",
+    "creationChecklist": "docs/FIRST_REVIEWER_REAL_OVERLAY_CREATION_CHECKLIST.json",
+    "noteReadinessMatrix": "docs/FIRST_REVIEWER_NOTE_READINESS_MATRIX.json",
+    "directCandidateChecklist": "docs/FIRST_REVIEWER_DIRECT_CANDIDATE_CONFIRMATION_CHECKLIST.json",
+    "safeNoteExamples": "docs/FIRST_REVIEWER_SAFE_NOTE_EXAMPLES.json",
+    "statusInitProtection": "docs/LESSON_BATCH_REVIEW_STATUS_INIT_PROTECTION.json",
+    "noteQualityLint": "docs/REVIEWER_NOTE_QUALITY_LINT.json",
+    "completionAudit": "docs/LESSON_BATCH_COMPLETION_AUDIT.json"
+  },
+  "stopConditions": [
+    "Stop if docs/LESSON_BATCH_REVIEW_STATUS.json already exists; preserve existing notes before any force path.",
+    "Stop if a human reviewer is not explicitly ready to record real notes.",
+    "Stop if direct candidates have not been reviewed for confirm-or-downgrade source fit.",
+    "Stop if any generated sample note is copied into the real overlay as evidence.",
+    "Stop if any note proposes advice, signals, broker/order workflow, automation, performance, or real-money guidance.",
+    "Stop if yellow, red, or research_only sources are proposed as learner-facing evidence."
+  ],
+  "boundary": "This checklist is a manual pre-start gate only. It does not create docs/LESSON_BATCH_REVIEW_STATUS.json, fill human notes, approve lessons, publish learner-facing content, change lesson grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, or guide real-money decisions."
+}

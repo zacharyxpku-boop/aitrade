@@ -1,0 +1,220 @@
+{
+  "generatedAt": "2026-06-21T21:43:28.809Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "batchStatus": "machine_assisted_transcription_candidates_ready_for_human_review",
+  "sourceHighResPacket": "docs/LOCAL_COURSE_LOW_EXTRACTION_HIGH_RES_REVIEW_PACKET.json",
+  "batchId": "local_course_high_res_transcription_candidate_batch_03",
+  "documentId": "corpus_1580",
+  "candidatePages": 4,
+  "acceptedForP0OverlayPages": 0,
+  "blockedUntilHumanReviewedPages": 4,
+  "riskTermFlagCounts": {
+    "source_provenance_language": 1,
+    "copyright_language": 1,
+    "historical_origin_language": 1,
+    "market_visualization_language": 1,
+    "historical_market_language": 1,
+    "futures_origin_language": 1,
+    "transaction_scale_language": 1,
+    "public_grounding_required": 1,
+    "success_claim_language": 1,
+    "market_influence_language": 1,
+    "pattern_name_language": 1,
+    "historical_claim_review_required": 1,
+    "ohlc_definition_language": 1,
+    "bullish_candle_language": 1,
+    "example_price_language": 1,
+    "platform_color_convention": 1
+  },
+  "candidatePagesList": [
+    {
+      "id": "candidate_batch_03_page_01",
+      "documentId": "corpus_1580",
+      "sourceId": "local-investment-course:838b1333e539af7f046b0d35",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "pageNumber": 1,
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "candidateStatus": "machine_assisted_visual_candidate_needs_human_review",
+      "acceptedForP0Overlay": false,
+      "highResPreviewPath": "docs/local-course-low-extraction-high-res-previews/corpus_1580/page-01.png",
+      "highResPreviewBytes": 363131,
+      "visualEvidenceStatus": "high_res_preview_ready_for_manual_transcription",
+      "visibleTextExtract": [
+        "The page begins a K-line course with source/provenance notes, including references to a comic finance K-line origin source and a historical futures/stock trading course source.",
+        "Visible notes say the lecture content uses reference material and that copyright belongs to the source, with infringement contact/removal language.",
+        "The K-line birth section introduces historical background, tracing rice-market trading in Tokugawa-era Japan and mentioning Honma Munehisa.",
+        "The page notes early daily rice-price recording by merchants, expansion from Osaka rice trading to financial markets, and later development into candlestick charts."
+      ],
+      "educationOnlySummary": "This page can be rewritten as a provenance and historical-origin note for a K-line basics lesson: explain that candlestick charts emerged from historical rice-price recording and later became a market visualization tool, while keeping source attribution and copyright review separate.",
+      "uncertainRegions": [
+        "Exact URL text in the source screenshot needs human confirmation.",
+        "Some historical proper nouns and date ranges should be checked against public references before learner-facing use."
+      ],
+      "riskTermFlags": [
+        "source_provenance_language",
+        "copyright_language",
+        "historical_origin_language",
+        "market_visualization_language"
+      ],
+      "rewriteAngles": [
+        "source_provenance_before_rewrite",
+        "kline_origin_history_with_public_grounding",
+        "candlestick_as_visualization_not_signal"
+      ],
+      "requiredReviewerActions": [
+        "Open the high-resolution preview and verify every visible-text extract.",
+        "Cross-check historical and terminology claims against public references before learner-facing rewrite.",
+        "Rewrite source wording into original education-only explanations.",
+        "Run P0 input validation, source-fit review, public grounding, originality review, and approval gates before learner-facing release."
+      ],
+      "nextGate": "human_review_before_p0_overlay_apply"
+    },
+    {
+      "id": "candidate_batch_03_page_02",
+      "documentId": "corpus_1580",
+      "sourceId": "local-investment-course:838b1333e539af7f046b0d35",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "pageNumber": 2,
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "candidateStatus": "machine_assisted_visual_candidate_needs_human_review",
+      "acceptedForP0Overlay": false,
+      "highResPreviewPath": "docs/local-course-low-extraction-high-res-previews/corpus_1580/page-02.png",
+      "highResPreviewBytes": 389665,
+      "visualEvidenceStatus": "high_res_preview_ready_for_manual_transcription",
+      "visibleTextExtract": [
+        "The page summarizes Tokugawa-period background: Edo-era social structure, Osaka as an economic center, and rice as an important exchange medium.",
+        "It describes a rice futures prototype: sellers delivering rice to storehouses and receiving rice tickets, and buyers using tickets as claims against rice.",
+        "Visible notes mention historical significance, Osaka Dojima rice trading, and large transaction scale compared with Japan's rice production.",
+        "The page introduces Honma Munehisa's life, family background, rice-growing environment, and early personal traits tied to studying rice trade and price fluctuation."
+      ],
+      "educationOnlySummary": "This page can support a public-grounded history module: learners understand why price-recording tools arose from rice-market logistics, paper claims, and repeated price fluctuation, without treating the story as a trading method.",
+      "uncertainRegions": [
+        "Transaction-scale figures and historical dates require public-source verification.",
+        "Some screenshot subtitle text is not reliable enough for exact transcription."
+      ],
+      "riskTermFlags": [
+        "historical_market_language",
+        "futures_origin_language",
+        "transaction_scale_language",
+        "public_grounding_required"
+      ],
+      "rewriteAngles": [
+        "rice_market_logistics_to_price_recording",
+        "historical_context_not_method_claim",
+        "public_reference_verification_needed"
+      ],
+      "requiredReviewerActions": [
+        "Open the high-resolution preview and verify every visible-text extract.",
+        "Cross-check historical and terminology claims against public references before learner-facing rewrite.",
+        "Rewrite source wording into original education-only explanations.",
+        "Run P0 input validation, source-fit review, public grounding, originality review, and approval gates before learner-facing release."
+      ],
+      "nextGate": "human_review_before_p0_overlay_apply"
+    },
+    {
+      "id": "candidate_batch_03_page_03",
+      "documentId": "corpus_1580",
+      "sourceId": "local-investment-course:838b1333e539af7f046b0d35",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "pageNumber": 3,
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "candidateStatus": "machine_assisted_visual_candidate_needs_human_review",
+      "acceptedForP0Overlay": false,
+      "highResPreviewPath": "docs/local-course-low-extraction-high-res-previews/corpus_1580/page-03.png",
+      "highResPreviewBytes": 355697,
+      "visualEvidenceStatus": "high_res_preview_ready_for_manual_transcription",
+      "visibleTextExtract": [
+        "The page continues Honma Munehisa's trading-method and innovation story, mentioning information relay, price observations, and chart-style recording.",
+        "Visible notes describe communication between family estates and empty-handed workmen, discovery of price fluctuation patterns, and using graphical records to analyze changes.",
+        "It references trading achievements and market influence, including winning-streak narratives and rice-price influence, which require careful review.",
+        "The page mentions a main work attributed to Honma Munehisa, later development into Japanese candlestick charting, and classic forms such as morning star, evening star, and three crows."
+      ],
+      "educationOnlySummary": "This page can be rewritten as a cautious history-and-terminology bridge: introduce chart recording, pattern names, and folklore-like claims as background vocabulary, while avoiding success claims or implying that historical anecdotes validate a trading edge.",
+      "uncertainRegions": [
+        "Winning-streak and wealth-scale claims need source validation or removal.",
+        "Pattern-name translations should be checked against public references before use."
+      ],
+      "riskTermFlags": [
+        "success_claim_language",
+        "market_influence_language",
+        "pattern_name_language",
+        "historical_claim_review_required"
+      ],
+      "rewriteAngles": [
+        "folklore_claims_to_cautious_history",
+        "pattern_names_as_vocabulary",
+        "avoid_success_validation_claims"
+      ],
+      "requiredReviewerActions": [
+        "Open the high-resolution preview and verify every visible-text extract.",
+        "Cross-check historical and terminology claims against public references before learner-facing rewrite.",
+        "Rewrite source wording into original education-only explanations.",
+        "Run P0 input validation, source-fit review, public grounding, originality review, and approval gates before learner-facing release."
+      ],
+      "nextGate": "human_review_before_p0_overlay_apply"
+    },
+    {
+      "id": "candidate_batch_03_page_04",
+      "documentId": "corpus_1580",
+      "sourceId": "local-investment-course:838b1333e539af7f046b0d35",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "pageNumber": 4,
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "candidateStatus": "machine_assisted_visual_candidate_needs_human_review",
+      "acceptedForP0Overlay": false,
+      "highResPreviewPath": "docs/local-course-low-extraction-high-res-previews/corpus_1580/page-04.png",
+      "highResPreviewBytes": 358828,
+      "visualEvidenceStatus": "high_res_preview_ready_for_manual_transcription",
+      "visibleTextExtract": [
+        "The page introduces basic K-line principles with a visual analogy and OHLC-style composition.",
+        "Visible notes describe a candlestick chart as containing open, high, low, close, and time elements.",
+        "The page introduces bullish/yang candle construction using open price, highest price, lowest price, close price, and time period, with an example of a green body when close is above open.",
+        "It transitions to K-line structure after defining the core components."
+      ],
+      "educationOnlySummary": "This page can become a clean foundational concept card: define OHLC and candle body/wicks as chart-reading vocabulary, then use neutral examples to teach what a candle records rather than what action to take.",
+      "uncertainRegions": [
+        "Example prices are visible but should be checked if retained.",
+        "The color convention should be generalized because platforms differ between markets."
+      ],
+      "riskTermFlags": [
+        "ohlc_definition_language",
+        "bullish_candle_language",
+        "example_price_language",
+        "platform_color_convention"
+      ],
+      "rewriteAngles": [
+        "ohlc_foundation_card",
+        "candle_records_information_not_advice",
+        "color_convention_disclosure"
+      ],
+      "requiredReviewerActions": [
+        "Open the high-resolution preview and verify every visible-text extract.",
+        "Cross-check historical and terminology claims against public references before learner-facing rewrite.",
+        "Rewrite source wording into original education-only explanations.",
+        "Run P0 input validation, source-fit review, public grounding, originality review, and approval gates before learner-facing release."
+      ],
+      "nextGate": "human_review_before_p0_overlay_apply"
+    }
+  ],
+  "completionRule": "These machine-assisted visual candidates are not human transcriptions and cannot be applied to the P0 review overlay until a reviewer verifies text, resolves uncertain regions, checks public-source grounding, and confirms education-only rewriting boundaries.",
+  "boundary": "High-resolution transcription candidates are reviewer-only working notes. They do not perform accepted OCR, approve learner-facing release, copy private course wording into lessons, provide trading advice, stock recommendations, live signals, return promises, broker workflows, automation, or real-money guidance."
+}

@@ -1,0 +1,926 @@
+{
+  "generatedAt": "2026-06-19T09:47:08.223Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "mediumRiskLessons": 21,
+  "checklistTypeCounts": {
+    "source_role_narrowing": 13,
+    "fraud_boundary_only": 10,
+    "historical_context_or_observation_only": 9
+  },
+  "batchRows": [
+    {
+      "batchId": "rewrite_batch_08",
+      "mediumRows": 5,
+      "checklistTypes": [
+        "source_role_narrowing",
+        "fraud_boundary_only",
+        "historical_context_or_observation_only"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_04",
+      "mediumRows": 1,
+      "checklistTypes": [
+        "historical_context_or_observation_only",
+        "fraud_boundary_only"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "mediumRows": 2,
+      "checklistTypes": [
+        "source_role_narrowing",
+        "fraud_boundary_only",
+        "historical_context_or_observation_only"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_03",
+      "mediumRows": 3,
+      "checklistTypes": [
+        "source_role_narrowing",
+        "historical_context_or_observation_only",
+        "fraud_boundary_only"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "mediumRows": 5,
+      "checklistTypes": [
+        "source_role_narrowing",
+        "historical_context_or_observation_only",
+        "fraud_boundary_only"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_02",
+      "mediumRows": 2,
+      "checklistTypes": [
+        "historical_context_or_observation_only",
+        "source_role_narrowing",
+        "fraud_boundary_only"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_06",
+      "mediumRows": 2,
+      "checklistTypes": [
+        "historical_context_or_observation_only",
+        "source_role_narrowing"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_07",
+      "mediumRows": 1,
+      "checklistTypes": [
+        "source_role_narrowing"
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "lessonId": "lesson_knv2_0037",
+      "batchId": "rewrite_batch_08",
+      "module": "图表阅读基础",
+      "topic": "影线含义",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "broad_source_family_mix",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "checklistTypes": [
+        "source_role_narrowing",
+        "fraud_boundary_only"
+      ],
+      "sourceFamilies": [
+        "SEC",
+        "Investor.gov",
+        "CFTC",
+        "Treasury",
+        "Project Gutenberg"
+      ],
+      "reviewerChecklist": [
+        "Assign each source family to exactly one role: term boundary, data boundary, fraud warning, disclosure context, or historical context.",
+        "Remove any sentence that blends multiple source families into a stronger learner-facing claim.",
+        "Keep the rewrite as observation training and state uncertainty before practice.",
+        "Use Investor.gov/CFTC fraud material only as risk or scam-boundary context.",
+        "Do not use fraud pages to define chart structures, confirm patterns, or imply market behavior.",
+        "Move fraud context into warning language or remove it from explanatory prose.",
+        "Do not copy external source body text.",
+        "Do not add buy/sell/hold, signals, performance claims, broker/order flow, auto-trading, or real-money guidance.",
+        "Keep the lesson as structural_draft until separate human approval."
+      ],
+      "requiredReviewerNotes": [
+        "sourceFitNotes",
+        "boundaryCheckNotes",
+        "copyingRiskNotes"
+      ],
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "currentGrade": "structural_draft",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false
+    },
+    {
+      "lessonId": "lesson_knv2_0049",
+      "batchId": "rewrite_batch_08",
+      "module": "图表阅读基础",
+      "topic": "波动变化",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "broad_source_family_mix",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "checklistTypes": [
+        "source_role_narrowing",
+        "fraud_boundary_only"
+      ],
+      "sourceFamilies": [
+        "BLS",
+        "CFTC",
+        "BEA",
+        "Project Gutenberg",
+        "Treasury"
+      ],
+      "reviewerChecklist": [
+        "Assign each source family to exactly one role: term boundary, data boundary, fraud warning, disclosure context, or historical context.",
+        "Remove any sentence that blends multiple source families into a stronger learner-facing claim.",
+        "Keep the rewrite as observation training and state uncertainty before practice.",
+        "Use Investor.gov/CFTC fraud material only as risk or scam-boundary context.",
+        "Do not use fraud pages to define chart structures, confirm patterns, or imply market behavior.",
+        "Move fraud context into warning language or remove it from explanatory prose.",
+        "Do not copy external source body text.",
+        "Do not add buy/sell/hold, signals, performance claims, broker/order flow, auto-trading, or real-money guidance.",
+        "Keep the lesson as structural_draft until separate human approval."
+      ],
+      "requiredReviewerNotes": [
+        "sourceFitNotes",
+        "boundaryCheckNotes",
+        "copyingRiskNotes"
+      ],
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "currentGrade": "structural_draft",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false
+    },
+    {
+      "lessonId": "lesson_knv2_0061",
+      "batchId": "rewrite_batch_08",
+      "module": "图表阅读基础",
+      "topic": "结构先行",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "chart_lesson_without_public_domain_historical_context"
+      ],
+      "checklistTypes": [
+        "historical_context_or_observation_only"
+      ],
+      "sourceFamilies": [
+        "BEA",
+        "SEC",
+        "Treasury"
+      ],
+      "reviewerChecklist": [
+        "Check whether the lesson actually needs historical market-language context.",
+        "If public-domain historical context is weak or absent, rewrite as pure observation training.",
+        "Do not invent historical support or preserve old trading-rule voice.",
+        "Do not copy external source body text.",
+        "Do not add buy/sell/hold, signals, performance claims, broker/order flow, auto-trading, or real-money guidance.",
+        "Keep the lesson as structural_draft until separate human approval."
+      ],
+      "requiredReviewerNotes": [
+        "sourceFitNotes",
+        "boundaryCheckNotes",
+        "copyingRiskNotes"
+      ],
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "currentGrade": "structural_draft",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false
+    },
+    {
+      "lessonId": "lesson_knv2_0086",
+      "batchId": "rewrite_batch_04",
+      "module": "市场结构",
+      "topic": "结构破坏",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "chart_lesson_without_public_domain_historical_context",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "checklistTypes": [
+        "historical_context_or_observation_only",
+        "fraud_boundary_only"
+      ],
+      "sourceFamilies": [
+        "CFTC",
+        "Treasury",
+        "BEA"
+      ],
+      "reviewerChecklist": [
+        "Check whether the lesson actually needs historical market-language context.",
+        "If public-domain historical context is weak or absent, rewrite as pure observation training.",
+        "Do not invent historical support or preserve old trading-rule voice.",
+        "Use Investor.gov/CFTC fraud material only as risk or scam-boundary context.",
+        "Do not use fraud pages to define chart structures, confirm patterns, or imply market behavior.",
+        "Move fraud context into warning language or remove it from explanatory prose.",
+        "Do not copy external source body text.",
+        "Do not add buy/sell/hold, signals, performance claims, broker/order flow, auto-trading, or real-money guidance.",
+        "Keep the lesson as structural_draft until separate human approval."
+      ],
+      "requiredReviewerNotes": [
+        "sourceFitNotes",
+        "boundaryCheckNotes",
+        "copyingRiskNotes"
+      ],
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "currentGrade": "structural_draft",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false
+    },
+    {
+      "lessonId": "lesson_knv2_0075",
+      "batchId": "rewrite_batch_05",
+      "module": "K线与价格行为",
+      "topic": "组合K线",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "broad_source_family_mix",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "checklistTypes": [
+        "source_role_narrowing",
+        "fraud_boundary_only"
+      ],
+      "sourceFamilies": [
+        "SEC",
+        "Investor.gov",
+        "Treasury",
+        "Project Gutenberg",
+        "BEA"
+      ],
+      "reviewerChecklist": [
+        "Assign each source family to exactly one role: term boundary, data boundary, fraud warning, disclosure context, or historical context.",
+        "Remove any sentence that blends multiple source families into a stronger learner-facing claim.",
+        "Keep the rewrite as observation training and state uncertainty before practice.",
+        "Use Investor.gov/CFTC fraud material only as risk or scam-boundary context.",
+        "Do not use fraud pages to define chart structures, confirm patterns, or imply market behavior.",
+        "Move fraud context into warning language or remove it from explanatory prose.",
+        "Do not copy external source body text.",
+        "Do not add buy/sell/hold, signals, performance claims, broker/order flow, auto-trading, or real-money guidance.",
+        "Keep the lesson as structural_draft until separate human approval."
+      ],
+      "requiredReviewerNotes": [
+        "sourceFitNotes",
+        "boundaryCheckNotes",
+        "copyingRiskNotes"
+      ],
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "currentGrade": "structural_draft",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false
+    },
+    {
+      "lessonId": "lesson_knv2_0159",
+      "batchId": "rewrite_batch_05",
+      "module": "K线与价格行为",
+      "topic": "形态语境",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "chart_lesson_without_public_domain_historical_context",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "checklistTypes": [
+        "historical_context_or_observation_only",
+        "fraud_boundary_only"
+      ],
+      "sourceFamilies": [
+        "SEC",
+        "Investor.gov",
+        "Treasury",
+        "BEA"
+      ],
+      "reviewerChecklist": [
+        "Check whether the lesson actually needs historical market-language context.",
+        "If public-domain historical context is weak or absent, rewrite as pure observation training.",
+        "Do not invent historical support or preserve old trading-rule voice.",
+        "Use Investor.gov/CFTC fraud material only as risk or scam-boundary context.",
+        "Do not use fraud pages to define chart structures, confirm patterns, or imply market behavior.",
+        "Move fraud context into warning language or remove it from explanatory prose.",
+        "Do not copy external source body text.",
+        "Do not add buy/sell/hold, signals, performance claims, broker/order flow, auto-trading, or real-money guidance.",
+        "Keep the lesson as structural_draft until separate human approval."
+      ],
+      "requiredReviewerNotes": [
+        "sourceFitNotes",
+        "boundaryCheckNotes",
+        "copyingRiskNotes"
+      ],
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "currentGrade": "structural_draft",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false
+    },
+    {
+      "lessonId": "lesson_knv2_0004",
+      "batchId": "rewrite_batch_03",
+      "module": "趋势",
+      "topic": "趋势定义",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "broad_source_family_mix"
+      ],
+      "checklistTypes": [
+        "source_role_narrowing"
+      ],
+      "sourceFamilies": [
+        "EIA",
+        "SEC",
+        "Treasury",
+        "Project Gutenberg",
+        "BEA"
+      ],
+      "reviewerChecklist": [
+        "Assign each source family to exactly one role: term boundary, data boundary, fraud warning, disclosure context, or historical context.",
+        "Remove any sentence that blends multiple source families into a stronger learner-facing claim.",
+        "Keep the rewrite as observation training and state uncertainty before practice.",
+        "Do not copy external source body text.",
+        "Do not add buy/sell/hold, signals, performance claims, broker/order flow, auto-trading, or real-money guidance.",
+        "Keep the lesson as structural_draft until separate human approval."
+      ],
+      "requiredReviewerNotes": [
+        "sourceFitNotes",
+        "boundaryCheckNotes",
+        "copyingRiskNotes"
+      ],
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "currentGrade": "structural_draft",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false
+    },
+    {
+      "lessonId": "lesson_knv2_0052",
+      "batchId": "rewrite_batch_03",
+      "module": "趋势",
+      "topic": "趋势中继",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "chart_lesson_without_public_domain_historical_context",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "checklistTypes": [
+        "historical_context_or_observation_only",
+        "fraud_boundary_only"
+      ],
+      "sourceFamilies": [
+        "Treasury",
+        "CFTC",
+        "BEA"
+      ],
+      "reviewerChecklist": [
+        "Check whether the lesson actually needs historical market-language context.",
+        "If public-domain historical context is weak or absent, rewrite as pure observation training.",
+        "Do not invent historical support or preserve old trading-rule voice.",
+        "Use Investor.gov/CFTC fraud material only as risk or scam-boundary context.",
+        "Do not use fraud pages to define chart structures, confirm patterns, or imply market behavior.",
+        "Move fraud context into warning language or remove it from explanatory prose.",
+        "Do not copy external source body text.",
+        "Do not add buy/sell/hold, signals, performance claims, broker/order flow, auto-trading, or real-money guidance.",
+        "Keep the lesson as structural_draft until separate human approval."
+      ],
+      "requiredReviewerNotes": [
+        "sourceFitNotes",
+        "boundaryCheckNotes",
+        "copyingRiskNotes"
+      ],
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "currentGrade": "structural_draft",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false
+    },
+    {
+      "lessonId": "lesson_knv2_0088",
+      "batchId": "rewrite_batch_03",
+      "module": "趋势",
+      "topic": "趋势加速",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "broad_source_family_mix",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "checklistTypes": [
+        "source_role_narrowing",
+        "fraud_boundary_only"
+      ],
+      "sourceFamilies": [
+        "Investor.gov",
+        "BLS",
+        "Federal Reserve",
+        "Treasury",
+        "Internet Archive"
+      ],
+      "reviewerChecklist": [
+        "Assign each source family to exactly one role: term boundary, data boundary, fraud warning, disclosure context, or historical context.",
+        "Remove any sentence that blends multiple source families into a stronger learner-facing claim.",
+        "Keep the rewrite as observation training and state uncertainty before practice.",
+        "Use Investor.gov/CFTC fraud material only as risk or scam-boundary context.",
+        "Do not use fraud pages to define chart structures, confirm patterns, or imply market behavior.",
+        "Move fraud context into warning language or remove it from explanatory prose.",
+        "Do not copy external source body text.",
+        "Do not add buy/sell/hold, signals, performance claims, broker/order flow, auto-trading, or real-money guidance.",
+        "Keep the lesson as structural_draft until separate human approval."
+      ],
+      "requiredReviewerNotes": [
+        "sourceFitNotes",
+        "boundaryCheckNotes",
+        "copyingRiskNotes"
+      ],
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "currentGrade": "structural_draft",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false
+    },
+    {
+      "lessonId": "lesson_knv2_0041",
+      "batchId": "rewrite_batch_08",
+      "module": "突破",
+      "topic": "突破回踩",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "broad_source_family_mix",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "checklistTypes": [
+        "source_role_narrowing",
+        "fraud_boundary_only"
+      ],
+      "sourceFamilies": [
+        "SEC",
+        "Investor.gov",
+        "consumer.ftc.gov",
+        "Project Gutenberg",
+        "Treasury"
+      ],
+      "reviewerChecklist": [
+        "Assign each source family to exactly one role: term boundary, data boundary, fraud warning, disclosure context, or historical context.",
+        "Remove any sentence that blends multiple source families into a stronger learner-facing claim.",
+        "Keep the rewrite as observation training and state uncertainty before practice.",
+        "Use Investor.gov/CFTC fraud material only as risk or scam-boundary context.",
+        "Do not use fraud pages to define chart structures, confirm patterns, or imply market behavior.",
+        "Move fraud context into warning language or remove it from explanatory prose.",
+        "Do not copy external source body text.",
+        "Do not add buy/sell/hold, signals, performance claims, broker/order flow, auto-trading, or real-money guidance.",
+        "Keep the lesson as structural_draft until separate human approval."
+      ],
+      "requiredReviewerNotes": [
+        "sourceFitNotes",
+        "boundaryCheckNotes",
+        "copyingRiskNotes"
+      ],
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "currentGrade": "structural_draft",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false
+    },
+    {
+      "lessonId": "lesson_knv2_0054",
+      "batchId": "rewrite_batch_01",
+      "module": "交易区间",
+      "topic": "区间突破",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "broad_source_family_mix"
+      ],
+      "checklistTypes": [
+        "source_role_narrowing"
+      ],
+      "sourceFamilies": [
+        "BEA",
+        "CFTC",
+        "Federal Reserve",
+        "Treasury",
+        "Project Gutenberg"
+      ],
+      "reviewerChecklist": [
+        "Assign each source family to exactly one role: term boundary, data boundary, fraud warning, disclosure context, or historical context.",
+        "Remove any sentence that blends multiple source families into a stronger learner-facing claim.",
+        "Keep the rewrite as observation training and state uncertainty before practice.",
+        "Do not copy external source body text.",
+        "Do not add buy/sell/hold, signals, performance claims, broker/order flow, auto-trading, or real-money guidance.",
+        "Keep the lesson as structural_draft until separate human approval."
+      ],
+      "requiredReviewerNotes": [
+        "sourceFitNotes",
+        "boundaryCheckNotes",
+        "copyingRiskNotes"
+      ],
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "currentGrade": "structural_draft",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false
+    },
+    {
+      "lessonId": "lesson_knv2_0006",
+      "batchId": "rewrite_batch_02",
+      "module": "交易区间",
+      "topic": "区间上沿",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "chart_lesson_without_public_domain_historical_context"
+      ],
+      "checklistTypes": [
+        "historical_context_or_observation_only"
+      ],
+      "sourceFamilies": [
+        "Federal Reserve",
+        "BLS",
+        "BEA",
+        "Treasury"
+      ],
+      "reviewerChecklist": [
+        "Check whether the lesson actually needs historical market-language context.",
+        "If public-domain historical context is weak or absent, rewrite as pure observation training.",
+        "Do not invent historical support or preserve old trading-rule voice.",
+        "Do not copy external source body text.",
+        "Do not add buy/sell/hold, signals, performance claims, broker/order flow, auto-trading, or real-money guidance.",
+        "Keep the lesson as structural_draft until separate human approval."
+      ],
+      "requiredReviewerNotes": [
+        "sourceFitNotes",
+        "boundaryCheckNotes",
+        "copyingRiskNotes"
+      ],
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "currentGrade": "structural_draft",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false
+    },
+    {
+      "lessonId": "lesson_knv2_0018",
+      "batchId": "rewrite_batch_02",
+      "module": "交易区间",
+      "topic": "区间下沿",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "broad_source_family_mix",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "checklistTypes": [
+        "source_role_narrowing",
+        "fraud_boundary_only"
+      ],
+      "sourceFamilies": [
+        "CFTC",
+        "federalregister.gov",
+        "Investor.gov",
+        "Treasury",
+        "Project Gutenberg"
+      ],
+      "reviewerChecklist": [
+        "Assign each source family to exactly one role: term boundary, data boundary, fraud warning, disclosure context, or historical context.",
+        "Remove any sentence that blends multiple source families into a stronger learner-facing claim.",
+        "Keep the rewrite as observation training and state uncertainty before practice.",
+        "Use Investor.gov/CFTC fraud material only as risk or scam-boundary context.",
+        "Do not use fraud pages to define chart structures, confirm patterns, or imply market behavior.",
+        "Move fraud context into warning language or remove it from explanatory prose.",
+        "Do not copy external source body text.",
+        "Do not add buy/sell/hold, signals, performance claims, broker/order flow, auto-trading, or real-money guidance.",
+        "Keep the lesson as structural_draft until separate human approval."
+      ],
+      "requiredReviewerNotes": [
+        "sourceFitNotes",
+        "boundaryCheckNotes",
+        "copyingRiskNotes"
+      ],
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "currentGrade": "structural_draft",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false
+    },
+    {
+      "lessonId": "lesson_knv2_0019",
+      "batchId": "rewrite_batch_01",
+      "module": "反转",
+      "topic": "衰竭证据",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "broad_source_family_mix"
+      ],
+      "checklistTypes": [
+        "source_role_narrowing"
+      ],
+      "sourceFamilies": [
+        "Federal Reserve",
+        "BLS",
+        "federalregister.gov",
+        "Treasury",
+        "Project Gutenberg"
+      ],
+      "reviewerChecklist": [
+        "Assign each source family to exactly one role: term boundary, data boundary, fraud warning, disclosure context, or historical context.",
+        "Remove any sentence that blends multiple source families into a stronger learner-facing claim.",
+        "Keep the rewrite as observation training and state uncertainty before practice.",
+        "Do not copy external source body text.",
+        "Do not add buy/sell/hold, signals, performance claims, broker/order flow, auto-trading, or real-money guidance.",
+        "Keep the lesson as structural_draft until separate human approval."
+      ],
+      "requiredReviewerNotes": [
+        "sourceFitNotes",
+        "boundaryCheckNotes",
+        "copyingRiskNotes"
+      ],
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "currentGrade": "structural_draft",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false
+    },
+    {
+      "lessonId": "lesson_knv2_0007",
+      "batchId": "rewrite_batch_06",
+      "module": "反转",
+      "topic": "反转定义",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "chart_lesson_without_public_domain_historical_context",
+        "broad_source_family_mix"
+      ],
+      "checklistTypes": [
+        "historical_context_or_observation_only",
+        "source_role_narrowing"
+      ],
+      "sourceFamilies": [
+        "BLS",
+        "SEC",
+        "CFTC",
+        "BEA",
+        "Treasury"
+      ],
+      "reviewerChecklist": [
+        "Check whether the lesson actually needs historical market-language context.",
+        "If public-domain historical context is weak or absent, rewrite as pure observation training.",
+        "Do not invent historical support or preserve old trading-rule voice.",
+        "Assign each source family to exactly one role: term boundary, data boundary, fraud warning, disclosure context, or historical context.",
+        "Remove any sentence that blends multiple source families into a stronger learner-facing claim.",
+        "Keep the rewrite as observation training and state uncertainty before practice.",
+        "Do not copy external source body text.",
+        "Do not add buy/sell/hold, signals, performance claims, broker/order flow, auto-trading, or real-money guidance.",
+        "Keep the lesson as structural_draft until separate human approval."
+      ],
+      "requiredReviewerNotes": [
+        "sourceFitNotes",
+        "boundaryCheckNotes",
+        "copyingRiskNotes"
+      ],
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "currentGrade": "structural_draft",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false
+    },
+    {
+      "lessonId": "lesson_knv2_0044",
+      "batchId": "rewrite_batch_01",
+      "module": "多周期分析",
+      "topic": "M15细节",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "chart_lesson_without_public_domain_historical_context",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "checklistTypes": [
+        "historical_context_or_observation_only",
+        "fraud_boundary_only"
+      ],
+      "sourceFamilies": [
+        "SEC",
+        "CFTC"
+      ],
+      "reviewerChecklist": [
+        "Check whether the lesson actually needs historical market-language context.",
+        "If public-domain historical context is weak or absent, rewrite as pure observation training.",
+        "Do not invent historical support or preserve old trading-rule voice.",
+        "Use Investor.gov/CFTC fraud material only as risk or scam-boundary context.",
+        "Do not use fraud pages to define chart structures, confirm patterns, or imply market behavior.",
+        "Move fraud context into warning language or remove it from explanatory prose.",
+        "Do not copy external source body text.",
+        "Do not add buy/sell/hold, signals, performance claims, broker/order flow, auto-trading, or real-money guidance.",
+        "Keep the lesson as structural_draft until separate human approval."
+      ],
+      "requiredReviewerNotes": [
+        "sourceFitNotes",
+        "boundaryCheckNotes",
+        "copyingRiskNotes"
+      ],
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "currentGrade": "structural_draft",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false
+    },
+    {
+      "lessonId": "lesson_knv2_0128",
+      "batchId": "rewrite_batch_01",
+      "module": "多周期分析",
+      "topic": "D1背景",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "chart_lesson_without_public_domain_historical_context"
+      ],
+      "checklistTypes": [
+        "historical_context_or_observation_only"
+      ],
+      "sourceFamilies": [
+        "CFTC",
+        "Federal Reserve",
+        "Investor.gov"
+      ],
+      "reviewerChecklist": [
+        "Check whether the lesson actually needs historical market-language context.",
+        "If public-domain historical context is weak or absent, rewrite as pure observation training.",
+        "Do not invent historical support or preserve old trading-rule voice.",
+        "Do not copy external source body text.",
+        "Do not add buy/sell/hold, signals, performance claims, broker/order flow, auto-trading, or real-money guidance.",
+        "Keep the lesson as structural_draft until separate human approval."
+      ],
+      "requiredReviewerNotes": [
+        "sourceFitNotes",
+        "boundaryCheckNotes",
+        "copyingRiskNotes"
+      ],
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "currentGrade": "structural_draft",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false
+    },
+    {
+      "lessonId": "lesson_knv2_0140",
+      "batchId": "rewrite_batch_01",
+      "module": "多周期分析",
+      "topic": "H4结构",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "chart_lesson_without_public_domain_historical_context"
+      ],
+      "checklistTypes": [
+        "historical_context_or_observation_only"
+      ],
+      "sourceFamilies": [
+        "Treasury",
+        "BEA",
+        "CFTC",
+        "Investor.gov"
+      ],
+      "reviewerChecklist": [
+        "Check whether the lesson actually needs historical market-language context.",
+        "If public-domain historical context is weak or absent, rewrite as pure observation training.",
+        "Do not invent historical support or preserve old trading-rule voice.",
+        "Do not copy external source body text.",
+        "Do not add buy/sell/hold, signals, performance claims, broker/order flow, auto-trading, or real-money guidance.",
+        "Keep the lesson as structural_draft until separate human approval."
+      ],
+      "requiredReviewerNotes": [
+        "sourceFitNotes",
+        "boundaryCheckNotes",
+        "copyingRiskNotes"
+      ],
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "currentGrade": "structural_draft",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false
+    },
+    {
+      "lessonId": "lesson_knv2_0009",
+      "batchId": "rewrite_batch_08",
+      "module": "新闻/情绪/事件偏见",
+      "topic": "标题偏见",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "broad_source_family_mix"
+      ],
+      "checklistTypes": [
+        "source_role_narrowing"
+      ],
+      "sourceFamilies": [
+        "Federal Reserve",
+        "BEA",
+        "SEC",
+        "BLS",
+        "CFTC"
+      ],
+      "reviewerChecklist": [
+        "Assign each source family to exactly one role: term boundary, data boundary, fraud warning, disclosure context, or historical context.",
+        "Remove any sentence that blends multiple source families into a stronger learner-facing claim.",
+        "Keep the rewrite as observation training and state uncertainty before practice.",
+        "Do not copy external source body text.",
+        "Do not add buy/sell/hold, signals, performance claims, broker/order flow, auto-trading, or real-money guidance.",
+        "Keep the lesson as structural_draft until separate human approval."
+      ],
+      "requiredReviewerNotes": [
+        "sourceFitNotes",
+        "boundaryCheckNotes",
+        "copyingRiskNotes"
+      ],
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "currentGrade": "structural_draft",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false
+    },
+    {
+      "lessonId": "lesson_knv2_0034",
+      "batchId": "rewrite_batch_06",
+      "module": "回测误区",
+      "topic": "过拟合",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "broad_source_family_mix"
+      ],
+      "checklistTypes": [
+        "source_role_narrowing"
+      ],
+      "sourceFamilies": [
+        "BEA",
+        "treasurydirect.gov",
+        "EIA",
+        "Investor.gov",
+        "CFTC"
+      ],
+      "reviewerChecklist": [
+        "Assign each source family to exactly one role: term boundary, data boundary, fraud warning, disclosure context, or historical context.",
+        "Remove any sentence that blends multiple source families into a stronger learner-facing claim.",
+        "Keep the rewrite as observation training and state uncertainty before practice.",
+        "Do not copy external source body text.",
+        "Do not add buy/sell/hold, signals, performance claims, broker/order flow, auto-trading, or real-money guidance.",
+        "Keep the lesson as structural_draft until separate human approval."
+      ],
+      "requiredReviewerNotes": [
+        "sourceFitNotes",
+        "boundaryCheckNotes",
+        "copyingRiskNotes"
+      ],
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "currentGrade": "structural_draft",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false
+    },
+    {
+      "lessonId": "lesson_knv2_0046",
+      "batchId": "rewrite_batch_07",
+      "module": "回测误区",
+      "topic": "成本忽略",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "broad_source_family_mix"
+      ],
+      "checklistTypes": [
+        "source_role_narrowing"
+      ],
+      "sourceFamilies": [
+        "Federal Reserve",
+        "EIA",
+        "BLS",
+        "CFTC",
+        "nist.gov"
+      ],
+      "reviewerChecklist": [
+        "Assign each source family to exactly one role: term boundary, data boundary, fraud warning, disclosure context, or historical context.",
+        "Remove any sentence that blends multiple source families into a stronger learner-facing claim.",
+        "Keep the rewrite as observation training and state uncertainty before practice.",
+        "Do not copy external source body text.",
+        "Do not add buy/sell/hold, signals, performance claims, broker/order flow, auto-trading, or real-money guidance.",
+        "Keep the lesson as structural_draft until separate human approval."
+      ],
+      "requiredReviewerNotes": [
+        "sourceFitNotes",
+        "boundaryCheckNotes",
+        "copyingRiskNotes"
+      ],
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "currentGrade": "structural_draft",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false
+    }
+  ],
+  "boundary": "This checklist helps human reviewers triage medium-risk source-fit rows. It does not rewrite lesson prose, approve content, expand learner-facing exposure, change grades, or provide trading advice."
+}

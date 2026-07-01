@@ -1,0 +1,121 @@
+{
+  "generatedAt": "2026-06-21T22:38:57.035Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "fixtureOnly": false,
+  "inputPath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_03_INPUT_COPY_TEMPLATE.json",
+  "packId": "local_course_p0_human_fill_pack_03",
+  "lintStatus": "blocked_quality_lint",
+  "totalEntries": 3,
+  "readyEntries": 0,
+  "blockedEntries": 3,
+  "candidateCopyIssueEntries": 0,
+  "riskRewriteIncompleteEntries": 3,
+  "publicReferenceMissingEntries": 3,
+  "originalityMissingEntries": 3,
+  "forbiddenHitEntries": 0,
+  "lintRows": [
+    {
+      "id": "input_copy_absorb_manual_transcription_17",
+      "taskId": "absorb_manual_transcription_17",
+      "category": "manual_transcription",
+      "documentId": "corpus_1580",
+      "pageNumber": 9,
+      "lintStatus": "blocked_quality_lint",
+      "readyForValidation": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "publicReferenceNotes",
+        "originalityNotes",
+        "riskRewriteNotes",
+        "manualChecklist"
+      ],
+      "riskRewriteMissingFlags": [
+        "signal_language",
+        "support_resistance_language",
+        "rebound_language",
+        "turning_point_language",
+        "limit_move_language",
+        "homework_instruction_language",
+        "ohlc_drawing_language"
+      ],
+      "publicReferenceMissing": true,
+      "originalityMissing": true,
+      "candidateCopyIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_03_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_18",
+      "taskId": "absorb_manual_transcription_18",
+      "category": "manual_transcription",
+      "documentId": "corpus_1580",
+      "pageNumber": 10,
+      "lintStatus": "blocked_quality_lint",
+      "readyForValidation": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "publicReferenceNotes",
+        "originalityNotes",
+        "riskRewriteNotes",
+        "manualChecklist"
+      ],
+      "riskRewriteMissingFlags": [
+        "qr_contact_language",
+        "specific_asset_examples",
+        "specific_price_levels",
+        "selling_pressure_language",
+        "force_comparison_language",
+        "quiz_summary_language",
+        "exam_focus_language"
+      ],
+      "publicReferenceMissing": true,
+      "originalityMissing": true,
+      "candidateCopyIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_03_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_19",
+      "taskId": "absorb_manual_transcription_19",
+      "category": "manual_transcription",
+      "documentId": "corpus_1580",
+      "pageNumber": 11,
+      "lintStatus": "blocked_quality_lint",
+      "readyForValidation": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "publicReferenceNotes",
+        "originalityNotes",
+        "riskRewriteNotes",
+        "manualChecklist"
+      ],
+      "riskRewriteMissingFlags": [
+        "market_meaning_language",
+        "buyer_seller_dominance_language",
+        "turning_warning_language",
+        "multi_timeframe_language",
+        "trend_reversal_language",
+        "source_recommendation_language"
+      ],
+      "publicReferenceMissing": true,
+      "originalityMissing": true,
+      "candidateCopyIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_03_input_then_apply_dry_run_only"
+    }
+  ],
+  "nextStep": "Fill missing reviewer fields and address every risk flag before validation.",
+  "boundary": "Pack 03 filled-copy lint is a dry-run quality gate. It does not write overlay changes, perform OCR, approve learner-facing release, copy private course wording into lessons, provide trading advice, stock recommendations, live signals, return promises, broker workflows, automation, or real-money guidance."
+}

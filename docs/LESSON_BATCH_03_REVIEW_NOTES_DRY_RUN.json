@@ -1,0 +1,341 @@
+{
+  "generatedAt": "2026-06-19T09:47:03.152Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "dryRunReady": true,
+  "dryRunMode": "blank_reviewer_notes_template_only",
+  "batchId": "rewrite_batch_03",
+  "lessonCards": 6,
+  "requiredNoteFields": [
+    "originalRewriteNotes",
+    "sourceFitNotes",
+    "factCheckNotes",
+    "boundaryCheckNotes",
+    "copyingRiskNotes",
+    "humanReviewerInitials"
+  ],
+  "blankNoteFields": 36,
+  "filledNoteFields": 0,
+  "approvalReviewCandidates": 0,
+  "commercialReadyPromotions": 0,
+  "blankRows": [
+    {
+      "lessonId": "lesson_knv2_0156",
+      "moduleLabel": "trading_psychology",
+      "topicLabel": "overconfidence",
+      "sourceFitRisk": "low",
+      "riskReasons": [],
+      "trackingStatus": "not_started",
+      "blankFields": 6
+    },
+    {
+      "lessonId": "lesson_knv2_0240",
+      "moduleLabel": "trading_psychology",
+      "topicLabel": "outcome_bias",
+      "sourceFitRisk": "low",
+      "riskReasons": [],
+      "trackingStatus": "not_started",
+      "blankFields": 6
+    },
+    {
+      "lessonId": "lesson_knv2_0004",
+      "moduleLabel": "trend",
+      "topicLabel": "trend_definition",
+      "sourceFitRisk": "medium",
+      "riskReasons": [
+        "broad_source_family_mix"
+      ],
+      "trackingStatus": "not_started",
+      "blankFields": 6
+    },
+    {
+      "lessonId": "lesson_knv2_0040",
+      "moduleLabel": "trend",
+      "topicLabel": "trend_exhaustion",
+      "sourceFitRisk": "low",
+      "riskReasons": [],
+      "trackingStatus": "not_started",
+      "blankFields": 6
+    },
+    {
+      "lessonId": "lesson_knv2_0052",
+      "moduleLabel": "trend",
+      "topicLabel": "trend_continuation",
+      "sourceFitRisk": "medium",
+      "riskReasons": [
+        "chart_lesson_without_public_domain_historical_context",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "trackingStatus": "not_started",
+      "blankFields": 6
+    },
+    {
+      "lessonId": "lesson_knv2_0088",
+      "moduleLabel": "trend",
+      "topicLabel": "trend_acceleration",
+      "sourceFitRisk": "medium",
+      "riskReasons": [
+        "broad_source_family_mix",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "trackingStatus": "not_started",
+      "blankFields": 6
+    }
+  ],
+  "dryRunOverlay": {
+    "educationOnly": true,
+    "productionReady": false,
+    "learnerFacingRelease": false,
+    "approvalStatus": "not_approved",
+    "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+    "dryRunOnly": true,
+    "batchId": "rewrite_batch_03",
+    "reviewStatus": "not_started",
+    "approvalReviewCandidates": 0,
+    "commercialReadyPromotions": 0,
+    "lessonCards": [
+      {
+        "lessonId": "lesson_knv2_0156",
+        "nodeId": "knv2_0156",
+        "moduleLabel": "trading_psychology",
+        "topicLabel": "overconfidence",
+        "sourceFitRisk": "low",
+        "riskReasons": [],
+        "trackingStatus": "not_started",
+        "currentGrade": "structural_draft",
+        "mustRemainStructuralDraft": true,
+        "sourceFamilies": [
+          "consumerfinance.gov",
+          "CFTC"
+        ],
+        "originalRewriteNotes": "",
+        "sourceFitNotes": "",
+        "factCheckNotes": "",
+        "boundaryCheckNotes": "",
+        "copyingRiskNotes": "",
+        "humanReviewerInitials": "",
+        "notePrompts": {
+          "originalRewriteNotes": "Record how the human rewrite teaches trading_psychology/overconfidence in original prose without copying source text.",
+          "sourceFitNotes": "Record consumer-protection/fraud/macro/public-domain source-fit decisions; trend rows need explicit downgrade or boundary-only notes.",
+          "factCheckNotes": "Record facts checked against source identity, release context, terminology, and lesson claims.",
+          "boundaryCheckNotes": "Confirm no advice, signals, forecasts, broker/order workflow, automation, real-money guidance, performance promise, or readiness claim.",
+          "copyingRiskNotes": "Confirm no external body text, rules, tables, charts, UI text, public-domain maxims, or sample notes were copied.",
+          "humanReviewerInitials": "Fill only after a real human reviewer performs the review work."
+        }
+      },
+      {
+        "lessonId": "lesson_knv2_0240",
+        "nodeId": "knv2_0240",
+        "moduleLabel": "trading_psychology",
+        "topicLabel": "outcome_bias",
+        "sourceFitRisk": "low",
+        "riskReasons": [],
+        "trackingStatus": "not_started",
+        "currentGrade": "structural_draft",
+        "mustRemainStructuralDraft": true,
+        "sourceFamilies": [
+          "consumerfinance.gov",
+          "CFTC"
+        ],
+        "originalRewriteNotes": "",
+        "sourceFitNotes": "",
+        "factCheckNotes": "",
+        "boundaryCheckNotes": "",
+        "copyingRiskNotes": "",
+        "humanReviewerInitials": "",
+        "notePrompts": {
+          "originalRewriteNotes": "Record how the human rewrite teaches trading_psychology/outcome_bias in original prose without copying source text.",
+          "sourceFitNotes": "Record consumer-protection/fraud/macro/public-domain source-fit decisions; trend rows need explicit downgrade or boundary-only notes.",
+          "factCheckNotes": "Record facts checked against source identity, release context, terminology, and lesson claims.",
+          "boundaryCheckNotes": "Confirm no advice, signals, forecasts, broker/order workflow, automation, real-money guidance, performance promise, or readiness claim.",
+          "copyingRiskNotes": "Confirm no external body text, rules, tables, charts, UI text, public-domain maxims, or sample notes were copied.",
+          "humanReviewerInitials": "Fill only after a real human reviewer performs the review work."
+        }
+      },
+      {
+        "lessonId": "lesson_knv2_0004",
+        "nodeId": "knv2_0004",
+        "moduleLabel": "trend",
+        "topicLabel": "trend_definition",
+        "sourceFitRisk": "medium",
+        "riskReasons": [
+          "broad_source_family_mix"
+        ],
+        "trackingStatus": "not_started",
+        "currentGrade": "structural_draft",
+        "mustRemainStructuralDraft": true,
+        "sourceFamilies": [
+          "EIA",
+          "SEC",
+          "Treasury",
+          "Project Gutenberg",
+          "BEA"
+        ],
+        "originalRewriteNotes": "",
+        "sourceFitNotes": "",
+        "factCheckNotes": "",
+        "boundaryCheckNotes": "",
+        "copyingRiskNotes": "",
+        "humanReviewerInitials": "",
+        "notePrompts": {
+          "originalRewriteNotes": "Record how the human rewrite teaches trend/trend_definition in original prose without copying source text.",
+          "sourceFitNotes": "Record consumer-protection/fraud/macro/public-domain source-fit decisions; trend rows need explicit downgrade or boundary-only notes.",
+          "factCheckNotes": "Record facts checked against source identity, release context, terminology, and lesson claims.",
+          "boundaryCheckNotes": "Confirm no advice, signals, forecasts, broker/order workflow, automation, real-money guidance, performance promise, or readiness claim.",
+          "copyingRiskNotes": "Confirm no external body text, rules, tables, charts, UI text, public-domain maxims, or sample notes were copied.",
+          "humanReviewerInitials": "Fill only after a real human reviewer performs the review work."
+        }
+      },
+      {
+        "lessonId": "lesson_knv2_0040",
+        "nodeId": "knv2_0040",
+        "moduleLabel": "trend",
+        "topicLabel": "trend_exhaustion",
+        "sourceFitRisk": "low",
+        "riskReasons": [],
+        "trackingStatus": "not_started",
+        "currentGrade": "structural_draft",
+        "mustRemainStructuralDraft": true,
+        "sourceFamilies": [
+          "CFTC",
+          "BLS",
+          "Project Gutenberg",
+          "BEA"
+        ],
+        "originalRewriteNotes": "",
+        "sourceFitNotes": "",
+        "factCheckNotes": "",
+        "boundaryCheckNotes": "",
+        "copyingRiskNotes": "",
+        "humanReviewerInitials": "",
+        "notePrompts": {
+          "originalRewriteNotes": "Record how the human rewrite teaches trend/trend_exhaustion in original prose without copying source text.",
+          "sourceFitNotes": "Record consumer-protection/fraud/macro/public-domain source-fit decisions; trend rows need explicit downgrade or boundary-only notes.",
+          "factCheckNotes": "Record facts checked against source identity, release context, terminology, and lesson claims.",
+          "boundaryCheckNotes": "Confirm no advice, signals, forecasts, broker/order workflow, automation, real-money guidance, performance promise, or readiness claim.",
+          "copyingRiskNotes": "Confirm no external body text, rules, tables, charts, UI text, public-domain maxims, or sample notes were copied.",
+          "humanReviewerInitials": "Fill only after a real human reviewer performs the review work."
+        }
+      },
+      {
+        "lessonId": "lesson_knv2_0052",
+        "nodeId": "knv2_0052",
+        "moduleLabel": "trend",
+        "topicLabel": "trend_continuation",
+        "sourceFitRisk": "medium",
+        "riskReasons": [
+          "chart_lesson_without_public_domain_historical_context",
+          "fraud_source_attached_to_chart_context"
+        ],
+        "trackingStatus": "not_started",
+        "currentGrade": "structural_draft",
+        "mustRemainStructuralDraft": true,
+        "sourceFamilies": [
+          "Treasury",
+          "CFTC",
+          "BEA"
+        ],
+        "originalRewriteNotes": "",
+        "sourceFitNotes": "",
+        "factCheckNotes": "",
+        "boundaryCheckNotes": "",
+        "copyingRiskNotes": "",
+        "humanReviewerInitials": "",
+        "notePrompts": {
+          "originalRewriteNotes": "Record how the human rewrite teaches trend/trend_continuation in original prose without copying source text.",
+          "sourceFitNotes": "Record consumer-protection/fraud/macro/public-domain source-fit decisions; trend rows need explicit downgrade or boundary-only notes.",
+          "factCheckNotes": "Record facts checked against source identity, release context, terminology, and lesson claims.",
+          "boundaryCheckNotes": "Confirm no advice, signals, forecasts, broker/order workflow, automation, real-money guidance, performance promise, or readiness claim.",
+          "copyingRiskNotes": "Confirm no external body text, rules, tables, charts, UI text, public-domain maxims, or sample notes were copied.",
+          "humanReviewerInitials": "Fill only after a real human reviewer performs the review work."
+        }
+      },
+      {
+        "lessonId": "lesson_knv2_0088",
+        "nodeId": "knv2_0088",
+        "moduleLabel": "trend",
+        "topicLabel": "trend_acceleration",
+        "sourceFitRisk": "medium",
+        "riskReasons": [
+          "broad_source_family_mix",
+          "fraud_source_attached_to_chart_context"
+        ],
+        "trackingStatus": "not_started",
+        "currentGrade": "structural_draft",
+        "mustRemainStructuralDraft": true,
+        "sourceFamilies": [
+          "Investor.gov",
+          "BLS",
+          "Federal Reserve",
+          "Treasury",
+          "Internet Archive"
+        ],
+        "originalRewriteNotes": "",
+        "sourceFitNotes": "",
+        "factCheckNotes": "",
+        "boundaryCheckNotes": "",
+        "copyingRiskNotes": "",
+        "humanReviewerInitials": "",
+        "notePrompts": {
+          "originalRewriteNotes": "Record how the human rewrite teaches trend/trend_acceleration in original prose without copying source text.",
+          "sourceFitNotes": "Record consumer-protection/fraud/macro/public-domain source-fit decisions; trend rows need explicit downgrade or boundary-only notes.",
+          "factCheckNotes": "Record facts checked against source identity, release context, terminology, and lesson claims.",
+          "boundaryCheckNotes": "Confirm no advice, signals, forecasts, broker/order workflow, automation, real-money guidance, performance promise, or readiness claim.",
+          "copyingRiskNotes": "Confirm no external body text, rules, tables, charts, UI text, public-domain maxims, or sample notes were copied.",
+          "humanReviewerInitials": "Fill only after a real human reviewer performs the review work."
+        }
+      }
+    ]
+  },
+  "negativeCases": 8,
+  "negativeCasesPassed": 8,
+  "negativeRows": [
+    {
+      "name": "filled_note_rejected",
+      "passed": true,
+      "errorMessage": "lesson_knv2_0156.sourceFitNotes must remain blank in dry-run"
+    },
+    {
+      "name": "approval_candidate_rejected",
+      "passed": true,
+      "errorMessage": "dry-run overlay cannot create approval review candidates"
+    },
+    {
+      "name": "commercial_promotion_rejected",
+      "passed": true,
+      "errorMessage": "dry-run overlay cannot promote commercial readiness"
+    },
+    {
+      "name": "learner_release_rejected",
+      "passed": true,
+      "errorMessage": "batch 03 dry-run overlay cannot be learner-facing release"
+    },
+    {
+      "name": "grade_override_rejected",
+      "passed": true,
+      "errorMessage": "lesson_knv2_0156 currentGrade must remain structural_draft"
+    },
+    {
+      "name": "signal_wording_rejected",
+      "passed": true,
+      "errorMessage": "lesson_knv2_0156.boundaryCheckNotes contains unsafe status/trading/readiness wording"
+    },
+    {
+      "name": "duplicate_lesson_rejected",
+      "passed": true,
+      "errorMessage": "dry-run overlay must include 6 lesson cards"
+    },
+    {
+      "name": "wrong_batch_rejected",
+      "passed": true,
+      "errorMessage": "dry-run overlay must stay scoped to rewrite_batch_03"
+    }
+  ],
+  "sourceReports": {
+    "editorPacket": "docs/LESSON_BATCH_03_EDITOR_PACKET.json"
+  },
+  "boundary": "This Batch 03 notes dry-run is a blank reviewer-input scaffold only. It does not create real review evidence, approve lessons, publish learner-facing content, change grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, guide real-money decisions, or make the product production-ready."
+}

@@ -1,0 +1,144 @@
+{
+  "generatedAt": "2026-06-21T22:43:47.553Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "fixtureOnly": false,
+  "inputPath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_04_INPUT_COPY_TEMPLATE.json",
+  "packId": "local_course_p0_human_fill_pack_04",
+  "lintStatus": "blocked_quality_lint",
+  "totalEntries": 4,
+  "readyEntries": 0,
+  "blockedEntries": 4,
+  "candidateCopyIssueEntries": 0,
+  "riskRewriteIncompleteEntries": 4,
+  "publicReferenceMissingEntries": 4,
+  "originalityMissingEntries": 4,
+  "forbiddenHitEntries": 0,
+  "lintRows": [
+    {
+      "id": "input_copy_absorb_manual_transcription_01",
+      "taskId": "absorb_manual_transcription_01",
+      "category": "manual_transcription",
+      "documentId": "corpus_1313",
+      "pageNumber": 1,
+      "lintStatus": "blocked_quality_lint",
+      "readyForValidation": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "publicReferenceNotes",
+        "originalityNotes",
+        "riskRewriteNotes",
+        "manualChecklist"
+      ],
+      "riskRewriteMissingFlags": [
+        "position_language",
+        "entry_language",
+        "stop_loss_language",
+        "specific_price_levels",
+        "counter_trend_language"
+      ],
+      "publicReferenceMissing": true,
+      "originalityMissing": true,
+      "candidateCopyIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_04_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_02",
+      "taskId": "absorb_manual_transcription_02",
+      "category": "manual_transcription",
+      "documentId": "corpus_1313",
+      "pageNumber": 2,
+      "lintStatus": "blocked_quality_lint",
+      "readyForValidation": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "publicReferenceNotes",
+        "originalityNotes",
+        "riskRewriteNotes",
+        "manualChecklist"
+      ],
+      "riskRewriteMissingFlags": [
+        "entry_language",
+        "stop_loss_language",
+        "risk_reward_language",
+        "right_side_confirmation_language"
+      ],
+      "publicReferenceMissing": true,
+      "originalityMissing": true,
+      "candidateCopyIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_04_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_03",
+      "taskId": "absorb_manual_transcription_03",
+      "category": "manual_transcription",
+      "documentId": "corpus_1313",
+      "pageNumber": 3,
+      "lintStatus": "blocked_quality_lint",
+      "readyForValidation": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "publicReferenceNotes",
+        "originalityNotes",
+        "riskRewriteNotes",
+        "manualChecklist"
+      ],
+      "riskRewriteMissingFlags": [
+        "pattern_signal_language",
+        "pressure_level_language",
+        "risk_reward_language",
+        "entry_avoidance_language"
+      ],
+      "publicReferenceMissing": true,
+      "originalityMissing": true,
+      "candidateCopyIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_04_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_04",
+      "taskId": "absorb_manual_transcription_04",
+      "category": "manual_transcription",
+      "documentId": "corpus_1313",
+      "pageNumber": 4,
+      "lintStatus": "blocked_quality_lint",
+      "readyForValidation": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "publicReferenceNotes",
+        "originalityNotes",
+        "riskRewriteNotes",
+        "manualChecklist"
+      ],
+      "riskRewriteMissingFlags": [
+        "order_management_language",
+        "position_language",
+        "entry_language",
+        "risk_control_language",
+        "specific_price_levels"
+      ],
+      "publicReferenceMissing": true,
+      "originalityMissing": true,
+      "candidateCopyIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_04_input_then_apply_dry_run_only"
+    }
+  ],
+  "boundary": "Pack 04 filled-copy lint is a dry-run quality gate. It does not write overlay changes, perform OCR, approve learner-facing release, copy private course wording into lessons, provide trading advice, stock recommendations, live signals, return promises, broker workflows, automation, or real-money guidance."
+}

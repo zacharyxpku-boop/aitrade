@@ -1,0 +1,72 @@
+{
+  "generatedAt": "2026-06-21T22:43:49.187Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "applyMode": "dry_run",
+  "fixtureOnly": true,
+  "applyStatus": "ready_entries_not_written",
+  "inputPath": "docs\\LOCAL_COURSE_P0_HUMAN_FILL_PACK_04_POSITIVE_LINT_FIXTURE.json",
+  "overlayPath": "docs/LOCAL_COURSE_ABSORPTION_P0_REVIEW_OVERLAY.json",
+  "totalEntries": 4,
+  "readyToApplyEntries": 4,
+  "blockedEntries": 0,
+  "writtenEntries": 0,
+  "applyRows": [
+    {
+      "id": "input_copy_absorb_manual_transcription_01",
+      "taskId": "absorb_manual_transcription_01",
+      "reviewEntryId": "review_absorb_manual_transcription_01",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "pageNumber": 1,
+      "applyStatus": "ready_to_apply",
+      "willWrite": false,
+      "missingFields": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_04_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_02",
+      "taskId": "absorb_manual_transcription_02",
+      "reviewEntryId": "review_absorb_manual_transcription_02",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "pageNumber": 2,
+      "applyStatus": "ready_to_apply",
+      "willWrite": false,
+      "missingFields": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_04_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_03",
+      "taskId": "absorb_manual_transcription_03",
+      "reviewEntryId": "review_absorb_manual_transcription_03",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "pageNumber": 3,
+      "applyStatus": "ready_to_apply",
+      "willWrite": false,
+      "missingFields": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_04_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_04",
+      "taskId": "absorb_manual_transcription_04",
+      "reviewEntryId": "review_absorb_manual_transcription_04",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "pageNumber": 4,
+      "applyStatus": "ready_to_apply",
+      "willWrite": false,
+      "missingFields": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_04_input_then_apply_dry_run_only"
+    }
+  ],
+  "nextStep": "Rerun with --write only after confirming the dry-run report.",
+  "boundary": "P0 review input apply is a guarded overlay update pipeline. Dry-run mode writes no overlay changes. It does not approve learner-facing release, provide trading advice, stock recommendations, live signals, return promises, broker workflows, automation, or real-money guidance."
+}

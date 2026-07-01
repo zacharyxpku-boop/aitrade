@@ -1,0 +1,2541 @@
+{
+  "generatedAt": "2026-06-22T00:52:27.556Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "fixtureOnly": true,
+  "templateStatus": "p0_human_review_bundle_real_input_draft_blank",
+  "sourceBundle": "docs/LOCAL_COURSE_P0_HUMAN_REVIEW_BUNDLE.json",
+  "sourceTemplatePaths": [
+    "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_01_INPUT_COPY_TEMPLATE.json",
+    "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_02_INPUT_COPY_TEMPLATE.json",
+    "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_03_INPUT_COPY_TEMPLATE.json",
+    "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_04_INPUT_COPY_TEMPLATE.json",
+    "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_05_INPUT_COPY_TEMPLATE.json",
+    "docs/LOCAL_COURSE_P0_SOURCE_REPLACEMENT_INPUT_COPY_TEMPLATE.json"
+  ],
+  "totalEntries": 22,
+  "manualTranscriptionEntries": 19,
+  "sourceReplacementEntries": 3,
+  "filledEntries": 0,
+  "readyForValidationEntries": 0,
+  "targetTaskIds": [
+    "absorb_manual_transcription_09",
+    "absorb_manual_transcription_10",
+    "absorb_manual_transcription_11",
+    "absorb_manual_transcription_12",
+    "absorb_manual_transcription_13",
+    "absorb_manual_transcription_14",
+    "absorb_manual_transcription_15",
+    "absorb_manual_transcription_16",
+    "absorb_manual_transcription_17",
+    "absorb_manual_transcription_18",
+    "absorb_manual_transcription_19",
+    "absorb_manual_transcription_01",
+    "absorb_manual_transcription_02",
+    "absorb_manual_transcription_03",
+    "absorb_manual_transcription_04",
+    "absorb_manual_transcription_05",
+    "absorb_manual_transcription_06",
+    "absorb_manual_transcription_07",
+    "absorb_manual_transcription_08",
+    "absorb_source_replacement_01",
+    "absorb_source_replacement_02",
+    "absorb_source_replacement_03"
+  ],
+  "targetDocumentIds": [
+    "corpus_1580",
+    "corpus_1313",
+    "corpus_1329",
+    "corpus_1431",
+    "corpus_1577"
+  ],
+  "targetPageNumbers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    1,
+    1,
+    1
+  ],
+  "inputEntries": [
+    {
+      "id": "input_copy_absorb_manual_transcription_09",
+      "reviewEntryId": "review_absorb_manual_transcription_09",
+      "taskId": "absorb_manual_transcription_09",
+      "sourcePackCardId": "fill_pack_01_absorb_manual_transcription_09",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 1,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-01.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-01.png",
+      "candidateId": "candidate_batch_03_page_01",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "awaiting_real_reviewer_fill",
+      "reviewerName": "Fixture Source-Fit Reviewer",
+      "reviewedAt": "2026-06-22T00:00:00.000Z",
+      "packQualityRequirements": {
+        "riskTermFlags": [
+          "source_provenance_language",
+          "copyright_language",
+          "historical_origin_language",
+          "market_visualization_language"
+        ],
+        "riskRewriteChecklist": [
+          {
+            "flag": "source_provenance_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "copyright_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "historical_origin_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "market_visualization_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          }
+        ],
+        "qualityLintRules": [
+          "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+          "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+          "riskRewriteNotes must address every riskTermFlag before validation.",
+          "publicReferenceNotes must name public grounding needed for historical, terminology, or source claims.",
+          "originalityNotes must confirm private course wording was not copied into learner-facing content."
+        ],
+        "uncertainRegions": [
+          "Exact URL text in the source screenshot needs human confirmation.",
+          "Some historical proper nouns and date ranges should be checked against public references before learner-facing use."
+        ],
+        "candidateSummary": "This page can be rewritten as a provenance and historical-origin note for a K-line basics lesson: explain that candlestick charts emerged from historical rice-price recording and later became a market visualization tool, while keeping source attribution and copyright review separate.",
+        "warning": "Do not copy machine candidate text as human transcription. Verify against the high-resolution preview."
+      },
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "publicReferenceNotes": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization.",
+        "originalityNotes": "",
+        "riskRewriteNotes": "",
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        },
+        "sourceFitNote": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization."
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag.",
+        "Public reference notes identify historical, terminology, or source claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_01_input_then_apply_dry_run_only",
+      "sourceTemplatePath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_01_INPUT_COPY_TEMPLATE.json",
+      "bundleInputStatus": "reviewer_owned_copy_blank",
+      "fixtureOnlyReason": "Positive control for source-fit validator. Not real human review and cannot authorize writes.",
+      "sourceFitFixture": {
+        "fixtureOnly": true,
+        "guideRowId": "source_fit_input_guide_01",
+        "suggestedRefId": "wikipedia:32033902",
+        "allowedDecisionValue": "confirm_public_refs_support_neutral_vocabulary_only",
+        "rowNumber": 1
+      }
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_10",
+      "reviewEntryId": "review_absorb_manual_transcription_10",
+      "taskId": "absorb_manual_transcription_10",
+      "sourcePackCardId": "fill_pack_01_absorb_manual_transcription_10",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 2,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-02.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-02.png",
+      "candidateId": "candidate_batch_03_page_02",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "awaiting_real_reviewer_fill",
+      "reviewerName": "Fixture Source-Fit Reviewer",
+      "reviewedAt": "2026-06-22T00:00:00.000Z",
+      "packQualityRequirements": {
+        "riskTermFlags": [
+          "historical_market_language",
+          "futures_origin_language",
+          "transaction_scale_language",
+          "public_grounding_required"
+        ],
+        "riskRewriteChecklist": [
+          {
+            "flag": "historical_market_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "futures_origin_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "transaction_scale_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "public_grounding_required",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          }
+        ],
+        "qualityLintRules": [
+          "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+          "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+          "riskRewriteNotes must address every riskTermFlag before validation.",
+          "publicReferenceNotes must name public grounding needed for historical, terminology, or source claims.",
+          "originalityNotes must confirm private course wording was not copied into learner-facing content."
+        ],
+        "uncertainRegions": [
+          "Transaction-scale figures and historical dates require public-source verification.",
+          "Some screenshot subtitle text is not reliable enough for exact transcription."
+        ],
+        "candidateSummary": "This page can support a public-grounded history module: learners understand why price-recording tools arose from rice-market logistics, paper claims, and repeated price fluctuation, without treating the story as a trading method.",
+        "warning": "Do not copy machine candidate text as human transcription. Verify against the high-resolution preview."
+      },
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "publicReferenceNotes": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization.",
+        "originalityNotes": "",
+        "riskRewriteNotes": "",
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        },
+        "sourceFitNote": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization."
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag.",
+        "Public reference notes identify historical, terminology, or source claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_01_input_then_apply_dry_run_only",
+      "sourceTemplatePath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_01_INPUT_COPY_TEMPLATE.json",
+      "bundleInputStatus": "reviewer_owned_copy_blank",
+      "fixtureOnlyReason": "Positive control for source-fit validator. Not real human review and cannot authorize writes.",
+      "sourceFitFixture": {
+        "fixtureOnly": true,
+        "guideRowId": "source_fit_input_guide_02",
+        "suggestedRefId": "wikipedia:32033902",
+        "allowedDecisionValue": "confirm_public_refs_support_neutral_vocabulary_only",
+        "rowNumber": 2
+      }
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_11",
+      "reviewEntryId": "review_absorb_manual_transcription_11",
+      "taskId": "absorb_manual_transcription_11",
+      "sourcePackCardId": "fill_pack_01_absorb_manual_transcription_11",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 3,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-03.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-03.png",
+      "candidateId": "candidate_batch_03_page_03",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "awaiting_real_reviewer_fill",
+      "reviewerName": "Fixture Source-Fit Reviewer",
+      "reviewedAt": "2026-06-22T00:00:00.000Z",
+      "packQualityRequirements": {
+        "riskTermFlags": [
+          "success_claim_language",
+          "market_influence_language",
+          "pattern_name_language",
+          "historical_claim_review_required"
+        ],
+        "riskRewriteChecklist": [
+          {
+            "flag": "success_claim_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "market_influence_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "pattern_name_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "historical_claim_review_required",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          }
+        ],
+        "qualityLintRules": [
+          "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+          "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+          "riskRewriteNotes must address every riskTermFlag before validation.",
+          "publicReferenceNotes must name public grounding needed for historical, terminology, or source claims.",
+          "originalityNotes must confirm private course wording was not copied into learner-facing content."
+        ],
+        "uncertainRegions": [
+          "Winning-streak and wealth-scale claims need source validation or removal.",
+          "Pattern-name translations should be checked against public references before use."
+        ],
+        "candidateSummary": "This page can be rewritten as a cautious history-and-terminology bridge: introduce chart recording, pattern names, and folklore-like claims as background vocabulary, while avoiding success claims or implying that historical anecdotes validate a trading edge.",
+        "warning": "Do not copy machine candidate text as human transcription. Verify against the high-resolution preview."
+      },
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "publicReferenceNotes": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:1650818 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization.",
+        "originalityNotes": "",
+        "riskRewriteNotes": "",
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        },
+        "sourceFitNote": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:1650818 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization."
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag.",
+        "Public reference notes identify historical, terminology, or source claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_01_input_then_apply_dry_run_only",
+      "sourceTemplatePath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_01_INPUT_COPY_TEMPLATE.json",
+      "bundleInputStatus": "reviewer_owned_copy_blank",
+      "fixtureOnlyReason": "Positive control for source-fit validator. Not real human review and cannot authorize writes.",
+      "sourceFitFixture": {
+        "fixtureOnly": true,
+        "guideRowId": "source_fit_input_guide_03",
+        "suggestedRefId": "wikipedia:1650818",
+        "allowedDecisionValue": "confirm_public_refs_support_neutral_vocabulary_only",
+        "rowNumber": 3
+      }
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_12",
+      "reviewEntryId": "review_absorb_manual_transcription_12",
+      "taskId": "absorb_manual_transcription_12",
+      "sourcePackCardId": "fill_pack_01_absorb_manual_transcription_12",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 4,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-04.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-04.png",
+      "candidateId": "candidate_batch_03_page_04",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "awaiting_real_reviewer_fill",
+      "reviewerName": "Fixture Source-Fit Reviewer",
+      "reviewedAt": "2026-06-22T00:00:00.000Z",
+      "packQualityRequirements": {
+        "riskTermFlags": [
+          "ohlc_definition_language",
+          "bullish_candle_language",
+          "example_price_language",
+          "platform_color_convention"
+        ],
+        "riskRewriteChecklist": [
+          {
+            "flag": "ohlc_definition_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "bullish_candle_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "example_price_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "platform_color_convention",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          }
+        ],
+        "qualityLintRules": [
+          "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+          "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+          "riskRewriteNotes must address every riskTermFlag before validation.",
+          "publicReferenceNotes must name public grounding needed for historical, terminology, or source claims.",
+          "originalityNotes must confirm private course wording was not copied into learner-facing content."
+        ],
+        "uncertainRegions": [
+          "Example prices are visible but should be checked if retained.",
+          "The color convention should be generalized because platforms differ between markets."
+        ],
+        "candidateSummary": "This page can become a clean foundational concept card: define OHLC and candle body/wicks as chart-reading vocabulary, then use neutral examples to teach what a candle records rather than what action to take.",
+        "warning": "Do not copy machine candidate text as human transcription. Verify against the high-resolution preview."
+      },
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "publicReferenceNotes": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization.",
+        "originalityNotes": "",
+        "riskRewriteNotes": "",
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        },
+        "sourceFitNote": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization."
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag.",
+        "Public reference notes identify historical, terminology, or source claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_01_input_then_apply_dry_run_only",
+      "sourceTemplatePath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_01_INPUT_COPY_TEMPLATE.json",
+      "bundleInputStatus": "reviewer_owned_copy_blank",
+      "fixtureOnlyReason": "Positive control for source-fit validator. Not real human review and cannot authorize writes.",
+      "sourceFitFixture": {
+        "fixtureOnly": true,
+        "guideRowId": "source_fit_input_guide_04",
+        "suggestedRefId": "wikipedia:32033902",
+        "allowedDecisionValue": "confirm_public_refs_support_neutral_vocabulary_only",
+        "rowNumber": 4
+      }
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_13",
+      "reviewEntryId": "review_absorb_manual_transcription_13",
+      "taskId": "absorb_manual_transcription_13",
+      "sourcePackCardId": "fill_pack_02_absorb_manual_transcription_13",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 5,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-05.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-05.png",
+      "candidateId": "candidate_batch_04_page_01",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "awaiting_real_reviewer_fill",
+      "reviewerName": "Fixture Source-Fit Reviewer",
+      "reviewedAt": "2026-06-22T00:00:00.000Z",
+      "packQualityRequirements": {
+        "riskTermFlags": [
+          "bearish_bullish_language",
+          "ohlc_definition_language",
+          "shadow_body_language",
+          "market_meaning_language",
+          "platform_color_convention"
+        ],
+        "riskRewriteChecklist": [
+          {
+            "flag": "bearish_bullish_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "ohlc_definition_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "shadow_body_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "market_meaning_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "platform_color_convention",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          }
+        ],
+        "qualityLintRules": [
+          "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+          "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+          "riskRewriteNotes must address every riskTermFlag before validation, especially signal, forecast, support/resistance, homework, and source-recommendation language.",
+          "publicReferenceNotes must name public grounding needed for candlestick terminology, pattern taxonomy, support/resistance claims, or source recommendations.",
+          "originalityNotes must confirm private course wording was not copied into learner-facing content."
+        ],
+        "uncertainRegions": [
+          "Some small labels in the embedded diagram need human confirmation before exact transcription.",
+          "The red/green color convention should be generalized because market platforms and regions differ."
+        ],
+        "candidateSummary": "This page can be rewritten as a neutral candlestick anatomy card: define body and shadows from OHLC values, explain that color conventions vary by platform, and convert bullish/bearish force claims into cautious chart-description vocabulary.",
+        "warning": "Do not copy machine candidate text as human transcription. Verify against the high-resolution preview."
+      },
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "publicReferenceNotes": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:1650818 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization.",
+        "originalityNotes": "",
+        "riskRewriteNotes": "",
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        },
+        "sourceFitNote": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:1650818 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization."
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal, forecast, support/resistance, homework, and source-recommendation language.",
+        "Public reference notes identify candlestick terminology, pattern taxonomy, support/resistance claims, or source recommendations that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_02_input_then_apply_dry_run_only",
+      "sourceTemplatePath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_02_INPUT_COPY_TEMPLATE.json",
+      "bundleInputStatus": "reviewer_owned_copy_blank",
+      "fixtureOnlyReason": "Positive control for source-fit validator. Not real human review and cannot authorize writes.",
+      "sourceFitFixture": {
+        "fixtureOnly": true,
+        "guideRowId": "source_fit_input_guide_05",
+        "suggestedRefId": "wikipedia:1650818",
+        "allowedDecisionValue": "confirm_public_refs_support_neutral_vocabulary_only",
+        "rowNumber": 5
+      }
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_14",
+      "reviewEntryId": "review_absorb_manual_transcription_14",
+      "taskId": "absorb_manual_transcription_14",
+      "sourcePackCardId": "fill_pack_02_absorb_manual_transcription_14",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 6,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-06.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-06.png",
+      "candidateId": "candidate_batch_04_page_02",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "awaiting_real_reviewer_fill",
+      "reviewerName": "Fixture Source-Fit Reviewer",
+      "reviewedAt": "2026-06-22T00:00:00.000Z",
+      "packQualityRequirements": {
+        "riskTermFlags": [
+          "kline_classification_language",
+          "ohlc_formula_language",
+          "specific_price_levels",
+          "support_resistance_language",
+          "force_comparison_language",
+          "liquidity_condition_language"
+        ],
+        "riskRewriteChecklist": [
+          {
+            "flag": "kline_classification_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "ohlc_formula_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "specific_price_levels",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "support_resistance_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "force_comparison_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "liquidity_condition_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          }
+        ],
+        "qualityLintRules": [
+          "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+          "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+          "riskRewriteNotes must address every riskTermFlag before validation, especially signal, forecast, support/resistance, homework, and source-recommendation language.",
+          "publicReferenceNotes must name public grounding needed for candlestick terminology, pattern taxonomy, support/resistance claims, or source recommendations.",
+          "originalityNotes must confirm private course wording was not copied into learner-facing content."
+        ],
+        "uncertainRegions": [
+          "One yin-line formula appears visually ambiguous and should be checked against the source image by a reviewer.",
+          "Specific price examples and halted-trading references should be removed or generalized unless the reviewer keeps them as non-advice illustrations."
+        ],
+        "candidateSummary": "This page can support a reviewer-only taxonomy draft: map named candlestick shapes to OHLC relationships and rewrite force-comparison statements as tentative visual interpretations that require public grounding and no action advice.",
+        "warning": "Do not copy machine candidate text as human transcription. Verify against the high-resolution preview."
+      },
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "publicReferenceNotes": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization.",
+        "originalityNotes": "",
+        "riskRewriteNotes": "",
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        },
+        "sourceFitNote": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization."
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal, forecast, support/resistance, homework, and source-recommendation language.",
+        "Public reference notes identify candlestick terminology, pattern taxonomy, support/resistance claims, or source recommendations that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_02_input_then_apply_dry_run_only",
+      "sourceTemplatePath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_02_INPUT_COPY_TEMPLATE.json",
+      "bundleInputStatus": "reviewer_owned_copy_blank",
+      "fixtureOnlyReason": "Positive control for source-fit validator. Not real human review and cannot authorize writes.",
+      "sourceFitFixture": {
+        "fixtureOnly": true,
+        "guideRowId": "source_fit_input_guide_06",
+        "suggestedRefId": "wikipedia:32033902",
+        "allowedDecisionValue": "confirm_public_refs_support_neutral_vocabulary_only",
+        "rowNumber": 6
+      }
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_15",
+      "reviewEntryId": "review_absorb_manual_transcription_15",
+      "taskId": "absorb_manual_transcription_15",
+      "sourcePackCardId": "fill_pack_02_absorb_manual_transcription_15",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 7,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-07.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-07.png",
+      "candidateId": "candidate_batch_04_page_03",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "awaiting_real_reviewer_fill",
+      "reviewerName": "Fixture Source-Fit Reviewer",
+      "reviewedAt": "2026-06-22T00:00:00.000Z",
+      "packQualityRequirements": {
+        "riskTermFlags": [
+          "signal_language",
+          "warning_signal_language",
+          "forecast_language",
+          "support_resistance_language",
+          "trend_continuation_language",
+          "liquidity_condition_language"
+        ],
+        "riskRewriteChecklist": [
+          {
+            "flag": "signal_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "warning_signal_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "forecast_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "support_resistance_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "trend_continuation_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "liquidity_condition_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          }
+        ],
+        "qualityLintRules": [
+          "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+          "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+          "riskRewriteNotes must address every riskTermFlag before validation, especially signal, forecast, support/resistance, homework, and source-recommendation language.",
+          "publicReferenceNotes must name public grounding needed for candlestick terminology, pattern taxonomy, support/resistance claims, or source recommendations.",
+          "originalityNotes must confirm private course wording was not copied into learner-facing content."
+        ],
+        "uncertainRegions": [
+          "The embedded comparison chart is small and needs human verification before table-level transcription.",
+          "Several handwritten annotations and subtitle fragments are not reliable enough for direct reuse."
+        ],
+        "candidateSummary": "This page is high risk for learner-facing reuse because it attaches signal and forecast language to many candlestick names. It should be converted into a cautious vocabulary table, with all predictive wording removed or explicitly framed as unverified historical interpretation.",
+        "warning": "Do not copy machine candidate text as human transcription. Verify against the high-resolution preview."
+      },
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "publicReferenceNotes": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization.",
+        "originalityNotes": "",
+        "riskRewriteNotes": "",
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        },
+        "sourceFitNote": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization."
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal, forecast, support/resistance, homework, and source-recommendation language.",
+        "Public reference notes identify candlestick terminology, pattern taxonomy, support/resistance claims, or source recommendations that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_02_input_then_apply_dry_run_only",
+      "sourceTemplatePath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_02_INPUT_COPY_TEMPLATE.json",
+      "bundleInputStatus": "reviewer_owned_copy_blank",
+      "fixtureOnlyReason": "Positive control for source-fit validator. Not real human review and cannot authorize writes.",
+      "sourceFitFixture": {
+        "fixtureOnly": true,
+        "guideRowId": "source_fit_input_guide_07",
+        "suggestedRefId": "wikipedia:32033902",
+        "allowedDecisionValue": "confirm_public_refs_support_neutral_vocabulary_only",
+        "rowNumber": 7
+      }
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_16",
+      "reviewEntryId": "review_absorb_manual_transcription_16",
+      "taskId": "absorb_manual_transcription_16",
+      "sourcePackCardId": "fill_pack_02_absorb_manual_transcription_16",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 8,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-08.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-08.png",
+      "candidateId": "candidate_batch_04_page_04",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "awaiting_real_reviewer_fill",
+      "reviewerName": "Fixture Source-Fit Reviewer",
+      "reviewedAt": "2026-06-22T00:00:00.000Z",
+      "packQualityRequirements": {
+        "riskTermFlags": [
+          "study_advice_language",
+          "source_recommendation_language",
+          "copyright_review_required",
+          "homework_instruction_language",
+          "force_comparison_language"
+        ],
+        "riskRewriteChecklist": [
+          {
+            "flag": "study_advice_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "source_recommendation_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "copyright_review_required",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "homework_instruction_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "force_comparison_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          }
+        ],
+        "qualityLintRules": [
+          "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+          "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+          "riskRewriteNotes must address every riskTermFlag before validation, especially signal, forecast, support/resistance, homework, and source-recommendation language.",
+          "publicReferenceNotes must name public grounding needed for candlestick terminology, pattern taxonomy, support/resistance claims, or source recommendations.",
+          "originalityNotes must confirm private course wording was not copied into learner-facing content."
+        ],
+        "uncertainRegions": [
+          "Book citation details and copyright/source use need reviewer confirmation.",
+          "The homework chart and force-comparison table need exact visual checking before any structured exercise is created."
+        ],
+        "candidateSummary": "This page can become a learning-operations note rather than trading instruction: preserve the meta-learning idea of not rote-memorizing patterns, separate book/source recommendations for reviewer approval, and keep homework as a chart-literacy exercise.",
+        "warning": "Do not copy machine candidate text as human transcription. Verify against the high-resolution preview."
+      },
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "publicReferenceNotes": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization.",
+        "originalityNotes": "",
+        "riskRewriteNotes": "",
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        },
+        "sourceFitNote": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization."
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal, forecast, support/resistance, homework, and source-recommendation language.",
+        "Public reference notes identify candlestick terminology, pattern taxonomy, support/resistance claims, or source recommendations that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_02_input_then_apply_dry_run_only",
+      "sourceTemplatePath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_02_INPUT_COPY_TEMPLATE.json",
+      "bundleInputStatus": "reviewer_owned_copy_blank",
+      "fixtureOnlyReason": "Positive control for source-fit validator. Not real human review and cannot authorize writes.",
+      "sourceFitFixture": {
+        "fixtureOnly": true,
+        "guideRowId": "source_fit_input_guide_08",
+        "suggestedRefId": "wikipedia:32033902",
+        "allowedDecisionValue": "confirm_public_refs_support_neutral_vocabulary_only",
+        "rowNumber": 8
+      }
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_17",
+      "reviewEntryId": "review_absorb_manual_transcription_17",
+      "taskId": "absorb_manual_transcription_17",
+      "sourcePackCardId": "fill_pack_03_absorb_manual_transcription_17",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 9,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-09.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-09.png",
+      "candidateId": "candidate_batch_05_page_01",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "awaiting_real_reviewer_fill",
+      "reviewerName": "Fixture Source-Fit Reviewer",
+      "reviewedAt": "2026-06-22T00:00:00.000Z",
+      "packQualityRequirements": {
+        "riskTermFlags": [
+          "signal_language",
+          "support_resistance_language",
+          "rebound_language",
+          "turning_point_language",
+          "limit_move_language",
+          "homework_instruction_language",
+          "ohlc_drawing_language"
+        ],
+        "riskRewriteChecklist": [
+          {
+            "flag": "signal_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "support_resistance_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "rebound_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "turning_point_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "limit_move_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "homework_instruction_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "ohlc_drawing_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          }
+        ],
+        "qualityLintRules": [
+          "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+          "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+          "riskRewriteNotes must address every riskTermFlag before validation, especially signal, turning-point, asset-example, QR/contact, and reversal language.",
+          "publicReferenceNotes must name public grounding needed for candlestick practice examples, OHLC drawing, source recommendations, or market-meaning claims.",
+          "originalityNotes must confirm private course wording was not copied into learner-facing content."
+        ],
+        "uncertainRegions": [
+          "The embedded homework slide is small and should be checked manually before exact exercise transcription.",
+          "Limit-up or limit-down wording may be market-specific and should be generalized or removed."
+        ],
+        "candidateSummary": "This page can be rewritten as a chart-literacy worksheet: classify candlestick shapes and require learners to identify OHLC and time elements, while removing signal, support, rebound, limit, and turning-point language from learner-facing explanations.",
+        "warning": "Do not copy machine candidate text as human transcription. Verify against the high-resolution preview."
+      },
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "publicReferenceNotes": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization.",
+        "originalityNotes": "",
+        "riskRewriteNotes": "",
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        },
+        "sourceFitNote": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization."
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal, turning-point, asset-example, QR/contact, and reversal language.",
+        "Public reference notes identify practice examples, OHLC drawing, source recommendations, or market-meaning claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_03_input_then_apply_dry_run_only",
+      "sourceTemplatePath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_03_INPUT_COPY_TEMPLATE.json",
+      "bundleInputStatus": "reviewer_owned_copy_blank",
+      "fixtureOnlyReason": "Positive control for source-fit validator. Not real human review and cannot authorize writes.",
+      "sourceFitFixture": {
+        "fixtureOnly": true,
+        "guideRowId": "source_fit_input_guide_09",
+        "suggestedRefId": "wikipedia:32033902",
+        "allowedDecisionValue": "confirm_public_refs_support_neutral_vocabulary_only",
+        "rowNumber": 9
+      }
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_18",
+      "reviewEntryId": "review_absorb_manual_transcription_18",
+      "taskId": "absorb_manual_transcription_18",
+      "sourcePackCardId": "fill_pack_03_absorb_manual_transcription_18",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 10,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-10.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-10.png",
+      "candidateId": "candidate_batch_05_page_02",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "awaiting_real_reviewer_fill",
+      "reviewerName": "Fixture Source-Fit Reviewer",
+      "reviewedAt": "2026-06-22T00:00:00.000Z",
+      "packQualityRequirements": {
+        "riskTermFlags": [
+          "qr_contact_language",
+          "specific_asset_examples",
+          "specific_price_levels",
+          "selling_pressure_language",
+          "force_comparison_language",
+          "quiz_summary_language",
+          "exam_focus_language"
+        ],
+        "riskRewriteChecklist": [
+          {
+            "flag": "qr_contact_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "specific_asset_examples",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "specific_price_levels",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "selling_pressure_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "force_comparison_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "quiz_summary_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "exam_focus_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          }
+        ],
+        "qualityLintRules": [
+          "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+          "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+          "riskRewriteNotes must address every riskTermFlag before validation, especially signal, turning-point, asset-example, QR/contact, and reversal language.",
+          "publicReferenceNotes must name public grounding needed for candlestick practice examples, OHLC drawing, source recommendations, or market-meaning claims.",
+          "originalityNotes must confirm private course wording was not copied into learner-facing content."
+        ],
+        "uncertainRegions": [
+          "Several numerical example values are visually small and must not be treated as reliable transcription until human verified.",
+          "The QR/contact prompt is not course knowledge and should not be learner-facing content."
+        ],
+        "candidateSummary": "This page should be split into a reviewer-only evidence card: practice examples may inform generic OHLC reading exercises, but coin/oil/BTC values and force interpretations need to be anonymized, public-grounded, or removed before any course use.",
+        "warning": "Do not copy machine candidate text as human transcription. Verify against the high-resolution preview."
+      },
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "publicReferenceNotes": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization.",
+        "originalityNotes": "",
+        "riskRewriteNotes": "",
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        },
+        "sourceFitNote": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization."
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal, turning-point, asset-example, QR/contact, and reversal language.",
+        "Public reference notes identify practice examples, OHLC drawing, source recommendations, or market-meaning claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_03_input_then_apply_dry_run_only",
+      "sourceTemplatePath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_03_INPUT_COPY_TEMPLATE.json",
+      "bundleInputStatus": "reviewer_owned_copy_blank",
+      "fixtureOnlyReason": "Positive control for source-fit validator. Not real human review and cannot authorize writes.",
+      "sourceFitFixture": {
+        "fixtureOnly": true,
+        "guideRowId": "source_fit_input_guide_10",
+        "suggestedRefId": "wikipedia:32033902",
+        "allowedDecisionValue": "confirm_public_refs_support_neutral_vocabulary_only",
+        "rowNumber": 10
+      }
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_19",
+      "reviewEntryId": "review_absorb_manual_transcription_19",
+      "taskId": "absorb_manual_transcription_19",
+      "sourcePackCardId": "fill_pack_03_absorb_manual_transcription_19",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 11,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-11.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-11.png",
+      "candidateId": "candidate_batch_05_page_03",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "awaiting_real_reviewer_fill",
+      "reviewerName": "Fixture Source-Fit Reviewer",
+      "reviewedAt": "2026-06-22T00:00:00.000Z",
+      "packQualityRequirements": {
+        "riskTermFlags": [
+          "market_meaning_language",
+          "buyer_seller_dominance_language",
+          "turning_warning_language",
+          "multi_timeframe_language",
+          "trend_reversal_language",
+          "source_recommendation_language"
+        ],
+        "riskRewriteChecklist": [
+          {
+            "flag": "market_meaning_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "buyer_seller_dominance_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "turning_warning_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "multi_timeframe_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "trend_reversal_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "source_recommendation_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          }
+        ],
+        "qualityLintRules": [
+          "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+          "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+          "riskRewriteNotes must address every riskTermFlag before validation, especially signal, turning-point, asset-example, QR/contact, and reversal language.",
+          "publicReferenceNotes must name public grounding needed for candlestick practice examples, OHLC drawing, source recommendations, or market-meaning claims.",
+          "originalityNotes must confirm private course wording was not copied into learner-facing content."
+        ],
+        "uncertainRegions": [
+          "The table is cropped at the top and should be matched with the previous page before final transcription.",
+          "The recommended-textbook row needs citation and source-fit review before use."
+        ],
+        "candidateSummary": "This page can become a final-review checklist after heavy rewrite: keep OHLC mapping and study-plan structure, but convert buyer/seller dominance, turning-warning, multi-timeframe application, and reversal language into neutral risk-aware chart-reading notes.",
+        "warning": "Do not copy machine candidate text as human transcription. Verify against the high-resolution preview."
+      },
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "publicReferenceNotes": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization.",
+        "originalityNotes": "",
+        "riskRewriteNotes": "",
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        },
+        "sourceFitNote": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization."
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal, turning-point, asset-example, QR/contact, and reversal language.",
+        "Public reference notes identify practice examples, OHLC drawing, source recommendations, or market-meaning claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_03_input_then_apply_dry_run_only",
+      "sourceTemplatePath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_03_INPUT_COPY_TEMPLATE.json",
+      "bundleInputStatus": "reviewer_owned_copy_blank",
+      "fixtureOnlyReason": "Positive control for source-fit validator. Not real human review and cannot authorize writes.",
+      "sourceFitFixture": {
+        "fixtureOnly": true,
+        "guideRowId": "source_fit_input_guide_11",
+        "suggestedRefId": "wikipedia:32033902",
+        "allowedDecisionValue": "confirm_public_refs_support_neutral_vocabulary_only",
+        "rowNumber": 11
+      }
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_01",
+      "reviewEntryId": "review_absorb_manual_transcription_01",
+      "taskId": "absorb_manual_transcription_01",
+      "sourcePackCardId": "fill_pack_04_absorb_manual_transcription_01",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1313",
+      "pageNumber": 1,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1313/page-01.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1313/page-01.png",
+      "candidateId": "candidate_batch_01_page_01",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "awaiting_real_reviewer_fill",
+      "reviewerName": "Fixture Source-Fit Reviewer",
+      "reviewedAt": "2026-06-22T00:00:00.000Z",
+      "packQualityRequirements": {
+        "riskTermFlags": [
+          "position_language",
+          "entry_language",
+          "stop_loss_language",
+          "specific_price_levels",
+          "counter_trend_language"
+        ],
+        "riskRewriteChecklist": [
+          {
+            "flag": "position_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "entry_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "stop_loss_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "specific_price_levels",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "counter_trend_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          }
+        ],
+        "qualityLintRules": [
+          "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+          "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+          "riskRewriteNotes must address every riskTermFlag before validation, especially entry_language, stop_loss_language, position_language, specific_price_levels, risk_reward_language.",
+          "publicReferenceNotes must name public grounding needed for terminology, chart examples, cycle concepts, or case-study claims.",
+          "originalityNotes must confirm private course wording was not copied into learner-facing content."
+        ],
+        "uncertainRegions": [
+          "Some small chart annotations are too small for reliable exact transcription.",
+          "Several numeric labels in embedded chart screenshots need human confirmation."
+        ],
+        "candidateSummary": "This page can be rewritten as an education-only lesson on multi-timeframe context: first identify the large-cycle environment, then use the smaller cycle to observe structure, evidence quality, invalidation, and position-management concepts without turning them into trade instructions.",
+        "warning": "Do not copy machine candidate text as human transcription. Verify against the high-resolution preview."
+      },
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "publicReferenceNotes": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:25937978 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization.",
+        "originalityNotes": "",
+        "riskRewriteNotes": "",
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        },
+        "sourceFitNote": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:25937978 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization."
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially entry_language, stop_loss_language, position_language, specific_price_levels, risk_reward_language.",
+        "Public reference notes identify terminology, chart examples, cycle concepts, or case-study claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_04_input_then_apply_dry_run_only",
+      "sourceTemplatePath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_04_INPUT_COPY_TEMPLATE.json",
+      "bundleInputStatus": "reviewer_owned_copy_blank",
+      "fixtureOnlyReason": "Positive control for source-fit validator. Not real human review and cannot authorize writes.",
+      "sourceFitFixture": {
+        "fixtureOnly": true,
+        "guideRowId": "source_fit_input_guide_12",
+        "suggestedRefId": "wikipedia:25937978",
+        "allowedDecisionValue": "confirm_public_refs_support_neutral_vocabulary_only",
+        "rowNumber": 12
+      }
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_02",
+      "reviewEntryId": "review_absorb_manual_transcription_02",
+      "taskId": "absorb_manual_transcription_02",
+      "sourcePackCardId": "fill_pack_04_absorb_manual_transcription_02",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1313",
+      "pageNumber": 2,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1313/page-02.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1313/page-02.png",
+      "candidateId": "candidate_batch_01_page_02",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "awaiting_real_reviewer_fill",
+      "reviewerName": "Fixture Source-Fit Reviewer",
+      "reviewedAt": "2026-06-22T00:00:00.000Z",
+      "packQualityRequirements": {
+        "riskTermFlags": [
+          "entry_language",
+          "stop_loss_language",
+          "risk_reward_language",
+          "right_side_confirmation_language"
+        ],
+        "riskRewriteChecklist": [
+          {
+            "flag": "entry_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "stop_loss_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "risk_reward_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "right_side_confirmation_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          }
+        ],
+        "qualityLintRules": [
+          "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+          "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+          "riskRewriteNotes must address every riskTermFlag before validation, especially entry_language, stop_loss_language, position_language, specific_price_levels, risk_reward_language.",
+          "publicReferenceNotes must name public grounding needed for terminology, chart examples, cycle concepts, or case-study claims.",
+          "originalityNotes must confirm private course wording was not copied into learner-facing content."
+        ],
+        "uncertainRegions": [
+          "Exact chart labels and some chart-side text require human confirmation.",
+          "Some bullet indentation and sub-bullet ordering may need reviewer cleanup."
+        ],
+        "candidateSummary": "This page can support a lesson on evidence stacking across cycles: use moving-average context, repeated tests, volume/structure confirmation, and false-breakout awareness as study prompts rather than action signals.",
+        "warning": "Do not copy machine candidate text as human transcription. Verify against the high-resolution preview."
+      },
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "publicReferenceNotes": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization.",
+        "originalityNotes": "",
+        "riskRewriteNotes": "",
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        },
+        "sourceFitNote": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization."
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially entry_language, stop_loss_language, position_language, specific_price_levels, risk_reward_language.",
+        "Public reference notes identify terminology, chart examples, cycle concepts, or case-study claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_04_input_then_apply_dry_run_only",
+      "sourceTemplatePath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_04_INPUT_COPY_TEMPLATE.json",
+      "bundleInputStatus": "reviewer_owned_copy_blank",
+      "fixtureOnlyReason": "Positive control for source-fit validator. Not real human review and cannot authorize writes.",
+      "sourceFitFixture": {
+        "fixtureOnly": true,
+        "guideRowId": "source_fit_input_guide_13",
+        "suggestedRefId": "wikipedia:32033902",
+        "allowedDecisionValue": "confirm_public_refs_support_neutral_vocabulary_only",
+        "rowNumber": 13
+      }
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_03",
+      "reviewEntryId": "review_absorb_manual_transcription_03",
+      "taskId": "absorb_manual_transcription_03",
+      "sourcePackCardId": "fill_pack_04_absorb_manual_transcription_03",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1313",
+      "pageNumber": 3,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1313/page-03.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1313/page-03.png",
+      "candidateId": "candidate_batch_01_page_03",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "awaiting_real_reviewer_fill",
+      "reviewerName": "Fixture Source-Fit Reviewer",
+      "reviewedAt": "2026-06-22T00:00:00.000Z",
+      "packQualityRequirements": {
+        "riskTermFlags": [
+          "pattern_signal_language",
+          "pressure_level_language",
+          "risk_reward_language",
+          "entry_avoidance_language"
+        ],
+        "riskRewriteChecklist": [
+          {
+            "flag": "pattern_signal_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "pressure_level_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "risk_reward_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "entry_avoidance_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          }
+        ],
+        "qualityLintRules": [
+          "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+          "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+          "riskRewriteNotes must address every riskTermFlag before validation, especially entry_language, stop_loss_language, position_language, specific_price_levels, risk_reward_language.",
+          "publicReferenceNotes must name public grounding needed for terminology, chart examples, cycle concepts, or case-study claims.",
+          "originalityNotes must confirm private course wording was not copied into learner-facing content."
+        ],
+        "uncertainRegions": [
+          "Exact wedge chart annotations are partially legible but should be checked.",
+          "The risk-reward example needs careful rewriting so it does not become performance guidance."
+        ],
+        "candidateSummary": "This page can be transformed into a classroom concept on pattern recognition and multi-period coordination: describe wedge/three-push forms as observation vocabulary, then require learners to state uncertainty, confirmation needs, and when not to act.",
+        "warning": "Do not copy machine candidate text as human transcription. Verify against the high-resolution preview."
+      },
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "publicReferenceNotes": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization.",
+        "originalityNotes": "",
+        "riskRewriteNotes": "",
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        },
+        "sourceFitNote": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization."
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially entry_language, stop_loss_language, position_language, specific_price_levels, risk_reward_language.",
+        "Public reference notes identify terminology, chart examples, cycle concepts, or case-study claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_04_input_then_apply_dry_run_only",
+      "sourceTemplatePath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_04_INPUT_COPY_TEMPLATE.json",
+      "bundleInputStatus": "reviewer_owned_copy_blank",
+      "fixtureOnlyReason": "Positive control for source-fit validator. Not real human review and cannot authorize writes.",
+      "sourceFitFixture": {
+        "fixtureOnly": true,
+        "guideRowId": "source_fit_input_guide_14",
+        "suggestedRefId": "wikipedia:32033902",
+        "allowedDecisionValue": "confirm_public_refs_support_neutral_vocabulary_only",
+        "rowNumber": 14
+      }
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_04",
+      "reviewEntryId": "review_absorb_manual_transcription_04",
+      "taskId": "absorb_manual_transcription_04",
+      "sourcePackCardId": "fill_pack_04_absorb_manual_transcription_04",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1313",
+      "pageNumber": 4,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1313/page-04.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1313/page-04.png",
+      "candidateId": "candidate_batch_01_page_04",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "awaiting_real_reviewer_fill",
+      "reviewerName": "Fixture Source-Fit Reviewer",
+      "reviewedAt": "2026-06-22T00:00:00.000Z",
+      "packQualityRequirements": {
+        "riskTermFlags": [
+          "order_management_language",
+          "position_language",
+          "entry_language",
+          "risk_control_language",
+          "specific_price_levels"
+        ],
+        "riskRewriteChecklist": [
+          {
+            "flag": "order_management_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "position_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "entry_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "risk_control_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "specific_price_levels",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          }
+        ],
+        "qualityLintRules": [
+          "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+          "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+          "riskRewriteNotes must address every riskTermFlag before validation, especially entry_language, stop_loss_language, position_language, specific_price_levels, risk_reward_language.",
+          "publicReferenceNotes must name public grounding needed for terminology, chart examples, cycle concepts, or case-study claims.",
+          "originalityNotes must confirm private course wording was not copied into learner-facing content."
+        ],
+        "uncertainRegions": [
+          "Some numerical ranges and chart labels need human confirmation.",
+          "Several source bullets use operational trading wording that must be rewritten before any learner-facing use."
+        ],
+        "candidateSummary": "This page can be rewritten as an education-only review of cycle conflict and decision hygiene: learners practice separating context, structure verification, order-management vocabulary, and risk-control language without receiving a trade setup.",
+        "warning": "Do not copy machine candidate text as human transcription. Verify against the high-resolution preview."
+      },
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "publicReferenceNotes": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization.",
+        "originalityNotes": "",
+        "riskRewriteNotes": "",
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        },
+        "sourceFitNote": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization."
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially entry_language, stop_loss_language, position_language, specific_price_levels, risk_reward_language.",
+        "Public reference notes identify terminology, chart examples, cycle concepts, or case-study claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_04_input_then_apply_dry_run_only",
+      "sourceTemplatePath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_04_INPUT_COPY_TEMPLATE.json",
+      "bundleInputStatus": "reviewer_owned_copy_blank",
+      "fixtureOnlyReason": "Positive control for source-fit validator. Not real human review and cannot authorize writes.",
+      "sourceFitFixture": {
+        "fixtureOnly": true,
+        "guideRowId": "source_fit_input_guide_15",
+        "suggestedRefId": "wikipedia:32033902",
+        "allowedDecisionValue": "confirm_public_refs_support_neutral_vocabulary_only",
+        "rowNumber": 15
+      }
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_05",
+      "reviewEntryId": "review_absorb_manual_transcription_05",
+      "taskId": "absorb_manual_transcription_05",
+      "sourcePackCardId": "fill_pack_05_absorb_manual_transcription_05",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1313",
+      "pageNumber": 5,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1313/page-05.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1313/page-05.png",
+      "candidateId": "candidate_batch_02_page_01",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "awaiting_real_reviewer_fill",
+      "reviewerName": "Fixture Source-Fit Reviewer",
+      "reviewedAt": "2026-06-22T00:00:00.000Z",
+      "packQualityRequirements": {
+        "riskTermFlags": [
+          "profit_loss_language",
+          "cycle_switching_language",
+          "specific_price_levels",
+          "indicator_parameter_language",
+          "signal_language"
+        ],
+        "riskRewriteChecklist": [
+          {
+            "flag": "profit_loss_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "cycle_switching_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "specific_price_levels",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "indicator_parameter_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "signal_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          }
+        ],
+        "qualityLintRules": [
+          "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+          "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+          "riskRewriteNotes must address every riskTermFlag before validation, especially signal_language, execution_strategy_language, pending_order_language, stop_loss_language, target_area_language, profit_loss_language.",
+          "publicReferenceNotes must name public grounding needed for terminology, chart examples, cycle concepts, or case-study claims.",
+          "originalityNotes must confirm private course wording was not copied into learner-facing content."
+        ],
+        "uncertainRegions": [
+          "Exact numeric levels and percentage references need human confirmation.",
+          "The first chart annotations and several short bullets are partially legible."
+        ],
+        "candidateSummary": "This page should be rewritten as a study checklist for evidence validity: learners compare completed versus unfinished structures, review when cycle switching creates confusion, and treat indicator/level references as examples for observation rather than instructions.",
+        "warning": "Do not copy machine candidate text as human transcription. Verify against the high-resolution preview."
+      },
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "publicReferenceNotes": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization.",
+        "originalityNotes": "",
+        "riskRewriteNotes": "",
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        },
+        "sourceFitNote": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization."
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal_language, execution_strategy_language, pending_order_language, stop_loss_language, target_area_language, profit_loss_language.",
+        "Public reference notes identify terminology, chart examples, cycle concepts, or case-study claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_05_input_then_apply_dry_run_only",
+      "sourceTemplatePath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_05_INPUT_COPY_TEMPLATE.json",
+      "bundleInputStatus": "reviewer_owned_copy_blank",
+      "fixtureOnlyReason": "Positive control for source-fit validator. Not real human review and cannot authorize writes.",
+      "sourceFitFixture": {
+        "fixtureOnly": true,
+        "guideRowId": "source_fit_input_guide_16",
+        "suggestedRefId": "wikipedia:32033902",
+        "allowedDecisionValue": "confirm_public_refs_support_neutral_vocabulary_only",
+        "rowNumber": 16
+      }
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_06",
+      "reviewEntryId": "review_absorb_manual_transcription_06",
+      "taskId": "absorb_manual_transcription_06",
+      "sourcePackCardId": "fill_pack_05_absorb_manual_transcription_06",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1313",
+      "pageNumber": 6,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1313/page-06.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1313/page-06.png",
+      "candidateId": "candidate_batch_02_page_02",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "awaiting_real_reviewer_fill",
+      "reviewerName": "Fixture Source-Fit Reviewer",
+      "reviewedAt": "2026-06-22T00:00:00.000Z",
+      "packQualityRequirements": {
+        "riskTermFlags": [
+          "execution_strategy_language",
+          "pending_order_language",
+          "retracement_level_language",
+          "signal_confirmation_language",
+          "small_cycle_language",
+          "risk_control_language"
+        ],
+        "riskRewriteChecklist": [
+          {
+            "flag": "execution_strategy_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "pending_order_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "retracement_level_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "signal_confirmation_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "small_cycle_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "risk_control_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          }
+        ],
+        "qualityLintRules": [
+          "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+          "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+          "riskRewriteNotes must address every riskTermFlag before validation, especially signal_language, execution_strategy_language, pending_order_language, stop_loss_language, target_area_language, profit_loss_language.",
+          "publicReferenceNotes must name public grounding needed for terminology, chart examples, cycle concepts, or case-study claims.",
+          "originalityNotes must confirm private course wording was not copied into learner-facing content."
+        ],
+        "uncertainRegions": [
+          "Some chart labels and exact retracement ranges require human verification.",
+          "The execution-strategy bullets must be carefully rewritten to avoid instructions."
+        ],
+        "candidateSummary": "This page can support an education-only lesson on structural confirmation and false precision: learners identify when a visible pattern still lacks sufficient evidence, then explain why very small-cycle signals and fragmented setups can create review errors.",
+        "warning": "Do not copy machine candidate text as human transcription. Verify against the high-resolution preview."
+      },
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "publicReferenceNotes": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:564701 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization.",
+        "originalityNotes": "",
+        "riskRewriteNotes": "",
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        },
+        "sourceFitNote": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:564701 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization."
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal_language, execution_strategy_language, pending_order_language, stop_loss_language, target_area_language, profit_loss_language.",
+        "Public reference notes identify terminology, chart examples, cycle concepts, or case-study claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_05_input_then_apply_dry_run_only",
+      "sourceTemplatePath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_05_INPUT_COPY_TEMPLATE.json",
+      "bundleInputStatus": "reviewer_owned_copy_blank",
+      "fixtureOnlyReason": "Positive control for source-fit validator. Not real human review and cannot authorize writes.",
+      "sourceFitFixture": {
+        "fixtureOnly": true,
+        "guideRowId": "source_fit_input_guide_17",
+        "suggestedRefId": "wikipedia:564701",
+        "allowedDecisionValue": "confirm_public_refs_support_neutral_vocabulary_only",
+        "rowNumber": 17
+      }
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_07",
+      "reviewEntryId": "review_absorb_manual_transcription_07",
+      "taskId": "absorb_manual_transcription_07",
+      "sourcePackCardId": "fill_pack_05_absorb_manual_transcription_07",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1313",
+      "pageNumber": 7,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1313/page-07.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1313/page-07.png",
+      "candidateId": "candidate_batch_02_page_03",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "awaiting_real_reviewer_fill",
+      "reviewerName": "Fixture Source-Fit Reviewer",
+      "reviewedAt": "2026-06-22T00:00:00.000Z",
+      "packQualityRequirements": {
+        "riskTermFlags": [
+          "signal_confirmation_language",
+          "support_position_language",
+          "position_management_language",
+          "cycle_switching_language",
+          "difficulty_rating_language"
+        ],
+        "riskRewriteChecklist": [
+          {
+            "flag": "signal_confirmation_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "support_position_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "position_management_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "cycle_switching_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "difficulty_rating_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          }
+        ],
+        "qualityLintRules": [
+          "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+          "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+          "riskRewriteNotes must address every riskTermFlag before validation, especially signal_language, execution_strategy_language, pending_order_language, stop_loss_language, target_area_language, profit_loss_language.",
+          "publicReferenceNotes must name public grounding needed for terminology, chart examples, cycle concepts, or case-study claims.",
+          "originalityNotes must confirm private course wording was not copied into learner-facing content."
+        ],
+        "uncertainRegions": [
+          "Some table cells are small and require reviewer verification.",
+          "Star ratings are visible but should be treated as source difficulty hints, not product grading until reviewed."
+        ],
+        "candidateSummary": "This page is useful as a structured curriculum map: convert the source table into a learner-facing concept taxonomy covering cycle relationship, pattern recognition, review mistakes, uncertainty, and difficulty level without preserving operational trade actions.",
+        "warning": "Do not copy machine candidate text as human transcription. Verify against the high-resolution preview."
+      },
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "publicReferenceNotes": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization.",
+        "originalityNotes": "",
+        "riskRewriteNotes": "",
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        },
+        "sourceFitNote": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization."
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal_language, execution_strategy_language, pending_order_language, stop_loss_language, target_area_language, profit_loss_language.",
+        "Public reference notes identify terminology, chart examples, cycle concepts, or case-study claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_05_input_then_apply_dry_run_only",
+      "sourceTemplatePath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_05_INPUT_COPY_TEMPLATE.json",
+      "bundleInputStatus": "reviewer_owned_copy_blank",
+      "fixtureOnlyReason": "Positive control for source-fit validator. Not real human review and cannot authorize writes.",
+      "sourceFitFixture": {
+        "fixtureOnly": true,
+        "guideRowId": "source_fit_input_guide_18",
+        "suggestedRefId": "wikipedia:32033902",
+        "allowedDecisionValue": "confirm_public_refs_support_neutral_vocabulary_only",
+        "rowNumber": 18
+      }
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_08",
+      "reviewEntryId": "review_absorb_manual_transcription_08",
+      "taskId": "absorb_manual_transcription_08",
+      "sourcePackCardId": "fill_pack_05_absorb_manual_transcription_08",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1313",
+      "pageNumber": 8,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1313/page-08.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1313/page-08.png",
+      "candidateId": "candidate_batch_02_page_04",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "awaiting_real_reviewer_fill",
+      "reviewerName": "Fixture Source-Fit Reviewer",
+      "reviewedAt": "2026-06-22T00:00:00.000Z",
+      "packQualityRequirements": {
+        "riskTermFlags": [
+          "entry_language",
+          "target_area_language",
+          "stop_loss_language",
+          "profit_loss_language",
+          "specific_price_levels",
+          "case_study_language"
+        ],
+        "riskRewriteChecklist": [
+          {
+            "flag": "entry_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "target_area_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "stop_loss_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "profit_loss_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "specific_price_levels",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "case_study_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          }
+        ],
+        "qualityLintRules": [
+          "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+          "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+          "riskRewriteNotes must address every riskTermFlag before validation, especially signal_language, execution_strategy_language, pending_order_language, stop_loss_language, target_area_language, profit_loss_language.",
+          "publicReferenceNotes must name public grounding needed for terminology, chart examples, cycle concepts, or case-study claims.",
+          "originalityNotes must confirm private course wording was not copied into learner-facing content."
+        ],
+        "uncertainRegions": [
+          "The table starts mid-row from the previous page; reviewer should merge it with page 7 before final transcription.",
+          "Specific level ranges and case labels require human confirmation."
+        ],
+        "candidateSummary": "This page can become a reviewer-only source for a lesson-map appendix: summarize cycle-switching logic and case-analysis vocabulary as conceptual review prompts, while replacing target/stop/profit wording with neutral evidence, uncertainty, and risk-boundary language.",
+        "warning": "Do not copy machine candidate text as human transcription. Verify against the high-resolution preview."
+      },
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "publicReferenceNotes": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization.",
+        "originalityNotes": "",
+        "riskRewriteNotes": "",
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        },
+        "sourceFitNote": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:32033902 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization."
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal_language, execution_strategy_language, pending_order_language, stop_loss_language, target_area_language, profit_loss_language.",
+        "Public reference notes identify terminology, chart examples, cycle concepts, or case-study claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_05_input_then_apply_dry_run_only",
+      "sourceTemplatePath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_05_INPUT_COPY_TEMPLATE.json",
+      "bundleInputStatus": "reviewer_owned_copy_blank",
+      "fixtureOnlyReason": "Positive control for source-fit validator. Not real human review and cannot authorize writes.",
+      "sourceFitFixture": {
+        "fixtureOnly": true,
+        "guideRowId": "source_fit_input_guide_19",
+        "suggestedRefId": "wikipedia:32033902",
+        "allowedDecisionValue": "confirm_public_refs_support_neutral_vocabulary_only",
+        "rowNumber": 19
+      }
+    },
+    {
+      "id": "input_copy_absorb_source_replacement_01",
+      "reviewEntryId": "review_absorb_source_replacement_01",
+      "taskId": "absorb_source_replacement_01",
+      "sourcePackEntryId": "source_replacement_review_absorb_source_replacement_01",
+      "decisionRowId": "decision_corpus_1329_page_01",
+      "category": "source_replacement",
+      "sourceRelativePath": "系统课02进阶/19_9119：高中毕业集训总结年后展望_笔记.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1329",
+      "pageNumber": 1,
+      "previewPath": "docs/local-course-low-extraction-previews/corpus_1329/page-01.png",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "awaiting_real_reviewer_fill",
+      "reviewerName": "Fixture Source-Fit Reviewer",
+      "reviewedAt": "2026-06-22T00:00:00.000Z",
+      "decisionInput": {
+        "allowedDecisions": [
+          "locate_external_original",
+          "reexport_blank_source",
+          "use_neighbor_as_context_only",
+          "mark_unrecoverable"
+        ],
+        "selectedDecision": "",
+        "selectedCandidateSourceId": "",
+        "selectedCandidateRelativePath": "",
+        "candidateCount": 8,
+        "directReplacementCandidateCount": 0,
+        "recommendedAction": "no_direct_replacement_found_review_neighbor_candidates_or_locate_external_original",
+        "topCandidates": [
+          {
+            "sourceId": "local-investment-course:f96c261ca07af83063d8650f",
+            "relativePath": "系统课02进阶/01_9101：集训不是一时，而是一世_笔记.pdf",
+            "module": "系统课02进阶",
+            "bytes": 1599485,
+            "sameModule": true,
+            "exactNumberHits": 1,
+            "similarity": 0.667,
+            "score": 82,
+            "confidence": "context_reference_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          },
+          {
+            "sourceId": "local-investment-course:0a62ca3e5d674b90ecaa34e4",
+            "relativePath": "系统课02进阶/16_9116：精讲ioi形态_笔记(1).pdf",
+            "module": "系统课02进阶",
+            "bytes": 1681867,
+            "sameModule": true,
+            "exactNumberHits": 1,
+            "similarity": 0.588,
+            "score": 79,
+            "confidence": "context_reference_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          },
+          {
+            "sourceId": "local-investment-course:527bde430f2d5b0a372047ba",
+            "relativePath": "系统课02进阶/09_9109：小周期寻找机会 集训第一名 ”共同富裕“ “持仓练习_笔记(2).pdf",
+            "module": "系统课02进阶",
+            "bytes": 3967400,
+            "sameModule": true,
+            "exactNumberHits": 1,
+            "similarity": 0.545,
+            "score": 77,
+            "confidence": "context_reference_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          },
+          {
+            "sourceId": "local-investment-course:025ecefd4b00ced52344996c",
+            "relativePath": "系统课02进阶/10_9110：盘一盘DOT 集训告一段落 痛苦加反思=进步_笔记.pdf",
+            "module": "系统课02进阶",
+            "bytes": 2305693,
+            "sameModule": true,
+            "exactNumberHits": 1,
+            "similarity": 0.545,
+            "score": 77,
+            "confidence": "context_reference_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          },
+          {
+            "sourceId": "local-investment-course:b5b4c39142943d0ce8bcc583",
+            "relativePath": "系统课02进阶/12_9112：OBS录屏怎么用？ 集训分数不理想怎么办？_笔记.pdf",
+            "module": "系统课02进阶",
+            "bytes": 2619323,
+            "sameModule": true,
+            "exactNumberHits": 1,
+            "similarity": 0.545,
+            "score": 77,
+            "confidence": "context_reference_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          }
+        ],
+        "qualityLintRules": [
+          "Reviewer must choose one allowed decision before validation.",
+          "No neighbor candidate can be treated as a direct replacement when directReplacementCandidateCount is 0.",
+          "replacementSourcePath must be a real reviewed path, a reexport evidence path, or an unrecoverable marker with rationale.",
+          "replacementNote must explain source identity, readability, and why private blank content was not inferred.",
+          "rerunEvidence must identify the harvest/preview/quality rerun evidence to inspect before any next gate."
+        ]
+      },
+      "manualInput": null,
+      "replacementInput": {
+        "replacementSourcePath": "",
+        "replacementNote": "",
+        "rerunEvidence": "",
+        "checklist": {
+          "sourceIdentityConfirmed": "not_started",
+          "replacementSourceReadable": "not_started",
+          "readablePreviewGenerated": "not_started",
+          "harvestRerunEvidenceAttached": "not_started",
+          "qualityAndIntakeRerunReady": "not_started"
+        },
+        "publicReferenceNotes": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:564701 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization."
+      },
+      "acceptanceCriteria": [
+        "Reviewer selected one allowed source replacement decision.",
+        "No neighbor candidate is treated as direct replacement unless independently confirmed.",
+        "Replacement note explains source identity, readability, and no inference from blank private content.",
+        "Rerun evidence names harvest, preview, or quality checks to inspect before the next gate.",
+        "Dry-run apply reports ready entries with writtenEntries:0 before any write authorization."
+      ],
+      "nextGate": "validate_source_replacement_input_then_apply_dry_run_only",
+      "sourceTemplatePath": "docs/LOCAL_COURSE_P0_SOURCE_REPLACEMENT_INPUT_COPY_TEMPLATE.json",
+      "bundleInputStatus": "reviewer_owned_copy_blank",
+      "fixtureOnlyReason": "Positive control for source-fit validator. Not real human review and cannot authorize writes.",
+      "sourceFitFixture": {
+        "fixtureOnly": true,
+        "guideRowId": "source_fit_input_guide_20",
+        "suggestedRefId": "wikipedia:564701",
+        "allowedDecisionValue": "confirm_public_refs_support_neutral_vocabulary_only",
+        "rowNumber": 20
+      }
+    },
+    {
+      "id": "input_copy_absorb_source_replacement_02",
+      "reviewEntryId": "review_absorb_source_replacement_02",
+      "taskId": "absorb_source_replacement_02",
+      "sourcePackEntryId": "source_replacement_review_absorb_source_replacement_02",
+      "decisionRowId": "decision_corpus_1431_page_01",
+      "category": "source_replacement",
+      "sourceRelativePath": "专享07庄家篇/14_0814-【复训】-分析行情挖掘机会_笔记.pdf",
+      "sourceModule": "专享07庄家篇",
+      "documentId": "corpus_1431",
+      "pageNumber": 1,
+      "previewPath": "docs/local-course-low-extraction-previews/corpus_1431/page-01.png",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "awaiting_real_reviewer_fill",
+      "reviewerName": "Fixture Source-Fit Reviewer",
+      "reviewedAt": "2026-06-22T00:00:00.000Z",
+      "decisionInput": {
+        "allowedDecisions": [
+          "locate_external_original",
+          "reexport_blank_source",
+          "use_neighbor_as_context_only",
+          "mark_unrecoverable"
+        ],
+        "selectedDecision": "",
+        "selectedCandidateSourceId": "",
+        "selectedCandidateRelativePath": "",
+        "candidateCount": 8,
+        "directReplacementCandidateCount": 0,
+        "recommendedAction": "no_direct_replacement_found_review_neighbor_candidates_or_locate_external_original",
+        "topCandidates": [
+          {
+            "sourceId": "local-investment-course:a75bc376e2fdcfba7e8d2349",
+            "relativePath": "专享07庄家篇/11_0811-【复训】-分析行情挖掘机会_笔记.pdf",
+            "module": "专享07庄家篇",
+            "bytes": 1930603,
+            "sameModule": true,
+            "exactNumberHits": 1,
+            "similarity": 1,
+            "score": 95,
+            "confidence": "same_module_neighbor_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          },
+          {
+            "sourceId": "local-investment-course:6e74cb3c6935da740ac2cae8",
+            "relativePath": "专享07庄家篇/17_0817-【复训】-分析行情挖掘机会_笔记.pdf",
+            "module": "专享07庄家篇",
+            "bytes": 3183730,
+            "sameModule": true,
+            "exactNumberHits": 1,
+            "similarity": 1,
+            "score": 95,
+            "confidence": "same_module_neighbor_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          },
+          {
+            "sourceId": "local-investment-course:cb981a8af7ad80a93b94be54",
+            "relativePath": "专享07庄家篇/20_0820-【复训】-分析行情挖掘机会_笔记(2).pdf",
+            "module": "专享07庄家篇",
+            "bytes": 3828393,
+            "sameModule": true,
+            "exactNumberHits": 1,
+            "similarity": 0.95,
+            "score": 93,
+            "confidence": "same_module_neighbor_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          },
+          {
+            "sourceId": "local-investment-course:7e7c3a0bf2e7d3ac1957733f",
+            "relativePath": "专享07庄家篇/25_0825-【复训】-分析行情挖掘机会_笔记(1).pdf",
+            "module": "专享07庄家篇",
+            "bytes": 3000597,
+            "sameModule": true,
+            "exactNumberHits": 1,
+            "similarity": 0.952,
+            "score": 93,
+            "confidence": "same_module_neighbor_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          },
+          {
+            "sourceId": "local-investment-course:904ee95edf60381edc60e473",
+            "relativePath": "专享07庄家篇/28_0828-【复训】-分析行情挖掘机会_笔记.pdf",
+            "module": "专享07庄家篇",
+            "bytes": 3651880,
+            "sameModule": true,
+            "exactNumberHits": 1,
+            "similarity": 0.95,
+            "score": 93,
+            "confidence": "same_module_neighbor_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          }
+        ],
+        "qualityLintRules": [
+          "Reviewer must choose one allowed decision before validation.",
+          "No neighbor candidate can be treated as a direct replacement when directReplacementCandidateCount is 0.",
+          "replacementSourcePath must be a real reviewed path, a reexport evidence path, or an unrecoverable marker with rationale.",
+          "replacementNote must explain source identity, readability, and why private blank content was not inferred.",
+          "rerunEvidence must identify the harvest/preview/quality rerun evidence to inspect before any next gate."
+        ]
+      },
+      "manualInput": null,
+      "replacementInput": {
+        "replacementSourcePath": "",
+        "replacementNote": "",
+        "rerunEvidence": "",
+        "checklist": {
+          "sourceIdentityConfirmed": "not_started",
+          "replacementSourceReadable": "not_started",
+          "readablePreviewGenerated": "not_started",
+          "harvestRerunEvidenceAttached": "not_started",
+          "qualityAndIntakeRerunReady": "not_started"
+        },
+        "publicReferenceNotes": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:564701 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization."
+      },
+      "acceptanceCriteria": [
+        "Reviewer selected one allowed source replacement decision.",
+        "No neighbor candidate is treated as direct replacement unless independently confirmed.",
+        "Replacement note explains source identity, readability, and no inference from blank private content.",
+        "Rerun evidence names harvest, preview, or quality checks to inspect before the next gate.",
+        "Dry-run apply reports ready entries with writtenEntries:0 before any write authorization."
+      ],
+      "nextGate": "validate_source_replacement_input_then_apply_dry_run_only",
+      "sourceTemplatePath": "docs/LOCAL_COURSE_P0_SOURCE_REPLACEMENT_INPUT_COPY_TEMPLATE.json",
+      "bundleInputStatus": "reviewer_owned_copy_blank",
+      "fixtureOnlyReason": "Positive control for source-fit validator. Not real human review and cannot authorize writes.",
+      "sourceFitFixture": {
+        "fixtureOnly": true,
+        "guideRowId": "source_fit_input_guide_21",
+        "suggestedRefId": "wikipedia:564701",
+        "allowedDecisionValue": "confirm_public_refs_support_neutral_vocabulary_only",
+        "rowNumber": 21
+      }
+    },
+    {
+      "id": "input_copy_absorb_source_replacement_03",
+      "reviewEntryId": "review_absorb_source_replacement_03",
+      "taskId": "absorb_source_replacement_03",
+      "sourcePackEntryId": "source_replacement_review_absorb_source_replacement_03",
+      "decisionRowId": "decision_corpus_1577_page_01",
+      "category": "source_replacement",
+      "sourceRelativePath": "K线怎么看/06_第6讲：常见的持仓信号-进攻金K（2）_笔记.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1577",
+      "pageNumber": 1,
+      "previewPath": "docs/local-course-low-extraction-previews/corpus_1577/page-01.png",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "awaiting_real_reviewer_fill",
+      "reviewerName": "Fixture Source-Fit Reviewer",
+      "reviewedAt": "2026-06-22T00:00:00.000Z",
+      "decisionInput": {
+        "allowedDecisions": [
+          "locate_external_original",
+          "reexport_blank_source",
+          "use_neighbor_as_context_only",
+          "mark_unrecoverable"
+        ],
+        "selectedDecision": "",
+        "selectedCandidateSourceId": "",
+        "selectedCandidateRelativePath": "",
+        "candidateCount": 7,
+        "directReplacementCandidateCount": 0,
+        "recommendedAction": "no_direct_replacement_found_review_neighbor_candidates_or_locate_external_original",
+        "topCandidates": [
+          {
+            "sourceId": "local-investment-course:c4068d894bc46a9ed356290c",
+            "relativePath": "K线怎么看/05_第5讲：常见的持仓信号-进攻金K（1）_笔记.pdf",
+            "module": "K线怎么看",
+            "bytes": 1681900,
+            "sameModule": true,
+            "exactNumberHits": 0,
+            "similarity": 0.905,
+            "score": 71,
+            "confidence": "context_reference_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          },
+          {
+            "sourceId": "local-investment-course:5fac415cc7b1ec575e5a4e16",
+            "relativePath": "K线怎么看/04_第4讲：常见的入场信号-反转金K（2）_笔记.pdf",
+            "module": "K线怎么看",
+            "bytes": 2393329,
+            "sameModule": true,
+            "exactNumberHits": 0,
+            "similarity": 0.762,
+            "score": 65,
+            "confidence": "context_reference_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          },
+          {
+            "sourceId": "local-investment-course:19bdb5ad718d0a4530de54b5",
+            "relativePath": "K线怎么看/02_第2讲：精讲十字星_笔记(2).pdf",
+            "module": "K线怎么看",
+            "bytes": 1395346,
+            "sameModule": true,
+            "exactNumberHits": 0,
+            "similarity": 0.714,
+            "score": 64,
+            "confidence": "context_reference_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          },
+          {
+            "sourceId": "local-investment-course:78fbb4b0d1efcf15f81929d0",
+            "relativePath": "K线怎么看/03_第3讲：常见的入场信号-反转金K（1）_笔记.pdf",
+            "module": "K线怎么看",
+            "bytes": 3144130,
+            "sameModule": true,
+            "exactNumberHits": 0,
+            "similarity": 0.714,
+            "score": 64,
+            "confidence": "context_reference_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          },
+          {
+            "sourceId": "local-investment-course:f390dee75d94382750f1e74a",
+            "relativePath": "K线怎么看/07_第7讲：复训12金K_笔记.pdf",
+            "module": "K线怎么看",
+            "bytes": 3269382,
+            "sameModule": true,
+            "exactNumberHits": 0,
+            "similarity": 0.733,
+            "score": 64,
+            "confidence": "context_reference_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          }
+        ],
+        "qualityLintRules": [
+          "Reviewer must choose one allowed decision before validation.",
+          "No neighbor candidate can be treated as a direct replacement when directReplacementCandidateCount is 0.",
+          "replacementSourcePath must be a real reviewed path, a reexport evidence path, or an unrecoverable marker with rationale.",
+          "replacementNote must explain source identity, readability, and why private blank content was not inferred.",
+          "rerunEvidence must identify the harvest/preview/quality rerun evidence to inspect before any next gate."
+        ]
+      },
+      "manualInput": null,
+      "replacementInput": {
+        "replacementSourcePath": "",
+        "replacementNote": "",
+        "rerunEvidence": "",
+        "checklist": {
+          "sourceIdentityConfirmed": "not_started",
+          "replacementSourceReadable": "not_started",
+          "readablePreviewGenerated": "not_started",
+          "harvestRerunEvidenceAttached": "not_started",
+          "qualityAndIntakeRerunReady": "not_started"
+        },
+        "publicReferenceNotes": "decision:confirm_public_refs_support_neutral_vocabulary_only source ids:wikipedia:564701 source role: public refs support neutral vocabulary, taxonomy, attribution-aware context, and source-boundary review only. claim boundary: these refs do not prove a setup, signal, future outcome, strategy edge, or real-money action. originality/no copy: fixture note uses original wording and does not copy private course wording or public-source passages. release boundary: this is fixture-only validation control, not learner-facing approval, not write authorization."
+      },
+      "acceptanceCriteria": [
+        "Reviewer selected one allowed source replacement decision.",
+        "No neighbor candidate is treated as direct replacement unless independently confirmed.",
+        "Replacement note explains source identity, readability, and no inference from blank private content.",
+        "Rerun evidence names harvest, preview, or quality checks to inspect before the next gate.",
+        "Dry-run apply reports ready entries with writtenEntries:0 before any write authorization."
+      ],
+      "nextGate": "validate_source_replacement_input_then_apply_dry_run_only",
+      "sourceTemplatePath": "docs/LOCAL_COURSE_P0_SOURCE_REPLACEMENT_INPUT_COPY_TEMPLATE.json",
+      "bundleInputStatus": "reviewer_owned_copy_blank",
+      "fixtureOnlyReason": "Positive control for source-fit validator. Not real human review and cannot authorize writes.",
+      "sourceFitFixture": {
+        "fixtureOnly": true,
+        "guideRowId": "source_fit_input_guide_22",
+        "suggestedRefId": "wikipedia:564701",
+        "allowedDecisionValue": "confirm_public_refs_support_neutral_vocabulary_only",
+        "rowNumber": 22
+      }
+    }
+  ],
+  "usage": [
+    "Fill this reviewer-owned copy, not the generated source template.",
+    "A real reviewer must inspect each preview/high-res preview before writing reviewerName, reviewedAt, transcription, summary, source-fit, and rewrite-boundary notes.",
+    "Run validation against this copy; do not write overlay changes from a blank or fixture file."
+  ],
+  "completionRule": "This positive fixture proves the source-fit validator can pass safe boundary-shaped notes. It is fixture-only, does not create real reviewer judgment, does not approve learner-facing citations, and does not authorize overlay writes.",
+  "boundary": "P0 source-fit positive fixture is reviewer-facing education-only test material. It validates the machine gate shape only; it is not real human input, not learner-facing approval, not a stock recommendation, not a live signal, not a return promise, not a broker workflow, not automation, and not real-money guidance.",
+  "starterGeneratedAt": "2026-06-22T00:15:14.209Z",
+  "sourceTemplatePath": "docs/LOCAL_COURSE_P0_HUMAN_REVIEW_BUNDLE_INPUT_COPY_TEMPLATE.json",
+  "reviewerOwnedCopy": true,
+  "inputDraftStatus": "blank_reviewer_owned_copy_write_blocked",
+  "validationPath": "docs/LOCAL_COURSE_P0_REAL_REVIEWER_INPUT_STARTER_VALIDATION.json",
+  "fixtureStatus": "p0_real_reviewer_source_fit_positive_fixture_ready",
+  "fixtureMode": "positive_control_for_source_fit_validator_only",
+  "sourceDraftInput": "docs/reviewer-inputs/LOCAL_COURSE_P0_HUMAN_REVIEW_BUNDLE_REAL_INPUT_DRAFT.json",
+  "sourceGuide": "docs/LOCAL_COURSE_P0_REAL_REVIEWER_SOURCE_FIT_INPUT_GUIDE.json",
+  "validationJsonPath": "docs/LOCAL_COURSE_P0_REAL_REVIEWER_SOURCE_FIT_POSITIVE_FIXTURE_VALIDATION.json",
+  "validationMdPath": "docs/LOCAL_COURSE_P0_REAL_REVIEWER_SOURCE_FIT_POSITIVE_FIXTURE_VALIDATION.md",
+  "filledSourceFitEntries": 22,
+  "realHumanInputEntries": 0,
+  "generatedDecisions": 0,
+  "learnerCitationApprovedRows": 0,
+  "writeAllowedNow": false,
+  "manualAuthorizationRequired": true
+}

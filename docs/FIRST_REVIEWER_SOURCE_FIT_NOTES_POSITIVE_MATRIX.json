@@ -1,0 +1,65 @@
+{
+  "generatedAt": "2026-06-19T09:47:12.994Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "matrixReady": true,
+  "matrixMode": "sample_only_future_sourceFitNotes_positive_shape_matrix",
+  "sampleOnly": true,
+  "appliesToRealOverlay": false,
+  "realStatusPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "realStatusOverlayPresent": false,
+  "allowedDecisionValues": [
+    "confirm_direct_evidence_after_human_review",
+    "downgrade_to_boundary_only",
+    "blocked_needs_rewrite_or_source_replacement"
+  ],
+  "decisionSamples": 3,
+  "passedSamples": 3,
+  "failedSamples": 0,
+  "sourceRefsChecked": 8,
+  "sampleRows": [
+    {
+      "decisionValue": "confirm_direct_evidence_after_human_review",
+      "sourceFamily": "SEC",
+      "intendedUse": "future direct filing-literacy support only after human source inspection",
+      "note": "decision: confirm_direct_evidence_after_human_review. source role: SEC is treated as direct evidence for filing-literacy mechanics, not chart interpretation after a human checks the source title, metadata, and document role. claim: the lesson claim is narrowed to reading filing metadata and event context; no chart outcome or trading action is inferred. rewrite action: rewrite the source reference as filing-literacy support and remove any wording that treats the filing as market direction. Keep the lesson as structural_draft until separate human review is complete. source identity basis: source id and filing metadata are recorded from the reviewer-inspected SEC document title and metadata. no-copy originality check: write original reviewer prose only; do not copy external source body text into notes or lesson copy.",
+      "sourceCandidateRows": 1,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "decisionValue": "downgrade_to_boundary_only",
+      "sourceFamily": "BLS",
+      "intendedUse": "macro-data context without direct chart proof",
+      "note": "decision: downgrade_to_boundary_only. source role: BLS is treated as macro-data context and source-boundary evidence only after a human checks the source title, metadata, and document role. claim: the source can explain CPI or employment release context, but it does not directly support a candlestick, liquidity, or pattern claim. rewrite action: downgrade the citation to boundary-only context and rewrite the lesson claim so macro data is separated from chart observation. Keep the lesson as structural_draft until separate human review is complete. source identity basis: release table title, source id, and metadata are recorded without copying table text. no-copy originality check: write original reviewer prose only; do not copy external source body text into notes or lesson copy.",
+      "sourceCandidateRows": 1,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "decisionValue": "blocked_needs_rewrite_or_source_replacement",
+      "sourceFamily": "CFTC",
+      "intendedUse": "block when fraud education is being misused as direct pattern evidence",
+      "note": "decision: blocked_needs_rewrite_or_source_replacement. source role: CFTC is treated as fraud-risk education, unsuitable for direct chart or execution claims after a human checks the source title, metadata, and document role. claim: the current lesson claim asks the source to support a pattern-specific market interpretation that this fraud-education source does not support. rewrite action: block the source fit until the lesson is rewritten as fraud-risk literacy or a better direct source is selected. Keep the lesson as structural_draft until separate human review is complete. source identity basis: document role, title metadata, and source id show investor-protection context rather than technical chart evidence. no-copy originality check: write original reviewer prose only; do not copy external source body text into notes or lesson copy.",
+      "sourceCandidateRows": 2,
+      "issues": [],
+      "passed": true
+    }
+  ],
+  "confirmedDecisions": 0,
+  "approvalReviewCandidates": 0,
+  "commercialReadyPromotions": 0,
+  "writeAllowedNow": false,
+  "manualDecisionRequired": true,
+  "humanAuthorizationRecorded": false,
+  "sourceReports": {
+    "sourceFitDecisionSummary": "docs/FIRST_REVIEWER_SOURCE_FIT_DECISION_SUMMARY.json",
+    "sourceFitNotesCardPack": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_CARD_PACK.json",
+    "sourceFitNotesCardNegativeCases": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_CARD_NEGATIVE_CASES.json",
+    "sourceFitNotesAcceptance": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_ACCEPTANCE.json"
+  },
+  "boundary": "This positive matrix is sample-only reviewer training scaffolding. It does not create docs/LESSON_BATCH_REVIEW_STATUS.json, fill human notes, confirm source use, approve lessons, publish learner-facing content, promote grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, guide real-money decisions, or make the product production-ready."
+}

@@ -1,0 +1,92 @@
+{
+  "generatedAt": "2026-06-22T07:09:46.579Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "completionGateStatus": "first_reviewer_completion_gate_blocked_missing_real_input",
+  "gateMode": "first_20_actions_257_work_items_completion_gate",
+  "fieldMapStatus": "first_reviewer_field_map_ready_blocked_on_real_input",
+  "handoffStatus": "first_reviewer_action_handoff_ready_blocked_on_real_input",
+  "handoffActionRows": 20,
+  "mappedActionRows": 20,
+  "requiredWorkItems": 257,
+  "readyWorkItems": 0,
+  "blockedWorkItems": 257,
+  "highRiskReviewerNoteFields": 72,
+  "highRiskReadyReviewerNotes": 0,
+  "highRiskBlockedReviewerNotes": 72,
+  "directSourceDecisionFields": 5,
+  "readyDirectSourceDecisions": 0,
+  "blockedDirectSourceDecisions": 5,
+  "sourceFitReviewRows": 180,
+  "readySourceFitReviewRows": 0,
+  "blockedSourceFitReviewRows": 180,
+  "missingSourceFitFieldRows": 180,
+  "realHumanInputEntries": 0,
+  "learnerCitationApprovedRows": 0,
+  "learnerReleaseReadyModules": 0,
+  "writeAllowedNow": false,
+  "manualAuthorizationRequired": true,
+  "readyForSeparateApproval": false,
+  "inputPaths": [
+    "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+    "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_001_INPUT_COPY_TEMPLATE.json",
+    "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_002_INPUT_COPY_TEMPLATE.json",
+    "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_003_INPUT_COPY_TEMPLATE.json"
+  ],
+  "validationPaths": [
+    "docs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_INPUT_VALIDATION.json",
+    "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_INPUT_COPY_TEMPLATE_VALIDATION.json",
+    "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_002_INPUT_COPY_TEMPLATE_VALIDATION.json",
+    "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_003_INPUT_COPY_TEMPLATE_VALIDATION.json"
+  ],
+  "gateRows": [
+    {
+      "gateId": "high_risk_reviewer_notes",
+      "label": "72 high-risk reviewer notes",
+      "inputPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "validationPath": "docs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_INPUT_VALIDATION.json",
+      "requiredItems": 72,
+      "readyItems": 0,
+      "blockedItems": 72,
+      "validationStatus": "blocked_missing_real_reviewer_overlay_input",
+      "nextAction": "Fill every mapped realReviewerNotes slot, then rerun high-risk overlay validation."
+    },
+    {
+      "gateId": "direct_source_decisions",
+      "label": "5 direct-source decisions",
+      "inputPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "validationPath": "docs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_INPUT_VALIDATION.json",
+      "requiredItems": 5,
+      "readyItems": 0,
+      "blockedItems": 5,
+      "validationStatus": "blocked_missing_real_reviewer_overlay_input",
+      "nextAction": "Fill every directSourceDecisionRows decision, then rerun high-risk overlay validation."
+    },
+    {
+      "gateId": "source_fit_packets_001_003",
+      "label": "180 source-fit packet rows",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_001_INPUT_COPY_TEMPLATE.json; docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_002_INPUT_COPY_TEMPLATE.json; docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_003_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_INPUT_COPY_TEMPLATE_VALIDATION.json; docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_002_INPUT_COPY_TEMPLATE_VALIDATION.json; docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_003_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "requiredItems": 180,
+      "readyItems": 0,
+      "blockedItems": 180,
+      "missingFieldRows": 180,
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "nextAction": "Fill packet 001-003 source-fit review rows, then rerun packet validation for each packet."
+    }
+  ],
+  "commands": [
+    "npm.cmd run build:knowledge-first-reviewer-completion-gate",
+    "npm.cmd run check:knowledge-first-reviewer-completion-gate",
+    "npm.cmd run check:knowledge-first-reviewer-field-map",
+    "npm.cmd run validate:local-course-high-risk-real-reviewer-overlay-input",
+    "npm.cmd run validate:knowledge-node-public-source-fit-review-input --input docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_001_INPUT_COPY_TEMPLATE.json --output-json docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_INPUT_COPY_TEMPLATE_VALIDATION.json --output-md docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_INPUT_COPY_TEMPLATE_VALIDATION.md",
+    "npm.cmd run validate:knowledge-node-public-source-fit-review-input --input docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_002_INPUT_COPY_TEMPLATE.json --output-json docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_002_INPUT_COPY_TEMPLATE_VALIDATION.json --output-md docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_002_INPUT_COPY_TEMPLATE_VALIDATION.md",
+    "npm.cmd run validate:knowledge-node-public-source-fit-review-input --input docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_003_INPUT_COPY_TEMPLATE.json --output-json docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_003_INPUT_COPY_TEMPLATE_VALIDATION.json --output-md docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_003_INPUT_COPY_TEMPLATE_VALIDATION.md",
+    "npm.cmd run verify"
+  ],
+  "completionRule": "This first reviewer completion gate passes only when all 257 first-handoff work items are complete with real human input: 72 high-risk reviewer notes, 5 direct-source decisions, and 180 source-fit packet rows. Passing this gate still requires a separate approval gate before any learner-facing citation or release.",
+  "boundary": "Knowledge first reviewer completion gate is reviewer-facing education-only governance. It aggregates validation evidence for absorbed local course material and public/Wikipedia/official source-fit review rows; it does not generate reviewer notes, approve copied text, approve learner-facing citations, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, write authorization, learner release, or production readiness."
+}

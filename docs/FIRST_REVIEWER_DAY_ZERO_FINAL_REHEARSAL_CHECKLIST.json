@@ -1,0 +1,140 @@
+{
+  "generatedAt": "2026-06-19T09:39:02.413Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "checklistReady": true,
+  "checklistMode": "day_zero_final_rehearsal_pre_write_only",
+  "targetBatches": [
+    "rewrite_batch_01",
+    "rewrite_batch_05"
+  ],
+  "realStatusPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "realStatusOverlayPresent": false,
+  "lessonCards": 12,
+  "blankNoteFields": 72,
+  "directCandidateDecisions": 5,
+  "sourceFitDecisionRows": 5,
+  "sourceRefsToInspect": 8,
+  "confirmedDecisions": 0,
+  "writeAllowedNow": false,
+  "manualDecisionRequired": true,
+  "humanAuthorizationRecorded": false,
+  "completeNoteCards": 0,
+  "approvalReviewCandidates": 0,
+  "commercialReadyPromotions": 0,
+  "internalTrialReady": false,
+  "launchReady": false,
+  "checklistRows": [
+    {
+      "order": 1,
+      "label": "Broad operator index opened",
+      "status": "machine_ready_human_must_read",
+      "evidence": "48-lesson index ready; writeAllowedNow:false.",
+      "humanBox": "Human has opened broad index.",
+      "hardStop": "Stop if broad index implies approval, release, launch, or production readiness."
+    },
+    {
+      "order": 2,
+      "label": "First-reviewer scope accepted",
+      "status": "manual_required",
+      "evidence": "targetBatches: rewrite_batch_01, rewrite_batch_05.",
+      "humanBox": "Human accepts scope exactly.",
+      "hardStop": "Stop if scope expands to all 48 lessons for write mode."
+    },
+    {
+      "order": 3,
+      "label": "Direct candidates rehearsed",
+      "status": "manual_required",
+      "evidence": "5 blank decisions, 8 green refs, 0 confirmed decisions.",
+      "humanBox": "Human can explain confirm/downgrade/block criteria.",
+      "hardStop": "Stop if generated output confirms any direct source role."
+    },
+    {
+      "order": 3.5,
+      "label": "Source-fit summary read",
+      "status": "manual_required",
+      "evidence": "One-page summary covers 5 decision rows and keeps writeAllowedNow:false.",
+      "humanBox": "Human reads summary before future sourceFitNotes.",
+      "hardStop": "Stop if the summary is treated as a decision or write authorization."
+    },
+    {
+      "order": 4,
+      "label": "Blank notes confirmed",
+      "status": "machine_checked_blank",
+      "evidence": "12 lesson cards, 72 note fields rehearsed, 0 complete note cards.",
+      "humanBox": "Human confirms real notes will start blank.",
+      "hardStop": "Stop if generated prompts or examples are copied as notes."
+    },
+    {
+      "order": 5,
+      "label": "Write lock understood",
+      "status": "write_blocked_manual_required",
+      "evidence": "writeAllowedNow:false; manualDecisionRequired:true.",
+      "humanBox": "Human understands generated checks do not authorize write mode.",
+      "hardStop": "Stop if any script grants write permission automatically."
+    },
+    {
+      "order": 6,
+      "label": "Authorization blockers visible",
+      "status": "manual_required",
+      "evidence": "Reviewer identity and direct-candidate decisions remain blockers.",
+      "humanBox": "Human can name reviewer and unresolved candidate process.",
+      "hardStop": "Stop if no real human reviewer is identified."
+    },
+    {
+      "order": 7,
+      "label": "Post-write validation rehearsed",
+      "status": "future_only",
+      "evidence": "12 future post-write commands; executionAllowedNow:false.",
+      "humanBox": "Human understands post-write order and failure routes.",
+      "hardStop": "Stop if post-write pack is run as evidence before overlay exists."
+    },
+    {
+      "order": 8,
+      "label": "Launch/readiness blocked",
+      "status": "not_ready",
+      "evidence": "internalTrialReady:false; launchReady:false; productionReady:false.",
+      "humanBox": "Human confirms no readiness claim follows rehearsal.",
+      "hardStop": "Stop if any readiness flag or learner-facing release is asserted."
+    }
+  ],
+  "commandOrder": [
+    "npm.cmd run check:lesson-batch-review-operator-index",
+    "npm.cmd run check:first-reviewer-operator-index",
+    "npm.cmd run check:first-reviewer-rehearsal-checklist",
+    "npm.cmd run check:first-reviewer-direct-candidate-decision-worksheet",
+    "npm.cmd run check:first-reviewer-source-fit-decision-summary",
+    "npm.cmd run check:first-reviewer-real-overlay-write-readiness-lock",
+    "npm.cmd run check:first-reviewer-real-overlay-write-authorization-preview",
+    "npm.cmd run check:first-reviewer-day-zero-write-handoff",
+    "npm.cmd run check:first-reviewer-day-zero-final-rehearsal-checklist",
+    "npm.cmd run init:first-reviewer-status-overlay:dry-run",
+    "npm.cmd run check:first-reviewer-status-init-protection"
+  ],
+  "forbiddenActions": [
+    "Do not run write mode from this final rehearsal checklist alone.",
+    "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json without explicit human note-taking intent.",
+    "Do not copy generated checklist, prompt, sample, drill, or packet wording into real reviewer notes.",
+    "Do not confirm direct-candidate sources without original human sourceFitNotes.",
+    "Do not approve lessons, publish learner-facing content, promote generated drafts to commercial_ready, mark internalTrialReady, mark launchReady, or set productionReady true.",
+    "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+    "Do not use yellow, red, or research_only sources as learner-facing evidence."
+  ],
+  "sourceReports": {
+    "allBatchOperatorIndex": "docs/LESSON_BATCH_REVIEW_OPERATOR_INDEX.json",
+    "firstReviewerOperatorIndex": "docs/FIRST_REVIEWER_OPERATOR_INDEX.json",
+    "dayZeroWriteHandoff": "docs/FIRST_REVIEWER_DAY_ZERO_WRITE_HANDOFF.json",
+    "writeAuthorizationPreview": "docs/FIRST_REVIEWER_REAL_OVERLAY_WRITE_AUTHORIZATION_PREVIEW.json",
+    "writeReadinessLock": "docs/FIRST_REVIEWER_REAL_OVERLAY_WRITE_READINESS_LOCK.json",
+    "directCandidateWorksheet": "docs/FIRST_REVIEWER_DIRECT_CANDIDATE_DECISION_WORKSHEET.json",
+    "sourceFitDecisionSummary": "docs/FIRST_REVIEWER_SOURCE_FIT_DECISION_SUMMARY.json",
+    "sourceFitNotesAcceptance": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_ACCEPTANCE.json",
+    "postWriteCommandPack": "docs/FIRST_REVIEWER_POST_WRITE_COMMAND_PACK.json",
+    "rehearsalChecklist": "docs/FIRST_REVIEWER_REHEARSAL_CHECKLIST.json",
+    "launchReadinessDashboard": "docs/FIRST_REVIEWER_LAUNCH_READINESS_DASHBOARD.json"
+  },
+  "boundary": "This day-zero final rehearsal checklist is reviewer-facing operations scaffolding only. It does not authorize write mode, create docs/LESSON_BATCH_REVIEW_STATUS.json, fill human notes, confirm source use, approve lessons, publish learner-facing content, promote grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, guide real-money decisions, grant internal-trial readiness, launch the course, or make the product production-ready."
+}

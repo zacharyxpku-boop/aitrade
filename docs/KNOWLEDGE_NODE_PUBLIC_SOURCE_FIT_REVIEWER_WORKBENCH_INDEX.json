@@ -1,0 +1,4383 @@
+{
+  "generatedAt": "2026-06-22T05:23:38.087Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "workbenchIndexStatus": "source_fit_reviewer_workbench_index_ready_all_packets_blocked_on_real_input",
+  "workbenchIndexMode": "all_packet_readonly_review_navigation",
+  "totalPackets": 35,
+  "packetsWithHandoff": 35,
+  "packetsWithInputCopyTemplate": 35,
+  "packetsWithValidation": 35,
+  "packetsWithDetailedRowBrowser": 1,
+  "modules": 12,
+  "totalReviewRows": 1638,
+  "readyRows": 0,
+  "blockedRows": 1638,
+  "missingFieldRows": 1638,
+  "realHumanInputEntries": 0,
+  "learnerCitationApprovedRows": 0,
+  "copiedTextApprovedRows": 0,
+  "writeAllowedNow": false,
+  "manualAuthorizationRequired": true,
+  "firstBlockedPacketId": "node-public-source-fit-batch-001-packet",
+  "packetRows": [
+    {
+      "order": 1,
+      "packetNumber": "001",
+      "packetId": "node-public-source-fit-batch-001-packet",
+      "batchId": "node-public-source-fit-batch-001",
+      "module": "K线与价格行为",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "missingFieldRows": 60,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_001_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_001_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_001_HANDOFF.json",
+      "hasDetailedRowBrowser": true,
+      "detailedRowBrowserPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_PACKET_001_REVIEWER_WORKBENCH.json",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0003::corpus_1584",
+          "nodeId": "knv2_0003",
+          "documentId": "corpus_1584",
+          "sourceName": "Wikipedia: Candlestick chart",
+          "family": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_chart",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0003::corpus_0301",
+          "nodeId": "knv2_0003",
+          "documentId": "corpus_0301",
+          "sourceName": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+          "family": "Open Research",
+          "url": "https://arxiv.org/abs/2604.12659v1",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0003::corpus_0406",
+          "nodeId": "knv2_0003",
+          "documentId": "corpus_0406",
+          "sourceName": "Wikipedia: Candlestick pattern",
+          "family": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_pattern",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0003::corpus_0409",
+          "nodeId": "knv2_0003",
+          "documentId": "corpus_0409",
+          "sourceName": "Wikipedia: Chart pattern",
+          "family": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0003::corpus_0407",
+          "nodeId": "knv2_0003",
+          "documentId": "corpus_0407",
+          "sourceName": "Wikipedia: Doji",
+          "family": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Doji",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0003::corpus_1115",
+          "nodeId": "knv2_0003",
+          "documentId": "corpus_1115",
+          "sourceName": "Wikipedia: Gap (chart pattern)",
+          "family": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Gap_(chart_pattern)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "use_packet_001_row_browser_then_fill_real_reviewer_input_copy"
+    },
+    {
+      "order": 2,
+      "packetNumber": "002",
+      "packetId": "node-public-source-fit-batch-002-packet",
+      "batchId": "node-public-source-fit-batch-002",
+      "module": "K线与价格行为",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "missingFieldRows": 60,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_002_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_002_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_002_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_002_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_002_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_002_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0123::corpus_1584",
+          "nodeId": "knv2_0123",
+          "documentId": "corpus_1584",
+          "sourceName": "Wikipedia: Candlestick chart",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0123::corpus_0301",
+          "nodeId": "knv2_0123",
+          "documentId": "corpus_0301",
+          "sourceName": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0123::corpus_0406",
+          "nodeId": "knv2_0123",
+          "documentId": "corpus_0406",
+          "sourceName": "Wikipedia: Candlestick pattern",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0123::corpus_0409",
+          "nodeId": "knv2_0123",
+          "documentId": "corpus_0409",
+          "sourceName": "Wikipedia: Chart pattern",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0123::corpus_0407",
+          "nodeId": "knv2_0123",
+          "documentId": "corpus_0407",
+          "sourceName": "Wikipedia: Doji",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0123::corpus_1115",
+          "nodeId": "knv2_0123",
+          "documentId": "corpus_1115",
+          "sourceName": "Wikipedia: Gap (chart pattern)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_002_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 3,
+      "packetNumber": "003",
+      "packetId": "node-public-source-fit-batch-003-packet",
+      "batchId": "node-public-source-fit-batch-003",
+      "module": "K线与价格行为",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "missingFieldRows": 60,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_003_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_003_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_003_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_003_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_003_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_003_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0243::corpus_1584",
+          "nodeId": "knv2_0243",
+          "documentId": "corpus_1584",
+          "sourceName": "Wikipedia: Candlestick chart",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0243::corpus_0301",
+          "nodeId": "knv2_0243",
+          "documentId": "corpus_0301",
+          "sourceName": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0243::corpus_0406",
+          "nodeId": "knv2_0243",
+          "documentId": "corpus_0406",
+          "sourceName": "Wikipedia: Candlestick pattern",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0243::corpus_0409",
+          "nodeId": "knv2_0243",
+          "documentId": "corpus_0409",
+          "sourceName": "Wikipedia: Chart pattern",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0243::corpus_0407",
+          "nodeId": "knv2_0243",
+          "documentId": "corpus_0407",
+          "sourceName": "Wikipedia: Doji",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0243::corpus_1115",
+          "nodeId": "knv2_0243",
+          "documentId": "corpus_1115",
+          "sourceName": "Wikipedia: Gap (chart pattern)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_003_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 4,
+      "packetNumber": "004",
+      "packetId": "node-public-source-fit-batch-004-packet",
+      "batchId": "node-public-source-fit-batch-004",
+      "module": "突破",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "missingFieldRows": 60,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_004_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_004_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_004_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_004_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_004_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_004_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0041::corpus_0409",
+          "nodeId": "knv2_0041",
+          "documentId": "corpus_0409",
+          "sourceName": "Wikipedia: Chart pattern",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0041::corpus_0155",
+          "nodeId": "knv2_0041",
+          "documentId": "corpus_0155",
+          "sourceName": "BLS Real Earnings News Release",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0041::corpus_0938",
+          "nodeId": "knv2_0041",
+          "documentId": "corpus_0938",
+          "sourceName": "adityaalle1/Portfolio-Risk-Analysis- README",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0041::corpus_1115",
+          "nodeId": "knv2_0041",
+          "documentId": "corpus_1115",
+          "sourceName": "Wikipedia: Gap (chart pattern)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0041::corpus_0410",
+          "nodeId": "knv2_0041",
+          "documentId": "corpus_0410",
+          "sourceName": "Wikipedia: Head and shoulders (chart pattern)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0041::corpus_1588",
+          "nodeId": "knv2_0041",
+          "documentId": "corpus_1588",
+          "sourceName": "Wikipedia: Price action trading",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_004_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 5,
+      "packetNumber": "005",
+      "packetId": "node-public-source-fit-batch-005-packet",
+      "batchId": "node-public-source-fit-batch-005",
+      "module": "突破",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "missingFieldRows": 60,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_005_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_005_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_005_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_005_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_005_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_005_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0161::corpus_0409",
+          "nodeId": "knv2_0161",
+          "documentId": "corpus_0409",
+          "sourceName": "Wikipedia: Chart pattern",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0161::corpus_0155",
+          "nodeId": "knv2_0161",
+          "documentId": "corpus_0155",
+          "sourceName": "BLS Real Earnings News Release",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0161::corpus_0938",
+          "nodeId": "knv2_0161",
+          "documentId": "corpus_0938",
+          "sourceName": "adityaalle1/Portfolio-Risk-Analysis- README",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0161::corpus_1115",
+          "nodeId": "knv2_0161",
+          "documentId": "corpus_1115",
+          "sourceName": "Wikipedia: Gap (chart pattern)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0161::corpus_0410",
+          "nodeId": "knv2_0161",
+          "documentId": "corpus_0410",
+          "sourceName": "Wikipedia: Head and shoulders (chart pattern)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0161::corpus_1588",
+          "nodeId": "knv2_0161",
+          "documentId": "corpus_1588",
+          "sourceName": "Wikipedia: Price action trading",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_005_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 6,
+      "packetNumber": "006",
+      "packetId": "node-public-source-fit-batch-006-packet",
+      "batchId": "node-public-source-fit-batch-006",
+      "module": "突破",
+      "targetNodes": 7,
+      "reviewRows": 42,
+      "readyRows": 0,
+      "blockedRows": 42,
+      "missingFieldRows": 42,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_006_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_006_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_006_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_006_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_006_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_006_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0281::corpus_0409",
+          "nodeId": "knv2_0281",
+          "documentId": "corpus_0409",
+          "sourceName": "Wikipedia: Chart pattern",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0281::corpus_0155",
+          "nodeId": "knv2_0281",
+          "documentId": "corpus_0155",
+          "sourceName": "BLS Real Earnings News Release",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0281::corpus_0938",
+          "nodeId": "knv2_0281",
+          "documentId": "corpus_0938",
+          "sourceName": "adityaalle1/Portfolio-Risk-Analysis- README",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0281::corpus_1115",
+          "nodeId": "knv2_0281",
+          "documentId": "corpus_1115",
+          "sourceName": "Wikipedia: Gap (chart pattern)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0281::corpus_0410",
+          "nodeId": "knv2_0281",
+          "documentId": "corpus_0410",
+          "sourceName": "Wikipedia: Head and shoulders (chart pattern)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0281::corpus_1588",
+          "nodeId": "knv2_0281",
+          "documentId": "corpus_1588",
+          "sourceName": "Wikipedia: Price action trading",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_006_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 7,
+      "packetNumber": "007",
+      "packetId": "node-public-source-fit-batch-007-packet",
+      "batchId": "node-public-source-fit-batch-007",
+      "module": "多周期分析",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "missingFieldRows": 60,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_007_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_007_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_007_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_007_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_007_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_007_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0104::corpus_1584",
+          "nodeId": "knv2_0104",
+          "documentId": "corpus_1584",
+          "sourceName": "Wikipedia: Candlestick chart",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0104::corpus_0049",
+          "nodeId": "knv2_0104",
+          "documentId": "corpus_0049",
+          "sourceName": "BEA NIPA Handbook",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0104::corpus_0225",
+          "nodeId": "knv2_0104",
+          "documentId": "corpus_0225",
+          "sourceName": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0104::corpus_0409",
+          "nodeId": "knv2_0104",
+          "documentId": "corpus_0409",
+          "sourceName": "Wikipedia: Chart pattern",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0104::corpus_1115",
+          "nodeId": "knv2_0104",
+          "documentId": "corpus_1115",
+          "sourceName": "Wikipedia: Gap (chart pattern)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0104::corpus_0410",
+          "nodeId": "knv2_0104",
+          "documentId": "corpus_0410",
+          "sourceName": "Wikipedia: Head and shoulders (chart pattern)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_007_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 8,
+      "packetNumber": "008",
+      "packetId": "node-public-source-fit-batch-008-packet",
+      "batchId": "node-public-source-fit-batch-008",
+      "module": "多周期分析",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "missingFieldRows": 60,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_008_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_008_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_008_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_008_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_008_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_008_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0224::corpus_1584",
+          "nodeId": "knv2_0224",
+          "documentId": "corpus_1584",
+          "sourceName": "Wikipedia: Candlestick chart",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0224::corpus_0049",
+          "nodeId": "knv2_0224",
+          "documentId": "corpus_0049",
+          "sourceName": "BEA NIPA Handbook",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0224::corpus_0225",
+          "nodeId": "knv2_0224",
+          "documentId": "corpus_0225",
+          "sourceName": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0224::corpus_0409",
+          "nodeId": "knv2_0224",
+          "documentId": "corpus_0409",
+          "sourceName": "Wikipedia: Chart pattern",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0224::corpus_1115",
+          "nodeId": "knv2_0224",
+          "documentId": "corpus_1115",
+          "sourceName": "Wikipedia: Gap (chart pattern)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0224::corpus_0410",
+          "nodeId": "knv2_0224",
+          "documentId": "corpus_0410",
+          "sourceName": "Wikipedia: Head and shoulders (chart pattern)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_008_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 9,
+      "packetNumber": "009",
+      "packetId": "node-public-source-fit-batch-009-packet",
+      "batchId": "node-public-source-fit-batch-009",
+      "module": "多周期分析",
+      "targetNodes": 2,
+      "reviewRows": 12,
+      "readyRows": 0,
+      "blockedRows": 12,
+      "missingFieldRows": 12,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_009_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_009_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_009_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_009_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_009_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_009_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0344::corpus_1584",
+          "nodeId": "knv2_0344",
+          "documentId": "corpus_1584",
+          "sourceName": "Wikipedia: Candlestick chart",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0344::corpus_0049",
+          "nodeId": "knv2_0344",
+          "documentId": "corpus_0049",
+          "sourceName": "BEA NIPA Handbook",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0344::corpus_0225",
+          "nodeId": "knv2_0344",
+          "documentId": "corpus_0225",
+          "sourceName": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0344::corpus_0409",
+          "nodeId": "knv2_0344",
+          "documentId": "corpus_0409",
+          "sourceName": "Wikipedia: Chart pattern",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0344::corpus_1115",
+          "nodeId": "knv2_0344",
+          "documentId": "corpus_1115",
+          "sourceName": "Wikipedia: Gap (chart pattern)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0344::corpus_0410",
+          "nodeId": "knv2_0344",
+          "documentId": "corpus_0410",
+          "sourceName": "Wikipedia: Head and shoulders (chart pattern)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_009_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 10,
+      "packetNumber": "010",
+      "packetId": "node-public-source-fit-batch-010-packet",
+      "batchId": "node-public-source-fit-batch-010",
+      "module": "反转",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "missingFieldRows": 60,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_010_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_010_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_010_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_010_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_010_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_010_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0103::corpus_0447",
+          "nodeId": "knv2_0103",
+          "documentId": "corpus_0447",
+          "sourceName": "Wikipedia: Bollinger Bands",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0103::corpus_0065",
+          "nodeId": "knv2_0103",
+          "documentId": "corpus_0065",
+          "sourceName": "BEA Fixed Assets",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0103::corpus_1007",
+          "nodeId": "knv2_0103",
+          "documentId": "corpus_1007",
+          "sourceName": "areed1192/finance-news-aggregator README",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0103::corpus_0406",
+          "nodeId": "knv2_0103",
+          "documentId": "corpus_0406",
+          "sourceName": "Wikipedia: Candlestick pattern",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0103::corpus_0409",
+          "nodeId": "knv2_0103",
+          "documentId": "corpus_0409",
+          "sourceName": "Wikipedia: Chart pattern",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0103::corpus_0411",
+          "nodeId": "knv2_0103",
+          "documentId": "corpus_0411",
+          "sourceName": "Wikipedia: Double top and double bottom",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_010_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 11,
+      "packetNumber": "011",
+      "packetId": "node-public-source-fit-batch-011-packet",
+      "batchId": "node-public-source-fit-batch-011",
+      "module": "反转",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "missingFieldRows": 60,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_011_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_011_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_011_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_011_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_011_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_011_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0223::corpus_0447",
+          "nodeId": "knv2_0223",
+          "documentId": "corpus_0447",
+          "sourceName": "Wikipedia: Bollinger Bands",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0223::corpus_0065",
+          "nodeId": "knv2_0223",
+          "documentId": "corpus_0065",
+          "sourceName": "BEA Fixed Assets",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0223::corpus_1007",
+          "nodeId": "knv2_0223",
+          "documentId": "corpus_1007",
+          "sourceName": "areed1192/finance-news-aggregator README",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0223::corpus_0406",
+          "nodeId": "knv2_0223",
+          "documentId": "corpus_0406",
+          "sourceName": "Wikipedia: Candlestick pattern",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0223::corpus_0409",
+          "nodeId": "knv2_0223",
+          "documentId": "corpus_0409",
+          "sourceName": "Wikipedia: Chart pattern",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0223::corpus_0411",
+          "nodeId": "knv2_0223",
+          "documentId": "corpus_0411",
+          "sourceName": "Wikipedia: Double top and double bottom",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_011_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 12,
+      "packetNumber": "012",
+      "packetId": "node-public-source-fit-batch-012-packet",
+      "batchId": "node-public-source-fit-batch-012",
+      "module": "反转",
+      "targetNodes": 2,
+      "reviewRows": 12,
+      "readyRows": 0,
+      "blockedRows": 12,
+      "missingFieldRows": 12,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_012_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_012_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_012_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_012_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_012_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_012_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0343::corpus_0447",
+          "nodeId": "knv2_0343",
+          "documentId": "corpus_0447",
+          "sourceName": "Wikipedia: Bollinger Bands",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0343::corpus_0065",
+          "nodeId": "knv2_0343",
+          "documentId": "corpus_0065",
+          "sourceName": "BEA Fixed Assets",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0343::corpus_1007",
+          "nodeId": "knv2_0343",
+          "documentId": "corpus_1007",
+          "sourceName": "areed1192/finance-news-aggregator README",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0343::corpus_0406",
+          "nodeId": "knv2_0343",
+          "documentId": "corpus_0406",
+          "sourceName": "Wikipedia: Candlestick pattern",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0343::corpus_0409",
+          "nodeId": "knv2_0343",
+          "documentId": "corpus_0409",
+          "sourceName": "Wikipedia: Chart pattern",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0343::corpus_0411",
+          "nodeId": "knv2_0343",
+          "documentId": "corpus_0411",
+          "sourceName": "Wikipedia: Double top and double bottom",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_012_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 13,
+      "packetNumber": "013",
+      "packetId": "node-public-source-fit-batch-013-packet",
+      "batchId": "node-public-source-fit-batch-013",
+      "module": "风险管理",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "missingFieldRows": 60,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_013_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_013_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_013_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_013_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_013_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_013_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0107::corpus_0423",
+          "nodeId": "knv2_0107",
+          "documentId": "corpus_0423",
+          "sourceName": "Wikipedia: Diversification (finance)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0107::corpus_0042",
+          "nodeId": "knv2_0107",
+          "documentId": "corpus_0042",
+          "sourceName": "CFTC Speculative Limits",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0107::corpus_0646",
+          "nodeId": "knv2_0107",
+          "documentId": "corpus_0646",
+          "sourceName": "A note on estimating stochastic volatility and its volatility: a new simple method",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0107::corpus_0422",
+          "nodeId": "knv2_0107",
+          "documentId": "corpus_0422",
+          "sourceName": "Wikipedia: Drawdown (economics)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0107::corpus_0421",
+          "nodeId": "knv2_0107",
+          "documentId": "corpus_0421",
+          "sourceName": "Wikipedia: Kelly criterion",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0107::corpus_0458",
+          "nodeId": "knv2_0107",
+          "documentId": "corpus_0458",
+          "sourceName": "Wikipedia: Leverage (finance)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_013_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 14,
+      "packetNumber": "014",
+      "packetId": "node-public-source-fit-batch-014-packet",
+      "batchId": "node-public-source-fit-batch-014",
+      "module": "风险管理",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "missingFieldRows": 60,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_014_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_014_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_014_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_014_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_014_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_014_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0227::corpus_0423",
+          "nodeId": "knv2_0227",
+          "documentId": "corpus_0423",
+          "sourceName": "Wikipedia: Diversification (finance)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0227::corpus_0042",
+          "nodeId": "knv2_0227",
+          "documentId": "corpus_0042",
+          "sourceName": "CFTC Speculative Limits",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0227::corpus_0646",
+          "nodeId": "knv2_0227",
+          "documentId": "corpus_0646",
+          "sourceName": "A note on estimating stochastic volatility and its volatility: a new simple method",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0227::corpus_0422",
+          "nodeId": "knv2_0227",
+          "documentId": "corpus_0422",
+          "sourceName": "Wikipedia: Drawdown (economics)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0227::corpus_0421",
+          "nodeId": "knv2_0227",
+          "documentId": "corpus_0421",
+          "sourceName": "Wikipedia: Kelly criterion",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0227::corpus_0458",
+          "nodeId": "knv2_0227",
+          "documentId": "corpus_0458",
+          "sourceName": "Wikipedia: Leverage (finance)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_014_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 15,
+      "packetNumber": "015",
+      "packetId": "node-public-source-fit-batch-015-packet",
+      "batchId": "node-public-source-fit-batch-015",
+      "module": "风险管理",
+      "targetNodes": 2,
+      "reviewRows": 12,
+      "readyRows": 0,
+      "blockedRows": 12,
+      "missingFieldRows": 12,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_015_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_015_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_015_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_015_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_015_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_015_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0347::corpus_0423",
+          "nodeId": "knv2_0347",
+          "documentId": "corpus_0423",
+          "sourceName": "Wikipedia: Diversification (finance)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0347::corpus_0042",
+          "nodeId": "knv2_0347",
+          "documentId": "corpus_0042",
+          "sourceName": "CFTC Speculative Limits",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0347::corpus_0646",
+          "nodeId": "knv2_0347",
+          "documentId": "corpus_0646",
+          "sourceName": "A note on estimating stochastic volatility and its volatility: a new simple method",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0347::corpus_0422",
+          "nodeId": "knv2_0347",
+          "documentId": "corpus_0422",
+          "sourceName": "Wikipedia: Drawdown (economics)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0347::corpus_0421",
+          "nodeId": "knv2_0347",
+          "documentId": "corpus_0421",
+          "sourceName": "Wikipedia: Kelly criterion",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0347::corpus_0458",
+          "nodeId": "knv2_0347",
+          "documentId": "corpus_0458",
+          "sourceName": "Wikipedia: Leverage (finance)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_015_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 16,
+      "packetNumber": "016",
+      "packetId": "node-public-source-fit-batch-016-packet",
+      "batchId": "node-public-source-fit-batch-016",
+      "module": "回测误区",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "missingFieldRows": 60,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_016_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_016_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_016_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_016_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_016_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_016_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0106::corpus_0472",
+          "nodeId": "knv2_0106",
+          "documentId": "corpus_0472",
+          "sourceName": "Wikipedia: Algorithmic trading",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0106::corpus_0102",
+          "nodeId": "knv2_0106",
+          "documentId": "corpus_0102",
+          "sourceName": "BEA News Release Schedule",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0106::corpus_0215",
+          "nodeId": "knv2_0106",
+          "documentId": "corpus_0215",
+          "sourceName": "AlgoXpert Alpha Research Framework. A Rigorous IS WFA OOS Protocol for Mitigating Overfitting in Quantitative Strategies",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0106::corpus_0452",
+          "nodeId": "knv2_0106",
+          "documentId": "corpus_0452",
+          "sourceName": "Wikipedia: Backtesting",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0106::corpus_0415",
+          "nodeId": "knv2_0106",
+          "documentId": "corpus_0415",
+          "sourceName": "Wikipedia: Cross-validation (statistics)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0106::corpus_0455",
+          "nodeId": "knv2_0106",
+          "documentId": "corpus_0455",
+          "sourceName": "Wikipedia: Data dredging",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_016_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 17,
+      "packetNumber": "017",
+      "packetId": "node-public-source-fit-batch-017-packet",
+      "batchId": "node-public-source-fit-batch-017",
+      "module": "回测误区",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "missingFieldRows": 60,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_017_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_017_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_017_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_017_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_017_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_017_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0226::corpus_0472",
+          "nodeId": "knv2_0226",
+          "documentId": "corpus_0472",
+          "sourceName": "Wikipedia: Algorithmic trading",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0226::corpus_0102",
+          "nodeId": "knv2_0226",
+          "documentId": "corpus_0102",
+          "sourceName": "BEA News Release Schedule",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0226::corpus_0215",
+          "nodeId": "knv2_0226",
+          "documentId": "corpus_0215",
+          "sourceName": "AlgoXpert Alpha Research Framework. A Rigorous IS WFA OOS Protocol for Mitigating Overfitting in Quantitative Strategies",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0226::corpus_0452",
+          "nodeId": "knv2_0226",
+          "documentId": "corpus_0452",
+          "sourceName": "Wikipedia: Backtesting",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0226::corpus_0415",
+          "nodeId": "knv2_0226",
+          "documentId": "corpus_0415",
+          "sourceName": "Wikipedia: Cross-validation (statistics)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0226::corpus_0455",
+          "nodeId": "knv2_0226",
+          "documentId": "corpus_0455",
+          "sourceName": "Wikipedia: Data dredging",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_017_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 18,
+      "packetNumber": "018",
+      "packetId": "node-public-source-fit-batch-018-packet",
+      "batchId": "node-public-source-fit-batch-018",
+      "module": "回测误区",
+      "targetNodes": 2,
+      "reviewRows": 12,
+      "readyRows": 0,
+      "blockedRows": 12,
+      "missingFieldRows": 12,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_018_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_018_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_018_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_018_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_018_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_018_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0346::corpus_0472",
+          "nodeId": "knv2_0346",
+          "documentId": "corpus_0472",
+          "sourceName": "Wikipedia: Algorithmic trading",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0346::corpus_0102",
+          "nodeId": "knv2_0346",
+          "documentId": "corpus_0102",
+          "sourceName": "BEA News Release Schedule",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0346::corpus_0215",
+          "nodeId": "knv2_0346",
+          "documentId": "corpus_0215",
+          "sourceName": "AlgoXpert Alpha Research Framework. A Rigorous IS WFA OOS Protocol for Mitigating Overfitting in Quantitative Strategies",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0346::corpus_0452",
+          "nodeId": "knv2_0346",
+          "documentId": "corpus_0452",
+          "sourceName": "Wikipedia: Backtesting",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0346::corpus_0415",
+          "nodeId": "knv2_0346",
+          "documentId": "corpus_0415",
+          "sourceName": "Wikipedia: Cross-validation (statistics)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0346::corpus_0455",
+          "nodeId": "knv2_0346",
+          "documentId": "corpus_0455",
+          "sourceName": "Wikipedia: Data dredging",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_018_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 19,
+      "packetNumber": "019",
+      "packetId": "node-public-source-fit-batch-019-packet",
+      "batchId": "node-public-source-fit-batch-019",
+      "module": "交易区间",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "missingFieldRows": 60,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_019_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_019_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_019_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_019_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_019_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_019_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0102::corpus_0472",
+          "nodeId": "knv2_0102",
+          "documentId": "corpus_0472",
+          "sourceName": "Wikipedia: Algorithmic trading",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0102::corpus_0017",
+          "nodeId": "knv2_0102",
+          "documentId": "corpus_0017",
+          "sourceName": "Federal Reserve FOMC Calendars",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0102::corpus_0396",
+          "nodeId": "knv2_0102",
+          "documentId": "corpus_0396",
+          "sourceName": "A singular stochastic control approach for optimal pairs trading with proportional transaction costs",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0102::corpus_0447",
+          "nodeId": "knv2_0102",
+          "documentId": "corpus_0447",
+          "sourceName": "Wikipedia: Bollinger Bands",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0102::corpus_0445",
+          "nodeId": "knv2_0102",
+          "documentId": "corpus_0445",
+          "sourceName": "Wikipedia: Market trend",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0102::corpus_0439",
+          "nodeId": "knv2_0102",
+          "documentId": "corpus_0439",
+          "sourceName": "Wikipedia: Mean reversion (finance)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_019_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 20,
+      "packetNumber": "020",
+      "packetId": "node-public-source-fit-batch-020-packet",
+      "batchId": "node-public-source-fit-batch-020",
+      "module": "交易区间",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "missingFieldRows": 60,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_020_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_020_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_020_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_020_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_020_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_020_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0222::corpus_0472",
+          "nodeId": "knv2_0222",
+          "documentId": "corpus_0472",
+          "sourceName": "Wikipedia: Algorithmic trading",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0222::corpus_0017",
+          "nodeId": "knv2_0222",
+          "documentId": "corpus_0017",
+          "sourceName": "Federal Reserve FOMC Calendars",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0222::corpus_0396",
+          "nodeId": "knv2_0222",
+          "documentId": "corpus_0396",
+          "sourceName": "A singular stochastic control approach for optimal pairs trading with proportional transaction costs",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0222::corpus_0447",
+          "nodeId": "knv2_0222",
+          "documentId": "corpus_0447",
+          "sourceName": "Wikipedia: Bollinger Bands",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0222::corpus_0445",
+          "nodeId": "knv2_0222",
+          "documentId": "corpus_0445",
+          "sourceName": "Wikipedia: Market trend",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0222::corpus_0439",
+          "nodeId": "knv2_0222",
+          "documentId": "corpus_0439",
+          "sourceName": "Wikipedia: Mean reversion (finance)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_020_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 21,
+      "packetNumber": "021",
+      "packetId": "node-public-source-fit-batch-021-packet",
+      "batchId": "node-public-source-fit-batch-021",
+      "module": "交易区间",
+      "targetNodes": 2,
+      "reviewRows": 12,
+      "readyRows": 0,
+      "blockedRows": 12,
+      "missingFieldRows": 12,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_021_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_021_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_021_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_021_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_021_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_021_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0342::corpus_0472",
+          "nodeId": "knv2_0342",
+          "documentId": "corpus_0472",
+          "sourceName": "Wikipedia: Algorithmic trading",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0342::corpus_0017",
+          "nodeId": "knv2_0342",
+          "documentId": "corpus_0017",
+          "sourceName": "Federal Reserve FOMC Calendars",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0342::corpus_0396",
+          "nodeId": "knv2_0342",
+          "documentId": "corpus_0396",
+          "sourceName": "A singular stochastic control approach for optimal pairs trading with proportional transaction costs",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0342::corpus_0447",
+          "nodeId": "knv2_0342",
+          "documentId": "corpus_0447",
+          "sourceName": "Wikipedia: Bollinger Bands",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0342::corpus_0445",
+          "nodeId": "knv2_0342",
+          "documentId": "corpus_0445",
+          "sourceName": "Wikipedia: Market trend",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0342::corpus_0439",
+          "nodeId": "knv2_0342",
+          "documentId": "corpus_0439",
+          "sourceName": "Wikipedia: Mean reversion (finance)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_021_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 22,
+      "packetNumber": "022",
+      "packetId": "node-public-source-fit-batch-022-packet",
+      "batchId": "node-public-source-fit-batch-022",
+      "module": "交易心理",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "missingFieldRows": 60,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_022_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_022_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_022_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_022_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_022_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_022_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0108::corpus_0459",
+          "nodeId": "knv2_0108",
+          "documentId": "corpus_0459",
+          "sourceName": "Wikipedia: Behavioral economics",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0108::corpus_0063",
+          "nodeId": "knv2_0108",
+          "documentId": "corpus_0063",
+          "sourceName": "BLS Handbook Import Export",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0108::corpus_0352",
+          "nodeId": "knv2_0108",
+          "documentId": "corpus_0352",
+          "sourceName": "A quantum double-or-nothing game: The Kelly Criterion for Spins",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0108::corpus_0462",
+          "nodeId": "knv2_0108",
+          "documentId": "corpus_0462",
+          "sourceName": "Wikipedia: Confirmation bias",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0108::corpus_0465",
+          "nodeId": "knv2_0108",
+          "documentId": "corpus_0465",
+          "sourceName": "Wikipedia: Disposition effect",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0108::corpus_0427",
+          "nodeId": "knv2_0108",
+          "documentId": "corpus_0427",
+          "sourceName": "Wikipedia: Efficient-market hypothesis",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_022_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 23,
+      "packetNumber": "023",
+      "packetId": "node-public-source-fit-batch-023-packet",
+      "batchId": "node-public-source-fit-batch-023",
+      "module": "交易心理",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "missingFieldRows": 60,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_023_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_023_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_023_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_023_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_023_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_023_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0228::corpus_0459",
+          "nodeId": "knv2_0228",
+          "documentId": "corpus_0459",
+          "sourceName": "Wikipedia: Behavioral economics",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0228::corpus_0063",
+          "nodeId": "knv2_0228",
+          "documentId": "corpus_0063",
+          "sourceName": "BLS Handbook Import Export",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0228::corpus_0352",
+          "nodeId": "knv2_0228",
+          "documentId": "corpus_0352",
+          "sourceName": "A quantum double-or-nothing game: The Kelly Criterion for Spins",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0228::corpus_0462",
+          "nodeId": "knv2_0228",
+          "documentId": "corpus_0462",
+          "sourceName": "Wikipedia: Confirmation bias",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0228::corpus_0465",
+          "nodeId": "knv2_0228",
+          "documentId": "corpus_0465",
+          "sourceName": "Wikipedia: Disposition effect",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0228::corpus_0427",
+          "nodeId": "knv2_0228",
+          "documentId": "corpus_0427",
+          "sourceName": "Wikipedia: Efficient-market hypothesis",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_023_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 24,
+      "packetNumber": "024",
+      "packetId": "node-public-source-fit-batch-024-packet",
+      "batchId": "node-public-source-fit-batch-024",
+      "module": "交易心理",
+      "targetNodes": 2,
+      "reviewRows": 12,
+      "readyRows": 0,
+      "blockedRows": 12,
+      "missingFieldRows": 12,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_024_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_024_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_024_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_024_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_024_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_024_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0348::corpus_0459",
+          "nodeId": "knv2_0348",
+          "documentId": "corpus_0459",
+          "sourceName": "Wikipedia: Behavioral economics",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0348::corpus_0063",
+          "nodeId": "knv2_0348",
+          "documentId": "corpus_0063",
+          "sourceName": "BLS Handbook Import Export",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0348::corpus_0352",
+          "nodeId": "knv2_0348",
+          "documentId": "corpus_0352",
+          "sourceName": "A quantum double-or-nothing game: The Kelly Criterion for Spins",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0348::corpus_0462",
+          "nodeId": "knv2_0348",
+          "documentId": "corpus_0462",
+          "sourceName": "Wikipedia: Confirmation bias",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0348::corpus_0465",
+          "nodeId": "knv2_0348",
+          "documentId": "corpus_0465",
+          "sourceName": "Wikipedia: Disposition effect",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0348::corpus_0427",
+          "nodeId": "knv2_0348",
+          "documentId": "corpus_0427",
+          "sourceName": "Wikipedia: Efficient-market hypothesis",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_024_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 25,
+      "packetNumber": "025",
+      "packetId": "node-public-source-fit-batch-025-packet",
+      "batchId": "node-public-source-fit-batch-025",
+      "module": "趋势",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "missingFieldRows": 60,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_025_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_025_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_025_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_025_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_025_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_025_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0100::corpus_0472",
+          "nodeId": "knv2_0100",
+          "documentId": "corpus_0472",
+          "sourceName": "Wikipedia: Algorithmic trading",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0100::corpus_0049",
+          "nodeId": "knv2_0100",
+          "documentId": "corpus_0049",
+          "sourceName": "BEA NIPA Handbook",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0100::corpus_0225",
+          "nodeId": "knv2_0100",
+          "documentId": "corpus_0225",
+          "sourceName": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0100::corpus_0444",
+          "nodeId": "knv2_0100",
+          "documentId": "corpus_0444",
+          "sourceName": "Wikipedia: Dow theory",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0100::corpus_0445",
+          "nodeId": "knv2_0100",
+          "documentId": "corpus_0445",
+          "sourceName": "Wikipedia: Market trend",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0100::corpus_0441",
+          "nodeId": "knv2_0100",
+          "documentId": "corpus_0441",
+          "sourceName": "Wikipedia: Momentum investing",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_025_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 26,
+      "packetNumber": "026",
+      "packetId": "node-public-source-fit-batch-026-packet",
+      "batchId": "node-public-source-fit-batch-026",
+      "module": "趋势",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "missingFieldRows": 60,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_026_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_026_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_026_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_026_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_026_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_026_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0220::corpus_0472",
+          "nodeId": "knv2_0220",
+          "documentId": "corpus_0472",
+          "sourceName": "Wikipedia: Algorithmic trading",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0220::corpus_0049",
+          "nodeId": "knv2_0220",
+          "documentId": "corpus_0049",
+          "sourceName": "BEA NIPA Handbook",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0220::corpus_0225",
+          "nodeId": "knv2_0220",
+          "documentId": "corpus_0225",
+          "sourceName": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0220::corpus_0444",
+          "nodeId": "knv2_0220",
+          "documentId": "corpus_0444",
+          "sourceName": "Wikipedia: Dow theory",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0220::corpus_0445",
+          "nodeId": "knv2_0220",
+          "documentId": "corpus_0445",
+          "sourceName": "Wikipedia: Market trend",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0220::corpus_0441",
+          "nodeId": "knv2_0220",
+          "documentId": "corpus_0441",
+          "sourceName": "Wikipedia: Momentum investing",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_026_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 27,
+      "packetNumber": "027",
+      "packetId": "node-public-source-fit-batch-027-packet",
+      "batchId": "node-public-source-fit-batch-027",
+      "module": "趋势",
+      "targetNodes": 2,
+      "reviewRows": 12,
+      "readyRows": 0,
+      "blockedRows": 12,
+      "missingFieldRows": 12,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_027_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_027_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_027_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_027_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_027_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_027_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0340::corpus_0472",
+          "nodeId": "knv2_0340",
+          "documentId": "corpus_0472",
+          "sourceName": "Wikipedia: Algorithmic trading",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0340::corpus_0049",
+          "nodeId": "knv2_0340",
+          "documentId": "corpus_0049",
+          "sourceName": "BEA NIPA Handbook",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0340::corpus_0225",
+          "nodeId": "knv2_0340",
+          "documentId": "corpus_0225",
+          "sourceName": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0340::corpus_0444",
+          "nodeId": "knv2_0340",
+          "documentId": "corpus_0444",
+          "sourceName": "Wikipedia: Dow theory",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0340::corpus_0445",
+          "nodeId": "knv2_0340",
+          "documentId": "corpus_0445",
+          "sourceName": "Wikipedia: Market trend",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0340::corpus_0441",
+          "nodeId": "knv2_0340",
+          "documentId": "corpus_0441",
+          "sourceName": "Wikipedia: Momentum investing",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_027_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 28,
+      "packetNumber": "028",
+      "packetId": "node-public-source-fit-batch-028-packet",
+      "batchId": "node-public-source-fit-batch-028",
+      "module": "市场结构",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "missingFieldRows": 60,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_028_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_028_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_028_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_028_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_028_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_028_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0098::corpus_0472",
+          "nodeId": "knv2_0098",
+          "documentId": "corpus_0472",
+          "sourceName": "Wikipedia: Algorithmic trading",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0098::corpus_0022",
+          "nodeId": "knv2_0098",
+          "documentId": "corpus_0022",
+          "sourceName": "BLS CPI",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0098::corpus_0225",
+          "nodeId": "knv2_0098",
+          "documentId": "corpus_0225",
+          "sourceName": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0098::corpus_1587",
+          "nodeId": "knv2_0098",
+          "documentId": "corpus_1587",
+          "sourceName": "Wikipedia: Bid–ask spread",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0098::corpus_0436",
+          "nodeId": "knv2_0098",
+          "documentId": "corpus_0436",
+          "sourceName": "Wikipedia: Day trading",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0098::corpus_0471",
+          "nodeId": "knv2_0098",
+          "documentId": "corpus_0471",
+          "sourceName": "Wikipedia: High-frequency trading",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_028_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 29,
+      "packetNumber": "029",
+      "packetId": "node-public-source-fit-batch-029-packet",
+      "batchId": "node-public-source-fit-batch-029",
+      "module": "市场结构",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "missingFieldRows": 60,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_029_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_029_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_029_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_029_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_029_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_029_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0218::corpus_0472",
+          "nodeId": "knv2_0218",
+          "documentId": "corpus_0472",
+          "sourceName": "Wikipedia: Algorithmic trading",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0218::corpus_0022",
+          "nodeId": "knv2_0218",
+          "documentId": "corpus_0022",
+          "sourceName": "BLS CPI",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0218::corpus_0225",
+          "nodeId": "knv2_0218",
+          "documentId": "corpus_0225",
+          "sourceName": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0218::corpus_1587",
+          "nodeId": "knv2_0218",
+          "documentId": "corpus_1587",
+          "sourceName": "Wikipedia: Bid–ask spread",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0218::corpus_0436",
+          "nodeId": "knv2_0218",
+          "documentId": "corpus_0436",
+          "sourceName": "Wikipedia: Day trading",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0218::corpus_0471",
+          "nodeId": "knv2_0218",
+          "documentId": "corpus_0471",
+          "sourceName": "Wikipedia: High-frequency trading",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_029_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 30,
+      "packetNumber": "030",
+      "packetId": "node-public-source-fit-batch-030-packet",
+      "batchId": "node-public-source-fit-batch-030",
+      "module": "市场结构",
+      "targetNodes": 2,
+      "reviewRows": 12,
+      "readyRows": 0,
+      "blockedRows": 12,
+      "missingFieldRows": 12,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_030_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_030_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_030_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_030_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_030_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_030_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0338::corpus_0472",
+          "nodeId": "knv2_0338",
+          "documentId": "corpus_0472",
+          "sourceName": "Wikipedia: Algorithmic trading",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0338::corpus_0022",
+          "nodeId": "knv2_0338",
+          "documentId": "corpus_0022",
+          "sourceName": "BLS CPI",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0338::corpus_0225",
+          "nodeId": "knv2_0338",
+          "documentId": "corpus_0225",
+          "sourceName": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0338::corpus_1587",
+          "nodeId": "knv2_0338",
+          "documentId": "corpus_1587",
+          "sourceName": "Wikipedia: Bid–ask spread",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0338::corpus_0436",
+          "nodeId": "knv2_0338",
+          "documentId": "corpus_0436",
+          "sourceName": "Wikipedia: Day trading",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0338::corpus_0471",
+          "nodeId": "knv2_0338",
+          "documentId": "corpus_0471",
+          "sourceName": "Wikipedia: High-frequency trading",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_030_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 31,
+      "packetNumber": "031",
+      "packetId": "node-public-source-fit-batch-031-packet",
+      "batchId": "node-public-source-fit-batch-031",
+      "module": "新闻/情绪/事件偏见",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "missingFieldRows": 60,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_031_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_031_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_031_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_031_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_031_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_031_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0105::corpus_0459",
+          "nodeId": "knv2_0105",
+          "documentId": "corpus_0459",
+          "sourceName": "Wikipedia: Behavioral economics",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0105::corpus_0102",
+          "nodeId": "knv2_0105",
+          "documentId": "corpus_0102",
+          "sourceName": "BEA News Release Schedule",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0105::corpus_1025",
+          "nodeId": "knv2_0105",
+          "documentId": "corpus_1025",
+          "sourceName": "bigvaldis/breaking_news_market_sentiment README",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0105::corpus_0462",
+          "nodeId": "knv2_0105",
+          "documentId": "corpus_0462",
+          "sourceName": "Wikipedia: Confirmation bias",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0105::corpus_0426",
+          "nodeId": "knv2_0105",
+          "documentId": "corpus_0426",
+          "sourceName": "Wikipedia: Event study",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0105::corpus_0425",
+          "nodeId": "knv2_0105",
+          "documentId": "corpus_0425",
+          "sourceName": "Wikipedia: Market sentiment",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_031_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 32,
+      "packetNumber": "032",
+      "packetId": "node-public-source-fit-batch-032-packet",
+      "batchId": "node-public-source-fit-batch-032",
+      "module": "新闻/情绪/事件偏见",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "missingFieldRows": 60,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_032_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_032_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_032_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_032_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_032_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_032_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0225::corpus_0459",
+          "nodeId": "knv2_0225",
+          "documentId": "corpus_0459",
+          "sourceName": "Wikipedia: Behavioral economics",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0225::corpus_0102",
+          "nodeId": "knv2_0225",
+          "documentId": "corpus_0102",
+          "sourceName": "BEA News Release Schedule",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0225::corpus_1025",
+          "nodeId": "knv2_0225",
+          "documentId": "corpus_1025",
+          "sourceName": "bigvaldis/breaking_news_market_sentiment README",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0225::corpus_0462",
+          "nodeId": "knv2_0225",
+          "documentId": "corpus_0462",
+          "sourceName": "Wikipedia: Confirmation bias",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0225::corpus_0426",
+          "nodeId": "knv2_0225",
+          "documentId": "corpus_0426",
+          "sourceName": "Wikipedia: Event study",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0225::corpus_0425",
+          "nodeId": "knv2_0225",
+          "documentId": "corpus_0425",
+          "sourceName": "Wikipedia: Market sentiment",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_032_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 33,
+      "packetNumber": "033",
+      "packetId": "node-public-source-fit-batch-033-packet",
+      "batchId": "node-public-source-fit-batch-033",
+      "module": "新闻/情绪/事件偏见",
+      "targetNodes": 2,
+      "reviewRows": 12,
+      "readyRows": 0,
+      "blockedRows": 12,
+      "missingFieldRows": 12,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_033_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_033_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_033_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_033_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_033_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_033_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0345::corpus_0459",
+          "nodeId": "knv2_0345",
+          "documentId": "corpus_0459",
+          "sourceName": "Wikipedia: Behavioral economics",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0345::corpus_0102",
+          "nodeId": "knv2_0345",
+          "documentId": "corpus_0102",
+          "sourceName": "BEA News Release Schedule",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0345::corpus_1025",
+          "nodeId": "knv2_0345",
+          "documentId": "corpus_1025",
+          "sourceName": "bigvaldis/breaking_news_market_sentiment README",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0345::corpus_0462",
+          "nodeId": "knv2_0345",
+          "documentId": "corpus_0462",
+          "sourceName": "Wikipedia: Confirmation bias",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0345::corpus_0426",
+          "nodeId": "knv2_0345",
+          "documentId": "corpus_0426",
+          "sourceName": "Wikipedia: Event study",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0345::corpus_0425",
+          "nodeId": "knv2_0345",
+          "documentId": "corpus_0425",
+          "sourceName": "Wikipedia: Market sentiment",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_033_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 34,
+      "packetNumber": "034",
+      "packetId": "node-public-source-fit-batch-034-packet",
+      "batchId": "node-public-source-fit-batch-034",
+      "module": "图表阅读基础",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "missingFieldRows": 60,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_034_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_034_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_034_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_034_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_034_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_034_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0097::corpus_1584",
+          "nodeId": "knv2_0097",
+          "documentId": "corpus_1584",
+          "sourceName": "Wikipedia: Candlestick chart",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0097::corpus_0027",
+          "nodeId": "knv2_0097",
+          "documentId": "corpus_0027",
+          "sourceName": "BEA GDP",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0097::corpus_0206",
+          "nodeId": "knv2_0097",
+          "documentId": "corpus_0206",
+          "sourceName": "arXiv 1409.0064",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0097::corpus_0409",
+          "nodeId": "knv2_0097",
+          "documentId": "corpus_0409",
+          "sourceName": "Wikipedia: Chart pattern",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0097::corpus_1115",
+          "nodeId": "knv2_0097",
+          "documentId": "corpus_1115",
+          "sourceName": "Wikipedia: Gap (chart pattern)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0097::corpus_0445",
+          "nodeId": "knv2_0097",
+          "documentId": "corpus_0445",
+          "sourceName": "Wikipedia: Market trend",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_034_input_copy_template_then_fill_real_reviewer_rows"
+    },
+    {
+      "order": 35,
+      "packetNumber": "035",
+      "packetId": "node-public-source-fit-batch-035-packet",
+      "batchId": "node-public-source-fit-batch-035",
+      "module": "图表阅读基础",
+      "targetNodes": 8,
+      "reviewRows": 48,
+      "readyRows": 0,
+      "blockedRows": 48,
+      "missingFieldRows": 48,
+      "invalidDecisionRows": 0,
+      "forbiddenHitRows": 0,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "copiedTextApprovedRows": 0,
+      "handoffStatus": "node_public_source_fit_packet_035_handoff_ready_blocked_on_real_input",
+      "templateStatus": "node_public_source_fit_packet_035_input_copy_template_ready_blank",
+      "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+      "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_035_INPUT_COPY_TEMPLATE.json",
+      "templatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_035_INPUT_COPY_TEMPLATE.json",
+      "validationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_035_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_035_HANDOFF.json",
+      "hasDetailedRowBrowser": false,
+      "detailedRowBrowserPath": "",
+      "sampleRows": [
+        {
+          "rowIndex": 0,
+          "reviewId": "knv2_0253::corpus_1584",
+          "nodeId": "knv2_0253",
+          "documentId": "corpus_1584",
+          "sourceName": "Wikipedia: Candlestick chart",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 1,
+          "reviewId": "knv2_0253::corpus_0027",
+          "nodeId": "knv2_0253",
+          "documentId": "corpus_0027",
+          "sourceName": "BEA GDP",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 2,
+          "reviewId": "knv2_0253::corpus_0206",
+          "nodeId": "knv2_0253",
+          "documentId": "corpus_0206",
+          "sourceName": "arXiv 1409.0064",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 3,
+          "reviewId": "knv2_0253::corpus_0409",
+          "nodeId": "knv2_0253",
+          "documentId": "corpus_0409",
+          "sourceName": "Wikipedia: Chart pattern",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 4,
+          "reviewId": "knv2_0253::corpus_1115",
+          "nodeId": "knv2_0253",
+          "documentId": "corpus_1115",
+          "sourceName": "Wikipedia: Gap (chart pattern)",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        },
+        {
+          "rowIndex": 5,
+          "reviewId": "knv2_0253::corpus_0445",
+          "nodeId": "knv2_0253",
+          "documentId": "corpus_0445",
+          "sourceName": "Wikipedia: Market trend",
+          "validationStatus": "blocked_missing_or_invalid_reviewer_input",
+          "missingFields": [
+            "reviewerDecision",
+            "sourceFitNotes",
+            "citationUse",
+            "reviewerName",
+            "reviewedAt"
+          ]
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextAction": "open_packet_035_input_copy_template_then_fill_real_reviewer_rows"
+    }
+  ],
+  "moduleRows": [
+    {
+      "module": "K线与价格行为",
+      "packets": 3,
+      "targetNodes": 30,
+      "reviewRows": 180,
+      "readyRows": 0,
+      "blockedRows": 180,
+      "realHumanInputEntries": 0,
+      "firstBlockedPacketId": "node-public-source-fit-batch-001-packet",
+      "reviewStatus": "blocked_missing_real_reviewer_input"
+    },
+    {
+      "module": "突破",
+      "packets": 3,
+      "targetNodes": 27,
+      "reviewRows": 162,
+      "readyRows": 0,
+      "blockedRows": 162,
+      "realHumanInputEntries": 0,
+      "firstBlockedPacketId": "node-public-source-fit-batch-004-packet",
+      "reviewStatus": "blocked_missing_real_reviewer_input"
+    },
+    {
+      "module": "多周期分析",
+      "packets": 3,
+      "targetNodes": 22,
+      "reviewRows": 132,
+      "readyRows": 0,
+      "blockedRows": 132,
+      "realHumanInputEntries": 0,
+      "firstBlockedPacketId": "node-public-source-fit-batch-007-packet",
+      "reviewStatus": "blocked_missing_real_reviewer_input"
+    },
+    {
+      "module": "反转",
+      "packets": 3,
+      "targetNodes": 22,
+      "reviewRows": 132,
+      "readyRows": 0,
+      "blockedRows": 132,
+      "realHumanInputEntries": 0,
+      "firstBlockedPacketId": "node-public-source-fit-batch-010-packet",
+      "reviewStatus": "blocked_missing_real_reviewer_input"
+    },
+    {
+      "module": "风险管理",
+      "packets": 3,
+      "targetNodes": 22,
+      "reviewRows": 132,
+      "readyRows": 0,
+      "blockedRows": 132,
+      "realHumanInputEntries": 0,
+      "firstBlockedPacketId": "node-public-source-fit-batch-013-packet",
+      "reviewStatus": "blocked_missing_real_reviewer_input"
+    },
+    {
+      "module": "回测误区",
+      "packets": 3,
+      "targetNodes": 22,
+      "reviewRows": 132,
+      "readyRows": 0,
+      "blockedRows": 132,
+      "realHumanInputEntries": 0,
+      "firstBlockedPacketId": "node-public-source-fit-batch-016-packet",
+      "reviewStatus": "blocked_missing_real_reviewer_input"
+    },
+    {
+      "module": "交易区间",
+      "packets": 3,
+      "targetNodes": 22,
+      "reviewRows": 132,
+      "readyRows": 0,
+      "blockedRows": 132,
+      "realHumanInputEntries": 0,
+      "firstBlockedPacketId": "node-public-source-fit-batch-019-packet",
+      "reviewStatus": "blocked_missing_real_reviewer_input"
+    },
+    {
+      "module": "交易心理",
+      "packets": 3,
+      "targetNodes": 22,
+      "reviewRows": 132,
+      "readyRows": 0,
+      "blockedRows": 132,
+      "realHumanInputEntries": 0,
+      "firstBlockedPacketId": "node-public-source-fit-batch-022-packet",
+      "reviewStatus": "blocked_missing_real_reviewer_input"
+    },
+    {
+      "module": "趋势",
+      "packets": 3,
+      "targetNodes": 22,
+      "reviewRows": 132,
+      "readyRows": 0,
+      "blockedRows": 132,
+      "realHumanInputEntries": 0,
+      "firstBlockedPacketId": "node-public-source-fit-batch-025-packet",
+      "reviewStatus": "blocked_missing_real_reviewer_input"
+    },
+    {
+      "module": "市场结构",
+      "packets": 3,
+      "targetNodes": 22,
+      "reviewRows": 132,
+      "readyRows": 0,
+      "blockedRows": 132,
+      "realHumanInputEntries": 0,
+      "firstBlockedPacketId": "node-public-source-fit-batch-028-packet",
+      "reviewStatus": "blocked_missing_real_reviewer_input"
+    },
+    {
+      "module": "新闻/情绪/事件偏见",
+      "packets": 3,
+      "targetNodes": 22,
+      "reviewRows": 132,
+      "readyRows": 0,
+      "blockedRows": 132,
+      "realHumanInputEntries": 0,
+      "firstBlockedPacketId": "node-public-source-fit-batch-031-packet",
+      "reviewStatus": "blocked_missing_real_reviewer_input"
+    },
+    {
+      "module": "图表阅读基础",
+      "packets": 2,
+      "targetNodes": 18,
+      "reviewRows": 108,
+      "readyRows": 0,
+      "blockedRows": 108,
+      "realHumanInputEntries": 0,
+      "firstBlockedPacketId": "node-public-source-fit-batch-034-packet",
+      "reviewStatus": "blocked_missing_real_reviewer_input"
+    }
+  ],
+  "commands": [
+    "npm.cmd run build:knowledge-node-public-source-fit-reviewer-workbench-index",
+    "npm.cmd run check:knowledge-node-public-source-fit-reviewer-workbench-index",
+    "npm.cmd run build:knowledge-node-public-source-fit-packet-001-reviewer-workbench",
+    "npm.cmd run check:knowledge-node-public-source-fit-packet-001-reviewer-workbench",
+    "npm.cmd run build:knowledge-node-public-source-fit-review-packet-handoff-index",
+    "npm.cmd run check:knowledge-node-public-source-fit-review-packet-handoff-index"
+  ],
+  "completionRule": "The source-fit reviewer workbench index is a readonly all-packet navigation layer. It is not complete as course approval: all 35 packets and 1638 rows remain blocked until real human reviewer input, packet validation, merge preview, dry-run apply review, and separate exact-path write authorization pass.",
+  "boundary": "Source-fit reviewer workbench index is reviewer-facing education-only navigation across all 35 source-fit packets. It displays packet/module progress, input templates, validation state, and sample source rows; it does not generate human decisions, approve copied text, approve learner-facing citations, authorize writes, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, or production readiness."
+}

@@ -1,0 +1,55 @@
+{
+  "generatedAt": "2026-06-21T18:29:43.462Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "overlayWritten": true,
+  "statusPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "targetBatches": [
+    "rewrite_batch_01",
+    "rewrite_batch_05"
+  ],
+  "lessonCardsReviewed": 12,
+  "noteFieldsFilled": 72,
+  "directCandidatesDowngraded": 5,
+  "directCandidateRows": [
+    {
+      "lessonId": "lesson_knv2_0068",
+      "batchId": "rewrite_batch_01",
+      "sourceFamily": "CFTC",
+      "decision": "downgrade_to_boundary_only",
+      "rationale": "downgrade_to_boundary_only_unless_human_confirms_direct_claim_fit"
+    },
+    {
+      "lessonId": "lesson_knv2_0087",
+      "batchId": "rewrite_batch_05",
+      "sourceFamily": "BEA",
+      "decision": "downgrade_to_boundary_only",
+      "rationale": "downgrade_to_boundary_only_unless_human_confirms_direct_claim_fit"
+    },
+    {
+      "lessonId": "lesson_knv2_0087",
+      "batchId": "rewrite_batch_05",
+      "sourceFamily": "BLS",
+      "decision": "downgrade_to_boundary_only",
+      "rationale": "downgrade_to_boundary_only_unless_human_confirms_direct_claim_fit"
+    },
+    {
+      "lessonId": "lesson_knv2_0087",
+      "batchId": "rewrite_batch_05",
+      "sourceFamily": "CFTC",
+      "decision": "downgrade_to_boundary_only",
+      "rationale": "downgrade_to_boundary_only_unless_human_confirms_direct_claim_fit"
+    },
+    {
+      "lessonId": "lesson_knv2_0087",
+      "batchId": "rewrite_batch_05",
+      "sourceFamily": "SEC",
+      "decision": "downgrade_to_boundary_only",
+      "rationale": "downgrade_to_boundary_only_unless_human_confirms_direct_claim_fit"
+    }
+  ],
+  "boundary": "This Codex self-review overlay records source-fit, fact-check, boundary, copying-risk, and original-rewrite notes. It does not approve lessons, publish learner-facing content, change lesson grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, or guide real-money decisions."
+}

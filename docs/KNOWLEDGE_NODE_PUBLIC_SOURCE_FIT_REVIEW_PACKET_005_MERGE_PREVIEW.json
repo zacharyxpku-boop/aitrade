@@ -1,0 +1,2780 @@
+{
+  "generatedAt": "2026-06-22T04:39:23.170Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "mergePreviewStatus": "packet_005_merge_preview_blocked_missing_ready_packet_input",
+  "mergePreviewMode": "dry_run_packet_input_copy_to_full_source_fit_draft_mapping",
+  "packetId": "node-public-source-fit-batch-005-packet",
+  "batchId": "node-public-source-fit-batch-005",
+  "module": "突破",
+  "packetInputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_005_INPUT_COPY_TEMPLATE.json",
+  "packetValidationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_005_INPUT_COPY_TEMPLATE_VALIDATION.json",
+  "fullDraftInputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+  "fullValidationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_VALIDATION.json",
+  "packetRows": 60,
+  "fullDraftRows": 1638,
+  "fullValidationRows": 1638,
+  "mappedRows": 60,
+  "missingTargetRows": 0,
+  "readyRows": 0,
+  "blockedRows": 60,
+  "packetValidationStatus": "blocked_missing_real_reviewer_source_fit_input",
+  "packetReadyRows": 0,
+  "packetBlockedRows": 60,
+  "packetMissingFieldRows": 60,
+  "packetForbiddenHitRows": 0,
+  "packetRealHumanInputEntries": 0,
+  "fullDraftReadyRowsBeforeMerge": 0,
+  "fullDraftBlockedRowsBeforeMerge": 1638,
+  "mergeAllowedNow": false,
+  "writeAllowedNow": false,
+  "manualAuthorizationRequired": true,
+  "mergeRows": [
+    {
+      "packetRowIndex": 0,
+      "targetFullDraftRowIndex": 456,
+      "reviewId": "knv2_0161::corpus_0409",
+      "nodeId": "knv2_0161",
+      "documentId": "corpus_0409",
+      "sourceName": "Wikipedia: Chart pattern",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/0/reviewerDecision",
+          "to": "/rows/456/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/0/sourceFitNotes",
+          "to": "/rows/456/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/0/citationUse",
+          "to": "/rows/456/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/0/reviewerName",
+          "to": "/rows/456/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/0/reviewedAt",
+          "to": "/rows/456/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/0/realHumanInput",
+          "to": "/rows/456/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 1,
+      "targetFullDraftRowIndex": 457,
+      "reviewId": "knv2_0161::corpus_0155",
+      "nodeId": "knv2_0161",
+      "documentId": "corpus_0155",
+      "sourceName": "BLS Real Earnings News Release",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/1/reviewerDecision",
+          "to": "/rows/457/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/1/sourceFitNotes",
+          "to": "/rows/457/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/1/citationUse",
+          "to": "/rows/457/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/1/reviewerName",
+          "to": "/rows/457/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/1/reviewedAt",
+          "to": "/rows/457/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/1/realHumanInput",
+          "to": "/rows/457/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 2,
+      "targetFullDraftRowIndex": 458,
+      "reviewId": "knv2_0161::corpus_0938",
+      "nodeId": "knv2_0161",
+      "documentId": "corpus_0938",
+      "sourceName": "adityaalle1/Portfolio-Risk-Analysis- README",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/2/reviewerDecision",
+          "to": "/rows/458/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/2/sourceFitNotes",
+          "to": "/rows/458/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/2/citationUse",
+          "to": "/rows/458/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/2/reviewerName",
+          "to": "/rows/458/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/2/reviewedAt",
+          "to": "/rows/458/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/2/realHumanInput",
+          "to": "/rows/458/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 3,
+      "targetFullDraftRowIndex": 459,
+      "reviewId": "knv2_0161::corpus_1115",
+      "nodeId": "knv2_0161",
+      "documentId": "corpus_1115",
+      "sourceName": "Wikipedia: Gap (chart pattern)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/3/reviewerDecision",
+          "to": "/rows/459/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/3/sourceFitNotes",
+          "to": "/rows/459/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/3/citationUse",
+          "to": "/rows/459/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/3/reviewerName",
+          "to": "/rows/459/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/3/reviewedAt",
+          "to": "/rows/459/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/3/realHumanInput",
+          "to": "/rows/459/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 4,
+      "targetFullDraftRowIndex": 460,
+      "reviewId": "knv2_0161::corpus_0410",
+      "nodeId": "knv2_0161",
+      "documentId": "corpus_0410",
+      "sourceName": "Wikipedia: Head and shoulders (chart pattern)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/4/reviewerDecision",
+          "to": "/rows/460/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/4/sourceFitNotes",
+          "to": "/rows/460/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/4/citationUse",
+          "to": "/rows/460/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/4/reviewerName",
+          "to": "/rows/460/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/4/reviewedAt",
+          "to": "/rows/460/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/4/realHumanInput",
+          "to": "/rows/460/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 5,
+      "targetFullDraftRowIndex": 461,
+      "reviewId": "knv2_0161::corpus_1588",
+      "nodeId": "knv2_0161",
+      "documentId": "corpus_1588",
+      "sourceName": "Wikipedia: Price action trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/5/reviewerDecision",
+          "to": "/rows/461/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/5/sourceFitNotes",
+          "to": "/rows/461/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/5/citationUse",
+          "to": "/rows/461/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/5/reviewerName",
+          "to": "/rows/461/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/5/reviewedAt",
+          "to": "/rows/461/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/5/realHumanInput",
+          "to": "/rows/461/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 6,
+      "targetFullDraftRowIndex": 528,
+      "reviewId": "knv2_0173::corpus_0409",
+      "nodeId": "knv2_0173",
+      "documentId": "corpus_0409",
+      "sourceName": "Wikipedia: Chart pattern",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/6/reviewerDecision",
+          "to": "/rows/528/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/6/sourceFitNotes",
+          "to": "/rows/528/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/6/citationUse",
+          "to": "/rows/528/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/6/reviewerName",
+          "to": "/rows/528/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/6/reviewedAt",
+          "to": "/rows/528/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/6/realHumanInput",
+          "to": "/rows/528/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 7,
+      "targetFullDraftRowIndex": 529,
+      "reviewId": "knv2_0173::corpus_0155",
+      "nodeId": "knv2_0173",
+      "documentId": "corpus_0155",
+      "sourceName": "BLS Real Earnings News Release",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/7/reviewerDecision",
+          "to": "/rows/529/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/7/sourceFitNotes",
+          "to": "/rows/529/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/7/citationUse",
+          "to": "/rows/529/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/7/reviewerName",
+          "to": "/rows/529/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/7/reviewedAt",
+          "to": "/rows/529/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/7/realHumanInput",
+          "to": "/rows/529/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 8,
+      "targetFullDraftRowIndex": 530,
+      "reviewId": "knv2_0173::corpus_0938",
+      "nodeId": "knv2_0173",
+      "documentId": "corpus_0938",
+      "sourceName": "adityaalle1/Portfolio-Risk-Analysis- README",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/8/reviewerDecision",
+          "to": "/rows/530/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/8/sourceFitNotes",
+          "to": "/rows/530/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/8/citationUse",
+          "to": "/rows/530/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/8/reviewerName",
+          "to": "/rows/530/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/8/reviewedAt",
+          "to": "/rows/530/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/8/realHumanInput",
+          "to": "/rows/530/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 9,
+      "targetFullDraftRowIndex": 531,
+      "reviewId": "knv2_0173::corpus_1115",
+      "nodeId": "knv2_0173",
+      "documentId": "corpus_1115",
+      "sourceName": "Wikipedia: Gap (chart pattern)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/9/reviewerDecision",
+          "to": "/rows/531/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/9/sourceFitNotes",
+          "to": "/rows/531/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/9/citationUse",
+          "to": "/rows/531/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/9/reviewerName",
+          "to": "/rows/531/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/9/reviewedAt",
+          "to": "/rows/531/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/9/realHumanInput",
+          "to": "/rows/531/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 10,
+      "targetFullDraftRowIndex": 532,
+      "reviewId": "knv2_0173::corpus_0410",
+      "nodeId": "knv2_0173",
+      "documentId": "corpus_0410",
+      "sourceName": "Wikipedia: Head and shoulders (chart pattern)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/10/reviewerDecision",
+          "to": "/rows/532/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/10/sourceFitNotes",
+          "to": "/rows/532/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/10/citationUse",
+          "to": "/rows/532/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/10/reviewerName",
+          "to": "/rows/532/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/10/reviewedAt",
+          "to": "/rows/532/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/10/realHumanInput",
+          "to": "/rows/532/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 11,
+      "targetFullDraftRowIndex": 533,
+      "reviewId": "knv2_0173::corpus_1588",
+      "nodeId": "knv2_0173",
+      "documentId": "corpus_1588",
+      "sourceName": "Wikipedia: Price action trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/11/reviewerDecision",
+          "to": "/rows/533/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/11/sourceFitNotes",
+          "to": "/rows/533/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/11/citationUse",
+          "to": "/rows/533/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/11/reviewerName",
+          "to": "/rows/533/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/11/reviewedAt",
+          "to": "/rows/533/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/11/realHumanInput",
+          "to": "/rows/533/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 12,
+      "targetFullDraftRowIndex": 594,
+      "reviewId": "knv2_0185::corpus_0409",
+      "nodeId": "knv2_0185",
+      "documentId": "corpus_0409",
+      "sourceName": "Wikipedia: Chart pattern",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/12/reviewerDecision",
+          "to": "/rows/594/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/12/sourceFitNotes",
+          "to": "/rows/594/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/12/citationUse",
+          "to": "/rows/594/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/12/reviewerName",
+          "to": "/rows/594/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/12/reviewedAt",
+          "to": "/rows/594/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/12/realHumanInput",
+          "to": "/rows/594/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 13,
+      "targetFullDraftRowIndex": 595,
+      "reviewId": "knv2_0185::corpus_0155",
+      "nodeId": "knv2_0185",
+      "documentId": "corpus_0155",
+      "sourceName": "BLS Real Earnings News Release",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/13/reviewerDecision",
+          "to": "/rows/595/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/13/sourceFitNotes",
+          "to": "/rows/595/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/13/citationUse",
+          "to": "/rows/595/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/13/reviewerName",
+          "to": "/rows/595/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/13/reviewedAt",
+          "to": "/rows/595/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/13/realHumanInput",
+          "to": "/rows/595/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 14,
+      "targetFullDraftRowIndex": 596,
+      "reviewId": "knv2_0185::corpus_0938",
+      "nodeId": "knv2_0185",
+      "documentId": "corpus_0938",
+      "sourceName": "adityaalle1/Portfolio-Risk-Analysis- README",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/14/reviewerDecision",
+          "to": "/rows/596/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/14/sourceFitNotes",
+          "to": "/rows/596/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/14/citationUse",
+          "to": "/rows/596/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/14/reviewerName",
+          "to": "/rows/596/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/14/reviewedAt",
+          "to": "/rows/596/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/14/realHumanInput",
+          "to": "/rows/596/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 15,
+      "targetFullDraftRowIndex": 597,
+      "reviewId": "knv2_0185::corpus_1115",
+      "nodeId": "knv2_0185",
+      "documentId": "corpus_1115",
+      "sourceName": "Wikipedia: Gap (chart pattern)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/15/reviewerDecision",
+          "to": "/rows/597/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/15/sourceFitNotes",
+          "to": "/rows/597/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/15/citationUse",
+          "to": "/rows/597/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/15/reviewerName",
+          "to": "/rows/597/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/15/reviewedAt",
+          "to": "/rows/597/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/15/realHumanInput",
+          "to": "/rows/597/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 16,
+      "targetFullDraftRowIndex": 598,
+      "reviewId": "knv2_0185::corpus_0410",
+      "nodeId": "knv2_0185",
+      "documentId": "corpus_0410",
+      "sourceName": "Wikipedia: Head and shoulders (chart pattern)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/16/reviewerDecision",
+          "to": "/rows/598/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/16/sourceFitNotes",
+          "to": "/rows/598/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/16/citationUse",
+          "to": "/rows/598/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/16/reviewerName",
+          "to": "/rows/598/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/16/reviewedAt",
+          "to": "/rows/598/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/16/realHumanInput",
+          "to": "/rows/598/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 17,
+      "targetFullDraftRowIndex": 599,
+      "reviewId": "knv2_0185::corpus_1588",
+      "nodeId": "knv2_0185",
+      "documentId": "corpus_1588",
+      "sourceName": "Wikipedia: Price action trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/17/reviewerDecision",
+          "to": "/rows/599/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/17/sourceFitNotes",
+          "to": "/rows/599/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/17/citationUse",
+          "to": "/rows/599/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/17/reviewerName",
+          "to": "/rows/599/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/17/reviewedAt",
+          "to": "/rows/599/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/17/realHumanInput",
+          "to": "/rows/599/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 18,
+      "targetFullDraftRowIndex": 666,
+      "reviewId": "knv2_0197::corpus_0409",
+      "nodeId": "knv2_0197",
+      "documentId": "corpus_0409",
+      "sourceName": "Wikipedia: Chart pattern",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/18/reviewerDecision",
+          "to": "/rows/666/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/18/sourceFitNotes",
+          "to": "/rows/666/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/18/citationUse",
+          "to": "/rows/666/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/18/reviewerName",
+          "to": "/rows/666/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/18/reviewedAt",
+          "to": "/rows/666/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/18/realHumanInput",
+          "to": "/rows/666/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 19,
+      "targetFullDraftRowIndex": 667,
+      "reviewId": "knv2_0197::corpus_0155",
+      "nodeId": "knv2_0197",
+      "documentId": "corpus_0155",
+      "sourceName": "BLS Real Earnings News Release",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/19/reviewerDecision",
+          "to": "/rows/667/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/19/sourceFitNotes",
+          "to": "/rows/667/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/19/citationUse",
+          "to": "/rows/667/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/19/reviewerName",
+          "to": "/rows/667/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/19/reviewedAt",
+          "to": "/rows/667/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/19/realHumanInput",
+          "to": "/rows/667/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 20,
+      "targetFullDraftRowIndex": 668,
+      "reviewId": "knv2_0197::corpus_0938",
+      "nodeId": "knv2_0197",
+      "documentId": "corpus_0938",
+      "sourceName": "adityaalle1/Portfolio-Risk-Analysis- README",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/20/reviewerDecision",
+          "to": "/rows/668/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/20/sourceFitNotes",
+          "to": "/rows/668/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/20/citationUse",
+          "to": "/rows/668/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/20/reviewerName",
+          "to": "/rows/668/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/20/reviewedAt",
+          "to": "/rows/668/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/20/realHumanInput",
+          "to": "/rows/668/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 21,
+      "targetFullDraftRowIndex": 669,
+      "reviewId": "knv2_0197::corpus_1115",
+      "nodeId": "knv2_0197",
+      "documentId": "corpus_1115",
+      "sourceName": "Wikipedia: Gap (chart pattern)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/21/reviewerDecision",
+          "to": "/rows/669/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/21/sourceFitNotes",
+          "to": "/rows/669/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/21/citationUse",
+          "to": "/rows/669/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/21/reviewerName",
+          "to": "/rows/669/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/21/reviewedAt",
+          "to": "/rows/669/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/21/realHumanInput",
+          "to": "/rows/669/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 22,
+      "targetFullDraftRowIndex": 670,
+      "reviewId": "knv2_0197::corpus_0410",
+      "nodeId": "knv2_0197",
+      "documentId": "corpus_0410",
+      "sourceName": "Wikipedia: Head and shoulders (chart pattern)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/22/reviewerDecision",
+          "to": "/rows/670/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/22/sourceFitNotes",
+          "to": "/rows/670/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/22/citationUse",
+          "to": "/rows/670/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/22/reviewerName",
+          "to": "/rows/670/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/22/reviewedAt",
+          "to": "/rows/670/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/22/realHumanInput",
+          "to": "/rows/670/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 23,
+      "targetFullDraftRowIndex": 671,
+      "reviewId": "knv2_0197::corpus_1588",
+      "nodeId": "knv2_0197",
+      "documentId": "corpus_1588",
+      "sourceName": "Wikipedia: Price action trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/23/reviewerDecision",
+          "to": "/rows/671/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/23/sourceFitNotes",
+          "to": "/rows/671/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/23/citationUse",
+          "to": "/rows/671/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/23/reviewerName",
+          "to": "/rows/671/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/23/reviewedAt",
+          "to": "/rows/671/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/23/realHumanInput",
+          "to": "/rows/671/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 24,
+      "targetFullDraftRowIndex": 738,
+      "reviewId": "knv2_0209::corpus_0409",
+      "nodeId": "knv2_0209",
+      "documentId": "corpus_0409",
+      "sourceName": "Wikipedia: Chart pattern",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/24/reviewerDecision",
+          "to": "/rows/738/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/24/sourceFitNotes",
+          "to": "/rows/738/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/24/citationUse",
+          "to": "/rows/738/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/24/reviewerName",
+          "to": "/rows/738/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/24/reviewedAt",
+          "to": "/rows/738/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/24/realHumanInput",
+          "to": "/rows/738/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 25,
+      "targetFullDraftRowIndex": 739,
+      "reviewId": "knv2_0209::corpus_0155",
+      "nodeId": "knv2_0209",
+      "documentId": "corpus_0155",
+      "sourceName": "BLS Real Earnings News Release",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/25/reviewerDecision",
+          "to": "/rows/739/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/25/sourceFitNotes",
+          "to": "/rows/739/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/25/citationUse",
+          "to": "/rows/739/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/25/reviewerName",
+          "to": "/rows/739/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/25/reviewedAt",
+          "to": "/rows/739/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/25/realHumanInput",
+          "to": "/rows/739/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 26,
+      "targetFullDraftRowIndex": 740,
+      "reviewId": "knv2_0209::corpus_0938",
+      "nodeId": "knv2_0209",
+      "documentId": "corpus_0938",
+      "sourceName": "adityaalle1/Portfolio-Risk-Analysis- README",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/26/reviewerDecision",
+          "to": "/rows/740/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/26/sourceFitNotes",
+          "to": "/rows/740/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/26/citationUse",
+          "to": "/rows/740/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/26/reviewerName",
+          "to": "/rows/740/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/26/reviewedAt",
+          "to": "/rows/740/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/26/realHumanInput",
+          "to": "/rows/740/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 27,
+      "targetFullDraftRowIndex": 741,
+      "reviewId": "knv2_0209::corpus_1115",
+      "nodeId": "knv2_0209",
+      "documentId": "corpus_1115",
+      "sourceName": "Wikipedia: Gap (chart pattern)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/27/reviewerDecision",
+          "to": "/rows/741/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/27/sourceFitNotes",
+          "to": "/rows/741/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/27/citationUse",
+          "to": "/rows/741/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/27/reviewerName",
+          "to": "/rows/741/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/27/reviewedAt",
+          "to": "/rows/741/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/27/realHumanInput",
+          "to": "/rows/741/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 28,
+      "targetFullDraftRowIndex": 742,
+      "reviewId": "knv2_0209::corpus_0410",
+      "nodeId": "knv2_0209",
+      "documentId": "corpus_0410",
+      "sourceName": "Wikipedia: Head and shoulders (chart pattern)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/28/reviewerDecision",
+          "to": "/rows/742/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/28/sourceFitNotes",
+          "to": "/rows/742/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/28/citationUse",
+          "to": "/rows/742/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/28/reviewerName",
+          "to": "/rows/742/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/28/reviewedAt",
+          "to": "/rows/742/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/28/realHumanInput",
+          "to": "/rows/742/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 29,
+      "targetFullDraftRowIndex": 743,
+      "reviewId": "knv2_0209::corpus_1588",
+      "nodeId": "knv2_0209",
+      "documentId": "corpus_1588",
+      "sourceName": "Wikipedia: Price action trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/29/reviewerDecision",
+          "to": "/rows/743/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/29/sourceFitNotes",
+          "to": "/rows/743/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/29/citationUse",
+          "to": "/rows/743/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/29/reviewerName",
+          "to": "/rows/743/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/29/reviewedAt",
+          "to": "/rows/743/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/29/realHumanInput",
+          "to": "/rows/743/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 30,
+      "targetFullDraftRowIndex": 810,
+      "reviewId": "knv2_0221::corpus_0409",
+      "nodeId": "knv2_0221",
+      "documentId": "corpus_0409",
+      "sourceName": "Wikipedia: Chart pattern",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/30/reviewerDecision",
+          "to": "/rows/810/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/30/sourceFitNotes",
+          "to": "/rows/810/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/30/citationUse",
+          "to": "/rows/810/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/30/reviewerName",
+          "to": "/rows/810/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/30/reviewedAt",
+          "to": "/rows/810/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/30/realHumanInput",
+          "to": "/rows/810/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 31,
+      "targetFullDraftRowIndex": 811,
+      "reviewId": "knv2_0221::corpus_0155",
+      "nodeId": "knv2_0221",
+      "documentId": "corpus_0155",
+      "sourceName": "BLS Real Earnings News Release",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/31/reviewerDecision",
+          "to": "/rows/811/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/31/sourceFitNotes",
+          "to": "/rows/811/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/31/citationUse",
+          "to": "/rows/811/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/31/reviewerName",
+          "to": "/rows/811/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/31/reviewedAt",
+          "to": "/rows/811/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/31/realHumanInput",
+          "to": "/rows/811/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 32,
+      "targetFullDraftRowIndex": 812,
+      "reviewId": "knv2_0221::corpus_0938",
+      "nodeId": "knv2_0221",
+      "documentId": "corpus_0938",
+      "sourceName": "adityaalle1/Portfolio-Risk-Analysis- README",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/32/reviewerDecision",
+          "to": "/rows/812/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/32/sourceFitNotes",
+          "to": "/rows/812/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/32/citationUse",
+          "to": "/rows/812/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/32/reviewerName",
+          "to": "/rows/812/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/32/reviewedAt",
+          "to": "/rows/812/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/32/realHumanInput",
+          "to": "/rows/812/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 33,
+      "targetFullDraftRowIndex": 813,
+      "reviewId": "knv2_0221::corpus_1115",
+      "nodeId": "knv2_0221",
+      "documentId": "corpus_1115",
+      "sourceName": "Wikipedia: Gap (chart pattern)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/33/reviewerDecision",
+          "to": "/rows/813/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/33/sourceFitNotes",
+          "to": "/rows/813/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/33/citationUse",
+          "to": "/rows/813/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/33/reviewerName",
+          "to": "/rows/813/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/33/reviewedAt",
+          "to": "/rows/813/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/33/realHumanInput",
+          "to": "/rows/813/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 34,
+      "targetFullDraftRowIndex": 814,
+      "reviewId": "knv2_0221::corpus_0410",
+      "nodeId": "knv2_0221",
+      "documentId": "corpus_0410",
+      "sourceName": "Wikipedia: Head and shoulders (chart pattern)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/34/reviewerDecision",
+          "to": "/rows/814/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/34/sourceFitNotes",
+          "to": "/rows/814/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/34/citationUse",
+          "to": "/rows/814/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/34/reviewerName",
+          "to": "/rows/814/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/34/reviewedAt",
+          "to": "/rows/814/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/34/realHumanInput",
+          "to": "/rows/814/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 35,
+      "targetFullDraftRowIndex": 815,
+      "reviewId": "knv2_0221::corpus_1588",
+      "nodeId": "knv2_0221",
+      "documentId": "corpus_1588",
+      "sourceName": "Wikipedia: Price action trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/35/reviewerDecision",
+          "to": "/rows/815/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/35/sourceFitNotes",
+          "to": "/rows/815/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/35/citationUse",
+          "to": "/rows/815/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/35/reviewerName",
+          "to": "/rows/815/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/35/reviewedAt",
+          "to": "/rows/815/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/35/realHumanInput",
+          "to": "/rows/815/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 36,
+      "targetFullDraftRowIndex": 882,
+      "reviewId": "knv2_0233::corpus_0409",
+      "nodeId": "knv2_0233",
+      "documentId": "corpus_0409",
+      "sourceName": "Wikipedia: Chart pattern",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/36/reviewerDecision",
+          "to": "/rows/882/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/36/sourceFitNotes",
+          "to": "/rows/882/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/36/citationUse",
+          "to": "/rows/882/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/36/reviewerName",
+          "to": "/rows/882/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/36/reviewedAt",
+          "to": "/rows/882/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/36/realHumanInput",
+          "to": "/rows/882/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 37,
+      "targetFullDraftRowIndex": 883,
+      "reviewId": "knv2_0233::corpus_0155",
+      "nodeId": "knv2_0233",
+      "documentId": "corpus_0155",
+      "sourceName": "BLS Real Earnings News Release",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/37/reviewerDecision",
+          "to": "/rows/883/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/37/sourceFitNotes",
+          "to": "/rows/883/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/37/citationUse",
+          "to": "/rows/883/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/37/reviewerName",
+          "to": "/rows/883/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/37/reviewedAt",
+          "to": "/rows/883/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/37/realHumanInput",
+          "to": "/rows/883/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 38,
+      "targetFullDraftRowIndex": 884,
+      "reviewId": "knv2_0233::corpus_0938",
+      "nodeId": "knv2_0233",
+      "documentId": "corpus_0938",
+      "sourceName": "adityaalle1/Portfolio-Risk-Analysis- README",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/38/reviewerDecision",
+          "to": "/rows/884/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/38/sourceFitNotes",
+          "to": "/rows/884/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/38/citationUse",
+          "to": "/rows/884/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/38/reviewerName",
+          "to": "/rows/884/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/38/reviewedAt",
+          "to": "/rows/884/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/38/realHumanInput",
+          "to": "/rows/884/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 39,
+      "targetFullDraftRowIndex": 885,
+      "reviewId": "knv2_0233::corpus_1115",
+      "nodeId": "knv2_0233",
+      "documentId": "corpus_1115",
+      "sourceName": "Wikipedia: Gap (chart pattern)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/39/reviewerDecision",
+          "to": "/rows/885/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/39/sourceFitNotes",
+          "to": "/rows/885/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/39/citationUse",
+          "to": "/rows/885/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/39/reviewerName",
+          "to": "/rows/885/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/39/reviewedAt",
+          "to": "/rows/885/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/39/realHumanInput",
+          "to": "/rows/885/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 40,
+      "targetFullDraftRowIndex": 886,
+      "reviewId": "knv2_0233::corpus_0410",
+      "nodeId": "knv2_0233",
+      "documentId": "corpus_0410",
+      "sourceName": "Wikipedia: Head and shoulders (chart pattern)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/40/reviewerDecision",
+          "to": "/rows/886/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/40/sourceFitNotes",
+          "to": "/rows/886/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/40/citationUse",
+          "to": "/rows/886/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/40/reviewerName",
+          "to": "/rows/886/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/40/reviewedAt",
+          "to": "/rows/886/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/40/realHumanInput",
+          "to": "/rows/886/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 41,
+      "targetFullDraftRowIndex": 887,
+      "reviewId": "knv2_0233::corpus_1588",
+      "nodeId": "knv2_0233",
+      "documentId": "corpus_1588",
+      "sourceName": "Wikipedia: Price action trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/41/reviewerDecision",
+          "to": "/rows/887/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/41/sourceFitNotes",
+          "to": "/rows/887/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/41/citationUse",
+          "to": "/rows/887/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/41/reviewerName",
+          "to": "/rows/887/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/41/reviewedAt",
+          "to": "/rows/887/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/41/realHumanInput",
+          "to": "/rows/887/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 42,
+      "targetFullDraftRowIndex": 948,
+      "reviewId": "knv2_0245::corpus_0409",
+      "nodeId": "knv2_0245",
+      "documentId": "corpus_0409",
+      "sourceName": "Wikipedia: Chart pattern",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/42/reviewerDecision",
+          "to": "/rows/948/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/42/sourceFitNotes",
+          "to": "/rows/948/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/42/citationUse",
+          "to": "/rows/948/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/42/reviewerName",
+          "to": "/rows/948/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/42/reviewedAt",
+          "to": "/rows/948/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/42/realHumanInput",
+          "to": "/rows/948/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 43,
+      "targetFullDraftRowIndex": 949,
+      "reviewId": "knv2_0245::corpus_0155",
+      "nodeId": "knv2_0245",
+      "documentId": "corpus_0155",
+      "sourceName": "BLS Real Earnings News Release",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/43/reviewerDecision",
+          "to": "/rows/949/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/43/sourceFitNotes",
+          "to": "/rows/949/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/43/citationUse",
+          "to": "/rows/949/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/43/reviewerName",
+          "to": "/rows/949/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/43/reviewedAt",
+          "to": "/rows/949/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/43/realHumanInput",
+          "to": "/rows/949/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 44,
+      "targetFullDraftRowIndex": 950,
+      "reviewId": "knv2_0245::corpus_0938",
+      "nodeId": "knv2_0245",
+      "documentId": "corpus_0938",
+      "sourceName": "adityaalle1/Portfolio-Risk-Analysis- README",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/44/reviewerDecision",
+          "to": "/rows/950/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/44/sourceFitNotes",
+          "to": "/rows/950/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/44/citationUse",
+          "to": "/rows/950/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/44/reviewerName",
+          "to": "/rows/950/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/44/reviewedAt",
+          "to": "/rows/950/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/44/realHumanInput",
+          "to": "/rows/950/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 45,
+      "targetFullDraftRowIndex": 951,
+      "reviewId": "knv2_0245::corpus_1115",
+      "nodeId": "knv2_0245",
+      "documentId": "corpus_1115",
+      "sourceName": "Wikipedia: Gap (chart pattern)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/45/reviewerDecision",
+          "to": "/rows/951/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/45/sourceFitNotes",
+          "to": "/rows/951/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/45/citationUse",
+          "to": "/rows/951/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/45/reviewerName",
+          "to": "/rows/951/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/45/reviewedAt",
+          "to": "/rows/951/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/45/realHumanInput",
+          "to": "/rows/951/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 46,
+      "targetFullDraftRowIndex": 952,
+      "reviewId": "knv2_0245::corpus_0410",
+      "nodeId": "knv2_0245",
+      "documentId": "corpus_0410",
+      "sourceName": "Wikipedia: Head and shoulders (chart pattern)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/46/reviewerDecision",
+          "to": "/rows/952/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/46/sourceFitNotes",
+          "to": "/rows/952/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/46/citationUse",
+          "to": "/rows/952/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/46/reviewerName",
+          "to": "/rows/952/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/46/reviewedAt",
+          "to": "/rows/952/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/46/realHumanInput",
+          "to": "/rows/952/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 47,
+      "targetFullDraftRowIndex": 953,
+      "reviewId": "knv2_0245::corpus_1588",
+      "nodeId": "knv2_0245",
+      "documentId": "corpus_1588",
+      "sourceName": "Wikipedia: Price action trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/47/reviewerDecision",
+          "to": "/rows/953/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/47/sourceFitNotes",
+          "to": "/rows/953/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/47/citationUse",
+          "to": "/rows/953/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/47/reviewerName",
+          "to": "/rows/953/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/47/reviewedAt",
+          "to": "/rows/953/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/47/realHumanInput",
+          "to": "/rows/953/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 48,
+      "targetFullDraftRowIndex": 1020,
+      "reviewId": "knv2_0257::corpus_0409",
+      "nodeId": "knv2_0257",
+      "documentId": "corpus_0409",
+      "sourceName": "Wikipedia: Chart pattern",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/48/reviewerDecision",
+          "to": "/rows/1020/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/48/sourceFitNotes",
+          "to": "/rows/1020/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/48/citationUse",
+          "to": "/rows/1020/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/48/reviewerName",
+          "to": "/rows/1020/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/48/reviewedAt",
+          "to": "/rows/1020/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/48/realHumanInput",
+          "to": "/rows/1020/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 49,
+      "targetFullDraftRowIndex": 1021,
+      "reviewId": "knv2_0257::corpus_0155",
+      "nodeId": "knv2_0257",
+      "documentId": "corpus_0155",
+      "sourceName": "BLS Real Earnings News Release",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/49/reviewerDecision",
+          "to": "/rows/1021/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/49/sourceFitNotes",
+          "to": "/rows/1021/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/49/citationUse",
+          "to": "/rows/1021/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/49/reviewerName",
+          "to": "/rows/1021/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/49/reviewedAt",
+          "to": "/rows/1021/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/49/realHumanInput",
+          "to": "/rows/1021/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 50,
+      "targetFullDraftRowIndex": 1022,
+      "reviewId": "knv2_0257::corpus_0938",
+      "nodeId": "knv2_0257",
+      "documentId": "corpus_0938",
+      "sourceName": "adityaalle1/Portfolio-Risk-Analysis- README",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/50/reviewerDecision",
+          "to": "/rows/1022/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/50/sourceFitNotes",
+          "to": "/rows/1022/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/50/citationUse",
+          "to": "/rows/1022/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/50/reviewerName",
+          "to": "/rows/1022/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/50/reviewedAt",
+          "to": "/rows/1022/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/50/realHumanInput",
+          "to": "/rows/1022/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 51,
+      "targetFullDraftRowIndex": 1023,
+      "reviewId": "knv2_0257::corpus_1115",
+      "nodeId": "knv2_0257",
+      "documentId": "corpus_1115",
+      "sourceName": "Wikipedia: Gap (chart pattern)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/51/reviewerDecision",
+          "to": "/rows/1023/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/51/sourceFitNotes",
+          "to": "/rows/1023/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/51/citationUse",
+          "to": "/rows/1023/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/51/reviewerName",
+          "to": "/rows/1023/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/51/reviewedAt",
+          "to": "/rows/1023/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/51/realHumanInput",
+          "to": "/rows/1023/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 52,
+      "targetFullDraftRowIndex": 1024,
+      "reviewId": "knv2_0257::corpus_0410",
+      "nodeId": "knv2_0257",
+      "documentId": "corpus_0410",
+      "sourceName": "Wikipedia: Head and shoulders (chart pattern)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/52/reviewerDecision",
+          "to": "/rows/1024/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/52/sourceFitNotes",
+          "to": "/rows/1024/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/52/citationUse",
+          "to": "/rows/1024/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/52/reviewerName",
+          "to": "/rows/1024/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/52/reviewedAt",
+          "to": "/rows/1024/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/52/realHumanInput",
+          "to": "/rows/1024/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 53,
+      "targetFullDraftRowIndex": 1025,
+      "reviewId": "knv2_0257::corpus_1588",
+      "nodeId": "knv2_0257",
+      "documentId": "corpus_1588",
+      "sourceName": "Wikipedia: Price action trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/53/reviewerDecision",
+          "to": "/rows/1025/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/53/sourceFitNotes",
+          "to": "/rows/1025/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/53/citationUse",
+          "to": "/rows/1025/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/53/reviewerName",
+          "to": "/rows/1025/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/53/reviewedAt",
+          "to": "/rows/1025/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/53/realHumanInput",
+          "to": "/rows/1025/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 54,
+      "targetFullDraftRowIndex": 1092,
+      "reviewId": "knv2_0269::corpus_0409",
+      "nodeId": "knv2_0269",
+      "documentId": "corpus_0409",
+      "sourceName": "Wikipedia: Chart pattern",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/54/reviewerDecision",
+          "to": "/rows/1092/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/54/sourceFitNotes",
+          "to": "/rows/1092/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/54/citationUse",
+          "to": "/rows/1092/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/54/reviewerName",
+          "to": "/rows/1092/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/54/reviewedAt",
+          "to": "/rows/1092/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/54/realHumanInput",
+          "to": "/rows/1092/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 55,
+      "targetFullDraftRowIndex": 1093,
+      "reviewId": "knv2_0269::corpus_0155",
+      "nodeId": "knv2_0269",
+      "documentId": "corpus_0155",
+      "sourceName": "BLS Real Earnings News Release",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/55/reviewerDecision",
+          "to": "/rows/1093/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/55/sourceFitNotes",
+          "to": "/rows/1093/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/55/citationUse",
+          "to": "/rows/1093/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/55/reviewerName",
+          "to": "/rows/1093/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/55/reviewedAt",
+          "to": "/rows/1093/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/55/realHumanInput",
+          "to": "/rows/1093/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 56,
+      "targetFullDraftRowIndex": 1094,
+      "reviewId": "knv2_0269::corpus_0938",
+      "nodeId": "knv2_0269",
+      "documentId": "corpus_0938",
+      "sourceName": "adityaalle1/Portfolio-Risk-Analysis- README",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/56/reviewerDecision",
+          "to": "/rows/1094/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/56/sourceFitNotes",
+          "to": "/rows/1094/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/56/citationUse",
+          "to": "/rows/1094/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/56/reviewerName",
+          "to": "/rows/1094/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/56/reviewedAt",
+          "to": "/rows/1094/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/56/realHumanInput",
+          "to": "/rows/1094/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 57,
+      "targetFullDraftRowIndex": 1095,
+      "reviewId": "knv2_0269::corpus_1115",
+      "nodeId": "knv2_0269",
+      "documentId": "corpus_1115",
+      "sourceName": "Wikipedia: Gap (chart pattern)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/57/reviewerDecision",
+          "to": "/rows/1095/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/57/sourceFitNotes",
+          "to": "/rows/1095/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/57/citationUse",
+          "to": "/rows/1095/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/57/reviewerName",
+          "to": "/rows/1095/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/57/reviewedAt",
+          "to": "/rows/1095/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/57/realHumanInput",
+          "to": "/rows/1095/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 58,
+      "targetFullDraftRowIndex": 1096,
+      "reviewId": "knv2_0269::corpus_0410",
+      "nodeId": "knv2_0269",
+      "documentId": "corpus_0410",
+      "sourceName": "Wikipedia: Head and shoulders (chart pattern)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/58/reviewerDecision",
+          "to": "/rows/1096/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/58/sourceFitNotes",
+          "to": "/rows/1096/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/58/citationUse",
+          "to": "/rows/1096/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/58/reviewerName",
+          "to": "/rows/1096/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/58/reviewedAt",
+          "to": "/rows/1096/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/58/realHumanInput",
+          "to": "/rows/1096/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 59,
+      "targetFullDraftRowIndex": 1097,
+      "reviewId": "knv2_0269::corpus_1588",
+      "nodeId": "knv2_0269",
+      "documentId": "corpus_1588",
+      "sourceName": "Wikipedia: Price action trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/59/reviewerDecision",
+          "to": "/rows/1097/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/59/sourceFitNotes",
+          "to": "/rows/1097/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/59/citationUse",
+          "to": "/rows/1097/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/59/reviewerName",
+          "to": "/rows/1097/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/59/reviewedAt",
+          "to": "/rows/1097/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/59/realHumanInput",
+          "to": "/rows/1097/realHumanInput"
+        }
+      }
+    }
+  ],
+  "sampleMergeRows": [
+    {
+      "packetRowIndex": 0,
+      "targetFullDraftRowIndex": 456,
+      "reviewId": "knv2_0161::corpus_0409",
+      "nodeId": "knv2_0161",
+      "documentId": "corpus_0409",
+      "sourceName": "Wikipedia: Chart pattern",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/0/reviewerDecision",
+          "to": "/rows/456/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/0/sourceFitNotes",
+          "to": "/rows/456/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/0/citationUse",
+          "to": "/rows/456/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/0/reviewerName",
+          "to": "/rows/456/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/0/reviewedAt",
+          "to": "/rows/456/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/0/realHumanInput",
+          "to": "/rows/456/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 1,
+      "targetFullDraftRowIndex": 457,
+      "reviewId": "knv2_0161::corpus_0155",
+      "nodeId": "knv2_0161",
+      "documentId": "corpus_0155",
+      "sourceName": "BLS Real Earnings News Release",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/1/reviewerDecision",
+          "to": "/rows/457/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/1/sourceFitNotes",
+          "to": "/rows/457/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/1/citationUse",
+          "to": "/rows/457/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/1/reviewerName",
+          "to": "/rows/457/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/1/reviewedAt",
+          "to": "/rows/457/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/1/realHumanInput",
+          "to": "/rows/457/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 2,
+      "targetFullDraftRowIndex": 458,
+      "reviewId": "knv2_0161::corpus_0938",
+      "nodeId": "knv2_0161",
+      "documentId": "corpus_0938",
+      "sourceName": "adityaalle1/Portfolio-Risk-Analysis- README",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/2/reviewerDecision",
+          "to": "/rows/458/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/2/sourceFitNotes",
+          "to": "/rows/458/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/2/citationUse",
+          "to": "/rows/458/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/2/reviewerName",
+          "to": "/rows/458/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/2/reviewedAt",
+          "to": "/rows/458/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/2/realHumanInput",
+          "to": "/rows/458/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 3,
+      "targetFullDraftRowIndex": 459,
+      "reviewId": "knv2_0161::corpus_1115",
+      "nodeId": "knv2_0161",
+      "documentId": "corpus_1115",
+      "sourceName": "Wikipedia: Gap (chart pattern)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/3/reviewerDecision",
+          "to": "/rows/459/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/3/sourceFitNotes",
+          "to": "/rows/459/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/3/citationUse",
+          "to": "/rows/459/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/3/reviewerName",
+          "to": "/rows/459/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/3/reviewedAt",
+          "to": "/rows/459/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/3/realHumanInput",
+          "to": "/rows/459/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 4,
+      "targetFullDraftRowIndex": 460,
+      "reviewId": "knv2_0161::corpus_0410",
+      "nodeId": "knv2_0161",
+      "documentId": "corpus_0410",
+      "sourceName": "Wikipedia: Head and shoulders (chart pattern)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/4/reviewerDecision",
+          "to": "/rows/460/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/4/sourceFitNotes",
+          "to": "/rows/460/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/4/citationUse",
+          "to": "/rows/460/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/4/reviewerName",
+          "to": "/rows/460/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/4/reviewedAt",
+          "to": "/rows/460/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/4/realHumanInput",
+          "to": "/rows/460/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 5,
+      "targetFullDraftRowIndex": 461,
+      "reviewId": "knv2_0161::corpus_1588",
+      "nodeId": "knv2_0161",
+      "documentId": "corpus_1588",
+      "sourceName": "Wikipedia: Price action trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/5/reviewerDecision",
+          "to": "/rows/461/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/5/sourceFitNotes",
+          "to": "/rows/461/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/5/citationUse",
+          "to": "/rows/461/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/5/reviewerName",
+          "to": "/rows/461/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/5/reviewedAt",
+          "to": "/rows/461/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/5/realHumanInput",
+          "to": "/rows/461/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 6,
+      "targetFullDraftRowIndex": 528,
+      "reviewId": "knv2_0173::corpus_0409",
+      "nodeId": "knv2_0173",
+      "documentId": "corpus_0409",
+      "sourceName": "Wikipedia: Chart pattern",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/6/reviewerDecision",
+          "to": "/rows/528/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/6/sourceFitNotes",
+          "to": "/rows/528/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/6/citationUse",
+          "to": "/rows/528/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/6/reviewerName",
+          "to": "/rows/528/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/6/reviewedAt",
+          "to": "/rows/528/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/6/realHumanInput",
+          "to": "/rows/528/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 7,
+      "targetFullDraftRowIndex": 529,
+      "reviewId": "knv2_0173::corpus_0155",
+      "nodeId": "knv2_0173",
+      "documentId": "corpus_0155",
+      "sourceName": "BLS Real Earnings News Release",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/7/reviewerDecision",
+          "to": "/rows/529/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/7/sourceFitNotes",
+          "to": "/rows/529/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/7/citationUse",
+          "to": "/rows/529/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/7/reviewerName",
+          "to": "/rows/529/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/7/reviewedAt",
+          "to": "/rows/529/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/7/realHumanInput",
+          "to": "/rows/529/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 8,
+      "targetFullDraftRowIndex": 530,
+      "reviewId": "knv2_0173::corpus_0938",
+      "nodeId": "knv2_0173",
+      "documentId": "corpus_0938",
+      "sourceName": "adityaalle1/Portfolio-Risk-Analysis- README",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/8/reviewerDecision",
+          "to": "/rows/530/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/8/sourceFitNotes",
+          "to": "/rows/530/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/8/citationUse",
+          "to": "/rows/530/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/8/reviewerName",
+          "to": "/rows/530/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/8/reviewedAt",
+          "to": "/rows/530/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/8/realHumanInput",
+          "to": "/rows/530/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 9,
+      "targetFullDraftRowIndex": 531,
+      "reviewId": "knv2_0173::corpus_1115",
+      "nodeId": "knv2_0173",
+      "documentId": "corpus_1115",
+      "sourceName": "Wikipedia: Gap (chart pattern)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/9/reviewerDecision",
+          "to": "/rows/531/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/9/sourceFitNotes",
+          "to": "/rows/531/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/9/citationUse",
+          "to": "/rows/531/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/9/reviewerName",
+          "to": "/rows/531/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/9/reviewedAt",
+          "to": "/rows/531/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/9/realHumanInput",
+          "to": "/rows/531/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 10,
+      "targetFullDraftRowIndex": 532,
+      "reviewId": "knv2_0173::corpus_0410",
+      "nodeId": "knv2_0173",
+      "documentId": "corpus_0410",
+      "sourceName": "Wikipedia: Head and shoulders (chart pattern)",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/10/reviewerDecision",
+          "to": "/rows/532/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/10/sourceFitNotes",
+          "to": "/rows/532/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/10/citationUse",
+          "to": "/rows/532/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/10/reviewerName",
+          "to": "/rows/532/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/10/reviewedAt",
+          "to": "/rows/532/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/10/realHumanInput",
+          "to": "/rows/532/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 11,
+      "targetFullDraftRowIndex": 533,
+      "reviewId": "knv2_0173::corpus_1588",
+      "nodeId": "knv2_0173",
+      "documentId": "corpus_1588",
+      "sourceName": "Wikipedia: Price action trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/11/reviewerDecision",
+          "to": "/rows/533/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/11/sourceFitNotes",
+          "to": "/rows/533/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/11/citationUse",
+          "to": "/rows/533/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/11/reviewerName",
+          "to": "/rows/533/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/11/reviewedAt",
+          "to": "/rows/533/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/11/realHumanInput",
+          "to": "/rows/533/realHumanInput"
+        }
+      }
+    }
+  ],
+  "commands": [
+    "npm.cmd run build:knowledge-node-public-source-fit-review-packet-005-suite",
+    "npm.cmd run check:knowledge-node-public-source-fit-review-packet-005-suite"
+  ],
+  "completionRule": "Packet 005 merge preview becomes ready only when the packet input copy validates every row as real human input, every packet row maps to the full 1638-row draft, forbidden hits are zero, learnerCitationApproved:false, copiedTextApproved:false, and a separate manual merge/write authorization exists.",
+  "boundary": "Packet 005 merge preview is dry-run reviewer operations only. It does not write the full source-fit draft, create human judgments, approve copied text, approve learner-facing citations, write lessons, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, or production readiness."
+}

@@ -1,0 +1,283 @@
+{
+  "generatedAt": "2026-06-19T09:47:05.130Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "coverageReady": true,
+  "coverageMode": "reviewer_operations_map_only",
+  "rewriteBatches": 8,
+  "dedicatedEditorPackets": 8,
+  "dedicatedNotesDryRuns": 8,
+  "fullyCoveredBatches": 8,
+  "uncoveredBatches": 0,
+  "nextRecommendedBatch": null,
+  "batchRows": [
+    {
+      "batchId": "rewrite_batch_01",
+      "itemCount": 6,
+      "modules": [
+        "多周期分析",
+        "交易区间",
+        "反转"
+      ],
+      "priorityFocus": "P0+P1",
+      "sourceFamilies": [
+        "SEC",
+        "CFTC",
+        "Investor.gov",
+        "Federal Reserve",
+        "Treasury",
+        "BEA",
+        "Project Gutenberg",
+        "BLS",
+        "federalregister.gov"
+      ],
+      "riskCounts": {
+        "high": 1,
+        "medium": 5,
+        "low": 0
+      },
+      "hasDedicatedEditorPacket": true,
+      "hasDedicatedNotesDryRun": true,
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "nextAction": "ready_for_human_editor_packet_use_only"
+    },
+    {
+      "batchId": "rewrite_batch_02",
+      "itemCount": 6,
+      "modules": [
+        "反转",
+        "交易区间",
+        "交易心理"
+      ],
+      "priorityFocus": "P1",
+      "sourceFamilies": [
+        "BLS",
+        "financialresearch.gov",
+        "Treasury",
+        "Internet Archive",
+        "Federal Reserve",
+        "BEA",
+        "CFTC",
+        "federalregister.gov",
+        "Investor.gov",
+        "Project Gutenberg",
+        "SEC",
+        "Census",
+        "consumerfinance.gov"
+      ],
+      "riskCounts": {
+        "high": 0,
+        "medium": 2,
+        "low": 4
+      },
+      "hasDedicatedEditorPacket": true,
+      "hasDedicatedNotesDryRun": true,
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "nextAction": "ready_for_human_editor_packet_use_only"
+    },
+    {
+      "batchId": "rewrite_batch_03",
+      "itemCount": 6,
+      "modules": [
+        "交易心理",
+        "趋势"
+      ],
+      "priorityFocus": "P1",
+      "sourceFamilies": [
+        "consumerfinance.gov",
+        "CFTC",
+        "EIA",
+        "SEC",
+        "Treasury",
+        "Project Gutenberg",
+        "BEA",
+        "BLS",
+        "Investor.gov",
+        "Federal Reserve",
+        "Internet Archive"
+      ],
+      "riskCounts": {
+        "high": 0,
+        "medium": 3,
+        "low": 3
+      },
+      "hasDedicatedEditorPacket": true,
+      "hasDedicatedNotesDryRun": true,
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "nextAction": "ready_for_human_editor_packet_use_only"
+    },
+    {
+      "batchId": "rewrite_batch_04",
+      "itemCount": 6,
+      "modules": [
+        "市场结构",
+        "新闻/情绪/事件偏见",
+        "K线与价格行为"
+      ],
+      "priorityFocus": "P1",
+      "sourceFamilies": [
+        "Federal Reserve",
+        "SEC",
+        "Project Gutenberg",
+        "Treasury",
+        "CFTC",
+        "BEA",
+        "Investor.gov",
+        "BLS",
+        "dol.gov",
+        "Internet Archive"
+      ],
+      "riskCounts": {
+        "high": 0,
+        "medium": 1,
+        "low": 5
+      },
+      "hasDedicatedEditorPacket": true,
+      "hasDedicatedNotesDryRun": true,
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "nextAction": "ready_for_human_editor_packet_use_only"
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "itemCount": 6,
+      "modules": [
+        "K线与价格行为",
+        "风险管理"
+      ],
+      "priorityFocus": "P1",
+      "sourceFamilies": [
+        "SEC",
+        "Investor.gov",
+        "Treasury",
+        "Project Gutenberg",
+        "BEA",
+        "CFTC",
+        "BLS",
+        "Federal Reserve",
+        "nist.gov"
+      ],
+      "riskCounts": {
+        "high": 1,
+        "medium": 2,
+        "low": 3
+      },
+      "hasDedicatedEditorPacket": true,
+      "hasDedicatedNotesDryRun": true,
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "nextAction": "ready_for_human_editor_packet_use_only"
+    },
+    {
+      "batchId": "rewrite_batch_06",
+      "itemCount": 6,
+      "modules": [
+        "风险管理",
+        "反转",
+        "回测误区"
+      ],
+      "priorityFocus": "P1+P2",
+      "sourceFamilies": [
+        "Investor.gov",
+        "CFTC",
+        "SEC",
+        "BLS",
+        "BEA",
+        "Treasury",
+        "financialresearch.gov",
+        "Project Gutenberg",
+        "treasurydirect.gov",
+        "EIA"
+      ],
+      "riskCounts": {
+        "high": 0,
+        "medium": 2,
+        "low": 4
+      },
+      "hasDedicatedEditorPacket": true,
+      "hasDedicatedNotesDryRun": true,
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "nextAction": "ready_for_human_editor_packet_use_only"
+    },
+    {
+      "batchId": "rewrite_batch_07",
+      "itemCount": 6,
+      "modules": [
+        "回测误区",
+        "市场结构",
+        "突破"
+      ],
+      "priorityFocus": "P2",
+      "sourceFamilies": [
+        "Federal Reserve",
+        "EIA",
+        "BLS",
+        "CFTC",
+        "nist.gov",
+        "Treasury",
+        "Project Gutenberg",
+        "Investor.gov",
+        "SEC",
+        "Internet Archive",
+        "BEA"
+      ],
+      "riskCounts": {
+        "high": 0,
+        "medium": 1,
+        "low": 5
+      },
+      "hasDedicatedEditorPacket": true,
+      "hasDedicatedNotesDryRun": true,
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "nextAction": "ready_for_human_editor_packet_use_only"
+    },
+    {
+      "batchId": "rewrite_batch_08",
+      "itemCount": 6,
+      "modules": [
+        "突破",
+        "图表阅读基础",
+        "新闻/情绪/事件偏见"
+      ],
+      "priorityFocus": "P2",
+      "sourceFamilies": [
+        "SEC",
+        "Investor.gov",
+        "consumer.ftc.gov",
+        "Project Gutenberg",
+        "Treasury",
+        "CFTC",
+        "BLS",
+        "BEA",
+        "nass.usda.gov",
+        "Federal Reserve"
+      ],
+      "riskCounts": {
+        "high": 0,
+        "medium": 5,
+        "low": 1
+      },
+      "hasDedicatedEditorPacket": true,
+      "hasDedicatedNotesDryRun": true,
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "nextAction": "ready_for_human_editor_packet_use_only"
+    }
+  ],
+  "nextQueue": [],
+  "approvalReviewCandidates": 0,
+  "commercialReadyPromotions": 0,
+  "sourceReports": {
+    "workbench": "docs/LESSON_REWRITE_WORKBENCH.json",
+    "sourceFitRisk": "docs/LESSON_SOURCE_FIT_RISK_SUMMARY.json"
+  },
+  "boundary": "This batch packet coverage report is reviewer-facing operations scaffolding only. It does not create real review evidence, approve lessons, publish learner-facing content, change grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, guide real-money decisions, or make the product production-ready."
+}

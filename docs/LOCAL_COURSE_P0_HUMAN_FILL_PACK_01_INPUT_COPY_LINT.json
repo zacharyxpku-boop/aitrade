@@ -1,0 +1,143 @@
+{
+  "generatedAt": "2026-06-21T22:25:37.433Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "fixtureOnly": false,
+  "inputPath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_01_INPUT_COPY_TEMPLATE.json",
+  "packId": "local_course_p0_human_fill_pack_01",
+  "lintStatus": "blocked_quality_lint",
+  "totalEntries": 4,
+  "readyEntries": 0,
+  "blockedEntries": 4,
+  "candidateCopyIssueEntries": 0,
+  "riskRewriteIncompleteEntries": 4,
+  "publicReferenceMissingEntries": 4,
+  "originalityMissingEntries": 4,
+  "forbiddenHitEntries": 0,
+  "lintRows": [
+    {
+      "id": "input_copy_absorb_manual_transcription_09",
+      "taskId": "absorb_manual_transcription_09",
+      "category": "manual_transcription",
+      "documentId": "corpus_1580",
+      "pageNumber": 1,
+      "lintStatus": "blocked_quality_lint",
+      "readyForValidation": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "publicReferenceNotes",
+        "originalityNotes",
+        "riskRewriteNotes",
+        "manualChecklist"
+      ],
+      "riskRewriteMissingFlags": [
+        "source_provenance_language",
+        "copyright_language",
+        "historical_origin_language",
+        "market_visualization_language"
+      ],
+      "publicReferenceMissing": true,
+      "originalityMissing": true,
+      "candidateCopyIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_01_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_10",
+      "taskId": "absorb_manual_transcription_10",
+      "category": "manual_transcription",
+      "documentId": "corpus_1580",
+      "pageNumber": 2,
+      "lintStatus": "blocked_quality_lint",
+      "readyForValidation": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "publicReferenceNotes",
+        "originalityNotes",
+        "riskRewriteNotes",
+        "manualChecklist"
+      ],
+      "riskRewriteMissingFlags": [
+        "historical_market_language",
+        "futures_origin_language",
+        "transaction_scale_language",
+        "public_grounding_required"
+      ],
+      "publicReferenceMissing": true,
+      "originalityMissing": true,
+      "candidateCopyIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_01_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_11",
+      "taskId": "absorb_manual_transcription_11",
+      "category": "manual_transcription",
+      "documentId": "corpus_1580",
+      "pageNumber": 3,
+      "lintStatus": "blocked_quality_lint",
+      "readyForValidation": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "publicReferenceNotes",
+        "originalityNotes",
+        "riskRewriteNotes",
+        "manualChecklist"
+      ],
+      "riskRewriteMissingFlags": [
+        "success_claim_language",
+        "market_influence_language",
+        "pattern_name_language",
+        "historical_claim_review_required"
+      ],
+      "publicReferenceMissing": true,
+      "originalityMissing": true,
+      "candidateCopyIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_01_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_12",
+      "taskId": "absorb_manual_transcription_12",
+      "category": "manual_transcription",
+      "documentId": "corpus_1580",
+      "pageNumber": 4,
+      "lintStatus": "blocked_quality_lint",
+      "readyForValidation": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "publicReferenceNotes",
+        "originalityNotes",
+        "riskRewriteNotes",
+        "manualChecklist"
+      ],
+      "riskRewriteMissingFlags": [
+        "ohlc_definition_language",
+        "bullish_candle_language",
+        "example_price_language",
+        "platform_color_convention"
+      ],
+      "publicReferenceMissing": true,
+      "originalityMissing": true,
+      "candidateCopyIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_01_input_then_apply_dry_run_only"
+    }
+  ],
+  "nextStep": "Fill missing reviewer fields and address every risk flag before validation.",
+  "boundary": "Pack 01 filled-copy lint is a dry-run quality gate. It does not write overlay changes, perform OCR, approve learner-facing release, copy private course wording into lessons, provide trading advice, stock recommendations, live signals, return promises, broker workflows, automation, or real-money guidance."
+}

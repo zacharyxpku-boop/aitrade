@@ -1,0 +1,1228 @@
+{
+  "generatedAt": "2026-06-22T03:58:42.829Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "applyMode": "dry_run",
+  "applyStatus": "blocked_no_ready_merge_rows",
+  "packetId": "node-public-source-fit-batch-001-packet",
+  "batchId": "node-public-source-fit-batch-001",
+  "module": "K线与价格行为",
+  "packetInputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_001_INPUT_COPY_TEMPLATE.json",
+  "packetValidationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_INPUT_COPY_TEMPLATE_VALIDATION.json",
+  "fullDraftPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+  "mergePreviewPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_MERGE_PREVIEW.json",
+  "totalRows": 60,
+  "readyToMergeRows": 0,
+  "blockedRows": 60,
+  "writtenRows": 0,
+  "mergeAllowedNow": false,
+  "writeAllowedNow": false,
+  "manualAuthorizationRequired": true,
+  "fullDraftRows": 1638,
+  "applyRows": [
+    {
+      "packetRowIndex": 0,
+      "targetFullDraftRowIndex": 0,
+      "reviewId": "knv2_0003::corpus_1584",
+      "nodeId": "knv2_0003",
+      "documentId": "corpus_1584",
+      "sourceName": "Wikipedia: Candlestick chart",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 1,
+      "targetFullDraftRowIndex": 1,
+      "reviewId": "knv2_0003::corpus_0301",
+      "nodeId": "knv2_0003",
+      "documentId": "corpus_0301",
+      "sourceName": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 2,
+      "targetFullDraftRowIndex": 2,
+      "reviewId": "knv2_0003::corpus_0406",
+      "nodeId": "knv2_0003",
+      "documentId": "corpus_0406",
+      "sourceName": "Wikipedia: Candlestick pattern",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 3,
+      "targetFullDraftRowIndex": 3,
+      "reviewId": "knv2_0003::corpus_0409",
+      "nodeId": "knv2_0003",
+      "documentId": "corpus_0409",
+      "sourceName": "Wikipedia: Chart pattern",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 4,
+      "targetFullDraftRowIndex": 4,
+      "reviewId": "knv2_0003::corpus_0407",
+      "nodeId": "knv2_0003",
+      "documentId": "corpus_0407",
+      "sourceName": "Wikipedia: Doji",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 5,
+      "targetFullDraftRowIndex": 5,
+      "reviewId": "knv2_0003::corpus_1115",
+      "nodeId": "knv2_0003",
+      "documentId": "corpus_1115",
+      "sourceName": "Wikipedia: Gap (chart pattern)",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 6,
+      "targetFullDraftRowIndex": 6,
+      "reviewId": "knv2_0015::corpus_1584",
+      "nodeId": "knv2_0015",
+      "documentId": "corpus_1584",
+      "sourceName": "Wikipedia: Candlestick chart",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 7,
+      "targetFullDraftRowIndex": 7,
+      "reviewId": "knv2_0015::corpus_0301",
+      "nodeId": "knv2_0015",
+      "documentId": "corpus_0301",
+      "sourceName": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 8,
+      "targetFullDraftRowIndex": 8,
+      "reviewId": "knv2_0015::corpus_0406",
+      "nodeId": "knv2_0015",
+      "documentId": "corpus_0406",
+      "sourceName": "Wikipedia: Candlestick pattern",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 9,
+      "targetFullDraftRowIndex": 9,
+      "reviewId": "knv2_0015::corpus_0409",
+      "nodeId": "knv2_0015",
+      "documentId": "corpus_0409",
+      "sourceName": "Wikipedia: Chart pattern",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 10,
+      "targetFullDraftRowIndex": 10,
+      "reviewId": "knv2_0015::corpus_0407",
+      "nodeId": "knv2_0015",
+      "documentId": "corpus_0407",
+      "sourceName": "Wikipedia: Doji",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 11,
+      "targetFullDraftRowIndex": 11,
+      "reviewId": "knv2_0015::corpus_1115",
+      "nodeId": "knv2_0015",
+      "documentId": "corpus_1115",
+      "sourceName": "Wikipedia: Gap (chart pattern)",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 12,
+      "targetFullDraftRowIndex": 12,
+      "reviewId": "knv2_0027::corpus_1584",
+      "nodeId": "knv2_0027",
+      "documentId": "corpus_1584",
+      "sourceName": "Wikipedia: Candlestick chart",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 13,
+      "targetFullDraftRowIndex": 13,
+      "reviewId": "knv2_0027::corpus_0301",
+      "nodeId": "knv2_0027",
+      "documentId": "corpus_0301",
+      "sourceName": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 14,
+      "targetFullDraftRowIndex": 14,
+      "reviewId": "knv2_0027::corpus_0406",
+      "nodeId": "knv2_0027",
+      "documentId": "corpus_0406",
+      "sourceName": "Wikipedia: Candlestick pattern",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 15,
+      "targetFullDraftRowIndex": 15,
+      "reviewId": "knv2_0027::corpus_0409",
+      "nodeId": "knv2_0027",
+      "documentId": "corpus_0409",
+      "sourceName": "Wikipedia: Chart pattern",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 16,
+      "targetFullDraftRowIndex": 16,
+      "reviewId": "knv2_0027::corpus_0407",
+      "nodeId": "knv2_0027",
+      "documentId": "corpus_0407",
+      "sourceName": "Wikipedia: Doji",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 17,
+      "targetFullDraftRowIndex": 17,
+      "reviewId": "knv2_0027::corpus_1115",
+      "nodeId": "knv2_0027",
+      "documentId": "corpus_1115",
+      "sourceName": "Wikipedia: Gap (chart pattern)",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 18,
+      "targetFullDraftRowIndex": 18,
+      "reviewId": "knv2_0039::corpus_1584",
+      "nodeId": "knv2_0039",
+      "documentId": "corpus_1584",
+      "sourceName": "Wikipedia: Candlestick chart",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 19,
+      "targetFullDraftRowIndex": 19,
+      "reviewId": "knv2_0039::corpus_0301",
+      "nodeId": "knv2_0039",
+      "documentId": "corpus_0301",
+      "sourceName": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 20,
+      "targetFullDraftRowIndex": 20,
+      "reviewId": "knv2_0039::corpus_0406",
+      "nodeId": "knv2_0039",
+      "documentId": "corpus_0406",
+      "sourceName": "Wikipedia: Candlestick pattern",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 21,
+      "targetFullDraftRowIndex": 21,
+      "reviewId": "knv2_0039::corpus_0409",
+      "nodeId": "knv2_0039",
+      "documentId": "corpus_0409",
+      "sourceName": "Wikipedia: Chart pattern",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 22,
+      "targetFullDraftRowIndex": 22,
+      "reviewId": "knv2_0039::corpus_0407",
+      "nodeId": "knv2_0039",
+      "documentId": "corpus_0407",
+      "sourceName": "Wikipedia: Doji",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 23,
+      "targetFullDraftRowIndex": 23,
+      "reviewId": "knv2_0039::corpus_1115",
+      "nodeId": "knv2_0039",
+      "documentId": "corpus_1115",
+      "sourceName": "Wikipedia: Gap (chart pattern)",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 24,
+      "targetFullDraftRowIndex": 30,
+      "reviewId": "knv2_0051::corpus_1584",
+      "nodeId": "knv2_0051",
+      "documentId": "corpus_1584",
+      "sourceName": "Wikipedia: Candlestick chart",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 25,
+      "targetFullDraftRowIndex": 31,
+      "reviewId": "knv2_0051::corpus_0301",
+      "nodeId": "knv2_0051",
+      "documentId": "corpus_0301",
+      "sourceName": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 26,
+      "targetFullDraftRowIndex": 32,
+      "reviewId": "knv2_0051::corpus_0406",
+      "nodeId": "knv2_0051",
+      "documentId": "corpus_0406",
+      "sourceName": "Wikipedia: Candlestick pattern",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 27,
+      "targetFullDraftRowIndex": 33,
+      "reviewId": "knv2_0051::corpus_0409",
+      "nodeId": "knv2_0051",
+      "documentId": "corpus_0409",
+      "sourceName": "Wikipedia: Chart pattern",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 28,
+      "targetFullDraftRowIndex": 34,
+      "reviewId": "knv2_0051::corpus_0407",
+      "nodeId": "knv2_0051",
+      "documentId": "corpus_0407",
+      "sourceName": "Wikipedia: Doji",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 29,
+      "targetFullDraftRowIndex": 35,
+      "reviewId": "knv2_0051::corpus_1115",
+      "nodeId": "knv2_0051",
+      "documentId": "corpus_1115",
+      "sourceName": "Wikipedia: Gap (chart pattern)",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 30,
+      "targetFullDraftRowIndex": 42,
+      "reviewId": "knv2_0063::corpus_1584",
+      "nodeId": "knv2_0063",
+      "documentId": "corpus_1584",
+      "sourceName": "Wikipedia: Candlestick chart",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 31,
+      "targetFullDraftRowIndex": 43,
+      "reviewId": "knv2_0063::corpus_0301",
+      "nodeId": "knv2_0063",
+      "documentId": "corpus_0301",
+      "sourceName": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 32,
+      "targetFullDraftRowIndex": 44,
+      "reviewId": "knv2_0063::corpus_0406",
+      "nodeId": "knv2_0063",
+      "documentId": "corpus_0406",
+      "sourceName": "Wikipedia: Candlestick pattern",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 33,
+      "targetFullDraftRowIndex": 45,
+      "reviewId": "knv2_0063::corpus_0409",
+      "nodeId": "knv2_0063",
+      "documentId": "corpus_0409",
+      "sourceName": "Wikipedia: Chart pattern",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 34,
+      "targetFullDraftRowIndex": 46,
+      "reviewId": "knv2_0063::corpus_0407",
+      "nodeId": "knv2_0063",
+      "documentId": "corpus_0407",
+      "sourceName": "Wikipedia: Doji",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 35,
+      "targetFullDraftRowIndex": 47,
+      "reviewId": "knv2_0063::corpus_1115",
+      "nodeId": "knv2_0063",
+      "documentId": "corpus_1115",
+      "sourceName": "Wikipedia: Gap (chart pattern)",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 36,
+      "targetFullDraftRowIndex": 54,
+      "reviewId": "knv2_0075::corpus_1584",
+      "nodeId": "knv2_0075",
+      "documentId": "corpus_1584",
+      "sourceName": "Wikipedia: Candlestick chart",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 37,
+      "targetFullDraftRowIndex": 55,
+      "reviewId": "knv2_0075::corpus_0301",
+      "nodeId": "knv2_0075",
+      "documentId": "corpus_0301",
+      "sourceName": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 38,
+      "targetFullDraftRowIndex": 56,
+      "reviewId": "knv2_0075::corpus_0406",
+      "nodeId": "knv2_0075",
+      "documentId": "corpus_0406",
+      "sourceName": "Wikipedia: Candlestick pattern",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 39,
+      "targetFullDraftRowIndex": 57,
+      "reviewId": "knv2_0075::corpus_0409",
+      "nodeId": "knv2_0075",
+      "documentId": "corpus_0409",
+      "sourceName": "Wikipedia: Chart pattern",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 40,
+      "targetFullDraftRowIndex": 58,
+      "reviewId": "knv2_0075::corpus_0407",
+      "nodeId": "knv2_0075",
+      "documentId": "corpus_0407",
+      "sourceName": "Wikipedia: Doji",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 41,
+      "targetFullDraftRowIndex": 59,
+      "reviewId": "knv2_0075::corpus_1115",
+      "nodeId": "knv2_0075",
+      "documentId": "corpus_1115",
+      "sourceName": "Wikipedia: Gap (chart pattern)",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 42,
+      "targetFullDraftRowIndex": 66,
+      "reviewId": "knv2_0087::corpus_1584",
+      "nodeId": "knv2_0087",
+      "documentId": "corpus_1584",
+      "sourceName": "Wikipedia: Candlestick chart",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 43,
+      "targetFullDraftRowIndex": 67,
+      "reviewId": "knv2_0087::corpus_0301",
+      "nodeId": "knv2_0087",
+      "documentId": "corpus_0301",
+      "sourceName": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 44,
+      "targetFullDraftRowIndex": 68,
+      "reviewId": "knv2_0087::corpus_0406",
+      "nodeId": "knv2_0087",
+      "documentId": "corpus_0406",
+      "sourceName": "Wikipedia: Candlestick pattern",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 45,
+      "targetFullDraftRowIndex": 69,
+      "reviewId": "knv2_0087::corpus_0409",
+      "nodeId": "knv2_0087",
+      "documentId": "corpus_0409",
+      "sourceName": "Wikipedia: Chart pattern",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 46,
+      "targetFullDraftRowIndex": 70,
+      "reviewId": "knv2_0087::corpus_0407",
+      "nodeId": "knv2_0087",
+      "documentId": "corpus_0407",
+      "sourceName": "Wikipedia: Doji",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 47,
+      "targetFullDraftRowIndex": 71,
+      "reviewId": "knv2_0087::corpus_1115",
+      "nodeId": "knv2_0087",
+      "documentId": "corpus_1115",
+      "sourceName": "Wikipedia: Gap (chart pattern)",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 48,
+      "targetFullDraftRowIndex": 90,
+      "reviewId": "knv2_0099::corpus_1584",
+      "nodeId": "knv2_0099",
+      "documentId": "corpus_1584",
+      "sourceName": "Wikipedia: Candlestick chart",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 49,
+      "targetFullDraftRowIndex": 91,
+      "reviewId": "knv2_0099::corpus_0301",
+      "nodeId": "knv2_0099",
+      "documentId": "corpus_0301",
+      "sourceName": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 50,
+      "targetFullDraftRowIndex": 92,
+      "reviewId": "knv2_0099::corpus_0406",
+      "nodeId": "knv2_0099",
+      "documentId": "corpus_0406",
+      "sourceName": "Wikipedia: Candlestick pattern",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 51,
+      "targetFullDraftRowIndex": 93,
+      "reviewId": "knv2_0099::corpus_0409",
+      "nodeId": "knv2_0099",
+      "documentId": "corpus_0409",
+      "sourceName": "Wikipedia: Chart pattern",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 52,
+      "targetFullDraftRowIndex": 94,
+      "reviewId": "knv2_0099::corpus_0407",
+      "nodeId": "knv2_0099",
+      "documentId": "corpus_0407",
+      "sourceName": "Wikipedia: Doji",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 53,
+      "targetFullDraftRowIndex": 95,
+      "reviewId": "knv2_0099::corpus_1115",
+      "nodeId": "knv2_0099",
+      "documentId": "corpus_1115",
+      "sourceName": "Wikipedia: Gap (chart pattern)",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 54,
+      "targetFullDraftRowIndex": 162,
+      "reviewId": "knv2_0111::corpus_1584",
+      "nodeId": "knv2_0111",
+      "documentId": "corpus_1584",
+      "sourceName": "Wikipedia: Candlestick chart",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 55,
+      "targetFullDraftRowIndex": 163,
+      "reviewId": "knv2_0111::corpus_0301",
+      "nodeId": "knv2_0111",
+      "documentId": "corpus_0301",
+      "sourceName": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 56,
+      "targetFullDraftRowIndex": 164,
+      "reviewId": "knv2_0111::corpus_0406",
+      "nodeId": "knv2_0111",
+      "documentId": "corpus_0406",
+      "sourceName": "Wikipedia: Candlestick pattern",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 57,
+      "targetFullDraftRowIndex": 165,
+      "reviewId": "knv2_0111::corpus_0409",
+      "nodeId": "knv2_0111",
+      "documentId": "corpus_0409",
+      "sourceName": "Wikipedia: Chart pattern",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 58,
+      "targetFullDraftRowIndex": 166,
+      "reviewId": "knv2_0111::corpus_0407",
+      "nodeId": "knv2_0111",
+      "documentId": "corpus_0407",
+      "sourceName": "Wikipedia: Doji",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 59,
+      "targetFullDraftRowIndex": 167,
+      "reviewId": "knv2_0111::corpus_1115",
+      "nodeId": "knv2_0111",
+      "documentId": "corpus_1115",
+      "sourceName": "Wikipedia: Gap (chart pattern)",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    }
+  ],
+  "nextStep": "Fill packet input copy with real reviewer decisions, validate the packet input, rebuild merge preview, then rerun this dry-run.",
+  "boundary": "Packet merge apply is a guarded reviewer-input merge pipeline. Dry-run mode writes no full draft changes. It does not create human judgments, approve copied text, approve learner-facing citations, write lessons, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, or production readiness."
+}

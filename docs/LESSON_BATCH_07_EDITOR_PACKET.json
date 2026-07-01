@@ -1,0 +1,461 @@
+{
+  "generatedAt": "2026-06-19T09:47:04.636Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "packetReady": true,
+  "packetMode": "human_editor_packet_for_structural_drafts",
+  "batchId": "rewrite_batch_07",
+  "modules": [
+    "backtest_mistakes",
+    "market_structure",
+    "breakout"
+  ],
+  "sourceFamilies": [
+    "Federal Reserve",
+    "EIA",
+    "BLS",
+    "CFTC",
+    "nist.gov",
+    "Treasury",
+    "Project Gutenberg",
+    "Investor.gov",
+    "SEC",
+    "Internet Archive",
+    "BEA"
+  ],
+  "priorityFocus": "P2",
+  "riskCounts": {
+    "medium": 1,
+    "low": 5
+  },
+  "lessonCards": [
+    {
+      "lessonId": "lesson_knv2_0046",
+      "nodeId": "knv2_0046",
+      "moduleLabel": "backtest_mistakes",
+      "topicLabel": "ignored_costs",
+      "currentGrade": "structural_draft",
+      "currentScore": 90,
+      "rewritePriority": "P2",
+      "sourceFitRisk": "medium",
+      "handAuthored": false,
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "Federal Reserve",
+        "EIA",
+        "BLS",
+        "CFTC",
+        "nist.gov"
+      ],
+      "greenReviewedRefs": 3,
+      "greenAuthorityRefs": 2,
+      "nonGreenRefs": 0,
+      "sourceBoundary": [
+        "Use green refs as context, vocabulary, method, data-release, historical, or fraud-boundary evidence only.",
+        "Do not copy source body text, charts, tables, UI text, boilerplate, or historical market maxims.",
+        "Do not treat macro, filing, or public-domain context as proof of a chart pattern or breakout outcome.",
+        "If a source family does not directly fit the lesson claim, downgrade it to boundary-only or block for source replacement.",
+        "Keep yellow, red, and research_only sources out of learner-facing evidence."
+      ],
+      "licenseBoundary": [
+        "Agency/public-document metadata may support reviewer notes, but learner-facing prose must be original.",
+        "Public-domain classics may support historical terminology and observation prompts only after edition/date spot check.",
+        "Remove any buy/sell rule, profit language, or prescriptive market maxim from historical context.",
+        "No source identity may imply regulator endorsement, forecast ability, or commercial readiness."
+      ],
+      "rewriteInstructions": [
+        "Rewrite backtest_mistakes / ignored_costs as original teaching prose for interpretation practice.",
+        "Emphasize cost, friction, leakage, and validation boundaries without performance promises.",
+        "Teach the observation, then the uncertainty, then the forbidden conclusion.",
+        "Convert source references into source-fit and boundary checks; do not convert them into a trade rule.",
+        "End with a no-action learner note: what is known, what is unknown, and what evidence would weaken the interpretation.",
+        "Leave the lesson as structural_draft until a real human records all required reviewer notes."
+      ],
+      "reviewerChecklist": [
+        "Original prose: no copied or lightly rewritten external source body text.",
+        "Source fit: every source family has a defined role, downgrade, or block decision.",
+        "License fit: no agency logos, third-party inserts, source tables, charts, UI text, or public-domain trading maxims copied.",
+        "Boundary: no buy/sell/hold wording, signal wording, broker/order workflow, automation, real-money guidance, forecast, or performance promise.",
+        "Teaching quality: includes misconception, observation task, alternative explanation, invalidation condition, and reflection prompt.",
+        "Status: remains structural_draft and not_approved after this packet."
+      ],
+      "sourceFamilyGuidance": [
+        {
+          "family": "Federal Reserve",
+          "editorUse": "Policy/data-release context only; no rate, breakout, or direction call."
+        },
+        {
+          "family": "EIA",
+          "editorUse": "Energy data release context only; no commodity price direction."
+        },
+        {
+          "family": "BLS",
+          "editorUse": "Macro release vocabulary and data-method context only; no market forecast."
+        },
+        {
+          "family": "CFTC",
+          "editorUse": "Fraud, phony-system, commodity-risk, or market-report boundary context only."
+        },
+        {
+          "family": "nist.gov",
+          "editorUse": "Measurement, model-risk, and process-quality context only; no trading-system certification."
+        }
+      ]
+    },
+    {
+      "lessonId": "lesson_knv2_0002",
+      "nodeId": "knv2_0002",
+      "moduleLabel": "market_structure",
+      "topicLabel": "highs_and_lows",
+      "currentGrade": "structural_draft",
+      "currentScore": 90,
+      "rewritePriority": "P2",
+      "sourceFitRisk": "low",
+      "handAuthored": false,
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "BLS",
+        "Federal Reserve",
+        "Treasury",
+        "Project Gutenberg"
+      ],
+      "greenReviewedRefs": 3,
+      "greenAuthorityRefs": 2,
+      "nonGreenRefs": 0,
+      "sourceBoundary": [
+        "Use green refs as context, vocabulary, method, data-release, historical, or fraud-boundary evidence only.",
+        "Do not copy source body text, charts, tables, UI text, boilerplate, or historical market maxims.",
+        "Do not treat macro, filing, or public-domain context as proof of a chart pattern or breakout outcome.",
+        "If a source family does not directly fit the lesson claim, downgrade it to boundary-only or block for source replacement.",
+        "Keep yellow, red, and research_only sources out of learner-facing evidence."
+      ],
+      "licenseBoundary": [
+        "Agency/public-document metadata may support reviewer notes, but learner-facing prose must be original.",
+        "Public-domain classics may support historical terminology and observation prompts only after edition/date spot check.",
+        "Remove any buy/sell rule, profit language, or prescriptive market maxim from historical context.",
+        "No source identity may imply regulator endorsement, forecast ability, or commercial readiness."
+      ],
+      "rewriteInstructions": [
+        "Rewrite market_structure / highs_and_lows as original teaching prose for interpretation practice.",
+        "Emphasize descriptive structure reading, alternative explanations, and invalidation without action rules.",
+        "Teach the observation, then the uncertainty, then the forbidden conclusion.",
+        "Convert source references into source-fit and boundary checks; do not convert them into a trade rule.",
+        "End with a no-action learner note: what is known, what is unknown, and what evidence would weaken the interpretation.",
+        "Leave the lesson as structural_draft until a real human records all required reviewer notes."
+      ],
+      "reviewerChecklist": [
+        "Original prose: no copied or lightly rewritten external source body text.",
+        "Source fit: every source family has a defined role, downgrade, or block decision.",
+        "License fit: no agency logos, third-party inserts, source tables, charts, UI text, or public-domain trading maxims copied.",
+        "Boundary: no buy/sell/hold wording, signal wording, broker/order workflow, automation, real-money guidance, forecast, or performance promise.",
+        "Teaching quality: includes misconception, observation task, alternative explanation, invalidation condition, and reflection prompt.",
+        "Status: remains structural_draft and not_approved after this packet."
+      ],
+      "sourceFamilyGuidance": [
+        {
+          "family": "BLS",
+          "editorUse": "Macro release vocabulary and data-method context only; no market forecast."
+        },
+        {
+          "family": "Federal Reserve",
+          "editorUse": "Policy/data-release context only; no rate, breakout, or direction call."
+        },
+        {
+          "family": "Treasury",
+          "editorUse": "Official rate/debt-data terminology boundary only; no rate-trade recommendation."
+        },
+        {
+          "family": "Project Gutenberg",
+          "editorUse": "Public-domain historical language and observation exercises only; remove old buy/sell rules and profit language."
+        }
+      ]
+    },
+    {
+      "lessonId": "lesson_knv2_0026",
+      "nodeId": "knv2_0026",
+      "moduleLabel": "market_structure",
+      "topicLabel": "structure_break",
+      "currentGrade": "structural_draft",
+      "currentScore": 90,
+      "rewritePriority": "P2",
+      "sourceFitRisk": "low",
+      "handAuthored": false,
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "Investor.gov",
+        "SEC",
+        "Treasury",
+        "Internet Archive"
+      ],
+      "greenReviewedRefs": 3,
+      "greenAuthorityRefs": 2,
+      "nonGreenRefs": 0,
+      "sourceBoundary": [
+        "Use green refs as context, vocabulary, method, data-release, historical, or fraud-boundary evidence only.",
+        "Do not copy source body text, charts, tables, UI text, boilerplate, or historical market maxims.",
+        "Do not treat macro, filing, or public-domain context as proof of a chart pattern or breakout outcome.",
+        "If a source family does not directly fit the lesson claim, downgrade it to boundary-only or block for source replacement.",
+        "Keep yellow, red, and research_only sources out of learner-facing evidence."
+      ],
+      "licenseBoundary": [
+        "Agency/public-document metadata may support reviewer notes, but learner-facing prose must be original.",
+        "Public-domain classics may support historical terminology and observation prompts only after edition/date spot check.",
+        "Remove any buy/sell rule, profit language, or prescriptive market maxim from historical context.",
+        "No source identity may imply regulator endorsement, forecast ability, or commercial readiness."
+      ],
+      "rewriteInstructions": [
+        "Rewrite market_structure / structure_break as original teaching prose for interpretation practice.",
+        "Emphasize descriptive structure reading, alternative explanations, and invalidation without action rules.",
+        "Teach the observation, then the uncertainty, then the forbidden conclusion.",
+        "Convert source references into source-fit and boundary checks; do not convert them into a trade rule.",
+        "End with a no-action learner note: what is known, what is unknown, and what evidence would weaken the interpretation.",
+        "Leave the lesson as structural_draft until a real human records all required reviewer notes."
+      ],
+      "reviewerChecklist": [
+        "Original prose: no copied or lightly rewritten external source body text.",
+        "Source fit: every source family has a defined role, downgrade, or block decision.",
+        "License fit: no agency logos, third-party inserts, source tables, charts, UI text, or public-domain trading maxims copied.",
+        "Boundary: no buy/sell/hold wording, signal wording, broker/order workflow, automation, real-money guidance, forecast, or performance promise.",
+        "Teaching quality: includes misconception, observation task, alternative explanation, invalidation condition, and reflection prompt.",
+        "Status: remains structural_draft and not_approved after this packet."
+      ],
+      "sourceFamilyGuidance": [
+        {
+          "family": "Investor.gov",
+          "editorUse": "Investor-protection and fraud-boundary context only; no trading conclusion."
+        },
+        {
+          "family": "SEC",
+          "editorUse": "Disclosure, filing-literacy, and source-boundary context only."
+        },
+        {
+          "family": "Treasury",
+          "editorUse": "Official rate/debt-data terminology boundary only; no rate-trade recommendation."
+        },
+        {
+          "family": "Internet Archive",
+          "editorUse": "Public-domain historical language and observation exercises only; remove old buy/sell rules and profit language."
+        }
+      ]
+    },
+    {
+      "lessonId": "lesson_knv2_0005",
+      "nodeId": "knv2_0005",
+      "moduleLabel": "breakout",
+      "topicLabel": "pre_breakout_compression",
+      "currentGrade": "structural_draft",
+      "currentScore": 90,
+      "rewritePriority": "P2",
+      "sourceFitRisk": "low",
+      "handAuthored": false,
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "SEC",
+        "Federal Reserve",
+        "Treasury",
+        "Project Gutenberg"
+      ],
+      "greenReviewedRefs": 3,
+      "greenAuthorityRefs": 2,
+      "nonGreenRefs": 0,
+      "sourceBoundary": [
+        "Use green refs as context, vocabulary, method, data-release, historical, or fraud-boundary evidence only.",
+        "Do not copy source body text, charts, tables, UI text, boilerplate, or historical market maxims.",
+        "Do not treat macro, filing, or public-domain context as proof of a chart pattern or breakout outcome.",
+        "If a source family does not directly fit the lesson claim, downgrade it to boundary-only or block for source replacement.",
+        "Keep yellow, red, and research_only sources out of learner-facing evidence."
+      ],
+      "licenseBoundary": [
+        "Agency/public-document metadata may support reviewer notes, but learner-facing prose must be original.",
+        "Public-domain classics may support historical terminology and observation prompts only after edition/date spot check.",
+        "Remove any buy/sell rule, profit language, or prescriptive market maxim from historical context.",
+        "No source identity may imply regulator endorsement, forecast ability, or commercial readiness."
+      ],
+      "rewriteInstructions": [
+        "Rewrite breakout / pre_breakout_compression as original teaching prose for interpretation practice.",
+        "Emphasize observation, confirmation limits, and false-breakout ambiguity without signal wording.",
+        "Teach the observation, then the uncertainty, then the forbidden conclusion.",
+        "Convert source references into source-fit and boundary checks; do not convert them into a trade rule.",
+        "End with a no-action learner note: what is known, what is unknown, and what evidence would weaken the interpretation.",
+        "Leave the lesson as structural_draft until a real human records all required reviewer notes."
+      ],
+      "reviewerChecklist": [
+        "Original prose: no copied or lightly rewritten external source body text.",
+        "Source fit: every source family has a defined role, downgrade, or block decision.",
+        "License fit: no agency logos, third-party inserts, source tables, charts, UI text, or public-domain trading maxims copied.",
+        "Boundary: no buy/sell/hold wording, signal wording, broker/order workflow, automation, real-money guidance, forecast, or performance promise.",
+        "Teaching quality: includes misconception, observation task, alternative explanation, invalidation condition, and reflection prompt.",
+        "Status: remains structural_draft and not_approved after this packet."
+      ],
+      "sourceFamilyGuidance": [
+        {
+          "family": "SEC",
+          "editorUse": "Disclosure, filing-literacy, and source-boundary context only."
+        },
+        {
+          "family": "Federal Reserve",
+          "editorUse": "Policy/data-release context only; no rate, breakout, or direction call."
+        },
+        {
+          "family": "Treasury",
+          "editorUse": "Official rate/debt-data terminology boundary only; no rate-trade recommendation."
+        },
+        {
+          "family": "Project Gutenberg",
+          "editorUse": "Public-domain historical language and observation exercises only; remove old buy/sell rules and profit language."
+        }
+      ]
+    },
+    {
+      "lessonId": "lesson_knv2_0017",
+      "nodeId": "knv2_0017",
+      "moduleLabel": "breakout",
+      "topicLabel": "valid_breakout",
+      "currentGrade": "structural_draft",
+      "currentScore": 90,
+      "rewritePriority": "P2",
+      "sourceFitRisk": "low",
+      "handAuthored": false,
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "SEC",
+        "Treasury",
+        "Internet Archive"
+      ],
+      "greenReviewedRefs": 3,
+      "greenAuthorityRefs": 2,
+      "nonGreenRefs": 0,
+      "sourceBoundary": [
+        "Use green refs as context, vocabulary, method, data-release, historical, or fraud-boundary evidence only.",
+        "Do not copy source body text, charts, tables, UI text, boilerplate, or historical market maxims.",
+        "Do not treat macro, filing, or public-domain context as proof of a chart pattern or breakout outcome.",
+        "If a source family does not directly fit the lesson claim, downgrade it to boundary-only or block for source replacement.",
+        "Keep yellow, red, and research_only sources out of learner-facing evidence."
+      ],
+      "licenseBoundary": [
+        "Agency/public-document metadata may support reviewer notes, but learner-facing prose must be original.",
+        "Public-domain classics may support historical terminology and observation prompts only after edition/date spot check.",
+        "Remove any buy/sell rule, profit language, or prescriptive market maxim from historical context.",
+        "No source identity may imply regulator endorsement, forecast ability, or commercial readiness."
+      ],
+      "rewriteInstructions": [
+        "Rewrite breakout / valid_breakout as original teaching prose for interpretation practice.",
+        "Emphasize observation, confirmation limits, and false-breakout ambiguity without signal wording.",
+        "Teach the observation, then the uncertainty, then the forbidden conclusion.",
+        "Convert source references into source-fit and boundary checks; do not convert them into a trade rule.",
+        "End with a no-action learner note: what is known, what is unknown, and what evidence would weaken the interpretation.",
+        "Leave the lesson as structural_draft until a real human records all required reviewer notes."
+      ],
+      "reviewerChecklist": [
+        "Original prose: no copied or lightly rewritten external source body text.",
+        "Source fit: every source family has a defined role, downgrade, or block decision.",
+        "License fit: no agency logos, third-party inserts, source tables, charts, UI text, or public-domain trading maxims copied.",
+        "Boundary: no buy/sell/hold wording, signal wording, broker/order workflow, automation, real-money guidance, forecast, or performance promise.",
+        "Teaching quality: includes misconception, observation task, alternative explanation, invalidation condition, and reflection prompt.",
+        "Status: remains structural_draft and not_approved after this packet."
+      ],
+      "sourceFamilyGuidance": [
+        {
+          "family": "SEC",
+          "editorUse": "Disclosure, filing-literacy, and source-boundary context only."
+        },
+        {
+          "family": "Treasury",
+          "editorUse": "Official rate/debt-data terminology boundary only; no rate-trade recommendation."
+        },
+        {
+          "family": "Internet Archive",
+          "editorUse": "Public-domain historical language and observation exercises only; remove old buy/sell rules and profit language."
+        }
+      ]
+    },
+    {
+      "lessonId": "lesson_knv2_0029",
+      "nodeId": "knv2_0029",
+      "moduleLabel": "breakout",
+      "topicLabel": "false_breakout",
+      "currentGrade": "structural_draft",
+      "currentScore": 90,
+      "rewritePriority": "P2",
+      "sourceFitRisk": "low",
+      "handAuthored": false,
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "BLS",
+        "Treasury",
+        "Internet Archive",
+        "BEA"
+      ],
+      "greenReviewedRefs": 3,
+      "greenAuthorityRefs": 2,
+      "nonGreenRefs": 0,
+      "sourceBoundary": [
+        "Use green refs as context, vocabulary, method, data-release, historical, or fraud-boundary evidence only.",
+        "Do not copy source body text, charts, tables, UI text, boilerplate, or historical market maxims.",
+        "Do not treat macro, filing, or public-domain context as proof of a chart pattern or breakout outcome.",
+        "If a source family does not directly fit the lesson claim, downgrade it to boundary-only or block for source replacement.",
+        "Keep yellow, red, and research_only sources out of learner-facing evidence."
+      ],
+      "licenseBoundary": [
+        "Agency/public-document metadata may support reviewer notes, but learner-facing prose must be original.",
+        "Public-domain classics may support historical terminology and observation prompts only after edition/date spot check.",
+        "Remove any buy/sell rule, profit language, or prescriptive market maxim from historical context.",
+        "No source identity may imply regulator endorsement, forecast ability, or commercial readiness."
+      ],
+      "rewriteInstructions": [
+        "Rewrite breakout / false_breakout as original teaching prose for interpretation practice.",
+        "Emphasize observation, confirmation limits, and false-breakout ambiguity without signal wording.",
+        "Teach the observation, then the uncertainty, then the forbidden conclusion.",
+        "Convert source references into source-fit and boundary checks; do not convert them into a trade rule.",
+        "End with a no-action learner note: what is known, what is unknown, and what evidence would weaken the interpretation.",
+        "Leave the lesson as structural_draft until a real human records all required reviewer notes."
+      ],
+      "reviewerChecklist": [
+        "Original prose: no copied or lightly rewritten external source body text.",
+        "Source fit: every source family has a defined role, downgrade, or block decision.",
+        "License fit: no agency logos, third-party inserts, source tables, charts, UI text, or public-domain trading maxims copied.",
+        "Boundary: no buy/sell/hold wording, signal wording, broker/order workflow, automation, real-money guidance, forecast, or performance promise.",
+        "Teaching quality: includes misconception, observation task, alternative explanation, invalidation condition, and reflection prompt.",
+        "Status: remains structural_draft and not_approved after this packet."
+      ],
+      "sourceFamilyGuidance": [
+        {
+          "family": "BLS",
+          "editorUse": "Macro release vocabulary and data-method context only; no market forecast."
+        },
+        {
+          "family": "Treasury",
+          "editorUse": "Official rate/debt-data terminology boundary only; no rate-trade recommendation."
+        },
+        {
+          "family": "Internet Archive",
+          "editorUse": "Public-domain historical language and observation exercises only; remove old buy/sell rules and profit language."
+        },
+        {
+          "family": "BEA",
+          "editorUse": "National-account, GDP, release-method, or data-boundary context only."
+        }
+      ]
+    }
+  ],
+  "nonGreenRefs": 0,
+  "handAuthoredLessons": 0,
+  "commercialReadyPromotions": 0,
+  "reviewerNoteFields": [
+    "originalRewriteNotes",
+    "sourceFitNotes",
+    "factCheckNotes",
+    "boundaryCheckNotes",
+    "copyingRiskNotes",
+    "humanReviewerInitials"
+  ],
+  "batchExitRule": "Batch 07 can only move to a separate human approval review after every lesson has originalRewriteNotes, sourceFitNotes, factCheckNotes, boundaryCheckNotes, copyingRiskNotes, and reviewer initials. Even then, every lesson remains structural_draft until a later separate approval process.",
+  "sourceReports": {
+    "workbench": "docs/LESSON_REWRITE_WORKBENCH.json",
+    "sourceFitRisk": "docs/LESSON_SOURCE_FIT_RISK_SUMMARY.json"
+  },
+  "boundary": "This batch editor packet is reviewer-facing editing scaffolding only. It does not create learner-facing final prose, approve lessons, publish content, change grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, guide real-money decisions, or make the product production-ready."
+}

@@ -1,0 +1,66 @@
+{
+  "generatedAt": "2026-06-21T22:33:57.238Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "validationStatus": "ready_for_overlay_apply",
+  "fixtureOnly": true,
+  "inputPath": "docs\\LOCAL_COURSE_P0_HUMAN_FILL_PACK_02_POSITIVE_LINT_FIXTURE.json",
+  "totalEntries": 4,
+  "readyEntries": 4,
+  "blockedEntries": 0,
+  "forbiddenHitEntries": 0,
+  "validationRows": [
+    {
+      "id": "input_copy_absorb_manual_transcription_13",
+      "taskId": "absorb_manual_transcription_13",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "pageNumber": 5,
+      "validationStatus": "ready_for_overlay_apply",
+      "readyForOverlayApply": true,
+      "missingFields": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_02_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_14",
+      "taskId": "absorb_manual_transcription_14",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "pageNumber": 6,
+      "validationStatus": "ready_for_overlay_apply",
+      "readyForOverlayApply": true,
+      "missingFields": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_02_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_15",
+      "taskId": "absorb_manual_transcription_15",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "pageNumber": 7,
+      "validationStatus": "ready_for_overlay_apply",
+      "readyForOverlayApply": true,
+      "missingFields": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_02_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_16",
+      "taskId": "absorb_manual_transcription_16",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "pageNumber": 8,
+      "validationStatus": "ready_for_overlay_apply",
+      "readyForOverlayApply": true,
+      "missingFields": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_02_input_then_apply_dry_run_only"
+    }
+  ],
+  "nextStep": "Apply validated input to the P0 review overlay, then rerun overlay and absorption readiness gates.",
+  "boundary": "P0 review input validation is a dry-run gate. It does not write overlay changes, approve learner-facing release, provide trading advice, stock recommendations, live signals, return promises, broker workflows, automation, or real-money guidance."
+}

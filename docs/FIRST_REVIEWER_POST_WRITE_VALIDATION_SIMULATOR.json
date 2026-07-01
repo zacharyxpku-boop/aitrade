@@ -1,0 +1,87 @@
+{
+  "generatedAt": "2026-06-19T09:47:07.695Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "simulatorReady": true,
+  "simulatorMode": "temporary_post_write_validation_sequence_only",
+  "realStatusPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "realStatusOverlayTouched": false,
+  "temporaryBatches": 2,
+  "temporaryLessonCards": 12,
+  "greenRefsInspected": 8,
+  "completionReadyBatches": 2,
+  "completeNoteCards": 12,
+  "approvalReviewCandidates": 12,
+  "autoApprovedLessons": 0,
+  "learnerFacingReleaseCandidates": 0,
+  "commercialReadyPromotions": 0,
+  "productionReadyClaims": 0,
+  "releaseNegativeCases": 8,
+  "releaseNegativeCasesPassed": 8,
+  "failureRoutesCovered": 7,
+  "failureRouteRows": [
+    {
+      "name": "diff_missing_note_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "lesson_knv2_0044.sourceFitNotes is missing"
+    },
+    {
+      "name": "diff_trading_wording_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "lesson_knv2_0044 contains unsafe note wording"
+    },
+    {
+      "name": "diff_copying_wording_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "lesson_knv2_0044 contains copying-risk note wording"
+    },
+    {
+      "name": "sourceFit_missing_decision_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "rewrite_batch_01.lesson_knv2_0068.CFTC sourceFitNotes is too short; rewrite_batch_01.lesson_knv2_0068.CFTC lacks allowed decision; rewrite_batch_01.lesson_knv2_0068.CFTC lacks decision:; rewrite_batch_01.lesson_knv2_0068.CFTC lacks source ids:"
+    },
+    {
+      "name": "sourceFit_chart_proof_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "rewrite_batch_01.lesson_knv2_0068.CFTC misuses source as chart or signal proof"
+    },
+    {
+      "name": "sourceFit_approval_wording_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "rewrite_batch_01.lesson_knv2_0068.CFTC contains unsafe readiness/trading wording"
+    },
+    {
+      "name": "sourceFit_copying_wording_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "rewrite_batch_01.lesson_knv2_0068.CFTC contains copying-risk wording"
+    }
+  ],
+  "validationSequence": [
+    "Build a temporary complete reviewer overlay from the blank first-reviewer template.",
+    "Fill all 72 required note fields with simulator-only reviewer prose.",
+    "Validate sourceFitNotes for 5 direct-candidate BEA/BLS/CFTC/SEC source roles.",
+    "Run diff-audit-like checks for missing notes, unsafe wording, and copying-risk wording.",
+    "Run lesson batch completion audit against temporary files.",
+    "Run evidence intake summary against temporary files.",
+    "Run separate approval review gate against temporary files.",
+    "Run release readiness negative cases against temporary files.",
+    "Delete all temporary files and confirm the real overlay remains absent."
+  ],
+  "sourceReports": {
+    "draftTemplate": "docs/LESSON_BATCH_REVIEW_STATUS_DRAFT_TEMPLATE_FOR_BATCH_01_05.json",
+    "directCandidateWorksheet": "docs/FIRST_REVIEWER_DIRECT_CANDIDATE_DECISION_WORKSHEET.json",
+    "writeReadinessLock": "docs/FIRST_REVIEWER_REAL_OVERLAY_WRITE_READINESS_LOCK.json",
+    "postWriteCommandPack": "docs/FIRST_REVIEWER_POST_WRITE_COMMAND_PACK.json"
+  },
+  "boundary": "This post-write validation simulator uses temporary files only. It does not create docs/LESSON_BATCH_REVIEW_STATUS.json, fill real human notes, confirm source use, approve lessons, publish learner-facing content, change grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, guide real-money decisions, grant internal-trial readiness, launch the course, or make the product production-ready."
+}

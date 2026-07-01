@@ -1,0 +1,75 @@
+{
+  "generatedAt": "2026-06-21T22:48:14.001Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "validationStatus": "blocked_missing_reviewer_input",
+  "fixtureOnly": false,
+  "inputPath": "docs\\LOCAL_COURSE_P0_SOURCE_REPLACEMENT_INPUT_COPY_TEMPLATE.json",
+  "totalEntries": 3,
+  "readyEntries": 0,
+  "blockedEntries": 3,
+  "forbiddenHitEntries": 0,
+  "validationRows": [
+    {
+      "id": "input_copy_absorb_source_replacement_01",
+      "taskId": "absorb_source_replacement_01",
+      "category": "source_replacement",
+      "sourceRelativePath": "系统课02进阶/19_9119：高中毕业集训总结年后展望_笔记.pdf",
+      "pageNumber": 1,
+      "validationStatus": "blocked_missing_reviewer_input",
+      "readyForOverlayApply": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "replacementSourcePath",
+        "replacementNote",
+        "rerunEvidence",
+        "replacementChecklist"
+      ],
+      "forbiddenHits": [],
+      "nextGate": "validate_source_replacement_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_source_replacement_02",
+      "taskId": "absorb_source_replacement_02",
+      "category": "source_replacement",
+      "sourceRelativePath": "专享07庄家篇/14_0814-【复训】-分析行情挖掘机会_笔记.pdf",
+      "pageNumber": 1,
+      "validationStatus": "blocked_missing_reviewer_input",
+      "readyForOverlayApply": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "replacementSourcePath",
+        "replacementNote",
+        "rerunEvidence",
+        "replacementChecklist"
+      ],
+      "forbiddenHits": [],
+      "nextGate": "validate_source_replacement_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_source_replacement_03",
+      "taskId": "absorb_source_replacement_03",
+      "category": "source_replacement",
+      "sourceRelativePath": "K线怎么看/06_第6讲：常见的持仓信号-进攻金K（2）_笔记.pdf",
+      "pageNumber": 1,
+      "validationStatus": "blocked_missing_reviewer_input",
+      "readyForOverlayApply": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "replacementSourcePath",
+        "replacementNote",
+        "rerunEvidence",
+        "replacementChecklist"
+      ],
+      "forbiddenHits": [],
+      "nextGate": "validate_source_replacement_input_then_apply_dry_run_only"
+    }
+  ],
+  "nextStep": "Fill missing reviewer fields in a copied input file, then rerun this dry-run validator.",
+  "boundary": "P0 review input validation is a dry-run gate. It does not write overlay changes, approve learner-facing release, provide trading advice, stock recommendations, live signals, return promises, broker workflows, automation, or real-money guidance."
+}

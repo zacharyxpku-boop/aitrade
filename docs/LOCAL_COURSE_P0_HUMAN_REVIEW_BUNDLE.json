@@ -1,0 +1,820 @@
+{
+  "generatedAt": "2026-06-21T23:35:15.271Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "bundleStatus": "p0_human_review_bundle_ready_not_applied",
+  "manualPackCount": 5,
+  "sourceReplacementPackCount": 1,
+  "totalPackRows": 6,
+  "manualTranscriptionEntries": 19,
+  "sourceReplacementEntries": 3,
+  "totalReviewEntries": 22,
+  "filledEntries": 0,
+  "validationReadyEntries": 0,
+  "validationBlockedEntries": 22,
+  "lintReadyEntries": 0,
+  "lintBlockedEntries": 22,
+  "acceptedForOverlayEntries": 0,
+  "positiveFixtureReadyEntries": 22,
+  "fixtureOnlyReadyEntries": 22,
+  "fixtureWrittenEntries": 0,
+  "realHumanInputEntries": 0,
+  "writeAllowedNow": false,
+  "approvalGatePassed": false,
+  "humanApprovalRequired": true,
+  "realReviewerInputRequired": true,
+  "packRows": [
+    {
+      "packNumber": "01",
+      "packId": "local_course_p0_human_fill_pack_01",
+      "category": "manual_transcription",
+      "packStatus": "blank_human_fill_pack_ready",
+      "templateStatus": "pack_01_input_copy_blank",
+      "totalPackCards": 4,
+      "totalInputEntries": 4,
+      "filledCards": 0,
+      "filledEntries": 0,
+      "readyForValidationCards": 0,
+      "readyForValidationEntries": 0,
+      "acceptedForOverlayCards": 0,
+      "targetTaskIds": [
+        "absorb_manual_transcription_09",
+        "absorb_manual_transcription_10",
+        "absorb_manual_transcription_11",
+        "absorb_manual_transcription_12"
+      ],
+      "targetDocumentIds": [
+        "corpus_1580"
+      ],
+      "targetPageNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "topRiskTermFlags": [
+        {
+          "flag": "source_provenance_language",
+          "count": 1
+        },
+        {
+          "flag": "copyright_language",
+          "count": 1
+        },
+        {
+          "flag": "historical_origin_language",
+          "count": 1
+        },
+        {
+          "flag": "market_visualization_language",
+          "count": 1
+        },
+        {
+          "flag": "historical_market_language",
+          "count": 1
+        },
+        {
+          "flag": "futures_origin_language",
+          "count": 1
+        },
+        {
+          "flag": "transaction_scale_language",
+          "count": 1
+        },
+        {
+          "flag": "public_grounding_required",
+          "count": 1
+        },
+        {
+          "flag": "success_claim_language",
+          "count": 1
+        },
+        {
+          "flag": "market_influence_language",
+          "count": 1
+        },
+        {
+          "flag": "pattern_name_language",
+          "count": 1
+        },
+        {
+          "flag": "historical_claim_review_required",
+          "count": 1
+        },
+        {
+          "flag": "ohlc_definition_language",
+          "count": 1
+        },
+        {
+          "flag": "bullish_candle_language",
+          "count": 1
+        },
+        {
+          "flag": "example_price_language",
+          "count": 1
+        },
+        {
+          "flag": "platform_color_convention",
+          "count": 1
+        }
+      ],
+      "validation": {
+        "validationStatus": "blocked_missing_reviewer_input",
+        "readyEntries": 0,
+        "blockedEntries": 4,
+        "forbiddenHitEntries": 0
+      },
+      "lint": {
+        "lintStatus": "blocked_quality_lint",
+        "readyEntries": 0,
+        "blockedEntries": 4,
+        "forbiddenHitEntries": 0,
+        "candidateCopyIssueEntries": 0,
+        "directCandidateMisuseEntries": 0
+      },
+      "positiveFixture": {
+        "fixtureOnly": true,
+        "totalEntries": 4,
+        "readyForValidationEntries": 4,
+        "filledEntries": 4
+      },
+      "sampleCards": [
+        {
+          "id": "fill_pack_01_absorb_manual_transcription_09",
+          "taskId": "absorb_manual_transcription_09",
+          "documentId": "corpus_1580",
+          "pageNumber": 1,
+          "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+          "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-01.png",
+          "fillStatus": "blank_ready_for_human_fill",
+          "candidateId": "candidate_batch_03_page_01",
+          "nextGate": "human_fill_pack_then_validate_p0_review_input_copy"
+        },
+        {
+          "id": "fill_pack_01_absorb_manual_transcription_10",
+          "taskId": "absorb_manual_transcription_10",
+          "documentId": "corpus_1580",
+          "pageNumber": 2,
+          "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+          "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-02.png",
+          "fillStatus": "blank_ready_for_human_fill",
+          "candidateId": "candidate_batch_03_page_02",
+          "nextGate": "human_fill_pack_then_validate_p0_review_input_copy"
+        }
+      ]
+    },
+    {
+      "packNumber": "02",
+      "packId": "local_course_p0_human_fill_pack_02",
+      "category": "manual_transcription",
+      "packStatus": "blank_human_fill_pack_ready",
+      "templateStatus": "pack_02_input_copy_blank",
+      "totalPackCards": 4,
+      "totalInputEntries": 4,
+      "filledCards": 0,
+      "filledEntries": 0,
+      "readyForValidationCards": 0,
+      "readyForValidationEntries": 0,
+      "acceptedForOverlayCards": 0,
+      "targetTaskIds": [
+        "absorb_manual_transcription_13",
+        "absorb_manual_transcription_14",
+        "absorb_manual_transcription_15",
+        "absorb_manual_transcription_16"
+      ],
+      "targetDocumentIds": [
+        "corpus_1580"
+      ],
+      "targetPageNumbers": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "topRiskTermFlags": [
+        {
+          "flag": "support_resistance_language",
+          "count": 2
+        },
+        {
+          "flag": "force_comparison_language",
+          "count": 2
+        },
+        {
+          "flag": "liquidity_condition_language",
+          "count": 2
+        },
+        {
+          "flag": "bearish_bullish_language",
+          "count": 1
+        },
+        {
+          "flag": "ohlc_definition_language",
+          "count": 1
+        },
+        {
+          "flag": "shadow_body_language",
+          "count": 1
+        },
+        {
+          "flag": "market_meaning_language",
+          "count": 1
+        },
+        {
+          "flag": "platform_color_convention",
+          "count": 1
+        },
+        {
+          "flag": "kline_classification_language",
+          "count": 1
+        },
+        {
+          "flag": "ohlc_formula_language",
+          "count": 1
+        },
+        {
+          "flag": "specific_price_levels",
+          "count": 1
+        },
+        {
+          "flag": "signal_language",
+          "count": 1
+        },
+        {
+          "flag": "warning_signal_language",
+          "count": 1
+        },
+        {
+          "flag": "forecast_language",
+          "count": 1
+        },
+        {
+          "flag": "trend_continuation_language",
+          "count": 1
+        },
+        {
+          "flag": "study_advice_language",
+          "count": 1
+        },
+        {
+          "flag": "source_recommendation_language",
+          "count": 1
+        },
+        {
+          "flag": "copyright_review_required",
+          "count": 1
+        },
+        {
+          "flag": "homework_instruction_language",
+          "count": 1
+        }
+      ],
+      "validation": {
+        "validationStatus": "blocked_missing_reviewer_input",
+        "readyEntries": 0,
+        "blockedEntries": 4,
+        "forbiddenHitEntries": 0
+      },
+      "lint": {
+        "lintStatus": "blocked_quality_lint",
+        "readyEntries": 0,
+        "blockedEntries": 4,
+        "forbiddenHitEntries": 0,
+        "candidateCopyIssueEntries": 0,
+        "directCandidateMisuseEntries": 0
+      },
+      "positiveFixture": {
+        "fixtureOnly": true,
+        "totalEntries": 4,
+        "readyForValidationEntries": 4,
+        "filledEntries": 4
+      },
+      "sampleCards": [
+        {
+          "id": "fill_pack_02_absorb_manual_transcription_13",
+          "taskId": "absorb_manual_transcription_13",
+          "documentId": "corpus_1580",
+          "pageNumber": 5,
+          "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+          "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-05.png",
+          "fillStatus": "blank_ready_for_human_fill",
+          "candidateId": "candidate_batch_04_page_01",
+          "nextGate": "human_fill_pack_then_validate_p0_review_input_copy"
+        },
+        {
+          "id": "fill_pack_02_absorb_manual_transcription_14",
+          "taskId": "absorb_manual_transcription_14",
+          "documentId": "corpus_1580",
+          "pageNumber": 6,
+          "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+          "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-06.png",
+          "fillStatus": "blank_ready_for_human_fill",
+          "candidateId": "candidate_batch_04_page_02",
+          "nextGate": "human_fill_pack_then_validate_p0_review_input_copy"
+        }
+      ]
+    },
+    {
+      "packNumber": "03",
+      "packId": "local_course_p0_human_fill_pack_03",
+      "category": "manual_transcription",
+      "packStatus": "blank_human_fill_pack_ready",
+      "templateStatus": "pack_03_input_copy_blank",
+      "totalPackCards": 3,
+      "totalInputEntries": 3,
+      "filledCards": 0,
+      "filledEntries": 0,
+      "readyForValidationCards": 0,
+      "readyForValidationEntries": 0,
+      "acceptedForOverlayCards": 0,
+      "targetTaskIds": [
+        "absorb_manual_transcription_17",
+        "absorb_manual_transcription_18",
+        "absorb_manual_transcription_19"
+      ],
+      "targetDocumentIds": [
+        "corpus_1580"
+      ],
+      "targetPageNumbers": [
+        9,
+        10,
+        11
+      ],
+      "topRiskTermFlags": [
+        {
+          "flag": "signal_language",
+          "count": 1
+        },
+        {
+          "flag": "support_resistance_language",
+          "count": 1
+        },
+        {
+          "flag": "rebound_language",
+          "count": 1
+        },
+        {
+          "flag": "turning_point_language",
+          "count": 1
+        },
+        {
+          "flag": "limit_move_language",
+          "count": 1
+        },
+        {
+          "flag": "homework_instruction_language",
+          "count": 1
+        },
+        {
+          "flag": "ohlc_drawing_language",
+          "count": 1
+        },
+        {
+          "flag": "qr_contact_language",
+          "count": 1
+        },
+        {
+          "flag": "specific_asset_examples",
+          "count": 1
+        },
+        {
+          "flag": "specific_price_levels",
+          "count": 1
+        },
+        {
+          "flag": "selling_pressure_language",
+          "count": 1
+        },
+        {
+          "flag": "force_comparison_language",
+          "count": 1
+        },
+        {
+          "flag": "quiz_summary_language",
+          "count": 1
+        },
+        {
+          "flag": "exam_focus_language",
+          "count": 1
+        },
+        {
+          "flag": "market_meaning_language",
+          "count": 1
+        },
+        {
+          "flag": "buyer_seller_dominance_language",
+          "count": 1
+        },
+        {
+          "flag": "turning_warning_language",
+          "count": 1
+        },
+        {
+          "flag": "multi_timeframe_language",
+          "count": 1
+        },
+        {
+          "flag": "trend_reversal_language",
+          "count": 1
+        },
+        {
+          "flag": "source_recommendation_language",
+          "count": 1
+        }
+      ],
+      "validation": {
+        "validationStatus": "blocked_missing_reviewer_input",
+        "readyEntries": 0,
+        "blockedEntries": 3,
+        "forbiddenHitEntries": 0
+      },
+      "lint": {
+        "lintStatus": "blocked_quality_lint",
+        "readyEntries": 0,
+        "blockedEntries": 3,
+        "forbiddenHitEntries": 0,
+        "candidateCopyIssueEntries": 0,
+        "directCandidateMisuseEntries": 0
+      },
+      "positiveFixture": {
+        "fixtureOnly": true,
+        "totalEntries": 3,
+        "readyForValidationEntries": 3,
+        "filledEntries": 3
+      },
+      "sampleCards": [
+        {
+          "id": "fill_pack_03_absorb_manual_transcription_17",
+          "taskId": "absorb_manual_transcription_17",
+          "documentId": "corpus_1580",
+          "pageNumber": 9,
+          "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+          "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-09.png",
+          "fillStatus": "blank_ready_for_human_fill",
+          "candidateId": "candidate_batch_05_page_01",
+          "nextGate": "human_fill_pack_then_validate_p0_review_input_copy"
+        },
+        {
+          "id": "fill_pack_03_absorb_manual_transcription_18",
+          "taskId": "absorb_manual_transcription_18",
+          "documentId": "corpus_1580",
+          "pageNumber": 10,
+          "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+          "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-10.png",
+          "fillStatus": "blank_ready_for_human_fill",
+          "candidateId": "candidate_batch_05_page_02",
+          "nextGate": "human_fill_pack_then_validate_p0_review_input_copy"
+        }
+      ]
+    },
+    {
+      "packNumber": "04",
+      "packId": "local_course_p0_human_fill_pack_04",
+      "category": "manual_transcription",
+      "packStatus": "blank_human_fill_pack_ready",
+      "templateStatus": "pack_04_input_copy_blank",
+      "totalPackCards": 4,
+      "totalInputEntries": 4,
+      "filledCards": 0,
+      "filledEntries": 0,
+      "readyForValidationCards": 0,
+      "readyForValidationEntries": 0,
+      "acceptedForOverlayCards": 0,
+      "targetTaskIds": [
+        "absorb_manual_transcription_01",
+        "absorb_manual_transcription_02",
+        "absorb_manual_transcription_03",
+        "absorb_manual_transcription_04"
+      ],
+      "targetDocumentIds": [
+        "corpus_1313"
+      ],
+      "targetPageNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "topRiskTermFlags": [
+        {
+          "flag": "entry_language",
+          "count": 3
+        },
+        {
+          "flag": "position_language",
+          "count": 2
+        },
+        {
+          "flag": "stop_loss_language",
+          "count": 2
+        },
+        {
+          "flag": "specific_price_levels",
+          "count": 2
+        },
+        {
+          "flag": "risk_reward_language",
+          "count": 2
+        },
+        {
+          "flag": "counter_trend_language",
+          "count": 1
+        },
+        {
+          "flag": "right_side_confirmation_language",
+          "count": 1
+        },
+        {
+          "flag": "pattern_signal_language",
+          "count": 1
+        },
+        {
+          "flag": "pressure_level_language",
+          "count": 1
+        },
+        {
+          "flag": "entry_avoidance_language",
+          "count": 1
+        },
+        {
+          "flag": "order_management_language",
+          "count": 1
+        },
+        {
+          "flag": "risk_control_language",
+          "count": 1
+        }
+      ],
+      "validation": {
+        "validationStatus": "blocked_missing_reviewer_input",
+        "readyEntries": 0,
+        "blockedEntries": 4,
+        "forbiddenHitEntries": 0
+      },
+      "lint": {
+        "lintStatus": "blocked_quality_lint",
+        "readyEntries": 0,
+        "blockedEntries": 4,
+        "forbiddenHitEntries": 0,
+        "candidateCopyIssueEntries": 0,
+        "directCandidateMisuseEntries": 0
+      },
+      "positiveFixture": {
+        "fixtureOnly": true,
+        "totalEntries": 4,
+        "readyForValidationEntries": 4,
+        "filledEntries": 4
+      },
+      "sampleCards": [
+        {
+          "id": "fill_pack_04_absorb_manual_transcription_01",
+          "taskId": "absorb_manual_transcription_01",
+          "documentId": "corpus_1313",
+          "pageNumber": 1,
+          "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+          "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1313/page-01.png",
+          "fillStatus": "blank_ready_for_human_fill",
+          "candidateId": "candidate_batch_01_page_01",
+          "nextGate": "human_fill_pack_then_validate_p0_review_input_copy"
+        },
+        {
+          "id": "fill_pack_04_absorb_manual_transcription_02",
+          "taskId": "absorb_manual_transcription_02",
+          "documentId": "corpus_1313",
+          "pageNumber": 2,
+          "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+          "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1313/page-02.png",
+          "fillStatus": "blank_ready_for_human_fill",
+          "candidateId": "candidate_batch_01_page_02",
+          "nextGate": "human_fill_pack_then_validate_p0_review_input_copy"
+        }
+      ]
+    },
+    {
+      "packNumber": "05",
+      "packId": "local_course_p0_human_fill_pack_05",
+      "category": "manual_transcription",
+      "packStatus": "blank_human_fill_pack_ready",
+      "templateStatus": "pack_05_input_copy_blank",
+      "totalPackCards": 4,
+      "totalInputEntries": 4,
+      "filledCards": 0,
+      "filledEntries": 0,
+      "readyForValidationCards": 0,
+      "readyForValidationEntries": 0,
+      "acceptedForOverlayCards": 0,
+      "targetTaskIds": [
+        "absorb_manual_transcription_05",
+        "absorb_manual_transcription_06",
+        "absorb_manual_transcription_07",
+        "absorb_manual_transcription_08"
+      ],
+      "targetDocumentIds": [
+        "corpus_1313"
+      ],
+      "targetPageNumbers": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "topRiskTermFlags": [
+        {
+          "flag": "profit_loss_language",
+          "count": 2
+        },
+        {
+          "flag": "cycle_switching_language",
+          "count": 2
+        },
+        {
+          "flag": "specific_price_levels",
+          "count": 2
+        },
+        {
+          "flag": "signal_confirmation_language",
+          "count": 2
+        },
+        {
+          "flag": "indicator_parameter_language",
+          "count": 1
+        },
+        {
+          "flag": "signal_language",
+          "count": 1
+        },
+        {
+          "flag": "execution_strategy_language",
+          "count": 1
+        },
+        {
+          "flag": "pending_order_language",
+          "count": 1
+        },
+        {
+          "flag": "retracement_level_language",
+          "count": 1
+        },
+        {
+          "flag": "small_cycle_language",
+          "count": 1
+        },
+        {
+          "flag": "risk_control_language",
+          "count": 1
+        },
+        {
+          "flag": "support_position_language",
+          "count": 1
+        },
+        {
+          "flag": "position_management_language",
+          "count": 1
+        },
+        {
+          "flag": "difficulty_rating_language",
+          "count": 1
+        },
+        {
+          "flag": "entry_language",
+          "count": 1
+        },
+        {
+          "flag": "target_area_language",
+          "count": 1
+        },
+        {
+          "flag": "stop_loss_language",
+          "count": 1
+        },
+        {
+          "flag": "case_study_language",
+          "count": 1
+        }
+      ],
+      "validation": {
+        "validationStatus": "blocked_missing_reviewer_input",
+        "readyEntries": 0,
+        "blockedEntries": 4,
+        "forbiddenHitEntries": 0
+      },
+      "lint": {
+        "lintStatus": "blocked_quality_lint",
+        "readyEntries": 0,
+        "blockedEntries": 4,
+        "forbiddenHitEntries": 0,
+        "candidateCopyIssueEntries": 0,
+        "directCandidateMisuseEntries": 0
+      },
+      "positiveFixture": {
+        "fixtureOnly": true,
+        "totalEntries": 4,
+        "readyForValidationEntries": 4,
+        "filledEntries": 4
+      },
+      "sampleCards": [
+        {
+          "id": "fill_pack_05_absorb_manual_transcription_05",
+          "taskId": "absorb_manual_transcription_05",
+          "documentId": "corpus_1313",
+          "pageNumber": 5,
+          "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+          "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1313/page-05.png",
+          "fillStatus": "blank_ready_for_human_fill",
+          "candidateId": "candidate_batch_02_page_01",
+          "nextGate": "human_fill_pack_then_validate_p0_review_input_copy"
+        },
+        {
+          "id": "fill_pack_05_absorb_manual_transcription_06",
+          "taskId": "absorb_manual_transcription_06",
+          "documentId": "corpus_1313",
+          "pageNumber": 6,
+          "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+          "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1313/page-06.png",
+          "fillStatus": "blank_ready_for_human_fill",
+          "candidateId": "candidate_batch_02_page_02",
+          "nextGate": "human_fill_pack_then_validate_p0_review_input_copy"
+        }
+      ]
+    },
+    {
+      "packNumber": "source_replacement",
+      "packId": "local_course_p0_source_replacement_review_pack",
+      "category": "source_replacement",
+      "packStatus": "blank_source_replacement_review_pack_ready",
+      "templateStatus": "source_replacement_input_copy_blank",
+      "totalPackCards": 3,
+      "totalInputEntries": 3,
+      "filledCards": 0,
+      "filledEntries": 0,
+      "readyForValidationCards": 0,
+      "readyForValidationEntries": 0,
+      "acceptedForOverlayCards": 0,
+      "targetTaskIds": [
+        "absorb_source_replacement_01",
+        "absorb_source_replacement_02",
+        "absorb_source_replacement_03"
+      ],
+      "targetDocumentIds": [
+        "corpus_1329",
+        "corpus_1431",
+        "corpus_1577"
+      ],
+      "targetPageNumbers": [
+        1,
+        1,
+        1
+      ],
+      "entriesWithCandidates": 3,
+      "entriesWithDirectReplacementCandidates": 0,
+      "validation": {
+        "validationStatus": "blocked_missing_reviewer_input",
+        "readyEntries": 0,
+        "blockedEntries": 3,
+        "forbiddenHitEntries": 0
+      },
+      "lint": {
+        "lintStatus": "blocked_quality_lint",
+        "readyEntries": 0,
+        "blockedEntries": 3,
+        "forbiddenHitEntries": 0,
+        "candidateCopyIssueEntries": 0,
+        "directCandidateMisuseEntries": 0
+      },
+      "positiveFixture": {
+        "fixtureOnly": true,
+        "totalEntries": 3,
+        "readyForValidationEntries": 3,
+        "filledEntries": 3
+      },
+      "sampleCards": [
+        {
+          "id": "source_replacement_review_absorb_source_replacement_01",
+          "taskId": "absorb_source_replacement_01",
+          "documentId": "corpus_1329",
+          "pageNumber": 1,
+          "sourceRelativePath": "系统课02进阶/19_9119：高中毕业集训总结年后展望_笔记.pdf",
+          "reviewStatus": "blank_ready_for_human_decision",
+          "candidateCount": 8,
+          "selectedDecision": "",
+          "nextGate": "source_replacement_decision_then_validate_p0_review_input_copy"
+        },
+        {
+          "id": "source_replacement_review_absorb_source_replacement_02",
+          "taskId": "absorb_source_replacement_02",
+          "documentId": "corpus_1431",
+          "pageNumber": 1,
+          "sourceRelativePath": "专享07庄家篇/14_0814-【复训】-分析行情挖掘机会_笔记.pdf",
+          "reviewStatus": "blank_ready_for_human_decision",
+          "candidateCount": 8,
+          "selectedDecision": "",
+          "nextGate": "source_replacement_decision_then_validate_p0_review_input_copy"
+        }
+      ]
+    }
+  ],
+  "completionRule": "This bundle proves all 22 P0 review entries have blank human-review intake paths and fixture-only controls. It does not prove human review completion and does not authorize overlay writes.",
+  "boundary": "P0 human review bundle is internal reviewer scaffolding only. It does not perform OCR, replace real reviewer judgment, approve learner-facing release, write overlay changes, provide stock recommendations, live signals, return promises, broker workflows, automation, or real-money guidance."
+}

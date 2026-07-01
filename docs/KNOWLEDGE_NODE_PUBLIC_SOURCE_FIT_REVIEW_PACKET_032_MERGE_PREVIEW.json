@@ -1,0 +1,2780 @@
+{
+  "generatedAt": "2026-06-22T04:59:21.761Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "mergePreviewStatus": "packet_032_merge_preview_blocked_missing_ready_packet_input",
+  "mergePreviewMode": "dry_run_packet_input_copy_to_full_source_fit_draft_mapping",
+  "packetId": "node-public-source-fit-batch-032-packet",
+  "batchId": "node-public-source-fit-batch-032",
+  "module": "新闻/情绪/事件偏见",
+  "packetInputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_032_INPUT_COPY_TEMPLATE.json",
+  "packetValidationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_032_INPUT_COPY_TEMPLATE_VALIDATION.json",
+  "fullDraftInputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+  "fullValidationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_VALIDATION.json",
+  "packetRows": 60,
+  "fullDraftRows": 1638,
+  "fullValidationRows": 1638,
+  "mappedRows": 60,
+  "missingTargetRows": 0,
+  "readyRows": 0,
+  "blockedRows": 60,
+  "packetValidationStatus": "blocked_missing_real_reviewer_source_fit_input",
+  "packetReadyRows": 0,
+  "packetBlockedRows": 60,
+  "packetMissingFieldRows": 60,
+  "packetForbiddenHitRows": 0,
+  "packetRealHumanInputEntries": 0,
+  "fullDraftReadyRowsBeforeMerge": 0,
+  "fullDraftBlockedRowsBeforeMerge": 1638,
+  "mergeAllowedNow": false,
+  "writeAllowedNow": false,
+  "manualAuthorizationRequired": true,
+  "mergeRows": [
+    {
+      "packetRowIndex": 0,
+      "targetFullDraftRowIndex": 834,
+      "reviewId": "knv2_0225::corpus_0459",
+      "nodeId": "knv2_0225",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/0/reviewerDecision",
+          "to": "/rows/834/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/0/sourceFitNotes",
+          "to": "/rows/834/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/0/citationUse",
+          "to": "/rows/834/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/0/reviewerName",
+          "to": "/rows/834/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/0/reviewedAt",
+          "to": "/rows/834/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/0/realHumanInput",
+          "to": "/rows/834/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 1,
+      "targetFullDraftRowIndex": 835,
+      "reviewId": "knv2_0225::corpus_0102",
+      "nodeId": "knv2_0225",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/1/reviewerDecision",
+          "to": "/rows/835/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/1/sourceFitNotes",
+          "to": "/rows/835/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/1/citationUse",
+          "to": "/rows/835/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/1/reviewerName",
+          "to": "/rows/835/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/1/reviewedAt",
+          "to": "/rows/835/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/1/realHumanInput",
+          "to": "/rows/835/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 2,
+      "targetFullDraftRowIndex": 836,
+      "reviewId": "knv2_0225::corpus_1025",
+      "nodeId": "knv2_0225",
+      "documentId": "corpus_1025",
+      "sourceName": "bigvaldis/breaking_news_market_sentiment README",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/2/reviewerDecision",
+          "to": "/rows/836/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/2/sourceFitNotes",
+          "to": "/rows/836/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/2/citationUse",
+          "to": "/rows/836/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/2/reviewerName",
+          "to": "/rows/836/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/2/reviewedAt",
+          "to": "/rows/836/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/2/realHumanInput",
+          "to": "/rows/836/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 3,
+      "targetFullDraftRowIndex": 837,
+      "reviewId": "knv2_0225::corpus_0462",
+      "nodeId": "knv2_0225",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/3/reviewerDecision",
+          "to": "/rows/837/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/3/sourceFitNotes",
+          "to": "/rows/837/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/3/citationUse",
+          "to": "/rows/837/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/3/reviewerName",
+          "to": "/rows/837/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/3/reviewedAt",
+          "to": "/rows/837/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/3/realHumanInput",
+          "to": "/rows/837/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 4,
+      "targetFullDraftRowIndex": 838,
+      "reviewId": "knv2_0225::corpus_0426",
+      "nodeId": "knv2_0225",
+      "documentId": "corpus_0426",
+      "sourceName": "Wikipedia: Event study",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/4/reviewerDecision",
+          "to": "/rows/838/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/4/sourceFitNotes",
+          "to": "/rows/838/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/4/citationUse",
+          "to": "/rows/838/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/4/reviewerName",
+          "to": "/rows/838/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/4/reviewedAt",
+          "to": "/rows/838/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/4/realHumanInput",
+          "to": "/rows/838/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 5,
+      "targetFullDraftRowIndex": 839,
+      "reviewId": "knv2_0225::corpus_0425",
+      "nodeId": "knv2_0225",
+      "documentId": "corpus_0425",
+      "sourceName": "Wikipedia: Market sentiment",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/5/reviewerDecision",
+          "to": "/rows/839/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/5/sourceFitNotes",
+          "to": "/rows/839/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/5/citationUse",
+          "to": "/rows/839/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/5/reviewerName",
+          "to": "/rows/839/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/5/reviewedAt",
+          "to": "/rows/839/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/5/realHumanInput",
+          "to": "/rows/839/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 6,
+      "targetFullDraftRowIndex": 906,
+      "reviewId": "knv2_0237::corpus_0459",
+      "nodeId": "knv2_0237",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/6/reviewerDecision",
+          "to": "/rows/906/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/6/sourceFitNotes",
+          "to": "/rows/906/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/6/citationUse",
+          "to": "/rows/906/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/6/reviewerName",
+          "to": "/rows/906/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/6/reviewedAt",
+          "to": "/rows/906/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/6/realHumanInput",
+          "to": "/rows/906/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 7,
+      "targetFullDraftRowIndex": 907,
+      "reviewId": "knv2_0237::corpus_0102",
+      "nodeId": "knv2_0237",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/7/reviewerDecision",
+          "to": "/rows/907/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/7/sourceFitNotes",
+          "to": "/rows/907/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/7/citationUse",
+          "to": "/rows/907/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/7/reviewerName",
+          "to": "/rows/907/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/7/reviewedAt",
+          "to": "/rows/907/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/7/realHumanInput",
+          "to": "/rows/907/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 8,
+      "targetFullDraftRowIndex": 908,
+      "reviewId": "knv2_0237::corpus_1025",
+      "nodeId": "knv2_0237",
+      "documentId": "corpus_1025",
+      "sourceName": "bigvaldis/breaking_news_market_sentiment README",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/8/reviewerDecision",
+          "to": "/rows/908/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/8/sourceFitNotes",
+          "to": "/rows/908/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/8/citationUse",
+          "to": "/rows/908/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/8/reviewerName",
+          "to": "/rows/908/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/8/reviewedAt",
+          "to": "/rows/908/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/8/realHumanInput",
+          "to": "/rows/908/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 9,
+      "targetFullDraftRowIndex": 909,
+      "reviewId": "knv2_0237::corpus_0462",
+      "nodeId": "knv2_0237",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/9/reviewerDecision",
+          "to": "/rows/909/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/9/sourceFitNotes",
+          "to": "/rows/909/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/9/citationUse",
+          "to": "/rows/909/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/9/reviewerName",
+          "to": "/rows/909/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/9/reviewedAt",
+          "to": "/rows/909/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/9/realHumanInput",
+          "to": "/rows/909/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 10,
+      "targetFullDraftRowIndex": 910,
+      "reviewId": "knv2_0237::corpus_0426",
+      "nodeId": "knv2_0237",
+      "documentId": "corpus_0426",
+      "sourceName": "Wikipedia: Event study",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/10/reviewerDecision",
+          "to": "/rows/910/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/10/sourceFitNotes",
+          "to": "/rows/910/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/10/citationUse",
+          "to": "/rows/910/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/10/reviewerName",
+          "to": "/rows/910/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/10/reviewedAt",
+          "to": "/rows/910/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/10/realHumanInput",
+          "to": "/rows/910/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 11,
+      "targetFullDraftRowIndex": 911,
+      "reviewId": "knv2_0237::corpus_0425",
+      "nodeId": "knv2_0237",
+      "documentId": "corpus_0425",
+      "sourceName": "Wikipedia: Market sentiment",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/11/reviewerDecision",
+          "to": "/rows/911/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/11/sourceFitNotes",
+          "to": "/rows/911/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/11/citationUse",
+          "to": "/rows/911/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/11/reviewerName",
+          "to": "/rows/911/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/11/reviewedAt",
+          "to": "/rows/911/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/11/realHumanInput",
+          "to": "/rows/911/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 12,
+      "targetFullDraftRowIndex": 972,
+      "reviewId": "knv2_0249::corpus_0459",
+      "nodeId": "knv2_0249",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/12/reviewerDecision",
+          "to": "/rows/972/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/12/sourceFitNotes",
+          "to": "/rows/972/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/12/citationUse",
+          "to": "/rows/972/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/12/reviewerName",
+          "to": "/rows/972/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/12/reviewedAt",
+          "to": "/rows/972/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/12/realHumanInput",
+          "to": "/rows/972/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 13,
+      "targetFullDraftRowIndex": 973,
+      "reviewId": "knv2_0249::corpus_0102",
+      "nodeId": "knv2_0249",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/13/reviewerDecision",
+          "to": "/rows/973/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/13/sourceFitNotes",
+          "to": "/rows/973/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/13/citationUse",
+          "to": "/rows/973/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/13/reviewerName",
+          "to": "/rows/973/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/13/reviewedAt",
+          "to": "/rows/973/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/13/realHumanInput",
+          "to": "/rows/973/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 14,
+      "targetFullDraftRowIndex": 974,
+      "reviewId": "knv2_0249::corpus_1025",
+      "nodeId": "knv2_0249",
+      "documentId": "corpus_1025",
+      "sourceName": "bigvaldis/breaking_news_market_sentiment README",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/14/reviewerDecision",
+          "to": "/rows/974/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/14/sourceFitNotes",
+          "to": "/rows/974/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/14/citationUse",
+          "to": "/rows/974/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/14/reviewerName",
+          "to": "/rows/974/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/14/reviewedAt",
+          "to": "/rows/974/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/14/realHumanInput",
+          "to": "/rows/974/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 15,
+      "targetFullDraftRowIndex": 975,
+      "reviewId": "knv2_0249::corpus_0462",
+      "nodeId": "knv2_0249",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/15/reviewerDecision",
+          "to": "/rows/975/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/15/sourceFitNotes",
+          "to": "/rows/975/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/15/citationUse",
+          "to": "/rows/975/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/15/reviewerName",
+          "to": "/rows/975/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/15/reviewedAt",
+          "to": "/rows/975/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/15/realHumanInput",
+          "to": "/rows/975/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 16,
+      "targetFullDraftRowIndex": 976,
+      "reviewId": "knv2_0249::corpus_0426",
+      "nodeId": "knv2_0249",
+      "documentId": "corpus_0426",
+      "sourceName": "Wikipedia: Event study",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/16/reviewerDecision",
+          "to": "/rows/976/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/16/sourceFitNotes",
+          "to": "/rows/976/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/16/citationUse",
+          "to": "/rows/976/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/16/reviewerName",
+          "to": "/rows/976/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/16/reviewedAt",
+          "to": "/rows/976/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/16/realHumanInput",
+          "to": "/rows/976/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 17,
+      "targetFullDraftRowIndex": 977,
+      "reviewId": "knv2_0249::corpus_0425",
+      "nodeId": "knv2_0249",
+      "documentId": "corpus_0425",
+      "sourceName": "Wikipedia: Market sentiment",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/17/reviewerDecision",
+          "to": "/rows/977/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/17/sourceFitNotes",
+          "to": "/rows/977/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/17/citationUse",
+          "to": "/rows/977/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/17/reviewerName",
+          "to": "/rows/977/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/17/reviewedAt",
+          "to": "/rows/977/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/17/realHumanInput",
+          "to": "/rows/977/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 18,
+      "targetFullDraftRowIndex": 1044,
+      "reviewId": "knv2_0261::corpus_0459",
+      "nodeId": "knv2_0261",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/18/reviewerDecision",
+          "to": "/rows/1044/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/18/sourceFitNotes",
+          "to": "/rows/1044/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/18/citationUse",
+          "to": "/rows/1044/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/18/reviewerName",
+          "to": "/rows/1044/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/18/reviewedAt",
+          "to": "/rows/1044/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/18/realHumanInput",
+          "to": "/rows/1044/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 19,
+      "targetFullDraftRowIndex": 1045,
+      "reviewId": "knv2_0261::corpus_0102",
+      "nodeId": "knv2_0261",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/19/reviewerDecision",
+          "to": "/rows/1045/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/19/sourceFitNotes",
+          "to": "/rows/1045/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/19/citationUse",
+          "to": "/rows/1045/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/19/reviewerName",
+          "to": "/rows/1045/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/19/reviewedAt",
+          "to": "/rows/1045/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/19/realHumanInput",
+          "to": "/rows/1045/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 20,
+      "targetFullDraftRowIndex": 1046,
+      "reviewId": "knv2_0261::corpus_1025",
+      "nodeId": "knv2_0261",
+      "documentId": "corpus_1025",
+      "sourceName": "bigvaldis/breaking_news_market_sentiment README",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/20/reviewerDecision",
+          "to": "/rows/1046/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/20/sourceFitNotes",
+          "to": "/rows/1046/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/20/citationUse",
+          "to": "/rows/1046/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/20/reviewerName",
+          "to": "/rows/1046/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/20/reviewedAt",
+          "to": "/rows/1046/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/20/realHumanInput",
+          "to": "/rows/1046/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 21,
+      "targetFullDraftRowIndex": 1047,
+      "reviewId": "knv2_0261::corpus_0462",
+      "nodeId": "knv2_0261",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/21/reviewerDecision",
+          "to": "/rows/1047/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/21/sourceFitNotes",
+          "to": "/rows/1047/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/21/citationUse",
+          "to": "/rows/1047/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/21/reviewerName",
+          "to": "/rows/1047/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/21/reviewedAt",
+          "to": "/rows/1047/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/21/realHumanInput",
+          "to": "/rows/1047/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 22,
+      "targetFullDraftRowIndex": 1048,
+      "reviewId": "knv2_0261::corpus_0426",
+      "nodeId": "knv2_0261",
+      "documentId": "corpus_0426",
+      "sourceName": "Wikipedia: Event study",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/22/reviewerDecision",
+          "to": "/rows/1048/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/22/sourceFitNotes",
+          "to": "/rows/1048/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/22/citationUse",
+          "to": "/rows/1048/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/22/reviewerName",
+          "to": "/rows/1048/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/22/reviewedAt",
+          "to": "/rows/1048/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/22/realHumanInput",
+          "to": "/rows/1048/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 23,
+      "targetFullDraftRowIndex": 1049,
+      "reviewId": "knv2_0261::corpus_0425",
+      "nodeId": "knv2_0261",
+      "documentId": "corpus_0425",
+      "sourceName": "Wikipedia: Market sentiment",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/23/reviewerDecision",
+          "to": "/rows/1049/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/23/sourceFitNotes",
+          "to": "/rows/1049/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/23/citationUse",
+          "to": "/rows/1049/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/23/reviewerName",
+          "to": "/rows/1049/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/23/reviewedAt",
+          "to": "/rows/1049/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/23/realHumanInput",
+          "to": "/rows/1049/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 24,
+      "targetFullDraftRowIndex": 1116,
+      "reviewId": "knv2_0273::corpus_0459",
+      "nodeId": "knv2_0273",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/24/reviewerDecision",
+          "to": "/rows/1116/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/24/sourceFitNotes",
+          "to": "/rows/1116/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/24/citationUse",
+          "to": "/rows/1116/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/24/reviewerName",
+          "to": "/rows/1116/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/24/reviewedAt",
+          "to": "/rows/1116/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/24/realHumanInput",
+          "to": "/rows/1116/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 25,
+      "targetFullDraftRowIndex": 1117,
+      "reviewId": "knv2_0273::corpus_0102",
+      "nodeId": "knv2_0273",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/25/reviewerDecision",
+          "to": "/rows/1117/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/25/sourceFitNotes",
+          "to": "/rows/1117/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/25/citationUse",
+          "to": "/rows/1117/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/25/reviewerName",
+          "to": "/rows/1117/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/25/reviewedAt",
+          "to": "/rows/1117/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/25/realHumanInput",
+          "to": "/rows/1117/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 26,
+      "targetFullDraftRowIndex": 1118,
+      "reviewId": "knv2_0273::corpus_1025",
+      "nodeId": "knv2_0273",
+      "documentId": "corpus_1025",
+      "sourceName": "bigvaldis/breaking_news_market_sentiment README",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/26/reviewerDecision",
+          "to": "/rows/1118/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/26/sourceFitNotes",
+          "to": "/rows/1118/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/26/citationUse",
+          "to": "/rows/1118/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/26/reviewerName",
+          "to": "/rows/1118/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/26/reviewedAt",
+          "to": "/rows/1118/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/26/realHumanInput",
+          "to": "/rows/1118/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 27,
+      "targetFullDraftRowIndex": 1119,
+      "reviewId": "knv2_0273::corpus_0462",
+      "nodeId": "knv2_0273",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/27/reviewerDecision",
+          "to": "/rows/1119/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/27/sourceFitNotes",
+          "to": "/rows/1119/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/27/citationUse",
+          "to": "/rows/1119/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/27/reviewerName",
+          "to": "/rows/1119/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/27/reviewedAt",
+          "to": "/rows/1119/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/27/realHumanInput",
+          "to": "/rows/1119/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 28,
+      "targetFullDraftRowIndex": 1120,
+      "reviewId": "knv2_0273::corpus_0426",
+      "nodeId": "knv2_0273",
+      "documentId": "corpus_0426",
+      "sourceName": "Wikipedia: Event study",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/28/reviewerDecision",
+          "to": "/rows/1120/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/28/sourceFitNotes",
+          "to": "/rows/1120/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/28/citationUse",
+          "to": "/rows/1120/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/28/reviewerName",
+          "to": "/rows/1120/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/28/reviewedAt",
+          "to": "/rows/1120/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/28/realHumanInput",
+          "to": "/rows/1120/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 29,
+      "targetFullDraftRowIndex": 1121,
+      "reviewId": "knv2_0273::corpus_0425",
+      "nodeId": "knv2_0273",
+      "documentId": "corpus_0425",
+      "sourceName": "Wikipedia: Market sentiment",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/29/reviewerDecision",
+          "to": "/rows/1121/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/29/sourceFitNotes",
+          "to": "/rows/1121/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/29/citationUse",
+          "to": "/rows/1121/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/29/reviewerName",
+          "to": "/rows/1121/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/29/reviewedAt",
+          "to": "/rows/1121/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/29/realHumanInput",
+          "to": "/rows/1121/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 30,
+      "targetFullDraftRowIndex": 1188,
+      "reviewId": "knv2_0285::corpus_0459",
+      "nodeId": "knv2_0285",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/30/reviewerDecision",
+          "to": "/rows/1188/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/30/sourceFitNotes",
+          "to": "/rows/1188/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/30/citationUse",
+          "to": "/rows/1188/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/30/reviewerName",
+          "to": "/rows/1188/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/30/reviewedAt",
+          "to": "/rows/1188/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/30/realHumanInput",
+          "to": "/rows/1188/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 31,
+      "targetFullDraftRowIndex": 1189,
+      "reviewId": "knv2_0285::corpus_0102",
+      "nodeId": "knv2_0285",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/31/reviewerDecision",
+          "to": "/rows/1189/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/31/sourceFitNotes",
+          "to": "/rows/1189/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/31/citationUse",
+          "to": "/rows/1189/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/31/reviewerName",
+          "to": "/rows/1189/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/31/reviewedAt",
+          "to": "/rows/1189/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/31/realHumanInput",
+          "to": "/rows/1189/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 32,
+      "targetFullDraftRowIndex": 1190,
+      "reviewId": "knv2_0285::corpus_1025",
+      "nodeId": "knv2_0285",
+      "documentId": "corpus_1025",
+      "sourceName": "bigvaldis/breaking_news_market_sentiment README",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/32/reviewerDecision",
+          "to": "/rows/1190/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/32/sourceFitNotes",
+          "to": "/rows/1190/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/32/citationUse",
+          "to": "/rows/1190/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/32/reviewerName",
+          "to": "/rows/1190/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/32/reviewedAt",
+          "to": "/rows/1190/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/32/realHumanInput",
+          "to": "/rows/1190/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 33,
+      "targetFullDraftRowIndex": 1191,
+      "reviewId": "knv2_0285::corpus_0462",
+      "nodeId": "knv2_0285",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/33/reviewerDecision",
+          "to": "/rows/1191/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/33/sourceFitNotes",
+          "to": "/rows/1191/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/33/citationUse",
+          "to": "/rows/1191/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/33/reviewerName",
+          "to": "/rows/1191/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/33/reviewedAt",
+          "to": "/rows/1191/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/33/realHumanInput",
+          "to": "/rows/1191/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 34,
+      "targetFullDraftRowIndex": 1192,
+      "reviewId": "knv2_0285::corpus_0426",
+      "nodeId": "knv2_0285",
+      "documentId": "corpus_0426",
+      "sourceName": "Wikipedia: Event study",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/34/reviewerDecision",
+          "to": "/rows/1192/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/34/sourceFitNotes",
+          "to": "/rows/1192/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/34/citationUse",
+          "to": "/rows/1192/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/34/reviewerName",
+          "to": "/rows/1192/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/34/reviewedAt",
+          "to": "/rows/1192/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/34/realHumanInput",
+          "to": "/rows/1192/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 35,
+      "targetFullDraftRowIndex": 1193,
+      "reviewId": "knv2_0285::corpus_0425",
+      "nodeId": "knv2_0285",
+      "documentId": "corpus_0425",
+      "sourceName": "Wikipedia: Market sentiment",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/35/reviewerDecision",
+          "to": "/rows/1193/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/35/sourceFitNotes",
+          "to": "/rows/1193/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/35/citationUse",
+          "to": "/rows/1193/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/35/reviewerName",
+          "to": "/rows/1193/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/35/reviewedAt",
+          "to": "/rows/1193/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/35/realHumanInput",
+          "to": "/rows/1193/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 36,
+      "targetFullDraftRowIndex": 1260,
+      "reviewId": "knv2_0297::corpus_0459",
+      "nodeId": "knv2_0297",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/36/reviewerDecision",
+          "to": "/rows/1260/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/36/sourceFitNotes",
+          "to": "/rows/1260/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/36/citationUse",
+          "to": "/rows/1260/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/36/reviewerName",
+          "to": "/rows/1260/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/36/reviewedAt",
+          "to": "/rows/1260/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/36/realHumanInput",
+          "to": "/rows/1260/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 37,
+      "targetFullDraftRowIndex": 1261,
+      "reviewId": "knv2_0297::corpus_0102",
+      "nodeId": "knv2_0297",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/37/reviewerDecision",
+          "to": "/rows/1261/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/37/sourceFitNotes",
+          "to": "/rows/1261/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/37/citationUse",
+          "to": "/rows/1261/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/37/reviewerName",
+          "to": "/rows/1261/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/37/reviewedAt",
+          "to": "/rows/1261/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/37/realHumanInput",
+          "to": "/rows/1261/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 38,
+      "targetFullDraftRowIndex": 1262,
+      "reviewId": "knv2_0297::corpus_1025",
+      "nodeId": "knv2_0297",
+      "documentId": "corpus_1025",
+      "sourceName": "bigvaldis/breaking_news_market_sentiment README",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/38/reviewerDecision",
+          "to": "/rows/1262/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/38/sourceFitNotes",
+          "to": "/rows/1262/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/38/citationUse",
+          "to": "/rows/1262/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/38/reviewerName",
+          "to": "/rows/1262/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/38/reviewedAt",
+          "to": "/rows/1262/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/38/realHumanInput",
+          "to": "/rows/1262/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 39,
+      "targetFullDraftRowIndex": 1263,
+      "reviewId": "knv2_0297::corpus_0462",
+      "nodeId": "knv2_0297",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/39/reviewerDecision",
+          "to": "/rows/1263/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/39/sourceFitNotes",
+          "to": "/rows/1263/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/39/citationUse",
+          "to": "/rows/1263/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/39/reviewerName",
+          "to": "/rows/1263/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/39/reviewedAt",
+          "to": "/rows/1263/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/39/realHumanInput",
+          "to": "/rows/1263/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 40,
+      "targetFullDraftRowIndex": 1264,
+      "reviewId": "knv2_0297::corpus_0426",
+      "nodeId": "knv2_0297",
+      "documentId": "corpus_0426",
+      "sourceName": "Wikipedia: Event study",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/40/reviewerDecision",
+          "to": "/rows/1264/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/40/sourceFitNotes",
+          "to": "/rows/1264/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/40/citationUse",
+          "to": "/rows/1264/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/40/reviewerName",
+          "to": "/rows/1264/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/40/reviewedAt",
+          "to": "/rows/1264/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/40/realHumanInput",
+          "to": "/rows/1264/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 41,
+      "targetFullDraftRowIndex": 1265,
+      "reviewId": "knv2_0297::corpus_0425",
+      "nodeId": "knv2_0297",
+      "documentId": "corpus_0425",
+      "sourceName": "Wikipedia: Market sentiment",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/41/reviewerDecision",
+          "to": "/rows/1265/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/41/sourceFitNotes",
+          "to": "/rows/1265/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/41/citationUse",
+          "to": "/rows/1265/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/41/reviewerName",
+          "to": "/rows/1265/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/41/reviewedAt",
+          "to": "/rows/1265/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/41/realHumanInput",
+          "to": "/rows/1265/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 42,
+      "targetFullDraftRowIndex": 1326,
+      "reviewId": "knv2_0309::corpus_0459",
+      "nodeId": "knv2_0309",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/42/reviewerDecision",
+          "to": "/rows/1326/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/42/sourceFitNotes",
+          "to": "/rows/1326/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/42/citationUse",
+          "to": "/rows/1326/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/42/reviewerName",
+          "to": "/rows/1326/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/42/reviewedAt",
+          "to": "/rows/1326/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/42/realHumanInput",
+          "to": "/rows/1326/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 43,
+      "targetFullDraftRowIndex": 1327,
+      "reviewId": "knv2_0309::corpus_0102",
+      "nodeId": "knv2_0309",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/43/reviewerDecision",
+          "to": "/rows/1327/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/43/sourceFitNotes",
+          "to": "/rows/1327/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/43/citationUse",
+          "to": "/rows/1327/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/43/reviewerName",
+          "to": "/rows/1327/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/43/reviewedAt",
+          "to": "/rows/1327/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/43/realHumanInput",
+          "to": "/rows/1327/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 44,
+      "targetFullDraftRowIndex": 1328,
+      "reviewId": "knv2_0309::corpus_1025",
+      "nodeId": "knv2_0309",
+      "documentId": "corpus_1025",
+      "sourceName": "bigvaldis/breaking_news_market_sentiment README",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/44/reviewerDecision",
+          "to": "/rows/1328/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/44/sourceFitNotes",
+          "to": "/rows/1328/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/44/citationUse",
+          "to": "/rows/1328/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/44/reviewerName",
+          "to": "/rows/1328/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/44/reviewedAt",
+          "to": "/rows/1328/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/44/realHumanInput",
+          "to": "/rows/1328/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 45,
+      "targetFullDraftRowIndex": 1329,
+      "reviewId": "knv2_0309::corpus_0462",
+      "nodeId": "knv2_0309",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/45/reviewerDecision",
+          "to": "/rows/1329/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/45/sourceFitNotes",
+          "to": "/rows/1329/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/45/citationUse",
+          "to": "/rows/1329/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/45/reviewerName",
+          "to": "/rows/1329/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/45/reviewedAt",
+          "to": "/rows/1329/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/45/realHumanInput",
+          "to": "/rows/1329/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 46,
+      "targetFullDraftRowIndex": 1330,
+      "reviewId": "knv2_0309::corpus_0426",
+      "nodeId": "knv2_0309",
+      "documentId": "corpus_0426",
+      "sourceName": "Wikipedia: Event study",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/46/reviewerDecision",
+          "to": "/rows/1330/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/46/sourceFitNotes",
+          "to": "/rows/1330/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/46/citationUse",
+          "to": "/rows/1330/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/46/reviewerName",
+          "to": "/rows/1330/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/46/reviewedAt",
+          "to": "/rows/1330/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/46/realHumanInput",
+          "to": "/rows/1330/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 47,
+      "targetFullDraftRowIndex": 1331,
+      "reviewId": "knv2_0309::corpus_0425",
+      "nodeId": "knv2_0309",
+      "documentId": "corpus_0425",
+      "sourceName": "Wikipedia: Market sentiment",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/47/reviewerDecision",
+          "to": "/rows/1331/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/47/sourceFitNotes",
+          "to": "/rows/1331/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/47/citationUse",
+          "to": "/rows/1331/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/47/reviewerName",
+          "to": "/rows/1331/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/47/reviewedAt",
+          "to": "/rows/1331/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/47/realHumanInput",
+          "to": "/rows/1331/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 48,
+      "targetFullDraftRowIndex": 1398,
+      "reviewId": "knv2_0321::corpus_0459",
+      "nodeId": "knv2_0321",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/48/reviewerDecision",
+          "to": "/rows/1398/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/48/sourceFitNotes",
+          "to": "/rows/1398/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/48/citationUse",
+          "to": "/rows/1398/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/48/reviewerName",
+          "to": "/rows/1398/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/48/reviewedAt",
+          "to": "/rows/1398/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/48/realHumanInput",
+          "to": "/rows/1398/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 49,
+      "targetFullDraftRowIndex": 1399,
+      "reviewId": "knv2_0321::corpus_0102",
+      "nodeId": "knv2_0321",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/49/reviewerDecision",
+          "to": "/rows/1399/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/49/sourceFitNotes",
+          "to": "/rows/1399/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/49/citationUse",
+          "to": "/rows/1399/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/49/reviewerName",
+          "to": "/rows/1399/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/49/reviewedAt",
+          "to": "/rows/1399/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/49/realHumanInput",
+          "to": "/rows/1399/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 50,
+      "targetFullDraftRowIndex": 1400,
+      "reviewId": "knv2_0321::corpus_1025",
+      "nodeId": "knv2_0321",
+      "documentId": "corpus_1025",
+      "sourceName": "bigvaldis/breaking_news_market_sentiment README",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/50/reviewerDecision",
+          "to": "/rows/1400/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/50/sourceFitNotes",
+          "to": "/rows/1400/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/50/citationUse",
+          "to": "/rows/1400/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/50/reviewerName",
+          "to": "/rows/1400/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/50/reviewedAt",
+          "to": "/rows/1400/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/50/realHumanInput",
+          "to": "/rows/1400/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 51,
+      "targetFullDraftRowIndex": 1401,
+      "reviewId": "knv2_0321::corpus_0462",
+      "nodeId": "knv2_0321",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/51/reviewerDecision",
+          "to": "/rows/1401/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/51/sourceFitNotes",
+          "to": "/rows/1401/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/51/citationUse",
+          "to": "/rows/1401/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/51/reviewerName",
+          "to": "/rows/1401/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/51/reviewedAt",
+          "to": "/rows/1401/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/51/realHumanInput",
+          "to": "/rows/1401/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 52,
+      "targetFullDraftRowIndex": 1402,
+      "reviewId": "knv2_0321::corpus_0426",
+      "nodeId": "knv2_0321",
+      "documentId": "corpus_0426",
+      "sourceName": "Wikipedia: Event study",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/52/reviewerDecision",
+          "to": "/rows/1402/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/52/sourceFitNotes",
+          "to": "/rows/1402/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/52/citationUse",
+          "to": "/rows/1402/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/52/reviewerName",
+          "to": "/rows/1402/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/52/reviewedAt",
+          "to": "/rows/1402/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/52/realHumanInput",
+          "to": "/rows/1402/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 53,
+      "targetFullDraftRowIndex": 1403,
+      "reviewId": "knv2_0321::corpus_0425",
+      "nodeId": "knv2_0321",
+      "documentId": "corpus_0425",
+      "sourceName": "Wikipedia: Market sentiment",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/53/reviewerDecision",
+          "to": "/rows/1403/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/53/sourceFitNotes",
+          "to": "/rows/1403/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/53/citationUse",
+          "to": "/rows/1403/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/53/reviewerName",
+          "to": "/rows/1403/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/53/reviewedAt",
+          "to": "/rows/1403/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/53/realHumanInput",
+          "to": "/rows/1403/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 54,
+      "targetFullDraftRowIndex": 1470,
+      "reviewId": "knv2_0333::corpus_0459",
+      "nodeId": "knv2_0333",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/54/reviewerDecision",
+          "to": "/rows/1470/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/54/sourceFitNotes",
+          "to": "/rows/1470/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/54/citationUse",
+          "to": "/rows/1470/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/54/reviewerName",
+          "to": "/rows/1470/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/54/reviewedAt",
+          "to": "/rows/1470/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/54/realHumanInput",
+          "to": "/rows/1470/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 55,
+      "targetFullDraftRowIndex": 1471,
+      "reviewId": "knv2_0333::corpus_0102",
+      "nodeId": "knv2_0333",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/55/reviewerDecision",
+          "to": "/rows/1471/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/55/sourceFitNotes",
+          "to": "/rows/1471/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/55/citationUse",
+          "to": "/rows/1471/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/55/reviewerName",
+          "to": "/rows/1471/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/55/reviewedAt",
+          "to": "/rows/1471/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/55/realHumanInput",
+          "to": "/rows/1471/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 56,
+      "targetFullDraftRowIndex": 1472,
+      "reviewId": "knv2_0333::corpus_1025",
+      "nodeId": "knv2_0333",
+      "documentId": "corpus_1025",
+      "sourceName": "bigvaldis/breaking_news_market_sentiment README",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/56/reviewerDecision",
+          "to": "/rows/1472/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/56/sourceFitNotes",
+          "to": "/rows/1472/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/56/citationUse",
+          "to": "/rows/1472/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/56/reviewerName",
+          "to": "/rows/1472/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/56/reviewedAt",
+          "to": "/rows/1472/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/56/realHumanInput",
+          "to": "/rows/1472/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 57,
+      "targetFullDraftRowIndex": 1473,
+      "reviewId": "knv2_0333::corpus_0462",
+      "nodeId": "knv2_0333",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/57/reviewerDecision",
+          "to": "/rows/1473/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/57/sourceFitNotes",
+          "to": "/rows/1473/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/57/citationUse",
+          "to": "/rows/1473/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/57/reviewerName",
+          "to": "/rows/1473/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/57/reviewedAt",
+          "to": "/rows/1473/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/57/realHumanInput",
+          "to": "/rows/1473/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 58,
+      "targetFullDraftRowIndex": 1474,
+      "reviewId": "knv2_0333::corpus_0426",
+      "nodeId": "knv2_0333",
+      "documentId": "corpus_0426",
+      "sourceName": "Wikipedia: Event study",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/58/reviewerDecision",
+          "to": "/rows/1474/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/58/sourceFitNotes",
+          "to": "/rows/1474/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/58/citationUse",
+          "to": "/rows/1474/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/58/reviewerName",
+          "to": "/rows/1474/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/58/reviewedAt",
+          "to": "/rows/1474/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/58/realHumanInput",
+          "to": "/rows/1474/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 59,
+      "targetFullDraftRowIndex": 1475,
+      "reviewId": "knv2_0333::corpus_0425",
+      "nodeId": "knv2_0333",
+      "documentId": "corpus_0425",
+      "sourceName": "Wikipedia: Market sentiment",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/59/reviewerDecision",
+          "to": "/rows/1475/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/59/sourceFitNotes",
+          "to": "/rows/1475/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/59/citationUse",
+          "to": "/rows/1475/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/59/reviewerName",
+          "to": "/rows/1475/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/59/reviewedAt",
+          "to": "/rows/1475/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/59/realHumanInput",
+          "to": "/rows/1475/realHumanInput"
+        }
+      }
+    }
+  ],
+  "sampleMergeRows": [
+    {
+      "packetRowIndex": 0,
+      "targetFullDraftRowIndex": 834,
+      "reviewId": "knv2_0225::corpus_0459",
+      "nodeId": "knv2_0225",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/0/reviewerDecision",
+          "to": "/rows/834/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/0/sourceFitNotes",
+          "to": "/rows/834/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/0/citationUse",
+          "to": "/rows/834/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/0/reviewerName",
+          "to": "/rows/834/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/0/reviewedAt",
+          "to": "/rows/834/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/0/realHumanInput",
+          "to": "/rows/834/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 1,
+      "targetFullDraftRowIndex": 835,
+      "reviewId": "knv2_0225::corpus_0102",
+      "nodeId": "knv2_0225",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/1/reviewerDecision",
+          "to": "/rows/835/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/1/sourceFitNotes",
+          "to": "/rows/835/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/1/citationUse",
+          "to": "/rows/835/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/1/reviewerName",
+          "to": "/rows/835/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/1/reviewedAt",
+          "to": "/rows/835/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/1/realHumanInput",
+          "to": "/rows/835/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 2,
+      "targetFullDraftRowIndex": 836,
+      "reviewId": "knv2_0225::corpus_1025",
+      "nodeId": "knv2_0225",
+      "documentId": "corpus_1025",
+      "sourceName": "bigvaldis/breaking_news_market_sentiment README",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/2/reviewerDecision",
+          "to": "/rows/836/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/2/sourceFitNotes",
+          "to": "/rows/836/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/2/citationUse",
+          "to": "/rows/836/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/2/reviewerName",
+          "to": "/rows/836/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/2/reviewedAt",
+          "to": "/rows/836/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/2/realHumanInput",
+          "to": "/rows/836/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 3,
+      "targetFullDraftRowIndex": 837,
+      "reviewId": "knv2_0225::corpus_0462",
+      "nodeId": "knv2_0225",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/3/reviewerDecision",
+          "to": "/rows/837/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/3/sourceFitNotes",
+          "to": "/rows/837/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/3/citationUse",
+          "to": "/rows/837/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/3/reviewerName",
+          "to": "/rows/837/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/3/reviewedAt",
+          "to": "/rows/837/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/3/realHumanInput",
+          "to": "/rows/837/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 4,
+      "targetFullDraftRowIndex": 838,
+      "reviewId": "knv2_0225::corpus_0426",
+      "nodeId": "knv2_0225",
+      "documentId": "corpus_0426",
+      "sourceName": "Wikipedia: Event study",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/4/reviewerDecision",
+          "to": "/rows/838/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/4/sourceFitNotes",
+          "to": "/rows/838/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/4/citationUse",
+          "to": "/rows/838/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/4/reviewerName",
+          "to": "/rows/838/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/4/reviewedAt",
+          "to": "/rows/838/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/4/realHumanInput",
+          "to": "/rows/838/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 5,
+      "targetFullDraftRowIndex": 839,
+      "reviewId": "knv2_0225::corpus_0425",
+      "nodeId": "knv2_0225",
+      "documentId": "corpus_0425",
+      "sourceName": "Wikipedia: Market sentiment",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/5/reviewerDecision",
+          "to": "/rows/839/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/5/sourceFitNotes",
+          "to": "/rows/839/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/5/citationUse",
+          "to": "/rows/839/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/5/reviewerName",
+          "to": "/rows/839/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/5/reviewedAt",
+          "to": "/rows/839/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/5/realHumanInput",
+          "to": "/rows/839/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 6,
+      "targetFullDraftRowIndex": 906,
+      "reviewId": "knv2_0237::corpus_0459",
+      "nodeId": "knv2_0237",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/6/reviewerDecision",
+          "to": "/rows/906/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/6/sourceFitNotes",
+          "to": "/rows/906/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/6/citationUse",
+          "to": "/rows/906/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/6/reviewerName",
+          "to": "/rows/906/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/6/reviewedAt",
+          "to": "/rows/906/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/6/realHumanInput",
+          "to": "/rows/906/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 7,
+      "targetFullDraftRowIndex": 907,
+      "reviewId": "knv2_0237::corpus_0102",
+      "nodeId": "knv2_0237",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/7/reviewerDecision",
+          "to": "/rows/907/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/7/sourceFitNotes",
+          "to": "/rows/907/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/7/citationUse",
+          "to": "/rows/907/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/7/reviewerName",
+          "to": "/rows/907/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/7/reviewedAt",
+          "to": "/rows/907/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/7/realHumanInput",
+          "to": "/rows/907/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 8,
+      "targetFullDraftRowIndex": 908,
+      "reviewId": "knv2_0237::corpus_1025",
+      "nodeId": "knv2_0237",
+      "documentId": "corpus_1025",
+      "sourceName": "bigvaldis/breaking_news_market_sentiment README",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/8/reviewerDecision",
+          "to": "/rows/908/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/8/sourceFitNotes",
+          "to": "/rows/908/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/8/citationUse",
+          "to": "/rows/908/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/8/reviewerName",
+          "to": "/rows/908/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/8/reviewedAt",
+          "to": "/rows/908/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/8/realHumanInput",
+          "to": "/rows/908/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 9,
+      "targetFullDraftRowIndex": 909,
+      "reviewId": "knv2_0237::corpus_0462",
+      "nodeId": "knv2_0237",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/9/reviewerDecision",
+          "to": "/rows/909/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/9/sourceFitNotes",
+          "to": "/rows/909/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/9/citationUse",
+          "to": "/rows/909/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/9/reviewerName",
+          "to": "/rows/909/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/9/reviewedAt",
+          "to": "/rows/909/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/9/realHumanInput",
+          "to": "/rows/909/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 10,
+      "targetFullDraftRowIndex": 910,
+      "reviewId": "knv2_0237::corpus_0426",
+      "nodeId": "knv2_0237",
+      "documentId": "corpus_0426",
+      "sourceName": "Wikipedia: Event study",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/10/reviewerDecision",
+          "to": "/rows/910/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/10/sourceFitNotes",
+          "to": "/rows/910/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/10/citationUse",
+          "to": "/rows/910/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/10/reviewerName",
+          "to": "/rows/910/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/10/reviewedAt",
+          "to": "/rows/910/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/10/realHumanInput",
+          "to": "/rows/910/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 11,
+      "targetFullDraftRowIndex": 911,
+      "reviewId": "knv2_0237::corpus_0425",
+      "nodeId": "knv2_0237",
+      "documentId": "corpus_0425",
+      "sourceName": "Wikipedia: Market sentiment",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/11/reviewerDecision",
+          "to": "/rows/911/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/11/sourceFitNotes",
+          "to": "/rows/911/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/11/citationUse",
+          "to": "/rows/911/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/11/reviewerName",
+          "to": "/rows/911/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/11/reviewedAt",
+          "to": "/rows/911/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/11/realHumanInput",
+          "to": "/rows/911/realHumanInput"
+        }
+      }
+    }
+  ],
+  "commands": [
+    "npm.cmd run build:knowledge-node-public-source-fit-review-packet-032-suite",
+    "npm.cmd run check:knowledge-node-public-source-fit-review-packet-032-suite"
+  ],
+  "completionRule": "Packet 032 merge preview becomes ready only when the packet input copy validates every row as real human input, every packet row maps to the full 1638-row draft, forbidden hits are zero, learnerCitationApproved:false, copiedTextApproved:false, and a separate manual merge/write authorization exists.",
+  "boundary": "Packet 032 merge preview is dry-run reviewer operations only. It does not write the full source-fit draft, create human judgments, approve copied text, approve learner-facing citations, write lessons, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, or production readiness."
+}

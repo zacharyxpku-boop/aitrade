@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-06-19T09:47:09.720Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "protectionCases": 3,
+  "passedCases": 3,
+  "realStatusOverlayTouched": false,
+  "existingTempOverlayPreserved": true,
+  "rows": [
+    {
+      "name": "write_rejects_existing_overlay_without_force",
+      "passed": true,
+      "detail": "write mode failed on existing temp overlay as expected"
+    },
+    {
+      "name": "existing_overlay_content_preserved",
+      "passed": true,
+      "detail": "sentinel content was unchanged"
+    },
+    {
+      "name": "real_status_overlay_not_touched",
+      "passed": true,
+      "detail": "docs/LESSON_BATCH_REVIEW_STATUS.json remains absent"
+    }
+  ],
+  "boundary": "This protection test uses only temporary files to verify overwrite safety. It does not create, modify, approve, publish, or promote any real reviewer status overlay or lesson."
+}

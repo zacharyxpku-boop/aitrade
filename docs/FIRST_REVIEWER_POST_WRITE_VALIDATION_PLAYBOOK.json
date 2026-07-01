@@ -1,0 +1,153 @@
+{
+  "generatedAt": "2026-06-19T09:47:11.518Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "postWritePlaybookReady": true,
+  "executionAllowedNow": false,
+  "executionBlockedBy": [
+    "docs/LESSON_BATCH_REVIEW_STATUS.json is absent, so post-write validation is not executable yet.",
+    "A human reviewer must complete the manual start checklist and intentionally create the real overlay before this sequence is used."
+  ],
+  "realStatusPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "realStatusOverlayPresent": false,
+  "targetBatches": [
+    "rewrite_batch_01",
+    "rewrite_batch_05"
+  ],
+  "blankNoteFieldsBeforeWrite": 72,
+  "directCandidatesToResolve": 5,
+  "realReadyBatchesNow": 0,
+  "realNoteIssuesNow": 0,
+  "preWriteGate": [
+    "Human review start checklist reports startAllowedNow:false until manual confirmation is performed.",
+    "Real overlay creation checklist reports creationAllowedNow:false until an explicit human note-taking decision.",
+    "All first-reviewer note fields remain blank before write; sample-only examples are not real notes.",
+    "Direct-candidate source rows must be confirmed or downgraded before sourceFitNotes are filled.",
+    "Current completion audit and gate summary show 0 real ready batches."
+  ],
+  "validationSequence": [
+    {
+      "order": 1,
+      "command": "npm.cmd run check:first-reviewer-human-review-start-checklist",
+      "purpose": "Reconfirm the manual pre-start gate before any write path.",
+      "stopIfFails": true
+    },
+    {
+      "order": 2,
+      "command": "npm.cmd run init:first-reviewer-status-overlay:dry-run",
+      "purpose": "Preview the real overlay scaffold without writing it.",
+      "stopIfFails": true
+    },
+    {
+      "order": 3,
+      "command": "npm.cmd run init:first-reviewer-status-overlay:write",
+      "purpose": "Run only after explicit human review starts; creates blank real note fields.",
+      "stopIfFails": true
+    },
+    {
+      "order": 4,
+      "command": "npm.cmd run check:lesson-batch-completion",
+      "purpose": "Validate real batch status shape and required-note completeness.",
+      "stopIfFails": true
+    },
+    {
+      "order": 5,
+      "command": "npm.cmd run check:first-reviewer-real-overlay-diff-audit",
+      "purpose": "Compare the real overlay against the blank first-reviewer template for field-level changes and unsafe text risks.",
+      "stopIfFails": true
+    },
+    {
+      "order": 6,
+      "command": "npm.cmd run check:reviewer-note-quality-lint",
+      "purpose": "Reject generic, placeholder, approving, trading, readiness, broker/order, automation, performance, or real-money wording.",
+      "stopIfFails": true
+    },
+    {
+      "order": 7,
+      "command": "npm.cmd run check:first-reviewer-direct-candidate-confirmation-checklist",
+      "purpose": "Recheck direct-candidate source roles remain green-only and require human confirmation or downgrade.",
+      "stopIfFails": true
+    },
+    {
+      "order": 8,
+      "command": "npm.cmd run check:first-reviewer-safe-note-examples",
+      "purpose": "Confirm sample-only examples remain separate from real reviewer notes.",
+      "stopIfFails": true
+    },
+    {
+      "order": 9,
+      "command": "npm.cmd run check:curriculum-review",
+      "purpose": "Run the complete curriculum/reviewer gate chain.",
+      "stopIfFails": true
+    },
+    {
+      "order": 10,
+      "command": "npm.cmd run check:knowledge-base",
+      "purpose": "Recheck knowledge-base and green grounding boundaries.",
+      "stopIfFails": true
+    },
+    {
+      "order": 11,
+      "command": "npm.cmd run check:knowledge-browser",
+      "purpose": "Recheck learner-facing browser candidates remain safe and review-tracked.",
+      "stopIfFails": true
+    },
+    {
+      "order": 12,
+      "command": "temporary SQLite npm.cmd run verify",
+      "purpose": "Run full repo verification with TRADEGYM_SQLITE_PATH set to a temp file and clean it afterward.",
+      "stopIfFails": true
+    }
+  ],
+  "failureHandling": [
+    {
+      "trigger": "Missing required reviewer notes",
+      "requiredResponse": "Keep the batch not_started or in_progress; fill only after actual human review work, then rerun completion and lint."
+    },
+    {
+      "trigger": "Reviewer note quality lint fails",
+      "requiredResponse": "Edit the real notes to be specific, factual, non-approving, and safety-bound; do not mark any batch ready."
+    },
+    {
+      "trigger": "Unsafe wording appears",
+      "requiredResponse": "Remove advice, signals, performance, broker/order, automation, or real-money wording and rerun the lint before any next gate."
+    },
+    {
+      "trigger": "Source fit is unresolved",
+      "requiredResponse": "Downgrade the source role to boundary-only, metadata-only, historical context, macro/data context, or unsuitable in the note; do not use it as direct lesson evidence."
+    },
+    {
+      "trigger": "Real overlay exists unexpectedly",
+      "requiredResponse": "Stop and preserve the file; do not overwrite, delete, or force-recreate it without explicit user authorization and note preservation."
+    },
+    {
+      "trigger": "Curriculum review fails",
+      "requiredResponse": "Do not promote, publish, or approve; fix the failing gate while preserving education-only and source-boundary rules."
+    }
+  ],
+  "forbiddenRecoveryActions": [
+    "Do not delete, overwrite, or force-recreate real reviewer notes as a shortcut.",
+    "Do not copy sample-only notes into the real overlay as review evidence.",
+    "Do not mark generated lessons commercial_ready.",
+    "Do not set learnerFacingRelease:true.",
+    "Do not set productionReady:true.",
+    "Do not relax green/yellow/red or research_only source boundaries.",
+    "Do not add buy/sell/hold advice, trading signals, broker/order workflows, automation, performance claims, or real-money guidance."
+  ],
+  "sourceReports": {
+    "dryRunPacket": "docs/FIRST_REVIEWER_DRY_RUN_PACKET.json",
+    "progressDashboard": "docs/FIRST_REVIEWER_PROGRESS_DASHBOARD.json",
+    "humanReviewStartChecklist": "docs/FIRST_REVIEWER_HUMAN_REVIEW_START_CHECKLIST.json",
+    "creationChecklist": "docs/FIRST_REVIEWER_REAL_OVERLAY_CREATION_CHECKLIST.json",
+    "noteReadinessMatrix": "docs/FIRST_REVIEWER_NOTE_READINESS_MATRIX.json",
+    "directCandidateChecklist": "docs/FIRST_REVIEWER_DIRECT_CANDIDATE_CONFIRMATION_CHECKLIST.json",
+    "noteQualityLint": "docs/REVIEWER_NOTE_QUALITY_LINT.json",
+    "completionAudit": "docs/LESSON_BATCH_COMPLETION_AUDIT.json",
+    "gateSummary": "docs/REVIEW_STATUS_GATE_SUMMARY.json",
+    "initProtection": "docs/LESSON_BATCH_REVIEW_STATUS_INIT_PROTECTION.json"
+  },
+  "boundary": "This playbook is a future post-write validation gate only. It does not create docs/LESSON_BATCH_REVIEW_STATUS.json, fill human notes, approve lessons, publish learner-facing content, change lesson grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, or guide real-money decisions."
+}

@@ -1,0 +1,137 @@
+{
+  "generatedAt": "2026-06-24T17:00:58.717Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "writeAllowedNow": false,
+  "sourceWorkPacks": "docs/LOCAL_COURSE_5_FOLLOWUP_WORK_PACKS.json",
+  "sourceDeletionReadiness": "docs/LOCAL_COURSE_5_DELETION_READINESS.json",
+  "sourceP0Workbench": "docs/LOCAL_COURSE_5_P0_VISUAL_REVIEWER_WORKBENCH.json",
+  "sourceP0Drafts": "docs/LOCAL_COURSE_5_P0_MACHINE_VISUAL_SEMANTIC_DRAFTS.json",
+  "sourceNonP0Workbench": "docs/LOCAL_COURSE_5_NON_P0_VISUAL_REVIEWER_WORKBENCH.json",
+  "sourceNonP0Drafts": "docs/LOCAL_COURSE_5_NON_P0_MACHINE_VISUAL_SEMANTIC_DRAFTS.json",
+  "auditStatus": "course_5_followup_absorption_control_audit_ready_release_blocked",
+  "absorptionControlStatus": "all_followup_sources_have_visual_reviewer_cards_and_machine_drafts_not_ocr_or_human_review",
+  "followupRows": 49,
+  "p0SourceRows": 28,
+  "nonP0SourceRows": 21,
+  "cardRows": 386,
+  "draftRows": 386,
+  "p0DraftRows": 282,
+  "nonP0DraftRows": 104,
+  "modulesWithDraftCoverage": 11,
+  "readyReviewerNotes": 0,
+  "acceptedForModuleDistillationRows": 0,
+  "acceptedForDeletionReadinessRows": 0,
+  "missingCoverageIds": [],
+  "unexpectedCoverageIds": [],
+  "allFollowupSourcesHaveWorkbenchCoverage": true,
+  "allWorkbenchCardsHaveMachineDrafts": true,
+  "ocrEngineAvailable": false,
+  "sourceFolderMayBeDeleted": false,
+  "currentKnowledgeArtifactsCanReplaceSourceFolder": false,
+  "remainingHardGates": [
+    "OCR or human visual notes must validate visible text, labels, and chart semantics.",
+    "Reviewer notes must decide module distillation versus archive-only status for each blocker source.",
+    "Public grounding and originality checks must be completed before learner-facing course use.",
+    "Deletion readiness remains false until blocker rows are resolved or explicitly accepted as future-loss limitations."
+  ],
+  "moduleRows": [
+    {
+      "moduleId": "chart_pattern_encyclopedia",
+      "moduleLabel": "Chart Pattern Encyclopedia",
+      "p0DraftRows": 255,
+      "nonP0DraftRows": 0,
+      "totalDraftRows": 255,
+      "reviewerNextGate": "validate_machine_drafts_with_ocr_or_human_notes_then_distill_or_archive"
+    },
+    {
+      "moduleId": "price_action_foundations",
+      "moduleLabel": "Price Action Foundations",
+      "p0DraftRows": 9,
+      "nonP0DraftRows": 9,
+      "totalDraftRows": 18,
+      "reviewerNextGate": "validate_machine_drafts_with_ocr_or_human_notes_then_distill_or_archive"
+    },
+    {
+      "moduleId": "course_slides_alignment",
+      "moduleLabel": "Course 1-4 Slide Alignment",
+      "p0DraftRows": 27,
+      "nonP0DraftRows": 0,
+      "totalDraftRows": 27,
+      "reviewerNextGate": "validate_machine_drafts_with_ocr_or_human_notes_then_distill_or_archive"
+    },
+    {
+      "moduleId": "terminology_glossary",
+      "moduleLabel": "Terminology And Glossary",
+      "p0DraftRows": 45,
+      "nonP0DraftRows": 1,
+      "totalDraftRows": 46,
+      "reviewerNextGate": "validate_machine_drafts_with_ocr_or_human_notes_then_distill_or_archive"
+    },
+    {
+      "moduleId": "reversals",
+      "moduleLabel": "Reversals",
+      "p0DraftRows": 24,
+      "nonP0DraftRows": 30,
+      "totalDraftRows": 54,
+      "reviewerNextGate": "validate_machine_drafts_with_ocr_or_human_notes_then_distill_or_archive"
+    },
+    {
+      "moduleId": "trends_and_channels",
+      "moduleLabel": "Trends And Channels",
+      "p0DraftRows": 24,
+      "nonP0DraftRows": 33,
+      "totalDraftRows": 57,
+      "reviewerNextGate": "validate_machine_drafts_with_ocr_or_human_notes_then_distill_or_archive"
+    },
+    {
+      "moduleId": "trading_ranges",
+      "moduleLabel": "Trading Ranges",
+      "p0DraftRows": 24,
+      "nonP0DraftRows": 12,
+      "totalDraftRows": 36,
+      "reviewerNextGate": "validate_machine_drafts_with_ocr_or_human_notes_then_distill_or_archive"
+    },
+    {
+      "moduleId": "bar_by_bar_reading",
+      "moduleLabel": "Bar-By-Bar Reading",
+      "p0DraftRows": 24,
+      "nonP0DraftRows": 9,
+      "totalDraftRows": 33,
+      "reviewerNextGate": "validate_machine_drafts_with_ocr_or_human_notes_then_distill_or_archive"
+    },
+    {
+      "moduleId": "breakouts_and_pullbacks",
+      "moduleLabel": "Breakouts And Pullbacks",
+      "p0DraftRows": 24,
+      "nonP0DraftRows": 0,
+      "totalDraftRows": 24,
+      "reviewerNextGate": "validate_machine_drafts_with_ocr_or_human_notes_then_distill_or_archive"
+    },
+    {
+      "moduleId": "trade_management",
+      "moduleLabel": "Trade Management",
+      "p0DraftRows": 0,
+      "nonP0DraftRows": 6,
+      "totalDraftRows": 6,
+      "reviewerNextGate": "validate_machine_drafts_with_ocr_or_human_notes_then_distill_or_archive"
+    },
+    {
+      "moduleId": "unclassified_supplement",
+      "moduleLabel": "Unclassified Supplement",
+      "p0DraftRows": 0,
+      "nonP0DraftRows": 13,
+      "totalDraftRows": 13,
+      "reviewerNextGate": "validate_machine_drafts_with_ocr_or_human_notes_then_distill_or_archive"
+    }
+  ],
+  "commands": [
+    "npm.cmd run build:local-course-5-followup-absorption-control-audit",
+    "npm.cmd run check:local-course-5-followup-absorption-control-audit",
+    "npm.cmd run verify"
+  ],
+  "completionRule": "Course 5 follow-up absorption control is operational when all 49 follow-up source rows have reviewer cards and matching machine visual semantic drafts with locked release/delete status. This still does not mean OCR complete, human-reviewed, module-accepted, learner-facing, or deletion-ready.",
+  "boundary": "Course 5 follow-up absorption control audit is private reviewer-facing education operations material. It summarizes coverage of OCR/visual-review blockers and keeps deletion blocked while reviewer notes, OCR, public grounding, originality checks, and explicit approval remain incomplete. It does not read or transcribe source text, fill reviewer conclusions, delete files, approve learner-facing release, copy private source wording, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, write authorization, or production readiness."
+}

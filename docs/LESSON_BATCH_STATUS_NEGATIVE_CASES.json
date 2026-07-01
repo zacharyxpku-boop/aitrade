@@ -1,0 +1,110 @@
+{
+  "generatedAt": "2026-06-21T18:43:54.718Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "negativeCases": 12,
+  "passedCases": 12,
+  "failedCases": 0,
+  "rows": [
+    {
+      "name": "sample_overlay_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "manual status overlay cannot be sampleOnly",
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0044"
+    },
+    {
+      "name": "approval_status_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "manual status overlay must stay not_approved",
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0044"
+    },
+    {
+      "name": "learner_facing_release_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "manual status overlay cannot set learnerFacingRelease true",
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0044"
+    },
+    {
+      "name": "production_ready_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "manual status overlay must keep productionReady false",
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0044"
+    },
+    {
+      "name": "unknown_batch_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "manual status overlay references unknown batch rewrite_batch_UNKNOWN",
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0044"
+    },
+    {
+      "name": "duplicate_batch_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "manual status overlay has duplicate batch rewrite_batch_01",
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0044"
+    },
+    {
+      "name": "unknown_lesson_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "rewrite_batch_01 manual status overlay references unknown lesson lesson_UNKNOWN",
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0044"
+    },
+    {
+      "name": "duplicate_lesson_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "rewrite_batch_01 manual status overlay has duplicate lesson lesson_knv2_0044",
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0044"
+    },
+    {
+      "name": "ready_missing_notes_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "ready batch/card is missing required reviewer notes: lesson_knv2_0044.sourceFitNotes",
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0044"
+    },
+    {
+      "name": "grade_override_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "lesson_knv2_0044 cannot override currentGrade",
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0044"
+    },
+    {
+      "name": "trading_signal_status_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "lesson_knv2_0044 has disallowed manual status claim",
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0044"
+    },
+    {
+      "name": "sample_card_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "lesson_knv2_0044 cannot be sampleOnly in manual status overlay",
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0044"
+    }
+  ],
+  "boundary": "These negative cases are synthetic safety checks for reviewer-status overlays. They do not approve lessons, publish learner-facing content, change lesson grades, or certify commercial readiness."
+}

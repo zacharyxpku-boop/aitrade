@@ -1,0 +1,748 @@
+{
+  "generatedAt": "2026-06-25T00:00:00.000+08:00",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "writeAllowedNow": false,
+  "auditStatus": "course_5_wave_3_zip_ai_visual_review_all_samples_covered_release_and_deletion_blocked",
+  "sourceTemplate": "docs/reviewer-inputs/LOCAL_COURSE_5_WAVE_3_ZIP_REVIEWER_INPUT_TEMPLATE.json",
+  "batchCount": 5,
+  "templateRows": 61,
+  "coveredRows": 61,
+  "missingRows": 0,
+  "duplicateCoverageRows": 0,
+  "readyForHumanConfirmationRows": 61,
+  "moduleMergeAllowedNow": false,
+  "acceptedForModuleDistillationRows": 0,
+  "acceptedForDeletionReadinessRows": 0,
+  "learnerReadyModules": 0,
+  "sourceFolderMayBeDeleted": false,
+  "batchSummaries": [
+    {
+      "batchId": "batch_001",
+      "inputRows": 61,
+      "readyForConfirmationRows": 12,
+      "firstReviewRowId": "course5_zip_image_review_025",
+      "lastReviewRowId": "course5_zip_image_review_036",
+      "validationStatus": "course_5_wave_3_zip_ai_visual_review_batch_001_partially_ready_release_and_deletion_blocked",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "batchId": "batch_002",
+      "inputRows": 61,
+      "readyForConfirmationRows": 12,
+      "firstReviewRowId": "course5_zip_image_review_037",
+      "lastReviewRowId": "course5_zip_image_review_048",
+      "validationStatus": "course_5_wave_3_zip_ai_visual_review_batch_002_partially_ready_release_and_deletion_blocked",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "batchId": "batch_003",
+      "inputRows": 61,
+      "readyForConfirmationRows": 12,
+      "firstReviewRowId": "course5_zip_image_review_049",
+      "lastReviewRowId": "course5_zip_image_review_060",
+      "validationStatus": "course_5_wave_3_zip_ai_visual_review_batch_003_partially_ready_release_and_deletion_blocked",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "batchId": "batch_004",
+      "inputRows": 61,
+      "readyForConfirmationRows": 12,
+      "firstReviewRowId": "course5_zip_image_review_061",
+      "lastReviewRowId": "course5_zip_image_review_072",
+      "validationStatus": "course_5_wave_3_zip_ai_visual_review_batch_004_partially_ready_release_and_deletion_blocked",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "batchId": "batch_005",
+      "inputRows": 61,
+      "readyForConfirmationRows": 13,
+      "firstReviewRowId": "course5_zip_image_review_073",
+      "lastReviewRowId": "course5_zip_image_review_085",
+      "validationStatus": "course_5_wave_3_zip_ai_visual_review_batch_005_final_rows_ready_release_and_deletion_blocked",
+      "sourceFolderMayBeDeleted": false
+    }
+  ],
+  "coverageRows": [
+    {
+      "reviewRowId": "course5_zip_image_review_025",
+      "executionSampleNo": 1,
+      "archiveImageName": "TPA-Reversals/TPA-Reversals-c01/Slide1.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_ac25799304836d3b4d6e9e8f/sample-01.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_026",
+      "executionSampleNo": 2,
+      "archiveImageName": "TPA-Reversals/TPA-Reversals-c03/Slide1.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_ac25799304836d3b4d6e9e8f/sample-02.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_027",
+      "executionSampleNo": 3,
+      "archiveImageName": "TPA-Reversals/TPA-Reversals-c03/Slide2.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_ac25799304836d3b4d6e9e8f/sample-03.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_028",
+      "executionSampleNo": 4,
+      "archiveImageName": "TPA-Reversals/TPA-Reversals-c04/Slide14.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_ac25799304836d3b4d6e9e8f/sample-04.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_029",
+      "executionSampleNo": 5,
+      "archiveImageName": "TPA-Reversals/TPA-Reversals-c07/Slide2.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_ac25799304836d3b4d6e9e8f/sample-05.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_030",
+      "executionSampleNo": 6,
+      "archiveImageName": "TPA-Reversals/TPA-Reversals-c09/Slide12.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_ac25799304836d3b4d6e9e8f/sample-06.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_031",
+      "executionSampleNo": 7,
+      "archiveImageName": "TPA-Reversals/TPA-Reversals-c14/Slide2.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_ac25799304836d3b4d6e9e8f/sample-07.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_032",
+      "executionSampleNo": 8,
+      "archiveImageName": "TPA-Reversals/TPA-Reversals-c21/Slide2.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_ac25799304836d3b4d6e9e8f/sample-08.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_033",
+      "executionSampleNo": 9,
+      "archiveImageName": "TPA-Reversals/TPA-Reversals-c23/Slide2.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_ac25799304836d3b4d6e9e8f/sample-09.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_034",
+      "executionSampleNo": 10,
+      "archiveImageName": "TPA-Reversals/TPA-Reversals-part03/Slide2.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_ac25799304836d3b4d6e9e8f/sample-10.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_035",
+      "executionSampleNo": 11,
+      "archiveImageName": "TPA-Reversals/TPA-Reversals-part03/Slide3.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_ac25799304836d3b4d6e9e8f/sample-11.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_036",
+      "executionSampleNo": 12,
+      "archiveImageName": "TPA-Reversals/TPA-Reversals-part03/Slide4.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_ac25799304836d3b4d6e9e8f/sample-12.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_037",
+      "executionSampleNo": 13,
+      "archiveImageName": "Al Brooksσ╕éσ£║σêåµ₧Éµ₧╢µ₧ä.png",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_104f466c2f259564b8ce87c1/sample-01.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_038",
+      "executionSampleNo": 14,
+      "archiveImageName": "TPA-Trading Ranges/TPA-Trading-Ranges-c01/Slide1.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_07f672a31d380d4c837dd5c5/sample-01.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_039",
+      "executionSampleNo": 15,
+      "archiveImageName": "TPA-Trading Ranges/TPA-Trading-Ranges-c01/Slide2.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_07f672a31d380d4c837dd5c5/sample-02.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_040",
+      "executionSampleNo": 16,
+      "archiveImageName": "TPA-Trading Ranges/TPA-Trading-Ranges-c02/Slide1.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_07f672a31d380d4c837dd5c5/sample-03.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_041",
+      "executionSampleNo": 17,
+      "archiveImageName": "TPA-Trading Ranges/TPA-Trading-Ranges-c05/Slide2.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_07f672a31d380d4c837dd5c5/sample-04.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_042",
+      "executionSampleNo": 18,
+      "archiveImageName": "TPA-Trading Ranges/TPA-Trading-Ranges-c11/Slide2.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_07f672a31d380d4c837dd5c5/sample-05.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_043",
+      "executionSampleNo": 19,
+      "archiveImageName": "TPA-Trading Ranges/TPA-Trading-Ranges-c15/Slide1.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_07f672a31d380d4c837dd5c5/sample-06.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_044",
+      "executionSampleNo": 20,
+      "archiveImageName": "TPA-Trading Ranges/TPA-Trading-Ranges-c18/Slide8.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_07f672a31d380d4c837dd5c5/sample-07.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_045",
+      "executionSampleNo": 21,
+      "archiveImageName": "TPA-Trading Ranges/TPA-Trading-Ranges-c25/Slide1.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_07f672a31d380d4c837dd5c5/sample-08.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_046",
+      "executionSampleNo": 22,
+      "archiveImageName": "TPA-Trading Ranges/TPA-Trading-Ranges-c28/Slide4.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_07f672a31d380d4c837dd5c5/sample-09.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_047",
+      "executionSampleNo": 23,
+      "archiveImageName": "TPA-Trading Ranges/TPA-Trading-Ranges-part04/Slide7.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_07f672a31d380d4c837dd5c5/sample-10.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_048",
+      "executionSampleNo": 24,
+      "archiveImageName": "TPA-Trading Ranges/TPA-Trading-Ranges-part04/Slide8.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_07f672a31d380d4c837dd5c5/sample-11.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_049",
+      "executionSampleNo": 25,
+      "archiveImageName": "TPA-Trading Ranges/TPA-Trading-Ranges-part04/Slide9.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_07f672a31d380d4c837dd5c5/sample-12.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_050",
+      "executionSampleNo": 26,
+      "archiveImageName": "TPA-Trends/TPA-Trends-c01/Slide1.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_c82b5a82c8a2f6de814a7d0e/sample-01.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_051",
+      "executionSampleNo": 27,
+      "archiveImageName": "TPA-Trends/TPA-Trends-c02/Slide1.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_c82b5a82c8a2f6de814a7d0e/sample-02.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_052",
+      "executionSampleNo": 28,
+      "archiveImageName": "TPA-Trends/TPA-Trends-c02/Slide2.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_c82b5a82c8a2f6de814a7d0e/sample-03.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_053",
+      "executionSampleNo": 29,
+      "archiveImageName": "TPA-Trends/TPA-Trends-c05/Slide2.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_c82b5a82c8a2f6de814a7d0e/sample-04.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_054",
+      "executionSampleNo": 30,
+      "archiveImageName": "TPA-Trends/TPA-Trends-c06/Slide9.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_c82b5a82c8a2f6de814a7d0e/sample-05.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_055",
+      "executionSampleNo": 31,
+      "archiveImageName": "TPA-Trends/TPA-Trends-c11/Slide1.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_c82b5a82c8a2f6de814a7d0e/sample-06.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_056",
+      "executionSampleNo": 32,
+      "archiveImageName": "TPA-Trends/TPA-Trends-c15/Slide8.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_c82b5a82c8a2f6de814a7d0e/sample-07.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_057",
+      "executionSampleNo": 33,
+      "archiveImageName": "TPA-Trends/TPA-Trends-c21/Slide6.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_c82b5a82c8a2f6de814a7d0e/sample-08.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_058",
+      "executionSampleNo": 34,
+      "archiveImageName": "TPA-Trends/TPA-Trends-c22/Slide6.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_c82b5a82c8a2f6de814a7d0e/sample-09.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_059",
+      "executionSampleNo": 35,
+      "archiveImageName": "TPA-Trends/TPA-Trends-Intro/Slide4.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_c82b5a82c8a2f6de814a7d0e/sample-10.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_060",
+      "executionSampleNo": 36,
+      "archiveImageName": "TPA-Trends/TPA-Trends-part01/Slide1.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_c82b5a82c8a2f6de814a7d0e/sample-11.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_061",
+      "executionSampleNo": 37,
+      "archiveImageName": "TPA-Trends/TPA-Trends-part02/Slide1.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_c82b5a82c8a2f6de814a7d0e/sample-12.png",
+      "coveredByBatches": [
+        "batch_004"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_062",
+      "executionSampleNo": 38,
+      "archiveImageName": "TPA-Trends/TPA-Trends-c01/Slide1.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_13d16b4e76329e4fa5cf656c/sample-01.png",
+      "coveredByBatches": [
+        "batch_004"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_063",
+      "executionSampleNo": 39,
+      "archiveImageName": "TPA-Trends/TPA-Trends-c02/Slide1.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_13d16b4e76329e4fa5cf656c/sample-02.png",
+      "coveredByBatches": [
+        "batch_004"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_064",
+      "executionSampleNo": 40,
+      "archiveImageName": "TPA-Trends/TPA-Trends-c02/Slide2.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_13d16b4e76329e4fa5cf656c/sample-03.png",
+      "coveredByBatches": [
+        "batch_004"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_065",
+      "executionSampleNo": 41,
+      "archiveImageName": "TPA-Trends/TPA-Trends-c05/Slide2.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_13d16b4e76329e4fa5cf656c/sample-04.png",
+      "coveredByBatches": [
+        "batch_004"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_066",
+      "executionSampleNo": 42,
+      "archiveImageName": "TPA-Trends/TPA-Trends-c06/Slide9.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_13d16b4e76329e4fa5cf656c/sample-05.png",
+      "coveredByBatches": [
+        "batch_004"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_067",
+      "executionSampleNo": 43,
+      "archiveImageName": "TPA-Trends/TPA-Trends-c11/Slide1.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_13d16b4e76329e4fa5cf656c/sample-06.png",
+      "coveredByBatches": [
+        "batch_004"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_068",
+      "executionSampleNo": 44,
+      "archiveImageName": "TPA-Trends/TPA-Trends-c15/Slide8.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_13d16b4e76329e4fa5cf656c/sample-07.png",
+      "coveredByBatches": [
+        "batch_004"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_069",
+      "executionSampleNo": 45,
+      "archiveImageName": "TPA-Trends/TPA-Trends-c21/Slide6.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_13d16b4e76329e4fa5cf656c/sample-08.png",
+      "coveredByBatches": [
+        "batch_004"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_070",
+      "executionSampleNo": 46,
+      "archiveImageName": "TPA-Trends/TPA-Trends-c22/Slide6.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_13d16b4e76329e4fa5cf656c/sample-09.png",
+      "coveredByBatches": [
+        "batch_004"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_071",
+      "executionSampleNo": 47,
+      "archiveImageName": "TPA-Trends/TPA-Trends-Intro/Slide4.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_13d16b4e76329e4fa5cf656c/sample-10.png",
+      "coveredByBatches": [
+        "batch_004"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_072",
+      "executionSampleNo": 48,
+      "archiveImageName": "TPA-Trends/TPA-Trends-part01/Slide1.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_13d16b4e76329e4fa5cf656c/sample-11.png",
+      "coveredByBatches": [
+        "batch_004"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_073",
+      "executionSampleNo": 49,
+      "archiveImageName": "TPA-Trends/TPA-Trends-part02/Slide1.JPG",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_13d16b4e76329e4fa5cf656c/sample-12.png",
+      "coveredByBatches": [
+        "batch_005"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_074",
+      "executionSampleNo": 50,
+      "archiveImageName": "figure0001.tif",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_c193699f129ae1cf1de69194/sample-01.png",
+      "coveredByBatches": [
+        "batch_005"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_075",
+      "executionSampleNo": 51,
+      "archiveImageName": "figure0002.tif",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_c193699f129ae1cf1de69194/sample-02.png",
+      "coveredByBatches": [
+        "batch_005"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_076",
+      "executionSampleNo": 52,
+      "archiveImageName": "figure0003.tif",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_c193699f129ae1cf1de69194/sample-03.png",
+      "coveredByBatches": [
+        "batch_005"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_077",
+      "executionSampleNo": 53,
+      "archiveImageName": "figure0121.tif",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_c193699f129ae1cf1de69194/sample-04.png",
+      "coveredByBatches": [
+        "batch_005"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_078",
+      "executionSampleNo": 54,
+      "archiveImageName": "figure0401.tif",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_c193699f129ae1cf1de69194/sample-05.png",
+      "coveredByBatches": [
+        "batch_005"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_079",
+      "executionSampleNo": 55,
+      "archiveImageName": "figure0424.tif",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_c193699f129ae1cf1de69194/sample-06.png",
+      "coveredByBatches": [
+        "batch_005"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_080",
+      "executionSampleNo": 56,
+      "archiveImageName": "figure0814.tif",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_c193699f129ae1cf1de69194/sample-07.png",
+      "coveredByBatches": [
+        "batch_005"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_081",
+      "executionSampleNo": 57,
+      "archiveImageName": "figure0928.tif",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_c193699f129ae1cf1de69194/sample-08.png",
+      "coveredByBatches": [
+        "batch_005"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_082",
+      "executionSampleNo": 58,
+      "archiveImageName": "figure1019.tif",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_c193699f129ae1cf1de69194/sample-09.png",
+      "coveredByBatches": [
+        "batch_005"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_083",
+      "executionSampleNo": 59,
+      "archiveImageName": "figure1518.tif",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_c193699f129ae1cf1de69194/sample-10.png",
+      "coveredByBatches": [
+        "batch_005"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_084",
+      "executionSampleNo": 60,
+      "archiveImageName": "figure1519.tif",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_c193699f129ae1cf1de69194/sample-11.png",
+      "coveredByBatches": [
+        "batch_005"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_zip_image_review_085",
+      "executionSampleNo": 61,
+      "archiveImageName": "figure1520.tif",
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_c193699f129ae1cf1de69194/sample-12.png",
+      "coveredByBatches": [
+        "batch_005"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    }
+  ],
+  "nextOperationalGates": [
+    "Use this audit as the Wave 3 ZIP visual review closure proof.",
+    "Keep public grounding and originality review required before module merge.",
+    "Continue with PDF/OCR or reviewer-confirmation blockers before recomputing deletion readiness."
+  ],
+  "completionRule": "Wave 3 ZIP AI visual review coverage is complete when every row in the Wave 3 ZIP reviewer input template is covered exactly once by Batch 001 through Batch 005 while all release, module merge, and source-folder deletion gates remain closed.",
+  "boundary": "Private education-operations audit for Course 5 Wave 3 ZIP chart sample coverage. It summarizes model-assisted visual review coverage and keeps learner release, module merge, write authorization, and source-folder removal blocked pending reviewer confirmation, public grounding, originality review, and explicit approval."
+}

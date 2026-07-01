@@ -1,0 +1,2780 @@
+{
+  "generatedAt": "2026-06-22T04:56:13.769Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "mergePreviewStatus": "packet_026_merge_preview_blocked_missing_ready_packet_input",
+  "mergePreviewMode": "dry_run_packet_input_copy_to_full_source_fit_draft_mapping",
+  "packetId": "node-public-source-fit-batch-026-packet",
+  "batchId": "node-public-source-fit-batch-026",
+  "module": "趋势",
+  "packetInputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_026_INPUT_COPY_TEMPLATE.json",
+  "packetValidationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_026_INPUT_COPY_TEMPLATE_VALIDATION.json",
+  "fullDraftInputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+  "fullValidationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_VALIDATION.json",
+  "packetRows": 60,
+  "fullDraftRows": 1638,
+  "fullValidationRows": 1638,
+  "mappedRows": 60,
+  "missingTargetRows": 0,
+  "readyRows": 0,
+  "blockedRows": 60,
+  "packetValidationStatus": "blocked_missing_real_reviewer_source_fit_input",
+  "packetReadyRows": 0,
+  "packetBlockedRows": 60,
+  "packetMissingFieldRows": 60,
+  "packetForbiddenHitRows": 0,
+  "packetRealHumanInputEntries": 0,
+  "fullDraftReadyRowsBeforeMerge": 0,
+  "fullDraftBlockedRowsBeforeMerge": 1638,
+  "mergeAllowedNow": false,
+  "writeAllowedNow": false,
+  "manualAuthorizationRequired": true,
+  "mergeRows": [
+    {
+      "packetRowIndex": 0,
+      "targetFullDraftRowIndex": 804,
+      "reviewId": "knv2_0220::corpus_0472",
+      "nodeId": "knv2_0220",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/0/reviewerDecision",
+          "to": "/rows/804/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/0/sourceFitNotes",
+          "to": "/rows/804/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/0/citationUse",
+          "to": "/rows/804/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/0/reviewerName",
+          "to": "/rows/804/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/0/reviewedAt",
+          "to": "/rows/804/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/0/realHumanInput",
+          "to": "/rows/804/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 1,
+      "targetFullDraftRowIndex": 805,
+      "reviewId": "knv2_0220::corpus_0049",
+      "nodeId": "knv2_0220",
+      "documentId": "corpus_0049",
+      "sourceName": "BEA NIPA Handbook",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/1/reviewerDecision",
+          "to": "/rows/805/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/1/sourceFitNotes",
+          "to": "/rows/805/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/1/citationUse",
+          "to": "/rows/805/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/1/reviewerName",
+          "to": "/rows/805/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/1/reviewedAt",
+          "to": "/rows/805/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/1/realHumanInput",
+          "to": "/rows/805/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 2,
+      "targetFullDraftRowIndex": 806,
+      "reviewId": "knv2_0220::corpus_0225",
+      "nodeId": "knv2_0220",
+      "documentId": "corpus_0225",
+      "sourceName": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/2/reviewerDecision",
+          "to": "/rows/806/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/2/sourceFitNotes",
+          "to": "/rows/806/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/2/citationUse",
+          "to": "/rows/806/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/2/reviewerName",
+          "to": "/rows/806/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/2/reviewedAt",
+          "to": "/rows/806/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/2/realHumanInput",
+          "to": "/rows/806/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 3,
+      "targetFullDraftRowIndex": 807,
+      "reviewId": "knv2_0220::corpus_0444",
+      "nodeId": "knv2_0220",
+      "documentId": "corpus_0444",
+      "sourceName": "Wikipedia: Dow theory",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/3/reviewerDecision",
+          "to": "/rows/807/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/3/sourceFitNotes",
+          "to": "/rows/807/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/3/citationUse",
+          "to": "/rows/807/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/3/reviewerName",
+          "to": "/rows/807/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/3/reviewedAt",
+          "to": "/rows/807/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/3/realHumanInput",
+          "to": "/rows/807/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 4,
+      "targetFullDraftRowIndex": 808,
+      "reviewId": "knv2_0220::corpus_0445",
+      "nodeId": "knv2_0220",
+      "documentId": "corpus_0445",
+      "sourceName": "Wikipedia: Market trend",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/4/reviewerDecision",
+          "to": "/rows/808/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/4/sourceFitNotes",
+          "to": "/rows/808/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/4/citationUse",
+          "to": "/rows/808/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/4/reviewerName",
+          "to": "/rows/808/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/4/reviewedAt",
+          "to": "/rows/808/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/4/realHumanInput",
+          "to": "/rows/808/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 5,
+      "targetFullDraftRowIndex": 809,
+      "reviewId": "knv2_0220::corpus_0441",
+      "nodeId": "knv2_0220",
+      "documentId": "corpus_0441",
+      "sourceName": "Wikipedia: Momentum investing",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/5/reviewerDecision",
+          "to": "/rows/809/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/5/sourceFitNotes",
+          "to": "/rows/809/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/5/citationUse",
+          "to": "/rows/809/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/5/reviewerName",
+          "to": "/rows/809/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/5/reviewedAt",
+          "to": "/rows/809/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/5/realHumanInput",
+          "to": "/rows/809/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 6,
+      "targetFullDraftRowIndex": 876,
+      "reviewId": "knv2_0232::corpus_0472",
+      "nodeId": "knv2_0232",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/6/reviewerDecision",
+          "to": "/rows/876/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/6/sourceFitNotes",
+          "to": "/rows/876/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/6/citationUse",
+          "to": "/rows/876/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/6/reviewerName",
+          "to": "/rows/876/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/6/reviewedAt",
+          "to": "/rows/876/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/6/realHumanInput",
+          "to": "/rows/876/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 7,
+      "targetFullDraftRowIndex": 877,
+      "reviewId": "knv2_0232::corpus_0049",
+      "nodeId": "knv2_0232",
+      "documentId": "corpus_0049",
+      "sourceName": "BEA NIPA Handbook",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/7/reviewerDecision",
+          "to": "/rows/877/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/7/sourceFitNotes",
+          "to": "/rows/877/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/7/citationUse",
+          "to": "/rows/877/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/7/reviewerName",
+          "to": "/rows/877/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/7/reviewedAt",
+          "to": "/rows/877/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/7/realHumanInput",
+          "to": "/rows/877/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 8,
+      "targetFullDraftRowIndex": 878,
+      "reviewId": "knv2_0232::corpus_0225",
+      "nodeId": "knv2_0232",
+      "documentId": "corpus_0225",
+      "sourceName": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/8/reviewerDecision",
+          "to": "/rows/878/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/8/sourceFitNotes",
+          "to": "/rows/878/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/8/citationUse",
+          "to": "/rows/878/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/8/reviewerName",
+          "to": "/rows/878/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/8/reviewedAt",
+          "to": "/rows/878/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/8/realHumanInput",
+          "to": "/rows/878/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 9,
+      "targetFullDraftRowIndex": 879,
+      "reviewId": "knv2_0232::corpus_0444",
+      "nodeId": "knv2_0232",
+      "documentId": "corpus_0444",
+      "sourceName": "Wikipedia: Dow theory",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/9/reviewerDecision",
+          "to": "/rows/879/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/9/sourceFitNotes",
+          "to": "/rows/879/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/9/citationUse",
+          "to": "/rows/879/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/9/reviewerName",
+          "to": "/rows/879/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/9/reviewedAt",
+          "to": "/rows/879/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/9/realHumanInput",
+          "to": "/rows/879/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 10,
+      "targetFullDraftRowIndex": 880,
+      "reviewId": "knv2_0232::corpus_0445",
+      "nodeId": "knv2_0232",
+      "documentId": "corpus_0445",
+      "sourceName": "Wikipedia: Market trend",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/10/reviewerDecision",
+          "to": "/rows/880/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/10/sourceFitNotes",
+          "to": "/rows/880/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/10/citationUse",
+          "to": "/rows/880/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/10/reviewerName",
+          "to": "/rows/880/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/10/reviewedAt",
+          "to": "/rows/880/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/10/realHumanInput",
+          "to": "/rows/880/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 11,
+      "targetFullDraftRowIndex": 881,
+      "reviewId": "knv2_0232::corpus_0441",
+      "nodeId": "knv2_0232",
+      "documentId": "corpus_0441",
+      "sourceName": "Wikipedia: Momentum investing",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/11/reviewerDecision",
+          "to": "/rows/881/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/11/sourceFitNotes",
+          "to": "/rows/881/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/11/citationUse",
+          "to": "/rows/881/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/11/reviewerName",
+          "to": "/rows/881/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/11/reviewedAt",
+          "to": "/rows/881/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/11/realHumanInput",
+          "to": "/rows/881/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 12,
+      "targetFullDraftRowIndex": 942,
+      "reviewId": "knv2_0244::corpus_0472",
+      "nodeId": "knv2_0244",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/12/reviewerDecision",
+          "to": "/rows/942/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/12/sourceFitNotes",
+          "to": "/rows/942/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/12/citationUse",
+          "to": "/rows/942/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/12/reviewerName",
+          "to": "/rows/942/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/12/reviewedAt",
+          "to": "/rows/942/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/12/realHumanInput",
+          "to": "/rows/942/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 13,
+      "targetFullDraftRowIndex": 943,
+      "reviewId": "knv2_0244::corpus_0049",
+      "nodeId": "knv2_0244",
+      "documentId": "corpus_0049",
+      "sourceName": "BEA NIPA Handbook",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/13/reviewerDecision",
+          "to": "/rows/943/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/13/sourceFitNotes",
+          "to": "/rows/943/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/13/citationUse",
+          "to": "/rows/943/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/13/reviewerName",
+          "to": "/rows/943/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/13/reviewedAt",
+          "to": "/rows/943/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/13/realHumanInput",
+          "to": "/rows/943/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 14,
+      "targetFullDraftRowIndex": 944,
+      "reviewId": "knv2_0244::corpus_0225",
+      "nodeId": "knv2_0244",
+      "documentId": "corpus_0225",
+      "sourceName": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/14/reviewerDecision",
+          "to": "/rows/944/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/14/sourceFitNotes",
+          "to": "/rows/944/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/14/citationUse",
+          "to": "/rows/944/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/14/reviewerName",
+          "to": "/rows/944/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/14/reviewedAt",
+          "to": "/rows/944/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/14/realHumanInput",
+          "to": "/rows/944/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 15,
+      "targetFullDraftRowIndex": 945,
+      "reviewId": "knv2_0244::corpus_0444",
+      "nodeId": "knv2_0244",
+      "documentId": "corpus_0444",
+      "sourceName": "Wikipedia: Dow theory",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/15/reviewerDecision",
+          "to": "/rows/945/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/15/sourceFitNotes",
+          "to": "/rows/945/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/15/citationUse",
+          "to": "/rows/945/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/15/reviewerName",
+          "to": "/rows/945/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/15/reviewedAt",
+          "to": "/rows/945/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/15/realHumanInput",
+          "to": "/rows/945/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 16,
+      "targetFullDraftRowIndex": 946,
+      "reviewId": "knv2_0244::corpus_0445",
+      "nodeId": "knv2_0244",
+      "documentId": "corpus_0445",
+      "sourceName": "Wikipedia: Market trend",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/16/reviewerDecision",
+          "to": "/rows/946/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/16/sourceFitNotes",
+          "to": "/rows/946/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/16/citationUse",
+          "to": "/rows/946/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/16/reviewerName",
+          "to": "/rows/946/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/16/reviewedAt",
+          "to": "/rows/946/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/16/realHumanInput",
+          "to": "/rows/946/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 17,
+      "targetFullDraftRowIndex": 947,
+      "reviewId": "knv2_0244::corpus_0441",
+      "nodeId": "knv2_0244",
+      "documentId": "corpus_0441",
+      "sourceName": "Wikipedia: Momentum investing",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/17/reviewerDecision",
+          "to": "/rows/947/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/17/sourceFitNotes",
+          "to": "/rows/947/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/17/citationUse",
+          "to": "/rows/947/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/17/reviewerName",
+          "to": "/rows/947/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/17/reviewedAt",
+          "to": "/rows/947/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/17/realHumanInput",
+          "to": "/rows/947/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 18,
+      "targetFullDraftRowIndex": 1014,
+      "reviewId": "knv2_0256::corpus_0472",
+      "nodeId": "knv2_0256",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/18/reviewerDecision",
+          "to": "/rows/1014/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/18/sourceFitNotes",
+          "to": "/rows/1014/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/18/citationUse",
+          "to": "/rows/1014/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/18/reviewerName",
+          "to": "/rows/1014/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/18/reviewedAt",
+          "to": "/rows/1014/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/18/realHumanInput",
+          "to": "/rows/1014/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 19,
+      "targetFullDraftRowIndex": 1015,
+      "reviewId": "knv2_0256::corpus_0049",
+      "nodeId": "knv2_0256",
+      "documentId": "corpus_0049",
+      "sourceName": "BEA NIPA Handbook",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/19/reviewerDecision",
+          "to": "/rows/1015/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/19/sourceFitNotes",
+          "to": "/rows/1015/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/19/citationUse",
+          "to": "/rows/1015/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/19/reviewerName",
+          "to": "/rows/1015/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/19/reviewedAt",
+          "to": "/rows/1015/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/19/realHumanInput",
+          "to": "/rows/1015/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 20,
+      "targetFullDraftRowIndex": 1016,
+      "reviewId": "knv2_0256::corpus_0225",
+      "nodeId": "knv2_0256",
+      "documentId": "corpus_0225",
+      "sourceName": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/20/reviewerDecision",
+          "to": "/rows/1016/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/20/sourceFitNotes",
+          "to": "/rows/1016/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/20/citationUse",
+          "to": "/rows/1016/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/20/reviewerName",
+          "to": "/rows/1016/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/20/reviewedAt",
+          "to": "/rows/1016/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/20/realHumanInput",
+          "to": "/rows/1016/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 21,
+      "targetFullDraftRowIndex": 1017,
+      "reviewId": "knv2_0256::corpus_0444",
+      "nodeId": "knv2_0256",
+      "documentId": "corpus_0444",
+      "sourceName": "Wikipedia: Dow theory",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/21/reviewerDecision",
+          "to": "/rows/1017/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/21/sourceFitNotes",
+          "to": "/rows/1017/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/21/citationUse",
+          "to": "/rows/1017/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/21/reviewerName",
+          "to": "/rows/1017/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/21/reviewedAt",
+          "to": "/rows/1017/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/21/realHumanInput",
+          "to": "/rows/1017/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 22,
+      "targetFullDraftRowIndex": 1018,
+      "reviewId": "knv2_0256::corpus_0445",
+      "nodeId": "knv2_0256",
+      "documentId": "corpus_0445",
+      "sourceName": "Wikipedia: Market trend",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/22/reviewerDecision",
+          "to": "/rows/1018/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/22/sourceFitNotes",
+          "to": "/rows/1018/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/22/citationUse",
+          "to": "/rows/1018/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/22/reviewerName",
+          "to": "/rows/1018/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/22/reviewedAt",
+          "to": "/rows/1018/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/22/realHumanInput",
+          "to": "/rows/1018/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 23,
+      "targetFullDraftRowIndex": 1019,
+      "reviewId": "knv2_0256::corpus_0441",
+      "nodeId": "knv2_0256",
+      "documentId": "corpus_0441",
+      "sourceName": "Wikipedia: Momentum investing",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/23/reviewerDecision",
+          "to": "/rows/1019/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/23/sourceFitNotes",
+          "to": "/rows/1019/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/23/citationUse",
+          "to": "/rows/1019/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/23/reviewerName",
+          "to": "/rows/1019/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/23/reviewedAt",
+          "to": "/rows/1019/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/23/realHumanInput",
+          "to": "/rows/1019/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 24,
+      "targetFullDraftRowIndex": 1086,
+      "reviewId": "knv2_0268::corpus_0472",
+      "nodeId": "knv2_0268",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/24/reviewerDecision",
+          "to": "/rows/1086/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/24/sourceFitNotes",
+          "to": "/rows/1086/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/24/citationUse",
+          "to": "/rows/1086/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/24/reviewerName",
+          "to": "/rows/1086/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/24/reviewedAt",
+          "to": "/rows/1086/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/24/realHumanInput",
+          "to": "/rows/1086/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 25,
+      "targetFullDraftRowIndex": 1087,
+      "reviewId": "knv2_0268::corpus_0049",
+      "nodeId": "knv2_0268",
+      "documentId": "corpus_0049",
+      "sourceName": "BEA NIPA Handbook",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/25/reviewerDecision",
+          "to": "/rows/1087/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/25/sourceFitNotes",
+          "to": "/rows/1087/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/25/citationUse",
+          "to": "/rows/1087/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/25/reviewerName",
+          "to": "/rows/1087/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/25/reviewedAt",
+          "to": "/rows/1087/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/25/realHumanInput",
+          "to": "/rows/1087/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 26,
+      "targetFullDraftRowIndex": 1088,
+      "reviewId": "knv2_0268::corpus_0225",
+      "nodeId": "knv2_0268",
+      "documentId": "corpus_0225",
+      "sourceName": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/26/reviewerDecision",
+          "to": "/rows/1088/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/26/sourceFitNotes",
+          "to": "/rows/1088/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/26/citationUse",
+          "to": "/rows/1088/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/26/reviewerName",
+          "to": "/rows/1088/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/26/reviewedAt",
+          "to": "/rows/1088/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/26/realHumanInput",
+          "to": "/rows/1088/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 27,
+      "targetFullDraftRowIndex": 1089,
+      "reviewId": "knv2_0268::corpus_0444",
+      "nodeId": "knv2_0268",
+      "documentId": "corpus_0444",
+      "sourceName": "Wikipedia: Dow theory",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/27/reviewerDecision",
+          "to": "/rows/1089/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/27/sourceFitNotes",
+          "to": "/rows/1089/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/27/citationUse",
+          "to": "/rows/1089/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/27/reviewerName",
+          "to": "/rows/1089/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/27/reviewedAt",
+          "to": "/rows/1089/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/27/realHumanInput",
+          "to": "/rows/1089/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 28,
+      "targetFullDraftRowIndex": 1090,
+      "reviewId": "knv2_0268::corpus_0445",
+      "nodeId": "knv2_0268",
+      "documentId": "corpus_0445",
+      "sourceName": "Wikipedia: Market trend",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/28/reviewerDecision",
+          "to": "/rows/1090/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/28/sourceFitNotes",
+          "to": "/rows/1090/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/28/citationUse",
+          "to": "/rows/1090/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/28/reviewerName",
+          "to": "/rows/1090/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/28/reviewedAt",
+          "to": "/rows/1090/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/28/realHumanInput",
+          "to": "/rows/1090/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 29,
+      "targetFullDraftRowIndex": 1091,
+      "reviewId": "knv2_0268::corpus_0441",
+      "nodeId": "knv2_0268",
+      "documentId": "corpus_0441",
+      "sourceName": "Wikipedia: Momentum investing",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/29/reviewerDecision",
+          "to": "/rows/1091/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/29/sourceFitNotes",
+          "to": "/rows/1091/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/29/citationUse",
+          "to": "/rows/1091/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/29/reviewerName",
+          "to": "/rows/1091/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/29/reviewedAt",
+          "to": "/rows/1091/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/29/realHumanInput",
+          "to": "/rows/1091/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 30,
+      "targetFullDraftRowIndex": 1158,
+      "reviewId": "knv2_0280::corpus_0472",
+      "nodeId": "knv2_0280",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/30/reviewerDecision",
+          "to": "/rows/1158/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/30/sourceFitNotes",
+          "to": "/rows/1158/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/30/citationUse",
+          "to": "/rows/1158/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/30/reviewerName",
+          "to": "/rows/1158/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/30/reviewedAt",
+          "to": "/rows/1158/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/30/realHumanInput",
+          "to": "/rows/1158/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 31,
+      "targetFullDraftRowIndex": 1159,
+      "reviewId": "knv2_0280::corpus_0049",
+      "nodeId": "knv2_0280",
+      "documentId": "corpus_0049",
+      "sourceName": "BEA NIPA Handbook",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/31/reviewerDecision",
+          "to": "/rows/1159/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/31/sourceFitNotes",
+          "to": "/rows/1159/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/31/citationUse",
+          "to": "/rows/1159/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/31/reviewerName",
+          "to": "/rows/1159/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/31/reviewedAt",
+          "to": "/rows/1159/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/31/realHumanInput",
+          "to": "/rows/1159/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 32,
+      "targetFullDraftRowIndex": 1160,
+      "reviewId": "knv2_0280::corpus_0225",
+      "nodeId": "knv2_0280",
+      "documentId": "corpus_0225",
+      "sourceName": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/32/reviewerDecision",
+          "to": "/rows/1160/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/32/sourceFitNotes",
+          "to": "/rows/1160/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/32/citationUse",
+          "to": "/rows/1160/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/32/reviewerName",
+          "to": "/rows/1160/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/32/reviewedAt",
+          "to": "/rows/1160/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/32/realHumanInput",
+          "to": "/rows/1160/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 33,
+      "targetFullDraftRowIndex": 1161,
+      "reviewId": "knv2_0280::corpus_0444",
+      "nodeId": "knv2_0280",
+      "documentId": "corpus_0444",
+      "sourceName": "Wikipedia: Dow theory",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/33/reviewerDecision",
+          "to": "/rows/1161/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/33/sourceFitNotes",
+          "to": "/rows/1161/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/33/citationUse",
+          "to": "/rows/1161/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/33/reviewerName",
+          "to": "/rows/1161/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/33/reviewedAt",
+          "to": "/rows/1161/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/33/realHumanInput",
+          "to": "/rows/1161/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 34,
+      "targetFullDraftRowIndex": 1162,
+      "reviewId": "knv2_0280::corpus_0445",
+      "nodeId": "knv2_0280",
+      "documentId": "corpus_0445",
+      "sourceName": "Wikipedia: Market trend",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/34/reviewerDecision",
+          "to": "/rows/1162/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/34/sourceFitNotes",
+          "to": "/rows/1162/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/34/citationUse",
+          "to": "/rows/1162/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/34/reviewerName",
+          "to": "/rows/1162/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/34/reviewedAt",
+          "to": "/rows/1162/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/34/realHumanInput",
+          "to": "/rows/1162/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 35,
+      "targetFullDraftRowIndex": 1163,
+      "reviewId": "knv2_0280::corpus_0441",
+      "nodeId": "knv2_0280",
+      "documentId": "corpus_0441",
+      "sourceName": "Wikipedia: Momentum investing",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/35/reviewerDecision",
+          "to": "/rows/1163/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/35/sourceFitNotes",
+          "to": "/rows/1163/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/35/citationUse",
+          "to": "/rows/1163/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/35/reviewerName",
+          "to": "/rows/1163/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/35/reviewedAt",
+          "to": "/rows/1163/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/35/realHumanInput",
+          "to": "/rows/1163/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 36,
+      "targetFullDraftRowIndex": 1230,
+      "reviewId": "knv2_0292::corpus_0472",
+      "nodeId": "knv2_0292",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/36/reviewerDecision",
+          "to": "/rows/1230/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/36/sourceFitNotes",
+          "to": "/rows/1230/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/36/citationUse",
+          "to": "/rows/1230/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/36/reviewerName",
+          "to": "/rows/1230/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/36/reviewedAt",
+          "to": "/rows/1230/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/36/realHumanInput",
+          "to": "/rows/1230/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 37,
+      "targetFullDraftRowIndex": 1231,
+      "reviewId": "knv2_0292::corpus_0049",
+      "nodeId": "knv2_0292",
+      "documentId": "corpus_0049",
+      "sourceName": "BEA NIPA Handbook",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/37/reviewerDecision",
+          "to": "/rows/1231/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/37/sourceFitNotes",
+          "to": "/rows/1231/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/37/citationUse",
+          "to": "/rows/1231/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/37/reviewerName",
+          "to": "/rows/1231/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/37/reviewedAt",
+          "to": "/rows/1231/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/37/realHumanInput",
+          "to": "/rows/1231/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 38,
+      "targetFullDraftRowIndex": 1232,
+      "reviewId": "knv2_0292::corpus_0225",
+      "nodeId": "knv2_0292",
+      "documentId": "corpus_0225",
+      "sourceName": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/38/reviewerDecision",
+          "to": "/rows/1232/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/38/sourceFitNotes",
+          "to": "/rows/1232/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/38/citationUse",
+          "to": "/rows/1232/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/38/reviewerName",
+          "to": "/rows/1232/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/38/reviewedAt",
+          "to": "/rows/1232/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/38/realHumanInput",
+          "to": "/rows/1232/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 39,
+      "targetFullDraftRowIndex": 1233,
+      "reviewId": "knv2_0292::corpus_0444",
+      "nodeId": "knv2_0292",
+      "documentId": "corpus_0444",
+      "sourceName": "Wikipedia: Dow theory",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/39/reviewerDecision",
+          "to": "/rows/1233/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/39/sourceFitNotes",
+          "to": "/rows/1233/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/39/citationUse",
+          "to": "/rows/1233/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/39/reviewerName",
+          "to": "/rows/1233/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/39/reviewedAt",
+          "to": "/rows/1233/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/39/realHumanInput",
+          "to": "/rows/1233/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 40,
+      "targetFullDraftRowIndex": 1234,
+      "reviewId": "knv2_0292::corpus_0445",
+      "nodeId": "knv2_0292",
+      "documentId": "corpus_0445",
+      "sourceName": "Wikipedia: Market trend",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/40/reviewerDecision",
+          "to": "/rows/1234/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/40/sourceFitNotes",
+          "to": "/rows/1234/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/40/citationUse",
+          "to": "/rows/1234/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/40/reviewerName",
+          "to": "/rows/1234/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/40/reviewedAt",
+          "to": "/rows/1234/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/40/realHumanInput",
+          "to": "/rows/1234/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 41,
+      "targetFullDraftRowIndex": 1235,
+      "reviewId": "knv2_0292::corpus_0441",
+      "nodeId": "knv2_0292",
+      "documentId": "corpus_0441",
+      "sourceName": "Wikipedia: Momentum investing",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/41/reviewerDecision",
+          "to": "/rows/1235/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/41/sourceFitNotes",
+          "to": "/rows/1235/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/41/citationUse",
+          "to": "/rows/1235/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/41/reviewerName",
+          "to": "/rows/1235/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/41/reviewedAt",
+          "to": "/rows/1235/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/41/realHumanInput",
+          "to": "/rows/1235/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 42,
+      "targetFullDraftRowIndex": 1296,
+      "reviewId": "knv2_0304::corpus_0472",
+      "nodeId": "knv2_0304",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/42/reviewerDecision",
+          "to": "/rows/1296/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/42/sourceFitNotes",
+          "to": "/rows/1296/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/42/citationUse",
+          "to": "/rows/1296/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/42/reviewerName",
+          "to": "/rows/1296/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/42/reviewedAt",
+          "to": "/rows/1296/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/42/realHumanInput",
+          "to": "/rows/1296/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 43,
+      "targetFullDraftRowIndex": 1297,
+      "reviewId": "knv2_0304::corpus_0049",
+      "nodeId": "knv2_0304",
+      "documentId": "corpus_0049",
+      "sourceName": "BEA NIPA Handbook",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/43/reviewerDecision",
+          "to": "/rows/1297/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/43/sourceFitNotes",
+          "to": "/rows/1297/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/43/citationUse",
+          "to": "/rows/1297/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/43/reviewerName",
+          "to": "/rows/1297/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/43/reviewedAt",
+          "to": "/rows/1297/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/43/realHumanInput",
+          "to": "/rows/1297/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 44,
+      "targetFullDraftRowIndex": 1298,
+      "reviewId": "knv2_0304::corpus_0225",
+      "nodeId": "knv2_0304",
+      "documentId": "corpus_0225",
+      "sourceName": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/44/reviewerDecision",
+          "to": "/rows/1298/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/44/sourceFitNotes",
+          "to": "/rows/1298/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/44/citationUse",
+          "to": "/rows/1298/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/44/reviewerName",
+          "to": "/rows/1298/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/44/reviewedAt",
+          "to": "/rows/1298/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/44/realHumanInput",
+          "to": "/rows/1298/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 45,
+      "targetFullDraftRowIndex": 1299,
+      "reviewId": "knv2_0304::corpus_0444",
+      "nodeId": "knv2_0304",
+      "documentId": "corpus_0444",
+      "sourceName": "Wikipedia: Dow theory",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/45/reviewerDecision",
+          "to": "/rows/1299/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/45/sourceFitNotes",
+          "to": "/rows/1299/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/45/citationUse",
+          "to": "/rows/1299/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/45/reviewerName",
+          "to": "/rows/1299/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/45/reviewedAt",
+          "to": "/rows/1299/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/45/realHumanInput",
+          "to": "/rows/1299/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 46,
+      "targetFullDraftRowIndex": 1300,
+      "reviewId": "knv2_0304::corpus_0445",
+      "nodeId": "knv2_0304",
+      "documentId": "corpus_0445",
+      "sourceName": "Wikipedia: Market trend",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/46/reviewerDecision",
+          "to": "/rows/1300/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/46/sourceFitNotes",
+          "to": "/rows/1300/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/46/citationUse",
+          "to": "/rows/1300/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/46/reviewerName",
+          "to": "/rows/1300/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/46/reviewedAt",
+          "to": "/rows/1300/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/46/realHumanInput",
+          "to": "/rows/1300/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 47,
+      "targetFullDraftRowIndex": 1301,
+      "reviewId": "knv2_0304::corpus_0441",
+      "nodeId": "knv2_0304",
+      "documentId": "corpus_0441",
+      "sourceName": "Wikipedia: Momentum investing",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/47/reviewerDecision",
+          "to": "/rows/1301/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/47/sourceFitNotes",
+          "to": "/rows/1301/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/47/citationUse",
+          "to": "/rows/1301/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/47/reviewerName",
+          "to": "/rows/1301/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/47/reviewedAt",
+          "to": "/rows/1301/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/47/realHumanInput",
+          "to": "/rows/1301/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 48,
+      "targetFullDraftRowIndex": 1368,
+      "reviewId": "knv2_0316::corpus_0472",
+      "nodeId": "knv2_0316",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/48/reviewerDecision",
+          "to": "/rows/1368/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/48/sourceFitNotes",
+          "to": "/rows/1368/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/48/citationUse",
+          "to": "/rows/1368/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/48/reviewerName",
+          "to": "/rows/1368/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/48/reviewedAt",
+          "to": "/rows/1368/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/48/realHumanInput",
+          "to": "/rows/1368/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 49,
+      "targetFullDraftRowIndex": 1369,
+      "reviewId": "knv2_0316::corpus_0049",
+      "nodeId": "knv2_0316",
+      "documentId": "corpus_0049",
+      "sourceName": "BEA NIPA Handbook",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/49/reviewerDecision",
+          "to": "/rows/1369/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/49/sourceFitNotes",
+          "to": "/rows/1369/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/49/citationUse",
+          "to": "/rows/1369/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/49/reviewerName",
+          "to": "/rows/1369/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/49/reviewedAt",
+          "to": "/rows/1369/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/49/realHumanInput",
+          "to": "/rows/1369/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 50,
+      "targetFullDraftRowIndex": 1370,
+      "reviewId": "knv2_0316::corpus_0225",
+      "nodeId": "knv2_0316",
+      "documentId": "corpus_0225",
+      "sourceName": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/50/reviewerDecision",
+          "to": "/rows/1370/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/50/sourceFitNotes",
+          "to": "/rows/1370/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/50/citationUse",
+          "to": "/rows/1370/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/50/reviewerName",
+          "to": "/rows/1370/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/50/reviewedAt",
+          "to": "/rows/1370/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/50/realHumanInput",
+          "to": "/rows/1370/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 51,
+      "targetFullDraftRowIndex": 1371,
+      "reviewId": "knv2_0316::corpus_0444",
+      "nodeId": "knv2_0316",
+      "documentId": "corpus_0444",
+      "sourceName": "Wikipedia: Dow theory",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/51/reviewerDecision",
+          "to": "/rows/1371/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/51/sourceFitNotes",
+          "to": "/rows/1371/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/51/citationUse",
+          "to": "/rows/1371/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/51/reviewerName",
+          "to": "/rows/1371/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/51/reviewedAt",
+          "to": "/rows/1371/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/51/realHumanInput",
+          "to": "/rows/1371/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 52,
+      "targetFullDraftRowIndex": 1372,
+      "reviewId": "knv2_0316::corpus_0445",
+      "nodeId": "knv2_0316",
+      "documentId": "corpus_0445",
+      "sourceName": "Wikipedia: Market trend",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/52/reviewerDecision",
+          "to": "/rows/1372/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/52/sourceFitNotes",
+          "to": "/rows/1372/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/52/citationUse",
+          "to": "/rows/1372/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/52/reviewerName",
+          "to": "/rows/1372/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/52/reviewedAt",
+          "to": "/rows/1372/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/52/realHumanInput",
+          "to": "/rows/1372/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 53,
+      "targetFullDraftRowIndex": 1373,
+      "reviewId": "knv2_0316::corpus_0441",
+      "nodeId": "knv2_0316",
+      "documentId": "corpus_0441",
+      "sourceName": "Wikipedia: Momentum investing",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/53/reviewerDecision",
+          "to": "/rows/1373/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/53/sourceFitNotes",
+          "to": "/rows/1373/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/53/citationUse",
+          "to": "/rows/1373/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/53/reviewerName",
+          "to": "/rows/1373/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/53/reviewedAt",
+          "to": "/rows/1373/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/53/realHumanInput",
+          "to": "/rows/1373/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 54,
+      "targetFullDraftRowIndex": 1440,
+      "reviewId": "knv2_0328::corpus_0472",
+      "nodeId": "knv2_0328",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/54/reviewerDecision",
+          "to": "/rows/1440/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/54/sourceFitNotes",
+          "to": "/rows/1440/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/54/citationUse",
+          "to": "/rows/1440/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/54/reviewerName",
+          "to": "/rows/1440/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/54/reviewedAt",
+          "to": "/rows/1440/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/54/realHumanInput",
+          "to": "/rows/1440/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 55,
+      "targetFullDraftRowIndex": 1441,
+      "reviewId": "knv2_0328::corpus_0049",
+      "nodeId": "knv2_0328",
+      "documentId": "corpus_0049",
+      "sourceName": "BEA NIPA Handbook",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/55/reviewerDecision",
+          "to": "/rows/1441/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/55/sourceFitNotes",
+          "to": "/rows/1441/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/55/citationUse",
+          "to": "/rows/1441/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/55/reviewerName",
+          "to": "/rows/1441/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/55/reviewedAt",
+          "to": "/rows/1441/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/55/realHumanInput",
+          "to": "/rows/1441/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 56,
+      "targetFullDraftRowIndex": 1442,
+      "reviewId": "knv2_0328::corpus_0225",
+      "nodeId": "knv2_0328",
+      "documentId": "corpus_0225",
+      "sourceName": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/56/reviewerDecision",
+          "to": "/rows/1442/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/56/sourceFitNotes",
+          "to": "/rows/1442/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/56/citationUse",
+          "to": "/rows/1442/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/56/reviewerName",
+          "to": "/rows/1442/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/56/reviewedAt",
+          "to": "/rows/1442/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/56/realHumanInput",
+          "to": "/rows/1442/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 57,
+      "targetFullDraftRowIndex": 1443,
+      "reviewId": "knv2_0328::corpus_0444",
+      "nodeId": "knv2_0328",
+      "documentId": "corpus_0444",
+      "sourceName": "Wikipedia: Dow theory",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/57/reviewerDecision",
+          "to": "/rows/1443/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/57/sourceFitNotes",
+          "to": "/rows/1443/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/57/citationUse",
+          "to": "/rows/1443/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/57/reviewerName",
+          "to": "/rows/1443/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/57/reviewedAt",
+          "to": "/rows/1443/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/57/realHumanInput",
+          "to": "/rows/1443/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 58,
+      "targetFullDraftRowIndex": 1444,
+      "reviewId": "knv2_0328::corpus_0445",
+      "nodeId": "knv2_0328",
+      "documentId": "corpus_0445",
+      "sourceName": "Wikipedia: Market trend",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/58/reviewerDecision",
+          "to": "/rows/1444/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/58/sourceFitNotes",
+          "to": "/rows/1444/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/58/citationUse",
+          "to": "/rows/1444/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/58/reviewerName",
+          "to": "/rows/1444/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/58/reviewedAt",
+          "to": "/rows/1444/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/58/realHumanInput",
+          "to": "/rows/1444/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 59,
+      "targetFullDraftRowIndex": 1445,
+      "reviewId": "knv2_0328::corpus_0441",
+      "nodeId": "knv2_0328",
+      "documentId": "corpus_0441",
+      "sourceName": "Wikipedia: Momentum investing",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/59/reviewerDecision",
+          "to": "/rows/1445/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/59/sourceFitNotes",
+          "to": "/rows/1445/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/59/citationUse",
+          "to": "/rows/1445/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/59/reviewerName",
+          "to": "/rows/1445/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/59/reviewedAt",
+          "to": "/rows/1445/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/59/realHumanInput",
+          "to": "/rows/1445/realHumanInput"
+        }
+      }
+    }
+  ],
+  "sampleMergeRows": [
+    {
+      "packetRowIndex": 0,
+      "targetFullDraftRowIndex": 804,
+      "reviewId": "knv2_0220::corpus_0472",
+      "nodeId": "knv2_0220",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/0/reviewerDecision",
+          "to": "/rows/804/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/0/sourceFitNotes",
+          "to": "/rows/804/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/0/citationUse",
+          "to": "/rows/804/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/0/reviewerName",
+          "to": "/rows/804/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/0/reviewedAt",
+          "to": "/rows/804/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/0/realHumanInput",
+          "to": "/rows/804/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 1,
+      "targetFullDraftRowIndex": 805,
+      "reviewId": "knv2_0220::corpus_0049",
+      "nodeId": "knv2_0220",
+      "documentId": "corpus_0049",
+      "sourceName": "BEA NIPA Handbook",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/1/reviewerDecision",
+          "to": "/rows/805/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/1/sourceFitNotes",
+          "to": "/rows/805/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/1/citationUse",
+          "to": "/rows/805/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/1/reviewerName",
+          "to": "/rows/805/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/1/reviewedAt",
+          "to": "/rows/805/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/1/realHumanInput",
+          "to": "/rows/805/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 2,
+      "targetFullDraftRowIndex": 806,
+      "reviewId": "knv2_0220::corpus_0225",
+      "nodeId": "knv2_0220",
+      "documentId": "corpus_0225",
+      "sourceName": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/2/reviewerDecision",
+          "to": "/rows/806/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/2/sourceFitNotes",
+          "to": "/rows/806/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/2/citationUse",
+          "to": "/rows/806/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/2/reviewerName",
+          "to": "/rows/806/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/2/reviewedAt",
+          "to": "/rows/806/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/2/realHumanInput",
+          "to": "/rows/806/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 3,
+      "targetFullDraftRowIndex": 807,
+      "reviewId": "knv2_0220::corpus_0444",
+      "nodeId": "knv2_0220",
+      "documentId": "corpus_0444",
+      "sourceName": "Wikipedia: Dow theory",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/3/reviewerDecision",
+          "to": "/rows/807/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/3/sourceFitNotes",
+          "to": "/rows/807/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/3/citationUse",
+          "to": "/rows/807/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/3/reviewerName",
+          "to": "/rows/807/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/3/reviewedAt",
+          "to": "/rows/807/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/3/realHumanInput",
+          "to": "/rows/807/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 4,
+      "targetFullDraftRowIndex": 808,
+      "reviewId": "knv2_0220::corpus_0445",
+      "nodeId": "knv2_0220",
+      "documentId": "corpus_0445",
+      "sourceName": "Wikipedia: Market trend",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/4/reviewerDecision",
+          "to": "/rows/808/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/4/sourceFitNotes",
+          "to": "/rows/808/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/4/citationUse",
+          "to": "/rows/808/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/4/reviewerName",
+          "to": "/rows/808/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/4/reviewedAt",
+          "to": "/rows/808/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/4/realHumanInput",
+          "to": "/rows/808/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 5,
+      "targetFullDraftRowIndex": 809,
+      "reviewId": "knv2_0220::corpus_0441",
+      "nodeId": "knv2_0220",
+      "documentId": "corpus_0441",
+      "sourceName": "Wikipedia: Momentum investing",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/5/reviewerDecision",
+          "to": "/rows/809/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/5/sourceFitNotes",
+          "to": "/rows/809/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/5/citationUse",
+          "to": "/rows/809/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/5/reviewerName",
+          "to": "/rows/809/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/5/reviewedAt",
+          "to": "/rows/809/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/5/realHumanInput",
+          "to": "/rows/809/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 6,
+      "targetFullDraftRowIndex": 876,
+      "reviewId": "knv2_0232::corpus_0472",
+      "nodeId": "knv2_0232",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/6/reviewerDecision",
+          "to": "/rows/876/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/6/sourceFitNotes",
+          "to": "/rows/876/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/6/citationUse",
+          "to": "/rows/876/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/6/reviewerName",
+          "to": "/rows/876/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/6/reviewedAt",
+          "to": "/rows/876/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/6/realHumanInput",
+          "to": "/rows/876/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 7,
+      "targetFullDraftRowIndex": 877,
+      "reviewId": "knv2_0232::corpus_0049",
+      "nodeId": "knv2_0232",
+      "documentId": "corpus_0049",
+      "sourceName": "BEA NIPA Handbook",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/7/reviewerDecision",
+          "to": "/rows/877/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/7/sourceFitNotes",
+          "to": "/rows/877/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/7/citationUse",
+          "to": "/rows/877/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/7/reviewerName",
+          "to": "/rows/877/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/7/reviewedAt",
+          "to": "/rows/877/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/7/realHumanInput",
+          "to": "/rows/877/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 8,
+      "targetFullDraftRowIndex": 878,
+      "reviewId": "knv2_0232::corpus_0225",
+      "nodeId": "knv2_0232",
+      "documentId": "corpus_0225",
+      "sourceName": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/8/reviewerDecision",
+          "to": "/rows/878/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/8/sourceFitNotes",
+          "to": "/rows/878/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/8/citationUse",
+          "to": "/rows/878/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/8/reviewerName",
+          "to": "/rows/878/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/8/reviewedAt",
+          "to": "/rows/878/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/8/realHumanInput",
+          "to": "/rows/878/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 9,
+      "targetFullDraftRowIndex": 879,
+      "reviewId": "knv2_0232::corpus_0444",
+      "nodeId": "knv2_0232",
+      "documentId": "corpus_0444",
+      "sourceName": "Wikipedia: Dow theory",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/9/reviewerDecision",
+          "to": "/rows/879/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/9/sourceFitNotes",
+          "to": "/rows/879/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/9/citationUse",
+          "to": "/rows/879/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/9/reviewerName",
+          "to": "/rows/879/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/9/reviewedAt",
+          "to": "/rows/879/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/9/realHumanInput",
+          "to": "/rows/879/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 10,
+      "targetFullDraftRowIndex": 880,
+      "reviewId": "knv2_0232::corpus_0445",
+      "nodeId": "knv2_0232",
+      "documentId": "corpus_0445",
+      "sourceName": "Wikipedia: Market trend",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/10/reviewerDecision",
+          "to": "/rows/880/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/10/sourceFitNotes",
+          "to": "/rows/880/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/10/citationUse",
+          "to": "/rows/880/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/10/reviewerName",
+          "to": "/rows/880/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/10/reviewedAt",
+          "to": "/rows/880/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/10/realHumanInput",
+          "to": "/rows/880/realHumanInput"
+        }
+      }
+    },
+    {
+      "packetRowIndex": 11,
+      "targetFullDraftRowIndex": 881,
+      "reviewId": "knv2_0232::corpus_0441",
+      "nodeId": "knv2_0232",
+      "documentId": "corpus_0441",
+      "sourceName": "Wikipedia: Momentum investing",
+      "mappedToFullDraft": true,
+      "packetValidationStatus": "blocked_missing_or_invalid_reviewer_input",
+      "readyForMerge": false,
+      "mergeBlockedReason": "packet_row_not_ready_for_merge",
+      "fieldCopyPlan": {
+        "reviewerDecision": {
+          "from": "/rows/11/reviewerDecision",
+          "to": "/rows/881/reviewerDecision"
+        },
+        "sourceFitNotes": {
+          "from": "/rows/11/sourceFitNotes",
+          "to": "/rows/881/sourceFitNotes"
+        },
+        "citationUse": {
+          "from": "/rows/11/citationUse",
+          "to": "/rows/881/citationUse"
+        },
+        "reviewerName": {
+          "from": "/rows/11/reviewerName",
+          "to": "/rows/881/reviewerName"
+        },
+        "reviewedAt": {
+          "from": "/rows/11/reviewedAt",
+          "to": "/rows/881/reviewedAt"
+        },
+        "realHumanInput": {
+          "from": "/rows/11/realHumanInput",
+          "to": "/rows/881/realHumanInput"
+        }
+      }
+    }
+  ],
+  "commands": [
+    "npm.cmd run build:knowledge-node-public-source-fit-review-packet-026-suite",
+    "npm.cmd run check:knowledge-node-public-source-fit-review-packet-026-suite"
+  ],
+  "completionRule": "Packet 026 merge preview becomes ready only when the packet input copy validates every row as real human input, every packet row maps to the full 1638-row draft, forbidden hits are zero, learnerCitationApproved:false, copiedTextApproved:false, and a separate manual merge/write authorization exists.",
+  "boundary": "Packet 026 merge preview is dry-run reviewer operations only. It does not write the full source-fit draft, create human judgments, approve copied text, approve learner-facing citations, write lessons, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, or production readiness."
+}

@@ -1,0 +1,2767 @@
+{
+  "generatedAt": "2026-06-22T07:04:14.637Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "fieldMapStatus": "first_reviewer_field_map_ready_blocked_on_real_input",
+  "fieldMapMode": "handoff_actions_to_human_owned_input_fields",
+  "handoffStatus": "first_reviewer_action_handoff_ready_blocked_on_real_input",
+  "validationStatus": "blocked_missing_real_reviewer_overlay_input",
+  "handoffActionRows": 20,
+  "mappedActionRows": 20,
+  "highRiskLessonActions": 12,
+  "directSourceDecisionActions": 5,
+  "sourceFitPacketActions": 3,
+  "highRiskReviewerNoteFields": 72,
+  "directSourceDecisionFields": 5,
+  "sourceFitReviewRows": 180,
+  "blockedWorkItems": 257,
+  "readyWorkItems": 0,
+  "realHumanInputEntries": 0,
+  "learnerCitationApprovedRows": 0,
+  "learnerReleaseReadyModules": 0,
+  "writeAllowedNow": false,
+  "manualAuthorizationRequired": true,
+  "inputPaths": [
+    "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+    "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_001_INPUT_COPY_TEMPLATE.json",
+    "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_002_INPUT_COPY_TEMPLATE.json",
+    "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_003_INPUT_COPY_TEMPLATE.json"
+  ],
+  "fieldRows": [
+    {
+      "handoffRank": 1,
+      "queueRank": 1,
+      "actionId": "high-risk-lesson-notes:local_course_rewrite_batch_04_10",
+      "actionType": "high_risk_lesson_reviewer_notes",
+      "module": "突破",
+      "topic": "假突破",
+      "targetId": "local_course_rewrite_batch_04_10",
+      "lessonId": "lesson_knv2_0029",
+      "draftPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "lessonRows[0]",
+      "blockedItems": 6,
+      "mappedFieldCount": 6,
+      "fieldKind": "six_real_reviewer_note_slots",
+      "reviewerTask": "Fill six real reviewer notes in the mapped note slots after real review.",
+      "notePaths": [
+        {
+          "noteId": "real_local_course_rewrite_batch_04_10_reviewer_note_01",
+          "sourceNoteId": "local_course_rewrite_batch_04_10_reviewer_note_01",
+          "dimension": "source_fit",
+          "jsonPath": "lessonRows[0].realReviewerNotes[0]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Check whether 突破 / 假突破 is truly supported by the listed local course evidence: VWAP.pdf; Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf; 突破白皮书研究（整理）(1).pdf.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_04_10_reviewer_note_02",
+          "sourceNoteId": "local_course_rewrite_batch_04_10_reviewer_note_02",
+          "dimension": "originality",
+          "jsonPath": "lessonRows[0].realReviewerNotes[1]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Review the rewritten intro, concept teaching, synthesis, and practice prompt against the highest-overlap local source; current max overlap is 0.0506.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_04_10_reviewer_note_03",
+          "sourceNoteId": "local_course_rewrite_batch_04_10_reviewer_note_03",
+          "dimension": "green_source_boundary",
+          "jsonPath": "lessonRows[0].realReviewerNotes[2]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Before learner-facing use, replace private-course dependency with public/green citations or keep the lesson blocked.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_04_10_reviewer_note_04",
+          "sourceNoteId": "local_course_rewrite_batch_04_10_reviewer_note_04",
+          "dimension": "education_safety",
+          "jsonPath": "lessonRows[0].realReviewerNotes[3]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Confirm the lesson asks learners to observe facts, explain uncertainty, and write invalidation conditions without giving trading instructions.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_04_10_reviewer_note_05",
+          "sourceNoteId": "local_course_rewrite_batch_04_10_reviewer_note_05",
+          "dimension": "pedagogy",
+          "jsonPath": "lessonRows[0].realReviewerNotes[4]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Confirm the practice task is answerable from a historical chart and can be graded by evidence quality rather than market outcome.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_04_10_reviewer_note_06",
+          "sourceNoteId": "local_course_rewrite_batch_04_10_reviewer_note_06",
+          "dimension": "release_gate",
+          "jsonPath": "lessonRows[0].realReviewerNotes[5]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Keep approvalStatus not_approved and learnerFacingRelease false until a separate human reviewer signs off.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        }
+      ],
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "DeepSupp: Attention-Driven Correlation Pattern Analysis for Dynamic Time Series Support and Resistance Levels Identification",
+          "url": "https://arxiv.org/abs/2507.01971v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "realHumanInput": false
+    },
+    {
+      "handoffRank": 2,
+      "queueRank": 2,
+      "actionId": "high-risk-lesson-notes:local_course_rewrite_batch_05_10",
+      "actionType": "high_risk_lesson_reviewer_notes",
+      "module": "突破",
+      "topic": "假突破",
+      "targetId": "local_course_rewrite_batch_05_10",
+      "lessonId": "lesson_knv2_0089",
+      "draftPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "lessonRows[1]",
+      "blockedItems": 6,
+      "mappedFieldCount": 6,
+      "fieldKind": "six_real_reviewer_note_slots",
+      "reviewerTask": "Fill six real reviewer notes in the mapped note slots after real review.",
+      "notePaths": [
+        {
+          "noteId": "real_local_course_rewrite_batch_05_10_reviewer_note_01",
+          "sourceNoteId": "local_course_rewrite_batch_05_10_reviewer_note_01",
+          "dimension": "source_fit",
+          "jsonPath": "lessonRows[1].realReviewerNotes[0]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Check whether 突破 / 假突破 is truly supported by the listed local course evidence: VWAP.pdf; Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf; 突破白皮书研究（整理）(1).pdf.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_05_10_reviewer_note_02",
+          "sourceNoteId": "local_course_rewrite_batch_05_10_reviewer_note_02",
+          "dimension": "originality",
+          "jsonPath": "lessonRows[1].realReviewerNotes[1]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Review the rewritten intro, concept teaching, synthesis, and practice prompt against the highest-overlap local source; current max overlap is 0.0506.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_05_10_reviewer_note_03",
+          "sourceNoteId": "local_course_rewrite_batch_05_10_reviewer_note_03",
+          "dimension": "green_source_boundary",
+          "jsonPath": "lessonRows[1].realReviewerNotes[2]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Before learner-facing use, replace private-course dependency with public/green citations or keep the lesson blocked.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_05_10_reviewer_note_04",
+          "sourceNoteId": "local_course_rewrite_batch_05_10_reviewer_note_04",
+          "dimension": "education_safety",
+          "jsonPath": "lessonRows[1].realReviewerNotes[3]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Confirm the lesson asks learners to observe facts, explain uncertainty, and write invalidation conditions without giving trading instructions.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_05_10_reviewer_note_05",
+          "sourceNoteId": "local_course_rewrite_batch_05_10_reviewer_note_05",
+          "dimension": "pedagogy",
+          "jsonPath": "lessonRows[1].realReviewerNotes[4]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Confirm the practice task is answerable from a historical chart and can be graded by evidence quality rather than market outcome.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_05_10_reviewer_note_06",
+          "sourceNoteId": "local_course_rewrite_batch_05_10_reviewer_note_06",
+          "dimension": "release_gate",
+          "jsonPath": "lessonRows[1].realReviewerNotes[5]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Keep approvalStatus not_approved and learnerFacingRelease false until a separate human reviewer signs off.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        }
+      ],
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "DeepSupp: Attention-Driven Correlation Pattern Analysis for Dynamic Time Series Support and Resistance Levels Identification",
+          "url": "https://arxiv.org/abs/2507.01971v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "realHumanInput": false
+    },
+    {
+      "handoffRank": 3,
+      "queueRank": 3,
+      "actionId": "high-risk-lesson-notes:local_course_rewrite_batch_01_03",
+      "actionType": "high_risk_lesson_reviewer_notes",
+      "module": "市场结构",
+      "topic": "高低点",
+      "targetId": "local_course_rewrite_batch_01_03",
+      "lessonId": "lesson_knv2_0002",
+      "draftPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "lessonRows[2]",
+      "blockedItems": 6,
+      "mappedFieldCount": 6,
+      "fieldKind": "six_real_reviewer_note_slots",
+      "reviewerTask": "Fill six real reviewer notes in the mapped note slots after real review.",
+      "notePaths": [
+        {
+          "noteId": "real_local_course_rewrite_batch_01_03_reviewer_note_01",
+          "sourceNoteId": "local_course_rewrite_batch_01_03_reviewer_note_01",
+          "dimension": "source_fit",
+          "jsonPath": "lessonRows[2].realReviewerNotes[0]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Check whether 市场结构 / 高低点 is truly supported by the listed local course evidence: VWAP.pdf; Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf; 突破白皮书研究（整理）(1).pdf.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_03_reviewer_note_02",
+          "sourceNoteId": "local_course_rewrite_batch_01_03_reviewer_note_02",
+          "dimension": "originality",
+          "jsonPath": "lessonRows[2].realReviewerNotes[1]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Review the rewritten intro, concept teaching, synthesis, and practice prompt against the highest-overlap local source; current max overlap is 0.0503.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_03_reviewer_note_03",
+          "sourceNoteId": "local_course_rewrite_batch_01_03_reviewer_note_03",
+          "dimension": "green_source_boundary",
+          "jsonPath": "lessonRows[2].realReviewerNotes[2]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Before learner-facing use, replace private-course dependency with public/green citations or keep the lesson blocked.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_03_reviewer_note_04",
+          "sourceNoteId": "local_course_rewrite_batch_01_03_reviewer_note_04",
+          "dimension": "education_safety",
+          "jsonPath": "lessonRows[2].realReviewerNotes[3]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Confirm the lesson asks learners to observe facts, explain uncertainty, and write invalidation conditions without giving trading instructions.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_03_reviewer_note_05",
+          "sourceNoteId": "local_course_rewrite_batch_01_03_reviewer_note_05",
+          "dimension": "pedagogy",
+          "jsonPath": "lessonRows[2].realReviewerNotes[4]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Confirm the practice task is answerable from a historical chart and can be graded by evidence quality rather than market outcome.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_03_reviewer_note_06",
+          "sourceNoteId": "local_course_rewrite_batch_01_03_reviewer_note_06",
+          "dimension": "release_gate",
+          "jsonPath": "lessonRows[2].realReviewerNotes[5]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Keep approvalStatus not_approved and learnerFacingRelease false until a separate human reviewer signs off.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        }
+      ],
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: High-frequency trading",
+          "url": "https://en.wikipedia.org/wiki/High-frequency_trading",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Limit Order Books",
+          "url": "https://arxiv.org/abs/1012.0349v4",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "realHumanInput": false
+    },
+    {
+      "handoffRank": 4,
+      "queueRank": 4,
+      "actionId": "high-risk-lesson-notes:local_course_rewrite_batch_01_04",
+      "actionType": "high_risk_lesson_reviewer_notes",
+      "module": "市场结构",
+      "topic": "高低点",
+      "targetId": "local_course_rewrite_batch_01_04",
+      "lessonId": "lesson_knv2_0062",
+      "draftPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "lessonRows[3]",
+      "blockedItems": 6,
+      "mappedFieldCount": 6,
+      "fieldKind": "six_real_reviewer_note_slots",
+      "reviewerTask": "Fill six real reviewer notes in the mapped note slots after real review.",
+      "notePaths": [
+        {
+          "noteId": "real_local_course_rewrite_batch_01_04_reviewer_note_01",
+          "sourceNoteId": "local_course_rewrite_batch_01_04_reviewer_note_01",
+          "dimension": "source_fit",
+          "jsonPath": "lessonRows[3].realReviewerNotes[0]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Check whether 市场结构 / 高低点 is truly supported by the listed local course evidence: VWAP.pdf; Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf; 突破白皮书研究（整理）(1).pdf.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_04_reviewer_note_02",
+          "sourceNoteId": "local_course_rewrite_batch_01_04_reviewer_note_02",
+          "dimension": "originality",
+          "jsonPath": "lessonRows[3].realReviewerNotes[1]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Review the rewritten intro, concept teaching, synthesis, and practice prompt against the highest-overlap local source; current max overlap is 0.0503.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_04_reviewer_note_03",
+          "sourceNoteId": "local_course_rewrite_batch_01_04_reviewer_note_03",
+          "dimension": "green_source_boundary",
+          "jsonPath": "lessonRows[3].realReviewerNotes[2]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Before learner-facing use, replace private-course dependency with public/green citations or keep the lesson blocked.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_04_reviewer_note_04",
+          "sourceNoteId": "local_course_rewrite_batch_01_04_reviewer_note_04",
+          "dimension": "education_safety",
+          "jsonPath": "lessonRows[3].realReviewerNotes[3]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Confirm the lesson asks learners to observe facts, explain uncertainty, and write invalidation conditions without giving trading instructions.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_04_reviewer_note_05",
+          "sourceNoteId": "local_course_rewrite_batch_01_04_reviewer_note_05",
+          "dimension": "pedagogy",
+          "jsonPath": "lessonRows[3].realReviewerNotes[4]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Confirm the practice task is answerable from a historical chart and can be graded by evidence quality rather than market outcome.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_04_reviewer_note_06",
+          "sourceNoteId": "local_course_rewrite_batch_01_04_reviewer_note_06",
+          "dimension": "release_gate",
+          "jsonPath": "lessonRows[3].realReviewerNotes[5]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Keep approvalStatus not_approved and learnerFacingRelease false until a separate human reviewer signs off.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        }
+      ],
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: High-frequency trading",
+          "url": "https://en.wikipedia.org/wiki/High-frequency_trading",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Limit Order Books",
+          "url": "https://arxiv.org/abs/1012.0349v4",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "realHumanInput": false
+    },
+    {
+      "handoffRank": 5,
+      "queueRank": 5,
+      "actionId": "high-risk-lesson-notes:local_course_rewrite_batch_01_07",
+      "actionType": "high_risk_lesson_reviewer_notes",
+      "module": "趋势",
+      "topic": "趋势回调",
+      "targetId": "local_course_rewrite_batch_01_07",
+      "lessonId": "lesson_knv2_0016",
+      "draftPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "lessonRows[4]",
+      "blockedItems": 6,
+      "mappedFieldCount": 6,
+      "fieldKind": "six_real_reviewer_note_slots",
+      "reviewerTask": "Fill six real reviewer notes in the mapped note slots after real review.",
+      "notePaths": [
+        {
+          "noteId": "real_local_course_rewrite_batch_01_07_reviewer_note_01",
+          "sourceNoteId": "local_course_rewrite_batch_01_07_reviewer_note_01",
+          "dimension": "source_fit",
+          "jsonPath": "lessonRows[4].realReviewerNotes[0]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Check whether 趋势 / 趋势回调 is truly supported by the listed local course evidence: VWAP.pdf; Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf; 突破白皮书研究（整理）(1).pdf.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_07_reviewer_note_02",
+          "sourceNoteId": "local_course_rewrite_batch_01_07_reviewer_note_02",
+          "dimension": "originality",
+          "jsonPath": "lessonRows[4].realReviewerNotes[1]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Review the rewritten intro, concept teaching, synthesis, and practice prompt against the highest-overlap local source; current max overlap is 0.0503.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_07_reviewer_note_03",
+          "sourceNoteId": "local_course_rewrite_batch_01_07_reviewer_note_03",
+          "dimension": "green_source_boundary",
+          "jsonPath": "lessonRows[4].realReviewerNotes[2]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Before learner-facing use, replace private-course dependency with public/green citations or keep the lesson blocked.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_07_reviewer_note_04",
+          "sourceNoteId": "local_course_rewrite_batch_01_07_reviewer_note_04",
+          "dimension": "education_safety",
+          "jsonPath": "lessonRows[4].realReviewerNotes[3]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Confirm the lesson asks learners to observe facts, explain uncertainty, and write invalidation conditions without giving trading instructions.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_07_reviewer_note_05",
+          "sourceNoteId": "local_course_rewrite_batch_01_07_reviewer_note_05",
+          "dimension": "pedagogy",
+          "jsonPath": "lessonRows[4].realReviewerNotes[4]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Confirm the practice task is answerable from a historical chart and can be graded by evidence quality rather than market outcome.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_07_reviewer_note_06",
+          "sourceNoteId": "local_course_rewrite_batch_01_07_reviewer_note_06",
+          "dimension": "release_gate",
+          "jsonPath": "lessonRows[4].realReviewerNotes[5]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Keep approvalStatus not_approved and learnerFacingRelease false until a separate human reviewer signs off.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        }
+      ],
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Dow theory",
+          "url": "https://en.wikipedia.org/wiki/Dow_theory",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Generating Alpha: A Hybrid AI-Driven Trading System Integrating Technical Analysis, Machine Learning and Financial Sentiment for Regime-Adaptive Equity Strategies",
+          "url": "https://arxiv.org/abs/2601.19504v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "realHumanInput": false
+    },
+    {
+      "handoffRank": 6,
+      "queueRank": 6,
+      "actionId": "high-risk-lesson-notes:local_course_rewrite_batch_01_08",
+      "actionType": "high_risk_lesson_reviewer_notes",
+      "module": "趋势",
+      "topic": "趋势回调",
+      "targetId": "local_course_rewrite_batch_01_08",
+      "lessonId": "lesson_knv2_0076",
+      "draftPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "lessonRows[5]",
+      "blockedItems": 6,
+      "mappedFieldCount": 6,
+      "fieldKind": "six_real_reviewer_note_slots",
+      "reviewerTask": "Fill six real reviewer notes in the mapped note slots after real review.",
+      "notePaths": [
+        {
+          "noteId": "real_local_course_rewrite_batch_01_08_reviewer_note_01",
+          "sourceNoteId": "local_course_rewrite_batch_01_08_reviewer_note_01",
+          "dimension": "source_fit",
+          "jsonPath": "lessonRows[5].realReviewerNotes[0]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Check whether 趋势 / 趋势回调 is truly supported by the listed local course evidence: VWAP.pdf; Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf; 突破白皮书研究（整理）(1).pdf.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_08_reviewer_note_02",
+          "sourceNoteId": "local_course_rewrite_batch_01_08_reviewer_note_02",
+          "dimension": "originality",
+          "jsonPath": "lessonRows[5].realReviewerNotes[1]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Review the rewritten intro, concept teaching, synthesis, and practice prompt against the highest-overlap local source; current max overlap is 0.0503.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_08_reviewer_note_03",
+          "sourceNoteId": "local_course_rewrite_batch_01_08_reviewer_note_03",
+          "dimension": "green_source_boundary",
+          "jsonPath": "lessonRows[5].realReviewerNotes[2]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Before learner-facing use, replace private-course dependency with public/green citations or keep the lesson blocked.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_08_reviewer_note_04",
+          "sourceNoteId": "local_course_rewrite_batch_01_08_reviewer_note_04",
+          "dimension": "education_safety",
+          "jsonPath": "lessonRows[5].realReviewerNotes[3]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Confirm the lesson asks learners to observe facts, explain uncertainty, and write invalidation conditions without giving trading instructions.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_08_reviewer_note_05",
+          "sourceNoteId": "local_course_rewrite_batch_01_08_reviewer_note_05",
+          "dimension": "pedagogy",
+          "jsonPath": "lessonRows[5].realReviewerNotes[4]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Confirm the practice task is answerable from a historical chart and can be graded by evidence quality rather than market outcome.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_08_reviewer_note_06",
+          "sourceNoteId": "local_course_rewrite_batch_01_08_reviewer_note_06",
+          "dimension": "release_gate",
+          "jsonPath": "lessonRows[5].realReviewerNotes[5]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Keep approvalStatus not_approved and learnerFacingRelease false until a separate human reviewer signs off.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        }
+      ],
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Dow theory",
+          "url": "https://en.wikipedia.org/wiki/Dow_theory",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Generating Alpha: A Hybrid AI-Driven Trading System Integrating Technical Analysis, Machine Learning and Financial Sentiment for Regime-Adaptive Equity Strategies",
+          "url": "https://arxiv.org/abs/2601.19504v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "realHumanInput": false
+    },
+    {
+      "handoffRank": 7,
+      "queueRank": 7,
+      "actionId": "high-risk-lesson-notes:local_course_rewrite_batch_01_09",
+      "actionType": "high_risk_lesson_reviewer_notes",
+      "module": "突破",
+      "topic": "突破失败",
+      "targetId": "local_course_rewrite_batch_01_09",
+      "lessonId": "lesson_knv2_0053",
+      "draftPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "lessonRows[6]",
+      "blockedItems": 6,
+      "mappedFieldCount": 6,
+      "fieldKind": "six_real_reviewer_note_slots",
+      "reviewerTask": "Fill six real reviewer notes in the mapped note slots after real review.",
+      "notePaths": [
+        {
+          "noteId": "real_local_course_rewrite_batch_01_09_reviewer_note_01",
+          "sourceNoteId": "local_course_rewrite_batch_01_09_reviewer_note_01",
+          "dimension": "source_fit",
+          "jsonPath": "lessonRows[6].realReviewerNotes[0]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Check whether 突破 / 突破失败 is truly supported by the listed local course evidence: VWAP.pdf; Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf; 突破白皮书研究（整理）(1).pdf.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_09_reviewer_note_02",
+          "sourceNoteId": "local_course_rewrite_batch_01_09_reviewer_note_02",
+          "dimension": "originality",
+          "jsonPath": "lessonRows[6].realReviewerNotes[1]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Review the rewritten intro, concept teaching, synthesis, and practice prompt against the highest-overlap local source; current max overlap is 0.0503.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_09_reviewer_note_03",
+          "sourceNoteId": "local_course_rewrite_batch_01_09_reviewer_note_03",
+          "dimension": "green_source_boundary",
+          "jsonPath": "lessonRows[6].realReviewerNotes[2]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Before learner-facing use, replace private-course dependency with public/green citations or keep the lesson blocked.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_09_reviewer_note_04",
+          "sourceNoteId": "local_course_rewrite_batch_01_09_reviewer_note_04",
+          "dimension": "education_safety",
+          "jsonPath": "lessonRows[6].realReviewerNotes[3]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Confirm the lesson asks learners to observe facts, explain uncertainty, and write invalidation conditions without giving trading instructions.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_09_reviewer_note_05",
+          "sourceNoteId": "local_course_rewrite_batch_01_09_reviewer_note_05",
+          "dimension": "pedagogy",
+          "jsonPath": "lessonRows[6].realReviewerNotes[4]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Confirm the practice task is answerable from a historical chart and can be graded by evidence quality rather than market outcome.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_09_reviewer_note_06",
+          "sourceNoteId": "local_course_rewrite_batch_01_09_reviewer_note_06",
+          "dimension": "release_gate",
+          "jsonPath": "lessonRows[6].realReviewerNotes[5]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Keep approvalStatus not_approved and learnerFacingRelease false until a separate human reviewer signs off.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        }
+      ],
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "DeepSupp: Attention-Driven Correlation Pattern Analysis for Dynamic Time Series Support and Resistance Levels Identification",
+          "url": "https://arxiv.org/abs/2507.01971v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "realHumanInput": false
+    },
+    {
+      "handoffRank": 8,
+      "queueRank": 8,
+      "actionId": "high-risk-lesson-notes:local_course_rewrite_batch_01_10",
+      "actionType": "high_risk_lesson_reviewer_notes",
+      "module": "突破",
+      "topic": "突破失败",
+      "targetId": "local_course_rewrite_batch_01_10",
+      "lessonId": "lesson_knv2_0113",
+      "draftPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "lessonRows[7]",
+      "blockedItems": 6,
+      "mappedFieldCount": 6,
+      "fieldKind": "six_real_reviewer_note_slots",
+      "reviewerTask": "Fill six real reviewer notes in the mapped note slots after real review.",
+      "notePaths": [
+        {
+          "noteId": "real_local_course_rewrite_batch_01_10_reviewer_note_01",
+          "sourceNoteId": "local_course_rewrite_batch_01_10_reviewer_note_01",
+          "dimension": "source_fit",
+          "jsonPath": "lessonRows[7].realReviewerNotes[0]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Check whether 突破 / 突破失败 is truly supported by the listed local course evidence: VWAP.pdf; Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf; 突破白皮书研究（整理）(1).pdf.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_10_reviewer_note_02",
+          "sourceNoteId": "local_course_rewrite_batch_01_10_reviewer_note_02",
+          "dimension": "originality",
+          "jsonPath": "lessonRows[7].realReviewerNotes[1]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Review the rewritten intro, concept teaching, synthesis, and practice prompt against the highest-overlap local source; current max overlap is 0.0503.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_10_reviewer_note_03",
+          "sourceNoteId": "local_course_rewrite_batch_01_10_reviewer_note_03",
+          "dimension": "green_source_boundary",
+          "jsonPath": "lessonRows[7].realReviewerNotes[2]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Before learner-facing use, replace private-course dependency with public/green citations or keep the lesson blocked.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_10_reviewer_note_04",
+          "sourceNoteId": "local_course_rewrite_batch_01_10_reviewer_note_04",
+          "dimension": "education_safety",
+          "jsonPath": "lessonRows[7].realReviewerNotes[3]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Confirm the lesson asks learners to observe facts, explain uncertainty, and write invalidation conditions without giving trading instructions.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_10_reviewer_note_05",
+          "sourceNoteId": "local_course_rewrite_batch_01_10_reviewer_note_05",
+          "dimension": "pedagogy",
+          "jsonPath": "lessonRows[7].realReviewerNotes[4]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Confirm the practice task is answerable from a historical chart and can be graded by evidence quality rather than market outcome.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_10_reviewer_note_06",
+          "sourceNoteId": "local_course_rewrite_batch_01_10_reviewer_note_06",
+          "dimension": "release_gate",
+          "jsonPath": "lessonRows[7].realReviewerNotes[5]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Keep approvalStatus not_approved and learnerFacingRelease false until a separate human reviewer signs off.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        }
+      ],
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "DeepSupp: Attention-Driven Correlation Pattern Analysis for Dynamic Time Series Support and Resistance Levels Identification",
+          "url": "https://arxiv.org/abs/2507.01971v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "realHumanInput": false
+    },
+    {
+      "handoffRank": 9,
+      "queueRank": 9,
+      "actionId": "high-risk-lesson-notes:local_course_rewrite_batch_01_13",
+      "actionType": "high_risk_lesson_reviewer_notes",
+      "module": "反转",
+      "topic": "反转失败",
+      "targetId": "local_course_rewrite_batch_01_13",
+      "lessonId": "lesson_knv2_0055",
+      "draftPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "lessonRows[8]",
+      "blockedItems": 6,
+      "mappedFieldCount": 6,
+      "fieldKind": "six_real_reviewer_note_slots",
+      "reviewerTask": "Fill six real reviewer notes in the mapped note slots after real review.",
+      "notePaths": [
+        {
+          "noteId": "real_local_course_rewrite_batch_01_13_reviewer_note_01",
+          "sourceNoteId": "local_course_rewrite_batch_01_13_reviewer_note_01",
+          "dimension": "source_fit",
+          "jsonPath": "lessonRows[8].realReviewerNotes[0]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Check whether 反转 / 反转失败 is truly supported by the listed local course evidence: VWAP.pdf; Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf; 突破白皮书研究（整理）(1).pdf.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_13_reviewer_note_02",
+          "sourceNoteId": "local_course_rewrite_batch_01_13_reviewer_note_02",
+          "dimension": "originality",
+          "jsonPath": "lessonRows[8].realReviewerNotes[1]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Review the rewritten intro, concept teaching, synthesis, and practice prompt against the highest-overlap local source; current max overlap is 0.0503.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_13_reviewer_note_03",
+          "sourceNoteId": "local_course_rewrite_batch_01_13_reviewer_note_03",
+          "dimension": "green_source_boundary",
+          "jsonPath": "lessonRows[8].realReviewerNotes[2]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Before learner-facing use, replace private-course dependency with public/green citations or keep the lesson blocked.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_13_reviewer_note_04",
+          "sourceNoteId": "local_course_rewrite_batch_01_13_reviewer_note_04",
+          "dimension": "education_safety",
+          "jsonPath": "lessonRows[8].realReviewerNotes[3]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Confirm the lesson asks learners to observe facts, explain uncertainty, and write invalidation conditions without giving trading instructions.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_13_reviewer_note_05",
+          "sourceNoteId": "local_course_rewrite_batch_01_13_reviewer_note_05",
+          "dimension": "pedagogy",
+          "jsonPath": "lessonRows[8].realReviewerNotes[4]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Confirm the practice task is answerable from a historical chart and can be graded by evidence quality rather than market outcome.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_13_reviewer_note_06",
+          "sourceNoteId": "local_course_rewrite_batch_01_13_reviewer_note_06",
+          "dimension": "release_gate",
+          "jsonPath": "lessonRows[8].realReviewerNotes[5]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Keep approvalStatus not_approved and learnerFacingRelease false until a separate human reviewer signs off.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        }
+      ],
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: Double top and double bottom",
+          "url": "https://en.wikipedia.org/wiki/Double_top_and_double_bottom",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Stock Chart Pattern recognition with Deep Learning",
+          "url": "https://arxiv.org/abs/1808.00418v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "realHumanInput": false
+    },
+    {
+      "handoffRank": 10,
+      "queueRank": 10,
+      "actionId": "high-risk-lesson-notes:local_course_rewrite_batch_01_14",
+      "actionType": "high_risk_lesson_reviewer_notes",
+      "module": "反转",
+      "topic": "反转失败",
+      "targetId": "local_course_rewrite_batch_01_14",
+      "lessonId": "lesson_knv2_0115",
+      "draftPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "lessonRows[9]",
+      "blockedItems": 6,
+      "mappedFieldCount": 6,
+      "fieldKind": "six_real_reviewer_note_slots",
+      "reviewerTask": "Fill six real reviewer notes in the mapped note slots after real review.",
+      "notePaths": [
+        {
+          "noteId": "real_local_course_rewrite_batch_01_14_reviewer_note_01",
+          "sourceNoteId": "local_course_rewrite_batch_01_14_reviewer_note_01",
+          "dimension": "source_fit",
+          "jsonPath": "lessonRows[9].realReviewerNotes[0]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Check whether 反转 / 反转失败 is truly supported by the listed local course evidence: VWAP.pdf; Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf; 突破白皮书研究（整理）(1).pdf.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_14_reviewer_note_02",
+          "sourceNoteId": "local_course_rewrite_batch_01_14_reviewer_note_02",
+          "dimension": "originality",
+          "jsonPath": "lessonRows[9].realReviewerNotes[1]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Review the rewritten intro, concept teaching, synthesis, and practice prompt against the highest-overlap local source; current max overlap is 0.0503.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_14_reviewer_note_03",
+          "sourceNoteId": "local_course_rewrite_batch_01_14_reviewer_note_03",
+          "dimension": "green_source_boundary",
+          "jsonPath": "lessonRows[9].realReviewerNotes[2]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Before learner-facing use, replace private-course dependency with public/green citations or keep the lesson blocked.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_14_reviewer_note_04",
+          "sourceNoteId": "local_course_rewrite_batch_01_14_reviewer_note_04",
+          "dimension": "education_safety",
+          "jsonPath": "lessonRows[9].realReviewerNotes[3]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Confirm the lesson asks learners to observe facts, explain uncertainty, and write invalidation conditions without giving trading instructions.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_14_reviewer_note_05",
+          "sourceNoteId": "local_course_rewrite_batch_01_14_reviewer_note_05",
+          "dimension": "pedagogy",
+          "jsonPath": "lessonRows[9].realReviewerNotes[4]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Confirm the practice task is answerable from a historical chart and can be graded by evidence quality rather than market outcome.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_01_14_reviewer_note_06",
+          "sourceNoteId": "local_course_rewrite_batch_01_14_reviewer_note_06",
+          "dimension": "release_gate",
+          "jsonPath": "lessonRows[9].realReviewerNotes[5]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Keep approvalStatus not_approved and learnerFacingRelease false until a separate human reviewer signs off.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        }
+      ],
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: Double top and double bottom",
+          "url": "https://en.wikipedia.org/wiki/Double_top_and_double_bottom",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Stock Chart Pattern recognition with Deep Learning",
+          "url": "https://arxiv.org/abs/1808.00418v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "realHumanInput": false
+    },
+    {
+      "handoffRank": 11,
+      "queueRank": 11,
+      "actionId": "high-risk-lesson-notes:local_course_rewrite_batch_02_03",
+      "actionType": "high_risk_lesson_reviewer_notes",
+      "module": "市场结构",
+      "topic": "高低点",
+      "targetId": "local_course_rewrite_batch_02_03",
+      "lessonId": "lesson_knv2_0122",
+      "draftPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "lessonRows[10]",
+      "blockedItems": 6,
+      "mappedFieldCount": 6,
+      "fieldKind": "six_real_reviewer_note_slots",
+      "reviewerTask": "Fill six real reviewer notes in the mapped note slots after real review.",
+      "notePaths": [
+        {
+          "noteId": "real_local_course_rewrite_batch_02_03_reviewer_note_01",
+          "sourceNoteId": "local_course_rewrite_batch_02_03_reviewer_note_01",
+          "dimension": "source_fit",
+          "jsonPath": "lessonRows[10].realReviewerNotes[0]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Check whether 市场结构 / 高低点 is truly supported by the listed local course evidence: VWAP.pdf; Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf; 突破白皮书研究（整理）(1).pdf.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_02_03_reviewer_note_02",
+          "sourceNoteId": "local_course_rewrite_batch_02_03_reviewer_note_02",
+          "dimension": "originality",
+          "jsonPath": "lessonRows[10].realReviewerNotes[1]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Review the rewritten intro, concept teaching, synthesis, and practice prompt against the highest-overlap local source; current max overlap is 0.0503.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_02_03_reviewer_note_03",
+          "sourceNoteId": "local_course_rewrite_batch_02_03_reviewer_note_03",
+          "dimension": "green_source_boundary",
+          "jsonPath": "lessonRows[10].realReviewerNotes[2]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Before learner-facing use, replace private-course dependency with public/green citations or keep the lesson blocked.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_02_03_reviewer_note_04",
+          "sourceNoteId": "local_course_rewrite_batch_02_03_reviewer_note_04",
+          "dimension": "education_safety",
+          "jsonPath": "lessonRows[10].realReviewerNotes[3]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Confirm the lesson asks learners to observe facts, explain uncertainty, and write invalidation conditions without giving trading instructions.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_02_03_reviewer_note_05",
+          "sourceNoteId": "local_course_rewrite_batch_02_03_reviewer_note_05",
+          "dimension": "pedagogy",
+          "jsonPath": "lessonRows[10].realReviewerNotes[4]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Confirm the practice task is answerable from a historical chart and can be graded by evidence quality rather than market outcome.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_02_03_reviewer_note_06",
+          "sourceNoteId": "local_course_rewrite_batch_02_03_reviewer_note_06",
+          "dimension": "release_gate",
+          "jsonPath": "lessonRows[10].realReviewerNotes[5]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Keep approvalStatus not_approved and learnerFacingRelease false until a separate human reviewer signs off.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        }
+      ],
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: High-frequency trading",
+          "url": "https://en.wikipedia.org/wiki/High-frequency_trading",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Limit Order Books",
+          "url": "https://arxiv.org/abs/1012.0349v4",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "realHumanInput": false
+    },
+    {
+      "handoffRank": 12,
+      "queueRank": 12,
+      "actionId": "high-risk-lesson-notes:local_course_rewrite_batch_02_04",
+      "actionType": "high_risk_lesson_reviewer_notes",
+      "module": "市场结构",
+      "topic": "高低点",
+      "targetId": "local_course_rewrite_batch_02_04",
+      "lessonId": "lesson_knv2_0182",
+      "draftPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "lessonRows[11]",
+      "blockedItems": 6,
+      "mappedFieldCount": 6,
+      "fieldKind": "six_real_reviewer_note_slots",
+      "reviewerTask": "Fill six real reviewer notes in the mapped note slots after real review.",
+      "notePaths": [
+        {
+          "noteId": "real_local_course_rewrite_batch_02_04_reviewer_note_01",
+          "sourceNoteId": "local_course_rewrite_batch_02_04_reviewer_note_01",
+          "dimension": "source_fit",
+          "jsonPath": "lessonRows[11].realReviewerNotes[0]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Check whether 市场结构 / 高低点 is truly supported by the listed local course evidence: VWAP.pdf; Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf; 突破白皮书研究（整理）(1).pdf.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_02_04_reviewer_note_02",
+          "sourceNoteId": "local_course_rewrite_batch_02_04_reviewer_note_02",
+          "dimension": "originality",
+          "jsonPath": "lessonRows[11].realReviewerNotes[1]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Review the rewritten intro, concept teaching, synthesis, and practice prompt against the highest-overlap local source; current max overlap is 0.0503.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_02_04_reviewer_note_03",
+          "sourceNoteId": "local_course_rewrite_batch_02_04_reviewer_note_03",
+          "dimension": "green_source_boundary",
+          "jsonPath": "lessonRows[11].realReviewerNotes[2]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Before learner-facing use, replace private-course dependency with public/green citations or keep the lesson blocked.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_02_04_reviewer_note_04",
+          "sourceNoteId": "local_course_rewrite_batch_02_04_reviewer_note_04",
+          "dimension": "education_safety",
+          "jsonPath": "lessonRows[11].realReviewerNotes[3]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Confirm the lesson asks learners to observe facts, explain uncertainty, and write invalidation conditions without giving trading instructions.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_02_04_reviewer_note_05",
+          "sourceNoteId": "local_course_rewrite_batch_02_04_reviewer_note_05",
+          "dimension": "pedagogy",
+          "jsonPath": "lessonRows[11].realReviewerNotes[4]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Confirm the practice task is answerable from a historical chart and can be graded by evidence quality rather than market outcome.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        },
+        {
+          "noteId": "real_local_course_rewrite_batch_02_04_reviewer_note_06",
+          "sourceNoteId": "local_course_rewrite_batch_02_04_reviewer_note_06",
+          "dimension": "release_gate",
+          "jsonPath": "lessonRows[11].realReviewerNotes[5]",
+          "requiredFields": [
+            "reviewerName",
+            "reviewedAt",
+            "decision",
+            "evidenceChecked",
+            "reviewerNote"
+          ],
+          "allowedDecisionValues": [
+            "accept_as_education_only_after_public_grounding",
+            "accept_with_rewrite_required",
+            "keep_blocked_private_source_dependency",
+            "reject_until_source_replacement",
+            "reject_safety_or_originality_risk"
+          ],
+          "prompt": "Keep approvalStatus not_approved and learnerFacingRelease false until a separate human reviewer signs off.",
+          "noteStatus": "blank_waiting_real_reviewer",
+          "readyForApprovalGate": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved"
+        }
+      ],
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: High-frequency trading",
+          "url": "https://en.wikipedia.org/wiki/High-frequency_trading",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Limit Order Books",
+          "url": "https://arxiv.org/abs/1012.0349v4",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "realHumanInput": false
+    },
+    {
+      "handoffRank": 13,
+      "queueRank": 13,
+      "actionId": "direct-source-decision:direct_source_candidate_resolution_01",
+      "actionType": "direct_source_candidate_decision",
+      "module": "突破",
+      "topic": "假突破",
+      "targetId": "direct_source_candidate_resolution_01",
+      "lessonId": "local_course_rewrite_batch_04_10",
+      "draftPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "directSourceDecisionRows[0]",
+      "blockedItems": 1,
+      "mappedFieldCount": 1,
+      "fieldKind": "one_direct_source_decision_row",
+      "reviewerTask": "Fill reviewerName, reviewedAt, decision, evidenceChecked, and reviewerNote for this direct-source decision.",
+      "requiredFields": [
+        "reviewerName",
+        "reviewedAt",
+        "decision",
+        "evidenceChecked",
+        "reviewerNote"
+      ],
+      "allowedDecisionValues": [
+        "keep_private_source_reviewer_only",
+        "replace_with_public_refs_for_context_only",
+        "reject_public_refs_as_not_fit",
+        "mark_unrecoverable_until_new_source"
+      ],
+      "privateOrDirectCandidateSource": "Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf",
+      "publicReplacementRefSamples": [
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "realHumanInput": false
+    },
+    {
+      "handoffRank": 14,
+      "queueRank": 14,
+      "actionId": "direct-source-decision:direct_source_candidate_resolution_02",
+      "actionType": "direct_source_candidate_decision",
+      "module": "突破",
+      "topic": "假突破",
+      "targetId": "direct_source_candidate_resolution_02",
+      "lessonId": "local_course_rewrite_batch_05_10",
+      "draftPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "directSourceDecisionRows[1]",
+      "blockedItems": 1,
+      "mappedFieldCount": 1,
+      "fieldKind": "one_direct_source_decision_row",
+      "reviewerTask": "Fill reviewerName, reviewedAt, decision, evidenceChecked, and reviewerNote for this direct-source decision.",
+      "requiredFields": [
+        "reviewerName",
+        "reviewedAt",
+        "decision",
+        "evidenceChecked",
+        "reviewerNote"
+      ],
+      "allowedDecisionValues": [
+        "keep_private_source_reviewer_only",
+        "replace_with_public_refs_for_context_only",
+        "reject_public_refs_as_not_fit",
+        "mark_unrecoverable_until_new_source"
+      ],
+      "privateOrDirectCandidateSource": "Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf",
+      "publicReplacementRefSamples": [
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "realHumanInput": false
+    },
+    {
+      "handoffRank": 15,
+      "queueRank": 15,
+      "actionId": "direct-source-decision:direct_source_candidate_resolution_03",
+      "actionType": "direct_source_candidate_decision",
+      "module": "市场结构",
+      "topic": "高低点",
+      "targetId": "direct_source_candidate_resolution_03",
+      "lessonId": "local_course_rewrite_batch_01_03",
+      "draftPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "directSourceDecisionRows[2]",
+      "blockedItems": 1,
+      "mappedFieldCount": 1,
+      "fieldKind": "one_direct_source_decision_row",
+      "reviewerTask": "Fill reviewerName, reviewedAt, decision, evidenceChecked, and reviewerNote for this direct-source decision.",
+      "requiredFields": [
+        "reviewerName",
+        "reviewedAt",
+        "decision",
+        "evidenceChecked",
+        "reviewerNote"
+      ],
+      "allowedDecisionValues": [
+        "keep_private_source_reviewer_only",
+        "replace_with_public_refs_for_context_only",
+        "reject_public_refs_as_not_fit",
+        "mark_unrecoverable_until_new_source"
+      ],
+      "privateOrDirectCandidateSource": "Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf",
+      "publicReplacementRefSamples": [
+        {
+          "name": "Wikipedia: High-frequency trading",
+          "url": "https://en.wikipedia.org/wiki/High-frequency_trading",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Market maker",
+          "url": "https://en.wikipedia.org/wiki/Market_maker",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "realHumanInput": false
+    },
+    {
+      "handoffRank": 16,
+      "queueRank": 16,
+      "actionId": "direct-source-decision:direct_source_candidate_resolution_04",
+      "actionType": "direct_source_candidate_decision",
+      "module": "市场结构",
+      "topic": "高低点",
+      "targetId": "direct_source_candidate_resolution_04",
+      "lessonId": "local_course_rewrite_batch_01_04",
+      "draftPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "directSourceDecisionRows[3]",
+      "blockedItems": 1,
+      "mappedFieldCount": 1,
+      "fieldKind": "one_direct_source_decision_row",
+      "reviewerTask": "Fill reviewerName, reviewedAt, decision, evidenceChecked, and reviewerNote for this direct-source decision.",
+      "requiredFields": [
+        "reviewerName",
+        "reviewedAt",
+        "decision",
+        "evidenceChecked",
+        "reviewerNote"
+      ],
+      "allowedDecisionValues": [
+        "keep_private_source_reviewer_only",
+        "replace_with_public_refs_for_context_only",
+        "reject_public_refs_as_not_fit",
+        "mark_unrecoverable_until_new_source"
+      ],
+      "privateOrDirectCandidateSource": "Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf",
+      "publicReplacementRefSamples": [
+        {
+          "name": "Wikipedia: High-frequency trading",
+          "url": "https://en.wikipedia.org/wiki/High-frequency_trading",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Market maker",
+          "url": "https://en.wikipedia.org/wiki/Market_maker",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "realHumanInput": false
+    },
+    {
+      "handoffRank": 17,
+      "queueRank": 17,
+      "actionId": "direct-source-decision:direct_source_candidate_resolution_05",
+      "actionType": "direct_source_candidate_decision",
+      "module": "趋势",
+      "topic": "趋势回调",
+      "targetId": "direct_source_candidate_resolution_05",
+      "lessonId": "local_course_rewrite_batch_01_07",
+      "draftPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "directSourceDecisionRows[4]",
+      "blockedItems": 1,
+      "mappedFieldCount": 1,
+      "fieldKind": "one_direct_source_decision_row",
+      "reviewerTask": "Fill reviewerName, reviewedAt, decision, evidenceChecked, and reviewerNote for this direct-source decision.",
+      "requiredFields": [
+        "reviewerName",
+        "reviewedAt",
+        "decision",
+        "evidenceChecked",
+        "reviewerNote"
+      ],
+      "allowedDecisionValues": [
+        "keep_private_source_reviewer_only",
+        "replace_with_public_refs_for_context_only",
+        "reject_public_refs_as_not_fit",
+        "mark_unrecoverable_until_new_source"
+      ],
+      "privateOrDirectCandidateSource": "Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf",
+      "publicReplacementRefSamples": [
+        {
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Dow theory",
+          "url": "https://en.wikipedia.org/wiki/Dow_theory",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Trend following trading",
+          "url": "https://en.wikipedia.org/wiki/Trend_following_trading",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "realHumanInput": false
+    },
+    {
+      "handoffRank": 18,
+      "queueRank": 18,
+      "actionId": "source-fit-batch:node-public-source-fit-batch-001",
+      "actionType": "source_fit_packet_rows",
+      "module": "K线与价格行为",
+      "topic": "",
+      "targetId": "node-public-source-fit-batch-001",
+      "lessonId": "",
+      "draftPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_001_INPUT_COPY_TEMPLATE.json",
+      "jsonPath": "reviewRows[*]",
+      "blockedItems": 60,
+      "mappedFieldCount": 60,
+      "fieldKind": "source_fit_packet_review_rows",
+      "reviewerTask": "Fill reviewerDecision, sourceFitNotes, citationUse, reviewerName, reviewedAt, and realHumanInput for each packet row after real review.",
+      "packetInputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_001_INPUT_COPY_TEMPLATE.json",
+      "packetInputExists": true,
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: Candlestick chart",
+          "url": "",
+          "family": "Wikipedia",
+          "excerptPolicy": ""
+        },
+        {
+          "name": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+          "url": "",
+          "family": "Open Research",
+          "excerptPolicy": ""
+        },
+        {
+          "name": "Wikipedia: Candlestick pattern",
+          "url": "",
+          "family": "Wikipedia",
+          "excerptPolicy": ""
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "realHumanInput": false
+    },
+    {
+      "handoffRank": 19,
+      "queueRank": 19,
+      "actionId": "source-fit-batch:node-public-source-fit-batch-002",
+      "actionType": "source_fit_packet_rows",
+      "module": "K线与价格行为",
+      "topic": "",
+      "targetId": "node-public-source-fit-batch-002",
+      "lessonId": "",
+      "draftPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_002_INPUT_COPY_TEMPLATE.json",
+      "jsonPath": "reviewRows[*]",
+      "blockedItems": 60,
+      "mappedFieldCount": 60,
+      "fieldKind": "source_fit_packet_review_rows",
+      "reviewerTask": "Fill reviewerDecision, sourceFitNotes, citationUse, reviewerName, reviewedAt, and realHumanInput for each packet row after real review.",
+      "packetInputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_002_INPUT_COPY_TEMPLATE.json",
+      "packetInputExists": true,
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: Candlestick chart",
+          "url": "",
+          "family": "Wikipedia",
+          "excerptPolicy": ""
+        },
+        {
+          "name": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+          "url": "",
+          "family": "Open Research",
+          "excerptPolicy": ""
+        },
+        {
+          "name": "Wikipedia: Candlestick pattern",
+          "url": "",
+          "family": "Wikipedia",
+          "excerptPolicy": ""
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "realHumanInput": false
+    },
+    {
+      "handoffRank": 20,
+      "queueRank": 20,
+      "actionId": "source-fit-batch:node-public-source-fit-batch-003",
+      "actionType": "source_fit_packet_rows",
+      "module": "K线与价格行为",
+      "topic": "",
+      "targetId": "node-public-source-fit-batch-003",
+      "lessonId": "",
+      "draftPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_003_INPUT_COPY_TEMPLATE.json",
+      "jsonPath": "reviewRows[*]",
+      "blockedItems": 60,
+      "mappedFieldCount": 60,
+      "fieldKind": "source_fit_packet_review_rows",
+      "reviewerTask": "Fill reviewerDecision, sourceFitNotes, citationUse, reviewerName, reviewedAt, and realHumanInput for each packet row after real review.",
+      "packetInputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_003_INPUT_COPY_TEMPLATE.json",
+      "packetInputExists": true,
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: Candlestick chart",
+          "url": "",
+          "family": "Wikipedia",
+          "excerptPolicy": ""
+        },
+        {
+          "name": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+          "url": "",
+          "family": "Open Research",
+          "excerptPolicy": ""
+        },
+        {
+          "name": "Wikipedia: Candlestick pattern",
+          "url": "",
+          "family": "Wikipedia",
+          "excerptPolicy": ""
+        }
+      ],
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "realHumanInput": false
+    }
+  ],
+  "reviewerChecklist": [
+    "Open the mapped draftPath before editing; use jsonPath to find the exact field group.",
+    "For high-risk lesson rows, fill all six notePaths and keep every readyForApprovalGate value false until separate approval.",
+    "For direct-source rows, decide private/direct-source handling without approving learner citations.",
+    "For source-fit packet rows, use the packet input copy template and do not edit generated packet source files.",
+    "Every reviewer note must preserve no setup, no signal, no future outcome, no strategy edge, and no real-money action boundaries.",
+    "Do not copy Codex self-review text, private PDF prose, Wikipedia prose, or public source prose into the real reviewer note."
+  ],
+  "commands": [
+    "npm.cmd run build:knowledge-first-reviewer-field-map",
+    "npm.cmd run check:knowledge-first-reviewer-field-map",
+    "npm.cmd run check:knowledge-first-reviewer-action-handoff",
+    "npm.cmd run validate:local-course-high-risk-real-reviewer-overlay-input",
+    "npm.cmd run validate:knowledge-node-public-source-fit-review-input",
+    "npm.cmd run verify"
+  ],
+  "completionRule": "This field map is complete when the first 20 handoff actions are mapped to concrete human-owned input fields: 72 high-risk reviewer note fields, 5 direct-source decision fields, and 180 source-fit packet rows. It does not fill, generate, approve, or write real reviewer input.",
+  "boundary": "Knowledge first reviewer field map is reviewer-facing education-only operations material. It maps absorbed local course evidence, public/Wikipedia/official context, high-risk lesson note slots, direct-source decision rows, and source-fit packet review rows to human-owned input fields; it does not generate reviewer notes, approve copied text, approve learner-facing citations, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, or production readiness."
+}

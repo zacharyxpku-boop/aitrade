@@ -1,0 +1,1228 @@
+{
+  "generatedAt": "2026-06-22T04:50:18.780Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "applyMode": "dry_run",
+  "applyStatus": "blocked_no_ready_merge_rows",
+  "packetId": "node-public-source-fit-batch-020-packet",
+  "batchId": "node-public-source-fit-batch-020",
+  "module": "交易区间",
+  "packetInputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_020_INPUT_COPY_TEMPLATE.json",
+  "packetValidationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_020_INPUT_COPY_TEMPLATE_VALIDATION.json",
+  "fullDraftPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+  "mergePreviewPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_020_MERGE_PREVIEW.json",
+  "totalRows": 60,
+  "readyToMergeRows": 0,
+  "blockedRows": 60,
+  "writtenRows": 0,
+  "mergeAllowedNow": false,
+  "writeAllowedNow": false,
+  "manualAuthorizationRequired": true,
+  "fullDraftRows": 1638,
+  "applyRows": [
+    {
+      "packetRowIndex": 0,
+      "targetFullDraftRowIndex": 816,
+      "reviewId": "knv2_0222::corpus_0472",
+      "nodeId": "knv2_0222",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 1,
+      "targetFullDraftRowIndex": 817,
+      "reviewId": "knv2_0222::corpus_0017",
+      "nodeId": "knv2_0222",
+      "documentId": "corpus_0017",
+      "sourceName": "Federal Reserve FOMC Calendars",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 2,
+      "targetFullDraftRowIndex": 818,
+      "reviewId": "knv2_0222::corpus_0396",
+      "nodeId": "knv2_0222",
+      "documentId": "corpus_0396",
+      "sourceName": "A singular stochastic control approach for optimal pairs trading with proportional transaction costs",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 3,
+      "targetFullDraftRowIndex": 819,
+      "reviewId": "knv2_0222::corpus_0447",
+      "nodeId": "knv2_0222",
+      "documentId": "corpus_0447",
+      "sourceName": "Wikipedia: Bollinger Bands",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 4,
+      "targetFullDraftRowIndex": 820,
+      "reviewId": "knv2_0222::corpus_0445",
+      "nodeId": "knv2_0222",
+      "documentId": "corpus_0445",
+      "sourceName": "Wikipedia: Market trend",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 5,
+      "targetFullDraftRowIndex": 821,
+      "reviewId": "knv2_0222::corpus_0439",
+      "nodeId": "knv2_0222",
+      "documentId": "corpus_0439",
+      "sourceName": "Wikipedia: Mean reversion (finance)",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 6,
+      "targetFullDraftRowIndex": 888,
+      "reviewId": "knv2_0234::corpus_0472",
+      "nodeId": "knv2_0234",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 7,
+      "targetFullDraftRowIndex": 889,
+      "reviewId": "knv2_0234::corpus_0017",
+      "nodeId": "knv2_0234",
+      "documentId": "corpus_0017",
+      "sourceName": "Federal Reserve FOMC Calendars",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 8,
+      "targetFullDraftRowIndex": 890,
+      "reviewId": "knv2_0234::corpus_0396",
+      "nodeId": "knv2_0234",
+      "documentId": "corpus_0396",
+      "sourceName": "A singular stochastic control approach for optimal pairs trading with proportional transaction costs",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 9,
+      "targetFullDraftRowIndex": 891,
+      "reviewId": "knv2_0234::corpus_0447",
+      "nodeId": "knv2_0234",
+      "documentId": "corpus_0447",
+      "sourceName": "Wikipedia: Bollinger Bands",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 10,
+      "targetFullDraftRowIndex": 892,
+      "reviewId": "knv2_0234::corpus_0445",
+      "nodeId": "knv2_0234",
+      "documentId": "corpus_0445",
+      "sourceName": "Wikipedia: Market trend",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 11,
+      "targetFullDraftRowIndex": 893,
+      "reviewId": "knv2_0234::corpus_0439",
+      "nodeId": "knv2_0234",
+      "documentId": "corpus_0439",
+      "sourceName": "Wikipedia: Mean reversion (finance)",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 12,
+      "targetFullDraftRowIndex": 954,
+      "reviewId": "knv2_0246::corpus_0472",
+      "nodeId": "knv2_0246",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 13,
+      "targetFullDraftRowIndex": 955,
+      "reviewId": "knv2_0246::corpus_0017",
+      "nodeId": "knv2_0246",
+      "documentId": "corpus_0017",
+      "sourceName": "Federal Reserve FOMC Calendars",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 14,
+      "targetFullDraftRowIndex": 956,
+      "reviewId": "knv2_0246::corpus_0396",
+      "nodeId": "knv2_0246",
+      "documentId": "corpus_0396",
+      "sourceName": "A singular stochastic control approach for optimal pairs trading with proportional transaction costs",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 15,
+      "targetFullDraftRowIndex": 957,
+      "reviewId": "knv2_0246::corpus_0447",
+      "nodeId": "knv2_0246",
+      "documentId": "corpus_0447",
+      "sourceName": "Wikipedia: Bollinger Bands",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 16,
+      "targetFullDraftRowIndex": 958,
+      "reviewId": "knv2_0246::corpus_0445",
+      "nodeId": "knv2_0246",
+      "documentId": "corpus_0445",
+      "sourceName": "Wikipedia: Market trend",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 17,
+      "targetFullDraftRowIndex": 959,
+      "reviewId": "knv2_0246::corpus_0439",
+      "nodeId": "knv2_0246",
+      "documentId": "corpus_0439",
+      "sourceName": "Wikipedia: Mean reversion (finance)",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 18,
+      "targetFullDraftRowIndex": 1026,
+      "reviewId": "knv2_0258::corpus_0472",
+      "nodeId": "knv2_0258",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 19,
+      "targetFullDraftRowIndex": 1027,
+      "reviewId": "knv2_0258::corpus_0017",
+      "nodeId": "knv2_0258",
+      "documentId": "corpus_0017",
+      "sourceName": "Federal Reserve FOMC Calendars",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 20,
+      "targetFullDraftRowIndex": 1028,
+      "reviewId": "knv2_0258::corpus_0396",
+      "nodeId": "knv2_0258",
+      "documentId": "corpus_0396",
+      "sourceName": "A singular stochastic control approach for optimal pairs trading with proportional transaction costs",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 21,
+      "targetFullDraftRowIndex": 1029,
+      "reviewId": "knv2_0258::corpus_0447",
+      "nodeId": "knv2_0258",
+      "documentId": "corpus_0447",
+      "sourceName": "Wikipedia: Bollinger Bands",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 22,
+      "targetFullDraftRowIndex": 1030,
+      "reviewId": "knv2_0258::corpus_0445",
+      "nodeId": "knv2_0258",
+      "documentId": "corpus_0445",
+      "sourceName": "Wikipedia: Market trend",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 23,
+      "targetFullDraftRowIndex": 1031,
+      "reviewId": "knv2_0258::corpus_0439",
+      "nodeId": "knv2_0258",
+      "documentId": "corpus_0439",
+      "sourceName": "Wikipedia: Mean reversion (finance)",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 24,
+      "targetFullDraftRowIndex": 1098,
+      "reviewId": "knv2_0270::corpus_0472",
+      "nodeId": "knv2_0270",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 25,
+      "targetFullDraftRowIndex": 1099,
+      "reviewId": "knv2_0270::corpus_0017",
+      "nodeId": "knv2_0270",
+      "documentId": "corpus_0017",
+      "sourceName": "Federal Reserve FOMC Calendars",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 26,
+      "targetFullDraftRowIndex": 1100,
+      "reviewId": "knv2_0270::corpus_0396",
+      "nodeId": "knv2_0270",
+      "documentId": "corpus_0396",
+      "sourceName": "A singular stochastic control approach for optimal pairs trading with proportional transaction costs",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 27,
+      "targetFullDraftRowIndex": 1101,
+      "reviewId": "knv2_0270::corpus_0447",
+      "nodeId": "knv2_0270",
+      "documentId": "corpus_0447",
+      "sourceName": "Wikipedia: Bollinger Bands",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 28,
+      "targetFullDraftRowIndex": 1102,
+      "reviewId": "knv2_0270::corpus_0445",
+      "nodeId": "knv2_0270",
+      "documentId": "corpus_0445",
+      "sourceName": "Wikipedia: Market trend",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 29,
+      "targetFullDraftRowIndex": 1103,
+      "reviewId": "knv2_0270::corpus_0439",
+      "nodeId": "knv2_0270",
+      "documentId": "corpus_0439",
+      "sourceName": "Wikipedia: Mean reversion (finance)",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 30,
+      "targetFullDraftRowIndex": 1170,
+      "reviewId": "knv2_0282::corpus_0472",
+      "nodeId": "knv2_0282",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 31,
+      "targetFullDraftRowIndex": 1171,
+      "reviewId": "knv2_0282::corpus_0017",
+      "nodeId": "knv2_0282",
+      "documentId": "corpus_0017",
+      "sourceName": "Federal Reserve FOMC Calendars",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 32,
+      "targetFullDraftRowIndex": 1172,
+      "reviewId": "knv2_0282::corpus_0396",
+      "nodeId": "knv2_0282",
+      "documentId": "corpus_0396",
+      "sourceName": "A singular stochastic control approach for optimal pairs trading with proportional transaction costs",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 33,
+      "targetFullDraftRowIndex": 1173,
+      "reviewId": "knv2_0282::corpus_0447",
+      "nodeId": "knv2_0282",
+      "documentId": "corpus_0447",
+      "sourceName": "Wikipedia: Bollinger Bands",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 34,
+      "targetFullDraftRowIndex": 1174,
+      "reviewId": "knv2_0282::corpus_0445",
+      "nodeId": "knv2_0282",
+      "documentId": "corpus_0445",
+      "sourceName": "Wikipedia: Market trend",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 35,
+      "targetFullDraftRowIndex": 1175,
+      "reviewId": "knv2_0282::corpus_0439",
+      "nodeId": "knv2_0282",
+      "documentId": "corpus_0439",
+      "sourceName": "Wikipedia: Mean reversion (finance)",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 36,
+      "targetFullDraftRowIndex": 1242,
+      "reviewId": "knv2_0294::corpus_0472",
+      "nodeId": "knv2_0294",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 37,
+      "targetFullDraftRowIndex": 1243,
+      "reviewId": "knv2_0294::corpus_0017",
+      "nodeId": "knv2_0294",
+      "documentId": "corpus_0017",
+      "sourceName": "Federal Reserve FOMC Calendars",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 38,
+      "targetFullDraftRowIndex": 1244,
+      "reviewId": "knv2_0294::corpus_0396",
+      "nodeId": "knv2_0294",
+      "documentId": "corpus_0396",
+      "sourceName": "A singular stochastic control approach for optimal pairs trading with proportional transaction costs",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 39,
+      "targetFullDraftRowIndex": 1245,
+      "reviewId": "knv2_0294::corpus_0447",
+      "nodeId": "knv2_0294",
+      "documentId": "corpus_0447",
+      "sourceName": "Wikipedia: Bollinger Bands",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 40,
+      "targetFullDraftRowIndex": 1246,
+      "reviewId": "knv2_0294::corpus_0445",
+      "nodeId": "knv2_0294",
+      "documentId": "corpus_0445",
+      "sourceName": "Wikipedia: Market trend",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 41,
+      "targetFullDraftRowIndex": 1247,
+      "reviewId": "knv2_0294::corpus_0439",
+      "nodeId": "knv2_0294",
+      "documentId": "corpus_0439",
+      "sourceName": "Wikipedia: Mean reversion (finance)",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 42,
+      "targetFullDraftRowIndex": 1308,
+      "reviewId": "knv2_0306::corpus_0472",
+      "nodeId": "knv2_0306",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 43,
+      "targetFullDraftRowIndex": 1309,
+      "reviewId": "knv2_0306::corpus_0017",
+      "nodeId": "knv2_0306",
+      "documentId": "corpus_0017",
+      "sourceName": "Federal Reserve FOMC Calendars",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 44,
+      "targetFullDraftRowIndex": 1310,
+      "reviewId": "knv2_0306::corpus_0396",
+      "nodeId": "knv2_0306",
+      "documentId": "corpus_0396",
+      "sourceName": "A singular stochastic control approach for optimal pairs trading with proportional transaction costs",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 45,
+      "targetFullDraftRowIndex": 1311,
+      "reviewId": "knv2_0306::corpus_0447",
+      "nodeId": "knv2_0306",
+      "documentId": "corpus_0447",
+      "sourceName": "Wikipedia: Bollinger Bands",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 46,
+      "targetFullDraftRowIndex": 1312,
+      "reviewId": "knv2_0306::corpus_0445",
+      "nodeId": "knv2_0306",
+      "documentId": "corpus_0445",
+      "sourceName": "Wikipedia: Market trend",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 47,
+      "targetFullDraftRowIndex": 1313,
+      "reviewId": "knv2_0306::corpus_0439",
+      "nodeId": "knv2_0306",
+      "documentId": "corpus_0439",
+      "sourceName": "Wikipedia: Mean reversion (finance)",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 48,
+      "targetFullDraftRowIndex": 1380,
+      "reviewId": "knv2_0318::corpus_0472",
+      "nodeId": "knv2_0318",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 49,
+      "targetFullDraftRowIndex": 1381,
+      "reviewId": "knv2_0318::corpus_0017",
+      "nodeId": "knv2_0318",
+      "documentId": "corpus_0017",
+      "sourceName": "Federal Reserve FOMC Calendars",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 50,
+      "targetFullDraftRowIndex": 1382,
+      "reviewId": "knv2_0318::corpus_0396",
+      "nodeId": "knv2_0318",
+      "documentId": "corpus_0396",
+      "sourceName": "A singular stochastic control approach for optimal pairs trading with proportional transaction costs",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 51,
+      "targetFullDraftRowIndex": 1383,
+      "reviewId": "knv2_0318::corpus_0447",
+      "nodeId": "knv2_0318",
+      "documentId": "corpus_0447",
+      "sourceName": "Wikipedia: Bollinger Bands",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 52,
+      "targetFullDraftRowIndex": 1384,
+      "reviewId": "knv2_0318::corpus_0445",
+      "nodeId": "knv2_0318",
+      "documentId": "corpus_0445",
+      "sourceName": "Wikipedia: Market trend",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 53,
+      "targetFullDraftRowIndex": 1385,
+      "reviewId": "knv2_0318::corpus_0439",
+      "nodeId": "knv2_0318",
+      "documentId": "corpus_0439",
+      "sourceName": "Wikipedia: Mean reversion (finance)",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 54,
+      "targetFullDraftRowIndex": 1452,
+      "reviewId": "knv2_0330::corpus_0472",
+      "nodeId": "knv2_0330",
+      "documentId": "corpus_0472",
+      "sourceName": "Wikipedia: Algorithmic trading",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 55,
+      "targetFullDraftRowIndex": 1453,
+      "reviewId": "knv2_0330::corpus_0017",
+      "nodeId": "knv2_0330",
+      "documentId": "corpus_0017",
+      "sourceName": "Federal Reserve FOMC Calendars",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 56,
+      "targetFullDraftRowIndex": 1454,
+      "reviewId": "knv2_0330::corpus_0396",
+      "nodeId": "knv2_0330",
+      "documentId": "corpus_0396",
+      "sourceName": "A singular stochastic control approach for optimal pairs trading with proportional transaction costs",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 57,
+      "targetFullDraftRowIndex": 1455,
+      "reviewId": "knv2_0330::corpus_0447",
+      "nodeId": "knv2_0330",
+      "documentId": "corpus_0447",
+      "sourceName": "Wikipedia: Bollinger Bands",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 58,
+      "targetFullDraftRowIndex": 1456,
+      "reviewId": "knv2_0330::corpus_0445",
+      "nodeId": "knv2_0330",
+      "documentId": "corpus_0445",
+      "sourceName": "Wikipedia: Market trend",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 59,
+      "targetFullDraftRowIndex": 1457,
+      "reviewId": "knv2_0330::corpus_0439",
+      "nodeId": "knv2_0330",
+      "documentId": "corpus_0439",
+      "sourceName": "Wikipedia: Mean reversion (finance)",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    }
+  ],
+  "nextStep": "Fill packet input copy with real reviewer decisions, validate the packet input, rebuild merge preview, then rerun this dry-run.",
+  "boundary": "Packet merge apply is a guarded reviewer-input merge pipeline. Dry-run mode writes no full draft changes. It does not create human judgments, approve copied text, approve learner-facing citations, write lessons, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, or production readiness."
+}

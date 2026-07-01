@@ -1,0 +1,114 @@
+{
+  "generatedAt": "2026-06-21T18:43:57.424Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "launchDashboardReady": true,
+  "internalTrialReady": false,
+  "launchReady": false,
+  "realStatusPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "realStatusOverlayPresent": true,
+  "completeNoteCards": 12,
+  "readyForSeparateApprovalCandidates": 12,
+  "approvalReviewCandidates": 12,
+  "directCandidatesUnresolved": 0,
+  "releaseNegativeCases": 8,
+  "releaseNegativeCasesPassed": 8,
+  "releaseNegativeCasesFailed": 0,
+  "badGroundingRefs": 0,
+  "uniqueAllGreenSources": 252,
+  "rewriteWorkbenchItems": 48,
+  "readinessLanes": [
+    {
+      "name": "Knowledge source boundary",
+      "status": "passing",
+      "evidence": "252 unique green sources; 0 bad grounding refs.",
+      "blocker": "None in current generated grounding report.",
+      "nextAction": "Keep running green grounding before and after any evidence changes."
+    },
+    {
+      "name": "Reviewer execution scaffolding",
+      "status": "ready",
+      "evidence": "41 human execution steps; 72 blank note fields.",
+      "blocker": "Scaffolding is not real review evidence.",
+      "nextAction": "Use the bundle as the human reviewer start page."
+    },
+    {
+      "name": "Codex self-review notes",
+      "status": "self_review_complete_not_approval",
+      "evidence": "12 complete note cards; overlay present:true.",
+      "blocker": "Self-review is not final human approval.",
+      "nextAction": "Use these notes as intake evidence, then require separate human approval review."
+    },
+    {
+      "name": "Direct source candidates",
+      "status": "resolved_as_boundary_context",
+      "evidence": "0 direct candidates unresolved.",
+      "blocker": "Direct candidates were downgraded or resolved for boundary/context use.",
+      "nextAction": "Keep direct evidence claims out of lesson prose until separate approval review."
+    },
+    {
+      "name": "Evidence intake",
+      "status": "candidate_intake_ready",
+      "evidence": "12 ready-for-separate-approval candidates.",
+      "blocker": "Candidates still require separate approval review.",
+      "nextAction": "Send candidates to a separate human approval review; do not publish from intake."
+    },
+    {
+      "name": "Separate approval",
+      "status": "blocked_waiting_separate_human_approval",
+      "evidence": "12 approval-review candidates; 0 auto approvals.",
+      "blocker": "No automatic approval is allowed.",
+      "nextAction": "A separate human approver must review candidates before any release review."
+    },
+    {
+      "name": "Release drift guard",
+      "status": "passing_not_release",
+      "evidence": "8/8 negative cases passed.",
+      "blocker": "Passing negative cases prevent drift but do not grant release readiness.",
+      "nextAction": "Keep release drift guard passing after any future approval-gate changes."
+    },
+    {
+      "name": "Internal trial readiness",
+      "status": "not_ready",
+      "evidence": "internalTrialReady:false by design after self-review.",
+      "blocker": "Separate human approval and release-review evidence are still absent.",
+      "nextAction": "Complete separate approval before considering internal trial."
+    },
+    {
+      "name": "Launch readiness",
+      "status": "not_ready_non_production",
+      "evidence": "launchReady:false and productionReady:false.",
+      "blocker": "The project remains education-only and non-production.",
+      "nextAction": "Do not create launch or production claims from generated review scaffolding."
+    }
+  ],
+  "blockers": [
+    "Codex self-review notes are not final human approval.",
+    "12 candidates still need separate human approval review.",
+    "No learner-facing release review has been performed.",
+    "Release negative cases pass, which confirms drift is blocked rather than readiness granted.",
+    "The rewrite workbench remains reviewer-facing structural draft work, not learner-facing final course material."
+  ],
+  "requiredNextActions": [
+    "Treat the Codex self-review overlay as intake evidence, not approval.",
+    "Run a separate human approval review for the 12 candidate lesson cards.",
+    "Re-check source fit, factual claims, copying risk, and boundary wording during that separate review.",
+    "Keep every lesson structural_draft until a later release-review process exists.",
+    "Keep release readiness negative cases passing after every approval-gate change.",
+    "Continue hand-authoring or approving broader structural_draft lessons before any later launch claim."
+  ],
+  "sourceReports": {
+    "dryRunPacket": "docs/FIRST_REVIEWER_DRY_RUN_PACKET.json",
+    "progressDashboard": "docs/FIRST_REVIEWER_PROGRESS_DASHBOARD.json",
+    "humanExecutionBundle": "docs/FIRST_REVIEWER_HUMAN_EXECUTION_BUNDLE.json",
+    "evidenceIntakeSummary": "docs/FIRST_REVIEWER_EVIDENCE_INTAKE_SUMMARY.json",
+    "separateApprovalGate": "docs/FIRST_REVIEWER_SEPARATE_APPROVAL_REVIEW_GATE.json",
+    "releaseNegativeCases": "docs/FIRST_REVIEWER_RELEASE_READINESS_NEGATIVE_CASES.json",
+    "greenGrounding": "docs/GREEN_SOURCE_GROUNDING.json",
+    "rewriteWorkbench": "docs/LESSON_REWRITE_WORKBENCH.json"
+  },
+  "boundary": "This launch readiness dashboard is reviewer-facing operations scaffolding only. It does not create docs/LESSON_BATCH_REVIEW_STATUS.json, fill human notes, approve lessons, publish learner-facing content, change grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, guide real-money decisions, or make the product production-ready."
+}

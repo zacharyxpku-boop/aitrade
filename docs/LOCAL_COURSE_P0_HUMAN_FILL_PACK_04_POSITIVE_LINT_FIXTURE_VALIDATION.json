@@ -1,0 +1,66 @@
+{
+  "generatedAt": "2026-06-21T22:43:49.095Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "validationStatus": "ready_for_overlay_apply",
+  "fixtureOnly": true,
+  "inputPath": "docs\\LOCAL_COURSE_P0_HUMAN_FILL_PACK_04_POSITIVE_LINT_FIXTURE.json",
+  "totalEntries": 4,
+  "readyEntries": 4,
+  "blockedEntries": 0,
+  "forbiddenHitEntries": 0,
+  "validationRows": [
+    {
+      "id": "input_copy_absorb_manual_transcription_01",
+      "taskId": "absorb_manual_transcription_01",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "pageNumber": 1,
+      "validationStatus": "ready_for_overlay_apply",
+      "readyForOverlayApply": true,
+      "missingFields": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_04_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_02",
+      "taskId": "absorb_manual_transcription_02",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "pageNumber": 2,
+      "validationStatus": "ready_for_overlay_apply",
+      "readyForOverlayApply": true,
+      "missingFields": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_04_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_03",
+      "taskId": "absorb_manual_transcription_03",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "pageNumber": 3,
+      "validationStatus": "ready_for_overlay_apply",
+      "readyForOverlayApply": true,
+      "missingFields": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_04_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_04",
+      "taskId": "absorb_manual_transcription_04",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "pageNumber": 4,
+      "validationStatus": "ready_for_overlay_apply",
+      "readyForOverlayApply": true,
+      "missingFields": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_04_input_then_apply_dry_run_only"
+    }
+  ],
+  "nextStep": "Apply validated input to the P0 review overlay, then rerun overlay and absorption readiness gates.",
+  "boundary": "P0 review input validation is a dry-run gate. It does not write overlay changes, approve learner-facing release, provide trading advice, stock recommendations, live signals, return promises, broker workflows, automation, or real-money guidance."
+}

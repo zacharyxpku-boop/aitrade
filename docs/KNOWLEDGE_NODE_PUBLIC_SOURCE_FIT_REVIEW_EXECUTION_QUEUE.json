@@ -1,0 +1,2647 @@
+{
+  "generatedAt": "2026-06-22T03:14:24.338Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "queueStatus": "node_public_source_fit_review_execution_queue_ready_release_blocked",
+  "queueMode": "module_batch_review_for_public_source_fit_candidates",
+  "batchSize": 60,
+  "modules": 12,
+  "candidateTargetNodes": 273,
+  "reviewRows": 1638,
+  "validationStatus": "blocked_missing_real_reviewer_source_fit_input",
+  "readyRows": 0,
+  "blockedRows": 1638,
+  "missingFieldRows": 1638,
+  "forbiddenHitRows": 0,
+  "realHumanInputEntries": 0,
+  "learnerCitationApprovedRows": 0,
+  "copiedTextApprovedRows": 0,
+  "totalBatches": 35,
+  "blockedBatches": 35,
+  "readyBatches": 0,
+  "firstPriorityBatches": [
+    {
+      "order": 1,
+      "batchId": "node-public-source-fit-batch-001",
+      "module": "K线与价格行为",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "wikipediaRows": 50,
+      "officialRows": 0,
+      "estimatedMinutes": 150,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0003::corpus_1584",
+          "nodeId": "knv2_0003",
+          "title": "K线与价格行为：单根K线误区 教学节点 1",
+          "topic": "单根K线误区",
+          "documentId": "corpus_1584",
+          "name": "Wikipedia: Candlestick chart",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0003::corpus_0301",
+          "nodeId": "knv2_0003",
+          "title": "K线与价格行为：单根K线误区 教学节点 1",
+          "topic": "单根K线误区",
+          "documentId": "corpus_0301",
+          "name": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+          "family": "Open Research",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0003::corpus_0406",
+          "nodeId": "knv2_0003",
+          "title": "K线与价格行为：单根K线误区 教学节点 1",
+          "topic": "单根K线误区",
+          "documentId": "corpus_0406",
+          "name": "Wikipedia: Candlestick pattern",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0003::corpus_0409",
+          "nodeId": "knv2_0003",
+          "title": "K线与价格行为：单根K线误区 教学节点 1",
+          "topic": "单根K线误区",
+          "documentId": "corpus_0409",
+          "name": "Wikipedia: Chart pattern",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 2,
+      "batchId": "node-public-source-fit-batch-002",
+      "module": "K线与价格行为",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "wikipediaRows": 50,
+      "officialRows": 0,
+      "estimatedMinutes": 150,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0123::corpus_1584",
+          "nodeId": "knv2_0123",
+          "title": "K线与价格行为：单根K线误区 教学节点 11",
+          "topic": "单根K线误区",
+          "documentId": "corpus_1584",
+          "name": "Wikipedia: Candlestick chart",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0123::corpus_0301",
+          "nodeId": "knv2_0123",
+          "title": "K线与价格行为：单根K线误区 教学节点 11",
+          "topic": "单根K线误区",
+          "documentId": "corpus_0301",
+          "name": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+          "family": "Open Research",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0123::corpus_0406",
+          "nodeId": "knv2_0123",
+          "title": "K线与价格行为：单根K线误区 教学节点 11",
+          "topic": "单根K线误区",
+          "documentId": "corpus_0406",
+          "name": "Wikipedia: Candlestick pattern",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0123::corpus_0409",
+          "nodeId": "knv2_0123",
+          "title": "K线与价格行为：单根K线误区 教学节点 11",
+          "topic": "单根K线误区",
+          "documentId": "corpus_0409",
+          "name": "Wikipedia: Chart pattern",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 3,
+      "batchId": "node-public-source-fit-batch-003",
+      "module": "K线与价格行为",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "wikipediaRows": 50,
+      "officialRows": 0,
+      "estimatedMinutes": 150,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0243::corpus_1584",
+          "nodeId": "knv2_0243",
+          "title": "K线与价格行为：单根K线误区 教学节点 21",
+          "topic": "单根K线误区",
+          "documentId": "corpus_1584",
+          "name": "Wikipedia: Candlestick chart",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0243::corpus_0301",
+          "nodeId": "knv2_0243",
+          "title": "K线与价格行为：单根K线误区 教学节点 21",
+          "topic": "单根K线误区",
+          "documentId": "corpus_0301",
+          "name": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+          "family": "Open Research",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0243::corpus_0406",
+          "nodeId": "knv2_0243",
+          "title": "K线与价格行为：单根K线误区 教学节点 21",
+          "topic": "单根K线误区",
+          "documentId": "corpus_0406",
+          "name": "Wikipedia: Candlestick pattern",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0243::corpus_0409",
+          "nodeId": "knv2_0243",
+          "title": "K线与价格行为：单根K线误区 教学节点 21",
+          "topic": "单根K线误区",
+          "documentId": "corpus_0409",
+          "name": "Wikipedia: Chart pattern",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 4,
+      "batchId": "node-public-source-fit-batch-004",
+      "module": "突破",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "wikipediaRows": 40,
+      "officialRows": 10,
+      "estimatedMinutes": 150,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0041::corpus_0409",
+          "nodeId": "knv2_0041",
+          "title": "突破：突破回踩 教学节点 4",
+          "topic": "突破回踩",
+          "documentId": "corpus_0409",
+          "name": "Wikipedia: Chart pattern",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0041::corpus_0155",
+          "nodeId": "knv2_0041",
+          "title": "突破：突破回踩 教学节点 4",
+          "topic": "突破回踩",
+          "documentId": "corpus_0155",
+          "name": "BLS Real Earnings News Release",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0041::corpus_0938",
+          "nodeId": "knv2_0041",
+          "title": "突破：突破回踩 教学节点 4",
+          "topic": "突破回踩",
+          "documentId": "corpus_0938",
+          "name": "adityaalle1/Portfolio-Risk-Analysis- README",
+          "family": "Permissive/Open Source",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0041::corpus_1115",
+          "nodeId": "knv2_0041",
+          "title": "突破：突破回踩 教学节点 4",
+          "topic": "突破回踩",
+          "documentId": "corpus_1115",
+          "name": "Wikipedia: Gap (chart pattern)",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 5,
+      "batchId": "node-public-source-fit-batch-005",
+      "module": "突破",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "wikipediaRows": 40,
+      "officialRows": 10,
+      "estimatedMinutes": 150,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0161::corpus_0409",
+          "nodeId": "knv2_0161",
+          "title": "突破：突破回踩 教学节点 14",
+          "topic": "突破回踩",
+          "documentId": "corpus_0409",
+          "name": "Wikipedia: Chart pattern",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0161::corpus_0155",
+          "nodeId": "knv2_0161",
+          "title": "突破：突破回踩 教学节点 14",
+          "topic": "突破回踩",
+          "documentId": "corpus_0155",
+          "name": "BLS Real Earnings News Release",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0161::corpus_0938",
+          "nodeId": "knv2_0161",
+          "title": "突破：突破回踩 教学节点 14",
+          "topic": "突破回踩",
+          "documentId": "corpus_0938",
+          "name": "adityaalle1/Portfolio-Risk-Analysis- README",
+          "family": "Permissive/Open Source",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0161::corpus_1115",
+          "nodeId": "knv2_0161",
+          "title": "突破：突破回踩 教学节点 14",
+          "topic": "突破回踩",
+          "documentId": "corpus_1115",
+          "name": "Wikipedia: Gap (chart pattern)",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 6,
+      "batchId": "node-public-source-fit-batch-006",
+      "module": "突破",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 7,
+      "reviewRows": 42,
+      "readyRows": 0,
+      "blockedRows": 42,
+      "wikipediaRows": 28,
+      "officialRows": 7,
+      "estimatedMinutes": 105,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0281::corpus_0409",
+          "nodeId": "knv2_0281",
+          "title": "突破：突破回踩 教学节点 24",
+          "topic": "突破回踩",
+          "documentId": "corpus_0409",
+          "name": "Wikipedia: Chart pattern",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0281::corpus_0155",
+          "nodeId": "knv2_0281",
+          "title": "突破：突破回踩 教学节点 24",
+          "topic": "突破回踩",
+          "documentId": "corpus_0155",
+          "name": "BLS Real Earnings News Release",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0281::corpus_0938",
+          "nodeId": "knv2_0281",
+          "title": "突破：突破回踩 教学节点 24",
+          "topic": "突破回踩",
+          "documentId": "corpus_0938",
+          "name": "adityaalle1/Portfolio-Risk-Analysis- README",
+          "family": "Permissive/Open Source",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0281::corpus_1115",
+          "nodeId": "knv2_0281",
+          "title": "突破：突破回踩 教学节点 24",
+          "topic": "突破回踩",
+          "documentId": "corpus_1115",
+          "name": "Wikipedia: Gap (chart pattern)",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    }
+  ],
+  "moduleRows": [
+    {
+      "order": 1,
+      "module": "K线与价格行为",
+      "targetNodes": 30,
+      "reviewRows": 180,
+      "readyRows": 0,
+      "blockedRows": 180,
+      "wikipediaCandidates": 150,
+      "officialCandidates": 0,
+      "attentionRows": 0,
+      "batchCount": 3,
+      "nextBatchId": "node-public-source-fit-batch-001",
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextGate": "fill_real_reviewer_source_fit_decisions_for_module_batches"
+    },
+    {
+      "order": 2,
+      "module": "突破",
+      "targetNodes": 27,
+      "reviewRows": 162,
+      "readyRows": 0,
+      "blockedRows": 162,
+      "wikipediaCandidates": 108,
+      "officialCandidates": 27,
+      "attentionRows": 0,
+      "batchCount": 3,
+      "nextBatchId": "node-public-source-fit-batch-004",
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextGate": "fill_real_reviewer_source_fit_decisions_for_module_batches"
+    },
+    {
+      "order": 3,
+      "module": "多周期分析",
+      "targetNodes": 22,
+      "reviewRows": 132,
+      "readyRows": 0,
+      "blockedRows": 132,
+      "wikipediaCandidates": 88,
+      "officialCandidates": 22,
+      "attentionRows": 0,
+      "batchCount": 3,
+      "nextBatchId": "node-public-source-fit-batch-007",
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextGate": "fill_real_reviewer_source_fit_decisions_for_module_batches"
+    },
+    {
+      "order": 4,
+      "module": "反转",
+      "targetNodes": 22,
+      "reviewRows": 132,
+      "readyRows": 0,
+      "blockedRows": 132,
+      "wikipediaCandidates": 88,
+      "officialCandidates": 22,
+      "attentionRows": 0,
+      "batchCount": 3,
+      "nextBatchId": "node-public-source-fit-batch-010",
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextGate": "fill_real_reviewer_source_fit_decisions_for_module_batches"
+    },
+    {
+      "order": 5,
+      "module": "风险管理",
+      "targetNodes": 22,
+      "reviewRows": 132,
+      "readyRows": 0,
+      "blockedRows": 132,
+      "wikipediaCandidates": 88,
+      "officialCandidates": 22,
+      "attentionRows": 0,
+      "batchCount": 3,
+      "nextBatchId": "node-public-source-fit-batch-013",
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextGate": "fill_real_reviewer_source_fit_decisions_for_module_batches"
+    },
+    {
+      "order": 6,
+      "module": "回测误区",
+      "targetNodes": 22,
+      "reviewRows": 132,
+      "readyRows": 0,
+      "blockedRows": 132,
+      "wikipediaCandidates": 88,
+      "officialCandidates": 22,
+      "attentionRows": 0,
+      "batchCount": 3,
+      "nextBatchId": "node-public-source-fit-batch-016",
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextGate": "fill_real_reviewer_source_fit_decisions_for_module_batches"
+    },
+    {
+      "order": 7,
+      "module": "交易区间",
+      "targetNodes": 22,
+      "reviewRows": 132,
+      "readyRows": 0,
+      "blockedRows": 132,
+      "wikipediaCandidates": 88,
+      "officialCandidates": 22,
+      "attentionRows": 0,
+      "batchCount": 3,
+      "nextBatchId": "node-public-source-fit-batch-019",
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextGate": "fill_real_reviewer_source_fit_decisions_for_module_batches"
+    },
+    {
+      "order": 8,
+      "module": "交易心理",
+      "targetNodes": 22,
+      "reviewRows": 132,
+      "readyRows": 0,
+      "blockedRows": 132,
+      "wikipediaCandidates": 88,
+      "officialCandidates": 22,
+      "attentionRows": 0,
+      "batchCount": 3,
+      "nextBatchId": "node-public-source-fit-batch-022",
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextGate": "fill_real_reviewer_source_fit_decisions_for_module_batches"
+    },
+    {
+      "order": 9,
+      "module": "趋势",
+      "targetNodes": 22,
+      "reviewRows": 132,
+      "readyRows": 0,
+      "blockedRows": 132,
+      "wikipediaCandidates": 88,
+      "officialCandidates": 22,
+      "attentionRows": 0,
+      "batchCount": 3,
+      "nextBatchId": "node-public-source-fit-batch-025",
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextGate": "fill_real_reviewer_source_fit_decisions_for_module_batches"
+    },
+    {
+      "order": 10,
+      "module": "市场结构",
+      "targetNodes": 22,
+      "reviewRows": 132,
+      "readyRows": 0,
+      "blockedRows": 132,
+      "wikipediaCandidates": 88,
+      "officialCandidates": 22,
+      "attentionRows": 0,
+      "batchCount": 3,
+      "nextBatchId": "node-public-source-fit-batch-028",
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextGate": "fill_real_reviewer_source_fit_decisions_for_module_batches"
+    },
+    {
+      "order": 11,
+      "module": "新闻/情绪/事件偏见",
+      "targetNodes": 22,
+      "reviewRows": 132,
+      "readyRows": 0,
+      "blockedRows": 132,
+      "wikipediaCandidates": 88,
+      "officialCandidates": 22,
+      "attentionRows": 0,
+      "batchCount": 3,
+      "nextBatchId": "node-public-source-fit-batch-031",
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextGate": "fill_real_reviewer_source_fit_decisions_for_module_batches"
+    },
+    {
+      "order": 12,
+      "module": "图表阅读基础",
+      "targetNodes": 18,
+      "reviewRows": 108,
+      "readyRows": 0,
+      "blockedRows": 108,
+      "wikipediaCandidates": 72,
+      "officialCandidates": 18,
+      "attentionRows": 0,
+      "batchCount": 2,
+      "nextBatchId": "node-public-source-fit-batch-034",
+      "reviewStatus": "blocked_missing_real_reviewer_input",
+      "nextGate": "fill_real_reviewer_source_fit_decisions_for_module_batches"
+    }
+  ],
+  "batchRows": [
+    {
+      "order": 1,
+      "batchId": "node-public-source-fit-batch-001",
+      "module": "K线与价格行为",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "wikipediaRows": 50,
+      "officialRows": 0,
+      "estimatedMinutes": 150,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0003::corpus_1584",
+          "nodeId": "knv2_0003",
+          "title": "K线与价格行为：单根K线误区 教学节点 1",
+          "topic": "单根K线误区",
+          "documentId": "corpus_1584",
+          "name": "Wikipedia: Candlestick chart",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0003::corpus_0301",
+          "nodeId": "knv2_0003",
+          "title": "K线与价格行为：单根K线误区 教学节点 1",
+          "topic": "单根K线误区",
+          "documentId": "corpus_0301",
+          "name": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+          "family": "Open Research",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0003::corpus_0406",
+          "nodeId": "knv2_0003",
+          "title": "K线与价格行为：单根K线误区 教学节点 1",
+          "topic": "单根K线误区",
+          "documentId": "corpus_0406",
+          "name": "Wikipedia: Candlestick pattern",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0003::corpus_0409",
+          "nodeId": "knv2_0003",
+          "title": "K线与价格行为：单根K线误区 教学节点 1",
+          "topic": "单根K线误区",
+          "documentId": "corpus_0409",
+          "name": "Wikipedia: Chart pattern",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 2,
+      "batchId": "node-public-source-fit-batch-002",
+      "module": "K线与价格行为",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "wikipediaRows": 50,
+      "officialRows": 0,
+      "estimatedMinutes": 150,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0123::corpus_1584",
+          "nodeId": "knv2_0123",
+          "title": "K线与价格行为：单根K线误区 教学节点 11",
+          "topic": "单根K线误区",
+          "documentId": "corpus_1584",
+          "name": "Wikipedia: Candlestick chart",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0123::corpus_0301",
+          "nodeId": "knv2_0123",
+          "title": "K线与价格行为：单根K线误区 教学节点 11",
+          "topic": "单根K线误区",
+          "documentId": "corpus_0301",
+          "name": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+          "family": "Open Research",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0123::corpus_0406",
+          "nodeId": "knv2_0123",
+          "title": "K线与价格行为：单根K线误区 教学节点 11",
+          "topic": "单根K线误区",
+          "documentId": "corpus_0406",
+          "name": "Wikipedia: Candlestick pattern",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0123::corpus_0409",
+          "nodeId": "knv2_0123",
+          "title": "K线与价格行为：单根K线误区 教学节点 11",
+          "topic": "单根K线误区",
+          "documentId": "corpus_0409",
+          "name": "Wikipedia: Chart pattern",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 3,
+      "batchId": "node-public-source-fit-batch-003",
+      "module": "K线与价格行为",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "wikipediaRows": 50,
+      "officialRows": 0,
+      "estimatedMinutes": 150,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0243::corpus_1584",
+          "nodeId": "knv2_0243",
+          "title": "K线与价格行为：单根K线误区 教学节点 21",
+          "topic": "单根K线误区",
+          "documentId": "corpus_1584",
+          "name": "Wikipedia: Candlestick chart",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0243::corpus_0301",
+          "nodeId": "knv2_0243",
+          "title": "K线与价格行为：单根K线误区 教学节点 21",
+          "topic": "单根K线误区",
+          "documentId": "corpus_0301",
+          "name": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+          "family": "Open Research",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0243::corpus_0406",
+          "nodeId": "knv2_0243",
+          "title": "K线与价格行为：单根K线误区 教学节点 21",
+          "topic": "单根K线误区",
+          "documentId": "corpus_0406",
+          "name": "Wikipedia: Candlestick pattern",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0243::corpus_0409",
+          "nodeId": "knv2_0243",
+          "title": "K线与价格行为：单根K线误区 教学节点 21",
+          "topic": "单根K线误区",
+          "documentId": "corpus_0409",
+          "name": "Wikipedia: Chart pattern",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 4,
+      "batchId": "node-public-source-fit-batch-004",
+      "module": "突破",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "wikipediaRows": 40,
+      "officialRows": 10,
+      "estimatedMinutes": 150,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0041::corpus_0409",
+          "nodeId": "knv2_0041",
+          "title": "突破：突破回踩 教学节点 4",
+          "topic": "突破回踩",
+          "documentId": "corpus_0409",
+          "name": "Wikipedia: Chart pattern",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0041::corpus_0155",
+          "nodeId": "knv2_0041",
+          "title": "突破：突破回踩 教学节点 4",
+          "topic": "突破回踩",
+          "documentId": "corpus_0155",
+          "name": "BLS Real Earnings News Release",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0041::corpus_0938",
+          "nodeId": "knv2_0041",
+          "title": "突破：突破回踩 教学节点 4",
+          "topic": "突破回踩",
+          "documentId": "corpus_0938",
+          "name": "adityaalle1/Portfolio-Risk-Analysis- README",
+          "family": "Permissive/Open Source",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0041::corpus_1115",
+          "nodeId": "knv2_0041",
+          "title": "突破：突破回踩 教学节点 4",
+          "topic": "突破回踩",
+          "documentId": "corpus_1115",
+          "name": "Wikipedia: Gap (chart pattern)",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 5,
+      "batchId": "node-public-source-fit-batch-005",
+      "module": "突破",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "wikipediaRows": 40,
+      "officialRows": 10,
+      "estimatedMinutes": 150,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0161::corpus_0409",
+          "nodeId": "knv2_0161",
+          "title": "突破：突破回踩 教学节点 14",
+          "topic": "突破回踩",
+          "documentId": "corpus_0409",
+          "name": "Wikipedia: Chart pattern",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0161::corpus_0155",
+          "nodeId": "knv2_0161",
+          "title": "突破：突破回踩 教学节点 14",
+          "topic": "突破回踩",
+          "documentId": "corpus_0155",
+          "name": "BLS Real Earnings News Release",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0161::corpus_0938",
+          "nodeId": "knv2_0161",
+          "title": "突破：突破回踩 教学节点 14",
+          "topic": "突破回踩",
+          "documentId": "corpus_0938",
+          "name": "adityaalle1/Portfolio-Risk-Analysis- README",
+          "family": "Permissive/Open Source",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0161::corpus_1115",
+          "nodeId": "knv2_0161",
+          "title": "突破：突破回踩 教学节点 14",
+          "topic": "突破回踩",
+          "documentId": "corpus_1115",
+          "name": "Wikipedia: Gap (chart pattern)",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 6,
+      "batchId": "node-public-source-fit-batch-006",
+      "module": "突破",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 7,
+      "reviewRows": 42,
+      "readyRows": 0,
+      "blockedRows": 42,
+      "wikipediaRows": 28,
+      "officialRows": 7,
+      "estimatedMinutes": 105,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0281::corpus_0409",
+          "nodeId": "knv2_0281",
+          "title": "突破：突破回踩 教学节点 24",
+          "topic": "突破回踩",
+          "documentId": "corpus_0409",
+          "name": "Wikipedia: Chart pattern",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0281::corpus_0155",
+          "nodeId": "knv2_0281",
+          "title": "突破：突破回踩 教学节点 24",
+          "topic": "突破回踩",
+          "documentId": "corpus_0155",
+          "name": "BLS Real Earnings News Release",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0281::corpus_0938",
+          "nodeId": "knv2_0281",
+          "title": "突破：突破回踩 教学节点 24",
+          "topic": "突破回踩",
+          "documentId": "corpus_0938",
+          "name": "adityaalle1/Portfolio-Risk-Analysis- README",
+          "family": "Permissive/Open Source",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0281::corpus_1115",
+          "nodeId": "knv2_0281",
+          "title": "突破：突破回踩 教学节点 24",
+          "topic": "突破回踩",
+          "documentId": "corpus_1115",
+          "name": "Wikipedia: Gap (chart pattern)",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 7,
+      "batchId": "node-public-source-fit-batch-007",
+      "module": "多周期分析",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "wikipediaRows": 40,
+      "officialRows": 10,
+      "estimatedMinutes": 150,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0104::corpus_1584",
+          "nodeId": "knv2_0104",
+          "title": "多周期分析：M15细节 教学节点 9",
+          "topic": "M15细节",
+          "documentId": "corpus_1584",
+          "name": "Wikipedia: Candlestick chart",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0104::corpus_0049",
+          "nodeId": "knv2_0104",
+          "title": "多周期分析：M15细节 教学节点 9",
+          "topic": "M15细节",
+          "documentId": "corpus_0049",
+          "name": "BEA NIPA Handbook",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0104::corpus_0225",
+          "nodeId": "knv2_0104",
+          "title": "多周期分析：M15细节 教学节点 9",
+          "topic": "M15细节",
+          "documentId": "corpus_0225",
+          "name": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+          "family": "Open Research",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0104::corpus_0409",
+          "nodeId": "knv2_0104",
+          "title": "多周期分析：M15细节 教学节点 9",
+          "topic": "M15细节",
+          "documentId": "corpus_0409",
+          "name": "Wikipedia: Chart pattern",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 8,
+      "batchId": "node-public-source-fit-batch-008",
+      "module": "多周期分析",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "wikipediaRows": 40,
+      "officialRows": 10,
+      "estimatedMinutes": 150,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0224::corpus_1584",
+          "nodeId": "knv2_0224",
+          "title": "多周期分析：M15细节 教学节点 19",
+          "topic": "M15细节",
+          "documentId": "corpus_1584",
+          "name": "Wikipedia: Candlestick chart",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0224::corpus_0049",
+          "nodeId": "knv2_0224",
+          "title": "多周期分析：M15细节 教学节点 19",
+          "topic": "M15细节",
+          "documentId": "corpus_0049",
+          "name": "BEA NIPA Handbook",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0224::corpus_0225",
+          "nodeId": "knv2_0224",
+          "title": "多周期分析：M15细节 教学节点 19",
+          "topic": "M15细节",
+          "documentId": "corpus_0225",
+          "name": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+          "family": "Open Research",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0224::corpus_0409",
+          "nodeId": "knv2_0224",
+          "title": "多周期分析：M15细节 教学节点 19",
+          "topic": "M15细节",
+          "documentId": "corpus_0409",
+          "name": "Wikipedia: Chart pattern",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 9,
+      "batchId": "node-public-source-fit-batch-009",
+      "module": "多周期分析",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 2,
+      "reviewRows": 12,
+      "readyRows": 0,
+      "blockedRows": 12,
+      "wikipediaRows": 8,
+      "officialRows": 2,
+      "estimatedMinutes": 30,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0344::corpus_1584",
+          "nodeId": "knv2_0344",
+          "title": "多周期分析：M15细节 教学节点 29",
+          "topic": "M15细节",
+          "documentId": "corpus_1584",
+          "name": "Wikipedia: Candlestick chart",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0344::corpus_0049",
+          "nodeId": "knv2_0344",
+          "title": "多周期分析：M15细节 教学节点 29",
+          "topic": "M15细节",
+          "documentId": "corpus_0049",
+          "name": "BEA NIPA Handbook",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0344::corpus_0225",
+          "nodeId": "knv2_0344",
+          "title": "多周期分析：M15细节 教学节点 29",
+          "topic": "M15细节",
+          "documentId": "corpus_0225",
+          "name": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+          "family": "Open Research",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0344::corpus_0409",
+          "nodeId": "knv2_0344",
+          "title": "多周期分析：M15细节 教学节点 29",
+          "topic": "M15细节",
+          "documentId": "corpus_0409",
+          "name": "Wikipedia: Chart pattern",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 10,
+      "batchId": "node-public-source-fit-batch-010",
+      "module": "反转",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "wikipediaRows": 40,
+      "officialRows": 10,
+      "estimatedMinutes": 150,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0103::corpus_0447",
+          "nodeId": "knv2_0103",
+          "title": "反转：回调混淆 教学节点 9",
+          "topic": "回调混淆",
+          "documentId": "corpus_0447",
+          "name": "Wikipedia: Bollinger Bands",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0103::corpus_0065",
+          "nodeId": "knv2_0103",
+          "title": "反转：回调混淆 教学节点 9",
+          "topic": "回调混淆",
+          "documentId": "corpus_0065",
+          "name": "BEA Fixed Assets",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0103::corpus_1007",
+          "nodeId": "knv2_0103",
+          "title": "反转：回调混淆 教学节点 9",
+          "topic": "回调混淆",
+          "documentId": "corpus_1007",
+          "name": "areed1192/finance-news-aggregator README",
+          "family": "Permissive/Open Source",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0103::corpus_0406",
+          "nodeId": "knv2_0103",
+          "title": "反转：回调混淆 教学节点 9",
+          "topic": "回调混淆",
+          "documentId": "corpus_0406",
+          "name": "Wikipedia: Candlestick pattern",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 11,
+      "batchId": "node-public-source-fit-batch-011",
+      "module": "反转",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "wikipediaRows": 40,
+      "officialRows": 10,
+      "estimatedMinutes": 150,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0223::corpus_0447",
+          "nodeId": "knv2_0223",
+          "title": "反转：回调混淆 教学节点 19",
+          "topic": "回调混淆",
+          "documentId": "corpus_0447",
+          "name": "Wikipedia: Bollinger Bands",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0223::corpus_0065",
+          "nodeId": "knv2_0223",
+          "title": "反转：回调混淆 教学节点 19",
+          "topic": "回调混淆",
+          "documentId": "corpus_0065",
+          "name": "BEA Fixed Assets",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0223::corpus_1007",
+          "nodeId": "knv2_0223",
+          "title": "反转：回调混淆 教学节点 19",
+          "topic": "回调混淆",
+          "documentId": "corpus_1007",
+          "name": "areed1192/finance-news-aggregator README",
+          "family": "Permissive/Open Source",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0223::corpus_0406",
+          "nodeId": "knv2_0223",
+          "title": "反转：回调混淆 教学节点 19",
+          "topic": "回调混淆",
+          "documentId": "corpus_0406",
+          "name": "Wikipedia: Candlestick pattern",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 12,
+      "batchId": "node-public-source-fit-batch-012",
+      "module": "反转",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 2,
+      "reviewRows": 12,
+      "readyRows": 0,
+      "blockedRows": 12,
+      "wikipediaRows": 8,
+      "officialRows": 2,
+      "estimatedMinutes": 30,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0343::corpus_0447",
+          "nodeId": "knv2_0343",
+          "title": "反转：回调混淆 教学节点 29",
+          "topic": "回调混淆",
+          "documentId": "corpus_0447",
+          "name": "Wikipedia: Bollinger Bands",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0343::corpus_0065",
+          "nodeId": "knv2_0343",
+          "title": "反转：回调混淆 教学节点 29",
+          "topic": "回调混淆",
+          "documentId": "corpus_0065",
+          "name": "BEA Fixed Assets",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0343::corpus_1007",
+          "nodeId": "knv2_0343",
+          "title": "反转：回调混淆 教学节点 29",
+          "topic": "回调混淆",
+          "documentId": "corpus_1007",
+          "name": "areed1192/finance-news-aggregator README",
+          "family": "Permissive/Open Source",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0343::corpus_0406",
+          "nodeId": "knv2_0343",
+          "title": "反转：回调混淆 教学节点 29",
+          "topic": "回调混淆",
+          "documentId": "corpus_0406",
+          "name": "Wikipedia: Candlestick pattern",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 13,
+      "batchId": "node-public-source-fit-batch-013",
+      "module": "风险管理",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "wikipediaRows": 40,
+      "officialRows": 10,
+      "estimatedMinutes": 150,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0107::corpus_0423",
+          "nodeId": "knv2_0107",
+          "title": "风险管理：可复盘计划 教学节点 9",
+          "topic": "可复盘计划",
+          "documentId": "corpus_0423",
+          "name": "Wikipedia: Diversification (finance)",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0107::corpus_0042",
+          "nodeId": "knv2_0107",
+          "title": "风险管理：可复盘计划 教学节点 9",
+          "topic": "可复盘计划",
+          "documentId": "corpus_0042",
+          "name": "CFTC Speculative Limits",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0107::corpus_0646",
+          "nodeId": "knv2_0107",
+          "title": "风险管理：可复盘计划 教学节点 9",
+          "topic": "可复盘计划",
+          "documentId": "corpus_0646",
+          "name": "A note on estimating stochastic volatility and its volatility: a new simple method",
+          "family": "Open Research",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0107::corpus_0422",
+          "nodeId": "knv2_0107",
+          "title": "风险管理：可复盘计划 教学节点 9",
+          "topic": "可复盘计划",
+          "documentId": "corpus_0422",
+          "name": "Wikipedia: Drawdown (economics)",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 14,
+      "batchId": "node-public-source-fit-batch-014",
+      "module": "风险管理",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "wikipediaRows": 40,
+      "officialRows": 10,
+      "estimatedMinutes": 150,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0227::corpus_0423",
+          "nodeId": "knv2_0227",
+          "title": "风险管理：可复盘计划 教学节点 19",
+          "topic": "可复盘计划",
+          "documentId": "corpus_0423",
+          "name": "Wikipedia: Diversification (finance)",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0227::corpus_0042",
+          "nodeId": "knv2_0227",
+          "title": "风险管理：可复盘计划 教学节点 19",
+          "topic": "可复盘计划",
+          "documentId": "corpus_0042",
+          "name": "CFTC Speculative Limits",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0227::corpus_0646",
+          "nodeId": "knv2_0227",
+          "title": "风险管理：可复盘计划 教学节点 19",
+          "topic": "可复盘计划",
+          "documentId": "corpus_0646",
+          "name": "A note on estimating stochastic volatility and its volatility: a new simple method",
+          "family": "Open Research",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0227::corpus_0422",
+          "nodeId": "knv2_0227",
+          "title": "风险管理：可复盘计划 教学节点 19",
+          "topic": "可复盘计划",
+          "documentId": "corpus_0422",
+          "name": "Wikipedia: Drawdown (economics)",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 15,
+      "batchId": "node-public-source-fit-batch-015",
+      "module": "风险管理",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 2,
+      "reviewRows": 12,
+      "readyRows": 0,
+      "blockedRows": 12,
+      "wikipediaRows": 8,
+      "officialRows": 2,
+      "estimatedMinutes": 30,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0347::corpus_0423",
+          "nodeId": "knv2_0347",
+          "title": "风险管理：可复盘计划 教学节点 29",
+          "topic": "可复盘计划",
+          "documentId": "corpus_0423",
+          "name": "Wikipedia: Diversification (finance)",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0347::corpus_0042",
+          "nodeId": "knv2_0347",
+          "title": "风险管理：可复盘计划 教学节点 29",
+          "topic": "可复盘计划",
+          "documentId": "corpus_0042",
+          "name": "CFTC Speculative Limits",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0347::corpus_0646",
+          "nodeId": "knv2_0347",
+          "title": "风险管理：可复盘计划 教学节点 29",
+          "topic": "可复盘计划",
+          "documentId": "corpus_0646",
+          "name": "A note on estimating stochastic volatility and its volatility: a new simple method",
+          "family": "Open Research",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0347::corpus_0422",
+          "nodeId": "knv2_0347",
+          "title": "风险管理：可复盘计划 教学节点 29",
+          "topic": "可复盘计划",
+          "documentId": "corpus_0422",
+          "name": "Wikipedia: Drawdown (economics)",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 16,
+      "batchId": "node-public-source-fit-batch-016",
+      "module": "回测误区",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "wikipediaRows": 40,
+      "officialRows": 10,
+      "estimatedMinutes": 150,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0106::corpus_0472",
+          "nodeId": "knv2_0106",
+          "title": "回测误区：成本忽略 教学节点 9",
+          "topic": "成本忽略",
+          "documentId": "corpus_0472",
+          "name": "Wikipedia: Algorithmic trading",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0106::corpus_0102",
+          "nodeId": "knv2_0106",
+          "title": "回测误区：成本忽略 教学节点 9",
+          "topic": "成本忽略",
+          "documentId": "corpus_0102",
+          "name": "BEA News Release Schedule",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0106::corpus_0215",
+          "nodeId": "knv2_0106",
+          "title": "回测误区：成本忽略 教学节点 9",
+          "topic": "成本忽略",
+          "documentId": "corpus_0215",
+          "name": "AlgoXpert Alpha Research Framework. A Rigorous IS WFA OOS Protocol for Mitigating Overfitting in Quantitative Strategies",
+          "family": "Open Research",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0106::corpus_0452",
+          "nodeId": "knv2_0106",
+          "title": "回测误区：成本忽略 教学节点 9",
+          "topic": "成本忽略",
+          "documentId": "corpus_0452",
+          "name": "Wikipedia: Backtesting",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 17,
+      "batchId": "node-public-source-fit-batch-017",
+      "module": "回测误区",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "wikipediaRows": 40,
+      "officialRows": 10,
+      "estimatedMinutes": 150,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0226::corpus_0472",
+          "nodeId": "knv2_0226",
+          "title": "回测误区：成本忽略 教学节点 19",
+          "topic": "成本忽略",
+          "documentId": "corpus_0472",
+          "name": "Wikipedia: Algorithmic trading",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0226::corpus_0102",
+          "nodeId": "knv2_0226",
+          "title": "回测误区：成本忽略 教学节点 19",
+          "topic": "成本忽略",
+          "documentId": "corpus_0102",
+          "name": "BEA News Release Schedule",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0226::corpus_0215",
+          "nodeId": "knv2_0226",
+          "title": "回测误区：成本忽略 教学节点 19",
+          "topic": "成本忽略",
+          "documentId": "corpus_0215",
+          "name": "AlgoXpert Alpha Research Framework. A Rigorous IS WFA OOS Protocol for Mitigating Overfitting in Quantitative Strategies",
+          "family": "Open Research",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0226::corpus_0452",
+          "nodeId": "knv2_0226",
+          "title": "回测误区：成本忽略 教学节点 19",
+          "topic": "成本忽略",
+          "documentId": "corpus_0452",
+          "name": "Wikipedia: Backtesting",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 18,
+      "batchId": "node-public-source-fit-batch-018",
+      "module": "回测误区",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 2,
+      "reviewRows": 12,
+      "readyRows": 0,
+      "blockedRows": 12,
+      "wikipediaRows": 8,
+      "officialRows": 2,
+      "estimatedMinutes": 30,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0346::corpus_0472",
+          "nodeId": "knv2_0346",
+          "title": "回测误区：成本忽略 教学节点 29",
+          "topic": "成本忽略",
+          "documentId": "corpus_0472",
+          "name": "Wikipedia: Algorithmic trading",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0346::corpus_0102",
+          "nodeId": "knv2_0346",
+          "title": "回测误区：成本忽略 教学节点 29",
+          "topic": "成本忽略",
+          "documentId": "corpus_0102",
+          "name": "BEA News Release Schedule",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0346::corpus_0215",
+          "nodeId": "knv2_0346",
+          "title": "回测误区：成本忽略 教学节点 29",
+          "topic": "成本忽略",
+          "documentId": "corpus_0215",
+          "name": "AlgoXpert Alpha Research Framework. A Rigorous IS WFA OOS Protocol for Mitigating Overfitting in Quantitative Strategies",
+          "family": "Open Research",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0346::corpus_0452",
+          "nodeId": "knv2_0346",
+          "title": "回测误区：成本忽略 教学节点 29",
+          "topic": "成本忽略",
+          "documentId": "corpus_0452",
+          "name": "Wikipedia: Backtesting",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 19,
+      "batchId": "node-public-source-fit-batch-019",
+      "module": "交易区间",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "wikipediaRows": 40,
+      "officialRows": 10,
+      "estimatedMinutes": 150,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0102::corpus_0472",
+          "nodeId": "knv2_0102",
+          "title": "交易区间：区间轮动 教学节点 9",
+          "topic": "区间轮动",
+          "documentId": "corpus_0472",
+          "name": "Wikipedia: Algorithmic trading",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0102::corpus_0017",
+          "nodeId": "knv2_0102",
+          "title": "交易区间：区间轮动 教学节点 9",
+          "topic": "区间轮动",
+          "documentId": "corpus_0017",
+          "name": "Federal Reserve FOMC Calendars",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0102::corpus_0396",
+          "nodeId": "knv2_0102",
+          "title": "交易区间：区间轮动 教学节点 9",
+          "topic": "区间轮动",
+          "documentId": "corpus_0396",
+          "name": "A singular stochastic control approach for optimal pairs trading with proportional transaction costs",
+          "family": "Open Research",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0102::corpus_0447",
+          "nodeId": "knv2_0102",
+          "title": "交易区间：区间轮动 教学节点 9",
+          "topic": "区间轮动",
+          "documentId": "corpus_0447",
+          "name": "Wikipedia: Bollinger Bands",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 20,
+      "batchId": "node-public-source-fit-batch-020",
+      "module": "交易区间",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "wikipediaRows": 40,
+      "officialRows": 10,
+      "estimatedMinutes": 150,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0222::corpus_0472",
+          "nodeId": "knv2_0222",
+          "title": "交易区间：区间轮动 教学节点 19",
+          "topic": "区间轮动",
+          "documentId": "corpus_0472",
+          "name": "Wikipedia: Algorithmic trading",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0222::corpus_0017",
+          "nodeId": "knv2_0222",
+          "title": "交易区间：区间轮动 教学节点 19",
+          "topic": "区间轮动",
+          "documentId": "corpus_0017",
+          "name": "Federal Reserve FOMC Calendars",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0222::corpus_0396",
+          "nodeId": "knv2_0222",
+          "title": "交易区间：区间轮动 教学节点 19",
+          "topic": "区间轮动",
+          "documentId": "corpus_0396",
+          "name": "A singular stochastic control approach for optimal pairs trading with proportional transaction costs",
+          "family": "Open Research",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0222::corpus_0447",
+          "nodeId": "knv2_0222",
+          "title": "交易区间：区间轮动 教学节点 19",
+          "topic": "区间轮动",
+          "documentId": "corpus_0447",
+          "name": "Wikipedia: Bollinger Bands",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 21,
+      "batchId": "node-public-source-fit-batch-021",
+      "module": "交易区间",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 2,
+      "reviewRows": 12,
+      "readyRows": 0,
+      "blockedRows": 12,
+      "wikipediaRows": 8,
+      "officialRows": 2,
+      "estimatedMinutes": 30,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0342::corpus_0472",
+          "nodeId": "knv2_0342",
+          "title": "交易区间：区间轮动 教学节点 29",
+          "topic": "区间轮动",
+          "documentId": "corpus_0472",
+          "name": "Wikipedia: Algorithmic trading",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0342::corpus_0017",
+          "nodeId": "knv2_0342",
+          "title": "交易区间：区间轮动 教学节点 29",
+          "topic": "区间轮动",
+          "documentId": "corpus_0017",
+          "name": "Federal Reserve FOMC Calendars",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0342::corpus_0396",
+          "nodeId": "knv2_0342",
+          "title": "交易区间：区间轮动 教学节点 29",
+          "topic": "区间轮动",
+          "documentId": "corpus_0396",
+          "name": "A singular stochastic control approach for optimal pairs trading with proportional transaction costs",
+          "family": "Open Research",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0342::corpus_0447",
+          "nodeId": "knv2_0342",
+          "title": "交易区间：区间轮动 教学节点 29",
+          "topic": "区间轮动",
+          "documentId": "corpus_0447",
+          "name": "Wikipedia: Bollinger Bands",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 22,
+      "batchId": "node-public-source-fit-batch-022",
+      "module": "交易心理",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "wikipediaRows": 40,
+      "officialRows": 10,
+      "estimatedMinutes": 150,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0108::corpus_0459",
+          "nodeId": "knv2_0108",
+          "title": "交易心理：情绪修正 教学节点 9",
+          "topic": "情绪修正",
+          "documentId": "corpus_0459",
+          "name": "Wikipedia: Behavioral economics",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0108::corpus_0063",
+          "nodeId": "knv2_0108",
+          "title": "交易心理：情绪修正 教学节点 9",
+          "topic": "情绪修正",
+          "documentId": "corpus_0063",
+          "name": "BLS Handbook Import Export",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0108::corpus_0352",
+          "nodeId": "knv2_0108",
+          "title": "交易心理：情绪修正 教学节点 9",
+          "topic": "情绪修正",
+          "documentId": "corpus_0352",
+          "name": "A quantum double-or-nothing game: The Kelly Criterion for Spins",
+          "family": "Open Research",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0108::corpus_0462",
+          "nodeId": "knv2_0108",
+          "title": "交易心理：情绪修正 教学节点 9",
+          "topic": "情绪修正",
+          "documentId": "corpus_0462",
+          "name": "Wikipedia: Confirmation bias",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 23,
+      "batchId": "node-public-source-fit-batch-023",
+      "module": "交易心理",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "wikipediaRows": 40,
+      "officialRows": 10,
+      "estimatedMinutes": 150,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0228::corpus_0459",
+          "nodeId": "knv2_0228",
+          "title": "交易心理：情绪修正 教学节点 19",
+          "topic": "情绪修正",
+          "documentId": "corpus_0459",
+          "name": "Wikipedia: Behavioral economics",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0228::corpus_0063",
+          "nodeId": "knv2_0228",
+          "title": "交易心理：情绪修正 教学节点 19",
+          "topic": "情绪修正",
+          "documentId": "corpus_0063",
+          "name": "BLS Handbook Import Export",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0228::corpus_0352",
+          "nodeId": "knv2_0228",
+          "title": "交易心理：情绪修正 教学节点 19",
+          "topic": "情绪修正",
+          "documentId": "corpus_0352",
+          "name": "A quantum double-or-nothing game: The Kelly Criterion for Spins",
+          "family": "Open Research",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0228::corpus_0462",
+          "nodeId": "knv2_0228",
+          "title": "交易心理：情绪修正 教学节点 19",
+          "topic": "情绪修正",
+          "documentId": "corpus_0462",
+          "name": "Wikipedia: Confirmation bias",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 24,
+      "batchId": "node-public-source-fit-batch-024",
+      "module": "交易心理",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 2,
+      "reviewRows": 12,
+      "readyRows": 0,
+      "blockedRows": 12,
+      "wikipediaRows": 8,
+      "officialRows": 2,
+      "estimatedMinutes": 30,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0348::corpus_0459",
+          "nodeId": "knv2_0348",
+          "title": "交易心理：情绪修正 教学节点 29",
+          "topic": "情绪修正",
+          "documentId": "corpus_0459",
+          "name": "Wikipedia: Behavioral economics",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0348::corpus_0063",
+          "nodeId": "knv2_0348",
+          "title": "交易心理：情绪修正 教学节点 29",
+          "topic": "情绪修正",
+          "documentId": "corpus_0063",
+          "name": "BLS Handbook Import Export",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0348::corpus_0352",
+          "nodeId": "knv2_0348",
+          "title": "交易心理：情绪修正 教学节点 29",
+          "topic": "情绪修正",
+          "documentId": "corpus_0352",
+          "name": "A quantum double-or-nothing game: The Kelly Criterion for Spins",
+          "family": "Open Research",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0348::corpus_0462",
+          "nodeId": "knv2_0348",
+          "title": "交易心理：情绪修正 教学节点 29",
+          "topic": "情绪修正",
+          "documentId": "corpus_0462",
+          "name": "Wikipedia: Confirmation bias",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 25,
+      "batchId": "node-public-source-fit-batch-025",
+      "module": "趋势",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "wikipediaRows": 40,
+      "officialRows": 10,
+      "estimatedMinutes": 150,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0100::corpus_0472",
+          "nodeId": "knv2_0100",
+          "title": "趋势：趋势衰竭 教学节点 9",
+          "topic": "趋势衰竭",
+          "documentId": "corpus_0472",
+          "name": "Wikipedia: Algorithmic trading",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0100::corpus_0049",
+          "nodeId": "knv2_0100",
+          "title": "趋势：趋势衰竭 教学节点 9",
+          "topic": "趋势衰竭",
+          "documentId": "corpus_0049",
+          "name": "BEA NIPA Handbook",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0100::corpus_0225",
+          "nodeId": "knv2_0100",
+          "title": "趋势：趋势衰竭 教学节点 9",
+          "topic": "趋势衰竭",
+          "documentId": "corpus_0225",
+          "name": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+          "family": "Open Research",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0100::corpus_0444",
+          "nodeId": "knv2_0100",
+          "title": "趋势：趋势衰竭 教学节点 9",
+          "topic": "趋势衰竭",
+          "documentId": "corpus_0444",
+          "name": "Wikipedia: Dow theory",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 26,
+      "batchId": "node-public-source-fit-batch-026",
+      "module": "趋势",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "wikipediaRows": 40,
+      "officialRows": 10,
+      "estimatedMinutes": 150,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0220::corpus_0472",
+          "nodeId": "knv2_0220",
+          "title": "趋势：趋势衰竭 教学节点 19",
+          "topic": "趋势衰竭",
+          "documentId": "corpus_0472",
+          "name": "Wikipedia: Algorithmic trading",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0220::corpus_0049",
+          "nodeId": "knv2_0220",
+          "title": "趋势：趋势衰竭 教学节点 19",
+          "topic": "趋势衰竭",
+          "documentId": "corpus_0049",
+          "name": "BEA NIPA Handbook",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0220::corpus_0225",
+          "nodeId": "knv2_0220",
+          "title": "趋势：趋势衰竭 教学节点 19",
+          "topic": "趋势衰竭",
+          "documentId": "corpus_0225",
+          "name": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+          "family": "Open Research",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0220::corpus_0444",
+          "nodeId": "knv2_0220",
+          "title": "趋势：趋势衰竭 教学节点 19",
+          "topic": "趋势衰竭",
+          "documentId": "corpus_0444",
+          "name": "Wikipedia: Dow theory",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 27,
+      "batchId": "node-public-source-fit-batch-027",
+      "module": "趋势",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 2,
+      "reviewRows": 12,
+      "readyRows": 0,
+      "blockedRows": 12,
+      "wikipediaRows": 8,
+      "officialRows": 2,
+      "estimatedMinutes": 30,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0340::corpus_0472",
+          "nodeId": "knv2_0340",
+          "title": "趋势：趋势衰竭 教学节点 29",
+          "topic": "趋势衰竭",
+          "documentId": "corpus_0472",
+          "name": "Wikipedia: Algorithmic trading",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0340::corpus_0049",
+          "nodeId": "knv2_0340",
+          "title": "趋势：趋势衰竭 教学节点 29",
+          "topic": "趋势衰竭",
+          "documentId": "corpus_0049",
+          "name": "BEA NIPA Handbook",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0340::corpus_0225",
+          "nodeId": "knv2_0340",
+          "title": "趋势：趋势衰竭 教学节点 29",
+          "topic": "趋势衰竭",
+          "documentId": "corpus_0225",
+          "name": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+          "family": "Open Research",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0340::corpus_0444",
+          "nodeId": "knv2_0340",
+          "title": "趋势：趋势衰竭 教学节点 29",
+          "topic": "趋势衰竭",
+          "documentId": "corpus_0444",
+          "name": "Wikipedia: Dow theory",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 28,
+      "batchId": "node-public-source-fit-batch-028",
+      "module": "市场结构",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "wikipediaRows": 40,
+      "officialRows": 10,
+      "estimatedMinutes": 150,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0098::corpus_0472",
+          "nodeId": "knv2_0098",
+          "title": "市场结构：关键区域 教学节点 9",
+          "topic": "关键区域",
+          "documentId": "corpus_0472",
+          "name": "Wikipedia: Algorithmic trading",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0098::corpus_0022",
+          "nodeId": "knv2_0098",
+          "title": "市场结构：关键区域 教学节点 9",
+          "topic": "关键区域",
+          "documentId": "corpus_0022",
+          "name": "BLS CPI",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0098::corpus_0225",
+          "nodeId": "knv2_0098",
+          "title": "市场结构：关键区域 教学节点 9",
+          "topic": "关键区域",
+          "documentId": "corpus_0225",
+          "name": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+          "family": "Open Research",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0098::corpus_1587",
+          "nodeId": "knv2_0098",
+          "title": "市场结构：关键区域 教学节点 9",
+          "topic": "关键区域",
+          "documentId": "corpus_1587",
+          "name": "Wikipedia: Bid–ask spread",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 29,
+      "batchId": "node-public-source-fit-batch-029",
+      "module": "市场结构",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "wikipediaRows": 40,
+      "officialRows": 10,
+      "estimatedMinutes": 150,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0218::corpus_0472",
+          "nodeId": "knv2_0218",
+          "title": "市场结构：关键区域 教学节点 19",
+          "topic": "关键区域",
+          "documentId": "corpus_0472",
+          "name": "Wikipedia: Algorithmic trading",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0218::corpus_0022",
+          "nodeId": "knv2_0218",
+          "title": "市场结构：关键区域 教学节点 19",
+          "topic": "关键区域",
+          "documentId": "corpus_0022",
+          "name": "BLS CPI",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0218::corpus_0225",
+          "nodeId": "knv2_0218",
+          "title": "市场结构：关键区域 教学节点 19",
+          "topic": "关键区域",
+          "documentId": "corpus_0225",
+          "name": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+          "family": "Open Research",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0218::corpus_1587",
+          "nodeId": "knv2_0218",
+          "title": "市场结构：关键区域 教学节点 19",
+          "topic": "关键区域",
+          "documentId": "corpus_1587",
+          "name": "Wikipedia: Bid–ask spread",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 30,
+      "batchId": "node-public-source-fit-batch-030",
+      "module": "市场结构",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 2,
+      "reviewRows": 12,
+      "readyRows": 0,
+      "blockedRows": 12,
+      "wikipediaRows": 8,
+      "officialRows": 2,
+      "estimatedMinutes": 30,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0338::corpus_0472",
+          "nodeId": "knv2_0338",
+          "title": "市场结构：关键区域 教学节点 29",
+          "topic": "关键区域",
+          "documentId": "corpus_0472",
+          "name": "Wikipedia: Algorithmic trading",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0338::corpus_0022",
+          "nodeId": "knv2_0338",
+          "title": "市场结构：关键区域 教学节点 29",
+          "topic": "关键区域",
+          "documentId": "corpus_0022",
+          "name": "BLS CPI",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0338::corpus_0225",
+          "nodeId": "knv2_0338",
+          "title": "市场结构：关键区域 教学节点 29",
+          "topic": "关键区域",
+          "documentId": "corpus_0225",
+          "name": "A novel approach to trading strategy parameter optimization using double out-of-sample data and walk-forward techniques",
+          "family": "Open Research",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0338::corpus_1587",
+          "nodeId": "knv2_0338",
+          "title": "市场结构：关键区域 教学节点 29",
+          "topic": "关键区域",
+          "documentId": "corpus_1587",
+          "name": "Wikipedia: Bid–ask spread",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 31,
+      "batchId": "node-public-source-fit-batch-031",
+      "module": "新闻/情绪/事件偏见",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "wikipediaRows": 40,
+      "officialRows": 10,
+      "estimatedMinutes": 150,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0105::corpus_0459",
+          "nodeId": "knv2_0105",
+          "title": "新闻/情绪/事件偏见：叙事滞后 教学节点 9",
+          "topic": "叙事滞后",
+          "documentId": "corpus_0459",
+          "name": "Wikipedia: Behavioral economics",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0105::corpus_0102",
+          "nodeId": "knv2_0105",
+          "title": "新闻/情绪/事件偏见：叙事滞后 教学节点 9",
+          "topic": "叙事滞后",
+          "documentId": "corpus_0102",
+          "name": "BEA News Release Schedule",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0105::corpus_1025",
+          "nodeId": "knv2_0105",
+          "title": "新闻/情绪/事件偏见：叙事滞后 教学节点 9",
+          "topic": "叙事滞后",
+          "documentId": "corpus_1025",
+          "name": "bigvaldis/breaking_news_market_sentiment README",
+          "family": "Permissive/Open Source",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0105::corpus_0462",
+          "nodeId": "knv2_0105",
+          "title": "新闻/情绪/事件偏见：叙事滞后 教学节点 9",
+          "topic": "叙事滞后",
+          "documentId": "corpus_0462",
+          "name": "Wikipedia: Confirmation bias",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 32,
+      "batchId": "node-public-source-fit-batch-032",
+      "module": "新闻/情绪/事件偏见",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "wikipediaRows": 40,
+      "officialRows": 10,
+      "estimatedMinutes": 150,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0225::corpus_0459",
+          "nodeId": "knv2_0225",
+          "title": "新闻/情绪/事件偏见：叙事滞后 教学节点 19",
+          "topic": "叙事滞后",
+          "documentId": "corpus_0459",
+          "name": "Wikipedia: Behavioral economics",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0225::corpus_0102",
+          "nodeId": "knv2_0225",
+          "title": "新闻/情绪/事件偏见：叙事滞后 教学节点 19",
+          "topic": "叙事滞后",
+          "documentId": "corpus_0102",
+          "name": "BEA News Release Schedule",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0225::corpus_1025",
+          "nodeId": "knv2_0225",
+          "title": "新闻/情绪/事件偏见：叙事滞后 教学节点 19",
+          "topic": "叙事滞后",
+          "documentId": "corpus_1025",
+          "name": "bigvaldis/breaking_news_market_sentiment README",
+          "family": "Permissive/Open Source",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0225::corpus_0462",
+          "nodeId": "knv2_0225",
+          "title": "新闻/情绪/事件偏见：叙事滞后 教学节点 19",
+          "topic": "叙事滞后",
+          "documentId": "corpus_0462",
+          "name": "Wikipedia: Confirmation bias",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 33,
+      "batchId": "node-public-source-fit-batch-033",
+      "module": "新闻/情绪/事件偏见",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 2,
+      "reviewRows": 12,
+      "readyRows": 0,
+      "blockedRows": 12,
+      "wikipediaRows": 8,
+      "officialRows": 2,
+      "estimatedMinutes": 30,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0345::corpus_0459",
+          "nodeId": "knv2_0345",
+          "title": "新闻/情绪/事件偏见：叙事滞后 教学节点 29",
+          "topic": "叙事滞后",
+          "documentId": "corpus_0459",
+          "name": "Wikipedia: Behavioral economics",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0345::corpus_0102",
+          "nodeId": "knv2_0345",
+          "title": "新闻/情绪/事件偏见：叙事滞后 教学节点 29",
+          "topic": "叙事滞后",
+          "documentId": "corpus_0102",
+          "name": "BEA News Release Schedule",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0345::corpus_1025",
+          "nodeId": "knv2_0345",
+          "title": "新闻/情绪/事件偏见：叙事滞后 教学节点 29",
+          "topic": "叙事滞后",
+          "documentId": "corpus_1025",
+          "name": "bigvaldis/breaking_news_market_sentiment README",
+          "family": "Permissive/Open Source",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0345::corpus_0462",
+          "nodeId": "knv2_0345",
+          "title": "新闻/情绪/事件偏见：叙事滞后 教学节点 29",
+          "topic": "叙事滞后",
+          "documentId": "corpus_0462",
+          "name": "Wikipedia: Confirmation bias",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 34,
+      "batchId": "node-public-source-fit-batch-034",
+      "module": "图表阅读基础",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 10,
+      "reviewRows": 60,
+      "readyRows": 0,
+      "blockedRows": 60,
+      "wikipediaRows": 40,
+      "officialRows": 10,
+      "estimatedMinutes": 150,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0097::corpus_1584",
+          "nodeId": "knv2_0097",
+          "title": "图表阅读基础：影线含义 教学节点 9",
+          "topic": "影线含义",
+          "documentId": "corpus_1584",
+          "name": "Wikipedia: Candlestick chart",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0097::corpus_0027",
+          "nodeId": "knv2_0097",
+          "title": "图表阅读基础：影线含义 教学节点 9",
+          "topic": "影线含义",
+          "documentId": "corpus_0027",
+          "name": "BEA GDP",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0097::corpus_0206",
+          "nodeId": "knv2_0097",
+          "title": "图表阅读基础：影线含义 教学节点 9",
+          "topic": "影线含义",
+          "documentId": "corpus_0206",
+          "name": "arXiv 1409.0064",
+          "family": "Open Research",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0097::corpus_0409",
+          "nodeId": "knv2_0097",
+          "title": "图表阅读基础：影线含义 教学节点 9",
+          "topic": "影线含义",
+          "documentId": "corpus_0409",
+          "name": "Wikipedia: Chart pattern",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    },
+    {
+      "order": 35,
+      "batchId": "node-public-source-fit-batch-035",
+      "module": "图表阅读基础",
+      "status": "blocked_missing_real_reviewer_input",
+      "owner": "real_reviewer",
+      "targetNodes": 8,
+      "reviewRows": 48,
+      "readyRows": 0,
+      "blockedRows": 48,
+      "wikipediaRows": 32,
+      "officialRows": 8,
+      "estimatedMinutes": 120,
+      "command": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+      "sampleRows": [
+        {
+          "reviewId": "knv2_0253::corpus_1584",
+          "nodeId": "knv2_0253",
+          "title": "图表阅读基础：价格位置 教学节点 22",
+          "topic": "价格位置",
+          "documentId": "corpus_1584",
+          "name": "Wikipedia: Candlestick chart",
+          "family": "Wikipedia",
+          "fitScore": 10
+        },
+        {
+          "reviewId": "knv2_0253::corpus_0027",
+          "nodeId": "knv2_0253",
+          "title": "图表阅读基础：价格位置 教学节点 22",
+          "topic": "价格位置",
+          "documentId": "corpus_0027",
+          "name": "BEA GDP",
+          "family": "Official/Public Domain",
+          "fitScore": 6
+        },
+        {
+          "reviewId": "knv2_0253::corpus_0206",
+          "nodeId": "knv2_0253",
+          "title": "图表阅读基础：价格位置 教学节点 22",
+          "topic": "价格位置",
+          "documentId": "corpus_0206",
+          "name": "arXiv 1409.0064",
+          "family": "Open Research",
+          "fitScore": 0
+        },
+        {
+          "reviewId": "knv2_0253::corpus_0409",
+          "nodeId": "knv2_0253",
+          "title": "图表阅读基础：价格位置 教学节点 22",
+          "topic": "价格位置",
+          "documentId": "corpus_0409",
+          "name": "Wikipedia: Chart pattern",
+          "family": "Wikipedia",
+          "fitScore": 10
+        }
+      ],
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt"
+    }
+  ],
+  "writeAllowedNow": false,
+  "manualAuthorizationRequired": true,
+  "upstreamReviewGateStatus": "local_course_review_gate_dashboard_ready_release_blocked",
+  "reviewerChecklist": [
+    "Open the draft input copy and work one batch at a time.",
+    "For every row, choose accept_for_node_source_fit, reject_for_node_source_fit, or background_only.",
+    "Write sourceFitNotes and citationUse in original words; do not copy source text.",
+    "Keep learnerCitationApproved:false unless a separate release approval gate explicitly allows it.",
+    "Rerun validation and this queue check after each filled batch."
+  ],
+  "commands": [
+    "npm.cmd run build:knowledge-node-public-source-fit-review-execution-queue",
+    "npm.cmd run check:knowledge-node-public-source-fit-review-execution-queue",
+    "npm.cmd run validate:knowledge-node-public-source-fit-review-input",
+    "npm.cmd run check:knowledge-node-public-source-fit-review-input-validation"
+  ],
+  "completionRule": "The queue is execution planning only. It proves that all 1638 node public source-fit rows are assigned to module batches, but no row can affect triangulation, learner citations, lesson rewriting, or write authorization until real reviewer input passes validation and separate approval gates.",
+  "boundary": "Node public source-fit review execution queue is reviewer-facing education-only governance. It does not approve sources, copied text, learner-facing citations, stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, or production readiness."
+}

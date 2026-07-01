@@ -1,0 +1,98 @@
+{
+  "generatedAt": "2026-06-22T04:53:17.556Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "handoffStatus": "node_public_source_fit_packet_021_handoff_ready_blocked_on_real_input",
+  "handoffMode": "single_packet_reviewer_execution_path",
+  "packetId": "node-public-source-fit-batch-021-packet",
+  "batchId": "node-public-source-fit-batch-021",
+  "module": "交易区间",
+  "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_021_INPUT_COPY_TEMPLATE.json",
+  "reviewRows": 12,
+  "targetNodes": 2,
+  "packetReadyRows": 0,
+  "packetBlockedRows": 12,
+  "packetMissingFieldRows": 12,
+  "packetRealHumanInputEntries": 0,
+  "mergeMappedRows": 12,
+  "mergeReadyRows": 0,
+  "mergeBlockedRows": 12,
+  "mergeAllowedNow": false,
+  "mergeDryRunWrittenRows": 0,
+  "progressReadyPackets": 0,
+  "progressBlockedPackets": 35,
+  "writeAllowedNow": false,
+  "manualAuthorizationRequired": true,
+  "phaseRows": [
+    {
+      "order": 1,
+      "id": "packet_021_inspect_input_copy_template",
+      "status": "node_public_source_fit_packet_021_input_copy_template_ready_blank",
+      "inputFile": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_021_INPUT_COPY_TEMPLATE.json",
+      "command": "npm.cmd run check:knowledge-node-public-source-fit-review-packet-021-suite",
+      "reviewerAction": "Open Packet 021 input copy and fill only real reviewer-owned fields.",
+      "hardStop": "Stop if the file is not node-public-source-fit-batch-021-packet, has fewer than 12 rows, or any row already claims learnerCitationApproved/copy approval."
+    },
+    {
+      "order": 2,
+      "id": "packet_021_validate_input_copy",
+      "status": "blocked_missing_real_reviewer_source_fit_input",
+      "inputFile": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_021_INPUT_COPY_TEMPLATE_VALIDATION.json",
+      "command": "npm.cmd run build:knowledge-node-public-source-fit-review-packet-021-suite && npm.cmd run check:knowledge-node-public-source-fit-review-packet-021-suite",
+      "reviewerAction": "Rerun Packet 021 validation after filling; all rows must be ready before merge preview can proceed.",
+      "hardStop": "Stop while readyRows is 0, blockedRows is nonzero, missingFieldRows is nonzero, or realHumanInputEntries is 0."
+    },
+    {
+      "order": 3,
+      "id": "packet_021_rebuild_merge_preview",
+      "status": "packet_021_merge_preview_blocked_missing_ready_packet_input",
+      "inputFile": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_021_MERGE_PREVIEW.json",
+      "command": "npm.cmd run build:knowledge-node-public-source-fit-review-packet-021-suite && npm.cmd run check:knowledge-node-public-source-fit-review-packet-021-suite",
+      "reviewerAction": "Confirm every Packet 021 row maps back to the full source-fit draft before any merge apply.",
+      "hardStop": "Stop unless mappedRows equals packet rows, missingTargetRows is 0, and mergeAllowedNow is true after real review."
+    },
+    {
+      "order": 4,
+      "id": "packet_021_run_merge_apply_dry_run",
+      "status": "blocked_no_ready_merge_rows",
+      "inputFile": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_021_MERGE_APPLY_REPORT.json",
+      "command": "npm.cmd run build:knowledge-node-public-source-fit-review-packet-021-suite && npm.cmd run check:knowledge-node-public-source-fit-review-packet-021-suite",
+      "reviewerAction": "Use dry-run apply to verify willWrite stays false until the packet is fully ready and explicit write authorization exists.",
+      "hardStop": "Stop if writtenRows is nonzero in dry-run or any row willWrite before manual approval."
+    },
+    {
+      "order": 5,
+      "id": "packet_021_rerun_progress_matrix",
+      "status": "node_public_source_fit_review_progress_matrix_ready_release_blocked",
+      "inputFile": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PROGRESS_MATRIX.json",
+      "command": "npm.cmd run build:knowledge-node-public-source-fit-review-progress-matrix && npm.cmd run check:knowledge-node-public-source-fit-review-progress-matrix",
+      "reviewerAction": "After an authorized merge, rerun the progress matrix and confirm Packet 021 moves from blocked to ready.",
+      "hardStop": "Stop if progress changes without real human input or if learner citations/copy approval appear."
+    },
+    {
+      "order": 6,
+      "id": "packet_021_rerun_review_gate_dashboard",
+      "status": "local_course_review_gate_dashboard_ready_release_blocked",
+      "inputFile": "docs/LOCAL_COURSE_REVIEW_GATE_DASHBOARD.json",
+      "command": "npm.cmd run build:local-course-review-gate-dashboard && npm.cmd run check:local-course-review-gate-dashboard",
+      "reviewerAction": "Refresh the single-screen review gate so packet progress, source-fit rows, and write authorization remain visible.",
+      "hardStop": "Stop if writeAllowedNow becomes true before all real review gates and separate approval pass."
+    }
+  ],
+  "hardStops": [
+    "Do not fill reviewer fields unless a real reviewer has inspected the node and source.",
+    "Do not set realHumanInput:true for generated, copied, fixture, or unreviewed rows.",
+    "Do not approve learner-facing citations or copied text in this packet handoff.",
+    "Do not run --write unless packet validation is fully ready, merge preview is ready, dry-run has been reviewed, and explicit human authorization names the exact input path.",
+    "Do not introduce stock recommendations, live signals, return promises, broker workflows, automation, or real-money guidance."
+  ],
+  "commands": [
+    "npm.cmd run build:knowledge-node-public-source-fit-review-packet-021-suite",
+    "npm.cmd run check:knowledge-node-public-source-fit-review-packet-021-suite",
+    "npm.cmd run verify"
+  ],
+  "completionRule": "This handoff is executable only as reviewer operations. It does not fill packet rows, does not create human judgments, does not approve learner-facing citations, and does not authorize --write. Packet 021 remains blocked until all 12 rows contain real human source-fit review input and pass validation.",
+  "boundary": "Node public source-fit Packet 021 handoff is reviewer-facing education-only operations material. It organizes the packet input copy, validation, merge preview, dry-run apply, and progress checks; it does not write lessons, approve copied text, approve learner-facing citations, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, or production readiness."
+}

@@ -1,0 +1,72 @@
+{
+  "generatedAt": "2026-06-21T22:33:57.324Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "applyMode": "dry_run",
+  "fixtureOnly": true,
+  "applyStatus": "ready_entries_not_written",
+  "inputPath": "docs\\LOCAL_COURSE_P0_HUMAN_FILL_PACK_02_POSITIVE_LINT_FIXTURE.json",
+  "overlayPath": "docs/LOCAL_COURSE_ABSORPTION_P0_REVIEW_OVERLAY.json",
+  "totalEntries": 4,
+  "readyToApplyEntries": 4,
+  "blockedEntries": 0,
+  "writtenEntries": 0,
+  "applyRows": [
+    {
+      "id": "input_copy_absorb_manual_transcription_13",
+      "taskId": "absorb_manual_transcription_13",
+      "reviewEntryId": "review_absorb_manual_transcription_13",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "pageNumber": 5,
+      "applyStatus": "ready_to_apply",
+      "willWrite": false,
+      "missingFields": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_02_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_14",
+      "taskId": "absorb_manual_transcription_14",
+      "reviewEntryId": "review_absorb_manual_transcription_14",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "pageNumber": 6,
+      "applyStatus": "ready_to_apply",
+      "willWrite": false,
+      "missingFields": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_02_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_15",
+      "taskId": "absorb_manual_transcription_15",
+      "reviewEntryId": "review_absorb_manual_transcription_15",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "pageNumber": 7,
+      "applyStatus": "ready_to_apply",
+      "willWrite": false,
+      "missingFields": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_02_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_16",
+      "taskId": "absorb_manual_transcription_16",
+      "reviewEntryId": "review_absorb_manual_transcription_16",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "pageNumber": 8,
+      "applyStatus": "ready_to_apply",
+      "willWrite": false,
+      "missingFields": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_02_input_then_apply_dry_run_only"
+    }
+  ],
+  "nextStep": "Rerun with --write only after confirming the dry-run report.",
+  "boundary": "P0 review input apply is a guarded overlay update pipeline. Dry-run mode writes no overlay changes. It does not approve learner-facing release, provide trading advice, stock recommendations, live signals, return promises, broker workflows, automation, or real-money guidance."
+}

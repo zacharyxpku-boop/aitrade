@@ -1,0 +1,125 @@
+{
+  "generatedAt": "2026-06-22T06:24:28.310Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "readinessStatus": "knowledge_base_internal_review_ready_release_blocked",
+  "knowledgeBaseUsefulnessStatus": "usable_as_internal_reviewer_knowledge_base_not_learner_course",
+  "gateMode": "local_folder_public_source_source_fit_high_risk_release_gate",
+  "localSourceRoot": "C:\\Users\\86136\\Desktop\\投资",
+  "localPhysicalFiles": 302,
+  "localUniquePdfHashes": 298,
+  "localMappedUniquePdfFiles": 298,
+  "localUnmappedUniquePdfFiles": 0,
+  "localDocumentNodeMatches": 2375,
+  "publicCorpusDocuments": 1196,
+  "wikipediaDocuments": 96,
+  "officialLikeDocuments": 202,
+  "publicMappedDocuments": 1196,
+  "publicDocumentNodeMatches": 9568,
+  "knowledgeNodes": 360,
+  "moduleGroundedNodes": 360,
+  "directTriangulatedNodes": 87,
+  "sourceFitReviewRows": 1638,
+  "readySourceFitReviewRows": 0,
+  "blockedSourceFitReviewRows": 1638,
+  "realHumanInputEntries": 0,
+  "highRiskLessons": 12,
+  "highRiskReadyReviewerNotes": 0,
+  "highRiskBlockedReviewerNotes": 72,
+  "highRiskReadyDirectSourceDecisions": 0,
+  "highRiskBlockedDirectSourceDecisions": 5,
+  "packetHandoffCoverage": "35/35",
+  "reviewerCanStartNow": true,
+  "internalReadyGates": 5,
+  "learnerFacingBlockedGates": 5,
+  "writeAllowedNow": false,
+  "manualAuthorizationRequired": true,
+  "gateRows": [
+    {
+      "id": "local_folder_absorption",
+      "label": "Local investment course folder absorption",
+      "status": "folder_absorption_ledger_all_current_pdfs_accounted_release_blocked",
+      "passedForInternalReview": true,
+      "learnerFacingBlocked": true,
+      "evidence": "298/298 unique PDFs mapped; 2375 document-node links.",
+      "nextGate": "manual_transcription_source_replacement_and_reviewer_distillation_before_learner_use"
+    },
+    {
+      "id": "public_source_absorption",
+      "label": "Public/Wikipedia/official source absorption",
+      "status": "public_source_coverage_ledger_ready_release_blocked",
+      "passedForInternalReview": true,
+      "learnerFacingBlocked": true,
+      "evidence": "1196/1196 public docs mapped; 96 Wikipedia; 202 official-like; 9568 public node links.",
+      "nextGate": "source_fit_real_reviewer_decisions_before_learner_citation"
+    },
+    {
+      "id": "node_source_fit_review",
+      "label": "Node/source-fit real reviewer gate",
+      "status": "source_fit_reviewer_row_browser_ready_all_rows_blocked_on_real_input",
+      "passedForInternalReview": true,
+      "learnerFacingBlocked": true,
+      "evidence": "0/1638 source-fit rows ready; 0 real human entries; 35/35 packet handoffs.",
+      "nextGate": "fill_1638_real_reviewer_source_fit_rows_validate_merge_preview_then_manual_write_authorization"
+    },
+    {
+      "id": "high_risk_lesson_review",
+      "label": "High-risk lesson human review",
+      "status": "high_risk_review_cockpit_ready_blocked_on_real_input",
+      "passedForInternalReview": true,
+      "learnerFacingBlocked": true,
+      "evidence": "0/72 real reviewer notes ready; 0/5 direct-source decisions ready.",
+      "nextGate": "fill_72_real_reviewer_notes_and_5_direct_source_decisions_then_revalidate"
+    },
+    {
+      "id": "release_authorization",
+      "label": "Learner-facing release and write authorization",
+      "status": "release_blocked_manual_authorization_required",
+      "passedForInternalReview": true,
+      "learnerFacingBlocked": true,
+      "evidence": "All source artifacts remain approvalStatus:not_approved, learnerFacingRelease:false, productionReady:false, writeAllowedNow:false.",
+      "nextGate": "separate_exact_path_manual_authorization_after_all_real_review_gates_pass"
+    }
+  ],
+  "nextActionQueue": [
+    {
+      "order": 1,
+      "gateId": "local_folder_absorption",
+      "nextGate": "manual_transcription_source_replacement_and_reviewer_distillation_before_learner_use",
+      "evidence": "298/298 unique PDFs mapped; 2375 document-node links."
+    },
+    {
+      "order": 2,
+      "gateId": "public_source_absorption",
+      "nextGate": "source_fit_real_reviewer_decisions_before_learner_citation",
+      "evidence": "1196/1196 public docs mapped; 96 Wikipedia; 202 official-like; 9568 public node links."
+    },
+    {
+      "order": 3,
+      "gateId": "node_source_fit_review",
+      "nextGate": "fill_1638_real_reviewer_source_fit_rows_validate_merge_preview_then_manual_write_authorization",
+      "evidence": "0/1638 source-fit rows ready; 0 real human entries; 35/35 packet handoffs."
+    },
+    {
+      "order": 4,
+      "gateId": "high_risk_lesson_review",
+      "nextGate": "fill_72_real_reviewer_notes_and_5_direct_source_decisions_then_revalidate",
+      "evidence": "0/72 real reviewer notes ready; 0/5 direct-source decisions ready."
+    },
+    {
+      "order": 5,
+      "gateId": "release_authorization",
+      "nextGate": "separate_exact_path_manual_authorization_after_all_real_review_gates_pass",
+      "evidence": "All source artifacts remain approvalStatus:not_approved, learnerFacingRelease:false, productionReady:false, writeAllowedNow:false."
+    }
+  ],
+  "commands": [
+    "npm.cmd run build:knowledge-base-readiness-gate",
+    "npm.cmd run check:knowledge-base-readiness-gate",
+    "npm.cmd run verify"
+  ],
+  "completionRule": "The knowledge base is internally useful when local folder absorption, public source coverage, source-fit packet handoffs, and high-risk review scaffolds are all visible and internally consistent. It becomes learner-facing only after all real human source-fit rows, high-risk reviewer notes, direct-source decisions, merge previews, and exact-path write authorization pass.",
+  "boundary": "Knowledge base readiness gate is reviewer-facing education-only governance. It summarizes local private course absorption, public/Wikipedia/official source coverage, source-fit review state, and high-risk lesson review state; it does not generate real reviewer notes, approve copied text, approve learner-facing citations, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, or production readiness."
+}

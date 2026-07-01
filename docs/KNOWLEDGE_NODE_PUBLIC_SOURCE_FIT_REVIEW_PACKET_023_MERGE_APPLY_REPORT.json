@@ -1,0 +1,1228 @@
+{
+  "generatedAt": "2026-06-22T04:53:20.766Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "applyMode": "dry_run",
+  "applyStatus": "blocked_no_ready_merge_rows",
+  "packetId": "node-public-source-fit-batch-023-packet",
+  "batchId": "node-public-source-fit-batch-023",
+  "module": "交易心理",
+  "packetInputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_023_INPUT_COPY_TEMPLATE.json",
+  "packetValidationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_023_INPUT_COPY_TEMPLATE_VALIDATION.json",
+  "fullDraftPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+  "mergePreviewPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_023_MERGE_PREVIEW.json",
+  "totalRows": 60,
+  "readyToMergeRows": 0,
+  "blockedRows": 60,
+  "writtenRows": 0,
+  "mergeAllowedNow": false,
+  "writeAllowedNow": false,
+  "manualAuthorizationRequired": true,
+  "fullDraftRows": 1638,
+  "applyRows": [
+    {
+      "packetRowIndex": 0,
+      "targetFullDraftRowIndex": 852,
+      "reviewId": "knv2_0228::corpus_0459",
+      "nodeId": "knv2_0228",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 1,
+      "targetFullDraftRowIndex": 853,
+      "reviewId": "knv2_0228::corpus_0063",
+      "nodeId": "knv2_0228",
+      "documentId": "corpus_0063",
+      "sourceName": "BLS Handbook Import Export",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 2,
+      "targetFullDraftRowIndex": 854,
+      "reviewId": "knv2_0228::corpus_0352",
+      "nodeId": "knv2_0228",
+      "documentId": "corpus_0352",
+      "sourceName": "A quantum double-or-nothing game: The Kelly Criterion for Spins",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 3,
+      "targetFullDraftRowIndex": 855,
+      "reviewId": "knv2_0228::corpus_0462",
+      "nodeId": "knv2_0228",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 4,
+      "targetFullDraftRowIndex": 856,
+      "reviewId": "knv2_0228::corpus_0465",
+      "nodeId": "knv2_0228",
+      "documentId": "corpus_0465",
+      "sourceName": "Wikipedia: Disposition effect",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 5,
+      "targetFullDraftRowIndex": 857,
+      "reviewId": "knv2_0228::corpus_0427",
+      "nodeId": "knv2_0228",
+      "documentId": "corpus_0427",
+      "sourceName": "Wikipedia: Efficient-market hypothesis",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 6,
+      "targetFullDraftRowIndex": 924,
+      "reviewId": "knv2_0240::corpus_0459",
+      "nodeId": "knv2_0240",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 7,
+      "targetFullDraftRowIndex": 925,
+      "reviewId": "knv2_0240::corpus_0063",
+      "nodeId": "knv2_0240",
+      "documentId": "corpus_0063",
+      "sourceName": "BLS Handbook Import Export",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 8,
+      "targetFullDraftRowIndex": 926,
+      "reviewId": "knv2_0240::corpus_0352",
+      "nodeId": "knv2_0240",
+      "documentId": "corpus_0352",
+      "sourceName": "A quantum double-or-nothing game: The Kelly Criterion for Spins",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 9,
+      "targetFullDraftRowIndex": 927,
+      "reviewId": "knv2_0240::corpus_0462",
+      "nodeId": "knv2_0240",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 10,
+      "targetFullDraftRowIndex": 928,
+      "reviewId": "knv2_0240::corpus_0465",
+      "nodeId": "knv2_0240",
+      "documentId": "corpus_0465",
+      "sourceName": "Wikipedia: Disposition effect",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 11,
+      "targetFullDraftRowIndex": 929,
+      "reviewId": "knv2_0240::corpus_0427",
+      "nodeId": "knv2_0240",
+      "documentId": "corpus_0427",
+      "sourceName": "Wikipedia: Efficient-market hypothesis",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 12,
+      "targetFullDraftRowIndex": 990,
+      "reviewId": "knv2_0252::corpus_0459",
+      "nodeId": "knv2_0252",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 13,
+      "targetFullDraftRowIndex": 991,
+      "reviewId": "knv2_0252::corpus_0063",
+      "nodeId": "knv2_0252",
+      "documentId": "corpus_0063",
+      "sourceName": "BLS Handbook Import Export",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 14,
+      "targetFullDraftRowIndex": 992,
+      "reviewId": "knv2_0252::corpus_0352",
+      "nodeId": "knv2_0252",
+      "documentId": "corpus_0352",
+      "sourceName": "A quantum double-or-nothing game: The Kelly Criterion for Spins",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 15,
+      "targetFullDraftRowIndex": 993,
+      "reviewId": "knv2_0252::corpus_0462",
+      "nodeId": "knv2_0252",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 16,
+      "targetFullDraftRowIndex": 994,
+      "reviewId": "knv2_0252::corpus_0465",
+      "nodeId": "knv2_0252",
+      "documentId": "corpus_0465",
+      "sourceName": "Wikipedia: Disposition effect",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 17,
+      "targetFullDraftRowIndex": 995,
+      "reviewId": "knv2_0252::corpus_0427",
+      "nodeId": "knv2_0252",
+      "documentId": "corpus_0427",
+      "sourceName": "Wikipedia: Efficient-market hypothesis",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 18,
+      "targetFullDraftRowIndex": 1062,
+      "reviewId": "knv2_0264::corpus_0459",
+      "nodeId": "knv2_0264",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 19,
+      "targetFullDraftRowIndex": 1063,
+      "reviewId": "knv2_0264::corpus_0063",
+      "nodeId": "knv2_0264",
+      "documentId": "corpus_0063",
+      "sourceName": "BLS Handbook Import Export",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 20,
+      "targetFullDraftRowIndex": 1064,
+      "reviewId": "knv2_0264::corpus_0352",
+      "nodeId": "knv2_0264",
+      "documentId": "corpus_0352",
+      "sourceName": "A quantum double-or-nothing game: The Kelly Criterion for Spins",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 21,
+      "targetFullDraftRowIndex": 1065,
+      "reviewId": "knv2_0264::corpus_0462",
+      "nodeId": "knv2_0264",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 22,
+      "targetFullDraftRowIndex": 1066,
+      "reviewId": "knv2_0264::corpus_0465",
+      "nodeId": "knv2_0264",
+      "documentId": "corpus_0465",
+      "sourceName": "Wikipedia: Disposition effect",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 23,
+      "targetFullDraftRowIndex": 1067,
+      "reviewId": "knv2_0264::corpus_0427",
+      "nodeId": "knv2_0264",
+      "documentId": "corpus_0427",
+      "sourceName": "Wikipedia: Efficient-market hypothesis",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 24,
+      "targetFullDraftRowIndex": 1134,
+      "reviewId": "knv2_0276::corpus_0459",
+      "nodeId": "knv2_0276",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 25,
+      "targetFullDraftRowIndex": 1135,
+      "reviewId": "knv2_0276::corpus_0063",
+      "nodeId": "knv2_0276",
+      "documentId": "corpus_0063",
+      "sourceName": "BLS Handbook Import Export",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 26,
+      "targetFullDraftRowIndex": 1136,
+      "reviewId": "knv2_0276::corpus_0352",
+      "nodeId": "knv2_0276",
+      "documentId": "corpus_0352",
+      "sourceName": "A quantum double-or-nothing game: The Kelly Criterion for Spins",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 27,
+      "targetFullDraftRowIndex": 1137,
+      "reviewId": "knv2_0276::corpus_0462",
+      "nodeId": "knv2_0276",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 28,
+      "targetFullDraftRowIndex": 1138,
+      "reviewId": "knv2_0276::corpus_0465",
+      "nodeId": "knv2_0276",
+      "documentId": "corpus_0465",
+      "sourceName": "Wikipedia: Disposition effect",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 29,
+      "targetFullDraftRowIndex": 1139,
+      "reviewId": "knv2_0276::corpus_0427",
+      "nodeId": "knv2_0276",
+      "documentId": "corpus_0427",
+      "sourceName": "Wikipedia: Efficient-market hypothesis",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 30,
+      "targetFullDraftRowIndex": 1206,
+      "reviewId": "knv2_0288::corpus_0459",
+      "nodeId": "knv2_0288",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 31,
+      "targetFullDraftRowIndex": 1207,
+      "reviewId": "knv2_0288::corpus_0063",
+      "nodeId": "knv2_0288",
+      "documentId": "corpus_0063",
+      "sourceName": "BLS Handbook Import Export",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 32,
+      "targetFullDraftRowIndex": 1208,
+      "reviewId": "knv2_0288::corpus_0352",
+      "nodeId": "knv2_0288",
+      "documentId": "corpus_0352",
+      "sourceName": "A quantum double-or-nothing game: The Kelly Criterion for Spins",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 33,
+      "targetFullDraftRowIndex": 1209,
+      "reviewId": "knv2_0288::corpus_0462",
+      "nodeId": "knv2_0288",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 34,
+      "targetFullDraftRowIndex": 1210,
+      "reviewId": "knv2_0288::corpus_0465",
+      "nodeId": "knv2_0288",
+      "documentId": "corpus_0465",
+      "sourceName": "Wikipedia: Disposition effect",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 35,
+      "targetFullDraftRowIndex": 1211,
+      "reviewId": "knv2_0288::corpus_0427",
+      "nodeId": "knv2_0288",
+      "documentId": "corpus_0427",
+      "sourceName": "Wikipedia: Efficient-market hypothesis",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 36,
+      "targetFullDraftRowIndex": 1278,
+      "reviewId": "knv2_0300::corpus_0459",
+      "nodeId": "knv2_0300",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 37,
+      "targetFullDraftRowIndex": 1279,
+      "reviewId": "knv2_0300::corpus_0063",
+      "nodeId": "knv2_0300",
+      "documentId": "corpus_0063",
+      "sourceName": "BLS Handbook Import Export",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 38,
+      "targetFullDraftRowIndex": 1280,
+      "reviewId": "knv2_0300::corpus_0352",
+      "nodeId": "knv2_0300",
+      "documentId": "corpus_0352",
+      "sourceName": "A quantum double-or-nothing game: The Kelly Criterion for Spins",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 39,
+      "targetFullDraftRowIndex": 1281,
+      "reviewId": "knv2_0300::corpus_0462",
+      "nodeId": "knv2_0300",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 40,
+      "targetFullDraftRowIndex": 1282,
+      "reviewId": "knv2_0300::corpus_0465",
+      "nodeId": "knv2_0300",
+      "documentId": "corpus_0465",
+      "sourceName": "Wikipedia: Disposition effect",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 41,
+      "targetFullDraftRowIndex": 1283,
+      "reviewId": "knv2_0300::corpus_0427",
+      "nodeId": "knv2_0300",
+      "documentId": "corpus_0427",
+      "sourceName": "Wikipedia: Efficient-market hypothesis",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 42,
+      "targetFullDraftRowIndex": 1344,
+      "reviewId": "knv2_0312::corpus_0459",
+      "nodeId": "knv2_0312",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 43,
+      "targetFullDraftRowIndex": 1345,
+      "reviewId": "knv2_0312::corpus_0063",
+      "nodeId": "knv2_0312",
+      "documentId": "corpus_0063",
+      "sourceName": "BLS Handbook Import Export",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 44,
+      "targetFullDraftRowIndex": 1346,
+      "reviewId": "knv2_0312::corpus_0352",
+      "nodeId": "knv2_0312",
+      "documentId": "corpus_0352",
+      "sourceName": "A quantum double-or-nothing game: The Kelly Criterion for Spins",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 45,
+      "targetFullDraftRowIndex": 1347,
+      "reviewId": "knv2_0312::corpus_0462",
+      "nodeId": "knv2_0312",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 46,
+      "targetFullDraftRowIndex": 1348,
+      "reviewId": "knv2_0312::corpus_0465",
+      "nodeId": "knv2_0312",
+      "documentId": "corpus_0465",
+      "sourceName": "Wikipedia: Disposition effect",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 47,
+      "targetFullDraftRowIndex": 1349,
+      "reviewId": "knv2_0312::corpus_0427",
+      "nodeId": "knv2_0312",
+      "documentId": "corpus_0427",
+      "sourceName": "Wikipedia: Efficient-market hypothesis",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 48,
+      "targetFullDraftRowIndex": 1416,
+      "reviewId": "knv2_0324::corpus_0459",
+      "nodeId": "knv2_0324",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 49,
+      "targetFullDraftRowIndex": 1417,
+      "reviewId": "knv2_0324::corpus_0063",
+      "nodeId": "knv2_0324",
+      "documentId": "corpus_0063",
+      "sourceName": "BLS Handbook Import Export",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 50,
+      "targetFullDraftRowIndex": 1418,
+      "reviewId": "knv2_0324::corpus_0352",
+      "nodeId": "knv2_0324",
+      "documentId": "corpus_0352",
+      "sourceName": "A quantum double-or-nothing game: The Kelly Criterion for Spins",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 51,
+      "targetFullDraftRowIndex": 1419,
+      "reviewId": "knv2_0324::corpus_0462",
+      "nodeId": "knv2_0324",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 52,
+      "targetFullDraftRowIndex": 1420,
+      "reviewId": "knv2_0324::corpus_0465",
+      "nodeId": "knv2_0324",
+      "documentId": "corpus_0465",
+      "sourceName": "Wikipedia: Disposition effect",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 53,
+      "targetFullDraftRowIndex": 1421,
+      "reviewId": "knv2_0324::corpus_0427",
+      "nodeId": "knv2_0324",
+      "documentId": "corpus_0427",
+      "sourceName": "Wikipedia: Efficient-market hypothesis",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 54,
+      "targetFullDraftRowIndex": 1488,
+      "reviewId": "knv2_0336::corpus_0459",
+      "nodeId": "knv2_0336",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 55,
+      "targetFullDraftRowIndex": 1489,
+      "reviewId": "knv2_0336::corpus_0063",
+      "nodeId": "knv2_0336",
+      "documentId": "corpus_0063",
+      "sourceName": "BLS Handbook Import Export",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 56,
+      "targetFullDraftRowIndex": 1490,
+      "reviewId": "knv2_0336::corpus_0352",
+      "nodeId": "knv2_0336",
+      "documentId": "corpus_0352",
+      "sourceName": "A quantum double-or-nothing game: The Kelly Criterion for Spins",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 57,
+      "targetFullDraftRowIndex": 1491,
+      "reviewId": "knv2_0336::corpus_0462",
+      "nodeId": "knv2_0336",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 58,
+      "targetFullDraftRowIndex": 1492,
+      "reviewId": "knv2_0336::corpus_0465",
+      "nodeId": "knv2_0336",
+      "documentId": "corpus_0465",
+      "sourceName": "Wikipedia: Disposition effect",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 59,
+      "targetFullDraftRowIndex": 1493,
+      "reviewId": "knv2_0336::corpus_0427",
+      "nodeId": "knv2_0336",
+      "documentId": "corpus_0427",
+      "sourceName": "Wikipedia: Efficient-market hypothesis",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    }
+  ],
+  "nextStep": "Fill packet input copy with real reviewer decisions, validate the packet input, rebuild merge preview, then rerun this dry-run.",
+  "boundary": "Packet merge apply is a guarded reviewer-input merge pipeline. Dry-run mode writes no full draft changes. It does not create human judgments, approve copied text, approve learner-facing citations, write lessons, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, or production readiness."
+}

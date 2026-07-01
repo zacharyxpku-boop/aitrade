@@ -1,0 +1,2023 @@
+{
+  "generatedAt": "2026-06-21T23:23:25.920Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "matrixStatus": "high_risk_public_grounding_mapped_not_approved",
+  "sourcePublicGapAudit": "docs/PUBLIC_SOURCE_GAP_AUDIT.json",
+  "sourceSelfReviewOverlay": "docs/LOCAL_COURSE_HIGH_RISK_SELF_REVIEW_OVERLAY.json",
+  "lessonCount": 12,
+  "lessonsWithPublicGrounding": 12,
+  "lessonsMissingPublicGrounding": 0,
+  "lessonsWithAtLeastThreeWikipediaRefs": 12,
+  "totalWikipediaRefs": 48,
+  "totalPublicContextRefs": 24,
+  "directSourceCandidateResolutionsMapped": 5,
+  "directSourceCandidatesApprovedForLearnerCitation": 0,
+  "publicGroundingMappedNotes": 12,
+  "releaseReadyLessons": 0,
+  "learnerCitationApprovedLessons": 0,
+  "releaseBlockingLessons": 12,
+  "humanApprovalRequired": true,
+  "writeAllowedNow": false,
+  "approvalGatePassed": false,
+  "modulesCovered": 4,
+  "moduleRows": [
+    {
+      "module": "突破",
+      "lessons": 4,
+      "publicModuleReadinessStatus": "public_reference_ready_for_reviewer",
+      "wikipediaEvidenceDocs": 37,
+      "officialLikeEvidenceDocs": 6,
+      "selectedWikipediaRefs": 16
+    },
+    {
+      "module": "市场结构",
+      "lessons": 4,
+      "publicModuleReadinessStatus": "public_reference_ready_for_reviewer",
+      "wikipediaEvidenceDocs": 45,
+      "officialLikeEvidenceDocs": 24,
+      "selectedWikipediaRefs": 16
+    },
+    {
+      "module": "趋势",
+      "lessons": 2,
+      "publicModuleReadinessStatus": "public_reference_ready_for_reviewer",
+      "wikipediaEvidenceDocs": 29,
+      "officialLikeEvidenceDocs": 1,
+      "selectedWikipediaRefs": 8
+    },
+    {
+      "module": "反转",
+      "lessons": 2,
+      "publicModuleReadinessStatus": "public_reference_ready_for_reviewer",
+      "wikipediaEvidenceDocs": 10,
+      "officialLikeEvidenceDocs": 1,
+      "selectedWikipediaRefs": 8
+    }
+  ],
+  "lessonRows": [
+    {
+      "candidateId": "local_course_rewrite_batch_04_10",
+      "nodeId": "knv2_0029",
+      "lessonId": "lesson_knv2_0029",
+      "module": "突破",
+      "topic": "假突破",
+      "sourceSelfReviewStatus": "codex_self_review_complete_not_approved",
+      "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+      "publicModuleReadinessStatus": "public_reference_ready_for_reviewer",
+      "matchedPublicDocs": 497,
+      "wikipediaEvidenceDocs": 37,
+      "officialLikeEvidenceDocs": 6,
+      "uniqueHosts": 3,
+      "wikipediaRefs": [
+        {
+          "documentId": "corpus_0408",
+          "sourceId": "wikipedia:564701",
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 11,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "volatility",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_1583",
+          "sourceId": "wikipedia:112577",
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 9,
+          "matchedTerms": [
+            "breakout",
+            "support",
+            "resistance",
+            "volatility",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 7,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_1115",
+          "sourceId": "wikipedia:23264244",
+          "name": "Wikipedia: Gap (chart pattern)",
+          "url": "https://en.wikipedia.org/wiki/Gap_(chart_pattern)",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 7,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        }
+      ],
+      "publicContextRefs": [
+        {
+          "documentId": "corpus_0313",
+          "sourceId": "arxiv:2507.01971v1",
+          "name": "DeepSupp: Attention-Driven Correlation Pattern Analysis for Dynamic Time Series Support and Resistance Levels Identification",
+          "url": "https://arxiv.org/abs/2507.01971v1",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 10,
+          "matchedTerms": [
+            "breakout",
+            "support",
+            "resistance",
+            "technical analysis"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        },
+        {
+          "documentId": "corpus_0312",
+          "sourceId": "arxiv:2101.07410v1",
+          "name": "Evidence and Behaviour of Support and Resistance Levels in Financial Time Series",
+          "url": "https://arxiv.org/abs/2101.07410v1",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 10,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "volatility",
+            "technical analysis"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        }
+      ],
+      "selectedPublicRefCount": 6,
+      "shareAlikeAttributionRequiredRefs": 4,
+      "publicGroundingMapped": true,
+      "learnerCitationApproved": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "releaseBlocker": true,
+      "humanApprovalRequired": true,
+      "rewriteGuidance": "Use public refs to support terminology, taxonomy, and source-boundary review only. Rewrite the lesson in original education language; do not copy Wikipedia or private PDF wording.",
+      "claimBoundary": "Public sources can ground vocabulary and conceptual boundaries. They do not prove a setup, signal, future outcome, strategy edge, or real-money action.",
+      "nextGate": "human_public_grounding_review_then_originality_and_release_gate"
+    },
+    {
+      "candidateId": "local_course_rewrite_batch_05_10",
+      "nodeId": "knv2_0089",
+      "lessonId": "lesson_knv2_0089",
+      "module": "突破",
+      "topic": "假突破",
+      "sourceSelfReviewStatus": "codex_self_review_complete_not_approved",
+      "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+      "publicModuleReadinessStatus": "public_reference_ready_for_reviewer",
+      "matchedPublicDocs": 497,
+      "wikipediaEvidenceDocs": 37,
+      "officialLikeEvidenceDocs": 6,
+      "uniqueHosts": 3,
+      "wikipediaRefs": [
+        {
+          "documentId": "corpus_0408",
+          "sourceId": "wikipedia:564701",
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 11,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "volatility",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_1583",
+          "sourceId": "wikipedia:112577",
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 9,
+          "matchedTerms": [
+            "breakout",
+            "support",
+            "resistance",
+            "volatility",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 7,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_1115",
+          "sourceId": "wikipedia:23264244",
+          "name": "Wikipedia: Gap (chart pattern)",
+          "url": "https://en.wikipedia.org/wiki/Gap_(chart_pattern)",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 7,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        }
+      ],
+      "publicContextRefs": [
+        {
+          "documentId": "corpus_0313",
+          "sourceId": "arxiv:2507.01971v1",
+          "name": "DeepSupp: Attention-Driven Correlation Pattern Analysis for Dynamic Time Series Support and Resistance Levels Identification",
+          "url": "https://arxiv.org/abs/2507.01971v1",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 10,
+          "matchedTerms": [
+            "breakout",
+            "support",
+            "resistance",
+            "technical analysis"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        },
+        {
+          "documentId": "corpus_0312",
+          "sourceId": "arxiv:2101.07410v1",
+          "name": "Evidence and Behaviour of Support and Resistance Levels in Financial Time Series",
+          "url": "https://arxiv.org/abs/2101.07410v1",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 10,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "volatility",
+            "technical analysis"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        }
+      ],
+      "selectedPublicRefCount": 6,
+      "shareAlikeAttributionRequiredRefs": 4,
+      "publicGroundingMapped": true,
+      "learnerCitationApproved": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "releaseBlocker": true,
+      "humanApprovalRequired": true,
+      "rewriteGuidance": "Use public refs to support terminology, taxonomy, and source-boundary review only. Rewrite the lesson in original education language; do not copy Wikipedia or private PDF wording.",
+      "claimBoundary": "Public sources can ground vocabulary and conceptual boundaries. They do not prove a setup, signal, future outcome, strategy edge, or real-money action.",
+      "nextGate": "human_public_grounding_review_then_originality_and_release_gate"
+    },
+    {
+      "candidateId": "local_course_rewrite_batch_01_03",
+      "nodeId": "knv2_0002",
+      "lessonId": "lesson_knv2_0002",
+      "module": "市场结构",
+      "topic": "高低点",
+      "sourceSelfReviewStatus": "codex_self_review_complete_not_approved",
+      "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+      "publicModuleReadinessStatus": "public_reference_ready_for_reviewer",
+      "matchedPublicDocs": 482,
+      "wikipediaEvidenceDocs": 45,
+      "officialLikeEvidenceDocs": 24,
+      "uniqueHosts": 3,
+      "wikipediaRefs": [
+        {
+          "documentId": "corpus_0471",
+          "sourceId": "wikipedia:23550923",
+          "name": "Wikipedia: High-frequency trading",
+          "url": "https://en.wikipedia.org/wiki/High-frequency_trading",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 9,
+          "matchedTerms": [
+            "market structure",
+            "support",
+            "order book",
+            "market microstructure",
+            "liquidity",
+            "supply",
+            "demand",
+            "limit order"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0408",
+          "sourceId": "wikipedia:564701",
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 9,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "demand"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0469",
+          "sourceId": "wikipedia:447844",
+          "name": "Wikipedia: Market maker",
+          "url": "https://en.wikipedia.org/wiki/Market_maker",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 8,
+          "matchedTerms": [
+            "market microstructure",
+            "liquidity",
+            "supply",
+            "demand",
+            "market maker"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0468",
+          "sourceId": "wikipedia:12057894",
+          "name": "Wikipedia: Order book",
+          "url": "https://en.wikipedia.org/wiki/Order_book",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 7,
+          "matchedTerms": [
+            "order book",
+            "supply",
+            "demand",
+            "market depth"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        }
+      ],
+      "publicContextRefs": [
+        {
+          "documentId": "corpus_0630",
+          "sourceId": "arxiv:1012.0349v4",
+          "name": "Limit Order Books",
+          "url": "https://arxiv.org/abs/1012.0349v4",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 16,
+          "matchedTerms": [
+            "market structure",
+            "support",
+            "order book",
+            "market microstructure",
+            "liquidity",
+            "supply",
+            "demand",
+            "market depth"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        },
+        {
+          "documentId": "corpus_0834",
+          "sourceId": "arxiv:1709.02502v4",
+          "name": "Testing if the market microstructure noise is fully explained by the informational content of some variables from the limit order book",
+          "url": "https://arxiv.org/abs/1709.02502v4",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 16,
+          "matchedTerms": [
+            "support",
+            "order book",
+            "market microstructure",
+            "liquidity",
+            "supply",
+            "demand",
+            "limit order"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        }
+      ],
+      "selectedPublicRefCount": 6,
+      "shareAlikeAttributionRequiredRefs": 4,
+      "publicGroundingMapped": true,
+      "learnerCitationApproved": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "releaseBlocker": true,
+      "humanApprovalRequired": true,
+      "rewriteGuidance": "Use public refs to support terminology, taxonomy, and source-boundary review only. Rewrite the lesson in original education language; do not copy Wikipedia or private PDF wording.",
+      "claimBoundary": "Public sources can ground vocabulary and conceptual boundaries. They do not prove a setup, signal, future outcome, strategy edge, or real-money action.",
+      "nextGate": "human_public_grounding_review_then_originality_and_release_gate"
+    },
+    {
+      "candidateId": "local_course_rewrite_batch_01_04",
+      "nodeId": "knv2_0062",
+      "lessonId": "lesson_knv2_0062",
+      "module": "市场结构",
+      "topic": "高低点",
+      "sourceSelfReviewStatus": "codex_self_review_complete_not_approved",
+      "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+      "publicModuleReadinessStatus": "public_reference_ready_for_reviewer",
+      "matchedPublicDocs": 482,
+      "wikipediaEvidenceDocs": 45,
+      "officialLikeEvidenceDocs": 24,
+      "uniqueHosts": 3,
+      "wikipediaRefs": [
+        {
+          "documentId": "corpus_0471",
+          "sourceId": "wikipedia:23550923",
+          "name": "Wikipedia: High-frequency trading",
+          "url": "https://en.wikipedia.org/wiki/High-frequency_trading",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 9,
+          "matchedTerms": [
+            "market structure",
+            "support",
+            "order book",
+            "market microstructure",
+            "liquidity",
+            "supply",
+            "demand",
+            "limit order"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0408",
+          "sourceId": "wikipedia:564701",
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 9,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "demand"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0469",
+          "sourceId": "wikipedia:447844",
+          "name": "Wikipedia: Market maker",
+          "url": "https://en.wikipedia.org/wiki/Market_maker",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 8,
+          "matchedTerms": [
+            "market microstructure",
+            "liquidity",
+            "supply",
+            "demand",
+            "market maker"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0468",
+          "sourceId": "wikipedia:12057894",
+          "name": "Wikipedia: Order book",
+          "url": "https://en.wikipedia.org/wiki/Order_book",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 7,
+          "matchedTerms": [
+            "order book",
+            "supply",
+            "demand",
+            "market depth"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        }
+      ],
+      "publicContextRefs": [
+        {
+          "documentId": "corpus_0630",
+          "sourceId": "arxiv:1012.0349v4",
+          "name": "Limit Order Books",
+          "url": "https://arxiv.org/abs/1012.0349v4",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 16,
+          "matchedTerms": [
+            "market structure",
+            "support",
+            "order book",
+            "market microstructure",
+            "liquidity",
+            "supply",
+            "demand",
+            "market depth"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        },
+        {
+          "documentId": "corpus_0834",
+          "sourceId": "arxiv:1709.02502v4",
+          "name": "Testing if the market microstructure noise is fully explained by the informational content of some variables from the limit order book",
+          "url": "https://arxiv.org/abs/1709.02502v4",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 16,
+          "matchedTerms": [
+            "support",
+            "order book",
+            "market microstructure",
+            "liquidity",
+            "supply",
+            "demand",
+            "limit order"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        }
+      ],
+      "selectedPublicRefCount": 6,
+      "shareAlikeAttributionRequiredRefs": 4,
+      "publicGroundingMapped": true,
+      "learnerCitationApproved": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "releaseBlocker": true,
+      "humanApprovalRequired": true,
+      "rewriteGuidance": "Use public refs to support terminology, taxonomy, and source-boundary review only. Rewrite the lesson in original education language; do not copy Wikipedia or private PDF wording.",
+      "claimBoundary": "Public sources can ground vocabulary and conceptual boundaries. They do not prove a setup, signal, future outcome, strategy edge, or real-money action.",
+      "nextGate": "human_public_grounding_review_then_originality_and_release_gate"
+    },
+    {
+      "candidateId": "local_course_rewrite_batch_01_07",
+      "nodeId": "knv2_0016",
+      "lessonId": "lesson_knv2_0016",
+      "module": "趋势",
+      "topic": "趋势回调",
+      "sourceSelfReviewStatus": "codex_self_review_complete_not_approved",
+      "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+      "publicModuleReadinessStatus": "public_reference_ready_for_reviewer",
+      "matchedPublicDocs": 192,
+      "wikipediaEvidenceDocs": 29,
+      "officialLikeEvidenceDocs": 1,
+      "uniqueHosts": 3,
+      "wikipediaRefs": [
+        {
+          "documentId": "corpus_1583",
+          "sourceId": "wikipedia:112577",
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 8,
+          "matchedTerms": [
+            "market trend",
+            "moving average",
+            "momentum",
+            "dow theory",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0444",
+          "sourceId": "wikipedia:323441",
+          "name": "Wikipedia: Dow theory",
+          "url": "https://en.wikipedia.org/wiki/Dow_theory",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 6,
+          "matchedTerms": [
+            "market trend",
+            "dow theory",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0438",
+          "sourceId": "wikipedia:6597175",
+          "name": "Wikipedia: Trend following trading",
+          "url": "https://en.wikipedia.org/wiki/Trend_following_trading",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 6,
+          "matchedTerms": [
+            "market trend",
+            "trend following",
+            "moving average"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0445",
+          "sourceId": "wikipedia:63082",
+          "name": "Wikipedia: Market trend",
+          "url": "https://en.wikipedia.org/wiki/Market_trend",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 5,
+          "matchedTerms": [
+            "market trend",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        }
+      ],
+      "publicContextRefs": [
+        {
+          "documentId": "corpus_1142",
+          "sourceId": "arxiv:2601.19504v1",
+          "name": "Generating Alpha: A Hybrid AI-Driven Trading System Integrating Technical Analysis, Machine Learning and Financial Sentiment for Regime-Adaptive Equity Strategies",
+          "url": "https://arxiv.org/abs/2601.19504v1",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 7,
+          "matchedTerms": [
+            "trend following",
+            "moving average",
+            "momentum",
+            "technical analysis"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        },
+        {
+          "documentId": "corpus_0377",
+          "sourceId": "arxiv:1402.3030v2",
+          "name": "Information ratio analysis of momentum strategies",
+          "url": "https://arxiv.org/abs/1402.3030v2",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 7,
+          "matchedTerms": [
+            "trend following",
+            "moving average",
+            "momentum",
+            "technical analysis"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        }
+      ],
+      "selectedPublicRefCount": 6,
+      "shareAlikeAttributionRequiredRefs": 4,
+      "publicGroundingMapped": true,
+      "learnerCitationApproved": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "releaseBlocker": true,
+      "humanApprovalRequired": true,
+      "rewriteGuidance": "Use public refs to support terminology, taxonomy, and source-boundary review only. Rewrite the lesson in original education language; do not copy Wikipedia or private PDF wording.",
+      "claimBoundary": "Public sources can ground vocabulary and conceptual boundaries. They do not prove a setup, signal, future outcome, strategy edge, or real-money action.",
+      "nextGate": "human_public_grounding_review_then_originality_and_release_gate"
+    },
+    {
+      "candidateId": "local_course_rewrite_batch_01_08",
+      "nodeId": "knv2_0076",
+      "lessonId": "lesson_knv2_0076",
+      "module": "趋势",
+      "topic": "趋势回调",
+      "sourceSelfReviewStatus": "codex_self_review_complete_not_approved",
+      "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+      "publicModuleReadinessStatus": "public_reference_ready_for_reviewer",
+      "matchedPublicDocs": 192,
+      "wikipediaEvidenceDocs": 29,
+      "officialLikeEvidenceDocs": 1,
+      "uniqueHosts": 3,
+      "wikipediaRefs": [
+        {
+          "documentId": "corpus_1583",
+          "sourceId": "wikipedia:112577",
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 8,
+          "matchedTerms": [
+            "market trend",
+            "moving average",
+            "momentum",
+            "dow theory",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0444",
+          "sourceId": "wikipedia:323441",
+          "name": "Wikipedia: Dow theory",
+          "url": "https://en.wikipedia.org/wiki/Dow_theory",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 6,
+          "matchedTerms": [
+            "market trend",
+            "dow theory",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0438",
+          "sourceId": "wikipedia:6597175",
+          "name": "Wikipedia: Trend following trading",
+          "url": "https://en.wikipedia.org/wiki/Trend_following_trading",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 6,
+          "matchedTerms": [
+            "market trend",
+            "trend following",
+            "moving average"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0445",
+          "sourceId": "wikipedia:63082",
+          "name": "Wikipedia: Market trend",
+          "url": "https://en.wikipedia.org/wiki/Market_trend",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 5,
+          "matchedTerms": [
+            "market trend",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        }
+      ],
+      "publicContextRefs": [
+        {
+          "documentId": "corpus_1142",
+          "sourceId": "arxiv:2601.19504v1",
+          "name": "Generating Alpha: A Hybrid AI-Driven Trading System Integrating Technical Analysis, Machine Learning and Financial Sentiment for Regime-Adaptive Equity Strategies",
+          "url": "https://arxiv.org/abs/2601.19504v1",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 7,
+          "matchedTerms": [
+            "trend following",
+            "moving average",
+            "momentum",
+            "technical analysis"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        },
+        {
+          "documentId": "corpus_0377",
+          "sourceId": "arxiv:1402.3030v2",
+          "name": "Information ratio analysis of momentum strategies",
+          "url": "https://arxiv.org/abs/1402.3030v2",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 7,
+          "matchedTerms": [
+            "trend following",
+            "moving average",
+            "momentum",
+            "technical analysis"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        }
+      ],
+      "selectedPublicRefCount": 6,
+      "shareAlikeAttributionRequiredRefs": 4,
+      "publicGroundingMapped": true,
+      "learnerCitationApproved": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "releaseBlocker": true,
+      "humanApprovalRequired": true,
+      "rewriteGuidance": "Use public refs to support terminology, taxonomy, and source-boundary review only. Rewrite the lesson in original education language; do not copy Wikipedia or private PDF wording.",
+      "claimBoundary": "Public sources can ground vocabulary and conceptual boundaries. They do not prove a setup, signal, future outcome, strategy edge, or real-money action.",
+      "nextGate": "human_public_grounding_review_then_originality_and_release_gate"
+    },
+    {
+      "candidateId": "local_course_rewrite_batch_01_09",
+      "nodeId": "knv2_0053",
+      "lessonId": "lesson_knv2_0053",
+      "module": "突破",
+      "topic": "突破失败",
+      "sourceSelfReviewStatus": "codex_self_review_complete_not_approved",
+      "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+      "publicModuleReadinessStatus": "public_reference_ready_for_reviewer",
+      "matchedPublicDocs": 497,
+      "wikipediaEvidenceDocs": 37,
+      "officialLikeEvidenceDocs": 6,
+      "uniqueHosts": 3,
+      "wikipediaRefs": [
+        {
+          "documentId": "corpus_0408",
+          "sourceId": "wikipedia:564701",
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 11,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "volatility",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_1583",
+          "sourceId": "wikipedia:112577",
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 9,
+          "matchedTerms": [
+            "breakout",
+            "support",
+            "resistance",
+            "volatility",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 7,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_1115",
+          "sourceId": "wikipedia:23264244",
+          "name": "Wikipedia: Gap (chart pattern)",
+          "url": "https://en.wikipedia.org/wiki/Gap_(chart_pattern)",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 7,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        }
+      ],
+      "publicContextRefs": [
+        {
+          "documentId": "corpus_0313",
+          "sourceId": "arxiv:2507.01971v1",
+          "name": "DeepSupp: Attention-Driven Correlation Pattern Analysis for Dynamic Time Series Support and Resistance Levels Identification",
+          "url": "https://arxiv.org/abs/2507.01971v1",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 10,
+          "matchedTerms": [
+            "breakout",
+            "support",
+            "resistance",
+            "technical analysis"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        },
+        {
+          "documentId": "corpus_0312",
+          "sourceId": "arxiv:2101.07410v1",
+          "name": "Evidence and Behaviour of Support and Resistance Levels in Financial Time Series",
+          "url": "https://arxiv.org/abs/2101.07410v1",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 10,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "volatility",
+            "technical analysis"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        }
+      ],
+      "selectedPublicRefCount": 6,
+      "shareAlikeAttributionRequiredRefs": 4,
+      "publicGroundingMapped": true,
+      "learnerCitationApproved": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "releaseBlocker": true,
+      "humanApprovalRequired": true,
+      "rewriteGuidance": "Use public refs to support terminology, taxonomy, and source-boundary review only. Rewrite the lesson in original education language; do not copy Wikipedia or private PDF wording.",
+      "claimBoundary": "Public sources can ground vocabulary and conceptual boundaries. They do not prove a setup, signal, future outcome, strategy edge, or real-money action.",
+      "nextGate": "human_public_grounding_review_then_originality_and_release_gate"
+    },
+    {
+      "candidateId": "local_course_rewrite_batch_01_10",
+      "nodeId": "knv2_0113",
+      "lessonId": "lesson_knv2_0113",
+      "module": "突破",
+      "topic": "突破失败",
+      "sourceSelfReviewStatus": "codex_self_review_complete_not_approved",
+      "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+      "publicModuleReadinessStatus": "public_reference_ready_for_reviewer",
+      "matchedPublicDocs": 497,
+      "wikipediaEvidenceDocs": 37,
+      "officialLikeEvidenceDocs": 6,
+      "uniqueHosts": 3,
+      "wikipediaRefs": [
+        {
+          "documentId": "corpus_0408",
+          "sourceId": "wikipedia:564701",
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 11,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "volatility",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_1583",
+          "sourceId": "wikipedia:112577",
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 9,
+          "matchedTerms": [
+            "breakout",
+            "support",
+            "resistance",
+            "volatility",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 7,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_1115",
+          "sourceId": "wikipedia:23264244",
+          "name": "Wikipedia: Gap (chart pattern)",
+          "url": "https://en.wikipedia.org/wiki/Gap_(chart_pattern)",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 7,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        }
+      ],
+      "publicContextRefs": [
+        {
+          "documentId": "corpus_0313",
+          "sourceId": "arxiv:2507.01971v1",
+          "name": "DeepSupp: Attention-Driven Correlation Pattern Analysis for Dynamic Time Series Support and Resistance Levels Identification",
+          "url": "https://arxiv.org/abs/2507.01971v1",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 10,
+          "matchedTerms": [
+            "breakout",
+            "support",
+            "resistance",
+            "technical analysis"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        },
+        {
+          "documentId": "corpus_0312",
+          "sourceId": "arxiv:2101.07410v1",
+          "name": "Evidence and Behaviour of Support and Resistance Levels in Financial Time Series",
+          "url": "https://arxiv.org/abs/2101.07410v1",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 10,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "volatility",
+            "technical analysis"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        }
+      ],
+      "selectedPublicRefCount": 6,
+      "shareAlikeAttributionRequiredRefs": 4,
+      "publicGroundingMapped": true,
+      "learnerCitationApproved": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "releaseBlocker": true,
+      "humanApprovalRequired": true,
+      "rewriteGuidance": "Use public refs to support terminology, taxonomy, and source-boundary review only. Rewrite the lesson in original education language; do not copy Wikipedia or private PDF wording.",
+      "claimBoundary": "Public sources can ground vocabulary and conceptual boundaries. They do not prove a setup, signal, future outcome, strategy edge, or real-money action.",
+      "nextGate": "human_public_grounding_review_then_originality_and_release_gate"
+    },
+    {
+      "candidateId": "local_course_rewrite_batch_01_13",
+      "nodeId": "knv2_0055",
+      "lessonId": "lesson_knv2_0055",
+      "module": "反转",
+      "topic": "反转失败",
+      "sourceSelfReviewStatus": "codex_self_review_complete_not_approved",
+      "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+      "publicModuleReadinessStatus": "public_reference_ready_for_reviewer",
+      "matchedPublicDocs": 31,
+      "wikipediaEvidenceDocs": 10,
+      "officialLikeEvidenceDocs": 1,
+      "uniqueHosts": 5,
+      "wikipediaRefs": [
+        {
+          "documentId": "corpus_0411",
+          "sourceId": "wikipedia:23469024",
+          "name": "Wikipedia: Double top and double bottom",
+          "url": "https://en.wikipedia.org/wiki/Double_top_and_double_bottom",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 10,
+          "matchedTerms": [
+            "reversal",
+            "double top",
+            "double bottom",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 9,
+          "matchedTerms": [
+            "reversal",
+            "double top",
+            "double bottom",
+            "head and shoulders",
+            "candlestick pattern",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0410",
+          "sourceId": "wikipedia:16363792",
+          "name": "Wikipedia: Head and shoulders (chart pattern)",
+          "url": "https://en.wikipedia.org/wiki/Head_and_shoulders_(chart_pattern)",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 9,
+          "matchedTerms": [
+            "reversal",
+            "head and shoulders",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_1115",
+          "sourceId": "wikipedia:23264244",
+          "name": "Wikipedia: Gap (chart pattern)",
+          "url": "https://en.wikipedia.org/wiki/Gap_(chart_pattern)",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 5,
+          "matchedTerms": [
+            "reversal",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        }
+      ],
+      "publicContextRefs": [
+        {
+          "documentId": "corpus_0311",
+          "sourceId": "arxiv:1808.00418v1",
+          "name": "Stock Chart Pattern recognition with Deep Learning",
+          "url": "https://arxiv.org/abs/1808.00418v1",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 7,
+          "matchedTerms": [
+            "reversal",
+            "double top",
+            "double bottom",
+            "chart pattern"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        },
+        {
+          "documentId": "corpus_1031",
+          "sourceId": "github:learn-crypto-trading/learn-crypto-trading.github.io",
+          "name": "learn-crypto-trading/learn-crypto-trading.github.io README",
+          "url": "https://github.com/learn-crypto-trading/learn-crypto-trading.github.io",
+          "tier": "permissive",
+          "family": "Permissive/Open Source",
+          "score": 6,
+          "matchedTerms": [
+            "reversal",
+            "double top",
+            "double bottom",
+            "head and shoulders",
+            "candlestick pattern",
+            "chart pattern"
+          ],
+          "excerptPolicy": "cite_and_paraphrase_for_original_lesson",
+          "groundingRole": "open_research_or_public_context_reference"
+        }
+      ],
+      "selectedPublicRefCount": 6,
+      "shareAlikeAttributionRequiredRefs": 4,
+      "publicGroundingMapped": true,
+      "learnerCitationApproved": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "releaseBlocker": true,
+      "humanApprovalRequired": true,
+      "rewriteGuidance": "Use public refs to support terminology, taxonomy, and source-boundary review only. Rewrite the lesson in original education language; do not copy Wikipedia or private PDF wording.",
+      "claimBoundary": "Public sources can ground vocabulary and conceptual boundaries. They do not prove a setup, signal, future outcome, strategy edge, or real-money action.",
+      "nextGate": "human_public_grounding_review_then_originality_and_release_gate"
+    },
+    {
+      "candidateId": "local_course_rewrite_batch_01_14",
+      "nodeId": "knv2_0115",
+      "lessonId": "lesson_knv2_0115",
+      "module": "反转",
+      "topic": "反转失败",
+      "sourceSelfReviewStatus": "codex_self_review_complete_not_approved",
+      "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+      "publicModuleReadinessStatus": "public_reference_ready_for_reviewer",
+      "matchedPublicDocs": 31,
+      "wikipediaEvidenceDocs": 10,
+      "officialLikeEvidenceDocs": 1,
+      "uniqueHosts": 5,
+      "wikipediaRefs": [
+        {
+          "documentId": "corpus_0411",
+          "sourceId": "wikipedia:23469024",
+          "name": "Wikipedia: Double top and double bottom",
+          "url": "https://en.wikipedia.org/wiki/Double_top_and_double_bottom",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 10,
+          "matchedTerms": [
+            "reversal",
+            "double top",
+            "double bottom",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 9,
+          "matchedTerms": [
+            "reversal",
+            "double top",
+            "double bottom",
+            "head and shoulders",
+            "candlestick pattern",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0410",
+          "sourceId": "wikipedia:16363792",
+          "name": "Wikipedia: Head and shoulders (chart pattern)",
+          "url": "https://en.wikipedia.org/wiki/Head_and_shoulders_(chart_pattern)",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 9,
+          "matchedTerms": [
+            "reversal",
+            "head and shoulders",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_1115",
+          "sourceId": "wikipedia:23264244",
+          "name": "Wikipedia: Gap (chart pattern)",
+          "url": "https://en.wikipedia.org/wiki/Gap_(chart_pattern)",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 5,
+          "matchedTerms": [
+            "reversal",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        }
+      ],
+      "publicContextRefs": [
+        {
+          "documentId": "corpus_0311",
+          "sourceId": "arxiv:1808.00418v1",
+          "name": "Stock Chart Pattern recognition with Deep Learning",
+          "url": "https://arxiv.org/abs/1808.00418v1",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 7,
+          "matchedTerms": [
+            "reversal",
+            "double top",
+            "double bottom",
+            "chart pattern"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        },
+        {
+          "documentId": "corpus_1031",
+          "sourceId": "github:learn-crypto-trading/learn-crypto-trading.github.io",
+          "name": "learn-crypto-trading/learn-crypto-trading.github.io README",
+          "url": "https://github.com/learn-crypto-trading/learn-crypto-trading.github.io",
+          "tier": "permissive",
+          "family": "Permissive/Open Source",
+          "score": 6,
+          "matchedTerms": [
+            "reversal",
+            "double top",
+            "double bottom",
+            "head and shoulders",
+            "candlestick pattern",
+            "chart pattern"
+          ],
+          "excerptPolicy": "cite_and_paraphrase_for_original_lesson",
+          "groundingRole": "open_research_or_public_context_reference"
+        }
+      ],
+      "selectedPublicRefCount": 6,
+      "shareAlikeAttributionRequiredRefs": 4,
+      "publicGroundingMapped": true,
+      "learnerCitationApproved": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "releaseBlocker": true,
+      "humanApprovalRequired": true,
+      "rewriteGuidance": "Use public refs to support terminology, taxonomy, and source-boundary review only. Rewrite the lesson in original education language; do not copy Wikipedia or private PDF wording.",
+      "claimBoundary": "Public sources can ground vocabulary and conceptual boundaries. They do not prove a setup, signal, future outcome, strategy edge, or real-money action.",
+      "nextGate": "human_public_grounding_review_then_originality_and_release_gate"
+    },
+    {
+      "candidateId": "local_course_rewrite_batch_02_03",
+      "nodeId": "knv2_0122",
+      "lessonId": "lesson_knv2_0122",
+      "module": "市场结构",
+      "topic": "高低点",
+      "sourceSelfReviewStatus": "codex_self_review_complete_not_approved",
+      "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+      "publicModuleReadinessStatus": "public_reference_ready_for_reviewer",
+      "matchedPublicDocs": 482,
+      "wikipediaEvidenceDocs": 45,
+      "officialLikeEvidenceDocs": 24,
+      "uniqueHosts": 3,
+      "wikipediaRefs": [
+        {
+          "documentId": "corpus_0471",
+          "sourceId": "wikipedia:23550923",
+          "name": "Wikipedia: High-frequency trading",
+          "url": "https://en.wikipedia.org/wiki/High-frequency_trading",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 9,
+          "matchedTerms": [
+            "market structure",
+            "support",
+            "order book",
+            "market microstructure",
+            "liquidity",
+            "supply",
+            "demand",
+            "limit order"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0408",
+          "sourceId": "wikipedia:564701",
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 9,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "demand"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0469",
+          "sourceId": "wikipedia:447844",
+          "name": "Wikipedia: Market maker",
+          "url": "https://en.wikipedia.org/wiki/Market_maker",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 8,
+          "matchedTerms": [
+            "market microstructure",
+            "liquidity",
+            "supply",
+            "demand",
+            "market maker"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0468",
+          "sourceId": "wikipedia:12057894",
+          "name": "Wikipedia: Order book",
+          "url": "https://en.wikipedia.org/wiki/Order_book",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 7,
+          "matchedTerms": [
+            "order book",
+            "supply",
+            "demand",
+            "market depth"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        }
+      ],
+      "publicContextRefs": [
+        {
+          "documentId": "corpus_0630",
+          "sourceId": "arxiv:1012.0349v4",
+          "name": "Limit Order Books",
+          "url": "https://arxiv.org/abs/1012.0349v4",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 16,
+          "matchedTerms": [
+            "market structure",
+            "support",
+            "order book",
+            "market microstructure",
+            "liquidity",
+            "supply",
+            "demand",
+            "market depth"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        },
+        {
+          "documentId": "corpus_0834",
+          "sourceId": "arxiv:1709.02502v4",
+          "name": "Testing if the market microstructure noise is fully explained by the informational content of some variables from the limit order book",
+          "url": "https://arxiv.org/abs/1709.02502v4",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 16,
+          "matchedTerms": [
+            "support",
+            "order book",
+            "market microstructure",
+            "liquidity",
+            "supply",
+            "demand",
+            "limit order"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        }
+      ],
+      "selectedPublicRefCount": 6,
+      "shareAlikeAttributionRequiredRefs": 4,
+      "publicGroundingMapped": true,
+      "learnerCitationApproved": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "releaseBlocker": true,
+      "humanApprovalRequired": true,
+      "rewriteGuidance": "Use public refs to support terminology, taxonomy, and source-boundary review only. Rewrite the lesson in original education language; do not copy Wikipedia or private PDF wording.",
+      "claimBoundary": "Public sources can ground vocabulary and conceptual boundaries. They do not prove a setup, signal, future outcome, strategy edge, or real-money action.",
+      "nextGate": "human_public_grounding_review_then_originality_and_release_gate"
+    },
+    {
+      "candidateId": "local_course_rewrite_batch_02_04",
+      "nodeId": "knv2_0182",
+      "lessonId": "lesson_knv2_0182",
+      "module": "市场结构",
+      "topic": "高低点",
+      "sourceSelfReviewStatus": "codex_self_review_complete_not_approved",
+      "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+      "publicModuleReadinessStatus": "public_reference_ready_for_reviewer",
+      "matchedPublicDocs": 482,
+      "wikipediaEvidenceDocs": 45,
+      "officialLikeEvidenceDocs": 24,
+      "uniqueHosts": 3,
+      "wikipediaRefs": [
+        {
+          "documentId": "corpus_0471",
+          "sourceId": "wikipedia:23550923",
+          "name": "Wikipedia: High-frequency trading",
+          "url": "https://en.wikipedia.org/wiki/High-frequency_trading",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 9,
+          "matchedTerms": [
+            "market structure",
+            "support",
+            "order book",
+            "market microstructure",
+            "liquidity",
+            "supply",
+            "demand",
+            "limit order"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0408",
+          "sourceId": "wikipedia:564701",
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 9,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "demand"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0469",
+          "sourceId": "wikipedia:447844",
+          "name": "Wikipedia: Market maker",
+          "url": "https://en.wikipedia.org/wiki/Market_maker",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 8,
+          "matchedTerms": [
+            "market microstructure",
+            "liquidity",
+            "supply",
+            "demand",
+            "market maker"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0468",
+          "sourceId": "wikipedia:12057894",
+          "name": "Wikipedia: Order book",
+          "url": "https://en.wikipedia.org/wiki/Order_book",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 7,
+          "matchedTerms": [
+            "order book",
+            "supply",
+            "demand",
+            "market depth"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        }
+      ],
+      "publicContextRefs": [
+        {
+          "documentId": "corpus_0630",
+          "sourceId": "arxiv:1012.0349v4",
+          "name": "Limit Order Books",
+          "url": "https://arxiv.org/abs/1012.0349v4",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 16,
+          "matchedTerms": [
+            "market structure",
+            "support",
+            "order book",
+            "market microstructure",
+            "liquidity",
+            "supply",
+            "demand",
+            "market depth"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        },
+        {
+          "documentId": "corpus_0834",
+          "sourceId": "arxiv:1709.02502v4",
+          "name": "Testing if the market microstructure noise is fully explained by the informational content of some variables from the limit order book",
+          "url": "https://arxiv.org/abs/1709.02502v4",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 16,
+          "matchedTerms": [
+            "support",
+            "order book",
+            "market microstructure",
+            "liquidity",
+            "supply",
+            "demand",
+            "limit order"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        }
+      ],
+      "selectedPublicRefCount": 6,
+      "shareAlikeAttributionRequiredRefs": 4,
+      "publicGroundingMapped": true,
+      "learnerCitationApproved": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "releaseBlocker": true,
+      "humanApprovalRequired": true,
+      "rewriteGuidance": "Use public refs to support terminology, taxonomy, and source-boundary review only. Rewrite the lesson in original education language; do not copy Wikipedia or private PDF wording.",
+      "claimBoundary": "Public sources can ground vocabulary and conceptual boundaries. They do not prove a setup, signal, future outcome, strategy edge, or real-money action.",
+      "nextGate": "human_public_grounding_review_then_originality_and_release_gate"
+    }
+  ],
+  "directSourceRows": [
+    {
+      "id": "direct_source_candidate_resolution_01",
+      "candidateId": "local_course_rewrite_batch_04_10",
+      "module": "突破",
+      "topic": "假突破",
+      "privateOrDirectCandidateSource": "Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf",
+      "selfReviewDecision": "keep_reviewer_only_background",
+      "publicReplacementRefs": [
+        {
+          "documentId": "corpus_0408",
+          "sourceId": "wikipedia:564701",
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 11,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "volatility",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_1583",
+          "sourceId": "wikipedia:112577",
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 9,
+          "matchedTerms": [
+            "breakout",
+            "support",
+            "resistance",
+            "volatility",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 7,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        }
+      ],
+      "learnerCitationApproved": false,
+      "releaseBlocker": true,
+      "action": "Keep the direct/private candidate source as reviewer-only background. Use public refs only for terminology and boundary grounding before a human release decision."
+    },
+    {
+      "id": "direct_source_candidate_resolution_02",
+      "candidateId": "local_course_rewrite_batch_05_10",
+      "module": "突破",
+      "topic": "假突破",
+      "privateOrDirectCandidateSource": "Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf",
+      "selfReviewDecision": "keep_reviewer_only_background",
+      "publicReplacementRefs": [
+        {
+          "documentId": "corpus_0408",
+          "sourceId": "wikipedia:564701",
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 11,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "volatility",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_1583",
+          "sourceId": "wikipedia:112577",
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 9,
+          "matchedTerms": [
+            "breakout",
+            "support",
+            "resistance",
+            "volatility",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 7,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        }
+      ],
+      "learnerCitationApproved": false,
+      "releaseBlocker": true,
+      "action": "Keep the direct/private candidate source as reviewer-only background. Use public refs only for terminology and boundary grounding before a human release decision."
+    },
+    {
+      "id": "direct_source_candidate_resolution_03",
+      "candidateId": "local_course_rewrite_batch_01_03",
+      "module": "市场结构",
+      "topic": "高低点",
+      "privateOrDirectCandidateSource": "Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf",
+      "selfReviewDecision": "keep_reviewer_only_background",
+      "publicReplacementRefs": [
+        {
+          "documentId": "corpus_0471",
+          "sourceId": "wikipedia:23550923",
+          "name": "Wikipedia: High-frequency trading",
+          "url": "https://en.wikipedia.org/wiki/High-frequency_trading",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 9,
+          "matchedTerms": [
+            "market structure",
+            "support",
+            "order book",
+            "market microstructure",
+            "liquidity",
+            "supply",
+            "demand",
+            "limit order"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0408",
+          "sourceId": "wikipedia:564701",
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 9,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "demand"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0469",
+          "sourceId": "wikipedia:447844",
+          "name": "Wikipedia: Market maker",
+          "url": "https://en.wikipedia.org/wiki/Market_maker",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 8,
+          "matchedTerms": [
+            "market microstructure",
+            "liquidity",
+            "supply",
+            "demand",
+            "market maker"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        }
+      ],
+      "learnerCitationApproved": false,
+      "releaseBlocker": true,
+      "action": "Keep the direct/private candidate source as reviewer-only background. Use public refs only for terminology and boundary grounding before a human release decision."
+    },
+    {
+      "id": "direct_source_candidate_resolution_04",
+      "candidateId": "local_course_rewrite_batch_01_04",
+      "module": "市场结构",
+      "topic": "高低点",
+      "privateOrDirectCandidateSource": "Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf",
+      "selfReviewDecision": "keep_reviewer_only_background",
+      "publicReplacementRefs": [
+        {
+          "documentId": "corpus_0471",
+          "sourceId": "wikipedia:23550923",
+          "name": "Wikipedia: High-frequency trading",
+          "url": "https://en.wikipedia.org/wiki/High-frequency_trading",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 9,
+          "matchedTerms": [
+            "market structure",
+            "support",
+            "order book",
+            "market microstructure",
+            "liquidity",
+            "supply",
+            "demand",
+            "limit order"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0408",
+          "sourceId": "wikipedia:564701",
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 9,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "demand"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0469",
+          "sourceId": "wikipedia:447844",
+          "name": "Wikipedia: Market maker",
+          "url": "https://en.wikipedia.org/wiki/Market_maker",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 8,
+          "matchedTerms": [
+            "market microstructure",
+            "liquidity",
+            "supply",
+            "demand",
+            "market maker"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        }
+      ],
+      "learnerCitationApproved": false,
+      "releaseBlocker": true,
+      "action": "Keep the direct/private candidate source as reviewer-only background. Use public refs only for terminology and boundary grounding before a human release decision."
+    },
+    {
+      "id": "direct_source_candidate_resolution_05",
+      "candidateId": "local_course_rewrite_batch_01_07",
+      "module": "趋势",
+      "topic": "趋势回调",
+      "privateOrDirectCandidateSource": "Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf",
+      "selfReviewDecision": "keep_reviewer_only_background",
+      "publicReplacementRefs": [
+        {
+          "documentId": "corpus_1583",
+          "sourceId": "wikipedia:112577",
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 8,
+          "matchedTerms": [
+            "market trend",
+            "moving average",
+            "momentum",
+            "dow theory",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0444",
+          "sourceId": "wikipedia:323441",
+          "name": "Wikipedia: Dow theory",
+          "url": "https://en.wikipedia.org/wiki/Dow_theory",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 6,
+          "matchedTerms": [
+            "market trend",
+            "dow theory",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "documentId": "corpus_0438",
+          "sourceId": "wikipedia:6597175",
+          "name": "Wikipedia: Trend following trading",
+          "url": "https://en.wikipedia.org/wiki/Trend_following_trading",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 6,
+          "matchedTerms": [
+            "market trend",
+            "trend following",
+            "moving average"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        }
+      ],
+      "learnerCitationApproved": false,
+      "releaseBlocker": true,
+      "action": "Keep the direct/private candidate source as reviewer-only background. Use public refs only for terminology and boundary grounding before a human release decision."
+    }
+  ],
+  "completionRule": "This matrix maps high-risk lessons to public/Wikipedia grounding for reviewer use. It clears the mapping task, not the release gate: every lesson still needs human public-grounding review, originality review, and separate approval before learner-facing use.",
+  "boundary": "High-risk public grounding matrix is internal reviewer evidence planning only. Wikipedia and public sources support terminology, taxonomy, attribution-aware references, and original education rewrites; they do not approve learner-facing release, make private PDFs public citations, provide stock recommendations, live signals, return promises, broker workflows, automation, or real-money guidance."
+}

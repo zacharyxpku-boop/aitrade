@@ -1,0 +1,63 @@
+{
+  "generatedAt": "2026-06-21T23:06:38.153Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "reportStatus": "p0_review_input_negative_cases_ready",
+  "totalNegativeCases": 5,
+  "blockedNegativeCases": 5,
+  "manualBadInputPath": "docs/LOCAL_COURSE_P0_REVIEW_INPUT_NEGATIVE_CASES_MANUAL_BAD_INPUT.json",
+  "manualBadLintPath": "docs/LOCAL_COURSE_P0_REVIEW_INPUT_NEGATIVE_CASES_MANUAL_BAD_INPUT_LINT.json",
+  "sourceBadInputPath": "docs/LOCAL_COURSE_P0_REVIEW_INPUT_NEGATIVE_CASES_SOURCE_REPLACEMENT_BAD_INPUT.json",
+  "sourceBadLintPath": "docs/LOCAL_COURSE_P0_REVIEW_INPUT_NEGATIVE_CASES_SOURCE_REPLACEMENT_BAD_INPUT_LINT.json",
+  "manualBadLintStatus": "blocked_quality_lint",
+  "manualBadCandidateCopyIssueEntries": 4,
+  "manualBadForbiddenHitEntries": 4,
+  "sourceBadLintStatus": "blocked_quality_lint",
+  "sourceBadDirectCandidateMisuseEntries": 3,
+  "sourceBadInvalidDecisionEntries": 0,
+  "writeAllowedNow": false,
+  "fixtureOnlyReadyEntries": 22,
+  "fixtureWrittenEntries": 0,
+  "overlayStatus": "p0_review_not_started",
+  "negativeCases": [
+    {
+      "id": "blank_inputs_blocked",
+      "category": "blank_input",
+      "expectedStatus": "blocked",
+      "observedStatus": "blocked",
+      "evidence": "operator blank ready 0, blocked 22"
+    },
+    {
+      "id": "fixture_ready_entries_not_authorizable",
+      "category": "fixture_write",
+      "expectedStatus": "blocked",
+      "observedStatus": "blocked",
+      "evidence": "writeAllowedNow:false; fixture ready 22; written 0"
+    },
+    {
+      "id": "manual_candidate_copy_and_forbidden_claims",
+      "category": "manual_transcription",
+      "expectedStatus": "blocked_quality_lint",
+      "observedStatus": "blocked_quality_lint",
+      "evidence": "candidateCopyIssueEntries:4; forbiddenHitEntries:4"
+    },
+    {
+      "id": "source_neighbor_candidate_misuse",
+      "category": "source_replacement",
+      "expectedStatus": "blocked_quality_lint",
+      "observedStatus": "blocked_quality_lint",
+      "evidence": "directCandidateMisuseEntries:3; invalidDecisionEntries:0"
+    },
+    {
+      "id": "overlay_must_remain_untouched",
+      "category": "overlay",
+      "expectedStatus": "blocked_before_write",
+      "observedStatus": "p0_review_not_started",
+      "evidence": "overlay ready 0; accepted 0"
+    }
+  ],
+  "completionRule": "These negative cases prove bad reviewer input is blocked before overlay writes. They are not review approvals, not real reviewer notes, not course absorption, and not learner-facing release.",
+  "boundary": "P0 review input negative cases are fixture-only reviewer-operations tests. They do not write overlay changes, approve learner-facing release, infer missing private course content, provide trading advice, stock recommendations, live signals, return promises, broker workflows, automation, or real-money guidance."
+}

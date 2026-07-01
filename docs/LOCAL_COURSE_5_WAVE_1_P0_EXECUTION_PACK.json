@@ -1,0 +1,837 @@
+{
+  "generatedAt": "2026-06-24T19:35:41.099Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "writeAllowedNow": false,
+  "executionPackStatus": "course_5_wave_1_p0_execution_pack_ready_blocked_on_real_reviewer_input",
+  "waveId": "wave_1_p0_space_and_curriculum_blockers",
+  "sourceRoot": "C:\\Users\\86136\\Desktop\\5",
+  "sourceFolderMayBeDeleted": false,
+  "currentKnowledgeArtifactsCanReplaceSourceFolder": false,
+  "sourcePriorityPlan": "docs/LOCAL_COURSE_5_BLOCKER_RESOLUTION_PRIORITY_PLAN.json",
+  "sourcePdfPrioritySlice": "docs/LOCAL_COURSE_5_PDF_OCR_PRIORITY_SLICE.json",
+  "sourceZipPrioritySlice": "docs/LOCAL_COURSE_5_ZIP_VISUAL_PRIORITY_SLICE.json",
+  "sourceDeletionReadiness": "docs/LOCAL_COURSE_5_DELETION_READINESS.json",
+  "sourceRows": 3,
+  "pdfSourceRows": 2,
+  "zipSourceRows": 1,
+  "sampleRows": 18,
+  "pdfSampleRows": 6,
+  "zipSampleRows": 12,
+  "affectedModules": [
+    "chart_pattern_encyclopedia",
+    "terminology_glossary"
+  ],
+  "localToolResolvableSourceRows": 1,
+  "ocrBlockedSourceRows": 2,
+  "readyReviewerInputRows": 0,
+  "blockedReviewerInputRows": 18,
+  "acceptedForModuleDistillationRows": 0,
+  "acceptedForDeletionReadinessRows": 0,
+  "learnerReadyModules": 0,
+  "deletionReadinessStatus": "course_5_source_folder_not_deletable_absorption_incomplete",
+  "sourceRowsDetail": [
+    {
+      "resolutionOrder": 1,
+      "recordId": "course5_ca7b8ed9cc1c262599a75285",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/3、阿布图表百科全书8800图片版-原版.zip",
+      "extension": ".zip",
+      "sizeMb": 3187.732,
+      "moduleIds": [
+        "chart_pattern_encyclopedia"
+      ],
+      "moduleCount": 1,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "priorityScore": 1366,
+      "canFullyResolveWithLocalToolsNow": true,
+      "immediateAction": "review_zip_representative_images_and_select_cluster_expansion",
+      "finalResolutionGate": "zip_image_package_semantic_review_or_documented_future_loss_acceptance",
+      "sampleRows": 12,
+      "requiredReviewerMode": "zip_visual_reviewer_owned_observation",
+      "nextValidationArtifact": "docs/LOCAL_COURSE_5_ZIP_VISUAL_PRIORITY_SLICE_INPUT_VALIDATION.json",
+      "nextRouteMapArtifact": "docs/LOCAL_COURSE_5_ZIP_VISUAL_PRIORITY_SLICE_ROUTE_MAP.json",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "learnerModuleMergeAllowedNow": false,
+      "deletionEvidenceAllowedNow": false,
+      "sourceFolderMayBeDeleted": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "resolutionOrder": 2,
+      "recordId": "course5_59235195b08cebb31f8b37e5",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/有道翻译版（机翻）/百科幻灯片-合并版-有道机翻.pdf",
+      "extension": ".pdf",
+      "sizeMb": 2750.092,
+      "moduleIds": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "moduleCount": 2,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "priorityScore": 1212,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateAction": "review_selected_large_pdf_pages_before_full_split_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sampleRows": 3,
+      "requiredReviewerMode": "pdf_ocr_or_visual_reviewer_owned_observation",
+      "nextValidationArtifact": "docs/LOCAL_COURSE_5_PDF_OCR_PRIORITY_SLICE_INPUT_VALIDATION.json",
+      "nextRouteMapArtifact": "docs/LOCAL_COURSE_5_PDF_OCR_PRIORITY_SLICE_ROUTE_MAP.json",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "learnerModuleMergeAllowedNow": false,
+      "deletionEvidenceAllowedNow": false,
+      "sourceFolderMayBeDeleted": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "resolutionOrder": 3,
+      "recordId": "course5_0a5fa56ee4758f70d7195444",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/4、阿布图表百科全书8800合并版-原版.pdf",
+      "extension": ".pdf",
+      "sizeMb": 2880.707,
+      "moduleIds": [
+        "chart_pattern_encyclopedia"
+      ],
+      "moduleCount": 1,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "priorityScore": 1156,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateAction": "review_selected_large_pdf_pages_before_full_split_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sampleRows": 3,
+      "requiredReviewerMode": "pdf_ocr_or_visual_reviewer_owned_observation",
+      "nextValidationArtifact": "docs/LOCAL_COURSE_5_PDF_OCR_PRIORITY_SLICE_INPUT_VALIDATION.json",
+      "nextRouteMapArtifact": "docs/LOCAL_COURSE_5_PDF_OCR_PRIORITY_SLICE_ROUTE_MAP.json",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "learnerModuleMergeAllowedNow": false,
+      "deletionEvidenceAllowedNow": false,
+      "sourceFolderMayBeDeleted": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    }
+  ],
+  "sampleRowsDetail": [
+    {
+      "executionSampleNo": 1,
+      "reviewRowId": "course5_zip_image_review_001",
+      "sourceType": "zip",
+      "recordId": "course5_ca7b8ed9cc1c262599a75285",
+      "zipSampleId": "course5_zip_sample_course5_ca7b8ed9cc1c262599a75285_01",
+      "archiveImageName": "# 裁剪/1.jpg",
+      "pageNumber": null,
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_ca7b8ed9cc1c262599a75285/sample-01.png",
+      "sampleImageExists": true,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "zip_image_package_semantic_sampling"
+      ],
+      "reviewerPrompt": "Describe visible chart structures, labels, and representativeness in reviewer-owned words; do not copy source wording or infer a trading signal.",
+      "requiredFields": [
+        "reviewerOwnedVisualObservation",
+        "reviewerVisibleTextOrLabelCheck",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "representativenessNote",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "readyNow": false,
+      "nextGate": "fill_zip_visual_priority_slice_input_then_validate",
+      "sourceFolderMayBeDeleted": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionSampleNo": 2,
+      "reviewRowId": "course5_zip_image_review_002",
+      "sourceType": "zip",
+      "recordId": "course5_ca7b8ed9cc1c262599a75285",
+      "zipSampleId": "course5_zip_sample_course5_ca7b8ed9cc1c262599a75285_02",
+      "archiveImageName": "# 裁剪/10.jpg",
+      "pageNumber": null,
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_ca7b8ed9cc1c262599a75285/sample-02.png",
+      "sampleImageExists": true,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "zip_image_package_semantic_sampling"
+      ],
+      "reviewerPrompt": "Describe visible chart structures, labels, and representativeness in reviewer-owned words; do not copy source wording or infer a trading signal.",
+      "requiredFields": [
+        "reviewerOwnedVisualObservation",
+        "reviewerVisibleTextOrLabelCheck",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "representativenessNote",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "readyNow": false,
+      "nextGate": "fill_zip_visual_priority_slice_input_then_validate",
+      "sourceFolderMayBeDeleted": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionSampleNo": 3,
+      "reviewRowId": "course5_zip_image_review_003",
+      "sourceType": "zip",
+      "recordId": "course5_ca7b8ed9cc1c262599a75285",
+      "zipSampleId": "course5_zip_sample_course5_ca7b8ed9cc1c262599a75285_03",
+      "archiveImageName": "# 裁剪/100.jpg",
+      "pageNumber": null,
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_ca7b8ed9cc1c262599a75285/sample-03.png",
+      "sampleImageExists": true,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "zip_image_package_semantic_sampling"
+      ],
+      "reviewerPrompt": "Describe visible chart structures, labels, and representativeness in reviewer-owned words; do not copy source wording or infer a trading signal.",
+      "requiredFields": [
+        "reviewerOwnedVisualObservation",
+        "reviewerVisibleTextOrLabelCheck",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "representativenessNote",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "readyNow": false,
+      "nextGate": "fill_zip_visual_priority_slice_input_then_validate",
+      "sourceFolderMayBeDeleted": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionSampleNo": 4,
+      "reviewRowId": "course5_zip_image_review_004",
+      "sourceType": "zip",
+      "recordId": "course5_ca7b8ed9cc1c262599a75285",
+      "zipSampleId": "course5_zip_sample_course5_ca7b8ed9cc1c262599a75285_04",
+      "archiveImageName": "# 裁剪/1676.jpg",
+      "pageNumber": null,
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_ca7b8ed9cc1c262599a75285/sample-04.png",
+      "sampleImageExists": true,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "zip_image_package_semantic_sampling"
+      ],
+      "reviewerPrompt": "Describe visible chart structures, labels, and representativeness in reviewer-owned words; do not copy source wording or infer a trading signal.",
+      "requiredFields": [
+        "reviewerOwnedVisualObservation",
+        "reviewerVisibleTextOrLabelCheck",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "representativenessNote",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "readyNow": false,
+      "nextGate": "fill_zip_visual_priority_slice_input_then_validate",
+      "sourceFolderMayBeDeleted": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionSampleNo": 5,
+      "reviewRowId": "course5_zip_image_review_005",
+      "sourceType": "zip",
+      "recordId": "course5_ca7b8ed9cc1c262599a75285",
+      "zipSampleId": "course5_zip_sample_course5_ca7b8ed9cc1c262599a75285_05",
+      "archiveImageName": "# 裁剪/3029.jpg",
+      "pageNumber": null,
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_ca7b8ed9cc1c262599a75285/sample-05.png",
+      "sampleImageExists": true,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "dense_annotated_chart_review",
+        "zip_image_package_semantic_sampling"
+      ],
+      "reviewerPrompt": "Describe visible chart structures, labels, and representativeness in reviewer-owned words; do not copy source wording or infer a trading signal.",
+      "requiredFields": [
+        "reviewerOwnedVisualObservation",
+        "reviewerVisibleTextOrLabelCheck",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "representativenessNote",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "readyNow": false,
+      "nextGate": "fill_zip_visual_priority_slice_input_then_validate",
+      "sourceFolderMayBeDeleted": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionSampleNo": 6,
+      "reviewRowId": "course5_zip_image_review_006",
+      "sourceType": "zip",
+      "recordId": "course5_ca7b8ed9cc1c262599a75285",
+      "zipSampleId": "course5_zip_sample_course5_ca7b8ed9cc1c262599a75285_06",
+      "archiveImageName": "# 裁剪/3707.jpg",
+      "pageNumber": null,
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_ca7b8ed9cc1c262599a75285/sample-06.png",
+      "sampleImageExists": true,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "zip_image_package_semantic_sampling"
+      ],
+      "reviewerPrompt": "Describe visible chart structures, labels, and representativeness in reviewer-owned words; do not copy source wording or infer a trading signal.",
+      "requiredFields": [
+        "reviewerOwnedVisualObservation",
+        "reviewerVisibleTextOrLabelCheck",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "representativenessNote",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "readyNow": false,
+      "nextGate": "fill_zip_visual_priority_slice_input_then_validate",
+      "sourceFolderMayBeDeleted": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionSampleNo": 7,
+      "reviewRowId": "course5_zip_image_review_007",
+      "sourceType": "zip",
+      "recordId": "course5_ca7b8ed9cc1c262599a75285",
+      "zipSampleId": "course5_zip_sample_course5_ca7b8ed9cc1c262599a75285_07",
+      "archiveImageName": "# 裁剪/5060.jpg",
+      "pageNumber": null,
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_ca7b8ed9cc1c262599a75285/sample-07.png",
+      "sampleImageExists": true,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "low_information_or_low_contrast_sample_check",
+        "zip_image_package_semantic_sampling"
+      ],
+      "reviewerPrompt": "Describe visible chart structures, labels, and representativeness in reviewer-owned words; do not copy source wording or infer a trading signal.",
+      "requiredFields": [
+        "reviewerOwnedVisualObservation",
+        "reviewerVisibleTextOrLabelCheck",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "representativenessNote",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "readyNow": false,
+      "nextGate": "fill_zip_visual_priority_slice_input_then_validate",
+      "sourceFolderMayBeDeleted": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionSampleNo": 8,
+      "reviewRowId": "course5_zip_image_review_008",
+      "sourceType": "zip",
+      "recordId": "course5_ca7b8ed9cc1c262599a75285",
+      "zipSampleId": "course5_zip_sample_course5_ca7b8ed9cc1c262599a75285_08",
+      "archiveImageName": "# 裁剪/6415.jpg",
+      "pageNumber": null,
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_ca7b8ed9cc1c262599a75285/sample-08.png",
+      "sampleImageExists": true,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "low_information_or_low_contrast_sample_check",
+        "zip_image_package_semantic_sampling"
+      ],
+      "reviewerPrompt": "Describe visible chart structures, labels, and representativeness in reviewer-owned words; do not copy source wording or infer a trading signal.",
+      "requiredFields": [
+        "reviewerOwnedVisualObservation",
+        "reviewerVisibleTextOrLabelCheck",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "representativenessNote",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "readyNow": false,
+      "nextGate": "fill_zip_visual_priority_slice_input_then_validate",
+      "sourceFolderMayBeDeleted": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionSampleNo": 9,
+      "reviewRowId": "course5_zip_image_review_009",
+      "sourceType": "zip",
+      "recordId": "course5_ca7b8ed9cc1c262599a75285",
+      "zipSampleId": "course5_zip_sample_course5_ca7b8ed9cc1c262599a75285_09",
+      "archiveImageName": "# 裁剪/7092.jpg",
+      "pageNumber": null,
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_ca7b8ed9cc1c262599a75285/sample-09.png",
+      "sampleImageExists": true,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "zip_image_package_semantic_sampling"
+      ],
+      "reviewerPrompt": "Describe visible chart structures, labels, and representativeness in reviewer-owned words; do not copy source wording or infer a trading signal.",
+      "requiredFields": [
+        "reviewerOwnedVisualObservation",
+        "reviewerVisibleTextOrLabelCheck",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "representativenessNote",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "readyNow": false,
+      "nextGate": "fill_zip_visual_priority_slice_input_then_validate",
+      "sourceFolderMayBeDeleted": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionSampleNo": 10,
+      "reviewRowId": "course5_zip_image_review_010",
+      "sourceType": "zip",
+      "recordId": "course5_ca7b8ed9cc1c262599a75285",
+      "zipSampleId": "course5_zip_sample_course5_ca7b8ed9cc1c262599a75285_10",
+      "archiveImageName": "# 裁剪/997.jpg",
+      "pageNumber": null,
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_ca7b8ed9cc1c262599a75285/sample-10.png",
+      "sampleImageExists": true,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "zip_image_package_semantic_sampling"
+      ],
+      "reviewerPrompt": "Describe visible chart structures, labels, and representativeness in reviewer-owned words; do not copy source wording or infer a trading signal.",
+      "requiredFields": [
+        "reviewerOwnedVisualObservation",
+        "reviewerVisibleTextOrLabelCheck",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "representativenessNote",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "readyNow": false,
+      "nextGate": "fill_zip_visual_priority_slice_input_then_validate",
+      "sourceFolderMayBeDeleted": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionSampleNo": 11,
+      "reviewRowId": "course5_zip_image_review_011",
+      "sourceType": "zip",
+      "recordId": "course5_ca7b8ed9cc1c262599a75285",
+      "zipSampleId": "course5_zip_sample_course5_ca7b8ed9cc1c262599a75285_11",
+      "archiveImageName": "# 裁剪/998.jpg",
+      "pageNumber": null,
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_ca7b8ed9cc1c262599a75285/sample-11.png",
+      "sampleImageExists": true,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "zip_image_package_semantic_sampling"
+      ],
+      "reviewerPrompt": "Describe visible chart structures, labels, and representativeness in reviewer-owned words; do not copy source wording or infer a trading signal.",
+      "requiredFields": [
+        "reviewerOwnedVisualObservation",
+        "reviewerVisibleTextOrLabelCheck",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "representativenessNote",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "readyNow": false,
+      "nextGate": "fill_zip_visual_priority_slice_input_then_validate",
+      "sourceFolderMayBeDeleted": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionSampleNo": 12,
+      "reviewRowId": "course5_zip_image_review_012",
+      "sourceType": "zip",
+      "recordId": "course5_ca7b8ed9cc1c262599a75285",
+      "zipSampleId": "course5_zip_sample_course5_ca7b8ed9cc1c262599a75285_12",
+      "archiveImageName": "# 裁剪/999.jpg",
+      "pageNumber": null,
+      "sampleImagePath": "docs/local-course-5-zip-visual-samples/course5_ca7b8ed9cc1c262599a75285/sample-12.png",
+      "sampleImageExists": true,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "zip_image_package_semantic_sampling"
+      ],
+      "reviewerPrompt": "Describe visible chart structures, labels, and representativeness in reviewer-owned words; do not copy source wording or infer a trading signal.",
+      "requiredFields": [
+        "reviewerOwnedVisualObservation",
+        "reviewerVisibleTextOrLabelCheck",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "representativenessNote",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "readyNow": false,
+      "nextGate": "fill_zip_visual_priority_slice_input_then_validate",
+      "sourceFolderMayBeDeleted": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionSampleNo": 13,
+      "reviewRowId": "course5_pdf_ocr_visual_review_004",
+      "sourceType": "pdf",
+      "recordId": "course5_59235195b08cebb31f8b37e5",
+      "zipSampleId": null,
+      "archiveImageName": null,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_59235195b08cebb31f8b37e5/page-0001.png",
+      "sampleImageExists": true,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "terminology_or_translation_review",
+        "large_pdf_stratified_page_sample",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerPrompt": "Capture OCR/manual visible text needs and chart/page semantics in reviewer-owned words; do not copy private source prose or infer a trading signal.",
+      "requiredFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "readyNow": false,
+      "nextGate": "fill_pdf_ocr_priority_slice_input_then_validate",
+      "sourceFolderMayBeDeleted": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionSampleNo": 14,
+      "reviewRowId": "course5_pdf_ocr_visual_review_005",
+      "sourceType": "pdf",
+      "recordId": "course5_59235195b08cebb31f8b37e5",
+      "zipSampleId": null,
+      "archiveImageName": null,
+      "pageNumber": 4511,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_59235195b08cebb31f8b37e5/page-4511.png",
+      "sampleImageExists": true,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "terminology_or_translation_review",
+        "large_pdf_stratified_page_sample",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerPrompt": "Capture OCR/manual visible text needs and chart/page semantics in reviewer-owned words; do not copy private source prose or infer a trading signal.",
+      "requiredFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "readyNow": false,
+      "nextGate": "fill_pdf_ocr_priority_slice_input_then_validate",
+      "sourceFolderMayBeDeleted": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionSampleNo": 15,
+      "reviewRowId": "course5_pdf_ocr_visual_review_006",
+      "sourceType": "pdf",
+      "recordId": "course5_59235195b08cebb31f8b37e5",
+      "zipSampleId": null,
+      "archiveImageName": null,
+      "pageNumber": 9020,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_59235195b08cebb31f8b37e5/page-9020.png",
+      "sampleImageExists": true,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "terminology_or_translation_review",
+        "large_pdf_stratified_page_sample",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerPrompt": "Capture OCR/manual visible text needs and chart/page semantics in reviewer-owned words; do not copy private source prose or infer a trading signal.",
+      "requiredFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "readyNow": false,
+      "nextGate": "fill_pdf_ocr_priority_slice_input_then_validate",
+      "sourceFolderMayBeDeleted": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionSampleNo": 16,
+      "reviewRowId": "course5_pdf_ocr_visual_review_001",
+      "sourceType": "pdf",
+      "recordId": "course5_0a5fa56ee4758f70d7195444",
+      "zipSampleId": null,
+      "archiveImageName": null,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_0a5fa56ee4758f70d7195444/page-0001.png",
+      "sampleImageExists": true,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "large_pdf_stratified_page_sample",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerPrompt": "Capture OCR/manual visible text needs and chart/page semantics in reviewer-owned words; do not copy private source prose or infer a trading signal.",
+      "requiredFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "readyNow": false,
+      "nextGate": "fill_pdf_ocr_priority_slice_input_then_validate",
+      "sourceFolderMayBeDeleted": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionSampleNo": 17,
+      "reviewRowId": "course5_pdf_ocr_visual_review_002",
+      "sourceType": "pdf",
+      "recordId": "course5_0a5fa56ee4758f70d7195444",
+      "zipSampleId": null,
+      "archiveImageName": null,
+      "pageNumber": 4514,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_0a5fa56ee4758f70d7195444/page-4514.png",
+      "sampleImageExists": true,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "large_pdf_stratified_page_sample",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerPrompt": "Capture OCR/manual visible text needs and chart/page semantics in reviewer-owned words; do not copy private source prose or infer a trading signal.",
+      "requiredFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "readyNow": false,
+      "nextGate": "fill_pdf_ocr_priority_slice_input_then_validate",
+      "sourceFolderMayBeDeleted": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionSampleNo": 18,
+      "reviewRowId": "course5_pdf_ocr_visual_review_003",
+      "sourceType": "pdf",
+      "recordId": "course5_0a5fa56ee4758f70d7195444",
+      "zipSampleId": null,
+      "archiveImageName": null,
+      "pageNumber": 9027,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_0a5fa56ee4758f70d7195444/page-9027.png",
+      "sampleImageExists": true,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "large_pdf_stratified_page_sample",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerPrompt": "Capture OCR/manual visible text needs and chart/page semantics in reviewer-owned words; do not copy private source prose or infer a trading signal.",
+      "requiredFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "readyNow": false,
+      "nextGate": "fill_pdf_ocr_priority_slice_input_then_validate",
+      "sourceFolderMayBeDeleted": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    }
+  ],
+  "nextOperationalGates": [
+    "Fill reviewer-owned input for the 12 ZIP image samples and re-run ZIP priority validation.",
+    "Provide OCR or reviewer-owned visual/text notes for the 6 PDF representative pages and re-run PDF priority validation.",
+    "Only route validation-ready rows into semantic merge preview.",
+    "Run public grounding and originality review before any module distillation.",
+    "Keep Course 5 source-folder deletion blocked until accepted replacement evidence exists for every follow-up row."
+  ],
+  "commands": [
+    "npm.cmd run build:local-course-5-wave-1-p0-execution-pack",
+    "npm.cmd run check:local-course-5-wave-1-p0-execution-pack",
+    "npm.cmd run verify"
+  ],
+  "completionRule": "This Wave 1 pack is complete when the 3 P0 blocker source rows and their 18 representative ZIP/PDF sample rows are isolated with reviewer-owned input requirements, validation routes, and release/deletion gates closed.",
+  "boundary": "Course 5 Wave 1 P0 execution pack is private reviewer-facing education operations material. It isolates the first three P0 source blockers and their representative ZIP/PDF visual samples for real reviewer-owned visual or OCR input, future validation, semantic merge preview, public grounding, and deletion-readiness recomputation. It does not perform OCR, generate reviewer conclusions, accept machine drafts as human review, merge content into learner-facing modules, delete files, approve source-folder deletion, approve learner-facing release, copy private source wording, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, write authorization, or production readiness."
+}

@@ -1,0 +1,153 @@
+{
+  "generatedAt": "2026-06-19T09:47:13.701Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "commandPackReady": true,
+  "commandPackMode": "future_post_write_validation_only",
+  "executionAllowedNow": false,
+  "realStatusPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "realStatusOverlayPresent": false,
+  "commandRows": [
+    {
+      "order": 1,
+      "command": "npm.cmd run check:first-reviewer-real-overlay-preflight-summary",
+      "purpose": "Confirm write mode was intentionally reached through manual preflight.",
+      "failRoute": "Stop if writeAllowedNow is false and no explicit human decision exists.",
+      "stopIfFails": true
+    },
+    {
+      "order": 2,
+      "command": "npm.cmd run check:first-reviewer-real-overlay-diff-audit",
+      "purpose": "Inspect real overlay structure, filled fields, unsafe text, and copying-risk wording.",
+      "failRoute": "Fix structural or unsafe-note issues before any intake.",
+      "stopIfFails": true
+    },
+    {
+      "order": 3,
+      "command": "npm.cmd run check:reviewer-note-quality-lint",
+      "purpose": "Reject blank, generic, approving, readiness, trading, broker, automation, performance, or real-money notes.",
+      "failRoute": "Edit real notes; keep batches blocked until lint passes.",
+      "stopIfFails": true
+    },
+    {
+      "order": 4,
+      "command": "npm.cmd run check:first-reviewer-source-fit-notes-acceptance",
+      "purpose": "Validate direct-candidate sourceFitNotes contain decision, source role, claim, rewrite action, and no unsafe wording.",
+      "failRoute": "Downgrade, block, or rewrite sourceFitNotes before continuing.",
+      "stopIfFails": true
+    },
+    {
+      "order": 5,
+      "command": "npm.cmd run check:lesson-batch-completion",
+      "purpose": "Validate batch status shape and required-note completeness.",
+      "failRoute": "Keep incomplete batches not_started or in_progress.",
+      "stopIfFails": true
+    },
+    {
+      "order": 6,
+      "command": "npm.cmd run check:first-reviewer-evidence-intake-summary",
+      "purpose": "Summarize complete notes, blockers, direct-candidate status, and separate-approval candidates.",
+      "failRoute": "Treat intake as triage only, not approval.",
+      "stopIfFails": true
+    },
+    {
+      "order": 7,
+      "command": "npm.cmd run check:first-reviewer-separate-approval-review-gate",
+      "purpose": "Keep intake candidates behind a separate human approval review.",
+      "failRoute": "Reject auto-approval, learner-facing release, commercial-ready promotion, and production claims.",
+      "stopIfFails": true
+    },
+    {
+      "order": 8,
+      "command": "npm.cmd run check:first-reviewer-release-readiness-negative-cases",
+      "purpose": "Prove release/readiness drift remains rejected.",
+      "failRoute": "Fix drift before any broader curriculum checks.",
+      "stopIfFails": true
+    },
+    {
+      "order": 9,
+      "command": "npm.cmd run check:curriculum-review",
+      "purpose": "Run the full curriculum and reviewer gate chain.",
+      "failRoute": "Fix the failing gate without relaxing boundaries.",
+      "stopIfFails": true
+    },
+    {
+      "order": 10,
+      "command": "npm.cmd run check:knowledge-base",
+      "purpose": "Recheck knowledge-base, self-audit, and green grounding boundaries.",
+      "failRoute": "Do not promote generated drafts or weaken source boundaries.",
+      "stopIfFails": true
+    },
+    {
+      "order": 11,
+      "command": "npm.cmd run check:knowledge-browser",
+      "purpose": "Recheck learner-facing browser candidates remain review-tracked and source-grounded.",
+      "failRoute": "Block release if learner-facing risk expands.",
+      "stopIfFails": true
+    },
+    {
+      "order": 12,
+      "command": "temporary SQLite npm.cmd run verify",
+      "purpose": "Run full repo verification with TRADEGYM_SQLITE_PATH set to a temp file and clean it afterward.",
+      "failRoute": "Fix application verification failures before any next review phase.",
+      "stopIfFails": true
+    }
+  ],
+  "failureRoutes": [
+    {
+      "trigger": "Real overlay absent",
+      "response": "Do not run post-write pack as evidence; return to preflight and wait for explicit human write decision."
+    },
+    {
+      "trigger": "Missing or blank notes",
+      "response": "Keep the lesson blocked and fill notes only after actual human review work."
+    },
+    {
+      "trigger": "Direct candidate unresolved",
+      "response": "Use confirm, downgrade, or blocked decision in sourceFitNotes; never infer direct evidence from generated rows."
+    },
+    {
+      "trigger": "Unsafe wording",
+      "response": "Remove advice, signals, performance, broker/order, automation, production, release, approval, and real-money wording."
+    },
+    {
+      "trigger": "Copying risk",
+      "response": "Remove copied or paste-instructed source text; notes must be original human review prose."
+    },
+    {
+      "trigger": "Approval or readiness drift",
+      "response": "Reset the row to not_approved and learnerFacingRelease:false; do not promote grade or production status."
+    },
+    {
+      "trigger": "Verification failure",
+      "response": "Fix the failing gate and rerun from the failed command forward, preserving real notes."
+    }
+  ],
+  "forbiddenRecoveryActions": [
+    "Do not delete, overwrite, or force-recreate real reviewer notes to make checks pass.",
+    "Do not copy generated sample notes into the real overlay.",
+    "Do not mark generated lessons commercial_ready.",
+    "Do not set learnerFacingRelease:true, productionReady:true, or approvalStatus other than not_approved.",
+    "Do not relax green/yellow/red or research_only source boundaries.",
+    "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflows, automation, or real-money guidance."
+  ],
+  "completeNoteCards": 0,
+  "approvalReviewCandidates": 0,
+  "confirmedDecisions": 0,
+  "sourceReports": {
+    "dryRunPacket": "docs/FIRST_REVIEWER_DRY_RUN_PACKET.json",
+    "progressDashboard": "docs/FIRST_REVIEWER_PROGRESS_DASHBOARD.json",
+    "humanExecutionBundle": "docs/FIRST_REVIEWER_HUMAN_EXECUTION_BUNDLE.json",
+    "postWritePlaybook": "docs/FIRST_REVIEWER_POST_WRITE_VALIDATION_PLAYBOOK.json",
+    "preflightSummary": "docs/FIRST_REVIEWER_REAL_OVERLAY_PREFLIGHT_SUMMARY.json",
+    "realOverlayDiffAudit": "docs/FIRST_REVIEWER_REAL_OVERLAY_DIFF_AUDIT.json",
+    "noteQualityLint": "docs/REVIEWER_NOTE_QUALITY_LINT.json",
+    "sourceFitNotesAcceptance": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_ACCEPTANCE.json",
+    "evidenceIntakeSummary": "docs/FIRST_REVIEWER_EVIDENCE_INTAKE_SUMMARY.json",
+    "separateApprovalGate": "docs/FIRST_REVIEWER_SEPARATE_APPROVAL_REVIEW_GATE.json"
+  },
+  "boundary": "This post-write command pack is a future validation order only. It does not create docs/LESSON_BATCH_REVIEW_STATUS.json, fill human notes, confirm source use, approve lessons, publish learner-facing content, change grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, guide real-money decisions, grant internal-trial readiness, or make the product production-ready."
+}

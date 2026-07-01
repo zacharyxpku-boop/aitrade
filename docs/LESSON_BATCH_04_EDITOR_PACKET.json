@@ -1,0 +1,477 @@
+{
+  "generatedAt": "2026-06-19T09:47:03.290Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "packetReady": true,
+  "packetMode": "targeted_human_editor_packet_for_structural_drafts",
+  "batchId": "rewrite_batch_04",
+  "modules": [
+    "market_structure",
+    "news_sentiment_events",
+    "candlestick_price_action"
+  ],
+  "sourceFamilies": [
+    "Federal Reserve",
+    "SEC",
+    "Project Gutenberg",
+    "Treasury",
+    "CFTC",
+    "BEA",
+    "Investor.gov",
+    "BLS",
+    "dol.gov",
+    "Internet Archive"
+  ],
+  "priorityFocus": "P1",
+  "riskCounts": {
+    "low": 5,
+    "medium": 1
+  },
+  "lessonCards": [
+    {
+      "lessonId": "lesson_knv2_0014",
+      "nodeId": "knv2_0014",
+      "moduleLabel": "market_structure",
+      "topicLabel": "structure_continuation",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "rewritePriority": "P1",
+      "sourceFitRisk": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "If using public-domain classics, keep only historical language or observation context; remove old trading-rule voice."
+      ],
+      "handAuthored": false,
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "Federal Reserve",
+        "SEC",
+        "Project Gutenberg",
+        "Treasury"
+      ],
+      "greenReviewedRefs": 3,
+      "greenAuthorityRefs": 2,
+      "nonGreenRefs": 0,
+      "sourceBoundary": [
+        "Use green refs as source identity, event/data/regulatory/fraud/historical context, or boundary evidence only.",
+        "Macro, regulator, and fraud sources cannot prove market-structure continuation, structure breaks, or candlestick mechanics.",
+        "News and event sources should teach source triangulation, timing, and bias checks; they cannot become event-trading instructions.",
+        "Public-domain classics may support historical language or observation exercises only after removing advice and profit voice.",
+        "Keep yellow, red, and research_only sources out of learner-facing evidence."
+      ],
+      "licenseBoundary": [
+        "Agency/public-document metadata may support reviewer notes, but learner-facing prose must be original.",
+        "Do not copy agency logos, UI text, rule text, tables, charts, third-party inserts, or boilerplate.",
+        "Do not preserve public-domain buy/sell rules, profit language, or market maxims.",
+        "No source identity may imply regulator endorsement, forecast ability, trading-system validity, or commercial readiness."
+      ],
+      "rewriteInstructions": [
+        "Rewrite market_structure / structure_continuation as original teaching prose for interpretation practice.",
+        "Market-structure language must stay descriptive and evidence-limited; no continuation/break confirmation rule.",
+        "Start with observable facts, separate interpretation from fact, and require at least one alternative explanation.",
+        "Convert source references into source-fit and boundary checks; do not convert them into signals or procedures.",
+        "End with a no-action learner note: what is known, unknown, and what evidence would weaken the interpretation.",
+        "Leave the lesson structural_draft until a real human records all required reviewer notes."
+      ],
+      "reviewerChecklist": [
+        "Original prose: no copied or lightly rewritten external source body text.",
+        "Source fit: every fraud/regulatory/macro/historical family is downgraded, blocked, or boundary-limited as needed.",
+        "Boundary: no buy/sell/hold, signal wording, broker/order workflow, automation, real-money guidance, forecast, or performance promise.",
+        "License fit: no agency/rule/table/chart/UI/public-domain trading maxim copied.",
+        "Teaching quality: includes misconception, observation task, alternative explanation, invalidation condition, and reflection prompt.",
+        "Status: remains structural_draft and not_approved after this packet."
+      ],
+      "sourceFamilyGuidance": [
+        {
+          "family": "Federal Reserve",
+          "editorUse": "Macro/data-release context and event-timing literacy only; cannot validate price-action mechanics or direction."
+        },
+        {
+          "family": "SEC",
+          "editorUse": "Disclosure and filing-literacy boundary only; no market-structure or candle validation."
+        },
+        {
+          "family": "Project Gutenberg",
+          "editorUse": "Public-domain historical language and observation context only; strip buy/sell rules, profit claims, and market maxims."
+        },
+        {
+          "family": "Treasury",
+          "editorUse": "Macro/data-release context and event-timing literacy only; cannot validate price-action mechanics or direction."
+        }
+      ]
+    },
+    {
+      "lessonId": "lesson_knv2_0086",
+      "nodeId": "knv2_0086",
+      "moduleLabel": "market_structure",
+      "topicLabel": "structure_break",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "rewritePriority": "P1",
+      "sourceFitRisk": "medium",
+      "riskReasons": [
+        "chart_lesson_without_public_domain_historical_context",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "reviewerFocus": [
+        "Check whether chart-language claims need public-domain historical context or should be rewritten as pure observation training.",
+        "Use fraud sources only for boundary warnings, not for explaining chart mechanics."
+      ],
+      "handAuthored": false,
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "CFTC",
+        "Treasury",
+        "BEA"
+      ],
+      "greenReviewedRefs": 3,
+      "greenAuthorityRefs": 2,
+      "nonGreenRefs": 0,
+      "sourceBoundary": [
+        "Use green refs as source identity, event/data/regulatory/fraud/historical context, or boundary evidence only.",
+        "Macro, regulator, and fraud sources cannot prove market-structure continuation, structure breaks, or candlestick mechanics.",
+        "News and event sources should teach source triangulation, timing, and bias checks; they cannot become event-trading instructions.",
+        "Public-domain classics may support historical language or observation exercises only after removing advice and profit voice.",
+        "Keep yellow, red, and research_only sources out of learner-facing evidence."
+      ],
+      "licenseBoundary": [
+        "Agency/public-document metadata may support reviewer notes, but learner-facing prose must be original.",
+        "Do not copy agency logos, UI text, rule text, tables, charts, third-party inserts, or boilerplate.",
+        "Do not preserve public-domain buy/sell rules, profit language, or market maxims.",
+        "No source identity may imply regulator endorsement, forecast ability, trading-system validity, or commercial readiness."
+      ],
+      "rewriteInstructions": [
+        "Rewrite market_structure / structure_break as original teaching prose for interpretation practice.",
+        "Medium source-fit risk: require explicit downgrade notes for fraud-source use and for missing historical chart context.",
+        "Start with observable facts, separate interpretation from fact, and require at least one alternative explanation.",
+        "Convert source references into source-fit and boundary checks; do not convert them into signals or procedures.",
+        "End with a no-action learner note: what is known, unknown, and what evidence would weaken the interpretation.",
+        "Leave the lesson structural_draft until a real human records all required reviewer notes."
+      ],
+      "reviewerChecklist": [
+        "Original prose: no copied or lightly rewritten external source body text.",
+        "Source fit: every fraud/regulatory/macro/historical family is downgraded, blocked, or boundary-limited as needed.",
+        "Boundary: no buy/sell/hold, signal wording, broker/order workflow, automation, real-money guidance, forecast, or performance promise.",
+        "License fit: no agency/rule/table/chart/UI/public-domain trading maxim copied.",
+        "Teaching quality: includes misconception, observation task, alternative explanation, invalidation condition, and reflection prompt.",
+        "Status: remains structural_draft and not_approved after this packet."
+      ],
+      "sourceFamilyGuidance": [
+        {
+          "family": "CFTC",
+          "editorUse": "Investor-protection, fraud, phony-system, or commodity-risk boundary only; never chart-structure proof."
+        },
+        {
+          "family": "Treasury",
+          "editorUse": "Macro/data-release context and event-timing literacy only; cannot validate price-action mechanics or direction."
+        },
+        {
+          "family": "BEA",
+          "editorUse": "Macro/data-release context and event-timing literacy only; cannot validate price-action mechanics or direction."
+        }
+      ]
+    },
+    {
+      "lessonId": "lesson_knv2_0057",
+      "nodeId": "knv2_0057",
+      "moduleLabel": "news_sentiment_events",
+      "topicLabel": "single_source_bias",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "rewritePriority": "P1",
+      "sourceFitRisk": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "Confirm source-to-topic fit during human rewrite; keep all sources as boundary evidence only."
+      ],
+      "handAuthored": false,
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "BEA",
+        "Investor.gov",
+        "CFTC",
+        "Federal Reserve"
+      ],
+      "greenReviewedRefs": 3,
+      "greenAuthorityRefs": 2,
+      "nonGreenRefs": 0,
+      "sourceBoundary": [
+        "Use green refs as source identity, event/data/regulatory/fraud/historical context, or boundary evidence only.",
+        "Macro, regulator, and fraud sources cannot prove market-structure continuation, structure breaks, or candlestick mechanics.",
+        "News and event sources should teach source triangulation, timing, and bias checks; they cannot become event-trading instructions.",
+        "Public-domain classics may support historical language or observation exercises only after removing advice and profit voice.",
+        "Keep yellow, red, and research_only sources out of learner-facing evidence."
+      ],
+      "licenseBoundary": [
+        "Agency/public-document metadata may support reviewer notes, but learner-facing prose must be original.",
+        "Do not copy agency logos, UI text, rule text, tables, charts, third-party inserts, or boilerplate.",
+        "Do not preserve public-domain buy/sell rules, profit language, or market maxims.",
+        "No source identity may imply regulator endorsement, forecast ability, trading-system validity, or commercial readiness."
+      ],
+      "rewriteInstructions": [
+        "Rewrite news_sentiment_events / single_source_bias as original teaching prose for interpretation practice.",
+        "News/event language must teach source triangulation and timing literacy; no direction forecast or event-trade setup.",
+        "Start with observable facts, separate interpretation from fact, and require at least one alternative explanation.",
+        "Convert source references into source-fit and boundary checks; do not convert them into signals or procedures.",
+        "End with a no-action learner note: what is known, unknown, and what evidence would weaken the interpretation.",
+        "Leave the lesson structural_draft until a real human records all required reviewer notes."
+      ],
+      "reviewerChecklist": [
+        "Original prose: no copied or lightly rewritten external source body text.",
+        "Source fit: every fraud/regulatory/macro/historical family is downgraded, blocked, or boundary-limited as needed.",
+        "Boundary: no buy/sell/hold, signal wording, broker/order workflow, automation, real-money guidance, forecast, or performance promise.",
+        "License fit: no agency/rule/table/chart/UI/public-domain trading maxim copied.",
+        "Teaching quality: includes misconception, observation task, alternative explanation, invalidation condition, and reflection prompt.",
+        "Status: remains structural_draft and not_approved after this packet."
+      ],
+      "sourceFamilyGuidance": [
+        {
+          "family": "BEA",
+          "editorUse": "Macro/data-release context and event-timing literacy only; cannot validate price-action mechanics or direction."
+        },
+        {
+          "family": "Investor.gov",
+          "editorUse": "Investor-protection, fraud, phony-system, or commodity-risk boundary only; never chart-structure proof."
+        },
+        {
+          "family": "CFTC",
+          "editorUse": "Investor-protection, fraud, phony-system, or commodity-risk boundary only; never chart-structure proof."
+        },
+        {
+          "family": "Federal Reserve",
+          "editorUse": "Macro/data-release context and event-timing literacy only; cannot validate price-action mechanics or direction."
+        }
+      ]
+    },
+    {
+      "lessonId": "lesson_knv2_0189",
+      "nodeId": "knv2_0189",
+      "moduleLabel": "news_sentiment_events",
+      "topicLabel": "headline_bias",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "rewritePriority": "P1",
+      "sourceFitRisk": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "Confirm source-to-topic fit during human rewrite; keep all sources as boundary evidence only."
+      ],
+      "handAuthored": false,
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "BEA",
+        "Investor.gov",
+        "BLS",
+        "dol.gov"
+      ],
+      "greenReviewedRefs": 3,
+      "greenAuthorityRefs": 2,
+      "nonGreenRefs": 0,
+      "sourceBoundary": [
+        "Use green refs as source identity, event/data/regulatory/fraud/historical context, or boundary evidence only.",
+        "Macro, regulator, and fraud sources cannot prove market-structure continuation, structure breaks, or candlestick mechanics.",
+        "News and event sources should teach source triangulation, timing, and bias checks; they cannot become event-trading instructions.",
+        "Public-domain classics may support historical language or observation exercises only after removing advice and profit voice.",
+        "Keep yellow, red, and research_only sources out of learner-facing evidence."
+      ],
+      "licenseBoundary": [
+        "Agency/public-document metadata may support reviewer notes, but learner-facing prose must be original.",
+        "Do not copy agency logos, UI text, rule text, tables, charts, third-party inserts, or boilerplate.",
+        "Do not preserve public-domain buy/sell rules, profit language, or market maxims.",
+        "No source identity may imply regulator endorsement, forecast ability, trading-system validity, or commercial readiness."
+      ],
+      "rewriteInstructions": [
+        "Rewrite news_sentiment_events / headline_bias as original teaching prose for interpretation practice.",
+        "News/event language must teach source triangulation and timing literacy; no direction forecast or event-trade setup.",
+        "Start with observable facts, separate interpretation from fact, and require at least one alternative explanation.",
+        "Convert source references into source-fit and boundary checks; do not convert them into signals or procedures.",
+        "End with a no-action learner note: what is known, unknown, and what evidence would weaken the interpretation.",
+        "Leave the lesson structural_draft until a real human records all required reviewer notes."
+      ],
+      "reviewerChecklist": [
+        "Original prose: no copied or lightly rewritten external source body text.",
+        "Source fit: every fraud/regulatory/macro/historical family is downgraded, blocked, or boundary-limited as needed.",
+        "Boundary: no buy/sell/hold, signal wording, broker/order workflow, automation, real-money guidance, forecast, or performance promise.",
+        "License fit: no agency/rule/table/chart/UI/public-domain trading maxim copied.",
+        "Teaching quality: includes misconception, observation task, alternative explanation, invalidation condition, and reflection prompt.",
+        "Status: remains structural_draft and not_approved after this packet."
+      ],
+      "sourceFamilyGuidance": [
+        {
+          "family": "BEA",
+          "editorUse": "Macro/data-release context and event-timing literacy only; cannot validate price-action mechanics or direction."
+        },
+        {
+          "family": "Investor.gov",
+          "editorUse": "Investor-protection, fraud, phony-system, or commodity-risk boundary only; never chart-structure proof."
+        },
+        {
+          "family": "BLS",
+          "editorUse": "Macro/data-release context and event-timing literacy only; cannot validate price-action mechanics or direction."
+        },
+        {
+          "family": "dol.gov",
+          "editorUse": "Macro/data-release context and event-timing literacy only; cannot validate price-action mechanics or direction."
+        }
+      ]
+    },
+    {
+      "lessonId": "lesson_knv2_0321",
+      "nodeId": "knv2_0321",
+      "moduleLabel": "news_sentiment_events",
+      "topicLabel": "event_timing",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "rewritePriority": "P1",
+      "sourceFitRisk": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "Confirm source-to-topic fit during human rewrite; keep all sources as boundary evidence only."
+      ],
+      "handAuthored": false,
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "BEA",
+        "Investor.gov",
+        "Federal Reserve",
+        "BLS"
+      ],
+      "greenReviewedRefs": 3,
+      "greenAuthorityRefs": 2,
+      "nonGreenRefs": 0,
+      "sourceBoundary": [
+        "Use green refs as source identity, event/data/regulatory/fraud/historical context, or boundary evidence only.",
+        "Macro, regulator, and fraud sources cannot prove market-structure continuation, structure breaks, or candlestick mechanics.",
+        "News and event sources should teach source triangulation, timing, and bias checks; they cannot become event-trading instructions.",
+        "Public-domain classics may support historical language or observation exercises only after removing advice and profit voice.",
+        "Keep yellow, red, and research_only sources out of learner-facing evidence."
+      ],
+      "licenseBoundary": [
+        "Agency/public-document metadata may support reviewer notes, but learner-facing prose must be original.",
+        "Do not copy agency logos, UI text, rule text, tables, charts, third-party inserts, or boilerplate.",
+        "Do not preserve public-domain buy/sell rules, profit language, or market maxims.",
+        "No source identity may imply regulator endorsement, forecast ability, trading-system validity, or commercial readiness."
+      ],
+      "rewriteInstructions": [
+        "Rewrite news_sentiment_events / event_timing as original teaching prose for interpretation practice.",
+        "News/event language must teach source triangulation and timing literacy; no direction forecast or event-trade setup.",
+        "Start with observable facts, separate interpretation from fact, and require at least one alternative explanation.",
+        "Convert source references into source-fit and boundary checks; do not convert them into signals or procedures.",
+        "End with a no-action learner note: what is known, unknown, and what evidence would weaken the interpretation.",
+        "Leave the lesson structural_draft until a real human records all required reviewer notes."
+      ],
+      "reviewerChecklist": [
+        "Original prose: no copied or lightly rewritten external source body text.",
+        "Source fit: every fraud/regulatory/macro/historical family is downgraded, blocked, or boundary-limited as needed.",
+        "Boundary: no buy/sell/hold, signal wording, broker/order workflow, automation, real-money guidance, forecast, or performance promise.",
+        "License fit: no agency/rule/table/chart/UI/public-domain trading maxim copied.",
+        "Teaching quality: includes misconception, observation task, alternative explanation, invalidation condition, and reflection prompt.",
+        "Status: remains structural_draft and not_approved after this packet."
+      ],
+      "sourceFamilyGuidance": [
+        {
+          "family": "BEA",
+          "editorUse": "Macro/data-release context and event-timing literacy only; cannot validate price-action mechanics or direction."
+        },
+        {
+          "family": "Investor.gov",
+          "editorUse": "Investor-protection, fraud, phony-system, or commodity-risk boundary only; never chart-structure proof."
+        },
+        {
+          "family": "Federal Reserve",
+          "editorUse": "Macro/data-release context and event-timing literacy only; cannot validate price-action mechanics or direction."
+        },
+        {
+          "family": "BLS",
+          "editorUse": "Macro/data-release context and event-timing literacy only; cannot validate price-action mechanics or direction."
+        }
+      ]
+    },
+    {
+      "lessonId": "lesson_knv2_0003",
+      "nodeId": "knv2_0003",
+      "moduleLabel": "candlestick_price_action",
+      "topicLabel": "single_candle_misread",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "rewritePriority": "P1",
+      "sourceFitRisk": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "If using public-domain classics, keep only historical language or observation context; remove old trading-rule voice."
+      ],
+      "handAuthored": false,
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "BEA",
+        "BLS",
+        "Internet Archive"
+      ],
+      "greenReviewedRefs": 3,
+      "greenAuthorityRefs": 2,
+      "nonGreenRefs": 0,
+      "sourceBoundary": [
+        "Use green refs as source identity, event/data/regulatory/fraud/historical context, or boundary evidence only.",
+        "Macro, regulator, and fraud sources cannot prove market-structure continuation, structure breaks, or candlestick mechanics.",
+        "News and event sources should teach source triangulation, timing, and bias checks; they cannot become event-trading instructions.",
+        "Public-domain classics may support historical language or observation exercises only after removing advice and profit voice.",
+        "Keep yellow, red, and research_only sources out of learner-facing evidence."
+      ],
+      "licenseBoundary": [
+        "Agency/public-document metadata may support reviewer notes, but learner-facing prose must be original.",
+        "Do not copy agency logos, UI text, rule text, tables, charts, third-party inserts, or boilerplate.",
+        "Do not preserve public-domain buy/sell rules, profit language, or market maxims.",
+        "No source identity may imply regulator endorsement, forecast ability, trading-system validity, or commercial readiness."
+      ],
+      "rewriteInstructions": [
+        "Rewrite candlestick_price_action / single_candle_misread as original teaching prose for interpretation practice.",
+        "Candlestick language must stay misconception-focused; no single-candle signal, entry trigger, or confirmation rule.",
+        "Start with observable facts, separate interpretation from fact, and require at least one alternative explanation.",
+        "Convert source references into source-fit and boundary checks; do not convert them into signals or procedures.",
+        "End with a no-action learner note: what is known, unknown, and what evidence would weaken the interpretation.",
+        "Leave the lesson structural_draft until a real human records all required reviewer notes."
+      ],
+      "reviewerChecklist": [
+        "Original prose: no copied or lightly rewritten external source body text.",
+        "Source fit: every fraud/regulatory/macro/historical family is downgraded, blocked, or boundary-limited as needed.",
+        "Boundary: no buy/sell/hold, signal wording, broker/order workflow, automation, real-money guidance, forecast, or performance promise.",
+        "License fit: no agency/rule/table/chart/UI/public-domain trading maxim copied.",
+        "Teaching quality: includes misconception, observation task, alternative explanation, invalidation condition, and reflection prompt.",
+        "Status: remains structural_draft and not_approved after this packet."
+      ],
+      "sourceFamilyGuidance": [
+        {
+          "family": "BEA",
+          "editorUse": "Macro/data-release context and event-timing literacy only; cannot validate price-action mechanics or direction."
+        },
+        {
+          "family": "BLS",
+          "editorUse": "Macro/data-release context and event-timing literacy only; cannot validate price-action mechanics or direction."
+        },
+        {
+          "family": "Internet Archive",
+          "editorUse": "Public-domain historical language and observation context only; strip buy/sell rules, profit claims, and market maxims."
+        }
+      ]
+    }
+  ],
+  "nonGreenRefs": 0,
+  "handAuthoredLessons": 0,
+  "commercialReadyPromotions": 0,
+  "reviewerNoteFields": [
+    "originalRewriteNotes",
+    "sourceFitNotes",
+    "factCheckNotes",
+    "boundaryCheckNotes",
+    "copyingRiskNotes",
+    "humanReviewerInitials"
+  ],
+  "sourceReports": {
+    "workbench": "docs/LESSON_REWRITE_WORKBENCH.json",
+    "sourceFitRisk": "docs/LESSON_SOURCE_FIT_RISK_SUMMARY.json"
+  },
+  "boundary": "This Batch 04 editor packet is reviewer-facing editing scaffolding only. It does not create learner-facing final prose, approve lessons, publish content, change grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, guide real-money decisions, or make the product production-ready."
+}

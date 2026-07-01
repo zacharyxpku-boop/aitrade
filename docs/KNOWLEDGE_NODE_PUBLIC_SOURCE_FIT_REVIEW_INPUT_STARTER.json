@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-06-22T02:55:54.975Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "starterStatus": "node_public_source_fit_review_input_starter_ready_blank",
+  "candidateTargetNodes": 273,
+  "reviewRows": 1638,
+  "readyReviewRows": 0,
+  "blockedReviewRows": 1638,
+  "realHumanInputEntries": 0,
+  "learnerCitationApprovedRows": 0,
+  "copiedTextApprovedRows": 0,
+  "writeAllowedNow": false,
+  "manualAuthorizationRequired": true,
+  "draftInputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+  "draftInputMarkdownPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.md",
+  "commands": [
+    "npm.cmd run validate:knowledge-node-public-source-fit-review-input",
+    "npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+    "npm.cmd run check:knowledge-node-public-source-fit-candidate-pack"
+  ],
+  "completionRule": "Every row requires a real human reviewer decision, source-fit note, citation use, reviewer name, and reviewedAt timestamp before it can affect triangulation or learner-facing citations.",
+  "boundary": "Node public source-fit review input is reviewer-facing education-only governance. It does not approve copied text, learner-facing citations, stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, or production readiness."
+}

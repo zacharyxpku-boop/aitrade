@@ -1,0 +1,388 @@
+{
+  "generatedAt": "2026-06-19T09:47:11.711Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "bundleReady": true,
+  "executionMode": "pre_write_manual_review_index",
+  "realStatusPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "realStatusOverlayPresent": false,
+  "targetBatches": [
+    "rewrite_batch_01",
+    "rewrite_batch_05"
+  ],
+  "worksheetLessons": 12,
+  "highRiskLessons": 2,
+  "sourceFamilyDecisions": 45,
+  "directCandidatesToConfirm": 5,
+  "blankNoteFields": 72,
+  "realReadyBatches": 0,
+  "realNoteIssues": 0,
+  "executionSteps": [
+    {
+      "order": 1,
+      "phase": "Operator index",
+      "file": "docs/FIRST_REVIEWER_OPERATOR_INDEX.md",
+      "command": "npm.cmd run check:first-reviewer-operator-index",
+      "humanAction": "Start from the operator index before opening other first-reviewer files.",
+      "gate": "Index is not write permission, approval, release, or readiness."
+    },
+    {
+      "order": 2,
+      "phase": "One-page runbook",
+      "file": "docs/FIRST_REVIEWER_ONE_PAGE_RUNBOOK.md",
+      "command": "npm.cmd run check:first-reviewer-one-page-runbook",
+      "humanAction": "Use this as the printable day-of-review sequence and hard-stop checklist.",
+      "gate": "Runbook is not real notes, write permission, approval, release, or readiness."
+    },
+    {
+      "order": 3,
+      "phase": "Runbook misuse guard",
+      "file": "docs/FIRST_REVIEWER_RUNBOOK_NEGATIVE_CASES.md",
+      "command": "npm.cmd run check:first-reviewer-runbook-negative-cases",
+      "humanAction": "Keep the runbook misuse negative cases passing before using the runbook in review preparation.",
+      "gate": "Runbook cannot become notes, approval, release, grade promotion, launch readiness, or production readiness."
+    },
+    {
+      "order": 4,
+      "phase": "Pre-write sample dossier",
+      "file": "docs/FIRST_REVIEWER_PREWRITE_SAMPLE_DOSSIER.md",
+      "command": "npm.cmd run check:first-reviewer-prewrite-sample-dossier",
+      "humanAction": "Use the dossier as a read-only handoff packet for the first 12 lesson cards and gate sequence.",
+      "gate": "Dossier cannot create notes, approvals, release candidates, or readiness claims."
+    },
+    {
+      "order": 5,
+      "phase": "Filled-notes positive control v2",
+      "file": "docs/FIRST_REVIEWER_FILLED_NOTES_POSITIVE_CONTROL_V2.md",
+      "command": "npm.cmd run check:first-reviewer-filled-notes-positive-control-v2",
+      "humanAction": "Use the temporary-file control to verify complete notes can become separate-approval candidates only.",
+      "gate": "Positive control is not real reviewer evidence and cannot auto-approve or publish lessons."
+    },
+    {
+      "order": 6,
+      "phase": "Post-write approval drill",
+      "file": "docs/FIRST_REVIEWER_POST_WRITE_APPROVAL_DRILL.md",
+      "command": "npm.cmd run check:first-reviewer-post-write-approval-drill",
+      "humanAction": "Use the temporary drill to verify approval-review candidates remain blocked from release, launch, grade promotion, and production readiness.",
+      "gate": "Drill is not real reviewer evidence, approval, release, or readiness."
+    },
+    {
+      "order": 7,
+      "phase": "Direct-candidate post-write drill",
+      "file": "docs/FIRST_REVIEWER_DIRECT_CANDIDATE_POST_WRITE_DRILL.md",
+      "command": "npm.cmd run check:first-reviewer-direct-candidate-post-write-drill",
+      "humanAction": "Use the temporary drill to validate sourceFitNotes boundaries for BEA, BLS, CFTC, and SEC candidate rows.",
+      "gate": "Drill is not real source confirmation, approval, release, or readiness."
+    },
+    {
+      "order": 8,
+      "phase": "Post-write validation simulator",
+      "file": "docs/FIRST_REVIEWER_POST_WRITE_VALIDATION_SIMULATOR.md",
+      "command": "npm.cmd run check:first-reviewer-post-write-validation-simulator",
+      "humanAction": "Use the temporary simulator to rehearse completion, evidence intake, separate approval, and release-drift guards after a future overlay exists.",
+      "gate": "Simulator is not real reviewer evidence, approval, release, grade promotion, launch readiness, or production readiness."
+    },
+    {
+      "order": 9,
+      "phase": "Sequence consistency gate",
+      "file": "docs/FIRST_REVIEWER_SEQUENCE_CONSISTENCY.md",
+      "command": "npm.cmd run check:first-reviewer-sequence-consistency",
+      "humanAction": "Use the sequence gate to confirm execution steps, operator phases, post-write commands, and packet order remain contiguous.",
+      "gate": "Sequence gate is not real reviewer evidence, approval, release, grade promotion, launch readiness, or production readiness."
+    },
+    {
+      "order": 10,
+      "phase": "Day-of-review packet freeze",
+      "file": "docs/FIRST_REVIEWER_DAY_OF_REVIEW_PACKET_FREEZE.md",
+      "command": "npm.cmd run check:first-reviewer-day-of-review-packet-freeze",
+      "humanAction": "Use the frozen packet to confirm every first-reviewer step has input, expected output, failure route, and forbidden actions.",
+      "gate": "Freeze packet is not real reviewer evidence, approval, release, grade promotion, launch readiness, or production readiness."
+    },
+    {
+      "order": 11,
+      "phase": "Orient",
+      "file": "docs/FIRST_REVIEWER_HUMAN_EXECUTION_BUNDLE.md",
+      "command": "npm.cmd run check:first-reviewer-human-execution-bundle",
+      "humanAction": "Use this page as the reviewer execution order after the operator index.",
+      "gate": "No approval, release, or grade change."
+    },
+    {
+      "order": 12,
+      "phase": "Printable checklist",
+      "file": "docs/FIRST_REVIEWER_PRINTABLE_CHECKLIST_PACK.md",
+      "command": "npm.cmd run check:first-reviewer-printable-checklist-pack",
+      "humanAction": "Print or open the per-lesson checklist pack for manual tracking.",
+      "gate": "Checklist boxes are not real review notes."
+    },
+    {
+      "order": 13,
+      "phase": "Handoff",
+      "file": "docs/FIRST_REVIEWER_HANDOFF.md",
+      "command": "npm.cmd run check:first-reviewer-handoff",
+      "humanAction": "Confirm scope, commands, and disallowed status language.",
+      "gate": "Keep approvalStatus:not_approved."
+    },
+    {
+      "order": 14,
+      "phase": "Worksheet",
+      "file": "docs/FIRST_REVIEWER_WORKSHEET.md",
+      "command": "npm.cmd run check:first-reviewer-worksheet",
+      "humanAction": "Review 12 lessons, starting with the 2 high-risk rows.",
+      "gate": "Do not rewrite learner-facing prose here."
+    },
+    {
+      "order": 15,
+      "phase": "Source roles",
+      "file": "docs/FIRST_REVIEWER_SOURCE_ROLE_DECISION_TABLE.md",
+      "command": "npm.cmd run check:first-reviewer-source-role-decision-table",
+      "humanAction": "Classify source families before note-taking.",
+      "gate": "Do not treat candidate sources as approved direct evidence."
+    },
+    {
+      "order": 16,
+      "phase": "Direct candidates",
+      "file": "docs/FIRST_REVIEWER_DIRECT_CANDIDATE_CONFIRMATION_CHECKLIST.md",
+      "command": "npm.cmd run check:first-reviewer-direct-candidate-confirmation-checklist",
+      "humanAction": "Confirm or downgrade the 5 direct candidates.",
+      "gate": "Use green sources only; no yellow/red/research-only learner-facing evidence."
+    },
+    {
+      "order": 17,
+      "phase": "Blank notes",
+      "file": "docs/FIRST_REVIEWER_HUMAN_NOTE_STARTER_TEMPLATE.md",
+      "command": "npm.cmd run check:first-reviewer-human-note-starter-template",
+      "humanAction": "Use the 72 blank fields as the note map.",
+      "gate": "Do not paste generated text as real notes."
+    },
+    {
+      "order": 18,
+      "phase": "Safe examples",
+      "file": "docs/FIRST_REVIEWER_SAFE_NOTE_EXAMPLES.md",
+      "command": "npm.cmd run check:first-reviewer-safe-note-examples",
+      "humanAction": "Read examples for style only.",
+      "gate": "Sample-only examples are not review evidence."
+    },
+    {
+      "order": 19,
+      "phase": "Start gate",
+      "file": "docs/FIRST_REVIEWER_HUMAN_REVIEW_START_CHECKLIST.md",
+      "command": "npm.cmd run check:first-reviewer-human-review-start-checklist",
+      "humanAction": "Complete manual boxes before any real overlay write.",
+      "gate": "Generated state keeps startAllowedNow:false."
+    },
+    {
+      "order": 20,
+      "phase": "Creation gate",
+      "file": "docs/FIRST_REVIEWER_REAL_OVERLAY_CREATION_CHECKLIST.md",
+      "command": "npm.cmd run check:first-reviewer-real-overlay-creation-checklist",
+      "humanAction": "Preview and intentionally decide whether a human will start note-taking.",
+      "gate": "No automatic creation; no overwrite."
+    },
+    {
+      "order": 21,
+      "phase": "Post-write route",
+      "file": "docs/FIRST_REVIEWER_POST_WRITE_VALIDATION_PLAYBOOK.md",
+      "command": "npm.cmd run check:first-reviewer-post-write-validation-playbook",
+      "humanAction": "After real overlay creation, run the validation sequence.",
+      "gate": "Still no approval or learner-facing release."
+    },
+    {
+      "order": 22,
+      "phase": "Diff audit",
+      "file": "docs/FIRST_REVIEWER_REAL_OVERLAY_DIFF_AUDIT.md",
+      "command": "npm.cmd run check:first-reviewer-real-overlay-diff-audit",
+      "humanAction": "Compare any real overlay with the blank template.",
+      "gate": "Reject missing rows, unsafe wording, copy-risk wording, and status drift."
+    },
+    {
+      "order": 23,
+      "phase": "Evidence intake",
+      "file": "docs/FIRST_REVIEWER_EVIDENCE_INTAKE_SUMMARY.md",
+      "command": "npm.cmd run check:first-reviewer-evidence-intake-summary",
+      "humanAction": "Summarize complete notes, blockers, direct-candidate status, and candidates for separate approval review.",
+      "gate": "Intake is triage only, not approval or release."
+    },
+    {
+      "order": 24,
+      "phase": "Separate approval gate",
+      "file": "docs/FIRST_REVIEWER_SEPARATE_APPROVAL_REVIEW_GATE.md",
+      "command": "npm.cmd run check:first-reviewer-separate-approval-review-gate",
+      "humanAction": "Keep complete-note candidates behind a separate manual approval review.",
+      "gate": "Candidate status is not approval, release, production readiness, or grade promotion."
+    },
+    {
+      "order": 25,
+      "phase": "Release drift guard",
+      "file": "docs/FIRST_REVIEWER_RELEASE_READINESS_NEGATIVE_CASES.md",
+      "command": "npm.cmd run check:first-reviewer-release-readiness-negative-cases",
+      "humanAction": "Prove approval/release/production/commercial-ready drift is rejected.",
+      "gate": "Passing negative cases are required before any future release review."
+    },
+    {
+      "order": 26,
+      "phase": "Launch readiness dashboard",
+      "file": "docs/FIRST_REVIEWER_LAUNCH_READINESS_DASHBOARD.md",
+      "command": "npm.cmd run check:first-reviewer-launch-readiness-dashboard",
+      "humanAction": "Review current blockers to internal trial, launch, and production readiness.",
+      "gate": "Dashboard readiness is not approval, release, commercial readiness, or production readiness."
+    },
+    {
+      "order": 27,
+      "phase": "Rehearsal checklist",
+      "file": "docs/FIRST_REVIEWER_REHEARSAL_CHECKLIST.md",
+      "command": "npm.cmd run check:first-reviewer-rehearsal-checklist",
+      "humanAction": "Practice the 12 lesson cards, 72 note fields, and 5 direct-candidate decisions before real note-taking.",
+      "gate": "Rehearsal is not real reviewer evidence, approval, release, or readiness."
+    },
+    {
+      "order": 28,
+      "phase": "Direct candidate decisions",
+      "file": "docs/FIRST_REVIEWER_DIRECT_CANDIDATE_DECISION_WORKSHEET.md",
+      "command": "npm.cmd run check:first-reviewer-direct-candidate-decision-worksheet",
+      "humanAction": "Use the blank worksheet to decide confirm, downgrade, or blocked for each direct-candidate source role.",
+      "gate": "Generated worksheet rows are not confirmation; real sourceFitNotes are required."
+    },
+    {
+      "order": 29,
+      "phase": "Source-fit decision summary",
+      "file": "docs/FIRST_REVIEWER_SOURCE_FIT_DECISION_SUMMARY.md",
+      "command": "npm.cmd run check:first-reviewer-source-fit-decision-summary",
+      "humanAction": "Use the one-page summary to compare confirm, downgrade, and block criteria before writing sourceFitNotes.",
+      "gate": "Summary is not a decision, source confirmation, approval, release, or readiness."
+    },
+    {
+      "order": 30,
+      "phase": "SourceFitNotes card pack",
+      "file": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_CARD_PACK.md",
+      "command": "npm.cmd run check:first-reviewer-source-fit-notes-card-pack",
+      "humanAction": "Print or copy the blank sourceFitNotes cards for the 5 direct candidates and leave all fields empty until real review.",
+      "gate": "Card pack is not filled notes, source confirmation, approval, release, or readiness."
+    },
+    {
+      "order": 31,
+      "phase": "SourceFitNotes card misuse guard",
+      "file": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_CARD_NEGATIVE_CASES.md",
+      "command": "npm.cmd run check:first-reviewer-source-fit-notes-card-negative-cases",
+      "humanAction": "Run simulated pollution cases before any future sourceFitNotes are written.",
+      "gate": "Negative cases are not real notes, source confirmation, approval, release, or readiness."
+    },
+    {
+      "order": 32,
+      "phase": "SourceFitNotes positive matrix",
+      "file": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_POSITIVE_MATRIX.md",
+      "command": "npm.cmd run check:first-reviewer-source-fit-notes-positive-matrix",
+      "humanAction": "Read sample-only confirm, downgrade, and block note shapes before future human note writing.",
+      "gate": "Positive samples are not real notes, source confirmation, approval, release, or readiness."
+    },
+    {
+      "order": 33,
+      "phase": "SourceFitNotes human-fill preflight",
+      "file": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_HUMAN_FILL_PREFLIGHT.md",
+      "command": "npm.cmd run check:first-reviewer-source-fit-notes-human-fill-preflight",
+      "humanAction": "Confirm manual prerequisites before any real sourceFitNotes entry.",
+      "gate": "Preflight is not real notes, source confirmation, write permission, approval, release, or readiness."
+    },
+    {
+      "order": 34,
+      "phase": "Source fit notes acceptance",
+      "file": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_ACCEPTANCE.md",
+      "command": "npm.cmd run check:first-reviewer-source-fit-notes-acceptance",
+      "humanAction": "After future real sourceFitNotes are written, check that each note has a valid decision, source role, claim, rewrite action, and no unsafe wording.",
+      "gate": "Acceptance controls are not real notes, approval, release, or readiness."
+    },
+    {
+      "order": 35,
+      "phase": "Real overlay preflight",
+      "file": "docs/FIRST_REVIEWER_REAL_OVERLAY_PREFLIGHT_SUMMARY.md",
+      "command": "npm.cmd run check:first-reviewer-real-overlay-preflight-summary",
+      "humanAction": "Before any explicit write initializer, review the final manual and machine gates across start, creation, direct-candidate, sourceFitNotes, diff-audit, intake, and launch-readiness checks.",
+      "gate": "Preflight does not create the overlay and must keep writeAllowedNow:false until a human decision exists."
+    },
+    {
+      "order": 36,
+      "phase": "Write readiness lock",
+      "file": "docs/FIRST_REVIEWER_REAL_OVERLAY_WRITE_READINESS_LOCK.md",
+      "command": "npm.cmd run check:first-reviewer-real-overlay-write-readiness-lock",
+      "humanAction": "Use the generated lock as the final hard stop before any real overlay write command.",
+      "gate": "Lock remains writeAllowedNow:false and cannot replace explicit human note-taking intent."
+    },
+    {
+      "order": 37,
+      "phase": "Write authorization preview",
+      "file": "docs/FIRST_REVIEWER_REAL_OVERLAY_WRITE_AUTHORIZATION_PREVIEW.md",
+      "command": "npm.cmd run check:first-reviewer-real-overlay-write-authorization-preview",
+      "humanAction": "Use the generated preview to separate machine-checked gates from missing human authorization before any write command.",
+      "gate": "Preview remains writeAllowedNow:false and cannot authorize or create the real overlay."
+    },
+    {
+      "order": 38,
+      "phase": "Day-zero write handoff",
+      "file": "docs/FIRST_REVIEWER_DAY_ZERO_WRITE_HANDOFF.md",
+      "command": "npm.cmd run check:first-reviewer-day-zero-write-handoff",
+      "humanAction": "Use the one-page handoff to review pre-write commands, human authorization blockers, write-command preview, and future post-write validation order.",
+      "gate": "Handoff remains writeAllowedNow:false and cannot authorize or create the real overlay."
+    },
+    {
+      "order": 39,
+      "phase": "Dry-run bundle audit",
+      "file": "docs/FIRST_REVIEWER_REAL_OVERLAY_DRY_RUN_BUNDLE_AUDIT.md",
+      "command": "npm.cmd run check:first-reviewer-real-overlay-dry-run-bundle-audit",
+      "humanAction": "Run the consistency audit tying dry-run, overwrite protection, day-zero handoff, final rehearsal, authorization preview, and write locks together.",
+      "gate": "Audit remains writeAllowedNow:false and cannot authorize or create the real overlay."
+    },
+    {
+      "order": 40,
+      "phase": "Post-write command pack",
+      "file": "docs/FIRST_REVIEWER_POST_WRITE_COMMAND_PACK.md",
+      "command": "npm.cmd run check:first-reviewer-post-write-command-pack",
+      "humanAction": "After a future real overlay exists, run the strict validation order and failure routes without skipping gates.",
+      "gate": "Command pack is future-only now and cannot prove review evidence while the real overlay is absent."
+    },
+    {
+      "order": 41,
+      "phase": "Final gates",
+      "file": "docs/REVIEWER_NOTE_QUALITY_LINT.md",
+      "command": "npm.cmd run check:curriculum-review",
+      "humanAction": "Run note lint, completion audit, curriculum review, knowledge checks, browser checks, and full verify.",
+      "gate": "Only a separate later approval review can consider readiness."
+    }
+  ],
+  "manualSignoffBoxes": [
+    "A human reviewer is identified before any real notes are written.",
+    "Scope is limited to rewrite_batch_01 and rewrite_batch_05.",
+    "The 5 direct-candidate source roles are confirmed or downgraded before sourceFitNotes.",
+    "All 72 note fields start blank; generated prompts and examples are not copied as real notes.",
+    "Reviewer accepts education-only, non-production, no-advice, no-signal, no-performance, no-broker, no-automation, and no-real-money boundaries.",
+    "Real overlay write mode is intentional, and existing notes will not be overwritten.",
+    "After write mode, completion, diff audit, note lint, curriculum, knowledge, browser, and full verify gates all run before any separate approval review."
+  ],
+  "stopConditions": [
+    "Stop if docs/LESSON_BATCH_REVIEW_STATUS.json appears without explicit human note-taking.",
+    "Stop if any generated prompt or sample is copied into real notes as evidence.",
+    "Stop if any note or status claims approval, learner-facing readiness, commercial readiness, or production readiness.",
+    "Stop if any note contains buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, or real-money guidance.",
+    "Stop if any external source body text is copied into notes or lesson prose.",
+    "Stop if yellow, red, or research_only sources are proposed as learner-facing evidence."
+  ],
+  "sourceReports": {
+    "dryRunPacket": "docs/FIRST_REVIEWER_DRY_RUN_PACKET.json",
+    "progressDashboard": "docs/FIRST_REVIEWER_PROGRESS_DASHBOARD.json",
+    "handoff": "docs/FIRST_REVIEWER_HANDOFF.json",
+    "worksheet": "docs/FIRST_REVIEWER_WORKSHEET.json",
+    "sourceRoleDecisionTable": "docs/FIRST_REVIEWER_SOURCE_ROLE_DECISION_TABLE.json",
+    "directCandidateChecklist": "docs/FIRST_REVIEWER_DIRECT_CANDIDATE_CONFIRMATION_CHECKLIST.json",
+    "noteStarter": "docs/FIRST_REVIEWER_HUMAN_NOTE_STARTER_TEMPLATE.json",
+    "safeNoteExamples": "docs/FIRST_REVIEWER_SAFE_NOTE_EXAMPLES.json",
+    "humanReviewStartChecklist": "docs/FIRST_REVIEWER_HUMAN_REVIEW_START_CHECKLIST.json",
+    "creationChecklist": "docs/FIRST_REVIEWER_REAL_OVERLAY_CREATION_CHECKLIST.json",
+    "realOverlayDryRunBundleAudit": "docs/FIRST_REVIEWER_REAL_OVERLAY_DRY_RUN_BUNDLE_AUDIT.json",
+    "postWritePlaybook": "docs/FIRST_REVIEWER_POST_WRITE_VALIDATION_PLAYBOOK.json",
+    "realOverlayDiffAudit": "docs/FIRST_REVIEWER_REAL_OVERLAY_DIFF_AUDIT.json",
+    "noteQualityLint": "docs/REVIEWER_NOTE_QUALITY_LINT.json",
+    "completionAudit": "docs/LESSON_BATCH_COMPLETION_AUDIT.json"
+  },
+  "boundary": "This bundle is a human reviewer execution index only. It does not create docs/LESSON_BATCH_REVIEW_STATUS.json, fill human notes, approve lessons, publish learner-facing content, change lesson grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, or guide real-money decisions."
+}

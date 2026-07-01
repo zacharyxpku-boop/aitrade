@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2026-06-23T19:36:17.957Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "readinessStatus": "local_video_course_original_videos_may_be_removed_after_visual_audit_verified_manual_only",
+  "recommendation": "may_delete_if_user_accepts_ocr_unavailable_limitation_otherwise_retain_for_future_ocr",
+  "sourceVideos": 62,
+  "transcriptComplete": true,
+  "semanticComplete": true,
+  "visualComplete": true,
+  "fullTranscriptRows": 62,
+  "semanticAbsorbedRows": 62,
+  "visualIndexedVideos": 62,
+  "visualRowsWithFrames": 62,
+  "visualReviewReadyRows": 62,
+  "ocrEngineAvailable": false,
+  "ocrLimitation": "OCR engine unavailable; visual frames and heuristic tags are retained for human review or future OCR.",
+  "deletionWouldLose": [
+    "ability_to_rerun_higher_accuracy_transcription_from_original_video",
+    "ability_to_extract_more_or_different_chart_frames",
+    "ability_to_verify_original_private_video_provenance_or_copyright_context",
+    "ability_to_run_future_ocr_or_visual_models_on_source_video"
+  ],
+  "manualDeletionOnly": true,
+  "deleteExecutedNow": false,
+  "learnerFacingReadyRows": 0,
+  "writeAllowedNow": false,
+  "manualAuthorizationRequired": true,
+  "commands": [
+    "npm.cmd run build:local-video-course-delete-readiness-after-visual-audit",
+    "npm.cmd run check:local-video-course-delete-readiness-after-visual-audit",
+    "npm.cmd run verify"
+  ],
+  "boundary": "Local video course delete readiness after visual audit is reviewer-facing education-only governance. It may advise manual removal of original private videos after verified transcript, semantic, and visual coverage, but it never deletes files automatically, never publishes copied frames, never approves learner-facing release, and never provides trading advice, stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, write authorization, learner release, or production readiness."
+}

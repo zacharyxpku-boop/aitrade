@@ -1,0 +1,43 @@
+# Course 5 Wave 4 PDF Reviewer Input Validation
+
+- Validation status: course_5_wave_4_pdf_reviewer_input_blocked_missing_or_invalid_real_input
+- Input rows: 27
+- PDF rows: 27
+- Ready rows: 0
+- Blocked rows: 27
+- Missing-field rows: 27
+- Source folder may be deleted: false
+
+## First Issues
+
+- course5_pdf_ocr_visual_review_010: reviewerOwnedOcrTextExcerpt; reviewerOwnedVisualObservation; paraphrasedTeachingConcept; modulePlacement; evidenceLimitations; reviewerNameOrInitials; reviewedAt
+- course5_pdf_ocr_visual_review_011: reviewerOwnedOcrTextExcerpt; reviewerOwnedVisualObservation; paraphrasedTeachingConcept; modulePlacement; evidenceLimitations; reviewerNameOrInitials; reviewedAt
+- course5_pdf_ocr_visual_review_012: reviewerOwnedOcrTextExcerpt; reviewerOwnedVisualObservation; paraphrasedTeachingConcept; modulePlacement; evidenceLimitations; reviewerNameOrInitials; reviewedAt
+- course5_pdf_ocr_visual_review_013: reviewerOwnedOcrTextExcerpt; reviewerOwnedVisualObservation; paraphrasedTeachingConcept; modulePlacement; evidenceLimitations; reviewerNameOrInitials; reviewedAt
+- course5_pdf_ocr_visual_review_014: reviewerOwnedOcrTextExcerpt; reviewerOwnedVisualObservation; paraphrasedTeachingConcept; modulePlacement; evidenceLimitations; reviewerNameOrInitials; reviewedAt
+- course5_pdf_ocr_visual_review_015: reviewerOwnedOcrTextExcerpt; reviewerOwnedVisualObservation; paraphrasedTeachingConcept; modulePlacement; evidenceLimitations; reviewerNameOrInitials; reviewedAt
+- course5_pdf_ocr_visual_review_016: reviewerOwnedOcrTextExcerpt; reviewerOwnedVisualObservation; paraphrasedTeachingConcept; modulePlacement; evidenceLimitations; reviewerNameOrInitials; reviewedAt
+- course5_pdf_ocr_visual_review_017: reviewerOwnedOcrTextExcerpt; reviewerOwnedVisualObservation; paraphrasedTeachingConcept; modulePlacement; evidenceLimitations; reviewerNameOrInitials; reviewedAt
+- course5_pdf_ocr_visual_review_018: reviewerOwnedOcrTextExcerpt; reviewerOwnedVisualObservation; paraphrasedTeachingConcept; modulePlacement; evidenceLimitations; reviewerNameOrInitials; reviewedAt
+- course5_wave_4_pdf_supplemental_review_001: reviewerOwnedOcrTextExcerpt; reviewerOwnedVisualObservation; paraphrasedTeachingConcept; modulePlacement; evidenceLimitations; reviewerNameOrInitials; reviewedAt
+- course5_wave_4_pdf_supplemental_review_002: reviewerOwnedOcrTextExcerpt; reviewerOwnedVisualObservation; paraphrasedTeachingConcept; modulePlacement; evidenceLimitations; reviewerNameOrInitials; reviewedAt
+- course5_wave_4_pdf_supplemental_review_003: reviewerOwnedOcrTextExcerpt; reviewerOwnedVisualObservation; paraphrasedTeachingConcept; modulePlacement; evidenceLimitations; reviewerNameOrInitials; reviewedAt
+- course5_wave_4_pdf_supplemental_review_004: reviewerOwnedOcrTextExcerpt; reviewerOwnedVisualObservation; paraphrasedTeachingConcept; modulePlacement; evidenceLimitations; reviewerNameOrInitials; reviewedAt
+- course5_wave_4_pdf_supplemental_review_005: reviewerOwnedOcrTextExcerpt; reviewerOwnedVisualObservation; paraphrasedTeachingConcept; modulePlacement; evidenceLimitations; reviewerNameOrInitials; reviewedAt
+- course5_wave_4_pdf_supplemental_review_006: reviewerOwnedOcrTextExcerpt; reviewerOwnedVisualObservation; paraphrasedTeachingConcept; modulePlacement; evidenceLimitations; reviewerNameOrInitials; reviewedAt
+- course5_wave_4_pdf_supplemental_review_007: reviewerOwnedOcrTextExcerpt; reviewerOwnedVisualObservation; paraphrasedTeachingConcept; modulePlacement; evidenceLimitations; reviewerNameOrInitials; reviewedAt
+- course5_wave_4_pdf_supplemental_review_008: reviewerOwnedOcrTextExcerpt; reviewerOwnedVisualObservation; paraphrasedTeachingConcept; modulePlacement; evidenceLimitations; reviewerNameOrInitials; reviewedAt
+- course5_wave_4_pdf_supplemental_review_009: reviewerOwnedOcrTextExcerpt; reviewerOwnedVisualObservation; paraphrasedTeachingConcept; modulePlacement; evidenceLimitations; reviewerNameOrInitials; reviewedAt
+- course5_wave_4_pdf_supplemental_review_010: reviewerOwnedOcrTextExcerpt; reviewerOwnedVisualObservation; paraphrasedTeachingConcept; modulePlacement; evidenceLimitations; reviewerNameOrInitials; reviewedAt
+- course5_wave_4_pdf_supplemental_review_011: reviewerOwnedOcrTextExcerpt; reviewerOwnedVisualObservation; paraphrasedTeachingConcept; modulePlacement; evidenceLimitations; reviewerNameOrInitials; reviewedAt
+- course5_wave_4_pdf_supplemental_review_012: reviewerOwnedOcrTextExcerpt; reviewerOwnedVisualObservation; paraphrasedTeachingConcept; modulePlacement; evidenceLimitations; reviewerNameOrInitials; reviewedAt
+- course5_wave_4_pdf_supplemental_review_013: reviewerOwnedOcrTextExcerpt; reviewerOwnedVisualObservation; paraphrasedTeachingConcept; modulePlacement; evidenceLimitations; reviewerNameOrInitials; reviewedAt
+- course5_wave_4_pdf_supplemental_review_014: reviewerOwnedOcrTextExcerpt; reviewerOwnedVisualObservation; paraphrasedTeachingConcept; modulePlacement; evidenceLimitations; reviewerNameOrInitials; reviewedAt
+- course5_wave_4_pdf_supplemental_review_015: reviewerOwnedOcrTextExcerpt; reviewerOwnedVisualObservation; paraphrasedTeachingConcept; modulePlacement; evidenceLimitations; reviewerNameOrInitials; reviewedAt
+- course5_wave_4_pdf_supplemental_review_016: reviewerOwnedOcrTextExcerpt; reviewerOwnedVisualObservation; paraphrasedTeachingConcept; modulePlacement; evidenceLimitations; reviewerNameOrInitials; reviewedAt
+- course5_wave_4_pdf_supplemental_review_017: reviewerOwnedOcrTextExcerpt; reviewerOwnedVisualObservation; paraphrasedTeachingConcept; modulePlacement; evidenceLimitations; reviewerNameOrInitials; reviewedAt
+- course5_wave_4_pdf_supplemental_review_018: reviewerOwnedOcrTextExcerpt; reviewerOwnedVisualObservation; paraphrasedTeachingConcept; modulePlacement; evidenceLimitations; reviewerNameOrInitials; reviewedAt
+
+## Boundary
+
+Course 5 Wave 4 PDF reviewer input validation is private reviewer-facing education operations material. It validates reviewer-owned input for the nine course-core PDF OCR blockers and their representative page samples. It does not perform OCR, generate reviewer conclusions, accept machine drafts as human review, delete files, approve learner-facing release, approve source-folder deletion, copy private source wording, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, write authorization, or production readiness.

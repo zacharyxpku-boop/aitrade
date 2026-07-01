@@ -1,0 +1,278 @@
+{
+  "generatedAt": "2026-06-19T09:45:08.709Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "dossierReady": true,
+  "dossierMode": "read_only_pre_write_human_handoff",
+  "realStatusPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "realStatusOverlayPresent": false,
+  "targetBatches": [
+    "rewrite_batch_01",
+    "rewrite_batch_05"
+  ],
+  "lessonCards": 12,
+  "highRiskLessons": 2,
+  "noteFields": 72,
+  "sourceFamilyDecisions": 45,
+  "directCandidates": 5,
+  "sourceFitDecisionRows": 5,
+  "sourceFitNotesCards": 5,
+  "sourceFitNotesCardNegativeCases": 15,
+  "sourceFitNotesPositiveSamples": 3,
+  "sourceFitNotesHumanFillPreflightRows": 5,
+  "runbookNegativeCases": 15,
+  "runbookNegativeCasesPassed": 15,
+  "postWriteCommands": 12,
+  "dryRunBundleAuditReady": true,
+  "writeAllowedNow": false,
+  "executionAllowedNow": false,
+  "completeNoteCards": 0,
+  "approvalReviewCandidates": 0,
+  "packetOrder": [
+    {
+      "file": "docs/FIRST_REVIEWER_OPERATOR_INDEX.md",
+      "use": "start here and confirm all readiness flags remain false"
+    },
+    {
+      "file": "docs/FIRST_REVIEWER_ONE_PAGE_RUNBOOK.md",
+      "use": "printable day-of-review sequence"
+    },
+    {
+      "file": "docs/FIRST_REVIEWER_RUNBOOK_NEGATIVE_CASES.md",
+      "use": "misuse guard for runbook-as-evidence drift"
+    },
+    {
+      "file": "docs/FIRST_REVIEWER_FILLED_NOTES_POSITIVE_CONTROL_V2.md",
+      "use": "temporary-file control proving completed notes become candidate-only rows"
+    },
+    {
+      "file": "docs/FIRST_REVIEWER_POST_WRITE_APPROVAL_DRILL.md",
+      "use": "temporary post-write drill proving approval-review candidates remain blocked from release and readiness"
+    },
+    {
+      "file": "docs/FIRST_REVIEWER_DIRECT_CANDIDATE_POST_WRITE_DRILL.md",
+      "use": "temporary sourceFitNotes drill for BEA, BLS, CFTC, and SEC candidate boundaries"
+    },
+    {
+      "file": "docs/FIRST_REVIEWER_POST_WRITE_VALIDATION_SIMULATOR.md",
+      "use": "temporary full post-write simulator chaining completion, intake, separate approval, and release-drift guards"
+    },
+    {
+      "file": "docs/FIRST_REVIEWER_SEQUENCE_CONSISTENCY.md",
+      "use": "pre-write order-integrity gate for execution steps, operator phases, commands, and packet order"
+    },
+    {
+      "file": "docs/FIRST_REVIEWER_DAY_OF_REVIEW_PACKET_FREEZE.md",
+      "use": "frozen day-of-review packet with step inputs, expected outputs, failure routes, and forbidden actions"
+    },
+    {
+      "file": "docs/FIRST_REVIEWER_SOURCE_FIT_DECISION_SUMMARY.md",
+      "use": "one-page confirm/downgrade/block summary for 5 direct-candidate source roles before sourceFitNotes"
+    },
+    {
+      "file": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_CARD_PACK.md",
+      "use": "blank printable sourceFitNotes cards with 35 empty fields for the 5 direct-candidate rows"
+    },
+    {
+      "file": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_CARD_NEGATIVE_CASES.md",
+      "use": "simulated card pollution guard before any future sourceFitNotes acceptance"
+    },
+    {
+      "file": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_POSITIVE_MATRIX.md",
+      "use": "sample-only confirm/downgrade/block sourceFitNotes shapes before future human note writing"
+    },
+    {
+      "file": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_HUMAN_FILL_PREFLIGHT.md",
+      "use": "manual preflight for reviewer identity, 5 candidate decisions, source identity basis, and no-copy checks before real sourceFitNotes"
+    },
+    {
+      "file": "docs/FIRST_REVIEWER_REAL_OVERLAY_WRITE_READINESS_LOCK.md",
+      "use": "generated hard stop before any real reviewer overlay write command"
+    },
+    {
+      "file": "docs/FIRST_REVIEWER_REAL_OVERLAY_WRITE_AUTHORIZATION_PREVIEW.md",
+      "use": "generated authorization preview showing machine gates while still requiring a human write decision"
+    },
+    {
+      "file": "docs/FIRST_REVIEWER_DAY_ZERO_WRITE_HANDOFF.md",
+      "use": "one-page day-zero route for pre-write checks, human authorization blockers, write-command preview, and future post-write validation order"
+    },
+    {
+      "file": "docs/FIRST_REVIEWER_REAL_OVERLAY_DRY_RUN_BUNDLE_AUDIT.md",
+      "use": "pre-write consistency audit tying dry-run, overwrite protection, day-zero handoff, final rehearsal, authorization preview, and write lock together"
+    },
+    {
+      "file": "docs/FIRST_REVIEWER_WORKSHEET.md",
+      "use": "12 lesson cards across the first two reviewer batches"
+    },
+    {
+      "file": "docs/FIRST_REVIEWER_SOURCE_ROLE_DECISION_TABLE.md",
+      "use": "45 source-family role decisions and 5 direct candidates"
+    },
+    {
+      "file": "docs/FIRST_REVIEWER_NOTE_READINESS_MATRIX.md",
+      "use": "72 blank required note fields"
+    },
+    {
+      "file": "docs/FIRST_REVIEWER_POST_WRITE_COMMAND_PACK.md",
+      "use": "future-only validation command order after a real overlay exists"
+    }
+  ],
+  "lessonRows": [
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0044",
+      "riskLevel": "medium",
+      "module": "多周期分析",
+      "topic": "M15细节",
+      "currentGrade": "structural_draft",
+      "noteFields": 6,
+      "directCandidates": 0
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0068",
+      "riskLevel": "high",
+      "module": "多周期分析",
+      "topic": "D1背景",
+      "currentGrade": "structural_draft",
+      "noteFields": 6,
+      "directCandidates": 1
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0128",
+      "riskLevel": "medium",
+      "module": "多周期分析",
+      "topic": "D1背景",
+      "currentGrade": "structural_draft",
+      "noteFields": 6,
+      "directCandidates": 0
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0140",
+      "riskLevel": "medium",
+      "module": "多周期分析",
+      "topic": "H4结构",
+      "currentGrade": "structural_draft",
+      "noteFields": 6,
+      "directCandidates": 0
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0054",
+      "riskLevel": "medium",
+      "module": "交易区间",
+      "topic": "区间突破",
+      "currentGrade": "structural_draft",
+      "noteFields": 6,
+      "directCandidates": 0
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0019",
+      "riskLevel": "medium",
+      "module": "反转",
+      "topic": "衰竭证据",
+      "currentGrade": "structural_draft",
+      "noteFields": 6,
+      "directCandidates": 0
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0075",
+      "riskLevel": "medium",
+      "module": "K线与价格行为",
+      "topic": "组合K线",
+      "currentGrade": "structural_draft",
+      "noteFields": 6,
+      "directCandidates": 0
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0087",
+      "riskLevel": "high",
+      "module": "K线与价格行为",
+      "topic": "流动性扫过",
+      "currentGrade": "structural_draft",
+      "noteFields": 6,
+      "directCandidates": 4
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0159",
+      "riskLevel": "medium",
+      "module": "K线与价格行为",
+      "topic": "形态语境",
+      "currentGrade": "structural_draft",
+      "noteFields": 6,
+      "directCandidates": 0
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0011",
+      "riskLevel": "low",
+      "module": "风险管理",
+      "topic": "失效条件",
+      "currentGrade": "structural_draft",
+      "noteFields": 6,
+      "directCandidates": 0
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0059",
+      "riskLevel": "low",
+      "module": "风险管理",
+      "topic": "边界语言",
+      "currentGrade": "structural_draft",
+      "noteFields": 6,
+      "directCandidates": 0
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0167",
+      "riskLevel": "low",
+      "module": "风险管理",
+      "topic": "可复盘计划",
+      "currentGrade": "structural_draft",
+      "noteFields": 6,
+      "directCandidates": 0
+    }
+  ],
+  "requiredGates": [
+    "Do not create docs/LESSON_BATCH_REVIEW_STATUS.json from this dossier.",
+    "Do not treat the runbook, worksheet, or dossier as real reviewer notes.",
+    "Read the source-fit decision summary before writing future sourceFitNotes, but do not treat the summary as a decision.",
+    "Use the sourceFitNotes card pack only as blank cards; do not prefill decision, sourceRole, claimSupported, rewriteAction, sourceIdentityBasis, noCopyOriginalityCheck, or reviewerInitials.",
+    "Resolve all 5 direct candidates through human sourceFitNotes before evidence intake.",
+    "Run post-write commands only after a deliberately human-created overlay exists.",
+    "Keep the dry-run bundle audit passing before any future real overlay write.",
+    "Keep approvalStatus:not_approved, learnerFacingRelease:false, productionReady:false, internalTrialReady:false, and launchReady:false."
+  ],
+  "sourceReports": {
+    "dryRunPacket": "docs/FIRST_REVIEWER_DRY_RUN_PACKET.json",
+    "progressDashboard": "docs/FIRST_REVIEWER_PROGRESS_DASHBOARD.json",
+    "humanExecutionBundle": "docs/FIRST_REVIEWER_HUMAN_EXECUTION_BUNDLE.json",
+    "operatorIndex": "docs/FIRST_REVIEWER_OPERATOR_INDEX.json",
+    "onePageRunbook": "docs/FIRST_REVIEWER_ONE_PAGE_RUNBOOK.json",
+    "runbookNegativeCases": "docs/FIRST_REVIEWER_RUNBOOK_NEGATIVE_CASES.json",
+    "worksheet": "docs/FIRST_REVIEWER_WORKSHEET.json",
+    "sourceRoleDecisionTable": "docs/FIRST_REVIEWER_SOURCE_ROLE_DECISION_TABLE.json",
+    "noteReadinessMatrix": "docs/FIRST_REVIEWER_NOTE_READINESS_MATRIX.json",
+    "directCandidateWorksheet": "docs/FIRST_REVIEWER_DIRECT_CANDIDATE_DECISION_WORKSHEET.json",
+    "sourceFitDecisionSummary": "docs/FIRST_REVIEWER_SOURCE_FIT_DECISION_SUMMARY.json",
+    "sourceFitNotesCardPack": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_CARD_PACK.json",
+    "sourceFitNotesCardNegativeCases": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_CARD_NEGATIVE_CASES.json",
+    "sourceFitNotesPositiveMatrix": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_POSITIVE_MATRIX.json",
+    "sourceFitNotesHumanFillPreflight": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_HUMAN_FILL_PREFLIGHT.json",
+    "postWriteCommandPack": "docs/FIRST_REVIEWER_POST_WRITE_COMMAND_PACK.json",
+    "postWriteValidationSimulator": "docs/FIRST_REVIEWER_POST_WRITE_VALIDATION_SIMULATOR.json",
+    "preflightSummary": "docs/FIRST_REVIEWER_REAL_OVERLAY_PREFLIGHT_SUMMARY.json",
+    "realOverlayDryRunBundleAudit": "docs/FIRST_REVIEWER_REAL_OVERLAY_DRY_RUN_BUNDLE_AUDIT.json"
+  },
+  "boundary": "This pre-write sample dossier is a read-only human handoff packet. It does not create docs/LESSON_BATCH_REVIEW_STATUS.json, fill human notes, confirm source use, approve lessons, publish learner-facing content, change grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, guide real-money decisions, grant internal-trial readiness, or make the product production-ready."
+}

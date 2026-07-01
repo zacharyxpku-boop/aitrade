@@ -1,0 +1,4007 @@
+{
+  "generatedAt": "2026-06-24T18:06:23.272Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "writeAllowedNow": false,
+  "executionStatus": "course_5_pdf_ocr_visual_execution_pack_ready_blocked_on_ocr_or_real_visual_review",
+  "sourceWorkPacks": "docs/LOCAL_COURSE_5_FOLLOWUP_WORK_PACKS.json",
+  "sourceRouter": "docs/LOCAL_COURSE_5_OCR_VISUAL_EXECUTION_ROUTER.json",
+  "sourceFolderMayBeDeleted": false,
+  "currentKnowledgeArtifactsCanReplaceSourceFolder": false,
+  "pdfRows": 41,
+  "totalPages": 44398,
+  "sampleRowCount": 121,
+  "inputRowCount": 121,
+  "readyInputRows": 0,
+  "blockedInputRows": 121,
+  "largePdfRows": 3,
+  "scannedOrLowTextPdfRows": 38,
+  "localOcrAvailable": false,
+  "canAdvanceWithVisualReviewNowRows": 41,
+  "canFullyResolveWithLocalToolsNowRows": 0,
+  "priorityCounts": {
+    "P0_space_and_curriculum_blocker": 2,
+    "P1_high_value_blocker": 1,
+    "P2_followup_blocker": 38
+  },
+  "sourceRows": [
+    {
+      "recordId": "course5_0a5fa56ee4758f70d7195444",
+      "workItemId": "course5_followup_course5_0a5fa56ee4758f70d7195444",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/4、阿布图表百科全书8800合并版-原版.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\5、阿布图表百科（学完视频再看，特别多）\\4、阿布图表百科全书8800合并版-原版.pdf",
+      "sizeMb": 2880.707,
+      "sha256": "48deca575dd89fef4d5ae769799de5525b49d3f1a1f5ba96d54a4772465e8a40",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "large_file_deferred_for_dedicated_visual_or_ocr_pass",
+      "textExtraction": "skipped_by_size_policy",
+      "charCount": 0,
+      "pageCount": 9027,
+      "sampleCount": 3,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "split_large_pdf_then_ocr_or_external_ocr_pages",
+      "immediateVisualAction": "review_selected_large_pdf_pages_before_full_split_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_59235195b08cebb31f8b37e5",
+      "workItemId": "course5_followup_course5_59235195b08cebb31f8b37e5",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/有道翻译版（机翻）/百科幻灯片-合并版-有道机翻.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\5、阿布图表百科（学完视频再看，特别多）\\2、阿布图表百科全书-机翻版\\有道翻译版（机翻）\\百科幻灯片-合并版-有道机翻.pdf",
+      "sizeMb": 2750.092,
+      "sha256": "c0b005b19ff42e0953a506a32eab74a85f21a330dacac0355f285480d6293fcf",
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "large_file_deferred_for_dedicated_visual_or_ocr_pass",
+      "textExtraction": "skipped_by_size_policy",
+      "charCount": 0,
+      "pageCount": 9020,
+      "sampleCount": 3,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "split_large_pdf_then_ocr_or_external_ocr_pages",
+      "immediateVisualAction": "review_selected_large_pdf_pages_before_full_split_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_f5163fadd2e7bd8072f91d0f",
+      "workItemId": "course5_followup_course5_f5163fadd2e7bd8072f91d0f",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/google翻译版（机翻）/百科幻灯片-合并版-google机翻.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\5、阿布图表百科（学完视频再看，特别多）\\2、阿布图表百科全书-机翻版\\google翻译版（机翻）\\百科幻灯片-合并版-google机翻.pdf",
+      "sizeMb": 1103.313,
+      "sha256": "42ce6cd386798a16ca7f2b4b5ad738a9de643c1508c0592328f69e3cda4b5c20",
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "large_file_deferred_for_dedicated_visual_or_ocr_pass",
+      "textExtraction": "skipped_by_size_policy",
+      "charCount": 0,
+      "pageCount": 9022,
+      "sampleCount": 3,
+      "priorityBand": "P1_high_value_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "split_large_pdf_then_ocr_or_external_ocr_pages",
+      "immediateVisualAction": "review_selected_large_pdf_pages_before_full_split_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_25acc068277e0d0bf498e3f4",
+      "workItemId": "course5_followup_course5_25acc068277e0d0bf498e3f4",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/C 高级反转技术分析（下册）-高清修复.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）\\扫描版PDF（推荐）\\C 高级反转技术分析（下册）-高清修复.pdf",
+      "sizeMb": 522.731,
+      "sha256": "193aa4a68028bb3767a1e061b7478607d33b2a21d1c438ad0d6d63afd2e59002",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 497,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_10117a870be892d9461608c4",
+      "workItemId": "course5_followup_course5_10117a870be892d9461608c4",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/B 高级反转技术分析（上册）-高清修复.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）\\扫描版PDF（推荐）\\B 高级反转技术分析（上册）-高清修复.pdf",
+      "sizeMb": 422.011,
+      "sha256": "1ffabdb26a14cf0f34e3a73fc7e703dbbcf886708a47f7105196a71a2e462d9b",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 407,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_b5c58e891c5e1f77fc35bc23",
+      "workItemId": "course5_followup_course5_b5c58e891c5e1f77fc35bc23",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/A 高级趋势技术分析-高清修复.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）\\扫描版PDF（推荐）\\A 高级趋势技术分析-高清修复.pdf",
+      "sizeMb": 416.239,
+      "sha256": "0df0b97db9691aa081e2886521f892bb854ca3985b06d82d7b1768cf863e143e",
+      "moduleTags": [
+        "trends_and_channels"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 405,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_30e5099e072da50c56639a98",
+      "workItemId": "course5_followup_course5_30e5099e072da50c56639a98",
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/1_阿布PA基础1-36.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\1、课程PPT（建议下载，边看边学，效率翻倍）\\1_阿布PA基础1-36.pdf",
+      "sizeMb": 369.036,
+      "sha256": "dcc7ecc5daa179d0ecfc851812497912a9b767fccb3b3b4340765da2b8dc4ebd",
+      "moduleTags": [
+        "price_action_foundations",
+        "course_slides_alignment"
+      ],
+      "courseAlignment": [
+        "course_1_foundations_1_36"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 2818,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_eed6a89ae2181c36ffdf7979",
+      "workItemId": "course5_followup_course5_eed6a89ae2181c36ffdf7979",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/D 高级波段技术分析-高清修复.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）\\扫描版PDF（推荐）\\D 高级波段技术分析-高清修复.pdf",
+      "sizeMb": 365.536,
+      "sha256": "87e4e1c6ccaca9aa3baadfa3b0791a8b065f3862990efcd8e1c41afda4f44599",
+      "moduleTags": [
+        "trade_management"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 496,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_fecbbd73dace293ba4925406",
+      "workItemId": "course5_followup_course5_fecbbd73dace293ba4925406",
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/2_阿布PA进阶37-52.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\1、课程PPT（建议下载，边看边学，效率翻倍）\\2_阿布PA进阶37-52.pdf",
+      "sizeMb": 265.338,
+      "sha256": "47c2cff520d5a6006941ceaf8ef1848f58e16bd012ca56c3d3591c113451e7fc",
+      "moduleTags": [
+        "course_slides_alignment"
+      ],
+      "courseAlignment": [
+        "course_2_advanced_37_52"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 1397,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_64b71d522ff893e8d7223b14",
+      "workItemId": "course5_followup_course5_64b71d522ff893e8d7223b14",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/E 详细解读价格行为模式-高清修复.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）\\扫描版PDF（推荐）\\E 详细解读价格行为模式-高清修复.pdf",
+      "sizeMb": 258.791,
+      "sha256": "d1b2d828270b59eb9b0acd49476b5ea830c801bcf08766f294537cd719679587",
+      "moduleTags": [
+        "price_action_foundations",
+        "bar_by_bar_reading"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "very_low_text_likely_scanned_or_visual",
+      "textExtraction": "full_text_extracted",
+      "charCount": 111,
+      "pageCount": 445,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_low_text_pdf_then_compare_against_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_eb0f1ede0ca3bc4fcd9e9ae2",
+      "workItemId": "course5_followup_course5_eb0f1ede0ca3bc4fcd9e9ae2",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 13_16SM-SZ.PDF",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\5、阿布图表百科（学完视频再看，特别多）\\0、Encyclopedia of Chart Patterns\\Encyclopedia_Part 13_16SM-SZ.PDF",
+      "sizeMb": 241.058,
+      "sha256": "e42b56bd864aa8e9b58a0045c2c217bc1a6775e9f827d918c859be7f8d894253",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 507,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_63c2216fcf1e81f48021e86b",
+      "workItemId": "course5_followup_course5_63c2216fcf1e81f48021e86b",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 8_552GUN-GZ.PDF",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\5、阿布图表百科（学完视频再看，特别多）\\0、Encyclopedia of Chart Patterns\\Encyclopedia_Part 8_552GUN-GZ.PDF",
+      "sizeMb": 240.799,
+      "sha256": "88fe4d0a2a1fa0131cd4450aea77fd01683c9dd049bbfe2e3faa77409a3e1fbe",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 552,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_71dea62d45d97075ffd99161",
+      "workItemId": "course5_followup_course5_71dea62d45d97075ffd99161",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 11_468N-P.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\5、阿布图表百科（学完视频再看，特别多）\\0、Encyclopedia of Chart Patterns\\Encyclopedia_Part 11_468N-P.pdf",
+      "sizeMb": 212.445,
+      "sha256": "98fc728782c200bfced1c543451dfe1f65cff2680c059eec64be7c158af7bc70",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 468,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_6b0966dcf4f38cd5b8b2a12e",
+      "workItemId": "course5_followup_course5_6b0966dcf4f38cd5b8b2a12e",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/C 高级反转技术分析（下册）-原版.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）\\扫描版PDF（推荐）\\C 高级反转技术分析（下册）-原版.pdf",
+      "sizeMb": 187.849,
+      "sha256": "108ba953fa48a5a6450aaa314768cdd9b7c7123d9ce2ace5f59c3185bb3f0cd3",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 497,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_4f0bc04713247326ff958f0d",
+      "workItemId": "course5_followup_course5_4f0bc04713247326ff958f0d",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/高级反转技术分析-（下册）.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）\\高级反转技术分析-（下册）.pdf",
+      "sizeMb": 187.838,
+      "sha256": "704eeb8d23495b65b4046a99cc9e3720bb90b6b2be62e554c502e8fac64865c8",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 497,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_cb0974e0bbb2397d1aa2f72a",
+      "workItemId": "course5_followup_course5_cb0974e0bbb2397d1aa2f72a",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 12_394Q-SL.PDF",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\5、阿布图表百科（学完视频再看，特别多）\\0、Encyclopedia of Chart Patterns\\Encyclopedia_Part 12_394Q-SL.PDF",
+      "sizeMb": 182.787,
+      "sha256": "f222300abed911f91d587e81f3a789f05c2beddcfb738327b591386b41a6255d",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 394,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_71f12c3eff1a8f79e9d4ac47",
+      "workItemId": "course5_followup_course5_71f12c3eff1a8f79e9d4ac47",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 6_410GDN-GT.PDF",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\5、阿布图表百科（学完视频再看，特别多）\\0、Encyclopedia of Chart Patterns\\Encyclopedia_Part 6_410GDN-GT.PDF",
+      "sizeMb": 174.517,
+      "sha256": "332c8459550fadc6a37d3903b10d1f6042279d8df17622c31bc7c2f5e0eb891d",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 410,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_99f561183f8bc2257c263d98",
+      "workItemId": "course5_followup_course5_99f561183f8bc2257c263d98",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/1.高级趋势技术分析.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）\\1.高级趋势技术分析.pdf",
+      "sizeMb": 165.177,
+      "sha256": "8d942c46c7f39ce90afdc54675be91c854ee602154a9a39d20e1ec1449f7614c",
+      "moduleTags": [
+        "trends_and_channels"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 405,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_297b4fffaae8af78b2127589",
+      "workItemId": "course5_followup_course5_297b4fffaae8af78b2127589",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/A 高级趋势技术分析-原版.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）\\扫描版PDF（推荐）\\A 高级趋势技术分析-原版.pdf",
+      "sizeMb": 164.797,
+      "sha256": "2c652e730d9186595e0f79b8d7dffd18d84494f95b2bd2e662795d5e324bc9bc",
+      "moduleTags": [
+        "trends_and_channels"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 405,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_4310d75e31d7a51a62b4b9f4",
+      "workItemId": "course5_followup_course5_4310d75e31d7a51a62b4b9f4",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 10_383M.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\5、阿布图表百科（学完视频再看，特别多）\\0、Encyclopedia of Chart Patterns\\Encyclopedia_Part 10_383M.pdf",
+      "sizeMb": 158.405,
+      "sha256": "ea258f15a2927d8bac58d04009402ee41276edf58f18eaa943581f8011148b22",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 383,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_3be8a44e3759750339a58bf4",
+      "workItemId": "course5_followup_course5_3be8a44e3759750339a58bf4",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/B 高级反转技术分析（上册）-原版.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）\\扫描版PDF（推荐）\\B 高级反转技术分析（上册）-原版.pdf",
+      "sizeMb": 154.451,
+      "sha256": "2765d51fe5d8b03329d25cdffd25936862c468c1f47bfb0c8d2e05b2a4ee7bdd",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 407,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_444171aa4017cdd8e1b4df8f",
+      "workItemId": "course5_followup_course5_444171aa4017cdd8e1b4df8f",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/高级反转技术分析-（上册）.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）\\高级反转技术分析-（上册）.pdf",
+      "sizeMb": 154.44,
+      "sha256": "a34ce5c8593b246dc4b1d4e82a5775af9b48f4863abf71b6bcbe6fe64561dd4e",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 407,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_49596f06b8762def7582ae5d",
+      "workItemId": "course5_followup_course5_49596f06b8762def7582ae5d",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 7_346GU-GUM.PDF",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\5、阿布图表百科（学完视频再看，特别多）\\0、Encyclopedia of Chart Patterns\\Encyclopedia_Part 7_346GU-GUM.PDF",
+      "sizeMb": 138.506,
+      "sha256": "30a2ef2bb95053ec6132392f4d5f3298eab9248fbd11146a00be5388be9c715b",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 346,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_f46e95188257060788e2e44c",
+      "workItemId": "course5_followup_course5_f46e95188257060788e2e44c",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 3_385D-F.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\5、阿布图表百科（学完视频再看，特别多）\\0、Encyclopedia of Chart Patterns\\Encyclopedia_Part 3_385D-F.pdf",
+      "sizeMb": 129.629,
+      "sha256": "519623a95cb56805e1f90353adb0a7a88b5959c1a0d6a54ed214c20b04778c5c",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 385,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_f04060b74ef98658ea4c101c",
+      "workItemId": "course5_followup_course5_f04060b74ef98658ea4c101c",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/D 高级波段技术分析-原版.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）\\扫描版PDF（推荐）\\D 高级波段技术分析-原版.pdf",
+      "sizeMb": 116.458,
+      "sha256": "fdb0b6e6bdd65900ca7eadbedfd0902d8c16acb4adc41df2f0d6df8df570470e",
+      "moduleTags": [
+        "trade_management"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 496,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_5b4779c96e99fb018f064349",
+      "workItemId": "course5_followup_course5_5b4779c96e99fb018f064349",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/6、SP500-Emini-5-Min-Chart(A4横版带目录).pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\5、阿布图表百科（学完视频再看，特别多）\\6、SP500-Emini-5-Min-Chart(A4横版带目录).pdf",
+      "sizeMb": 110.671,
+      "sha256": "2a0f5496978899c9591f6a6168dc60b9b8019f6360cde41034a8a573fabcbe78",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 691,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_a5db344bf1ca9feb9be979f5",
+      "workItemId": "course5_followup_course5_a5db344bf1ca9feb9be979f5",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 2_288C.PDF",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\5、阿布图表百科（学完视频再看，特别多）\\0、Encyclopedia of Chart Patterns\\Encyclopedia_Part 2_288C.PDF",
+      "sizeMb": 110.124,
+      "sha256": "36db5e7a77e90e298fd94514a188dabfcf3d1c693d5903eb19c2a910e883406f",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 288,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_95751e6fbc67dcc43c8cddd4",
+      "workItemId": "course5_followup_course5_95751e6fbc67dcc43c8cddd4",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 1_407A-B.PDF",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\5、阿布图表百科（学完视频再看，特别多）\\0、Encyclopedia of Chart Patterns\\Encyclopedia_Part 1_407A-B.PDF",
+      "sizeMb": 98.792,
+      "sha256": "b18d70e4785563589f82a4eb2055d5d8cf85c41173ba0e6f72dfec72d5ece1ab",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 405,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_1eb6cb25b2ddde14cf70de61",
+      "workItemId": "course5_followup_course5_1eb6cb25b2ddde14cf70de61",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 9_240H-L.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\5、阿布图表百科（学完视频再看，特别多）\\0、Encyclopedia of Chart Patterns\\Encyclopedia_Part 9_240H-L.pdf",
+      "sizeMb": 96.977,
+      "sha256": "9df696556ccc195e56823c68319a1ebd31eb91732894fbaef3ee5fffeae67db9",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 240,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_cd0355997ebdfb3f37e93826",
+      "workItemId": "course5_followup_course5_cd0355997ebdfb3f37e93826",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 5_244GD-GDM.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\5、阿布图表百科（学完视频再看，特别多）\\0、Encyclopedia of Chart Patterns\\Encyclopedia_Part 5_244GD-GDM.pdf",
+      "sizeMb": 86.93,
+      "sha256": "458402bea71aeca41bafcc5ca1c3a22c9a3b9af39a26b368c8364d64fdafc692",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 244,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_f92a6a282ea0bbc794b5792c",
+      "workItemId": "course5_followup_course5_f92a6a282ea0bbc794b5792c",
+      "relativePath": "日本蜡烛图交易技术分析  详细解读价格行为模式,（美）艾尔·布鲁克斯著；张雯译,北京：地震出版社_14128154.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\日本蜡烛图交易技术分析  详细解读价格行为模式,（美）艾尔·布鲁克斯著；张雯译,北京：地震出版社_14128154.pdf",
+      "sizeMb": 80.011,
+      "sha256": "dc72ac32d5e630bba09cc7606902fae4c18041838f4fdcb3d6d2acdfc8bce5ff",
+      "moduleTags": [
+        "price_action_foundations",
+        "bar_by_bar_reading"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "very_low_text_likely_scanned_or_visual",
+      "textExtraction": "full_text_extracted",
+      "charCount": 111,
+      "pageCount": 445,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_low_text_pdf_then_compare_against_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_5d62c376c59dd07fb7ab9517",
+      "workItemId": "course5_followup_course5_5d62c376c59dd07fb7ab9517",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/E 详细解读价格行为模式-原版.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）\\扫描版PDF（推荐）\\E 详细解读价格行为模式-原版.pdf",
+      "sizeMb": 80.002,
+      "sha256": "6edd12765e5dc041c5895fc38d3cda99e54fb7979078e7b533b2979f8c6c7efc",
+      "moduleTags": [
+        "price_action_foundations",
+        "bar_by_bar_reading"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "very_low_text_likely_scanned_or_visual",
+      "textExtraction": "full_text_extracted",
+      "charCount": 111,
+      "pageCount": 445,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_low_text_pdf_then_compare_against_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_7a5c9ea8f549a51d26ad7eb1",
+      "workItemId": "course5_followup_course5_7a5c9ea8f549a51d26ad7eb1",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 4_169G.PDF",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\5、阿布图表百科（学完视频再看，特别多）\\0、Encyclopedia of Chart Patterns\\Encyclopedia_Part 4_169G.PDF",
+      "sizeMb": 71.317,
+      "sha256": "50e68406ffb7ea60ab2767093e9420604e6941c76e4b1ee9b01ed6e9b5470a99",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 169,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_b071aeb9a7fa51f8e10822a7",
+      "workItemId": "course5_followup_course5_b071aeb9a7fa51f8e10822a7",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/有道翻译版（机翻）/百科幻灯片2024.3.1更新-2.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\5、阿布图表百科（学完视频再看，特别多）\\2、阿布图表百科全书-机翻版\\有道翻译版（机翻）\\百科幻灯片2024.3.1更新-2.pdf",
+      "sizeMb": 58.408,
+      "sha256": "de9ea35a1a8ce9e9c265219fc045bc0723eb50519cdfb93927a8b0e0bf4b85e2",
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 121,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_51ae24b7631eec2813610ab5",
+      "workItemId": "course5_followup_course5_51ae24b7631eec2813610ab5",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/1、阿布图表百科全书-拆分版/百科幻灯片2024.3.1.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\5、阿布图表百科（学完视频再看，特别多）\\1、阿布图表百科全书-拆分版\\百科幻灯片2024.3.1.pdf",
+      "sizeMb": 58.097,
+      "sha256": "3abde933526c6432e1319cd972e0f84f0710f0c3bc6fbe0802a13e0e1ee6c46f",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 121,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_fa9154de2e4f7947a7f17b45",
+      "workItemId": "course5_followup_course5_fa9154de2e4f7947a7f17b45",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 15_16TRD-V.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\5、阿布图表百科（学完视频再看，特别多）\\0、Encyclopedia of Chart Patterns\\Encyclopedia_Part 15_16TRD-V.pdf",
+      "sizeMb": 35.062,
+      "sha256": "9a938782874616df163d3d7998067d981220ece5403cff74d57808caf2c65217",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 404,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_5fd4a57eff4d300b20017e0a",
+      "workItemId": "course5_followup_course5_5fd4a57eff4d300b20017e0a",
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/【重要】阿布缩写翻译及解释.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\1、课程PPT（建议下载，边看边学，效率翻倍）\\【重要】阿布缩写翻译及解释.pdf",
+      "sizeMb": 30.705,
+      "sha256": "9ced9f9ab5bdce865050a8fee9c44a73b6a720dd9c02e999fb9d2c837700b0b8",
+      "moduleTags": [
+        "course_slides_alignment",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 20,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_9ca36e05ffbc626ee81e193b",
+      "workItemId": "course5_followup_course5_9ca36e05ffbc626ee81e193b",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 14_16T-TRD.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\5、阿布图表百科（学完视频再看，特别多）\\0、Encyclopedia of Chart Patterns\\Encyclopedia_Part 14_16T-TRD.pdf",
+      "sizeMb": 29.131,
+      "sha256": "85bdb80732d02a7e3e0ce66f99fb439656e6350734544044ffd5465e2d881d4d",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 312,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_48405fde946b9fa0452ceba5",
+      "workItemId": "course5_followup_course5_48405fde946b9fa0452ceba5",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 16_16W-Z.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\5、阿布图表百科（学完视频再看，特别多）\\0、Encyclopedia of Chart Patterns\\Encyclopedia_Part 16_16W-Z.pdf",
+      "sizeMb": 24.12,
+      "sha256": "841f8a0492aad6c9db1fb710b6c1a71aec9a77a5bd3ef5a0864c95de57e77c4b",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 278,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_934746436a703a5349053d90",
+      "workItemId": "course5_followup_course5_934746436a703a5349053d90",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/google翻译版（机翻）/百科幻灯片2024.3.1更新.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\5、阿布图表百科（学完视频再看，特别多）\\2、阿布图表百科全书-机翻版\\google翻译版（机翻）\\百科幻灯片2024.3.1更新.pdf",
+      "sizeMb": 12.466,
+      "sha256": "f7736e023e2a9016bd23df5c6aff2936a2082eb5fc592055886cdbc4e247ec53",
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "textExtraction": "full_text_extracted",
+      "charCount": 0,
+      "pageCount": 121,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "recordId": "course5_a7a09cbedc2601d761bd74fa",
+      "workItemId": "course5_followup_course5_a7a09cbedc2601d761bd74fa",
+      "relativePath": "AL Brooks 知识体系（18版视频结构）.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\AL Brooks 知识体系（18版视频结构）.pdf",
+      "sizeMb": 9.556,
+      "sha256": "faddde0e8a9c55e40f8eb9d59521a4901d9b885631f05ae778eed169bb2d24f1",
+      "moduleTags": [
+        "unclassified_supplement"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "very_low_text_likely_scanned_or_visual",
+      "textExtraction": "full_text_extracted",
+      "charCount": 12,
+      "pageCount": 1,
+      "sampleCount": 1,
+      "priorityBand": "P2_followup_blocker",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "localOcrAvailable": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "ocrExecutionRoute": "ocr_low_text_pdf_then_compare_against_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    }
+  ],
+  "sampleRows": [
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_001",
+      "recordId": "course5_0a5fa56ee4758f70d7195444",
+      "workItemId": "course5_followup_course5_0a5fa56ee4758f70d7195444",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/4、阿布图表百科全书8800合并版-原版.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_0a5fa56ee4758f70d7195444/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_0a5fa56ee4758f70d7195444/page-0001.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "large_file_deferred_for_dedicated_visual_or_ocr_pass",
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "ocrExecutionRoute": "split_large_pdf_then_ocr_or_external_ocr_pages",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_002",
+      "recordId": "course5_0a5fa56ee4758f70d7195444",
+      "workItemId": "course5_followup_course5_0a5fa56ee4758f70d7195444",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/4、阿布图表百科全书8800合并版-原版.pdf",
+      "pageNumber": 4514,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_0a5fa56ee4758f70d7195444/page-4514.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_0a5fa56ee4758f70d7195444/page-4514.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "large_file_deferred_for_dedicated_visual_or_ocr_pass",
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "ocrExecutionRoute": "split_large_pdf_then_ocr_or_external_ocr_pages",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_003",
+      "recordId": "course5_0a5fa56ee4758f70d7195444",
+      "workItemId": "course5_followup_course5_0a5fa56ee4758f70d7195444",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/4、阿布图表百科全书8800合并版-原版.pdf",
+      "pageNumber": 9027,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_0a5fa56ee4758f70d7195444/page-9027.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_0a5fa56ee4758f70d7195444/page-9027.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "large_file_deferred_for_dedicated_visual_or_ocr_pass",
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "ocrExecutionRoute": "split_large_pdf_then_ocr_or_external_ocr_pages",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_004",
+      "recordId": "course5_59235195b08cebb31f8b37e5",
+      "workItemId": "course5_followup_course5_59235195b08cebb31f8b37e5",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/有道翻译版（机翻）/百科幻灯片-合并版-有道机翻.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_59235195b08cebb31f8b37e5/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_59235195b08cebb31f8b37e5/page-0001.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "large_file_deferred_for_dedicated_visual_or_ocr_pass",
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "ocrExecutionRoute": "split_large_pdf_then_ocr_or_external_ocr_pages",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_005",
+      "recordId": "course5_59235195b08cebb31f8b37e5",
+      "workItemId": "course5_followup_course5_59235195b08cebb31f8b37e5",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/有道翻译版（机翻）/百科幻灯片-合并版-有道机翻.pdf",
+      "pageNumber": 4511,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_59235195b08cebb31f8b37e5/page-4511.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_59235195b08cebb31f8b37e5/page-4511.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "large_file_deferred_for_dedicated_visual_or_ocr_pass",
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "ocrExecutionRoute": "split_large_pdf_then_ocr_or_external_ocr_pages",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_006",
+      "recordId": "course5_59235195b08cebb31f8b37e5",
+      "workItemId": "course5_followup_course5_59235195b08cebb31f8b37e5",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/有道翻译版（机翻）/百科幻灯片-合并版-有道机翻.pdf",
+      "pageNumber": 9020,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_59235195b08cebb31f8b37e5/page-9020.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_59235195b08cebb31f8b37e5/page-9020.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "large_file_deferred_for_dedicated_visual_or_ocr_pass",
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "ocrExecutionRoute": "split_large_pdf_then_ocr_or_external_ocr_pages",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_007",
+      "recordId": "course5_f5163fadd2e7bd8072f91d0f",
+      "workItemId": "course5_followup_course5_f5163fadd2e7bd8072f91d0f",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/google翻译版（机翻）/百科幻灯片-合并版-google机翻.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f5163fadd2e7bd8072f91d0f/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_f5163fadd2e7bd8072f91d0f/page-0001.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "large_file_deferred_for_dedicated_visual_or_ocr_pass",
+      "priorityBand": "P1_high_value_blocker",
+      "ocrExecutionRoute": "split_large_pdf_then_ocr_or_external_ocr_pages",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_008",
+      "recordId": "course5_f5163fadd2e7bd8072f91d0f",
+      "workItemId": "course5_followup_course5_f5163fadd2e7bd8072f91d0f",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/google翻译版（机翻）/百科幻灯片-合并版-google机翻.pdf",
+      "pageNumber": 4512,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f5163fadd2e7bd8072f91d0f/page-4512.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_f5163fadd2e7bd8072f91d0f/page-4512.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "large_file_deferred_for_dedicated_visual_or_ocr_pass",
+      "priorityBand": "P1_high_value_blocker",
+      "ocrExecutionRoute": "split_large_pdf_then_ocr_or_external_ocr_pages",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_009",
+      "recordId": "course5_f5163fadd2e7bd8072f91d0f",
+      "workItemId": "course5_followup_course5_f5163fadd2e7bd8072f91d0f",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/google翻译版（机翻）/百科幻灯片-合并版-google机翻.pdf",
+      "pageNumber": 9022,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f5163fadd2e7bd8072f91d0f/page-9022.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_f5163fadd2e7bd8072f91d0f/page-9022.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "large_file_deferred_for_dedicated_visual_or_ocr_pass",
+      "priorityBand": "P1_high_value_blocker",
+      "ocrExecutionRoute": "split_large_pdf_then_ocr_or_external_ocr_pages",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_010",
+      "recordId": "course5_25acc068277e0d0bf498e3f4",
+      "workItemId": "course5_followup_course5_25acc068277e0d0bf498e3f4",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/C 高级反转技术分析（下册）-高清修复.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_25acc068277e0d0bf498e3f4/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_25acc068277e0d0bf498e3f4/page-0001.png",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_011",
+      "recordId": "course5_25acc068277e0d0bf498e3f4",
+      "workItemId": "course5_followup_course5_25acc068277e0d0bf498e3f4",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/C 高级反转技术分析（下册）-高清修复.pdf",
+      "pageNumber": 249,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_25acc068277e0d0bf498e3f4/page-0249.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_25acc068277e0d0bf498e3f4/page-0249.png",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_012",
+      "recordId": "course5_25acc068277e0d0bf498e3f4",
+      "workItemId": "course5_followup_course5_25acc068277e0d0bf498e3f4",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/C 高级反转技术分析（下册）-高清修复.pdf",
+      "pageNumber": 497,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_25acc068277e0d0bf498e3f4/page-0497.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_25acc068277e0d0bf498e3f4/page-0497.png",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_013",
+      "recordId": "course5_10117a870be892d9461608c4",
+      "workItemId": "course5_followup_course5_10117a870be892d9461608c4",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/B 高级反转技术分析（上册）-高清修复.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_10117a870be892d9461608c4/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_10117a870be892d9461608c4/page-0001.png",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_014",
+      "recordId": "course5_10117a870be892d9461608c4",
+      "workItemId": "course5_followup_course5_10117a870be892d9461608c4",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/B 高级反转技术分析（上册）-高清修复.pdf",
+      "pageNumber": 204,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_10117a870be892d9461608c4/page-0204.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_10117a870be892d9461608c4/page-0204.png",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_015",
+      "recordId": "course5_10117a870be892d9461608c4",
+      "workItemId": "course5_followup_course5_10117a870be892d9461608c4",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/B 高级反转技术分析（上册）-高清修复.pdf",
+      "pageNumber": 407,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_10117a870be892d9461608c4/page-0407.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_10117a870be892d9461608c4/page-0407.png",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_016",
+      "recordId": "course5_b5c58e891c5e1f77fc35bc23",
+      "workItemId": "course5_followup_course5_b5c58e891c5e1f77fc35bc23",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/A 高级趋势技术分析-高清修复.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_b5c58e891c5e1f77fc35bc23/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_b5c58e891c5e1f77fc35bc23/page-0001.png",
+      "moduleTags": [
+        "trends_and_channels"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_017",
+      "recordId": "course5_b5c58e891c5e1f77fc35bc23",
+      "workItemId": "course5_followup_course5_b5c58e891c5e1f77fc35bc23",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/A 高级趋势技术分析-高清修复.pdf",
+      "pageNumber": 203,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_b5c58e891c5e1f77fc35bc23/page-0203.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_b5c58e891c5e1f77fc35bc23/page-0203.png",
+      "moduleTags": [
+        "trends_and_channels"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_018",
+      "recordId": "course5_b5c58e891c5e1f77fc35bc23",
+      "workItemId": "course5_followup_course5_b5c58e891c5e1f77fc35bc23",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/A 高级趋势技术分析-高清修复.pdf",
+      "pageNumber": 405,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_b5c58e891c5e1f77fc35bc23/page-0405.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_b5c58e891c5e1f77fc35bc23/page-0405.png",
+      "moduleTags": [
+        "trends_and_channels"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_019",
+      "recordId": "course5_30e5099e072da50c56639a98",
+      "workItemId": "course5_followup_course5_30e5099e072da50c56639a98",
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/1_阿布PA基础1-36.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_30e5099e072da50c56639a98/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_30e5099e072da50c56639a98/page-0001.png",
+      "moduleTags": [
+        "price_action_foundations",
+        "course_slides_alignment"
+      ],
+      "courseAlignment": [
+        "course_1_foundations_1_36"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_020",
+      "recordId": "course5_30e5099e072da50c56639a98",
+      "workItemId": "course5_followup_course5_30e5099e072da50c56639a98",
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/1_阿布PA基础1-36.pdf",
+      "pageNumber": 1410,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_30e5099e072da50c56639a98/page-1410.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_30e5099e072da50c56639a98/page-1410.png",
+      "moduleTags": [
+        "price_action_foundations",
+        "course_slides_alignment"
+      ],
+      "courseAlignment": [
+        "course_1_foundations_1_36"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_021",
+      "recordId": "course5_30e5099e072da50c56639a98",
+      "workItemId": "course5_followup_course5_30e5099e072da50c56639a98",
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/1_阿布PA基础1-36.pdf",
+      "pageNumber": 2818,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_30e5099e072da50c56639a98/page-2818.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_30e5099e072da50c56639a98/page-2818.png",
+      "moduleTags": [
+        "price_action_foundations",
+        "course_slides_alignment"
+      ],
+      "courseAlignment": [
+        "course_1_foundations_1_36"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_022",
+      "recordId": "course5_eed6a89ae2181c36ffdf7979",
+      "workItemId": "course5_followup_course5_eed6a89ae2181c36ffdf7979",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/D 高级波段技术分析-高清修复.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_eed6a89ae2181c36ffdf7979/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_eed6a89ae2181c36ffdf7979/page-0001.png",
+      "moduleTags": [
+        "trade_management"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_023",
+      "recordId": "course5_eed6a89ae2181c36ffdf7979",
+      "workItemId": "course5_followup_course5_eed6a89ae2181c36ffdf7979",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/D 高级波段技术分析-高清修复.pdf",
+      "pageNumber": 249,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_eed6a89ae2181c36ffdf7979/page-0249.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_eed6a89ae2181c36ffdf7979/page-0249.png",
+      "moduleTags": [
+        "trade_management"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_024",
+      "recordId": "course5_eed6a89ae2181c36ffdf7979",
+      "workItemId": "course5_followup_course5_eed6a89ae2181c36ffdf7979",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/D 高级波段技术分析-高清修复.pdf",
+      "pageNumber": 496,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_eed6a89ae2181c36ffdf7979/page-0496.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_eed6a89ae2181c36ffdf7979/page-0496.png",
+      "moduleTags": [
+        "trade_management"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_025",
+      "recordId": "course5_fecbbd73dace293ba4925406",
+      "workItemId": "course5_followup_course5_fecbbd73dace293ba4925406",
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/2_阿布PA进阶37-52.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_fecbbd73dace293ba4925406/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_fecbbd73dace293ba4925406/page-0001.png",
+      "moduleTags": [
+        "course_slides_alignment"
+      ],
+      "courseAlignment": [
+        "course_2_advanced_37_52"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_026",
+      "recordId": "course5_fecbbd73dace293ba4925406",
+      "workItemId": "course5_followup_course5_fecbbd73dace293ba4925406",
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/2_阿布PA进阶37-52.pdf",
+      "pageNumber": 699,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_fecbbd73dace293ba4925406/page-0699.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_fecbbd73dace293ba4925406/page-0699.png",
+      "moduleTags": [
+        "course_slides_alignment"
+      ],
+      "courseAlignment": [
+        "course_2_advanced_37_52"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_027",
+      "recordId": "course5_fecbbd73dace293ba4925406",
+      "workItemId": "course5_followup_course5_fecbbd73dace293ba4925406",
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/2_阿布PA进阶37-52.pdf",
+      "pageNumber": 1397,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_fecbbd73dace293ba4925406/page-1397.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_fecbbd73dace293ba4925406/page-1397.png",
+      "moduleTags": [
+        "course_slides_alignment"
+      ],
+      "courseAlignment": [
+        "course_2_advanced_37_52"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_028",
+      "recordId": "course5_64b71d522ff893e8d7223b14",
+      "workItemId": "course5_followup_course5_64b71d522ff893e8d7223b14",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/E 详细解读价格行为模式-高清修复.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_64b71d522ff893e8d7223b14/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_64b71d522ff893e8d7223b14/page-0001.png",
+      "moduleTags": [
+        "price_action_foundations",
+        "bar_by_bar_reading"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "very_low_text_likely_scanned_or_visual",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_low_text_pdf_then_compare_against_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_029",
+      "recordId": "course5_64b71d522ff893e8d7223b14",
+      "workItemId": "course5_followup_course5_64b71d522ff893e8d7223b14",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/E 详细解读价格行为模式-高清修复.pdf",
+      "pageNumber": 223,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_64b71d522ff893e8d7223b14/page-0223.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_64b71d522ff893e8d7223b14/page-0223.png",
+      "moduleTags": [
+        "price_action_foundations",
+        "bar_by_bar_reading"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "very_low_text_likely_scanned_or_visual",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_low_text_pdf_then_compare_against_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_030",
+      "recordId": "course5_64b71d522ff893e8d7223b14",
+      "workItemId": "course5_followup_course5_64b71d522ff893e8d7223b14",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/E 详细解读价格行为模式-高清修复.pdf",
+      "pageNumber": 445,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_64b71d522ff893e8d7223b14/page-0445.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_64b71d522ff893e8d7223b14/page-0445.png",
+      "moduleTags": [
+        "price_action_foundations",
+        "bar_by_bar_reading"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "very_low_text_likely_scanned_or_visual",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_low_text_pdf_then_compare_against_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_031",
+      "recordId": "course5_eb0f1ede0ca3bc4fcd9e9ae2",
+      "workItemId": "course5_followup_course5_eb0f1ede0ca3bc4fcd9e9ae2",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 13_16SM-SZ.PDF",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_eb0f1ede0ca3bc4fcd9e9ae2/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_eb0f1ede0ca3bc4fcd9e9ae2/page-0001.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_032",
+      "recordId": "course5_eb0f1ede0ca3bc4fcd9e9ae2",
+      "workItemId": "course5_followup_course5_eb0f1ede0ca3bc4fcd9e9ae2",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 13_16SM-SZ.PDF",
+      "pageNumber": 254,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_eb0f1ede0ca3bc4fcd9e9ae2/page-0254.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_eb0f1ede0ca3bc4fcd9e9ae2/page-0254.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_033",
+      "recordId": "course5_eb0f1ede0ca3bc4fcd9e9ae2",
+      "workItemId": "course5_followup_course5_eb0f1ede0ca3bc4fcd9e9ae2",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 13_16SM-SZ.PDF",
+      "pageNumber": 507,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_eb0f1ede0ca3bc4fcd9e9ae2/page-0507.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_eb0f1ede0ca3bc4fcd9e9ae2/page-0507.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_034",
+      "recordId": "course5_63c2216fcf1e81f48021e86b",
+      "workItemId": "course5_followup_course5_63c2216fcf1e81f48021e86b",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 8_552GUN-GZ.PDF",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_63c2216fcf1e81f48021e86b/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_63c2216fcf1e81f48021e86b/page-0001.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_035",
+      "recordId": "course5_63c2216fcf1e81f48021e86b",
+      "workItemId": "course5_followup_course5_63c2216fcf1e81f48021e86b",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 8_552GUN-GZ.PDF",
+      "pageNumber": 277,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_63c2216fcf1e81f48021e86b/page-0277.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_63c2216fcf1e81f48021e86b/page-0277.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_036",
+      "recordId": "course5_63c2216fcf1e81f48021e86b",
+      "workItemId": "course5_followup_course5_63c2216fcf1e81f48021e86b",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 8_552GUN-GZ.PDF",
+      "pageNumber": 552,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_63c2216fcf1e81f48021e86b/page-0552.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_63c2216fcf1e81f48021e86b/page-0552.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_037",
+      "recordId": "course5_71dea62d45d97075ffd99161",
+      "workItemId": "course5_followup_course5_71dea62d45d97075ffd99161",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 11_468N-P.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_71dea62d45d97075ffd99161/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_71dea62d45d97075ffd99161/page-0001.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_038",
+      "recordId": "course5_71dea62d45d97075ffd99161",
+      "workItemId": "course5_followup_course5_71dea62d45d97075ffd99161",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 11_468N-P.pdf",
+      "pageNumber": 235,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_71dea62d45d97075ffd99161/page-0235.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_71dea62d45d97075ffd99161/page-0235.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_039",
+      "recordId": "course5_71dea62d45d97075ffd99161",
+      "workItemId": "course5_followup_course5_71dea62d45d97075ffd99161",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 11_468N-P.pdf",
+      "pageNumber": 468,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_71dea62d45d97075ffd99161/page-0468.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_71dea62d45d97075ffd99161/page-0468.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_040",
+      "recordId": "course5_6b0966dcf4f38cd5b8b2a12e",
+      "workItemId": "course5_followup_course5_6b0966dcf4f38cd5b8b2a12e",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/C 高级反转技术分析（下册）-原版.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_6b0966dcf4f38cd5b8b2a12e/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_6b0966dcf4f38cd5b8b2a12e/page-0001.png",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_041",
+      "recordId": "course5_6b0966dcf4f38cd5b8b2a12e",
+      "workItemId": "course5_followup_course5_6b0966dcf4f38cd5b8b2a12e",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/C 高级反转技术分析（下册）-原版.pdf",
+      "pageNumber": 249,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_6b0966dcf4f38cd5b8b2a12e/page-0249.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_6b0966dcf4f38cd5b8b2a12e/page-0249.png",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_042",
+      "recordId": "course5_6b0966dcf4f38cd5b8b2a12e",
+      "workItemId": "course5_followup_course5_6b0966dcf4f38cd5b8b2a12e",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/C 高级反转技术分析（下册）-原版.pdf",
+      "pageNumber": 497,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_6b0966dcf4f38cd5b8b2a12e/page-0497.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_6b0966dcf4f38cd5b8b2a12e/page-0497.png",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_043",
+      "recordId": "course5_4f0bc04713247326ff958f0d",
+      "workItemId": "course5_followup_course5_4f0bc04713247326ff958f0d",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/高级反转技术分析-（下册）.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_4f0bc04713247326ff958f0d/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_4f0bc04713247326ff958f0d/page-0001.png",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_044",
+      "recordId": "course5_4f0bc04713247326ff958f0d",
+      "workItemId": "course5_followup_course5_4f0bc04713247326ff958f0d",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/高级反转技术分析-（下册）.pdf",
+      "pageNumber": 249,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_4f0bc04713247326ff958f0d/page-0249.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_4f0bc04713247326ff958f0d/page-0249.png",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_045",
+      "recordId": "course5_4f0bc04713247326ff958f0d",
+      "workItemId": "course5_followup_course5_4f0bc04713247326ff958f0d",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/高级反转技术分析-（下册）.pdf",
+      "pageNumber": 497,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_4f0bc04713247326ff958f0d/page-0497.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_4f0bc04713247326ff958f0d/page-0497.png",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_046",
+      "recordId": "course5_cb0974e0bbb2397d1aa2f72a",
+      "workItemId": "course5_followup_course5_cb0974e0bbb2397d1aa2f72a",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 12_394Q-SL.PDF",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_cb0974e0bbb2397d1aa2f72a/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_cb0974e0bbb2397d1aa2f72a/page-0001.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_047",
+      "recordId": "course5_cb0974e0bbb2397d1aa2f72a",
+      "workItemId": "course5_followup_course5_cb0974e0bbb2397d1aa2f72a",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 12_394Q-SL.PDF",
+      "pageNumber": 198,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_cb0974e0bbb2397d1aa2f72a/page-0198.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_cb0974e0bbb2397d1aa2f72a/page-0198.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_048",
+      "recordId": "course5_cb0974e0bbb2397d1aa2f72a",
+      "workItemId": "course5_followup_course5_cb0974e0bbb2397d1aa2f72a",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 12_394Q-SL.PDF",
+      "pageNumber": 394,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_cb0974e0bbb2397d1aa2f72a/page-0394.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_cb0974e0bbb2397d1aa2f72a/page-0394.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_049",
+      "recordId": "course5_71f12c3eff1a8f79e9d4ac47",
+      "workItemId": "course5_followup_course5_71f12c3eff1a8f79e9d4ac47",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 6_410GDN-GT.PDF",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_71f12c3eff1a8f79e9d4ac47/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_71f12c3eff1a8f79e9d4ac47/page-0001.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_050",
+      "recordId": "course5_71f12c3eff1a8f79e9d4ac47",
+      "workItemId": "course5_followup_course5_71f12c3eff1a8f79e9d4ac47",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 6_410GDN-GT.PDF",
+      "pageNumber": 206,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_71f12c3eff1a8f79e9d4ac47/page-0206.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_71f12c3eff1a8f79e9d4ac47/page-0206.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_051",
+      "recordId": "course5_71f12c3eff1a8f79e9d4ac47",
+      "workItemId": "course5_followup_course5_71f12c3eff1a8f79e9d4ac47",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 6_410GDN-GT.PDF",
+      "pageNumber": 410,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_71f12c3eff1a8f79e9d4ac47/page-0410.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_71f12c3eff1a8f79e9d4ac47/page-0410.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_052",
+      "recordId": "course5_99f561183f8bc2257c263d98",
+      "workItemId": "course5_followup_course5_99f561183f8bc2257c263d98",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/1.高级趋势技术分析.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_99f561183f8bc2257c263d98/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_99f561183f8bc2257c263d98/page-0001.png",
+      "moduleTags": [
+        "trends_and_channels"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_053",
+      "recordId": "course5_99f561183f8bc2257c263d98",
+      "workItemId": "course5_followup_course5_99f561183f8bc2257c263d98",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/1.高级趋势技术分析.pdf",
+      "pageNumber": 203,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_99f561183f8bc2257c263d98/page-0203.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_99f561183f8bc2257c263d98/page-0203.png",
+      "moduleTags": [
+        "trends_and_channels"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_054",
+      "recordId": "course5_99f561183f8bc2257c263d98",
+      "workItemId": "course5_followup_course5_99f561183f8bc2257c263d98",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/1.高级趋势技术分析.pdf",
+      "pageNumber": 405,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_99f561183f8bc2257c263d98/page-0405.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_99f561183f8bc2257c263d98/page-0405.png",
+      "moduleTags": [
+        "trends_and_channels"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_055",
+      "recordId": "course5_297b4fffaae8af78b2127589",
+      "workItemId": "course5_followup_course5_297b4fffaae8af78b2127589",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/A 高级趋势技术分析-原版.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_297b4fffaae8af78b2127589/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_297b4fffaae8af78b2127589/page-0001.png",
+      "moduleTags": [
+        "trends_and_channels"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_056",
+      "recordId": "course5_297b4fffaae8af78b2127589",
+      "workItemId": "course5_followup_course5_297b4fffaae8af78b2127589",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/A 高级趋势技术分析-原版.pdf",
+      "pageNumber": 203,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_297b4fffaae8af78b2127589/page-0203.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_297b4fffaae8af78b2127589/page-0203.png",
+      "moduleTags": [
+        "trends_and_channels"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_057",
+      "recordId": "course5_297b4fffaae8af78b2127589",
+      "workItemId": "course5_followup_course5_297b4fffaae8af78b2127589",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/A 高级趋势技术分析-原版.pdf",
+      "pageNumber": 405,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_297b4fffaae8af78b2127589/page-0405.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_297b4fffaae8af78b2127589/page-0405.png",
+      "moduleTags": [
+        "trends_and_channels"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_058",
+      "recordId": "course5_4310d75e31d7a51a62b4b9f4",
+      "workItemId": "course5_followup_course5_4310d75e31d7a51a62b4b9f4",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 10_383M.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_4310d75e31d7a51a62b4b9f4/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_4310d75e31d7a51a62b4b9f4/page-0001.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_059",
+      "recordId": "course5_4310d75e31d7a51a62b4b9f4",
+      "workItemId": "course5_followup_course5_4310d75e31d7a51a62b4b9f4",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 10_383M.pdf",
+      "pageNumber": 192,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_4310d75e31d7a51a62b4b9f4/page-0192.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_4310d75e31d7a51a62b4b9f4/page-0192.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_060",
+      "recordId": "course5_4310d75e31d7a51a62b4b9f4",
+      "workItemId": "course5_followup_course5_4310d75e31d7a51a62b4b9f4",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 10_383M.pdf",
+      "pageNumber": 383,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_4310d75e31d7a51a62b4b9f4/page-0383.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_4310d75e31d7a51a62b4b9f4/page-0383.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_061",
+      "recordId": "course5_3be8a44e3759750339a58bf4",
+      "workItemId": "course5_followup_course5_3be8a44e3759750339a58bf4",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/B 高级反转技术分析（上册）-原版.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_3be8a44e3759750339a58bf4/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_3be8a44e3759750339a58bf4/page-0001.png",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_062",
+      "recordId": "course5_3be8a44e3759750339a58bf4",
+      "workItemId": "course5_followup_course5_3be8a44e3759750339a58bf4",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/B 高级反转技术分析（上册）-原版.pdf",
+      "pageNumber": 204,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_3be8a44e3759750339a58bf4/page-0204.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_3be8a44e3759750339a58bf4/page-0204.png",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_063",
+      "recordId": "course5_3be8a44e3759750339a58bf4",
+      "workItemId": "course5_followup_course5_3be8a44e3759750339a58bf4",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/B 高级反转技术分析（上册）-原版.pdf",
+      "pageNumber": 407,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_3be8a44e3759750339a58bf4/page-0407.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_3be8a44e3759750339a58bf4/page-0407.png",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_064",
+      "recordId": "course5_444171aa4017cdd8e1b4df8f",
+      "workItemId": "course5_followup_course5_444171aa4017cdd8e1b4df8f",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/高级反转技术分析-（上册）.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_444171aa4017cdd8e1b4df8f/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_444171aa4017cdd8e1b4df8f/page-0001.png",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_065",
+      "recordId": "course5_444171aa4017cdd8e1b4df8f",
+      "workItemId": "course5_followup_course5_444171aa4017cdd8e1b4df8f",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/高级反转技术分析-（上册）.pdf",
+      "pageNumber": 204,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_444171aa4017cdd8e1b4df8f/page-0204.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_444171aa4017cdd8e1b4df8f/page-0204.png",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_066",
+      "recordId": "course5_444171aa4017cdd8e1b4df8f",
+      "workItemId": "course5_followup_course5_444171aa4017cdd8e1b4df8f",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/高级反转技术分析-（上册）.pdf",
+      "pageNumber": 407,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_444171aa4017cdd8e1b4df8f/page-0407.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_444171aa4017cdd8e1b4df8f/page-0407.png",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_067",
+      "recordId": "course5_49596f06b8762def7582ae5d",
+      "workItemId": "course5_followup_course5_49596f06b8762def7582ae5d",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 7_346GU-GUM.PDF",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_49596f06b8762def7582ae5d/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_49596f06b8762def7582ae5d/page-0001.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_068",
+      "recordId": "course5_49596f06b8762def7582ae5d",
+      "workItemId": "course5_followup_course5_49596f06b8762def7582ae5d",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 7_346GU-GUM.PDF",
+      "pageNumber": 174,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_49596f06b8762def7582ae5d/page-0174.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_49596f06b8762def7582ae5d/page-0174.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_069",
+      "recordId": "course5_49596f06b8762def7582ae5d",
+      "workItemId": "course5_followup_course5_49596f06b8762def7582ae5d",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 7_346GU-GUM.PDF",
+      "pageNumber": 346,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_49596f06b8762def7582ae5d/page-0346.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_49596f06b8762def7582ae5d/page-0346.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_070",
+      "recordId": "course5_f46e95188257060788e2e44c",
+      "workItemId": "course5_followup_course5_f46e95188257060788e2e44c",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 3_385D-F.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f46e95188257060788e2e44c/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_f46e95188257060788e2e44c/page-0001.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_071",
+      "recordId": "course5_f46e95188257060788e2e44c",
+      "workItemId": "course5_followup_course5_f46e95188257060788e2e44c",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 3_385D-F.pdf",
+      "pageNumber": 193,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f46e95188257060788e2e44c/page-0193.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_f46e95188257060788e2e44c/page-0193.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_072",
+      "recordId": "course5_f46e95188257060788e2e44c",
+      "workItemId": "course5_followup_course5_f46e95188257060788e2e44c",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 3_385D-F.pdf",
+      "pageNumber": 385,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f46e95188257060788e2e44c/page-0385.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_f46e95188257060788e2e44c/page-0385.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_073",
+      "recordId": "course5_f04060b74ef98658ea4c101c",
+      "workItemId": "course5_followup_course5_f04060b74ef98658ea4c101c",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/D 高级波段技术分析-原版.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f04060b74ef98658ea4c101c/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_f04060b74ef98658ea4c101c/page-0001.png",
+      "moduleTags": [
+        "trade_management"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_074",
+      "recordId": "course5_f04060b74ef98658ea4c101c",
+      "workItemId": "course5_followup_course5_f04060b74ef98658ea4c101c",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/D 高级波段技术分析-原版.pdf",
+      "pageNumber": 249,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f04060b74ef98658ea4c101c/page-0249.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_f04060b74ef98658ea4c101c/page-0249.png",
+      "moduleTags": [
+        "trade_management"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_075",
+      "recordId": "course5_f04060b74ef98658ea4c101c",
+      "workItemId": "course5_followup_course5_f04060b74ef98658ea4c101c",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/D 高级波段技术分析-原版.pdf",
+      "pageNumber": 496,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f04060b74ef98658ea4c101c/page-0496.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_f04060b74ef98658ea4c101c/page-0496.png",
+      "moduleTags": [
+        "trade_management"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_076",
+      "recordId": "course5_5b4779c96e99fb018f064349",
+      "workItemId": "course5_followup_course5_5b4779c96e99fb018f064349",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/6、SP500-Emini-5-Min-Chart(A4横版带目录).pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_5b4779c96e99fb018f064349/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_5b4779c96e99fb018f064349/page-0001.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_077",
+      "recordId": "course5_5b4779c96e99fb018f064349",
+      "workItemId": "course5_followup_course5_5b4779c96e99fb018f064349",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/6、SP500-Emini-5-Min-Chart(A4横版带目录).pdf",
+      "pageNumber": 346,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_5b4779c96e99fb018f064349/page-0346.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_5b4779c96e99fb018f064349/page-0346.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_078",
+      "recordId": "course5_5b4779c96e99fb018f064349",
+      "workItemId": "course5_followup_course5_5b4779c96e99fb018f064349",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/6、SP500-Emini-5-Min-Chart(A4横版带目录).pdf",
+      "pageNumber": 691,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_5b4779c96e99fb018f064349/page-0691.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_5b4779c96e99fb018f064349/page-0691.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_079",
+      "recordId": "course5_a5db344bf1ca9feb9be979f5",
+      "workItemId": "course5_followup_course5_a5db344bf1ca9feb9be979f5",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 2_288C.PDF",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_a5db344bf1ca9feb9be979f5/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_a5db344bf1ca9feb9be979f5/page-0001.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_080",
+      "recordId": "course5_a5db344bf1ca9feb9be979f5",
+      "workItemId": "course5_followup_course5_a5db344bf1ca9feb9be979f5",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 2_288C.PDF",
+      "pageNumber": 145,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_a5db344bf1ca9feb9be979f5/page-0145.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_a5db344bf1ca9feb9be979f5/page-0145.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_081",
+      "recordId": "course5_a5db344bf1ca9feb9be979f5",
+      "workItemId": "course5_followup_course5_a5db344bf1ca9feb9be979f5",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 2_288C.PDF",
+      "pageNumber": 288,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_a5db344bf1ca9feb9be979f5/page-0288.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_a5db344bf1ca9feb9be979f5/page-0288.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_082",
+      "recordId": "course5_95751e6fbc67dcc43c8cddd4",
+      "workItemId": "course5_followup_course5_95751e6fbc67dcc43c8cddd4",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 1_407A-B.PDF",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_95751e6fbc67dcc43c8cddd4/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_95751e6fbc67dcc43c8cddd4/page-0001.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_083",
+      "recordId": "course5_95751e6fbc67dcc43c8cddd4",
+      "workItemId": "course5_followup_course5_95751e6fbc67dcc43c8cddd4",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 1_407A-B.PDF",
+      "pageNumber": 203,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_95751e6fbc67dcc43c8cddd4/page-0203.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_95751e6fbc67dcc43c8cddd4/page-0203.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_084",
+      "recordId": "course5_95751e6fbc67dcc43c8cddd4",
+      "workItemId": "course5_followup_course5_95751e6fbc67dcc43c8cddd4",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 1_407A-B.PDF",
+      "pageNumber": 405,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_95751e6fbc67dcc43c8cddd4/page-0405.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_95751e6fbc67dcc43c8cddd4/page-0405.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_085",
+      "recordId": "course5_1eb6cb25b2ddde14cf70de61",
+      "workItemId": "course5_followup_course5_1eb6cb25b2ddde14cf70de61",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 9_240H-L.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_1eb6cb25b2ddde14cf70de61/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_1eb6cb25b2ddde14cf70de61/page-0001.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_086",
+      "recordId": "course5_1eb6cb25b2ddde14cf70de61",
+      "workItemId": "course5_followup_course5_1eb6cb25b2ddde14cf70de61",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 9_240H-L.pdf",
+      "pageNumber": 121,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_1eb6cb25b2ddde14cf70de61/page-0121.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_1eb6cb25b2ddde14cf70de61/page-0121.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_087",
+      "recordId": "course5_1eb6cb25b2ddde14cf70de61",
+      "workItemId": "course5_followup_course5_1eb6cb25b2ddde14cf70de61",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 9_240H-L.pdf",
+      "pageNumber": 240,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_1eb6cb25b2ddde14cf70de61/page-0240.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_1eb6cb25b2ddde14cf70de61/page-0240.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_088",
+      "recordId": "course5_cd0355997ebdfb3f37e93826",
+      "workItemId": "course5_followup_course5_cd0355997ebdfb3f37e93826",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 5_244GD-GDM.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_cd0355997ebdfb3f37e93826/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_cd0355997ebdfb3f37e93826/page-0001.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_089",
+      "recordId": "course5_cd0355997ebdfb3f37e93826",
+      "workItemId": "course5_followup_course5_cd0355997ebdfb3f37e93826",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 5_244GD-GDM.pdf",
+      "pageNumber": 123,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_cd0355997ebdfb3f37e93826/page-0123.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_cd0355997ebdfb3f37e93826/page-0123.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_090",
+      "recordId": "course5_cd0355997ebdfb3f37e93826",
+      "workItemId": "course5_followup_course5_cd0355997ebdfb3f37e93826",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 5_244GD-GDM.pdf",
+      "pageNumber": 244,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_cd0355997ebdfb3f37e93826/page-0244.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_cd0355997ebdfb3f37e93826/page-0244.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_091",
+      "recordId": "course5_f92a6a282ea0bbc794b5792c",
+      "workItemId": "course5_followup_course5_f92a6a282ea0bbc794b5792c",
+      "relativePath": "日本蜡烛图交易技术分析  详细解读价格行为模式,（美）艾尔·布鲁克斯著；张雯译,北京：地震出版社_14128154.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f92a6a282ea0bbc794b5792c/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_f92a6a282ea0bbc794b5792c/page-0001.png",
+      "moduleTags": [
+        "price_action_foundations",
+        "bar_by_bar_reading"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "very_low_text_likely_scanned_or_visual",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_low_text_pdf_then_compare_against_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_092",
+      "recordId": "course5_f92a6a282ea0bbc794b5792c",
+      "workItemId": "course5_followup_course5_f92a6a282ea0bbc794b5792c",
+      "relativePath": "日本蜡烛图交易技术分析  详细解读价格行为模式,（美）艾尔·布鲁克斯著；张雯译,北京：地震出版社_14128154.pdf",
+      "pageNumber": 223,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f92a6a282ea0bbc794b5792c/page-0223.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_f92a6a282ea0bbc794b5792c/page-0223.png",
+      "moduleTags": [
+        "price_action_foundations",
+        "bar_by_bar_reading"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "very_low_text_likely_scanned_or_visual",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_low_text_pdf_then_compare_against_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_093",
+      "recordId": "course5_f92a6a282ea0bbc794b5792c",
+      "workItemId": "course5_followup_course5_f92a6a282ea0bbc794b5792c",
+      "relativePath": "日本蜡烛图交易技术分析  详细解读价格行为模式,（美）艾尔·布鲁克斯著；张雯译,北京：地震出版社_14128154.pdf",
+      "pageNumber": 445,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f92a6a282ea0bbc794b5792c/page-0445.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_f92a6a282ea0bbc794b5792c/page-0445.png",
+      "moduleTags": [
+        "price_action_foundations",
+        "bar_by_bar_reading"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "very_low_text_likely_scanned_or_visual",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_low_text_pdf_then_compare_against_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_094",
+      "recordId": "course5_5d62c376c59dd07fb7ab9517",
+      "workItemId": "course5_followup_course5_5d62c376c59dd07fb7ab9517",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/E 详细解读价格行为模式-原版.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_5d62c376c59dd07fb7ab9517/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_5d62c376c59dd07fb7ab9517/page-0001.png",
+      "moduleTags": [
+        "price_action_foundations",
+        "bar_by_bar_reading"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "very_low_text_likely_scanned_or_visual",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_low_text_pdf_then_compare_against_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_095",
+      "recordId": "course5_5d62c376c59dd07fb7ab9517",
+      "workItemId": "course5_followup_course5_5d62c376c59dd07fb7ab9517",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/E 详细解读价格行为模式-原版.pdf",
+      "pageNumber": 223,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_5d62c376c59dd07fb7ab9517/page-0223.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_5d62c376c59dd07fb7ab9517/page-0223.png",
+      "moduleTags": [
+        "price_action_foundations",
+        "bar_by_bar_reading"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "very_low_text_likely_scanned_or_visual",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_low_text_pdf_then_compare_against_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_096",
+      "recordId": "course5_5d62c376c59dd07fb7ab9517",
+      "workItemId": "course5_followup_course5_5d62c376c59dd07fb7ab9517",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/E 详细解读价格行为模式-原版.pdf",
+      "pageNumber": 445,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_5d62c376c59dd07fb7ab9517/page-0445.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_5d62c376c59dd07fb7ab9517/page-0445.png",
+      "moduleTags": [
+        "price_action_foundations",
+        "bar_by_bar_reading"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "very_low_text_likely_scanned_or_visual",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_low_text_pdf_then_compare_against_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_097",
+      "recordId": "course5_7a5c9ea8f549a51d26ad7eb1",
+      "workItemId": "course5_followup_course5_7a5c9ea8f549a51d26ad7eb1",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 4_169G.PDF",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_7a5c9ea8f549a51d26ad7eb1/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_7a5c9ea8f549a51d26ad7eb1/page-0001.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_098",
+      "recordId": "course5_7a5c9ea8f549a51d26ad7eb1",
+      "workItemId": "course5_followup_course5_7a5c9ea8f549a51d26ad7eb1",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 4_169G.PDF",
+      "pageNumber": 85,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_7a5c9ea8f549a51d26ad7eb1/page-0085.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_7a5c9ea8f549a51d26ad7eb1/page-0085.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_099",
+      "recordId": "course5_7a5c9ea8f549a51d26ad7eb1",
+      "workItemId": "course5_followup_course5_7a5c9ea8f549a51d26ad7eb1",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 4_169G.PDF",
+      "pageNumber": 169,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_7a5c9ea8f549a51d26ad7eb1/page-0169.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_7a5c9ea8f549a51d26ad7eb1/page-0169.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_100",
+      "recordId": "course5_b071aeb9a7fa51f8e10822a7",
+      "workItemId": "course5_followup_course5_b071aeb9a7fa51f8e10822a7",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/有道翻译版（机翻）/百科幻灯片2024.3.1更新-2.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_b071aeb9a7fa51f8e10822a7/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_b071aeb9a7fa51f8e10822a7/page-0001.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_101",
+      "recordId": "course5_b071aeb9a7fa51f8e10822a7",
+      "workItemId": "course5_followup_course5_b071aeb9a7fa51f8e10822a7",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/有道翻译版（机翻）/百科幻灯片2024.3.1更新-2.pdf",
+      "pageNumber": 61,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_b071aeb9a7fa51f8e10822a7/page-0061.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_b071aeb9a7fa51f8e10822a7/page-0061.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_102",
+      "recordId": "course5_b071aeb9a7fa51f8e10822a7",
+      "workItemId": "course5_followup_course5_b071aeb9a7fa51f8e10822a7",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/有道翻译版（机翻）/百科幻灯片2024.3.1更新-2.pdf",
+      "pageNumber": 121,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_b071aeb9a7fa51f8e10822a7/page-0121.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_b071aeb9a7fa51f8e10822a7/page-0121.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_103",
+      "recordId": "course5_51ae24b7631eec2813610ab5",
+      "workItemId": "course5_followup_course5_51ae24b7631eec2813610ab5",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/1、阿布图表百科全书-拆分版/百科幻灯片2024.3.1.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_51ae24b7631eec2813610ab5/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_51ae24b7631eec2813610ab5/page-0001.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_104",
+      "recordId": "course5_51ae24b7631eec2813610ab5",
+      "workItemId": "course5_followup_course5_51ae24b7631eec2813610ab5",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/1、阿布图表百科全书-拆分版/百科幻灯片2024.3.1.pdf",
+      "pageNumber": 61,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_51ae24b7631eec2813610ab5/page-0061.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_51ae24b7631eec2813610ab5/page-0061.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_105",
+      "recordId": "course5_51ae24b7631eec2813610ab5",
+      "workItemId": "course5_followup_course5_51ae24b7631eec2813610ab5",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/1、阿布图表百科全书-拆分版/百科幻灯片2024.3.1.pdf",
+      "pageNumber": 121,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_51ae24b7631eec2813610ab5/page-0121.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_51ae24b7631eec2813610ab5/page-0121.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_106",
+      "recordId": "course5_fa9154de2e4f7947a7f17b45",
+      "workItemId": "course5_followup_course5_fa9154de2e4f7947a7f17b45",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 15_16TRD-V.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_fa9154de2e4f7947a7f17b45/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_fa9154de2e4f7947a7f17b45/page-0001.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_107",
+      "recordId": "course5_fa9154de2e4f7947a7f17b45",
+      "workItemId": "course5_followup_course5_fa9154de2e4f7947a7f17b45",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 15_16TRD-V.pdf",
+      "pageNumber": 203,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_fa9154de2e4f7947a7f17b45/page-0203.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_fa9154de2e4f7947a7f17b45/page-0203.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_108",
+      "recordId": "course5_fa9154de2e4f7947a7f17b45",
+      "workItemId": "course5_followup_course5_fa9154de2e4f7947a7f17b45",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 15_16TRD-V.pdf",
+      "pageNumber": 404,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_fa9154de2e4f7947a7f17b45/page-0404.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_fa9154de2e4f7947a7f17b45/page-0404.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_109",
+      "recordId": "course5_5fd4a57eff4d300b20017e0a",
+      "workItemId": "course5_followup_course5_5fd4a57eff4d300b20017e0a",
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/【重要】阿布缩写翻译及解释.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_5fd4a57eff4d300b20017e0a/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_5fd4a57eff4d300b20017e0a/page-0001.png",
+      "moduleTags": [
+        "course_slides_alignment",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_110",
+      "recordId": "course5_5fd4a57eff4d300b20017e0a",
+      "workItemId": "course5_followup_course5_5fd4a57eff4d300b20017e0a",
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/【重要】阿布缩写翻译及解释.pdf",
+      "pageNumber": 11,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_5fd4a57eff4d300b20017e0a/page-0011.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_5fd4a57eff4d300b20017e0a/page-0011.png",
+      "moduleTags": [
+        "course_slides_alignment",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_111",
+      "recordId": "course5_5fd4a57eff4d300b20017e0a",
+      "workItemId": "course5_followup_course5_5fd4a57eff4d300b20017e0a",
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/【重要】阿布缩写翻译及解释.pdf",
+      "pageNumber": 20,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_5fd4a57eff4d300b20017e0a/page-0020.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_5fd4a57eff4d300b20017e0a/page-0020.png",
+      "moduleTags": [
+        "course_slides_alignment",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_112",
+      "recordId": "course5_9ca36e05ffbc626ee81e193b",
+      "workItemId": "course5_followup_course5_9ca36e05ffbc626ee81e193b",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 14_16T-TRD.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_9ca36e05ffbc626ee81e193b/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_9ca36e05ffbc626ee81e193b/page-0001.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_113",
+      "recordId": "course5_9ca36e05ffbc626ee81e193b",
+      "workItemId": "course5_followup_course5_9ca36e05ffbc626ee81e193b",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 14_16T-TRD.pdf",
+      "pageNumber": 157,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_9ca36e05ffbc626ee81e193b/page-0157.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_9ca36e05ffbc626ee81e193b/page-0157.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_114",
+      "recordId": "course5_9ca36e05ffbc626ee81e193b",
+      "workItemId": "course5_followup_course5_9ca36e05ffbc626ee81e193b",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 14_16T-TRD.pdf",
+      "pageNumber": 312,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_9ca36e05ffbc626ee81e193b/page-0312.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_9ca36e05ffbc626ee81e193b/page-0312.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_115",
+      "recordId": "course5_48405fde946b9fa0452ceba5",
+      "workItemId": "course5_followup_course5_48405fde946b9fa0452ceba5",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 16_16W-Z.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_48405fde946b9fa0452ceba5/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_48405fde946b9fa0452ceba5/page-0001.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_116",
+      "recordId": "course5_48405fde946b9fa0452ceba5",
+      "workItemId": "course5_followup_course5_48405fde946b9fa0452ceba5",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 16_16W-Z.pdf",
+      "pageNumber": 140,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_48405fde946b9fa0452ceba5/page-0140.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_48405fde946b9fa0452ceba5/page-0140.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_117",
+      "recordId": "course5_48405fde946b9fa0452ceba5",
+      "workItemId": "course5_followup_course5_48405fde946b9fa0452ceba5",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 16_16W-Z.pdf",
+      "pageNumber": 278,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_48405fde946b9fa0452ceba5/page-0278.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_48405fde946b9fa0452ceba5/page-0278.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_118",
+      "recordId": "course5_934746436a703a5349053d90",
+      "workItemId": "course5_followup_course5_934746436a703a5349053d90",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/google翻译版（机翻）/百科幻灯片2024.3.1更新.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_934746436a703a5349053d90/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_934746436a703a5349053d90/page-0001.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_119",
+      "recordId": "course5_934746436a703a5349053d90",
+      "workItemId": "course5_followup_course5_934746436a703a5349053d90",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/google翻译版（机翻）/百科幻灯片2024.3.1更新.pdf",
+      "pageNumber": 61,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_934746436a703a5349053d90/page-0061.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_934746436a703a5349053d90/page-0061.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_120",
+      "recordId": "course5_934746436a703a5349053d90",
+      "workItemId": "course5_followup_course5_934746436a703a5349053d90",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/google翻译版（机翻）/百科幻灯片2024.3.1更新.pdf",
+      "pageNumber": 121,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_934746436a703a5349053d90/page-0121.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_934746436a703a5349053d90/page-0121.png",
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_121",
+      "recordId": "course5_a7a09cbedc2601d761bd74fa",
+      "workItemId": "course5_followup_course5_a7a09cbedc2601d761bd74fa",
+      "relativePath": "AL Brooks 知识体系（18版视频结构）.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_a7a09cbedc2601d761bd74fa/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_a7a09cbedc2601d761bd74fa/page-0001.png",
+      "moduleTags": [
+        "unclassified_supplement"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "very_low_text_likely_scanned_or_visual",
+      "priorityBand": "P2_followup_blocker",
+      "ocrExecutionRoute": "ocr_low_text_pdf_then_compare_against_visual_samples",
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    }
+  ],
+  "commands": [
+    "npm.cmd run build:local-course-5-pdf-ocr-visual-execution-pack",
+    "npm.cmd run check:local-course-5-pdf-ocr-visual-execution-pack",
+    "npm.cmd run verify"
+  ],
+  "completionRule": "This PDF OCR and visual execution pack is ready when all 41 PDF follow-up sources and 121 representative page samples are organized for OCR or real visual reviewer input, blank input rows remain blocked, and folder deletion remains false until validated OCR/reviewer evidence resolves every row.",
+  "boundary": "Course 5 PDF OCR and visual execution pack is private reviewer-facing education operations material. It organizes scanned, low-text, and large PDF sources into OCR and representative-page visual review work. It does not perform OCR, delete files, approve folder deletion, approve learner-facing release, accept machine drafts as human review, copy private source wording, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, write authorization, or production readiness."
+}

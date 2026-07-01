@@ -1,0 +1,167 @@
+{
+  "generatedAt": "2026-06-22T07:16:28.355Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "auditStatus": "knowledge_release_blocker_audit_ready_release_blocked",
+  "auditMode": "end_to_end_absorption_review_release_blocker_chain",
+  "knowledgeBaseUsefulnessStatus": "usable_as_internal_reviewer_knowledge_base_not_learner_course",
+  "internalUseStatus": "usable_as_internal_reviewer_workbench",
+  "learnerUseStatus": "blocked_not_learner_course",
+  "localCourseAbsorbed": true,
+  "publicSourcesAbsorbed": true,
+  "internalWorkbenchReady": true,
+  "learnerReleaseBlocked": true,
+  "physicalPdfFiles": 302,
+  "uniquePdfHashes": 298,
+  "mappedUniquePdfFiles": 298,
+  "publicCorpusDocuments": 1196,
+  "wikipediaDocuments": 96,
+  "officialLikeDocuments": 202,
+  "mappedPublicDocuments": 1196,
+  "moduleGroundedNodes": 360,
+  "modules": 12,
+  "internalNavigationReadyModules": 12,
+  "learnerReleaseReadyModules": 0,
+  "reviewerActionRows": 52,
+  "reviewerBlockedWorkItems": 1715,
+  "reviewerReadyWorkItems": 0,
+  "firstHandoffActionRows": 20,
+  "firstHandoffRequiredWorkItems": 257,
+  "firstHandoffReadyWorkItems": 0,
+  "firstHandoffBlockedWorkItems": 257,
+  "sourceFitReviewRows": 1638,
+  "readySourceFitReviewRows": 0,
+  "blockedSourceFitReviewRows": 1638,
+  "realHumanInputEntries": 0,
+  "learnerCitationApprovedRows": 0,
+  "writeAllowedNow": false,
+  "manualAuthorizationRequired": true,
+  "stageRows": [
+    {
+      "stageId": "local_course_folder_absorption",
+      "label": "Local investment course folder absorption",
+      "status": "folder_absorption_ledger_all_current_pdfs_accounted_release_blocked",
+      "ready": true,
+      "readyItems": 298,
+      "requiredItems": 298,
+      "blockedItems": 0,
+      "evidencePath": "docs/LOCAL_COURSE_FOLDER_ABSORPTION_LEDGER.json",
+      "nextAction": "Keep ledger current if files are added to the local course folder."
+    },
+    {
+      "stageId": "public_source_coverage",
+      "label": "Public/Wikipedia/official source coverage",
+      "status": "public_source_coverage_ledger_ready_release_blocked",
+      "ready": true,
+      "readyItems": 1196,
+      "requiredItems": 1196,
+      "blockedItems": 0,
+      "evidencePath": "docs/PUBLIC_SOURCE_COVERAGE_LEDGER.json",
+      "nextAction": "Keep public corpus mapped and license/source-family boundaries explicit."
+    },
+    {
+      "stageId": "knowledge_base_readiness",
+      "label": "Internal knowledge base readiness",
+      "status": "knowledge_base_internal_review_ready_release_blocked",
+      "ready": true,
+      "readyItems": 5,
+      "requiredItems": 5,
+      "blockedItems": 5,
+      "evidencePath": "docs/KNOWLEDGE_BASE_READINESS_GATE.json",
+      "nextAction": "Treat the system as an internal reviewer workbench until human review clears blockers."
+    },
+    {
+      "stageId": "module_review_cockpit",
+      "label": "Module review cockpit",
+      "status": "module_review_cockpit_ready_release_blocked",
+      "ready": true,
+      "readyItems": 12,
+      "requiredItems": 12,
+      "blockedItems": 12,
+      "evidencePath": "docs/KNOWLEDGE_MODULE_REVIEW_COCKPIT.json",
+      "nextAction": "Use module cockpit for navigation; do not present modules as learner-release ready."
+    },
+    {
+      "stageId": "reviewer_action_queue",
+      "label": "Unified reviewer action queue",
+      "status": "knowledge_reviewer_action_queue_ready_blocked_on_real_input",
+      "ready": false,
+      "readyItems": 0,
+      "requiredItems": 1715,
+      "blockedItems": 1715,
+      "evidencePath": "docs/KNOWLEDGE_REVIEWER_ACTION_QUEUE.json",
+      "nextAction": "Work the 52 reviewer actions: high-risk notes, direct-source decisions, and source-fit packets."
+    },
+    {
+      "stageId": "first_reviewer_field_execution",
+      "label": "First reviewer field execution",
+      "status": "first_reviewer_field_map_ready_blocked_on_real_input",
+      "ready": false,
+      "readyItems": 0,
+      "requiredItems": 257,
+      "blockedItems": 257,
+      "evidencePath": "docs/KNOWLEDGE_FIRST_REVIEWER_COMPLETION_GATE.json",
+      "nextAction": "Fill the first 257 human-owned fields, then rerun validation and this audit."
+    },
+    {
+      "stageId": "all_source_fit_rows",
+      "label": "All source-fit review rows",
+      "status": "source_fit_reviewer_row_browser_ready_all_rows_blocked_on_real_input",
+      "ready": false,
+      "readyItems": 0,
+      "requiredItems": 1638,
+      "blockedItems": 1638,
+      "evidencePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEWER_ROW_BROWSER.json",
+      "nextAction": "Complete source-fit decisions across all 35 packets before learner-facing citation approval."
+    }
+  ],
+  "releaseBlockerRows": [
+    {
+      "blockerId": "missing_real_human_review",
+      "severity": "p0",
+      "blockedItems": 1715,
+      "evidence": "0/1715 reviewer work items ready.",
+      "nextGate": "real_reviewer_fills_mapped_inputs_then_validation_passes"
+    },
+    {
+      "blockerId": "source_fit_rows_not_reviewed",
+      "severity": "p0",
+      "blockedItems": 1638,
+      "evidence": "0/1638 source-fit rows ready.",
+      "nextGate": "all_source_fit_packet_validations_ready"
+    },
+    {
+      "blockerId": "first_reviewer_completion_gate_blocked",
+      "severity": "p0",
+      "blockedItems": 257,
+      "evidence": "0/257 first-handoff work items ready.",
+      "nextGate": "first_reviewer_completion_gate_ready_for_separate_approval"
+    },
+    {
+      "blockerId": "learner_release_modules_zero",
+      "severity": "p0",
+      "blockedItems": 12,
+      "evidence": "0/12 modules learner-release ready.",
+      "nextGate": "separate_human_release_approval_after_review_validation"
+    }
+  ],
+  "nextBestActions": [
+    "Have a real reviewer fill the first reviewer mapped fields: 72 notes, 5 direct-source decisions, and 180 source-fit rows.",
+    "Rerun high-risk overlay and packet 001-003 validations, then rebuild completion gate and release blocker audit.",
+    "Continue packet-by-packet source-fit review until all 1638 rows are real-human reviewed.",
+    "Only after validation passes, run a separate learner-facing citation/release approval gate."
+  ],
+  "commands": [
+    "npm.cmd run build:knowledge-release-blocker-audit",
+    "npm.cmd run check:knowledge-release-blocker-audit",
+    "npm.cmd run check:knowledge-base-readiness-gate",
+    "npm.cmd run check:knowledge-module-review-cockpit",
+    "npm.cmd run check:knowledge-first-reviewer-completion-gate",
+    "npm.cmd run check:knowledge-node-public-source-fit-reviewer-row-browser",
+    "npm.cmd run verify"
+  ],
+  "completionRule": "This release blocker audit is complete when the end-to-end chain accounts for local course absorption, public/Wikipedia/official source coverage, internal workbench readiness, reviewer action blockers, first reviewer completion blockers, and all source-fit row blockers. It does not remove blockers, generate human review, approve learner-facing release, or authorize writes.",
+  "boundary": "Knowledge release blocker audit is reviewer-facing education-only governance. It audits absorbed local investment course PDFs, public/Wikipedia/official source coverage, module review readiness, first reviewer gates, and source-fit review blockers; it does not generate reviewer notes, approve copied text, approve learner-facing citations, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, write authorization, learner release, or production readiness."
+}

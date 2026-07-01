@@ -1,0 +1,927 @@
+{
+  "generatedAt": "2026-06-21T22:05:56.246Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "templateStatus": "candidate_review_dry_run_fixture",
+  "sourceOverlay": "docs/LOCAL_COURSE_ABSORPTION_P0_REVIEW_OVERLAY.json",
+  "totalEntries": 22,
+  "manualTranscriptionEntries": 19,
+  "sourceReplacementEntries": 3,
+  "filledEntries": 2,
+  "readyForValidationEntries": 2,
+  "inputEntries": [
+    {
+      "id": "input_absorb_manual_transcription_01",
+      "reviewEntryId": "review_absorb_manual_transcription_01",
+      "taskId": "absorb_manual_transcription_01",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1313",
+      "pageNumber": 1,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1313/page-01.png",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "candidate_review_fixture_ready",
+      "reviewerName": "Codex candidate-review dry-run fixture",
+      "reviewedAt": "2026-06-21T00:00:00.000Z",
+      "manualInput": {
+        "humanTranscription": "Fixture-only reviewer input sample derived from the machine-assisted candidate summary. A human reviewer must open the original preview and high-resolution preview, verify all visible text, correct uncertain regions, and rewrite into original education-only wording before any real overlay write. Candidate summary for orientation only: This page can be rewritten as an education-only lesson on multi-timeframe context: first identify the large-cycle environment, then use the smaller cycle to observe structure, evidence quality, invalidation, and position-management concepts without turning them into trade instructions.",
+        "humanSummary": "Fixture-only dry-run summary. The real reviewer must replace this with verified human transcription notes and keep all market-language as chart-literacy context, not advice or signals.",
+        "uncertainWords": [
+          "fixture_only_not_human_transcription",
+          "Some small chart annotations are too small for reliable exact transcription.",
+          "Several numeric labels in embedded chart screenshots need human confirmation."
+        ],
+        "checklist": {
+          "visualTextCaptured": "done",
+          "chartLabelsCaptured": "done",
+          "unclearAreasFlagged": "done",
+          "noTradingAdviceAdded": "done",
+          "publicSourceGroundingReady": "done",
+          "originalRewriteReady": "done"
+        }
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription captures visible text and chart labels without inventing missing content.",
+        "Unclear areas are flagged instead of guessed.",
+        "Summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "After completion, rerun transcript intake and source-fit/public-grounding/originality review before any learner-facing use."
+      ],
+      "nextGate": "fill_human_transcription_then_source_fit_public_grounding_originality_review",
+      "dryRunCandidateAssist": {
+        "assistRowId": "assist_absorb_manual_transcription_01",
+        "candidateId": "candidate_batch_01_page_01",
+        "matchStatus": "candidate_available_for_human_review",
+        "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1313/page-01.png",
+        "riskTermFlags": [
+          "position_language",
+          "entry_language",
+          "stop_loss_language",
+          "specific_price_levels",
+          "counter_trend_language"
+        ],
+        "uncertainRegions": [
+          "Some small chart annotations are too small for reliable exact transcription.",
+          "Several numeric labels in embedded chart screenshots need human confirmation."
+        ],
+        "fixtureOnlyReason": "This sample proves the reviewer-input validation path. It is not a human transcription and must not be written to the real overlay."
+      }
+    },
+    {
+      "id": "input_absorb_manual_transcription_02",
+      "reviewEntryId": "review_absorb_manual_transcription_02",
+      "taskId": "absorb_manual_transcription_02",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1313",
+      "pageNumber": 2,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1313/page-02.png",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "candidate_review_fixture_ready",
+      "reviewerName": "Codex candidate-review dry-run fixture",
+      "reviewedAt": "2026-06-21T00:00:00.000Z",
+      "manualInput": {
+        "humanTranscription": "Fixture-only reviewer input sample derived from the machine-assisted candidate summary. A human reviewer must open the original preview and high-resolution preview, verify all visible text, correct uncertain regions, and rewrite into original education-only wording before any real overlay write. Candidate summary for orientation only: This page can support a lesson on evidence stacking across cycles: use moving-average context, repeated tests, volume/structure confirmation, and false-breakout awareness as study prompts rather than action signals.",
+        "humanSummary": "Fixture-only dry-run summary. The real reviewer must replace this with verified human transcription notes and keep all market-language as chart-literacy context, not advice or signals.",
+        "uncertainWords": [
+          "fixture_only_not_human_transcription",
+          "Exact chart labels and some chart-side text require human confirmation.",
+          "Some bullet indentation and sub-bullet ordering may need reviewer cleanup."
+        ],
+        "checklist": {
+          "visualTextCaptured": "done",
+          "chartLabelsCaptured": "done",
+          "unclearAreasFlagged": "done",
+          "noTradingAdviceAdded": "done",
+          "publicSourceGroundingReady": "done",
+          "originalRewriteReady": "done"
+        }
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription captures visible text and chart labels without inventing missing content.",
+        "Unclear areas are flagged instead of guessed.",
+        "Summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "After completion, rerun transcript intake and source-fit/public-grounding/originality review before any learner-facing use."
+      ],
+      "nextGate": "fill_human_transcription_then_source_fit_public_grounding_originality_review",
+      "dryRunCandidateAssist": {
+        "assistRowId": "assist_absorb_manual_transcription_02",
+        "candidateId": "candidate_batch_01_page_02",
+        "matchStatus": "candidate_available_for_human_review",
+        "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1313/page-02.png",
+        "riskTermFlags": [
+          "entry_language",
+          "stop_loss_language",
+          "risk_reward_language",
+          "right_side_confirmation_language"
+        ],
+        "uncertainRegions": [
+          "Exact chart labels and some chart-side text require human confirmation.",
+          "Some bullet indentation and sub-bullet ordering may need reviewer cleanup."
+        ],
+        "fixtureOnlyReason": "This sample proves the reviewer-input validation path. It is not a human transcription and must not be written to the real overlay."
+      }
+    },
+    {
+      "id": "input_absorb_manual_transcription_03",
+      "reviewEntryId": "review_absorb_manual_transcription_03",
+      "taskId": "absorb_manual_transcription_03",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1313",
+      "pageNumber": 3,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1313/page-03.png",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "template_blank",
+      "reviewerName": "",
+      "reviewedAt": "",
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        }
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription captures visible text and chart labels without inventing missing content.",
+        "Unclear areas are flagged instead of guessed.",
+        "Summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "After completion, rerun transcript intake and source-fit/public-grounding/originality review before any learner-facing use."
+      ],
+      "nextGate": "fill_human_transcription_then_source_fit_public_grounding_originality_review"
+    },
+    {
+      "id": "input_absorb_manual_transcription_04",
+      "reviewEntryId": "review_absorb_manual_transcription_04",
+      "taskId": "absorb_manual_transcription_04",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1313",
+      "pageNumber": 4,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1313/page-04.png",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "template_blank",
+      "reviewerName": "",
+      "reviewedAt": "",
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        }
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription captures visible text and chart labels without inventing missing content.",
+        "Unclear areas are flagged instead of guessed.",
+        "Summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "After completion, rerun transcript intake and source-fit/public-grounding/originality review before any learner-facing use."
+      ],
+      "nextGate": "fill_human_transcription_then_source_fit_public_grounding_originality_review"
+    },
+    {
+      "id": "input_absorb_manual_transcription_05",
+      "reviewEntryId": "review_absorb_manual_transcription_05",
+      "taskId": "absorb_manual_transcription_05",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1313",
+      "pageNumber": 5,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1313/page-05.png",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "template_blank",
+      "reviewerName": "",
+      "reviewedAt": "",
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        }
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription captures visible text and chart labels without inventing missing content.",
+        "Unclear areas are flagged instead of guessed.",
+        "Summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "After completion, rerun transcript intake and source-fit/public-grounding/originality review before any learner-facing use."
+      ],
+      "nextGate": "fill_human_transcription_then_source_fit_public_grounding_originality_review"
+    },
+    {
+      "id": "input_absorb_manual_transcription_06",
+      "reviewEntryId": "review_absorb_manual_transcription_06",
+      "taskId": "absorb_manual_transcription_06",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1313",
+      "pageNumber": 6,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1313/page-06.png",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "template_blank",
+      "reviewerName": "",
+      "reviewedAt": "",
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        }
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription captures visible text and chart labels without inventing missing content.",
+        "Unclear areas are flagged instead of guessed.",
+        "Summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "After completion, rerun transcript intake and source-fit/public-grounding/originality review before any learner-facing use."
+      ],
+      "nextGate": "fill_human_transcription_then_source_fit_public_grounding_originality_review"
+    },
+    {
+      "id": "input_absorb_manual_transcription_07",
+      "reviewEntryId": "review_absorb_manual_transcription_07",
+      "taskId": "absorb_manual_transcription_07",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1313",
+      "pageNumber": 7,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1313/page-07.png",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "template_blank",
+      "reviewerName": "",
+      "reviewedAt": "",
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        }
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription captures visible text and chart labels without inventing missing content.",
+        "Unclear areas are flagged instead of guessed.",
+        "Summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "After completion, rerun transcript intake and source-fit/public-grounding/originality review before any learner-facing use."
+      ],
+      "nextGate": "fill_human_transcription_then_source_fit_public_grounding_originality_review"
+    },
+    {
+      "id": "input_absorb_manual_transcription_08",
+      "reviewEntryId": "review_absorb_manual_transcription_08",
+      "taskId": "absorb_manual_transcription_08",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1313",
+      "pageNumber": 8,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1313/page-08.png",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "template_blank",
+      "reviewerName": "",
+      "reviewedAt": "",
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        }
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription captures visible text and chart labels without inventing missing content.",
+        "Unclear areas are flagged instead of guessed.",
+        "Summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "After completion, rerun transcript intake and source-fit/public-grounding/originality review before any learner-facing use."
+      ],
+      "nextGate": "fill_human_transcription_then_source_fit_public_grounding_originality_review"
+    },
+    {
+      "id": "input_absorb_manual_transcription_09",
+      "reviewEntryId": "review_absorb_manual_transcription_09",
+      "taskId": "absorb_manual_transcription_09",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 1,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-01.png",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "template_blank",
+      "reviewerName": "",
+      "reviewedAt": "",
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        }
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription captures visible text and chart labels without inventing missing content.",
+        "Unclear areas are flagged instead of guessed.",
+        "Summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "After completion, rerun transcript intake and source-fit/public-grounding/originality review before any learner-facing use."
+      ],
+      "nextGate": "fill_human_transcription_then_source_fit_public_grounding_originality_review"
+    },
+    {
+      "id": "input_absorb_manual_transcription_10",
+      "reviewEntryId": "review_absorb_manual_transcription_10",
+      "taskId": "absorb_manual_transcription_10",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 2,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-02.png",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "template_blank",
+      "reviewerName": "",
+      "reviewedAt": "",
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        }
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription captures visible text and chart labels without inventing missing content.",
+        "Unclear areas are flagged instead of guessed.",
+        "Summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "After completion, rerun transcript intake and source-fit/public-grounding/originality review before any learner-facing use."
+      ],
+      "nextGate": "fill_human_transcription_then_source_fit_public_grounding_originality_review"
+    },
+    {
+      "id": "input_absorb_manual_transcription_11",
+      "reviewEntryId": "review_absorb_manual_transcription_11",
+      "taskId": "absorb_manual_transcription_11",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 3,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-03.png",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "template_blank",
+      "reviewerName": "",
+      "reviewedAt": "",
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        }
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription captures visible text and chart labels without inventing missing content.",
+        "Unclear areas are flagged instead of guessed.",
+        "Summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "After completion, rerun transcript intake and source-fit/public-grounding/originality review before any learner-facing use."
+      ],
+      "nextGate": "fill_human_transcription_then_source_fit_public_grounding_originality_review"
+    },
+    {
+      "id": "input_absorb_manual_transcription_12",
+      "reviewEntryId": "review_absorb_manual_transcription_12",
+      "taskId": "absorb_manual_transcription_12",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 4,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-04.png",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "template_blank",
+      "reviewerName": "",
+      "reviewedAt": "",
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        }
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription captures visible text and chart labels without inventing missing content.",
+        "Unclear areas are flagged instead of guessed.",
+        "Summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "After completion, rerun transcript intake and source-fit/public-grounding/originality review before any learner-facing use."
+      ],
+      "nextGate": "fill_human_transcription_then_source_fit_public_grounding_originality_review"
+    },
+    {
+      "id": "input_absorb_manual_transcription_13",
+      "reviewEntryId": "review_absorb_manual_transcription_13",
+      "taskId": "absorb_manual_transcription_13",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 5,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-05.png",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "template_blank",
+      "reviewerName": "",
+      "reviewedAt": "",
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        }
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription captures visible text and chart labels without inventing missing content.",
+        "Unclear areas are flagged instead of guessed.",
+        "Summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "After completion, rerun transcript intake and source-fit/public-grounding/originality review before any learner-facing use."
+      ],
+      "nextGate": "fill_human_transcription_then_source_fit_public_grounding_originality_review"
+    },
+    {
+      "id": "input_absorb_manual_transcription_14",
+      "reviewEntryId": "review_absorb_manual_transcription_14",
+      "taskId": "absorb_manual_transcription_14",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 6,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-06.png",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "template_blank",
+      "reviewerName": "",
+      "reviewedAt": "",
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        }
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription captures visible text and chart labels without inventing missing content.",
+        "Unclear areas are flagged instead of guessed.",
+        "Summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "After completion, rerun transcript intake and source-fit/public-grounding/originality review before any learner-facing use."
+      ],
+      "nextGate": "fill_human_transcription_then_source_fit_public_grounding_originality_review"
+    },
+    {
+      "id": "input_absorb_manual_transcription_15",
+      "reviewEntryId": "review_absorb_manual_transcription_15",
+      "taskId": "absorb_manual_transcription_15",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 7,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-07.png",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "template_blank",
+      "reviewerName": "",
+      "reviewedAt": "",
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        }
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription captures visible text and chart labels without inventing missing content.",
+        "Unclear areas are flagged instead of guessed.",
+        "Summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "After completion, rerun transcript intake and source-fit/public-grounding/originality review before any learner-facing use."
+      ],
+      "nextGate": "fill_human_transcription_then_source_fit_public_grounding_originality_review"
+    },
+    {
+      "id": "input_absorb_manual_transcription_16",
+      "reviewEntryId": "review_absorb_manual_transcription_16",
+      "taskId": "absorb_manual_transcription_16",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 8,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-08.png",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "template_blank",
+      "reviewerName": "",
+      "reviewedAt": "",
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        }
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription captures visible text and chart labels without inventing missing content.",
+        "Unclear areas are flagged instead of guessed.",
+        "Summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "After completion, rerun transcript intake and source-fit/public-grounding/originality review before any learner-facing use."
+      ],
+      "nextGate": "fill_human_transcription_then_source_fit_public_grounding_originality_review"
+    },
+    {
+      "id": "input_absorb_manual_transcription_17",
+      "reviewEntryId": "review_absorb_manual_transcription_17",
+      "taskId": "absorb_manual_transcription_17",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 9,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-09.png",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "template_blank",
+      "reviewerName": "",
+      "reviewedAt": "",
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        }
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription captures visible text and chart labels without inventing missing content.",
+        "Unclear areas are flagged instead of guessed.",
+        "Summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "After completion, rerun transcript intake and source-fit/public-grounding/originality review before any learner-facing use."
+      ],
+      "nextGate": "fill_human_transcription_then_source_fit_public_grounding_originality_review"
+    },
+    {
+      "id": "input_absorb_manual_transcription_18",
+      "reviewEntryId": "review_absorb_manual_transcription_18",
+      "taskId": "absorb_manual_transcription_18",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 10,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-10.png",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "template_blank",
+      "reviewerName": "",
+      "reviewedAt": "",
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        }
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription captures visible text and chart labels without inventing missing content.",
+        "Unclear areas are flagged instead of guessed.",
+        "Summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "After completion, rerun transcript intake and source-fit/public-grounding/originality review before any learner-facing use."
+      ],
+      "nextGate": "fill_human_transcription_then_source_fit_public_grounding_originality_review"
+    },
+    {
+      "id": "input_absorb_manual_transcription_19",
+      "reviewEntryId": "review_absorb_manual_transcription_19",
+      "taskId": "absorb_manual_transcription_19",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 11,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-11.png",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "template_blank",
+      "reviewerName": "",
+      "reviewedAt": "",
+      "manualInput": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "checklist": {
+          "visualTextCaptured": "not_started",
+          "chartLabelsCaptured": "not_started",
+          "unclearAreasFlagged": "not_started",
+          "noTradingAdviceAdded": "not_started",
+          "publicSourceGroundingReady": "not_started",
+          "originalRewriteReady": "not_started"
+        }
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription captures visible text and chart labels without inventing missing content.",
+        "Unclear areas are flagged instead of guessed.",
+        "Summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "After completion, rerun transcript intake and source-fit/public-grounding/originality review before any learner-facing use."
+      ],
+      "nextGate": "fill_human_transcription_then_source_fit_public_grounding_originality_review"
+    },
+    {
+      "id": "input_absorb_source_replacement_01",
+      "reviewEntryId": "review_absorb_source_replacement_01",
+      "taskId": "absorb_source_replacement_01",
+      "category": "source_replacement",
+      "sourceRelativePath": "系统课02进阶/19_9119：高中毕业集训总结年后展望_笔记.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1329",
+      "pageNumber": 1,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1329/page-01.png",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "template_blank",
+      "reviewerName": "",
+      "reviewedAt": "",
+      "manualInput": null,
+      "replacementInput": {
+        "replacementSourcePath": "",
+        "replacementNote": "",
+        "rerunEvidence": "",
+        "checklist": {
+          "sourceIdentityConfirmed": "not_started",
+          "replacementSourceReadable": "not_started",
+          "readablePreviewGenerated": "not_started",
+          "harvestRerunEvidenceAttached": "not_started",
+          "qualityAndIntakeRerunReady": "not_started"
+        }
+      },
+      "acceptanceCriteria": [
+        "Original PDF or cleaner export is located and verified as the same course source.",
+        "Blank preview is replaced by readable preview evidence after rerun.",
+        "Harvest, source quality, visual review, transcript intake, and absorption readiness checks are regenerated.",
+        "No missing content is inferred from the blank preview."
+      ],
+      "nextGate": "replace_or_reexport_source_pdf_before_absorption"
+    },
+    {
+      "id": "input_absorb_source_replacement_02",
+      "reviewEntryId": "review_absorb_source_replacement_02",
+      "taskId": "absorb_source_replacement_02",
+      "category": "source_replacement",
+      "sourceRelativePath": "专享07庄家篇/14_0814-【复训】-分析行情挖掘机会_笔记.pdf",
+      "sourceModule": "专享07庄家篇",
+      "documentId": "corpus_1431",
+      "pageNumber": 1,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1431/page-01.png",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "template_blank",
+      "reviewerName": "",
+      "reviewedAt": "",
+      "manualInput": null,
+      "replacementInput": {
+        "replacementSourcePath": "",
+        "replacementNote": "",
+        "rerunEvidence": "",
+        "checklist": {
+          "sourceIdentityConfirmed": "not_started",
+          "replacementSourceReadable": "not_started",
+          "readablePreviewGenerated": "not_started",
+          "harvestRerunEvidenceAttached": "not_started",
+          "qualityAndIntakeRerunReady": "not_started"
+        }
+      },
+      "acceptanceCriteria": [
+        "Original PDF or cleaner export is located and verified as the same course source.",
+        "Blank preview is replaced by readable preview evidence after rerun.",
+        "Harvest, source quality, visual review, transcript intake, and absorption readiness checks are regenerated.",
+        "No missing content is inferred from the blank preview."
+      ],
+      "nextGate": "replace_or_reexport_source_pdf_before_absorption"
+    },
+    {
+      "id": "input_absorb_source_replacement_03",
+      "reviewEntryId": "review_absorb_source_replacement_03",
+      "taskId": "absorb_source_replacement_03",
+      "category": "source_replacement",
+      "sourceRelativePath": "K线怎么看/06_第6讲：常见的持仓信号-进攻金K（2）_笔记.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1577",
+      "pageNumber": 1,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1577/page-01.png",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "template_blank",
+      "reviewerName": "",
+      "reviewedAt": "",
+      "manualInput": null,
+      "replacementInput": {
+        "replacementSourcePath": "",
+        "replacementNote": "",
+        "rerunEvidence": "",
+        "checklist": {
+          "sourceIdentityConfirmed": "not_started",
+          "replacementSourceReadable": "not_started",
+          "readablePreviewGenerated": "not_started",
+          "harvestRerunEvidenceAttached": "not_started",
+          "qualityAndIntakeRerunReady": "not_started"
+        }
+      },
+      "acceptanceCriteria": [
+        "Original PDF or cleaner export is located and verified as the same course source.",
+        "Blank preview is replaced by readable preview evidence after rerun.",
+        "Harvest, source quality, visual review, transcript intake, and absorption readiness checks are regenerated.",
+        "No missing content is inferred from the blank preview."
+      ],
+      "nextGate": "replace_or_reexport_source_pdf_before_absorption"
+    }
+  ],
+  "usage": [
+    "This fixture proves two machine-candidate-assisted P0 manual-review entries can pass validator/apply dry-run.",
+    "Do not apply this fixture with --write.",
+    "Do not use fixture text as absorbed course content or learner-facing material.",
+    "Replace fixture text with human-verified transcription before any real overlay update."
+  ],
+  "boundary": "P0 candidate review dry-run sample is a fixture for pipeline validation only. It is not a human transcription of private course content, must not be written to the real overlay, does not approve learner-facing release, and does not provide trading advice, stock recommendations, live signals, return promises, broker workflows, automation, or real-money guidance.",
+  "fixtureOnly": true,
+  "sourceAssistMap": "docs/LOCAL_COURSE_P0_CANDIDATE_REVIEW_ASSIST_MAP.json",
+  "dryRunTargetTaskIds": [
+    "absorb_manual_transcription_01",
+    "absorb_manual_transcription_02"
+  ]
+}

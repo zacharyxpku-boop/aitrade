@@ -1,0 +1,20 @@
+# Local Course 5 Wave 5 PDF AI Visual Review Batch 002
+
+Course 5 Wave 5 PDF AI visual review batch 002 is private reviewer-facing education operations material. It records page-level visual observations and visible text cues for twelve Wave 5 PDF samples so they can receive later human confirmation and OCR review. It does not complete OCR, replace human approval, merge content into learner-facing modules, approve source-folder removal, approve learner-facing release, copy private source wording, provide stock recommendations, live signals, return promises, execution instructions, automation, write authorization, or production readiness.
+
+| Review row | Sample | Page | Module placement | Visual observation |
+|---|---:|---:|---|---|
+| course5_wave_5_pdf_supplemental_review_007 | 13 | 1 | chart_pattern_encyclopedia; terminology_glossary; source_identity | The page is a title slide with large Chinese text, a right-side intraday chart showing a sharp decline and rebound, and screen-viewer controls around the slide. |
+| course5_wave_5_pdf_supplemental_review_008 | 14 | 61 | chart_pattern_encyclopedia; bear_flag_context; visual_annotation_literacy | The slide contains a candlestick chart with dotted horizontal levels, a moving-average line, shaded swing areas, green and red arrows, and labels around a bearish continuation example. |
+| course5_wave_5_pdf_supplemental_review_009 | 15 | 121 | chart_pattern_encyclopedia; source_identity; source_version_consistency | The page repeats the deck title layout with a presenter photo, Chinese title text, and a right-side chart showing a selloff and rebound shape. |
+| course5_wave_5_pdf_supplemental_review_010 | 16 | 1 | terminology_glossary; course_slides_alignment; abbreviation_map | The page is a dense three-column glossary table pairing abbreviations with English descriptions and Chinese explanations. |
+| course5_wave_5_pdf_supplemental_review_011 | 17 | 11 | terminology_glossary; chart_pattern_encyclopedia; abbreviation_map | The page is a glossary table with long Chinese explanations in the right column and short English abbreviation descriptions in the middle column. |
+| course5_wave_5_pdf_supplemental_review_012 | 18 | 20 | terminology_glossary; wedge_patterns; chart_pattern_encyclopedia | The page is a sparse glossary table with two large rows and long Chinese explanations about wedge-family pattern terminology. |
+| course5_wave_5_pdf_supplemental_review_013 | 19 | 1 | chart_pattern_encyclopedia; source_version_consistency; machine_translation_comparison | The page is the Google-translated version of the encyclopedia title slide, with similar layout but slightly different translation and scaling. |
+| course5_wave_5_pdf_supplemental_review_014 | 20 | 61 | chart_pattern_encyclopedia; bear_flag_context; source_version_consistency | The page repeats the annotated bear-flag chart example with different machine-translation wording and the same colored arrows, dotted levels, moving average, and shaded zones. |
+| course5_wave_5_pdf_supplemental_review_015 | 21 | 121 | chart_pattern_encyclopedia; source_identity; source_version_consistency | The page repeats the deck closing/title layout with a presenter photo, Chinese title text, and chart panel. |
+| course5_pdf_ocr_visual_review_022 | 22 | 1 | trading_ranges; source_identity; course_5_pdf_intake | The page is a book cover with large Chinese title text, English subtitle, author and translator lines, publisher marks, and a candlestick strip near the bottom. |
+| course5_pdf_ocr_visual_review_023 | 23 | 249 | trading_ranges; swing_structure; range_transition_context | The page contains dense Chinese text above a grayscale chart annotated with swing counts, lower-high and higher-low style labels, and a moving-average line. |
+| course5_pdf_ocr_visual_review_024 | 24 | 496 | trading_ranges; curriculum_context; source_map | The page is a back cover with a candlestick band near the top, several Chinese paragraphs, a dark slogan band, QR code, ISBN barcode, and pricing block. |
+
+Source folder may be deleted: false

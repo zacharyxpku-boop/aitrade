@@ -1,0 +1,237 @@
+{
+  "generatedAt": "2026-06-21T22:52:43.951Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "indexStatus": "p0_review_operator_index_ready_not_applied",
+  "totalP0Tasks": 22,
+  "manualTranscriptionTasks": 19,
+  "sourceReplacementTasks": 3,
+  "manualPackCount": 5,
+  "manualPackCards": 19,
+  "sourceReplacementPackEntries": 3,
+  "totalReviewPackEntries": 22,
+  "reviewPackCoverageComplete": true,
+  "overlayStatus": "p0_review_not_started",
+  "overlayNotStartedTasks": 22,
+  "overlayReadyForValidationTasks": 0,
+  "overlayAcceptedForNextGateTasks": 0,
+  "blankInputReadyEntries": 0,
+  "blankInputBlockedEntries": 22,
+  "positiveFixtureReadyToApplyEntries": 22,
+  "positiveFixtureWrittenEntries": 0,
+  "sourceReplacementTargetsWithCandidates": 3,
+  "sourceReplacementTargetsWithDirectReplacementCandidates": 0,
+  "sourceReplacementApprovedReplacements": 0,
+  "packRows": [
+    {
+      "packNumber": "01",
+      "packId": "local_course_p0_human_fill_pack_01",
+      "category": "manual_transcription",
+      "packStatus": "blank_human_fill_pack_ready",
+      "templateStatus": "pack_01_input_copy_blank",
+      "documentIds": [
+        "corpus_1580"
+      ],
+      "pageNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "taskIds": [
+        "absorb_manual_transcription_09",
+        "absorb_manual_transcription_10",
+        "absorb_manual_transcription_11",
+        "absorb_manual_transcription_12"
+      ],
+      "totalEntries": 4,
+      "blankReadyEntries": 4,
+      "filledEntries": 0,
+      "validationReadyEntries": 0,
+      "validationBlockedEntries": 4,
+      "lintReadyEntries": 0,
+      "lintBlockedEntries": 4,
+      "positiveFixtureReadyToApplyEntries": 4,
+      "positiveFixtureWrittenEntries": 0,
+      "inputCopyPath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_01_INPUT_COPY_TEMPLATE.json",
+      "packPath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_01.json",
+      "nextGate": "human_fill_then_lint_validate_apply_dry_run"
+    },
+    {
+      "packNumber": "02",
+      "packId": "local_course_p0_human_fill_pack_02",
+      "category": "manual_transcription",
+      "packStatus": "blank_human_fill_pack_ready",
+      "templateStatus": "pack_02_input_copy_blank",
+      "documentIds": [
+        "corpus_1580"
+      ],
+      "pageNumbers": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "taskIds": [
+        "absorb_manual_transcription_13",
+        "absorb_manual_transcription_14",
+        "absorb_manual_transcription_15",
+        "absorb_manual_transcription_16"
+      ],
+      "totalEntries": 4,
+      "blankReadyEntries": 4,
+      "filledEntries": 0,
+      "validationReadyEntries": 0,
+      "validationBlockedEntries": 4,
+      "lintReadyEntries": 0,
+      "lintBlockedEntries": 4,
+      "positiveFixtureReadyToApplyEntries": 4,
+      "positiveFixtureWrittenEntries": 0,
+      "inputCopyPath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_02_INPUT_COPY_TEMPLATE.json",
+      "packPath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_02.json",
+      "nextGate": "human_fill_then_lint_validate_apply_dry_run"
+    },
+    {
+      "packNumber": "03",
+      "packId": "local_course_p0_human_fill_pack_03",
+      "category": "manual_transcription",
+      "packStatus": "blank_human_fill_pack_ready",
+      "templateStatus": "pack_03_input_copy_blank",
+      "documentIds": [
+        "corpus_1580"
+      ],
+      "pageNumbers": [
+        9,
+        10,
+        11
+      ],
+      "taskIds": [
+        "absorb_manual_transcription_17",
+        "absorb_manual_transcription_18",
+        "absorb_manual_transcription_19"
+      ],
+      "totalEntries": 3,
+      "blankReadyEntries": 3,
+      "filledEntries": 0,
+      "validationReadyEntries": 0,
+      "validationBlockedEntries": 3,
+      "lintReadyEntries": 0,
+      "lintBlockedEntries": 3,
+      "positiveFixtureReadyToApplyEntries": 3,
+      "positiveFixtureWrittenEntries": 0,
+      "inputCopyPath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_03_INPUT_COPY_TEMPLATE.json",
+      "packPath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_03.json",
+      "nextGate": "human_fill_then_lint_validate_apply_dry_run"
+    },
+    {
+      "packNumber": "04",
+      "packId": "local_course_p0_human_fill_pack_04",
+      "category": "manual_transcription",
+      "packStatus": "blank_human_fill_pack_ready",
+      "templateStatus": "pack_04_input_copy_blank",
+      "documentIds": [
+        "corpus_1313"
+      ],
+      "pageNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "taskIds": [
+        "absorb_manual_transcription_01",
+        "absorb_manual_transcription_02",
+        "absorb_manual_transcription_03",
+        "absorb_manual_transcription_04"
+      ],
+      "totalEntries": 4,
+      "blankReadyEntries": 4,
+      "filledEntries": 0,
+      "validationReadyEntries": 0,
+      "validationBlockedEntries": 4,
+      "lintReadyEntries": 0,
+      "lintBlockedEntries": 4,
+      "positiveFixtureReadyToApplyEntries": 4,
+      "positiveFixtureWrittenEntries": 0,
+      "inputCopyPath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_04_INPUT_COPY_TEMPLATE.json",
+      "packPath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_04.json",
+      "nextGate": "human_fill_then_lint_validate_apply_dry_run"
+    },
+    {
+      "packNumber": "05",
+      "packId": "local_course_p0_human_fill_pack_05",
+      "category": "manual_transcription",
+      "packStatus": "blank_human_fill_pack_ready",
+      "templateStatus": "pack_05_input_copy_blank",
+      "documentIds": [
+        "corpus_1313"
+      ],
+      "pageNumbers": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "taskIds": [
+        "absorb_manual_transcription_05",
+        "absorb_manual_transcription_06",
+        "absorb_manual_transcription_07",
+        "absorb_manual_transcription_08"
+      ],
+      "totalEntries": 4,
+      "blankReadyEntries": 4,
+      "filledEntries": 0,
+      "validationReadyEntries": 0,
+      "validationBlockedEntries": 4,
+      "lintReadyEntries": 0,
+      "lintBlockedEntries": 4,
+      "positiveFixtureReadyToApplyEntries": 4,
+      "positiveFixtureWrittenEntries": 0,
+      "inputCopyPath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_05_INPUT_COPY_TEMPLATE.json",
+      "packPath": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_05.json",
+      "nextGate": "human_fill_then_lint_validate_apply_dry_run"
+    },
+    {
+      "packNumber": "source_replacement",
+      "packId": "local_course_p0_source_replacement_review_pack",
+      "category": "source_replacement",
+      "packStatus": "blank_source_replacement_review_pack_ready",
+      "templateStatus": "source_replacement_input_copy_blank",
+      "documentIds": [
+        "corpus_1329",
+        "corpus_1431",
+        "corpus_1577"
+      ],
+      "pageNumbers": [
+        1
+      ],
+      "taskIds": [
+        "absorb_source_replacement_01",
+        "absorb_source_replacement_02",
+        "absorb_source_replacement_03"
+      ],
+      "totalEntries": 3,
+      "blankReadyEntries": 3,
+      "filledEntries": 0,
+      "validationReadyEntries": 0,
+      "validationBlockedEntries": 3,
+      "lintReadyEntries": 0,
+      "lintBlockedEntries": 3,
+      "positiveFixtureReadyToApplyEntries": 3,
+      "positiveFixtureWrittenEntries": 0,
+      "inputCopyPath": "docs/LOCAL_COURSE_P0_SOURCE_REPLACEMENT_INPUT_COPY_TEMPLATE.json",
+      "packPath": "docs/LOCAL_COURSE_P0_SOURCE_REPLACEMENT_REVIEW_PACK.json",
+      "nextGate": "source_replacement_decision_then_lint_validate_apply_dry_run"
+    }
+  ],
+  "nextOperatorSteps": [
+    "Open the relevant input copy template for a pack.",
+    "Human reviewer fills only a copied file, never the blank template.",
+    "Run pack lint, generic P0 validation, and apply dry-run.",
+    "Do not run --write until dry-run output is inspected and explicitly authorized."
+  ],
+  "completionRule": "This operator index proves P0 review coverage, not P0 completion. P0 course absorption remains blocked until real human-reviewed input copies pass lint, validation, guarded apply, overlay checks, and downstream readiness gates.",
+  "boundary": "P0 review operator index is reviewer-only operational material. It does not write overlay changes, approve learner-facing release, infer missing private course content, provide trading advice, stock recommendations, live signals, return promises, broker workflows, automation, or real-money guidance."
+}

@@ -1,0 +1,195 @@
+{
+  "generatedAt": "2026-06-19T09:39:02.321Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "handoffReady": true,
+  "handoffMode": "day_zero_pre_write_handoff_only",
+  "realStatusPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "realStatusOverlayPresent": false,
+  "writeAllowedNow": false,
+  "manualDecisionRequired": true,
+  "humanAuthorizationRecorded": false,
+  "targetBatches": [
+    "rewrite_batch_01",
+    "rewrite_batch_05"
+  ],
+  "preWriteCommandRows": [
+    {
+      "order": 1,
+      "phase": "Open operator index",
+      "command": "npm.cmd run check:first-reviewer-operator-index",
+      "expectedState": "single_entrypoint_pre_write_only",
+      "hardStop": "Stop if index grants write permission, approval, release, launch, or production readiness."
+    },
+    {
+      "order": 2,
+      "phase": "Confirm frozen packet",
+      "command": "npm.cmd run check:first-reviewer-day-of-review-packet-freeze",
+      "expectedState": "freezeReady:true; frozenSteps:40",
+      "hardStop": "Stop if any step lacks input, expected output, failure route, or forbidden actions."
+    },
+    {
+      "order": 3,
+      "phase": "Run write readiness lock",
+      "command": "npm.cmd run check:first-reviewer-real-overlay-write-readiness-lock",
+      "expectedState": "writeAllowedNow:false; manualDecisionRequired:true",
+      "hardStop": "Stop if generated checks grant write permission."
+    },
+    {
+      "order": 4,
+      "phase": "Run authorization preview",
+      "command": "npm.cmd run check:first-reviewer-real-overlay-write-authorization-preview",
+      "expectedState": "humanAuthorizationRecorded:false; writeAllowedNow:false",
+      "hardStop": "Stop if preview is treated as human authorization."
+    },
+    {
+      "order": 5,
+      "phase": "Run initializer dry-run",
+      "command": "npm.cmd run init:first-reviewer-status-overlay:dry-run",
+      "expectedState": "mode:dry_run; wroteStatusOverlay:false; notesFilled:0",
+      "hardStop": "Stop if dry-run creates or fills the real overlay."
+    },
+    {
+      "order": 6,
+      "phase": "Run overwrite protection",
+      "command": "npm.cmd run check:first-reviewer-status-init-protection",
+      "expectedState": "3/3 protection cases passing",
+      "hardStop": "Stop if overwrite protection touches the real overlay or fails sentinel preservation."
+    },
+    {
+      "order": 7,
+      "phase": "Human-only write decision",
+      "command": "manual human action only",
+      "expectedState": "reviewer named; scope accepted; direct candidates understood; note fields blank",
+      "hardStop": "Stop if no human reviewer explicitly chooses to begin real note-taking."
+    },
+    {
+      "order": 8,
+      "phase": "Write command preview",
+      "command": "npm.cmd run init:first-reviewer-status-overlay:write",
+      "expectedState": "shown for later human use only; not authorized by this handoff",
+      "hardStop": "Stop unless the human-only write decision has actually happened."
+    }
+  ],
+  "futurePostWriteCommandRows": [
+    {
+      "order": 1,
+      "command": "npm.cmd run check:first-reviewer-real-overlay-preflight-summary",
+      "purpose": "Confirm write mode was intentionally reached through manual preflight.",
+      "failRoute": "Stop if writeAllowedNow is false and no explicit human decision exists.",
+      "stopIfFails": true
+    },
+    {
+      "order": 2,
+      "command": "npm.cmd run check:first-reviewer-real-overlay-diff-audit",
+      "purpose": "Inspect real overlay structure, filled fields, unsafe text, and copying-risk wording.",
+      "failRoute": "Fix structural or unsafe-note issues before any intake.",
+      "stopIfFails": true
+    },
+    {
+      "order": 3,
+      "command": "npm.cmd run check:reviewer-note-quality-lint",
+      "purpose": "Reject blank, generic, approving, readiness, trading, broker, automation, performance, or real-money notes.",
+      "failRoute": "Edit real notes; keep batches blocked until lint passes.",
+      "stopIfFails": true
+    },
+    {
+      "order": 4,
+      "command": "npm.cmd run check:first-reviewer-source-fit-notes-acceptance",
+      "purpose": "Validate direct-candidate sourceFitNotes contain decision, source role, claim, rewrite action, and no unsafe wording.",
+      "failRoute": "Downgrade, block, or rewrite sourceFitNotes before continuing.",
+      "stopIfFails": true
+    },
+    {
+      "order": 5,
+      "command": "npm.cmd run check:lesson-batch-completion",
+      "purpose": "Validate batch status shape and required-note completeness.",
+      "failRoute": "Keep incomplete batches not_started or in_progress.",
+      "stopIfFails": true
+    },
+    {
+      "order": 6,
+      "command": "npm.cmd run check:first-reviewer-evidence-intake-summary",
+      "purpose": "Summarize complete notes, blockers, direct-candidate status, and separate-approval candidates.",
+      "failRoute": "Treat intake as triage only, not approval.",
+      "stopIfFails": true
+    },
+    {
+      "order": 7,
+      "command": "npm.cmd run check:first-reviewer-separate-approval-review-gate",
+      "purpose": "Keep intake candidates behind a separate human approval review.",
+      "failRoute": "Reject auto-approval, learner-facing release, commercial-ready promotion, and production claims.",
+      "stopIfFails": true
+    },
+    {
+      "order": 8,
+      "command": "npm.cmd run check:first-reviewer-release-readiness-negative-cases",
+      "purpose": "Prove release/readiness drift remains rejected.",
+      "failRoute": "Fix drift before any broader curriculum checks.",
+      "stopIfFails": true
+    },
+    {
+      "order": 9,
+      "command": "npm.cmd run check:curriculum-review",
+      "purpose": "Run the full curriculum and reviewer gate chain.",
+      "failRoute": "Fix the failing gate without relaxing boundaries.",
+      "stopIfFails": true
+    },
+    {
+      "order": 10,
+      "command": "npm.cmd run check:knowledge-base",
+      "purpose": "Recheck knowledge-base, self-audit, and green grounding boundaries.",
+      "failRoute": "Do not promote generated drafts or weaken source boundaries.",
+      "stopIfFails": true
+    },
+    {
+      "order": 11,
+      "command": "npm.cmd run check:knowledge-browser",
+      "purpose": "Recheck learner-facing browser candidates remain review-tracked and source-grounded.",
+      "failRoute": "Block release if learner-facing risk expands.",
+      "stopIfFails": true
+    },
+    {
+      "order": 12,
+      "command": "temporary SQLite npm.cmd run verify",
+      "purpose": "Run full repo verification with TRADEGYM_SQLITE_PATH set to a temp file and clean it afterward.",
+      "failRoute": "Fix application verification failures before any next review phase.",
+      "stopIfFails": true
+    }
+  ],
+  "authorizationBlockers": [
+    "Reviewer identity: A real human reviewer must be named before write mode.",
+    "Direct candidates: Human must confirm, downgrade, or block each direct candidate in sourceFitNotes."
+  ],
+  "completeNoteCards": 0,
+  "approvalReviewCandidates": 0,
+  "confirmedDecisions": 0,
+  "internalTrialReady": false,
+  "launchReady": false,
+  "forbiddenActions": [
+    "Do not run write mode from this handoff alone.",
+    "Do not create or overwrite docs/LESSON_BATCH_REVIEW_STATUS.json without explicit human note-taking intent.",
+    "Do not treat generated prompts, examples, drills, checklists, freeze packets, authorization previews, or this handoff as real reviewer notes.",
+    "Do not confirm direct-candidate sources without human sourceFitNotes.",
+    "Do not approve lessons, publish learner-facing content, promote generated drafts to commercial_ready, mark internalTrialReady, mark launchReady, or set productionReady true.",
+    "Do not add buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+    "Do not use yellow, red, or research_only sources as learner-facing evidence."
+  ],
+  "sourceReports": {
+    "dryRunPacket": "docs/FIRST_REVIEWER_DRY_RUN_PACKET.json",
+    "progressDashboard": "docs/FIRST_REVIEWER_PROGRESS_DASHBOARD.json",
+    "humanExecutionBundle": "docs/FIRST_REVIEWER_HUMAN_EXECUTION_BUNDLE.json",
+    "operatorIndex": "docs/FIRST_REVIEWER_OPERATOR_INDEX.json",
+    "prewriteSampleDossier": "docs/FIRST_REVIEWER_PREWRITE_SAMPLE_DOSSIER.json",
+    "dayOfReviewPacketFreeze": "docs/FIRST_REVIEWER_DAY_OF_REVIEW_PACKET_FREEZE.json",
+    "writeReadinessLock": "docs/FIRST_REVIEWER_REAL_OVERLAY_WRITE_READINESS_LOCK.json",
+    "authorizationPreview": "docs/FIRST_REVIEWER_REAL_OVERLAY_WRITE_AUTHORIZATION_PREVIEW.json",
+    "postWriteCommandPack": "docs/FIRST_REVIEWER_POST_WRITE_COMMAND_PACK.json",
+    "initDryRun": "docs/LESSON_BATCH_REVIEW_STATUS_INIT_DRY_RUN.json",
+    "initProtection": "docs/LESSON_BATCH_REVIEW_STATUS_INIT_PROTECTION.json"
+  },
+  "boundary": "This day-zero write handoff is generated reviewer-facing operations scaffolding only. It does not authorize write mode, create docs/LESSON_BATCH_REVIEW_STATUS.json, fill human notes, confirm source use, approve lessons, publish learner-facing content, promote grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, guide real-money decisions, grant internal-trial readiness, launch the course, or make the product production-ready."
+}

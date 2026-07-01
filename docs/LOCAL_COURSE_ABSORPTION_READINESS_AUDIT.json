@@ -1,0 +1,116 @@
+{
+  "generatedAt": "2026-06-21T20:36:45.149Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "readinessStatus": "blocked_for_learner_facing_absorption",
+  "sourceRoot": "C:\\Users\\86136\\Desktop\\投资",
+  "importedUniquePdfFiles": 298,
+  "uniquePdfFiles": 298,
+  "localCourseDocuments": 298,
+  "localCourseChunks": 3314,
+  "matchedKnowledgeNodes": 360,
+  "readyForRewriteReviewNodes": 360,
+  "publicCorpusDocuments": 1196,
+  "wikipediaDocuments": 96,
+  "officialLikeDocuments": 202,
+  "publicReferenceReadyModules": 12,
+  "modules": 12,
+  "rewriteDrafts": 120,
+  "reviewerCandidates": 120,
+  "lowExtractionDocs": 5,
+  "manualTranscriptionPages": 19,
+  "sourceReplacementCandidates": 3,
+  "riskyLanguageDocs": 2,
+  "acceptedTranscriptPages": 0,
+  "openBlockers": 4,
+  "phaseRows": [
+    {
+      "id": "local_pdf_harvest",
+      "label": "Local PDF harvest",
+      "status": "complete_for_research_layer",
+      "evidence": "298/298 unique PDFs imported; 0 pending; 0 failed.",
+      "nextGate": "quality_review_and_rewrite"
+    },
+    {
+      "id": "knowledge_module_mapping",
+      "label": "Knowledge module mapping",
+      "status": "complete_for_rewrite_intake",
+      "evidence": "360/360 matched nodes rewrite-ready across local course evidence.",
+      "nextGate": "reviewer_refinement"
+    },
+    {
+      "id": "public_grounding",
+      "label": "Public source grounding",
+      "status": "public_reference_ready_for_all_modules",
+      "evidence": "12/12 modules public-reference-ready; 96 Wikipedia docs; 202 official-like docs.",
+      "nextGate": "source_fit_review"
+    },
+    {
+      "id": "local_rewrite_batches",
+      "label": "Local-course rewrite batches",
+      "status": "screened_for_separate_review",
+      "evidence": "120 drafts; 120 ready candidates; copy risks 0; safety issues 0.",
+      "nextGate": "human_reviewer_approval"
+    },
+    {
+      "id": "low_extraction_recovery",
+      "label": "Low-extraction recovery",
+      "status": "blocked",
+      "evidence": "0/22 pages accepted; 19 manual pages; 3 replacement pages.",
+      "nextGate": "human_transcription_and_source_replacement"
+    },
+    {
+      "id": "learner_facing_release",
+      "label": "Learner-facing release",
+      "status": "not_approved",
+      "evidence": "Refinement approval=not_approved; source quality approval=not_approved; public source approval=not_approved.",
+      "nextGate": "separate_human_approval_required"
+    }
+  ],
+  "blockers": [
+    {
+      "id": "manual_transcription_pages",
+      "label": "Visible low-extraction pages still need human transcription",
+      "count": 19,
+      "status": "blocked",
+      "nextAction": "Fill human transcription and summaries, then rerun source-fit, public-grounding, and originality review."
+    },
+    {
+      "id": "blank_source_replacement_pages",
+      "label": "Blank-preview source pages need source replacement or re-export",
+      "count": 3,
+      "status": "blocked",
+      "nextAction": "Locate original PDFs or cleaner exports, replace/re-export, and regenerate harvest, quality, visual review, and intake reports."
+    },
+    {
+      "id": "risky_language_docs",
+      "label": "Risky-language local PDFs require reviewer handling",
+      "count": 2,
+      "status": "review_required",
+      "nextAction": "Ensure risky phrasing is paraphrased into education-only wording with no advice, signals, or performance claims."
+    },
+    {
+      "id": "reviewer_refinement_candidates",
+      "label": "Local-course assisted drafts still need reviewer refinement and approval",
+      "count": 120,
+      "status": "blocked",
+      "nextAction": "Complete reviewer refinement notes, separate approval, source-fit decisions, and release gate before learner-facing use."
+    }
+  ],
+  "sourceReports": {
+    "harvest": "docs/LOCAL_INVESTMENT_COURSE_HARVEST_REPORT.json",
+    "coverage": "docs/LOCAL_COURSE_KNOWLEDGE_COVERAGE.json",
+    "sourceQuality": "docs/LOCAL_COURSE_SOURCE_QUALITY_AUDIT.json",
+    "publicSourceGap": "docs/PUBLIC_SOURCE_GAP_AUDIT.json",
+    "rewriteBatchIndex": "docs/LOCAL_COURSE_REWRITE_BATCH_INDEX.json",
+    "rewriteReview": "docs/LOCAL_COURSE_REWRITE_REVIEW_REPORT.json",
+    "refinementPacket": "docs/LOCAL_COURSE_REFINEMENT_PACKET.json",
+    "transcriptIntake": "docs/LOCAL_COURSE_LOW_EXTRACTION_TRANSCRIPT_INTAKE.json",
+    "manualTranscriptionPack": "docs/LOCAL_COURSE_LOW_EXTRACTION_MANUAL_TRANSCRIPTION_PACK.json",
+    "sourceReplacementPack": "docs/LOCAL_COURSE_LOW_EXTRACTION_SOURCE_REPLACEMENT_PACK.json"
+  },
+  "completionRule": "All local PDFs and public materials can be considered absorbed into learner-facing course knowledge only after low-extraction pages are transcribed or replaced, reviewer refinement is approved, risky-language handling is cleared, public grounding/source-fit review passes, and learnerFacingRelease remains explicitly gated until approval.",
+  "boundary": "Local course absorption readiness audit is an internal education-only self-audit. It separates research-layer ingestion from learner-facing course release and does not approve trading advice, stock recommendations, live signals, return promises, broker workflows, automation, or real-money guidance."
+}

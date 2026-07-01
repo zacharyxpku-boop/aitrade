@@ -1,0 +1,1535 @@
+{
+  "generatedAt": "2026-06-22T01:22:58.134Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "dossierStatus": "module_review_dossier_ready_for_internal_navigation_release_blocked",
+  "dossierMode": "module_browser_packet_for_local_course_absorption_review",
+  "sourceRoot": "C:\\Users\\86136\\Desktop\\投资",
+  "modules": 12,
+  "researchLayerReadyModules": 12,
+  "rowsWithCoursePath": 12,
+  "rowsWithPublicEvidenceSamples": 12,
+  "rowsWithEntryNodes": 12,
+  "rowsWithHighRiskBlockers": 4,
+  "highRiskPreviewRows": 12,
+  "highRiskPreviewReleaseBlockers": 12,
+  "highRiskPreviewLearnerCitationApproved": 0,
+  "learnerReleaseReadyModules": 0,
+  "localCourseDocuments": 298,
+  "localCourseChunks": 3314,
+  "matchedKnowledgeNodes": 360,
+  "readyForRewriteReviewNodes": 360,
+  "publicCorpusDocuments": 1196,
+  "wikipediaDocuments": 96,
+  "officialLikeDocuments": 202,
+  "curriculumPaths": 12,
+  "totalPathLessons": 360,
+  "p0SourceFitHandoffStatus": "p0_real_reviewer_source_fit_handoff_ready_blocked_on_real_input",
+  "p0SourceFitRealReadyRows": 0,
+  "p0SourceFitRealBlockedRows": 22,
+  "p0SourceFitFixtureReadyRows": 22,
+  "writeAuthorizationStatus": "write_authorization_preview_ready_manual_required",
+  "writeAllowedNow": false,
+  "realHumanInputEntries": 0,
+  "manualAuthorizationRequired": true,
+  "globalReleaseBlockers": [
+    {
+      "id": "p0_real_human_review_missing",
+      "count": 22,
+      "status": "blocked",
+      "nextGate": "fill_real_reviewer_input_copy_then_validate_lint_and_dry_run"
+    },
+    {
+      "id": "manual_transcription_pages",
+      "count": 19,
+      "status": "blocked",
+      "nextGate": "human_transcription_then_source_fit_public_grounding_originality_review"
+    },
+    {
+      "id": "source_replacement_candidates",
+      "count": 3,
+      "status": "blocked",
+      "nextGate": "reviewer_selects_replacement_or_unrecoverable_marker_then_rerun_audits"
+    },
+    {
+      "id": "high_risk_release_blocking_lessons",
+      "count": 12,
+      "status": "blocked",
+      "nextGate": "human_public_grounding_review_then_separate_release_approval"
+    },
+    {
+      "id": "reviewer_refinement_candidates",
+      "count": 120,
+      "status": "blocked",
+      "nextGate": "reviewer_refinement_and_separate_approval"
+    }
+  ],
+  "moduleRows": [
+    {
+      "moduleId": "module-6",
+      "browserModuleId": "module-6",
+      "module": "图表阅读基础",
+      "expectedDomain": "chart_price_action",
+      "topics": [
+        "结构先行",
+        "价格位置",
+        "收盘确认",
+        "影线含义",
+        "波动变化"
+      ],
+      "entryNodeIds": [
+        "knv2_0001",
+        "knv2_0013",
+        "knv2_0025",
+        "knv2_0037",
+        "knv2_0049",
+        "knv2_0061",
+        "knv2_0073",
+        "knv2_0085"
+      ],
+      "learnerFacingNodes": 30,
+      "localCourseDocuments": 9,
+      "nodesWithLocalCourseMatches": 30,
+      "readyForRewriteReview": 30,
+      "localCoverageRate": 1,
+      "publicEvidenceDocs": 550,
+      "wikipediaEvidenceDocs": 49,
+      "officialLikeEvidenceDocs": 18,
+      "uniqueHosts": 4,
+      "publicEvidenceSamples": [
+        {
+          "documentId": "corpus_0313",
+          "sourceId": "arxiv:2507.01971v1",
+          "name": "DeepSupp: Attention-Driven Correlation Pattern Analysis for Dynamic Time Series Support and Resistance Levels Identification",
+          "url": "https://arxiv.org/abs/2507.01971v1",
+          "family": "Open Research",
+          "tier": "open_access",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0408",
+          "sourceId": "wikipedia:564701",
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "tier": "share_alike",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1588",
+          "sourceId": "wikipedia:32033902",
+          "name": "Wikipedia: Price action trading",
+          "url": "https://en.wikipedia.org/wiki/Price_action_trading",
+          "family": "Wikipedia",
+          "tier": "share_alike",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ],
+      "coursePath": {
+        "pathId": "path_1",
+        "lessonCount": 30,
+        "unitCount": 3,
+        "estimatedMinutes": 240,
+        "entryLessonId": "lesson_knv2_0001",
+        "finalLessonId": ""
+      },
+      "rewriteDrafts": 10,
+      "localResearchReady": true,
+      "publicReferenceReady": true,
+      "rewriteDraftReady": true,
+      "researchLayerStatus": "research_layer_absorbed_pending_review",
+      "highRiskLessons": 0,
+      "highRiskReleaseBlockers": 0,
+      "highRiskLessonPreview": [],
+      "directSourceCandidates": 0,
+      "learnerReleaseReady": false,
+      "reviewStatus": "module_review_ready_refinement_blocked",
+      "nextReviewerAction": "review rewrite drafts, source-fit notes, originality, and separate release approval",
+      "boundary": "Reviewer-facing module dossier only; public evidence samples are grounding candidates, not learner-facing citation approval or trading guidance."
+    },
+    {
+      "moduleId": "module-4",
+      "browserModuleId": "module-4",
+      "module": "市场结构",
+      "expectedDomain": "chart_price_action",
+      "topics": [
+        "高低点",
+        "结构延续",
+        "结构破坏",
+        "关键区域",
+        "价格接受"
+      ],
+      "entryNodeIds": [
+        "knv2_0002",
+        "knv2_0014",
+        "knv2_0026",
+        "knv2_0038",
+        "knv2_0050",
+        "knv2_0062",
+        "knv2_0074",
+        "knv2_0086"
+      ],
+      "learnerFacingNodes": 30,
+      "localCourseDocuments": 6,
+      "nodesWithLocalCourseMatches": 30,
+      "readyForRewriteReview": 30,
+      "localCoverageRate": 1,
+      "publicEvidenceDocs": 482,
+      "wikipediaEvidenceDocs": 45,
+      "officialLikeEvidenceDocs": 24,
+      "uniqueHosts": 3,
+      "publicEvidenceSamples": [
+        {
+          "documentId": "corpus_0630",
+          "sourceId": "arxiv:1012.0349v4",
+          "name": "Limit Order Books",
+          "url": "https://arxiv.org/abs/1012.0349v4",
+          "family": "Open Research",
+          "tier": "open_access",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0834",
+          "sourceId": "arxiv:1709.02502v4",
+          "name": "Testing if the market microstructure noise is fully explained by the informational content of some variables from the limit order book",
+          "url": "https://arxiv.org/abs/1709.02502v4",
+          "family": "Open Research",
+          "tier": "open_access",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0625",
+          "sourceId": "arxiv:2604.20949v1",
+          "name": "Early Detection of Latent Microstructure Regimes in Limit Order Books",
+          "url": "https://arxiv.org/abs/2604.20949v1",
+          "family": "Open Research",
+          "tier": "open_access",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "coursePath": {
+        "pathId": "path_2",
+        "lessonCount": 30,
+        "unitCount": 3,
+        "estimatedMinutes": 240,
+        "entryLessonId": "lesson_knv2_0002",
+        "finalLessonId": ""
+      },
+      "rewriteDrafts": 10,
+      "localResearchReady": true,
+      "publicReferenceReady": true,
+      "rewriteDraftReady": true,
+      "researchLayerStatus": "research_layer_absorbed_pending_review",
+      "highRiskLessons": 4,
+      "highRiskReleaseBlockers": 4,
+      "highRiskLessonPreview": [
+        {
+          "candidateId": "local_course_rewrite_batch_01_03",
+          "nodeId": "knv2_0002",
+          "lessonId": "lesson_knv2_0002",
+          "topic": "高低点",
+          "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+          "wikipediaRefCount": 4,
+          "publicContextRefCount": 2,
+          "selectedPublicRefCount": 6,
+          "learnerCitationApproved": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved",
+          "releaseBlocker": true,
+          "nextGate": "human_public_grounding_review_then_originality_and_release_gate",
+          "firstWikipediaRefs": [
+            {
+              "name": "Wikipedia: High-frequency trading",
+              "url": "https://en.wikipedia.org/wiki/High-frequency_trading",
+              "excerptPolicy": "attribution_and_share_alike_required"
+            },
+            {
+              "name": "Wikipedia: Support and resistance",
+              "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+              "excerptPolicy": "attribution_and_share_alike_required"
+            }
+          ],
+          "firstPublicContextRefs": [
+            {
+              "name": "Limit Order Books",
+              "url": "https://arxiv.org/abs/1012.0349v4",
+              "excerptPolicy": "pointer_or_quote_only_after_license_review"
+            },
+            {
+              "name": "Testing if the market microstructure noise is fully explained by the informational content of some variables from the limit order book",
+              "url": "https://arxiv.org/abs/1709.02502v4",
+              "excerptPolicy": "pointer_or_quote_only_after_license_review"
+            }
+          ]
+        },
+        {
+          "candidateId": "local_course_rewrite_batch_01_04",
+          "nodeId": "knv2_0062",
+          "lessonId": "lesson_knv2_0062",
+          "topic": "高低点",
+          "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+          "wikipediaRefCount": 4,
+          "publicContextRefCount": 2,
+          "selectedPublicRefCount": 6,
+          "learnerCitationApproved": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved",
+          "releaseBlocker": true,
+          "nextGate": "human_public_grounding_review_then_originality_and_release_gate",
+          "firstWikipediaRefs": [
+            {
+              "name": "Wikipedia: High-frequency trading",
+              "url": "https://en.wikipedia.org/wiki/High-frequency_trading",
+              "excerptPolicy": "attribution_and_share_alike_required"
+            },
+            {
+              "name": "Wikipedia: Support and resistance",
+              "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+              "excerptPolicy": "attribution_and_share_alike_required"
+            }
+          ],
+          "firstPublicContextRefs": [
+            {
+              "name": "Limit Order Books",
+              "url": "https://arxiv.org/abs/1012.0349v4",
+              "excerptPolicy": "pointer_or_quote_only_after_license_review"
+            },
+            {
+              "name": "Testing if the market microstructure noise is fully explained by the informational content of some variables from the limit order book",
+              "url": "https://arxiv.org/abs/1709.02502v4",
+              "excerptPolicy": "pointer_or_quote_only_after_license_review"
+            }
+          ]
+        },
+        {
+          "candidateId": "local_course_rewrite_batch_02_03",
+          "nodeId": "knv2_0122",
+          "lessonId": "lesson_knv2_0122",
+          "topic": "高低点",
+          "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+          "wikipediaRefCount": 4,
+          "publicContextRefCount": 2,
+          "selectedPublicRefCount": 6,
+          "learnerCitationApproved": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved",
+          "releaseBlocker": true,
+          "nextGate": "human_public_grounding_review_then_originality_and_release_gate",
+          "firstWikipediaRefs": [
+            {
+              "name": "Wikipedia: High-frequency trading",
+              "url": "https://en.wikipedia.org/wiki/High-frequency_trading",
+              "excerptPolicy": "attribution_and_share_alike_required"
+            },
+            {
+              "name": "Wikipedia: Support and resistance",
+              "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+              "excerptPolicy": "attribution_and_share_alike_required"
+            }
+          ],
+          "firstPublicContextRefs": [
+            {
+              "name": "Limit Order Books",
+              "url": "https://arxiv.org/abs/1012.0349v4",
+              "excerptPolicy": "pointer_or_quote_only_after_license_review"
+            },
+            {
+              "name": "Testing if the market microstructure noise is fully explained by the informational content of some variables from the limit order book",
+              "url": "https://arxiv.org/abs/1709.02502v4",
+              "excerptPolicy": "pointer_or_quote_only_after_license_review"
+            }
+          ]
+        },
+        {
+          "candidateId": "local_course_rewrite_batch_02_04",
+          "nodeId": "knv2_0182",
+          "lessonId": "lesson_knv2_0182",
+          "topic": "高低点",
+          "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+          "wikipediaRefCount": 4,
+          "publicContextRefCount": 2,
+          "selectedPublicRefCount": 6,
+          "learnerCitationApproved": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved",
+          "releaseBlocker": true,
+          "nextGate": "human_public_grounding_review_then_originality_and_release_gate",
+          "firstWikipediaRefs": [
+            {
+              "name": "Wikipedia: High-frequency trading",
+              "url": "https://en.wikipedia.org/wiki/High-frequency_trading",
+              "excerptPolicy": "attribution_and_share_alike_required"
+            },
+            {
+              "name": "Wikipedia: Support and resistance",
+              "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+              "excerptPolicy": "attribution_and_share_alike_required"
+            }
+          ],
+          "firstPublicContextRefs": [
+            {
+              "name": "Limit Order Books",
+              "url": "https://arxiv.org/abs/1012.0349v4",
+              "excerptPolicy": "pointer_or_quote_only_after_license_review"
+            },
+            {
+              "name": "Testing if the market microstructure noise is fully explained by the informational content of some variables from the limit order book",
+              "url": "https://arxiv.org/abs/1709.02502v4",
+              "excerptPolicy": "pointer_or_quote_only_after_license_review"
+            }
+          ]
+        }
+      ],
+      "directSourceCandidates": 2,
+      "learnerReleaseReady": false,
+      "reviewStatus": "module_review_ready_high_risk_release_blocked",
+      "nextReviewerAction": "review high-risk public grounding, source-fit notes, originality, and separate release approval",
+      "boundary": "Reviewer-facing module dossier only; public evidence samples are grounding candidates, not learner-facing citation approval or trading guidance."
+    },
+    {
+      "moduleId": "k",
+      "browserModuleId": "k",
+      "module": "K线与价格行为",
+      "expectedDomain": "chart_price_action",
+      "topics": [
+        "单根K线误区",
+        "组合K线",
+        "流动性扫过",
+        "形态语境",
+        "行为证据"
+      ],
+      "entryNodeIds": [
+        "knv2_0003",
+        "knv2_0015",
+        "knv2_0027",
+        "knv2_0039",
+        "knv2_0051",
+        "knv2_0063",
+        "knv2_0075",
+        "knv2_0087"
+      ],
+      "learnerFacingNodes": 30,
+      "localCourseDocuments": 6,
+      "nodesWithLocalCourseMatches": 30,
+      "readyForRewriteReview": 30,
+      "localCoverageRate": 1,
+      "publicEvidenceDocs": 54,
+      "wikipediaEvidenceDocs": 11,
+      "officialLikeEvidenceDocs": 0,
+      "uniqueHosts": 4,
+      "publicEvidenceSamples": [
+        {
+          "documentId": "corpus_0406",
+          "sourceId": "wikipedia:27866580",
+          "name": "Wikipedia: Candlestick pattern",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_pattern",
+          "family": "Wikipedia",
+          "tier": "share_alike",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0301",
+          "sourceId": "arxiv:2604.12659v1",
+          "name": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+          "url": "https://arxiv.org/abs/2604.12659v1",
+          "family": "Open Research",
+          "tier": "open_access",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "family": "Wikipedia",
+          "tier": "share_alike",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ],
+      "coursePath": {
+        "pathId": "path_3",
+        "lessonCount": 30,
+        "unitCount": 3,
+        "estimatedMinutes": 240,
+        "entryLessonId": "lesson_knv2_0003",
+        "finalLessonId": ""
+      },
+      "rewriteDrafts": 10,
+      "localResearchReady": true,
+      "publicReferenceReady": true,
+      "rewriteDraftReady": true,
+      "researchLayerStatus": "research_layer_absorbed_pending_review",
+      "highRiskLessons": 0,
+      "highRiskReleaseBlockers": 0,
+      "highRiskLessonPreview": [],
+      "directSourceCandidates": 0,
+      "learnerReleaseReady": false,
+      "reviewStatus": "module_review_ready_refinement_blocked",
+      "nextReviewerAction": "review rewrite drafts, source-fit notes, originality, and separate release approval",
+      "boundary": "Reviewer-facing module dossier only; public evidence samples are grounding candidates, not learner-facing citation approval or trading guidance."
+    },
+    {
+      "moduleId": "module-2",
+      "browserModuleId": "module-2",
+      "module": "趋势",
+      "expectedDomain": "chart_price_action",
+      "topics": [
+        "趋势定义",
+        "趋势回调",
+        "趋势加速",
+        "趋势衰竭",
+        "趋势中继"
+      ],
+      "entryNodeIds": [
+        "knv2_0004",
+        "knv2_0016",
+        "knv2_0028",
+        "knv2_0040",
+        "knv2_0052",
+        "knv2_0064",
+        "knv2_0076",
+        "knv2_0088"
+      ],
+      "learnerFacingNodes": 30,
+      "localCourseDocuments": 9,
+      "nodesWithLocalCourseMatches": 30,
+      "readyForRewriteReview": 30,
+      "localCoverageRate": 1,
+      "publicEvidenceDocs": 192,
+      "wikipediaEvidenceDocs": 29,
+      "officialLikeEvidenceDocs": 1,
+      "uniqueHosts": 3,
+      "publicEvidenceSamples": [
+        {
+          "documentId": "corpus_1583",
+          "sourceId": "wikipedia:112577",
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "tier": "share_alike",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1142",
+          "sourceId": "arxiv:2601.19504v1",
+          "name": "Generating Alpha: A Hybrid AI-Driven Trading System Integrating Technical Analysis, Machine Learning and Financial Sentiment for Regime-Adaptive Equity Strategies",
+          "url": "https://arxiv.org/abs/2601.19504v1",
+          "family": "Open Research",
+          "tier": "open_access",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0377",
+          "sourceId": "arxiv:1402.3030v2",
+          "name": "Information ratio analysis of momentum strategies",
+          "url": "https://arxiv.org/abs/1402.3030v2",
+          "family": "Open Research",
+          "tier": "open_access",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "coursePath": {
+        "pathId": "path_4",
+        "lessonCount": 30,
+        "unitCount": 3,
+        "estimatedMinutes": 240,
+        "entryLessonId": "lesson_knv2_0004",
+        "finalLessonId": ""
+      },
+      "rewriteDrafts": 10,
+      "localResearchReady": true,
+      "publicReferenceReady": true,
+      "rewriteDraftReady": true,
+      "researchLayerStatus": "research_layer_absorbed_pending_review",
+      "highRiskLessons": 2,
+      "highRiskReleaseBlockers": 2,
+      "highRiskLessonPreview": [
+        {
+          "candidateId": "local_course_rewrite_batch_01_07",
+          "nodeId": "knv2_0016",
+          "lessonId": "lesson_knv2_0016",
+          "topic": "趋势回调",
+          "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+          "wikipediaRefCount": 4,
+          "publicContextRefCount": 2,
+          "selectedPublicRefCount": 6,
+          "learnerCitationApproved": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved",
+          "releaseBlocker": true,
+          "nextGate": "human_public_grounding_review_then_originality_and_release_gate",
+          "firstWikipediaRefs": [
+            {
+              "name": "Wikipedia: Technical analysis",
+              "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+              "excerptPolicy": "attribution_and_share_alike_required"
+            },
+            {
+              "name": "Wikipedia: Dow theory",
+              "url": "https://en.wikipedia.org/wiki/Dow_theory",
+              "excerptPolicy": "attribution_and_share_alike_required"
+            }
+          ],
+          "firstPublicContextRefs": [
+            {
+              "name": "Generating Alpha: A Hybrid AI-Driven Trading System Integrating Technical Analysis, Machine Learning and Financial Sentiment for Regime-Adaptive Equity Strategies",
+              "url": "https://arxiv.org/abs/2601.19504v1",
+              "excerptPolicy": "pointer_or_quote_only_after_license_review"
+            },
+            {
+              "name": "Information ratio analysis of momentum strategies",
+              "url": "https://arxiv.org/abs/1402.3030v2",
+              "excerptPolicy": "pointer_or_quote_only_after_license_review"
+            }
+          ]
+        },
+        {
+          "candidateId": "local_course_rewrite_batch_01_08",
+          "nodeId": "knv2_0076",
+          "lessonId": "lesson_knv2_0076",
+          "topic": "趋势回调",
+          "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+          "wikipediaRefCount": 4,
+          "publicContextRefCount": 2,
+          "selectedPublicRefCount": 6,
+          "learnerCitationApproved": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved",
+          "releaseBlocker": true,
+          "nextGate": "human_public_grounding_review_then_originality_and_release_gate",
+          "firstWikipediaRefs": [
+            {
+              "name": "Wikipedia: Technical analysis",
+              "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+              "excerptPolicy": "attribution_and_share_alike_required"
+            },
+            {
+              "name": "Wikipedia: Dow theory",
+              "url": "https://en.wikipedia.org/wiki/Dow_theory",
+              "excerptPolicy": "attribution_and_share_alike_required"
+            }
+          ],
+          "firstPublicContextRefs": [
+            {
+              "name": "Generating Alpha: A Hybrid AI-Driven Trading System Integrating Technical Analysis, Machine Learning and Financial Sentiment for Regime-Adaptive Equity Strategies",
+              "url": "https://arxiv.org/abs/2601.19504v1",
+              "excerptPolicy": "pointer_or_quote_only_after_license_review"
+            },
+            {
+              "name": "Information ratio analysis of momentum strategies",
+              "url": "https://arxiv.org/abs/1402.3030v2",
+              "excerptPolicy": "pointer_or_quote_only_after_license_review"
+            }
+          ]
+        }
+      ],
+      "directSourceCandidates": 1,
+      "learnerReleaseReady": false,
+      "reviewStatus": "module_review_ready_high_risk_release_blocked",
+      "nextReviewerAction": "review high-risk public grounding, source-fit notes, originality, and separate release approval",
+      "boundary": "Reviewer-facing module dossier only; public evidence samples are grounding candidates, not learner-facing citation approval or trading guidance."
+    },
+    {
+      "moduleId": "module-2",
+      "browserModuleId": "module-2",
+      "module": "突破",
+      "expectedDomain": "chart_price_action",
+      "topics": [
+        "突破前压缩",
+        "有效突破",
+        "假突破",
+        "突破回踩",
+        "突破失败"
+      ],
+      "entryNodeIds": [
+        "knv2_0005",
+        "knv2_0017",
+        "knv2_0029",
+        "knv2_0041",
+        "knv2_0053",
+        "knv2_0065",
+        "knv2_0077",
+        "knv2_0089"
+      ],
+      "learnerFacingNodes": 30,
+      "localCourseDocuments": 6,
+      "nodesWithLocalCourseMatches": 30,
+      "readyForRewriteReview": 30,
+      "localCoverageRate": 1,
+      "publicEvidenceDocs": 497,
+      "wikipediaEvidenceDocs": 37,
+      "officialLikeEvidenceDocs": 6,
+      "uniqueHosts": 3,
+      "publicEvidenceSamples": [
+        {
+          "documentId": "corpus_0408",
+          "sourceId": "wikipedia:564701",
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "tier": "share_alike",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0313",
+          "sourceId": "arxiv:2507.01971v1",
+          "name": "DeepSupp: Attention-Driven Correlation Pattern Analysis for Dynamic Time Series Support and Resistance Levels Identification",
+          "url": "https://arxiv.org/abs/2507.01971v1",
+          "family": "Open Research",
+          "tier": "open_access",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0312",
+          "sourceId": "arxiv:2101.07410v1",
+          "name": "Evidence and Behaviour of Support and Resistance Levels in Financial Time Series",
+          "url": "https://arxiv.org/abs/2101.07410v1",
+          "family": "Open Research",
+          "tier": "open_access",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "coursePath": {
+        "pathId": "path_5",
+        "lessonCount": 30,
+        "unitCount": 3,
+        "estimatedMinutes": 240,
+        "entryLessonId": "lesson_knv2_0005",
+        "finalLessonId": ""
+      },
+      "rewriteDrafts": 10,
+      "localResearchReady": true,
+      "publicReferenceReady": true,
+      "rewriteDraftReady": true,
+      "researchLayerStatus": "research_layer_absorbed_pending_review",
+      "highRiskLessons": 4,
+      "highRiskReleaseBlockers": 4,
+      "highRiskLessonPreview": [
+        {
+          "candidateId": "local_course_rewrite_batch_04_10",
+          "nodeId": "knv2_0029",
+          "lessonId": "lesson_knv2_0029",
+          "topic": "假突破",
+          "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+          "wikipediaRefCount": 4,
+          "publicContextRefCount": 2,
+          "selectedPublicRefCount": 6,
+          "learnerCitationApproved": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved",
+          "releaseBlocker": true,
+          "nextGate": "human_public_grounding_review_then_originality_and_release_gate",
+          "firstWikipediaRefs": [
+            {
+              "name": "Wikipedia: Support and resistance",
+              "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+              "excerptPolicy": "attribution_and_share_alike_required"
+            },
+            {
+              "name": "Wikipedia: Technical analysis",
+              "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+              "excerptPolicy": "attribution_and_share_alike_required"
+            }
+          ],
+          "firstPublicContextRefs": [
+            {
+              "name": "DeepSupp: Attention-Driven Correlation Pattern Analysis for Dynamic Time Series Support and Resistance Levels Identification",
+              "url": "https://arxiv.org/abs/2507.01971v1",
+              "excerptPolicy": "pointer_or_quote_only_after_license_review"
+            },
+            {
+              "name": "Evidence and Behaviour of Support and Resistance Levels in Financial Time Series",
+              "url": "https://arxiv.org/abs/2101.07410v1",
+              "excerptPolicy": "pointer_or_quote_only_after_license_review"
+            }
+          ]
+        },
+        {
+          "candidateId": "local_course_rewrite_batch_05_10",
+          "nodeId": "knv2_0089",
+          "lessonId": "lesson_knv2_0089",
+          "topic": "假突破",
+          "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+          "wikipediaRefCount": 4,
+          "publicContextRefCount": 2,
+          "selectedPublicRefCount": 6,
+          "learnerCitationApproved": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved",
+          "releaseBlocker": true,
+          "nextGate": "human_public_grounding_review_then_originality_and_release_gate",
+          "firstWikipediaRefs": [
+            {
+              "name": "Wikipedia: Support and resistance",
+              "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+              "excerptPolicy": "attribution_and_share_alike_required"
+            },
+            {
+              "name": "Wikipedia: Technical analysis",
+              "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+              "excerptPolicy": "attribution_and_share_alike_required"
+            }
+          ],
+          "firstPublicContextRefs": [
+            {
+              "name": "DeepSupp: Attention-Driven Correlation Pattern Analysis for Dynamic Time Series Support and Resistance Levels Identification",
+              "url": "https://arxiv.org/abs/2507.01971v1",
+              "excerptPolicy": "pointer_or_quote_only_after_license_review"
+            },
+            {
+              "name": "Evidence and Behaviour of Support and Resistance Levels in Financial Time Series",
+              "url": "https://arxiv.org/abs/2101.07410v1",
+              "excerptPolicy": "pointer_or_quote_only_after_license_review"
+            }
+          ]
+        },
+        {
+          "candidateId": "local_course_rewrite_batch_01_09",
+          "nodeId": "knv2_0053",
+          "lessonId": "lesson_knv2_0053",
+          "topic": "突破失败",
+          "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+          "wikipediaRefCount": 4,
+          "publicContextRefCount": 2,
+          "selectedPublicRefCount": 6,
+          "learnerCitationApproved": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved",
+          "releaseBlocker": true,
+          "nextGate": "human_public_grounding_review_then_originality_and_release_gate",
+          "firstWikipediaRefs": [
+            {
+              "name": "Wikipedia: Support and resistance",
+              "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+              "excerptPolicy": "attribution_and_share_alike_required"
+            },
+            {
+              "name": "Wikipedia: Technical analysis",
+              "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+              "excerptPolicy": "attribution_and_share_alike_required"
+            }
+          ],
+          "firstPublicContextRefs": [
+            {
+              "name": "DeepSupp: Attention-Driven Correlation Pattern Analysis for Dynamic Time Series Support and Resistance Levels Identification",
+              "url": "https://arxiv.org/abs/2507.01971v1",
+              "excerptPolicy": "pointer_or_quote_only_after_license_review"
+            },
+            {
+              "name": "Evidence and Behaviour of Support and Resistance Levels in Financial Time Series",
+              "url": "https://arxiv.org/abs/2101.07410v1",
+              "excerptPolicy": "pointer_or_quote_only_after_license_review"
+            }
+          ]
+        },
+        {
+          "candidateId": "local_course_rewrite_batch_01_10",
+          "nodeId": "knv2_0113",
+          "lessonId": "lesson_knv2_0113",
+          "topic": "突破失败",
+          "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+          "wikipediaRefCount": 4,
+          "publicContextRefCount": 2,
+          "selectedPublicRefCount": 6,
+          "learnerCitationApproved": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved",
+          "releaseBlocker": true,
+          "nextGate": "human_public_grounding_review_then_originality_and_release_gate",
+          "firstWikipediaRefs": [
+            {
+              "name": "Wikipedia: Support and resistance",
+              "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+              "excerptPolicy": "attribution_and_share_alike_required"
+            },
+            {
+              "name": "Wikipedia: Technical analysis",
+              "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+              "excerptPolicy": "attribution_and_share_alike_required"
+            }
+          ],
+          "firstPublicContextRefs": [
+            {
+              "name": "DeepSupp: Attention-Driven Correlation Pattern Analysis for Dynamic Time Series Support and Resistance Levels Identification",
+              "url": "https://arxiv.org/abs/2507.01971v1",
+              "excerptPolicy": "pointer_or_quote_only_after_license_review"
+            },
+            {
+              "name": "Evidence and Behaviour of Support and Resistance Levels in Financial Time Series",
+              "url": "https://arxiv.org/abs/2101.07410v1",
+              "excerptPolicy": "pointer_or_quote_only_after_license_review"
+            }
+          ]
+        }
+      ],
+      "directSourceCandidates": 2,
+      "learnerReleaseReady": false,
+      "reviewStatus": "module_review_ready_high_risk_release_blocked",
+      "nextReviewerAction": "review high-risk public grounding, source-fit notes, originality, and separate release approval",
+      "boundary": "Reviewer-facing module dossier only; public evidence samples are grounding candidates, not learner-facing citation approval or trading guidance."
+    },
+    {
+      "moduleId": "module-4",
+      "browserModuleId": "module-4",
+      "module": "交易区间",
+      "expectedDomain": "chart_price_action",
+      "topics": [
+        "区间上沿",
+        "区间下沿",
+        "区间中部",
+        "区间轮动",
+        "区间突破"
+      ],
+      "entryNodeIds": [
+        "knv2_0006",
+        "knv2_0018",
+        "knv2_0030",
+        "knv2_0042",
+        "knv2_0054",
+        "knv2_0066",
+        "knv2_0078",
+        "knv2_0090"
+      ],
+      "learnerFacingNodes": 30,
+      "localCourseDocuments": 6,
+      "nodesWithLocalCourseMatches": 30,
+      "readyForRewriteReview": 30,
+      "localCoverageRate": 1,
+      "publicEvidenceDocs": 211,
+      "wikipediaEvidenceDocs": 24,
+      "officialLikeEvidenceDocs": 3,
+      "uniqueHosts": 3,
+      "publicEvidenceSamples": [
+        {
+          "documentId": "corpus_0312",
+          "sourceId": "arxiv:2101.07410v1",
+          "name": "Evidence and Behaviour of Support and Resistance Levels in Financial Time Series",
+          "url": "https://arxiv.org/abs/2101.07410v1",
+          "family": "Open Research",
+          "tier": "open_access",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0314",
+          "sourceId": "arxiv:2103.02331v2",
+          "name": "The Support and Resistance Line Method: An Analysis via Optimal Stopping",
+          "url": "https://arxiv.org/abs/2103.02331v2",
+          "family": "Open Research",
+          "tier": "open_access",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0313",
+          "sourceId": "arxiv:2507.01971v1",
+          "name": "DeepSupp: Attention-Driven Correlation Pattern Analysis for Dynamic Time Series Support and Resistance Levels Identification",
+          "url": "https://arxiv.org/abs/2507.01971v1",
+          "family": "Open Research",
+          "tier": "open_access",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "coursePath": {
+        "pathId": "path_6",
+        "lessonCount": 30,
+        "unitCount": 3,
+        "estimatedMinutes": 240,
+        "entryLessonId": "lesson_knv2_0006",
+        "finalLessonId": ""
+      },
+      "rewriteDrafts": 10,
+      "localResearchReady": true,
+      "publicReferenceReady": true,
+      "rewriteDraftReady": true,
+      "researchLayerStatus": "research_layer_absorbed_pending_review",
+      "highRiskLessons": 0,
+      "highRiskReleaseBlockers": 0,
+      "highRiskLessonPreview": [],
+      "directSourceCandidates": 0,
+      "learnerReleaseReady": false,
+      "reviewStatus": "module_review_ready_refinement_blocked",
+      "nextReviewerAction": "review rewrite drafts, source-fit notes, originality, and separate release approval",
+      "boundary": "Reviewer-facing module dossier only; public evidence samples are grounding candidates, not learner-facing citation approval or trading guidance."
+    },
+    {
+      "moduleId": "module-2",
+      "browserModuleId": "module-2",
+      "module": "反转",
+      "expectedDomain": "chart_price_action",
+      "topics": [
+        "反转定义",
+        "衰竭证据",
+        "双顶双底",
+        "回调混淆",
+        "反转失败"
+      ],
+      "entryNodeIds": [
+        "knv2_0007",
+        "knv2_0019",
+        "knv2_0031",
+        "knv2_0043",
+        "knv2_0055",
+        "knv2_0067",
+        "knv2_0079",
+        "knv2_0091"
+      ],
+      "learnerFacingNodes": 30,
+      "localCourseDocuments": 7,
+      "nodesWithLocalCourseMatches": 30,
+      "readyForRewriteReview": 30,
+      "localCoverageRate": 1,
+      "publicEvidenceDocs": 31,
+      "wikipediaEvidenceDocs": 10,
+      "officialLikeEvidenceDocs": 1,
+      "uniqueHosts": 5,
+      "publicEvidenceSamples": [
+        {
+          "documentId": "corpus_0411",
+          "sourceId": "wikipedia:23469024",
+          "name": "Wikipedia: Double top and double bottom",
+          "url": "https://en.wikipedia.org/wiki/Double_top_and_double_bottom",
+          "family": "Wikipedia",
+          "tier": "share_alike",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "family": "Wikipedia",
+          "tier": "share_alike",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0410",
+          "sourceId": "wikipedia:16363792",
+          "name": "Wikipedia: Head and shoulders (chart pattern)",
+          "url": "https://en.wikipedia.org/wiki/Head_and_shoulders_(chart_pattern)",
+          "family": "Wikipedia",
+          "tier": "share_alike",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ],
+      "coursePath": {
+        "pathId": "path_7",
+        "lessonCount": 30,
+        "unitCount": 3,
+        "estimatedMinutes": 240,
+        "entryLessonId": "lesson_knv2_0007",
+        "finalLessonId": ""
+      },
+      "rewriteDrafts": 10,
+      "localResearchReady": true,
+      "publicReferenceReady": true,
+      "rewriteDraftReady": true,
+      "researchLayerStatus": "research_layer_absorbed_pending_review",
+      "highRiskLessons": 2,
+      "highRiskReleaseBlockers": 2,
+      "highRiskLessonPreview": [
+        {
+          "candidateId": "local_course_rewrite_batch_01_13",
+          "nodeId": "knv2_0055",
+          "lessonId": "lesson_knv2_0055",
+          "topic": "反转失败",
+          "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+          "wikipediaRefCount": 4,
+          "publicContextRefCount": 2,
+          "selectedPublicRefCount": 6,
+          "learnerCitationApproved": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved",
+          "releaseBlocker": true,
+          "nextGate": "human_public_grounding_review_then_originality_and_release_gate",
+          "firstWikipediaRefs": [
+            {
+              "name": "Wikipedia: Double top and double bottom",
+              "url": "https://en.wikipedia.org/wiki/Double_top_and_double_bottom",
+              "excerptPolicy": "attribution_and_share_alike_required"
+            },
+            {
+              "name": "Wikipedia: Chart pattern",
+              "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+              "excerptPolicy": "attribution_and_share_alike_required"
+            }
+          ],
+          "firstPublicContextRefs": [
+            {
+              "name": "Stock Chart Pattern recognition with Deep Learning",
+              "url": "https://arxiv.org/abs/1808.00418v1",
+              "excerptPolicy": "pointer_or_quote_only_after_license_review"
+            },
+            {
+              "name": "learn-crypto-trading/learn-crypto-trading.github.io README",
+              "url": "https://github.com/learn-crypto-trading/learn-crypto-trading.github.io",
+              "excerptPolicy": "cite_and_paraphrase_for_original_lesson"
+            }
+          ]
+        },
+        {
+          "candidateId": "local_course_rewrite_batch_01_14",
+          "nodeId": "knv2_0115",
+          "lessonId": "lesson_knv2_0115",
+          "topic": "反转失败",
+          "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+          "wikipediaRefCount": 4,
+          "publicContextRefCount": 2,
+          "selectedPublicRefCount": 6,
+          "learnerCitationApproved": false,
+          "learnerFacingRelease": false,
+          "approvalStatus": "not_approved",
+          "releaseBlocker": true,
+          "nextGate": "human_public_grounding_review_then_originality_and_release_gate",
+          "firstWikipediaRefs": [
+            {
+              "name": "Wikipedia: Double top and double bottom",
+              "url": "https://en.wikipedia.org/wiki/Double_top_and_double_bottom",
+              "excerptPolicy": "attribution_and_share_alike_required"
+            },
+            {
+              "name": "Wikipedia: Chart pattern",
+              "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+              "excerptPolicy": "attribution_and_share_alike_required"
+            }
+          ],
+          "firstPublicContextRefs": [
+            {
+              "name": "Stock Chart Pattern recognition with Deep Learning",
+              "url": "https://arxiv.org/abs/1808.00418v1",
+              "excerptPolicy": "pointer_or_quote_only_after_license_review"
+            },
+            {
+              "name": "learn-crypto-trading/learn-crypto-trading.github.io README",
+              "url": "https://github.com/learn-crypto-trading/learn-crypto-trading.github.io",
+              "excerptPolicy": "cite_and_paraphrase_for_original_lesson"
+            }
+          ]
+        }
+      ],
+      "directSourceCandidates": 0,
+      "learnerReleaseReady": false,
+      "reviewStatus": "module_review_ready_high_risk_release_blocked",
+      "nextReviewerAction": "review high-risk public grounding, source-fit notes, originality, and separate release approval",
+      "boundary": "Reviewer-facing module dossier only; public evidence samples are grounding candidates, not learner-facing citation approval or trading guidance."
+    },
+    {
+      "moduleId": "module-5",
+      "browserModuleId": "module-5",
+      "module": "多周期分析",
+      "expectedDomain": "indicator_pattern_taxonomy",
+      "topics": [
+        "D1背景",
+        "H4结构",
+        "H1节奏",
+        "M15细节",
+        "周期冲突"
+      ],
+      "entryNodeIds": [
+        "knv2_0008",
+        "knv2_0020",
+        "knv2_0032",
+        "knv2_0044",
+        "knv2_0056",
+        "knv2_0068",
+        "knv2_0080",
+        "knv2_0092"
+      ],
+      "learnerFacingNodes": 30,
+      "localCourseDocuments": 7,
+      "nodesWithLocalCourseMatches": 30,
+      "readyForRewriteReview": 30,
+      "localCoverageRate": 1,
+      "publicEvidenceDocs": 214,
+      "wikipediaEvidenceDocs": 34,
+      "officialLikeEvidenceDocs": 3,
+      "uniqueHosts": 4,
+      "publicEvidenceSamples": [
+        {
+          "documentId": "corpus_0299",
+          "sourceId": "arxiv:2501.12239v1",
+          "name": "Investigating Market Strength Prediction with CNNs on Candlestick Chart Images",
+          "url": "https://arxiv.org/abs/2501.12239v1",
+          "family": "Open Research",
+          "tier": "open_access",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_1133",
+          "sourceId": "arxiv:2410.06935v2",
+          "name": "Predicting Market Trends with Enhanced Technical Indicator Integration and Classification Models",
+          "url": "https://arxiv.org/abs/2410.06935v2",
+          "family": "Open Research",
+          "tier": "open_access",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_1583",
+          "sourceId": "wikipedia:112577",
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "tier": "share_alike",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ],
+      "coursePath": {
+        "pathId": "path_8",
+        "lessonCount": 30,
+        "unitCount": 3,
+        "estimatedMinutes": 240,
+        "entryLessonId": "lesson_knv2_0008",
+        "finalLessonId": ""
+      },
+      "rewriteDrafts": 10,
+      "localResearchReady": true,
+      "publicReferenceReady": true,
+      "rewriteDraftReady": true,
+      "researchLayerStatus": "research_layer_absorbed_pending_review",
+      "highRiskLessons": 0,
+      "highRiskReleaseBlockers": 0,
+      "highRiskLessonPreview": [],
+      "directSourceCandidates": 0,
+      "learnerReleaseReady": false,
+      "reviewStatus": "module_review_ready_refinement_blocked",
+      "nextReviewerAction": "review rewrite drafts, source-fit notes, originality, and separate release approval",
+      "boundary": "Reviewer-facing module dossier only; public evidence samples are grounding candidates, not learner-facing citation approval or trading guidance."
+    },
+    {
+      "moduleId": "module-10",
+      "browserModuleId": "module-10",
+      "module": "新闻/情绪/事件偏见",
+      "expectedDomain": "news_sentiment_events",
+      "topics": [
+        "标题偏见",
+        "事件时间",
+        "情绪极端",
+        "叙事滞后",
+        "单源偏差"
+      ],
+      "entryNodeIds": [
+        "knv2_0009",
+        "knv2_0021",
+        "knv2_0033",
+        "knv2_0045",
+        "knv2_0057",
+        "knv2_0069",
+        "knv2_0081",
+        "knv2_0093"
+      ],
+      "learnerFacingNodes": 30,
+      "localCourseDocuments": 6,
+      "nodesWithLocalCourseMatches": 30,
+      "readyForRewriteReview": 30,
+      "localCoverageRate": 1,
+      "publicEvidenceDocs": 35,
+      "wikipediaEvidenceDocs": 8,
+      "officialLikeEvidenceDocs": 0,
+      "uniqueHosts": 3,
+      "publicEvidenceSamples": [
+        {
+          "documentId": "corpus_0425",
+          "sourceId": "wikipedia:2852956",
+          "name": "Wikipedia: Market sentiment",
+          "url": "https://en.wikipedia.org/wiki/Market_sentiment",
+          "family": "Wikipedia",
+          "tier": "share_alike",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0430",
+          "sourceId": "wikipedia:21118575",
+          "name": "Wikipedia: News analytics",
+          "url": "https://en.wikipedia.org/wiki/News_analytics",
+          "family": "Wikipedia",
+          "tier": "share_alike",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0255",
+          "sourceId": "arxiv:2404.00012v1",
+          "name": "Stress index strategy enhanced with financial news sentiment analysis for the equity markets",
+          "url": "https://arxiv.org/abs/2404.00012v1",
+          "family": "Open Research",
+          "tier": "open_access",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "coursePath": {
+        "pathId": "path_9",
+        "lessonCount": 30,
+        "unitCount": 3,
+        "estimatedMinutes": 240,
+        "entryLessonId": "lesson_knv2_0009",
+        "finalLessonId": ""
+      },
+      "rewriteDrafts": 10,
+      "localResearchReady": true,
+      "publicReferenceReady": true,
+      "rewriteDraftReady": true,
+      "researchLayerStatus": "research_layer_absorbed_pending_review",
+      "highRiskLessons": 0,
+      "highRiskReleaseBlockers": 0,
+      "highRiskLessonPreview": [],
+      "directSourceCandidates": 0,
+      "learnerReleaseReady": false,
+      "reviewStatus": "module_review_ready_refinement_blocked",
+      "nextReviewerAction": "review rewrite drafts, source-fit notes, originality, and separate release approval",
+      "boundary": "Reviewer-facing module dossier only; public evidence samples are grounding candidates, not learner-facing citation approval or trading guidance."
+    },
+    {
+      "moduleId": "module-4",
+      "browserModuleId": "module-4",
+      "module": "回测误区",
+      "expectedDomain": "backtesting_research_hygiene",
+      "topics": [
+        "偷看未来",
+        "样本太少",
+        "过拟合",
+        "成本忽略",
+        "指标误用"
+      ],
+      "entryNodeIds": [
+        "knv2_0010",
+        "knv2_0022",
+        "knv2_0034",
+        "knv2_0046",
+        "knv2_0058",
+        "knv2_0070",
+        "knv2_0082",
+        "knv2_0094"
+      ],
+      "learnerFacingNodes": 30,
+      "localCourseDocuments": 6,
+      "nodesWithLocalCourseMatches": 30,
+      "readyForRewriteReview": 30,
+      "localCoverageRate": 1,
+      "publicEvidenceDocs": 164,
+      "wikipediaEvidenceDocs": 7,
+      "officialLikeEvidenceDocs": 0,
+      "uniqueHosts": 3,
+      "publicEvidenceSamples": [
+        {
+          "documentId": "corpus_0209",
+          "sourceId": "arxiv:1905.05023v1",
+          "name": "Avoiding Backtesting Overfitting by Covariance-Penalties: an empirical investigation of the ordinary and total least squares cases",
+          "url": "https://arxiv.org/abs/1905.05023v1",
+          "family": "Open Research",
+          "tier": "open_access",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0288",
+          "sourceId": "arxiv:2412.18405v1",
+          "name": "Generalized Mean Absolute Directional Loss as a Solution to Overfitting and High Transaction Costs in Machine Learning Models Used in High-Frequency Algorithmic Investment Strategies",
+          "url": "https://arxiv.org/abs/2412.18405v1",
+          "family": "Open Research",
+          "tier": "open_access",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0933",
+          "sourceId": "github:Viprasol-Tech/backtesting-python",
+          "name": "Viprasol-Tech/backtesting-python README",
+          "url": "https://github.com/Viprasol-Tech/backtesting-python",
+          "family": "Permissive/Open Source",
+          "tier": "permissive",
+          "excerptPolicy": "cite_and_paraphrase_for_original_lesson"
+        }
+      ],
+      "coursePath": {
+        "pathId": "path_10",
+        "lessonCount": 30,
+        "unitCount": 3,
+        "estimatedMinutes": 240,
+        "entryLessonId": "lesson_knv2_0010",
+        "finalLessonId": ""
+      },
+      "rewriteDrafts": 10,
+      "localResearchReady": true,
+      "publicReferenceReady": true,
+      "rewriteDraftReady": true,
+      "researchLayerStatus": "research_layer_absorbed_pending_review",
+      "highRiskLessons": 0,
+      "highRiskReleaseBlockers": 0,
+      "highRiskLessonPreview": [],
+      "directSourceCandidates": 0,
+      "learnerReleaseReady": false,
+      "reviewStatus": "module_review_ready_refinement_blocked",
+      "nextReviewerAction": "review rewrite drafts, source-fit notes, originality, and separate release approval",
+      "boundary": "Reviewer-facing module dossier only; public evidence samples are grounding candidates, not learner-facing citation approval or trading guidance."
+    },
+    {
+      "moduleId": "module-4",
+      "browserModuleId": "module-4",
+      "module": "风险管理",
+      "expectedDomain": "risk_portfolio",
+      "topics": [
+        "失效条件",
+        "不行动条件",
+        "不确定性",
+        "可复盘计划",
+        "边界语言"
+      ],
+      "entryNodeIds": [
+        "knv2_0011",
+        "knv2_0023",
+        "knv2_0035",
+        "knv2_0047",
+        "knv2_0059",
+        "knv2_0071",
+        "knv2_0083",
+        "knv2_0095"
+      ],
+      "learnerFacingNodes": 30,
+      "localCourseDocuments": 8,
+      "nodesWithLocalCourseMatches": 30,
+      "readyForRewriteReview": 30,
+      "localCoverageRate": 1,
+      "publicEvidenceDocs": 311,
+      "wikipediaEvidenceDocs": 17,
+      "officialLikeEvidenceDocs": 13,
+      "uniqueHosts": 4,
+      "publicEvidenceSamples": [
+        {
+          "documentId": "corpus_1132",
+          "sourceId": "arxiv:2412.15448v2",
+          "name": "Risk-Adjusted Performance of Random Forest Models in High-Frequency Trading",
+          "url": "https://arxiv.org/abs/2412.15448v2",
+          "family": "Open Research",
+          "tier": "open_access",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0796",
+          "sourceId": "arxiv:2404.18029v2",
+          "name": "Value-at-Risk- and Expectile-based Systemic Risk Measures and Second-order Asymptotics: With Applications to Diversification",
+          "url": "https://arxiv.org/abs/2404.18029v2",
+          "family": "Open Research",
+          "tier": "open_access",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0458",
+          "sourceId": "wikipedia:1376839",
+          "name": "Wikipedia: Leverage (finance)",
+          "url": "https://en.wikipedia.org/wiki/Leverage_(finance)",
+          "family": "Wikipedia",
+          "tier": "share_alike",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ],
+      "coursePath": {
+        "pathId": "path_11",
+        "lessonCount": 30,
+        "unitCount": 3,
+        "estimatedMinutes": 240,
+        "entryLessonId": "lesson_knv2_0011",
+        "finalLessonId": ""
+      },
+      "rewriteDrafts": 10,
+      "localResearchReady": true,
+      "publicReferenceReady": true,
+      "rewriteDraftReady": true,
+      "researchLayerStatus": "research_layer_absorbed_pending_review",
+      "highRiskLessons": 0,
+      "highRiskReleaseBlockers": 0,
+      "highRiskLessonPreview": [],
+      "directSourceCandidates": 0,
+      "learnerReleaseReady": false,
+      "reviewStatus": "module_review_ready_refinement_blocked",
+      "nextReviewerAction": "review rewrite drafts, source-fit notes, originality, and separate release approval",
+      "boundary": "Reviewer-facing module dossier only; public evidence samples are grounding candidates, not learner-facing citation approval or trading guidance."
+    },
+    {
+      "moduleId": "module-4",
+      "browserModuleId": "module-4",
+      "module": "交易心理",
+      "expectedDomain": "psychology_behavior",
+      "topics": [
+        "害怕错过",
+        "确认偏误",
+        "过度自信",
+        "情绪修正",
+        "结果导向"
+      ],
+      "entryNodeIds": [
+        "knv2_0012",
+        "knv2_0024",
+        "knv2_0036",
+        "knv2_0048",
+        "knv2_0060",
+        "knv2_0072",
+        "knv2_0084",
+        "knv2_0096"
+      ],
+      "learnerFacingNodes": 30,
+      "localCourseDocuments": 5,
+      "nodesWithLocalCourseMatches": 30,
+      "readyForRewriteReview": 30,
+      "localCoverageRate": 1,
+      "publicEvidenceDocs": 19,
+      "wikipediaEvidenceDocs": 10,
+      "officialLikeEvidenceDocs": 0,
+      "uniqueHosts": 3,
+      "publicEvidenceSamples": [
+        {
+          "documentId": "corpus_0459",
+          "sourceId": "wikipedia:177698",
+          "name": "Wikipedia: Behavioral economics",
+          "url": "https://en.wikipedia.org/wiki/Behavioral_economics",
+          "family": "Wikipedia",
+          "tier": "share_alike",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0460",
+          "sourceId": "wikipedia:197284",
+          "name": "Wikipedia: Prospect theory",
+          "url": "https://en.wikipedia.org/wiki/Prospect_theory",
+          "family": "Wikipedia",
+          "tier": "share_alike",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0462",
+          "sourceId": "wikipedia:59160",
+          "name": "Wikipedia: Confirmation bias",
+          "url": "https://en.wikipedia.org/wiki/Confirmation_bias",
+          "family": "Wikipedia",
+          "tier": "share_alike",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ],
+      "coursePath": {
+        "pathId": "path_12",
+        "lessonCount": 30,
+        "unitCount": 3,
+        "estimatedMinutes": 240,
+        "entryLessonId": "lesson_knv2_0012",
+        "finalLessonId": ""
+      },
+      "rewriteDrafts": 10,
+      "localResearchReady": true,
+      "publicReferenceReady": true,
+      "rewriteDraftReady": true,
+      "researchLayerStatus": "research_layer_absorbed_pending_review",
+      "highRiskLessons": 0,
+      "highRiskReleaseBlockers": 0,
+      "highRiskLessonPreview": [],
+      "directSourceCandidates": 0,
+      "learnerReleaseReady": false,
+      "reviewStatus": "module_review_ready_refinement_blocked",
+      "nextReviewerAction": "review rewrite drafts, source-fit notes, originality, and separate release approval",
+      "boundary": "Reviewer-facing module dossier only; public evidence samples are grounding candidates, not learner-facing citation approval or trading guidance."
+    }
+  ],
+  "commands": [
+    "npm.cmd run check:local-course-module-review-dossier",
+    "npm.cmd run check:local-course-module-absorption-self-audit",
+    "npm.cmd run check:local-course-p0-real-reviewer-source-fit-handoff",
+    "npm.cmd run check:local-course-p0-write-authorization-preview"
+  ],
+  "completionRule": "This dossier proves module-level internal navigation readiness for reviewer work only. It does not prove learner-facing release, real source-fit review completion, or write authorization.",
+  "boundary": "Module review dossier is reviewer-facing education-only governance. It combines local private course coverage, public/Wikipedia grounding candidates, curriculum paths, and review gates; it does not make private PDFs public citations, approve learner-facing release, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, or production readiness."
+}

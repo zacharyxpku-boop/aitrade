@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-06-19T09:47:07.023Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "drillReady": true,
+  "temporaryBatchId": "rewrite_batch_01",
+  "temporaryLessonCards": 6,
+  "completionReadyBatches": 1,
+  "intakeCompleteNoteCards": 6,
+  "intakeApprovalCandidates": 6,
+  "separateApprovalCandidates": 6,
+  "releaseGuardCases": 8,
+  "releaseGuardPassedCases": 8,
+  "releaseGuardFailedCases": 0,
+  "autoApprovedLessons": 0,
+  "learnerFacingReleaseCandidates": 0,
+  "commercialReadyPromotions": 0,
+  "productionReadyClaims": 0,
+  "internalTrialReady": false,
+  "launchReady": false,
+  "realStatusOverlayTouched": false,
+  "requiredNoteFields": [
+    "originalRewriteNotes",
+    "sourceFitNotes",
+    "factCheckNotes",
+    "boundaryCheckNotes",
+    "copyingRiskNotes",
+    "humanReviewerInitials"
+  ],
+  "validatedFlow": [
+    "Temporary overlay simulates a future post-write state with all six required note fields filled for one batch.",
+    "Completion audit accepts the batch as ready_for_separate_human_approval_review.",
+    "Evidence intake counts complete notes as candidate-only rows.",
+    "Separate approval gate converts intake rows into approval-review candidates only.",
+    "Release readiness negative cases still reject approval, learner-facing release, commercial-ready promotion, and production-ready drift with candidates present.",
+    "Internal trial, launch, and production readiness remain false.",
+    "Real docs/LESSON_BATCH_REVIEW_STATUS.json remains absent."
+  ],
+  "hardStops": [
+    "Approval-review candidates are not approvals.",
+    "Complete reviewer notes are not learner-facing release evidence.",
+    "No generated drill can promote a lesson to commercial_ready.",
+    "No generated drill can set internalTrialReady, launchReady, or productionReady true.",
+    "No generated drill can replace a separate human approval review."
+  ],
+  "sourceReports": {
+    "filledNotesControl": "docs/FIRST_REVIEWER_FILLED_NOTES_POSITIVE_CONTROL_V2.json",
+    "completionAudit": "C:\\Users\\86136\\AppData\\Local\\Temp\\tradegym-post-write-approval-drill-uidQ8H\\completion.json",
+    "evidenceIntakeSummary": "C:\\Users\\86136\\AppData\\Local\\Temp\\tradegym-post-write-approval-drill-uidQ8H\\intake.json",
+    "separateApprovalGate": "C:\\Users\\86136\\AppData\\Local\\Temp\\tradegym-post-write-approval-drill-uidQ8H\\approval.json",
+    "releaseNegativeCases": "C:\\Users\\86136\\AppData\\Local\\Temp\\tradegym-post-write-approval-drill-uidQ8H\\release.json"
+  },
+  "boundary": "This post-write approval drill uses temporary files only. It does not create real reviewer notes, approve lessons, publish learner-facing content, change grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, guide real-money decisions, grant internal-trial readiness, launch the course, or make the product production-ready."
+}

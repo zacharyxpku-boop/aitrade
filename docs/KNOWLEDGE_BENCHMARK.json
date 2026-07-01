@@ -1,0 +1,430 @@
+{
+  "generatedAt": "2026-06-12T17:10:45.508Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "questions": 50,
+  "anyHitRate": 1,
+  "domainHitRate": 1,
+  "perDomainHitRate": {
+    "chart_price_action": 1,
+    "indicator_pattern_taxonomy": 1,
+    "backtesting_research_hygiene": 1,
+    "risk_portfolio": 1,
+    "psychology_behavior": 1,
+    "news_sentiment_events": 1,
+    "macro_economic_data": 1,
+    "market_data_api_boundary": 1,
+    "exchange_microstructure": 1,
+    "open_source_tooling": 1
+  },
+  "retrievalPoolChunks": 63525,
+  "qualityTierCounts": {
+    "high": 57950,
+    "medium": 5575,
+    "low_noise": 42
+  },
+  "boundary": "Benchmark measures evidence retrieval coverage for education content review. It is not a trading-performance metric and not a production-readiness claim.",
+  "weakDomains": [],
+  "results": [
+    {
+      "domain": "chart_price_action",
+      "query": "how to identify support and resistance levels on a price chart",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 41.669
+    },
+    {
+      "domain": "chart_price_action",
+      "query": "what does a candlestick wick rejection mean",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 19.504
+    },
+    {
+      "domain": "chart_price_action",
+      "query": "how to read swing highs and swing lows for trend structure",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 40.973
+    },
+    {
+      "domain": "chart_price_action",
+      "query": "what is a breakout retest in price action",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 25.16
+    },
+    {
+      "domain": "chart_price_action",
+      "query": "how do chart patterns form and why do they fail",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 33.596
+    },
+    {
+      "domain": "indicator_pattern_taxonomy",
+      "query": "how does a moving average smooth price data",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 32.677
+    },
+    {
+      "domain": "indicator_pattern_taxonomy",
+      "query": "what does RSI overbought mean and what are its limits",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 27.441
+    },
+    {
+      "domain": "indicator_pattern_taxonomy",
+      "query": "MACD signal line crossover interpretation",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 45.297
+    },
+    {
+      "domain": "indicator_pattern_taxonomy",
+      "query": "difference between momentum and trend indicators",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 30.231
+    },
+    {
+      "domain": "indicator_pattern_taxonomy",
+      "query": "why do volatility indicators like bollinger bands expand",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 44.787
+    },
+    {
+      "domain": "backtesting_research_hygiene",
+      "query": "what is backtest overfitting and how to detect it",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 30.094
+    },
+    {
+      "domain": "backtesting_research_hygiene",
+      "query": "look-ahead bias in trading strategy research",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 37.758
+    },
+    {
+      "domain": "backtesting_research_hygiene",
+      "query": "survivorship bias effect on historical returns",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 35.234
+    },
+    {
+      "domain": "backtesting_research_hygiene",
+      "query": "walk-forward validation for trading strategies",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 32.254
+    },
+    {
+      "domain": "backtesting_research_hygiene",
+      "query": "why multiple testing inflates sharpe ratios",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 28.795
+    },
+    {
+      "domain": "risk_portfolio",
+      "query": "position sizing and risk per trade",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 31.266
+    },
+    {
+      "domain": "risk_portfolio",
+      "query": "maximum drawdown and recovery analysis",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 28.194
+    },
+    {
+      "domain": "risk_portfolio",
+      "query": "diversification limits in a portfolio",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 21.471
+    },
+    {
+      "domain": "risk_portfolio",
+      "query": "margin requirements and leverage risk",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 26.913
+    },
+    {
+      "domain": "risk_portfolio",
+      "query": "value at risk limitations",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 18.18
+    },
+    {
+      "domain": "psychology_behavior",
+      "query": "loss aversion in investor decisions",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 26.113
+    },
+    {
+      "domain": "psychology_behavior",
+      "query": "overconfidence bias in trading",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 21.213
+    },
+    {
+      "domain": "psychology_behavior",
+      "query": "herding behavior in financial markets",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 30.337
+    },
+    {
+      "domain": "psychology_behavior",
+      "query": "how fraudsters exploit investor emotions",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 31.054
+    },
+    {
+      "domain": "psychology_behavior",
+      "query": "confirmation bias when reviewing trades",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 25.164
+    },
+    {
+      "domain": "news_sentiment_events",
+      "query": "news sentiment analysis for markets",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 28.788
+    },
+    {
+      "domain": "news_sentiment_events",
+      "query": "earnings announcement market reaction",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 24.528
+    },
+    {
+      "domain": "news_sentiment_events",
+      "query": "event study methodology for price impact",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 27.854
+    },
+    {
+      "domain": "news_sentiment_events",
+      "query": "social media sentiment and stock prices",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 32.227
+    },
+    {
+      "domain": "news_sentiment_events",
+      "query": "headline overreaction and reversal",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 18.161
+    },
+    {
+      "domain": "macro_economic_data",
+      "query": "how CPI inflation data affects markets",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 31.012
+    },
+    {
+      "domain": "macro_economic_data",
+      "query": "federal reserve monetary policy decisions",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 42.644
+    },
+    {
+      "domain": "macro_economic_data",
+      "query": "unemployment report and payroll data",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 29.316
+    },
+    {
+      "domain": "macro_economic_data",
+      "query": "treasury yield curve inversion meaning",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 36.475
+    },
+    {
+      "domain": "macro_economic_data",
+      "query": "GDP growth data release impact",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 30.917
+    },
+    {
+      "domain": "market_data_api_boundary",
+      "query": "market data API terms of use and redistribution",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 33.17
+    },
+    {
+      "domain": "market_data_api_boundary",
+      "query": "rate limits on financial data feeds",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 24.43
+    },
+    {
+      "domain": "market_data_api_boundary",
+      "query": "license requirements for market data",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 22.479
+    },
+    {
+      "domain": "market_data_api_boundary",
+      "query": "subscription tiers for data products",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 21.004
+    },
+    {
+      "domain": "market_data_api_boundary",
+      "query": "data vendor usage boundaries",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 16.076
+    },
+    {
+      "domain": "exchange_microstructure",
+      "query": "limit order book depth and liquidity",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 36.684
+    },
+    {
+      "domain": "exchange_microstructure",
+      "query": "bid-ask spread and market maker role",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 41.242
+    },
+    {
+      "domain": "exchange_microstructure",
+      "query": "futures contract settlement and clearing",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 35.353
+    },
+    {
+      "domain": "exchange_microstructure",
+      "query": "opening and closing auction mechanics",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 29.98
+    },
+    {
+      "domain": "exchange_microstructure",
+      "query": "options exercise and assignment process",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 25.41
+    },
+    {
+      "domain": "open_source_tooling",
+      "query": "python library for backtesting strategies",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 39.158
+    },
+    {
+      "domain": "open_source_tooling",
+      "query": "open source technical analysis framework",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 28.362
+    },
+    {
+      "domain": "open_source_tooling",
+      "query": "algorithm implementation for indicators",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 18.229
+    },
+    {
+      "domain": "open_source_tooling",
+      "query": "repository structure for trading research code",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 38.661
+    },
+    {
+      "domain": "open_source_tooling",
+      "query": "data pipeline code for market analysis",
+      "retrieved": 5,
+      "domainHit": true,
+      "anyHit": true,
+      "topScore": 26.849
+    }
+  ]
+}

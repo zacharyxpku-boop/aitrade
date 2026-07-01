@@ -1,0 +1,84 @@
+{
+  "generatedAt": "2026-06-21T19:04:41.792Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "subtopics": 51,
+  "minChunksPerSubtopic": 30,
+  "coveredSubtopics": 51,
+  "coverageRate": 1,
+  "holes": [],
+  "matrix": {
+    "chart_price_action": {
+      "candlestick_basics": 706,
+      "chart_patterns": 373,
+      "support_resistance": 3410,
+      "trend_structure": 426,
+      "volume_price": 8946,
+      "breakouts_failures": 291,
+      "tape_reading_classics": 1944
+    },
+    "indicator_pattern_taxonomy": {
+      "moving_averages": 22304,
+      "oscillators": 10406,
+      "volatility_indicators": 3531,
+      "indicator_pitfalls": 528
+    },
+    "backtesting_research_hygiene": {
+      "bias_types": 488,
+      "overfitting_validation": 2269,
+      "performance_metrics": 1820,
+      "costs_and_frictions": 3334,
+      "data_quality": 137
+    },
+    "risk_portfolio": {
+      "position_sizing": 546,
+      "drawdown_recovery": 1187,
+      "risk_measures": 1787,
+      "diversification_mpt": 3228,
+      "leverage_margin": 3455,
+      "hedging": 2216
+    },
+    "psychology_behavior": {
+      "cognitive_biases": 178,
+      "loss_emotion": 2062,
+      "herd_social": 1360,
+      "fraud_protection": 1420,
+      "behavioral_theory": 527
+    },
+    "news_sentiment_events": {
+      "sentiment_measurement": 453,
+      "event_studies": 224,
+      "emh_anomalies": 968,
+      "media_effects": 5348
+    },
+    "macro_economic_data": {
+      "inflation_prices": 2970,
+      "employment": 259,
+      "monetary_policy": 743,
+      "rates_yield_curve": 1747,
+      "growth_cycle": 461
+    },
+    "market_data_api_boundary": {
+      "licensing_terms": 1047,
+      "api_access": 10499,
+      "redistribution_rights": 59,
+      "vendors_products": 1035
+    },
+    "exchange_microstructure": {
+      "orders_books": 2345,
+      "liquidity_spreads": 5444,
+      "market_making_hft": 2552,
+      "exchanges_clearing": 7249,
+      "futures_mechanics": 5809,
+      "options_greeks": 6259,
+      "volatility_products": 2200
+    },
+    "open_source_tooling": {
+      "backtesting_frameworks": 134,
+      "data_libraries": 255,
+      "indicator_libraries": 50,
+      "ml_quant_tooling": 6739
+    }
+  },
+  "boundary": "Coverage matrix measures evidence breadth for education review. Not a production-readiness or correctness claim."
+}

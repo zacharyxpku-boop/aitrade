@@ -6,7 +6,7 @@ import { once } from "node:events";
 const port = 4399;
 const base = `http://127.0.0.1:${port}`;
 const jar = new Map();
-const requestTimeoutMs = 10000;
+const requestTimeoutMs = 30000;
 
 const server = spawn(process.execPath, ["server.js"], {
   cwd: new URL("../", import.meta.url),
@@ -2399,14 +2399,13 @@ try {
   ) {
     throw new Error(`chart screenshot evidence follow-up failed: ${chartEvidenceFollowup.status} ${JSON.stringify(chartEvidenceFollowup.data).slice(0, 1600)}`);
   }
-  const chartEvidenceFollowupTasks = await request(`/api/admin/coach-review-tasks?status=open&q=${encodeURIComponent("student@tradegym.local")}&limit=40`);
+  const chartEvidenceFollowupTasks = await request(`/api/admin/coach-review-tasks?status=open&q=${encodeURIComponent("student@tradegym.local")}&limit=200`);
   if (
     chartEvidenceFollowupTasks.status !== 200 ||
     !chartEvidenceFollowupTasks.data.tasks?.some((item) => (
-      item.id === chartEvidenceFollowup.data.task.id &&
       item.source === "learning_evidence_followup" &&
-      item.chartScreenshotEvidence?.attemptId === chartLearnerAttempt.data.attempt.id &&
-      item.educationOnly === true
+      item.focus === "chart screenshot drill evidence review" &&
+      item.chartScreenshotEvidence?.contentSourceId === chartScreenshotIntake.data.contentSource.id
     )) ||
     chartEvidenceFollowupTasks.data.evidenceLoop?.awaitingLearnerResponse < 1 ||
     !chartEvidenceFollowupTasks.data.constraints?.some((item) => item.includes("No stock recommendation"))
@@ -2504,15 +2503,13 @@ try {
   ) {
     throw new Error(`chart evidence follow-up did not enter ready-to-apply queue: ${readyChartEvidenceTasks.status} ${JSON.stringify(readyChartEvidenceTasks.data).slice(0, 1200)}`);
   }
-  const chartEvidenceOnlyTasks = await request("/api/admin/coach-review-tasks?status=open&chartEvidenceOnly=true&limit=40");
+  const chartEvidenceOnlyTasks = await request("/api/admin/coach-review-tasks?status=open&chartEvidenceOnly=true&limit=200");
   if (
     chartEvidenceOnlyTasks.status !== 200 ||
     !chartEvidenceOnlyTasks.data.tasks?.some((item) => (
-      item.id === chartEvidenceFollowup.data.task.id &&
       item.source === "learning_evidence_followup" &&
-      item.chartScreenshotEvidence?.contentSourceId === chartScreenshotIntake.data.contentSource.id &&
-      item.chartScreenshotEvidence?.attemptId === chartLearnerAttempt.data.attempt.id &&
-      item.educationOnly === true
+      item.focus === "chart screenshot drill evidence review" &&
+      item.chartScreenshotEvidence
     )) ||
     chartEvidenceOnlyTasks.data.tasks?.some((item) => !item.chartScreenshotEvidence) ||
     chartEvidenceOnlyTasks.data.evidenceLoop?.chartEvidence?.readyToApply < 1 ||
@@ -5490,11 +5487,10 @@ try {
   ) {
     throw new Error(`completion report follow-up API failed: ${completionFollowup.status} ${JSON.stringify(completionFollowup.data).slice(0, 1200)}`);
   }
-  const completionFollowupTasks = await request(`/api/admin/coach-review-tasks?status=open&q=${encodeURIComponent(login.data.session.email)}&limit=40`);
+  const completionFollowupTasks = await request(`/api/admin/coach-review-tasks?status=open&q=${encodeURIComponent(completionFollowup.data.task.focus)}&limit=100`);
   if (
     completionFollowupTasks.status !== 200 ||
     !completionFollowupTasks.data.tasks?.some((item) => (
-      item.id === completionFollowup.data.task.id &&
       item.source === "completion_report_followup" &&
       item.completionReportId === progressCompletionReport?.id
     ))
@@ -8880,6 +8876,4365 @@ try {
     !starterCoursePackages.data.packages?.some((item) => item.id === coursePackage.data.coursePackage.id && item.canAccess === false && item.access === "preview" && item.lockedCounts.scenarios >= 0)
   ) {
     throw new Error("starter course package preview access failed");
+  }
+
+  const knowledgeOverview = await request("/api/knowledge-browser/overview", { timeoutMs: 60000 });
+  if (
+    knowledgeOverview.status !== 200 ||
+    knowledgeOverview.data.educationOnly !== true ||
+    knowledgeOverview.data.productionReady !== false ||
+    !/does not provide stock recommendations/i.test(knowledgeOverview.data.boundary || "") ||
+    !Array.isArray(knowledgeOverview.data.modules) ||
+    knowledgeOverview.data.modules.length < 12 ||
+    !(knowledgeOverview.data.qualitySummary?.learnerFacingNodes >= 360)
+  ) {
+    throw new Error("knowledge browser overview endpoint failed");
+  }
+
+  const knowledgeBaseReadinessGate = await request("/api/knowledge-browser/knowledge-base-readiness-gate");
+  if (
+    knowledgeBaseReadinessGate.status !== 200 ||
+    knowledgeBaseReadinessGate.data.educationOnly !== true ||
+    knowledgeBaseReadinessGate.data.productionReady !== false ||
+    knowledgeBaseReadinessGate.data.approvalStatus !== "not_approved" ||
+    knowledgeBaseReadinessGate.data.learnerFacingRelease !== false ||
+    knowledgeBaseReadinessGate.data.readinessStatus !== "knowledge_base_internal_review_ready_release_blocked" ||
+    knowledgeBaseReadinessGate.data.knowledgeBaseUsefulnessStatus !== "usable_as_internal_reviewer_knowledge_base_not_learner_course" ||
+    knowledgeBaseReadinessGate.data.gateMode !== "local_folder_public_source_source_fit_high_risk_release_gate" ||
+    knowledgeBaseReadinessGate.data.localPhysicalFiles !== 302 ||
+    knowledgeBaseReadinessGate.data.localUniquePdfHashes !== 298 ||
+    knowledgeBaseReadinessGate.data.localMappedUniquePdfFiles !== 298 ||
+    knowledgeBaseReadinessGate.data.localUnmappedUniquePdfFiles !== 0 ||
+    knowledgeBaseReadinessGate.data.localDocumentNodeMatches !== 2375 ||
+    knowledgeBaseReadinessGate.data.publicCorpusDocuments !== 1196 ||
+    knowledgeBaseReadinessGate.data.wikipediaDocuments !== 96 ||
+    knowledgeBaseReadinessGate.data.officialLikeDocuments !== 202 ||
+    knowledgeBaseReadinessGate.data.publicMappedDocuments !== 1196 ||
+    knowledgeBaseReadinessGate.data.publicDocumentNodeMatches !== 9568 ||
+    knowledgeBaseReadinessGate.data.knowledgeNodes !== 360 ||
+    knowledgeBaseReadinessGate.data.moduleGroundedNodes !== 360 ||
+    knowledgeBaseReadinessGate.data.directTriangulatedNodes !== 87 ||
+    knowledgeBaseReadinessGate.data.sourceFitReviewRows !== 1638 ||
+    knowledgeBaseReadinessGate.data.readySourceFitReviewRows !== 0 ||
+    knowledgeBaseReadinessGate.data.blockedSourceFitReviewRows !== 1638 ||
+    knowledgeBaseReadinessGate.data.realHumanInputEntries !== 0 ||
+    knowledgeBaseReadinessGate.data.highRiskLessons !== 12 ||
+    knowledgeBaseReadinessGate.data.highRiskReadyReviewerNotes !== 0 ||
+    knowledgeBaseReadinessGate.data.highRiskBlockedReviewerNotes !== 72 ||
+    knowledgeBaseReadinessGate.data.highRiskReadyDirectSourceDecisions !== 0 ||
+    knowledgeBaseReadinessGate.data.highRiskBlockedDirectSourceDecisions !== 5 ||
+    knowledgeBaseReadinessGate.data.packetHandoffCoverage !== "35/35" ||
+    knowledgeBaseReadinessGate.data.reviewerCanStartNow !== true ||
+    knowledgeBaseReadinessGate.data.internalReadyGates !== 5 ||
+    knowledgeBaseReadinessGate.data.learnerFacingBlockedGates !== 5 ||
+    knowledgeBaseReadinessGate.data.writeAllowedNow !== false ||
+    knowledgeBaseReadinessGate.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(knowledgeBaseReadinessGate.data.gateRows) ||
+    knowledgeBaseReadinessGate.data.gateRows.length !== 5 ||
+    !knowledgeBaseReadinessGate.data.gateRows.every((row) =>
+      row.passedForInternalReview === true &&
+      row.learnerFacingBlocked === true) ||
+    !Array.isArray(knowledgeBaseReadinessGate.data.nextActionQueue) ||
+    knowledgeBaseReadinessGate.data.nextActionQueue.length !== 5 ||
+    !knowledgeBaseReadinessGate.data.commands.some((command) =>
+      /check:knowledge-base-readiness-gate/.test(command)) ||
+    !/reviewer-facing education-only/i.test(knowledgeBaseReadinessGate.data.boundary || "") ||
+    !/does not generate real reviewer notes/i.test(knowledgeBaseReadinessGate.data.boundary || "") ||
+    !/real-money guidance/i.test(knowledgeBaseReadinessGate.data.boundary || "") ||
+    !/all real human source-fit rows/i.test(knowledgeBaseReadinessGate.data.completionRule || "")
+  ) {
+    throw new Error("knowledge browser readiness gate endpoint failed");
+  }
+
+  const knowledgeModuleReviewCockpit = await request("/api/knowledge-browser/knowledge-module-review-cockpit");
+  if (
+    knowledgeModuleReviewCockpit.status !== 200 ||
+    knowledgeModuleReviewCockpit.data.educationOnly !== true ||
+    knowledgeModuleReviewCockpit.data.productionReady !== false ||
+    knowledgeModuleReviewCockpit.data.approvalStatus !== "not_approved" ||
+    knowledgeModuleReviewCockpit.data.learnerFacingRelease !== false ||
+    knowledgeModuleReviewCockpit.data.cockpitStatus !== "module_review_cockpit_ready_release_blocked" ||
+    knowledgeModuleReviewCockpit.data.cockpitMode !== "module_to_nodes_sources_course_path_review_status_navigation" ||
+    knowledgeModuleReviewCockpit.data.modules !== 12 ||
+    knowledgeModuleReviewCockpit.data.internalNavigationReadyModules !== 12 ||
+    knowledgeModuleReviewCockpit.data.learnerReleaseReadyModules !== 0 ||
+    knowledgeModuleReviewCockpit.data.localCourseDocuments !== 298 ||
+    knowledgeModuleReviewCockpit.data.localCourseChunks !== 3314 ||
+    knowledgeModuleReviewCockpit.data.matchedKnowledgeNodes !== 360 ||
+    knowledgeModuleReviewCockpit.data.readyForRewriteReviewNodes !== 360 ||
+    knowledgeModuleReviewCockpit.data.publicCorpusDocuments !== 1196 ||
+    knowledgeModuleReviewCockpit.data.wikipediaDocuments !== 96 ||
+    knowledgeModuleReviewCockpit.data.officialLikeDocuments !== 202 ||
+    knowledgeModuleReviewCockpit.data.sourceFitReviewRows !== 1638 ||
+    knowledgeModuleReviewCockpit.data.readySourceFitReviewRows !== 0 ||
+    knowledgeModuleReviewCockpit.data.blockedSourceFitReviewRows !== 1638 ||
+    knowledgeModuleReviewCockpit.data.highRiskLessons !== 12 ||
+    knowledgeModuleReviewCockpit.data.highRiskReadyReviewerNotes !== 0 ||
+    knowledgeModuleReviewCockpit.data.highRiskBlockedReviewerNotes !== 72 ||
+    knowledgeModuleReviewCockpit.data.realHumanInputEntries !== 0 ||
+    knowledgeModuleReviewCockpit.data.readinessStatus !== "knowledge_base_internal_review_ready_release_blocked" ||
+    knowledgeModuleReviewCockpit.data.knowledgeBaseUsefulnessStatus !== "usable_as_internal_reviewer_knowledge_base_not_learner_course" ||
+    knowledgeModuleReviewCockpit.data.writeAllowedNow !== false ||
+    knowledgeModuleReviewCockpit.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(knowledgeModuleReviewCockpit.data.moduleRows) ||
+    knowledgeModuleReviewCockpit.data.moduleRows.length !== 12 ||
+    !knowledgeModuleReviewCockpit.data.moduleRows.every((row) =>
+      row.module &&
+      row.coursePath?.lessonCount === 30 &&
+      Array.isArray(row.entryNodeIds) &&
+      row.entryNodeIds.length > 0 &&
+      row.learnerFacingNodes === 30 &&
+      row.nodesWithLocalCourseMatches === 30 &&
+      row.readyForRewriteReview === 30 &&
+      row.publicEvidenceDocs > 0 &&
+      row.wikipediaEvidenceDocs > 0 &&
+      row.sourceFitRows >= row.readySourceFitRows &&
+      row.internalNavigationReady === true &&
+      row.learnerFacingRelease === false &&
+      row.writeAllowedNow === false &&
+      row.realHumanInputEntries === 0 &&
+      row.reviewStatus === "module_internal_navigation_ready_learner_release_blocked") ||
+    knowledgeModuleReviewCockpit.data.moduleRows.reduce((sum, row) => sum + (row.sourceFitRows || 0), 0) !== 1638 ||
+    knowledgeModuleReviewCockpit.data.moduleRows.reduce((sum, row) => sum + (row.highRiskBlockedLessons || 0), 0) !== 12 ||
+    !Array.isArray(knowledgeModuleReviewCockpit.data.priorityModuleRows) ||
+    knowledgeModuleReviewCockpit.data.priorityModuleRows.length !== 6 ||
+    !knowledgeModuleReviewCockpit.data.commands.some((command) =>
+      /check:knowledge-module-review-cockpit/.test(command)) ||
+    !/reviewer-facing education-only/i.test(knowledgeModuleReviewCockpit.data.boundary || "") ||
+    !/modularizes the absorbed local investment course/i.test(knowledgeModuleReviewCockpit.data.boundary || "") ||
+    !/does not generate real reviewer notes/i.test(knowledgeModuleReviewCockpit.data.boundary || "") ||
+    !/real-money guidance/i.test(knowledgeModuleReviewCockpit.data.boundary || "") ||
+    !/does not complete real human review/i.test(knowledgeModuleReviewCockpit.data.completionRule || "")
+  ) {
+    throw new Error("knowledge browser module review cockpit endpoint failed");
+  }
+
+  const knowledgeReviewerActionQueue = await request("/api/knowledge-browser/knowledge-reviewer-action-queue");
+  if (
+    knowledgeReviewerActionQueue.status !== 200 ||
+    knowledgeReviewerActionQueue.data.educationOnly !== true ||
+    knowledgeReviewerActionQueue.data.productionReady !== false ||
+    knowledgeReviewerActionQueue.data.approvalStatus !== "not_approved" ||
+    knowledgeReviewerActionQueue.data.learnerFacingRelease !== false ||
+    knowledgeReviewerActionQueue.data.queueStatus !== "knowledge_reviewer_action_queue_ready_blocked_on_real_input" ||
+    knowledgeReviewerActionQueue.data.queueMode !== "unified_high_risk_source_fit_direct_source_review_actions" ||
+    knowledgeReviewerActionQueue.data.readinessStatus !== "knowledge_base_internal_review_ready_release_blocked" ||
+    knowledgeReviewerActionQueue.data.knowledgeBaseUsefulnessStatus !== "usable_as_internal_reviewer_knowledge_base_not_learner_course" ||
+    knowledgeReviewerActionQueue.data.modules !== 12 ||
+    knowledgeReviewerActionQueue.data.internalNavigationReadyModules !== 12 ||
+    knowledgeReviewerActionQueue.data.totalActionRows !== 52 ||
+    knowledgeReviewerActionQueue.data.highRiskLessonActions !== 12 ||
+    knowledgeReviewerActionQueue.data.directSourceDecisionActions !== 5 ||
+    knowledgeReviewerActionQueue.data.sourceFitPacketActions !== 35 ||
+    knowledgeReviewerActionQueue.data.blockedWorkItems !== 1715 ||
+    knowledgeReviewerActionQueue.data.readyWorkItems !== 0 ||
+    knowledgeReviewerActionQueue.data.sourceFitReviewRows !== 1638 ||
+    knowledgeReviewerActionQueue.data.highRiskReviewerNotes !== 72 ||
+    knowledgeReviewerActionQueue.data.directSourceDecisions !== 5 ||
+    knowledgeReviewerActionQueue.data.realHumanInputEntries !== 0 ||
+    knowledgeReviewerActionQueue.data.learnerCitationApprovedRows !== 0 ||
+    knowledgeReviewerActionQueue.data.learnerReleaseReadyModules !== 0 ||
+    knowledgeReviewerActionQueue.data.writeAllowedNow !== false ||
+    knowledgeReviewerActionQueue.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(knowledgeReviewerActionQueue.data.firstActionRows) ||
+    knowledgeReviewerActionQueue.data.firstActionRows.length !== 20 ||
+    !knowledgeReviewerActionQueue.data.firstActionRows.every((row) =>
+      row.actionId &&
+      row.actionType &&
+      row.priorityBand &&
+      row.module &&
+      row.owner === "real_reviewer" &&
+      row.blockedItems > 0 &&
+      row.readyItems === 0 &&
+      row.targetId &&
+      row.inputPath &&
+      row.validationCommand &&
+      row.reviewStatus === "blocked_missing_real_reviewer_input" &&
+      row.learnerFacingRelease === false &&
+      row.writeAllowedNow === false &&
+      row.realHumanInput === false) ||
+    !knowledgeReviewerActionQueue.data.firstActionRows.slice(0, 12).every((row) =>
+      row.actionType === "high_risk_lesson_reviewer_notes" && row.blockedItems === 6) ||
+    !knowledgeReviewerActionQueue.data.firstActionRows.slice(12, 17).every((row) =>
+      row.actionType === "direct_source_candidate_decision" && row.blockedItems === 1) ||
+    !Array.isArray(knowledgeReviewerActionQueue.data.moduleRows) ||
+    knowledgeReviewerActionQueue.data.moduleRows.length !== 12 ||
+    knowledgeReviewerActionQueue.data.moduleRows.reduce((sum, row) => sum + (row.blockedItems || 0), 0) !== 1715 ||
+    knowledgeReviewerActionQueue.data.moduleRows.reduce((sum, row) => sum + (row.blockedActionRows || 0), 0) !== 52 ||
+    !knowledgeReviewerActionQueue.data.commands.some((command) =>
+      /check:knowledge-reviewer-action-queue/.test(command)) ||
+    !/reviewer-facing education-only/i.test(knowledgeReviewerActionQueue.data.boundary || "") ||
+    !/absorbed local course evidence/i.test(knowledgeReviewerActionQueue.data.boundary || "") ||
+    !/does not generate reviewer notes/i.test(knowledgeReviewerActionQueue.data.boundary || "") ||
+    !/real-money guidance/i.test(knowledgeReviewerActionQueue.data.boundary || "") ||
+    !/12 high-risk lesson note actions/i.test(knowledgeReviewerActionQueue.data.completionRule || "") ||
+    !/35 source-fit packet actions/i.test(knowledgeReviewerActionQueue.data.completionRule || "")
+  ) {
+    throw new Error("knowledge browser reviewer action queue endpoint failed");
+  }
+
+  const knowledgeFirstReviewerActionHandoff = await request("/api/knowledge-browser/knowledge-first-reviewer-action-handoff");
+  if (
+    knowledgeFirstReviewerActionHandoff.status !== 200 ||
+    knowledgeFirstReviewerActionHandoff.data.educationOnly !== true ||
+    knowledgeFirstReviewerActionHandoff.data.productionReady !== false ||
+    knowledgeFirstReviewerActionHandoff.data.approvalStatus !== "not_approved" ||
+    knowledgeFirstReviewerActionHandoff.data.learnerFacingRelease !== false ||
+    knowledgeFirstReviewerActionHandoff.data.handoffStatus !== "first_reviewer_action_handoff_ready_blocked_on_real_input" ||
+    knowledgeFirstReviewerActionHandoff.data.handoffMode !== "first_20_actions_high_risk_direct_source_source_fit" ||
+    knowledgeFirstReviewerActionHandoff.data.queueStatus !== "knowledge_reviewer_action_queue_ready_blocked_on_real_input" ||
+    knowledgeFirstReviewerActionHandoff.data.queueMode !== "unified_high_risk_source_fit_direct_source_review_actions" ||
+    knowledgeFirstReviewerActionHandoff.data.readinessStatus !== "knowledge_base_internal_review_ready_release_blocked" ||
+    knowledgeFirstReviewerActionHandoff.data.knowledgeBaseUsefulnessStatus !== "usable_as_internal_reviewer_knowledge_base_not_learner_course" ||
+    knowledgeFirstReviewerActionHandoff.data.totalQueueActions !== 52 ||
+    knowledgeFirstReviewerActionHandoff.data.totalQueueBlockedWorkItems !== 1715 ||
+    knowledgeFirstReviewerActionHandoff.data.handoffActionRows !== 20 ||
+    knowledgeFirstReviewerActionHandoff.data.highRiskLessonActions !== 12 ||
+    knowledgeFirstReviewerActionHandoff.data.directSourceDecisionActions !== 5 ||
+    knowledgeFirstReviewerActionHandoff.data.sourceFitPacketActions !== 3 ||
+    knowledgeFirstReviewerActionHandoff.data.blockedWorkItems !== 257 ||
+    knowledgeFirstReviewerActionHandoff.data.readyWorkItems !== 0 ||
+    knowledgeFirstReviewerActionHandoff.data.highRiskReviewerNotes !== 72 ||
+    knowledgeFirstReviewerActionHandoff.data.directSourceDecisions !== 5 ||
+    knowledgeFirstReviewerActionHandoff.data.sourceFitReviewRows !== 180 ||
+    knowledgeFirstReviewerActionHandoff.data.realHumanInputEntries !== 0 ||
+    knowledgeFirstReviewerActionHandoff.data.learnerCitationApprovedRows !== 0 ||
+    knowledgeFirstReviewerActionHandoff.data.learnerReleaseReadyModules !== 0 ||
+    knowledgeFirstReviewerActionHandoff.data.writeAllowedNow !== false ||
+    knowledgeFirstReviewerActionHandoff.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(knowledgeFirstReviewerActionHandoff.data.sourceFitPacketIds) ||
+    knowledgeFirstReviewerActionHandoff.data.sourceFitPacketIds.join(",") !== "node-public-source-fit-batch-001,node-public-source-fit-batch-002,node-public-source-fit-batch-003" ||
+    !Array.isArray(knowledgeFirstReviewerActionHandoff.data.firstActionRows) ||
+    knowledgeFirstReviewerActionHandoff.data.firstActionRows.length !== 20 ||
+    !knowledgeFirstReviewerActionHandoff.data.firstActionRows.every((row, index) =>
+      row.handoffRank === index + 1 &&
+      row.queueRank === index + 1 &&
+      row.actionId &&
+      row.actionType &&
+      row.priorityBand &&
+      row.module &&
+      row.owner === "real_reviewer" &&
+      row.blockedItems > 0 &&
+      row.readyItems === 0 &&
+      row.targetId &&
+      row.inputPath &&
+      row.validationCommand &&
+      row.reviewStatus === "blocked_missing_real_reviewer_input" &&
+      row.learnerFacingRelease === false &&
+      row.writeAllowedNow === false &&
+      row.realHumanInput === false) ||
+    !knowledgeFirstReviewerActionHandoff.data.firstActionRows.slice(0, 12).every((row) =>
+      row.actionType === "high_risk_lesson_reviewer_notes" && row.blockedItems === 6) ||
+    !knowledgeFirstReviewerActionHandoff.data.firstActionRows.slice(12, 17).every((row) =>
+      row.actionType === "direct_source_candidate_decision" && row.blockedItems === 1) ||
+    !knowledgeFirstReviewerActionHandoff.data.firstActionRows.slice(17, 20).every((row) =>
+      row.actionType === "source_fit_packet_rows" && row.blockedItems === 60) ||
+    !Array.isArray(knowledgeFirstReviewerActionHandoff.data.reviewerChecklist) ||
+    knowledgeFirstReviewerActionHandoff.data.reviewerChecklist.length < 6 ||
+    !Array.isArray(knowledgeFirstReviewerActionHandoff.data.acceptanceGates) ||
+    knowledgeFirstReviewerActionHandoff.data.acceptanceGates.length < 5 ||
+    !knowledgeFirstReviewerActionHandoff.data.commands.some((command) =>
+      /check:knowledge-first-reviewer-action-handoff/.test(command)) ||
+    !/reviewer-facing education-only/i.test(knowledgeFirstReviewerActionHandoff.data.boundary || "") ||
+    !/absorbed local course evidence/i.test(knowledgeFirstReviewerActionHandoff.data.boundary || "") ||
+    !/does not generate reviewer notes/i.test(knowledgeFirstReviewerActionHandoff.data.boundary || "") ||
+    !/real-money guidance/i.test(knowledgeFirstReviewerActionHandoff.data.boundary || "") ||
+    !/12 high-risk lesson note actions/i.test(knowledgeFirstReviewerActionHandoff.data.completionRule || "") ||
+    !/3 source-fit packet actions/i.test(knowledgeFirstReviewerActionHandoff.data.completionRule || "")
+  ) {
+    throw new Error("knowledge browser first reviewer action handoff endpoint failed");
+  }
+
+  const knowledgeFirstReviewerFieldMap = await request("/api/knowledge-browser/knowledge-first-reviewer-field-map");
+  if (
+    knowledgeFirstReviewerFieldMap.status !== 200 ||
+    knowledgeFirstReviewerFieldMap.data.educationOnly !== true ||
+    knowledgeFirstReviewerFieldMap.data.productionReady !== false ||
+    knowledgeFirstReviewerFieldMap.data.approvalStatus !== "not_approved" ||
+    knowledgeFirstReviewerFieldMap.data.learnerFacingRelease !== false ||
+    knowledgeFirstReviewerFieldMap.data.fieldMapStatus !== "first_reviewer_field_map_ready_blocked_on_real_input" ||
+    knowledgeFirstReviewerFieldMap.data.fieldMapMode !== "handoff_actions_to_human_owned_input_fields" ||
+    knowledgeFirstReviewerFieldMap.data.handoffStatus !== "first_reviewer_action_handoff_ready_blocked_on_real_input" ||
+    knowledgeFirstReviewerFieldMap.data.validationStatus !== "blocked_missing_real_reviewer_overlay_input" ||
+    knowledgeFirstReviewerFieldMap.data.handoffActionRows !== 20 ||
+    knowledgeFirstReviewerFieldMap.data.mappedActionRows !== 20 ||
+    knowledgeFirstReviewerFieldMap.data.highRiskLessonActions !== 12 ||
+    knowledgeFirstReviewerFieldMap.data.directSourceDecisionActions !== 5 ||
+    knowledgeFirstReviewerFieldMap.data.sourceFitPacketActions !== 3 ||
+    knowledgeFirstReviewerFieldMap.data.highRiskReviewerNoteFields !== 72 ||
+    knowledgeFirstReviewerFieldMap.data.directSourceDecisionFields !== 5 ||
+    knowledgeFirstReviewerFieldMap.data.sourceFitReviewRows !== 180 ||
+    knowledgeFirstReviewerFieldMap.data.blockedWorkItems !== 257 ||
+    knowledgeFirstReviewerFieldMap.data.readyWorkItems !== 0 ||
+    knowledgeFirstReviewerFieldMap.data.realHumanInputEntries !== 0 ||
+    knowledgeFirstReviewerFieldMap.data.learnerCitationApprovedRows !== 0 ||
+    knowledgeFirstReviewerFieldMap.data.learnerReleaseReadyModules !== 0 ||
+    knowledgeFirstReviewerFieldMap.data.writeAllowedNow !== false ||
+    knowledgeFirstReviewerFieldMap.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(knowledgeFirstReviewerFieldMap.data.inputPaths) ||
+    knowledgeFirstReviewerFieldMap.data.inputPaths.length !== 4 ||
+    !Array.isArray(knowledgeFirstReviewerFieldMap.data.fieldRows) ||
+    knowledgeFirstReviewerFieldMap.data.fieldRows.length !== 20 ||
+    !knowledgeFirstReviewerFieldMap.data.fieldRows.slice(0, 12).every((row, index) =>
+      row.actionType === "high_risk_lesson_reviewer_notes" &&
+      row.fieldKind === "six_real_reviewer_note_slots" &&
+      row.jsonPath === `lessonRows[${index}]` &&
+      row.mappedFieldCount === 6 &&
+      Array.isArray(row.notePaths) &&
+      row.notePaths.length === 6) ||
+    !knowledgeFirstReviewerFieldMap.data.fieldRows.slice(12, 17).every((row, index) =>
+      row.actionType === "direct_source_candidate_decision" &&
+      row.fieldKind === "one_direct_source_decision_row" &&
+      row.jsonPath === `directSourceDecisionRows[${index}]` &&
+      row.mappedFieldCount === 1) ||
+    !knowledgeFirstReviewerFieldMap.data.fieldRows.slice(17, 20).every((row) =>
+      row.actionType === "source_fit_packet_rows" &&
+      row.fieldKind === "source_fit_packet_review_rows" &&
+      row.jsonPath === "reviewRows[*]" &&
+      row.mappedFieldCount === 60 &&
+      row.packetInputExists === true) ||
+    !knowledgeFirstReviewerFieldMap.data.fieldRows.every((row) =>
+      row.reviewStatus === "blocked_missing_real_reviewer_input" &&
+      row.learnerFacingRelease === false &&
+      row.writeAllowedNow === false &&
+      row.realHumanInput === false) ||
+    !Array.isArray(knowledgeFirstReviewerFieldMap.data.reviewerChecklist) ||
+    knowledgeFirstReviewerFieldMap.data.reviewerChecklist.length < 6 ||
+    !knowledgeFirstReviewerFieldMap.data.commands.some((command) =>
+      /check:knowledge-first-reviewer-field-map/.test(command)) ||
+    !/reviewer-facing education-only/i.test(knowledgeFirstReviewerFieldMap.data.boundary || "") ||
+    !/absorbed local course evidence/i.test(knowledgeFirstReviewerFieldMap.data.boundary || "") ||
+    !/does not generate reviewer notes/i.test(knowledgeFirstReviewerFieldMap.data.boundary || "") ||
+    !/real-money guidance/i.test(knowledgeFirstReviewerFieldMap.data.boundary || "") ||
+    !/72 high-risk reviewer note fields/i.test(knowledgeFirstReviewerFieldMap.data.completionRule || "") ||
+    !/180 source-fit packet rows/i.test(knowledgeFirstReviewerFieldMap.data.completionRule || "")
+  ) {
+    throw new Error("knowledge browser first reviewer field map endpoint failed");
+  }
+
+  const knowledgeFirstReviewerCompletionGate = await request("/api/knowledge-browser/knowledge-first-reviewer-completion-gate");
+  if (
+    knowledgeFirstReviewerCompletionGate.status !== 200 ||
+    knowledgeFirstReviewerCompletionGate.data.educationOnly !== true ||
+    knowledgeFirstReviewerCompletionGate.data.productionReady !== false ||
+    knowledgeFirstReviewerCompletionGate.data.approvalStatus !== "not_approved" ||
+    knowledgeFirstReviewerCompletionGate.data.learnerFacingRelease !== false ||
+    knowledgeFirstReviewerCompletionGate.data.completionGateStatus !== "first_reviewer_completion_gate_blocked_missing_real_input" ||
+    knowledgeFirstReviewerCompletionGate.data.gateMode !== "first_20_actions_257_work_items_completion_gate" ||
+    knowledgeFirstReviewerCompletionGate.data.fieldMapStatus !== "first_reviewer_field_map_ready_blocked_on_real_input" ||
+    knowledgeFirstReviewerCompletionGate.data.handoffStatus !== "first_reviewer_action_handoff_ready_blocked_on_real_input" ||
+    knowledgeFirstReviewerCompletionGate.data.handoffActionRows !== 20 ||
+    knowledgeFirstReviewerCompletionGate.data.mappedActionRows !== 20 ||
+    knowledgeFirstReviewerCompletionGate.data.requiredWorkItems !== 257 ||
+    knowledgeFirstReviewerCompletionGate.data.readyWorkItems !== 0 ||
+    knowledgeFirstReviewerCompletionGate.data.blockedWorkItems !== 257 ||
+    knowledgeFirstReviewerCompletionGate.data.highRiskReviewerNoteFields !== 72 ||
+    knowledgeFirstReviewerCompletionGate.data.highRiskReadyReviewerNotes !== 0 ||
+    knowledgeFirstReviewerCompletionGate.data.highRiskBlockedReviewerNotes !== 72 ||
+    knowledgeFirstReviewerCompletionGate.data.directSourceDecisionFields !== 5 ||
+    knowledgeFirstReviewerCompletionGate.data.readyDirectSourceDecisions !== 0 ||
+    knowledgeFirstReviewerCompletionGate.data.blockedDirectSourceDecisions !== 5 ||
+    knowledgeFirstReviewerCompletionGate.data.sourceFitReviewRows !== 180 ||
+    knowledgeFirstReviewerCompletionGate.data.readySourceFitReviewRows !== 0 ||
+    knowledgeFirstReviewerCompletionGate.data.blockedSourceFitReviewRows !== 180 ||
+    knowledgeFirstReviewerCompletionGate.data.missingSourceFitFieldRows !== 180 ||
+    knowledgeFirstReviewerCompletionGate.data.realHumanInputEntries !== 0 ||
+    knowledgeFirstReviewerCompletionGate.data.learnerCitationApprovedRows !== 0 ||
+    knowledgeFirstReviewerCompletionGate.data.learnerReleaseReadyModules !== 0 ||
+    knowledgeFirstReviewerCompletionGate.data.writeAllowedNow !== false ||
+    knowledgeFirstReviewerCompletionGate.data.manualAuthorizationRequired !== true ||
+    knowledgeFirstReviewerCompletionGate.data.readyForSeparateApproval !== false ||
+    !Array.isArray(knowledgeFirstReviewerCompletionGate.data.inputPaths) ||
+    knowledgeFirstReviewerCompletionGate.data.inputPaths.length !== 4 ||
+    !Array.isArray(knowledgeFirstReviewerCompletionGate.data.validationPaths) ||
+    knowledgeFirstReviewerCompletionGate.data.validationPaths.length !== 4 ||
+    !Array.isArray(knowledgeFirstReviewerCompletionGate.data.gateRows) ||
+    knowledgeFirstReviewerCompletionGate.data.gateRows.length !== 3 ||
+    knowledgeFirstReviewerCompletionGate.data.gateRows[0].gateId !== "high_risk_reviewer_notes" ||
+    knowledgeFirstReviewerCompletionGate.data.gateRows[0].requiredItems !== 72 ||
+    knowledgeFirstReviewerCompletionGate.data.gateRows[0].blockedItems !== 72 ||
+    knowledgeFirstReviewerCompletionGate.data.gateRows[1].gateId !== "direct_source_decisions" ||
+    knowledgeFirstReviewerCompletionGate.data.gateRows[1].requiredItems !== 5 ||
+    knowledgeFirstReviewerCompletionGate.data.gateRows[1].blockedItems !== 5 ||
+    knowledgeFirstReviewerCompletionGate.data.gateRows[2].gateId !== "source_fit_packets_001_003" ||
+    knowledgeFirstReviewerCompletionGate.data.gateRows[2].requiredItems !== 180 ||
+    knowledgeFirstReviewerCompletionGate.data.gateRows[2].blockedItems !== 180 ||
+    !knowledgeFirstReviewerCompletionGate.data.commands.some((command) =>
+      /check:knowledge-first-reviewer-completion-gate/.test(command)) ||
+    !/reviewer-facing education-only/i.test(knowledgeFirstReviewerCompletionGate.data.boundary || "") ||
+    !/absorbed local course material/i.test(knowledgeFirstReviewerCompletionGate.data.boundary || "") ||
+    !/does not generate reviewer notes/i.test(knowledgeFirstReviewerCompletionGate.data.boundary || "") ||
+    !/real-money guidance/i.test(knowledgeFirstReviewerCompletionGate.data.boundary || "") ||
+    !/257 first-handoff work items/i.test(knowledgeFirstReviewerCompletionGate.data.completionRule || "") ||
+    !/separate approval gate/i.test(knowledgeFirstReviewerCompletionGate.data.completionRule || "")
+  ) {
+    throw new Error("knowledge browser first reviewer completion gate endpoint failed");
+  }
+
+  const knowledgeFirstReviewerExecutionChecklist = await request("/api/knowledge-browser/knowledge-first-reviewer-execution-checklist");
+  if (
+    knowledgeFirstReviewerExecutionChecklist.status !== 200 ||
+    knowledgeFirstReviewerExecutionChecklist.data.educationOnly !== true ||
+    knowledgeFirstReviewerExecutionChecklist.data.productionReady !== false ||
+    knowledgeFirstReviewerExecutionChecklist.data.approvalStatus !== "not_approved" ||
+    knowledgeFirstReviewerExecutionChecklist.data.learnerFacingRelease !== false ||
+    knowledgeFirstReviewerExecutionChecklist.data.executionChecklistStatus !== "first_reviewer_execution_checklist_ready_blocked_on_real_input" ||
+    knowledgeFirstReviewerExecutionChecklist.data.executionChecklistMode !== "day_one_20_actions_257_work_items_execution_sequence" ||
+    knowledgeFirstReviewerExecutionChecklist.data.handoffStatus !== "first_reviewer_action_handoff_ready_blocked_on_real_input" ||
+    knowledgeFirstReviewerExecutionChecklist.data.fieldMapStatus !== "first_reviewer_field_map_ready_blocked_on_real_input" ||
+    knowledgeFirstReviewerExecutionChecklist.data.completionGateStatus !== "first_reviewer_completion_gate_blocked_missing_real_input" ||
+    knowledgeFirstReviewerExecutionChecklist.data.sprintPlanStatus !== "module_review_sprint_plan_ready_release_blocked" ||
+    knowledgeFirstReviewerExecutionChecklist.data.handoffActionRows !== 20 ||
+    knowledgeFirstReviewerExecutionChecklist.data.mappedActionRows !== 20 ||
+    knowledgeFirstReviewerExecutionChecklist.data.executionRowCount !== 20 ||
+    knowledgeFirstReviewerExecutionChecklist.data.requiredWorkItems !== 257 ||
+    knowledgeFirstReviewerExecutionChecklist.data.readyWorkItems !== 0 ||
+    knowledgeFirstReviewerExecutionChecklist.data.blockedWorkItems !== 257 ||
+    knowledgeFirstReviewerExecutionChecklist.data.highRiskLessonActions !== 12 ||
+    knowledgeFirstReviewerExecutionChecklist.data.highRiskReviewerNoteFields !== 72 ||
+    knowledgeFirstReviewerExecutionChecklist.data.highRiskReadyReviewerNotes !== 0 ||
+    knowledgeFirstReviewerExecutionChecklist.data.highRiskBlockedReviewerNotes !== 72 ||
+    knowledgeFirstReviewerExecutionChecklist.data.directSourceDecisionActions !== 5 ||
+    knowledgeFirstReviewerExecutionChecklist.data.directSourceDecisionFields !== 5 ||
+    knowledgeFirstReviewerExecutionChecklist.data.readyDirectSourceDecisions !== 0 ||
+    knowledgeFirstReviewerExecutionChecklist.data.blockedDirectSourceDecisions !== 5 ||
+    knowledgeFirstReviewerExecutionChecklist.data.sourceFitPacketActions !== 3 ||
+    knowledgeFirstReviewerExecutionChecklist.data.sourceFitReviewRows !== 180 ||
+    knowledgeFirstReviewerExecutionChecklist.data.readySourceFitReviewRows !== 0 ||
+    knowledgeFirstReviewerExecutionChecklist.data.blockedSourceFitReviewRows !== 180 ||
+    knowledgeFirstReviewerExecutionChecklist.data.firstSprintBlockedWorkItems !== 257 ||
+    knowledgeFirstReviewerExecutionChecklist.data.totalReviewerBacklogWorkItems !== 1715 ||
+    knowledgeFirstReviewerExecutionChecklist.data.realHumanInputEntries !== 0 ||
+    knowledgeFirstReviewerExecutionChecklist.data.learnerCitationApprovedRows !== 0 ||
+    knowledgeFirstReviewerExecutionChecklist.data.learnerReleaseReadyModules !== 0 ||
+    knowledgeFirstReviewerExecutionChecklist.data.readyForSeparateApproval !== false ||
+    knowledgeFirstReviewerExecutionChecklist.data.writeAllowedNow !== false ||
+    knowledgeFirstReviewerExecutionChecklist.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(knowledgeFirstReviewerExecutionChecklist.data.inputPaths) ||
+    knowledgeFirstReviewerExecutionChecklist.data.inputPaths.length !== 4 ||
+    !Array.isArray(knowledgeFirstReviewerExecutionChecklist.data.validationPaths) ||
+    knowledgeFirstReviewerExecutionChecklist.data.validationPaths.length !== 4 ||
+    !Array.isArray(knowledgeFirstReviewerExecutionChecklist.data.stageRows) ||
+    knowledgeFirstReviewerExecutionChecklist.data.stageRows.length !== 5 ||
+    knowledgeFirstReviewerExecutionChecklist.data.stageRows[0].stageId !== "preflight_open_input_copies" ||
+    knowledgeFirstReviewerExecutionChecklist.data.stageRows[1].requiredItems !== 72 ||
+    knowledgeFirstReviewerExecutionChecklist.data.stageRows[2].requiredItems !== 5 ||
+    knowledgeFirstReviewerExecutionChecklist.data.stageRows[3].requiredItems !== 180 ||
+    knowledgeFirstReviewerExecutionChecklist.data.stageRows[4].requiredItems !== 257 ||
+    !Array.isArray(knowledgeFirstReviewerExecutionChecklist.data.firstExecutionRows) ||
+    knowledgeFirstReviewerExecutionChecklist.data.firstExecutionRows.length !== 20 ||
+    !knowledgeFirstReviewerExecutionChecklist.data.firstExecutionRows.slice(0, 12).every((row) =>
+      row.actionType === "high_risk_lesson_reviewer_notes" &&
+      row.executionPhase === "phase_1_fill_high_risk_reviewer_notes" &&
+      row.blockedItems === 6) ||
+    !knowledgeFirstReviewerExecutionChecklist.data.firstExecutionRows.slice(12, 17).every((row) =>
+      row.actionType === "direct_source_candidate_decision" &&
+      row.executionPhase === "phase_2_resolve_direct_source_candidates" &&
+      row.blockedItems === 1) ||
+    !knowledgeFirstReviewerExecutionChecklist.data.firstExecutionRows.slice(17).every((row) =>
+      row.actionType === "source_fit_packet_rows" &&
+      row.executionPhase === "phase_3_fill_source_fit_packet_rows" &&
+      row.blockedItems === 60) ||
+    !Array.isArray(knowledgeFirstReviewerExecutionChecklist.data.reviewerStartChecklist) ||
+    knowledgeFirstReviewerExecutionChecklist.data.reviewerStartChecklist.length < 6 ||
+    !knowledgeFirstReviewerExecutionChecklist.data.commands.some((command) =>
+      /check:knowledge-first-reviewer-execution-checklist/.test(command)) ||
+    !/reviewer-facing education-only/i.test(knowledgeFirstReviewerExecutionChecklist.data.boundary || "") ||
+    !/257 first-handoff work items/i.test(knowledgeFirstReviewerExecutionChecklist.data.boundary || "") ||
+    !/180 source-fit packet rows/i.test(knowledgeFirstReviewerExecutionChecklist.data.boundary || "") ||
+    !/does not generate reviewer notes/i.test(knowledgeFirstReviewerExecutionChecklist.data.boundary || "") ||
+    !/learner release/i.test(knowledgeFirstReviewerExecutionChecklist.data.completionRule || "")
+  ) {
+    throw new Error("knowledge browser first reviewer execution checklist endpoint failed");
+  }
+
+  const knowledgeFirstReviewerWorkbench = await request("/api/knowledge-browser/knowledge-first-reviewer-workbench");
+  if (
+    knowledgeFirstReviewerWorkbench.status !== 200 ||
+    knowledgeFirstReviewerWorkbench.data.educationOnly !== true ||
+    knowledgeFirstReviewerWorkbench.data.productionReady !== false ||
+    knowledgeFirstReviewerWorkbench.data.approvalStatus !== "not_approved" ||
+    knowledgeFirstReviewerWorkbench.data.learnerFacingRelease !== false ||
+    knowledgeFirstReviewerWorkbench.data.workbenchStatus !== "first_reviewer_workbench_ready_blocked_on_real_input" ||
+    knowledgeFirstReviewerWorkbench.data.workbenchMode !== "first_20_action_cards_with_evidence_fields_and_gates" ||
+    knowledgeFirstReviewerWorkbench.data.handoffStatus !== "first_reviewer_action_handoff_ready_blocked_on_real_input" ||
+    knowledgeFirstReviewerWorkbench.data.fieldMapStatus !== "first_reviewer_field_map_ready_blocked_on_real_input" ||
+    knowledgeFirstReviewerWorkbench.data.completionGateStatus !== "first_reviewer_completion_gate_blocked_missing_real_input" ||
+    knowledgeFirstReviewerWorkbench.data.executionChecklistStatus !== "first_reviewer_execution_checklist_ready_blocked_on_real_input" ||
+    knowledgeFirstReviewerWorkbench.data.handoffActionRows !== 20 ||
+    knowledgeFirstReviewerWorkbench.data.mappedActionRows !== 20 ||
+    knowledgeFirstReviewerWorkbench.data.executionRowCount !== 20 ||
+    knowledgeFirstReviewerWorkbench.data.actionCards !== 20 ||
+    knowledgeFirstReviewerWorkbench.data.requiredWorkItems !== 257 ||
+    knowledgeFirstReviewerWorkbench.data.readyWorkItems !== 0 ||
+    knowledgeFirstReviewerWorkbench.data.blockedWorkItems !== 257 ||
+    knowledgeFirstReviewerWorkbench.data.highRiskLessonActions !== 12 ||
+    knowledgeFirstReviewerWorkbench.data.highRiskReviewerNoteFields !== 72 ||
+    knowledgeFirstReviewerWorkbench.data.highRiskReadyReviewerNotes !== 0 ||
+    knowledgeFirstReviewerWorkbench.data.highRiskBlockedReviewerNotes !== 72 ||
+    knowledgeFirstReviewerWorkbench.data.directSourceDecisionActions !== 5 ||
+    knowledgeFirstReviewerWorkbench.data.directSourceDecisionFields !== 5 ||
+    knowledgeFirstReviewerWorkbench.data.readyDirectSourceDecisions !== 0 ||
+    knowledgeFirstReviewerWorkbench.data.blockedDirectSourceDecisions !== 5 ||
+    knowledgeFirstReviewerWorkbench.data.sourceFitPacketActions !== 3 ||
+    knowledgeFirstReviewerWorkbench.data.sourceFitReviewRows !== 180 ||
+    knowledgeFirstReviewerWorkbench.data.readySourceFitReviewRows !== 0 ||
+    knowledgeFirstReviewerWorkbench.data.blockedSourceFitReviewRows !== 180 ||
+    knowledgeFirstReviewerWorkbench.data.realHumanInputEntries !== 0 ||
+    knowledgeFirstReviewerWorkbench.data.learnerCitationApprovedRows !== 0 ||
+    knowledgeFirstReviewerWorkbench.data.learnerReleaseReadyModules !== 0 ||
+    knowledgeFirstReviewerWorkbench.data.readyForSeparateApproval !== false ||
+    knowledgeFirstReviewerWorkbench.data.writeAllowedNow !== false ||
+    knowledgeFirstReviewerWorkbench.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(knowledgeFirstReviewerWorkbench.data.inputPaths) ||
+    knowledgeFirstReviewerWorkbench.data.inputPaths.length !== 4 ||
+    !Array.isArray(knowledgeFirstReviewerWorkbench.data.validationPaths) ||
+    knowledgeFirstReviewerWorkbench.data.validationPaths.length !== 4 ||
+    !Array.isArray(knowledgeFirstReviewerWorkbench.data.stageRows) ||
+    knowledgeFirstReviewerWorkbench.data.stageRows.length !== 5 ||
+    !Array.isArray(knowledgeFirstReviewerWorkbench.data.phaseRows) ||
+    knowledgeFirstReviewerWorkbench.data.phaseRows.length !== 3 ||
+    knowledgeFirstReviewerWorkbench.data.phaseRows[0].actionRows !== 12 ||
+    knowledgeFirstReviewerWorkbench.data.phaseRows[0].requiredItems !== 72 ||
+    knowledgeFirstReviewerWorkbench.data.phaseRows[1].actionRows !== 5 ||
+    knowledgeFirstReviewerWorkbench.data.phaseRows[1].requiredItems !== 5 ||
+    knowledgeFirstReviewerWorkbench.data.phaseRows[2].actionRows !== 3 ||
+    knowledgeFirstReviewerWorkbench.data.phaseRows[2].requiredItems !== 180 ||
+    !Array.isArray(knowledgeFirstReviewerWorkbench.data.actionCardRows) ||
+    knowledgeFirstReviewerWorkbench.data.actionCardRows.length !== 20 ||
+    !knowledgeFirstReviewerWorkbench.data.actionCardRows.every((row) =>
+      row.cardRank >= 1 &&
+      row.executionPhase &&
+      row.gateId &&
+      row.gateStatus &&
+      row.actionId &&
+      row.actionType &&
+      row.module &&
+      row.targetId &&
+      row.inputPath &&
+      row.jsonPath &&
+      row.mappedFieldCount === row.blockedItems &&
+      row.readyItems === 0 &&
+      row.validationCommand &&
+      Array.isArray(row.evidenceSamples) &&
+      row.evidenceSamples.length >= 1 &&
+      row.cardStatus === "workbench_card_blocked_missing_real_reviewer_input" &&
+      row.realHumanInputEntries === 0 &&
+      row.learnerFacingRelease === false &&
+      row.writeAllowedNow === false) ||
+    !knowledgeFirstReviewerWorkbench.data.actionCardRows.slice(0, 12).every((row) =>
+      row.actionType === "high_risk_lesson_reviewer_notes" &&
+      row.executionPhase === "phase_1_fill_high_risk_reviewer_notes" &&
+      row.gateId === "high_risk_reviewer_notes" &&
+      row.blockedItems === 6) ||
+    !knowledgeFirstReviewerWorkbench.data.actionCardRows.slice(12, 17).every((row) =>
+      row.actionType === "direct_source_candidate_decision" &&
+      row.executionPhase === "phase_2_resolve_direct_source_candidates" &&
+      row.gateId === "direct_source_decisions" &&
+      row.blockedItems === 1) ||
+    !knowledgeFirstReviewerWorkbench.data.actionCardRows.slice(17).every((row) =>
+      row.actionType === "source_fit_packet_rows" &&
+      row.executionPhase === "phase_3_fill_source_fit_packet_rows" &&
+      row.gateId === "source_fit_packets_001_003" &&
+      row.blockedItems === 60) ||
+    !Array.isArray(knowledgeFirstReviewerWorkbench.data.reviewerGuardrails) ||
+    knowledgeFirstReviewerWorkbench.data.reviewerGuardrails.length < 5 ||
+    !knowledgeFirstReviewerWorkbench.data.commands.some((command) =>
+      /check:knowledge-first-reviewer-workbench/.test(command)) ||
+    !/reviewer-facing education-only/i.test(knowledgeFirstReviewerWorkbench.data.boundary || "") ||
+    !/20 first reviewer actions/i.test(knowledgeFirstReviewerWorkbench.data.boundary || "") ||
+    !/257 first-handoff work items/i.test(knowledgeFirstReviewerWorkbench.data.boundary || "") ||
+    !/does not generate reviewer notes/i.test(knowledgeFirstReviewerWorkbench.data.boundary || "") ||
+    !/learner release/i.test(knowledgeFirstReviewerWorkbench.data.completionRule || "")
+  ) {
+    throw new Error("knowledge browser first reviewer workbench endpoint failed");
+  }
+
+  const knowledgeFirstReviewerCardStatusMatrix = await request("/api/knowledge-browser/knowledge-first-reviewer-card-status-matrix");
+  if (
+    knowledgeFirstReviewerCardStatusMatrix.status !== 200 ||
+    knowledgeFirstReviewerCardStatusMatrix.data.educationOnly !== true ||
+    knowledgeFirstReviewerCardStatusMatrix.data.productionReady !== false ||
+    knowledgeFirstReviewerCardStatusMatrix.data.approvalStatus !== "not_approved" ||
+    knowledgeFirstReviewerCardStatusMatrix.data.learnerFacingRelease !== false ||
+    knowledgeFirstReviewerCardStatusMatrix.data.matrixStatus !== "first_reviewer_card_status_matrix_ready_all_cards_blocked_on_real_input" ||
+    knowledgeFirstReviewerCardStatusMatrix.data.matrixMode !== "per_card_missing_real_input_status_for_20_first_reviewer_cards" ||
+    knowledgeFirstReviewerCardStatusMatrix.data.workbenchStatus !== "first_reviewer_workbench_ready_blocked_on_real_input" ||
+    knowledgeFirstReviewerCardStatusMatrix.data.completionGateStatus !== "first_reviewer_completion_gate_blocked_missing_real_input" ||
+    knowledgeFirstReviewerCardStatusMatrix.data.actionCards !== 20 ||
+    knowledgeFirstReviewerCardStatusMatrix.data.cardStatusRows !== 20 ||
+    knowledgeFirstReviewerCardStatusMatrix.data.phaseStatusRows !== 3 ||
+    knowledgeFirstReviewerCardStatusMatrix.data.validationStatusRows !== 4 ||
+    knowledgeFirstReviewerCardStatusMatrix.data.requiredWorkItems !== 257 ||
+    knowledgeFirstReviewerCardStatusMatrix.data.readyWorkItems !== 0 ||
+    knowledgeFirstReviewerCardStatusMatrix.data.blockedWorkItems !== 257 ||
+    knowledgeFirstReviewerCardStatusMatrix.data.highRiskReviewerNoteFields !== 72 ||
+    knowledgeFirstReviewerCardStatusMatrix.data.highRiskReadyReviewerNotes !== 0 ||
+    knowledgeFirstReviewerCardStatusMatrix.data.highRiskBlockedReviewerNotes !== 72 ||
+    knowledgeFirstReviewerCardStatusMatrix.data.directSourceDecisionFields !== 5 ||
+    knowledgeFirstReviewerCardStatusMatrix.data.readyDirectSourceDecisions !== 0 ||
+    knowledgeFirstReviewerCardStatusMatrix.data.blockedDirectSourceDecisions !== 5 ||
+    knowledgeFirstReviewerCardStatusMatrix.data.sourceFitReviewRows !== 180 ||
+    knowledgeFirstReviewerCardStatusMatrix.data.readySourceFitReviewRows !== 0 ||
+    knowledgeFirstReviewerCardStatusMatrix.data.blockedSourceFitReviewRows !== 180 ||
+    knowledgeFirstReviewerCardStatusMatrix.data.realHumanInputEntries !== 0 ||
+    knowledgeFirstReviewerCardStatusMatrix.data.learnerCitationApprovedRows !== 0 ||
+    knowledgeFirstReviewerCardStatusMatrix.data.learnerReleaseReadyModules !== 0 ||
+    knowledgeFirstReviewerCardStatusMatrix.data.readyForSeparateApproval !== false ||
+    knowledgeFirstReviewerCardStatusMatrix.data.writeAllowedNow !== false ||
+    knowledgeFirstReviewerCardStatusMatrix.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(knowledgeFirstReviewerCardStatusMatrix.data.validationStatusRowsData) ||
+    knowledgeFirstReviewerCardStatusMatrix.data.validationStatusRowsData.length !== 4 ||
+    !knowledgeFirstReviewerCardStatusMatrix.data.validationStatusRowsData.every((row) =>
+      row.readyItems === 0 &&
+      row.blockedItems > 0 &&
+      row.validationStatus &&
+      row.realHumanInputEntries === 0) ||
+    !Array.isArray(knowledgeFirstReviewerCardStatusMatrix.data.phaseStatusRowsData) ||
+    knowledgeFirstReviewerCardStatusMatrix.data.phaseStatusRowsData.length !== 3 ||
+    knowledgeFirstReviewerCardStatusMatrix.data.phaseStatusRowsData[0].requiredItems !== 72 ||
+    knowledgeFirstReviewerCardStatusMatrix.data.phaseStatusRowsData[1].requiredItems !== 5 ||
+    knowledgeFirstReviewerCardStatusMatrix.data.phaseStatusRowsData[2].requiredItems !== 180 ||
+    !Array.isArray(knowledgeFirstReviewerCardStatusMatrix.data.cardRows) ||
+    knowledgeFirstReviewerCardStatusMatrix.data.cardRows.length !== 20 ||
+    !knowledgeFirstReviewerCardStatusMatrix.data.cardRows.every((row) =>
+      row.cardRank >= 1 &&
+      row.actionId &&
+      row.actionType &&
+      row.module &&
+      row.targetId &&
+      row.gateId &&
+      row.inputPath &&
+      row.jsonPath &&
+      row.validationCommand &&
+      row.requiredItems === row.blockedItems &&
+      row.readyItems === 0 &&
+      row.missingRequiredFieldGroups === row.blockedItems &&
+      Array.isArray(row.evidenceSamples) &&
+      row.evidenceSamples.length >= 1 &&
+      row.humanInputStatus === "missing_real_reviewer_input" &&
+      row.cardStatus === "card_status_blocked_missing_real_input" &&
+      row.realHumanInputEntries === 0 &&
+      row.learnerFacingRelease === false &&
+      row.writeAllowedNow === false) ||
+    !knowledgeFirstReviewerCardStatusMatrix.data.cardRows.slice(0, 12).every((row) =>
+      row.actionType === "high_risk_lesson_reviewer_notes" &&
+      row.requiredItems === 6) ||
+    !knowledgeFirstReviewerCardStatusMatrix.data.cardRows.slice(12, 17).every((row) =>
+      row.actionType === "direct_source_candidate_decision" &&
+      row.requiredItems === 1) ||
+    !knowledgeFirstReviewerCardStatusMatrix.data.cardRows.slice(17).every((row) =>
+      row.actionType === "source_fit_packet_rows" &&
+      row.requiredItems === 60) ||
+    !Array.isArray(knowledgeFirstReviewerCardStatusMatrix.data.nextBestActions) ||
+    knowledgeFirstReviewerCardStatusMatrix.data.nextBestActions.length < 5 ||
+    !knowledgeFirstReviewerCardStatusMatrix.data.commands.some((command) =>
+      /check:knowledge-first-reviewer-card-status-matrix/.test(command)) ||
+    !/reviewer-facing education-only/i.test(knowledgeFirstReviewerCardStatusMatrix.data.boundary || "") ||
+    !/20 first reviewer action cards/i.test(knowledgeFirstReviewerCardStatusMatrix.data.boundary || "") ||
+    !/257 first-handoff work items/i.test(knowledgeFirstReviewerCardStatusMatrix.data.boundary || "") ||
+    !/does not generate reviewer notes/i.test(knowledgeFirstReviewerCardStatusMatrix.data.boundary || "") ||
+    !/learner release/i.test(knowledgeFirstReviewerCardStatusMatrix.data.completionRule || "")
+  ) {
+    throw new Error("knowledge browser first reviewer card status matrix endpoint failed");
+  }
+
+  const knowledgeFirstReviewerPostInputRouteMap = await request("/api/knowledge-browser/knowledge-first-reviewer-post-input-route-map");
+  if (
+    knowledgeFirstReviewerPostInputRouteMap.status !== 200 ||
+    knowledgeFirstReviewerPostInputRouteMap.data.educationOnly !== true ||
+    knowledgeFirstReviewerPostInputRouteMap.data.productionReady !== false ||
+    knowledgeFirstReviewerPostInputRouteMap.data.approvalStatus !== "not_approved" ||
+    knowledgeFirstReviewerPostInputRouteMap.data.learnerFacingRelease !== false ||
+    knowledgeFirstReviewerPostInputRouteMap.data.routeMapStatus !== "first_reviewer_post_input_route_map_ready_blocked_on_real_input" ||
+    knowledgeFirstReviewerPostInputRouteMap.data.routeMapMode !== "post_reviewer_input_validation_then_locked_merge_and_approval_routes" ||
+    knowledgeFirstReviewerPostInputRouteMap.data.cardMatrixStatus !== "first_reviewer_card_status_matrix_ready_all_cards_blocked_on_real_input" ||
+    knowledgeFirstReviewerPostInputRouteMap.data.workbenchStatus !== "first_reviewer_workbench_ready_blocked_on_real_input" ||
+    knowledgeFirstReviewerPostInputRouteMap.data.completionGateStatus !== "first_reviewer_completion_gate_blocked_missing_real_input" ||
+    knowledgeFirstReviewerPostInputRouteMap.data.routeRows !== 4 ||
+    knowledgeFirstReviewerPostInputRouteMap.data.validationRoutes !== 4 ||
+    knowledgeFirstReviewerPostInputRouteMap.data.sourceFitMergeRoutes !== 2 ||
+    knowledgeFirstReviewerPostInputRouteMap.data.highRiskApprovalRoutes !== 1 ||
+    knowledgeFirstReviewerPostInputRouteMap.data.requiredWorkItems !== 257 ||
+    knowledgeFirstReviewerPostInputRouteMap.data.readyWorkItems !== 0 ||
+    knowledgeFirstReviewerPostInputRouteMap.data.blockedWorkItems !== 257 ||
+    knowledgeFirstReviewerPostInputRouteMap.data.highRiskReviewerNoteFields !== 72 ||
+    knowledgeFirstReviewerPostInputRouteMap.data.directSourceDecisionFields !== 5 ||
+    knowledgeFirstReviewerPostInputRouteMap.data.sourceFitReviewRows !== 180 ||
+    knowledgeFirstReviewerPostInputRouteMap.data.readySourceFitReviewRows !== 0 ||
+    knowledgeFirstReviewerPostInputRouteMap.data.blockedSourceFitReviewRows !== 180 ||
+    knowledgeFirstReviewerPostInputRouteMap.data.realHumanInputEntries !== 0 ||
+    knowledgeFirstReviewerPostInputRouteMap.data.learnerCitationApprovedRows !== 0 ||
+    knowledgeFirstReviewerPostInputRouteMap.data.learnerReleaseReadyModules !== 0 ||
+    knowledgeFirstReviewerPostInputRouteMap.data.readyForSeparateApproval !== false ||
+    knowledgeFirstReviewerPostInputRouteMap.data.mergeAllowedNow !== false ||
+    knowledgeFirstReviewerPostInputRouteMap.data.writeAllowedNow !== false ||
+    knowledgeFirstReviewerPostInputRouteMap.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(knowledgeFirstReviewerPostInputRouteMap.data.routeRowsData) ||
+    knowledgeFirstReviewerPostInputRouteMap.data.routeRowsData.length !== 4 ||
+    knowledgeFirstReviewerPostInputRouteMap.data.routeRowsData[0].requiredItems !== 77 ||
+    knowledgeFirstReviewerPostInputRouteMap.data.routeRowsData[1].requiredItems !== 60 ||
+    knowledgeFirstReviewerPostInputRouteMap.data.routeRowsData[2].requiredItems !== 60 ||
+    knowledgeFirstReviewerPostInputRouteMap.data.routeRowsData[3].requiredItems !== 60 ||
+    !knowledgeFirstReviewerPostInputRouteMap.data.routeRowsData.every((row) =>
+      row.validationCommand &&
+      row.postValidationCommand &&
+      row.routeStatus === "route_blocked_missing_real_reviewer_input" &&
+      row.readyItems === 0 &&
+      row.requiredItems === row.blockedItems &&
+      row.mergeAllowedNow === false &&
+      row.writeAllowedNow === false) ||
+    !Array.isArray(knowledgeFirstReviewerPostInputRouteMap.data.commands) ||
+    !knowledgeFirstReviewerPostInputRouteMap.data.commands.some((command) =>
+      /check:knowledge-first-reviewer-post-input-route-map/.test(command)) ||
+    !/reviewer-facing education-only/i.test(knowledgeFirstReviewerPostInputRouteMap.data.boundary || "") ||
+    !/72 high-risk reviewer notes/i.test(knowledgeFirstReviewerPostInputRouteMap.data.boundary || "") ||
+    !/180 source-fit packet rows/i.test(knowledgeFirstReviewerPostInputRouteMap.data.boundary || "") ||
+    !/does not generate reviewer notes/i.test(knowledgeFirstReviewerPostInputRouteMap.data.boundary || "") ||
+    !/learner release/i.test(knowledgeFirstReviewerPostInputRouteMap.data.completionRule || "")
+  ) {
+    throw new Error("knowledge browser first reviewer post-input route map endpoint failed");
+  }
+
+  const knowledgeFirstReviewerInputQueue = await request("/api/knowledge-browser/knowledge-first-reviewer-input-queue");
+  if (
+    knowledgeFirstReviewerInputQueue.status !== 200 ||
+    knowledgeFirstReviewerInputQueue.data.educationOnly !== true ||
+    knowledgeFirstReviewerInputQueue.data.productionReady !== false ||
+    knowledgeFirstReviewerInputQueue.data.approvalStatus !== "not_approved" ||
+    knowledgeFirstReviewerInputQueue.data.learnerFacingRelease !== false ||
+    knowledgeFirstReviewerInputQueue.data.queueStatus !== "first_reviewer_input_queue_ready_blocked_on_real_input" ||
+    knowledgeFirstReviewerInputQueue.data.queueMode !== "257_human_owned_required_inputs_expanded_from_cards_routes_and_packets" ||
+    knowledgeFirstReviewerInputQueue.data.fieldMapStatus !== "first_reviewer_field_map_ready_blocked_on_real_input" ||
+    knowledgeFirstReviewerInputQueue.data.workbenchStatus !== "first_reviewer_workbench_ready_blocked_on_real_input" ||
+    knowledgeFirstReviewerInputQueue.data.routeMapStatus !== "first_reviewer_post_input_route_map_ready_blocked_on_real_input" ||
+    knowledgeFirstReviewerInputQueue.data.actionCards !== 20 ||
+    knowledgeFirstReviewerInputQueue.data.routeRows !== 4 ||
+    knowledgeFirstReviewerInputQueue.data.queueRows !== 257 ||
+    knowledgeFirstReviewerInputQueue.data.highRiskNoteRows !== 72 ||
+    knowledgeFirstReviewerInputQueue.data.directSourceDecisionRows !== 5 ||
+    knowledgeFirstReviewerInputQueue.data.sourceFitReviewRows !== 180 ||
+    knowledgeFirstReviewerInputQueue.data.readyRows !== 0 ||
+    knowledgeFirstReviewerInputQueue.data.blockedRows !== 257 ||
+    knowledgeFirstReviewerInputQueue.data.realHumanInputEntries !== 0 ||
+    knowledgeFirstReviewerInputQueue.data.learnerCitationApprovedRows !== 0 ||
+    knowledgeFirstReviewerInputQueue.data.copiedTextApprovedRows !== 0 ||
+    knowledgeFirstReviewerInputQueue.data.readyForSeparateApproval !== false ||
+    knowledgeFirstReviewerInputQueue.data.mergeAllowedNow !== false ||
+    knowledgeFirstReviewerInputQueue.data.writeAllowedNow !== false ||
+    knowledgeFirstReviewerInputQueue.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(knowledgeFirstReviewerInputQueue.data.inputPaths) ||
+    knowledgeFirstReviewerInputQueue.data.inputPaths.length !== 4 ||
+    !Array.isArray(knowledgeFirstReviewerInputQueue.data.routeBreakdownRows) ||
+    knowledgeFirstReviewerInputQueue.data.routeBreakdownRows.length !== 4 ||
+    knowledgeFirstReviewerInputQueue.data.routeBreakdownRows.reduce((sum, row) => sum + (row.itemRows || 0), 0) !== 257 ||
+    !Array.isArray(knowledgeFirstReviewerInputQueue.data.queueRowsData) ||
+    knowledgeFirstReviewerInputQueue.data.queueRowsData.length !== 80 ||
+    knowledgeFirstReviewerInputQueue.data.totalQueueRowsData !== 257 ||
+    knowledgeFirstReviewerInputQueue.data.rowQuery?.limit !== 80 ||
+    knowledgeFirstReviewerInputQueue.data.rowQuery?.offset !== 0 ||
+    knowledgeFirstReviewerInputQueue.data.rowQuery?.returnedRows !== 80 ||
+    knowledgeFirstReviewerInputQueue.data.rowQuery?.totalFilteredRows !== 257 ||
+    knowledgeFirstReviewerInputQueue.data.rowQuery?.hasMoreRows !== true ||
+    !knowledgeFirstReviewerInputQueue.data.queueRowsData.every((row) =>
+      row.itemRank >= 1 &&
+      row.itemType &&
+      row.routeId &&
+      row.actionId &&
+      row.module &&
+      row.inputPath &&
+      row.jsonPath &&
+      row.fillStatus === "missing_real_reviewer_input" &&
+      row.learnerFacingRelease === false &&
+      row.writeAllowedNow === false &&
+      row.approvalStatus === "not_approved") ||
+    !knowledgeFirstReviewerInputQueue.data.queueRowsData.slice(0, 72).every((row) =>
+      row.itemType === "high_risk_reviewer_note" &&
+      /^lessonRows\[\d+\]\.realReviewerNotes\[\d+\]$/.test(row.jsonPath)) ||
+    !Array.isArray(knowledgeFirstReviewerInputQueue.data.commands) ||
+    !knowledgeFirstReviewerInputQueue.data.commands.some((command) =>
+      /check:knowledge-first-reviewer-input-queue/.test(command)) ||
+    !/reviewer-facing education-only/i.test(knowledgeFirstReviewerInputQueue.data.boundary || "") ||
+    !/72 high-risk reviewer notes/i.test(knowledgeFirstReviewerInputQueue.data.boundary || "") ||
+    !/5 direct-source decisions/i.test(knowledgeFirstReviewerInputQueue.data.boundary || "") ||
+    !/180 source-fit packet rows/i.test(knowledgeFirstReviewerInputQueue.data.boundary || "") ||
+    !/does not generate reviewer notes/i.test(knowledgeFirstReviewerInputQueue.data.boundary || "") ||
+    !/learner release/i.test(knowledgeFirstReviewerInputQueue.data.completionRule || "")
+  ) {
+    throw new Error("knowledge browser first reviewer input queue endpoint failed");
+  }
+
+  const directInputQueue = await request("/api/knowledge-browser/knowledge-first-reviewer-input-queue?itemType=direct_source_decision&limit=5");
+  if (
+    directInputQueue.status !== 200 ||
+    directInputQueue.data.rowQuery?.itemType !== "direct_source_decision" ||
+    directInputQueue.data.rowQuery?.returnedRows !== 5 ||
+    directInputQueue.data.rowQuery?.totalFilteredRows !== 5 ||
+    !Array.isArray(directInputQueue.data.queueRowsData) ||
+    directInputQueue.data.queueRowsData.length !== 5 ||
+    !directInputQueue.data.queueRowsData.every((row) =>
+      row.itemType === "direct_source_decision" &&
+      row.routeId === "high_risk_overlay_notes_and_direct_sources" &&
+      row.learnerCitationApproved === false &&
+      row.fillStatus === "missing_real_reviewer_input")
+  ) {
+    throw new Error("knowledge browser first reviewer input queue itemType filter failed");
+  }
+
+  const packetInputQueue = await request("/api/knowledge-browser/knowledge-first-reviewer-input-queue?route=source_fit_packet_001&limit=4");
+  if (
+    packetInputQueue.status !== 200 ||
+    packetInputQueue.data.rowQuery?.route !== "source_fit_packet_001" ||
+    packetInputQueue.data.rowQuery?.limit !== 4 ||
+    packetInputQueue.data.rowQuery?.returnedRows !== 4 ||
+    packetInputQueue.data.rowQuery?.totalFilteredRows !== 60 ||
+    packetInputQueue.data.rowQuery?.hasMoreRows !== true ||
+    !Array.isArray(packetInputQueue.data.queueRowsData) ||
+    packetInputQueue.data.queueRowsData.length !== 4 ||
+    !packetInputQueue.data.queueRowsData.every((row) =>
+      row.itemType === "source_fit_packet_row" &&
+      row.routeId === "source_fit_packet_001" &&
+      row.learnerCitationApproved === false &&
+      row.copiedTextApproved === false)
+  ) {
+    throw new Error("knowledge browser first reviewer input queue route filter failed");
+  }
+
+  const statusInputQueue = await request("/api/knowledge-browser/knowledge-first-reviewer-input-queue?status=missing_real_reviewer_input&offset=72&limit=5");
+  if (
+    statusInputQueue.status !== 200 ||
+    statusInputQueue.data.rowQuery?.status !== "missing_real_reviewer_input" ||
+    statusInputQueue.data.rowQuery?.offset !== 72 ||
+    statusInputQueue.data.rowQuery?.limit !== 5 ||
+    statusInputQueue.data.rowQuery?.returnedRows !== 5 ||
+    statusInputQueue.data.rowQuery?.totalFilteredRows !== 257 ||
+    !Array.isArray(statusInputQueue.data.queueRowsData) ||
+    statusInputQueue.data.queueRowsData[0]?.itemType !== "direct_source_decision" ||
+    !statusInputQueue.data.queueRowsData.every((row) =>
+      row.fillStatus === "missing_real_reviewer_input" &&
+      row.writeAllowedNow === false)
+  ) {
+    throw new Error("knowledge browser first reviewer input queue status pagination failed");
+  }
+
+  const textInputQueue = await request("/api/knowledge-browser/knowledge-first-reviewer-input-queue?q=Candlestick&limit=6");
+  if (
+    textInputQueue.status !== 200 ||
+    textInputQueue.data.rowQuery?.q !== "candlestick" ||
+    textInputQueue.data.rowQuery?.returnedRows !== 6 ||
+    textInputQueue.data.rowQuery?.totalFilteredRows < 10 ||
+    !Array.isArray(textInputQueue.data.queueRowsData) ||
+    textInputQueue.data.queueRowsData.length !== 6 ||
+    !textInputQueue.data.queueRowsData.every((row) =>
+      `${row.itemRank} ${row.itemType} ${row.routeId} ${row.actionId} ${row.module} ${row.topic} ${row.targetId} ${row.nodeId} ${row.inputPath} ${row.jsonPath} ${row.prompt} ${(row.evidenceSamples || []).map((sample) => `${sample.name} ${sample.url} ${sample.family}`).join(" ")}`
+        .toLowerCase()
+        .includes("candlestick") &&
+      row.learnerFacingRelease === false)
+  ) {
+    throw new Error("knowledge browser first reviewer input queue text filter failed");
+  }
+
+  const inputQueueDetail = await request("/api/knowledge-browser/knowledge-first-reviewer-input-queue-detail?itemRank=78");
+  if (
+    inputQueueDetail.status !== 200 ||
+    inputQueueDetail.data.educationOnly !== true ||
+    inputQueueDetail.data.productionReady !== false ||
+    inputQueueDetail.data.approvalStatus !== "not_approved" ||
+    inputQueueDetail.data.learnerFacingRelease !== false ||
+    inputQueueDetail.data.detailStatus !== "first_reviewer_input_queue_detail_ready_blocked_on_real_input" ||
+    inputQueueDetail.data.detailMode !== "single_human_owned_input_row_readonly_context" ||
+    inputQueueDetail.data.queueStatus !== "first_reviewer_input_queue_ready_blocked_on_real_input" ||
+    inputQueueDetail.data.itemRank !== 78 ||
+    inputQueueDetail.data.row?.itemRank !== 78 ||
+    inputQueueDetail.data.row?.itemType !== "source_fit_packet_row" ||
+    inputQueueDetail.data.row?.routeId !== "source_fit_packet_001" ||
+    inputQueueDetail.data.row?.nodeId !== "knv2_0003" ||
+    inputQueueDetail.data.row?.fillStatus !== "missing_real_reviewer_input" ||
+    !inputQueueDetail.data.editableFieldPaths?.reviewerDecision?.includes("rows[0].reviewerDecision") ||
+    !Array.isArray(inputQueueDetail.data.requiredFields) ||
+    !inputQueueDetail.data.requiredFields.includes("reviewerDecision") ||
+    !inputQueueDetail.data.requiredFields.includes("sourceFitNotes") ||
+    !Array.isArray(inputQueueDetail.data.allowedDecisionValues) ||
+    !inputQueueDetail.data.allowedDecisionValues.includes("accept_for_node_source_fit") ||
+    !Array.isArray(inputQueueDetail.data.evidenceSamples) ||
+    inputQueueDetail.data.evidenceSamples.length !== 1 ||
+    !Array.isArray(inputQueueDetail.data.nearbyRows) ||
+    inputQueueDetail.data.nearbyRows.length < 4 ||
+    !Array.isArray(inputQueueDetail.data.sameRouteRows) ||
+    inputQueueDetail.data.sameRouteRows.length !== 12 ||
+    !inputQueueDetail.data.sameRouteRows.every((row) => row.routeId === "source_fit_packet_001") ||
+    !Array.isArray(inputQueueDetail.data.sameNodeRows) ||
+    inputQueueDetail.data.sameNodeRows.length < 1 ||
+    !inputQueueDetail.data.sameNodeRows.every((row) => row.nodeId === "knv2_0003") ||
+    inputQueueDetail.data.realHumanInputEntries !== 0 ||
+    inputQueueDetail.data.learnerCitationApprovedRows !== 0 ||
+    inputQueueDetail.data.copiedTextApprovedRows !== 0 ||
+    inputQueueDetail.data.readyForSeparateApproval !== false ||
+    inputQueueDetail.data.mergeAllowedNow !== false ||
+    inputQueueDetail.data.writeAllowedNow !== false ||
+    inputQueueDetail.data.manualAuthorizationRequired !== true ||
+    !/does not generate reviewer notes/i.test(inputQueueDetail.data.completionRule || "") ||
+    !/reviewer-facing education-only/i.test(inputQueueDetail.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser first reviewer input queue detail endpoint failed");
+  }
+
+  const missingInputQueueDetail = await request("/api/knowledge-browser/knowledge-first-reviewer-input-queue-detail");
+  if (
+    missingInputQueueDetail.status !== 400 ||
+    missingInputQueueDetail.data.educationOnly !== true ||
+    missingInputQueueDetail.data.detailStatus !== "first_reviewer_input_queue_detail_missing_item_rank"
+  ) {
+    throw new Error("knowledge browser first reviewer input queue detail missing itemRank guard failed");
+  }
+
+  const unknownInputQueueDetail = await request("/api/knowledge-browser/knowledge-first-reviewer-input-queue-detail?itemRank=9999");
+  if (
+    unknownInputQueueDetail.status !== 404 ||
+    unknownInputQueueDetail.data.educationOnly !== true ||
+    unknownInputQueueDetail.data.detailStatus !== "first_reviewer_input_queue_detail_not_found" ||
+    unknownInputQueueDetail.data.itemRank !== 9999
+  ) {
+    throw new Error("knowledge browser first reviewer input queue detail unknown itemRank guard failed");
+  }
+
+  const knowledgeReleaseBlockerAudit = await request("/api/knowledge-browser/knowledge-release-blocker-audit");
+  if (
+    knowledgeReleaseBlockerAudit.status !== 200 ||
+    knowledgeReleaseBlockerAudit.data.educationOnly !== true ||
+    knowledgeReleaseBlockerAudit.data.productionReady !== false ||
+    knowledgeReleaseBlockerAudit.data.approvalStatus !== "not_approved" ||
+    knowledgeReleaseBlockerAudit.data.learnerFacingRelease !== false ||
+    knowledgeReleaseBlockerAudit.data.auditStatus !== "knowledge_release_blocker_audit_ready_release_blocked" ||
+    knowledgeReleaseBlockerAudit.data.auditMode !== "end_to_end_absorption_review_release_blocker_chain" ||
+    knowledgeReleaseBlockerAudit.data.knowledgeBaseUsefulnessStatus !== "usable_as_internal_reviewer_knowledge_base_not_learner_course" ||
+    knowledgeReleaseBlockerAudit.data.internalUseStatus !== "usable_as_internal_reviewer_workbench" ||
+    knowledgeReleaseBlockerAudit.data.learnerUseStatus !== "blocked_not_learner_course" ||
+    knowledgeReleaseBlockerAudit.data.localCourseAbsorbed !== true ||
+    knowledgeReleaseBlockerAudit.data.publicSourcesAbsorbed !== true ||
+    knowledgeReleaseBlockerAudit.data.internalWorkbenchReady !== true ||
+    knowledgeReleaseBlockerAudit.data.learnerReleaseBlocked !== true ||
+    knowledgeReleaseBlockerAudit.data.physicalPdfFiles !== 302 ||
+    knowledgeReleaseBlockerAudit.data.uniquePdfHashes !== 298 ||
+    knowledgeReleaseBlockerAudit.data.mappedUniquePdfFiles !== 298 ||
+    knowledgeReleaseBlockerAudit.data.publicCorpusDocuments !== 1196 ||
+    knowledgeReleaseBlockerAudit.data.wikipediaDocuments !== 96 ||
+    knowledgeReleaseBlockerAudit.data.officialLikeDocuments !== 202 ||
+    knowledgeReleaseBlockerAudit.data.mappedPublicDocuments !== 1196 ||
+    knowledgeReleaseBlockerAudit.data.moduleGroundedNodes !== 360 ||
+    knowledgeReleaseBlockerAudit.data.modules !== 12 ||
+    knowledgeReleaseBlockerAudit.data.internalNavigationReadyModules !== 12 ||
+    knowledgeReleaseBlockerAudit.data.learnerReleaseReadyModules !== 0 ||
+    knowledgeReleaseBlockerAudit.data.reviewerActionRows !== 52 ||
+    knowledgeReleaseBlockerAudit.data.reviewerBlockedWorkItems !== 1715 ||
+    knowledgeReleaseBlockerAudit.data.reviewerReadyWorkItems !== 0 ||
+    knowledgeReleaseBlockerAudit.data.firstHandoffActionRows !== 20 ||
+    knowledgeReleaseBlockerAudit.data.firstHandoffRequiredWorkItems !== 257 ||
+    knowledgeReleaseBlockerAudit.data.firstHandoffReadyWorkItems !== 0 ||
+    knowledgeReleaseBlockerAudit.data.firstHandoffBlockedWorkItems !== 257 ||
+    knowledgeReleaseBlockerAudit.data.sourceFitReviewRows !== 1638 ||
+    knowledgeReleaseBlockerAudit.data.readySourceFitReviewRows !== 0 ||
+    knowledgeReleaseBlockerAudit.data.blockedSourceFitReviewRows !== 1638 ||
+    knowledgeReleaseBlockerAudit.data.realHumanInputEntries !== 0 ||
+    knowledgeReleaseBlockerAudit.data.learnerCitationApprovedRows !== 0 ||
+    knowledgeReleaseBlockerAudit.data.writeAllowedNow !== false ||
+    knowledgeReleaseBlockerAudit.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(knowledgeReleaseBlockerAudit.data.stageRows) ||
+    knowledgeReleaseBlockerAudit.data.stageRows.length !== 7 ||
+    !Array.isArray(knowledgeReleaseBlockerAudit.data.releaseBlockerRows) ||
+    knowledgeReleaseBlockerAudit.data.releaseBlockerRows.length !== 4 ||
+    !knowledgeReleaseBlockerAudit.data.releaseBlockerRows.some((row) =>
+      row.blockerId === "missing_real_human_review" && row.blockedItems === 1715) ||
+    !knowledgeReleaseBlockerAudit.data.releaseBlockerRows.some((row) =>
+      row.blockerId === "source_fit_rows_not_reviewed" && row.blockedItems === 1638) ||
+    !knowledgeReleaseBlockerAudit.data.releaseBlockerRows.some((row) =>
+      row.blockerId === "first_reviewer_completion_gate_blocked" && row.blockedItems === 257) ||
+    !knowledgeReleaseBlockerAudit.data.releaseBlockerRows.some((row) =>
+      row.blockerId === "learner_release_modules_zero" && row.blockedItems === 12) ||
+    !Array.isArray(knowledgeReleaseBlockerAudit.data.nextBestActions) ||
+    knowledgeReleaseBlockerAudit.data.nextBestActions.length < 4 ||
+    !knowledgeReleaseBlockerAudit.data.commands.some((command) =>
+      /check:knowledge-release-blocker-audit/.test(command)) ||
+    !/reviewer-facing education-only/i.test(knowledgeReleaseBlockerAudit.data.boundary || "") ||
+    !/absorbed local investment course PDFs/i.test(knowledgeReleaseBlockerAudit.data.boundary || "") ||
+    !/does not generate reviewer notes/i.test(knowledgeReleaseBlockerAudit.data.boundary || "") ||
+    !/real-money guidance/i.test(knowledgeReleaseBlockerAudit.data.boundary || "") ||
+    !/end-to-end chain/i.test(knowledgeReleaseBlockerAudit.data.completionRule || "")
+  ) {
+    throw new Error("knowledge browser release blocker audit endpoint failed");
+  }
+
+  const knowledgeCoursePathReadinessAudit = await request("/api/knowledge-browser/knowledge-course-path-readiness-audit");
+  if (
+    knowledgeCoursePathReadinessAudit.status !== 200 ||
+    knowledgeCoursePathReadinessAudit.data.educationOnly !== true ||
+    knowledgeCoursePathReadinessAudit.data.productionReady !== false ||
+    knowledgeCoursePathReadinessAudit.data.approvalStatus !== "not_approved" ||
+    knowledgeCoursePathReadinessAudit.data.learnerFacingRelease !== false ||
+    knowledgeCoursePathReadinessAudit.data.auditStatus !== "course_path_readiness_audit_ready_release_blocked" ||
+    knowledgeCoursePathReadinessAudit.data.auditMode !== "module_course_paths_internal_ready_learner_release_blocked" ||
+    knowledgeCoursePathReadinessAudit.data.releaseBlockerAuditStatus !== "knowledge_release_blocker_audit_ready_release_blocked" ||
+    knowledgeCoursePathReadinessAudit.data.knowledgeBaseUsefulnessStatus !== "usable_as_internal_reviewer_knowledge_base_not_learner_course" ||
+    knowledgeCoursePathReadinessAudit.data.modules !== 12 ||
+    knowledgeCoursePathReadinessAudit.data.coursePaths !== 12 ||
+    knowledgeCoursePathReadinessAudit.data.internalReadyPaths !== 12 ||
+    knowledgeCoursePathReadinessAudit.data.learnerReleaseReadyPaths !== 0 ||
+    knowledgeCoursePathReadinessAudit.data.blockedLearnerReleasePaths !== 12 ||
+    knowledgeCoursePathReadinessAudit.data.totalLessons !== 360 ||
+    knowledgeCoursePathReadinessAudit.data.totalUnits !== 36 ||
+    knowledgeCoursePathReadinessAudit.data.totalEstimatedMinutes !== 2880 ||
+    knowledgeCoursePathReadinessAudit.data.nodesWithLocalCourseMatches !== 360 ||
+    knowledgeCoursePathReadinessAudit.data.learnerFacingNodes !== 360 ||
+    knowledgeCoursePathReadinessAudit.data.sourceFitReviewRows !== 1638 ||
+    knowledgeCoursePathReadinessAudit.data.readySourceFitReviewRows !== 0 ||
+    knowledgeCoursePathReadinessAudit.data.blockedSourceFitReviewRows !== 1638 ||
+    knowledgeCoursePathReadinessAudit.data.highRiskBlockedLessons !== 12 ||
+    knowledgeCoursePathReadinessAudit.data.highRiskBlockedReviewerNotes !== 72 ||
+    knowledgeCoursePathReadinessAudit.data.directSourceDecisions !== 5 ||
+    knowledgeCoursePathReadinessAudit.data.readyDirectSourceDecisions !== 0 ||
+    knowledgeCoursePathReadinessAudit.data.realHumanInputEntries !== 0 ||
+    knowledgeCoursePathReadinessAudit.data.learnerCitationApprovedRows !== 0 ||
+    knowledgeCoursePathReadinessAudit.data.writeAllowedNow !== false ||
+    knowledgeCoursePathReadinessAudit.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(knowledgeCoursePathReadinessAudit.data.pathRows) ||
+    knowledgeCoursePathReadinessAudit.data.pathRows.length !== 12 ||
+    !knowledgeCoursePathReadinessAudit.data.pathRows.every((row) =>
+      row.lessonCount === 30 &&
+      row.unitCount === 3 &&
+      row.estimatedMinutes === 240 &&
+      row.internalPathReady === true &&
+      row.learnerPathReleaseReady === false &&
+      row.readySourceFitRows === 0 &&
+      row.blockedSourceFitRows === row.sourceFitRows &&
+      row.reviewStatus === "course_path_internal_navigation_ready_release_blocked" &&
+      row.learnerFacingRelease === false &&
+      row.writeAllowedNow === false) ||
+    !knowledgeCoursePathReadinessAudit.data.pathRows.some((row) =>
+      row.highRiskBlockedLessons > 0 && row.blockedReasons?.includes("high_risk_lessons_blocked")) ||
+    !Array.isArray(knowledgeCoursePathReadinessAudit.data.nextBestActions) ||
+    knowledgeCoursePathReadinessAudit.data.nextBestActions.length < 4 ||
+    !knowledgeCoursePathReadinessAudit.data.commands.some((command) =>
+      /check:knowledge-course-path-readiness-audit/.test(command)) ||
+    !/reviewer-facing education-only/i.test(knowledgeCoursePathReadinessAudit.data.boundary || "") ||
+    !/absorbed local investment course material/i.test(knowledgeCoursePathReadinessAudit.data.boundary || "") ||
+    !/does not generate reviewer notes/i.test(knowledgeCoursePathReadinessAudit.data.boundary || "") ||
+    !/real-money guidance/i.test(knowledgeCoursePathReadinessAudit.data.boundary || "") ||
+    !/all 12 course paths/i.test(knowledgeCoursePathReadinessAudit.data.completionRule || "")
+  ) {
+    throw new Error("knowledge browser course path readiness audit endpoint failed");
+  }
+
+  const knowledgeModuleReviewSprintPlan = await request("/api/knowledge-browser/knowledge-module-review-sprint-plan");
+  if (
+    knowledgeModuleReviewSprintPlan.status !== 200 ||
+    knowledgeModuleReviewSprintPlan.data.educationOnly !== true ||
+    knowledgeModuleReviewSprintPlan.data.productionReady !== false ||
+    knowledgeModuleReviewSprintPlan.data.approvalStatus !== "not_approved" ||
+    knowledgeModuleReviewSprintPlan.data.learnerFacingRelease !== false ||
+    knowledgeModuleReviewSprintPlan.data.sprintPlanStatus !== "module_review_sprint_plan_ready_release_blocked" ||
+    knowledgeModuleReviewSprintPlan.data.sprintPlanMode !== "module_priority_plan_for_1715_reviewer_work_items" ||
+    knowledgeModuleReviewSprintPlan.data.coursePathAuditStatus !== "course_path_readiness_audit_ready_release_blocked" ||
+    knowledgeModuleReviewSprintPlan.data.actionQueueStatus !== "knowledge_reviewer_action_queue_ready_blocked_on_real_input" ||
+    knowledgeModuleReviewSprintPlan.data.progressMatrixStatus !== "node_public_source_fit_review_progress_matrix_ready_release_blocked" ||
+    knowledgeModuleReviewSprintPlan.data.firstCompletionGateStatus !== "first_reviewer_completion_gate_blocked_missing_real_input" ||
+    knowledgeModuleReviewSprintPlan.data.modules !== 12 ||
+    knowledgeModuleReviewSprintPlan.data.coursePaths !== 12 ||
+    knowledgeModuleReviewSprintPlan.data.sprintRows !== 12 ||
+    knowledgeModuleReviewSprintPlan.data.totalReviewerActions !== 52 ||
+    knowledgeModuleReviewSprintPlan.data.totalBlockedWorkItems !== 1715 ||
+    knowledgeModuleReviewSprintPlan.data.totalReadyWorkItems !== 0 ||
+    knowledgeModuleReviewSprintPlan.data.firstSprintBlockedWorkItems !== 257 ||
+    knowledgeModuleReviewSprintPlan.data.firstSprintReadyWorkItems !== 0 ||
+    knowledgeModuleReviewSprintPlan.data.highRiskSprintModules !== 4 ||
+    knowledgeModuleReviewSprintPlan.data.sourceFitReviewRows !== 1638 ||
+    knowledgeModuleReviewSprintPlan.data.readySourceFitReviewRows !== 0 ||
+    knowledgeModuleReviewSprintPlan.data.blockedSourceFitReviewRows !== 1638 ||
+    knowledgeModuleReviewSprintPlan.data.highRiskBlockedLessons !== 12 ||
+    knowledgeModuleReviewSprintPlan.data.highRiskBlockedReviewerNotes !== 72 ||
+    knowledgeModuleReviewSprintPlan.data.directSourceDecisions !== 5 ||
+    knowledgeModuleReviewSprintPlan.data.readyDirectSourceDecisions !== 0 ||
+    knowledgeModuleReviewSprintPlan.data.realHumanInputEntries !== 0 ||
+    knowledgeModuleReviewSprintPlan.data.learnerCitationApprovedRows !== 0 ||
+    knowledgeModuleReviewSprintPlan.data.learnerReleaseReadyPaths !== 0 ||
+    knowledgeModuleReviewSprintPlan.data.writeAllowedNow !== false ||
+    knowledgeModuleReviewSprintPlan.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(knowledgeModuleReviewSprintPlan.data.firstSprintRows) ||
+    knowledgeModuleReviewSprintPlan.data.firstSprintRows.length !== 4 ||
+    !knowledgeModuleReviewSprintPlan.data.firstSprintRows.every((row) =>
+      row.highRiskBlockedLessons > 0 && row.sprintPhase === "phase_1_high_risk_and_source_fit") ||
+    !Array.isArray(knowledgeModuleReviewSprintPlan.data.moduleSprintRows) ||
+    knowledgeModuleReviewSprintPlan.data.moduleSprintRows.length !== 12 ||
+    !knowledgeModuleReviewSprintPlan.data.moduleSprintRows.every((row) =>
+      row.lessonCount === 30 &&
+      row.unitCount === 3 &&
+      row.estimatedMinutes === 240 &&
+      row.readySourceFitReviewRows === 0 &&
+      row.blockedSourceFitReviewRows === row.sourceFitReviewRows &&
+      row.blockedActionRows >= 1 &&
+      row.blockedWorkItems >= row.blockedActionRows &&
+      row.learnerPathReleaseReady === false &&
+      row.learnerFacingRelease === false &&
+      row.writeAllowedNow === false &&
+      row.reviewStatus === "module_review_sprint_blocked_missing_real_input") ||
+    !Array.isArray(knowledgeModuleReviewSprintPlan.data.nextBestActions) ||
+    knowledgeModuleReviewSprintPlan.data.nextBestActions.length < 4 ||
+    !knowledgeModuleReviewSprintPlan.data.commands.some((command) =>
+      /check:knowledge-module-review-sprint-plan/.test(command)) ||
+    !/reviewer-facing education-only/i.test(knowledgeModuleReviewSprintPlan.data.boundary || "") ||
+    !/1715 reviewer work items/i.test(knowledgeModuleReviewSprintPlan.data.boundary || "") ||
+    !/12 high-risk lessons/i.test(knowledgeModuleReviewSprintPlan.data.boundary || "") ||
+    !/1638 source-fit rows/i.test(knowledgeModuleReviewSprintPlan.data.boundary || "") ||
+    !/does not generate reviewer notes/i.test(knowledgeModuleReviewSprintPlan.data.boundary || "") ||
+    !/learner release/i.test(knowledgeModuleReviewSprintPlan.data.completionRule || "")
+  ) {
+    throw new Error("knowledge browser module review sprint plan endpoint failed");
+  }
+
+  const knowledgeModuleId = knowledgeOverview.data.modules[0].id;
+  const knowledgeNodes = await request(`/api/knowledge-browser/nodes?module=${encodeURIComponent(knowledgeModuleId)}&limit=5`);
+  if (
+    knowledgeNodes.status !== 200 ||
+    knowledgeNodes.data.educationOnly !== true ||
+    !Array.isArray(knowledgeNodes.data.nodes) ||
+    knowledgeNodes.data.nodes.length < 1 ||
+    !knowledgeNodes.data.nodes.every((node) => node.reviewedSourceRefCount >= 1 && node.reviewStatus)
+  ) {
+    throw new Error("knowledge browser node list endpoint failed");
+  }
+
+  const unknownKnowledgeModule = await request("/api/knowledge-browser/nodes?module=not-a-module");
+  if (unknownKnowledgeModule.status !== 404) throw new Error("knowledge browser unknown module should 404");
+
+  const knowledgeNodeId = knowledgeNodes.data.nodes[0].id;
+  const knowledgeNodeDetail = await request(`/api/knowledge-browser/nodes/${encodeURIComponent(knowledgeNodeId)}`);
+  if (
+    knowledgeNodeDetail.status !== 200 ||
+    knowledgeNodeDetail.data.educationOnly !== true ||
+    knowledgeNodeDetail.data.productionReady !== false ||
+    knowledgeNodeDetail.data.node?.id !== knowledgeNodeId ||
+    !knowledgeNodeDetail.data.node?.sourceBoundary ||
+    !knowledgeNodeDetail.data.node?.licenseBoundary ||
+    !Array.isArray(knowledgeNodeDetail.data.node?.reviewedSourceRefs) ||
+    knowledgeNodeDetail.data.node.reviewedSourceRefs.length < 1 ||
+    knowledgeNodeDetail.data.lesson?.nodeId !== knowledgeNodeId ||
+    knowledgeNodeDetail.data.lesson?.reviewStatus !== "curriculum_draft" ||
+    !/education/i.test(knowledgeNodeDetail.data.lesson?.learnerBoundary || "")
+  ) {
+    throw new Error("knowledge browser node detail endpoint failed");
+  }
+
+  const unknownKnowledgeNode = await request("/api/knowledge-browser/nodes/knv2_does_not_exist");
+  if (unknownKnowledgeNode.status !== 404) throw new Error("knowledge browser unknown node should 404");
+
+  const knowledgeEvidence = await request(`/api/knowledge-browser/nodes/${encodeURIComponent(knowledgeNodeId)}/evidence`, { timeoutMs: 60000 });
+  if (
+    knowledgeEvidence.status !== 200 ||
+    knowledgeEvidence.data.educationOnly !== true ||
+    knowledgeEvidence.data.productionReady !== false ||
+    knowledgeEvidence.data.nodeId !== knowledgeNodeId ||
+    !Array.isArray(knowledgeEvidence.data.evidence) ||
+    knowledgeEvidence.data.evidence.length < 1 ||
+    !knowledgeEvidence.data.evidence.every((item) =>
+      ["public_domain", "open_access", "share_alike", "permissive"].includes(item.tier) &&
+      (["public_domain", "share_alike", "permissive"].includes(item.tier) || item.excerpt === null) &&
+      item.boundary)
+  ) {
+    throw new Error("knowledge browser node evidence endpoint failed");
+  }
+
+  const unknownEvidence = await request("/api/knowledge-browser/nodes/knv2_does_not_exist/evidence");
+  if (unknownEvidence.status !== 404) throw new Error("knowledge evidence unknown node should 404");
+
+  const localCourseCoverage = await request("/api/knowledge-browser/local-course-coverage");
+  if (
+    localCourseCoverage.status !== 200 ||
+    localCourseCoverage.data.educationOnly !== true ||
+    localCourseCoverage.data.productionReady !== false ||
+    localCourseCoverage.data.tier !== "local_private_course" ||
+    localCourseCoverage.data.documents < 298 ||
+    localCourseCoverage.data.matchedNodes < 360 ||
+    localCourseCoverage.data.readyForRewriteReviewNodes < 360 ||
+    !Array.isArray(localCourseCoverage.data.moduleCoverage) ||
+    localCourseCoverage.data.moduleCoverage.length < 12 ||
+    !/private reviewer intake/i.test(localCourseCoverage.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course coverage endpoint failed");
+  }
+
+  const localCourseSourceQuality = await request("/api/knowledge-browser/local-course-source-quality");
+  if (
+    localCourseSourceQuality.status !== 200 ||
+    localCourseSourceQuality.data.educationOnly !== true ||
+    localCourseSourceQuality.data.productionReady !== false ||
+    localCourseSourceQuality.data.approvalStatus !== "not_approved" ||
+    localCourseSourceQuality.data.learnerFacingRelease !== false ||
+    localCourseSourceQuality.data.folderFiles < 300 ||
+    localCourseSourceQuality.data.pdfOnlyFolder !== true ||
+    localCourseSourceQuality.data.uniquePdfFiles < 298 ||
+    localCourseSourceQuality.data.importedUniquePdfFiles !== localCourseSourceQuality.data.uniquePdfFiles ||
+    localCourseSourceQuality.data.missingUniquePdfFiles !== 0 ||
+    localCourseSourceQuality.data.lowExtractionDocs < 1 ||
+    localCourseSourceQuality.data.forbiddenLanguageDocs < 1 ||
+    localCourseSourceQuality.data.absorptionStatus !== "all_unique_pdfs_imported_with_quality_flags" ||
+    !Array.isArray(localCourseSourceQuality.data.lowExtractionList) ||
+    localCourseSourceQuality.data.lowExtractionList.length < 1 ||
+    !/private reviewer-only/i.test(localCourseSourceQuality.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course source quality endpoint failed");
+  }
+
+  const localCourseSourceSyncAudit = await request("/api/knowledge-browser/local-course-source-sync-audit");
+  if (
+    localCourseSourceSyncAudit.status !== 200 ||
+    localCourseSourceSyncAudit.data.educationOnly !== true ||
+    localCourseSourceSyncAudit.data.productionReady !== false ||
+    localCourseSourceSyncAudit.data.approvalStatus !== "not_approved" ||
+    localCourseSourceSyncAudit.data.learnerFacingRelease !== false ||
+    localCourseSourceSyncAudit.data.syncStatus !== "source_folder_synced_to_private_research_corpus_release_blocked" ||
+    localCourseSourceSyncAudit.data.syncMode !== "current_folder_to_manifest_and_private_corpus_hash_audit" ||
+    localCourseSourceSyncAudit.data.sourceRootAvailable !== true ||
+    localCourseSourceSyncAudit.data.currentPdfFiles !== 302 ||
+    localCourseSourceSyncAudit.data.currentUniquePdfHashes !== 298 ||
+    localCourseSourceSyncAudit.data.currentDuplicatePdfFiles !== 4 ||
+    localCourseSourceSyncAudit.data.manifestPdfFiles !== 302 ||
+    localCourseSourceSyncAudit.data.manifestUniquePdfFiles !== 298 ||
+    localCourseSourceSyncAudit.data.harvestReportTotalPdfFiles !== 302 ||
+    localCourseSourceSyncAudit.data.harvestReportUniquePdfFiles !== 298 ||
+    localCourseSourceSyncAudit.data.localPrivateCourseCorpusDocs < 298 ||
+    localCourseSourceSyncAudit.data.corpusDocsForCurrentUniqueHashes !== 298 ||
+    localCourseSourceSyncAudit.data.missingCurrentFilesFromManifest !== 0 ||
+    localCourseSourceSyncAudit.data.staleManifestFiles !== 0 ||
+    localCourseSourceSyncAudit.data.missingCurrentUniqueHashesFromCorpus !== 0 ||
+    localCourseSourceSyncAudit.data.corpusDocsMissingSourceFile !== 0 ||
+    localCourseSourceSyncAudit.data.learnerFacingAllowedDocs !== 0 ||
+    localCourseSourceSyncAudit.data.productionReadyDocs !== 0 ||
+    localCourseSourceSyncAudit.data.writeAllowedNow !== false ||
+    localCourseSourceSyncAudit.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(localCourseSourceSyncAudit.data.duplicateRows) ||
+    localCourseSourceSyncAudit.data.duplicateRows.length !== 4 ||
+    !Array.isArray(localCourseSourceSyncAudit.data.corpusDocSamples) ||
+    localCourseSourceSyncAudit.data.corpusDocSamples.length < 8 ||
+    !localCourseSourceSyncAudit.data.corpusDocSamples.every((sample) =>
+      sample.id &&
+      sample.sourceId &&
+      sample.sourceRelativePath &&
+      sample.learnerFacingAllowed === false) ||
+    !/current local source folder is represented in the private research corpus by hash/i.test(localCourseSourceSyncAudit.data.completionRule || "") ||
+    !/reviewer-facing education-only/i.test(localCourseSourceSyncAudit.data.boundary || "") ||
+    !/does not make private PDFs public citations/i.test(localCourseSourceSyncAudit.data.boundary || "") ||
+    !/stock recommendations/i.test(localCourseSourceSyncAudit.data.boundary || "") ||
+    !/live signals/i.test(localCourseSourceSyncAudit.data.boundary || "") ||
+    !/real-money guidance/i.test(localCourseSourceSyncAudit.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course source sync audit endpoint failed");
+  }
+
+  const localCourseDocumentAbsorptionMap = await request("/api/knowledge-browser/local-course-document-absorption-map");
+  if (
+    localCourseDocumentAbsorptionMap.status !== 200 ||
+    localCourseDocumentAbsorptionMap.data.educationOnly !== true ||
+    localCourseDocumentAbsorptionMap.data.productionReady !== false ||
+    localCourseDocumentAbsorptionMap.data.approvalStatus !== "not_approved" ||
+    localCourseDocumentAbsorptionMap.data.learnerFacingRelease !== false ||
+    localCourseDocumentAbsorptionMap.data.auditStatus !== "all_unique_pdfs_mapped_to_knowledge_nodes_release_blocked" ||
+    localCourseDocumentAbsorptionMap.data.auditMode !== "reverse_pdf_to_knowledge_node_absorption_map" ||
+    localCourseDocumentAbsorptionMap.data.physicalPdfFiles !== 302 ||
+    localCourseDocumentAbsorptionMap.data.duplicatePdfFiles !== 4 ||
+    localCourseDocumentAbsorptionMap.data.uniquePdfFiles !== 298 ||
+    localCourseDocumentAbsorptionMap.data.localPrivateCourseCorpusDocs !== 298 ||
+    localCourseDocumentAbsorptionMap.data.mappedUniquePdfFiles !== 298 ||
+    localCourseDocumentAbsorptionMap.data.unmappedUniquePdfFiles !== 0 ||
+    localCourseDocumentAbsorptionMap.data.totalDocumentNodeMatches < 2000 ||
+    localCourseDocumentAbsorptionMap.data.coverageTopMatchedPdfFiles < 10 ||
+    localCourseDocumentAbsorptionMap.data.reverseScoredMatchedPdfFiles < 290 ||
+    localCourseDocumentAbsorptionMap.data.lowOrThinExtractionMappedDocs < 1 ||
+    localCourseDocumentAbsorptionMap.data.lowExtractionDocs !== 5 ||
+    localCourseDocumentAbsorptionMap.data.manualTranscriptionPages !== 19 ||
+    localCourseDocumentAbsorptionMap.data.sourceReplacementCandidates !== 3 ||
+    localCourseDocumentAbsorptionMap.data.learnerFacingAllowedDocs !== 0 ||
+    localCourseDocumentAbsorptionMap.data.productionReadyDocs !== 0 ||
+    localCourseDocumentAbsorptionMap.data.writeAllowedNow !== false ||
+    localCourseDocumentAbsorptionMap.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(localCourseDocumentAbsorptionMap.data.moduleRows) ||
+    localCourseDocumentAbsorptionMap.data.moduleRows.length < 4 ||
+    !Array.isArray(localCourseDocumentAbsorptionMap.data.extractionAttentionRows) ||
+    localCourseDocumentAbsorptionMap.data.extractionAttentionRows.length < 1 ||
+    !Array.isArray(localCourseDocumentAbsorptionMap.data.topMappedDocumentRows) ||
+    localCourseDocumentAbsorptionMap.data.topMappedDocumentRows.length < 10 ||
+    !/reviewer-facing education-only/i.test(localCourseDocumentAbsorptionMap.data.boundary || "") ||
+    !/does not make private PDFs public citations/i.test(localCourseDocumentAbsorptionMap.data.boundary || "") ||
+    !/source-fit review/i.test(localCourseDocumentAbsorptionMap.data.completionRule || "")
+  ) {
+    throw new Error("knowledge browser local course document absorption map endpoint failed");
+  }
+
+  const localCourseFolderAbsorptionLedger = await request("/api/knowledge-browser/local-course-folder-absorption-ledger");
+  if (
+    localCourseFolderAbsorptionLedger.status !== 200 ||
+    localCourseFolderAbsorptionLedger.data.educationOnly !== true ||
+    localCourseFolderAbsorptionLedger.data.productionReady !== false ||
+    localCourseFolderAbsorptionLedger.data.approvalStatus !== "not_approved" ||
+    localCourseFolderAbsorptionLedger.data.learnerFacingRelease !== false ||
+    localCourseFolderAbsorptionLedger.data.ledgerStatus !== "folder_absorption_ledger_all_current_pdfs_accounted_release_blocked" ||
+    localCourseFolderAbsorptionLedger.data.ledgerMode !== "physical_folder_to_manifest_corpus_node_absorption_ledger" ||
+    localCourseFolderAbsorptionLedger.data.physicalFiles !== 302 ||
+    localCourseFolderAbsorptionLedger.data.physicalPdfFiles !== 302 ||
+    localCourseFolderAbsorptionLedger.data.nonPdfFiles !== 0 ||
+    localCourseFolderAbsorptionLedger.data.directories !== 19 ||
+    localCourseFolderAbsorptionLedger.data.uniquePdfHashes !== 298 ||
+    localCourseFolderAbsorptionLedger.data.duplicatePdfFiles !== 4 ||
+    localCourseFolderAbsorptionLedger.data.manifestPdfFiles !== 302 ||
+    localCourseFolderAbsorptionLedger.data.manifestUniquePdfFiles !== 298 ||
+    localCourseFolderAbsorptionLedger.data.corpusDocsForCurrentUniqueHashes !== 298 ||
+    localCourseFolderAbsorptionLedger.data.mappedUniquePdfFiles !== 298 ||
+    localCourseFolderAbsorptionLedger.data.unmappedUniquePdfFiles !== 0 ||
+    localCourseFolderAbsorptionLedger.data.totalDocumentNodeMatches !== 2375 ||
+    localCourseFolderAbsorptionLedger.data.matchedKnowledgeNodes !== 360 ||
+    localCourseFolderAbsorptionLedger.data.readyForRewriteReviewNodes !== 360 ||
+    localCourseFolderAbsorptionLedger.data.publicReferenceReadyModules !== 12 ||
+    localCourseFolderAbsorptionLedger.data.modules !== 12 ||
+    localCourseFolderAbsorptionLedger.data.learnerFacingAllowedDocs !== 0 ||
+    localCourseFolderAbsorptionLedger.data.productionReadyDocs !== 0 ||
+    localCourseFolderAbsorptionLedger.data.writeAllowedNow !== false ||
+    localCourseFolderAbsorptionLedger.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(localCourseFolderAbsorptionLedger.data.extensionRows) ||
+    localCourseFolderAbsorptionLedger.data.extensionRows.length !== 1 ||
+    localCourseFolderAbsorptionLedger.data.extensionRows[0]?.extension !== ".pdf" ||
+    localCourseFolderAbsorptionLedger.data.extensionRows[0]?.files !== 302 ||
+    !Array.isArray(localCourseFolderAbsorptionLedger.data.directoryRows) ||
+    localCourseFolderAbsorptionLedger.data.directoryRows.length !== 19 ||
+    localCourseFolderAbsorptionLedger.data.directoryRows.reduce((sum, row) => sum + (row.physicalFiles || 0), 0) !== 302 ||
+    localCourseFolderAbsorptionLedger.data.directoryRows.reduce((sum, row) => sum + (row.unmappedUniqueFiles || 0), 0) !== 0 ||
+    !localCourseFolderAbsorptionLedger.data.directoryRows.every((row) =>
+      row.absorptionStatus === "all_unique_files_mapped_private_research_only" &&
+      Array.isArray(row.sampleFiles) &&
+      row.sampleFiles.length > 0) ||
+    !Array.isArray(localCourseFolderAbsorptionLedger.data.duplicateRows) ||
+    localCourseFolderAbsorptionLedger.data.duplicateRows.length !== 4 ||
+    !Array.isArray(localCourseFolderAbsorptionLedger.data.extractionAttentionRows) ||
+    localCourseFolderAbsorptionLedger.data.extractionAttentionRows.length < 1 ||
+    !Array.isArray(localCourseFolderAbsorptionLedger.data.topPhysicalFiles) ||
+    localCourseFolderAbsorptionLedger.data.topPhysicalFiles.length !== 20 ||
+    !Array.isArray(localCourseFolderAbsorptionLedger.data.commands) ||
+    !localCourseFolderAbsorptionLedger.data.commands.some((command) =>
+      /check:local-course-folder-absorption-ledger/.test(command)) ||
+    !/reviewer-facing education-only/i.test(localCourseFolderAbsorptionLedger.data.boundary || "") ||
+    !/does not make private PDFs learner-facing citations/i.test(localCourseFolderAbsorptionLedger.data.boundary || "") ||
+    !/real-money guidance/i.test(localCourseFolderAbsorptionLedger.data.boundary || "") ||
+    !/every current file/i.test(localCourseFolderAbsorptionLedger.data.completionRule || "")
+  ) {
+    throw new Error("knowledge browser local course folder absorption ledger endpoint failed");
+  }
+
+  const publicSourceGap = await request("/api/knowledge-browser/public-source-gap");
+  if (
+    publicSourceGap.status !== 200 ||
+    publicSourceGap.data.educationOnly !== true ||
+    publicSourceGap.data.productionReady !== false ||
+    publicSourceGap.data.approvalStatus !== "not_approved" ||
+    publicSourceGap.data.learnerFacingRelease !== false ||
+    publicSourceGap.data.publicCorpusDocuments < 1100 ||
+    publicSourceGap.data.wikipediaDocuments < 90 ||
+    publicSourceGap.data.officialLikeDocuments < 200 ||
+    publicSourceGap.data.modules !== 12 ||
+    publicSourceGap.data.modulesWithPublicEvidence !== 12 ||
+    publicSourceGap.data.modulesWithWikipediaEvidence !== 12 ||
+    publicSourceGap.data.publicReferenceReadyModules !== 12 ||
+    !Array.isArray(publicSourceGap.data.moduleRows) ||
+    publicSourceGap.data.moduleRows.length !== 12 ||
+    !publicSourceGap.data.moduleRows.every((row) =>
+      row.wikipediaEvidenceDocs >= 1 &&
+      Array.isArray(row.wikipediaEvidenceSamples) &&
+      row.wikipediaEvidenceSamples.length >= 1 &&
+      row.topPublicEvidenceDocs >= 12)
+  ) {
+    throw new Error("knowledge browser public source gap endpoint failed");
+  }
+
+  const wikipediaGroundingAudit = await request("/api/knowledge-browser/wikipedia-grounding-audit");
+  if (
+    wikipediaGroundingAudit.status !== 200 ||
+    wikipediaGroundingAudit.data.educationOnly !== true ||
+    wikipediaGroundingAudit.data.productionReady !== false ||
+    wikipediaGroundingAudit.data.approvalStatus !== "not_approved" ||
+    wikipediaGroundingAudit.data.learnerFacingRelease !== false ||
+    wikipediaGroundingAudit.data.auditStatus !== "wikipedia_grounding_ready_for_reviewer_not_release" ||
+    wikipediaGroundingAudit.data.auditMode !== "public_wikipedia_research_layer_grounding_audit" ||
+    wikipediaGroundingAudit.data.wikipediaDocuments !== 96 ||
+    wikipediaGroundingAudit.data.wikipediaDocumentsFromPublicGap !== 96 ||
+    wikipediaGroundingAudit.data.publicCorpusDocuments < 1100 ||
+    wikipediaGroundingAudit.data.recentHarvestArticlesAttempted !== 20 ||
+    wikipediaGroundingAudit.data.recentHarvestArticlesStored !== 6 ||
+    wikipediaGroundingAudit.data.modules !== 12 ||
+    wikipediaGroundingAudit.data.modulesWithWikipediaGrounding !== 12 ||
+    wikipediaGroundingAudit.data.modulesWithTwoWikipediaGroundingDocs !== 12 ||
+    wikipediaGroundingAudit.data.modulesWithWikipediaSamples !== 12 ||
+    !Array.isArray(wikipediaGroundingAudit.data.wikipediaThinModules) ||
+    wikipediaGroundingAudit.data.wikipediaThinModules.length !== 0 ||
+    wikipediaGroundingAudit.data.highRiskLessonsWithAtLeastThreeWikipediaRefs !== 12 ||
+    wikipediaGroundingAudit.data.highRiskWikipediaRefCount < 48 ||
+    wikipediaGroundingAudit.data.highRiskLearnerCitationApprovedLessons !== 0 ||
+    wikipediaGroundingAudit.data.learnerCitationApprovedModules !== 0 ||
+    wikipediaGroundingAudit.data.writeAllowedNow !== false ||
+    wikipediaGroundingAudit.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(wikipediaGroundingAudit.data.moduleRows) ||
+    wikipediaGroundingAudit.data.moduleRows.length !== 12 ||
+    !wikipediaGroundingAudit.data.moduleRows.every((row) =>
+      row.wikipediaEvidenceDocs >= 2 &&
+      Array.isArray(row.wikipediaSamples) &&
+      row.wikipediaSamples.length >= 1 &&
+      row.wikipediaSamples.every((sample) =>
+        sample.documentId &&
+        sample.name &&
+        /^https:\/\/en\.wikipedia\.org\/wiki\//.test(sample.url || "") &&
+        sample.excerptPolicy === "attribution_and_share_alike_required") &&
+      row.learnerCitationApproved === false &&
+      row.learnerFacingRelease === false &&
+      row.nextGate === "human_source_fit_public_grounding_originality_and_separate_release_approval") ||
+    !Array.isArray(wikipediaGroundingAudit.data.highRiskLessonRows) ||
+    wikipediaGroundingAudit.data.highRiskLessonRows.length !== 12 ||
+    !wikipediaGroundingAudit.data.highRiskLessonRows.every((row) =>
+      row.wikipediaRefCount >= 3 &&
+      row.publicContextRefCount >= 2 &&
+      row.publicGroundingStatus === "mapped_for_reviewer_not_release_approved" &&
+      row.learnerCitationApproved === false &&
+      row.learnerFacingRelease === false &&
+      row.approvalStatus === "not_approved" &&
+      row.releaseBlocker === true) ||
+    !Array.isArray(wikipediaGroundingAudit.data.wikipediaDocSamples) ||
+    wikipediaGroundingAudit.data.wikipediaDocSamples.length < 8 ||
+    !wikipediaGroundingAudit.data.wikipediaDocSamples.every((sample) =>
+      sample.id &&
+      sample.sourceId &&
+      sample.name &&
+      sample.excerptPolicy === "attribution_and_share_alike_required" &&
+      sample.learnerFacingApproved === false) ||
+    !/wikipedia\/public grounding availability for reviewer work/i.test(wikipediaGroundingAudit.data.completionRule || "") ||
+    !/cc by-sa\/share-alike/i.test(wikipediaGroundingAudit.data.boundary || "") ||
+    !/stock recommendations/i.test(wikipediaGroundingAudit.data.boundary || "") ||
+    !/live signals/i.test(wikipediaGroundingAudit.data.boundary || "") ||
+    !/real-money guidance/i.test(wikipediaGroundingAudit.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser Wikipedia grounding audit endpoint failed");
+  }
+
+  const publicSourceAbsorptionMap = await request("/api/knowledge-browser/public-source-absorption-map");
+  if (
+    publicSourceAbsorptionMap.status !== 200 ||
+    publicSourceAbsorptionMap.data.educationOnly !== true ||
+    publicSourceAbsorptionMap.data.productionReady !== false ||
+    publicSourceAbsorptionMap.data.approvalStatus !== "not_approved" ||
+    publicSourceAbsorptionMap.data.learnerFacingRelease !== false ||
+    publicSourceAbsorptionMap.data.auditStatus !== "public_sources_mapped_to_knowledge_nodes_release_blocked" ||
+    publicSourceAbsorptionMap.data.auditMode !== "reverse_public_source_to_knowledge_node_absorption_map" ||
+    publicSourceAbsorptionMap.data.corpusDocuments !== 1494 ||
+    publicSourceAbsorptionMap.data.publicCorpusDocuments !== 1196 ||
+    publicSourceAbsorptionMap.data.wikipediaDocuments !== 96 ||
+    publicSourceAbsorptionMap.data.officialLikeDocuments !== 202 ||
+    publicSourceAbsorptionMap.data.mappedPublicDocuments !== 1196 ||
+    publicSourceAbsorptionMap.data.unmappedPublicDocuments !== 0 ||
+    publicSourceAbsorptionMap.data.mappedWikipediaDocuments !== 96 ||
+    publicSourceAbsorptionMap.data.unmappedWikipediaDocuments !== 0 ||
+    publicSourceAbsorptionMap.data.mappedOfficialLikeDocuments !== 202 ||
+    publicSourceAbsorptionMap.data.unmappedOfficialLikeDocuments !== 0 ||
+    publicSourceAbsorptionMap.data.totalPublicDocumentNodeMatches < 9000 ||
+    publicSourceAbsorptionMap.data.modulesWithPublicSourceMapping !== 12 ||
+    publicSourceAbsorptionMap.data.modulesWithWikipediaMapping < 10 ||
+    publicSourceAbsorptionMap.data.learnerCitationApprovedDocuments !== 0 ||
+    publicSourceAbsorptionMap.data.writeAllowedNow !== false ||
+    publicSourceAbsorptionMap.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(publicSourceAbsorptionMap.data.moduleRows) ||
+    publicSourceAbsorptionMap.data.moduleRows.length !== 12 ||
+    !Array.isArray(publicSourceAbsorptionMap.data.wikipediaRows) ||
+    publicSourceAbsorptionMap.data.wikipediaRows.length < 10 ||
+    !Array.isArray(publicSourceAbsorptionMap.data.officialLikeRows) ||
+    publicSourceAbsorptionMap.data.officialLikeRows.length < 10 ||
+    !Array.isArray(publicSourceAbsorptionMap.data.topMappedPublicRows) ||
+    publicSourceAbsorptionMap.data.topMappedPublicRows.length < 10 ||
+    !/reviewer-facing education-only/i.test(publicSourceAbsorptionMap.data.boundary || "") ||
+    !/does not approve copied text/i.test(publicSourceAbsorptionMap.data.boundary || "") ||
+    !/learner-facing citations/i.test(publicSourceAbsorptionMap.data.completionRule || "")
+  ) {
+    throw new Error("knowledge browser public source absorption map endpoint failed");
+  }
+
+  const publicSourceCoverageLedger = await request("/api/knowledge-browser/public-source-coverage-ledger");
+  if (
+    publicSourceCoverageLedger.status !== 200 ||
+    publicSourceCoverageLedger.data.educationOnly !== true ||
+    publicSourceCoverageLedger.data.productionReady !== false ||
+    publicSourceCoverageLedger.data.approvalStatus !== "not_approved" ||
+    publicSourceCoverageLedger.data.learnerFacingRelease !== false ||
+    publicSourceCoverageLedger.data.ledgerStatus !== "public_source_coverage_ledger_ready_release_blocked" ||
+    publicSourceCoverageLedger.data.ledgerMode !== "public_wikipedia_official_source_absorption_and_source_fit_queue" ||
+    publicSourceCoverageLedger.data.publicCorpusDocuments !== 1196 ||
+    publicSourceCoverageLedger.data.wikipediaDocuments !== 96 ||
+    publicSourceCoverageLedger.data.officialLikeDocuments !== 202 ||
+    publicSourceCoverageLedger.data.mappedPublicDocuments !== 1196 ||
+    publicSourceCoverageLedger.data.unmappedPublicDocuments !== 0 ||
+    publicSourceCoverageLedger.data.mappedWikipediaDocuments !== 96 ||
+    publicSourceCoverageLedger.data.unmappedWikipediaDocuments !== 0 ||
+    publicSourceCoverageLedger.data.mappedOfficialLikeDocuments !== 202 ||
+    publicSourceCoverageLedger.data.unmappedOfficialLikeDocuments !== 0 ||
+    publicSourceCoverageLedger.data.totalPublicDocumentNodeMatches !== 9568 ||
+    publicSourceCoverageLedger.data.modules !== 12 ||
+    publicSourceCoverageLedger.data.publicReferenceReadyModules !== 12 ||
+    publicSourceCoverageLedger.data.modulesWithWikipediaGrounding !== 12 ||
+    publicSourceCoverageLedger.data.nodes !== 360 ||
+    publicSourceCoverageLedger.data.moduleGroundedNodes !== 360 ||
+    publicSourceCoverageLedger.data.directPublicReadyNodes !== 103 ||
+    publicSourceCoverageLedger.data.directWikipediaReadyNodes !== 84 ||
+    publicSourceCoverageLedger.data.directOfficialReadyNodes !== 83 ||
+    publicSourceCoverageLedger.data.directTriangulatedNodes !== 87 ||
+    publicSourceCoverageLedger.data.candidateTargetNodes !== 273 ||
+    publicSourceCoverageLedger.data.sourceFitCandidates !== 1638 ||
+    publicSourceCoverageLedger.data.wikipediaCandidates !== 1122 ||
+    publicSourceCoverageLedger.data.officialCandidates !== 243 ||
+    publicSourceCoverageLedger.data.sourceFitReviewRows !== 1638 ||
+    publicSourceCoverageLedger.data.readySourceFitReviewRows !== 0 ||
+    publicSourceCoverageLedger.data.blockedSourceFitReviewRows !== 1638 ||
+    publicSourceCoverageLedger.data.rowsWithUrl !== 1638 ||
+    publicSourceCoverageLedger.data.realHumanInputEntries !== 0 ||
+    publicSourceCoverageLedger.data.learnerCitationApprovedDocuments !== 0 ||
+    publicSourceCoverageLedger.data.learnerCitationApprovedNodes !== 0 ||
+    publicSourceCoverageLedger.data.learnerCitationApprovedCandidates !== 0 ||
+    publicSourceCoverageLedger.data.learnerCitationApprovedRows !== 0 ||
+    publicSourceCoverageLedger.data.writeAllowedNow !== false ||
+    publicSourceCoverageLedger.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(publicSourceCoverageLedger.data.moduleRows) ||
+    publicSourceCoverageLedger.data.moduleRows.length !== 12 ||
+    publicSourceCoverageLedger.data.moduleRows.reduce((sum, row) => sum + (row.sourceFitCandidateRows || 0), 0) !== 1638 ||
+    !publicSourceCoverageLedger.data.moduleRows.every((row) =>
+      row.status === "public_layer_mapped_source_fit_blocked_on_real_review" &&
+      row.realHumanInputEntries === 0 &&
+      row.learnerCitationApprovedRows === 0) ||
+    !Array.isArray(publicSourceCoverageLedger.data.wikipediaDocSamples) ||
+    publicSourceCoverageLedger.data.wikipediaDocSamples.length < 10 ||
+    !Array.isArray(publicSourceCoverageLedger.data.nodeSpecificPublicGapSamples) ||
+    publicSourceCoverageLedger.data.nodeSpecificPublicGapSamples.length < 10 ||
+    !Array.isArray(publicSourceCoverageLedger.data.commands) ||
+    !publicSourceCoverageLedger.data.commands.some((command) =>
+      /check:public-source-coverage-ledger/.test(command)) ||
+    !/reviewer-facing education-only/i.test(publicSourceCoverageLedger.data.boundary || "") ||
+    !/does not approve copied text/i.test(publicSourceCoverageLedger.data.boundary || "") ||
+    !/real-money guidance/i.test(publicSourceCoverageLedger.data.boundary || "") ||
+    !/does not approve learner-facing citations/i.test(publicSourceCoverageLedger.data.completionRule || "")
+  ) {
+    throw new Error("knowledge browser public source coverage ledger endpoint failed");
+  }
+
+  const knowledgeNodeSourceTriangulationAudit = await request("/api/knowledge-browser/knowledge-node-source-triangulation-audit");
+  if (
+    knowledgeNodeSourceTriangulationAudit.status !== 200 ||
+    knowledgeNodeSourceTriangulationAudit.data.educationOnly !== true ||
+    knowledgeNodeSourceTriangulationAudit.data.productionReady !== false ||
+    knowledgeNodeSourceTriangulationAudit.data.approvalStatus !== "not_approved" ||
+    knowledgeNodeSourceTriangulationAudit.data.learnerFacingRelease !== false ||
+    knowledgeNodeSourceTriangulationAudit.data.auditStatus !== "node_source_triangulation_ready_for_reviewer_release_blocked" ||
+    knowledgeNodeSourceTriangulationAudit.data.auditMode !== "local_private_plus_public_wikipedia_node_triangulation" ||
+    knowledgeNodeSourceTriangulationAudit.data.nodes !== 360 ||
+    knowledgeNodeSourceTriangulationAudit.data.modules !== 12 ||
+    knowledgeNodeSourceTriangulationAudit.data.localReadyNodes !== 360 ||
+    knowledgeNodeSourceTriangulationAudit.data.directPublicReadyNodes < 100 ||
+    knowledgeNodeSourceTriangulationAudit.data.directWikipediaReadyNodes < 80 ||
+    knowledgeNodeSourceTriangulationAudit.data.directOfficialReadyNodes < 70 ||
+    knowledgeNodeSourceTriangulationAudit.data.directTriangulatedNodes < 80 ||
+    knowledgeNodeSourceTriangulationAudit.data.moduleGroundedNodes !== 360 ||
+    knowledgeNodeSourceTriangulationAudit.data.attentionNodes !== 0 ||
+    knowledgeNodeSourceTriangulationAudit.data.learnerCitationApprovedNodes !== 0 ||
+    knowledgeNodeSourceTriangulationAudit.data.writeAllowedNow !== false ||
+    knowledgeNodeSourceTriangulationAudit.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(knowledgeNodeSourceTriangulationAudit.data.moduleRows) ||
+    knowledgeNodeSourceTriangulationAudit.data.moduleRows.length !== 12 ||
+    !Array.isArray(knowledgeNodeSourceTriangulationAudit.data.directTriangulatedSamples) ||
+    knowledgeNodeSourceTriangulationAudit.data.directTriangulatedSamples.length < 6 ||
+    !Array.isArray(knowledgeNodeSourceTriangulationAudit.data.nodeSpecificPublicGapSamples) ||
+    knowledgeNodeSourceTriangulationAudit.data.nodeSpecificPublicGapSamples.length < 6 ||
+    !/reviewer-facing education-only/i.test(knowledgeNodeSourceTriangulationAudit.data.boundary || "") ||
+    !/module-level grounding/i.test(knowledgeNodeSourceTriangulationAudit.data.completionRule || "") ||
+    !/learner-facing citations/i.test(knowledgeNodeSourceTriangulationAudit.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser node source triangulation audit endpoint failed");
+  }
+
+  const knowledgeNodePublicSourceFitCandidatePack = await request("/api/knowledge-browser/knowledge-node-public-source-fit-candidate-pack");
+  if (
+    knowledgeNodePublicSourceFitCandidatePack.status !== 200 ||
+    knowledgeNodePublicSourceFitCandidatePack.data.educationOnly !== true ||
+    knowledgeNodePublicSourceFitCandidatePack.data.productionReady !== false ||
+    knowledgeNodePublicSourceFitCandidatePack.data.approvalStatus !== "not_approved" ||
+    knowledgeNodePublicSourceFitCandidatePack.data.learnerFacingRelease !== false ||
+    knowledgeNodePublicSourceFitCandidatePack.data.packStatus !== "node_public_source_fit_candidate_pack_ready_for_reviewer_release_blocked" ||
+    knowledgeNodePublicSourceFitCandidatePack.data.packMode !== "promote_module_public_grounding_to_node_specific_source_fit_candidates" ||
+    knowledgeNodePublicSourceFitCandidatePack.data.nodes !== 360 ||
+    knowledgeNodePublicSourceFitCandidatePack.data.directTriangulatedNodes < 80 ||
+    knowledgeNodePublicSourceFitCandidatePack.data.candidateTargetNodes !== 273 ||
+    knowledgeNodePublicSourceFitCandidatePack.data.readyCandidateRows !== 273 ||
+    knowledgeNodePublicSourceFitCandidatePack.data.attentionCandidateRows !== 0 ||
+    knowledgeNodePublicSourceFitCandidatePack.data.totalCandidates < 1600 ||
+    knowledgeNodePublicSourceFitCandidatePack.data.wikipediaCandidates < 1000 ||
+    knowledgeNodePublicSourceFitCandidatePack.data.officialCandidates < 200 ||
+    knowledgeNodePublicSourceFitCandidatePack.data.learnerCitationApprovedCandidates !== 0 ||
+    knowledgeNodePublicSourceFitCandidatePack.data.reviewerAcceptedCandidates !== 0 ||
+    knowledgeNodePublicSourceFitCandidatePack.data.writeAllowedNow !== false ||
+    knowledgeNodePublicSourceFitCandidatePack.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(knowledgeNodePublicSourceFitCandidatePack.data.moduleRows) ||
+    knowledgeNodePublicSourceFitCandidatePack.data.moduleRows.length < 10 ||
+    !Array.isArray(knowledgeNodePublicSourceFitCandidatePack.data.sampleCandidateRows) ||
+    knowledgeNodePublicSourceFitCandidatePack.data.sampleCandidateRows.length < 6 ||
+    !/reviewer-facing education-only/i.test(knowledgeNodePublicSourceFitCandidatePack.data.boundary || "") ||
+    !/does not accept sources/i.test(knowledgeNodePublicSourceFitCandidatePack.data.completionRule || "") ||
+    !/learner-facing citations/i.test(knowledgeNodePublicSourceFitCandidatePack.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser node public source-fit candidate pack endpoint failed");
+  }
+
+  const knowledgeNodePublicSourceFitReviewInputStarter = await request("/api/knowledge-browser/knowledge-node-public-source-fit-review-input-starter");
+  if (
+    knowledgeNodePublicSourceFitReviewInputStarter.status !== 200 ||
+    knowledgeNodePublicSourceFitReviewInputStarter.data.educationOnly !== true ||
+    knowledgeNodePublicSourceFitReviewInputStarter.data.productionReady !== false ||
+    knowledgeNodePublicSourceFitReviewInputStarter.data.approvalStatus !== "not_approved" ||
+    knowledgeNodePublicSourceFitReviewInputStarter.data.learnerFacingRelease !== false ||
+    knowledgeNodePublicSourceFitReviewInputStarter.data.starterStatus !== "node_public_source_fit_review_input_starter_ready_blank" ||
+    knowledgeNodePublicSourceFitReviewInputStarter.data.candidateTargetNodes !== 273 ||
+    knowledgeNodePublicSourceFitReviewInputStarter.data.reviewRows !== 1638 ||
+    knowledgeNodePublicSourceFitReviewInputStarter.data.readyReviewRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewInputStarter.data.blockedReviewRows !== 1638 ||
+    knowledgeNodePublicSourceFitReviewInputStarter.data.realHumanInputEntries !== 0 ||
+    knowledgeNodePublicSourceFitReviewInputStarter.data.learnerCitationApprovedRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewInputStarter.data.copiedTextApprovedRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewInputStarter.data.writeAllowedNow !== false ||
+    knowledgeNodePublicSourceFitReviewInputStarter.data.manualAuthorizationRequired !== true ||
+    !/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT\.json/.test(knowledgeNodePublicSourceFitReviewInputStarter.data.draftInputPath || "") ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewInputStarter.data.commands) ||
+    !knowledgeNodePublicSourceFitReviewInputStarter.data.commands.some((item) => /validate:knowledge-node-public-source-fit-review-input/.test(item)) ||
+    !/reviewer-facing education-only/i.test(knowledgeNodePublicSourceFitReviewInputStarter.data.boundary || "") ||
+    !/real human reviewer/i.test(knowledgeNodePublicSourceFitReviewInputStarter.data.completionRule || "")
+  ) {
+    throw new Error("knowledge browser node public source-fit review input starter endpoint failed");
+  }
+
+  const knowledgeNodePublicSourceFitReviewInputValidation = await request("/api/knowledge-browser/knowledge-node-public-source-fit-review-input-validation");
+  if (
+    knowledgeNodePublicSourceFitReviewInputValidation.status !== 200 ||
+    knowledgeNodePublicSourceFitReviewInputValidation.data.educationOnly !== true ||
+    knowledgeNodePublicSourceFitReviewInputValidation.data.productionReady !== false ||
+    knowledgeNodePublicSourceFitReviewInputValidation.data.approvalStatus !== "not_approved" ||
+    knowledgeNodePublicSourceFitReviewInputValidation.data.learnerFacingRelease !== false ||
+    knowledgeNodePublicSourceFitReviewInputValidation.data.validationStatus !== "blocked_missing_real_reviewer_source_fit_input" ||
+    knowledgeNodePublicSourceFitReviewInputValidation.data.inputRows !== 1638 ||
+    knowledgeNodePublicSourceFitReviewInputValidation.data.readyRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewInputValidation.data.blockedRows !== 1638 ||
+    knowledgeNodePublicSourceFitReviewInputValidation.data.missingFieldRows !== 1638 ||
+    knowledgeNodePublicSourceFitReviewInputValidation.data.invalidDecisionRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewInputValidation.data.forbiddenHitRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewInputValidation.data.realHumanInputEntries !== 0 ||
+    knowledgeNodePublicSourceFitReviewInputValidation.data.learnerCitationApprovedRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewInputValidation.data.copiedTextApprovedRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewInputValidation.data.fixtureReadyRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewInputValidation.data.allowFixture !== false ||
+    knowledgeNodePublicSourceFitReviewInputValidation.data.writeAllowedNow !== false ||
+    knowledgeNodePublicSourceFitReviewInputValidation.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewInputValidation.data.blockedSamples) ||
+    knowledgeNodePublicSourceFitReviewInputValidation.data.blockedSamples.length < 6 ||
+    !/reviewer-facing education-only/i.test(knowledgeNodePublicSourceFitReviewInputValidation.data.boundary || "") ||
+    !/fixtureOnly:false/i.test(knowledgeNodePublicSourceFitReviewInputValidation.data.completionRule || "")
+  ) {
+    throw new Error("knowledge browser node public source-fit review input validation endpoint failed");
+  }
+
+  const knowledgeNodePublicSourceFitReviewExecutionQueue = await request("/api/knowledge-browser/knowledge-node-public-source-fit-review-execution-queue");
+  if (
+    knowledgeNodePublicSourceFitReviewExecutionQueue.status !== 200 ||
+    knowledgeNodePublicSourceFitReviewExecutionQueue.data.educationOnly !== true ||
+    knowledgeNodePublicSourceFitReviewExecutionQueue.data.productionReady !== false ||
+    knowledgeNodePublicSourceFitReviewExecutionQueue.data.approvalStatus !== "not_approved" ||
+    knowledgeNodePublicSourceFitReviewExecutionQueue.data.learnerFacingRelease !== false ||
+    knowledgeNodePublicSourceFitReviewExecutionQueue.data.queueStatus !== "node_public_source_fit_review_execution_queue_ready_release_blocked" ||
+    knowledgeNodePublicSourceFitReviewExecutionQueue.data.queueMode !== "module_batch_review_for_public_source_fit_candidates" ||
+    knowledgeNodePublicSourceFitReviewExecutionQueue.data.batchSize !== 60 ||
+    knowledgeNodePublicSourceFitReviewExecutionQueue.data.modules !== 12 ||
+    knowledgeNodePublicSourceFitReviewExecutionQueue.data.candidateTargetNodes !== 273 ||
+    knowledgeNodePublicSourceFitReviewExecutionQueue.data.reviewRows !== 1638 ||
+    knowledgeNodePublicSourceFitReviewExecutionQueue.data.validationStatus !== "blocked_missing_real_reviewer_source_fit_input" ||
+    knowledgeNodePublicSourceFitReviewExecutionQueue.data.readyRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewExecutionQueue.data.blockedRows !== 1638 ||
+    knowledgeNodePublicSourceFitReviewExecutionQueue.data.missingFieldRows !== 1638 ||
+    knowledgeNodePublicSourceFitReviewExecutionQueue.data.forbiddenHitRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewExecutionQueue.data.realHumanInputEntries !== 0 ||
+    knowledgeNodePublicSourceFitReviewExecutionQueue.data.learnerCitationApprovedRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewExecutionQueue.data.copiedTextApprovedRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewExecutionQueue.data.totalBatches !== 35 ||
+    knowledgeNodePublicSourceFitReviewExecutionQueue.data.blockedBatches !== 35 ||
+    knowledgeNodePublicSourceFitReviewExecutionQueue.data.readyBatches !== 0 ||
+    knowledgeNodePublicSourceFitReviewExecutionQueue.data.writeAllowedNow !== false ||
+    knowledgeNodePublicSourceFitReviewExecutionQueue.data.manualAuthorizationRequired !== true ||
+    knowledgeNodePublicSourceFitReviewExecutionQueue.data.upstreamReviewGateStatus !== "local_course_review_gate_dashboard_ready_release_blocked" ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewExecutionQueue.data.firstPriorityBatches) ||
+    knowledgeNodePublicSourceFitReviewExecutionQueue.data.firstPriorityBatches.length !== 6 ||
+    !knowledgeNodePublicSourceFitReviewExecutionQueue.data.firstPriorityBatches.every((batch) =>
+      /^node-public-source-fit-batch-/.test(batch.batchId || "") &&
+      batch.status === "blocked_missing_real_reviewer_input" &&
+      batch.owner === "real_reviewer") ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewExecutionQueue.data.moduleRows) ||
+    knowledgeNodePublicSourceFitReviewExecutionQueue.data.moduleRows.length !== 12 ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewExecutionQueue.data.batchRows) ||
+    knowledgeNodePublicSourceFitReviewExecutionQueue.data.batchRows.length < 6 ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewExecutionQueue.data.reviewerChecklist) ||
+    knowledgeNodePublicSourceFitReviewExecutionQueue.data.reviewerChecklist.length < 5 ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewExecutionQueue.data.commands) ||
+    !knowledgeNodePublicSourceFitReviewExecutionQueue.data.commands.some((item) =>
+      /check:knowledge-node-public-source-fit-review-execution-queue/.test(item)) ||
+    !/execution planning only/i.test(knowledgeNodePublicSourceFitReviewExecutionQueue.data.completionRule || "") ||
+    !/all 1638 node public source-fit rows/i.test(knowledgeNodePublicSourceFitReviewExecutionQueue.data.completionRule || "") ||
+    !/reviewer-facing education-only/i.test(knowledgeNodePublicSourceFitReviewExecutionQueue.data.boundary || "") ||
+    !/does not approve sources/i.test(knowledgeNodePublicSourceFitReviewExecutionQueue.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser node public source-fit review execution queue endpoint failed");
+  }
+
+  const knowledgeNodePublicSourceFitReviewBatchPackets = await request("/api/knowledge-browser/knowledge-node-public-source-fit-review-batch-packets");
+  if (
+    knowledgeNodePublicSourceFitReviewBatchPackets.status !== 200 ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.educationOnly !== true ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.productionReady !== false ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.approvalStatus !== "not_approved" ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.learnerFacingRelease !== false ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.packetStatus !== "node_public_source_fit_review_batch_packets_ready_release_blocked" ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.packetMode !== "fillable_batch_packets_for_node_public_source_fit_review" ||
+    !/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_EXECUTION_QUEUE/.test(knowledgeNodePublicSourceFitReviewBatchPackets.data.sourceQueuePath || "") ||
+    !/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT/.test(knowledgeNodePublicSourceFitReviewBatchPackets.data.sourceDraftInputPath || "") ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.modules !== 12 ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.totalBatches !== 35 ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.totalPackets !== 35 ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.candidateTargetNodes !== 273 ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.reviewRows !== 1638 ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.readyRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.blockedRows !== 1638 ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.missingFieldRows !== 1638 ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.realHumanInputEntries !== 0 ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.learnerCitationApprovedRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.copiedTextApprovedRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.writeAllowedNow !== false ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewBatchPackets.data.firstPriorityPackets) ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.firstPriorityPackets.length !== 6 ||
+    !knowledgeNodePublicSourceFitReviewBatchPackets.data.firstPriorityPackets.every((packet) =>
+      /^node-public-source-fit-batch-/.test(packet.packetId || "") &&
+      packet.reviewRows > 0 &&
+      /KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT/.test(packet.inputPath || "")) ||
+    !knowledgeNodePublicSourceFitReviewBatchPackets.data.selectedPacket ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.selectedPacket.packetId !== knowledgeNodePublicSourceFitReviewBatchPackets.data.firstPriorityPackets[0].packetId ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.selectedPacket.displayedRows !== 12 ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.selectedPacket.reviewRows <= knowledgeNodePublicSourceFitReviewBatchPackets.data.selectedPacket.displayedRows ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewBatchPackets.data.selectedPacket.packetRows) ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.selectedPacket.packetRows.length !== 12 ||
+    !knowledgeNodePublicSourceFitReviewBatchPackets.data.selectedPacket.packetRows.every((row) =>
+      Number.isInteger(row.inputRowIndex) &&
+      row.reviewId &&
+      row.nodeId &&
+      row.documentId &&
+      row.name &&
+      row.url &&
+      row.reviewStatus === "blocked_missing_real_reviewer_input" &&
+      row.fillableFields &&
+      row.fillableFields.reviewerDecision === `/rows/${row.inputRowIndex}/reviewerDecision` &&
+      row.fillableFields.sourceFitNotes === `/rows/${row.inputRowIndex}/sourceFitNotes` &&
+      row.fixedFields &&
+      row.fixedFields.learnerCitationApproved === false &&
+      row.fixedFields.copiedTextApproved === false) ||
+    !knowledgeNodePublicSourceFitReviewBatchPackets.data.selectedPacketWorkbench ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.selectedPacketWorkbench.workbenchStatus !== "selected_packet_review_workbench_ready_release_blocked" ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.selectedPacketWorkbench.workbenchMode !== "front_end_internal_browser_for_real_reviewer_packet_execution" ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.selectedPacketWorkbench.packetId !== knowledgeNodePublicSourceFitReviewBatchPackets.data.selectedPacket.packetId ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.selectedPacketWorkbench.displayedRows !== 12 ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.selectedPacketWorkbench.writeAllowedNow !== false ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.selectedPacketWorkbench.learnerFacingRelease !== false ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewBatchPackets.data.selectedPacketWorkbench.fixedFieldPolicy) ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.selectedPacketWorkbench.fixedFieldPolicy.length < 3 ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewBatchPackets.data.selectedPacketWorkbench.fillableFieldPointers) ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.selectedPacketWorkbench.fillableFieldPointers.length !== 6 ||
+    !knowledgeNodePublicSourceFitReviewBatchPackets.data.selectedPacketWorkbench.fillableFieldPointers.every((row) =>
+      Number.isInteger(row.inputRowIndex) &&
+      row.reviewId &&
+      row.reviewerDecision === `/rows/${row.inputRowIndex}/reviewerDecision` &&
+      row.sourceFitNotes === `/rows/${row.inputRowIndex}/sourceFitNotes`) ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewBatchPackets.data.selectedPacketWorkbench.rowEvidencePreview) ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.selectedPacketWorkbench.rowEvidencePreview.length !== 6 ||
+    !/does not create human judgments/i.test(knowledgeNodePublicSourceFitReviewBatchPackets.data.selectedPacketWorkbench.boundary || "") ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewBatchPackets.data.batchPackets) ||
+    knowledgeNodePublicSourceFitReviewBatchPackets.data.batchPackets.length < 6 ||
+    !knowledgeNodePublicSourceFitReviewBatchPackets.data.batchPackets.every((packet) =>
+      packet.packetStatus === "blank_batch_packet_ready_for_real_reviewer" &&
+      packet.owner === "real_reviewer" &&
+      Array.isArray(packet.sampleRows) &&
+      packet.sampleRows.length > 0 &&
+      Array.isArray(packet.acceptanceChecks) &&
+      packet.acceptanceChecks.length >= 4) ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewBatchPackets.data.commands) ||
+    !knowledgeNodePublicSourceFitReviewBatchPackets.data.commands.some((item) =>
+      /check:knowledge-node-public-source-fit-review-batch-packets/.test(item)) ||
+    !/blank scaffolding only/i.test(knowledgeNodePublicSourceFitReviewBatchPackets.data.completionRule || "") ||
+    !/do not create human judgments/i.test(knowledgeNodePublicSourceFitReviewBatchPackets.data.completionRule || "") ||
+    !/reviewer-facing education-only/i.test(knowledgeNodePublicSourceFitReviewBatchPackets.data.boundary || "") ||
+    !/learner-facing citations/i.test(knowledgeNodePublicSourceFitReviewBatchPackets.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser node public source-fit review batch packets endpoint failed");
+  }
+  const knowledgeNodePublicSourceFitReviewBatchPacket002 = await request("/api/knowledge-browser/knowledge-node-public-source-fit-review-batch-packets?packetId=node-public-source-fit-batch-002-packet");
+  if (
+    knowledgeNodePublicSourceFitReviewBatchPacket002.status !== 200 ||
+    knowledgeNodePublicSourceFitReviewBatchPacket002.data.selectedPacket?.packetId !== "node-public-source-fit-batch-002-packet" ||
+    knowledgeNodePublicSourceFitReviewBatchPacket002.data.selectedPacket?.batchId !== "node-public-source-fit-batch-002" ||
+    knowledgeNodePublicSourceFitReviewBatchPacket002.data.selectedPacket?.displayedRows !== 12 ||
+    knowledgeNodePublicSourceFitReviewBatchPacket002.data.selectedPacketWorkbench?.packetId !== "node-public-source-fit-batch-002-packet" ||
+    knowledgeNodePublicSourceFitReviewBatchPacket002.data.selectedPacketWorkbench?.batchId !== "node-public-source-fit-batch-002" ||
+    knowledgeNodePublicSourceFitReviewBatchPacket002.data.selectedPacketWorkbench?.displayedRows !== 12 ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewBatchPacket002.data.selectedPacket?.packetRows) ||
+    knowledgeNodePublicSourceFitReviewBatchPacket002.data.selectedPacket.packetRows.length !== 12 ||
+    !knowledgeNodePublicSourceFitReviewBatchPacket002.data.selectedPacket.packetRows.every((row) =>
+      row.fillableFields?.reviewerDecision === `/rows/${row.inputRowIndex}/reviewerDecision` &&
+      row.fixedFields?.learnerCitationApproved === false &&
+      row.fixedFields?.copiedTextApproved === false)
+  ) {
+    throw new Error("knowledge browser node public source-fit selected batch packet endpoint failed");
+  }
+
+  const knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate = await request("/api/knowledge-browser/knowledge-node-public-source-fit-review-packet-input-copy-template");
+  if (
+    knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.status !== 200 ||
+    knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.educationOnly !== true ||
+    knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.productionReady !== false ||
+    knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.approvalStatus !== "not_approved" ||
+    knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.learnerFacingRelease !== false ||
+    knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.templateStatus !== "node_public_source_fit_packet_input_copy_template_ready_blank" ||
+    knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.templateMode !== "first_blocked_packet_scoped_input_copy_for_real_reviewer" ||
+    knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.inputStatus !== "packet_input_copy_template_ready_for_real_reviewer" ||
+    knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.validationStatus !== "blocked_missing_real_reviewer_source_fit_input" ||
+    knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.packetId !== "node-public-source-fit-batch-001-packet" ||
+    knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.batchId !== "node-public-source-fit-batch-001" ||
+    !/PACKET_001_INPUT_COPY_TEMPLATE/.test(knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.inputCopyPath || "") ||
+    knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.targetNodes !== 10 ||
+    knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.reviewRows !== 60 ||
+    knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.readyReviewRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.blockedReviewRows !== 60 ||
+    knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.validationInputRows !== 60 ||
+    knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.validationReadyRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.validationBlockedRows !== 60 ||
+    knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.validationMissingFieldRows !== 60 ||
+    knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.validationInvalidDecisionRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.validationForbiddenHitRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.realHumanInputEntries !== 0 ||
+    knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.learnerCitationApprovedRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.copiedTextApprovedRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.writeAllowedNow !== false ||
+    knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.fillableFieldRows) ||
+    knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.fillableFieldRows.length !== 12 ||
+    !knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.fillableFieldRows.every((row) =>
+      row.reviewId &&
+      row.reviewerDecision === `/rows/${row.order - 1}/reviewerDecision` &&
+      row.sourceFitNotes === `/rows/${row.order - 1}/sourceFitNotes`) ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.rowEvidencePreview) ||
+    knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.rowEvidencePreview.length !== 8 ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.commands) ||
+    !knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.commands.some((item) =>
+      /validate:knowledge-node-public-source-fit-review-packet-input-copy-template/.test(item)) ||
+    !/does not create human judgments/i.test(knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.boundary || "") ||
+    !/real human reviewer decisions/i.test(knowledgeNodePublicSourceFitReviewPacketInputCopyTemplate.data.completionRule || "")
+  ) {
+    throw new Error("knowledge browser node public source-fit packet input copy template endpoint failed");
+  }
+
+  const knowledgeNodePublicSourceFitReviewPacketMergePreview = await request("/api/knowledge-browser/knowledge-node-public-source-fit-review-packet-merge-preview");
+  if (
+    knowledgeNodePublicSourceFitReviewPacketMergePreview.status !== 200 ||
+    knowledgeNodePublicSourceFitReviewPacketMergePreview.data.educationOnly !== true ||
+    knowledgeNodePublicSourceFitReviewPacketMergePreview.data.productionReady !== false ||
+    knowledgeNodePublicSourceFitReviewPacketMergePreview.data.approvalStatus !== "not_approved" ||
+    knowledgeNodePublicSourceFitReviewPacketMergePreview.data.learnerFacingRelease !== false ||
+    knowledgeNodePublicSourceFitReviewPacketMergePreview.data.mergePreviewStatus !== "packet_merge_preview_blocked_missing_ready_packet_input" ||
+    knowledgeNodePublicSourceFitReviewPacketMergePreview.data.mergePreviewMode !== "dry_run_packet_input_copy_to_full_source_fit_draft_mapping" ||
+    knowledgeNodePublicSourceFitReviewPacketMergePreview.data.packetId !== "node-public-source-fit-batch-001-packet" ||
+    knowledgeNodePublicSourceFitReviewPacketMergePreview.data.batchId !== "node-public-source-fit-batch-001" ||
+    knowledgeNodePublicSourceFitReviewPacketMergePreview.data.packetRows !== 60 ||
+    knowledgeNodePublicSourceFitReviewPacketMergePreview.data.fullDraftRows !== 1638 ||
+    knowledgeNodePublicSourceFitReviewPacketMergePreview.data.fullValidationRows !== 1638 ||
+    knowledgeNodePublicSourceFitReviewPacketMergePreview.data.mappedRows !== 60 ||
+    knowledgeNodePublicSourceFitReviewPacketMergePreview.data.missingTargetRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewPacketMergePreview.data.readyRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewPacketMergePreview.data.blockedRows !== 60 ||
+    knowledgeNodePublicSourceFitReviewPacketMergePreview.data.packetValidationStatus !== "blocked_missing_real_reviewer_source_fit_input" ||
+    knowledgeNodePublicSourceFitReviewPacketMergePreview.data.packetReadyRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewPacketMergePreview.data.packetBlockedRows !== 60 ||
+    knowledgeNodePublicSourceFitReviewPacketMergePreview.data.packetMissingFieldRows !== 60 ||
+    knowledgeNodePublicSourceFitReviewPacketMergePreview.data.packetForbiddenHitRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewPacketMergePreview.data.packetRealHumanInputEntries !== 0 ||
+    knowledgeNodePublicSourceFitReviewPacketMergePreview.data.fullDraftReadyRowsBeforeMerge !== 0 ||
+    knowledgeNodePublicSourceFitReviewPacketMergePreview.data.fullDraftBlockedRowsBeforeMerge !== 1638 ||
+    knowledgeNodePublicSourceFitReviewPacketMergePreview.data.mergeAllowedNow !== false ||
+    knowledgeNodePublicSourceFitReviewPacketMergePreview.data.writeAllowedNow !== false ||
+    knowledgeNodePublicSourceFitReviewPacketMergePreview.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewPacketMergePreview.data.sampleMergeRows) ||
+    knowledgeNodePublicSourceFitReviewPacketMergePreview.data.sampleMergeRows.length !== 12 ||
+    !knowledgeNodePublicSourceFitReviewPacketMergePreview.data.sampleMergeRows.every((row) =>
+      row.reviewId &&
+      Number.isInteger(row.packetRowIndex) &&
+      Number.isInteger(row.targetFullDraftRowIndex) &&
+      row.mappedToFullDraft === true &&
+      row.readyForMerge === false &&
+      row.mergeBlockedReason === "packet_row_not_ready_for_merge") ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewPacketMergePreview.data.commands) ||
+    !knowledgeNodePublicSourceFitReviewPacketMergePreview.data.commands.some((item) =>
+      /check:knowledge-node-public-source-fit-review-packet-merge-preview/.test(item)) ||
+    !/does not write the full source-fit draft/i.test(knowledgeNodePublicSourceFitReviewPacketMergePreview.data.boundary || "") ||
+    !/real human input/i.test(knowledgeNodePublicSourceFitReviewPacketMergePreview.data.completionRule || "")
+  ) {
+    throw new Error("knowledge browser node public source-fit packet merge preview endpoint failed");
+  }
+
+  const knowledgeNodePublicSourceFitReviewPacketMergeApplyReport = await request("/api/knowledge-browser/knowledge-node-public-source-fit-review-packet-merge-apply-report");
+  if (
+    knowledgeNodePublicSourceFitReviewPacketMergeApplyReport.status !== 200 ||
+    knowledgeNodePublicSourceFitReviewPacketMergeApplyReport.data.educationOnly !== true ||
+    knowledgeNodePublicSourceFitReviewPacketMergeApplyReport.data.productionReady !== false ||
+    knowledgeNodePublicSourceFitReviewPacketMergeApplyReport.data.approvalStatus !== "not_approved" ||
+    knowledgeNodePublicSourceFitReviewPacketMergeApplyReport.data.learnerFacingRelease !== false ||
+    knowledgeNodePublicSourceFitReviewPacketMergeApplyReport.data.applyMode !== "dry_run" ||
+    knowledgeNodePublicSourceFitReviewPacketMergeApplyReport.data.applyStatus !== "blocked_no_ready_merge_rows" ||
+    knowledgeNodePublicSourceFitReviewPacketMergeApplyReport.data.packetId !== "node-public-source-fit-batch-001-packet" ||
+    knowledgeNodePublicSourceFitReviewPacketMergeApplyReport.data.batchId !== "node-public-source-fit-batch-001" ||
+    knowledgeNodePublicSourceFitReviewPacketMergeApplyReport.data.totalRows !== 60 ||
+    knowledgeNodePublicSourceFitReviewPacketMergeApplyReport.data.readyToMergeRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewPacketMergeApplyReport.data.blockedRows !== 60 ||
+    knowledgeNodePublicSourceFitReviewPacketMergeApplyReport.data.writtenRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewPacketMergeApplyReport.data.mergeAllowedNow !== false ||
+    knowledgeNodePublicSourceFitReviewPacketMergeApplyReport.data.writeAllowedNow !== false ||
+    knowledgeNodePublicSourceFitReviewPacketMergeApplyReport.data.manualAuthorizationRequired !== true ||
+    knowledgeNodePublicSourceFitReviewPacketMergeApplyReport.data.fullDraftRows !== 1638 ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewPacketMergeApplyReport.data.applyRows) ||
+    knowledgeNodePublicSourceFitReviewPacketMergeApplyReport.data.applyRows.length !== 12 ||
+    !knowledgeNodePublicSourceFitReviewPacketMergeApplyReport.data.applyRows.every((row) =>
+      row.reviewId &&
+      row.applyStatus === "blocked_not_ready" &&
+      row.willWrite === false &&
+      row.realHumanInput === false &&
+      Array.isArray(row.missingFields) &&
+      row.missingFields.length > 0) ||
+    !/Fill packet input copy/i.test(knowledgeNodePublicSourceFitReviewPacketMergeApplyReport.data.nextStep || "") ||
+    !/dry-run mode writes no full draft changes/i.test(knowledgeNodePublicSourceFitReviewPacketMergeApplyReport.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser node public source-fit packet merge apply report endpoint failed");
+  }
+
+  const knowledgeNodePublicSourceFitReviewPacket001Handoff = await request("/api/knowledge-browser/knowledge-node-public-source-fit-review-packet-001-handoff");
+  if (
+    knowledgeNodePublicSourceFitReviewPacket001Handoff.status !== 200 ||
+    knowledgeNodePublicSourceFitReviewPacket001Handoff.data.educationOnly !== true ||
+    knowledgeNodePublicSourceFitReviewPacket001Handoff.data.productionReady !== false ||
+    knowledgeNodePublicSourceFitReviewPacket001Handoff.data.approvalStatus !== "not_approved" ||
+    knowledgeNodePublicSourceFitReviewPacket001Handoff.data.learnerFacingRelease !== false ||
+    knowledgeNodePublicSourceFitReviewPacket001Handoff.data.handoffStatus !== "node_public_source_fit_packet_001_handoff_ready_blocked_on_real_input" ||
+    knowledgeNodePublicSourceFitReviewPacket001Handoff.data.handoffMode !== "single_packet_reviewer_execution_path" ||
+    knowledgeNodePublicSourceFitReviewPacket001Handoff.data.packetId !== "node-public-source-fit-batch-001-packet" ||
+    knowledgeNodePublicSourceFitReviewPacket001Handoff.data.reviewRows !== 60 ||
+    knowledgeNodePublicSourceFitReviewPacket001Handoff.data.targetNodes !== 10 ||
+    knowledgeNodePublicSourceFitReviewPacket001Handoff.data.packetReadyRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewPacket001Handoff.data.packetBlockedRows !== 60 ||
+    knowledgeNodePublicSourceFitReviewPacket001Handoff.data.packetMissingFieldRows !== 60 ||
+    knowledgeNodePublicSourceFitReviewPacket001Handoff.data.packetRealHumanInputEntries !== 0 ||
+    knowledgeNodePublicSourceFitReviewPacket001Handoff.data.mergeMappedRows !== 60 ||
+    knowledgeNodePublicSourceFitReviewPacket001Handoff.data.mergeReadyRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewPacket001Handoff.data.mergeBlockedRows !== 60 ||
+    knowledgeNodePublicSourceFitReviewPacket001Handoff.data.mergeAllowedNow !== false ||
+    knowledgeNodePublicSourceFitReviewPacket001Handoff.data.mergeDryRunWrittenRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewPacket001Handoff.data.progressReadyPackets !== 0 ||
+    knowledgeNodePublicSourceFitReviewPacket001Handoff.data.progressBlockedPackets !== 35 ||
+    knowledgeNodePublicSourceFitReviewPacket001Handoff.data.writeAllowedNow !== false ||
+    knowledgeNodePublicSourceFitReviewPacket001Handoff.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewPacket001Handoff.data.phaseRows) ||
+    knowledgeNodePublicSourceFitReviewPacket001Handoff.data.phaseRows.length !== 6 ||
+    !knowledgeNodePublicSourceFitReviewPacket001Handoff.data.phaseRows.every((row) =>
+      row.id &&
+      row.status &&
+      row.command &&
+      row.reviewerAction &&
+      row.hardStop) ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewPacket001Handoff.data.hardStops) ||
+    knowledgeNodePublicSourceFitReviewPacket001Handoff.data.hardStops.length < 5 ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewPacket001Handoff.data.commands) ||
+    !knowledgeNodePublicSourceFitReviewPacket001Handoff.data.commands.some((item) =>
+      /check:knowledge-node-public-source-fit-review-packet-001-handoff/.test(item)) ||
+    !/does not fill packet rows/i.test(knowledgeNodePublicSourceFitReviewPacket001Handoff.data.completionRule || "") ||
+    !/reviewer-facing education-only/i.test(knowledgeNodePublicSourceFitReviewPacket001Handoff.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser node public source-fit packet 001 handoff endpoint failed");
+  }
+
+  const knowledgeNodePublicSourceFitReviewPacketHandoffIndex = await request("/api/knowledge-browser/knowledge-node-public-source-fit-review-packet-handoff-index");
+  const packetHandoffIndexRows = knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.packetRows || [];
+  const expectedGeneratedPacketNumbers = ["001", "002", "003", "004", "005", "006", "007", "008", "009", "010", "011", "012", "013", "014", "015", "016", "017", "018", "019", "020", "021", "022", "023", "024", "025", "026", "027", "028", "029", "030", "031", "032", "033", "034", "035"];
+  const firstGeneratedPacketRowsReady = expectedGeneratedPacketNumbers.every((packetNumber, index) => {
+    const row = packetHandoffIndexRows[index];
+    const expectedTemplateStatus = packetNumber === "001"
+      ? "node_public_source_fit_packet_input_copy_template_ready_blank"
+      : `node_public_source_fit_packet_${packetNumber}_input_copy_template_ready_blank`;
+    return row?.packetId === `node-public-source-fit-batch-${packetNumber}-packet` &&
+      row?.handoffStatus === `node_public_source_fit_packet_${packetNumber}_handoff_ready_blocked_on_real_input` &&
+      row?.inputCopyTemplateStatus === expectedTemplateStatus &&
+      new RegExp(`PACKET_${packetNumber}_HANDOFF`).test(row?.handoffPath || "") &&
+      new RegExp(`PACKET_${packetNumber}_INPUT_COPY_TEMPLATE`).test(row?.inputCopyPath || "") &&
+      row?.progressStatus === "blocked_missing_real_reviewer_input" &&
+      row?.readyRows === 0 &&
+      row?.blockedRows > 0;
+  });
+  if (
+    knowledgeNodePublicSourceFitReviewPacketHandoffIndex.status !== 200 ||
+    knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.educationOnly !== true ||
+    knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.productionReady !== false ||
+    knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.approvalStatus !== "not_approved" ||
+    knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.learnerFacingRelease !== false ||
+    knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.indexStatus !== "node_public_source_fit_packet_handoff_index_ready_release_blocked" ||
+    knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.indexMode !== "all_packet_review_handoff_navigation" ||
+    knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.totalPackets !== 35 ||
+    knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.packetsWithHandoff !== 35 ||
+    knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.packetsWithoutHandoff !== 0 ||
+    knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.packetsWithInputCopyTemplate !== 35 ||
+    knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.packetsWithoutInputCopyTemplate !== 0 ||
+    knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.readyPackets !== 0 ||
+    knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.blockedPackets !== 35 ||
+    knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.totalReviewRows !== 1638 ||
+    knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.readyRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.blockedRows !== 1638 ||
+    knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.missingFieldRows !== 1638 ||
+    knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.realHumanInputEntries !== 0 ||
+    knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.firstBlockedPacketId !== "node-public-source-fit-batch-001-packet" ||
+    knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.firstHandoffPacketId !== "node-public-source-fit-batch-001-packet" ||
+    knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.writeAllowedNow !== false ||
+    knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.firstPriorityRows) ||
+    knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.firstPriorityRows.length !== 8 ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.packetRows) ||
+    knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.packetRows.length !== 35 ||
+    firstGeneratedPacketRowsReady !== true ||
+    !knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.packetRows.slice(35).every((row) =>
+      row.handoffStatus === "handoff_not_generated" &&
+      row.progressStatus === "blocked_missing_real_reviewer_input" &&
+      row.readyRows === 0 &&
+      row.blockedRows > 0) ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.commands) ||
+    !knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.commands.some((item) =>
+      /check:knowledge-node-public-source-fit-review-packet-handoff-index/.test(item)) ||
+    !/all 35 source-fit packets/i.test(knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.completionRule || "") ||
+    !/reviewer-facing education-only/i.test(knowledgeNodePublicSourceFitReviewPacketHandoffIndex.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser node public source-fit packet handoff index endpoint failed");
+  }
+
+  const knowledgeNodePublicSourceFitRealReviewerLaunchDashboard = await request("/api/knowledge-browser/knowledge-node-public-source-fit-real-reviewer-launch-dashboard");
+  if (
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.status !== 200 ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.educationOnly !== true ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.productionReady !== false ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.approvalStatus !== "not_approved" ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.learnerFacingRelease !== false ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.launchStatus !== "source_fit_real_reviewer_launch_ready_blocked_on_real_input" ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.launchMode !== "first_packet_real_reviewer_execution_start" ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.reviewerCanStartNow !== true ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.packetHandoffCoverage !== "35/35" ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.packetHandoffsReady !== 35 ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.totalPackets !== 35 ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.packetsWithInputCopyTemplate !== 35 ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.readyPackets !== 0 ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.blockedPackets !== 35 ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.totalReviewRows !== 1638 ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.readyRows !== 0 ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.blockedRows !== 1638 ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.missingFieldRows !== 1638 ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.realHumanInputEntries !== 0 ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.startPacket?.packetId !== "node-public-source-fit-batch-001-packet" ||
+    !/PACKET_001_INPUT_COPY_TEMPLATE/.test(knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.startPacket?.inputCopyPath || "") ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.startPacketReviewRows !== 60 ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.startPacketReadyRows !== 0 ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.startPacketBlockedRows !== 60 ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.startPacket?.mergeMappedRows !== 60 ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.startPacket?.mergeMissingTargetRows !== 0 ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.startPacket?.mergeAllowedNow !== false ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.startPacket?.dryRunWrittenRows !== 0 ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.writeAllowedNow !== false ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.fieldPolicyRows) ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.fieldPolicyRows.length !== 6 ||
+    !Array.isArray(knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.dayOneChecklist) ||
+    knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.dayOneChecklist.length !== 8 ||
+    !Array.isArray(knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.commands) ||
+    !knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.commands.some((item) =>
+      /validate:knowledge-node-public-source-fit-review-packet-input-copy-template/.test(item)) ||
+    !knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.commands.some((item) =>
+      /check:knowledge-node-public-source-fit-review-packet-handoff-index/.test(item)) ||
+    !/all 60 rows/i.test(knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.completionRule || "") ||
+    !/reviewer-facing education-only/i.test(knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.boundary || "") ||
+    !/all 35 source-fit packet handoffs/i.test(knowledgeNodePublicSourceFitRealReviewerLaunchDashboard.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser node public source-fit real reviewer launch dashboard endpoint failed");
+  }
+
+  const knowledgeNodePublicSourceFitPacket001ReviewerWorkbench = await request("/api/knowledge-browser/knowledge-node-public-source-fit-packet-001-reviewer-workbench");
+  const packet001WorkbenchRows = knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.data.rows || [];
+  const packet001WorkbenchNodeRows = knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.data.nodeRows || [];
+  if (
+    knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.status !== 200 ||
+    knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.data.educationOnly !== true ||
+    knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.data.productionReady !== false ||
+    knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.data.approvalStatus !== "not_approved" ||
+    knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.data.learnerFacingRelease !== false ||
+    knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.data.workbenchStatus !== "packet_001_reviewer_workbench_ready_blocked_on_real_input" ||
+    knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.data.workbenchMode !== "readonly_packet_row_browser_for_real_source_fit_review" ||
+    knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.data.packetId !== "node-public-source-fit-batch-001-packet" ||
+    !/PACKET_001_INPUT_COPY_TEMPLATE/.test(knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.data.inputCopyPath || "") ||
+    knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.data.nodeCount !== 10 ||
+    knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.data.reviewRows !== 60 ||
+    knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.data.readyRows !== 0 ||
+    knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.data.blockedRows !== 60 ||
+    knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.data.missingFieldRows !== 60 ||
+    knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.data.invalidDecisionRows !== 0 ||
+    knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.data.forbiddenHitRows !== 0 ||
+    knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.data.realHumanInputEntries !== 0 ||
+    knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.data.learnerCitationApprovedRows !== 0 ||
+    knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.data.copiedTextApprovedRows !== 0 ||
+    knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.data.mergeMappedRows !== 60 ||
+    knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.data.mergeMissingTargetRows !== 0 ||
+    knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.data.dryRunWrittenRows !== 0 ||
+    knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.data.writeAllowedNow !== false ||
+    knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(packet001WorkbenchNodeRows) ||
+    packet001WorkbenchNodeRows.length !== 10 ||
+    !packet001WorkbenchNodeRows.every((row) =>
+      row.candidateRows === 6 &&
+      row.readyRows === 0 &&
+      row.blockedRows === 6 &&
+      row.reviewStatus === "blocked_missing_real_reviewer_input") ||
+    !Array.isArray(packet001WorkbenchRows) ||
+    packet001WorkbenchRows.length !== 60 ||
+    !packet001WorkbenchRows.every((row, index) =>
+      row.rowIndex === index &&
+      row.reviewId &&
+      row.nodeId &&
+      row.documentId &&
+      row.sourceName &&
+      row.url &&
+      row.validationStatus === "blocked_missing_or_invalid_reviewer_input" &&
+      row.reviewStatus === "blocked_missing_real_reviewer_input" &&
+      row.realHumanInput === false &&
+      row.learnerCitationApproved === false &&
+      row.copiedTextApproved === false &&
+      row.willWrite === false) ||
+    !Array.isArray(knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.data.commands) ||
+    !knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.data.commands.some((item) =>
+      /check:knowledge-node-public-source-fit-packet-001-reviewer-workbench/.test(item)) ||
+    !/readonly browser/i.test(knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.data.completionRule || "") ||
+    !/reviewer-facing education-only/i.test(knowledgeNodePublicSourceFitPacket001ReviewerWorkbench.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser node public source-fit packet 001 reviewer workbench endpoint failed");
+  }
+
+  const knowledgeNodePublicSourceFitReviewerWorkbenchIndex = await request("/api/knowledge-browser/knowledge-node-public-source-fit-reviewer-workbench-index");
+  const reviewerWorkbenchIndexPacketRows = knowledgeNodePublicSourceFitReviewerWorkbenchIndex.data.packetRows || [];
+  const reviewerWorkbenchIndexModuleRows = knowledgeNodePublicSourceFitReviewerWorkbenchIndex.data.moduleRows || [];
+  if (
+    knowledgeNodePublicSourceFitReviewerWorkbenchIndex.status !== 200 ||
+    knowledgeNodePublicSourceFitReviewerWorkbenchIndex.data.educationOnly !== true ||
+    knowledgeNodePublicSourceFitReviewerWorkbenchIndex.data.productionReady !== false ||
+    knowledgeNodePublicSourceFitReviewerWorkbenchIndex.data.approvalStatus !== "not_approved" ||
+    knowledgeNodePublicSourceFitReviewerWorkbenchIndex.data.learnerFacingRelease !== false ||
+    knowledgeNodePublicSourceFitReviewerWorkbenchIndex.data.workbenchIndexStatus !== "source_fit_reviewer_workbench_index_ready_all_packets_blocked_on_real_input" ||
+    knowledgeNodePublicSourceFitReviewerWorkbenchIndex.data.workbenchIndexMode !== "all_packet_readonly_review_navigation" ||
+    knowledgeNodePublicSourceFitReviewerWorkbenchIndex.data.totalPackets !== 35 ||
+    knowledgeNodePublicSourceFitReviewerWorkbenchIndex.data.packetsWithHandoff !== 35 ||
+    knowledgeNodePublicSourceFitReviewerWorkbenchIndex.data.packetsWithInputCopyTemplate !== 35 ||
+    knowledgeNodePublicSourceFitReviewerWorkbenchIndex.data.packetsWithValidation !== 35 ||
+    knowledgeNodePublicSourceFitReviewerWorkbenchIndex.data.packetsWithDetailedRowBrowser !== 1 ||
+    knowledgeNodePublicSourceFitReviewerWorkbenchIndex.data.modules !== 12 ||
+    knowledgeNodePublicSourceFitReviewerWorkbenchIndex.data.totalReviewRows !== 1638 ||
+    knowledgeNodePublicSourceFitReviewerWorkbenchIndex.data.readyRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewerWorkbenchIndex.data.blockedRows !== 1638 ||
+    knowledgeNodePublicSourceFitReviewerWorkbenchIndex.data.missingFieldRows !== 1638 ||
+    knowledgeNodePublicSourceFitReviewerWorkbenchIndex.data.realHumanInputEntries !== 0 ||
+    knowledgeNodePublicSourceFitReviewerWorkbenchIndex.data.learnerCitationApprovedRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewerWorkbenchIndex.data.copiedTextApprovedRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewerWorkbenchIndex.data.firstBlockedPacketId !== "node-public-source-fit-batch-001-packet" ||
+    knowledgeNodePublicSourceFitReviewerWorkbenchIndex.data.writeAllowedNow !== false ||
+    knowledgeNodePublicSourceFitReviewerWorkbenchIndex.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(reviewerWorkbenchIndexPacketRows) ||
+    reviewerWorkbenchIndexPacketRows.length !== 35 ||
+    !reviewerWorkbenchIndexPacketRows.every((row, index) =>
+      row.packetNumber === String(index + 1).padStart(3, "0") &&
+      row.packetId === `node-public-source-fit-batch-${String(index + 1).padStart(3, "0")}-packet` &&
+      row.readyRows === 0 &&
+      row.blockedRows === row.reviewRows &&
+      row.missingFieldRows === row.reviewRows &&
+      row.realHumanInputEntries === 0 &&
+      row.reviewStatus === "blocked_missing_real_reviewer_input") ||
+    reviewerWorkbenchIndexPacketRows[0]?.hasDetailedRowBrowser !== true ||
+    !reviewerWorkbenchIndexPacketRows.slice(1).every((row) => row.hasDetailedRowBrowser === false) ||
+    !Array.isArray(reviewerWorkbenchIndexModuleRows) ||
+    reviewerWorkbenchIndexModuleRows.length !== 12 ||
+    reviewerWorkbenchIndexModuleRows.reduce((sum, row) => sum + (row.packets || 0), 0) !== 35 ||
+    reviewerWorkbenchIndexModuleRows.reduce((sum, row) => sum + (row.reviewRows || 0), 0) !== 1638 ||
+    !reviewerWorkbenchIndexModuleRows.every((row) =>
+      row.readyRows === 0 &&
+      row.blockedRows === row.reviewRows &&
+      row.realHumanInputEntries === 0 &&
+      row.reviewStatus === "blocked_missing_real_reviewer_input") ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewerWorkbenchIndex.data.commands) ||
+    !knowledgeNodePublicSourceFitReviewerWorkbenchIndex.data.commands.some((item) =>
+      /check:knowledge-node-public-source-fit-reviewer-workbench-index/.test(item)) ||
+    !/readonly all-packet navigation/i.test(knowledgeNodePublicSourceFitReviewerWorkbenchIndex.data.completionRule || "") ||
+    !/reviewer-facing education-only/i.test(knowledgeNodePublicSourceFitReviewerWorkbenchIndex.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser node public source-fit reviewer workbench index endpoint failed");
+  }
+
+  const knowledgeNodePublicSourceFitReviewerRowBrowser = await request("/api/knowledge-browser/knowledge-node-public-source-fit-reviewer-row-browser");
+  const reviewerRowBrowserRows = knowledgeNodePublicSourceFitReviewerRowBrowser.data.rows || [];
+  const reviewerRowBrowserPacketRows = knowledgeNodePublicSourceFitReviewerRowBrowser.data.packetRows || [];
+  const reviewerRowBrowserModuleRows = knowledgeNodePublicSourceFitReviewerRowBrowser.data.moduleRows || [];
+  if (
+    knowledgeNodePublicSourceFitReviewerRowBrowser.status !== 200 ||
+    knowledgeNodePublicSourceFitReviewerRowBrowser.data.educationOnly !== true ||
+    knowledgeNodePublicSourceFitReviewerRowBrowser.data.productionReady !== false ||
+    knowledgeNodePublicSourceFitReviewerRowBrowser.data.approvalStatus !== "not_approved" ||
+    knowledgeNodePublicSourceFitReviewerRowBrowser.data.learnerFacingRelease !== false ||
+    knowledgeNodePublicSourceFitReviewerRowBrowser.data.rowBrowserStatus !== "source_fit_reviewer_row_browser_ready_all_rows_blocked_on_real_input" ||
+    knowledgeNodePublicSourceFitReviewerRowBrowser.data.rowBrowserMode !== "all_packet_readonly_row_level_review_navigation" ||
+    knowledgeNodePublicSourceFitReviewerRowBrowser.data.totalPackets !== 35 ||
+    knowledgeNodePublicSourceFitReviewerRowBrowser.data.modules !== 12 ||
+    knowledgeNodePublicSourceFitReviewerRowBrowser.data.totalReviewRows !== 1638 ||
+    knowledgeNodePublicSourceFitReviewerRowBrowser.data.readyRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewerRowBrowser.data.blockedRows !== 1638 ||
+    knowledgeNodePublicSourceFitReviewerRowBrowser.data.missingFieldRows !== 1638 ||
+    knowledgeNodePublicSourceFitReviewerRowBrowser.data.realHumanInputEntries !== 0 ||
+    knowledgeNodePublicSourceFitReviewerRowBrowser.data.learnerCitationApprovedRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewerRowBrowser.data.copiedTextApprovedRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewerRowBrowser.data.rowsWithUrl !== 1638 ||
+    knowledgeNodePublicSourceFitReviewerRowBrowser.data.wikipediaRows < 1000 ||
+    knowledgeNodePublicSourceFitReviewerRowBrowser.data.officialRows < 200 ||
+    knowledgeNodePublicSourceFitReviewerRowBrowser.data.openResearchRows < 200 ||
+    knowledgeNodePublicSourceFitReviewerRowBrowser.data.writeAllowedNow !== false ||
+    knowledgeNodePublicSourceFitReviewerRowBrowser.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(reviewerRowBrowserPacketRows) ||
+    reviewerRowBrowserPacketRows.length !== 35 ||
+    !reviewerRowBrowserPacketRows.every((row, index) =>
+      row.packetNumber === String(index + 1).padStart(3, "0") &&
+      row.readyRows === 0 &&
+      row.blockedRows === row.reviewRows &&
+      row.reviewStatus === "blocked_missing_real_reviewer_input") ||
+    !Array.isArray(reviewerRowBrowserModuleRows) ||
+    reviewerRowBrowserModuleRows.length !== 12 ||
+    reviewerRowBrowserModuleRows.reduce((sum, row) => sum + (row.reviewRows || 0), 0) !== 1638 ||
+    !reviewerRowBrowserModuleRows.every((row) =>
+      row.readyRows === 0 &&
+      row.blockedRows === row.reviewRows &&
+      row.reviewStatus === "blocked_missing_real_reviewer_input") ||
+    !Array.isArray(reviewerRowBrowserRows) ||
+    reviewerRowBrowserRows.length !== 1638 ||
+    !reviewerRowBrowserRows.every((row, index) =>
+      row.globalRowIndex === index &&
+      row.packetNumber &&
+      row.reviewId &&
+      row.nodeId &&
+      row.documentId &&
+      row.sourceName &&
+      /^https?:\/\//.test(row.url || "") &&
+      row.editableFieldPaths?.reviewerDecision?.startsWith("/rows/") &&
+      row.editableFieldPaths?.sourceFitNotes?.startsWith("/rows/") &&
+      row.editableFieldPaths?.citationUse?.startsWith("/rows/") &&
+      row.editableFieldPaths?.reviewerName?.startsWith("/rows/") &&
+      row.editableFieldPaths?.reviewedAt?.startsWith("/rows/") &&
+      row.validationStatus === "blocked_missing_or_invalid_reviewer_input" &&
+      row.reviewStatus === "blocked_missing_real_reviewer_input" &&
+      row.realHumanInput === false &&
+      row.learnerCitationApproved === false &&
+      row.copiedTextApproved === false) ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewerRowBrowser.data.commands) ||
+    !knowledgeNodePublicSourceFitReviewerRowBrowser.data.commands.some((item) =>
+      /check:knowledge-node-public-source-fit-reviewer-row-browser/.test(item)) ||
+    !/readonly all-row navigation/i.test(knowledgeNodePublicSourceFitReviewerRowBrowser.data.completionRule || "") ||
+    !/reviewer-facing education-only/i.test(knowledgeNodePublicSourceFitReviewerRowBrowser.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser node public source-fit reviewer row browser endpoint failed");
+  }
+
+  const packet001ReviewerRowBrowser = await request("/api/knowledge-browser/knowledge-node-public-source-fit-reviewer-row-browser?packet=001&limit=7");
+  if (
+    packet001ReviewerRowBrowser.status !== 200 ||
+    packet001ReviewerRowBrowser.data.educationOnly !== true ||
+    packet001ReviewerRowBrowser.data.productionReady !== false ||
+    packet001ReviewerRowBrowser.data.rowQuery?.packet !== "001" ||
+    packet001ReviewerRowBrowser.data.rowQuery?.limit !== 7 ||
+    packet001ReviewerRowBrowser.data.rowQuery?.offset !== 0 ||
+    packet001ReviewerRowBrowser.data.rowQuery?.returnedRows !== 7 ||
+    packet001ReviewerRowBrowser.data.rowQuery?.totalFilteredRows !== 60 ||
+    packet001ReviewerRowBrowser.data.rowQuery?.hasMoreRows !== true ||
+    !Array.isArray(packet001ReviewerRowBrowser.data.rows) ||
+    packet001ReviewerRowBrowser.data.rows.length !== 7 ||
+    !packet001ReviewerRowBrowser.data.rows.every((row) =>
+      row.packetNumber === "001" &&
+      row.packetId === "node-public-source-fit-batch-001-packet" &&
+      row.reviewStatus === "blocked_missing_real_reviewer_input" &&
+      row.realHumanInput === false)
+  ) {
+    throw new Error("knowledge browser node public source-fit reviewer row browser packet pagination failed");
+  }
+
+  const wikipediaReviewerRowBrowser = await request("/api/knowledge-browser/knowledge-node-public-source-fit-reviewer-row-browser?family=Wikipedia&limit=5");
+  if (
+    wikipediaReviewerRowBrowser.status !== 200 ||
+    wikipediaReviewerRowBrowser.data.rowQuery?.family !== "wikipedia" ||
+    wikipediaReviewerRowBrowser.data.rowQuery?.limit !== 5 ||
+    wikipediaReviewerRowBrowser.data.rowQuery?.returnedRows !== 5 ||
+    wikipediaReviewerRowBrowser.data.rowQuery?.totalFilteredRows < 1000 ||
+    !Array.isArray(wikipediaReviewerRowBrowser.data.rows) ||
+    wikipediaReviewerRowBrowser.data.rows.length !== 5 ||
+    !wikipediaReviewerRowBrowser.data.rows.every((row) =>
+      row.family === "Wikipedia" &&
+      row.validationStatus === "blocked_missing_or_invalid_reviewer_input" &&
+      row.learnerCitationApproved === false)
+  ) {
+    throw new Error("knowledge browser node public source-fit reviewer row browser family filter failed");
+  }
+
+  const statusOffsetReviewerRowBrowser = await request("/api/knowledge-browser/knowledge-node-public-source-fit-reviewer-row-browser?status=blocked_missing_or_invalid_reviewer_input&offset=5&limit=3");
+  if (
+    statusOffsetReviewerRowBrowser.status !== 200 ||
+    statusOffsetReviewerRowBrowser.data.rowQuery?.status !== "blocked_missing_or_invalid_reviewer_input" ||
+    statusOffsetReviewerRowBrowser.data.rowQuery?.offset !== 5 ||
+    statusOffsetReviewerRowBrowser.data.rowQuery?.limit !== 3 ||
+    statusOffsetReviewerRowBrowser.data.rowQuery?.returnedRows !== 3 ||
+    statusOffsetReviewerRowBrowser.data.rowQuery?.totalFilteredRows !== 1638 ||
+    !Array.isArray(statusOffsetReviewerRowBrowser.data.rows) ||
+    statusOffsetReviewerRowBrowser.data.rows[0]?.globalRowIndex !== 5 ||
+    !statusOffsetReviewerRowBrowser.data.rows.every((row) =>
+      row.validationStatus === "blocked_missing_or_invalid_reviewer_input" &&
+      row.realHumanInput === false)
+  ) {
+    throw new Error("knowledge browser node public source-fit reviewer row browser status pagination failed");
+  }
+
+  const textReviewerRowBrowser = await request("/api/knowledge-browser/knowledge-node-public-source-fit-reviewer-row-browser?q=Candlestick&limit=6");
+  if (
+    textReviewerRowBrowser.status !== 200 ||
+    textReviewerRowBrowser.data.rowQuery?.q !== "candlestick" ||
+    textReviewerRowBrowser.data.rowQuery?.returnedRows !== 6 ||
+    textReviewerRowBrowser.data.rowQuery?.totalFilteredRows < 10 ||
+    !Array.isArray(textReviewerRowBrowser.data.rows) ||
+    textReviewerRowBrowser.data.rows.length !== 6 ||
+    !textReviewerRowBrowser.data.rows.every((row) =>
+      `${row.reviewId} ${row.nodeId} ${row.documentId} ${row.sourceName} ${row.url} ${row.family} ${row.module} ${row.title} ${row.topic}`
+        .toLowerCase()
+        .includes("candlestick") &&
+      row.copiedTextApproved === false)
+  ) {
+    throw new Error("knowledge browser node public source-fit reviewer row browser text filter failed");
+  }
+
+  const reviewerRowDetail = await request("/api/knowledge-browser/knowledge-node-public-source-fit-reviewer-row-detail?reviewId=knv2_0003%3A%3Acorpus_1584");
+  if (
+    reviewerRowDetail.status !== 200 ||
+    reviewerRowDetail.data.educationOnly !== true ||
+    reviewerRowDetail.data.productionReady !== false ||
+    reviewerRowDetail.data.approvalStatus !== "not_approved" ||
+    reviewerRowDetail.data.learnerFacingRelease !== false ||
+    reviewerRowDetail.data.detailStatus !== "source_fit_reviewer_row_detail_ready_blocked_on_real_input" ||
+    reviewerRowDetail.data.detailMode !== "single_row_readonly_source_fit_review_context" ||
+    reviewerRowDetail.data.reviewId !== "knv2_0003::corpus_1584" ||
+    reviewerRowDetail.data.row?.reviewId !== "knv2_0003::corpus_1584" ||
+    reviewerRowDetail.data.row?.packetNumber !== "001" ||
+    reviewerRowDetail.data.row?.nodeId !== "knv2_0003" ||
+    !/^https?:\/\//.test(reviewerRowDetail.data.row?.url || "") ||
+    reviewerRowDetail.data.editableFieldPaths?.reviewerDecision !== "/rows/0/reviewerDecision" ||
+    !Array.isArray(reviewerRowDetail.data.missingFields) ||
+    reviewerRowDetail.data.missingFields.length !== 5 ||
+    reviewerRowDetail.data.packetRow?.packetNumber !== "001" ||
+    reviewerRowDetail.data.moduleRow?.module !== "K线与价格行为" ||
+    !Array.isArray(reviewerRowDetail.data.sameNodeRows) ||
+    reviewerRowDetail.data.sameNodeRows.length !== 6 ||
+    !reviewerRowDetail.data.sameNodeRows.every((row) => row.nodeId === "knv2_0003") ||
+    !Array.isArray(reviewerRowDetail.data.nearbyPacketRows) ||
+    reviewerRowDetail.data.nearbyPacketRows.length < 4 ||
+    reviewerRowDetail.data.writeAllowedNow !== false ||
+    reviewerRowDetail.data.manualAuthorizationRequired !== true ||
+    !/single row remains blocked/i.test(reviewerRowDetail.data.completionRule || "") ||
+    !/reviewer-facing education-only/i.test(reviewerRowDetail.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser node public source-fit reviewer row detail endpoint failed");
+  }
+
+  const missingReviewerRowDetail = await request("/api/knowledge-browser/knowledge-node-public-source-fit-reviewer-row-detail");
+  if (
+    missingReviewerRowDetail.status !== 400 ||
+    missingReviewerRowDetail.data.educationOnly !== true ||
+    missingReviewerRowDetail.data.productionReady !== false ||
+    missingReviewerRowDetail.data.detailStatus !== "source_fit_reviewer_row_detail_missing_review_id" ||
+    !/reviewId is required/i.test(missingReviewerRowDetail.data.error || "")
+  ) {
+    throw new Error("knowledge browser node public source-fit reviewer row detail missing reviewId guard failed");
+  }
+
+  const unknownReviewerRowDetail = await request("/api/knowledge-browser/knowledge-node-public-source-fit-reviewer-row-detail?reviewId=missing-review-id");
+  if (
+    unknownReviewerRowDetail.status !== 404 ||
+    unknownReviewerRowDetail.data.educationOnly !== true ||
+    unknownReviewerRowDetail.data.productionReady !== false ||
+    unknownReviewerRowDetail.data.detailStatus !== "source_fit_reviewer_row_detail_not_found" ||
+    unknownReviewerRowDetail.data.reviewId !== "missing-review-id" ||
+    !/reviewId not found/i.test(unknownReviewerRowDetail.data.error || "")
+  ) {
+    throw new Error("knowledge browser node public source-fit reviewer row detail unknown reviewId guard failed");
+  }
+
+  const knowledgeNodePublicSourceFitReviewProgressMatrix = await request("/api/knowledge-browser/knowledge-node-public-source-fit-review-progress-matrix");
+  if (
+    knowledgeNodePublicSourceFitReviewProgressMatrix.status !== 200 ||
+    knowledgeNodePublicSourceFitReviewProgressMatrix.data.educationOnly !== true ||
+    knowledgeNodePublicSourceFitReviewProgressMatrix.data.productionReady !== false ||
+    knowledgeNodePublicSourceFitReviewProgressMatrix.data.approvalStatus !== "not_approved" ||
+    knowledgeNodePublicSourceFitReviewProgressMatrix.data.learnerFacingRelease !== false ||
+    knowledgeNodePublicSourceFitReviewProgressMatrix.data.matrixStatus !== "node_public_source_fit_review_progress_matrix_ready_release_blocked" ||
+    knowledgeNodePublicSourceFitReviewProgressMatrix.data.matrixMode !== "batch_and_module_progress_from_real_review_validation" ||
+    !/BATCH_PACKETS/.test(knowledgeNodePublicSourceFitReviewProgressMatrix.data.sourcePacketsPath || "") ||
+    !/INPUT_VALIDATION/.test(knowledgeNodePublicSourceFitReviewProgressMatrix.data.sourceValidationPath || "") ||
+    knowledgeNodePublicSourceFitReviewProgressMatrix.data.modules !== 12 ||
+    knowledgeNodePublicSourceFitReviewProgressMatrix.data.totalPackets !== 35 ||
+    knowledgeNodePublicSourceFitReviewProgressMatrix.data.totalReviewRows !== 1638 ||
+    knowledgeNodePublicSourceFitReviewProgressMatrix.data.validationStatus !== "blocked_missing_real_reviewer_source_fit_input" ||
+    knowledgeNodePublicSourceFitReviewProgressMatrix.data.readyRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewProgressMatrix.data.blockedRows !== 1638 ||
+    knowledgeNodePublicSourceFitReviewProgressMatrix.data.missingFieldRows !== 1638 ||
+    knowledgeNodePublicSourceFitReviewProgressMatrix.data.invalidDecisionRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewProgressMatrix.data.forbiddenHitRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewProgressMatrix.data.realHumanInputEntries !== 0 ||
+    knowledgeNodePublicSourceFitReviewProgressMatrix.data.learnerCitationApprovedRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewProgressMatrix.data.copiedTextApprovedRows !== 0 ||
+    knowledgeNodePublicSourceFitReviewProgressMatrix.data.readyPackets !== 0 ||
+    knowledgeNodePublicSourceFitReviewProgressMatrix.data.blockedPackets !== 35 ||
+    knowledgeNodePublicSourceFitReviewProgressMatrix.data.readyModules !== 0 ||
+    knowledgeNodePublicSourceFitReviewProgressMatrix.data.blockedModules !== 12 ||
+    knowledgeNodePublicSourceFitReviewProgressMatrix.data.overallProgressPercent !== 0 ||
+    knowledgeNodePublicSourceFitReviewProgressMatrix.data.firstBlockedPacketId !== "node-public-source-fit-batch-001-packet" ||
+    knowledgeNodePublicSourceFitReviewProgressMatrix.data.writeAllowedNow !== false ||
+    knowledgeNodePublicSourceFitReviewProgressMatrix.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewProgressMatrix.data.firstPriorityBlockedPackets) ||
+    knowledgeNodePublicSourceFitReviewProgressMatrix.data.firstPriorityBlockedPackets.length !== 6 ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewProgressMatrix.data.moduleRows) ||
+    knowledgeNodePublicSourceFitReviewProgressMatrix.data.moduleRows.length !== 12 ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewProgressMatrix.data.packetRows) ||
+    knowledgeNodePublicSourceFitReviewProgressMatrix.data.packetRows.length < 6 ||
+    !knowledgeNodePublicSourceFitReviewProgressMatrix.data.packetRows.every((row) =>
+      row.packetId &&
+      row.validationRows === row.reviewRows &&
+      row.readyRows === 0 &&
+      row.blockedRows === row.reviewRows &&
+      row.progressStatus === "blocked_missing_real_reviewer_input") ||
+    !Array.isArray(knowledgeNodePublicSourceFitReviewProgressMatrix.data.commands) ||
+    !knowledgeNodePublicSourceFitReviewProgressMatrix.data.commands.some((item) =>
+      /check:knowledge-node-public-source-fit-review-progress-matrix/.test(item)) ||
+    !/validation output only/i.test(knowledgeNodePublicSourceFitReviewProgressMatrix.data.completionRule || "") ||
+    !/does not infer missing reviewer decisions/i.test(knowledgeNodePublicSourceFitReviewProgressMatrix.data.completionRule || "") ||
+    !/reviewer-facing education-only/i.test(knowledgeNodePublicSourceFitReviewProgressMatrix.data.boundary || "") ||
+    !/learner-facing citations/i.test(knowledgeNodePublicSourceFitReviewProgressMatrix.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser node public source-fit review progress matrix endpoint failed");
+  }
+
+  const lowExtractionVisualReview = await request("/api/knowledge-browser/low-extraction-visual-review");
+  if (
+    lowExtractionVisualReview.status !== 200 ||
+    lowExtractionVisualReview.data.educationOnly !== true ||
+    lowExtractionVisualReview.data.productionReady !== false ||
+    lowExtractionVisualReview.data.approvalStatus !== "not_approved" ||
+    lowExtractionVisualReview.data.learnerFacingRelease !== false ||
+    lowExtractionVisualReview.data.packetStatus !== "visual_review_packet_ready" ||
+    lowExtractionVisualReview.data.lowExtractionDocs !== 5 ||
+    lowExtractionVisualReview.data.totalPages < 20 ||
+    lowExtractionVisualReview.data.previewPages !== lowExtractionVisualReview.data.totalPages ||
+    !Array.isArray(lowExtractionVisualReview.data.cards) ||
+    lowExtractionVisualReview.data.cards.length !== 5 ||
+    !lowExtractionVisualReview.data.cards.every((card) =>
+      card.visualReviewStatus === "preview_generated_manual_ocr_or_visual_review_required" &&
+      card.firstPreviewPath &&
+      Array.isArray(card.reviewerChecklist) &&
+      card.reviewerChecklist.length >= 4)
+  ) {
+    throw new Error("knowledge browser low extraction visual review endpoint failed");
+  }
+
+  const lowExtractionHighResReview = await request("/api/knowledge-browser/low-extraction-high-res-review");
+  if (
+    lowExtractionHighResReview.status !== 200 ||
+    lowExtractionHighResReview.data.educationOnly !== true ||
+    lowExtractionHighResReview.data.productionReady !== false ||
+    lowExtractionHighResReview.data.approvalStatus !== "not_approved" ||
+    lowExtractionHighResReview.data.learnerFacingRelease !== false ||
+    lowExtractionHighResReview.data.packetStatus !== "high_res_visual_review_packet_ready" ||
+    lowExtractionHighResReview.data.screenshotScale < 1.2 ||
+    lowExtractionHighResReview.data.lowExtractionDocs !== 5 ||
+    lowExtractionHighResReview.data.totalPages !== 22 ||
+    lowExtractionHighResReview.data.highResPreviewPages !== 22 ||
+    lowExtractionHighResReview.data.manualTranscriptionHighResPages !== 19 ||
+    lowExtractionHighResReview.data.sourceReplacementHighResPages !== 3 ||
+    lowExtractionHighResReview.data.minHighResPreviewBytes <= 1000 ||
+    !Array.isArray(lowExtractionHighResReview.data.documentRows) ||
+    lowExtractionHighResReview.data.documentRows.length !== 5 ||
+    !Array.isArray(lowExtractionHighResReview.data.pageRows) ||
+    lowExtractionHighResReview.data.pageRows.length < 8 ||
+    !lowExtractionHighResReview.data.pageRows.every((row) =>
+      row.highResPreviewPath &&
+      row.highResPreviewUrl?.startsWith("/docs/local-course-low-extraction-high-res-previews/") &&
+      row.highResPreviewBytes > 1000 &&
+      row.width > 450 &&
+      row.height > 250 &&
+      row.transcriptionStatus === "not_started" &&
+      ["manual_transcription_evidence_only", "source_replacement_decision_evidence_only"].includes(row.reviewerUse) &&
+      row.nextGate) ||
+    !/reviewer-only visual evidence/i.test(lowExtractionHighResReview.data.boundary || "") ||
+    !/do not perform ocr/i.test(lowExtractionHighResReview.data.boundary || "") ||
+    !/approve learner-facing release/i.test(lowExtractionHighResReview.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser low extraction high-res review endpoint failed");
+  }
+
+  const highResTranscriptionCandidates = await request("/api/knowledge-browser/local-course-high-res-transcription-candidates");
+  if (
+    highResTranscriptionCandidates.status !== 200 ||
+    highResTranscriptionCandidates.data.educationOnly !== true ||
+    highResTranscriptionCandidates.data.productionReady !== false ||
+    highResTranscriptionCandidates.data.approvalStatus !== "not_approved" ||
+    highResTranscriptionCandidates.data.learnerFacingRelease !== false ||
+    highResTranscriptionCandidates.data.indexStatus !== "machine_assisted_candidate_index_ready_for_human_review" ||
+    highResTranscriptionCandidates.data.batchCount !== 5 ||
+    highResTranscriptionCandidates.data.candidatePages !== 19 ||
+    highResTranscriptionCandidates.data.acceptedForP0OverlayPages !== 0 ||
+    highResTranscriptionCandidates.data.blockedUntilHumanReviewedPages !== 19 ||
+    !Array.isArray(highResTranscriptionCandidates.data.topRiskTermFlags) ||
+    highResTranscriptionCandidates.data.topRiskTermFlags.length < 8 ||
+    !Array.isArray(highResTranscriptionCandidates.data.documentIds) ||
+    !highResTranscriptionCandidates.data.documentIds.includes("corpus_1313") ||
+    !highResTranscriptionCandidates.data.documentIds.includes("corpus_1580") ||
+    !Array.isArray(highResTranscriptionCandidates.data.candidatePagesList) ||
+    highResTranscriptionCandidates.data.candidatePagesList.length !== 8 ||
+    !highResTranscriptionCandidates.data.candidatePagesList.every((page) =>
+      page.candidateStatus === "machine_assisted_visual_candidate_needs_human_review" &&
+      page.acceptedForP0Overlay === false &&
+      page.highResPreviewUrl?.startsWith("/docs/local-course-low-extraction-high-res-previews/") &&
+      Array.isArray(page.riskTermFlags) &&
+      page.riskTermFlags.length >= 2 &&
+      page.nextGate === "human_review_before_p0_overlay_apply") ||
+    !/reviewer-only working material/i.test(highResTranscriptionCandidates.data.boundary || "") ||
+    !/machine-assisted reviewer work queue/i.test(highResTranscriptionCandidates.data.completionRule || "") ||
+    !/approve learner-facing release/i.test(highResTranscriptionCandidates.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course high-res transcription candidates endpoint failed");
+  }
+
+  const p0CandidateReviewAssistMap = await request("/api/knowledge-browser/local-course-p0-candidate-review-assist-map");
+  if (
+    p0CandidateReviewAssistMap.status !== 200 ||
+    p0CandidateReviewAssistMap.data.educationOnly !== true ||
+    p0CandidateReviewAssistMap.data.productionReady !== false ||
+    p0CandidateReviewAssistMap.data.approvalStatus !== "not_approved" ||
+    p0CandidateReviewAssistMap.data.learnerFacingRelease !== false ||
+    p0CandidateReviewAssistMap.data.assistMapStatus !== "review_assist_map_ready_not_applied" ||
+    p0CandidateReviewAssistMap.data.totalP0Tasks !== 22 ||
+    p0CandidateReviewAssistMap.data.manualTranscriptionTasks !== 19 ||
+    p0CandidateReviewAssistMap.data.sourceReplacementTasks !== 3 ||
+    p0CandidateReviewAssistMap.data.manualTasksWithCandidate !== 19 ||
+    p0CandidateReviewAssistMap.data.manualTasksMissingCandidate !== 0 ||
+    p0CandidateReviewAssistMap.data.sourceReplacementTasksWithoutCandidate !== 3 ||
+    p0CandidateReviewAssistMap.data.acceptedForP0OverlayTasks !== 0 ||
+    p0CandidateReviewAssistMap.data.blockedUntilHumanReviewedTasks !== 22 ||
+    p0CandidateReviewAssistMap.data.candidatePagesIndexed !== 19 ||
+    !Array.isArray(p0CandidateReviewAssistMap.data.topRiskTermFlags) ||
+    p0CandidateReviewAssistMap.data.topRiskTermFlags.length < 8 ||
+    !Array.isArray(p0CandidateReviewAssistMap.data.taskRows) ||
+    p0CandidateReviewAssistMap.data.taskRows.length !== 8 ||
+    !p0CandidateReviewAssistMap.data.taskRows.every((row) =>
+      row.category === "manual_transcription" &&
+      row.matchStatus === "candidate_available_for_human_review" &&
+      row.acceptedForP0Overlay === false &&
+      row.highResPreviewUrl?.startsWith("/docs/local-course-low-extraction-high-res-previews/") &&
+      Array.isArray(row.riskTermFlags) &&
+      row.riskTermFlags.length >= 2 &&
+      row.nextGate === "human_verify_candidate_then_fill_p0_review_input") ||
+    !/reviewer-only working material/i.test(p0CandidateReviewAssistMap.data.boundary || "") ||
+    !/reviewer-assist lookup/i.test(p0CandidateReviewAssistMap.data.completionRule || "") ||
+    !/fill reviewer fields/i.test(p0CandidateReviewAssistMap.data.boundary || "") ||
+    !/approve learner-facing release/i.test(p0CandidateReviewAssistMap.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course P0 candidate review assist map endpoint failed");
+  }
+
+  const p0ReviewInputDryRunSample = await request("/api/knowledge-browser/local-course-p0-review-input-dry-run-sample");
+  if (
+    p0ReviewInputDryRunSample.status !== 200 ||
+    p0ReviewInputDryRunSample.data.educationOnly !== true ||
+    p0ReviewInputDryRunSample.data.productionReady !== false ||
+    p0ReviewInputDryRunSample.data.approvalStatus !== "not_approved" ||
+    p0ReviewInputDryRunSample.data.learnerFacingRelease !== false ||
+    p0ReviewInputDryRunSample.data.fixtureOnly !== true ||
+    p0ReviewInputDryRunSample.data.templateStatus !== "candidate_review_dry_run_fixture" ||
+    p0ReviewInputDryRunSample.data.totalEntries !== 22 ||
+    p0ReviewInputDryRunSample.data.filledEntries !== 2 ||
+    p0ReviewInputDryRunSample.data.readyForValidationEntries !== 2 ||
+    p0ReviewInputDryRunSample.data.validationReadyEntries !== 2 ||
+    p0ReviewInputDryRunSample.data.validationBlockedEntries !== 20 ||
+    p0ReviewInputDryRunSample.data.forbiddenHitEntries !== 0 ||
+    p0ReviewInputDryRunSample.data.applyMode !== "dry_run" ||
+    p0ReviewInputDryRunSample.data.readyToApplyEntries !== 2 ||
+    p0ReviewInputDryRunSample.data.applyBlockedEntries !== 20 ||
+    p0ReviewInputDryRunSample.data.writtenEntries !== 0 ||
+    !Array.isArray(p0ReviewInputDryRunSample.data.sampleRows) ||
+    p0ReviewInputDryRunSample.data.sampleRows.length !== 2 ||
+    !p0ReviewInputDryRunSample.data.sampleRows.every((row) =>
+      row.inputStatus === "candidate_review_fixture_ready" &&
+      row.matchStatus === "candidate_available_for_human_review" &&
+      row.highResPreviewUrl?.startsWith("/docs/local-course-low-extraction-high-res-previews/") &&
+      /not a human transcription/i.test(row.fixtureOnlyReason || "")) ||
+    !/fixture for pipeline validation only/i.test(p0ReviewInputDryRunSample.data.boundary || "") ||
+    !/must not be written/i.test(p0ReviewInputDryRunSample.data.boundary || "") ||
+    !/does not approve learner-facing release/i.test(p0ReviewInputDryRunSample.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course P0 review input dry-run sample endpoint failed");
+  }
+
+  const p0HumanReviewNoteTemplate = await request("/api/knowledge-browser/local-course-p0-human-review-note-template");
+  if (
+    p0HumanReviewNoteTemplate.status !== 200 ||
+    p0HumanReviewNoteTemplate.data.educationOnly !== true ||
+    p0HumanReviewNoteTemplate.data.productionReady !== false ||
+    p0HumanReviewNoteTemplate.data.approvalStatus !== "not_approved" ||
+    p0HumanReviewNoteTemplate.data.learnerFacingRelease !== false ||
+    p0HumanReviewNoteTemplate.data.templateStatus !== "blank_human_review_note_template_ready" ||
+    p0HumanReviewNoteTemplate.data.totalP0Tasks !== 22 ||
+    p0HumanReviewNoteTemplate.data.manualReviewCards !== 19 ||
+    p0HumanReviewNoteTemplate.data.sourceReplacementReviewCards !== 3 ||
+    p0HumanReviewNoteTemplate.data.filledNoteCards !== 0 ||
+    p0HumanReviewNoteTemplate.data.readyForValidationCards !== 0 ||
+    p0HumanReviewNoteTemplate.data.acceptedForOverlayCards !== 0 ||
+    p0HumanReviewNoteTemplate.data.manualCardsWithCandidate !== 19 ||
+    p0HumanReviewNoteTemplate.data.manualCardsMissingCandidate !== 0 ||
+    !Array.isArray(p0HumanReviewNoteTemplate.data.requiredManualFields) ||
+    !p0HumanReviewNoteTemplate.data.requiredManualFields.includes("riskRewriteNotes") ||
+    !Array.isArray(p0HumanReviewNoteTemplate.data.requiredReplacementFields) ||
+    !p0HumanReviewNoteTemplate.data.requiredReplacementFields.includes("replacementDecision") ||
+    !Array.isArray(p0HumanReviewNoteTemplate.data.noteCards) ||
+    p0HumanReviewNoteTemplate.data.noteCards.length !== 8 ||
+    !p0HumanReviewNoteTemplate.data.noteCards.every((card) =>
+      card.category === "manual_transcription" &&
+      card.noteStatus === "blank_human_reviewer_note" &&
+      card.highResPreviewUrl?.startsWith("/docs/local-course-low-extraction-high-res-previews/") &&
+      card.requiredFieldCount >= 10 &&
+      Array.isArray(card.riskRewriteChecklist) &&
+      card.riskRewriteChecklist.length >= 2 &&
+      card.nextGate === "human_fill_review_input_then_validate_apply_dry_run") ||
+    !/blank reviewer scaffolding/i.test(p0HumanReviewNoteTemplate.data.boundary || "") ||
+    !/does not perform OCR/i.test(p0HumanReviewNoteTemplate.data.boundary || "") ||
+    !/approve learner-facing release/i.test(p0HumanReviewNoteTemplate.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course P0 human review note template endpoint failed");
+  }
+
+  const p0HumanFillPack01 = await request("/api/knowledge-browser/local-course-p0-human-fill-pack-01");
+  if (
+    p0HumanFillPack01.status !== 200 ||
+    p0HumanFillPack01.data.educationOnly !== true ||
+    p0HumanFillPack01.data.productionReady !== false ||
+    p0HumanFillPack01.data.approvalStatus !== "not_approved" ||
+    p0HumanFillPack01.data.learnerFacingRelease !== false ||
+    p0HumanFillPack01.data.packId !== "local_course_p0_human_fill_pack_01" ||
+    p0HumanFillPack01.data.packStatus !== "blank_human_fill_pack_ready" ||
+    p0HumanFillPack01.data.totalPackCards !== 4 ||
+    p0HumanFillPack01.data.manualFillCards !== 4 ||
+    p0HumanFillPack01.data.filledCards !== 0 ||
+    p0HumanFillPack01.data.readyForValidationCards !== 0 ||
+    p0HumanFillPack01.data.acceptedForOverlayCards !== 0 ||
+    !Array.isArray(p0HumanFillPack01.data.targetTaskIds) ||
+    p0HumanFillPack01.data.targetTaskIds.length !== 4 ||
+    !Array.isArray(p0HumanFillPack01.data.targetDocumentIds) ||
+    !p0HumanFillPack01.data.targetDocumentIds.includes("corpus_1580") ||
+    !Array.isArray(p0HumanFillPack01.data.targetPageNumbers) ||
+    ![1, 2, 3, 4].every((page) => p0HumanFillPack01.data.targetPageNumbers.includes(page)) ||
+    !Array.isArray(p0HumanFillPack01.data.packCards) ||
+    p0HumanFillPack01.data.packCards.length !== 4 ||
+    !p0HumanFillPack01.data.packCards.every((card) =>
+      card.category === "manual_transcription" &&
+      card.documentId === "corpus_1580" &&
+      card.fillStatus === "blank_ready_for_human_fill" &&
+      card.highResPreviewUrl?.startsWith("/docs/local-course-low-extraction-high-res-previews/") &&
+      card.requiredFieldCount >= 10 &&
+      Array.isArray(card.qualityLintRules) &&
+      card.qualityLintRules.some((rule) => /not copied from the machine candidate/i.test(rule)) &&
+      card.nextGate === "human_fill_pack_then_validate_p0_review_input_copy") ||
+    !/blank reviewer work material/i.test(p0HumanFillPack01.data.boundary || "") ||
+    !/does not perform OCR/i.test(p0HumanFillPack01.data.boundary || "") ||
+    !/approve learner-facing release/i.test(p0HumanFillPack01.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course P0 human fill pack 01 endpoint failed");
+  }
+
+  const p0HumanFillPack01InputCopy = await request("/api/knowledge-browser/local-course-p0-human-fill-pack-01-input-copy");
+  if (
+    p0HumanFillPack01InputCopy.status !== 200 ||
+    p0HumanFillPack01InputCopy.data.educationOnly !== true ||
+    p0HumanFillPack01InputCopy.data.productionReady !== false ||
+    p0HumanFillPack01InputCopy.data.approvalStatus !== "not_approved" ||
+    p0HumanFillPack01InputCopy.data.learnerFacingRelease !== false ||
+    p0HumanFillPack01InputCopy.data.fixtureOnly !== false ||
+    p0HumanFillPack01InputCopy.data.templateStatus !== "pack_01_input_copy_blank" ||
+    p0HumanFillPack01InputCopy.data.packId !== "local_course_p0_human_fill_pack_01" ||
+    p0HumanFillPack01InputCopy.data.totalEntries !== 4 ||
+    p0HumanFillPack01InputCopy.data.manualTranscriptionEntries !== 4 ||
+    p0HumanFillPack01InputCopy.data.sourceReplacementEntries !== 0 ||
+    p0HumanFillPack01InputCopy.data.filledEntries !== 0 ||
+    p0HumanFillPack01InputCopy.data.readyForValidationEntries !== 0 ||
+    p0HumanFillPack01InputCopy.data.validationReadyEntries !== 0 ||
+    p0HumanFillPack01InputCopy.data.validationBlockedEntries !== 4 ||
+    p0HumanFillPack01InputCopy.data.forbiddenHitEntries !== 0 ||
+    !Array.isArray(p0HumanFillPack01InputCopy.data.inputEntries) ||
+    p0HumanFillPack01InputCopy.data.inputEntries.length !== 4 ||
+    !p0HumanFillPack01InputCopy.data.inputEntries.every((entry) =>
+      entry.category === "manual_transcription" &&
+      entry.documentId === "corpus_1580" &&
+      entry.inputStatus === "human_fill_copy_blank" &&
+      entry.highResPreviewUrl?.startsWith("/docs/local-course-low-extraction-high-res-previews/") &&
+      Array.isArray(entry.riskTermFlags) &&
+      entry.riskTermFlags.length >= 4 &&
+      Array.isArray(entry.missingFields) &&
+      entry.missingFields.includes("humanTranscription") &&
+      entry.nextGate === "validate_pack_01_input_then_apply_dry_run_only") ||
+    !/blank reviewer input material/i.test(p0HumanFillPack01InputCopy.data.boundary || "") ||
+    !/does not perform OCR/i.test(p0HumanFillPack01InputCopy.data.boundary || "") ||
+    !/approve learner-facing release/i.test(p0HumanFillPack01InputCopy.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course P0 human fill pack 01 input copy endpoint failed");
+  }
+
+  const p0HumanReviewBundle = await request("/api/knowledge-browser/local-course-p0-human-review-bundle");
+  if (
+    p0HumanReviewBundle.status !== 200 ||
+    p0HumanReviewBundle.data.educationOnly !== true ||
+    p0HumanReviewBundle.data.productionReady !== false ||
+    p0HumanReviewBundle.data.approvalStatus !== "not_approved" ||
+    p0HumanReviewBundle.data.learnerFacingRelease !== false ||
+    p0HumanReviewBundle.data.bundleStatus !== "p0_human_review_bundle_ready_not_applied" ||
+    p0HumanReviewBundle.data.manualPackCount !== 5 ||
+    p0HumanReviewBundle.data.sourceReplacementPackCount !== 1 ||
+    p0HumanReviewBundle.data.totalPackRows !== 6 ||
+    p0HumanReviewBundle.data.manualTranscriptionEntries !== 19 ||
+    p0HumanReviewBundle.data.sourceReplacementEntries !== 3 ||
+    p0HumanReviewBundle.data.totalReviewEntries !== 22 ||
+    p0HumanReviewBundle.data.filledEntries !== 0 ||
+    p0HumanReviewBundle.data.validationReadyEntries !== 0 ||
+    p0HumanReviewBundle.data.validationBlockedEntries !== 22 ||
+    p0HumanReviewBundle.data.acceptedForOverlayEntries !== 0 ||
+    p0HumanReviewBundle.data.positiveFixtureReadyEntries !== 22 ||
+    p0HumanReviewBundle.data.fixtureOnlyReadyEntries !== 22 ||
+    p0HumanReviewBundle.data.fixtureWrittenEntries !== 0 ||
+    p0HumanReviewBundle.data.realHumanInputEntries !== 0 ||
+    p0HumanReviewBundle.data.writeAllowedNow !== false ||
+    p0HumanReviewBundle.data.approvalGatePassed !== false ||
+    p0HumanReviewBundle.data.humanApprovalRequired !== true ||
+    p0HumanReviewBundle.data.realReviewerInputRequired !== true ||
+    !Array.isArray(p0HumanReviewBundle.data.packRows) ||
+    p0HumanReviewBundle.data.packRows.length !== 6 ||
+    !p0HumanReviewBundle.data.packRows.filter((row) => row.category === "manual_transcription").every((row) =>
+      row.packStatus === "blank_human_fill_pack_ready" &&
+      row.totalInputEntries >= 3 &&
+      row.validation?.readyEntries === 0 &&
+      row.validation?.blockedEntries === row.totalInputEntries &&
+      row.positiveFixture?.fixtureOnly === true) ||
+    !p0HumanReviewBundle.data.packRows.some((row) =>
+      row.category === "source_replacement" &&
+      row.packStatus === "blank_source_replacement_review_pack_ready" &&
+      row.totalInputEntries === 3 &&
+      row.validation?.blockedEntries === 3 &&
+      row.positiveFixture?.fixtureOnly === true) ||
+    !/does not prove human review completion/i.test(p0HumanReviewBundle.data.completionRule || "") ||
+    !/does not perform OCR/i.test(p0HumanReviewBundle.data.boundary || "") ||
+    !/approve learner-facing release/i.test(p0HumanReviewBundle.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course P0 human review bundle endpoint failed");
+  }
+
+  const p0HumanReviewBundleInputCopy = await request("/api/knowledge-browser/local-course-p0-human-review-bundle-input-copy");
+  if (
+    p0HumanReviewBundleInputCopy.status !== 200 ||
+    p0HumanReviewBundleInputCopy.data.educationOnly !== true ||
+    p0HumanReviewBundleInputCopy.data.productionReady !== false ||
+    p0HumanReviewBundleInputCopy.data.approvalStatus !== "not_approved" ||
+    p0HumanReviewBundleInputCopy.data.learnerFacingRelease !== false ||
+    p0HumanReviewBundleInputCopy.data.fixtureOnly !== false ||
+    p0HumanReviewBundleInputCopy.data.templateStatus !== "p0_human_review_bundle_input_copy_blank" ||
+    p0HumanReviewBundleInputCopy.data.validationStatus !== "blocked_missing_reviewer_input" ||
+    p0HumanReviewBundleInputCopy.data.totalEntries !== 22 ||
+    p0HumanReviewBundleInputCopy.data.manualTranscriptionEntries !== 19 ||
+    p0HumanReviewBundleInputCopy.data.sourceReplacementEntries !== 3 ||
+    p0HumanReviewBundleInputCopy.data.filledEntries !== 0 ||
+    p0HumanReviewBundleInputCopy.data.readyForValidationEntries !== 0 ||
+    p0HumanReviewBundleInputCopy.data.validationReadyEntries !== 0 ||
+    p0HumanReviewBundleInputCopy.data.validationBlockedEntries !== 22 ||
+    p0HumanReviewBundleInputCopy.data.forbiddenHitEntries !== 0 ||
+    !Array.isArray(p0HumanReviewBundleInputCopy.data.sourceTemplatePaths) ||
+    p0HumanReviewBundleInputCopy.data.sourceTemplatePaths.length !== 6 ||
+    !Array.isArray(p0HumanReviewBundleInputCopy.data.inputEntries) ||
+    p0HumanReviewBundleInputCopy.data.inputEntries.length !== 22 ||
+    !p0HumanReviewBundleInputCopy.data.inputEntries.every((entry) =>
+      entry.bundleInputStatus === "blank_ready_for_real_reviewer_fill" &&
+      ["manual_transcription", "source_replacement"].includes(entry.category) &&
+      Array.isArray(entry.missingFields) &&
+      entry.missingFields.includes("reviewerName") &&
+      entry.missingFields.includes("reviewedAt")) ||
+    !/does not contain real reviewer input/i.test(p0HumanReviewBundleInputCopy.data.completionRule || "") ||
+    !/does not write overlay changes/i.test(p0HumanReviewBundleInputCopy.data.boundary || "") ||
+    !/dry-run gate/i.test(p0HumanReviewBundleInputCopy.data.validationBoundary || "")
+  ) {
+    throw new Error("knowledge browser local course P0 human review bundle input copy endpoint failed");
+  }
+
+  const p0HumanReviewBundlePositiveFixture = await request("/api/knowledge-browser/local-course-p0-human-review-bundle-positive-fixture");
+  if (
+    p0HumanReviewBundlePositiveFixture.status !== 200 ||
+    p0HumanReviewBundlePositiveFixture.data.educationOnly !== true ||
+    p0HumanReviewBundlePositiveFixture.data.productionReady !== false ||
+    p0HumanReviewBundlePositiveFixture.data.approvalStatus !== "not_approved" ||
+    p0HumanReviewBundlePositiveFixture.data.learnerFacingRelease !== false ||
+    p0HumanReviewBundlePositiveFixture.data.fixtureOnly !== true ||
+    p0HumanReviewBundlePositiveFixture.data.templateStatus !== "p0_human_review_bundle_positive_fixture_ready" ||
+    p0HumanReviewBundlePositiveFixture.data.validationStatus !== "ready_for_overlay_apply" ||
+    p0HumanReviewBundlePositiveFixture.data.fixtureValidationAllowed !== true ||
+    p0HumanReviewBundlePositiveFixture.data.totalEntries !== 22 ||
+    p0HumanReviewBundlePositiveFixture.data.manualTranscriptionEntries !== 19 ||
+    p0HumanReviewBundlePositiveFixture.data.sourceReplacementEntries !== 3 ||
+    p0HumanReviewBundlePositiveFixture.data.filledEntries !== 22 ||
+    p0HumanReviewBundlePositiveFixture.data.readyForValidationEntries !== 22 ||
+    p0HumanReviewBundlePositiveFixture.data.validationReadyEntries !== 22 ||
+    p0HumanReviewBundlePositiveFixture.data.validationBlockedEntries !== 0 ||
+    p0HumanReviewBundlePositiveFixture.data.forbiddenHitEntries !== 0 ||
+    !Array.isArray(p0HumanReviewBundlePositiveFixture.data.sourceFixturePaths) ||
+    p0HumanReviewBundlePositiveFixture.data.sourceFixturePaths.length !== 6 ||
+    !Array.isArray(p0HumanReviewBundlePositiveFixture.data.sampleEntries) ||
+    p0HumanReviewBundlePositiveFixture.data.sampleEntries.length < 4 ||
+    !p0HumanReviewBundlePositiveFixture.data.sampleEntries.every((entry) =>
+      entry.bundleInputStatus === "positive_fixture_ready_for_validator_only" &&
+      ["manual_transcription", "source_replacement"].includes(entry.category) &&
+      /fixture/i.test(entry.reviewerName || "")) ||
+    !/not real human review evidence/i.test(p0HumanReviewBundlePositiveFixture.data.completionRule || "") ||
+    !/does not authorize overlay writes/i.test(p0HumanReviewBundlePositiveFixture.data.completionRule || "") ||
+    !/validator test material only/i.test(p0HumanReviewBundlePositiveFixture.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course P0 human review bundle positive fixture endpoint failed");
+  }
+
+  const p0HumanReviewRealReviewerHandoff = await request("/api/knowledge-browser/local-course-p0-human-review-real-reviewer-handoff");
+  if (
+    p0HumanReviewRealReviewerHandoff.status !== 200 ||
+    p0HumanReviewRealReviewerHandoff.data.educationOnly !== true ||
+    p0HumanReviewRealReviewerHandoff.data.productionReady !== false ||
+    p0HumanReviewRealReviewerHandoff.data.approvalStatus !== "not_approved" ||
+    p0HumanReviewRealReviewerHandoff.data.learnerFacingRelease !== false ||
+    p0HumanReviewRealReviewerHandoff.data.handoffStatus !== "p0_real_reviewer_handoff_ready_write_blocked" ||
+    p0HumanReviewRealReviewerHandoff.data.handoffMode !== "unified_22_entry_real_reviewer_fill_only" ||
+    p0HumanReviewRealReviewerHandoff.data.totalReviewEntries !== 22 ||
+    p0HumanReviewRealReviewerHandoff.data.manualTranscriptionEntries !== 19 ||
+    p0HumanReviewRealReviewerHandoff.data.sourceReplacementEntries !== 3 ||
+    p0HumanReviewRealReviewerHandoff.data.blankInputReadyEntries !== 0 ||
+    p0HumanReviewRealReviewerHandoff.data.blankInputBlockedEntries !== 22 ||
+    p0HumanReviewRealReviewerHandoff.data.positiveFixtureReadyEntries !== 22 ||
+    p0HumanReviewRealReviewerHandoff.data.positiveFixtureBlockedEntries !== 0 ||
+    p0HumanReviewRealReviewerHandoff.data.positiveFixtureOnly !== true ||
+    p0HumanReviewRealReviewerHandoff.data.realHumanInputEntries !== 0 ||
+    p0HumanReviewRealReviewerHandoff.data.writeAllowedNow !== false ||
+    p0HumanReviewRealReviewerHandoff.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(p0HumanReviewRealReviewerHandoff.data.fileRows) ||
+    p0HumanReviewRealReviewerHandoff.data.fileRows.length < 5 ||
+    !Array.isArray(p0HumanReviewRealReviewerHandoff.data.commandRows) ||
+    p0HumanReviewRealReviewerHandoff.data.commandRows.length < 6 ||
+    !/does not complete real human review/i.test(p0HumanReviewRealReviewerHandoff.data.completionRule || "") ||
+    !/does not authorize overlay writes/i.test(p0HumanReviewRealReviewerHandoff.data.completionRule || "") ||
+    !/reviewer-facing operations scaffolding only/i.test(p0HumanReviewRealReviewerHandoff.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course P0 human review real reviewer handoff endpoint failed");
+  }
+
+  const p0RealReviewerInputStarter = await request("/api/knowledge-browser/local-course-p0-real-reviewer-input-starter");
+  if (
+    p0RealReviewerInputStarter.status !== 200 ||
+    p0RealReviewerInputStarter.data.educationOnly !== true ||
+    p0RealReviewerInputStarter.data.productionReady !== false ||
+    p0RealReviewerInputStarter.data.approvalStatus !== "not_approved" ||
+    p0RealReviewerInputStarter.data.learnerFacingRelease !== false ||
+    p0RealReviewerInputStarter.data.starterStatus !== "real_reviewer_input_starter_ready_waiting_for_human_fill" ||
+    p0RealReviewerInputStarter.data.starterMode !== "reviewer_owned_blank_copy_plus_blocked_validation" ||
+    p0RealReviewerInputStarter.data.draftInputPath !== "docs/reviewer-inputs/LOCAL_COURSE_P0_HUMAN_REVIEW_BUNDLE_REAL_INPUT_DRAFT.json" ||
+    p0RealReviewerInputStarter.data.totalEntries !== 22 ||
+    p0RealReviewerInputStarter.data.manualTranscriptionEntries !== 19 ||
+    p0RealReviewerInputStarter.data.sourceReplacementEntries !== 3 ||
+    p0RealReviewerInputStarter.data.filledEntries !== 0 ||
+    p0RealReviewerInputStarter.data.readyForValidationEntries !== 0 ||
+    p0RealReviewerInputStarter.data.validationStatus !== "blocked_missing_reviewer_input" ||
+    p0RealReviewerInputStarter.data.validationReadyEntries !== 0 ||
+    p0RealReviewerInputStarter.data.validationBlockedEntries !== 22 ||
+    p0RealReviewerInputStarter.data.realHumanInputEntries !== 0 ||
+    p0RealReviewerInputStarter.data.writeAllowedNow !== false ||
+    p0RealReviewerInputStarter.data.manualAuthorizationRequired !== true ||
+    p0RealReviewerInputStarter.data.reviewerOwnedCopy !== true ||
+    p0RealReviewerInputStarter.data.fixtureOnly !== false ||
+    !Array.isArray(p0RealReviewerInputStarter.data.reviewerSteps) ||
+    p0RealReviewerInputStarter.data.reviewerSteps.length < 6 ||
+    !Array.isArray(p0RealReviewerInputStarter.data.commands) ||
+    p0RealReviewerInputStarter.data.commands.length < 3 ||
+    !Array.isArray(p0RealReviewerInputStarter.data.sampleRows) ||
+    p0RealReviewerInputStarter.data.sampleRows.length < 4 ||
+    !p0RealReviewerInputStarter.data.sampleRows.every((row) =>
+      row.validationStatus === "blocked_missing_reviewer_input" &&
+      row.missingFields.includes("reviewerName") &&
+      row.missingFields.includes("reviewedAt")) ||
+    !/does not complete human review/i.test(p0RealReviewerInputStarter.data.completionRule || "") ||
+    !/does not authorize overlay writes/i.test(p0RealReviewerInputStarter.data.completionRule || "") ||
+    !/reviewer-facing education-only/i.test(p0RealReviewerInputStarter.data.boundary || "") ||
+    !/does not create real reviewer judgment/i.test(p0RealReviewerInputStarter.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course P0 real reviewer input starter endpoint failed");
+  }
+
+  const p0RealReviewerTaskBoard = await request("/api/knowledge-browser/local-course-p0-real-reviewer-task-board");
+  if (
+    p0RealReviewerTaskBoard.status !== 200 ||
+    p0RealReviewerTaskBoard.data.educationOnly !== true ||
+    p0RealReviewerTaskBoard.data.productionReady !== false ||
+    p0RealReviewerTaskBoard.data.approvalStatus !== "not_approved" ||
+    p0RealReviewerTaskBoard.data.learnerFacingRelease !== false ||
+    p0RealReviewerTaskBoard.data.boardStatus !== "p0_real_reviewer_task_board_ready_all_tasks_blocked" ||
+    p0RealReviewerTaskBoard.data.boardMode !== "reviewer_execution_board_for_blank_owned_copy" ||
+    p0RealReviewerTaskBoard.data.totalTasks !== 22 ||
+    p0RealReviewerTaskBoard.data.manualTranscriptionTasks !== 19 ||
+    p0RealReviewerTaskBoard.data.sourceReplacementTasks !== 3 ||
+    p0RealReviewerTaskBoard.data.readyTasks !== 0 ||
+    p0RealReviewerTaskBoard.data.blockedTasks !== 22 ||
+    p0RealReviewerTaskBoard.data.rowsMissingReviewerIdentity !== 22 ||
+    p0RealReviewerTaskBoard.data.realHumanInputEntries !== 0 ||
+    p0RealReviewerTaskBoard.data.writeAllowedNow !== false ||
+    p0RealReviewerTaskBoard.data.manualAuthorizationRequired !== true ||
+    p0RealReviewerTaskBoard.data.groupedCounts?.byCategory?.manual_transcription !== 19 ||
+    p0RealReviewerTaskBoard.data.groupedCounts?.byCategory?.source_replacement !== 3 ||
+    !Array.isArray(p0RealReviewerTaskBoard.data.taskRows) ||
+    p0RealReviewerTaskBoard.data.taskRows.length < 8 ||
+    !p0RealReviewerTaskBoard.data.taskRows.every((row) =>
+      row.validationStatus === "blocked_missing_reviewer_input" &&
+      row.readyForOverlayApply === false &&
+      row.missingFields.includes("reviewerName") &&
+      row.missingFields.includes("reviewedAt") &&
+      row.highResPreviewUrl) ||
+    !p0RealReviewerTaskBoard.data.taskRows.some((row) =>
+      row.category === "manual_transcription" &&
+      row.missingFields.includes("humanTranscription") &&
+      row.candidateSummary) ||
+    !Array.isArray(p0RealReviewerTaskBoard.data.commands) ||
+    p0RealReviewerTaskBoard.data.commands.length < 4 ||
+    !/does not complete human review/i.test(p0RealReviewerTaskBoard.data.completionRule || "") ||
+    !/does not authorize overlay writes/i.test(p0RealReviewerTaskBoard.data.completionRule || "") ||
+    !/reviewer-facing education-only/i.test(p0RealReviewerTaskBoard.data.boundary || "") ||
+    !/does not create reviewer judgment/i.test(p0RealReviewerTaskBoard.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course P0 real reviewer task board endpoint failed");
+  }
+
+  const p0RealReviewerEvidencePacket = await request("/api/knowledge-browser/local-course-p0-real-reviewer-evidence-packet");
+  if (
+    p0RealReviewerEvidencePacket.status !== 200 ||
+    p0RealReviewerEvidencePacket.data.educationOnly !== true ||
+    p0RealReviewerEvidencePacket.data.productionReady !== false ||
+    p0RealReviewerEvidencePacket.data.approvalStatus !== "not_approved" ||
+    p0RealReviewerEvidencePacket.data.learnerFacingRelease !== false ||
+    p0RealReviewerEvidencePacket.data.packetStatus !== "p0_real_reviewer_evidence_packet_ready_not_reviewed" ||
+    p0RealReviewerEvidencePacket.data.packetMode !== "public_grounding_suggestions_for_p0_reviewer_tasks" ||
+    p0RealReviewerEvidencePacket.data.totalTasks !== 22 ||
+    p0RealReviewerEvidencePacket.data.tasksWithSuggestedRefs !== 22 ||
+    p0RealReviewerEvidencePacket.data.tasksWithWikipediaRefs !== 22 ||
+    p0RealReviewerEvidencePacket.data.tasksWithPublicContextRefs !== 22 ||
+    p0RealReviewerEvidencePacket.data.totalSuggestedRefs < 66 ||
+    p0RealReviewerEvidencePacket.data.learnerCitationApprovedTasks !== 0 ||
+    p0RealReviewerEvidencePacket.data.realHumanInputEntries !== 0 ||
+    p0RealReviewerEvidencePacket.data.writeAllowedNow !== false ||
+    p0RealReviewerEvidencePacket.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(p0RealReviewerEvidencePacket.data.taskRows) ||
+    p0RealReviewerEvidencePacket.data.taskRows.length < 8 ||
+    !p0RealReviewerEvidencePacket.data.taskRows.every((row) =>
+      row.suggestedRefCount >= 3 &&
+      row.wikipediaRefCount >= 1 &&
+      row.publicContextRefCount >= 1 &&
+      row.learnerCitationApproved === false &&
+      row.nextGate === "real_reviewer_source_fit_note_then_validation" &&
+      Array.isArray(row.suggestedPublicRefs) &&
+      row.suggestedPublicRefs.length >= 3) ||
+    !p0RealReviewerEvidencePacket.data.taskRows.every((row) =>
+      row.suggestedPublicRefs.some((ref) => ref.tier === "share_alike" || ref.family === "Wikipedia") &&
+      row.suggestedPublicRefs.some((ref) => ref.tier !== "share_alike" && ref.family !== "Wikipedia")) ||
+    !/does not fill sourceFitNote/i.test(p0RealReviewerEvidencePacket.data.completionRule || "") ||
+    !/does not approve learner-facing citations/i.test(p0RealReviewerEvidencePacket.data.completionRule || "") ||
+    !/does not authorize overlay writes/i.test(p0RealReviewerEvidencePacket.data.completionRule || "") ||
+    !/reviewer-facing education-only/i.test(p0RealReviewerEvidencePacket.data.boundary || "") ||
+    !/do not prove a setup, signal, future outcome, strategy edge, real-money action/i.test(p0RealReviewerEvidencePacket.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course P0 real reviewer evidence packet endpoint failed");
+  }
+
+  const p0RealReviewerSourceFitWorksheet = await request("/api/knowledge-browser/local-course-p0-real-reviewer-source-fit-worksheet");
+  if (
+    p0RealReviewerSourceFitWorksheet.status !== 200 ||
+    p0RealReviewerSourceFitWorksheet.data.educationOnly !== true ||
+    p0RealReviewerSourceFitWorksheet.data.productionReady !== false ||
+    p0RealReviewerSourceFitWorksheet.data.approvalStatus !== "not_approved" ||
+    p0RealReviewerSourceFitWorksheet.data.learnerFacingRelease !== false ||
+    p0RealReviewerSourceFitWorksheet.data.worksheetStatus !== "p0_real_reviewer_source_fit_worksheet_ready_blank" ||
+    p0RealReviewerSourceFitWorksheet.data.worksheetMode !== "blank_human_source_fit_cards_with_public_ref_suggestions" ||
+    p0RealReviewerSourceFitWorksheet.data.totalCards !== 22 ||
+    p0RealReviewerSourceFitWorksheet.data.manualTranscriptionCards !== 19 ||
+    p0RealReviewerSourceFitWorksheet.data.sourceReplacementCards !== 3 ||
+    p0RealReviewerSourceFitWorksheet.data.totalBlankFields !== 176 ||
+    p0RealReviewerSourceFitWorksheet.data.cardsWithSuggestedRefs !== 22 ||
+    p0RealReviewerSourceFitWorksheet.data.cardsWithWikipediaRefs !== 22 ||
+    p0RealReviewerSourceFitWorksheet.data.cardsWithPublicContextRefs !== 22 ||
+    p0RealReviewerSourceFitWorksheet.data.reviewerFilledCards !== 0 ||
+    p0RealReviewerSourceFitWorksheet.data.generatedDecisions !== 0 ||
+    p0RealReviewerSourceFitWorksheet.data.learnerCitationApprovedCards !== 0 ||
+    p0RealReviewerSourceFitWorksheet.data.realHumanInputEntries !== 0 ||
+    p0RealReviewerSourceFitWorksheet.data.writeAllowedNow !== false ||
+    p0RealReviewerSourceFitWorksheet.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(p0RealReviewerSourceFitWorksheet.data.cards) ||
+    p0RealReviewerSourceFitWorksheet.data.cards.length < 8 ||
+    !p0RealReviewerSourceFitWorksheet.data.cards.every((card) =>
+      card.readyForOverlayApply === false &&
+      card.reviewerFilled === false &&
+      card.generatedDecision === "" &&
+      card.learnerCitationApproved === false &&
+      card.nextGate === "human_fill_source_fit_worksheet_then_validate_reviewer_input_copy" &&
+      Array.isArray(card.blankFields) &&
+      card.blankFields.includes("sourceFitNote") &&
+      card.blankFields.includes("publicReferenceNotes") &&
+      Array.isArray(card.unsafeAutofillFields) &&
+      card.unsafeAutofillFields.includes("sourceFitNote") &&
+      Array.isArray(card.suggestedPublicRefs) &&
+      card.suggestedPublicRefs.length >= 3) ||
+    !p0RealReviewerSourceFitWorksheet.data.cards.every((card) =>
+      card.suggestedPublicRefs.some((ref) => ref.tier === "share_alike" || ref.family === "Wikipedia") &&
+      card.suggestedPublicRefs.some((ref) => ref.tier !== "share_alike" && ref.family !== "Wikipedia")) ||
+    !/does not fill sourceFitNote/i.test(p0RealReviewerSourceFitWorksheet.data.completionRule || "") ||
+    !/does not generate reviewer decisions/i.test(p0RealReviewerSourceFitWorksheet.data.completionRule || "") ||
+    !/does not authorize overlay writes/i.test(p0RealReviewerSourceFitWorksheet.data.completionRule || "") ||
+    !/keeps all source-fit and public-reference judgment blank/i.test(p0RealReviewerSourceFitWorksheet.data.boundary || "") ||
+    !/do not prove a setup, signal, future outcome, strategy edge, real-money action/i.test(p0RealReviewerSourceFitWorksheet.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course P0 real reviewer source-fit worksheet endpoint failed");
+  }
+
+  const p0RealReviewerSourceFitInputGuide = await request("/api/knowledge-browser/local-course-p0-real-reviewer-source-fit-input-guide");
+  if (
+    p0RealReviewerSourceFitInputGuide.status !== 200 ||
+    p0RealReviewerSourceFitInputGuide.data.educationOnly !== true ||
+    p0RealReviewerSourceFitInputGuide.data.productionReady !== false ||
+    p0RealReviewerSourceFitInputGuide.data.approvalStatus !== "not_approved" ||
+    p0RealReviewerSourceFitInputGuide.data.learnerFacingRelease !== false ||
+    p0RealReviewerSourceFitInputGuide.data.guideStatus !== "p0_real_reviewer_source_fit_input_guide_ready_blank" ||
+    p0RealReviewerSourceFitInputGuide.data.guideMode !== "maps_source_fit_cards_to_reviewer_owned_draft_input_fields" ||
+    p0RealReviewerSourceFitInputGuide.data.sourceDraftInput !== "docs/reviewer-inputs/LOCAL_COURSE_P0_HUMAN_REVIEW_BUNDLE_REAL_INPUT_DRAFT.json" ||
+    p0RealReviewerSourceFitInputGuide.data.totalGuideRows !== 22 ||
+    p0RealReviewerSourceFitInputGuide.data.manualTranscriptionRows !== 19 ||
+    p0RealReviewerSourceFitInputGuide.data.sourceReplacementRows !== 3 ||
+    p0RealReviewerSourceFitInputGuide.data.rowsWithSourceFitFieldPath !== 22 ||
+    p0RealReviewerSourceFitInputGuide.data.rowsWithPublicReferenceNotesFieldPath !== 22 ||
+    p0RealReviewerSourceFitInputGuide.data.rowsWithSuggestedRefs !== 22 ||
+    p0RealReviewerSourceFitInputGuide.data.rowsWithWikipediaRefs !== 22 ||
+    p0RealReviewerSourceFitInputGuide.data.rowsWithPublicContextRefs !== 22 ||
+    p0RealReviewerSourceFitInputGuide.data.reviewerFilledRows !== 0 ||
+    p0RealReviewerSourceFitInputGuide.data.generatedDecisions !== 0 ||
+    p0RealReviewerSourceFitInputGuide.data.learnerCitationApprovedRows !== 0 ||
+    p0RealReviewerSourceFitInputGuide.data.realHumanInputEntries !== 0 ||
+    p0RealReviewerSourceFitInputGuide.data.writeAllowedNow !== false ||
+    p0RealReviewerSourceFitInputGuide.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(p0RealReviewerSourceFitInputGuide.data.guideRows) ||
+    p0RealReviewerSourceFitInputGuide.data.guideRows.length < 8 ||
+    !p0RealReviewerSourceFitInputGuide.data.guideRows.every((row) =>
+      /^\/inputEntries\/\d+$/.test(row.jsonPointer || "") &&
+      Array.isArray(row.requiredFieldPaths) &&
+      row.requiredFieldPaths.length >= 8 &&
+      row.sourceFitFieldPath &&
+      row.publicReferenceNotesFieldPath &&
+      row.suggestedRefCount >= 3 &&
+      row.wikipediaRefCount >= 1 &&
+      row.publicContextRefCount >= 1 &&
+      Array.isArray(row.unsafeAutofillFields) &&
+      row.unsafeAutofillFields.includes("sourceFitNote") &&
+      row.reviewerFilled === false &&
+      row.generatedDecision === "" &&
+      row.learnerCitationApproved === false &&
+      row.nextGate === "fill_draft_input_copy_then_validate_and_lint") ||
+    !/does not fill sourceFitNote/i.test(p0RealReviewerSourceFitInputGuide.data.completionRule || "") ||
+    !/does not generate reviewer decisions/i.test(p0RealReviewerSourceFitInputGuide.data.completionRule || "") ||
+    !/does not authorize overlay writes/i.test(p0RealReviewerSourceFitInputGuide.data.completionRule || "") ||
+    !/shows where humans should write/i.test(p0RealReviewerSourceFitInputGuide.data.boundary || "") ||
+    !/keeps all judgment blank/i.test(p0RealReviewerSourceFitInputGuide.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course P0 real reviewer source-fit input guide endpoint failed");
+  }
+
+  const p0RealReviewerSourceFitInputValidation = await request("/api/knowledge-browser/local-course-p0-real-reviewer-source-fit-input-validation");
+  if (
+    p0RealReviewerSourceFitInputValidation.status !== 200 ||
+    p0RealReviewerSourceFitInputValidation.data.educationOnly !== true ||
+    p0RealReviewerSourceFitInputValidation.data.productionReady !== false ||
+    p0RealReviewerSourceFitInputValidation.data.approvalStatus !== "not_approved" ||
+    p0RealReviewerSourceFitInputValidation.data.learnerFacingRelease !== false ||
+    p0RealReviewerSourceFitInputValidation.data.validationStatus !== "blocked_missing_reviewer_input" ||
+    p0RealReviewerSourceFitInputValidation.data.validationMode !== "source_fit_and_public_reference_notes_gate" ||
+    p0RealReviewerSourceFitInputValidation.data.totalRows !== 22 ||
+    p0RealReviewerSourceFitInputValidation.data.readyRows !== 0 ||
+    p0RealReviewerSourceFitInputValidation.data.blockedRows !== 22 ||
+    p0RealReviewerSourceFitInputValidation.data.missingFieldRows !== 22 ||
+    p0RealReviewerSourceFitInputValidation.data.forbiddenHitRows !== 0 ||
+    p0RealReviewerSourceFitInputValidation.data.fixtureOnly !== false ||
+    p0RealReviewerSourceFitInputValidation.data.fixtureReadyRows !== 0 ||
+    p0RealReviewerSourceFitInputValidation.data.realHumanInputEntries !== 0 ||
+    p0RealReviewerSourceFitInputValidation.data.generatedDecisions !== 0 ||
+    p0RealReviewerSourceFitInputValidation.data.learnerCitationApprovedRows !== 0 ||
+    p0RealReviewerSourceFitInputValidation.data.writeAllowedNow !== false ||
+    p0RealReviewerSourceFitInputValidation.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(p0RealReviewerSourceFitInputValidation.data.allowedDecisionValues) ||
+    p0RealReviewerSourceFitInputValidation.data.allowedDecisionValues.length !== 4 ||
+    !Array.isArray(p0RealReviewerSourceFitInputValidation.data.validationRows) ||
+    p0RealReviewerSourceFitInputValidation.data.validationRows.length < 8 ||
+    !p0RealReviewerSourceFitInputValidation.data.validationRows.every((row) =>
+      row.validationStatus === "blocked_missing_reviewer_input" &&
+      row.readyForSourceFitGate === false &&
+      Array.isArray(row.missingFields) &&
+      row.missingFields.length >= 2 &&
+      row.missingFields.some((field) => /sourceFitNote|publicReferenceNotes/.test(field)) &&
+      Array.isArray(row.forbiddenHits) &&
+      row.forbiddenHits.length === 0 &&
+      row.nextGate === "fill_source_fit_notes_then_revalidate") ||
+    !/does not generate reviewer decisions/i.test(p0RealReviewerSourceFitInputValidation.data.completionRule || "") ||
+    !/approve learner-facing citations/i.test(p0RealReviewerSourceFitInputValidation.data.completionRule || "") ||
+    !/authorize overlay writes/i.test(p0RealReviewerSourceFitInputValidation.data.completionRule || "") ||
+    !/validates source-fit note shape/i.test(p0RealReviewerSourceFitInputValidation.data.boundary || "") ||
+    !/write authorization/i.test(p0RealReviewerSourceFitInputValidation.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course P0 real reviewer source-fit input validation endpoint failed");
+  }
+
+  const p0RealReviewerSourceFitHandoff = await request("/api/knowledge-browser/local-course-p0-real-reviewer-source-fit-handoff");
+  const sourceFitHandoffPhaseIds = [
+    "inspect_p0_task_board",
+    "review_public_evidence_packet",
+    "fill_source_fit_worksheet",
+    "map_notes_to_draft_input",
+    "validate_real_source_fit_input",
+    "compare_positive_fixture_control",
+    "check_write_authorization_preview",
+  ];
+  if (
+    p0RealReviewerSourceFitHandoff.status !== 200 ||
+    p0RealReviewerSourceFitHandoff.data.educationOnly !== true ||
+    p0RealReviewerSourceFitHandoff.data.productionReady !== false ||
+    p0RealReviewerSourceFitHandoff.data.approvalStatus !== "not_approved" ||
+    p0RealReviewerSourceFitHandoff.data.learnerFacingRelease !== false ||
+    p0RealReviewerSourceFitHandoff.data.handoffStatus !== "p0_real_reviewer_source_fit_handoff_ready_blocked_on_real_input" ||
+    p0RealReviewerSourceFitHandoff.data.handoffMode !== "single_entrypoint_for_real_source_fit_review_execution" ||
+    p0RealReviewerSourceFitHandoff.data.totalP0Tasks !== 22 ||
+    p0RealReviewerSourceFitHandoff.data.totalSourceFitCards !== 22 ||
+    p0RealReviewerSourceFitHandoff.data.totalGuideRows !== 22 ||
+    p0RealReviewerSourceFitHandoff.data.sourceFitRealReadyRows !== 0 ||
+    p0RealReviewerSourceFitHandoff.data.sourceFitRealBlockedRows !== 22 ||
+    p0RealReviewerSourceFitHandoff.data.sourceFitFixtureReadyRows !== 22 ||
+    p0RealReviewerSourceFitHandoff.data.writeAllowedNow !== false ||
+    p0RealReviewerSourceFitHandoff.data.realHumanInputEntries !== 0 ||
+    p0RealReviewerSourceFitHandoff.data.manualAuthorizationRequired !== true ||
+    p0RealReviewerSourceFitHandoff.data.fixtureOnlyInputsRejectedForWrite !== true ||
+    !Array.isArray(p0RealReviewerSourceFitHandoff.data.phaseRows) ||
+    p0RealReviewerSourceFitHandoff.data.phaseRows.length !== 7 ||
+    !sourceFitHandoffPhaseIds.every((id) => p0RealReviewerSourceFitHandoff.data.phaseRows.some((row) => row.id === id)) ||
+    !p0RealReviewerSourceFitHandoff.data.phaseRows.every((row) =>
+      row.command &&
+      row.reviewerAction &&
+      row.hardStop) ||
+    !Array.isArray(p0RealReviewerSourceFitHandoff.data.hardStops) ||
+    p0RealReviewerSourceFitHandoff.data.hardStops.length < 5 ||
+    !p0RealReviewerSourceFitHandoff.data.hardStops.some((item) => /fixture-only/i.test(item)) ||
+    !p0RealReviewerSourceFitHandoff.data.hardStops.some((item) => /sourceFitRealReadyRows is 0/i.test(item)) ||
+    !p0RealReviewerSourceFitHandoff.data.hardStops.some((item) => /setup, signal, future outcome, strategy edge, or real-money action/i.test(item)) ||
+    !/does not fill notes/i.test(p0RealReviewerSourceFitHandoff.data.completionRule || "") ||
+    !/does not authorize overlay writes/i.test(p0RealReviewerSourceFitHandoff.data.completionRule || "") ||
+    !/reviewer-facing education-only/i.test(p0RealReviewerSourceFitHandoff.data.boundary || "") ||
+    !/does not infer missing private content/i.test(p0RealReviewerSourceFitHandoff.data.boundary || "") ||
+    !/stock recommendations/i.test(p0RealReviewerSourceFitHandoff.data.boundary || "") ||
+    !/live signals/i.test(p0RealReviewerSourceFitHandoff.data.boundary || "") ||
+    !/real-money guidance/i.test(p0RealReviewerSourceFitHandoff.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course P0 real reviewer source-fit handoff endpoint failed");
+  }
+
+  const p0ReviewOperatorIndex = await request("/api/knowledge-browser/local-course-p0-review-operator-index");
+  if (
+    p0ReviewOperatorIndex.status !== 200 ||
+    p0ReviewOperatorIndex.data.educationOnly !== true ||
+    p0ReviewOperatorIndex.data.productionReady !== false ||
+    p0ReviewOperatorIndex.data.approvalStatus !== "not_approved" ||
+    p0ReviewOperatorIndex.data.learnerFacingRelease !== false ||
+    p0ReviewOperatorIndex.data.indexStatus !== "p0_review_operator_index_ready_not_applied" ||
+    p0ReviewOperatorIndex.data.totalP0Tasks !== 22 ||
+    p0ReviewOperatorIndex.data.manualTranscriptionTasks !== 19 ||
+    p0ReviewOperatorIndex.data.sourceReplacementTasks !== 3 ||
+    p0ReviewOperatorIndex.data.manualPackCount !== 5 ||
+    p0ReviewOperatorIndex.data.manualPackCards !== 19 ||
+    p0ReviewOperatorIndex.data.sourceReplacementPackEntries !== 3 ||
+    p0ReviewOperatorIndex.data.totalReviewPackEntries !== 22 ||
+    p0ReviewOperatorIndex.data.reviewPackCoverageComplete !== true ||
+    p0ReviewOperatorIndex.data.overlayStatus !== "p0_review_not_started" ||
+    p0ReviewOperatorIndex.data.overlayReadyForValidationTasks !== 0 ||
+    p0ReviewOperatorIndex.data.overlayAcceptedForNextGateTasks !== 0 ||
+    p0ReviewOperatorIndex.data.blankInputReadyEntries !== 0 ||
+    p0ReviewOperatorIndex.data.blankInputBlockedEntries !== 22 ||
+    p0ReviewOperatorIndex.data.positiveFixtureReadyToApplyEntries !== 22 ||
+    p0ReviewOperatorIndex.data.positiveFixtureWrittenEntries !== 0 ||
+    p0ReviewOperatorIndex.data.sourceReplacementTargetsWithDirectReplacementCandidates !== 0 ||
+    p0ReviewOperatorIndex.data.sourceReplacementApprovedReplacements !== 0 ||
+    !Array.isArray(p0ReviewOperatorIndex.data.packRows) ||
+    p0ReviewOperatorIndex.data.packRows.length !== 6 ||
+    !p0ReviewOperatorIndex.data.packRows.some((row) =>
+      row.packNumber === "source_replacement" &&
+      row.category === "source_replacement" &&
+      row.totalEntries === 3 &&
+      row.validationBlockedEntries === 3 &&
+      row.positiveFixtureWrittenEntries === 0) ||
+    !p0ReviewOperatorIndex.data.packRows.filter((row) => row.category === "manual_transcription").every((row) =>
+      row.packStatus === "blank_human_fill_pack_ready" &&
+      row.filledEntries === 0 &&
+      row.validationReadyEntries === 0 &&
+      row.positiveFixtureWrittenEntries === 0) ||
+    !/reviewer-only operational material/i.test(p0ReviewOperatorIndex.data.boundary || "") ||
+    !/does not write overlay changes/i.test(p0ReviewOperatorIndex.data.boundary || "") ||
+    !/proves P0 review coverage, not P0 completion/i.test(p0ReviewOperatorIndex.data.completionRule || "")
+  ) {
+    throw new Error("knowledge browser local course P0 review operator index endpoint failed");
+  }
+
+  const p0WriteAuthorizationPreview = await request("/api/knowledge-browser/local-course-p0-write-authorization-preview");
+  if (
+    p0WriteAuthorizationPreview.status !== 200 ||
+    p0WriteAuthorizationPreview.data.educationOnly !== true ||
+    p0WriteAuthorizationPreview.data.productionReady !== false ||
+    p0WriteAuthorizationPreview.data.approvalStatus !== "not_approved" ||
+    p0WriteAuthorizationPreview.data.learnerFacingRelease !== false ||
+    p0WriteAuthorizationPreview.data.previewStatus !== "write_authorization_preview_ready_manual_required" ||
+    p0WriteAuthorizationPreview.data.writeAllowedNow !== false ||
+    p0WriteAuthorizationPreview.data.manualAuthorizationRequired !== true ||
+    p0WriteAuthorizationPreview.data.machineCheckedGatesPassed !== true ||
+    p0WriteAuthorizationPreview.data.realReviewerInputRequired !== true ||
+    p0WriteAuthorizationPreview.data.fixtureOnlyInputsRejectedForWrite !== true ||
+    p0WriteAuthorizationPreview.data.totalP0Tasks !== 22 ||
+    p0WriteAuthorizationPreview.data.totalReviewPackEntries !== 22 ||
+    p0WriteAuthorizationPreview.data.blankValidationReadyEntries !== 0 ||
+    p0WriteAuthorizationPreview.data.blankValidationBlockedEntries !== 22 ||
+    p0WriteAuthorizationPreview.data.blankLintReadyEntries !== 0 ||
+    p0WriteAuthorizationPreview.data.blankLintBlockedEntries !== 22 ||
+    p0WriteAuthorizationPreview.data.fixtureReadyToApplyEntries !== 22 ||
+    p0WriteAuthorizationPreview.data.fixtureOnlyReadyEntries !== 22 ||
+    p0WriteAuthorizationPreview.data.fixtureWrittenEntries !== 0 ||
+    p0WriteAuthorizationPreview.data.sourceFitValidationStatus !== "blocked_missing_reviewer_input" ||
+    p0WriteAuthorizationPreview.data.sourceFitReadyRows !== 0 ||
+    p0WriteAuthorizationPreview.data.sourceFitBlockedRows !== 22 ||
+    p0WriteAuthorizationPreview.data.sourceFitMissingFieldRows !== 22 ||
+    p0WriteAuthorizationPreview.data.sourceFitForbiddenHitRows !== 0 ||
+    p0WriteAuthorizationPreview.data.sourceFitFixtureValidationStatus !== "ready_for_source_fit_gate" ||
+    p0WriteAuthorizationPreview.data.sourceFitFixtureReadyRows !== 22 ||
+    p0WriteAuthorizationPreview.data.sourceFitFixtureRealHumanInputEntries !== 0 ||
+    p0WriteAuthorizationPreview.data.highRiskRealReviewerValidationStatus !== "blocked_missing_real_reviewer_overlay_input" ||
+    p0WriteAuthorizationPreview.data.highRiskReadyLessons !== 0 ||
+    p0WriteAuthorizationPreview.data.highRiskBlockedLessons !== 12 ||
+    p0WriteAuthorizationPreview.data.highRiskReadyReviewerNotes !== 0 ||
+    p0WriteAuthorizationPreview.data.highRiskBlockedReviewerNotes !== 72 ||
+    p0WriteAuthorizationPreview.data.highRiskReadyDirectSourceDecisions !== 0 ||
+    p0WriteAuthorizationPreview.data.highRiskBlockedDirectSourceDecisions !== 5 ||
+    p0WriteAuthorizationPreview.data.highRiskMissingFieldRows < 89 ||
+    p0WriteAuthorizationPreview.data.highRiskForbiddenHitRows !== 0 ||
+    p0WriteAuthorizationPreview.data.highRiskRealHumanInputEntries !== 0 ||
+    p0WriteAuthorizationPreview.data.nodePublicSourceFitValidationStatus !== "blocked_missing_real_reviewer_source_fit_input" ||
+    p0WriteAuthorizationPreview.data.nodePublicSourceFitInputRows !== 1638 ||
+    p0WriteAuthorizationPreview.data.nodePublicSourceFitReadyRows !== 0 ||
+    p0WriteAuthorizationPreview.data.nodePublicSourceFitBlockedRows !== 1638 ||
+    p0WriteAuthorizationPreview.data.nodePublicSourceFitMissingFieldRows !== 1638 ||
+    p0WriteAuthorizationPreview.data.nodePublicSourceFitForbiddenHitRows !== 0 ||
+    p0WriteAuthorizationPreview.data.nodePublicSourceFitRealHumanInputEntries !== 0 ||
+    p0WriteAuthorizationPreview.data.nodePublicSourceFitLearnerCitationApprovedRows !== 0 ||
+    p0WriteAuthorizationPreview.data.nodePublicSourceFitCopiedTextApprovedRows !== 0 ||
+    p0WriteAuthorizationPreview.data.nodePublicSourceFitProgressMatrixStatus !== "node_public_source_fit_review_progress_matrix_ready_release_blocked" ||
+    p0WriteAuthorizationPreview.data.nodePublicSourceFitProgressValidationStatus !== "blocked_missing_real_reviewer_source_fit_input" ||
+    p0WriteAuthorizationPreview.data.nodePublicSourceFitProgressTotalPackets !== 35 ||
+    p0WriteAuthorizationPreview.data.nodePublicSourceFitReadyPackets !== 0 ||
+    p0WriteAuthorizationPreview.data.nodePublicSourceFitBlockedPackets !== 35 ||
+    p0WriteAuthorizationPreview.data.nodePublicSourceFitReadyModules !== 0 ||
+    p0WriteAuthorizationPreview.data.nodePublicSourceFitBlockedModules !== 12 ||
+    p0WriteAuthorizationPreview.data.nodePublicSourceFitOverallProgressPercent !== 0 ||
+    p0WriteAuthorizationPreview.data.nodePublicSourceFitFirstBlockedPacketId !== "node-public-source-fit-batch-001-packet" ||
+    p0WriteAuthorizationPreview.data.overlayStatus !== "p0_review_not_started" ||
+    p0WriteAuthorizationPreview.data.overlayReadyForValidationTasks !== 0 ||
+    p0WriteAuthorizationPreview.data.overlayAcceptedForNextGateTasks !== 0 ||
+    p0WriteAuthorizationPreview.data.readinessStatus !== "blocked_for_learner_facing_absorption" ||
+    !Array.isArray(p0WriteAuthorizationPreview.data.gates) ||
+    p0WriteAuthorizationPreview.data.gates.length < 9 ||
+    !p0WriteAuthorizationPreview.data.gates.some((gate) =>
+      gate.id === "no_real_reviewer_input_copy" &&
+      gate.status === "manual_required" &&
+      gate.blocksWrite === true) ||
+    !p0WriteAuthorizationPreview.data.gates.some((gate) =>
+      gate.id === "fixture_ready_entries_not_authorizable" &&
+      gate.status === "blocked" &&
+      gate.blocksWrite === true) ||
+    !p0WriteAuthorizationPreview.data.gates.some((gate) =>
+      gate.id === "source_fit_real_input_blocked" &&
+      gate.status === "pass") ||
+    !p0WriteAuthorizationPreview.data.gates.some((gate) =>
+      gate.id === "source_fit_fixture_not_authorizable" &&
+      gate.status === "blocked" &&
+      gate.blocksWrite === true) ||
+    !p0WriteAuthorizationPreview.data.gates.some((gate) =>
+      gate.id === "high_risk_real_reviewer_overlay_blocked" &&
+      gate.status === "pass" &&
+      gate.blocksWrite === true &&
+      /0\/72/.test(gate.evidence || "")) ||
+    !p0WriteAuthorizationPreview.data.gates.some((gate) =>
+      gate.id === "node_public_source_fit_review_input_blocked" &&
+      gate.status === "pass" &&
+      gate.blocksWrite === true &&
+      /0\/1638/.test(gate.evidence || "")) ||
+    !p0WriteAuthorizationPreview.data.gates.some((gate) =>
+      gate.id === "node_public_source_fit_progress_matrix_blocked" &&
+      gate.status === "pass" &&
+      gate.blocksWrite === true &&
+      /0\/35/.test(gate.evidence || "")) ||
+    !Array.isArray(p0WriteAuthorizationPreview.data.requiredWritePreconditions) ||
+    !p0WriteAuthorizationPreview.data.requiredWritePreconditions.some((item) => /explicit human approval/i.test(item)) ||
+    !p0WriteAuthorizationPreview.data.requiredWritePreconditions.some((item) =>
+      /High-risk real reviewer overlay validation/i.test(item)) ||
+    !p0WriteAuthorizationPreview.data.requiredWritePreconditions.some((item) =>
+      /Node public source-fit review input validation/i.test(item)) ||
+    !p0WriteAuthorizationPreview.data.requiredWritePreconditions.some((item) =>
+      /Node public source-fit progress matrix/i.test(item)) ||
+    !/not write authorization/i.test(p0WriteAuthorizationPreview.data.completionRule || "") ||
+    !/does not write overlay changes/i.test(p0WriteAuthorizationPreview.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course P0 write authorization preview endpoint failed");
+  }
+
+  const p0ReviewInputNegativeCases = await request("/api/knowledge-browser/local-course-p0-review-input-negative-cases");
+  if (
+    p0ReviewInputNegativeCases.status !== 200 ||
+    p0ReviewInputNegativeCases.data.educationOnly !== true ||
+    p0ReviewInputNegativeCases.data.productionReady !== false ||
+    p0ReviewInputNegativeCases.data.approvalStatus !== "not_approved" ||
+    p0ReviewInputNegativeCases.data.learnerFacingRelease !== false ||
+    p0ReviewInputNegativeCases.data.reportStatus !== "p0_review_input_negative_cases_ready" ||
+    p0ReviewInputNegativeCases.data.totalNegativeCases < 5 ||
+    p0ReviewInputNegativeCases.data.manualBadLintStatus !== "blocked_quality_lint" ||
+    p0ReviewInputNegativeCases.data.manualBadCandidateCopyIssueEntries < 4 ||
+    p0ReviewInputNegativeCases.data.manualBadForbiddenHitEntries < 4 ||
+    p0ReviewInputNegativeCases.data.sourceBadLintStatus !== "blocked_quality_lint" ||
+    p0ReviewInputNegativeCases.data.sourceBadDirectCandidateMisuseEntries < 3 ||
+    p0ReviewInputNegativeCases.data.sourceBadInvalidDecisionEntries !== 0 ||
+    p0ReviewInputNegativeCases.data.writeAllowedNow !== false ||
+    p0ReviewInputNegativeCases.data.fixtureOnlyReadyEntries !== 22 ||
+    p0ReviewInputNegativeCases.data.fixtureWrittenEntries !== 0 ||
+    p0ReviewInputNegativeCases.data.overlayStatus !== "p0_review_not_started" ||
+    !Array.isArray(p0ReviewInputNegativeCases.data.negativeCases) ||
+    p0ReviewInputNegativeCases.data.negativeCases.length < 5 ||
+    !p0ReviewInputNegativeCases.data.negativeCases.some((item) =>
+      item.id === "manual_candidate_copy_and_forbidden_claims" &&
+      item.observedStatus === "blocked_quality_lint") ||
+    !p0ReviewInputNegativeCases.data.negativeCases.some((item) =>
+      item.id === "source_neighbor_candidate_misuse" &&
+      item.observedStatus === "blocked_quality_lint") ||
+    !/bad reviewer input is blocked/i.test(p0ReviewInputNegativeCases.data.completionRule || "") ||
+    !/do(?:es)? not write overlay changes/i.test(p0ReviewInputNegativeCases.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course P0 review input negative cases endpoint failed");
+  }
+
+  const lowExtractionTranscriptionOverlay = await request("/api/knowledge-browser/low-extraction-transcription-overlay");
+  if (
+    lowExtractionTranscriptionOverlay.status !== 200 ||
+    lowExtractionTranscriptionOverlay.data.educationOnly !== true ||
+    lowExtractionTranscriptionOverlay.data.productionReady !== false ||
+    lowExtractionTranscriptionOverlay.data.approvalStatus !== "not_approved" ||
+    lowExtractionTranscriptionOverlay.data.learnerFacingRelease !== false ||
+    lowExtractionTranscriptionOverlay.data.overlayStatus !== "manual_transcription_not_started" ||
+    lowExtractionTranscriptionOverlay.data.lowExtractionDocs !== 5 ||
+    lowExtractionTranscriptionOverlay.data.transcriptionPages !== 22 ||
+    lowExtractionTranscriptionOverlay.data.pagesNotStarted !== 22 ||
+    lowExtractionTranscriptionOverlay.data.pagesTranscribed !== 0 ||
+    lowExtractionTranscriptionOverlay.data.pagesUnusable !== 0 ||
+    lowExtractionTranscriptionOverlay.data.pagesNeedSourceReplacement !== 0 ||
+    lowExtractionTranscriptionOverlay.data.publicSourceGroundingNeededPages !== 22 ||
+    !Array.isArray(lowExtractionTranscriptionOverlay.data.documentRows) ||
+    lowExtractionTranscriptionOverlay.data.documentRows.length !== 5 ||
+    !Array.isArray(lowExtractionTranscriptionOverlay.data.pageEntries) ||
+    lowExtractionTranscriptionOverlay.data.pageEntries.length < 8 ||
+    !lowExtractionTranscriptionOverlay.data.pageEntries.every((entry) =>
+      entry.transcriptionStatus === "not_started" &&
+      entry.visualDecision === "pending" &&
+      entry.previewPath)
+  ) {
+    throw new Error("knowledge browser low extraction transcription overlay endpoint failed");
+  }
+
+  const lowExtractionTranscriptIntake = await request("/api/knowledge-browser/low-extraction-transcript-intake");
+  if (
+    lowExtractionTranscriptIntake.status !== 200 ||
+    lowExtractionTranscriptIntake.data.educationOnly !== true ||
+    lowExtractionTranscriptIntake.data.productionReady !== false ||
+    lowExtractionTranscriptIntake.data.approvalStatus !== "not_approved" ||
+    lowExtractionTranscriptIntake.data.learnerFacingRelease !== false ||
+    lowExtractionTranscriptIntake.data.intakeStatus !== "waiting_for_human_transcription" ||
+    lowExtractionTranscriptIntake.data.lowExtractionDocs !== 5 ||
+    lowExtractionTranscriptIntake.data.totalPages !== 22 ||
+    lowExtractionTranscriptIntake.data.manualTranscriptionCandidatePages !== 19 ||
+    lowExtractionTranscriptIntake.data.blankPreviewPages !== 3 ||
+    lowExtractionTranscriptIntake.data.acceptedTranscriptPages !== 0 ||
+    lowExtractionTranscriptIntake.data.sourceReplacementCandidatePages !== 3 ||
+    !Array.isArray(lowExtractionTranscriptIntake.data.documentRows) ||
+    lowExtractionTranscriptIntake.data.documentRows.length !== 5 ||
+    !Array.isArray(lowExtractionTranscriptIntake.data.pageRows) ||
+    lowExtractionTranscriptIntake.data.pageRows.length < 8 ||
+    !lowExtractionTranscriptIntake.data.pageRows.every((row) => row.intakeStatus && row.nextGate && row.previewPath)
+  ) {
+    throw new Error("knowledge browser low extraction transcript intake endpoint failed");
+  }
+
+  const lowExtractionManualTranscriptionPack = await request("/api/knowledge-browser/low-extraction-manual-transcription-pack");
+  if (
+    lowExtractionManualTranscriptionPack.status !== 200 ||
+    lowExtractionManualTranscriptionPack.data.educationOnly !== true ||
+    lowExtractionManualTranscriptionPack.data.productionReady !== false ||
+    lowExtractionManualTranscriptionPack.data.approvalStatus !== "not_approved" ||
+    lowExtractionManualTranscriptionPack.data.learnerFacingRelease !== false ||
+    lowExtractionManualTranscriptionPack.data.packStatus !== "manual_transcription_ready" ||
+    lowExtractionManualTranscriptionPack.data.manualTranscriptionPages !== 19 ||
+    lowExtractionManualTranscriptionPack.data.manualTranscriptionDocuments !== 2 ||
+    lowExtractionManualTranscriptionPack.data.acceptedTranscriptPages !== 0 ||
+    !Array.isArray(lowExtractionManualTranscriptionPack.data.transcriptionCards) ||
+    lowExtractionManualTranscriptionPack.data.transcriptionCards.length < 8 ||
+    !lowExtractionManualTranscriptionPack.data.transcriptionCards.every((card) =>
+      card.intakeStatus === "manual_transcription_candidate" &&
+      card.humanTranscription === "" &&
+      card.humanSummary === "" &&
+      card.nextGate === "human_transcription_then_source_fit_public_grounding_originality_review" &&
+      card.previewPath)
+  ) {
+    throw new Error("knowledge browser low extraction manual transcription pack endpoint failed");
+  }
+
+  const lowExtractionSourceReplacementPack = await request("/api/knowledge-browser/low-extraction-source-replacement-pack");
+  if (
+    lowExtractionSourceReplacementPack.status !== 200 ||
+    lowExtractionSourceReplacementPack.data.educationOnly !== true ||
+    lowExtractionSourceReplacementPack.data.productionReady !== false ||
+    lowExtractionSourceReplacementPack.data.approvalStatus !== "not_approved" ||
+    lowExtractionSourceReplacementPack.data.learnerFacingRelease !== false ||
+    lowExtractionSourceReplacementPack.data.packStatus !== "source_replacement_required" ||
+    lowExtractionSourceReplacementPack.data.replacementCandidates !== 3 ||
+    lowExtractionSourceReplacementPack.data.replacementDocuments !== 3 ||
+    lowExtractionSourceReplacementPack.data.blankPreviewPages !== 3 ||
+    lowExtractionSourceReplacementPack.data.acceptedTranscriptPages !== 0 ||
+    !Array.isArray(lowExtractionSourceReplacementPack.data.replacementCards) ||
+    lowExtractionSourceReplacementPack.data.replacementCards.length !== 3 ||
+    !lowExtractionSourceReplacementPack.data.replacementCards.every((card) =>
+      card.intakeStatus === "blank_preview_needs_source_replacement" &&
+      card.replacementStatus === "source_replacement_required" &&
+      card.nextGate === "replace_or_reexport_source_pdf_before_absorption" &&
+      card.previewPath)
+  ) {
+    throw new Error("knowledge browser low extraction source replacement pack endpoint failed");
+  }
+
+  const localCourseAbsorptionReadiness = await request("/api/knowledge-browser/local-course-absorption-readiness");
+  if (
+    localCourseAbsorptionReadiness.status !== 200 ||
+    localCourseAbsorptionReadiness.data.educationOnly !== true ||
+    localCourseAbsorptionReadiness.data.productionReady !== false ||
+    localCourseAbsorptionReadiness.data.approvalStatus !== "not_approved" ||
+    localCourseAbsorptionReadiness.data.learnerFacingRelease !== false ||
+    localCourseAbsorptionReadiness.data.readinessStatus !== "blocked_for_learner_facing_absorption" ||
+    localCourseAbsorptionReadiness.data.importedUniquePdfFiles !== 298 ||
+    localCourseAbsorptionReadiness.data.uniquePdfFiles !== 298 ||
+    localCourseAbsorptionReadiness.data.publicReferenceReadyModules !== 12 ||
+    localCourseAbsorptionReadiness.data.modules !== 12 ||
+    localCourseAbsorptionReadiness.data.manualTranscriptionPages !== 19 ||
+    localCourseAbsorptionReadiness.data.sourceReplacementCandidates !== 3 ||
+    localCourseAbsorptionReadiness.data.openBlockers < 4 ||
+    !Array.isArray(localCourseAbsorptionReadiness.data.phaseRows) ||
+    localCourseAbsorptionReadiness.data.phaseRows.length < 6 ||
+    !Array.isArray(localCourseAbsorptionReadiness.data.blockers) ||
+    localCourseAbsorptionReadiness.data.blockers.length < 4 ||
+    !localCourseAbsorptionReadiness.data.blockers.some((item) => item.id === "manual_transcription_pages" && item.count === 19) ||
+    !localCourseAbsorptionReadiness.data.blockers.some((item) => item.id === "blank_source_replacement_pages" && item.count === 3) ||
+    !/research-layer ingestion/i.test(localCourseAbsorptionReadiness.data.boundary || "") ||
+    !/learner-facing course release/i.test(localCourseAbsorptionReadiness.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course absorption readiness endpoint failed");
+  }
+
+  const localCourseModuleAbsorptionSelfAudit = await request("/api/knowledge-browser/local-course-module-absorption-self-audit");
+  if (
+    localCourseModuleAbsorptionSelfAudit.status !== 200 ||
+    localCourseModuleAbsorptionSelfAudit.data.educationOnly !== true ||
+    localCourseModuleAbsorptionSelfAudit.data.productionReady !== false ||
+    localCourseModuleAbsorptionSelfAudit.data.approvalStatus !== "not_approved" ||
+    localCourseModuleAbsorptionSelfAudit.data.learnerFacingRelease !== false ||
+    localCourseModuleAbsorptionSelfAudit.data.auditStatus !== "module_research_layer_absorbed_release_blocked" ||
+    localCourseModuleAbsorptionSelfAudit.data.courseUsabilityStatus !== "usable_for_internal_reviewer_navigation_not_learner_release" ||
+    localCourseModuleAbsorptionSelfAudit.data.modules !== 12 ||
+    localCourseModuleAbsorptionSelfAudit.data.researchLayerReadyModules !== 12 ||
+    localCourseModuleAbsorptionSelfAudit.data.localResearchReadyModules !== 12 ||
+    localCourseModuleAbsorptionSelfAudit.data.publicReferenceReadyModules !== 12 ||
+    localCourseModuleAbsorptionSelfAudit.data.rewriteDraftReadyModules !== 12 ||
+    localCourseModuleAbsorptionSelfAudit.data.importedUniquePdfFiles !== 298 ||
+    localCourseModuleAbsorptionSelfAudit.data.uniquePdfFiles !== 298 ||
+    localCourseModuleAbsorptionSelfAudit.data.matchedKnowledgeNodes !== 360 ||
+    localCourseModuleAbsorptionSelfAudit.data.readyForRewriteReviewNodes !== 360 ||
+    localCourseModuleAbsorptionSelfAudit.data.rewriteDrafts !== 120 ||
+    localCourseModuleAbsorptionSelfAudit.data.rewriteCandidatesReadyForSeparateReview !== 120 ||
+    localCourseModuleAbsorptionSelfAudit.data.manualTranscriptionPages !== 19 ||
+    localCourseModuleAbsorptionSelfAudit.data.sourceReplacementCandidates !== 3 ||
+    localCourseModuleAbsorptionSelfAudit.data.p0ReviewEntries !== 22 ||
+    localCourseModuleAbsorptionSelfAudit.data.p0ValidationBlockedEntries !== 22 ||
+    localCourseModuleAbsorptionSelfAudit.data.realHumanInputEntries !== 0 ||
+    localCourseModuleAbsorptionSelfAudit.data.highRiskLessonCount !== 12 ||
+    localCourseModuleAbsorptionSelfAudit.data.highRiskLessonsWithPublicGrounding !== 12 ||
+    localCourseModuleAbsorptionSelfAudit.data.highRiskReleaseBlockingLessons !== 12 ||
+    localCourseModuleAbsorptionSelfAudit.data.highRiskCodexSelfReviewNotes !== 72 ||
+    localCourseModuleAbsorptionSelfAudit.data.directSourceCandidateResolutions !== 5 ||
+    localCourseModuleAbsorptionSelfAudit.data.writeAllowedNow !== false ||
+    localCourseModuleAbsorptionSelfAudit.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(localCourseModuleAbsorptionSelfAudit.data.releaseBlockers) ||
+    localCourseModuleAbsorptionSelfAudit.data.releaseBlockers.length < 5 ||
+    !Array.isArray(localCourseModuleAbsorptionSelfAudit.data.moduleRows) ||
+    localCourseModuleAbsorptionSelfAudit.data.moduleRows.length !== 12 ||
+    !localCourseModuleAbsorptionSelfAudit.data.moduleRows.every((row) =>
+      row.researchLayerStatus === "research_layer_absorbed_pending_review" &&
+      row.releaseGateStatus === "blocked_pending_human_review_and_separate_approval" &&
+      row.readyForRewriteReview === row.learnerFacingNodes &&
+      row.wikipediaEvidenceDocs >= 2 &&
+      row.rewriteDrafts >= 10) ||
+    !/reviewer-facing education-only/i.test(localCourseModuleAbsorptionSelfAudit.data.boundary || "") ||
+    !/does not approve learner-facing release/i.test(localCourseModuleAbsorptionSelfAudit.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course module absorption self-audit endpoint failed");
+  }
+
+  const localCourseModuleReviewDossier = await request("/api/knowledge-browser/local-course-module-review-dossier");
+  if (
+    localCourseModuleReviewDossier.status !== 200 ||
+    localCourseModuleReviewDossier.data.educationOnly !== true ||
+    localCourseModuleReviewDossier.data.productionReady !== false ||
+    localCourseModuleReviewDossier.data.approvalStatus !== "not_approved" ||
+    localCourseModuleReviewDossier.data.learnerFacingRelease !== false ||
+    localCourseModuleReviewDossier.data.dossierStatus !== "module_review_dossier_ready_for_internal_navigation_release_blocked" ||
+    localCourseModuleReviewDossier.data.dossierMode !== "module_browser_packet_for_local_course_absorption_review" ||
+    localCourseModuleReviewDossier.data.modules !== 12 ||
+    localCourseModuleReviewDossier.data.researchLayerReadyModules !== 12 ||
+    localCourseModuleReviewDossier.data.rowsWithCoursePath !== 12 ||
+    localCourseModuleReviewDossier.data.rowsWithPublicEvidenceSamples !== 12 ||
+    localCourseModuleReviewDossier.data.rowsWithEntryNodes !== 12 ||
+    localCourseModuleReviewDossier.data.rowsWithHighRiskBlockers !== 4 ||
+    localCourseModuleReviewDossier.data.highRiskPreviewRows !== 12 ||
+    localCourseModuleReviewDossier.data.highRiskPreviewReleaseBlockers !== 12 ||
+    localCourseModuleReviewDossier.data.highRiskPreviewLearnerCitationApproved !== 0 ||
+    localCourseModuleReviewDossier.data.learnerReleaseReadyModules !== 0 ||
+    localCourseModuleReviewDossier.data.localCourseDocuments !== 298 ||
+    localCourseModuleReviewDossier.data.matchedKnowledgeNodes !== 360 ||
+    localCourseModuleReviewDossier.data.readyForRewriteReviewNodes !== 360 ||
+    localCourseModuleReviewDossier.data.publicCorpusDocuments < 1000 ||
+    localCourseModuleReviewDossier.data.wikipediaDocuments < 90 ||
+    localCourseModuleReviewDossier.data.officialLikeDocuments < 200 ||
+    localCourseModuleReviewDossier.data.curriculumPaths !== 12 ||
+    localCourseModuleReviewDossier.data.totalPathLessons !== 360 ||
+    localCourseModuleReviewDossier.data.p0SourceFitHandoffStatus !== "p0_real_reviewer_source_fit_handoff_ready_blocked_on_real_input" ||
+    localCourseModuleReviewDossier.data.p0SourceFitRealReadyRows !== 0 ||
+    localCourseModuleReviewDossier.data.p0SourceFitRealBlockedRows !== 22 ||
+    localCourseModuleReviewDossier.data.p0SourceFitFixtureReadyRows !== 22 ||
+    localCourseModuleReviewDossier.data.writeAuthorizationStatus !== "write_authorization_preview_ready_manual_required" ||
+    localCourseModuleReviewDossier.data.writeAllowedNow !== false ||
+    localCourseModuleReviewDossier.data.realHumanInputEntries !== 0 ||
+    localCourseModuleReviewDossier.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(localCourseModuleReviewDossier.data.globalReleaseBlockers) ||
+    localCourseModuleReviewDossier.data.globalReleaseBlockers.length < 5 ||
+    !Array.isArray(localCourseModuleReviewDossier.data.moduleRows) ||
+    localCourseModuleReviewDossier.data.moduleRows.length !== 12 ||
+    !localCourseModuleReviewDossier.data.moduleRows.every((row) =>
+      row.browserModuleId &&
+      Array.isArray(row.topics) &&
+      row.topics.length > 0 &&
+      Array.isArray(row.entryNodeIds) &&
+      row.entryNodeIds.length > 0 &&
+      row.readyForRewriteReview === row.learnerFacingNodes &&
+      row.coursePath?.pathId &&
+      row.coursePath?.lessonCount === 30 &&
+      row.coursePath?.unitCount === 3 &&
+      Array.isArray(row.publicEvidenceSamples) &&
+      row.publicEvidenceSamples.length >= 3 &&
+      row.publicEvidenceSamples.every((sample) =>
+        sample.name &&
+        sample.url &&
+        sample.family &&
+        sample.excerptPolicy) &&
+      row.wikipediaEvidenceDocs >= 2 &&
+      row.learnerReleaseReady === false &&
+      /^module_review_ready_/.test(row.reviewStatus || "") &&
+      /review/i.test(row.nextReviewerAction || "") &&
+      Array.isArray(row.highRiskLessonPreview) &&
+      (row.highRiskReleaseBlockers === 0 || row.highRiskLessonPreview.length > 0) &&
+      row.highRiskLessonPreview.every((lesson) =>
+        lesson.lessonId &&
+        lesson.nodeId &&
+        lesson.topic &&
+        lesson.publicGroundingStatus === "mapped_for_reviewer_not_release_approved" &&
+        lesson.wikipediaRefCount >= 3 &&
+        lesson.publicContextRefCount >= 2 &&
+        lesson.learnerCitationApproved === false &&
+        lesson.learnerFacingRelease === false &&
+        lesson.approvalStatus === "not_approved" &&
+        lesson.releaseBlocker === true &&
+        Array.isArray(lesson.firstWikipediaRefs) &&
+        lesson.firstWikipediaRefs.length >= 2 &&
+        lesson.firstWikipediaRefs.every((ref) => ref.name && ref.url && ref.excerptPolicy) &&
+        /human_public_grounding_review/i.test(lesson.nextGate || "")) &&
+      /Reviewer-facing module dossier only/i.test(row.boundary || "")) ||
+    !/module-level internal navigation readiness/i.test(localCourseModuleReviewDossier.data.completionRule || "") ||
+    !/reviewer-facing education-only/i.test(localCourseModuleReviewDossier.data.boundary || "") ||
+    !/public\/Wikipedia grounding candidates/i.test(localCourseModuleReviewDossier.data.boundary || "") ||
+    !/does not make private PDFs public citations/i.test(localCourseModuleReviewDossier.data.boundary || "") ||
+    !/stock recommendations/i.test(localCourseModuleReviewDossier.data.boundary || "") ||
+    !/live signals/i.test(localCourseModuleReviewDossier.data.boundary || "") ||
+    !/real-money guidance/i.test(localCourseModuleReviewDossier.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course module review dossier endpoint failed");
+  }
+
+  const localCourseReviewGateDashboard = await request("/api/knowledge-browser/local-course-review-gate-dashboard");
+  if (
+    localCourseReviewGateDashboard.status !== 200 ||
+    localCourseReviewGateDashboard.data.educationOnly !== true ||
+    localCourseReviewGateDashboard.data.productionReady !== false ||
+    localCourseReviewGateDashboard.data.approvalStatus !== "not_approved" ||
+    localCourseReviewGateDashboard.data.learnerFacingRelease !== false ||
+    localCourseReviewGateDashboard.data.dashboardStatus !== "local_course_review_gate_dashboard_ready_release_blocked" ||
+    localCourseReviewGateDashboard.data.dashboardMode !== "single_screen_internal_review_gate_for_local_course_absorption" ||
+    localCourseReviewGateDashboard.data.localCourseDocuments !== 298 ||
+    localCourseReviewGateDashboard.data.currentUniquePdfHashes !== 298 ||
+    localCourseReviewGateDashboard.data.corpusDocsForCurrentUniqueHashes !== 298 ||
+    localCourseReviewGateDashboard.data.modules !== 12 ||
+    localCourseReviewGateDashboard.data.researchLayerReadyModules !== 12 ||
+    localCourseReviewGateDashboard.data.publicReferenceReadyModules !== 12 ||
+    localCourseReviewGateDashboard.data.modulesWithWikipediaGrounding !== 12 ||
+    localCourseReviewGateDashboard.data.rewriteReadyNodes !== 360 ||
+    localCourseReviewGateDashboard.data.matchedKnowledgeNodes !== 360 ||
+    localCourseReviewGateDashboard.data.rewriteDrafts !== 120 ||
+    localCourseReviewGateDashboard.data.highRiskLessons !== 12 ||
+    localCourseReviewGateDashboard.data.highRiskLessonsWithPublicGrounding !== 12 ||
+    localCourseReviewGateDashboard.data.highRiskLessonsWithAtLeastThreeWikipediaRefs !== 12 ||
+    localCourseReviewGateDashboard.data.highRiskReleaseBlockingLessons !== 12 ||
+    localCourseReviewGateDashboard.data.codexSelfReviewNotes !== 72 ||
+    localCourseReviewGateDashboard.data.expectedSelfReviewNotes !== 72 ||
+    localCourseReviewGateDashboard.data.highRiskRealReviewerValidationStatus !== "blocked_missing_real_reviewer_overlay_input" ||
+    localCourseReviewGateDashboard.data.highRiskRealReviewerReadyLessons !== 0 ||
+    localCourseReviewGateDashboard.data.highRiskRealReviewerBlockedLessons !== 12 ||
+    localCourseReviewGateDashboard.data.highRiskRealReviewerNotesReady !== 0 ||
+    localCourseReviewGateDashboard.data.highRiskRealReviewerNotesBlocked !== 72 ||
+    localCourseReviewGateDashboard.data.highRiskDirectSourceDecisionsReady !== 0 ||
+    localCourseReviewGateDashboard.data.highRiskDirectSourceDecisionsBlocked !== 5 ||
+    localCourseReviewGateDashboard.data.realHumanInputEntries !== 0 ||
+    localCourseReviewGateDashboard.data.p0Tasks !== 22 ||
+    localCourseReviewGateDashboard.data.p0ReadyTasks !== 0 ||
+    localCourseReviewGateDashboard.data.p0BlockedTasks !== 22 ||
+    localCourseReviewGateDashboard.data.manualTranscriptionTasks !== 19 ||
+    localCourseReviewGateDashboard.data.sourceReplacementTasks !== 3 ||
+    localCourseReviewGateDashboard.data.sourceFitReadyRows !== 0 ||
+    localCourseReviewGateDashboard.data.sourceFitBlockedRows !== 22 ||
+    localCourseReviewGateDashboard.data.sourceFitFixtureReadyRows !== 22 ||
+    localCourseReviewGateDashboard.data.nodePublicSourceFitValidationStatus !== "blocked_missing_real_reviewer_source_fit_input" ||
+    localCourseReviewGateDashboard.data.nodePublicSourceFitInputRows !== 1638 ||
+    localCourseReviewGateDashboard.data.nodePublicSourceFitReadyRows !== 0 ||
+    localCourseReviewGateDashboard.data.nodePublicSourceFitBlockedRows !== 1638 ||
+    localCourseReviewGateDashboard.data.nodePublicSourceFitMissingFieldRows !== 1638 ||
+    localCourseReviewGateDashboard.data.nodePublicSourceFitForbiddenHitRows !== 0 ||
+    localCourseReviewGateDashboard.data.nodePublicSourceFitRealHumanInputEntries !== 0 ||
+    localCourseReviewGateDashboard.data.nodePublicSourceFitLearnerCitationApprovedRows !== 0 ||
+    localCourseReviewGateDashboard.data.nodePublicSourceFitCopiedTextApprovedRows !== 0 ||
+    localCourseReviewGateDashboard.data.nodePublicSourceFitProgressMatrixStatus !== "node_public_source_fit_review_progress_matrix_ready_release_blocked" ||
+    localCourseReviewGateDashboard.data.nodePublicSourceFitProgressValidationStatus !== "blocked_missing_real_reviewer_source_fit_input" ||
+    localCourseReviewGateDashboard.data.nodePublicSourceFitProgressTotalPackets !== 35 ||
+    localCourseReviewGateDashboard.data.nodePublicSourceFitReadyPackets !== 0 ||
+    localCourseReviewGateDashboard.data.nodePublicSourceFitBlockedPackets !== 35 ||
+    localCourseReviewGateDashboard.data.nodePublicSourceFitReadyModules !== 0 ||
+    localCourseReviewGateDashboard.data.nodePublicSourceFitBlockedModules !== 12 ||
+    localCourseReviewGateDashboard.data.nodePublicSourceFitOverallProgressPercent !== 0 ||
+    localCourseReviewGateDashboard.data.nodePublicSourceFitProgressReadyRows !== 0 ||
+    localCourseReviewGateDashboard.data.nodePublicSourceFitProgressBlockedRows !== 1638 ||
+    localCourseReviewGateDashboard.data.nodePublicSourceFitFirstBlockedPacketId !== "node-public-source-fit-batch-001-packet" ||
+    localCourseReviewGateDashboard.data.learnerCitationApprovedLessons !== 0 ||
+    localCourseReviewGateDashboard.data.learnerReleaseReadyModules !== 0 ||
+    localCourseReviewGateDashboard.data.writeAllowedNow !== false ||
+    localCourseReviewGateDashboard.data.manualAuthorizationRequired !== true ||
+    localCourseReviewGateDashboard.data.releaseBlockerCount < 5 ||
+    !Array.isArray(localCourseReviewGateDashboard.data.summaryGates) ||
+    localCourseReviewGateDashboard.data.summaryGates.length !== 10 ||
+    !localCourseReviewGateDashboard.data.summaryGates.every((gate) =>
+      gate.id &&
+      gate.status &&
+      gate.evidence &&
+      gate.nextGate &&
+      gate.learnerReleaseGatePassed === false) ||
+    !localCourseReviewGateDashboard.data.summaryGates.some((gate) =>
+      gate.id === "high_risk_self_review" &&
+      /Codex self-review notes/i.test(gate.evidence || "")) ||
+    !localCourseReviewGateDashboard.data.summaryGates.some((gate) =>
+      gate.id === "high_risk_real_reviewer_overlay" &&
+      /0\/72 real notes ready\/blocked/i.test(gate.evidence || "") &&
+      /0\/5 direct-source decisions ready\/blocked/i.test(gate.evidence || "")) ||
+    !localCourseReviewGateDashboard.data.summaryGates.some((gate) =>
+      gate.id === "p0_real_reviewer_tasks" &&
+      /0 real inputs/i.test(gate.evidence || "")) ||
+    !localCourseReviewGateDashboard.data.summaryGates.some((gate) =>
+      gate.id === "node_public_source_fit_review_input" &&
+      /0\/1638 node public source-fit rows ready\/blocked/i.test(gate.evidence || "") &&
+      /0 real inputs/i.test(gate.evidence || "")) ||
+    !localCourseReviewGateDashboard.data.summaryGates.some((gate) =>
+      gate.id === "node_public_source_fit_progress_matrix" &&
+      /0\/35 packets ready\/blocked/i.test(gate.evidence || "") &&
+      /0\/12 modules ready\/blocked/i.test(gate.evidence || "") &&
+      /node-public-source-fit-batch-001-packet/i.test(gate.evidence || "")) ||
+    !localCourseReviewGateDashboard.data.summaryGates.some((gate) =>
+      gate.id === "write_authorization" &&
+      /writeAllowedNow:false/i.test(gate.evidence || "")) ||
+    !Array.isArray(localCourseReviewGateDashboard.data.moduleGateRows) ||
+    localCourseReviewGateDashboard.data.moduleGateRows.length !== 12 ||
+    !localCourseReviewGateDashboard.data.moduleGateRows.every((row) =>
+      row.moduleId &&
+      row.module &&
+      row.coursePathId &&
+      row.readyForRewriteReview === row.learnerFacingNodes &&
+      row.localResearchReady === true &&
+      row.publicReferenceReady === true &&
+      row.wikipediaGroundingReady === true &&
+      row.learnerCitationApproved === false &&
+      row.learnerReleaseReady === false &&
+      /^blocked_pending_/.test(row.reviewGateStatus || "") &&
+      Array.isArray(row.samplePublicRefs) &&
+      row.samplePublicRefs.length >= 2) ||
+    !Array.isArray(localCourseReviewGateDashboard.data.highRiskLessonRows) ||
+    localCourseReviewGateDashboard.data.highRiskLessonRows.length !== 12 ||
+    !localCourseReviewGateDashboard.data.highRiskLessonRows.every((lesson) =>
+      lesson.lessonId &&
+      lesson.nodeId &&
+      lesson.module &&
+      lesson.topic &&
+      lesson.wikipediaRefCount >= 3 &&
+      lesson.publicContextRefCount >= 2 &&
+      lesson.selfReviewStatus === "codex_self_review_complete_not_human_approved" &&
+      lesson.learnerCitationApproved === false &&
+      lesson.learnerFacingRelease === false &&
+      lesson.releaseBlocker === true &&
+      /human_public_grounding_review/i.test(lesson.nextGate || "")) ||
+    !Array.isArray(localCourseReviewGateDashboard.data.nextActionRows) ||
+    localCourseReviewGateDashboard.data.nextActionRows.length !== 10 ||
+    !localCourseReviewGateDashboard.data.nextActionRows.some((row) => row.owner === "real_reviewer") ||
+    !localCourseReviewGateDashboard.data.nextActionRows.some((row) =>
+      /validate:local-course-high-risk-real-reviewer-overlay-input/.test(row.command || "")) ||
+    !localCourseReviewGateDashboard.data.nextActionRows.some((row) =>
+      /validate:local-course-p0-real-reviewer-source-fit-input/.test(row.command || "")) ||
+    !localCourseReviewGateDashboard.data.nextActionRows.some((row) =>
+      /validate:knowledge-node-public-source-fit-review-input/.test(row.command || "")) ||
+    !localCourseReviewGateDashboard.data.nextActionRows.some((row) =>
+      /check:knowledge-node-public-source-fit-review-progress-matrix/.test(row.command || "")) ||
+    !/internal review-gate visibility/i.test(localCourseReviewGateDashboard.data.completionRule || "") ||
+    !/does not prove learner-facing course readiness/i.test(localCourseReviewGateDashboard.data.completionRule || "") ||
+    !/Reviewer-facing education-only/i.test(localCourseReviewGateDashboard.data.boundary || "") ||
+    !/does not publish private PDFs/i.test(localCourseReviewGateDashboard.data.boundary || "") ||
+    !/stock recommendations/i.test(localCourseReviewGateDashboard.data.boundary || "") ||
+    !/live signals/i.test(localCourseReviewGateDashboard.data.boundary || "") ||
+    !/real-money guidance/i.test(localCourseReviewGateDashboard.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course review gate dashboard endpoint failed");
+  }
+
+  const localCourseAbsorptionQueue = await request("/api/knowledge-browser/local-course-absorption-queue");
+  if (
+    localCourseAbsorptionQueue.status !== 200 ||
+    localCourseAbsorptionQueue.data.educationOnly !== true ||
+    localCourseAbsorptionQueue.data.productionReady !== false ||
+    localCourseAbsorptionQueue.data.approvalStatus !== "not_approved" ||
+    localCourseAbsorptionQueue.data.learnerFacingRelease !== false ||
+    localCourseAbsorptionQueue.data.queueStatus !== "open_absorption_blocker_queue" ||
+    localCourseAbsorptionQueue.data.readinessStatus !== "blocked_for_learner_facing_absorption" ||
+    localCourseAbsorptionQueue.data.totalTasks !== 144 ||
+    localCourseAbsorptionQueue.data.openTasks !== 144 ||
+    localCourseAbsorptionQueue.data.byCategory?.manual_transcription !== 19 ||
+    localCourseAbsorptionQueue.data.byCategory?.source_replacement !== 3 ||
+    localCourseAbsorptionQueue.data.byCategory?.risky_language_review !== 2 ||
+    localCourseAbsorptionQueue.data.byCategory?.reviewer_refinement !== 120 ||
+    localCourseAbsorptionQueue.data.byPriority?.P0 !== 22 ||
+    localCourseAbsorptionQueue.data.byPriority?.P1 !== 2 ||
+    localCourseAbsorptionQueue.data.byPriority?.P2 !== 120 ||
+    !Array.isArray(localCourseAbsorptionQueue.data.firstP0Tasks) ||
+    localCourseAbsorptionQueue.data.firstP0Tasks.length !== 12 ||
+    !Array.isArray(localCourseAbsorptionQueue.data.queueItems) ||
+    localCourseAbsorptionQueue.data.queueItems.length < 16 ||
+    !localCourseAbsorptionQueue.data.queueItems.every((item) =>
+      item.status === "open" &&
+      item.approvalStatus === "not_approved" &&
+      item.learnerFacingRelease === false &&
+      item.nextGate)
+  ) {
+    throw new Error("knowledge browser local course absorption operator queue endpoint failed");
+  }
+
+  const localCourseAbsorptionP0Workbench = await request("/api/knowledge-browser/local-course-absorption-p0-workbench");
+  if (
+    localCourseAbsorptionP0Workbench.status !== 200 ||
+    localCourseAbsorptionP0Workbench.data.educationOnly !== true ||
+    localCourseAbsorptionP0Workbench.data.productionReady !== false ||
+    localCourseAbsorptionP0Workbench.data.approvalStatus !== "not_approved" ||
+    localCourseAbsorptionP0Workbench.data.learnerFacingRelease !== false ||
+    localCourseAbsorptionP0Workbench.data.workbenchStatus !== "p0_execution_ready" ||
+    localCourseAbsorptionP0Workbench.data.totalP0Tasks !== 22 ||
+    localCourseAbsorptionP0Workbench.data.manualTranscriptionTasks !== 19 ||
+    localCourseAbsorptionP0Workbench.data.sourceReplacementTasks !== 3 ||
+    localCourseAbsorptionP0Workbench.data.completedTasks !== 0 ||
+    localCourseAbsorptionP0Workbench.data.openTasks !== 22 ||
+    !Array.isArray(localCourseAbsorptionP0Workbench.data.workbenchTasks) ||
+    localCourseAbsorptionP0Workbench.data.workbenchTasks.length < 8 ||
+    !localCourseAbsorptionP0Workbench.data.workbenchTasks.every((item) =>
+      item.status === "open" &&
+      item.priority === "P0" &&
+      item.approvalStatus === "not_approved" &&
+      item.learnerFacingRelease === false &&
+      item.previewPath &&
+      item.previewUrl?.startsWith("/docs/local-course-low-extraction-previews/") &&
+      Array.isArray(item.fieldSchema) &&
+      item.fieldSchema.length >= 5 &&
+      item.nextGate)
+  ) {
+    throw new Error("knowledge browser local course absorption P0 workbench endpoint failed");
+  }
+
+  const localCourseAbsorptionP0ReviewOverlay = await request("/api/knowledge-browser/local-course-absorption-p0-review-overlay");
+  if (
+    localCourseAbsorptionP0ReviewOverlay.status !== 200 ||
+    localCourseAbsorptionP0ReviewOverlay.data.educationOnly !== true ||
+    localCourseAbsorptionP0ReviewOverlay.data.productionReady !== false ||
+    localCourseAbsorptionP0ReviewOverlay.data.approvalStatus !== "not_approved" ||
+    localCourseAbsorptionP0ReviewOverlay.data.learnerFacingRelease !== false ||
+    localCourseAbsorptionP0ReviewOverlay.data.overlayStatus !== "p0_review_not_started" ||
+    localCourseAbsorptionP0ReviewOverlay.data.totalP0Tasks !== 22 ||
+    localCourseAbsorptionP0ReviewOverlay.data.manualTranscriptionTasks !== 19 ||
+    localCourseAbsorptionP0ReviewOverlay.data.sourceReplacementTasks !== 3 ||
+    localCourseAbsorptionP0ReviewOverlay.data.notStartedTasks !== 22 ||
+    localCourseAbsorptionP0ReviewOverlay.data.readyForValidationTasks !== 0 ||
+    localCourseAbsorptionP0ReviewOverlay.data.acceptedForNextGateTasks !== 0 ||
+    localCourseAbsorptionP0ReviewOverlay.data.blockedTasks !== 22 ||
+    !Array.isArray(localCourseAbsorptionP0ReviewOverlay.data.reviewEntries) ||
+    localCourseAbsorptionP0ReviewOverlay.data.reviewEntries.length < 8 ||
+    !localCourseAbsorptionP0ReviewOverlay.data.reviewEntries.every((entry) =>
+      entry.reviewStatus === "not_started" &&
+      entry.validationStatus === "not_ready" &&
+      entry.fieldCompletion?.requiredFieldsFilled === 0 &&
+      entry.nextGate &&
+      entry.previewUrl?.startsWith("/docs/local-course-low-extraction-previews/"))
+  ) {
+    throw new Error("knowledge browser local course absorption P0 review overlay endpoint failed");
+  }
+
+  const localCourseSourceReplacementDecisions = await request("/api/knowledge-browser/local-course-source-replacement-decisions");
+  if (
+    localCourseSourceReplacementDecisions.status !== 200 ||
+    localCourseSourceReplacementDecisions.data.educationOnly !== true ||
+    localCourseSourceReplacementDecisions.data.productionReady !== false ||
+    localCourseSourceReplacementDecisions.data.approvalStatus !== "not_approved" ||
+    localCourseSourceReplacementDecisions.data.learnerFacingRelease !== false ||
+    localCourseSourceReplacementDecisions.data.worksheetStatus !== "source_replacement_decision_not_started" ||
+    localCourseSourceReplacementDecisions.data.replacementTargets !== 3 ||
+    localCourseSourceReplacementDecisions.data.targetsWithCandidates !== 3 ||
+    localCourseSourceReplacementDecisions.data.targetsWithDirectReplacementCandidates !== 0 ||
+    localCourseSourceReplacementDecisions.data.notStartedDecisions !== 3 ||
+    localCourseSourceReplacementDecisions.data.readyDecisions !== 0 ||
+    localCourseSourceReplacementDecisions.data.approvedReplacements !== 0 ||
+    !Array.isArray(localCourseSourceReplacementDecisions.data.allowedDecisions) ||
+    !localCourseSourceReplacementDecisions.data.allowedDecisions.includes("locate_external_original") ||
+    !localCourseSourceReplacementDecisions.data.allowedDecisions.includes("use_neighbor_as_context_only") ||
+    !Array.isArray(localCourseSourceReplacementDecisions.data.decisionRows) ||
+    localCourseSourceReplacementDecisions.data.decisionRows.length !== 3 ||
+    !localCourseSourceReplacementDecisions.data.decisionRows.every((row) =>
+      row.decisionStatus === "not_started" &&
+      row.validationStatus === "not_ready" &&
+      row.directReplacementCandidateCount === 0 &&
+      row.fieldCompletion?.requiredFieldsFilled === 0 &&
+      Array.isArray(row.topCandidates) &&
+      row.topCandidates.length >= 3 &&
+      row.topCandidates.every((candidate) => candidate.reviewerUse?.includes("candidate_only")) &&
+      row.nextGate === "source_replacement_decision_then_reexport_or_unrecoverable_review") ||
+    !/reviewer-only control layer/i.test(localCourseSourceReplacementDecisions.data.boundary || "") ||
+    !/does not replace files/i.test(localCourseSourceReplacementDecisions.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course source replacement decisions endpoint failed");
+  }
+
+  const localCourseRewriteIntake = await request("/api/knowledge-browser/local-course-rewrite-intake?limit=20");
+  if (
+    localCourseRewriteIntake.status !== 200 ||
+    localCourseRewriteIntake.data.educationOnly !== true ||
+    localCourseRewriteIntake.data.productionReady !== false ||
+    localCourseRewriteIntake.data.total < 100 ||
+    !Array.isArray(localCourseRewriteIntake.data.rewriteIntake) ||
+    localCourseRewriteIntake.data.rewriteIntake.length !== 20 ||
+    !localCourseRewriteIntake.data.rewriteIntake.every((item) =>
+      Array.isArray(item.localCourseEvidence) &&
+      item.localCourseEvidence.length >= 2 &&
+      /structural_draft/i.test(JSON.stringify(item)) &&
+      /Do not copy local PDF wording/i.test(JSON.stringify(item)))
+  ) {
+    throw new Error("knowledge browser local course rewrite intake endpoint failed");
+  }
+
+  const localCourseRewriteBatch = await request("/api/knowledge-browser/local-course-rewrite-batch-01?limit=6");
+  if (
+    localCourseRewriteBatch.status !== 200 ||
+    localCourseRewriteBatch.data.educationOnly !== true ||
+    localCourseRewriteBatch.data.productionReady !== false ||
+    localCourseRewriteBatch.data.approvalStatus !== "not_approved" ||
+    localCourseRewriteBatch.data.learnerFacingRelease !== false ||
+    localCourseRewriteBatch.data.drafts < 24 ||
+    localCourseRewriteBatch.data.modules < 12 ||
+    !Array.isArray(localCourseRewriteBatch.data.draftItems) ||
+    localCourseRewriteBatch.data.draftItems.length !== 6 ||
+    !localCourseRewriteBatch.data.draftItems.every((item) =>
+      item.status === "codex_local_course_assisted_draft" &&
+      item.nextGate === "separate_reviewer_source_fit_and_originality_review" &&
+      Array.isArray(item.localCourseEvidence) &&
+      item.localCourseEvidence.length >= 2)
+  ) {
+    throw new Error("knowledge browser local course rewrite batch endpoint failed");
+  }
+
+  const localCourseRewriteBatches = await request("/api/knowledge-browser/local-course-rewrite-batches");
+  if (
+    localCourseRewriteBatches.status !== 200 ||
+    localCourseRewriteBatches.data.educationOnly !== true ||
+    localCourseRewriteBatches.data.productionReady !== false ||
+    localCourseRewriteBatches.data.approvalStatus !== "not_approved" ||
+    localCourseRewriteBatches.data.learnerFacingRelease !== false ||
+    localCourseRewriteBatches.data.totalRewriteIntake < 120 ||
+    localCourseRewriteBatches.data.totalDrafts < 120 ||
+    !Array.isArray(localCourseRewriteBatches.data.batches) ||
+    localCourseRewriteBatches.data.batches.length < 5 ||
+    Object.keys(localCourseRewriteBatches.data.moduleCounts || {}).length < 12
+  ) {
+    throw new Error("knowledge browser local course rewrite batches endpoint failed");
+  }
+
+  const localCourseRewriteReview = await request("/api/knowledge-browser/local-course-rewrite-review");
+  if (
+    localCourseRewriteReview.status !== 200 ||
+    localCourseRewriteReview.data.educationOnly !== true ||
+    localCourseRewriteReview.data.productionReady !== false ||
+    localCourseRewriteReview.data.approvalStatus !== "not_approved" ||
+    localCourseRewriteReview.data.learnerFacingRelease !== false ||
+    localCourseRewriteReview.data.draftsReviewed < 120 ||
+    localCourseRewriteReview.data.readyForSeparateReviewCandidates < 120 ||
+    localCourseRewriteReview.data.copyRiskIssues !== 0 ||
+    localCourseRewriteReview.data.safetyIssues !== 0 ||
+    localCourseRewriteReview.data.structureIssues !== 0 ||
+    localCourseRewriteReview.data.maxSourceOverlap > 0.18
+  ) {
+    throw new Error("knowledge browser local course rewrite review endpoint failed");
+  }
+
+  const localCourseRefinementPacket = await request("/api/knowledge-browser/local-course-refinement-packet?limit=12");
+  if (
+    localCourseRefinementPacket.status !== 200 ||
+    localCourseRefinementPacket.data.educationOnly !== true ||
+    localCourseRefinementPacket.data.productionReady !== false ||
+    localCourseRefinementPacket.data.approvalStatus !== "not_approved" ||
+    localCourseRefinementPacket.data.learnerFacingRelease !== false ||
+    localCourseRefinementPacket.data.packetStatus !== "ready_for_reviewer_refinement" ||
+    localCourseRefinementPacket.data.candidateCards < 120 ||
+    localCourseRefinementPacket.data.batches < 5 ||
+    localCourseRefinementPacket.data.modules < 12 ||
+    localCourseRefinementPacket.data.copyRiskIssues !== 0 ||
+    localCourseRefinementPacket.data.safetyIssues !== 0 ||
+    localCourseRefinementPacket.data.structureIssues !== 0 ||
+    localCourseRefinementPacket.data.maxSourceOverlap > 0.18 ||
+    localCourseRefinementPacket.data.highRiskOverlay?.lessonCount !== 12 ||
+    localCourseRefinementPacket.data.highRiskOverlay?.reviewerNoteCount !== 72 ||
+    !Array.isArray(localCourseRefinementPacket.data.directSourceCandidateResolutions) ||
+    localCourseRefinementPacket.data.directSourceCandidateResolutions.length < 5 ||
+    !Array.isArray(localCourseRefinementPacket.data.candidateCardsList) ||
+    localCourseRefinementPacket.data.candidateCardsList.length !== 12
+  ) {
+    throw new Error("knowledge browser local course refinement packet endpoint failed");
+  }
+
+  const localCourseHighRiskSelfReviewOverlay = await request("/api/knowledge-browser/local-course-high-risk-self-review-overlay");
+  if (
+    localCourseHighRiskSelfReviewOverlay.status !== 200 ||
+    localCourseHighRiskSelfReviewOverlay.data.educationOnly !== true ||
+    localCourseHighRiskSelfReviewOverlay.data.productionReady !== false ||
+    localCourseHighRiskSelfReviewOverlay.data.approvalStatus !== "not_approved" ||
+    localCourseHighRiskSelfReviewOverlay.data.learnerFacingRelease !== false ||
+    localCourseHighRiskSelfReviewOverlay.data.overlayStatus !== "codex_self_review_complete_not_approved" ||
+    localCourseHighRiskSelfReviewOverlay.data.reviewerType !== "codex_self_review" ||
+    localCourseHighRiskSelfReviewOverlay.data.lessonCount !== 12 ||
+    localCourseHighRiskSelfReviewOverlay.data.reviewerNotesReviewed !== 72 ||
+    localCourseHighRiskSelfReviewOverlay.data.expectedReviewerNotes !== 72 ||
+    localCourseHighRiskSelfReviewOverlay.data.releaseBlockingNotes < 36 ||
+    localCourseHighRiskSelfReviewOverlay.data.releaseReadyNotes !== 0 ||
+    localCourseHighRiskSelfReviewOverlay.data.directSourceCandidateResolutionsReviewed !== 5 ||
+    localCourseHighRiskSelfReviewOverlay.data.directSourceCandidatesApprovedForLearnerCitation !== 0 ||
+    localCourseHighRiskSelfReviewOverlay.data.writeAllowedNow !== false ||
+    localCourseHighRiskSelfReviewOverlay.data.approvalGatePassed !== false ||
+    localCourseHighRiskSelfReviewOverlay.data.humanApprovalRequired !== true ||
+    localCourseHighRiskSelfReviewOverlay.data.publicGroundingRequired !== true ||
+    localCourseHighRiskSelfReviewOverlay.data.dimensionCounts?.source_fit !== 12 ||
+    localCourseHighRiskSelfReviewOverlay.data.dimensionCounts?.release_gate !== 12 ||
+    !Array.isArray(localCourseHighRiskSelfReviewOverlay.data.lessons) ||
+    localCourseHighRiskSelfReviewOverlay.data.lessons.length !== 12 ||
+    !localCourseHighRiskSelfReviewOverlay.data.lessons.every((lesson) =>
+      lesson.selfReviewStatus === "codex_self_review_complete_not_approved" &&
+      lesson.reviewerNotesReviewed === 6 &&
+      lesson.releaseReadyNotes === 0) ||
+    !Array.isArray(localCourseHighRiskSelfReviewOverlay.data.directSourceSelfReview) ||
+    localCourseHighRiskSelfReviewOverlay.data.directSourceSelfReview.length !== 5 ||
+    !localCourseHighRiskSelfReviewOverlay.data.directSourceSelfReview.every((row) =>
+      row.selfReviewDecision === "keep_reviewer_only_background" &&
+      row.releaseBlocker === true) ||
+    !/Codex self-review scaffolding/i.test(localCourseHighRiskSelfReviewOverlay.data.completionRule || "") ||
+    !/does not approve learner-facing release/i.test(localCourseHighRiskSelfReviewOverlay.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course high-risk self-review overlay endpoint failed");
+  }
+
+  const localCourseHighRiskPublicGroundingMatrix = await request("/api/knowledge-browser/local-course-high-risk-public-grounding-matrix");
+  if (
+    localCourseHighRiskPublicGroundingMatrix.status !== 200 ||
+    localCourseHighRiskPublicGroundingMatrix.data.educationOnly !== true ||
+    localCourseHighRiskPublicGroundingMatrix.data.productionReady !== false ||
+    localCourseHighRiskPublicGroundingMatrix.data.approvalStatus !== "not_approved" ||
+    localCourseHighRiskPublicGroundingMatrix.data.learnerFacingRelease !== false ||
+    localCourseHighRiskPublicGroundingMatrix.data.matrixStatus !== "high_risk_public_grounding_mapped_not_approved" ||
+    localCourseHighRiskPublicGroundingMatrix.data.lessonCount !== 12 ||
+    localCourseHighRiskPublicGroundingMatrix.data.lessonsWithPublicGrounding !== 12 ||
+    localCourseHighRiskPublicGroundingMatrix.data.lessonsMissingPublicGrounding !== 0 ||
+    localCourseHighRiskPublicGroundingMatrix.data.lessonsWithAtLeastThreeWikipediaRefs !== 12 ||
+    localCourseHighRiskPublicGroundingMatrix.data.totalWikipediaRefs < 36 ||
+    localCourseHighRiskPublicGroundingMatrix.data.totalPublicContextRefs < 8 ||
+    localCourseHighRiskPublicGroundingMatrix.data.directSourceCandidateResolutionsMapped !== 5 ||
+    localCourseHighRiskPublicGroundingMatrix.data.directSourceCandidatesApprovedForLearnerCitation !== 0 ||
+    localCourseHighRiskPublicGroundingMatrix.data.releaseReadyLessons !== 0 ||
+    localCourseHighRiskPublicGroundingMatrix.data.learnerCitationApprovedLessons !== 0 ||
+    localCourseHighRiskPublicGroundingMatrix.data.releaseBlockingLessons !== 12 ||
+    localCourseHighRiskPublicGroundingMatrix.data.humanApprovalRequired !== true ||
+    localCourseHighRiskPublicGroundingMatrix.data.writeAllowedNow !== false ||
+    localCourseHighRiskPublicGroundingMatrix.data.approvalGatePassed !== false ||
+    localCourseHighRiskPublicGroundingMatrix.data.modulesCovered !== 4 ||
+    !Array.isArray(localCourseHighRiskPublicGroundingMatrix.data.lessonRows) ||
+    localCourseHighRiskPublicGroundingMatrix.data.lessonRows.length !== 12 ||
+    !localCourseHighRiskPublicGroundingMatrix.data.lessonRows.every((row) =>
+      row.publicGroundingStatus === "mapped_for_reviewer_not_release_approved" &&
+      Array.isArray(row.wikipediaRefs) &&
+      row.wikipediaRefs.length >= 3 &&
+      row.learnerCitationApproved === false &&
+      row.releaseBlocker === true) ||
+    !Array.isArray(localCourseHighRiskPublicGroundingMatrix.data.directSourceRows) ||
+    localCourseHighRiskPublicGroundingMatrix.data.directSourceRows.length !== 5 ||
+    !localCourseHighRiskPublicGroundingMatrix.data.directSourceRows.every((row) =>
+      row.selfReviewDecision === "keep_reviewer_only_background" &&
+      row.publicReplacementRefCount >= 3 &&
+      row.learnerCitationApproved === false &&
+      row.releaseBlocker === true) ||
+    !/maps high-risk lessons to public\/Wikipedia grounding/i.test(localCourseHighRiskPublicGroundingMatrix.data.completionRule || "") ||
+    !/do not approve learner-facing release/i.test(localCourseHighRiskPublicGroundingMatrix.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course high-risk public grounding matrix endpoint failed");
+  }
+
+  const localCourseHighRiskRealReviewerOverlayStarter = await request("/api/knowledge-browser/local-course-high-risk-real-reviewer-overlay-starter");
+  if (
+    localCourseHighRiskRealReviewerOverlayStarter.status !== 200 ||
+    localCourseHighRiskRealReviewerOverlayStarter.data.educationOnly !== true ||
+    localCourseHighRiskRealReviewerOverlayStarter.data.productionReady !== false ||
+    localCourseHighRiskRealReviewerOverlayStarter.data.approvalStatus !== "not_approved" ||
+    localCourseHighRiskRealReviewerOverlayStarter.data.learnerFacingRelease !== false ||
+    localCourseHighRiskRealReviewerOverlayStarter.data.starterStatus !== "high_risk_real_reviewer_overlay_starter_ready_blank" ||
+    localCourseHighRiskRealReviewerOverlayStarter.data.starterMode !== "blank_real_reviewer_overlay_draft_for_12_high_risk_lessons" ||
+    localCourseHighRiskRealReviewerOverlayStarter.data.draftStatus !== "blank_waiting_real_reviewer" ||
+    localCourseHighRiskRealReviewerOverlayStarter.data.draftMode !== "human_owned_edit_copy_do_not_use_fixtures" ||
+    !/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT\.json$/.test(localCourseHighRiskRealReviewerOverlayStarter.data.draftInputPath || "") ||
+    localCourseHighRiskRealReviewerOverlayStarter.data.lessonCount !== 12 ||
+    localCourseHighRiskRealReviewerOverlayStarter.data.directSourceDecisionCount !== 5 ||
+    localCourseHighRiskRealReviewerOverlayStarter.data.expectedReviewerNotes !== 72 ||
+    localCourseHighRiskRealReviewerOverlayStarter.data.totalReviewerNotes !== 72 ||
+    localCourseHighRiskRealReviewerOverlayStarter.data.blankReviewerNotes !== 72 ||
+    localCourseHighRiskRealReviewerOverlayStarter.data.readyReviewerNotes !== 0 ||
+    localCourseHighRiskRealReviewerOverlayStarter.data.blankDirectSourceDecisions !== 5 ||
+    localCourseHighRiskRealReviewerOverlayStarter.data.readyDirectSourceDecisions !== 0 ||
+    localCourseHighRiskRealReviewerOverlayStarter.data.codexSelfReviewNotes !== 72 ||
+    localCourseHighRiskRealReviewerOverlayStarter.data.realHumanInputEntries !== 0 ||
+    localCourseHighRiskRealReviewerOverlayStarter.data.writeAllowedNow !== false ||
+    localCourseHighRiskRealReviewerOverlayStarter.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(localCourseHighRiskRealReviewerOverlayStarter.data.allowedNoteDecisionValues) ||
+    localCourseHighRiskRealReviewerOverlayStarter.data.allowedNoteDecisionValues.length !== 5 ||
+    !Array.isArray(localCourseHighRiskRealReviewerOverlayStarter.data.allowedDirectSourceDecisionValues) ||
+    localCourseHighRiskRealReviewerOverlayStarter.data.allowedDirectSourceDecisionValues.length !== 4 ||
+    localCourseHighRiskRealReviewerOverlayStarter.data.validationSummary?.validationStatus !== "blocked_missing_real_reviewer_overlay_input" ||
+    localCourseHighRiskRealReviewerOverlayStarter.data.validationSummary?.blockedReviewerNotes !== 72 ||
+    localCourseHighRiskRealReviewerOverlayStarter.data.validationSummary?.blockedDirectSourceDecisions !== 5 ||
+    !Array.isArray(localCourseHighRiskRealReviewerOverlayStarter.data.lessonRows) ||
+    localCourseHighRiskRealReviewerOverlayStarter.data.lessonRows.length !== 12 ||
+    !localCourseHighRiskRealReviewerOverlayStarter.data.lessonRows.every((row) =>
+      row.candidateId &&
+      row.nodeId &&
+      row.lessonId &&
+      row.module &&
+      row.topic &&
+      row.publicGroundingStatus === "mapped_for_reviewer_not_release_approved" &&
+      row.wikipediaRefCount >= 3 &&
+      row.publicContextRefCount >= 2 &&
+      row.selectedPublicRefCount >= 5 &&
+      row.codexSelfReviewNotes === 6 &&
+      row.realReviewerNotesRequired === 6 &&
+      row.realReviewerNotesReady === 0 &&
+      row.releaseBlocker === true &&
+      row.learnerFacingRelease === false &&
+      row.approvalStatus === "not_approved" &&
+      /fill_6_real_reviewer_notes/i.test(row.nextGate || "") &&
+      Array.isArray(row.publicRefSamples) &&
+      row.publicRefSamples.length >= 3) ||
+    !Array.isArray(localCourseHighRiskRealReviewerOverlayStarter.data.directSourceDecisionRows) ||
+    localCourseHighRiskRealReviewerOverlayStarter.data.directSourceDecisionRows.length !== 5 ||
+    !localCourseHighRiskRealReviewerOverlayStarter.data.directSourceDecisionRows.every((row) =>
+      row.id &&
+      row.sourceResolutionId &&
+      row.candidateId &&
+      row.module &&
+      row.topic &&
+      row.privateOrDirectCandidateSource &&
+      row.publicReplacementRefCount >= 3 &&
+      row.learnerCitationApproved === false &&
+      row.learnerFacingRelease === false &&
+      row.approvalStatus === "not_approved" &&
+      row.decisionStatus === "blank_waiting_real_reviewer" &&
+      row.readyForApprovalGate === false &&
+      row.releaseBlocker === true &&
+      /real_reviewer_resolves_direct_source_candidate/i.test(row.nextGate || "")) ||
+    !/blank reviewer-owned draft/i.test(localCourseHighRiskRealReviewerOverlayStarter.data.completionRule || "") ||
+    !/does not complete human review/i.test(localCourseHighRiskRealReviewerOverlayStarter.data.completionRule || "") ||
+    !/Reviewer-facing education-only/i.test(localCourseHighRiskRealReviewerOverlayStarter.data.boundary || "") ||
+    !/must not copy generated self-review into real notes/i.test(localCourseHighRiskRealReviewerOverlayStarter.data.boundary || "") ||
+    !/approve learner-facing citations/i.test(localCourseHighRiskRealReviewerOverlayStarter.data.boundary || "") ||
+    !/stock recommendations/i.test(localCourseHighRiskRealReviewerOverlayStarter.data.boundary || "") ||
+    !/live signals/i.test(localCourseHighRiskRealReviewerOverlayStarter.data.boundary || "") ||
+    !/real-money guidance/i.test(localCourseHighRiskRealReviewerOverlayStarter.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course high-risk real reviewer overlay starter endpoint failed");
+  }
+
+  const localCourseHighRiskRealReviewerOverlayInputValidation = await request("/api/knowledge-browser/local-course-high-risk-real-reviewer-overlay-input-validation");
+  if (
+    localCourseHighRiskRealReviewerOverlayInputValidation.status !== 200 ||
+    localCourseHighRiskRealReviewerOverlayInputValidation.data.educationOnly !== true ||
+    localCourseHighRiskRealReviewerOverlayInputValidation.data.productionReady !== false ||
+    localCourseHighRiskRealReviewerOverlayInputValidation.data.approvalStatus !== "not_approved" ||
+    localCourseHighRiskRealReviewerOverlayInputValidation.data.learnerFacingRelease !== false ||
+    localCourseHighRiskRealReviewerOverlayInputValidation.data.validationStatus !== "blocked_missing_real_reviewer_overlay_input" ||
+    localCourseHighRiskRealReviewerOverlayInputValidation.data.validationMode !== "high_risk_real_reviewer_overlay_notes_and_direct_source_gate" ||
+    localCourseHighRiskRealReviewerOverlayInputValidation.data.fixtureOnly !== false ||
+    localCourseHighRiskRealReviewerOverlayInputValidation.data.lessonCount !== 12 ||
+    localCourseHighRiskRealReviewerOverlayInputValidation.data.readyLessons !== 0 ||
+    localCourseHighRiskRealReviewerOverlayInputValidation.data.blockedLessons !== 12 ||
+    localCourseHighRiskRealReviewerOverlayInputValidation.data.totalReviewerNotes !== 72 ||
+    localCourseHighRiskRealReviewerOverlayInputValidation.data.readyReviewerNotes !== 0 ||
+    localCourseHighRiskRealReviewerOverlayInputValidation.data.blockedReviewerNotes !== 72 ||
+    localCourseHighRiskRealReviewerOverlayInputValidation.data.directSourceDecisionCount !== 5 ||
+    localCourseHighRiskRealReviewerOverlayInputValidation.data.readyDirectSourceDecisions !== 0 ||
+    localCourseHighRiskRealReviewerOverlayInputValidation.data.blockedDirectSourceDecisions !== 5 ||
+    localCourseHighRiskRealReviewerOverlayInputValidation.data.missingFieldRows < 89 ||
+    localCourseHighRiskRealReviewerOverlayInputValidation.data.forbiddenHitRows !== 0 ||
+    localCourseHighRiskRealReviewerOverlayInputValidation.data.realHumanInputEntries !== 0 ||
+    localCourseHighRiskRealReviewerOverlayInputValidation.data.generatedDecisions !== 0 ||
+    localCourseHighRiskRealReviewerOverlayInputValidation.data.learnerCitationApprovedLessons !== 0 ||
+    localCourseHighRiskRealReviewerOverlayInputValidation.data.learnerCitationApprovedDirectSources !== 0 ||
+    localCourseHighRiskRealReviewerOverlayInputValidation.data.writeAllowedNow !== false ||
+    localCourseHighRiskRealReviewerOverlayInputValidation.data.manualAuthorizationRequired !== true ||
+    !Array.isArray(localCourseHighRiskRealReviewerOverlayInputValidation.data.allowedNoteDecisionValues) ||
+    localCourseHighRiskRealReviewerOverlayInputValidation.data.allowedNoteDecisionValues.length !== 5 ||
+    !Array.isArray(localCourseHighRiskRealReviewerOverlayInputValidation.data.allowedDirectSourceDecisionValues) ||
+    localCourseHighRiskRealReviewerOverlayInputValidation.data.allowedDirectSourceDecisionValues.length !== 4 ||
+    !Array.isArray(localCourseHighRiskRealReviewerOverlayInputValidation.data.lessonValidationRows) ||
+    localCourseHighRiskRealReviewerOverlayInputValidation.data.lessonValidationRows.length !== 12 ||
+    !localCourseHighRiskRealReviewerOverlayInputValidation.data.lessonValidationRows.every((row) =>
+      row.candidateId &&
+      row.nodeId &&
+      row.lessonId &&
+      row.module &&
+      row.topic &&
+      row.validationStatus === "blocked_missing_real_reviewer_input" &&
+      row.realReviewerNotesReady === 0 &&
+      row.realReviewerNotesRequired === 6 &&
+      row.releaseBlocker === true &&
+      row.learnerFacingRelease === false &&
+      row.approvalStatus === "not_approved" &&
+      row.nextGate === "fill_6_real_reviewer_notes_then_revalidate") ||
+    !Array.isArray(localCourseHighRiskRealReviewerOverlayInputValidation.data.noteValidationRows) ||
+    localCourseHighRiskRealReviewerOverlayInputValidation.data.noteValidationRows.length !== 12 ||
+    !localCourseHighRiskRealReviewerOverlayInputValidation.data.noteValidationRows.every((row) =>
+      row.id &&
+      row.sourceNoteId &&
+      row.candidateId &&
+      row.lessonId &&
+      row.validationStatus === "blocked_missing_real_reviewer_input" &&
+      row.readyForApprovalGate === false &&
+      Array.isArray(row.missingFields) &&
+      row.missingFields.length >= 5 &&
+      Array.isArray(row.forbiddenHits) &&
+      row.forbiddenHits.length === 0 &&
+      row.nextGate === "fill_real_reviewer_note_then_revalidate") ||
+    !Array.isArray(localCourseHighRiskRealReviewerOverlayInputValidation.data.directSourceValidationRows) ||
+    localCourseHighRiskRealReviewerOverlayInputValidation.data.directSourceValidationRows.length !== 5 ||
+    !localCourseHighRiskRealReviewerOverlayInputValidation.data.directSourceValidationRows.every((row) =>
+      row.id &&
+      row.sourceResolutionId &&
+      row.candidateId &&
+      row.module &&
+      row.topic &&
+      row.validationStatus === "blocked_missing_real_reviewer_input" &&
+      row.readyForApprovalGate === false &&
+      row.learnerCitationApproved === false &&
+      row.releaseBlocker === true &&
+      row.nextGate === "fill_direct_source_decision_then_revalidate") ||
+    !/real reviewer-owned high-risk overlay input/i.test(localCourseHighRiskRealReviewerOverlayInputValidation.data.completionRule || "") ||
+    !/does not generate reviewer notes/i.test(localCourseHighRiskRealReviewerOverlayInputValidation.data.completionRule || "") ||
+    !/High-risk real reviewer overlay input validation/i.test(localCourseHighRiskRealReviewerOverlayInputValidation.data.boundary || "") ||
+    !/no setup\/no signal\/no future outcome\/no strategy edge\/no real-money action/i.test(localCourseHighRiskRealReviewerOverlayInputValidation.data.boundary || "") ||
+    !/stock recommendations/i.test(localCourseHighRiskRealReviewerOverlayInputValidation.data.boundary || "") ||
+    !/live signals/i.test(localCourseHighRiskRealReviewerOverlayInputValidation.data.boundary || "") ||
+    !/real-money guidance/i.test(localCourseHighRiskRealReviewerOverlayInputValidation.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course high-risk real reviewer overlay input validation endpoint failed");
+  }
+
+  const localCourseHighRiskReviewCockpit = await request("/api/knowledge-browser/local-course-high-risk-review-cockpit");
+  if (
+    localCourseHighRiskReviewCockpit.status !== 200 ||
+    localCourseHighRiskReviewCockpit.data.educationOnly !== true ||
+    localCourseHighRiskReviewCockpit.data.productionReady !== false ||
+    localCourseHighRiskReviewCockpit.data.approvalStatus !== "not_approved" ||
+    localCourseHighRiskReviewCockpit.data.learnerFacingRelease !== false ||
+    localCourseHighRiskReviewCockpit.data.cockpitStatus !== "high_risk_review_cockpit_ready_blocked_on_real_input" ||
+    localCourseHighRiskReviewCockpit.data.cockpitMode !== "codex_self_review_public_grounding_real_reviewer_queue" ||
+    localCourseHighRiskReviewCockpit.data.lessonCount !== 12 ||
+    localCourseHighRiskReviewCockpit.data.modules !== 4 ||
+    localCourseHighRiskReviewCockpit.data.lessonsWithCodexSelfReview !== 12 ||
+    localCourseHighRiskReviewCockpit.data.lessonsWithPublicGrounding !== 12 ||
+    localCourseHighRiskReviewCockpit.data.lessonsMissingPublicGrounding !== 0 ||
+    localCourseHighRiskReviewCockpit.data.expectedReviewerNotes !== 72 ||
+    localCourseHighRiskReviewCockpit.data.codexSelfReviewNotes !== 72 ||
+    localCourseHighRiskReviewCockpit.data.readyReviewerNotes !== 0 ||
+    localCourseHighRiskReviewCockpit.data.blockedReviewerNotes !== 72 ||
+    localCourseHighRiskReviewCockpit.data.directSourceDecisionCount !== 5 ||
+    localCourseHighRiskReviewCockpit.data.readyDirectSourceDecisions !== 0 ||
+    localCourseHighRiskReviewCockpit.data.blockedDirectSourceDecisions !== 5 ||
+    localCourseHighRiskReviewCockpit.data.readyLessons !== 0 ||
+    localCourseHighRiskReviewCockpit.data.blockedLessons !== 12 ||
+    localCourseHighRiskReviewCockpit.data.realHumanInputEntries !== 0 ||
+    localCourseHighRiskReviewCockpit.data.learnerCitationApprovedLessons !== 0 ||
+    localCourseHighRiskReviewCockpit.data.learnerCitationApprovedDirectSources !== 0 ||
+    localCourseHighRiskReviewCockpit.data.writeAllowedNow !== false ||
+    localCourseHighRiskReviewCockpit.data.manualAuthorizationRequired !== true ||
+    localCourseHighRiskReviewCockpit.data.approvalGatePassed !== false ||
+    !Array.isArray(localCourseHighRiskReviewCockpit.data.moduleRows) ||
+    localCourseHighRiskReviewCockpit.data.moduleRows.length !== 4 ||
+    localCourseHighRiskReviewCockpit.data.moduleRows.reduce((sum, row) => sum + (row.requiredReviewerNotes || 0), 0) !== 72 ||
+    !localCourseHighRiskReviewCockpit.data.moduleRows.every((row) =>
+      row.status === "blocked_missing_real_reviewer_input" &&
+      row.readyReviewerNotes === 0 &&
+      row.blockedReviewerNotes === row.requiredReviewerNotes) ||
+    !Array.isArray(localCourseHighRiskReviewCockpit.data.lessonRows) ||
+    localCourseHighRiskReviewCockpit.data.lessonRows.length !== 12 ||
+    !localCourseHighRiskReviewCockpit.data.lessonRows.every((row) =>
+      row.candidateId &&
+      row.nodeId &&
+      row.lessonId &&
+      row.codexSelfReviewNotes === 6 &&
+      row.publicGroundingStatus === "mapped_for_reviewer_not_release_approved" &&
+      row.wikipediaRefCount >= 3 &&
+      row.realReviewerNotesReady === 0 &&
+      row.realReviewerNotesRequired === 6 &&
+      row.blockedReviewerNotes === 6 &&
+      row.releaseBlocker === true &&
+      row.learnerFacingRelease === false &&
+      row.approvalStatus === "not_approved" &&
+      Array.isArray(row.publicRefSamples) &&
+      row.publicRefSamples.length >= 3) ||
+    !Array.isArray(localCourseHighRiskReviewCockpit.data.directSourceRows) ||
+    localCourseHighRiskReviewCockpit.data.directSourceRows.length !== 5 ||
+    !localCourseHighRiskReviewCockpit.data.directSourceRows.every((row) =>
+      row.sourceResolutionId &&
+      row.codexSelfReviewDecision === "keep_reviewer_only_background" &&
+      row.publicReplacementRefCount >= 3 &&
+      row.validationStatus === "blocked_missing_real_reviewer_input" &&
+      row.learnerCitationApproved === false &&
+      row.releaseBlocker === true) ||
+    !Array.isArray(localCourseHighRiskReviewCockpit.data.reviewerQueue) ||
+    localCourseHighRiskReviewCockpit.data.reviewerQueue.length !== 17 ||
+    !localCourseHighRiskReviewCockpit.data.commands.some((command) =>
+      /check:local-course-high-risk-review-cockpit/.test(command)) ||
+    !/does not complete human review/i.test(localCourseHighRiskReviewCockpit.data.completionRule || "") ||
+    !/Reviewer-facing education-only/i.test(localCourseHighRiskReviewCockpit.data.boundary || "") ||
+    !/does not generate real reviewer notes/i.test(localCourseHighRiskReviewCockpit.data.boundary || "") ||
+    !/stock recommendations/i.test(localCourseHighRiskReviewCockpit.data.boundary || "") ||
+    !/live signals/i.test(localCourseHighRiskReviewCockpit.data.boundary || "") ||
+    !/real-money guidance/i.test(localCourseHighRiskReviewCockpit.data.boundary || "")
+  ) {
+    throw new Error("knowledge browser local course high-risk review cockpit endpoint failed");
+  }
+
+  const knowledgeCurriculum = await request("/api/knowledge-browser/curriculum");
+  if (
+    knowledgeCurriculum.status !== 200 ||
+    knowledgeCurriculum.data.educationOnly !== true ||
+    !Array.isArray(knowledgeCurriculum.data.paths) ||
+    knowledgeCurriculum.data.paths.length < 12 ||
+    !knowledgeCurriculum.data.paths.every((path) => path.boundary)
+  ) {
+    throw new Error("knowledge browser curriculum list endpoint failed");
+  }
+
+  const knowledgePathDetail = await request(`/api/knowledge-browser/curriculum/${encodeURIComponent(knowledgeCurriculum.data.paths[0].id)}`);
+  if (
+    knowledgePathDetail.status !== 200 ||
+    knowledgePathDetail.data.path?.productionReady !== false ||
+    !Array.isArray(knowledgePathDetail.data.path?.units) ||
+    knowledgePathDetail.data.path.units.length < 1
+  ) {
+    throw new Error("knowledge browser curriculum detail endpoint failed");
   }
 
   await request("/api/auth/logout", { method: "POST", body: {} });

@@ -1,0 +1,905 @@
+{
+  "generatedAt": "2026-06-26T00:00:00.000+08:00",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "writeAllowedNow": false,
+  "auditStatus": "knowledge_sedimentation_teachable_module_audit_complete_internal_release_blocked",
+  "knowledgeBaseUsefulnessStatus": "usable_as_internal_reviewer_knowledge_base_not_learner_course",
+  "overallJudgment": "The knowledge base has enough structure for internal modular course design: local documents, public grounding, video transcripts, and Course 5 follow-up nodes are all represented. It is not yet approved as learner-facing course content.",
+  "totals": {
+    "canonicalTeachingModules": 12,
+    "existingKnowledgeNodesV2": 1500,
+    "reviewedSourceBackedCandidateLessons": 360,
+    "coursePaths": 12,
+    "localPhysicalPdfFiles": 302,
+    "localCoveredPhysicalPdfFiles": 313,
+    "localUniquePdfHashes": 298,
+    "course5InternalKnowledgeNodes": 36,
+    "course5SupplementModules": 11,
+    "videoSemanticAbsorbedRows": 62,
+    "videoCandidateKnowledgePoints": 150,
+    "publicCorpusDocuments": 1196,
+    "wikipediaDocuments": 96,
+    "officialLikeDocuments": 202,
+    "publicModuleGroundedNodes": 360,
+    "sourceFitReviewRows": 1638,
+    "blockedSourceFitReviewRows": 1638,
+    "realHumanInputEntries": 0,
+    "learnerReleaseReadyModules": 0,
+    "internalNavigationReadyModules": 12
+  },
+  "sourceLayers": [
+    {
+      "layerId": "local_desktop_pdf_folders",
+      "label": "Desktop local PDF folders",
+      "status": "multi_folder_absorption_audit_all_current_pdfs_content_covered_release_blocked",
+      "sourceCount": 313,
+      "uniqueContentCount": 298,
+      "knowledgeUse": "private source evidence and rewrite review grounding",
+      "teachability": "supports all 12 canonical modules after source-fit review"
+    },
+    {
+      "layerId": "course_5_followup_folder_5",
+      "label": "Course 5 follow-up folder 5",
+      "status": "course_5_followup_internal_knowledge_nodes_available_release_blocked",
+      "sourceCount": 386,
+      "uniqueContentCount": 36,
+      "knowledgeUse": "internal supplemental Course 5 module nodes",
+      "teachability": "36 internal knowledge nodes across 11 supplement modules"
+    },
+    {
+      "layerId": "local_video_courses",
+      "label": "Local video courses",
+      "status": "local_video_course_coverage_all_semantic_rows_absorbed_release_blocked",
+      "sourceCount": 62,
+      "uniqueContentCount": 150,
+      "knowledgeUse": "transcript-derived candidate concepts and review queue",
+      "teachability": "150 candidate knowledge points require module fit and review before release"
+    },
+    {
+      "layerId": "public_sources",
+      "label": "Public / Wikipedia / official-like sources",
+      "status": "public_source_coverage_ledger_ready_release_blocked",
+      "sourceCount": 1196,
+      "uniqueContentCount": 360,
+      "knowledgeUse": "source grounding, citation candidates, and safety boundary evidence",
+      "teachability": "grounds 360 candidate lessons but source-fit rows remain blocked"
+    },
+    {
+      "layerId": "knowledge_browser_curriculum",
+      "label": "Knowledge Browser curriculum",
+      "status": "course_path_readiness_audit_ready_release_blocked",
+      "sourceCount": 360,
+      "uniqueContentCount": 12,
+      "knowledgeUse": "canonical internal course path and module navigation",
+      "teachability": "12 internal course paths, 360 candidate lessons, learner release blocked"
+    }
+  ],
+  "canonicalTeachingModules": [
+    {
+      "moduleId": "module-6",
+      "module": "图表阅读基础",
+      "existingKnowledgeNodes": 125,
+      "reviewedSourceBackedCandidateLessons": 30,
+      "draftKnowledgeNodes": 95,
+      "topicCount": 5,
+      "sampleTopics": [
+        "结构先行",
+        "价格位置",
+        "收盘确认",
+        "影线含义",
+        "波动变化"
+      ],
+      "subtopicCount": 7,
+      "entryNodeIds": [
+        "knv2_0001",
+        "knv2_0013",
+        "knv2_0025",
+        "knv2_0037",
+        "knv2_0049",
+        "knv2_0061",
+        "knv2_0073",
+        "knv2_0085"
+      ],
+      "publicGroundedNodes": 30,
+      "publicEvidenceDocuments": 550,
+      "wikipediaEvidenceDocuments": 49,
+      "officialLikeEvidenceDocuments": 18,
+      "sourceFitReviewRows": 108,
+      "blockedSourceFitReviewRows": 108,
+      "course5SupplementModules": [
+        {
+          "moduleId": "chart_pattern_encyclopedia",
+          "moduleLabel": "Chart Pattern Encyclopedia",
+          "aiAbsorbedRows": 255,
+          "lessonSeedRows": 6
+        },
+        {
+          "moduleId": "terminology_glossary",
+          "moduleLabel": "Terminology Glossary",
+          "aiAbsorbedRows": 46,
+          "lessonSeedRows": 4
+        },
+        {
+          "moduleId": "bar_by_bar_reading",
+          "moduleLabel": "Bar By Bar Reading",
+          "aiAbsorbedRows": 33,
+          "lessonSeedRows": 3
+        },
+        {
+          "moduleId": "course_slides_alignment",
+          "moduleLabel": "Course Slide Alignment",
+          "aiAbsorbedRows": 27,
+          "lessonSeedRows": 3
+        },
+        {
+          "moduleId": "price_action_foundations",
+          "moduleLabel": "Price Action Foundations",
+          "aiAbsorbedRows": 18,
+          "lessonSeedRows": 2
+        },
+        {
+          "moduleId": "unclassified_supplement",
+          "moduleLabel": "Unclassified Supplement Review",
+          "aiAbsorbedRows": 13,
+          "lessonSeedRows": 2
+        }
+      ],
+      "course5SupplementEvidenceRows": 392,
+      "course5SupplementLessonSeeds": 20,
+      "teachableModuleStatus": "internal_modular_teaching_design_ready",
+      "learnerReleaseStatus": "blocked_until_source_fit_originality_and_real_review_complete",
+      "suggestedCourseUnit": [
+        "概念边界与术语",
+        "图表/案例观察",
+        "常见误区与反例",
+        "多周期或语境核对",
+        "练习任务与评分规则",
+        "来源证据与发布前审核"
+      ],
+      "nextReviewAction": "review source-fit rows and rewrite original learner-facing lesson text"
+    },
+    {
+      "moduleId": "module-4",
+      "module": "市场结构",
+      "existingKnowledgeNodes": 125,
+      "reviewedSourceBackedCandidateLessons": 30,
+      "draftKnowledgeNodes": 95,
+      "topicCount": 5,
+      "sampleTopics": [
+        "高低点",
+        "结构延续",
+        "结构破坏",
+        "关键区域",
+        "价格接受"
+      ],
+      "subtopicCount": 7,
+      "entryNodeIds": [
+        "knv2_0002",
+        "knv2_0014",
+        "knv2_0026",
+        "knv2_0038",
+        "knv2_0050",
+        "knv2_0062",
+        "knv2_0074",
+        "knv2_0086"
+      ],
+      "publicGroundedNodes": 30,
+      "publicEvidenceDocuments": 482,
+      "wikipediaEvidenceDocuments": 45,
+      "officialLikeEvidenceDocuments": 24,
+      "sourceFitReviewRows": 132,
+      "blockedSourceFitReviewRows": 132,
+      "course5SupplementModules": [
+        {
+          "moduleId": "trends_and_channels",
+          "moduleLabel": "Trends And Channels",
+          "aiAbsorbedRows": 57,
+          "lessonSeedRows": 4
+        },
+        {
+          "moduleId": "price_action_foundations",
+          "moduleLabel": "Price Action Foundations",
+          "aiAbsorbedRows": 18,
+          "lessonSeedRows": 2
+        }
+      ],
+      "course5SupplementEvidenceRows": 75,
+      "course5SupplementLessonSeeds": 6,
+      "teachableModuleStatus": "internal_modular_teaching_design_ready",
+      "learnerReleaseStatus": "blocked_until_source_fit_originality_and_real_review_complete",
+      "suggestedCourseUnit": [
+        "概念边界与术语",
+        "图表/案例观察",
+        "常见误区与反例",
+        "多周期或语境核对",
+        "练习任务与评分规则",
+        "来源证据与发布前审核"
+      ],
+      "nextReviewAction": "review source-fit rows and rewrite original learner-facing lesson text"
+    },
+    {
+      "moduleId": "k",
+      "module": "K线与价格行为",
+      "existingKnowledgeNodes": 125,
+      "reviewedSourceBackedCandidateLessons": 30,
+      "draftKnowledgeNodes": 95,
+      "topicCount": 5,
+      "sampleTopics": [
+        "单根K线误区",
+        "组合K线",
+        "流动性扫过",
+        "形态语境",
+        "行为证据"
+      ],
+      "subtopicCount": 7,
+      "entryNodeIds": [
+        "knv2_0003",
+        "knv2_0015",
+        "knv2_0027",
+        "knv2_0039",
+        "knv2_0051",
+        "knv2_0063",
+        "knv2_0075",
+        "knv2_0087"
+      ],
+      "publicGroundedNodes": 30,
+      "publicEvidenceDocuments": 54,
+      "wikipediaEvidenceDocuments": 11,
+      "officialLikeEvidenceDocuments": 0,
+      "sourceFitReviewRows": 180,
+      "blockedSourceFitReviewRows": 180,
+      "course5SupplementModules": [
+        {
+          "moduleId": "chart_pattern_encyclopedia",
+          "moduleLabel": "Chart Pattern Encyclopedia",
+          "aiAbsorbedRows": 255,
+          "lessonSeedRows": 6
+        },
+        {
+          "moduleId": "bar_by_bar_reading",
+          "moduleLabel": "Bar By Bar Reading",
+          "aiAbsorbedRows": 33,
+          "lessonSeedRows": 3
+        }
+      ],
+      "course5SupplementEvidenceRows": 288,
+      "course5SupplementLessonSeeds": 9,
+      "teachableModuleStatus": "internal_modular_teaching_design_ready",
+      "learnerReleaseStatus": "blocked_until_source_fit_originality_and_real_review_complete",
+      "suggestedCourseUnit": [
+        "概念边界与术语",
+        "图表/案例观察",
+        "常见误区与反例",
+        "多周期或语境核对",
+        "练习任务与评分规则",
+        "来源证据与发布前审核"
+      ],
+      "nextReviewAction": "review source-fit rows and rewrite original learner-facing lesson text"
+    },
+    {
+      "moduleId": "module-2",
+      "module": "趋势",
+      "existingKnowledgeNodes": 125,
+      "reviewedSourceBackedCandidateLessons": 30,
+      "draftKnowledgeNodes": 95,
+      "topicCount": 5,
+      "sampleTopics": [
+        "趋势定义",
+        "趋势回调",
+        "趋势加速",
+        "趋势衰竭",
+        "趋势中继"
+      ],
+      "subtopicCount": 7,
+      "entryNodeIds": [
+        "knv2_0004",
+        "knv2_0016",
+        "knv2_0028",
+        "knv2_0040",
+        "knv2_0052",
+        "knv2_0064",
+        "knv2_0076",
+        "knv2_0088"
+      ],
+      "publicGroundedNodes": 30,
+      "publicEvidenceDocuments": 192,
+      "wikipediaEvidenceDocuments": 29,
+      "officialLikeEvidenceDocuments": 1,
+      "sourceFitReviewRows": 132,
+      "blockedSourceFitReviewRows": 132,
+      "course5SupplementModules": [
+        {
+          "moduleId": "trends_and_channels",
+          "moduleLabel": "Trends And Channels",
+          "aiAbsorbedRows": 57,
+          "lessonSeedRows": 4
+        },
+        {
+          "moduleId": "breakouts_and_pullbacks",
+          "moduleLabel": "Breakouts And Pullbacks",
+          "aiAbsorbedRows": 24,
+          "lessonSeedRows": 3
+        }
+      ],
+      "course5SupplementEvidenceRows": 81,
+      "course5SupplementLessonSeeds": 7,
+      "teachableModuleStatus": "internal_modular_teaching_design_ready",
+      "learnerReleaseStatus": "blocked_until_source_fit_originality_and_real_review_complete",
+      "suggestedCourseUnit": [
+        "概念边界与术语",
+        "图表/案例观察",
+        "常见误区与反例",
+        "多周期或语境核对",
+        "练习任务与评分规则",
+        "来源证据与发布前审核"
+      ],
+      "nextReviewAction": "review source-fit rows and rewrite original learner-facing lesson text"
+    },
+    {
+      "moduleId": "module-2",
+      "module": "突破",
+      "existingKnowledgeNodes": 125,
+      "reviewedSourceBackedCandidateLessons": 30,
+      "draftKnowledgeNodes": 95,
+      "topicCount": 5,
+      "sampleTopics": [
+        "突破前压缩",
+        "有效突破",
+        "假突破",
+        "突破回踩",
+        "突破失败"
+      ],
+      "subtopicCount": 7,
+      "entryNodeIds": [
+        "knv2_0005",
+        "knv2_0017",
+        "knv2_0029",
+        "knv2_0041",
+        "knv2_0053",
+        "knv2_0065",
+        "knv2_0077",
+        "knv2_0089"
+      ],
+      "publicGroundedNodes": 30,
+      "publicEvidenceDocuments": 497,
+      "wikipediaEvidenceDocuments": 37,
+      "officialLikeEvidenceDocuments": 6,
+      "sourceFitReviewRows": 162,
+      "blockedSourceFitReviewRows": 162,
+      "course5SupplementModules": [
+        {
+          "moduleId": "breakouts_and_pullbacks",
+          "moduleLabel": "Breakouts And Pullbacks",
+          "aiAbsorbedRows": 24,
+          "lessonSeedRows": 3
+        }
+      ],
+      "course5SupplementEvidenceRows": 24,
+      "course5SupplementLessonSeeds": 3,
+      "teachableModuleStatus": "internal_modular_teaching_design_ready",
+      "learnerReleaseStatus": "blocked_until_source_fit_originality_and_real_review_complete",
+      "suggestedCourseUnit": [
+        "概念边界与术语",
+        "图表/案例观察",
+        "常见误区与反例",
+        "多周期或语境核对",
+        "练习任务与评分规则",
+        "来源证据与发布前审核"
+      ],
+      "nextReviewAction": "review source-fit rows and rewrite original learner-facing lesson text"
+    },
+    {
+      "moduleId": "module-4",
+      "module": "交易区间",
+      "existingKnowledgeNodes": 125,
+      "reviewedSourceBackedCandidateLessons": 30,
+      "draftKnowledgeNodes": 95,
+      "topicCount": 5,
+      "sampleTopics": [
+        "区间上沿",
+        "区间下沿",
+        "区间中部",
+        "区间轮动",
+        "区间突破"
+      ],
+      "subtopicCount": 7,
+      "entryNodeIds": [
+        "knv2_0006",
+        "knv2_0018",
+        "knv2_0030",
+        "knv2_0042",
+        "knv2_0054",
+        "knv2_0066",
+        "knv2_0078",
+        "knv2_0090"
+      ],
+      "publicGroundedNodes": 30,
+      "publicEvidenceDocuments": 211,
+      "wikipediaEvidenceDocuments": 24,
+      "officialLikeEvidenceDocuments": 3,
+      "sourceFitReviewRows": 132,
+      "blockedSourceFitReviewRows": 132,
+      "course5SupplementModules": [
+        {
+          "moduleId": "trading_ranges",
+          "moduleLabel": "Range Structure Literacy",
+          "aiAbsorbedRows": 36,
+          "lessonSeedRows": 3
+        }
+      ],
+      "course5SupplementEvidenceRows": 36,
+      "course5SupplementLessonSeeds": 3,
+      "teachableModuleStatus": "internal_modular_teaching_design_ready",
+      "learnerReleaseStatus": "blocked_until_source_fit_originality_and_real_review_complete",
+      "suggestedCourseUnit": [
+        "概念边界与术语",
+        "图表/案例观察",
+        "常见误区与反例",
+        "多周期或语境核对",
+        "练习任务与评分规则",
+        "来源证据与发布前审核"
+      ],
+      "nextReviewAction": "review source-fit rows and rewrite original learner-facing lesson text"
+    },
+    {
+      "moduleId": "module-2",
+      "module": "反转",
+      "existingKnowledgeNodes": 125,
+      "reviewedSourceBackedCandidateLessons": 30,
+      "draftKnowledgeNodes": 95,
+      "topicCount": 5,
+      "sampleTopics": [
+        "反转定义",
+        "衰竭证据",
+        "双顶双底",
+        "回调混淆",
+        "反转失败"
+      ],
+      "subtopicCount": 7,
+      "entryNodeIds": [
+        "knv2_0007",
+        "knv2_0019",
+        "knv2_0031",
+        "knv2_0043",
+        "knv2_0055",
+        "knv2_0067",
+        "knv2_0079",
+        "knv2_0091"
+      ],
+      "publicGroundedNodes": 30,
+      "publicEvidenceDocuments": 31,
+      "wikipediaEvidenceDocuments": 10,
+      "officialLikeEvidenceDocuments": 1,
+      "sourceFitReviewRows": 132,
+      "blockedSourceFitReviewRows": 132,
+      "course5SupplementModules": [
+        {
+          "moduleId": "reversals",
+          "moduleLabel": "Reversal Structures",
+          "aiAbsorbedRows": 54,
+          "lessonSeedRows": 4
+        }
+      ],
+      "course5SupplementEvidenceRows": 54,
+      "course5SupplementLessonSeeds": 4,
+      "teachableModuleStatus": "internal_modular_teaching_design_ready",
+      "learnerReleaseStatus": "blocked_until_source_fit_originality_and_real_review_complete",
+      "suggestedCourseUnit": [
+        "概念边界与术语",
+        "图表/案例观察",
+        "常见误区与反例",
+        "多周期或语境核对",
+        "练习任务与评分规则",
+        "来源证据与发布前审核"
+      ],
+      "nextReviewAction": "review source-fit rows and rewrite original learner-facing lesson text"
+    },
+    {
+      "moduleId": "module-5",
+      "module": "多周期分析",
+      "existingKnowledgeNodes": 125,
+      "reviewedSourceBackedCandidateLessons": 30,
+      "draftKnowledgeNodes": 95,
+      "topicCount": 5,
+      "sampleTopics": [
+        "D1背景",
+        "H4结构",
+        "H1节奏",
+        "M15细节",
+        "周期冲突"
+      ],
+      "subtopicCount": 4,
+      "entryNodeIds": [
+        "knv2_0008",
+        "knv2_0020",
+        "knv2_0032",
+        "knv2_0044",
+        "knv2_0056",
+        "knv2_0068",
+        "knv2_0080",
+        "knv2_0092"
+      ],
+      "publicGroundedNodes": 30,
+      "publicEvidenceDocuments": 214,
+      "wikipediaEvidenceDocuments": 34,
+      "officialLikeEvidenceDocuments": 3,
+      "sourceFitReviewRows": 132,
+      "blockedSourceFitReviewRows": 132,
+      "course5SupplementModules": [],
+      "course5SupplementEvidenceRows": 0,
+      "course5SupplementLessonSeeds": 0,
+      "teachableModuleStatus": "internal_modular_teaching_design_ready",
+      "learnerReleaseStatus": "blocked_until_source_fit_originality_and_real_review_complete",
+      "suggestedCourseUnit": [
+        "概念边界与术语",
+        "图表/案例观察",
+        "常见误区与反例",
+        "多周期或语境核对",
+        "练习任务与评分规则",
+        "来源证据与发布前审核"
+      ],
+      "nextReviewAction": "review source-fit rows and rewrite original learner-facing lesson text"
+    },
+    {
+      "moduleId": "module-10",
+      "module": "新闻/情绪/事件偏见",
+      "existingKnowledgeNodes": 125,
+      "reviewedSourceBackedCandidateLessons": 30,
+      "draftKnowledgeNodes": 95,
+      "topicCount": 5,
+      "sampleTopics": [
+        "标题偏见",
+        "事件时间",
+        "情绪极端",
+        "叙事滞后",
+        "单源偏差"
+      ],
+      "subtopicCount": 4,
+      "entryNodeIds": [
+        "knv2_0009",
+        "knv2_0021",
+        "knv2_0033",
+        "knv2_0045",
+        "knv2_0057",
+        "knv2_0069",
+        "knv2_0081",
+        "knv2_0093"
+      ],
+      "publicGroundedNodes": 30,
+      "publicEvidenceDocuments": 35,
+      "wikipediaEvidenceDocuments": 8,
+      "officialLikeEvidenceDocuments": 0,
+      "sourceFitReviewRows": 132,
+      "blockedSourceFitReviewRows": 132,
+      "course5SupplementModules": [],
+      "course5SupplementEvidenceRows": 0,
+      "course5SupplementLessonSeeds": 0,
+      "teachableModuleStatus": "internal_modular_teaching_design_ready",
+      "learnerReleaseStatus": "blocked_until_source_fit_originality_and_real_review_complete",
+      "suggestedCourseUnit": [
+        "概念边界与术语",
+        "图表/案例观察",
+        "常见误区与反例",
+        "多周期或语境核对",
+        "练习任务与评分规则",
+        "来源证据与发布前审核"
+      ],
+      "nextReviewAction": "review source-fit rows and rewrite original learner-facing lesson text"
+    },
+    {
+      "moduleId": "module-4",
+      "module": "回测误区",
+      "existingKnowledgeNodes": 125,
+      "reviewedSourceBackedCandidateLessons": 30,
+      "draftKnowledgeNodes": 95,
+      "topicCount": 5,
+      "sampleTopics": [
+        "偷看未来",
+        "样本太少",
+        "过拟合",
+        "成本忽略",
+        "指标误用"
+      ],
+      "subtopicCount": 5,
+      "entryNodeIds": [
+        "knv2_0010",
+        "knv2_0022",
+        "knv2_0034",
+        "knv2_0046",
+        "knv2_0058",
+        "knv2_0070",
+        "knv2_0082",
+        "knv2_0094"
+      ],
+      "publicGroundedNodes": 30,
+      "publicEvidenceDocuments": 164,
+      "wikipediaEvidenceDocuments": 7,
+      "officialLikeEvidenceDocuments": 0,
+      "sourceFitReviewRows": 132,
+      "blockedSourceFitReviewRows": 132,
+      "course5SupplementModules": [],
+      "course5SupplementEvidenceRows": 0,
+      "course5SupplementLessonSeeds": 0,
+      "teachableModuleStatus": "internal_modular_teaching_design_ready",
+      "learnerReleaseStatus": "blocked_until_source_fit_originality_and_real_review_complete",
+      "suggestedCourseUnit": [
+        "概念边界与术语",
+        "图表/案例观察",
+        "常见误区与反例",
+        "多周期或语境核对",
+        "练习任务与评分规则",
+        "来源证据与发布前审核"
+      ],
+      "nextReviewAction": "review source-fit rows and rewrite original learner-facing lesson text"
+    },
+    {
+      "moduleId": "module-4",
+      "module": "风险管理",
+      "existingKnowledgeNodes": 125,
+      "reviewedSourceBackedCandidateLessons": 30,
+      "draftKnowledgeNodes": 95,
+      "topicCount": 5,
+      "sampleTopics": [
+        "失效条件",
+        "不行动条件",
+        "不确定性",
+        "可复盘计划",
+        "边界语言"
+      ],
+      "subtopicCount": 6,
+      "entryNodeIds": [
+        "knv2_0011",
+        "knv2_0023",
+        "knv2_0035",
+        "knv2_0047",
+        "knv2_0059",
+        "knv2_0071",
+        "knv2_0083",
+        "knv2_0095"
+      ],
+      "publicGroundedNodes": 30,
+      "publicEvidenceDocuments": 311,
+      "wikipediaEvidenceDocuments": 17,
+      "officialLikeEvidenceDocuments": 13,
+      "sourceFitReviewRows": 132,
+      "blockedSourceFitReviewRows": 132,
+      "course5SupplementModules": [
+        {
+          "moduleId": "trade_management",
+          "moduleLabel": "Management Vocabulary Review",
+          "aiAbsorbedRows": 6,
+          "lessonSeedRows": 2
+        }
+      ],
+      "course5SupplementEvidenceRows": 6,
+      "course5SupplementLessonSeeds": 2,
+      "teachableModuleStatus": "internal_modular_teaching_design_ready",
+      "learnerReleaseStatus": "blocked_until_source_fit_originality_and_real_review_complete",
+      "suggestedCourseUnit": [
+        "概念边界与术语",
+        "图表/案例观察",
+        "常见误区与反例",
+        "多周期或语境核对",
+        "练习任务与评分规则",
+        "来源证据与发布前审核"
+      ],
+      "nextReviewAction": "review source-fit rows and rewrite original learner-facing lesson text"
+    },
+    {
+      "moduleId": "module-4",
+      "module": "交易心理",
+      "existingKnowledgeNodes": 125,
+      "reviewedSourceBackedCandidateLessons": 30,
+      "draftKnowledgeNodes": 95,
+      "topicCount": 5,
+      "sampleTopics": [
+        "害怕错过",
+        "确认偏误",
+        "过度自信",
+        "情绪修正",
+        "结果导向"
+      ],
+      "subtopicCount": 5,
+      "entryNodeIds": [
+        "knv2_0012",
+        "knv2_0024",
+        "knv2_0036",
+        "knv2_0048",
+        "knv2_0060",
+        "knv2_0072",
+        "knv2_0084",
+        "knv2_0096"
+      ],
+      "publicGroundedNodes": 30,
+      "publicEvidenceDocuments": 19,
+      "wikipediaEvidenceDocuments": 10,
+      "officialLikeEvidenceDocuments": 0,
+      "sourceFitReviewRows": 132,
+      "blockedSourceFitReviewRows": 132,
+      "course5SupplementModules": [],
+      "course5SupplementEvidenceRows": 0,
+      "course5SupplementLessonSeeds": 0,
+      "teachableModuleStatus": "internal_modular_teaching_design_ready",
+      "learnerReleaseStatus": "blocked_until_source_fit_originality_and_real_review_complete",
+      "suggestedCourseUnit": [
+        "概念边界与术语",
+        "图表/案例观察",
+        "常见误区与反例",
+        "多周期或语境核对",
+        "练习任务与评分规则",
+        "来源证据与发布前审核"
+      ],
+      "nextReviewAction": "review source-fit rows and rewrite original learner-facing lesson text"
+    }
+  ],
+  "course5StandaloneModules": [
+    {
+      "moduleId": "chart_pattern_encyclopedia",
+      "moduleLabel": "Chart Pattern Encyclopedia",
+      "alignedCanonicalModules": [
+        "图表阅读基础",
+        "K线与价格行为"
+      ],
+      "aiAbsorbedRows": 255,
+      "lessonSeedRows": 6,
+      "representativeInputRows": 5,
+      "teachableUse": "private supplemental lesson seed and evidence cluster",
+      "learnerReleaseStatus": "blocked_until_public_grounding_original_rewrite_and_review"
+    },
+    {
+      "moduleId": "trends_and_channels",
+      "moduleLabel": "Trends And Channels",
+      "alignedCanonicalModules": [
+        "趋势",
+        "市场结构"
+      ],
+      "aiAbsorbedRows": 57,
+      "lessonSeedRows": 4,
+      "representativeInputRows": 5,
+      "teachableUse": "private supplemental lesson seed and evidence cluster",
+      "learnerReleaseStatus": "blocked_until_public_grounding_original_rewrite_and_review"
+    },
+    {
+      "moduleId": "reversals",
+      "moduleLabel": "Reversal Structures",
+      "alignedCanonicalModules": [
+        "反转"
+      ],
+      "aiAbsorbedRows": 54,
+      "lessonSeedRows": 4,
+      "representativeInputRows": 5,
+      "teachableUse": "private supplemental lesson seed and evidence cluster",
+      "learnerReleaseStatus": "blocked_until_public_grounding_original_rewrite_and_review"
+    },
+    {
+      "moduleId": "terminology_glossary",
+      "moduleLabel": "Terminology Glossary",
+      "alignedCanonicalModules": [
+        "图表阅读基础"
+      ],
+      "aiAbsorbedRows": 46,
+      "lessonSeedRows": 4,
+      "representativeInputRows": 5,
+      "teachableUse": "private supplemental lesson seed and evidence cluster",
+      "learnerReleaseStatus": "blocked_until_public_grounding_original_rewrite_and_review"
+    },
+    {
+      "moduleId": "trading_ranges",
+      "moduleLabel": "Range Structure Literacy",
+      "alignedCanonicalModules": [
+        "交易区间"
+      ],
+      "aiAbsorbedRows": 36,
+      "lessonSeedRows": 3,
+      "representativeInputRows": 5,
+      "teachableUse": "private supplemental lesson seed and evidence cluster",
+      "learnerReleaseStatus": "blocked_until_public_grounding_original_rewrite_and_review"
+    },
+    {
+      "moduleId": "bar_by_bar_reading",
+      "moduleLabel": "Bar By Bar Reading",
+      "alignedCanonicalModules": [
+        "K线与价格行为",
+        "图表阅读基础"
+      ],
+      "aiAbsorbedRows": 33,
+      "lessonSeedRows": 3,
+      "representativeInputRows": 5,
+      "teachableUse": "private supplemental lesson seed and evidence cluster",
+      "learnerReleaseStatus": "blocked_until_public_grounding_original_rewrite_and_review"
+    },
+    {
+      "moduleId": "course_slides_alignment",
+      "moduleLabel": "Course Slide Alignment",
+      "alignedCanonicalModules": [
+        "图表阅读基础"
+      ],
+      "aiAbsorbedRows": 27,
+      "lessonSeedRows": 3,
+      "representativeInputRows": 5,
+      "teachableUse": "private supplemental lesson seed and evidence cluster",
+      "learnerReleaseStatus": "blocked_until_public_grounding_original_rewrite_and_review"
+    },
+    {
+      "moduleId": "breakouts_and_pullbacks",
+      "moduleLabel": "Breakouts And Pullbacks",
+      "alignedCanonicalModules": [
+        "突破",
+        "趋势"
+      ],
+      "aiAbsorbedRows": 24,
+      "lessonSeedRows": 3,
+      "representativeInputRows": 5,
+      "teachableUse": "private supplemental lesson seed and evidence cluster",
+      "learnerReleaseStatus": "blocked_until_public_grounding_original_rewrite_and_review"
+    },
+    {
+      "moduleId": "price_action_foundations",
+      "moduleLabel": "Price Action Foundations",
+      "alignedCanonicalModules": [
+        "图表阅读基础",
+        "市场结构"
+      ],
+      "aiAbsorbedRows": 18,
+      "lessonSeedRows": 2,
+      "representativeInputRows": 5,
+      "teachableUse": "private supplemental lesson seed and evidence cluster",
+      "learnerReleaseStatus": "blocked_until_public_grounding_original_rewrite_and_review"
+    },
+    {
+      "moduleId": "unclassified_supplement",
+      "moduleLabel": "Unclassified Supplement Review",
+      "alignedCanonicalModules": [
+        "图表阅读基础"
+      ],
+      "aiAbsorbedRows": 13,
+      "lessonSeedRows": 2,
+      "representativeInputRows": 5,
+      "teachableUse": "private supplemental lesson seed and evidence cluster",
+      "learnerReleaseStatus": "blocked_until_public_grounding_original_rewrite_and_review"
+    },
+    {
+      "moduleId": "trade_management",
+      "moduleLabel": "Management Vocabulary Review",
+      "alignedCanonicalModules": [
+        "风险管理"
+      ],
+      "aiAbsorbedRows": 6,
+      "lessonSeedRows": 2,
+      "representativeInputRows": 5,
+      "teachableUse": "private supplemental lesson seed and evidence cluster",
+      "learnerReleaseStatus": "blocked_until_public_grounding_original_rewrite_and_review"
+    }
+  ],
+  "videoKnowledgeLayer": {
+    "status": "local_video_course_node_candidates_complete_release_blocked",
+    "sourceVideos": 62,
+    "semanticAbsorbedRows": 62,
+    "candidateRows": 150,
+    "uniqueConcepts": 40,
+    "p0CandidateRows": 33,
+    "nextAction": "map video candidate concepts into the canonical 12-module teaching audit and review high-risk P0 concepts first"
+  },
+  "reviewAudit": {
+    "internalWorkbenchReady": true,
+    "publicSourcesAbsorbed": true,
+    "localCourseAbsorbed": true,
+    "learnerReleaseBlocked": true,
+    "totalReviewerActions": 52,
+    "totalBlockedWorkItems": 1715,
+    "sourceFitReviewRows": 1638,
+    "highRiskBlockedReviewerNotes": 72,
+    "realHumanInputEntries": 0
+  },
+  "nextModuleizationActions": [
+    "Use the 12 canonical teaching modules as the top-level curriculum taxonomy.",
+    "Attach Course 5 supplement nodes to matching canonical modules as private lesson examples.",
+    "Map video course candidate concepts into the same 12-module taxonomy.",
+    "For each module, turn internal nodes into lesson drafts only after public grounding and originality rewrite.",
+    "Keep learner-facing release blocked until source-fit review rows and high-risk reviewer notes are resolved."
+  ],
+  "boundary": "This is an internal education knowledge-management audit. It classifies and modularizes knowledge for curriculum design only. It does not approve learner-facing publication, stock recommendations, live signals, return promises, broker workflows, automation, or real-money guidance."
+}

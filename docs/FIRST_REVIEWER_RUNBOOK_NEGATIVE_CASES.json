@@ -1,0 +1,120 @@
+{
+  "generatedAt": "2026-06-19T09:39:01.858Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "negativeCases": 15,
+  "passedCases": 15,
+  "failedCases": 0,
+  "rows": [
+    {
+      "name": "runbook_mode_as_review_evidence_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "runbookMode must stay printable_pre_write_operator_runbook"
+    },
+    {
+      "name": "real_overlay_presence_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "realStatusOverlayPresent must stay false"
+    },
+    {
+      "name": "write_allowed_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "writeAllowedNow must stay false"
+    },
+    {
+      "name": "execution_allowed_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "executionAllowedNow must stay false"
+    },
+    {
+      "name": "complete_note_cards_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "completeNoteCards must stay 0"
+    },
+    {
+      "name": "approval_candidates_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "approvalReviewCandidates must stay 0"
+    },
+    {
+      "name": "internal_trial_ready_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "internalTrialReady must stay false"
+    },
+    {
+      "name": "launch_ready_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "launchReady must stay false"
+    },
+    {
+      "name": "approval_status_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "one-page runbook candidate must stay not_approved"
+    },
+    {
+      "name": "learner_facing_release_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "one-page runbook candidate cannot be learner-facing release"
+    },
+    {
+      "name": "production_ready_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "one-page runbook candidate must keep productionReady false"
+    },
+    {
+      "name": "trading_signal_text_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "runbook text contains trading, broker, automation, performance, or real-money wording"
+    },
+    {
+      "name": "commercial_ready_text_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "runbook text contains approval, release, commercial-ready, launch, or production wording"
+    },
+    {
+      "name": "missing_dry_run_bundle_audit_step_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "runbook must include dry-run bundle audit step; runbook must include dry-run bundle audit command"
+    },
+    {
+      "name": "missing_dry_run_bundle_audit_command_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "runbook must include dry-run bundle audit command"
+    }
+  ],
+  "realStatusOverlayPresent": false,
+  "writeAllowedNow": false,
+  "executionAllowedNow": false,
+  "completeNoteCards": 0,
+  "approvalReviewCandidates": 0,
+  "internalTrialReady": false,
+  "launchReady": false,
+  "sourceReports": {
+    "dryRunPacket": "docs/FIRST_REVIEWER_DRY_RUN_PACKET.json",
+    "progressDashboard": "docs/FIRST_REVIEWER_PROGRESS_DASHBOARD.json",
+    "humanExecutionBundle": "docs/FIRST_REVIEWER_HUMAN_EXECUTION_BUNDLE.json",
+    "operatorIndex": "docs/FIRST_REVIEWER_OPERATOR_INDEX.json",
+    "onePageRunbook": "docs/FIRST_REVIEWER_ONE_PAGE_RUNBOOK.json",
+    "releaseNegativeCases": "docs/FIRST_REVIEWER_RELEASE_READINESS_NEGATIVE_CASES.json",
+    "realOverlayDryRunBundleAudit": "docs/FIRST_REVIEWER_REAL_OVERLAY_DRY_RUN_BUNDLE_AUDIT.json"
+  },
+  "boundary": "These negative cases only guard against one-page runbook misuse. They do not create docs/LESSON_BATCH_REVIEW_STATUS.json, fill human notes, approve lessons, publish learner-facing content, change grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, guide real-money decisions, grant internal-trial readiness, or make the product production-ready."
+}

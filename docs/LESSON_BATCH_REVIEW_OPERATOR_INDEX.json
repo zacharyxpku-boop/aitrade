@@ -1,0 +1,193 @@
+{
+  "generatedAt": "2026-06-19T09:47:05.573Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "operatorIndexReady": true,
+  "operatorMode": "all_batch_single_entrypoint_pre_write_only",
+  "realStatusPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "realStatusOverlayPresent": false,
+  "rewriteBatches": 8,
+  "lessonCards": 48,
+  "riskCounts": {
+    "high": 2,
+    "medium": 21,
+    "low": 25
+  },
+  "blankNoteFields": 288,
+  "filledNoteFields": 0,
+  "nonGreenRefs": 0,
+  "writeAllowedNow": false,
+  "manualDecisionRequired": true,
+  "humanAuthorizationRecorded": false,
+  "approvalReviewCandidates": 0,
+  "commercialReadyPromotions": 0,
+  "internalTrialReady": false,
+  "launchReady": false,
+  "phaseRows": [
+    {
+      "order": 1,
+      "name": "All-batch orientation",
+      "status": "ready_pre_write_only",
+      "file": "docs/LESSON_BATCH_REVIEW_OPERATOR_DASHBOARD.md",
+      "command": "npm.cmd run check:lesson-batch-review-operator-dashboard",
+      "purpose": "See the 8-batch / 48-lesson queue and risk mix.",
+      "hardStop": "Dashboard is not review evidence or approval."
+    },
+    {
+      "order": 2,
+      "name": "All-batch source-fit queue",
+      "status": "ready_pre_write_only",
+      "file": "docs/SOURCE_FIT_REVIEWER_DASHBOARD.md",
+      "command": "npm.cmd run check:source-fit-reviewer-dashboard",
+      "purpose": "Use high, medium, and low source-fit reports to choose work order.",
+      "hardStop": "Source-fit dashboard cannot confirm source use without human notes."
+    },
+    {
+      "order": 3,
+      "name": "All-batch overlay preflight",
+      "status": "write_blocked_manual_required",
+      "file": "docs/LESSON_BATCH_REVIEW_OVERLAY_PREFLIGHT.md",
+      "command": "npm.cmd run check:lesson-batch-review-overlay-preflight",
+      "purpose": "Confirm the broad queue is still pre-write with real overlay absent.",
+      "hardStop": "writeAllowedNow must stay false until explicit human authorization."
+    },
+    {
+      "order": 4,
+      "name": "First reviewer entrypoint",
+      "status": "ready_pre_write_only",
+      "file": "docs/FIRST_REVIEWER_OPERATOR_INDEX.md",
+      "command": "npm.cmd run check:first-reviewer-operator-index",
+      "purpose": "Start concrete note-taking workflow with the first two high-risk batches.",
+      "hardStop": "First-reviewer index is still scaffolding only."
+    },
+    {
+      "order": 5,
+      "name": "Day-zero write handoff",
+      "status": "write_blocked_manual_required",
+      "file": "docs/FIRST_REVIEWER_DAY_ZERO_WRITE_HANDOFF.md",
+      "command": "npm.cmd run check:first-reviewer-day-zero-write-handoff",
+      "purpose": "Use the scoped day-zero route only when a human reviewer is ready.",
+      "hardStop": "Generated handoff cannot authorize write mode."
+    },
+    {
+      "order": 6,
+      "name": "Full curriculum gate",
+      "status": "required_before_any_claim",
+      "file": "docs/CURRICULUM_REVIEW_QUEUE.md",
+      "command": "npm.cmd run check:curriculum-review",
+      "purpose": "Re-run the full curriculum chain after reviewer-facing artifacts change.",
+      "hardStop": "Passing checks do not create approval, release, or production readiness."
+    }
+  ],
+  "batchRows": [
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonCards": 6,
+      "riskCounts": {
+        "high": 1,
+        "medium": 5,
+        "low": 0
+      },
+      "firstAction": "resolve_high_risk_source_fit_before_any_rewrite"
+    },
+    {
+      "batchId": "rewrite_batch_02",
+      "lessonCards": 6,
+      "riskCounts": {
+        "high": 0,
+        "medium": 2,
+        "low": 4
+      },
+      "firstAction": "complete_targeted_source_fit_notes_then_rewrite"
+    },
+    {
+      "batchId": "rewrite_batch_03",
+      "lessonCards": 6,
+      "riskCounts": {
+        "high": 0,
+        "medium": 3,
+        "low": 3
+      },
+      "firstAction": "complete_targeted_source_fit_notes_then_rewrite"
+    },
+    {
+      "batchId": "rewrite_batch_04",
+      "lessonCards": 6,
+      "riskCounts": {
+        "high": 0,
+        "medium": 1,
+        "low": 5
+      },
+      "firstAction": "complete_targeted_source_fit_notes_then_rewrite"
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonCards": 6,
+      "riskCounts": {
+        "high": 1,
+        "medium": 2,
+        "low": 3
+      },
+      "firstAction": "resolve_high_risk_source_fit_before_any_rewrite"
+    },
+    {
+      "batchId": "rewrite_batch_06",
+      "lessonCards": 6,
+      "riskCounts": {
+        "high": 0,
+        "medium": 2,
+        "low": 4
+      },
+      "firstAction": "complete_targeted_source_fit_notes_then_rewrite"
+    },
+    {
+      "batchId": "rewrite_batch_07",
+      "lessonCards": 6,
+      "riskCounts": {
+        "high": 0,
+        "medium": 1,
+        "low": 5
+      },
+      "firstAction": "complete_targeted_source_fit_notes_then_rewrite"
+    },
+    {
+      "batchId": "rewrite_batch_08",
+      "lessonCards": 6,
+      "riskCounts": {
+        "high": 0,
+        "medium": 5,
+        "low": 1
+      },
+      "firstAction": "complete_medium_heavy_source_fit_notes_before_rewrite"
+    }
+  ],
+  "operatorRules": [
+    "Start broad review from this index, then use the all-batch dashboard and source-fit dashboard to choose the next human-reviewed batch.",
+    "Handle high-risk rows before medium and low rows; the first concrete write workflow remains scoped to rewrite_batch_01 and rewrite_batch_05.",
+    "Keep generated notes, examples, packets, dashboards, and preflights separate from real human reviewer notes.",
+    "Use the real overlay only after explicit human authorization; current generated state keeps writeAllowedNow:false.",
+    "Never treat completed notes as approval; separate approval review remains required after evidence intake.",
+    "Do not infer internal trial, launch, commercial readiness, or production readiness from any reviewer scaffold."
+  ],
+  "stopConditions": [
+    "Stop if docs/LESSON_BATCH_REVIEW_STATUS.json appears without explicit human note-taking authorization.",
+    "Stop if any generated scaffold is copied as real reviewer notes.",
+    "Stop if yellow, red, or research_only sources are proposed as learner-facing evidence.",
+    "Stop if any artifact claims approval, learner-facing release, commercial_ready promotion, internalTrialReady, launchReady, or productionReady.",
+    "Stop if notes or lesson text include buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied external source prose, or real-money guidance."
+  ],
+  "sourceReports": {
+    "operatorDashboard": "docs/LESSON_BATCH_REVIEW_OPERATOR_DASHBOARD.json",
+    "overlayPreflight": "docs/LESSON_BATCH_REVIEW_OVERLAY_PREFLIGHT.json",
+    "sourceFitDashboard": "docs/SOURCE_FIT_REVIEWER_DASHBOARD.json",
+    "packetCoverage": "docs/LESSON_BATCH_PACKET_COVERAGE.json",
+    "statusTemplate": "docs/LESSON_BATCH_REVIEW_STATUS_TEMPLATE.json",
+    "firstReviewerOperatorIndex": "docs/FIRST_REVIEWER_OPERATOR_INDEX.json",
+    "firstReviewerDayZeroHandoff": "docs/FIRST_REVIEWER_DAY_ZERO_WRITE_HANDOFF.json",
+    "firstReviewerWriteAuthorization": "docs/FIRST_REVIEWER_REAL_OVERLAY_WRITE_AUTHORIZATION_PREVIEW.json"
+  },
+  "boundary": "This all-batch operator index is reviewer-facing operations scaffolding only. It does not create docs/LESSON_BATCH_REVIEW_STATUS.json, fill human notes, confirm source use, approve lessons, publish learner-facing content, change grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, guide real-money decisions, grant internal-trial readiness, launch the course, or make the product production-ready."
+}

@@ -1,0 +1,479 @@
+{
+  "generatedAt": "2026-06-21T22:38:54.292Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "packId": "local_course_p0_human_fill_pack_03",
+  "packStatus": "blank_human_fill_pack_ready",
+  "sourceNoteTemplate": "docs/LOCAL_COURSE_P0_HUMAN_REVIEW_NOTE_TEMPLATE.json",
+  "selectionRationale": "Third human-fill pack closes corpus_1580 pages 9-11, where worksheet, quiz, asset-example, QR/contact, force-interpretation, and reversal language must be reviewed before any education-only rewrite.",
+  "totalPackCards": 3,
+  "manualFillCards": 3,
+  "filledCards": 0,
+  "readyForValidationCards": 0,
+  "acceptedForOverlayCards": 0,
+  "targetTaskIds": [
+    "absorb_manual_transcription_17",
+    "absorb_manual_transcription_18",
+    "absorb_manual_transcription_19"
+  ],
+  "targetDocumentIds": [
+    "corpus_1580"
+  ],
+  "targetPageNumbers": [
+    9,
+    10,
+    11
+  ],
+  "riskTermFlagCounts": {
+    "signal_language": 1,
+    "support_resistance_language": 1,
+    "rebound_language": 1,
+    "turning_point_language": 1,
+    "limit_move_language": 1,
+    "homework_instruction_language": 1,
+    "ohlc_drawing_language": 1,
+    "qr_contact_language": 1,
+    "specific_asset_examples": 1,
+    "specific_price_levels": 1,
+    "selling_pressure_language": 1,
+    "force_comparison_language": 1,
+    "quiz_summary_language": 1,
+    "exam_focus_language": 1,
+    "market_meaning_language": 1,
+    "buyer_seller_dominance_language": 1,
+    "turning_warning_language": 1,
+    "multi_timeframe_language": 1,
+    "trend_reversal_language": 1,
+    "source_recommendation_language": 1
+  },
+  "topRiskTermFlags": [
+    {
+      "flag": "signal_language",
+      "count": 1
+    },
+    {
+      "flag": "support_resistance_language",
+      "count": 1
+    },
+    {
+      "flag": "rebound_language",
+      "count": 1
+    },
+    {
+      "flag": "turning_point_language",
+      "count": 1
+    },
+    {
+      "flag": "limit_move_language",
+      "count": 1
+    },
+    {
+      "flag": "homework_instruction_language",
+      "count": 1
+    },
+    {
+      "flag": "ohlc_drawing_language",
+      "count": 1
+    },
+    {
+      "flag": "qr_contact_language",
+      "count": 1
+    },
+    {
+      "flag": "specific_asset_examples",
+      "count": 1
+    },
+    {
+      "flag": "specific_price_levels",
+      "count": 1
+    },
+    {
+      "flag": "selling_pressure_language",
+      "count": 1
+    },
+    {
+      "flag": "force_comparison_language",
+      "count": 1
+    },
+    {
+      "flag": "quiz_summary_language",
+      "count": 1
+    },
+    {
+      "flag": "exam_focus_language",
+      "count": 1
+    },
+    {
+      "flag": "market_meaning_language",
+      "count": 1
+    },
+    {
+      "flag": "buyer_seller_dominance_language",
+      "count": 1
+    },
+    {
+      "flag": "turning_warning_language",
+      "count": 1
+    },
+    {
+      "flag": "multi_timeframe_language",
+      "count": 1
+    },
+    {
+      "flag": "trend_reversal_language",
+      "count": 1
+    },
+    {
+      "flag": "source_recommendation_language",
+      "count": 1
+    }
+  ],
+  "packCards": [
+    {
+      "id": "fill_pack_03_absorb_manual_transcription_17",
+      "noteCardId": "human_note_absorb_manual_transcription_17",
+      "taskId": "absorb_manual_transcription_17",
+      "inputEntryId": "input_absorb_manual_transcription_17",
+      "category": "manual_transcription",
+      "priority": "P0",
+      "documentId": "corpus_1580",
+      "pageNumber": 9,
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-09.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-09.png",
+      "candidateId": "candidate_batch_05_page_01",
+      "matchStatus": "candidate_available_for_human_review",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "fillStatus": "blank_ready_for_human_fill",
+      "reviewerName": "",
+      "reviewedAt": "",
+      "requiredFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "uncertainWords",
+        "visualTextCaptured",
+        "chartLabelsCaptured",
+        "unclearAreasFlagged",
+        "noTradingAdviceAdded",
+        "publicSourceGroundingReady",
+        "originalRewriteReady",
+        "riskRewriteNotes",
+        "publicReferenceNotes",
+        "originalityNotes"
+      ],
+      "fieldValues": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "publicReferenceNotes": "",
+        "originalityNotes": "",
+        "riskRewriteNotes": ""
+      },
+      "checklist": {
+        "visualTextCaptured": "not_started",
+        "chartLabelsCaptured": "not_started",
+        "unclearAreasFlagged": "not_started",
+        "noTradingAdviceAdded": "not_started",
+        "publicSourceGroundingReady": "not_started",
+        "originalRewriteReady": "not_started"
+      },
+      "candidateSummary": "This page can be rewritten as a chart-literacy worksheet: classify candlestick shapes and require learners to identify OHLC and time elements, while removing signal, support, rebound, limit, and turning-point language from learner-facing explanations.",
+      "uncertainRegions": [
+        "The embedded homework slide is small and should be checked manually before exact exercise transcription.",
+        "Limit-up or limit-down wording may be market-specific and should be generalized or removed."
+      ],
+      "riskTermFlags": [
+        "signal_language",
+        "support_resistance_language",
+        "rebound_language",
+        "turning_point_language",
+        "limit_move_language",
+        "homework_instruction_language",
+        "ohlc_drawing_language"
+      ],
+      "riskRewriteChecklist": [
+        {
+          "flag": "signal_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        },
+        {
+          "flag": "support_resistance_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        },
+        {
+          "flag": "rebound_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        },
+        {
+          "flag": "turning_point_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        },
+        {
+          "flag": "limit_move_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        },
+        {
+          "flag": "homework_instruction_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        },
+        {
+          "flag": "ohlc_drawing_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        }
+      ],
+      "qualityLintRules": [
+        "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+        "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+        "riskRewriteNotes must address every riskTermFlag before validation, especially signal, turning-point, asset-example, QR/contact, and reversal language.",
+        "publicReferenceNotes must name public grounding needed for candlestick practice examples, OHLC drawing, source recommendations, or market-meaning claims.",
+        "originalityNotes must confirm private course wording was not copied into learner-facing content."
+      ],
+      "nextGate": "human_fill_pack_then_validate_p0_review_input_copy"
+    },
+    {
+      "id": "fill_pack_03_absorb_manual_transcription_18",
+      "noteCardId": "human_note_absorb_manual_transcription_18",
+      "taskId": "absorb_manual_transcription_18",
+      "inputEntryId": "input_absorb_manual_transcription_18",
+      "category": "manual_transcription",
+      "priority": "P0",
+      "documentId": "corpus_1580",
+      "pageNumber": 10,
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-10.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-10.png",
+      "candidateId": "candidate_batch_05_page_02",
+      "matchStatus": "candidate_available_for_human_review",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "fillStatus": "blank_ready_for_human_fill",
+      "reviewerName": "",
+      "reviewedAt": "",
+      "requiredFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "uncertainWords",
+        "visualTextCaptured",
+        "chartLabelsCaptured",
+        "unclearAreasFlagged",
+        "noTradingAdviceAdded",
+        "publicSourceGroundingReady",
+        "originalRewriteReady",
+        "riskRewriteNotes",
+        "publicReferenceNotes",
+        "originalityNotes"
+      ],
+      "fieldValues": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "publicReferenceNotes": "",
+        "originalityNotes": "",
+        "riskRewriteNotes": ""
+      },
+      "checklist": {
+        "visualTextCaptured": "not_started",
+        "chartLabelsCaptured": "not_started",
+        "unclearAreasFlagged": "not_started",
+        "noTradingAdviceAdded": "not_started",
+        "publicSourceGroundingReady": "not_started",
+        "originalRewriteReady": "not_started"
+      },
+      "candidateSummary": "This page should be split into a reviewer-only evidence card: practice examples may inform generic OHLC reading exercises, but coin/oil/BTC values and force interpretations need to be anonymized, public-grounded, or removed before any course use.",
+      "uncertainRegions": [
+        "Several numerical example values are visually small and must not be treated as reliable transcription until human verified.",
+        "The QR/contact prompt is not course knowledge and should not be learner-facing content."
+      ],
+      "riskTermFlags": [
+        "qr_contact_language",
+        "specific_asset_examples",
+        "specific_price_levels",
+        "selling_pressure_language",
+        "force_comparison_language",
+        "quiz_summary_language",
+        "exam_focus_language"
+      ],
+      "riskRewriteChecklist": [
+        {
+          "flag": "qr_contact_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        },
+        {
+          "flag": "specific_asset_examples",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        },
+        {
+          "flag": "specific_price_levels",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        },
+        {
+          "flag": "selling_pressure_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        },
+        {
+          "flag": "force_comparison_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        },
+        {
+          "flag": "quiz_summary_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        },
+        {
+          "flag": "exam_focus_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        }
+      ],
+      "qualityLintRules": [
+        "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+        "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+        "riskRewriteNotes must address every riskTermFlag before validation, especially signal, turning-point, asset-example, QR/contact, and reversal language.",
+        "publicReferenceNotes must name public grounding needed for candlestick practice examples, OHLC drawing, source recommendations, or market-meaning claims.",
+        "originalityNotes must confirm private course wording was not copied into learner-facing content."
+      ],
+      "nextGate": "human_fill_pack_then_validate_p0_review_input_copy"
+    },
+    {
+      "id": "fill_pack_03_absorb_manual_transcription_19",
+      "noteCardId": "human_note_absorb_manual_transcription_19",
+      "taskId": "absorb_manual_transcription_19",
+      "inputEntryId": "input_absorb_manual_transcription_19",
+      "category": "manual_transcription",
+      "priority": "P0",
+      "documentId": "corpus_1580",
+      "pageNumber": 11,
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-11.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-11.png",
+      "candidateId": "candidate_batch_05_page_03",
+      "matchStatus": "candidate_available_for_human_review",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "fillStatus": "blank_ready_for_human_fill",
+      "reviewerName": "",
+      "reviewedAt": "",
+      "requiredFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "uncertainWords",
+        "visualTextCaptured",
+        "chartLabelsCaptured",
+        "unclearAreasFlagged",
+        "noTradingAdviceAdded",
+        "publicSourceGroundingReady",
+        "originalRewriteReady",
+        "riskRewriteNotes",
+        "publicReferenceNotes",
+        "originalityNotes"
+      ],
+      "fieldValues": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "publicReferenceNotes": "",
+        "originalityNotes": "",
+        "riskRewriteNotes": ""
+      },
+      "checklist": {
+        "visualTextCaptured": "not_started",
+        "chartLabelsCaptured": "not_started",
+        "unclearAreasFlagged": "not_started",
+        "noTradingAdviceAdded": "not_started",
+        "publicSourceGroundingReady": "not_started",
+        "originalRewriteReady": "not_started"
+      },
+      "candidateSummary": "This page can become a final-review checklist after heavy rewrite: keep OHLC mapping and study-plan structure, but convert buyer/seller dominance, turning-warning, multi-timeframe application, and reversal language into neutral risk-aware chart-reading notes.",
+      "uncertainRegions": [
+        "The table is cropped at the top and should be matched with the previous page before final transcription.",
+        "The recommended-textbook row needs citation and source-fit review before use."
+      ],
+      "riskTermFlags": [
+        "market_meaning_language",
+        "buyer_seller_dominance_language",
+        "turning_warning_language",
+        "multi_timeframe_language",
+        "trend_reversal_language",
+        "source_recommendation_language"
+      ],
+      "riskRewriteChecklist": [
+        {
+          "flag": "market_meaning_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        },
+        {
+          "flag": "buyer_seller_dominance_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        },
+        {
+          "flag": "turning_warning_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        },
+        {
+          "flag": "multi_timeframe_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        },
+        {
+          "flag": "trend_reversal_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        },
+        {
+          "flag": "source_recommendation_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        }
+      ],
+      "qualityLintRules": [
+        "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+        "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+        "riskRewriteNotes must address every riskTermFlag before validation, especially signal, turning-point, asset-example, QR/contact, and reversal language.",
+        "publicReferenceNotes must name public grounding needed for candlestick practice examples, OHLC drawing, source recommendations, or market-meaning claims.",
+        "originalityNotes must confirm private course wording was not copied into learner-facing content."
+      ],
+      "nextGate": "human_fill_pack_then_validate_p0_review_input_copy"
+    }
+  ],
+  "requiredCommandsAfterHumanFill": [
+    "node scripts/validate-local-course-absorption-p0-review-input.mjs --input <copied-filled-input.json>",
+    "node scripts/apply-local-course-absorption-p0-review-input.mjs --input <copied-filled-input.json>",
+    "npm.cmd run check:local-course-absorption-p0-review-overlay",
+    "npm.cmd run check:local-course-absorption-readiness"
+  ],
+  "completionRule": "This fill pack is complete only as a blank human execution packet. It becomes ready for overlay apply only after a human reviewer fills a copied input file, every quality lint rule passes, dry-run validation succeeds, and no learner-facing release is approved.",
+  "boundary": "P0 human fill pack is blank reviewer work material. It does not perform OCR, fill reviewer fields, approve learner-facing release, copy private course wording into lessons, provide trading advice, stock recommendations, live signals, return promises, broker workflows, automation, or real-money guidance."
+}

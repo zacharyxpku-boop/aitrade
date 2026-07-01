@@ -1,0 +1,1482 @@
+{
+  "generatedAt": "2026-06-19T09:47:08.586Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "sourceFitLessons": 48,
+  "rewriteBatches": 8,
+  "riskCounts": {
+    "high": 2,
+    "medium": 21,
+    "low": 25
+  },
+  "greenSourceLeaks": 0,
+  "sourceReports": {
+    "high": "docs/HIGH_RISK_SOURCE_FIT_ACTION_PLAN.md",
+    "medium": "docs/MEDIUM_RISK_SOURCE_FIT_CHECKLIST.md",
+    "low": "docs/LOW_RISK_SOURCE_FIT_FAST_PASS.md"
+  },
+  "reviewOrder": [
+    "Resolve high-risk source-fit rows before any prose rewrite.",
+    "Complete medium-risk checklist notes before batching those lessons for rewrite.",
+    "Use low-risk fast-pass rows only after green-only, no-copy, no-advice, and structural-draft notes are recorded.",
+    "Keep every generated lesson structural_draft until separate human rewrite and factual review are complete."
+  ],
+  "batchRows": [
+    {
+      "batchId": "rewrite_batch_01",
+      "itemCount": 6,
+      "riskCounts": {
+        "high": 1,
+        "medium": 5
+      },
+      "modules": [
+        "交易区间",
+        "反转",
+        "多周期分析"
+      ],
+      "sourceFamilies": [
+        "BEA",
+        "BLS",
+        "CFTC",
+        "Federal Reserve",
+        "Investor.gov",
+        "Project Gutenberg",
+        "SEC",
+        "Treasury",
+        "federalregister.gov"
+      ],
+      "firstAction": "resolve_high_risk_source_fit_before_batch_rewrite"
+    },
+    {
+      "batchId": "rewrite_batch_02",
+      "itemCount": 6,
+      "riskCounts": {
+        "medium": 2,
+        "low": 4
+      },
+      "modules": [
+        "交易区间",
+        "交易心理",
+        "反转"
+      ],
+      "sourceFamilies": [
+        "BEA",
+        "BLS",
+        "CFTC",
+        "Census",
+        "Federal Reserve",
+        "Internet Archive",
+        "Investor.gov",
+        "Project Gutenberg",
+        "SEC",
+        "Treasury",
+        "consumerfinance.gov",
+        "federalregister.gov",
+        "financialresearch.gov"
+      ],
+      "firstAction": "complete_medium_checklists_then_queue_low_risk_rows"
+    },
+    {
+      "batchId": "rewrite_batch_03",
+      "itemCount": 6,
+      "riskCounts": {
+        "medium": 3,
+        "low": 3
+      },
+      "modules": [
+        "交易心理",
+        "趋势"
+      ],
+      "sourceFamilies": [
+        "BEA",
+        "BLS",
+        "CFTC",
+        "EIA",
+        "Federal Reserve",
+        "Internet Archive",
+        "Investor.gov",
+        "Project Gutenberg",
+        "SEC",
+        "Treasury",
+        "consumerfinance.gov"
+      ],
+      "firstAction": "complete_medium_checklists_then_queue_low_risk_rows"
+    },
+    {
+      "batchId": "rewrite_batch_04",
+      "itemCount": 6,
+      "riskCounts": {
+        "medium": 1,
+        "low": 5
+      },
+      "modules": [
+        "K线与价格行为",
+        "市场结构",
+        "新闻/情绪/事件偏见"
+      ],
+      "sourceFamilies": [
+        "BEA",
+        "BLS",
+        "CFTC",
+        "Federal Reserve",
+        "Internet Archive",
+        "Investor.gov",
+        "Project Gutenberg",
+        "SEC",
+        "Treasury",
+        "dol.gov"
+      ],
+      "firstAction": "complete_medium_checklists_then_queue_low_risk_rows"
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "itemCount": 6,
+      "riskCounts": {
+        "high": 1,
+        "medium": 2,
+        "low": 3
+      },
+      "modules": [
+        "K线与价格行为",
+        "风险管理"
+      ],
+      "sourceFamilies": [
+        "BEA",
+        "BLS",
+        "CFTC",
+        "Federal Reserve",
+        "Investor.gov",
+        "Project Gutenberg",
+        "SEC",
+        "Treasury",
+        "nist.gov"
+      ],
+      "firstAction": "resolve_high_risk_source_fit_before_batch_rewrite"
+    },
+    {
+      "batchId": "rewrite_batch_06",
+      "itemCount": 6,
+      "riskCounts": {
+        "medium": 2,
+        "low": 4
+      },
+      "modules": [
+        "反转",
+        "回测误区",
+        "风险管理"
+      ],
+      "sourceFamilies": [
+        "BEA",
+        "BLS",
+        "CFTC",
+        "EIA",
+        "Investor.gov",
+        "Project Gutenberg",
+        "SEC",
+        "Treasury",
+        "financialresearch.gov",
+        "treasurydirect.gov"
+      ],
+      "firstAction": "complete_medium_checklists_then_queue_low_risk_rows"
+    },
+    {
+      "batchId": "rewrite_batch_07",
+      "itemCount": 6,
+      "riskCounts": {
+        "medium": 1,
+        "low": 5
+      },
+      "modules": [
+        "回测误区",
+        "市场结构",
+        "突破"
+      ],
+      "sourceFamilies": [
+        "BEA",
+        "BLS",
+        "CFTC",
+        "EIA",
+        "Federal Reserve",
+        "Internet Archive",
+        "Investor.gov",
+        "Project Gutenberg",
+        "SEC",
+        "Treasury",
+        "nist.gov"
+      ],
+      "firstAction": "complete_medium_checklists_then_queue_low_risk_rows"
+    },
+    {
+      "batchId": "rewrite_batch_08",
+      "itemCount": 6,
+      "riskCounts": {
+        "medium": 5,
+        "low": 1
+      },
+      "modules": [
+        "图表阅读基础",
+        "新闻/情绪/事件偏见",
+        "突破"
+      ],
+      "sourceFamilies": [
+        "BEA",
+        "BLS",
+        "CFTC",
+        "Federal Reserve",
+        "Investor.gov",
+        "Project Gutenberg",
+        "SEC",
+        "Treasury",
+        "consumer.ftc.gov",
+        "nass.usda.gov"
+      ],
+      "firstAction": "complete_medium_checklists_then_queue_low_risk_rows"
+    }
+  ],
+  "lessonRows": [
+    {
+      "lessonId": "lesson_knv2_0068",
+      "batchId": "rewrite_batch_01",
+      "module": "多周期分析",
+      "topic": "D1背景",
+      "riskLevel": "high",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "CFTC",
+        "Investor.gov"
+      ],
+      "sourceReport": "HIGH_RISK_SOURCE_FIT_ACTION_PLAN",
+      "nextAction": "inspect_source_fit_before_rewrite",
+      "requiredReviewerNotes": [
+        "sourceFamilyMismatchNotes",
+        "safeRewriteDirectionNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0087",
+      "batchId": "rewrite_batch_05",
+      "module": "K线与价格行为",
+      "topic": "流动性扫过",
+      "riskLevel": "high",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "SEC",
+        "CFTC",
+        "BLS",
+        "BEA",
+        "Treasury"
+      ],
+      "sourceReport": "HIGH_RISK_SOURCE_FIT_ACTION_PLAN",
+      "nextAction": "inspect_source_fit_before_rewrite",
+      "requiredReviewerNotes": [
+        "sourceFamilyMismatchNotes",
+        "safeRewriteDirectionNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0019",
+      "batchId": "rewrite_batch_01",
+      "module": "反转",
+      "topic": "衰竭证据",
+      "riskLevel": "medium",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "Federal Reserve",
+        "BLS",
+        "federalregister.gov",
+        "Treasury",
+        "Project Gutenberg"
+      ],
+      "sourceReport": "MEDIUM_RISK_SOURCE_FIT_CHECKLIST",
+      "nextAction": "complete_targeted_source_fit_checklist",
+      "requiredReviewerNotes": [
+        "sourceRoleNarrowingNotes",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0044",
+      "batchId": "rewrite_batch_01",
+      "module": "多周期分析",
+      "topic": "M15细节",
+      "riskLevel": "medium",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "SEC",
+        "CFTC"
+      ],
+      "sourceReport": "MEDIUM_RISK_SOURCE_FIT_CHECKLIST",
+      "nextAction": "complete_targeted_source_fit_checklist",
+      "requiredReviewerNotes": [
+        "sourceRoleNarrowingNotes",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0054",
+      "batchId": "rewrite_batch_01",
+      "module": "交易区间",
+      "topic": "区间突破",
+      "riskLevel": "medium",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "BEA",
+        "CFTC",
+        "Federal Reserve",
+        "Treasury",
+        "Project Gutenberg"
+      ],
+      "sourceReport": "MEDIUM_RISK_SOURCE_FIT_CHECKLIST",
+      "nextAction": "complete_targeted_source_fit_checklist",
+      "requiredReviewerNotes": [
+        "sourceRoleNarrowingNotes",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0128",
+      "batchId": "rewrite_batch_01",
+      "module": "多周期分析",
+      "topic": "D1背景",
+      "riskLevel": "medium",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "CFTC",
+        "Federal Reserve",
+        "Investor.gov"
+      ],
+      "sourceReport": "MEDIUM_RISK_SOURCE_FIT_CHECKLIST",
+      "nextAction": "complete_targeted_source_fit_checklist",
+      "requiredReviewerNotes": [
+        "sourceRoleNarrowingNotes",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0140",
+      "batchId": "rewrite_batch_01",
+      "module": "多周期分析",
+      "topic": "H4结构",
+      "riskLevel": "medium",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "Treasury",
+        "BEA",
+        "CFTC",
+        "Investor.gov"
+      ],
+      "sourceReport": "MEDIUM_RISK_SOURCE_FIT_CHECKLIST",
+      "nextAction": "complete_targeted_source_fit_checklist",
+      "requiredReviewerNotes": [
+        "sourceRoleNarrowingNotes",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0006",
+      "batchId": "rewrite_batch_02",
+      "module": "交易区间",
+      "topic": "区间上沿",
+      "riskLevel": "medium",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "Federal Reserve",
+        "BLS",
+        "BEA",
+        "Treasury"
+      ],
+      "sourceReport": "MEDIUM_RISK_SOURCE_FIT_CHECKLIST",
+      "nextAction": "complete_targeted_source_fit_checklist",
+      "requiredReviewerNotes": [
+        "sourceRoleNarrowingNotes",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0018",
+      "batchId": "rewrite_batch_02",
+      "module": "交易区间",
+      "topic": "区间下沿",
+      "riskLevel": "medium",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "CFTC",
+        "federalregister.gov",
+        "Investor.gov",
+        "Treasury",
+        "Project Gutenberg"
+      ],
+      "sourceReport": "MEDIUM_RISK_SOURCE_FIT_CHECKLIST",
+      "nextAction": "complete_targeted_source_fit_checklist",
+      "requiredReviewerNotes": [
+        "sourceRoleNarrowingNotes",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0004",
+      "batchId": "rewrite_batch_03",
+      "module": "趋势",
+      "topic": "趋势定义",
+      "riskLevel": "medium",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "EIA",
+        "SEC",
+        "Treasury",
+        "Project Gutenberg",
+        "BEA"
+      ],
+      "sourceReport": "MEDIUM_RISK_SOURCE_FIT_CHECKLIST",
+      "nextAction": "complete_targeted_source_fit_checklist",
+      "requiredReviewerNotes": [
+        "sourceRoleNarrowingNotes",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0052",
+      "batchId": "rewrite_batch_03",
+      "module": "趋势",
+      "topic": "趋势中继",
+      "riskLevel": "medium",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "Treasury",
+        "CFTC",
+        "BEA"
+      ],
+      "sourceReport": "MEDIUM_RISK_SOURCE_FIT_CHECKLIST",
+      "nextAction": "complete_targeted_source_fit_checklist",
+      "requiredReviewerNotes": [
+        "sourceRoleNarrowingNotes",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0088",
+      "batchId": "rewrite_batch_03",
+      "module": "趋势",
+      "topic": "趋势加速",
+      "riskLevel": "medium",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "Investor.gov",
+        "BLS",
+        "Federal Reserve",
+        "Treasury",
+        "Internet Archive"
+      ],
+      "sourceReport": "MEDIUM_RISK_SOURCE_FIT_CHECKLIST",
+      "nextAction": "complete_targeted_source_fit_checklist",
+      "requiredReviewerNotes": [
+        "sourceRoleNarrowingNotes",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0086",
+      "batchId": "rewrite_batch_04",
+      "module": "市场结构",
+      "topic": "结构破坏",
+      "riskLevel": "medium",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "CFTC",
+        "Treasury",
+        "BEA"
+      ],
+      "sourceReport": "MEDIUM_RISK_SOURCE_FIT_CHECKLIST",
+      "nextAction": "complete_targeted_source_fit_checklist",
+      "requiredReviewerNotes": [
+        "sourceRoleNarrowingNotes",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0075",
+      "batchId": "rewrite_batch_05",
+      "module": "K线与价格行为",
+      "topic": "组合K线",
+      "riskLevel": "medium",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "SEC",
+        "Investor.gov",
+        "Treasury",
+        "Project Gutenberg",
+        "BEA"
+      ],
+      "sourceReport": "MEDIUM_RISK_SOURCE_FIT_CHECKLIST",
+      "nextAction": "complete_targeted_source_fit_checklist",
+      "requiredReviewerNotes": [
+        "sourceRoleNarrowingNotes",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0159",
+      "batchId": "rewrite_batch_05",
+      "module": "K线与价格行为",
+      "topic": "形态语境",
+      "riskLevel": "medium",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "SEC",
+        "Investor.gov",
+        "Treasury",
+        "BEA"
+      ],
+      "sourceReport": "MEDIUM_RISK_SOURCE_FIT_CHECKLIST",
+      "nextAction": "complete_targeted_source_fit_checklist",
+      "requiredReviewerNotes": [
+        "sourceRoleNarrowingNotes",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0007",
+      "batchId": "rewrite_batch_06",
+      "module": "反转",
+      "topic": "反转定义",
+      "riskLevel": "medium",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "BLS",
+        "SEC",
+        "CFTC",
+        "BEA",
+        "Treasury"
+      ],
+      "sourceReport": "MEDIUM_RISK_SOURCE_FIT_CHECKLIST",
+      "nextAction": "complete_targeted_source_fit_checklist",
+      "requiredReviewerNotes": [
+        "sourceRoleNarrowingNotes",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0034",
+      "batchId": "rewrite_batch_06",
+      "module": "回测误区",
+      "topic": "过拟合",
+      "riskLevel": "medium",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "BEA",
+        "treasurydirect.gov",
+        "EIA",
+        "Investor.gov",
+        "CFTC"
+      ],
+      "sourceReport": "MEDIUM_RISK_SOURCE_FIT_CHECKLIST",
+      "nextAction": "complete_targeted_source_fit_checklist",
+      "requiredReviewerNotes": [
+        "sourceRoleNarrowingNotes",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0046",
+      "batchId": "rewrite_batch_07",
+      "module": "回测误区",
+      "topic": "成本忽略",
+      "riskLevel": "medium",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "Federal Reserve",
+        "EIA",
+        "BLS",
+        "CFTC",
+        "nist.gov"
+      ],
+      "sourceReport": "MEDIUM_RISK_SOURCE_FIT_CHECKLIST",
+      "nextAction": "complete_targeted_source_fit_checklist",
+      "requiredReviewerNotes": [
+        "sourceRoleNarrowingNotes",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0009",
+      "batchId": "rewrite_batch_08",
+      "module": "新闻/情绪/事件偏见",
+      "topic": "标题偏见",
+      "riskLevel": "medium",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "Federal Reserve",
+        "BEA",
+        "SEC",
+        "BLS",
+        "CFTC"
+      ],
+      "sourceReport": "MEDIUM_RISK_SOURCE_FIT_CHECKLIST",
+      "nextAction": "complete_targeted_source_fit_checklist",
+      "requiredReviewerNotes": [
+        "sourceRoleNarrowingNotes",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0037",
+      "batchId": "rewrite_batch_08",
+      "module": "图表阅读基础",
+      "topic": "影线含义",
+      "riskLevel": "medium",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "SEC",
+        "Investor.gov",
+        "CFTC",
+        "Treasury",
+        "Project Gutenberg"
+      ],
+      "sourceReport": "MEDIUM_RISK_SOURCE_FIT_CHECKLIST",
+      "nextAction": "complete_targeted_source_fit_checklist",
+      "requiredReviewerNotes": [
+        "sourceRoleNarrowingNotes",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0041",
+      "batchId": "rewrite_batch_08",
+      "module": "突破",
+      "topic": "突破回踩",
+      "riskLevel": "medium",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "SEC",
+        "Investor.gov",
+        "consumer.ftc.gov",
+        "Project Gutenberg",
+        "Treasury"
+      ],
+      "sourceReport": "MEDIUM_RISK_SOURCE_FIT_CHECKLIST",
+      "nextAction": "complete_targeted_source_fit_checklist",
+      "requiredReviewerNotes": [
+        "sourceRoleNarrowingNotes",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0049",
+      "batchId": "rewrite_batch_08",
+      "module": "图表阅读基础",
+      "topic": "波动变化",
+      "riskLevel": "medium",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "BLS",
+        "CFTC",
+        "BEA",
+        "Project Gutenberg",
+        "Treasury"
+      ],
+      "sourceReport": "MEDIUM_RISK_SOURCE_FIT_CHECKLIST",
+      "nextAction": "complete_targeted_source_fit_checklist",
+      "requiredReviewerNotes": [
+        "sourceRoleNarrowingNotes",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0061",
+      "batchId": "rewrite_batch_08",
+      "module": "图表阅读基础",
+      "topic": "结构先行",
+      "riskLevel": "medium",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "BEA",
+        "SEC",
+        "Treasury"
+      ],
+      "sourceReport": "MEDIUM_RISK_SOURCE_FIT_CHECKLIST",
+      "nextAction": "complete_targeted_source_fit_checklist",
+      "requiredReviewerNotes": [
+        "sourceRoleNarrowingNotes",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0024",
+      "batchId": "rewrite_batch_02",
+      "module": "交易心理",
+      "topic": "确认偏误",
+      "riskLevel": "low",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "consumerfinance.gov",
+        "CFTC"
+      ],
+      "sourceReport": "LOW_RISK_SOURCE_FIT_FAST_PASS",
+      "nextAction": "queue_for_human_rewrite_after_fast_pass_notes",
+      "requiredReviewerNotes": [
+        "greenOnlyConfirmed",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0030",
+      "batchId": "rewrite_batch_02",
+      "module": "交易区间",
+      "topic": "区间中部",
+      "riskLevel": "low",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "SEC",
+        "Census",
+        "BEA",
+        "Internet Archive"
+      ],
+      "sourceReport": "LOW_RISK_SOURCE_FIT_FAST_PASS",
+      "nextAction": "queue_for_human_rewrite_after_fast_pass_notes",
+      "requiredReviewerNotes": [
+        "greenOnlyConfirmed",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0132",
+      "batchId": "rewrite_batch_02",
+      "module": "交易心理",
+      "topic": "害怕错过",
+      "riskLevel": "low",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "consumerfinance.gov",
+        "CFTC"
+      ],
+      "sourceReport": "LOW_RISK_SOURCE_FIT_FAST_PASS",
+      "nextAction": "queue_for_human_rewrite_after_fast_pass_notes",
+      "requiredReviewerNotes": [
+        "greenOnlyConfirmed",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0187",
+      "batchId": "rewrite_batch_02",
+      "module": "反转",
+      "topic": "反转定义",
+      "riskLevel": "low",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "BLS",
+        "financialresearch.gov",
+        "Treasury",
+        "Internet Archive"
+      ],
+      "sourceReport": "LOW_RISK_SOURCE_FIT_FAST_PASS",
+      "nextAction": "queue_for_human_rewrite_after_fast_pass_notes",
+      "requiredReviewerNotes": [
+        "greenOnlyConfirmed",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0040",
+      "batchId": "rewrite_batch_03",
+      "module": "趋势",
+      "topic": "趋势衰竭",
+      "riskLevel": "low",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "CFTC",
+        "BLS",
+        "Project Gutenberg",
+        "BEA"
+      ],
+      "sourceReport": "LOW_RISK_SOURCE_FIT_FAST_PASS",
+      "nextAction": "queue_for_human_rewrite_after_fast_pass_notes",
+      "requiredReviewerNotes": [
+        "greenOnlyConfirmed",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0156",
+      "batchId": "rewrite_batch_03",
+      "module": "交易心理",
+      "topic": "过度自信",
+      "riskLevel": "low",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "consumerfinance.gov",
+        "CFTC"
+      ],
+      "sourceReport": "LOW_RISK_SOURCE_FIT_FAST_PASS",
+      "nextAction": "queue_for_human_rewrite_after_fast_pass_notes",
+      "requiredReviewerNotes": [
+        "greenOnlyConfirmed",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0240",
+      "batchId": "rewrite_batch_03",
+      "module": "交易心理",
+      "topic": "结果导向",
+      "riskLevel": "low",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "consumerfinance.gov",
+        "CFTC"
+      ],
+      "sourceReport": "LOW_RISK_SOURCE_FIT_FAST_PASS",
+      "nextAction": "queue_for_human_rewrite_after_fast_pass_notes",
+      "requiredReviewerNotes": [
+        "greenOnlyConfirmed",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0003",
+      "batchId": "rewrite_batch_04",
+      "module": "K线与价格行为",
+      "topic": "单根K线误区",
+      "riskLevel": "low",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "BEA",
+        "BLS",
+        "Internet Archive"
+      ],
+      "sourceReport": "LOW_RISK_SOURCE_FIT_FAST_PASS",
+      "nextAction": "queue_for_human_rewrite_after_fast_pass_notes",
+      "requiredReviewerNotes": [
+        "greenOnlyConfirmed",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0014",
+      "batchId": "rewrite_batch_04",
+      "module": "市场结构",
+      "topic": "结构延续",
+      "riskLevel": "low",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "Federal Reserve",
+        "SEC",
+        "Project Gutenberg",
+        "Treasury"
+      ],
+      "sourceReport": "LOW_RISK_SOURCE_FIT_FAST_PASS",
+      "nextAction": "queue_for_human_rewrite_after_fast_pass_notes",
+      "requiredReviewerNotes": [
+        "greenOnlyConfirmed",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0057",
+      "batchId": "rewrite_batch_04",
+      "module": "新闻/情绪/事件偏见",
+      "topic": "单源偏差",
+      "riskLevel": "low",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "BEA",
+        "Investor.gov",
+        "CFTC",
+        "Federal Reserve"
+      ],
+      "sourceReport": "LOW_RISK_SOURCE_FIT_FAST_PASS",
+      "nextAction": "queue_for_human_rewrite_after_fast_pass_notes",
+      "requiredReviewerNotes": [
+        "greenOnlyConfirmed",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0189",
+      "batchId": "rewrite_batch_04",
+      "module": "新闻/情绪/事件偏见",
+      "topic": "标题偏见",
+      "riskLevel": "low",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "BEA",
+        "Investor.gov",
+        "BLS",
+        "dol.gov"
+      ],
+      "sourceReport": "LOW_RISK_SOURCE_FIT_FAST_PASS",
+      "nextAction": "queue_for_human_rewrite_after_fast_pass_notes",
+      "requiredReviewerNotes": [
+        "greenOnlyConfirmed",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0321",
+      "batchId": "rewrite_batch_04",
+      "module": "新闻/情绪/事件偏见",
+      "topic": "事件时间",
+      "riskLevel": "low",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "BEA",
+        "Investor.gov",
+        "Federal Reserve",
+        "BLS"
+      ],
+      "sourceReport": "LOW_RISK_SOURCE_FIT_FAST_PASS",
+      "nextAction": "queue_for_human_rewrite_after_fast_pass_notes",
+      "requiredReviewerNotes": [
+        "greenOnlyConfirmed",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0011",
+      "batchId": "rewrite_batch_05",
+      "module": "风险管理",
+      "topic": "失效条件",
+      "riskLevel": "low",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "SEC",
+        "CFTC",
+        "Federal Reserve",
+        "nist.gov"
+      ],
+      "sourceReport": "LOW_RISK_SOURCE_FIT_FAST_PASS",
+      "nextAction": "queue_for_human_rewrite_after_fast_pass_notes",
+      "requiredReviewerNotes": [
+        "greenOnlyConfirmed",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0059",
+      "batchId": "rewrite_batch_05",
+      "module": "风险管理",
+      "topic": "边界语言",
+      "riskLevel": "low",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "Investor.gov",
+        "CFTC",
+        "SEC"
+      ],
+      "sourceReport": "LOW_RISK_SOURCE_FIT_FAST_PASS",
+      "nextAction": "queue_for_human_rewrite_after_fast_pass_notes",
+      "requiredReviewerNotes": [
+        "greenOnlyConfirmed",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0167",
+      "batchId": "rewrite_batch_05",
+      "module": "风险管理",
+      "topic": "可复盘计划",
+      "riskLevel": "low",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "Investor.gov",
+        "CFTC",
+        "SEC"
+      ],
+      "sourceReport": "LOW_RISK_SOURCE_FIT_FAST_PASS",
+      "nextAction": "queue_for_human_rewrite_after_fast_pass_notes",
+      "requiredReviewerNotes": [
+        "greenOnlyConfirmed",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0010",
+      "batchId": "rewrite_batch_06",
+      "module": "回测误区",
+      "topic": "偷看未来",
+      "riskLevel": "low",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "BLS",
+        "SEC",
+        "CFTC",
+        "Investor.gov"
+      ],
+      "sourceReport": "LOW_RISK_SOURCE_FIT_FAST_PASS",
+      "nextAction": "queue_for_human_rewrite_after_fast_pass_notes",
+      "requiredReviewerNotes": [
+        "greenOnlyConfirmed",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0022",
+      "batchId": "rewrite_batch_06",
+      "module": "回测误区",
+      "topic": "样本太少",
+      "riskLevel": "low",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "Investor.gov",
+        "BLS",
+        "CFTC"
+      ],
+      "sourceReport": "LOW_RISK_SOURCE_FIT_FAST_PASS",
+      "nextAction": "queue_for_human_rewrite_after_fast_pass_notes",
+      "requiredReviewerNotes": [
+        "greenOnlyConfirmed",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0031",
+      "batchId": "rewrite_batch_06",
+      "module": "反转",
+      "topic": "双顶双底",
+      "riskLevel": "low",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "CFTC",
+        "financialresearch.gov",
+        "Project Gutenberg",
+        "BEA"
+      ],
+      "sourceReport": "LOW_RISK_SOURCE_FIT_FAST_PASS",
+      "nextAction": "queue_for_human_rewrite_after_fast_pass_notes",
+      "requiredReviewerNotes": [
+        "greenOnlyConfirmed",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0275",
+      "batchId": "rewrite_batch_06",
+      "module": "风险管理",
+      "topic": "不确定性",
+      "riskLevel": "low",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "Investor.gov",
+        "CFTC",
+        "SEC"
+      ],
+      "sourceReport": "LOW_RISK_SOURCE_FIT_FAST_PASS",
+      "nextAction": "queue_for_human_rewrite_after_fast_pass_notes",
+      "requiredReviewerNotes": [
+        "greenOnlyConfirmed",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0002",
+      "batchId": "rewrite_batch_07",
+      "module": "市场结构",
+      "topic": "高低点",
+      "riskLevel": "low",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "BLS",
+        "Federal Reserve",
+        "Treasury",
+        "Project Gutenberg"
+      ],
+      "sourceReport": "LOW_RISK_SOURCE_FIT_FAST_PASS",
+      "nextAction": "queue_for_human_rewrite_after_fast_pass_notes",
+      "requiredReviewerNotes": [
+        "greenOnlyConfirmed",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0005",
+      "batchId": "rewrite_batch_07",
+      "module": "突破",
+      "topic": "突破前压缩",
+      "riskLevel": "low",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "SEC",
+        "Federal Reserve",
+        "Treasury",
+        "Project Gutenberg"
+      ],
+      "sourceReport": "LOW_RISK_SOURCE_FIT_FAST_PASS",
+      "nextAction": "queue_for_human_rewrite_after_fast_pass_notes",
+      "requiredReviewerNotes": [
+        "greenOnlyConfirmed",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0017",
+      "batchId": "rewrite_batch_07",
+      "module": "突破",
+      "topic": "有效突破",
+      "riskLevel": "low",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "SEC",
+        "Treasury",
+        "Internet Archive"
+      ],
+      "sourceReport": "LOW_RISK_SOURCE_FIT_FAST_PASS",
+      "nextAction": "queue_for_human_rewrite_after_fast_pass_notes",
+      "requiredReviewerNotes": [
+        "greenOnlyConfirmed",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0026",
+      "batchId": "rewrite_batch_07",
+      "module": "市场结构",
+      "topic": "结构破坏",
+      "riskLevel": "low",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "Investor.gov",
+        "SEC",
+        "Treasury",
+        "Internet Archive"
+      ],
+      "sourceReport": "LOW_RISK_SOURCE_FIT_FAST_PASS",
+      "nextAction": "queue_for_human_rewrite_after_fast_pass_notes",
+      "requiredReviewerNotes": [
+        "greenOnlyConfirmed",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0029",
+      "batchId": "rewrite_batch_07",
+      "module": "突破",
+      "topic": "假突破",
+      "riskLevel": "low",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "BLS",
+        "Treasury",
+        "Internet Archive",
+        "BEA"
+      ],
+      "sourceReport": "LOW_RISK_SOURCE_FIT_FAST_PASS",
+      "nextAction": "queue_for_human_rewrite_after_fast_pass_notes",
+      "requiredReviewerNotes": [
+        "greenOnlyConfirmed",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    },
+    {
+      "lessonId": "lesson_knv2_0073",
+      "batchId": "rewrite_batch_08",
+      "module": "图表阅读基础",
+      "topic": "价格位置",
+      "riskLevel": "low",
+      "currentGrade": "structural_draft",
+      "sourceFamilies": [
+        "nass.usda.gov",
+        "BLS",
+        "Treasury",
+        "Project Gutenberg"
+      ],
+      "sourceReport": "LOW_RISK_SOURCE_FIT_FAST_PASS",
+      "nextAction": "queue_for_human_rewrite_after_fast_pass_notes",
+      "requiredReviewerNotes": [
+        "greenOnlyConfirmed",
+        "copyingRiskNotes",
+        "boundaryCheckNotes",
+        "structuralDraftConfirmed"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true
+    }
+  ],
+  "boundary": "This reviewer dashboard coordinates source-fit review only. It does not approve lessons, publish learner-facing content, change grades, provide trading advice, imply performance, connect brokers, automate trading, or guide real-money decisions."
+}

@@ -1,0 +1,72 @@
+{
+  "generatedAt": "2026-06-21T22:38:55.715Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "validationStatus": "blocked_missing_reviewer_input",
+  "fixtureOnly": false,
+  "inputPath": "docs\\LOCAL_COURSE_P0_HUMAN_FILL_PACK_03_INPUT_COPY_TEMPLATE.json",
+  "totalEntries": 3,
+  "readyEntries": 0,
+  "blockedEntries": 3,
+  "forbiddenHitEntries": 0,
+  "validationRows": [
+    {
+      "id": "input_copy_absorb_manual_transcription_17",
+      "taskId": "absorb_manual_transcription_17",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "pageNumber": 9,
+      "validationStatus": "blocked_missing_reviewer_input",
+      "readyForOverlayApply": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "manualChecklist"
+      ],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_03_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_18",
+      "taskId": "absorb_manual_transcription_18",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "pageNumber": 10,
+      "validationStatus": "blocked_missing_reviewer_input",
+      "readyForOverlayApply": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "manualChecklist"
+      ],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_03_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_19",
+      "taskId": "absorb_manual_transcription_19",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "pageNumber": 11,
+      "validationStatus": "blocked_missing_reviewer_input",
+      "readyForOverlayApply": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "manualChecklist"
+      ],
+      "forbiddenHits": [],
+      "nextGate": "validate_pack_03_input_then_apply_dry_run_only"
+    }
+  ],
+  "nextStep": "Fill missing reviewer fields in a copied input file, then rerun this dry-run validator.",
+  "boundary": "P0 review input validation is a dry-run gate. It does not write overlay changes, approve learner-facing release, provide trading advice, stock recommendations, live signals, return promises, broker workflows, automation, or real-money guidance."
+}

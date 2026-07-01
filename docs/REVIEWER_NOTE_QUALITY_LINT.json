@@ -1,0 +1,153 @@
+{
+  "generatedAt": "2026-06-21T18:43:54.037Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "statusPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "realStatusOverlayPresent": true,
+  "realNoteIssues": 0,
+  "realRows": [
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0044",
+      "trackingStatus": "ready_for_separate_human_approval_review",
+      "promptCovered": true,
+      "checkedRequiredNotes": true
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0068",
+      "trackingStatus": "ready_for_separate_human_approval_review",
+      "promptCovered": true,
+      "checkedRequiredNotes": true
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0128",
+      "trackingStatus": "ready_for_separate_human_approval_review",
+      "promptCovered": true,
+      "checkedRequiredNotes": true
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0140",
+      "trackingStatus": "ready_for_separate_human_approval_review",
+      "promptCovered": true,
+      "checkedRequiredNotes": true
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0054",
+      "trackingStatus": "ready_for_separate_human_approval_review",
+      "promptCovered": true,
+      "checkedRequiredNotes": true
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0019",
+      "trackingStatus": "ready_for_separate_human_approval_review",
+      "promptCovered": true,
+      "checkedRequiredNotes": true
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0075",
+      "trackingStatus": "ready_for_separate_human_approval_review",
+      "promptCovered": true,
+      "checkedRequiredNotes": true
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0087",
+      "trackingStatus": "ready_for_separate_human_approval_review",
+      "promptCovered": true,
+      "checkedRequiredNotes": true
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0159",
+      "trackingStatus": "ready_for_separate_human_approval_review",
+      "promptCovered": true,
+      "checkedRequiredNotes": true
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0011",
+      "trackingStatus": "ready_for_separate_human_approval_review",
+      "promptCovered": true,
+      "checkedRequiredNotes": true
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0059",
+      "trackingStatus": "ready_for_separate_human_approval_review",
+      "promptCovered": true,
+      "checkedRequiredNotes": true
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0167",
+      "trackingStatus": "ready_for_separate_human_approval_review",
+      "promptCovered": true,
+      "checkedRequiredNotes": true
+    }
+  ],
+  "positiveControlPassed": true,
+  "positiveControlRows": 6,
+  "negativeCases": 6,
+  "negativeCasesPassed": 6,
+  "negativeCaseRows": [
+    {
+      "name": "blank_source_fit_note_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "issueCount": 1,
+      "message": "rewrite_batch_01.lesson_knv2_0044.sourceFitNotes is blank"
+    },
+    {
+      "name": "generic_fact_check_note_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "issueCount": 3,
+      "message": "rewrite_batch_01.lesson_knv2_0044.factCheckNotes is too short to be useful; rewrite_batch_01.lesson_knv2_0044.factCheckNotes is too generic; rewrite_batch_01.lesson_knv2_0044.factCheckNotes lacks the required field-specific evidence anchor"
+    },
+    {
+      "name": "placeholder_initials_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "issueCount": 1,
+      "message": "rewrite_batch_01.lesson_knv2_0044.humanReviewerInitials cannot be generated example initials"
+    },
+    {
+      "name": "unsafe_trading_note_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "issueCount": 2,
+      "message": "rewrite_batch_01.lesson_knv2_0044.boundaryCheckNotes contains unsafe approval/trading/readiness wording; rewrite_batch_01.lesson_knv2_0044.boundaryCheckNotes lacks the required field-specific evidence anchor"
+    },
+    {
+      "name": "approval_claim_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "issueCount": 2,
+      "message": "rewrite_batch_01.lesson_knv2_0044.originalRewriteNotes contains unsafe approval/trading/readiness wording; rewrite_batch_01.lesson_knv2_0044.originalRewriteNotes lacks the required field-specific evidence anchor"
+    },
+    {
+      "name": "copying_placeholder_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "issueCount": 1,
+      "message": "rewrite_batch_01.lesson_knv2_0044.copyingRiskNotes contains placeholder/example text"
+    }
+  ],
+  "lintRules": [
+    "Ready batches or cards must have all required note fields filled.",
+    "Notes must be specific enough to show source-fit, fact-check, boundary, copying-risk, and original-rewrite work.",
+    "Notes cannot use placeholders, generated example initials, or generic one-word approvals.",
+    "Notes cannot claim final approval, learner-facing readiness, commercial readiness, production readiness, trading signals, broker/order workflows, automation readiness, performance, or real-money guidance.",
+    "Reviewer initials must only be added after real human review work is performed."
+  ],
+  "boundary": "This lint is reviewer-status quality control only. It does not create real reviewer notes, approve lessons, publish learner-facing content, change grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, or guide real-money decisions."
+}

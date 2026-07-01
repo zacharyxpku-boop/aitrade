@@ -1,0 +1,401 @@
+{
+  "generatedAt": "2026-06-21T22:48:16.614Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "fixtureOnly": true,
+  "templateStatus": "source_replacement_positive_lint_fixture",
+  "sourcePack": "docs/LOCAL_COURSE_P0_SOURCE_REPLACEMENT_REVIEW_PACK.json",
+  "packId": "local_course_p0_source_replacement_review_pack",
+  "totalEntries": 3,
+  "sourceReplacementEntries": 3,
+  "filledEntries": 3,
+  "readyForValidationEntries": 3,
+  "targetTaskIds": [
+    "absorb_source_replacement_01",
+    "absorb_source_replacement_02",
+    "absorb_source_replacement_03"
+  ],
+  "targetDocumentIds": [
+    "corpus_1329",
+    "corpus_1431",
+    "corpus_1577"
+  ],
+  "inputEntries": [
+    {
+      "id": "input_copy_absorb_source_replacement_01",
+      "reviewEntryId": "review_absorb_source_replacement_01",
+      "taskId": "absorb_source_replacement_01",
+      "sourcePackEntryId": "source_replacement_review_absorb_source_replacement_01",
+      "decisionRowId": "decision_corpus_1329_page_01",
+      "category": "source_replacement",
+      "sourceRelativePath": "系统课02进阶/19_9119：高中毕业集训总结年后展望_笔记.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1329",
+      "pageNumber": 1,
+      "previewPath": "docs/local-course-low-extraction-previews/corpus_1329/page-01.png",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "positive_lint_fixture_ready",
+      "reviewerName": "Codex source replacement positive-control fixture",
+      "reviewedAt": "2026-06-21T00:00:00.000Z",
+      "decisionInput": {
+        "allowedDecisions": [
+          "locate_external_original",
+          "reexport_blank_source",
+          "use_neighbor_as_context_only",
+          "mark_unrecoverable"
+        ],
+        "selectedDecision": "mark_unrecoverable",
+        "selectedCandidateSourceId": "",
+        "selectedCandidateRelativePath": "",
+        "candidateCount": 8,
+        "directReplacementCandidateCount": 0,
+        "recommendedAction": "no_direct_replacement_found_review_neighbor_candidates_or_locate_external_original",
+        "topCandidates": [
+          {
+            "sourceId": "local-investment-course:f96c261ca07af83063d8650f",
+            "relativePath": "系统课02进阶/01_9101：集训不是一时，而是一世_笔记.pdf",
+            "module": "系统课02进阶",
+            "bytes": 1599485,
+            "sameModule": true,
+            "exactNumberHits": 1,
+            "similarity": 0.667,
+            "score": 82,
+            "confidence": "context_reference_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          },
+          {
+            "sourceId": "local-investment-course:0a62ca3e5d674b90ecaa34e4",
+            "relativePath": "系统课02进阶/16_9116：精讲ioi形态_笔记(1).pdf",
+            "module": "系统课02进阶",
+            "bytes": 1681867,
+            "sameModule": true,
+            "exactNumberHits": 1,
+            "similarity": 0.588,
+            "score": 79,
+            "confidence": "context_reference_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          },
+          {
+            "sourceId": "local-investment-course:527bde430f2d5b0a372047ba",
+            "relativePath": "系统课02进阶/09_9109：小周期寻找机会 集训第一名 ”共同富裕“ “持仓练习_笔记(2).pdf",
+            "module": "系统课02进阶",
+            "bytes": 3967400,
+            "sameModule": true,
+            "exactNumberHits": 1,
+            "similarity": 0.545,
+            "score": 77,
+            "confidence": "context_reference_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          },
+          {
+            "sourceId": "local-investment-course:025ecefd4b00ced52344996c",
+            "relativePath": "系统课02进阶/10_9110：盘一盘DOT 集训告一段落 痛苦加反思=进步_笔记.pdf",
+            "module": "系统课02进阶",
+            "bytes": 2305693,
+            "sameModule": true,
+            "exactNumberHits": 1,
+            "similarity": 0.545,
+            "score": 77,
+            "confidence": "context_reference_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          },
+          {
+            "sourceId": "local-investment-course:b5b4c39142943d0ce8bcc583",
+            "relativePath": "系统课02进阶/12_9112：OBS录屏怎么用？ 集训分数不理想怎么办？_笔记.pdf",
+            "module": "系统课02进阶",
+            "bytes": 2619323,
+            "sameModule": true,
+            "exactNumberHits": 1,
+            "similarity": 0.545,
+            "score": 77,
+            "confidence": "context_reference_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          }
+        ],
+        "qualityLintRules": [
+          "Reviewer must choose one allowed decision before validation.",
+          "No neighbor candidate can be treated as a direct replacement when directReplacementCandidateCount is 0.",
+          "replacementSourcePath must be a real reviewed path, a reexport evidence path, or an unrecoverable marker with rationale.",
+          "replacementNote must explain source identity, readability, and why private blank content was not inferred.",
+          "rerunEvidence must identify the harvest/preview/quality rerun evidence to inspect before any next gate."
+        ]
+      },
+      "manualInput": null,
+      "replacementInput": {
+        "replacementSourcePath": "unrecoverable://corpus_1329/no-direct-replacement-confirmed",
+        "replacementNote": "Fixture-only decision: mark unrecoverable because no direct replacement candidate is confirmed; neighbor candidates remain context only and missing private content is not inferred.",
+        "rerunEvidence": "Fixture-only rerun evidence: preview audit, harvest rerun, quality audit, and intake rerun would be attached before any real overlay write.",
+        "checklist": {
+          "sourceIdentityConfirmed": "done",
+          "replacementSourceReadable": "done",
+          "readablePreviewGenerated": "done",
+          "harvestRerunEvidenceAttached": "done",
+          "qualityAndIntakeRerunReady": "done"
+        }
+      },
+      "acceptanceCriteria": [
+        "Reviewer selected one allowed source replacement decision.",
+        "No neighbor candidate is treated as direct replacement unless independently confirmed.",
+        "Replacement note explains source identity, readability, and no inference from blank private content.",
+        "Rerun evidence names harvest, preview, or quality checks to inspect before the next gate.",
+        "Dry-run apply reports ready entries with writtenEntries:0 before any write authorization."
+      ],
+      "nextGate": "validate_source_replacement_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_source_replacement_02",
+      "reviewEntryId": "review_absorb_source_replacement_02",
+      "taskId": "absorb_source_replacement_02",
+      "sourcePackEntryId": "source_replacement_review_absorb_source_replacement_02",
+      "decisionRowId": "decision_corpus_1431_page_01",
+      "category": "source_replacement",
+      "sourceRelativePath": "专享07庄家篇/14_0814-【复训】-分析行情挖掘机会_笔记.pdf",
+      "sourceModule": "专享07庄家篇",
+      "documentId": "corpus_1431",
+      "pageNumber": 1,
+      "previewPath": "docs/local-course-low-extraction-previews/corpus_1431/page-01.png",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "positive_lint_fixture_ready",
+      "reviewerName": "Codex source replacement positive-control fixture",
+      "reviewedAt": "2026-06-21T00:00:00.000Z",
+      "decisionInput": {
+        "allowedDecisions": [
+          "locate_external_original",
+          "reexport_blank_source",
+          "use_neighbor_as_context_only",
+          "mark_unrecoverable"
+        ],
+        "selectedDecision": "mark_unrecoverable",
+        "selectedCandidateSourceId": "",
+        "selectedCandidateRelativePath": "",
+        "candidateCount": 8,
+        "directReplacementCandidateCount": 0,
+        "recommendedAction": "no_direct_replacement_found_review_neighbor_candidates_or_locate_external_original",
+        "topCandidates": [
+          {
+            "sourceId": "local-investment-course:a75bc376e2fdcfba7e8d2349",
+            "relativePath": "专享07庄家篇/11_0811-【复训】-分析行情挖掘机会_笔记.pdf",
+            "module": "专享07庄家篇",
+            "bytes": 1930603,
+            "sameModule": true,
+            "exactNumberHits": 1,
+            "similarity": 1,
+            "score": 95,
+            "confidence": "same_module_neighbor_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          },
+          {
+            "sourceId": "local-investment-course:6e74cb3c6935da740ac2cae8",
+            "relativePath": "专享07庄家篇/17_0817-【复训】-分析行情挖掘机会_笔记.pdf",
+            "module": "专享07庄家篇",
+            "bytes": 3183730,
+            "sameModule": true,
+            "exactNumberHits": 1,
+            "similarity": 1,
+            "score": 95,
+            "confidence": "same_module_neighbor_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          },
+          {
+            "sourceId": "local-investment-course:cb981a8af7ad80a93b94be54",
+            "relativePath": "专享07庄家篇/20_0820-【复训】-分析行情挖掘机会_笔记(2).pdf",
+            "module": "专享07庄家篇",
+            "bytes": 3828393,
+            "sameModule": true,
+            "exactNumberHits": 1,
+            "similarity": 0.95,
+            "score": 93,
+            "confidence": "same_module_neighbor_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          },
+          {
+            "sourceId": "local-investment-course:7e7c3a0bf2e7d3ac1957733f",
+            "relativePath": "专享07庄家篇/25_0825-【复训】-分析行情挖掘机会_笔记(1).pdf",
+            "module": "专享07庄家篇",
+            "bytes": 3000597,
+            "sameModule": true,
+            "exactNumberHits": 1,
+            "similarity": 0.952,
+            "score": 93,
+            "confidence": "same_module_neighbor_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          },
+          {
+            "sourceId": "local-investment-course:904ee95edf60381edc60e473",
+            "relativePath": "专享07庄家篇/28_0828-【复训】-分析行情挖掘机会_笔记.pdf",
+            "module": "专享07庄家篇",
+            "bytes": 3651880,
+            "sameModule": true,
+            "exactNumberHits": 1,
+            "similarity": 0.95,
+            "score": 93,
+            "confidence": "same_module_neighbor_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          }
+        ],
+        "qualityLintRules": [
+          "Reviewer must choose one allowed decision before validation.",
+          "No neighbor candidate can be treated as a direct replacement when directReplacementCandidateCount is 0.",
+          "replacementSourcePath must be a real reviewed path, a reexport evidence path, or an unrecoverable marker with rationale.",
+          "replacementNote must explain source identity, readability, and why private blank content was not inferred.",
+          "rerunEvidence must identify the harvest/preview/quality rerun evidence to inspect before any next gate."
+        ]
+      },
+      "manualInput": null,
+      "replacementInput": {
+        "replacementSourcePath": "unrecoverable://corpus_1431/no-direct-replacement-confirmed",
+        "replacementNote": "Fixture-only decision: mark unrecoverable because no direct replacement candidate is confirmed; neighbor candidates remain context only and missing private content is not inferred.",
+        "rerunEvidence": "Fixture-only rerun evidence: preview audit, harvest rerun, quality audit, and intake rerun would be attached before any real overlay write.",
+        "checklist": {
+          "sourceIdentityConfirmed": "done",
+          "replacementSourceReadable": "done",
+          "readablePreviewGenerated": "done",
+          "harvestRerunEvidenceAttached": "done",
+          "qualityAndIntakeRerunReady": "done"
+        }
+      },
+      "acceptanceCriteria": [
+        "Reviewer selected one allowed source replacement decision.",
+        "No neighbor candidate is treated as direct replacement unless independently confirmed.",
+        "Replacement note explains source identity, readability, and no inference from blank private content.",
+        "Rerun evidence names harvest, preview, or quality checks to inspect before the next gate.",
+        "Dry-run apply reports ready entries with writtenEntries:0 before any write authorization."
+      ],
+      "nextGate": "validate_source_replacement_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_source_replacement_03",
+      "reviewEntryId": "review_absorb_source_replacement_03",
+      "taskId": "absorb_source_replacement_03",
+      "sourcePackEntryId": "source_replacement_review_absorb_source_replacement_03",
+      "decisionRowId": "decision_corpus_1577_page_01",
+      "category": "source_replacement",
+      "sourceRelativePath": "K线怎么看/06_第6讲：常见的持仓信号-进攻金K（2）_笔记.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1577",
+      "pageNumber": 1,
+      "previewPath": "docs/local-course-low-extraction-previews/corpus_1577/page-01.png",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "positive_lint_fixture_ready",
+      "reviewerName": "Codex source replacement positive-control fixture",
+      "reviewedAt": "2026-06-21T00:00:00.000Z",
+      "decisionInput": {
+        "allowedDecisions": [
+          "locate_external_original",
+          "reexport_blank_source",
+          "use_neighbor_as_context_only",
+          "mark_unrecoverable"
+        ],
+        "selectedDecision": "mark_unrecoverable",
+        "selectedCandidateSourceId": "",
+        "selectedCandidateRelativePath": "",
+        "candidateCount": 7,
+        "directReplacementCandidateCount": 0,
+        "recommendedAction": "no_direct_replacement_found_review_neighbor_candidates_or_locate_external_original",
+        "topCandidates": [
+          {
+            "sourceId": "local-investment-course:c4068d894bc46a9ed356290c",
+            "relativePath": "K线怎么看/05_第5讲：常见的持仓信号-进攻金K（1）_笔记.pdf",
+            "module": "K线怎么看",
+            "bytes": 1681900,
+            "sameModule": true,
+            "exactNumberHits": 0,
+            "similarity": 0.905,
+            "score": 71,
+            "confidence": "context_reference_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          },
+          {
+            "sourceId": "local-investment-course:5fac415cc7b1ec575e5a4e16",
+            "relativePath": "K线怎么看/04_第4讲：常见的入场信号-反转金K（2）_笔记.pdf",
+            "module": "K线怎么看",
+            "bytes": 2393329,
+            "sameModule": true,
+            "exactNumberHits": 0,
+            "similarity": 0.762,
+            "score": 65,
+            "confidence": "context_reference_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          },
+          {
+            "sourceId": "local-investment-course:19bdb5ad718d0a4530de54b5",
+            "relativePath": "K线怎么看/02_第2讲：精讲十字星_笔记(2).pdf",
+            "module": "K线怎么看",
+            "bytes": 1395346,
+            "sameModule": true,
+            "exactNumberHits": 0,
+            "similarity": 0.714,
+            "score": 64,
+            "confidence": "context_reference_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          },
+          {
+            "sourceId": "local-investment-course:78fbb4b0d1efcf15f81929d0",
+            "relativePath": "K线怎么看/03_第3讲：常见的入场信号-反转金K（1）_笔记.pdf",
+            "module": "K线怎么看",
+            "bytes": 3144130,
+            "sameModule": true,
+            "exactNumberHits": 0,
+            "similarity": 0.714,
+            "score": 64,
+            "confidence": "context_reference_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          },
+          {
+            "sourceId": "local-investment-course:f390dee75d94382750f1e74a",
+            "relativePath": "K线怎么看/07_第7讲：复训12金K_笔记.pdf",
+            "module": "K线怎么看",
+            "bytes": 3269382,
+            "sameModule": true,
+            "exactNumberHits": 0,
+            "similarity": 0.733,
+            "score": 64,
+            "confidence": "context_reference_candidate",
+            "reviewerUse": "candidate_only_verify_before_replacement"
+          }
+        ],
+        "qualityLintRules": [
+          "Reviewer must choose one allowed decision before validation.",
+          "No neighbor candidate can be treated as a direct replacement when directReplacementCandidateCount is 0.",
+          "replacementSourcePath must be a real reviewed path, a reexport evidence path, or an unrecoverable marker with rationale.",
+          "replacementNote must explain source identity, readability, and why private blank content was not inferred.",
+          "rerunEvidence must identify the harvest/preview/quality rerun evidence to inspect before any next gate."
+        ]
+      },
+      "manualInput": null,
+      "replacementInput": {
+        "replacementSourcePath": "unrecoverable://corpus_1577/no-direct-replacement-confirmed",
+        "replacementNote": "Fixture-only decision: mark unrecoverable because no direct replacement candidate is confirmed; neighbor candidates remain context only and missing private content is not inferred.",
+        "rerunEvidence": "Fixture-only rerun evidence: preview audit, harvest rerun, quality audit, and intake rerun would be attached before any real overlay write.",
+        "checklist": {
+          "sourceIdentityConfirmed": "done",
+          "replacementSourceReadable": "done",
+          "readablePreviewGenerated": "done",
+          "harvestRerunEvidenceAttached": "done",
+          "qualityAndIntakeRerunReady": "done"
+        }
+      },
+      "acceptanceCriteria": [
+        "Reviewer selected one allowed source replacement decision.",
+        "No neighbor candidate is treated as direct replacement unless independently confirmed.",
+        "Replacement note explains source identity, readability, and no inference from blank private content.",
+        "Rerun evidence names harvest, preview, or quality checks to inspect before the next gate.",
+        "Dry-run apply reports ready entries with writtenEntries:0 before any write authorization."
+      ],
+      "nextGate": "validate_source_replacement_input_then_apply_dry_run_only"
+    }
+  ],
+  "completionRule": "This input copy template is blank reviewer input material. It becomes ready only after a human reviewer fills decision and evidence fields, every checklist item is done, lint passes, and apply dry-run writes zero entries.",
+  "boundary": "Source replacement positive lint fixture is pipeline validation material only. It is not a real source replacement decision, must not be written to the real overlay, does not approve learner-facing release, and does not provide trading advice, stock recommendations, live signals, return promises, broker workflows, automation, or real-money guidance."
+}

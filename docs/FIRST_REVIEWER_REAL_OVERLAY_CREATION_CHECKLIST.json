@@ -1,0 +1,93 @@
+{
+  "generatedAt": "2026-06-19T09:47:10.800Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "realStatusPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "realStatusOverlayPresent": false,
+  "creationAllowedNow": false,
+  "creationBlockedBy": [
+    "No explicit human reviewer decision to begin recording real notes is present in repo evidence."
+  ],
+  "targetBatches": [
+    "rewrite_batch_01",
+    "rewrite_batch_05"
+  ],
+  "lessonCards": 12,
+  "blankNoteFields": 72,
+  "directCandidatesToConfirm": 5,
+  "realReadyBatches": 0,
+  "dryRunPassed": true,
+  "overwriteProtectionPassed": true,
+  "dryRunCommand": "npm.cmd run init:first-reviewer-status-overlay:dry-run",
+  "allowedCreationCommand": "npm.cmd run init:first-reviewer-status-overlay:write",
+  "preCreationCommands": [
+    "npm.cmd run init:first-reviewer-status-overlay:dry-run",
+    "npm.cmd run check:first-reviewer-status-init-protection",
+    "npm.cmd run check:first-reviewer-dry-run-packet",
+    "npm.cmd run check:first-reviewer-human-note-starter-template",
+    "npm.cmd run check:first-reviewer-real-overlay-creation-checklist"
+  ],
+  "postCreationCommands": [
+    "npm.cmd run check:lesson-batch-completion",
+    "npm.cmd run check:reviewer-note-quality-lint",
+    "npm.cmd run check:curriculum-review"
+  ],
+  "creationPrerequisites": [
+    {
+      "name": "Human reviewer explicitly ready to record real notes",
+      "status": "manual_required",
+      "evidence": "No repo artifact can prove this; it must be an explicit human decision before running the write command."
+    },
+    {
+      "name": "Dry run passed",
+      "status": "pass",
+      "evidence": "Initializer is in dry_run mode, wroteStatusOverlay:false, notesFilled:0."
+    },
+    {
+      "name": "Overwrite protection passed",
+      "status": "pass",
+      "evidence": "3/3 protection cases passed and real overlay untouched."
+    },
+    {
+      "name": "Starter blank fields ready",
+      "status": "pass",
+      "evidence": "12 lesson cards and 72 blank note fields are present."
+    },
+    {
+      "name": "Existing real overlay absent",
+      "status": "pass",
+      "evidence": "docs/LESSON_BATCH_REVIEW_STATUS.json does not exist."
+    },
+    {
+      "name": "Handoff packet available",
+      "status": "pass",
+      "evidence": "Handoff and dry-run packet both include this checklist before real overlay creation; packet covers rewrite_batch_01, rewrite_batch_05 with 12 worksheet lessons."
+    },
+    {
+      "name": "No approval, release, or production flags",
+      "status": "pass",
+      "evidence": "All checked artifacts keep approvalStatus:not_approved, learnerFacingRelease:false, and productionReady:false."
+    }
+  ],
+  "stopConditions": [
+    "Stop if docs/LESSON_BATCH_REVIEW_STATUS.json exists before the creation command; preserve existing notes before any force path.",
+    "Stop if any note field is prefilled before real review work starts.",
+    "Stop if any artifact asks to approve, publish, mark commercial_ready, or set productionReady:true.",
+    "Stop if any note or rewrite requests buy/sell/hold advice, trading signals, broker/order workflow, automation, performance claims, or real-money guidance.",
+    "Stop if any external source body text is proposed for copying into lesson prose or notes.",
+    "Stop if yellow, red, or research_only sources are proposed as learner-facing evidence."
+  ],
+  "sourceReports": {
+    "handoff": "docs/FIRST_REVIEWER_HANDOFF.json",
+    "dryRunPacket": "docs/FIRST_REVIEWER_DRY_RUN_PACKET.json",
+    "humanNoteStarterTemplate": "docs/FIRST_REVIEWER_HUMAN_NOTE_STARTER_TEMPLATE.json",
+    "initDryRun": "docs/LESSON_BATCH_REVIEW_STATUS_INIT_DRY_RUN.json",
+    "initProtection": "docs/LESSON_BATCH_REVIEW_STATUS_INIT_PROTECTION.json",
+    "gateSummary": "docs/REVIEW_STATUS_GATE_SUMMARY.json",
+    "statusDraft": "docs/LESSON_BATCH_REVIEW_STATUS_DRAFT_TEMPLATE_FOR_BATCH_01_05.json"
+  },
+  "boundary": "This checklist is reviewer-facing gate scaffolding only. It does not create docs/LESSON_BATCH_REVIEW_STATUS.json, fill human notes, approve lessons, publish learner-facing content, change lesson grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, or guide real-money decisions."
+}

@@ -1,0 +1,1228 @@
+{
+  "generatedAt": "2026-06-22T04:59:20.109Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "applyMode": "dry_run",
+  "applyStatus": "blocked_no_ready_merge_rows",
+  "packetId": "node-public-source-fit-batch-031-packet",
+  "batchId": "node-public-source-fit-batch-031",
+  "module": "新闻/情绪/事件偏见",
+  "packetInputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_031_INPUT_COPY_TEMPLATE.json",
+  "packetValidationPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_031_INPUT_COPY_TEMPLATE_VALIDATION.json",
+  "fullDraftPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_DRAFT.json",
+  "mergePreviewPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_031_MERGE_PREVIEW.json",
+  "totalRows": 60,
+  "readyToMergeRows": 0,
+  "blockedRows": 60,
+  "writtenRows": 0,
+  "mergeAllowedNow": false,
+  "writeAllowedNow": false,
+  "manualAuthorizationRequired": true,
+  "fullDraftRows": 1638,
+  "applyRows": [
+    {
+      "packetRowIndex": 0,
+      "targetFullDraftRowIndex": 126,
+      "reviewId": "knv2_0105::corpus_0459",
+      "nodeId": "knv2_0105",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 1,
+      "targetFullDraftRowIndex": 127,
+      "reviewId": "knv2_0105::corpus_0102",
+      "nodeId": "knv2_0105",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 2,
+      "targetFullDraftRowIndex": 128,
+      "reviewId": "knv2_0105::corpus_1025",
+      "nodeId": "knv2_0105",
+      "documentId": "corpus_1025",
+      "sourceName": "bigvaldis/breaking_news_market_sentiment README",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 3,
+      "targetFullDraftRowIndex": 129,
+      "reviewId": "knv2_0105::corpus_0462",
+      "nodeId": "knv2_0105",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 4,
+      "targetFullDraftRowIndex": 130,
+      "reviewId": "knv2_0105::corpus_0426",
+      "nodeId": "knv2_0105",
+      "documentId": "corpus_0426",
+      "sourceName": "Wikipedia: Event study",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 5,
+      "targetFullDraftRowIndex": 131,
+      "reviewId": "knv2_0105::corpus_0425",
+      "nodeId": "knv2_0105",
+      "documentId": "corpus_0425",
+      "sourceName": "Wikipedia: Market sentiment",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 6,
+      "targetFullDraftRowIndex": 198,
+      "reviewId": "knv2_0117::corpus_0459",
+      "nodeId": "knv2_0117",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 7,
+      "targetFullDraftRowIndex": 199,
+      "reviewId": "knv2_0117::corpus_0102",
+      "nodeId": "knv2_0117",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 8,
+      "targetFullDraftRowIndex": 200,
+      "reviewId": "knv2_0117::corpus_1025",
+      "nodeId": "knv2_0117",
+      "documentId": "corpus_1025",
+      "sourceName": "bigvaldis/breaking_news_market_sentiment README",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 9,
+      "targetFullDraftRowIndex": 201,
+      "reviewId": "knv2_0117::corpus_0462",
+      "nodeId": "knv2_0117",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 10,
+      "targetFullDraftRowIndex": 202,
+      "reviewId": "knv2_0117::corpus_0426",
+      "nodeId": "knv2_0117",
+      "documentId": "corpus_0426",
+      "sourceName": "Wikipedia: Event study",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 11,
+      "targetFullDraftRowIndex": 203,
+      "reviewId": "knv2_0117::corpus_0425",
+      "nodeId": "knv2_0117",
+      "documentId": "corpus_0425",
+      "sourceName": "Wikipedia: Market sentiment",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 12,
+      "targetFullDraftRowIndex": 264,
+      "reviewId": "knv2_0129::corpus_0459",
+      "nodeId": "knv2_0129",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 13,
+      "targetFullDraftRowIndex": 265,
+      "reviewId": "knv2_0129::corpus_0102",
+      "nodeId": "knv2_0129",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 14,
+      "targetFullDraftRowIndex": 266,
+      "reviewId": "knv2_0129::corpus_1025",
+      "nodeId": "knv2_0129",
+      "documentId": "corpus_1025",
+      "sourceName": "bigvaldis/breaking_news_market_sentiment README",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 15,
+      "targetFullDraftRowIndex": 267,
+      "reviewId": "knv2_0129::corpus_0462",
+      "nodeId": "knv2_0129",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 16,
+      "targetFullDraftRowIndex": 268,
+      "reviewId": "knv2_0129::corpus_0426",
+      "nodeId": "knv2_0129",
+      "documentId": "corpus_0426",
+      "sourceName": "Wikipedia: Event study",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 17,
+      "targetFullDraftRowIndex": 269,
+      "reviewId": "knv2_0129::corpus_0425",
+      "nodeId": "knv2_0129",
+      "documentId": "corpus_0425",
+      "sourceName": "Wikipedia: Market sentiment",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 18,
+      "targetFullDraftRowIndex": 336,
+      "reviewId": "knv2_0141::corpus_0459",
+      "nodeId": "knv2_0141",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 19,
+      "targetFullDraftRowIndex": 337,
+      "reviewId": "knv2_0141::corpus_0102",
+      "nodeId": "knv2_0141",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 20,
+      "targetFullDraftRowIndex": 338,
+      "reviewId": "knv2_0141::corpus_1025",
+      "nodeId": "knv2_0141",
+      "documentId": "corpus_1025",
+      "sourceName": "bigvaldis/breaking_news_market_sentiment README",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 21,
+      "targetFullDraftRowIndex": 339,
+      "reviewId": "knv2_0141::corpus_0462",
+      "nodeId": "knv2_0141",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 22,
+      "targetFullDraftRowIndex": 340,
+      "reviewId": "knv2_0141::corpus_0426",
+      "nodeId": "knv2_0141",
+      "documentId": "corpus_0426",
+      "sourceName": "Wikipedia: Event study",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 23,
+      "targetFullDraftRowIndex": 341,
+      "reviewId": "knv2_0141::corpus_0425",
+      "nodeId": "knv2_0141",
+      "documentId": "corpus_0425",
+      "sourceName": "Wikipedia: Market sentiment",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 24,
+      "targetFullDraftRowIndex": 408,
+      "reviewId": "knv2_0153::corpus_0459",
+      "nodeId": "knv2_0153",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 25,
+      "targetFullDraftRowIndex": 409,
+      "reviewId": "knv2_0153::corpus_0102",
+      "nodeId": "knv2_0153",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 26,
+      "targetFullDraftRowIndex": 410,
+      "reviewId": "knv2_0153::corpus_1025",
+      "nodeId": "knv2_0153",
+      "documentId": "corpus_1025",
+      "sourceName": "bigvaldis/breaking_news_market_sentiment README",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 27,
+      "targetFullDraftRowIndex": 411,
+      "reviewId": "knv2_0153::corpus_0462",
+      "nodeId": "knv2_0153",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 28,
+      "targetFullDraftRowIndex": 412,
+      "reviewId": "knv2_0153::corpus_0426",
+      "nodeId": "knv2_0153",
+      "documentId": "corpus_0426",
+      "sourceName": "Wikipedia: Event study",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 29,
+      "targetFullDraftRowIndex": 413,
+      "reviewId": "knv2_0153::corpus_0425",
+      "nodeId": "knv2_0153",
+      "documentId": "corpus_0425",
+      "sourceName": "Wikipedia: Market sentiment",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 30,
+      "targetFullDraftRowIndex": 480,
+      "reviewId": "knv2_0165::corpus_0459",
+      "nodeId": "knv2_0165",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 31,
+      "targetFullDraftRowIndex": 481,
+      "reviewId": "knv2_0165::corpus_0102",
+      "nodeId": "knv2_0165",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 32,
+      "targetFullDraftRowIndex": 482,
+      "reviewId": "knv2_0165::corpus_1025",
+      "nodeId": "knv2_0165",
+      "documentId": "corpus_1025",
+      "sourceName": "bigvaldis/breaking_news_market_sentiment README",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 33,
+      "targetFullDraftRowIndex": 483,
+      "reviewId": "knv2_0165::corpus_0462",
+      "nodeId": "knv2_0165",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 34,
+      "targetFullDraftRowIndex": 484,
+      "reviewId": "knv2_0165::corpus_0426",
+      "nodeId": "knv2_0165",
+      "documentId": "corpus_0426",
+      "sourceName": "Wikipedia: Event study",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 35,
+      "targetFullDraftRowIndex": 485,
+      "reviewId": "knv2_0165::corpus_0425",
+      "nodeId": "knv2_0165",
+      "documentId": "corpus_0425",
+      "sourceName": "Wikipedia: Market sentiment",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 36,
+      "targetFullDraftRowIndex": 552,
+      "reviewId": "knv2_0177::corpus_0459",
+      "nodeId": "knv2_0177",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 37,
+      "targetFullDraftRowIndex": 553,
+      "reviewId": "knv2_0177::corpus_0102",
+      "nodeId": "knv2_0177",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 38,
+      "targetFullDraftRowIndex": 554,
+      "reviewId": "knv2_0177::corpus_1025",
+      "nodeId": "knv2_0177",
+      "documentId": "corpus_1025",
+      "sourceName": "bigvaldis/breaking_news_market_sentiment README",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 39,
+      "targetFullDraftRowIndex": 555,
+      "reviewId": "knv2_0177::corpus_0462",
+      "nodeId": "knv2_0177",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 40,
+      "targetFullDraftRowIndex": 556,
+      "reviewId": "knv2_0177::corpus_0426",
+      "nodeId": "knv2_0177",
+      "documentId": "corpus_0426",
+      "sourceName": "Wikipedia: Event study",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 41,
+      "targetFullDraftRowIndex": 557,
+      "reviewId": "knv2_0177::corpus_0425",
+      "nodeId": "knv2_0177",
+      "documentId": "corpus_0425",
+      "sourceName": "Wikipedia: Market sentiment",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 42,
+      "targetFullDraftRowIndex": 618,
+      "reviewId": "knv2_0189::corpus_0459",
+      "nodeId": "knv2_0189",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 43,
+      "targetFullDraftRowIndex": 619,
+      "reviewId": "knv2_0189::corpus_0102",
+      "nodeId": "knv2_0189",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 44,
+      "targetFullDraftRowIndex": 620,
+      "reviewId": "knv2_0189::corpus_1025",
+      "nodeId": "knv2_0189",
+      "documentId": "corpus_1025",
+      "sourceName": "bigvaldis/breaking_news_market_sentiment README",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 45,
+      "targetFullDraftRowIndex": 621,
+      "reviewId": "knv2_0189::corpus_0462",
+      "nodeId": "knv2_0189",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 46,
+      "targetFullDraftRowIndex": 622,
+      "reviewId": "knv2_0189::corpus_0426",
+      "nodeId": "knv2_0189",
+      "documentId": "corpus_0426",
+      "sourceName": "Wikipedia: Event study",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 47,
+      "targetFullDraftRowIndex": 623,
+      "reviewId": "knv2_0189::corpus_0425",
+      "nodeId": "knv2_0189",
+      "documentId": "corpus_0425",
+      "sourceName": "Wikipedia: Market sentiment",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 48,
+      "targetFullDraftRowIndex": 690,
+      "reviewId": "knv2_0201::corpus_0459",
+      "nodeId": "knv2_0201",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 49,
+      "targetFullDraftRowIndex": 691,
+      "reviewId": "knv2_0201::corpus_0102",
+      "nodeId": "knv2_0201",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 50,
+      "targetFullDraftRowIndex": 692,
+      "reviewId": "knv2_0201::corpus_1025",
+      "nodeId": "knv2_0201",
+      "documentId": "corpus_1025",
+      "sourceName": "bigvaldis/breaking_news_market_sentiment README",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 51,
+      "targetFullDraftRowIndex": 693,
+      "reviewId": "knv2_0201::corpus_0462",
+      "nodeId": "knv2_0201",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 52,
+      "targetFullDraftRowIndex": 694,
+      "reviewId": "knv2_0201::corpus_0426",
+      "nodeId": "knv2_0201",
+      "documentId": "corpus_0426",
+      "sourceName": "Wikipedia: Event study",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 53,
+      "targetFullDraftRowIndex": 695,
+      "reviewId": "knv2_0201::corpus_0425",
+      "nodeId": "knv2_0201",
+      "documentId": "corpus_0425",
+      "sourceName": "Wikipedia: Market sentiment",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 54,
+      "targetFullDraftRowIndex": 762,
+      "reviewId": "knv2_0213::corpus_0459",
+      "nodeId": "knv2_0213",
+      "documentId": "corpus_0459",
+      "sourceName": "Wikipedia: Behavioral economics",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 55,
+      "targetFullDraftRowIndex": 763,
+      "reviewId": "knv2_0213::corpus_0102",
+      "nodeId": "knv2_0213",
+      "documentId": "corpus_0102",
+      "sourceName": "BEA News Release Schedule",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 56,
+      "targetFullDraftRowIndex": 764,
+      "reviewId": "knv2_0213::corpus_1025",
+      "nodeId": "knv2_0213",
+      "documentId": "corpus_1025",
+      "sourceName": "bigvaldis/breaking_news_market_sentiment README",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 57,
+      "targetFullDraftRowIndex": 765,
+      "reviewId": "knv2_0213::corpus_0462",
+      "nodeId": "knv2_0213",
+      "documentId": "corpus_0462",
+      "sourceName": "Wikipedia: Confirmation bias",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 58,
+      "targetFullDraftRowIndex": 766,
+      "reviewId": "knv2_0213::corpus_0426",
+      "nodeId": "knv2_0213",
+      "documentId": "corpus_0426",
+      "sourceName": "Wikipedia: Event study",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    },
+    {
+      "packetRowIndex": 59,
+      "targetFullDraftRowIndex": 767,
+      "reviewId": "knv2_0213::corpus_0425",
+      "nodeId": "knv2_0213",
+      "documentId": "corpus_0425",
+      "sourceName": "Wikipedia: Market sentiment",
+      "applyStatus": "blocked_not_ready",
+      "willWrite": false,
+      "missingFields": [
+        "reviewerDecision",
+        "sourceFitNotes",
+        "citationUse",
+        "reviewerName",
+        "reviewedAt"
+      ],
+      "invalidDecision": false,
+      "forbiddenHits": [],
+      "realHumanInput": false
+    }
+  ],
+  "nextStep": "Fill packet input copy with real reviewer decisions, validate the packet input, rebuild merge preview, then rerun this dry-run.",
+  "boundary": "Packet merge apply is a guarded reviewer-input merge pipeline. Dry-run mode writes no full draft changes. It does not create human judgments, approve copied text, approve learner-facing citations, write lessons, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, or production readiness."
+}

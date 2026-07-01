@@ -1,0 +1,116 @@
+{
+  "generatedAt": "2026-06-21T18:43:56.765Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "gateReady": true,
+  "realStatusPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "realStatusOverlayPresent": true,
+  "intakeCandidates": 12,
+  "approvalReviewCandidates": 12,
+  "autoApprovedLessons": 0,
+  "learnerFacingReleaseCandidates": 0,
+  "commercialReadyPromotions": 0,
+  "productionReadyClaims": 0,
+  "candidateRows": [
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0044",
+      "intakeDecision": "candidate_for_separate_human_approval_review",
+      "approvalGateDecision": "candidate_only_requires_separate_manual_approval_review"
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0068",
+      "intakeDecision": "candidate_for_separate_human_approval_review",
+      "approvalGateDecision": "candidate_only_requires_separate_manual_approval_review"
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0128",
+      "intakeDecision": "candidate_for_separate_human_approval_review",
+      "approvalGateDecision": "candidate_only_requires_separate_manual_approval_review"
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0140",
+      "intakeDecision": "candidate_for_separate_human_approval_review",
+      "approvalGateDecision": "candidate_only_requires_separate_manual_approval_review"
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0054",
+      "intakeDecision": "candidate_for_separate_human_approval_review",
+      "approvalGateDecision": "candidate_only_requires_separate_manual_approval_review"
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0019",
+      "intakeDecision": "candidate_for_separate_human_approval_review",
+      "approvalGateDecision": "candidate_only_requires_separate_manual_approval_review"
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0075",
+      "intakeDecision": "candidate_for_separate_human_approval_review",
+      "approvalGateDecision": "candidate_only_requires_separate_manual_approval_review"
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0087",
+      "intakeDecision": "candidate_for_separate_human_approval_review",
+      "approvalGateDecision": "candidate_only_requires_separate_manual_approval_review"
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0159",
+      "intakeDecision": "candidate_for_separate_human_approval_review",
+      "approvalGateDecision": "candidate_only_requires_separate_manual_approval_review"
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0011",
+      "intakeDecision": "candidate_for_separate_human_approval_review",
+      "approvalGateDecision": "candidate_only_requires_separate_manual_approval_review"
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0059",
+      "intakeDecision": "candidate_for_separate_human_approval_review",
+      "approvalGateDecision": "candidate_only_requires_separate_manual_approval_review"
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0167",
+      "intakeDecision": "candidate_for_separate_human_approval_review",
+      "approvalGateDecision": "candidate_only_requires_separate_manual_approval_review"
+    }
+  ],
+  "manualApprovalReviewRequirements": [
+    "A separate human approver must review completed notes after intake; the first reviewer cannot self-approve.",
+    "The approver must re-check source fit, factual claims, safety boundaries, copying risk, and hand-authored quality.",
+    "The approver must confirm yellow/red/research_only sources are not used as learner-facing evidence.",
+    "The approver may only decide whether a lesson is ready for a later release review; this gate does not publish or promote lesson grades.",
+    "Any unresolved direct candidate, note lint issue, diff audit issue, or completion audit issue keeps the lesson blocked."
+  ],
+  "forbiddenAutomaticOutcomes": [
+    "Do not set approvalStatus to approved_final.",
+    "Do not set learnerFacingRelease:true.",
+    "Do not set productionReady:true.",
+    "Do not change currentGrade to commercial_ready.",
+    "Do not treat complete notes as approval evidence by themselves.",
+    "Do not create trading advice, signals, performance claims, broker/order workflow, automation, or real-money guidance."
+  ],
+  "sourceReports": {
+    "dryRunPacket": "docs/FIRST_REVIEWER_DRY_RUN_PACKET.json",
+    "progressDashboard": "docs/FIRST_REVIEWER_PROGRESS_DASHBOARD.json",
+    "humanExecutionBundle": "docs/FIRST_REVIEWER_HUMAN_EXECUTION_BUNDLE.json",
+    "evidenceIntakeSummary": "docs/FIRST_REVIEWER_EVIDENCE_INTAKE_SUMMARY.json",
+    "noteQualityLint": "docs/REVIEWER_NOTE_QUALITY_LINT.json",
+    "completionAudit": "docs/LESSON_BATCH_COMPLETION_AUDIT.json",
+    "realOverlayDiffAudit": "docs/FIRST_REVIEWER_REAL_OVERLAY_DIFF_AUDIT.json"
+  },
+  "boundary": "This gate only defines the separate human approval review boundary after evidence intake. It does not approve lessons, publish learner-facing content, change grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, or guide real-money decisions."
+}

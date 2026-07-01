@@ -1,0 +1,946 @@
+{
+  "generatedAt": "2026-06-25T00:00:00.000+08:00",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "writeAllowedNow": false,
+  "validationStatus": "course_5_wave_5_pdf_ai_visual_review_batch_005_partially_ready_release_and_deletion_blocked",
+  "validationMode": "wave_5_pdf_ai_visual_review_batch_005_gate",
+  "inputPath": "docs/reviewer-inputs/LOCAL_COURSE_5_WAVE_5_PDF_AI_VISUAL_REVIEW_BATCH_005_INPUT.json",
+  "sourceExecutionPack": "docs/LOCAL_COURSE_5_WAVE_5_PDF_EXECUTION_PACK.json",
+  "inputRows": 85,
+  "batchRows": 12,
+  "pdfRows": 85,
+  "zipRows": 0,
+  "readyRows": 12,
+  "blockedRows": 73,
+  "missingFieldRows": 73,
+  "qualityIssueRows": 0,
+  "forbiddenHitRows": 0,
+  "acceptedForWave5PdfSemanticReviewRows": 0,
+  "acceptedForModuleDistillationRows": 0,
+  "acceptedForDeletionReadinessRows": 0,
+  "sourceFolderMayBeDeleted": false,
+  "learnerReadyModules": 0,
+  "validationRows": [
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_019",
+      "executionSampleNo": 1,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_30e5099e072da50c56639a98/page-0001.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_020",
+      "executionSampleNo": 2,
+      "pageNumber": 1410,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_30e5099e072da50c56639a98/page-1410.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_021",
+      "executionSampleNo": 3,
+      "pageNumber": 2818,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_30e5099e072da50c56639a98/page-2818.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_028",
+      "executionSampleNo": 4,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_64b71d522ff893e8d7223b14/page-0001.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_029",
+      "executionSampleNo": 5,
+      "pageNumber": 223,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_64b71d522ff893e8d7223b14/page-0223.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_030",
+      "executionSampleNo": 6,
+      "pageNumber": 445,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_64b71d522ff893e8d7223b14/page-0445.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_001",
+      "executionSampleNo": 7,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f92a6a282ea0bbc794b5792c/page-0001.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_002",
+      "executionSampleNo": 8,
+      "pageNumber": 223,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f92a6a282ea0bbc794b5792c/page-0223.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_003",
+      "executionSampleNo": 9,
+      "pageNumber": 445,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f92a6a282ea0bbc794b5792c/page-0445.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_004",
+      "executionSampleNo": 10,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_5d62c376c59dd07fb7ab9517/page-0001.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_005",
+      "executionSampleNo": 11,
+      "pageNumber": 223,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_5d62c376c59dd07fb7ab9517/page-0223.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_006",
+      "executionSampleNo": 12,
+      "pageNumber": 445,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_5d62c376c59dd07fb7ab9517/page-0445.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_007",
+      "executionSampleNo": 13,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_b071aeb9a7fa51f8e10822a7/page-0001.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_008",
+      "executionSampleNo": 14,
+      "pageNumber": 61,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_b071aeb9a7fa51f8e10822a7/page-0061.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_009",
+      "executionSampleNo": 15,
+      "pageNumber": 121,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_b071aeb9a7fa51f8e10822a7/page-0121.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_010",
+      "executionSampleNo": 16,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_5fd4a57eff4d300b20017e0a/page-0001.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_011",
+      "executionSampleNo": 17,
+      "pageNumber": 11,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_5fd4a57eff4d300b20017e0a/page-0011.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_012",
+      "executionSampleNo": 18,
+      "pageNumber": 20,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_5fd4a57eff4d300b20017e0a/page-0020.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_013",
+      "executionSampleNo": 19,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_934746436a703a5349053d90/page-0001.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_014",
+      "executionSampleNo": 20,
+      "pageNumber": 61,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_934746436a703a5349053d90/page-0061.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_015",
+      "executionSampleNo": 21,
+      "pageNumber": 121,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_934746436a703a5349053d90/page-0121.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_022",
+      "executionSampleNo": 22,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_eed6a89ae2181c36ffdf7979/page-0001.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_023",
+      "executionSampleNo": 23,
+      "pageNumber": 249,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_eed6a89ae2181c36ffdf7979/page-0249.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_024",
+      "executionSampleNo": 24,
+      "pageNumber": 496,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_eed6a89ae2181c36ffdf7979/page-0496.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_025",
+      "executionSampleNo": 25,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_fecbbd73dace293ba4925406/page-0001.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_026",
+      "executionSampleNo": 26,
+      "pageNumber": 699,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_fecbbd73dace293ba4925406/page-0699.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_027",
+      "executionSampleNo": 27,
+      "pageNumber": 1397,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_fecbbd73dace293ba4925406/page-1397.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_031",
+      "executionSampleNo": 28,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_eb0f1ede0ca3bc4fcd9e9ae2/page-0001.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_032",
+      "executionSampleNo": 29,
+      "pageNumber": 254,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_eb0f1ede0ca3bc4fcd9e9ae2/page-0254.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_033",
+      "executionSampleNo": 30,
+      "pageNumber": 507,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_eb0f1ede0ca3bc4fcd9e9ae2/page-0507.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_034",
+      "executionSampleNo": 31,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_63c2216fcf1e81f48021e86b/page-0001.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_035",
+      "executionSampleNo": 32,
+      "pageNumber": 277,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_63c2216fcf1e81f48021e86b/page-0277.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_036",
+      "executionSampleNo": 33,
+      "pageNumber": 552,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_63c2216fcf1e81f48021e86b/page-0552.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_016",
+      "executionSampleNo": 34,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_71dea62d45d97075ffd99161/page-0001.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_017",
+      "executionSampleNo": 35,
+      "pageNumber": 235,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_71dea62d45d97075ffd99161/page-0235.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_018",
+      "executionSampleNo": 36,
+      "pageNumber": 468,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_71dea62d45d97075ffd99161/page-0468.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_019",
+      "executionSampleNo": 37,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_cb0974e0bbb2397d1aa2f72a/page-0001.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_020",
+      "executionSampleNo": 38,
+      "pageNumber": 198,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_cb0974e0bbb2397d1aa2f72a/page-0198.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_021",
+      "executionSampleNo": 39,
+      "pageNumber": 394,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_cb0974e0bbb2397d1aa2f72a/page-0394.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_022",
+      "executionSampleNo": 40,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_71f12c3eff1a8f79e9d4ac47/page-0001.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_023",
+      "executionSampleNo": 41,
+      "pageNumber": 206,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_71f12c3eff1a8f79e9d4ac47/page-0206.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_024",
+      "executionSampleNo": 42,
+      "pageNumber": 410,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_71f12c3eff1a8f79e9d4ac47/page-0410.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_025",
+      "executionSampleNo": 43,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_4310d75e31d7a51a62b4b9f4/page-0001.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_026",
+      "executionSampleNo": 44,
+      "pageNumber": 192,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_4310d75e31d7a51a62b4b9f4/page-0192.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_027",
+      "executionSampleNo": 45,
+      "pageNumber": 383,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_4310d75e31d7a51a62b4b9f4/page-0383.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_028",
+      "executionSampleNo": 46,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_49596f06b8762def7582ae5d/page-0001.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_029",
+      "executionSampleNo": 47,
+      "pageNumber": 174,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_49596f06b8762def7582ae5d/page-0174.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_030",
+      "executionSampleNo": 48,
+      "pageNumber": 346,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_49596f06b8762def7582ae5d/page-0346.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_031",
+      "executionSampleNo": 49,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f46e95188257060788e2e44c/page-0001.png",
+      "batchRow": true,
+      "readyForReviewerConfirmation": true,
+      "issues": []
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_032",
+      "executionSampleNo": 50,
+      "pageNumber": 193,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f46e95188257060788e2e44c/page-0193.png",
+      "batchRow": true,
+      "readyForReviewerConfirmation": true,
+      "issues": []
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_033",
+      "executionSampleNo": 51,
+      "pageNumber": 385,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f46e95188257060788e2e44c/page-0385.png",
+      "batchRow": true,
+      "readyForReviewerConfirmation": true,
+      "issues": []
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_034",
+      "executionSampleNo": 52,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f04060b74ef98658ea4c101c/page-0001.png",
+      "batchRow": true,
+      "readyForReviewerConfirmation": true,
+      "issues": []
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_035",
+      "executionSampleNo": 53,
+      "pageNumber": 249,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f04060b74ef98658ea4c101c/page-0249.png",
+      "batchRow": true,
+      "readyForReviewerConfirmation": true,
+      "issues": []
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_036",
+      "executionSampleNo": 54,
+      "pageNumber": 496,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f04060b74ef98658ea4c101c/page-0496.png",
+      "batchRow": true,
+      "readyForReviewerConfirmation": true,
+      "issues": []
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_037",
+      "executionSampleNo": 55,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_5b4779c96e99fb018f064349/page-0001.png",
+      "batchRow": true,
+      "readyForReviewerConfirmation": true,
+      "issues": []
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_038",
+      "executionSampleNo": 56,
+      "pageNumber": 346,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_5b4779c96e99fb018f064349/page-0346.png",
+      "batchRow": true,
+      "readyForReviewerConfirmation": true,
+      "issues": []
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_039",
+      "executionSampleNo": 57,
+      "pageNumber": 691,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_5b4779c96e99fb018f064349/page-0691.png",
+      "batchRow": true,
+      "readyForReviewerConfirmation": true,
+      "issues": []
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_040",
+      "executionSampleNo": 58,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_a5db344bf1ca9feb9be979f5/page-0001.png",
+      "batchRow": true,
+      "readyForReviewerConfirmation": true,
+      "issues": []
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_041",
+      "executionSampleNo": 59,
+      "pageNumber": 145,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_a5db344bf1ca9feb9be979f5/page-0145.png",
+      "batchRow": true,
+      "readyForReviewerConfirmation": true,
+      "issues": []
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_042",
+      "executionSampleNo": 60,
+      "pageNumber": 288,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_a5db344bf1ca9feb9be979f5/page-0288.png",
+      "batchRow": true,
+      "readyForReviewerConfirmation": true,
+      "issues": []
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_043",
+      "executionSampleNo": 61,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_95751e6fbc67dcc43c8cddd4/page-0001.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_044",
+      "executionSampleNo": 62,
+      "pageNumber": 203,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_95751e6fbc67dcc43c8cddd4/page-0203.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_045",
+      "executionSampleNo": 63,
+      "pageNumber": 405,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_95751e6fbc67dcc43c8cddd4/page-0405.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_046",
+      "executionSampleNo": 64,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_1eb6cb25b2ddde14cf70de61/page-0001.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_047",
+      "executionSampleNo": 65,
+      "pageNumber": 121,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_1eb6cb25b2ddde14cf70de61/page-0121.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_048",
+      "executionSampleNo": 66,
+      "pageNumber": 240,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_1eb6cb25b2ddde14cf70de61/page-0240.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_049",
+      "executionSampleNo": 67,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_cd0355997ebdfb3f37e93826/page-0001.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_050",
+      "executionSampleNo": 68,
+      "pageNumber": 123,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_cd0355997ebdfb3f37e93826/page-0123.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_051",
+      "executionSampleNo": 69,
+      "pageNumber": 244,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_cd0355997ebdfb3f37e93826/page-0244.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_052",
+      "executionSampleNo": 70,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_7a5c9ea8f549a51d26ad7eb1/page-0001.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_053",
+      "executionSampleNo": 71,
+      "pageNumber": 85,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_7a5c9ea8f549a51d26ad7eb1/page-0085.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_054",
+      "executionSampleNo": 72,
+      "pageNumber": 169,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_7a5c9ea8f549a51d26ad7eb1/page-0169.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_055",
+      "executionSampleNo": 73,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_51ae24b7631eec2813610ab5/page-0001.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_056",
+      "executionSampleNo": 74,
+      "pageNumber": 61,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_51ae24b7631eec2813610ab5/page-0061.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_057",
+      "executionSampleNo": 75,
+      "pageNumber": 121,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_51ae24b7631eec2813610ab5/page-0121.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_058",
+      "executionSampleNo": 76,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_fa9154de2e4f7947a7f17b45/page-0001.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_059",
+      "executionSampleNo": 77,
+      "pageNumber": 203,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_fa9154de2e4f7947a7f17b45/page-0203.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_060",
+      "executionSampleNo": 78,
+      "pageNumber": 404,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_fa9154de2e4f7947a7f17b45/page-0404.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_061",
+      "executionSampleNo": 79,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_9ca36e05ffbc626ee81e193b/page-0001.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_062",
+      "executionSampleNo": 80,
+      "pageNumber": 157,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_9ca36e05ffbc626ee81e193b/page-0157.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_063",
+      "executionSampleNo": 81,
+      "pageNumber": 312,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_9ca36e05ffbc626ee81e193b/page-0312.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_064",
+      "executionSampleNo": 82,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_48405fde946b9fa0452ceba5/page-0001.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_065",
+      "executionSampleNo": 83,
+      "pageNumber": 140,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_48405fde946b9fa0452ceba5/page-0140.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_066",
+      "executionSampleNo": 84,
+      "pageNumber": 278,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_48405fde946b9fa0452ceba5/page-0278.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_067",
+      "executionSampleNo": 85,
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_a7a09cbedc2601d761bd74fa/page-0001.png",
+      "batchRow": false,
+      "readyForReviewerConfirmation": false,
+      "issues": [
+        "missing_fields:reviewerOwnedOcrTextExcerpt,reviewerOwnedVisualObservation,paraphrasedTeachingConcept,modulePlacement,futureLossDecision,evidenceLimitations,reviewerNameOrInitials,reviewedAt"
+      ]
+    }
+  ],
+  "nextOperationalGates": [
+    "Human reviewer confirmation and OCR follow-up are still required before semantic merge.",
+    "Future-loss acceptance must not replace OCR for these rows.",
+    "Course 5 source folder removal remains blocked."
+  ],
+  "completionRule": "Batch 005 covers Wave 5 PDF samples 49 through 60 but does not approve module merge, learner-facing release, or source-folder removal.",
+  "boundary": "Course 5 Wave 5 PDF AI visual review batch 005 is private reviewer-facing education operations material. It records page-level visual observations and visible text cues for twelve Wave 5 PDF samples so they can receive later human confirmation and OCR review. It does not complete OCR, replace human approval, merge content into learner-facing modules, approve source-folder removal, approve learner-facing release, copy private source wording, provide stock recommendations, live signals, return promises, execution instructions, automation, write authorization, or production readiness."
+}

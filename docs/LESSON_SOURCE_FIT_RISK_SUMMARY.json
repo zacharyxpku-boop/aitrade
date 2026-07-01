@@ -1,0 +1,1557 @@
+{
+  "generatedAt": "2026-06-19T09:47:07.808Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "workbenchItems": 48,
+  "rewriteBatches": 8,
+  "sourceFitRows": 48,
+  "greenSourceLeaks": 0,
+  "riskCounts": {
+    "medium": 21,
+    "low": 25,
+    "high": 2
+  },
+  "batchRows": [
+    {
+      "batchId": "rewrite_batch_01",
+      "itemCount": 6,
+      "modules": [
+        "多周期分析",
+        "交易区间",
+        "反转"
+      ],
+      "sourceFamilies": [
+        "SEC",
+        "CFTC",
+        "Investor.gov",
+        "Federal Reserve",
+        "Treasury",
+        "BEA",
+        "Project Gutenberg",
+        "BLS",
+        "federalregister.gov"
+      ],
+      "riskCounts": {
+        "medium": 5,
+        "high": 1
+      },
+      "firstReviewFocus": "Confirm whether the attached source families really support chart_price_action; expected context: historical language, observation training, term boundary, and non-action chart-reading context."
+    },
+    {
+      "batchId": "rewrite_batch_02",
+      "itemCount": 6,
+      "modules": [
+        "反转",
+        "交易区间",
+        "交易心理"
+      ],
+      "sourceFamilies": [
+        "BLS",
+        "financialresearch.gov",
+        "Treasury",
+        "Internet Archive",
+        "Federal Reserve",
+        "BEA",
+        "CFTC",
+        "federalregister.gov",
+        "Investor.gov",
+        "Project Gutenberg",
+        "SEC",
+        "Census",
+        "consumerfinance.gov"
+      ],
+      "riskCounts": {
+        "medium": 2,
+        "low": 4
+      },
+      "firstReviewFocus": "Check whether chart-language claims need public-domain historical context or should be rewritten as pure observation training."
+    },
+    {
+      "batchId": "rewrite_batch_03",
+      "itemCount": 6,
+      "modules": [
+        "交易心理",
+        "趋势"
+      ],
+      "sourceFamilies": [
+        "consumerfinance.gov",
+        "CFTC",
+        "EIA",
+        "SEC",
+        "Treasury",
+        "Project Gutenberg",
+        "BEA",
+        "BLS",
+        "Investor.gov",
+        "Federal Reserve",
+        "Internet Archive"
+      ],
+      "riskCounts": {
+        "medium": 3,
+        "low": 3
+      },
+      "firstReviewFocus": "Narrow the rewrite to source-boundary context only; do not blend unrelated authority into a stronger learner-facing claim."
+    },
+    {
+      "batchId": "rewrite_batch_04",
+      "itemCount": 6,
+      "modules": [
+        "市场结构",
+        "新闻/情绪/事件偏见",
+        "K线与价格行为"
+      ],
+      "sourceFamilies": [
+        "Federal Reserve",
+        "SEC",
+        "Project Gutenberg",
+        "Treasury",
+        "CFTC",
+        "BEA",
+        "Investor.gov",
+        "BLS",
+        "dol.gov",
+        "Internet Archive"
+      ],
+      "riskCounts": {
+        "low": 5,
+        "medium": 1
+      },
+      "firstReviewFocus": "Check whether chart-language claims need public-domain historical context or should be rewritten as pure observation training."
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "itemCount": 6,
+      "modules": [
+        "K线与价格行为",
+        "风险管理"
+      ],
+      "sourceFamilies": [
+        "SEC",
+        "Investor.gov",
+        "Treasury",
+        "Project Gutenberg",
+        "BEA",
+        "CFTC",
+        "BLS",
+        "Federal Reserve",
+        "nist.gov"
+      ],
+      "riskCounts": {
+        "medium": 2,
+        "high": 1,
+        "low": 3
+      },
+      "firstReviewFocus": "Check whether chart-language claims need public-domain historical context or should be rewritten as pure observation training."
+    },
+    {
+      "batchId": "rewrite_batch_06",
+      "itemCount": 6,
+      "modules": [
+        "风险管理",
+        "反转",
+        "回测误区"
+      ],
+      "sourceFamilies": [
+        "Investor.gov",
+        "CFTC",
+        "SEC",
+        "BLS",
+        "BEA",
+        "Treasury",
+        "financialresearch.gov",
+        "Project Gutenberg",
+        "treasurydirect.gov",
+        "EIA"
+      ],
+      "riskCounts": {
+        "medium": 2,
+        "low": 4
+      },
+      "firstReviewFocus": "Check whether chart-language claims need public-domain historical context or should be rewritten as pure observation training."
+    },
+    {
+      "batchId": "rewrite_batch_07",
+      "itemCount": 6,
+      "modules": [
+        "回测误区",
+        "市场结构",
+        "突破"
+      ],
+      "sourceFamilies": [
+        "Federal Reserve",
+        "EIA",
+        "BLS",
+        "CFTC",
+        "nist.gov",
+        "Treasury",
+        "Project Gutenberg",
+        "Investor.gov",
+        "SEC",
+        "Internet Archive",
+        "BEA"
+      ],
+      "riskCounts": {
+        "low": 5,
+        "medium": 1
+      },
+      "firstReviewFocus": "Narrow the rewrite to source-boundary context only; do not blend unrelated authority into a stronger learner-facing claim."
+    },
+    {
+      "batchId": "rewrite_batch_08",
+      "itemCount": 6,
+      "modules": [
+        "突破",
+        "图表阅读基础",
+        "新闻/情绪/事件偏见"
+      ],
+      "sourceFamilies": [
+        "SEC",
+        "Investor.gov",
+        "consumer.ftc.gov",
+        "Project Gutenberg",
+        "Treasury",
+        "CFTC",
+        "BLS",
+        "BEA",
+        "nass.usda.gov",
+        "Federal Reserve"
+      ],
+      "riskCounts": {
+        "medium": 5,
+        "low": 1
+      },
+      "firstReviewFocus": "Narrow the rewrite to source-boundary context only; do not blend unrelated authority into a stronger learner-facing claim."
+    }
+  ],
+  "rows": [
+    {
+      "lessonId": "lesson_knv2_0037",
+      "module": "图表阅读基础",
+      "topic": "影线含义",
+      "rewritePriority": "P2",
+      "currentGrade": "structural_draft",
+      "currentScore": 90,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "SEC",
+        "Investor.gov",
+        "CFTC",
+        "Treasury",
+        "Project Gutenberg"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "broad_source_family_mix",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "reviewerFocus": [
+        "Narrow the rewrite to source-boundary context only; do not blend unrelated authority into a stronger learner-facing claim.",
+        "Use fraud sources only for boundary warnings, not for explaining chart mechanics.",
+        "If using public-domain classics, keep only historical language or observation context; remove old trading-rule voice."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_08"
+    },
+    {
+      "lessonId": "lesson_knv2_0049",
+      "module": "图表阅读基础",
+      "topic": "波动变化",
+      "rewritePriority": "P2",
+      "currentGrade": "structural_draft",
+      "currentScore": 90,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "BLS",
+        "CFTC",
+        "BEA",
+        "Project Gutenberg",
+        "Treasury"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "broad_source_family_mix",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "reviewerFocus": [
+        "Narrow the rewrite to source-boundary context only; do not blend unrelated authority into a stronger learner-facing claim.",
+        "Use fraud sources only for boundary warnings, not for explaining chart mechanics.",
+        "If using public-domain classics, keep only historical language or observation context; remove old trading-rule voice."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_08"
+    },
+    {
+      "lessonId": "lesson_knv2_0061",
+      "module": "图表阅读基础",
+      "topic": "结构先行",
+      "rewritePriority": "P2",
+      "currentGrade": "structural_draft",
+      "currentScore": 90,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "BEA",
+        "SEC",
+        "Treasury"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "chart_lesson_without_public_domain_historical_context"
+      ],
+      "reviewerFocus": [
+        "Check whether chart-language claims need public-domain historical context or should be rewritten as pure observation training."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_08"
+    },
+    {
+      "lessonId": "lesson_knv2_0073",
+      "module": "图表阅读基础",
+      "topic": "价格位置",
+      "rewritePriority": "P2",
+      "currentGrade": "structural_draft",
+      "currentScore": 90,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "nass.usda.gov",
+        "BLS",
+        "Treasury",
+        "Project Gutenberg"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "If using public-domain classics, keep only historical language or observation context; remove old trading-rule voice."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_08"
+    },
+    {
+      "lessonId": "lesson_knv2_0014",
+      "module": "市场结构",
+      "topic": "结构延续",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "Federal Reserve",
+        "SEC",
+        "Project Gutenberg",
+        "Treasury"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "If using public-domain classics, keep only historical language or observation context; remove old trading-rule voice."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_04"
+    },
+    {
+      "lessonId": "lesson_knv2_0086",
+      "module": "市场结构",
+      "topic": "结构破坏",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "CFTC",
+        "Treasury",
+        "BEA"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "chart_lesson_without_public_domain_historical_context",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "reviewerFocus": [
+        "Check whether chart-language claims need public-domain historical context or should be rewritten as pure observation training.",
+        "Use fraud sources only for boundary warnings, not for explaining chart mechanics."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_04"
+    },
+    {
+      "lessonId": "lesson_knv2_0002",
+      "module": "市场结构",
+      "topic": "高低点",
+      "rewritePriority": "P2",
+      "currentGrade": "structural_draft",
+      "currentScore": 90,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "BLS",
+        "Federal Reserve",
+        "Treasury",
+        "Project Gutenberg"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "If using public-domain classics, keep only historical language or observation context; remove old trading-rule voice."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_07"
+    },
+    {
+      "lessonId": "lesson_knv2_0026",
+      "module": "市场结构",
+      "topic": "结构破坏",
+      "rewritePriority": "P2",
+      "currentGrade": "structural_draft",
+      "currentScore": 90,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "Investor.gov",
+        "SEC",
+        "Treasury",
+        "Internet Archive"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "If using public-domain classics, keep only historical language or observation context; remove old trading-rule voice."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_07"
+    },
+    {
+      "lessonId": "lesson_knv2_0003",
+      "module": "K线与价格行为",
+      "topic": "单根K线误区",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "BEA",
+        "BLS",
+        "Internet Archive"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "If using public-domain classics, keep only historical language or observation context; remove old trading-rule voice."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_04"
+    },
+    {
+      "lessonId": "lesson_knv2_0075",
+      "module": "K线与价格行为",
+      "topic": "组合K线",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "SEC",
+        "Investor.gov",
+        "Treasury",
+        "Project Gutenberg",
+        "BEA"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "broad_source_family_mix",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "reviewerFocus": [
+        "Narrow the rewrite to source-boundary context only; do not blend unrelated authority into a stronger learner-facing claim.",
+        "Use fraud sources only for boundary warnings, not for explaining chart mechanics.",
+        "If using public-domain classics, keep only historical language or observation context; remove old trading-rule voice."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_05"
+    },
+    {
+      "lessonId": "lesson_knv2_0087",
+      "module": "K线与价格行为",
+      "topic": "流动性扫过",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "SEC",
+        "CFTC",
+        "BLS",
+        "BEA",
+        "Treasury"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "high",
+      "riskReasons": [
+        "chart_lesson_without_public_domain_historical_context",
+        "broad_source_family_mix",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "reviewerFocus": [
+        "Check whether chart-language claims need public-domain historical context or should be rewritten as pure observation training.",
+        "Narrow the rewrite to source-boundary context only; do not blend unrelated authority into a stronger learner-facing claim.",
+        "Use fraud sources only for boundary warnings, not for explaining chart mechanics."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_05"
+    },
+    {
+      "lessonId": "lesson_knv2_0159",
+      "module": "K线与价格行为",
+      "topic": "形态语境",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "SEC",
+        "Investor.gov",
+        "Treasury",
+        "BEA"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "chart_lesson_without_public_domain_historical_context",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "reviewerFocus": [
+        "Check whether chart-language claims need public-domain historical context or should be rewritten as pure observation training.",
+        "Use fraud sources only for boundary warnings, not for explaining chart mechanics."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_05"
+    },
+    {
+      "lessonId": "lesson_knv2_0004",
+      "module": "趋势",
+      "topic": "趋势定义",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "EIA",
+        "SEC",
+        "Treasury",
+        "Project Gutenberg",
+        "BEA"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "broad_source_family_mix"
+      ],
+      "reviewerFocus": [
+        "Narrow the rewrite to source-boundary context only; do not blend unrelated authority into a stronger learner-facing claim.",
+        "If using public-domain classics, keep only historical language or observation context; remove old trading-rule voice."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_03"
+    },
+    {
+      "lessonId": "lesson_knv2_0040",
+      "module": "趋势",
+      "topic": "趋势衰竭",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "CFTC",
+        "BLS",
+        "Project Gutenberg",
+        "BEA"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "If using public-domain classics, keep only historical language or observation context; remove old trading-rule voice."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_03"
+    },
+    {
+      "lessonId": "lesson_knv2_0052",
+      "module": "趋势",
+      "topic": "趋势中继",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "Treasury",
+        "CFTC",
+        "BEA"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "chart_lesson_without_public_domain_historical_context",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "reviewerFocus": [
+        "Check whether chart-language claims need public-domain historical context or should be rewritten as pure observation training.",
+        "Use fraud sources only for boundary warnings, not for explaining chart mechanics."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_03"
+    },
+    {
+      "lessonId": "lesson_knv2_0088",
+      "module": "趋势",
+      "topic": "趋势加速",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "Investor.gov",
+        "BLS",
+        "Federal Reserve",
+        "Treasury",
+        "Internet Archive"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "broad_source_family_mix",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "reviewerFocus": [
+        "Narrow the rewrite to source-boundary context only; do not blend unrelated authority into a stronger learner-facing claim.",
+        "Use fraud sources only for boundary warnings, not for explaining chart mechanics.",
+        "If using public-domain classics, keep only historical language or observation context; remove old trading-rule voice."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_03"
+    },
+    {
+      "lessonId": "lesson_knv2_0005",
+      "module": "突破",
+      "topic": "突破前压缩",
+      "rewritePriority": "P2",
+      "currentGrade": "structural_draft",
+      "currentScore": 90,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "SEC",
+        "Federal Reserve",
+        "Treasury",
+        "Project Gutenberg"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "If using public-domain classics, keep only historical language or observation context; remove old trading-rule voice."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_07"
+    },
+    {
+      "lessonId": "lesson_knv2_0017",
+      "module": "突破",
+      "topic": "有效突破",
+      "rewritePriority": "P2",
+      "currentGrade": "structural_draft",
+      "currentScore": 90,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "SEC",
+        "Treasury",
+        "Internet Archive"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "If using public-domain classics, keep only historical language or observation context; remove old trading-rule voice."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_07"
+    },
+    {
+      "lessonId": "lesson_knv2_0029",
+      "module": "突破",
+      "topic": "假突破",
+      "rewritePriority": "P2",
+      "currentGrade": "structural_draft",
+      "currentScore": 90,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "BLS",
+        "Treasury",
+        "Internet Archive",
+        "BEA"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "If using public-domain classics, keep only historical language or observation context; remove old trading-rule voice."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_07"
+    },
+    {
+      "lessonId": "lesson_knv2_0041",
+      "module": "突破",
+      "topic": "突破回踩",
+      "rewritePriority": "P2",
+      "currentGrade": "structural_draft",
+      "currentScore": 90,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "SEC",
+        "Investor.gov",
+        "consumer.ftc.gov",
+        "Project Gutenberg",
+        "Treasury"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "broad_source_family_mix",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "reviewerFocus": [
+        "Narrow the rewrite to source-boundary context only; do not blend unrelated authority into a stronger learner-facing claim.",
+        "Use fraud sources only for boundary warnings, not for explaining chart mechanics.",
+        "If using public-domain classics, keep only historical language or observation context; remove old trading-rule voice."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_08"
+    },
+    {
+      "lessonId": "lesson_knv2_0054",
+      "module": "交易区间",
+      "topic": "区间突破",
+      "rewritePriority": "P0",
+      "currentGrade": "structural_draft",
+      "currentScore": 84,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "BEA",
+        "CFTC",
+        "Federal Reserve",
+        "Treasury",
+        "Project Gutenberg"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "broad_source_family_mix"
+      ],
+      "reviewerFocus": [
+        "Narrow the rewrite to source-boundary context only; do not blend unrelated authority into a stronger learner-facing claim.",
+        "If using public-domain classics, keep only historical language or observation context; remove old trading-rule voice."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_01"
+    },
+    {
+      "lessonId": "lesson_knv2_0006",
+      "module": "交易区间",
+      "topic": "区间上沿",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "Federal Reserve",
+        "BLS",
+        "BEA",
+        "Treasury"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "chart_lesson_without_public_domain_historical_context"
+      ],
+      "reviewerFocus": [
+        "Check whether chart-language claims need public-domain historical context or should be rewritten as pure observation training."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_02"
+    },
+    {
+      "lessonId": "lesson_knv2_0018",
+      "module": "交易区间",
+      "topic": "区间下沿",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "CFTC",
+        "federalregister.gov",
+        "Investor.gov",
+        "Treasury",
+        "Project Gutenberg"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "broad_source_family_mix",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "reviewerFocus": [
+        "Narrow the rewrite to source-boundary context only; do not blend unrelated authority into a stronger learner-facing claim.",
+        "Use fraud sources only for boundary warnings, not for explaining chart mechanics.",
+        "If using public-domain classics, keep only historical language or observation context; remove old trading-rule voice."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_02"
+    },
+    {
+      "lessonId": "lesson_knv2_0030",
+      "module": "交易区间",
+      "topic": "区间中部",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "SEC",
+        "Census",
+        "BEA",
+        "Internet Archive"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "If using public-domain classics, keep only historical language or observation context; remove old trading-rule voice."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_02"
+    },
+    {
+      "lessonId": "lesson_knv2_0019",
+      "module": "反转",
+      "topic": "衰竭证据",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "Federal Reserve",
+        "BLS",
+        "federalregister.gov",
+        "Treasury",
+        "Project Gutenberg"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "broad_source_family_mix"
+      ],
+      "reviewerFocus": [
+        "Narrow the rewrite to source-boundary context only; do not blend unrelated authority into a stronger learner-facing claim.",
+        "If using public-domain classics, keep only historical language or observation context; remove old trading-rule voice."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_01"
+    },
+    {
+      "lessonId": "lesson_knv2_0187",
+      "module": "反转",
+      "topic": "反转定义",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "BLS",
+        "financialresearch.gov",
+        "Treasury",
+        "Internet Archive"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "If using public-domain classics, keep only historical language or observation context; remove old trading-rule voice."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_02"
+    },
+    {
+      "lessonId": "lesson_knv2_0007",
+      "module": "反转",
+      "topic": "反转定义",
+      "rewritePriority": "P2",
+      "currentGrade": "structural_draft",
+      "currentScore": 90,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "BLS",
+        "SEC",
+        "CFTC",
+        "BEA",
+        "Treasury"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "chart_lesson_without_public_domain_historical_context",
+        "broad_source_family_mix"
+      ],
+      "reviewerFocus": [
+        "Check whether chart-language claims need public-domain historical context or should be rewritten as pure observation training.",
+        "Narrow the rewrite to source-boundary context only; do not blend unrelated authority into a stronger learner-facing claim."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_06"
+    },
+    {
+      "lessonId": "lesson_knv2_0031",
+      "module": "反转",
+      "topic": "双顶双底",
+      "rewritePriority": "P2",
+      "currentGrade": "structural_draft",
+      "currentScore": 90,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "CFTC",
+        "financialresearch.gov",
+        "Project Gutenberg",
+        "BEA"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "If using public-domain classics, keep only historical language or observation context; remove old trading-rule voice."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_06"
+    },
+    {
+      "lessonId": "lesson_knv2_0044",
+      "module": "多周期分析",
+      "topic": "M15细节",
+      "rewritePriority": "P0",
+      "currentGrade": "structural_draft",
+      "currentScore": 82,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "SEC",
+        "CFTC"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "chart_lesson_without_public_domain_historical_context",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "reviewerFocus": [
+        "Check whether chart-language claims need public-domain historical context or should be rewritten as pure observation training.",
+        "Use fraud sources only for boundary warnings, not for explaining chart mechanics."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_01"
+    },
+    {
+      "lessonId": "lesson_knv2_0068",
+      "module": "多周期分析",
+      "topic": "D1背景",
+      "rewritePriority": "P0",
+      "currentGrade": "structural_draft",
+      "currentScore": 82,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "CFTC",
+        "Investor.gov"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "high",
+      "riskReasons": [
+        "no_expected_family_for_module_domain",
+        "chart_lesson_without_public_domain_historical_context",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "reviewerFocus": [
+        "Confirm whether the attached source families really support chart_price_action; expected context: historical language, observation training, term boundary, and non-action chart-reading context.",
+        "Check whether chart-language claims need public-domain historical context or should be rewritten as pure observation training.",
+        "Use fraud sources only for boundary warnings, not for explaining chart mechanics."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_01"
+    },
+    {
+      "lessonId": "lesson_knv2_0128",
+      "module": "多周期分析",
+      "topic": "D1背景",
+      "rewritePriority": "P0",
+      "currentGrade": "structural_draft",
+      "currentScore": 82,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "CFTC",
+        "Federal Reserve",
+        "Investor.gov"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "chart_lesson_without_public_domain_historical_context"
+      ],
+      "reviewerFocus": [
+        "Check whether chart-language claims need public-domain historical context or should be rewritten as pure observation training."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_01"
+    },
+    {
+      "lessonId": "lesson_knv2_0140",
+      "module": "多周期分析",
+      "topic": "H4结构",
+      "rewritePriority": "P0",
+      "currentGrade": "structural_draft",
+      "currentScore": 82,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "Treasury",
+        "BEA",
+        "CFTC",
+        "Investor.gov"
+      ],
+      "moduleDomain": "chart_price_action",
+      "preferredContext": "historical language, observation training, term boundary, and non-action chart-reading context",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "chart_lesson_without_public_domain_historical_context"
+      ],
+      "reviewerFocus": [
+        "Check whether chart-language claims need public-domain historical context or should be rewritten as pure observation training."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_01"
+    },
+    {
+      "lessonId": "lesson_knv2_0057",
+      "module": "新闻/情绪/事件偏见",
+      "topic": "单源偏差",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "BEA",
+        "Investor.gov",
+        "CFTC",
+        "Federal Reserve"
+      ],
+      "moduleDomain": "news_sentiment_events",
+      "preferredContext": "event, disclosure, fraud-red-flag, macro-release, and narrative-lag context",
+      "riskLevel": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "Confirm source-to-topic fit during human rewrite; keep all sources as boundary evidence only."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_04"
+    },
+    {
+      "lessonId": "lesson_knv2_0189",
+      "module": "新闻/情绪/事件偏见",
+      "topic": "标题偏见",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "BEA",
+        "Investor.gov",
+        "BLS",
+        "dol.gov"
+      ],
+      "moduleDomain": "news_sentiment_events",
+      "preferredContext": "event, disclosure, fraud-red-flag, macro-release, and narrative-lag context",
+      "riskLevel": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "Confirm source-to-topic fit during human rewrite; keep all sources as boundary evidence only."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_04"
+    },
+    {
+      "lessonId": "lesson_knv2_0321",
+      "module": "新闻/情绪/事件偏见",
+      "topic": "事件时间",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "BEA",
+        "Investor.gov",
+        "Federal Reserve",
+        "BLS"
+      ],
+      "moduleDomain": "news_sentiment_events",
+      "preferredContext": "event, disclosure, fraud-red-flag, macro-release, and narrative-lag context",
+      "riskLevel": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "Confirm source-to-topic fit during human rewrite; keep all sources as boundary evidence only."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_04"
+    },
+    {
+      "lessonId": "lesson_knv2_0009",
+      "module": "新闻/情绪/事件偏见",
+      "topic": "标题偏见",
+      "rewritePriority": "P2",
+      "currentGrade": "structural_draft",
+      "currentScore": 90,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "Federal Reserve",
+        "BEA",
+        "SEC",
+        "BLS",
+        "CFTC"
+      ],
+      "moduleDomain": "news_sentiment_events",
+      "preferredContext": "event, disclosure, fraud-red-flag, macro-release, and narrative-lag context",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "broad_source_family_mix"
+      ],
+      "reviewerFocus": [
+        "Narrow the rewrite to source-boundary context only; do not blend unrelated authority into a stronger learner-facing claim."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_08"
+    },
+    {
+      "lessonId": "lesson_knv2_0010",
+      "module": "回测误区",
+      "topic": "偷看未来",
+      "rewritePriority": "P2",
+      "currentGrade": "structural_draft",
+      "currentScore": 90,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "BLS",
+        "SEC",
+        "CFTC",
+        "Investor.gov"
+      ],
+      "moduleDomain": "backtesting_research_hygiene",
+      "preferredContext": "data hygiene, sample, disclosure, uncertainty, and methodology-boundary context",
+      "riskLevel": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "Confirm source-to-topic fit during human rewrite; keep all sources as boundary evidence only."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_06"
+    },
+    {
+      "lessonId": "lesson_knv2_0022",
+      "module": "回测误区",
+      "topic": "样本太少",
+      "rewritePriority": "P2",
+      "currentGrade": "structural_draft",
+      "currentScore": 90,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "Investor.gov",
+        "BLS",
+        "CFTC"
+      ],
+      "moduleDomain": "backtesting_research_hygiene",
+      "preferredContext": "data hygiene, sample, disclosure, uncertainty, and methodology-boundary context",
+      "riskLevel": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "Confirm source-to-topic fit during human rewrite; keep all sources as boundary evidence only."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_06"
+    },
+    {
+      "lessonId": "lesson_knv2_0034",
+      "module": "回测误区",
+      "topic": "过拟合",
+      "rewritePriority": "P2",
+      "currentGrade": "structural_draft",
+      "currentScore": 90,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "BEA",
+        "treasurydirect.gov",
+        "EIA",
+        "Investor.gov",
+        "CFTC"
+      ],
+      "moduleDomain": "backtesting_research_hygiene",
+      "preferredContext": "data hygiene, sample, disclosure, uncertainty, and methodology-boundary context",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "broad_source_family_mix"
+      ],
+      "reviewerFocus": [
+        "Narrow the rewrite to source-boundary context only; do not blend unrelated authority into a stronger learner-facing claim."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_06"
+    },
+    {
+      "lessonId": "lesson_knv2_0046",
+      "module": "回测误区",
+      "topic": "成本忽略",
+      "rewritePriority": "P2",
+      "currentGrade": "structural_draft",
+      "currentScore": 90,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "Federal Reserve",
+        "EIA",
+        "BLS",
+        "CFTC",
+        "nist.gov"
+      ],
+      "moduleDomain": "backtesting_research_hygiene",
+      "preferredContext": "data hygiene, sample, disclosure, uncertainty, and methodology-boundary context",
+      "riskLevel": "medium",
+      "riskReasons": [
+        "broad_source_family_mix"
+      ],
+      "reviewerFocus": [
+        "Narrow the rewrite to source-boundary context only; do not blend unrelated authority into a stronger learner-facing claim."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_07"
+    },
+    {
+      "lessonId": "lesson_knv2_0011",
+      "module": "风险管理",
+      "topic": "失效条件",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "currentScore": 88,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "SEC",
+        "CFTC",
+        "Federal Reserve",
+        "nist.gov"
+      ],
+      "moduleDomain": "risk_portfolio",
+      "preferredContext": "risk boundary, uncertainty, product-risk, and control-language context",
+      "riskLevel": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "Confirm source-to-topic fit during human rewrite; keep all sources as boundary evidence only."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_05"
+    },
+    {
+      "lessonId": "lesson_knv2_0059",
+      "module": "风险管理",
+      "topic": "边界语言",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "currentScore": 88,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "Investor.gov",
+        "CFTC",
+        "SEC"
+      ],
+      "moduleDomain": "risk_portfolio",
+      "preferredContext": "risk boundary, uncertainty, product-risk, and control-language context",
+      "riskLevel": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "Confirm source-to-topic fit during human rewrite; keep all sources as boundary evidence only."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_05"
+    },
+    {
+      "lessonId": "lesson_knv2_0167",
+      "module": "风险管理",
+      "topic": "可复盘计划",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "currentScore": 88,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "Investor.gov",
+        "CFTC",
+        "SEC"
+      ],
+      "moduleDomain": "risk_portfolio",
+      "preferredContext": "risk boundary, uncertainty, product-risk, and control-language context",
+      "riskLevel": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "Confirm source-to-topic fit during human rewrite; keep all sources as boundary evidence only."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_05"
+    },
+    {
+      "lessonId": "lesson_knv2_0275",
+      "module": "风险管理",
+      "topic": "不确定性",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "currentScore": 88,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "Investor.gov",
+        "CFTC",
+        "SEC"
+      ],
+      "moduleDomain": "risk_portfolio",
+      "preferredContext": "risk boundary, uncertainty, product-risk, and control-language context",
+      "riskLevel": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "Confirm source-to-topic fit during human rewrite; keep all sources as boundary evidence only."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_06"
+    },
+    {
+      "lessonId": "lesson_knv2_0024",
+      "module": "交易心理",
+      "topic": "确认偏误",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "consumerfinance.gov",
+        "CFTC"
+      ],
+      "moduleDomain": "psychology_behavior",
+      "preferredContext": "fraud education, behavior risk, confirmation bias, and scam-red-flag context",
+      "riskLevel": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "Confirm source-to-topic fit during human rewrite; keep all sources as boundary evidence only."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_02"
+    },
+    {
+      "lessonId": "lesson_knv2_0132",
+      "module": "交易心理",
+      "topic": "害怕错过",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "consumerfinance.gov",
+        "CFTC"
+      ],
+      "moduleDomain": "psychology_behavior",
+      "preferredContext": "fraud education, behavior risk, confirmation bias, and scam-red-flag context",
+      "riskLevel": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "Confirm source-to-topic fit during human rewrite; keep all sources as boundary evidence only."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_02"
+    },
+    {
+      "lessonId": "lesson_knv2_0156",
+      "module": "交易心理",
+      "topic": "过度自信",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "consumerfinance.gov",
+        "CFTC"
+      ],
+      "moduleDomain": "psychology_behavior",
+      "preferredContext": "fraud education, behavior risk, confirmation bias, and scam-red-flag context",
+      "riskLevel": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "Confirm source-to-topic fit during human rewrite; keep all sources as boundary evidence only."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_03"
+    },
+    {
+      "lessonId": "lesson_knv2_0240",
+      "module": "交易心理",
+      "topic": "结果导向",
+      "rewritePriority": "P1",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "sourceFamilies": [
+        "consumerfinance.gov",
+        "CFTC"
+      ],
+      "moduleDomain": "psychology_behavior",
+      "preferredContext": "fraud education, behavior risk, confirmation bias, and scam-red-flag context",
+      "riskLevel": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "Confirm source-to-topic fit during human rewrite; keep all sources as boundary evidence only."
+      ],
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "batchId": "rewrite_batch_03"
+    }
+  ],
+  "boundary": "This report prioritizes human source-fit review only. It does not reject green sources, approve final wording, publish learner-facing content, change lesson grades, or provide trading advice."
+}

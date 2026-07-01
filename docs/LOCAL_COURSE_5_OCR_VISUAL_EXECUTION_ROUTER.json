@@ -1,0 +1,1861 @@
+{
+  "generatedAt": "2026-06-24T17:50:04.678Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "writeAllowedNow": false,
+  "routerStatus": "course_5_ocr_visual_execution_router_ready_folder_deletion_blocked",
+  "sourceRoot": "C:\\Users\\86136\\Desktop\\5",
+  "sourceFolderMayBeDeleted": false,
+  "currentKnowledgeArtifactsCanReplaceSourceFolder": false,
+  "capabilities": {
+    "tesseractAvailable": false,
+    "tesseractVersionLine": null,
+    "pythonAvailable": true,
+    "pythonModules": {
+      "PIL": true,
+      "cv2": true,
+      "easyocr": false,
+      "fitz": true,
+      "pdfplumber": true,
+      "pypdf": true,
+      "pytesseract": false
+    },
+    "pdfRenderAvailable": true,
+    "pdfTextProbeAvailable": true,
+    "imageAnalysisAvailable": true,
+    "ocrTextEngineAvailable": false
+  },
+  "unresolvedSourceRows": 49,
+  "pdfRows": 41,
+  "zipRows": 8,
+  "rowsWithRepresentativeSamples": 49,
+  "canAdvanceWithVisualReviewNowRows": 49,
+  "fullTextOcrRequiredRows": 41,
+  "ocrUnavailableBlockingRows": 41,
+  "canFullyResolveWithLocalToolsNowRows": 8,
+  "p0Rows": 3,
+  "p1Rows": 2,
+  "p2Rows": 44,
+  "firstExecutionSlice": [
+    {
+      "order": 1,
+      "routerRowId": "course5_ocr_visual_route_course5_ca7b8ed9cc1c262599a75285",
+      "recordId": "course5_ca7b8ed9cc1c262599a75285",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/3、阿布图表百科全书8800图片版-原版.zip",
+      "sizeMb": 3187.732,
+      "extension": ".zip",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "immediateVisualAction": "review_zip_representative_images_and_select_cluster_expansion",
+      "finalResolutionGate": "zip_image_package_semantic_review_or_documented_future_loss_acceptance",
+      "priorityBand": "P0_space_and_curriculum_blocker"
+    },
+    {
+      "order": 2,
+      "routerRowId": "course5_ocr_visual_route_course5_0a5fa56ee4758f70d7195444",
+      "recordId": "course5_0a5fa56ee4758f70d7195444",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/4、阿布图表百科全书8800合并版-原版.pdf",
+      "sizeMb": 2880.707,
+      "extension": ".pdf",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "immediateVisualAction": "review_selected_large_pdf_pages_before_full_split_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityBand": "P0_space_and_curriculum_blocker"
+    },
+    {
+      "order": 3,
+      "routerRowId": "course5_ocr_visual_route_course5_59235195b08cebb31f8b37e5",
+      "recordId": "course5_59235195b08cebb31f8b37e5",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/有道翻译版（机翻）/百科幻灯片-合并版-有道机翻.pdf",
+      "sizeMb": 2750.092,
+      "extension": ".pdf",
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "immediateVisualAction": "review_selected_large_pdf_pages_before_full_split_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityBand": "P0_space_and_curriculum_blocker"
+    },
+    {
+      "order": 4,
+      "routerRowId": "course5_ocr_visual_route_course5_f5163fadd2e7bd8072f91d0f",
+      "recordId": "course5_f5163fadd2e7bd8072f91d0f",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/google翻译版（机翻）/百科幻灯片-合并版-google机翻.pdf",
+      "sizeMb": 1103.313,
+      "extension": ".pdf",
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "immediateVisualAction": "review_selected_large_pdf_pages_before_full_split_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityBand": "P1_high_value_blocker"
+    },
+    {
+      "order": 5,
+      "routerRowId": "course5_ocr_visual_route_course5_d00df78617bb46d485a588a9",
+      "recordId": "course5_d00df78617bb46d485a588a9",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/5、SP500-Emini-5-Min-Chart(图片版).zip",
+      "sizeMb": 100.05,
+      "extension": ".zip",
+      "moduleTags": [
+        "trends_and_channels",
+        "trading_ranges",
+        "reversals",
+        "breakouts_and_pullbacks",
+        "bar_by_bar_reading",
+        "chart_pattern_encyclopedia"
+      ],
+      "immediateVisualAction": "review_zip_representative_images_and_select_cluster_expansion",
+      "finalResolutionGate": "zip_image_package_semantic_review_or_documented_future_loss_acceptance",
+      "priorityBand": "P1_high_value_blocker"
+    },
+    {
+      "order": 6,
+      "routerRowId": "course5_ocr_visual_route_course5_ac25799304836d3b4d6e9e8f",
+      "recordId": "course5_ac25799304836d3b4d6e9e8f",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/书籍中的图表/Wiley-Charts-Trading-Price-Action-Reversals.zip",
+      "sizeMb": 57.813,
+      "extension": ".zip",
+      "moduleTags": [
+        "reversals"
+      ],
+      "immediateVisualAction": "review_zip_representative_images_and_select_cluster_expansion",
+      "finalResolutionGate": "zip_image_package_semantic_review_or_documented_future_loss_acceptance",
+      "priorityBand": "P2_followup_blocker"
+    },
+    {
+      "order": 7,
+      "routerRowId": "course5_ocr_visual_route_course5_25acc068277e0d0bf498e3f4",
+      "recordId": "course5_25acc068277e0d0bf498e3f4",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/C 高级反转技术分析（下册）-高清修复.pdf",
+      "sizeMb": 522.731,
+      "extension": ".pdf",
+      "moduleTags": [
+        "reversals"
+      ],
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityBand": "P2_followup_blocker"
+    },
+    {
+      "order": 8,
+      "routerRowId": "course5_ocr_visual_route_course5_07f672a31d380d4c837dd5c5",
+      "recordId": "course5_07f672a31d380d4c837dd5c5",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/书籍中的图表/Wiley-Charts-Trading-Price-Action-Trading-Ranges.zip",
+      "sizeMb": 44.98,
+      "extension": ".zip",
+      "moduleTags": [
+        "trading_ranges"
+      ],
+      "immediateVisualAction": "review_zip_representative_images_and_select_cluster_expansion",
+      "finalResolutionGate": "zip_image_package_semantic_review_or_documented_future_loss_acceptance",
+      "priorityBand": "P2_followup_blocker"
+    },
+    {
+      "order": 9,
+      "routerRowId": "course5_ocr_visual_route_course5_13d16b4e76329e4fa5cf656c",
+      "recordId": "course5_13d16b4e76329e4fa5cf656c",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/书籍中的图表/Wiley-Charts-Trading-Price-Action-Trends.zip",
+      "sizeMb": 38.98,
+      "extension": ".zip",
+      "moduleTags": [
+        "trends_and_channels"
+      ],
+      "immediateVisualAction": "review_zip_representative_images_and_select_cluster_expansion",
+      "finalResolutionGate": "zip_image_package_semantic_review_or_documented_future_loss_acceptance",
+      "priorityBand": "P2_followup_blocker"
+    },
+    {
+      "order": 10,
+      "routerRowId": "course5_ocr_visual_route_course5_c82b5a82c8a2f6de814a7d0e",
+      "recordId": "course5_c82b5a82c8a2f6de814a7d0e",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/TPA-Trends.zip",
+      "sizeMb": 39.029,
+      "extension": ".zip",
+      "moduleTags": [
+        "trends_and_channels"
+      ],
+      "immediateVisualAction": "review_zip_representative_images_and_select_cluster_expansion",
+      "finalResolutionGate": "zip_image_package_semantic_review_or_documented_future_loss_acceptance",
+      "priorityBand": "P2_followup_blocker"
+    },
+    {
+      "order": 11,
+      "routerRowId": "course5_ocr_visual_route_course5_c193699f129ae1cf1de69194",
+      "recordId": "course5_c193699f129ae1cf1de69194",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/书籍中的图表/Wiley-Reading-Price-Charts-Bar-by-Bars.zip",
+      "sizeMb": 32.59,
+      "extension": ".zip",
+      "moduleTags": [
+        "unclassified_supplement"
+      ],
+      "immediateVisualAction": "review_zip_representative_images_and_select_cluster_expansion",
+      "finalResolutionGate": "zip_image_package_semantic_review_or_documented_future_loss_acceptance",
+      "priorityBand": "P2_followup_blocker"
+    },
+    {
+      "order": 12,
+      "routerRowId": "course5_ocr_visual_route_course5_104f466c2f259564b8ce87c1",
+      "recordId": "course5_104f466c2f259564b8ce87c1",
+      "relativePath": "Al Brooks 市场分析架构术语.zip",
+      "sizeMb": 50.495,
+      "extension": ".zip",
+      "moduleTags": [
+        "terminology_glossary"
+      ],
+      "immediateVisualAction": "review_zip_representative_images_and_select_cluster_expansion",
+      "finalResolutionGate": "zip_image_package_semantic_review_or_documented_future_loss_acceptance",
+      "priorityBand": "P2_followup_blocker"
+    }
+  ],
+  "routeRows": [
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_ca7b8ed9cc1c262599a75285",
+      "workItemId": "course5_followup_course5_ca7b8ed9cc1c262599a75285",
+      "recordId": "course5_ca7b8ed9cc1c262599a75285",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/3、阿布图表百科全书8800图片版-原版.zip",
+      "extension": ".zip",
+      "sizeMb": 3187.732,
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "container_inventory_only_requires_unpack_or_semantic_review",
+      "pageCount": null,
+      "imageEntryCount": 9027,
+      "sampleImageCount": 12,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": false,
+      "ocrUnavailableBlocksFullResolution": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": true,
+      "immediateVisualAction": "review_zip_representative_images_and_select_cluster_expansion",
+      "finalResolutionGate": "zip_image_package_semantic_review_or_documented_future_loss_acceptance",
+      "priorityScore": 40117,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_0a5fa56ee4758f70d7195444",
+      "workItemId": "course5_followup_course5_0a5fa56ee4758f70d7195444",
+      "recordId": "course5_0a5fa56ee4758f70d7195444",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/4、阿布图表百科全书8800合并版-原版.pdf",
+      "extension": ".pdf",
+      "sizeMb": 2880.707,
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "large_file_deferred_for_dedicated_visual_or_ocr_pass",
+      "pageCount": 9027,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_selected_large_pdf_pages_before_full_split_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 35867,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_59235195b08cebb31f8b37e5",
+      "workItemId": "course5_followup_course5_59235195b08cebb31f8b37e5",
+      "recordId": "course5_59235195b08cebb31f8b37e5",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/有道翻译版（机翻）/百科幻灯片-合并版-有道机翻.pdf",
+      "extension": ".pdf",
+      "sizeMb": 2750.092,
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "large_file_deferred_for_dedicated_visual_or_ocr_pass",
+      "pageCount": 9020,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_selected_large_pdf_pages_before_full_split_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 34561,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_f5163fadd2e7bd8072f91d0f",
+      "workItemId": "course5_followup_course5_f5163fadd2e7bd8072f91d0f",
+      "recordId": "course5_f5163fadd2e7bd8072f91d0f",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/google翻译版（机翻）/百科幻灯片-合并版-google机翻.pdf",
+      "extension": ".pdf",
+      "sizeMb": 1103.313,
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "large_file_deferred_for_dedicated_visual_or_ocr_pass",
+      "pageCount": 9022,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_selected_large_pdf_pages_before_full_split_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 18093,
+      "priorityBand": "P1_high_value_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_d00df78617bb46d485a588a9",
+      "workItemId": "course5_followup_course5_d00df78617bb46d485a588a9",
+      "recordId": "course5_d00df78617bb46d485a588a9",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/5、SP500-Emini-5-Min-Chart(图片版).zip",
+      "extension": ".zip",
+      "sizeMb": 100.05,
+      "moduleTags": [
+        "trends_and_channels",
+        "trading_ranges",
+        "reversals",
+        "breakouts_and_pullbacks",
+        "bar_by_bar_reading",
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals",
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "container_inventory_only_requires_unpack_or_semantic_review",
+      "pageCount": null,
+      "imageEntryCount": 691,
+      "sampleImageCount": 12,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": false,
+      "ocrUnavailableBlocksFullResolution": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": true,
+      "immediateVisualAction": "review_zip_representative_images_and_select_cluster_expansion",
+      "finalResolutionGate": "zip_image_package_semantic_review_or_documented_future_loss_acceptance",
+      "priorityScore": 10441,
+      "priorityBand": "P1_high_value_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_ac25799304836d3b4d6e9e8f",
+      "workItemId": "course5_followup_course5_ac25799304836d3b4d6e9e8f",
+      "recordId": "course5_ac25799304836d3b4d6e9e8f",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/书籍中的图表/Wiley-Charts-Trading-Price-Action-Reversals.zip",
+      "extension": ".zip",
+      "sizeMb": 57.813,
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals",
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "container_inventory_only_requires_unpack_or_semantic_review",
+      "pageCount": null,
+      "imageEntryCount": 177,
+      "sampleImageCount": 12,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": false,
+      "ocrUnavailableBlocksFullResolution": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": true,
+      "immediateVisualAction": "review_zip_representative_images_and_select_cluster_expansion",
+      "finalResolutionGate": "zip_image_package_semantic_review_or_documented_future_loss_acceptance",
+      "priorityScore": 7018,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_25acc068277e0d0bf498e3f4",
+      "workItemId": "course5_followup_course5_25acc068277e0d0bf498e3f4",
+      "recordId": "course5_25acc068277e0d0bf498e3f4",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/C 高级反转技术分析（下册）-高清修复.pdf",
+      "extension": ".pdf",
+      "sizeMb": 522.731,
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 497,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 6487,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_07f672a31d380d4c837dd5c5",
+      "workItemId": "course5_followup_course5_07f672a31d380d4c837dd5c5",
+      "recordId": "course5_07f672a31d380d4c837dd5c5",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/书籍中的图表/Wiley-Charts-Trading-Price-Action-Trading-Ranges.zip",
+      "extension": ".zip",
+      "sizeMb": 44.98,
+      "moduleTags": [
+        "trading_ranges"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals",
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "container_inventory_only_requires_unpack_or_semantic_review",
+      "pageCount": null,
+      "imageEntryCount": 152,
+      "sampleImageCount": 12,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": false,
+      "ocrUnavailableBlocksFullResolution": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": true,
+      "immediateVisualAction": "review_zip_representative_images_and_select_cluster_expansion",
+      "finalResolutionGate": "zip_image_package_semantic_review_or_documented_future_loss_acceptance",
+      "priorityScore": 5690,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_13d16b4e76329e4fa5cf656c",
+      "workItemId": "course5_followup_course5_13d16b4e76329e4fa5cf656c",
+      "recordId": "course5_13d16b4e76329e4fa5cf656c",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/书籍中的图表/Wiley-Charts-Trading-Price-Action-Trends.zip",
+      "extension": ".zip",
+      "sizeMb": 38.98,
+      "moduleTags": [
+        "trends_and_channels"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "container_inventory_only_requires_unpack_or_semantic_review",
+      "pageCount": null,
+      "imageEntryCount": 121,
+      "sampleImageCount": 12,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": false,
+      "ocrUnavailableBlocksFullResolution": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": true,
+      "immediateVisualAction": "review_zip_representative_images_and_select_cluster_expansion",
+      "finalResolutionGate": "zip_image_package_semantic_review_or_documented_future_loss_acceptance",
+      "priorityScore": 5630,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_c82b5a82c8a2f6de814a7d0e",
+      "workItemId": "course5_followup_course5_c82b5a82c8a2f6de814a7d0e",
+      "recordId": "course5_c82b5a82c8a2f6de814a7d0e",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/TPA-Trends.zip",
+      "extension": ".zip",
+      "sizeMb": 39.029,
+      "moduleTags": [
+        "trends_and_channels"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "container_inventory_only_requires_unpack_or_semantic_review",
+      "pageCount": null,
+      "imageEntryCount": 121,
+      "sampleImageCount": 12,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": false,
+      "ocrUnavailableBlocksFullResolution": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": true,
+      "immediateVisualAction": "review_zip_representative_images_and_select_cluster_expansion",
+      "finalResolutionGate": "zip_image_package_semantic_review_or_documented_future_loss_acceptance",
+      "priorityScore": 5630,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_c193699f129ae1cf1de69194",
+      "workItemId": "course5_followup_course5_c193699f129ae1cf1de69194",
+      "recordId": "course5_c193699f129ae1cf1de69194",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/书籍中的图表/Wiley-Reading-Price-Charts-Bar-by-Bars.zip",
+      "extension": ".zip",
+      "sizeMb": 32.59,
+      "moduleTags": [
+        "unclassified_supplement"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "container_inventory_only_requires_unpack_or_semantic_review",
+      "pageCount": null,
+      "imageEntryCount": 278,
+      "sampleImageCount": 12,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": false,
+      "ocrUnavailableBlocksFullResolution": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": true,
+      "immediateVisualAction": "review_zip_representative_images_and_select_cluster_expansion",
+      "finalResolutionGate": "zip_image_package_semantic_review_or_documented_future_loss_acceptance",
+      "priorityScore": 5566,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_104f466c2f259564b8ce87c1",
+      "workItemId": "course5_followup_course5_104f466c2f259564b8ce87c1",
+      "recordId": "course5_104f466c2f259564b8ce87c1",
+      "relativePath": "Al Brooks 市场分析架构术语.zip",
+      "extension": ".zip",
+      "sizeMb": 50.495,
+      "moduleTags": [
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "container_inventory_only_requires_unpack_or_semantic_review",
+      "pageCount": null,
+      "imageEntryCount": 2,
+      "sampleImageCount": 1,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": false,
+      "ocrUnavailableBlocksFullResolution": false,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": true,
+      "immediateVisualAction": "review_zip_representative_images_and_select_cluster_expansion",
+      "finalResolutionGate": "zip_image_package_semantic_review_or_documented_future_loss_acceptance",
+      "priorityScore": 5525,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_10117a870be892d9461608c4",
+      "workItemId": "course5_followup_course5_10117a870be892d9461608c4",
+      "recordId": "course5_10117a870be892d9461608c4",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/B 高级反转技术分析（上册）-高清修复.pdf",
+      "extension": ".pdf",
+      "sizeMb": 422.011,
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 407,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 5480,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_eb0f1ede0ca3bc4fcd9e9ae2",
+      "workItemId": "course5_followup_course5_eb0f1ede0ca3bc4fcd9e9ae2",
+      "recordId": "course5_eb0f1ede0ca3bc4fcd9e9ae2",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 13_16SM-SZ.PDF",
+      "extension": ".pdf",
+      "sizeMb": 241.058,
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 507,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 5471,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_63c2216fcf1e81f48021e86b",
+      "workItemId": "course5_followup_course5_63c2216fcf1e81f48021e86b",
+      "recordId": "course5_63c2216fcf1e81f48021e86b",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 8_552GUN-GZ.PDF",
+      "extension": ".pdf",
+      "sizeMb": 240.799,
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 552,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 5468,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_71dea62d45d97075ffd99161",
+      "workItemId": "course5_followup_course5_71dea62d45d97075ffd99161",
+      "recordId": "course5_71dea62d45d97075ffd99161",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 11_468N-P.pdf",
+      "extension": ".pdf",
+      "sizeMb": 212.445,
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 468,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 5184,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_cb0974e0bbb2397d1aa2f72a",
+      "workItemId": "course5_followup_course5_cb0974e0bbb2397d1aa2f72a",
+      "recordId": "course5_cb0974e0bbb2397d1aa2f72a",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 12_394Q-SL.PDF",
+      "extension": ".pdf",
+      "sizeMb": 182.787,
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 394,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 4888,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_71f12c3eff1a8f79e9d4ac47",
+      "workItemId": "course5_followup_course5_71f12c3eff1a8f79e9d4ac47",
+      "recordId": "course5_71f12c3eff1a8f79e9d4ac47",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 6_410GDN-GT.PDF",
+      "extension": ".pdf",
+      "sizeMb": 174.517,
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 410,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 4805,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_4310d75e31d7a51a62b4b9f4",
+      "workItemId": "course5_followup_course5_4310d75e31d7a51a62b4b9f4",
+      "recordId": "course5_4310d75e31d7a51a62b4b9f4",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 10_383M.pdf",
+      "extension": ".pdf",
+      "sizeMb": 158.405,
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 383,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 4644,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_49596f06b8762def7582ae5d",
+      "workItemId": "course5_followup_course5_49596f06b8762def7582ae5d",
+      "recordId": "course5_49596f06b8762def7582ae5d",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 7_346GU-GUM.PDF",
+      "extension": ".pdf",
+      "sizeMb": 138.506,
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 346,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 4445,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_f46e95188257060788e2e44c",
+      "workItemId": "course5_followup_course5_f46e95188257060788e2e44c",
+      "recordId": "course5_f46e95188257060788e2e44c",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 3_385D-F.pdf",
+      "extension": ".pdf",
+      "sizeMb": 129.629,
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 385,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 4356,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_b5c58e891c5e1f77fc35bc23",
+      "workItemId": "course5_followup_course5_b5c58e891c5e1f77fc35bc23",
+      "recordId": "course5_b5c58e891c5e1f77fc35bc23",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/A 高级趋势技术分析-高清修复.pdf",
+      "extension": ".pdf",
+      "sizeMb": 416.239,
+      "moduleTags": [
+        "trends_and_channels"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 405,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 4222,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_5b4779c96e99fb018f064349",
+      "workItemId": "course5_followup_course5_5b4779c96e99fb018f064349",
+      "recordId": "course5_5b4779c96e99fb018f064349",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/6、SP500-Emini-5-Min-Chart(A4横版带目录).pdf",
+      "extension": ".pdf",
+      "sizeMb": 110.671,
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 691,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 4167,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_a5db344bf1ca9feb9be979f5",
+      "workItemId": "course5_followup_course5_a5db344bf1ca9feb9be979f5",
+      "recordId": "course5_a5db344bf1ca9feb9be979f5",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 2_288C.PDF",
+      "extension": ".pdf",
+      "sizeMb": 110.124,
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 288,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 4161,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_95751e6fbc67dcc43c8cddd4",
+      "workItemId": "course5_followup_course5_95751e6fbc67dcc43c8cddd4",
+      "recordId": "course5_95751e6fbc67dcc43c8cddd4",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 1_407A-B.PDF",
+      "extension": ".pdf",
+      "sizeMb": 98.792,
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 405,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 4048,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_1eb6cb25b2ddde14cf70de61",
+      "workItemId": "course5_followup_course5_1eb6cb25b2ddde14cf70de61",
+      "recordId": "course5_1eb6cb25b2ddde14cf70de61",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 9_240H-L.pdf",
+      "extension": ".pdf",
+      "sizeMb": 96.977,
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 240,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 4030,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_cd0355997ebdfb3f37e93826",
+      "workItemId": "course5_followup_course5_cd0355997ebdfb3f37e93826",
+      "recordId": "course5_cd0355997ebdfb3f37e93826",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 5_244GD-GDM.pdf",
+      "extension": ".pdf",
+      "sizeMb": 86.93,
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 244,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 3929,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_7a5c9ea8f549a51d26ad7eb1",
+      "workItemId": "course5_followup_course5_7a5c9ea8f549a51d26ad7eb1",
+      "recordId": "course5_7a5c9ea8f549a51d26ad7eb1",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 4_169G.PDF",
+      "extension": ".pdf",
+      "sizeMb": 71.317,
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 169,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 3773,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_30e5099e072da50c56639a98",
+      "workItemId": "course5_followup_course5_30e5099e072da50c56639a98",
+      "recordId": "course5_30e5099e072da50c56639a98",
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/1_阿布PA基础1-36.pdf",
+      "extension": ".pdf",
+      "sizeMb": 369.036,
+      "moduleTags": [
+        "price_action_foundations",
+        "course_slides_alignment"
+      ],
+      "courseAlignment": [
+        "course_1_foundations_1_36"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 2818,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 3750,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_eed6a89ae2181c36ffdf7979",
+      "workItemId": "course5_followup_course5_eed6a89ae2181c36ffdf7979",
+      "recordId": "course5_eed6a89ae2181c36ffdf7979",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/D 高级波段技术分析-高清修复.pdf",
+      "extension": ".pdf",
+      "sizeMb": 365.536,
+      "moduleTags": [
+        "trade_management"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 496,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 3715,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_b071aeb9a7fa51f8e10822a7",
+      "workItemId": "course5_followup_course5_b071aeb9a7fa51f8e10822a7",
+      "recordId": "course5_b071aeb9a7fa51f8e10822a7",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/有道翻译版（机翻）/百科幻灯片2024.3.1更新-2.pdf",
+      "extension": ".pdf",
+      "sizeMb": 58.408,
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 121,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 3644,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_51ae24b7631eec2813610ab5",
+      "workItemId": "course5_followup_course5_51ae24b7631eec2813610ab5",
+      "recordId": "course5_51ae24b7631eec2813610ab5",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/1、阿布图表百科全书-拆分版/百科幻灯片2024.3.1.pdf",
+      "extension": ".pdf",
+      "sizeMb": 58.097,
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 121,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 3641,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_fa9154de2e4f7947a7f17b45",
+      "workItemId": "course5_followup_course5_fa9154de2e4f7947a7f17b45",
+      "recordId": "course5_fa9154de2e4f7947a7f17b45",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 15_16TRD-V.pdf",
+      "extension": ".pdf",
+      "sizeMb": 35.062,
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 404,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 3411,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_9ca36e05ffbc626ee81e193b",
+      "workItemId": "course5_followup_course5_9ca36e05ffbc626ee81e193b",
+      "recordId": "course5_9ca36e05ffbc626ee81e193b",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 14_16T-TRD.pdf",
+      "extension": ".pdf",
+      "sizeMb": 29.131,
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 312,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 3351,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_48405fde946b9fa0452ceba5",
+      "workItemId": "course5_followup_course5_48405fde946b9fa0452ceba5",
+      "recordId": "course5_48405fde946b9fa0452ceba5",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 16_16W-Z.pdf",
+      "extension": ".pdf",
+      "sizeMb": 24.12,
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 278,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 3301,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_934746436a703a5349053d90",
+      "workItemId": "course5_followup_course5_934746436a703a5349053d90",
+      "recordId": "course5_934746436a703a5349053d90",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/google翻译版（机翻）/百科幻灯片2024.3.1更新.pdf",
+      "extension": ".pdf",
+      "sizeMb": 12.466,
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 121,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 3185,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_4f0bc04713247326ff958f0d",
+      "workItemId": "course5_followup_course5_4f0bc04713247326ff958f0d",
+      "recordId": "course5_4f0bc04713247326ff958f0d",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/高级反转技术分析-（下册）.pdf",
+      "extension": ".pdf",
+      "sizeMb": 187.838,
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 497,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 3138,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_6b0966dcf4f38cd5b8b2a12e",
+      "workItemId": "course5_followup_course5_6b0966dcf4f38cd5b8b2a12e",
+      "recordId": "course5_6b0966dcf4f38cd5b8b2a12e",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/C 高级反转技术分析（下册）-原版.pdf",
+      "extension": ".pdf",
+      "sizeMb": 187.849,
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 497,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 3138,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_3be8a44e3759750339a58bf4",
+      "workItemId": "course5_followup_course5_3be8a44e3759750339a58bf4",
+      "recordId": "course5_3be8a44e3759750339a58bf4",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/B 高级反转技术分析（上册）-原版.pdf",
+      "extension": ".pdf",
+      "sizeMb": 154.451,
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 407,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 2805,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_444171aa4017cdd8e1b4df8f",
+      "workItemId": "course5_followup_course5_444171aa4017cdd8e1b4df8f",
+      "recordId": "course5_444171aa4017cdd8e1b4df8f",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/高级反转技术分析-（上册）.pdf",
+      "extension": ".pdf",
+      "sizeMb": 154.44,
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 407,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 2804,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_fecbbd73dace293ba4925406",
+      "workItemId": "course5_followup_course5_fecbbd73dace293ba4925406",
+      "recordId": "course5_fecbbd73dace293ba4925406",
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/2_阿布PA进阶37-52.pdf",
+      "extension": ".pdf",
+      "sizeMb": 265.338,
+      "moduleTags": [
+        "course_slides_alignment"
+      ],
+      "courseAlignment": [
+        "course_2_advanced_37_52"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 1397,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 2713,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_64b71d522ff893e8d7223b14",
+      "workItemId": "course5_followup_course5_64b71d522ff893e8d7223b14",
+      "recordId": "course5_64b71d522ff893e8d7223b14",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/E 详细解读价格行为模式-高清修复.pdf",
+      "extension": ".pdf",
+      "sizeMb": 258.791,
+      "moduleTags": [
+        "price_action_foundations",
+        "bar_by_bar_reading"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "very_low_text_likely_scanned_or_visual",
+      "pageCount": 445,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 2648,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_99f561183f8bc2257c263d98",
+      "workItemId": "course5_followup_course5_99f561183f8bc2257c263d98",
+      "recordId": "course5_99f561183f8bc2257c263d98",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/1.高级趋势技术分析.pdf",
+      "extension": ".pdf",
+      "sizeMb": 165.177,
+      "moduleTags": [
+        "trends_and_channels"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 405,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 1712,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_297b4fffaae8af78b2127589",
+      "workItemId": "course5_followup_course5_297b4fffaae8af78b2127589",
+      "recordId": "course5_297b4fffaae8af78b2127589",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/A 高级趋势技术分析-原版.pdf",
+      "extension": ".pdf",
+      "sizeMb": 164.797,
+      "moduleTags": [
+        "trends_and_channels"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 405,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 1708,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_f04060b74ef98658ea4c101c",
+      "workItemId": "course5_followup_course5_f04060b74ef98658ea4c101c",
+      "recordId": "course5_f04060b74ef98658ea4c101c",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/D 高级波段技术分析-原版.pdf",
+      "extension": ".pdf",
+      "sizeMb": 116.458,
+      "moduleTags": [
+        "trade_management"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 496,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 1225,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_5d62c376c59dd07fb7ab9517",
+      "workItemId": "course5_followup_course5_5d62c376c59dd07fb7ab9517",
+      "recordId": "course5_5d62c376c59dd07fb7ab9517",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/E 详细解读价格行为模式-原版.pdf",
+      "extension": ".pdf",
+      "sizeMb": 80.002,
+      "moduleTags": [
+        "price_action_foundations",
+        "bar_by_bar_reading"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "very_low_text_likely_scanned_or_visual",
+      "pageCount": 445,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 860,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_f92a6a282ea0bbc794b5792c",
+      "workItemId": "course5_followup_course5_f92a6a282ea0bbc794b5792c",
+      "recordId": "course5_f92a6a282ea0bbc794b5792c",
+      "relativePath": "日本蜡烛图交易技术分析  详细解读价格行为模式,（美）艾尔·布鲁克斯著；张雯译,北京：地震出版社_14128154.pdf",
+      "extension": ".pdf",
+      "sizeMb": 80.011,
+      "moduleTags": [
+        "price_action_foundations",
+        "bar_by_bar_reading"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "very_low_text_likely_scanned_or_visual",
+      "pageCount": 445,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 860,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_5fd4a57eff4d300b20017e0a",
+      "workItemId": "course5_followup_course5_5fd4a57eff4d300b20017e0a",
+      "recordId": "course5_5fd4a57eff4d300b20017e0a",
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/【重要】阿布缩写翻译及解释.pdf",
+      "extension": ".pdf",
+      "sizeMb": 30.705,
+      "moduleTags": [
+        "course_slides_alignment",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "pageCount": 20,
+      "imageEntryCount": 0,
+      "sampleImageCount": 3,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 367,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    },
+    {
+      "routerRowId": "course5_ocr_visual_route_course5_a7a09cbedc2601d761bd74fa",
+      "workItemId": "course5_followup_course5_a7a09cbedc2601d761bd74fa",
+      "recordId": "course5_a7a09cbedc2601d761bd74fa",
+      "relativePath": "AL Brooks 知识体系（18版视频结构）.pdf",
+      "extension": ".pdf",
+      "sizeMb": 9.556,
+      "moduleTags": [
+        "unclassified_supplement"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "very_low_text_likely_scanned_or_visual",
+      "pageCount": 1,
+      "imageEntryCount": 0,
+      "sampleImageCount": 1,
+      "hasRepresentativeSamples": true,
+      "fullTextOcrRequired": true,
+      "ocrUnavailableBlocksFullResolution": true,
+      "canAdvanceWithVisualReviewNow": true,
+      "canFullyResolveWithLocalToolsNow": false,
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "priorityScore": 116,
+      "priorityBand": "P2_followup_blocker",
+      "reviewerSafetyRules": [
+        "Use notes only for private reviewer distillation.",
+        "Do not copy private source wording into learner-facing lessons.",
+        "Treat chart semantics as educational pattern-reading material, not signals or trading advice.",
+        "Keep deletion blocked until validated OCR or documented future-loss acceptance exists."
+      ]
+    }
+  ],
+  "commands": [
+    "npm.cmd run build:local-course-5-ocr-visual-execution-router",
+    "npm.cmd run check:local-course-5-ocr-visual-execution-router",
+    "npm.cmd run verify"
+  ],
+  "completionRule": "This router is complete when all 49 Course 5 must-retain follow-up sources are assigned an OCR/visual execution route, representative sample coverage is explicit, local OCR capability is declared, and source-folder deletion remains blocked until validated OCR, visual semantic review, or documented future-loss acceptance resolves every row.",
+  "boundary": "Course 5 OCR and visual execution router is private reviewer-facing education operations material. It routes unresolved local supplemental sources into OCR, visual semantic review, ZIP image-package review, and cold-storage decision work after source intake and deletion-readiness checks. It does not perform irreversible deletion, approve learner-facing release, accept machine drafts as human review, copy private source wording, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, write authorization, or production readiness."
+}

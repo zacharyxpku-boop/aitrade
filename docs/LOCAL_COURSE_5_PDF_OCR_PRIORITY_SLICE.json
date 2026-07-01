@@ -1,0 +1,2209 @@
+{
+  "generatedAt": "2026-06-24T18:31:37.882Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "writeAllowedNow": false,
+  "sliceStatus": "course_5_pdf_ocr_priority_slice_ready_blocked_on_ocr_or_real_reviewer_input",
+  "sliceMode": "first_controlled_pdf_ocr_reviewer_batch",
+  "sourceRoot": "C:\\Users\\86136\\Desktop\\5",
+  "sourceFolderMayBeDeleted": false,
+  "currentKnowledgeArtifactsCanReplaceSourceFolder": false,
+  "sourceExecutionPack": "docs/LOCAL_COURSE_5_PDF_OCR_VISUAL_EXECUTION_PACK.json",
+  "sourceMachineDrafts": "docs/LOCAL_COURSE_5_PDF_MACHINE_VISUAL_SEMANTIC_DRAFTS.json",
+  "sourceOcrPreflight": "docs/LOCAL_COURSE_5_OCR_CAPABILITY_PREFLIGHT.json",
+  "sourceClosureCockpit": "docs/LOCAL_COURSE_5_FOLLOWUP_CLOSURE_COCKPIT.json",
+  "totalPdfFollowupRows": 41,
+  "totalPdfSampleRows": 121,
+  "selectedSourceRows": 12,
+  "selectedSampleRows": 36,
+  "selectedInputRows": 36,
+  "selectedP0SourceRows": 2,
+  "selectedP1SourceRows": 1,
+  "selectedP2SourceRows": 9,
+  "selectedPagesCoveredBySources": 34593,
+  "selectedSizeMb": 9835.651,
+  "ocrTextEngineAvailable": false,
+  "readyInputRows": 0,
+  "blockedInputRows": 36,
+  "acceptedForModuleDistillationRows": 0,
+  "acceptedForDeletionReadinessRows": 0,
+  "learnerReadyModules": 0,
+  "sourceRows": [
+    {
+      "sliceSourceNo": 1,
+      "recordId": "course5_0a5fa56ee4758f70d7195444",
+      "workItemId": "course5_followup_course5_0a5fa56ee4758f70d7195444",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/4、阿布图表百科全书8800合并版-原版.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\5、阿布图表百科（学完视频再看，特别多）\\4、阿布图表百科全书8800合并版-原版.pdf",
+      "sizeMb": 2880.707,
+      "pageCount": 9027,
+      "sampleCount": 3,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "large_file_deferred_for_dedicated_visual_or_ocr_pass",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "ocrExecutionRoute": "split_large_pdf_then_ocr_or_external_ocr_pages",
+      "immediateVisualAction": "review_selected_large_pdf_pages_before_full_split_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "sliceSourceNo": 2,
+      "recordId": "course5_59235195b08cebb31f8b37e5",
+      "workItemId": "course5_followup_course5_59235195b08cebb31f8b37e5",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/有道翻译版（机翻）/百科幻灯片-合并版-有道机翻.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\5、阿布图表百科（学完视频再看，特别多）\\2、阿布图表百科全书-机翻版\\有道翻译版（机翻）\\百科幻灯片-合并版-有道机翻.pdf",
+      "sizeMb": 2750.092,
+      "pageCount": 9020,
+      "sampleCount": 3,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "large_file_deferred_for_dedicated_visual_or_ocr_pass",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "ocrExecutionRoute": "split_large_pdf_then_ocr_or_external_ocr_pages",
+      "immediateVisualAction": "review_selected_large_pdf_pages_before_full_split_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "sliceSourceNo": 3,
+      "recordId": "course5_f5163fadd2e7bd8072f91d0f",
+      "workItemId": "course5_followup_course5_f5163fadd2e7bd8072f91d0f",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/google翻译版（机翻）/百科幻灯片-合并版-google机翻.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\5、阿布图表百科（学完视频再看，特别多）\\2、阿布图表百科全书-机翻版\\google翻译版（机翻）\\百科幻灯片-合并版-google机翻.pdf",
+      "sizeMb": 1103.313,
+      "pageCount": 9022,
+      "sampleCount": 3,
+      "priorityBand": "P1_high_value_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "large_file_deferred_for_dedicated_visual_or_ocr_pass",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "ocrExecutionRoute": "split_large_pdf_then_ocr_or_external_ocr_pages",
+      "immediateVisualAction": "review_selected_large_pdf_pages_before_full_split_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "sliceSourceNo": 4,
+      "recordId": "course5_25acc068277e0d0bf498e3f4",
+      "workItemId": "course5_followup_course5_25acc068277e0d0bf498e3f4",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/C 高级反转技术分析（下册）-高清修复.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）\\扫描版PDF（推荐）\\C 高级反转技术分析（下册）-高清修复.pdf",
+      "sizeMb": 522.731,
+      "pageCount": 497,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "sliceSourceNo": 5,
+      "recordId": "course5_10117a870be892d9461608c4",
+      "workItemId": "course5_followup_course5_10117a870be892d9461608c4",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/B 高级反转技术分析（上册）-高清修复.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）\\扫描版PDF（推荐）\\B 高级反转技术分析（上册）-高清修复.pdf",
+      "sizeMb": 422.011,
+      "pageCount": 407,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "sliceSourceNo": 6,
+      "recordId": "course5_b5c58e891c5e1f77fc35bc23",
+      "workItemId": "course5_followup_course5_b5c58e891c5e1f77fc35bc23",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/A 高级趋势技术分析-高清修复.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）\\扫描版PDF（推荐）\\A 高级趋势技术分析-高清修复.pdf",
+      "sizeMb": 416.239,
+      "pageCount": 405,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "trends_and_channels"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "sliceSourceNo": 7,
+      "recordId": "course5_30e5099e072da50c56639a98",
+      "workItemId": "course5_followup_course5_30e5099e072da50c56639a98",
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/1_阿布PA基础1-36.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\1、课程PPT（建议下载，边看边学，效率翻倍）\\1_阿布PA基础1-36.pdf",
+      "sizeMb": 369.036,
+      "pageCount": 2818,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "price_action_foundations",
+        "course_slides_alignment"
+      ],
+      "courseAlignment": [
+        "course_1_foundations_1_36"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "sliceSourceNo": 8,
+      "recordId": "course5_eed6a89ae2181c36ffdf7979",
+      "workItemId": "course5_followup_course5_eed6a89ae2181c36ffdf7979",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/D 高级波段技术分析-高清修复.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）\\扫描版PDF（推荐）\\D 高级波段技术分析-高清修复.pdf",
+      "sizeMb": 365.536,
+      "pageCount": 496,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "trade_management"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "sliceSourceNo": 9,
+      "recordId": "course5_fecbbd73dace293ba4925406",
+      "workItemId": "course5_followup_course5_fecbbd73dace293ba4925406",
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/2_阿布PA进阶37-52.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\1、课程PPT（建议下载，边看边学，效率翻倍）\\2_阿布PA进阶37-52.pdf",
+      "sizeMb": 265.338,
+      "pageCount": 1397,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "course_slides_alignment"
+      ],
+      "courseAlignment": [
+        "course_2_advanced_37_52"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "sliceSourceNo": 10,
+      "recordId": "course5_64b71d522ff893e8d7223b14",
+      "workItemId": "course5_followup_course5_64b71d522ff893e8d7223b14",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/E 详细解读价格行为模式-高清修复.pdf",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）\\扫描版PDF（推荐）\\E 详细解读价格行为模式-高清修复.pdf",
+      "sizeMb": 258.791,
+      "pageCount": 445,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "price_action_foundations",
+        "bar_by_bar_reading"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "extractionBucket": "very_low_text_likely_scanned_or_visual",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "ocrExecutionRoute": "ocr_low_text_pdf_then_compare_against_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "sliceSourceNo": 11,
+      "recordId": "course5_eb0f1ede0ca3bc4fcd9e9ae2",
+      "workItemId": "course5_followup_course5_eb0f1ede0ca3bc4fcd9e9ae2",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 13_16SM-SZ.PDF",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\5、阿布图表百科（学完视频再看，特别多）\\0、Encyclopedia of Chart Patterns\\Encyclopedia_Part 13_16SM-SZ.PDF",
+      "sizeMb": 241.058,
+      "pageCount": 507,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "sliceSourceNo": 12,
+      "recordId": "course5_63c2216fcf1e81f48021e86b",
+      "workItemId": "course5_followup_course5_63c2216fcf1e81f48021e86b",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 8_552GUN-GZ.PDF",
+      "sourceLocalPath": "C:\\Users\\86136\\Desktop\\5\\5、阿布图表百科（学完视频再看，特别多）\\0、Encyclopedia of Chart Patterns\\Encyclopedia_Part 8_552GUN-GZ.PDF",
+      "sizeMb": 240.799,
+      "pageCount": 552,
+      "sampleCount": 3,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "extractionBucket": "no_text_extracted_likely_scanned_or_binary",
+      "ocrStatus": "ocr_engine_missing_not_text_complete",
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "immediateVisualAction": "review_pdf_sample_pages_for_chart_semantics_before_full_ocr",
+      "finalResolutionGate": "install_or_use_external_ocr_then_merge_validated_reviewer_notes",
+      "sourceFolderMayBeDeleted": false
+    }
+  ],
+  "sampleRows": [
+    {
+      "sliceRowNo": 1,
+      "reviewRowId": "course5_pdf_ocr_visual_review_001",
+      "recordId": "course5_0a5fa56ee4758f70d7195444",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/4、阿布图表百科全书8800合并版-原版.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_0a5fa56ee4758f70d7195444/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_0a5fa56ee4758f70d7195444/page-0001.png",
+      "sampleImageExists": true,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "ocrExecutionRoute": "split_large_pdf_then_ocr_or_external_ocr_pages",
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "large_pdf_stratified_page_sample",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?",
+        "Which additional page bands should be sampled before treating this large PDF as covered?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document",
+        "p0_large_pdf_space_and_curriculum_blocker",
+        "large_pdf_stratified_sample_not_exhaustive"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 2,
+      "reviewRowId": "course5_pdf_ocr_visual_review_002",
+      "recordId": "course5_0a5fa56ee4758f70d7195444",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/4、阿布图表百科全书8800合并版-原版.pdf",
+      "pageNumber": 4514,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_0a5fa56ee4758f70d7195444/page-4514.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_0a5fa56ee4758f70d7195444/page-4514.png",
+      "sampleImageExists": true,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "ocrExecutionRoute": "split_large_pdf_then_ocr_or_external_ocr_pages",
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "large_pdf_stratified_page_sample",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?",
+        "Which additional page bands should be sampled before treating this large PDF as covered?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document",
+        "p0_large_pdf_space_and_curriculum_blocker",
+        "large_pdf_stratified_sample_not_exhaustive"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 3,
+      "reviewRowId": "course5_pdf_ocr_visual_review_003",
+      "recordId": "course5_0a5fa56ee4758f70d7195444",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/4、阿布图表百科全书8800合并版-原版.pdf",
+      "pageNumber": 9027,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_0a5fa56ee4758f70d7195444/page-9027.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_0a5fa56ee4758f70d7195444/page-9027.png",
+      "sampleImageExists": true,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "ocrExecutionRoute": "split_large_pdf_then_ocr_or_external_ocr_pages",
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "large_pdf_stratified_page_sample",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?",
+        "Which additional page bands should be sampled before treating this large PDF as covered?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document",
+        "p0_large_pdf_space_and_curriculum_blocker",
+        "large_pdf_stratified_sample_not_exhaustive"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 4,
+      "reviewRowId": "course5_pdf_ocr_visual_review_004",
+      "recordId": "course5_59235195b08cebb31f8b37e5",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/有道翻译版（机翻）/百科幻灯片-合并版-有道机翻.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_59235195b08cebb31f8b37e5/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_59235195b08cebb31f8b37e5/page-0001.png",
+      "sampleImageExists": true,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "ocrExecutionRoute": "split_large_pdf_then_ocr_or_external_ocr_pages",
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "terminology_or_translation_review",
+        "large_pdf_stratified_page_sample",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?",
+        "Are there translated terms or labels that require terminology review before teaching use?",
+        "Which additional page bands should be sampled before treating this large PDF as covered?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document",
+        "p0_large_pdf_space_and_curriculum_blocker",
+        "large_pdf_stratified_sample_not_exhaustive",
+        "translation_or_terminology_quality_risk"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 5,
+      "reviewRowId": "course5_pdf_ocr_visual_review_005",
+      "recordId": "course5_59235195b08cebb31f8b37e5",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/有道翻译版（机翻）/百科幻灯片-合并版-有道机翻.pdf",
+      "pageNumber": 4511,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_59235195b08cebb31f8b37e5/page-4511.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_59235195b08cebb31f8b37e5/page-4511.png",
+      "sampleImageExists": true,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "ocrExecutionRoute": "split_large_pdf_then_ocr_or_external_ocr_pages",
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "terminology_or_translation_review",
+        "large_pdf_stratified_page_sample",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?",
+        "Are there translated terms or labels that require terminology review before teaching use?",
+        "Which additional page bands should be sampled before treating this large PDF as covered?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document",
+        "p0_large_pdf_space_and_curriculum_blocker",
+        "large_pdf_stratified_sample_not_exhaustive",
+        "translation_or_terminology_quality_risk"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 6,
+      "reviewRowId": "course5_pdf_ocr_visual_review_006",
+      "recordId": "course5_59235195b08cebb31f8b37e5",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/有道翻译版（机翻）/百科幻灯片-合并版-有道机翻.pdf",
+      "pageNumber": 9020,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_59235195b08cebb31f8b37e5/page-9020.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_59235195b08cebb31f8b37e5/page-9020.png",
+      "sampleImageExists": true,
+      "priorityBand": "P0_space_and_curriculum_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "ocrExecutionRoute": "split_large_pdf_then_ocr_or_external_ocr_pages",
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "terminology_or_translation_review",
+        "large_pdf_stratified_page_sample",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?",
+        "Are there translated terms or labels that require terminology review before teaching use?",
+        "Which additional page bands should be sampled before treating this large PDF as covered?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document",
+        "p0_large_pdf_space_and_curriculum_blocker",
+        "large_pdf_stratified_sample_not_exhaustive",
+        "translation_or_terminology_quality_risk"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 7,
+      "reviewRowId": "course5_pdf_ocr_visual_review_007",
+      "recordId": "course5_f5163fadd2e7bd8072f91d0f",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/google翻译版（机翻）/百科幻灯片-合并版-google机翻.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f5163fadd2e7bd8072f91d0f/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_f5163fadd2e7bd8072f91d0f/page-0001.png",
+      "sampleImageExists": true,
+      "priorityBand": "P1_high_value_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "ocrExecutionRoute": "split_large_pdf_then_ocr_or_external_ocr_pages",
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "terminology_or_translation_review",
+        "large_pdf_stratified_page_sample",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?",
+        "Are there translated terms or labels that require terminology review before teaching use?",
+        "Which additional page bands should be sampled before treating this large PDF as covered?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document",
+        "large_pdf_stratified_sample_not_exhaustive",
+        "translation_or_terminology_quality_risk"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 8,
+      "reviewRowId": "course5_pdf_ocr_visual_review_008",
+      "recordId": "course5_f5163fadd2e7bd8072f91d0f",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/google翻译版（机翻）/百科幻灯片-合并版-google机翻.pdf",
+      "pageNumber": 4512,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f5163fadd2e7bd8072f91d0f/page-4512.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_f5163fadd2e7bd8072f91d0f/page-4512.png",
+      "sampleImageExists": true,
+      "priorityBand": "P1_high_value_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "ocrExecutionRoute": "split_large_pdf_then_ocr_or_external_ocr_pages",
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "terminology_or_translation_review",
+        "large_pdf_stratified_page_sample",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?",
+        "Are there translated terms or labels that require terminology review before teaching use?",
+        "Which additional page bands should be sampled before treating this large PDF as covered?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document",
+        "large_pdf_stratified_sample_not_exhaustive",
+        "translation_or_terminology_quality_risk"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 9,
+      "reviewRowId": "course5_pdf_ocr_visual_review_009",
+      "recordId": "course5_f5163fadd2e7bd8072f91d0f",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/google翻译版（机翻）/百科幻灯片-合并版-google机翻.pdf",
+      "pageNumber": 9022,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f5163fadd2e7bd8072f91d0f/page-9022.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_f5163fadd2e7bd8072f91d0f/page-9022.png",
+      "sampleImageExists": true,
+      "priorityBand": "P1_high_value_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia",
+        "terminology_glossary"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "ocrExecutionRoute": "split_large_pdf_then_ocr_or_external_ocr_pages",
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "terminology_or_translation_review",
+        "large_pdf_stratified_page_sample",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?",
+        "Are there translated terms or labels that require terminology review before teaching use?",
+        "Which additional page bands should be sampled before treating this large PDF as covered?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document",
+        "large_pdf_stratified_sample_not_exhaustive",
+        "translation_or_terminology_quality_risk"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 10,
+      "reviewRowId": "course5_pdf_ocr_visual_review_010",
+      "recordId": "course5_25acc068277e0d0bf498e3f4",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/C 高级反转技术分析（下册）-高清修复.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_25acc068277e0d0bf498e3f4/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_25acc068277e0d0bf498e3f4/page-0001.png",
+      "sampleImageExists": true,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "candidateConcepts": [
+        "reversal_chart_reading",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?",
+        "Does the page visibly support a reversal pattern, failed breakout, climax, or top/bottom structure?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 11,
+      "reviewRowId": "course5_pdf_ocr_visual_review_011",
+      "recordId": "course5_25acc068277e0d0bf498e3f4",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/C 高级反转技术分析（下册）-高清修复.pdf",
+      "pageNumber": 249,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_25acc068277e0d0bf498e3f4/page-0249.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_25acc068277e0d0bf498e3f4/page-0249.png",
+      "sampleImageExists": true,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "candidateConcepts": [
+        "reversal_chart_reading",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?",
+        "Does the page visibly support a reversal pattern, failed breakout, climax, or top/bottom structure?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 12,
+      "reviewRowId": "course5_pdf_ocr_visual_review_012",
+      "recordId": "course5_25acc068277e0d0bf498e3f4",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/C 高级反转技术分析（下册）-高清修复.pdf",
+      "pageNumber": 497,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_25acc068277e0d0bf498e3f4/page-0497.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_25acc068277e0d0bf498e3f4/page-0497.png",
+      "sampleImageExists": true,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "candidateConcepts": [
+        "reversal_chart_reading",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?",
+        "Does the page visibly support a reversal pattern, failed breakout, climax, or top/bottom structure?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 13,
+      "reviewRowId": "course5_pdf_ocr_visual_review_013",
+      "recordId": "course5_10117a870be892d9461608c4",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/B 高级反转技术分析（上册）-高清修复.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_10117a870be892d9461608c4/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_10117a870be892d9461608c4/page-0001.png",
+      "sampleImageExists": true,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "candidateConcepts": [
+        "reversal_chart_reading",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?",
+        "Does the page visibly support a reversal pattern, failed breakout, climax, or top/bottom structure?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 14,
+      "reviewRowId": "course5_pdf_ocr_visual_review_014",
+      "recordId": "course5_10117a870be892d9461608c4",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/B 高级反转技术分析（上册）-高清修复.pdf",
+      "pageNumber": 204,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_10117a870be892d9461608c4/page-0204.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_10117a870be892d9461608c4/page-0204.png",
+      "sampleImageExists": true,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "candidateConcepts": [
+        "reversal_chart_reading",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?",
+        "Does the page visibly support a reversal pattern, failed breakout, climax, or top/bottom structure?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 15,
+      "reviewRowId": "course5_pdf_ocr_visual_review_015",
+      "recordId": "course5_10117a870be892d9461608c4",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/B 高级反转技术分析（上册）-高清修复.pdf",
+      "pageNumber": 407,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_10117a870be892d9461608c4/page-0407.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_10117a870be892d9461608c4/page-0407.png",
+      "sampleImageExists": true,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "reversals"
+      ],
+      "courseAlignment": [
+        "course_3_trading_ranges_reversals"
+      ],
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "candidateConcepts": [
+        "reversal_chart_reading",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?",
+        "Does the page visibly support a reversal pattern, failed breakout, climax, or top/bottom structure?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 16,
+      "reviewRowId": "course5_pdf_ocr_visual_review_016",
+      "recordId": "course5_b5c58e891c5e1f77fc35bc23",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/A 高级趋势技术分析-高清修复.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_b5c58e891c5e1f77fc35bc23/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_b5c58e891c5e1f77fc35bc23/page-0001.png",
+      "sampleImageExists": true,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "trends_and_channels"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "candidateConcepts": [
+        "trend_or_channel_chart_reading",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 17,
+      "reviewRowId": "course5_pdf_ocr_visual_review_017",
+      "recordId": "course5_b5c58e891c5e1f77fc35bc23",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/A 高级趋势技术分析-高清修复.pdf",
+      "pageNumber": 203,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_b5c58e891c5e1f77fc35bc23/page-0203.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_b5c58e891c5e1f77fc35bc23/page-0203.png",
+      "sampleImageExists": true,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "trends_and_channels"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "candidateConcepts": [
+        "trend_or_channel_chart_reading",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 18,
+      "reviewRowId": "course5_pdf_ocr_visual_review_018",
+      "recordId": "course5_b5c58e891c5e1f77fc35bc23",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/A 高级趋势技术分析-高清修复.pdf",
+      "pageNumber": 405,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_b5c58e891c5e1f77fc35bc23/page-0405.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_b5c58e891c5e1f77fc35bc23/page-0405.png",
+      "sampleImageExists": true,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "trends_and_channels"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "candidateConcepts": [
+        "trend_or_channel_chart_reading",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 19,
+      "reviewRowId": "course5_pdf_ocr_visual_review_019",
+      "recordId": "course5_30e5099e072da50c56639a98",
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/1_阿布PA基础1-36.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_30e5099e072da50c56639a98/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_30e5099e072da50c56639a98/page-0001.png",
+      "sampleImageExists": true,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "price_action_foundations",
+        "course_slides_alignment"
+      ],
+      "courseAlignment": [
+        "course_1_foundations_1_36"
+      ],
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "candidateConcepts": [
+        "price_action_foundation_review",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 20,
+      "reviewRowId": "course5_pdf_ocr_visual_review_020",
+      "recordId": "course5_30e5099e072da50c56639a98",
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/1_阿布PA基础1-36.pdf",
+      "pageNumber": 1410,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_30e5099e072da50c56639a98/page-1410.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_30e5099e072da50c56639a98/page-1410.png",
+      "sampleImageExists": true,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "price_action_foundations",
+        "course_slides_alignment"
+      ],
+      "courseAlignment": [
+        "course_1_foundations_1_36"
+      ],
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "candidateConcepts": [
+        "price_action_foundation_review",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 21,
+      "reviewRowId": "course5_pdf_ocr_visual_review_021",
+      "recordId": "course5_30e5099e072da50c56639a98",
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/1_阿布PA基础1-36.pdf",
+      "pageNumber": 2818,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_30e5099e072da50c56639a98/page-2818.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_30e5099e072da50c56639a98/page-2818.png",
+      "sampleImageExists": true,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "price_action_foundations",
+        "course_slides_alignment"
+      ],
+      "courseAlignment": [
+        "course_1_foundations_1_36"
+      ],
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "candidateConcepts": [
+        "price_action_foundation_review",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 22,
+      "reviewRowId": "course5_pdf_ocr_visual_review_022",
+      "recordId": "course5_eed6a89ae2181c36ffdf7979",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/D 高级波段技术分析-高清修复.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_eed6a89ae2181c36ffdf7979/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_eed6a89ae2181c36ffdf7979/page-0001.png",
+      "sampleImageExists": true,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "trade_management"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "candidateConcepts": [
+        "trade_management_education_case_review",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 23,
+      "reviewRowId": "course5_pdf_ocr_visual_review_023",
+      "recordId": "course5_eed6a89ae2181c36ffdf7979",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/D 高级波段技术分析-高清修复.pdf",
+      "pageNumber": 249,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_eed6a89ae2181c36ffdf7979/page-0249.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_eed6a89ae2181c36ffdf7979/page-0249.png",
+      "sampleImageExists": true,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "trade_management"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "candidateConcepts": [
+        "trade_management_education_case_review",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 24,
+      "reviewRowId": "course5_pdf_ocr_visual_review_024",
+      "recordId": "course5_eed6a89ae2181c36ffdf7979",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/D 高级波段技术分析-高清修复.pdf",
+      "pageNumber": 496,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_eed6a89ae2181c36ffdf7979/page-0496.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_eed6a89ae2181c36ffdf7979/page-0496.png",
+      "sampleImageExists": true,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "trade_management"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "candidateConcepts": [
+        "trade_management_education_case_review",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 25,
+      "reviewRowId": "course5_pdf_ocr_visual_review_025",
+      "recordId": "course5_fecbbd73dace293ba4925406",
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/2_阿布PA进阶37-52.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_fecbbd73dace293ba4925406/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_fecbbd73dace293ba4925406/page-0001.png",
+      "sampleImageExists": true,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "course_slides_alignment"
+      ],
+      "courseAlignment": [
+        "course_2_advanced_37_52"
+      ],
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "candidateConcepts": [
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 26,
+      "reviewRowId": "course5_pdf_ocr_visual_review_026",
+      "recordId": "course5_fecbbd73dace293ba4925406",
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/2_阿布PA进阶37-52.pdf",
+      "pageNumber": 699,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_fecbbd73dace293ba4925406/page-0699.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_fecbbd73dace293ba4925406/page-0699.png",
+      "sampleImageExists": true,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "course_slides_alignment"
+      ],
+      "courseAlignment": [
+        "course_2_advanced_37_52"
+      ],
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "candidateConcepts": [
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 27,
+      "reviewRowId": "course5_pdf_ocr_visual_review_027",
+      "recordId": "course5_fecbbd73dace293ba4925406",
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/2_阿布PA进阶37-52.pdf",
+      "pageNumber": 1397,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_fecbbd73dace293ba4925406/page-1397.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_fecbbd73dace293ba4925406/page-1397.png",
+      "sampleImageExists": true,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "course_slides_alignment"
+      ],
+      "courseAlignment": [
+        "course_2_advanced_37_52"
+      ],
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "candidateConcepts": [
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 28,
+      "reviewRowId": "course5_pdf_ocr_visual_review_028",
+      "recordId": "course5_64b71d522ff893e8d7223b14",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/E 详细解读价格行为模式-高清修复.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_64b71d522ff893e8d7223b14/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_64b71d522ff893e8d7223b14/page-0001.png",
+      "sampleImageExists": true,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "price_action_foundations",
+        "bar_by_bar_reading"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "ocrExecutionRoute": "ocr_low_text_pdf_then_compare_against_visual_samples",
+      "candidateConcepts": [
+        "bar_by_bar_chart_reading",
+        "price_action_foundation_review",
+        "low_text_pdf_manual_or_ocr_check",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document",
+        "low_text_pdf_requires_ocr_or_manual_transcription"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 29,
+      "reviewRowId": "course5_pdf_ocr_visual_review_029",
+      "recordId": "course5_64b71d522ff893e8d7223b14",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/E 详细解读价格行为模式-高清修复.pdf",
+      "pageNumber": 223,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_64b71d522ff893e8d7223b14/page-0223.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_64b71d522ff893e8d7223b14/page-0223.png",
+      "sampleImageExists": true,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "price_action_foundations",
+        "bar_by_bar_reading"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "ocrExecutionRoute": "ocr_low_text_pdf_then_compare_against_visual_samples",
+      "candidateConcepts": [
+        "bar_by_bar_chart_reading",
+        "price_action_foundation_review",
+        "low_text_pdf_manual_or_ocr_check",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document",
+        "low_text_pdf_requires_ocr_or_manual_transcription"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 30,
+      "reviewRowId": "course5_pdf_ocr_visual_review_030",
+      "recordId": "course5_64b71d522ff893e8d7223b14",
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/E 详细解读价格行为模式-高清修复.pdf",
+      "pageNumber": 445,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_64b71d522ff893e8d7223b14/page-0445.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_64b71d522ff893e8d7223b14/page-0445.png",
+      "sampleImageExists": true,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "price_action_foundations",
+        "bar_by_bar_reading"
+      ],
+      "courseAlignment": [
+        "course_1_to_4_general_supplement"
+      ],
+      "ocrExecutionRoute": "ocr_low_text_pdf_then_compare_against_visual_samples",
+      "candidateConcepts": [
+        "bar_by_bar_chart_reading",
+        "price_action_foundation_review",
+        "low_text_pdf_manual_or_ocr_check",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document",
+        "low_text_pdf_requires_ocr_or_manual_transcription"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 31,
+      "reviewRowId": "course5_pdf_ocr_visual_review_031",
+      "recordId": "course5_eb0f1ede0ca3bc4fcd9e9ae2",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 13_16SM-SZ.PDF",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_eb0f1ede0ca3bc4fcd9e9ae2/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_eb0f1ede0ca3bc4fcd9e9ae2/page-0001.png",
+      "sampleImageExists": true,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 32,
+      "reviewRowId": "course5_pdf_ocr_visual_review_032",
+      "recordId": "course5_eb0f1ede0ca3bc4fcd9e9ae2",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 13_16SM-SZ.PDF",
+      "pageNumber": 254,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_eb0f1ede0ca3bc4fcd9e9ae2/page-0254.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_eb0f1ede0ca3bc4fcd9e9ae2/page-0254.png",
+      "sampleImageExists": true,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 33,
+      "reviewRowId": "course5_pdf_ocr_visual_review_033",
+      "recordId": "course5_eb0f1ede0ca3bc4fcd9e9ae2",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 13_16SM-SZ.PDF",
+      "pageNumber": 507,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_eb0f1ede0ca3bc4fcd9e9ae2/page-0507.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_eb0f1ede0ca3bc4fcd9e9ae2/page-0507.png",
+      "sampleImageExists": true,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 34,
+      "reviewRowId": "course5_pdf_ocr_visual_review_034",
+      "recordId": "course5_63c2216fcf1e81f48021e86b",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 8_552GUN-GZ.PDF",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_63c2216fcf1e81f48021e86b/page-0001.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_63c2216fcf1e81f48021e86b/page-0001.png",
+      "sampleImageExists": true,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 35,
+      "reviewRowId": "course5_pdf_ocr_visual_review_035",
+      "recordId": "course5_63c2216fcf1e81f48021e86b",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 8_552GUN-GZ.PDF",
+      "pageNumber": 277,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_63c2216fcf1e81f48021e86b/page-0277.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_63c2216fcf1e81f48021e86b/page-0277.png",
+      "sampleImageExists": true,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    },
+    {
+      "sliceRowNo": 36,
+      "reviewRowId": "course5_pdf_ocr_visual_review_036",
+      "recordId": "course5_63c2216fcf1e81f48021e86b",
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 8_552GUN-GZ.PDF",
+      "pageNumber": 552,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_63c2216fcf1e81f48021e86b/page-0552.png",
+      "sampleImageHref": "local-course-5-visual-samples/course5_63c2216fcf1e81f48021e86b/page-0552.png",
+      "sampleImageExists": true,
+      "priorityBand": "P2_followup_blocker",
+      "moduleTags": [
+        "chart_pattern_encyclopedia"
+      ],
+      "courseAlignment": [
+        "course_4_supplemental_cases"
+      ],
+      "ocrExecutionRoute": "ocr_scanned_pdf_then_validate_representative_visual_samples",
+      "candidateConcepts": [
+        "chart_pattern_taxonomy",
+        "pdf_representative_page_visual_review"
+      ],
+      "reviewerQuestions": [
+        "What visible chart, table, slide, or page elements can be described without copying source prose?",
+        "What OCR/manual text is necessary before this page can support a teaching module?",
+        "Which module should this page support, and what paraphrased concept would be safe?",
+        "Is this representative page enough, or does the source need broader OCR/page sampling before deletion readiness?"
+      ],
+      "riskFlags": [
+        "private_source_not_public_grounded",
+        "not_ocr_verified",
+        "not_human_reviewed",
+        "pdf_page_sample_not_full_document"
+      ],
+      "acceptanceRequiredBeforeUse": [
+        "real_ocr_or_manual_text_verification",
+        "real_visual_reviewer_note",
+        "module_placement_confirmation",
+        "public_grounding_check",
+        "original_paraphrased_teaching_rewrite",
+        "explicit_release_or_deletion_readiness_approval"
+      ],
+      "reviewStatus": "blocked_missing_real_ocr_or_visual_reviewer_input",
+      "acceptedForModuleDistillation": false,
+      "acceptedForDeletionReadiness": false,
+      "educationOnly": true,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "productionReady": false,
+      "writeAllowedNow": false
+    }
+  ],
+  "inputTemplate": {
+    "json": "docs/reviewer-inputs/LOCAL_COURSE_5_PDF_OCR_PRIORITY_SLICE_INPUT_TEMPLATE.json",
+    "markdown": "docs/reviewer-inputs/LOCAL_COURSE_5_PDF_OCR_PRIORITY_SLICE_INPUT_TEMPLATE.md",
+    "rowCount": 36,
+    "requiredReviewerOwnedFields": [
+      "reviewerOwnedOcrTextExcerpt",
+      "reviewerOwnedVisualObservation",
+      "paraphrasedTeachingConcept",
+      "modulePlacement",
+      "evidenceLimitations",
+      "reviewerNameOrInitials",
+      "reviewedAt"
+    ]
+  },
+  "nextGate": "install_or_provide_trusted_ocr_engine_before_running_priority_slice",
+  "completionRule": "This priority slice is complete when the first 12 Course 5 PDF source rows and their 36 representative page samples are linked to machine orientation drafts and blank reviewer-owned OCR input rows, while all acceptance and deletion gates remain blocked until real OCR/reviewer input is validated.",
+  "boundary": "Course 5 PDF OCR priority slice is private reviewer-facing education operations material. It selects the first controlled OCR/reviewer batch from unresolved Course 5 PDFs, links source PDFs to representative page samples and machine orientation drafts, and defines reviewer-owned input fields and acceptance gates. It does not perform OCR, generate reviewer conclusions, accept machine drafts as human review, delete files, approve source-folder deletion, approve learner-facing release, copy private source wording, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, write authorization, or production readiness."
+}

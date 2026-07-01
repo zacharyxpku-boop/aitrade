@@ -1,0 +1,1115 @@
+{
+  "generatedAt": "2026-06-25T00:00:00.000+08:00",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "writeAllowedNow": false,
+  "auditStatus": "course_5_wave_5_pdf_ai_visual_review_all_85_samples_covered_release_and_deletion_blocked",
+  "sourceTemplate": "docs/reviewer-inputs/LOCAL_COURSE_5_WAVE_5_PDF_REVIEWER_INPUT_TEMPLATE.json",
+  "batchCount": 7,
+  "templateRows": 85,
+  "coveredRows": 85,
+  "missingRows": 0,
+  "duplicateCoverageRows": 0,
+  "readyForHumanConfirmationRows": 85,
+  "moduleMergeAllowedNow": false,
+  "acceptedForModuleDistillationRows": 0,
+  "acceptedForDeletionReadinessRows": 0,
+  "learnerReadyModules": 0,
+  "sourceFolderMayBeDeleted": false,
+  "batchSummaries": [
+    {
+      "batchId": "batch_001",
+      "inputRows": 85,
+      "readyForConfirmationRows": 12,
+      "firstReviewRowId": "course5_pdf_ocr_visual_review_019",
+      "lastReviewRowId": "course5_wave_5_pdf_supplemental_review_006",
+      "validationStatus": "course_5_wave_5_pdf_ai_visual_review_batch_001_partially_ready_release_and_deletion_blocked",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "batchId": "batch_002",
+      "inputRows": 85,
+      "readyForConfirmationRows": 12,
+      "firstReviewRowId": "course5_wave_5_pdf_supplemental_review_007",
+      "lastReviewRowId": "course5_pdf_ocr_visual_review_024",
+      "validationStatus": "course_5_wave_5_pdf_ai_visual_review_batch_002_partially_ready_release_and_deletion_blocked",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "batchId": "batch_003",
+      "inputRows": 85,
+      "readyForConfirmationRows": 12,
+      "firstReviewRowId": "course5_pdf_ocr_visual_review_025",
+      "lastReviewRowId": "course5_wave_5_pdf_supplemental_review_018",
+      "validationStatus": "course_5_wave_5_pdf_ai_visual_review_batch_003_partially_ready_release_and_deletion_blocked",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "batchId": "batch_004",
+      "inputRows": 85,
+      "readyForConfirmationRows": 12,
+      "firstReviewRowId": "course5_wave_5_pdf_supplemental_review_019",
+      "lastReviewRowId": "course5_wave_5_pdf_supplemental_review_030",
+      "validationStatus": "course_5_wave_5_pdf_ai_visual_review_batch_004_partially_ready_release_and_deletion_blocked",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "batchId": "batch_005",
+      "inputRows": 85,
+      "readyForConfirmationRows": 12,
+      "firstReviewRowId": "course5_wave_5_pdf_supplemental_review_031",
+      "lastReviewRowId": "course5_wave_5_pdf_supplemental_review_042",
+      "validationStatus": "course_5_wave_5_pdf_ai_visual_review_batch_005_partially_ready_release_and_deletion_blocked",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "batchId": "batch_006",
+      "inputRows": 85,
+      "readyForConfirmationRows": 12,
+      "firstReviewRowId": "course5_wave_5_pdf_supplemental_review_043",
+      "lastReviewRowId": "course5_wave_5_pdf_supplemental_review_054",
+      "validationStatus": "course_5_wave_5_pdf_ai_visual_review_batch_006_partially_ready_release_and_deletion_blocked",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "batchId": "batch_007",
+      "inputRows": 85,
+      "readyForConfirmationRows": 13,
+      "firstReviewRowId": "course5_wave_5_pdf_supplemental_review_055",
+      "lastReviewRowId": "course5_wave_5_pdf_supplemental_review_067",
+      "validationStatus": "course_5_wave_5_pdf_ai_visual_review_batch_007_final_rows_ready_release_and_deletion_blocked",
+      "sourceFolderMayBeDeleted": false
+    }
+  ],
+  "coverageRows": [
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_019",
+      "executionSampleNo": 1,
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/1_阿布PA基础1-36.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_30e5099e072da50c56639a98/page-0001.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_020",
+      "executionSampleNo": 2,
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/1_阿布PA基础1-36.pdf",
+      "pageNumber": 1410,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_30e5099e072da50c56639a98/page-1410.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_021",
+      "executionSampleNo": 3,
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/1_阿布PA基础1-36.pdf",
+      "pageNumber": 2818,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_30e5099e072da50c56639a98/page-2818.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_028",
+      "executionSampleNo": 4,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/E 详细解读价格行为模式-高清修复.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_64b71d522ff893e8d7223b14/page-0001.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_029",
+      "executionSampleNo": 5,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/E 详细解读价格行为模式-高清修复.pdf",
+      "pageNumber": 223,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_64b71d522ff893e8d7223b14/page-0223.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_030",
+      "executionSampleNo": 6,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/E 详细解读价格行为模式-高清修复.pdf",
+      "pageNumber": 445,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_64b71d522ff893e8d7223b14/page-0445.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_001",
+      "executionSampleNo": 7,
+      "relativePath": "日本蜡烛图交易技术分析  详细解读价格行为模式,（美）艾尔·布鲁克斯著；张雯译,北京：地震出版社_14128154.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f92a6a282ea0bbc794b5792c/page-0001.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_002",
+      "executionSampleNo": 8,
+      "relativePath": "日本蜡烛图交易技术分析  详细解读价格行为模式,（美）艾尔·布鲁克斯著；张雯译,北京：地震出版社_14128154.pdf",
+      "pageNumber": 223,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f92a6a282ea0bbc794b5792c/page-0223.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_003",
+      "executionSampleNo": 9,
+      "relativePath": "日本蜡烛图交易技术分析  详细解读价格行为模式,（美）艾尔·布鲁克斯著；张雯译,北京：地震出版社_14128154.pdf",
+      "pageNumber": 445,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f92a6a282ea0bbc794b5792c/page-0445.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_004",
+      "executionSampleNo": 10,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/E 详细解读价格行为模式-原版.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_5d62c376c59dd07fb7ab9517/page-0001.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_005",
+      "executionSampleNo": 11,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/E 详细解读价格行为模式-原版.pdf",
+      "pageNumber": 223,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_5d62c376c59dd07fb7ab9517/page-0223.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_006",
+      "executionSampleNo": 12,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/E 详细解读价格行为模式-原版.pdf",
+      "pageNumber": 445,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_5d62c376c59dd07fb7ab9517/page-0445.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_007",
+      "executionSampleNo": 13,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/有道翻译版（机翻）/百科幻灯片2024.3.1更新-2.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_b071aeb9a7fa51f8e10822a7/page-0001.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_008",
+      "executionSampleNo": 14,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/有道翻译版（机翻）/百科幻灯片2024.3.1更新-2.pdf",
+      "pageNumber": 61,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_b071aeb9a7fa51f8e10822a7/page-0061.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_009",
+      "executionSampleNo": 15,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/有道翻译版（机翻）/百科幻灯片2024.3.1更新-2.pdf",
+      "pageNumber": 121,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_b071aeb9a7fa51f8e10822a7/page-0121.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_010",
+      "executionSampleNo": 16,
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/【重要】阿布缩写翻译及解释.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_5fd4a57eff4d300b20017e0a/page-0001.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_011",
+      "executionSampleNo": 17,
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/【重要】阿布缩写翻译及解释.pdf",
+      "pageNumber": 11,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_5fd4a57eff4d300b20017e0a/page-0011.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_012",
+      "executionSampleNo": 18,
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/【重要】阿布缩写翻译及解释.pdf",
+      "pageNumber": 20,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_5fd4a57eff4d300b20017e0a/page-0020.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_013",
+      "executionSampleNo": 19,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/google翻译版（机翻）/百科幻灯片2024.3.1更新.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_934746436a703a5349053d90/page-0001.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_014",
+      "executionSampleNo": 20,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/google翻译版（机翻）/百科幻灯片2024.3.1更新.pdf",
+      "pageNumber": 61,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_934746436a703a5349053d90/page-0061.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_015",
+      "executionSampleNo": 21,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/2、阿布图表百科全书-机翻版/google翻译版（机翻）/百科幻灯片2024.3.1更新.pdf",
+      "pageNumber": 121,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_934746436a703a5349053d90/page-0121.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_022",
+      "executionSampleNo": 22,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/D 高级波段技术分析-高清修复.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_eed6a89ae2181c36ffdf7979/page-0001.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_023",
+      "executionSampleNo": 23,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/D 高级波段技术分析-高清修复.pdf",
+      "pageNumber": 249,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_eed6a89ae2181c36ffdf7979/page-0249.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_024",
+      "executionSampleNo": 24,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/D 高级波段技术分析-高清修复.pdf",
+      "pageNumber": 496,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_eed6a89ae2181c36ffdf7979/page-0496.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_025",
+      "executionSampleNo": 25,
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/2_阿布PA进阶37-52.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_fecbbd73dace293ba4925406/page-0001.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_026",
+      "executionSampleNo": 26,
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/2_阿布PA进阶37-52.pdf",
+      "pageNumber": 699,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_fecbbd73dace293ba4925406/page-0699.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_027",
+      "executionSampleNo": 27,
+      "relativePath": "1、课程PPT（建议下载，边看边学，效率翻倍）/2_阿布PA进阶37-52.pdf",
+      "pageNumber": 1397,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_fecbbd73dace293ba4925406/page-1397.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_031",
+      "executionSampleNo": 28,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 13_16SM-SZ.PDF",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_eb0f1ede0ca3bc4fcd9e9ae2/page-0001.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_032",
+      "executionSampleNo": 29,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 13_16SM-SZ.PDF",
+      "pageNumber": 254,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_eb0f1ede0ca3bc4fcd9e9ae2/page-0254.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_033",
+      "executionSampleNo": 30,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 13_16SM-SZ.PDF",
+      "pageNumber": 507,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_eb0f1ede0ca3bc4fcd9e9ae2/page-0507.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_034",
+      "executionSampleNo": 31,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 8_552GUN-GZ.PDF",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_63c2216fcf1e81f48021e86b/page-0001.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_035",
+      "executionSampleNo": 32,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 8_552GUN-GZ.PDF",
+      "pageNumber": 277,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_63c2216fcf1e81f48021e86b/page-0277.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_036",
+      "executionSampleNo": 33,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 8_552GUN-GZ.PDF",
+      "pageNumber": 552,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_63c2216fcf1e81f48021e86b/page-0552.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_016",
+      "executionSampleNo": 34,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 11_468N-P.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_71dea62d45d97075ffd99161/page-0001.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_017",
+      "executionSampleNo": 35,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 11_468N-P.pdf",
+      "pageNumber": 235,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_71dea62d45d97075ffd99161/page-0235.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_018",
+      "executionSampleNo": 36,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 11_468N-P.pdf",
+      "pageNumber": 468,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_71dea62d45d97075ffd99161/page-0468.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_019",
+      "executionSampleNo": 37,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 12_394Q-SL.PDF",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_cb0974e0bbb2397d1aa2f72a/page-0001.png",
+      "coveredByBatches": [
+        "batch_004"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_020",
+      "executionSampleNo": 38,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 12_394Q-SL.PDF",
+      "pageNumber": 198,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_cb0974e0bbb2397d1aa2f72a/page-0198.png",
+      "coveredByBatches": [
+        "batch_004"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_021",
+      "executionSampleNo": 39,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 12_394Q-SL.PDF",
+      "pageNumber": 394,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_cb0974e0bbb2397d1aa2f72a/page-0394.png",
+      "coveredByBatches": [
+        "batch_004"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_022",
+      "executionSampleNo": 40,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 6_410GDN-GT.PDF",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_71f12c3eff1a8f79e9d4ac47/page-0001.png",
+      "coveredByBatches": [
+        "batch_004"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_023",
+      "executionSampleNo": 41,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 6_410GDN-GT.PDF",
+      "pageNumber": 206,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_71f12c3eff1a8f79e9d4ac47/page-0206.png",
+      "coveredByBatches": [
+        "batch_004"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_024",
+      "executionSampleNo": 42,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 6_410GDN-GT.PDF",
+      "pageNumber": 410,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_71f12c3eff1a8f79e9d4ac47/page-0410.png",
+      "coveredByBatches": [
+        "batch_004"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_025",
+      "executionSampleNo": 43,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 10_383M.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_4310d75e31d7a51a62b4b9f4/page-0001.png",
+      "coveredByBatches": [
+        "batch_004"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_026",
+      "executionSampleNo": 44,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 10_383M.pdf",
+      "pageNumber": 192,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_4310d75e31d7a51a62b4b9f4/page-0192.png",
+      "coveredByBatches": [
+        "batch_004"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_027",
+      "executionSampleNo": 45,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 10_383M.pdf",
+      "pageNumber": 383,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_4310d75e31d7a51a62b4b9f4/page-0383.png",
+      "coveredByBatches": [
+        "batch_004"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_028",
+      "executionSampleNo": 46,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 7_346GU-GUM.PDF",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_49596f06b8762def7582ae5d/page-0001.png",
+      "coveredByBatches": [
+        "batch_004"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_029",
+      "executionSampleNo": 47,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 7_346GU-GUM.PDF",
+      "pageNumber": 174,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_49596f06b8762def7582ae5d/page-0174.png",
+      "coveredByBatches": [
+        "batch_004"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_030",
+      "executionSampleNo": 48,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 7_346GU-GUM.PDF",
+      "pageNumber": 346,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_49596f06b8762def7582ae5d/page-0346.png",
+      "coveredByBatches": [
+        "batch_004"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_031",
+      "executionSampleNo": 49,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 3_385D-F.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f46e95188257060788e2e44c/page-0001.png",
+      "coveredByBatches": [
+        "batch_005"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_032",
+      "executionSampleNo": 50,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 3_385D-F.pdf",
+      "pageNumber": 193,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f46e95188257060788e2e44c/page-0193.png",
+      "coveredByBatches": [
+        "batch_005"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_033",
+      "executionSampleNo": 51,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 3_385D-F.pdf",
+      "pageNumber": 385,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f46e95188257060788e2e44c/page-0385.png",
+      "coveredByBatches": [
+        "batch_005"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_034",
+      "executionSampleNo": 52,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/D 高级波段技术分析-原版.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f04060b74ef98658ea4c101c/page-0001.png",
+      "coveredByBatches": [
+        "batch_005"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_035",
+      "executionSampleNo": 53,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/D 高级波段技术分析-原版.pdf",
+      "pageNumber": 249,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f04060b74ef98658ea4c101c/page-0249.png",
+      "coveredByBatches": [
+        "batch_005"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_036",
+      "executionSampleNo": 54,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/D 高级波段技术分析-原版.pdf",
+      "pageNumber": 496,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_f04060b74ef98658ea4c101c/page-0496.png",
+      "coveredByBatches": [
+        "batch_005"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_037",
+      "executionSampleNo": 55,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/6、SP500-Emini-5-Min-Chart(A4横版带目录).pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_5b4779c96e99fb018f064349/page-0001.png",
+      "coveredByBatches": [
+        "batch_005"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_038",
+      "executionSampleNo": 56,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/6、SP500-Emini-5-Min-Chart(A4横版带目录).pdf",
+      "pageNumber": 346,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_5b4779c96e99fb018f064349/page-0346.png",
+      "coveredByBatches": [
+        "batch_005"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_039",
+      "executionSampleNo": 57,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/6、SP500-Emini-5-Min-Chart(A4横版带目录).pdf",
+      "pageNumber": 691,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_5b4779c96e99fb018f064349/page-0691.png",
+      "coveredByBatches": [
+        "batch_005"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_040",
+      "executionSampleNo": 58,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 2_288C.PDF",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_a5db344bf1ca9feb9be979f5/page-0001.png",
+      "coveredByBatches": [
+        "batch_005"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_041",
+      "executionSampleNo": 59,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 2_288C.PDF",
+      "pageNumber": 145,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_a5db344bf1ca9feb9be979f5/page-0145.png",
+      "coveredByBatches": [
+        "batch_005"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_042",
+      "executionSampleNo": 60,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 2_288C.PDF",
+      "pageNumber": 288,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_a5db344bf1ca9feb9be979f5/page-0288.png",
+      "coveredByBatches": [
+        "batch_005"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_043",
+      "executionSampleNo": 61,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 1_407A-B.PDF",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_95751e6fbc67dcc43c8cddd4/page-0001.png",
+      "coveredByBatches": [
+        "batch_006"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_044",
+      "executionSampleNo": 62,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 1_407A-B.PDF",
+      "pageNumber": 203,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_95751e6fbc67dcc43c8cddd4/page-0203.png",
+      "coveredByBatches": [
+        "batch_006"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_045",
+      "executionSampleNo": 63,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 1_407A-B.PDF",
+      "pageNumber": 405,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_95751e6fbc67dcc43c8cddd4/page-0405.png",
+      "coveredByBatches": [
+        "batch_006"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_046",
+      "executionSampleNo": 64,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 9_240H-L.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_1eb6cb25b2ddde14cf70de61/page-0001.png",
+      "coveredByBatches": [
+        "batch_006"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_047",
+      "executionSampleNo": 65,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 9_240H-L.pdf",
+      "pageNumber": 121,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_1eb6cb25b2ddde14cf70de61/page-0121.png",
+      "coveredByBatches": [
+        "batch_006"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_048",
+      "executionSampleNo": 66,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 9_240H-L.pdf",
+      "pageNumber": 240,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_1eb6cb25b2ddde14cf70de61/page-0240.png",
+      "coveredByBatches": [
+        "batch_006"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_049",
+      "executionSampleNo": 67,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 5_244GD-GDM.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_cd0355997ebdfb3f37e93826/page-0001.png",
+      "coveredByBatches": [
+        "batch_006"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_050",
+      "executionSampleNo": 68,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 5_244GD-GDM.pdf",
+      "pageNumber": 123,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_cd0355997ebdfb3f37e93826/page-0123.png",
+      "coveredByBatches": [
+        "batch_006"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_051",
+      "executionSampleNo": 69,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 5_244GD-GDM.pdf",
+      "pageNumber": 244,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_cd0355997ebdfb3f37e93826/page-0244.png",
+      "coveredByBatches": [
+        "batch_006"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_052",
+      "executionSampleNo": 70,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 4_169G.PDF",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_7a5c9ea8f549a51d26ad7eb1/page-0001.png",
+      "coveredByBatches": [
+        "batch_006"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_053",
+      "executionSampleNo": 71,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 4_169G.PDF",
+      "pageNumber": 85,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_7a5c9ea8f549a51d26ad7eb1/page-0085.png",
+      "coveredByBatches": [
+        "batch_006"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_054",
+      "executionSampleNo": 72,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 4_169G.PDF",
+      "pageNumber": 169,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_7a5c9ea8f549a51d26ad7eb1/page-0169.png",
+      "coveredByBatches": [
+        "batch_006"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_055",
+      "executionSampleNo": 73,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/1、阿布图表百科全书-拆分版/百科幻灯片2024.3.1.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_51ae24b7631eec2813610ab5/page-0001.png",
+      "coveredByBatches": [
+        "batch_007"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_056",
+      "executionSampleNo": 74,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/1、阿布图表百科全书-拆分版/百科幻灯片2024.3.1.pdf",
+      "pageNumber": 61,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_51ae24b7631eec2813610ab5/page-0061.png",
+      "coveredByBatches": [
+        "batch_007"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_057",
+      "executionSampleNo": 75,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/1、阿布图表百科全书-拆分版/百科幻灯片2024.3.1.pdf",
+      "pageNumber": 121,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_51ae24b7631eec2813610ab5/page-0121.png",
+      "coveredByBatches": [
+        "batch_007"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_058",
+      "executionSampleNo": 76,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 15_16TRD-V.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_fa9154de2e4f7947a7f17b45/page-0001.png",
+      "coveredByBatches": [
+        "batch_007"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_059",
+      "executionSampleNo": 77,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 15_16TRD-V.pdf",
+      "pageNumber": 203,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_fa9154de2e4f7947a7f17b45/page-0203.png",
+      "coveredByBatches": [
+        "batch_007"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_060",
+      "executionSampleNo": 78,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 15_16TRD-V.pdf",
+      "pageNumber": 404,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_fa9154de2e4f7947a7f17b45/page-0404.png",
+      "coveredByBatches": [
+        "batch_007"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_061",
+      "executionSampleNo": 79,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 14_16T-TRD.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_9ca36e05ffbc626ee81e193b/page-0001.png",
+      "coveredByBatches": [
+        "batch_007"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_062",
+      "executionSampleNo": 80,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 14_16T-TRD.pdf",
+      "pageNumber": 157,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_9ca36e05ffbc626ee81e193b/page-0157.png",
+      "coveredByBatches": [
+        "batch_007"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_063",
+      "executionSampleNo": 81,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 14_16T-TRD.pdf",
+      "pageNumber": 312,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_9ca36e05ffbc626ee81e193b/page-0312.png",
+      "coveredByBatches": [
+        "batch_007"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_064",
+      "executionSampleNo": 82,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 16_16W-Z.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_48405fde946b9fa0452ceba5/page-0001.png",
+      "coveredByBatches": [
+        "batch_007"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_065",
+      "executionSampleNo": 83,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 16_16W-Z.pdf",
+      "pageNumber": 140,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_48405fde946b9fa0452ceba5/page-0140.png",
+      "coveredByBatches": [
+        "batch_007"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_066",
+      "executionSampleNo": 84,
+      "relativePath": "5、阿布图表百科（学完视频再看，特别多）/0、Encyclopedia of Chart Patterns/Encyclopedia_Part 16_16W-Z.pdf",
+      "pageNumber": 278,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_48405fde946b9fa0452ceba5/page-0278.png",
+      "coveredByBatches": [
+        "batch_007"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_5_pdf_supplemental_review_067",
+      "executionSampleNo": 85,
+      "relativePath": "AL Brooks 知识体系（18版视频结构）.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_a7a09cbedc2601d761bd74fa/page-0001.png",
+      "coveredByBatches": [
+        "batch_007"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    }
+  ],
+  "nextOperationalGates": [
+    "Use this audit as the Wave 5 PDF visual review closure proof.",
+    "Keep OCR, public grounding, and originality review required before module merge.",
+    "Recompute Course 5 deletion readiness only after OCR, reviewer confirmation, public grounding, originality review, and module merge gates are satisfied."
+  ],
+  "completionRule": "Wave 5 PDF AI visual review coverage is complete when every row in the Wave 5 PDF reviewer input template is covered exactly once by Batch 001 through Batch 007 while all release, module merge, and source-folder removal gates remain closed.",
+  "boundary": "Private education-operations audit for Course 5 Wave 5 PDF page sample coverage. It summarizes model-assisted visual review coverage and keeps learner release, module merge, write authorization, and source-folder removal blocked pending OCR, reviewer confirmation, public grounding, originality review, and explicit approval."
+}

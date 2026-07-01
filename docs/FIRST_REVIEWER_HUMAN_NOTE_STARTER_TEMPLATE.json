@@ -1,0 +1,1588 @@
+{
+  "generatedAt": "2026-06-19T09:47:10.558Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "targetBatches": [
+    "rewrite_batch_01",
+    "rewrite_batch_05"
+  ],
+  "sourceRoleTable": "docs/FIRST_REVIEWER_SOURCE_ROLE_DECISION_TABLE.json",
+  "sourceDraftTemplate": "docs/LESSON_BATCH_REVIEW_STATUS_DRAFT_TEMPLATE_FOR_BATCH_01_05.json",
+  "sourceDryRunPacket": "docs/FIRST_REVIEWER_DRY_RUN_PACKET.json",
+  "realStatusPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "realStatusOverlayPresent": false,
+  "lessonCards": 12,
+  "blankNoteFields": 72,
+  "roleHints": 45,
+  "directCandidatesToConfirm": 5,
+  "useRules": [
+    "Use this starter after reading the source-role decision table and before copying any blank overlay into real note-taking.",
+    "Every note value starts blank and must be filled only by a human after real review work.",
+    "Role hints are prompts, not source-use approval.",
+    "Keep approvalStatus:not_approved, learnerFacingRelease:false, productionReady:false, and structural_draft.",
+    "Run note-quality lint and completion audit after any real notes are filled."
+  ],
+  "batches": [
+    {
+      "batchId": "rewrite_batch_01",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "reviewStatus": "not_started",
+      "lessonCards": [
+        {
+          "lessonId": "lesson_knv2_0044",
+          "riskLevel": "medium",
+          "trackingStatus": "not_started",
+          "mustRemainStructuralDraft": true,
+          "roleHints": [
+            {
+              "family": "CFTC",
+              "suggestedRole": "fraud_or_market_boundary",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "SEC",
+              "suggestedRole": "filing_or_data_boundary",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            }
+          ],
+          "blankFields": [
+            "originalRewriteNotes",
+            "sourceFitNotes",
+            "factCheckNotes",
+            "boundaryCheckNotes",
+            "copyingRiskNotes",
+            "humanReviewerInitials"
+          ],
+          "noteGuidance": {
+            "originalRewriteNotes": {
+              "value": "",
+              "prompt": "Describe the original education rewrite angle after source roles are confirmed.",
+              "mustMention": [
+                "original wording",
+                "observation or education practice",
+                "structural_draft"
+              ]
+            },
+            "sourceFitNotes": {
+              "value": "",
+              "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval.",
+              "roleHints": [
+                {
+                  "family": "CFTC",
+                  "suggestedRole": "fraud_or_market_boundary",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for commodity, fraud, system-risk, or market-oversight boundaries; do not use as chart-pattern authority unless source title directly fits."
+                },
+                {
+                  "family": "SEC",
+                  "suggestedRole": "filing_or_data_boundary",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for filing/data-access/disclosure-literacy boundaries; direct prose support needs human confirmation."
+                }
+              ],
+              "directCandidatesToConfirm": [],
+              "boundaryFamiliesToConfirm": [
+                "CFTC",
+                "SEC"
+              ]
+            },
+            "factCheckNotes": {
+              "value": "",
+              "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles.",
+              "mustMention": [
+                "checked claims",
+                "unresolved claims",
+                "removed or retained"
+              ]
+            },
+            "boundaryCheckNotes": {
+              "value": "",
+              "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+              "mustMention": [
+                "education-only",
+                "non-production",
+                "no advice",
+                "no signal",
+                "no real-money guidance"
+              ]
+            },
+            "copyingRiskNotes": {
+              "value": "",
+              "prompt": "Confirm no external source body text is copied into notes or lesson prose.",
+              "mustMention": [
+                "no source-body copying",
+                "original wording"
+              ]
+            },
+            "humanReviewerInitials": {
+              "value": "",
+              "prompt": "Fill only after real human review work is performed.",
+              "mustMention": [
+                "human initials only"
+              ]
+            }
+          },
+          "disallowedNoteContent": [
+            "approval or final-ready wording",
+            "buy/sell/hold or trading signals",
+            "return, win-rate, or backtest-profit claims",
+            "broker/order/automation workflow",
+            "real-money guidance",
+            "copied external source body text"
+          ]
+        },
+        {
+          "lessonId": "lesson_knv2_0068",
+          "riskLevel": "high",
+          "trackingStatus": "not_started",
+          "mustRemainStructuralDraft": true,
+          "roleHints": [
+            {
+              "family": "CFTC",
+              "suggestedRole": "direct_candidate_needs_human_confirmation",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "Investor.gov",
+              "suggestedRole": "investor_protection_boundary",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            }
+          ],
+          "blankFields": [
+            "originalRewriteNotes",
+            "sourceFitNotes",
+            "factCheckNotes",
+            "boundaryCheckNotes",
+            "copyingRiskNotes",
+            "humanReviewerInitials"
+          ],
+          "noteGuidance": {
+            "originalRewriteNotes": {
+              "value": "",
+              "prompt": "Describe the original education rewrite angle after source roles are confirmed.",
+              "mustMention": [
+                "original wording",
+                "observation or education practice",
+                "structural_draft"
+              ]
+            },
+            "sourceFitNotes": {
+              "value": "",
+              "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval.",
+              "roleHints": [
+                {
+                  "family": "CFTC",
+                  "suggestedRole": "direct_candidate_needs_human_confirmation",
+                  "confidence": "medium",
+                  "reviewerDecision": "Inspect source title and metadata. If it directly supports the lesson topic, keep as direct evidence; otherwise downgrade to boundary-only context."
+                },
+                {
+                  "family": "Investor.gov",
+                  "suggestedRole": "investor_protection_boundary",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for investor-protection, glossary, and fraud-warning boundaries; do not use to define chart structures."
+                }
+              ],
+              "directCandidatesToConfirm": [
+                "CFTC"
+              ],
+              "boundaryFamiliesToConfirm": [
+                "Investor.gov"
+              ]
+            },
+            "factCheckNotes": {
+              "value": "",
+              "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles.",
+              "mustMention": [
+                "checked claims",
+                "unresolved claims",
+                "removed or retained"
+              ]
+            },
+            "boundaryCheckNotes": {
+              "value": "",
+              "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+              "mustMention": [
+                "education-only",
+                "non-production",
+                "no advice",
+                "no signal",
+                "no real-money guidance"
+              ]
+            },
+            "copyingRiskNotes": {
+              "value": "",
+              "prompt": "Confirm no external source body text is copied into notes or lesson prose.",
+              "mustMention": [
+                "no source-body copying",
+                "original wording"
+              ]
+            },
+            "humanReviewerInitials": {
+              "value": "",
+              "prompt": "Fill only after real human review work is performed.",
+              "mustMention": [
+                "human initials only"
+              ]
+            }
+          },
+          "disallowedNoteContent": [
+            "approval or final-ready wording",
+            "buy/sell/hold or trading signals",
+            "return, win-rate, or backtest-profit claims",
+            "broker/order/automation workflow",
+            "real-money guidance",
+            "copied external source body text"
+          ]
+        },
+        {
+          "lessonId": "lesson_knv2_0128",
+          "riskLevel": "medium",
+          "trackingStatus": "not_started",
+          "mustRemainStructuralDraft": true,
+          "roleHints": [
+            {
+              "family": "CFTC",
+              "suggestedRole": "fraud_or_market_boundary",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "Federal Reserve",
+              "suggestedRole": "macro_rates_context",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "Investor.gov",
+              "suggestedRole": "investor_protection_boundary",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            }
+          ],
+          "blankFields": [
+            "originalRewriteNotes",
+            "sourceFitNotes",
+            "factCheckNotes",
+            "boundaryCheckNotes",
+            "copyingRiskNotes",
+            "humanReviewerInitials"
+          ],
+          "noteGuidance": {
+            "originalRewriteNotes": {
+              "value": "",
+              "prompt": "Describe the original education rewrite angle after source roles are confirmed.",
+              "mustMention": [
+                "original wording",
+                "observation or education practice",
+                "structural_draft"
+              ]
+            },
+            "sourceFitNotes": {
+              "value": "",
+              "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval.",
+              "roleHints": [
+                {
+                  "family": "CFTC",
+                  "suggestedRole": "fraud_or_market_boundary",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for commodity, fraud, system-risk, or market-oversight boundaries; do not use as chart-pattern authority unless source title directly fits."
+                },
+                {
+                  "family": "Federal Reserve",
+                  "suggestedRole": "macro_rates_context",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for macro/rates context or data-boundary notes; do not convert into directional market claims."
+                },
+                {
+                  "family": "Investor.gov",
+                  "suggestedRole": "investor_protection_boundary",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for investor-protection, glossary, and fraud-warning boundaries; do not use to define chart structures."
+                }
+              ],
+              "directCandidatesToConfirm": [],
+              "boundaryFamiliesToConfirm": [
+                "CFTC",
+                "Federal Reserve",
+                "Investor.gov"
+              ]
+            },
+            "factCheckNotes": {
+              "value": "",
+              "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles.",
+              "mustMention": [
+                "checked claims",
+                "unresolved claims",
+                "removed or retained"
+              ]
+            },
+            "boundaryCheckNotes": {
+              "value": "",
+              "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+              "mustMention": [
+                "education-only",
+                "non-production",
+                "no advice",
+                "no signal",
+                "no real-money guidance"
+              ]
+            },
+            "copyingRiskNotes": {
+              "value": "",
+              "prompt": "Confirm no external source body text is copied into notes or lesson prose.",
+              "mustMention": [
+                "no source-body copying",
+                "original wording"
+              ]
+            },
+            "humanReviewerInitials": {
+              "value": "",
+              "prompt": "Fill only after real human review work is performed.",
+              "mustMention": [
+                "human initials only"
+              ]
+            }
+          },
+          "disallowedNoteContent": [
+            "approval or final-ready wording",
+            "buy/sell/hold or trading signals",
+            "return, win-rate, or backtest-profit claims",
+            "broker/order/automation workflow",
+            "real-money guidance",
+            "copied external source body text"
+          ]
+        },
+        {
+          "lessonId": "lesson_knv2_0140",
+          "riskLevel": "medium",
+          "trackingStatus": "not_started",
+          "mustRemainStructuralDraft": true,
+          "roleHints": [
+            {
+              "family": "BEA",
+              "suggestedRole": "macro_data_context",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "CFTC",
+              "suggestedRole": "fraud_or_market_boundary",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "Investor.gov",
+              "suggestedRole": "investor_protection_boundary",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "Treasury",
+              "suggestedRole": "macro_rates_context",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            }
+          ],
+          "blankFields": [
+            "originalRewriteNotes",
+            "sourceFitNotes",
+            "factCheckNotes",
+            "boundaryCheckNotes",
+            "copyingRiskNotes",
+            "humanReviewerInitials"
+          ],
+          "noteGuidance": {
+            "originalRewriteNotes": {
+              "value": "",
+              "prompt": "Describe the original education rewrite angle after source roles are confirmed.",
+              "mustMention": [
+                "original wording",
+                "observation or education practice",
+                "structural_draft"
+              ]
+            },
+            "sourceFitNotes": {
+              "value": "",
+              "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval.",
+              "roleHints": [
+                {
+                  "family": "BEA",
+                  "suggestedRole": "macro_data_context",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for data-definition and release-reading boundaries; do not use as chart-pattern proof."
+                },
+                {
+                  "family": "CFTC",
+                  "suggestedRole": "fraud_or_market_boundary",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for commodity, fraud, system-risk, or market-oversight boundaries; do not use as chart-pattern authority unless source title directly fits."
+                },
+                {
+                  "family": "Investor.gov",
+                  "suggestedRole": "investor_protection_boundary",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for investor-protection, glossary, and fraud-warning boundaries; do not use to define chart structures."
+                },
+                {
+                  "family": "Treasury",
+                  "suggestedRole": "macro_rates_context",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for macro/rates context or data-boundary notes; do not convert into directional market claims."
+                }
+              ],
+              "directCandidatesToConfirm": [],
+              "boundaryFamiliesToConfirm": [
+                "BEA",
+                "CFTC",
+                "Investor.gov",
+                "Treasury"
+              ]
+            },
+            "factCheckNotes": {
+              "value": "",
+              "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles.",
+              "mustMention": [
+                "checked claims",
+                "unresolved claims",
+                "removed or retained"
+              ]
+            },
+            "boundaryCheckNotes": {
+              "value": "",
+              "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+              "mustMention": [
+                "education-only",
+                "non-production",
+                "no advice",
+                "no signal",
+                "no real-money guidance"
+              ]
+            },
+            "copyingRiskNotes": {
+              "value": "",
+              "prompt": "Confirm no external source body text is copied into notes or lesson prose.",
+              "mustMention": [
+                "no source-body copying",
+                "original wording"
+              ]
+            },
+            "humanReviewerInitials": {
+              "value": "",
+              "prompt": "Fill only after real human review work is performed.",
+              "mustMention": [
+                "human initials only"
+              ]
+            }
+          },
+          "disallowedNoteContent": [
+            "approval or final-ready wording",
+            "buy/sell/hold or trading signals",
+            "return, win-rate, or backtest-profit claims",
+            "broker/order/automation workflow",
+            "real-money guidance",
+            "copied external source body text"
+          ]
+        },
+        {
+          "lessonId": "lesson_knv2_0054",
+          "riskLevel": "medium",
+          "trackingStatus": "not_started",
+          "mustRemainStructuralDraft": true,
+          "roleHints": [
+            {
+              "family": "BEA",
+              "suggestedRole": "macro_data_context",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "CFTC",
+              "suggestedRole": "fraud_or_market_boundary",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "Federal Reserve",
+              "suggestedRole": "macro_rates_context",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "Project Gutenberg",
+              "suggestedRole": "historical_context",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "Treasury",
+              "suggestedRole": "macro_rates_context",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            }
+          ],
+          "blankFields": [
+            "originalRewriteNotes",
+            "sourceFitNotes",
+            "factCheckNotes",
+            "boundaryCheckNotes",
+            "copyingRiskNotes",
+            "humanReviewerInitials"
+          ],
+          "noteGuidance": {
+            "originalRewriteNotes": {
+              "value": "",
+              "prompt": "Describe the original education rewrite angle after source roles are confirmed.",
+              "mustMention": [
+                "original wording",
+                "observation or education practice",
+                "structural_draft"
+              ]
+            },
+            "sourceFitNotes": {
+              "value": "",
+              "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval.",
+              "roleHints": [
+                {
+                  "family": "BEA",
+                  "suggestedRole": "macro_data_context",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for data-definition and release-reading boundaries; do not use as chart-pattern proof."
+                },
+                {
+                  "family": "CFTC",
+                  "suggestedRole": "fraud_or_market_boundary",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for commodity, fraud, system-risk, or market-oversight boundaries; do not use as chart-pattern authority unless source title directly fits."
+                },
+                {
+                  "family": "Federal Reserve",
+                  "suggestedRole": "macro_rates_context",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for macro/rates context or data-boundary notes; do not convert into directional market claims."
+                },
+                {
+                  "family": "Project Gutenberg",
+                  "suggestedRole": "historical_context",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use only for historical language, terminology evolution, and observation framing; remove any buy/sell or profit wording."
+                },
+                {
+                  "family": "Treasury",
+                  "suggestedRole": "macro_rates_context",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for macro/rates context or data-boundary notes; do not convert into directional market claims."
+                }
+              ],
+              "directCandidatesToConfirm": [],
+              "boundaryFamiliesToConfirm": [
+                "BEA",
+                "CFTC",
+                "Federal Reserve",
+                "Project Gutenberg",
+                "Treasury"
+              ]
+            },
+            "factCheckNotes": {
+              "value": "",
+              "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles.",
+              "mustMention": [
+                "checked claims",
+                "unresolved claims",
+                "removed or retained"
+              ]
+            },
+            "boundaryCheckNotes": {
+              "value": "",
+              "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+              "mustMention": [
+                "education-only",
+                "non-production",
+                "no advice",
+                "no signal",
+                "no real-money guidance"
+              ]
+            },
+            "copyingRiskNotes": {
+              "value": "",
+              "prompt": "Confirm no external source body text is copied into notes or lesson prose.",
+              "mustMention": [
+                "no source-body copying",
+                "original wording"
+              ]
+            },
+            "humanReviewerInitials": {
+              "value": "",
+              "prompt": "Fill only after real human review work is performed.",
+              "mustMention": [
+                "human initials only"
+              ]
+            }
+          },
+          "disallowedNoteContent": [
+            "approval or final-ready wording",
+            "buy/sell/hold or trading signals",
+            "return, win-rate, or backtest-profit claims",
+            "broker/order/automation workflow",
+            "real-money guidance",
+            "copied external source body text"
+          ]
+        },
+        {
+          "lessonId": "lesson_knv2_0019",
+          "riskLevel": "medium",
+          "trackingStatus": "not_started",
+          "mustRemainStructuralDraft": true,
+          "roleHints": [
+            {
+              "family": "BLS",
+              "suggestedRole": "macro_data_context",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "Federal Reserve",
+              "suggestedRole": "macro_rates_context",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "Project Gutenberg",
+              "suggestedRole": "historical_context",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "Treasury",
+              "suggestedRole": "macro_rates_context",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "federalregister.gov",
+              "suggestedRole": "metadata_only_until_confirmed",
+              "confidence": "low",
+              "humanDecisionRequired": true
+            }
+          ],
+          "blankFields": [
+            "originalRewriteNotes",
+            "sourceFitNotes",
+            "factCheckNotes",
+            "boundaryCheckNotes",
+            "copyingRiskNotes",
+            "humanReviewerInitials"
+          ],
+          "noteGuidance": {
+            "originalRewriteNotes": {
+              "value": "",
+              "prompt": "Describe the original education rewrite angle after source roles are confirmed.",
+              "mustMention": [
+                "original wording",
+                "observation or education practice",
+                "structural_draft"
+              ]
+            },
+            "sourceFitNotes": {
+              "value": "",
+              "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval.",
+              "roleHints": [
+                {
+                  "family": "BLS",
+                  "suggestedRole": "macro_data_context",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for data-definition and release-reading boundaries; do not use as chart-pattern proof."
+                },
+                {
+                  "family": "Federal Reserve",
+                  "suggestedRole": "macro_rates_context",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for macro/rates context or data-boundary notes; do not convert into directional market claims."
+                },
+                {
+                  "family": "Project Gutenberg",
+                  "suggestedRole": "historical_context",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use only for historical language, terminology evolution, and observation framing; remove any buy/sell or profit wording."
+                },
+                {
+                  "family": "Treasury",
+                  "suggestedRole": "macro_rates_context",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for macro/rates context or data-boundary notes; do not convert into directional market claims."
+                },
+                {
+                  "family": "federalregister.gov",
+                  "suggestedRole": "metadata_only_until_confirmed",
+                  "confidence": "low",
+                  "reviewerDecision": "Keep as metadata or source-boundary context until a human confirms direct lesson fit."
+                }
+              ],
+              "directCandidatesToConfirm": [],
+              "boundaryFamiliesToConfirm": [
+                "BLS",
+                "Federal Reserve",
+                "Project Gutenberg",
+                "Treasury",
+                "federalregister.gov"
+              ]
+            },
+            "factCheckNotes": {
+              "value": "",
+              "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles.",
+              "mustMention": [
+                "checked claims",
+                "unresolved claims",
+                "removed or retained"
+              ]
+            },
+            "boundaryCheckNotes": {
+              "value": "",
+              "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+              "mustMention": [
+                "education-only",
+                "non-production",
+                "no advice",
+                "no signal",
+                "no real-money guidance"
+              ]
+            },
+            "copyingRiskNotes": {
+              "value": "",
+              "prompt": "Confirm no external source body text is copied into notes or lesson prose.",
+              "mustMention": [
+                "no source-body copying",
+                "original wording"
+              ]
+            },
+            "humanReviewerInitials": {
+              "value": "",
+              "prompt": "Fill only after real human review work is performed.",
+              "mustMention": [
+                "human initials only"
+              ]
+            }
+          },
+          "disallowedNoteContent": [
+            "approval or final-ready wording",
+            "buy/sell/hold or trading signals",
+            "return, win-rate, or backtest-profit claims",
+            "broker/order/automation workflow",
+            "real-money guidance",
+            "copied external source body text"
+          ]
+        }
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "reviewStatus": "not_started",
+      "lessonCards": [
+        {
+          "lessonId": "lesson_knv2_0075",
+          "riskLevel": "medium",
+          "trackingStatus": "not_started",
+          "mustRemainStructuralDraft": true,
+          "roleHints": [
+            {
+              "family": "BEA",
+              "suggestedRole": "macro_data_context",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "Investor.gov",
+              "suggestedRole": "investor_protection_boundary",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "Project Gutenberg",
+              "suggestedRole": "historical_context",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "SEC",
+              "suggestedRole": "filing_or_data_boundary",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "Treasury",
+              "suggestedRole": "macro_rates_context",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            }
+          ],
+          "blankFields": [
+            "originalRewriteNotes",
+            "sourceFitNotes",
+            "factCheckNotes",
+            "boundaryCheckNotes",
+            "copyingRiskNotes",
+            "humanReviewerInitials"
+          ],
+          "noteGuidance": {
+            "originalRewriteNotes": {
+              "value": "",
+              "prompt": "Describe the original education rewrite angle after source roles are confirmed.",
+              "mustMention": [
+                "original wording",
+                "observation or education practice",
+                "structural_draft"
+              ]
+            },
+            "sourceFitNotes": {
+              "value": "",
+              "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval.",
+              "roleHints": [
+                {
+                  "family": "BEA",
+                  "suggestedRole": "macro_data_context",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for data-definition and release-reading boundaries; do not use as chart-pattern proof."
+                },
+                {
+                  "family": "Investor.gov",
+                  "suggestedRole": "investor_protection_boundary",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for investor-protection, glossary, and fraud-warning boundaries; do not use to define chart structures."
+                },
+                {
+                  "family": "Project Gutenberg",
+                  "suggestedRole": "historical_context",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use only for historical language, terminology evolution, and observation framing; remove any buy/sell or profit wording."
+                },
+                {
+                  "family": "SEC",
+                  "suggestedRole": "filing_or_data_boundary",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for filing/data-access/disclosure-literacy boundaries; direct prose support needs human confirmation."
+                },
+                {
+                  "family": "Treasury",
+                  "suggestedRole": "macro_rates_context",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for macro/rates context or data-boundary notes; do not convert into directional market claims."
+                }
+              ],
+              "directCandidatesToConfirm": [],
+              "boundaryFamiliesToConfirm": [
+                "BEA",
+                "Investor.gov",
+                "Project Gutenberg",
+                "SEC",
+                "Treasury"
+              ]
+            },
+            "factCheckNotes": {
+              "value": "",
+              "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles.",
+              "mustMention": [
+                "checked claims",
+                "unresolved claims",
+                "removed or retained"
+              ]
+            },
+            "boundaryCheckNotes": {
+              "value": "",
+              "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+              "mustMention": [
+                "education-only",
+                "non-production",
+                "no advice",
+                "no signal",
+                "no real-money guidance"
+              ]
+            },
+            "copyingRiskNotes": {
+              "value": "",
+              "prompt": "Confirm no external source body text is copied into notes or lesson prose.",
+              "mustMention": [
+                "no source-body copying",
+                "original wording"
+              ]
+            },
+            "humanReviewerInitials": {
+              "value": "",
+              "prompt": "Fill only after real human review work is performed.",
+              "mustMention": [
+                "human initials only"
+              ]
+            }
+          },
+          "disallowedNoteContent": [
+            "approval or final-ready wording",
+            "buy/sell/hold or trading signals",
+            "return, win-rate, or backtest-profit claims",
+            "broker/order/automation workflow",
+            "real-money guidance",
+            "copied external source body text"
+          ]
+        },
+        {
+          "lessonId": "lesson_knv2_0087",
+          "riskLevel": "high",
+          "trackingStatus": "not_started",
+          "mustRemainStructuralDraft": true,
+          "roleHints": [
+            {
+              "family": "BEA",
+              "suggestedRole": "direct_candidate_needs_human_confirmation",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "BLS",
+              "suggestedRole": "direct_candidate_needs_human_confirmation",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "CFTC",
+              "suggestedRole": "direct_candidate_needs_human_confirmation",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "SEC",
+              "suggestedRole": "direct_candidate_needs_human_confirmation",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "Treasury",
+              "suggestedRole": "macro_rates_context",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            }
+          ],
+          "blankFields": [
+            "originalRewriteNotes",
+            "sourceFitNotes",
+            "factCheckNotes",
+            "boundaryCheckNotes",
+            "copyingRiskNotes",
+            "humanReviewerInitials"
+          ],
+          "noteGuidance": {
+            "originalRewriteNotes": {
+              "value": "",
+              "prompt": "Describe the original education rewrite angle after source roles are confirmed.",
+              "mustMention": [
+                "original wording",
+                "observation or education practice",
+                "structural_draft"
+              ]
+            },
+            "sourceFitNotes": {
+              "value": "",
+              "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval.",
+              "roleHints": [
+                {
+                  "family": "BEA",
+                  "suggestedRole": "direct_candidate_needs_human_confirmation",
+                  "confidence": "medium",
+                  "reviewerDecision": "Inspect source title and metadata. If it directly supports the lesson topic, keep as direct evidence; otherwise downgrade to boundary-only context."
+                },
+                {
+                  "family": "BLS",
+                  "suggestedRole": "direct_candidate_needs_human_confirmation",
+                  "confidence": "medium",
+                  "reviewerDecision": "Inspect source title and metadata. If it directly supports the lesson topic, keep as direct evidence; otherwise downgrade to boundary-only context."
+                },
+                {
+                  "family": "CFTC",
+                  "suggestedRole": "direct_candidate_needs_human_confirmation",
+                  "confidence": "medium",
+                  "reviewerDecision": "Inspect source title and metadata. If it directly supports the lesson topic, keep as direct evidence; otherwise downgrade to boundary-only context."
+                },
+                {
+                  "family": "SEC",
+                  "suggestedRole": "direct_candidate_needs_human_confirmation",
+                  "confidence": "medium",
+                  "reviewerDecision": "Inspect source title and metadata. If it directly supports the lesson topic, keep as direct evidence; otherwise downgrade to boundary-only context."
+                },
+                {
+                  "family": "Treasury",
+                  "suggestedRole": "macro_rates_context",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for macro/rates context or data-boundary notes; do not convert into directional market claims."
+                }
+              ],
+              "directCandidatesToConfirm": [
+                "BEA",
+                "BLS",
+                "CFTC",
+                "SEC"
+              ],
+              "boundaryFamiliesToConfirm": [
+                "Treasury"
+              ]
+            },
+            "factCheckNotes": {
+              "value": "",
+              "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles.",
+              "mustMention": [
+                "checked claims",
+                "unresolved claims",
+                "removed or retained"
+              ]
+            },
+            "boundaryCheckNotes": {
+              "value": "",
+              "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+              "mustMention": [
+                "education-only",
+                "non-production",
+                "no advice",
+                "no signal",
+                "no real-money guidance"
+              ]
+            },
+            "copyingRiskNotes": {
+              "value": "",
+              "prompt": "Confirm no external source body text is copied into notes or lesson prose.",
+              "mustMention": [
+                "no source-body copying",
+                "original wording"
+              ]
+            },
+            "humanReviewerInitials": {
+              "value": "",
+              "prompt": "Fill only after real human review work is performed.",
+              "mustMention": [
+                "human initials only"
+              ]
+            }
+          },
+          "disallowedNoteContent": [
+            "approval or final-ready wording",
+            "buy/sell/hold or trading signals",
+            "return, win-rate, or backtest-profit claims",
+            "broker/order/automation workflow",
+            "real-money guidance",
+            "copied external source body text"
+          ]
+        },
+        {
+          "lessonId": "lesson_knv2_0159",
+          "riskLevel": "medium",
+          "trackingStatus": "not_started",
+          "mustRemainStructuralDraft": true,
+          "roleHints": [
+            {
+              "family": "BEA",
+              "suggestedRole": "macro_data_context",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "Investor.gov",
+              "suggestedRole": "investor_protection_boundary",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "SEC",
+              "suggestedRole": "filing_or_data_boundary",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "Treasury",
+              "suggestedRole": "macro_rates_context",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            }
+          ],
+          "blankFields": [
+            "originalRewriteNotes",
+            "sourceFitNotes",
+            "factCheckNotes",
+            "boundaryCheckNotes",
+            "copyingRiskNotes",
+            "humanReviewerInitials"
+          ],
+          "noteGuidance": {
+            "originalRewriteNotes": {
+              "value": "",
+              "prompt": "Describe the original education rewrite angle after source roles are confirmed.",
+              "mustMention": [
+                "original wording",
+                "observation or education practice",
+                "structural_draft"
+              ]
+            },
+            "sourceFitNotes": {
+              "value": "",
+              "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval.",
+              "roleHints": [
+                {
+                  "family": "BEA",
+                  "suggestedRole": "macro_data_context",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for data-definition and release-reading boundaries; do not use as chart-pattern proof."
+                },
+                {
+                  "family": "Investor.gov",
+                  "suggestedRole": "investor_protection_boundary",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for investor-protection, glossary, and fraud-warning boundaries; do not use to define chart structures."
+                },
+                {
+                  "family": "SEC",
+                  "suggestedRole": "filing_or_data_boundary",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for filing/data-access/disclosure-literacy boundaries; direct prose support needs human confirmation."
+                },
+                {
+                  "family": "Treasury",
+                  "suggestedRole": "macro_rates_context",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for macro/rates context or data-boundary notes; do not convert into directional market claims."
+                }
+              ],
+              "directCandidatesToConfirm": [],
+              "boundaryFamiliesToConfirm": [
+                "BEA",
+                "Investor.gov",
+                "SEC",
+                "Treasury"
+              ]
+            },
+            "factCheckNotes": {
+              "value": "",
+              "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles.",
+              "mustMention": [
+                "checked claims",
+                "unresolved claims",
+                "removed or retained"
+              ]
+            },
+            "boundaryCheckNotes": {
+              "value": "",
+              "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+              "mustMention": [
+                "education-only",
+                "non-production",
+                "no advice",
+                "no signal",
+                "no real-money guidance"
+              ]
+            },
+            "copyingRiskNotes": {
+              "value": "",
+              "prompt": "Confirm no external source body text is copied into notes or lesson prose.",
+              "mustMention": [
+                "no source-body copying",
+                "original wording"
+              ]
+            },
+            "humanReviewerInitials": {
+              "value": "",
+              "prompt": "Fill only after real human review work is performed.",
+              "mustMention": [
+                "human initials only"
+              ]
+            }
+          },
+          "disallowedNoteContent": [
+            "approval or final-ready wording",
+            "buy/sell/hold or trading signals",
+            "return, win-rate, or backtest-profit claims",
+            "broker/order/automation workflow",
+            "real-money guidance",
+            "copied external source body text"
+          ]
+        },
+        {
+          "lessonId": "lesson_knv2_0011",
+          "riskLevel": "low",
+          "trackingStatus": "not_started",
+          "mustRemainStructuralDraft": true,
+          "roleHints": [
+            {
+              "family": "CFTC",
+              "suggestedRole": "fraud_or_market_boundary",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "Federal Reserve",
+              "suggestedRole": "macro_rates_context",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "SEC",
+              "suggestedRole": "filing_or_data_boundary",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "nist.gov",
+              "suggestedRole": "technical_data_integrity_boundary",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            }
+          ],
+          "blankFields": [
+            "originalRewriteNotes",
+            "sourceFitNotes",
+            "factCheckNotes",
+            "boundaryCheckNotes",
+            "copyingRiskNotes",
+            "humanReviewerInitials"
+          ],
+          "noteGuidance": {
+            "originalRewriteNotes": {
+              "value": "",
+              "prompt": "Describe the original education rewrite angle after source roles are confirmed.",
+              "mustMention": [
+                "original wording",
+                "observation or education practice",
+                "structural_draft"
+              ]
+            },
+            "sourceFitNotes": {
+              "value": "",
+              "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval.",
+              "roleHints": [
+                {
+                  "family": "CFTC",
+                  "suggestedRole": "fraud_or_market_boundary",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for commodity, fraud, system-risk, or market-oversight boundaries; do not use as chart-pattern authority unless source title directly fits."
+                },
+                {
+                  "family": "Federal Reserve",
+                  "suggestedRole": "macro_rates_context",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for macro/rates context or data-boundary notes; do not convert into directional market claims."
+                },
+                {
+                  "family": "SEC",
+                  "suggestedRole": "filing_or_data_boundary",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for filing/data-access/disclosure-literacy boundaries; direct prose support needs human confirmation."
+                },
+                {
+                  "family": "nist.gov",
+                  "suggestedRole": "technical_data_integrity_boundary",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for data-integrity or technical boundary notes only."
+                }
+              ],
+              "directCandidatesToConfirm": [],
+              "boundaryFamiliesToConfirm": [
+                "CFTC",
+                "Federal Reserve",
+                "SEC",
+                "nist.gov"
+              ]
+            },
+            "factCheckNotes": {
+              "value": "",
+              "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles.",
+              "mustMention": [
+                "checked claims",
+                "unresolved claims",
+                "removed or retained"
+              ]
+            },
+            "boundaryCheckNotes": {
+              "value": "",
+              "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+              "mustMention": [
+                "education-only",
+                "non-production",
+                "no advice",
+                "no signal",
+                "no real-money guidance"
+              ]
+            },
+            "copyingRiskNotes": {
+              "value": "",
+              "prompt": "Confirm no external source body text is copied into notes or lesson prose.",
+              "mustMention": [
+                "no source-body copying",
+                "original wording"
+              ]
+            },
+            "humanReviewerInitials": {
+              "value": "",
+              "prompt": "Fill only after real human review work is performed.",
+              "mustMention": [
+                "human initials only"
+              ]
+            }
+          },
+          "disallowedNoteContent": [
+            "approval or final-ready wording",
+            "buy/sell/hold or trading signals",
+            "return, win-rate, or backtest-profit claims",
+            "broker/order/automation workflow",
+            "real-money guidance",
+            "copied external source body text"
+          ]
+        },
+        {
+          "lessonId": "lesson_knv2_0059",
+          "riskLevel": "low",
+          "trackingStatus": "not_started",
+          "mustRemainStructuralDraft": true,
+          "roleHints": [
+            {
+              "family": "CFTC",
+              "suggestedRole": "fraud_or_market_boundary",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "Investor.gov",
+              "suggestedRole": "investor_protection_boundary",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "SEC",
+              "suggestedRole": "filing_or_data_boundary",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            }
+          ],
+          "blankFields": [
+            "originalRewriteNotes",
+            "sourceFitNotes",
+            "factCheckNotes",
+            "boundaryCheckNotes",
+            "copyingRiskNotes",
+            "humanReviewerInitials"
+          ],
+          "noteGuidance": {
+            "originalRewriteNotes": {
+              "value": "",
+              "prompt": "Describe the original education rewrite angle after source roles are confirmed.",
+              "mustMention": [
+                "original wording",
+                "observation or education practice",
+                "structural_draft"
+              ]
+            },
+            "sourceFitNotes": {
+              "value": "",
+              "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval.",
+              "roleHints": [
+                {
+                  "family": "CFTC",
+                  "suggestedRole": "fraud_or_market_boundary",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for commodity, fraud, system-risk, or market-oversight boundaries; do not use as chart-pattern authority unless source title directly fits."
+                },
+                {
+                  "family": "Investor.gov",
+                  "suggestedRole": "investor_protection_boundary",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for investor-protection, glossary, and fraud-warning boundaries; do not use to define chart structures."
+                },
+                {
+                  "family": "SEC",
+                  "suggestedRole": "filing_or_data_boundary",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for filing/data-access/disclosure-literacy boundaries; direct prose support needs human confirmation."
+                }
+              ],
+              "directCandidatesToConfirm": [],
+              "boundaryFamiliesToConfirm": [
+                "CFTC",
+                "Investor.gov",
+                "SEC"
+              ]
+            },
+            "factCheckNotes": {
+              "value": "",
+              "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles.",
+              "mustMention": [
+                "checked claims",
+                "unresolved claims",
+                "removed or retained"
+              ]
+            },
+            "boundaryCheckNotes": {
+              "value": "",
+              "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+              "mustMention": [
+                "education-only",
+                "non-production",
+                "no advice",
+                "no signal",
+                "no real-money guidance"
+              ]
+            },
+            "copyingRiskNotes": {
+              "value": "",
+              "prompt": "Confirm no external source body text is copied into notes or lesson prose.",
+              "mustMention": [
+                "no source-body copying",
+                "original wording"
+              ]
+            },
+            "humanReviewerInitials": {
+              "value": "",
+              "prompt": "Fill only after real human review work is performed.",
+              "mustMention": [
+                "human initials only"
+              ]
+            }
+          },
+          "disallowedNoteContent": [
+            "approval or final-ready wording",
+            "buy/sell/hold or trading signals",
+            "return, win-rate, or backtest-profit claims",
+            "broker/order/automation workflow",
+            "real-money guidance",
+            "copied external source body text"
+          ]
+        },
+        {
+          "lessonId": "lesson_knv2_0167",
+          "riskLevel": "low",
+          "trackingStatus": "not_started",
+          "mustRemainStructuralDraft": true,
+          "roleHints": [
+            {
+              "family": "CFTC",
+              "suggestedRole": "fraud_or_market_boundary",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "Investor.gov",
+              "suggestedRole": "investor_protection_boundary",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            },
+            {
+              "family": "SEC",
+              "suggestedRole": "filing_or_data_boundary",
+              "confidence": "medium",
+              "humanDecisionRequired": true
+            }
+          ],
+          "blankFields": [
+            "originalRewriteNotes",
+            "sourceFitNotes",
+            "factCheckNotes",
+            "boundaryCheckNotes",
+            "copyingRiskNotes",
+            "humanReviewerInitials"
+          ],
+          "noteGuidance": {
+            "originalRewriteNotes": {
+              "value": "",
+              "prompt": "Describe the original education rewrite angle after source roles are confirmed.",
+              "mustMention": [
+                "original wording",
+                "observation or education practice",
+                "structural_draft"
+              ]
+            },
+            "sourceFitNotes": {
+              "value": "",
+              "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval.",
+              "roleHints": [
+                {
+                  "family": "CFTC",
+                  "suggestedRole": "fraud_or_market_boundary",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for commodity, fraud, system-risk, or market-oversight boundaries; do not use as chart-pattern authority unless source title directly fits."
+                },
+                {
+                  "family": "Investor.gov",
+                  "suggestedRole": "investor_protection_boundary",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for investor-protection, glossary, and fraud-warning boundaries; do not use to define chart structures."
+                },
+                {
+                  "family": "SEC",
+                  "suggestedRole": "filing_or_data_boundary",
+                  "confidence": "medium",
+                  "reviewerDecision": "Use for filing/data-access/disclosure-literacy boundaries; direct prose support needs human confirmation."
+                }
+              ],
+              "directCandidatesToConfirm": [],
+              "boundaryFamiliesToConfirm": [
+                "CFTC",
+                "Investor.gov",
+                "SEC"
+              ]
+            },
+            "factCheckNotes": {
+              "value": "",
+              "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles.",
+              "mustMention": [
+                "checked claims",
+                "unresolved claims",
+                "removed or retained"
+              ]
+            },
+            "boundaryCheckNotes": {
+              "value": "",
+              "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+              "mustMention": [
+                "education-only",
+                "non-production",
+                "no advice",
+                "no signal",
+                "no real-money guidance"
+              ]
+            },
+            "copyingRiskNotes": {
+              "value": "",
+              "prompt": "Confirm no external source body text is copied into notes or lesson prose.",
+              "mustMention": [
+                "no source-body copying",
+                "original wording"
+              ]
+            },
+            "humanReviewerInitials": {
+              "value": "",
+              "prompt": "Fill only after real human review work is performed.",
+              "mustMention": [
+                "human initials only"
+              ]
+            }
+          },
+          "disallowedNoteContent": [
+            "approval or final-ready wording",
+            "buy/sell/hold or trading signals",
+            "return, win-rate, or backtest-profit claims",
+            "broker/order/automation workflow",
+            "real-money guidance",
+            "copied external source body text"
+          ]
+        }
+      ]
+    }
+  ],
+  "boundary": "This starter template is reviewer-facing scaffolding only. It does not create real reviewer notes, approve lessons or sources, publish learner-facing content, change grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, or guide real-money decisions."
+}

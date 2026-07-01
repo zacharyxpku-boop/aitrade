@@ -1,0 +1,272 @@
+{
+  "generatedAt": "2026-06-19T09:47:07.944Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "highRiskLessons": 2,
+  "restrictedSourceLeaks": 0,
+  "rows": [
+    {
+      "lessonId": "lesson_knv2_0087",
+      "batchId": "rewrite_batch_05",
+      "module": "K线与价格行为",
+      "topic": "流动性扫过",
+      "riskLevel": "high",
+      "riskReasons": [
+        "chart_lesson_without_public_domain_historical_context",
+        "broad_source_family_mix",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "sourceFamilies": [
+        "SEC",
+        "CFTC",
+        "BLS",
+        "BEA",
+        "Treasury"
+      ],
+      "familyActionPlan": [
+        {
+          "family": "SEC",
+          "reviewerUse": "Use only for disclosure, filing-literacy, source-boundary, and terminology context; do not use it as proof of a price-action rule."
+        },
+        {
+          "family": "CFTC",
+          "reviewerUse": "Use only for product-risk, trading-bot fraud, digital-asset/commodity-risk, or phony-system warnings; do not turn it into a chart signal."
+        },
+        {
+          "family": "BLS",
+          "reviewerUse": "Use only for macro-data release and definition boundaries; do not write market-direction predictions."
+        },
+        {
+          "family": "BEA",
+          "reviewerUse": "Use only for macro-data release and definition boundaries; do not write market-direction predictions."
+        },
+        {
+          "family": "Treasury",
+          "reviewerUse": "Use only for rate, macro, and policy-context boundaries; do not imply a trade decision."
+        }
+      ],
+      "sourceRefsToInspect": [
+        {
+          "sourceId": "src_real_11186",
+          "name": "SEC Developer Resources",
+          "url": "https://www.sec.gov/about/developer-resources",
+          "family": "SEC",
+          "sourceType": "official-docs",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "chart_reading"
+        },
+        {
+          "sourceId": "src_real_11209",
+          "name": "CFTC Phony Trading Websites",
+          "url": "https://www.cftc.gov/LearnAndProtect/FraudAwarenessPrevention/CFTCFraudAdvisories/fraudadv_phonywebsites",
+          "family": "CFTC",
+          "sourceType": "official-docs",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "range"
+        },
+        {
+          "sourceId": "src_real_10152",
+          "name": "BLS PPI",
+          "url": "https://www.bls.gov/ppi/",
+          "family": "BLS",
+          "sourceType": "official-docs",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "chart_reading"
+        },
+        {
+          "sourceId": "src_real_10310",
+          "name": "BEA Data Application Programming Interface",
+          "url": "https://apps.bea.gov/api/",
+          "family": "BEA",
+          "sourceType": "official-docs",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "Green chart_price_action authority context and boundary reference; not copied learner-facing content."
+        },
+        {
+          "sourceId": "src_real_10157",
+          "name": "US Treasury Daily Treasury Rates",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView",
+          "family": "Treasury",
+          "sourceType": "official-docs",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "Green chart_price_action authority context and boundary reference; not copied learner-facing content."
+        }
+      ],
+      "possibleMismatch": [
+        "Check whether chart-language claims need public-domain historical context or should be rewritten as pure observation training.",
+        "Narrow the rewrite to source-boundary context only; do not blend unrelated authority into a stronger learner-facing claim.",
+        "Use fraud sources only for boundary warnings, not for explaining chart mechanics."
+      ],
+      "reviewerQuestions": [
+        "Does each source family support the lesson topic directly, or only a boundary warning?",
+        "Which source should be removed from explanatory prose and kept only as a reviewer citation?",
+        "Does the rewritten lesson still work as original observation training without source-body copying?",
+        "Are no-action, invalidation, and uncertainty visible before any practice prompt?"
+      ],
+      "suggestedRewriteDirection": [
+        "Rewrite as observation training: visible evidence first, interpretation limits second, no-action / invalidation / uncertainty third.",
+        "Keep all sources as reviewer-facing boundary evidence only; do not copy source body text into lesson prose.",
+        "Do not add buy/sell/hold, real-time signal, return/win-rate/backtest-profit, broker/order, auto-trading, or real-money guidance.",
+        "If no public-domain historical source is semantically fit, remove historical-language claims and keep the lesson as pure chart-observation practice.",
+        "Move Investor.gov/CFTC fraud context into boundary warnings only; do not use fraud pages to define chart structures.",
+        "Narrow the lesson to one source role per paragraph: term boundary, data boundary, fraud warning, or historical context."
+      ],
+      "requiredReviewerNotes": [
+        "sourceFitNotes",
+        "boundaryCheckNotes",
+        "copyingRiskNotes",
+        "originalRewriteNotes",
+        "factCheckNotes"
+      ],
+      "restrictedSourceLeaks": 0,
+      "mustRemainStructuralDraft": true
+    },
+    {
+      "lessonId": "lesson_knv2_0068",
+      "batchId": "rewrite_batch_01",
+      "module": "多周期分析",
+      "topic": "D1背景",
+      "riskLevel": "high",
+      "riskReasons": [
+        "no_expected_family_for_module_domain",
+        "chart_lesson_without_public_domain_historical_context",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "currentGrade": "structural_draft",
+      "currentScore": 82,
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "sourceFamilies": [
+        "CFTC",
+        "Investor.gov"
+      ],
+      "familyActionPlan": [
+        {
+          "family": "CFTC",
+          "reviewerUse": "Use only for product-risk, trading-bot fraud, digital-asset/commodity-risk, or phony-system warnings; do not turn it into a chart signal."
+        },
+        {
+          "family": "Investor.gov",
+          "reviewerUse": "Use only for investor-protection, fraud-red-flag, and uncertainty-boundary notes; do not use it to explain chart mechanics."
+        }
+      ],
+      "sourceRefsToInspect": [
+        {
+          "sourceId": "src_real_11201",
+          "name": "CFTC AI Trading Bots Advisory",
+          "url": "https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/AITradingBots.html",
+          "family": "CFTC",
+          "sourceType": "official-docs",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "timeframe"
+        },
+        {
+          "sourceId": "src_real_11211",
+          "name": "CFTC Commodity ETP Risks",
+          "url": "https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/CustomerAdvisory_CommodityETPs.htm",
+          "family": "CFTC",
+          "sourceType": "official-docs",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "timeframe"
+        },
+        {
+          "sourceId": "src_real_10571",
+          "name": "CFTC Large Trader Reporting",
+          "url": "https://www.cftc.gov/IndustryOversight/MarketSurveillance/LargeTraderReportingProgram/index.htm",
+          "family": "CFTC",
+          "sourceType": "official-docs",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "indicator_pattern_taxonomy"
+        },
+        {
+          "sourceId": "src_real_10956",
+          "name": "Investor.gov Glossary Diversification",
+          "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/diversification",
+          "family": "Investor.gov",
+          "sourceType": "education-reference",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "Green indicator_pattern_taxonomy authority context and boundary reference; not copied learner-facing content."
+        },
+        {
+          "sourceId": "src_real_10297",
+          "name": "CFTC Market Surveillance",
+          "url": "https://www.cftc.gov/IndustryOversight/MarketSurveillance/index.htm",
+          "family": "CFTC",
+          "sourceType": "official-docs",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "Green indicator_pattern_taxonomy authority context and boundary reference; not copied learner-facing content."
+        }
+      ],
+      "possibleMismatch": [
+        "Confirm whether the attached source families really support chart_price_action; expected context: historical language, observation training, term boundary, and non-action chart-reading context.",
+        "Check whether chart-language claims need public-domain historical context or should be rewritten as pure observation training.",
+        "Use fraud sources only for boundary warnings, not for explaining chart mechanics."
+      ],
+      "reviewerQuestions": [
+        "Does each source family support the lesson topic directly, or only a boundary warning?",
+        "Which source should be removed from explanatory prose and kept only as a reviewer citation?",
+        "Does the rewritten lesson still work as original observation training without source-body copying?",
+        "Are no-action, invalidation, and uncertainty visible before any practice prompt?"
+      ],
+      "suggestedRewriteDirection": [
+        "Rewrite as observation training: visible evidence first, interpretation limits second, no-action / invalidation / uncertainty third.",
+        "Keep all sources as reviewer-facing boundary evidence only; do not copy source body text into lesson prose.",
+        "Do not add buy/sell/hold, real-time signal, return/win-rate/backtest-profit, broker/order, auto-trading, or real-money guidance.",
+        "If no public-domain historical source is semantically fit, remove historical-language claims and keep the lesson as pure chart-observation practice.",
+        "Move Investor.gov/CFTC fraud context into boundary warnings only; do not use fraud pages to define chart structures.",
+        "Before rewriting, either attach a better chart/historical/context source or explicitly mark the current source mix as boundary-only."
+      ],
+      "requiredReviewerNotes": [
+        "sourceFitNotes",
+        "boundaryCheckNotes",
+        "copyingRiskNotes",
+        "originalRewriteNotes",
+        "factCheckNotes"
+      ],
+      "restrictedSourceLeaks": 0,
+      "mustRemainStructuralDraft": true
+    }
+  ],
+  "boundary": "This action plan tells human reviewers what to inspect first. It does not rewrite lesson prose, approve content, expand learner-facing exposure, change grades, or provide trading advice."
+}

@@ -1,0 +1,326 @@
+{
+  "generatedAt": "2026-06-19T09:47:12.654Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "summaryReady": true,
+  "summaryMode": "one_page_human_decision_summary_only",
+  "targetBatches": [
+    "rewrite_batch_01",
+    "rewrite_batch_05"
+  ],
+  "realStatusPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "realStatusOverlayPresent": false,
+  "decisionRows": [
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0068",
+      "module": "多周期分析",
+      "topic": "D1背景",
+      "riskLevel": "high",
+      "sourceFamily": "CFTC",
+      "defaultRole": "fraud_or_market_boundary_until_confirmed",
+      "currentDecisionStatus": "blank_requires_human_decision",
+      "recommendedDefault": "downgrade_to_boundary_only_unless_human_confirms_direct_claim_fit",
+      "sourceRefsToInspect": [
+        {
+          "sourceId": "src_real_11201",
+          "name": "CFTC AI Trading Bots Advisory",
+          "url": "https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/AITradingBots.html",
+          "sourceUseTier": "green_official_public_domain"
+        },
+        {
+          "sourceId": "src_real_11211",
+          "name": "CFTC Commodity ETP Risks",
+          "url": "https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/CustomerAdvisory_CommodityETPs.htm",
+          "sourceUseTier": "green_official_public_domain"
+        },
+        {
+          "sourceId": "src_real_10571",
+          "name": "CFTC Large Trader Reporting",
+          "url": "https://www.cftc.gov/IndustryOversight/MarketSurveillance/LargeTraderReportingProgram/index.htm",
+          "sourceUseTier": "green_official_public_domain"
+        },
+        {
+          "sourceId": "src_real_10297",
+          "name": "CFTC Market Surveillance",
+          "url": "https://www.cftc.gov/IndustryOversight/MarketSurveillance/index.htm",
+          "sourceUseTier": "green_official_public_domain"
+        }
+      ],
+      "sourceRefsToInspectCount": 4,
+      "confirmIf": [
+        "The lesson claim is specifically about fraud red flags, phony systems, AI trading bot risks, commodity-product risk, or market-surveillance literacy.",
+        "The source title and metadata directly match the lesson claim without needing copied source body text.",
+        "The rewrite frames the source as investor-protection or market-oversight education, not a trade rule."
+      ],
+      "downgradeIf": [
+        "The lesson claim is about chart prediction, timeframe reading, liquidity sweeps, entries, exits, or profitability.",
+        "The CFTC source only supports a safety boundary and not the lesson's explanatory claim.",
+        "The reviewer would need to turn a fraud/oversight warning into tactical trading advice."
+      ],
+      "blockIf": [
+        "The lesson claim needs copied external source body text to be supported.",
+        "The source would be used for chart-pattern proof, trading signals, entries/exits, performance, broker/order workflow, automation, or real-money guidance.",
+        "The reviewer cannot explain the source role without changing the lesson grade or approval status."
+      ],
+      "allowedUse": "Use as fraud, market-risk, commodity-product, AI-bot-risk, or oversight boundary context after human confirmation.",
+      "disallowedUse": "Do not use as chart-pattern authority, trading-signal support, system endorsement, or performance evidence.",
+      "requiredReviewerFields": [
+        "decision",
+        "sourceRole",
+        "claimSupported",
+        "rewriteAction",
+        "sourceIdentityBasis",
+        "noCopyOriginalityCheck",
+        "reviewerInitials"
+      ],
+      "mustRemainStructuralDraft": true,
+      "learnerFacingUseAllowedNow": false,
+      "approvalAllowedNow": false
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0087",
+      "module": "K线与价格行为",
+      "topic": "流动性扫过",
+      "riskLevel": "high",
+      "sourceFamily": "BEA",
+      "defaultRole": "macro_data_boundary_until_confirmed",
+      "currentDecisionStatus": "blank_requires_human_decision",
+      "recommendedDefault": "downgrade_to_boundary_only_unless_human_confirms_direct_claim_fit",
+      "sourceRefsToInspect": [
+        {
+          "sourceId": "src_real_10310",
+          "name": "BEA Data Application Programming Interface",
+          "url": "https://apps.bea.gov/api/",
+          "sourceUseTier": "green_official_public_domain"
+        }
+      ],
+      "sourceRefsToInspectCount": 1,
+      "confirmIf": [
+        "The lesson claim is specifically about reading BEA data definitions, release timing, or macro-data interpretation.",
+        "The source title and metadata directly match the lesson claim without needing copied source body text.",
+        "The rewritten lesson keeps the source as data-context education, not chart-pattern proof."
+      ],
+      "downgradeIf": [
+        "The lesson claim is about price-action mechanics, liquidity sweeps, entries, exits, or chart prediction.",
+        "The BEA source only provides API/data access context rather than direct support for the lesson topic.",
+        "The reviewer would need to infer a market direction or trading rule from the source."
+      ],
+      "blockIf": [
+        "The lesson claim needs copied external source body text to be supported.",
+        "The source would be used for chart-pattern proof, trading signals, entries/exits, performance, broker/order workflow, automation, or real-money guidance.",
+        "The reviewer cannot explain the source role without changing the lesson grade or approval status."
+      ],
+      "allowedUse": "Use as macro-data definition, release-reading, API/data-boundary, or source-literacy context after human confirmation.",
+      "disallowedUse": "Do not use as proof of chart patterns, liquidity sweeps, entries/exits, signals, or market direction.",
+      "requiredReviewerFields": [
+        "decision",
+        "sourceRole",
+        "claimSupported",
+        "rewriteAction",
+        "sourceIdentityBasis",
+        "noCopyOriginalityCheck",
+        "reviewerInitials"
+      ],
+      "mustRemainStructuralDraft": true,
+      "learnerFacingUseAllowedNow": false,
+      "approvalAllowedNow": false
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0087",
+      "module": "K线与价格行为",
+      "topic": "流动性扫过",
+      "riskLevel": "high",
+      "sourceFamily": "BLS",
+      "defaultRole": "macro_data_boundary_until_confirmed",
+      "currentDecisionStatus": "blank_requires_human_decision",
+      "recommendedDefault": "downgrade_to_boundary_only_unless_human_confirms_direct_claim_fit",
+      "sourceRefsToInspect": [
+        {
+          "sourceId": "src_real_10152",
+          "name": "BLS PPI",
+          "url": "https://www.bls.gov/ppi/",
+          "sourceUseTier": "green_official_public_domain"
+        }
+      ],
+      "sourceRefsToInspectCount": 1,
+      "confirmIf": [
+        "The lesson claim is specifically about BLS data definitions, release interpretation, or economic-data literacy.",
+        "The source title and metadata directly support the lesson context without copied source body text.",
+        "The rewritten lesson keeps the source as macro-data context, not a trading setup validator."
+      ],
+      "downgradeIf": [
+        "The lesson claim is about chart behavior, liquidity sweeps, prediction, or tactical entries/exits.",
+        "The BLS source only offers macro-data context and not direct support for the chart lesson.",
+        "The proposed note converts economic data into a directional or performance implication."
+      ],
+      "blockIf": [
+        "The lesson claim needs copied external source body text to be supported.",
+        "The source would be used for chart-pattern proof, trading signals, entries/exits, performance, broker/order workflow, automation, or real-money guidance.",
+        "The reviewer cannot explain the source role without changing the lesson grade or approval status."
+      ],
+      "allowedUse": "Use as macro-data definition, release-reading, and economic-source literacy context after human confirmation.",
+      "disallowedUse": "Do not use as chart-pattern authority, signal support, return implication, or real-money decision input.",
+      "requiredReviewerFields": [
+        "decision",
+        "sourceRole",
+        "claimSupported",
+        "rewriteAction",
+        "sourceIdentityBasis",
+        "noCopyOriginalityCheck",
+        "reviewerInitials"
+      ],
+      "mustRemainStructuralDraft": true,
+      "learnerFacingUseAllowedNow": false,
+      "approvalAllowedNow": false
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0087",
+      "module": "K线与价格行为",
+      "topic": "流动性扫过",
+      "riskLevel": "high",
+      "sourceFamily": "CFTC",
+      "defaultRole": "fraud_or_market_boundary_until_confirmed",
+      "currentDecisionStatus": "blank_requires_human_decision",
+      "recommendedDefault": "downgrade_to_boundary_only_unless_human_confirms_direct_claim_fit",
+      "sourceRefsToInspect": [
+        {
+          "sourceId": "src_real_11209",
+          "name": "CFTC Phony Trading Websites",
+          "url": "https://www.cftc.gov/LearnAndProtect/FraudAwarenessPrevention/CFTCFraudAdvisories/fraudadv_phonywebsites",
+          "sourceUseTier": "green_official_public_domain"
+        }
+      ],
+      "sourceRefsToInspectCount": 1,
+      "confirmIf": [
+        "The lesson claim is specifically about fraud red flags, phony systems, AI trading bot risks, commodity-product risk, or market-surveillance literacy.",
+        "The source title and metadata directly match the lesson claim without needing copied source body text.",
+        "The rewrite frames the source as investor-protection or market-oversight education, not a trade rule."
+      ],
+      "downgradeIf": [
+        "The lesson claim is about chart prediction, timeframe reading, liquidity sweeps, entries, exits, or profitability.",
+        "The CFTC source only supports a safety boundary and not the lesson's explanatory claim.",
+        "The reviewer would need to turn a fraud/oversight warning into tactical trading advice."
+      ],
+      "blockIf": [
+        "The lesson claim needs copied external source body text to be supported.",
+        "The source would be used for chart-pattern proof, trading signals, entries/exits, performance, broker/order workflow, automation, or real-money guidance.",
+        "The reviewer cannot explain the source role without changing the lesson grade or approval status."
+      ],
+      "allowedUse": "Use as fraud, market-risk, commodity-product, AI-bot-risk, or oversight boundary context after human confirmation.",
+      "disallowedUse": "Do not use as chart-pattern authority, trading-signal support, system endorsement, or performance evidence.",
+      "requiredReviewerFields": [
+        "decision",
+        "sourceRole",
+        "claimSupported",
+        "rewriteAction",
+        "sourceIdentityBasis",
+        "noCopyOriginalityCheck",
+        "reviewerInitials"
+      ],
+      "mustRemainStructuralDraft": true,
+      "learnerFacingUseAllowedNow": false,
+      "approvalAllowedNow": false
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0087",
+      "module": "K线与价格行为",
+      "topic": "流动性扫过",
+      "riskLevel": "high",
+      "sourceFamily": "SEC",
+      "defaultRole": "filing_or_data_boundary_until_confirmed",
+      "currentDecisionStatus": "blank_requires_human_decision",
+      "recommendedDefault": "downgrade_to_boundary_only_unless_human_confirms_direct_claim_fit",
+      "sourceRefsToInspect": [
+        {
+          "sourceId": "src_real_11186",
+          "name": "SEC Developer Resources",
+          "url": "https://www.sec.gov/about/developer-resources",
+          "sourceUseTier": "green_official_public_domain"
+        }
+      ],
+      "sourceRefsToInspectCount": 1,
+      "confirmIf": [
+        "The lesson claim is specifically about SEC data access, filing literacy, disclosure source boundaries, or official metadata use.",
+        "The source title and metadata directly match the source-literacy claim without copied source body text.",
+        "The rewrite keeps the source as filing/data-access context rather than price-action proof."
+      ],
+      "downgradeIf": [
+        "The lesson claim is about chart mechanics, liquidity sweeps, entries/exits, prediction, or outcome expectations.",
+        "The SEC source only proves official data access exists and not the lesson's price-action claim.",
+        "The proposed note uses SEC developer resources as trading evidence."
+      ],
+      "blockIf": [
+        "The lesson claim needs copied external source body text to be supported.",
+        "The source would be used for chart-pattern proof, trading signals, entries/exits, performance, broker/order workflow, automation, or real-money guidance.",
+        "The reviewer cannot explain the source role without changing the lesson grade or approval status."
+      ],
+      "allowedUse": "Use as filing literacy, official-data access, disclosure-boundary, or source-boundary context after human confirmation.",
+      "disallowedUse": "Do not use as chart-pattern authority, signal support, performance proof, or trade-decision guidance.",
+      "requiredReviewerFields": [
+        "decision",
+        "sourceRole",
+        "claimSupported",
+        "rewriteAction",
+        "sourceIdentityBasis",
+        "noCopyOriginalityCheck",
+        "reviewerInitials"
+      ],
+      "mustRemainStructuralDraft": true,
+      "learnerFacingUseAllowedNow": false,
+      "approvalAllowedNow": false
+    }
+  ],
+  "sourceRefsToInspect": 8,
+  "families": [
+    "BEA",
+    "BLS",
+    "CFTC",
+    "SEC"
+  ],
+  "allowedDecisionValues": [
+    "confirm_direct_evidence_after_human_review",
+    "downgrade_to_boundary_only",
+    "blocked_needs_rewrite_or_source_replacement"
+  ],
+  "requiredReviewerFields": [
+    "decision",
+    "sourceRole",
+    "claimSupported",
+    "rewriteAction",
+    "sourceIdentityBasis",
+    "noCopyOriginalityCheck",
+    "reviewerInitials"
+  ],
+  "confirmedDecisions": 0,
+  "downgradedDecisions": 0,
+  "blockedDecisions": 0,
+  "approvalReviewCandidates": 0,
+  "writeAllowedNow": false,
+  "manualDecisionRequired": true,
+  "humanAuthorizationRecorded": false,
+  "stopConditions": [
+    "Stop if generated output confirms, downgrades, blocks, or approves any direct-candidate source role.",
+    "Stop if BEA, BLS, CFTC, SEC, or public-domain material is used as chart-pattern proof, trading-signal proof, performance proof, broker/order workflow, automation, or real-money guidance.",
+    "Stop if any source-fit note requires copied external source body text.",
+    "Stop if yellow, red, or research_only sources are proposed for learner-facing evidence.",
+    "Stop if any generated decision changes lesson grade, approvalStatus, learnerFacingRelease, commercial readiness, or productionReady."
+  ],
+  "sourceReports": {
+    "dryRunPacket": "docs/FIRST_REVIEWER_DRY_RUN_PACKET.json",
+    "progressDashboard": "docs/FIRST_REVIEWER_PROGRESS_DASHBOARD.json",
+    "humanExecutionBundle": "docs/FIRST_REVIEWER_HUMAN_EXECUTION_BUNDLE.json",
+    "directCandidateChecklist": "docs/FIRST_REVIEWER_DIRECT_CANDIDATE_CONFIRMATION_CHECKLIST.json",
+    "directCandidateDecisionWorksheet": "docs/FIRST_REVIEWER_DIRECT_CANDIDATE_DECISION_WORKSHEET.json",
+    "sourceRoleDecisionTable": "docs/FIRST_REVIEWER_SOURCE_ROLE_DECISION_TABLE.json",
+    "sourceFitNotesAcceptance": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_ACCEPTANCE.json"
+  },
+  "boundary": "This source-fit decision summary is a one-page reviewer aid for Batch 01 and Batch 05 direct-candidate rows only. It does not create docs/LESSON_BATCH_REVIEW_STATUS.json, fill human notes, confirm source use, approve lessons, publish learner-facing content, change grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, guide real-money decisions, or make the product production-ready."
+}

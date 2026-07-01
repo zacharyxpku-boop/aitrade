@@ -1,0 +1,929 @@
+{
+  "generatedAt": "2026-06-19T09:47:08.812Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "targetBatches": [
+    "rewrite_batch_01",
+    "rewrite_batch_05"
+  ],
+  "worksheetLessons": 12,
+  "highRiskLessons": 2,
+  "riskCounts": {
+    "medium": 7,
+    "high": 2,
+    "low": 3
+  },
+  "reviewOrder": [
+    "Start with the high-risk lesson in each batch before rewriting any adjacent medium or low rows.",
+    "Record source-fit notes that separate direct evidence, boundary-only metadata, and sources to keep out of explanatory prose.",
+    "Rewrite only original education prose; do not copy external source body text.",
+    "Run the batch completion audit before any batch is marked ready for a separate human approval review."
+  ],
+  "batchWorksheets": [
+    {
+      "batchId": "rewrite_batch_01",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "firstAction": "resolve_high_risk_source_fit_before_batch_rewrite",
+      "riskCounts": {
+        "high": 1,
+        "medium": 5
+      },
+      "sourceFamilies": [
+        "BEA",
+        "BLS",
+        "CFTC",
+        "Federal Reserve",
+        "Investor.gov",
+        "Project Gutenberg",
+        "SEC",
+        "Treasury",
+        "federalregister.gov"
+      ],
+      "lessonCount": 6,
+      "lessons": [
+        {
+          "lessonId": "lesson_knv2_0044",
+          "batchId": "rewrite_batch_01",
+          "module": "多周期分析",
+          "topic": "M15细节",
+          "currentGrade": "structural_draft",
+          "currentScore": 82,
+          "rewritePriority": "P0",
+          "riskLevel": "medium",
+          "sourceFamilies": [
+            "CFTC",
+            "SEC"
+          ],
+          "nextAction": "complete_targeted_source_fit_checklist",
+          "reviewFocus": "Complete source-fit notes after the high-risk lesson in the same batch is resolved.",
+          "sourceFitQuestions": [
+            "Does the source family support this lesson topic directly, or only a boundary note?",
+            "Can the lesson be rewritten as original observation training without copying source body text?",
+            "Are uncertainty and no-action boundaries visible before practice prompts?"
+          ],
+          "rewriteDirections": [
+            "Rewrite only as original educational explanation or observation training.",
+            "Do not copy external source body text into lesson prose.",
+            "Keep the lesson structural_draft until separate human rewrite and factual review are complete."
+          ],
+          "sourceRefsToInspect": [],
+          "requiredReviewerNotes": [
+            "originalRewriteNotes",
+            "sourceFitNotes",
+            "factCheckNotes",
+            "boundaryCheckNotes",
+            "copyingRiskNotes",
+            "humanReviewerInitials"
+          ],
+          "approvalStatus": "not_approved",
+          "learnerFacingRelease": false,
+          "productionReady": false,
+          "educationOnly": true,
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0068",
+          "batchId": "rewrite_batch_01",
+          "module": "多周期分析",
+          "topic": "D1背景",
+          "currentGrade": "structural_draft",
+          "currentScore": 82,
+          "rewritePriority": "P0",
+          "riskLevel": "high",
+          "sourceFamilies": [
+            "CFTC",
+            "Investor.gov"
+          ],
+          "nextAction": "resolve_high_risk_source_fit_before_rewrite",
+          "reviewFocus": "Decide whether each attached source supports the topic directly or must be kept as boundary-only metadata before any prose rewrite.",
+          "sourceFitQuestions": [
+            "Does each source family support the lesson topic directly, or only a boundary warning?",
+            "Which source should be removed from explanatory prose and kept only as a reviewer citation?",
+            "Does the rewritten lesson still work as original observation training without source-body copying?",
+            "Are no-action, invalidation, and uncertainty visible before any practice prompt?"
+          ],
+          "rewriteDirections": [
+            "Rewrite as observation training: visible evidence first, interpretation limits second, no-action / invalidation / uncertainty third.",
+            "Keep all sources as reviewer-facing boundary evidence only; do not copy source body text into lesson prose.",
+            "Do not add buy/sell/hold, real-time signal, return/win-rate/backtest-profit, broker/order, auto-trading, or real-money guidance.",
+            "If no public-domain historical source is semantically fit, remove historical-language claims and keep the lesson as pure chart-observation practice.",
+            "Move Investor.gov/CFTC fraud context into boundary warnings only; do not use fraud pages to define chart structures.",
+            "Before rewriting, either attach a better chart/historical/context source or explicitly mark the current source mix as boundary-only."
+          ],
+          "sourceRefsToInspect": [
+            {
+              "sourceId": "src_real_11201",
+              "name": "CFTC AI Trading Bots Advisory",
+              "url": "https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/AITradingBots.html",
+              "family": "CFTC",
+              "sourceType": "official-docs",
+              "sourceUseTier": "green_official_public_domain",
+              "reliabilityGrade": "S",
+              "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+              "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+              "relevanceSignal": "timeframe"
+            },
+            {
+              "sourceId": "src_real_11211",
+              "name": "CFTC Commodity ETP Risks",
+              "url": "https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/CustomerAdvisory_CommodityETPs.htm",
+              "family": "CFTC",
+              "sourceType": "official-docs",
+              "sourceUseTier": "green_official_public_domain",
+              "reliabilityGrade": "S",
+              "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+              "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+              "relevanceSignal": "timeframe"
+            },
+            {
+              "sourceId": "src_real_10571",
+              "name": "CFTC Large Trader Reporting",
+              "url": "https://www.cftc.gov/IndustryOversight/MarketSurveillance/LargeTraderReportingProgram/index.htm",
+              "family": "CFTC",
+              "sourceType": "official-docs",
+              "sourceUseTier": "green_official_public_domain",
+              "reliabilityGrade": "S",
+              "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+              "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+              "relevanceSignal": "indicator_pattern_taxonomy"
+            },
+            {
+              "sourceId": "src_real_10956",
+              "name": "Investor.gov Glossary Diversification",
+              "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/diversification",
+              "family": "Investor.gov",
+              "sourceType": "education-reference",
+              "sourceUseTier": "green_official_public_domain",
+              "reliabilityGrade": "S",
+              "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+              "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+              "relevanceSignal": "Green indicator_pattern_taxonomy authority context and boundary reference; not copied learner-facing content."
+            },
+            {
+              "sourceId": "src_real_10297",
+              "name": "CFTC Market Surveillance",
+              "url": "https://www.cftc.gov/IndustryOversight/MarketSurveillance/index.htm",
+              "family": "CFTC",
+              "sourceType": "official-docs",
+              "sourceUseTier": "green_official_public_domain",
+              "reliabilityGrade": "S",
+              "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+              "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+              "relevanceSignal": "Green indicator_pattern_taxonomy authority context and boundary reference; not copied learner-facing content."
+            }
+          ],
+          "requiredReviewerNotes": [
+            "originalRewriteNotes",
+            "sourceFitNotes",
+            "factCheckNotes",
+            "boundaryCheckNotes",
+            "copyingRiskNotes",
+            "humanReviewerInitials"
+          ],
+          "approvalStatus": "not_approved",
+          "learnerFacingRelease": false,
+          "productionReady": false,
+          "educationOnly": true,
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0128",
+          "batchId": "rewrite_batch_01",
+          "module": "多周期分析",
+          "topic": "D1背景",
+          "currentGrade": "structural_draft",
+          "currentScore": 82,
+          "rewritePriority": "P0",
+          "riskLevel": "medium",
+          "sourceFamilies": [
+            "CFTC",
+            "Federal Reserve",
+            "Investor.gov"
+          ],
+          "nextAction": "complete_targeted_source_fit_checklist",
+          "reviewFocus": "Complete source-fit notes after the high-risk lesson in the same batch is resolved.",
+          "sourceFitQuestions": [
+            "Does the source family support this lesson topic directly, or only a boundary note?",
+            "Can the lesson be rewritten as original observation training without copying source body text?",
+            "Are uncertainty and no-action boundaries visible before practice prompts?"
+          ],
+          "rewriteDirections": [
+            "Rewrite only as original educational explanation or observation training.",
+            "Do not copy external source body text into lesson prose.",
+            "Keep the lesson structural_draft until separate human rewrite and factual review are complete."
+          ],
+          "sourceRefsToInspect": [],
+          "requiredReviewerNotes": [
+            "originalRewriteNotes",
+            "sourceFitNotes",
+            "factCheckNotes",
+            "boundaryCheckNotes",
+            "copyingRiskNotes",
+            "humanReviewerInitials"
+          ],
+          "approvalStatus": "not_approved",
+          "learnerFacingRelease": false,
+          "productionReady": false,
+          "educationOnly": true,
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0140",
+          "batchId": "rewrite_batch_01",
+          "module": "多周期分析",
+          "topic": "H4结构",
+          "currentGrade": "structural_draft",
+          "currentScore": 82,
+          "rewritePriority": "P0",
+          "riskLevel": "medium",
+          "sourceFamilies": [
+            "BEA",
+            "CFTC",
+            "Investor.gov",
+            "Treasury"
+          ],
+          "nextAction": "complete_targeted_source_fit_checklist",
+          "reviewFocus": "Complete source-fit notes after the high-risk lesson in the same batch is resolved.",
+          "sourceFitQuestions": [
+            "Does the source family support this lesson topic directly, or only a boundary note?",
+            "Can the lesson be rewritten as original observation training without copying source body text?",
+            "Are uncertainty and no-action boundaries visible before practice prompts?"
+          ],
+          "rewriteDirections": [
+            "Rewrite only as original educational explanation or observation training.",
+            "Do not copy external source body text into lesson prose.",
+            "Keep the lesson structural_draft until separate human rewrite and factual review are complete."
+          ],
+          "sourceRefsToInspect": [],
+          "requiredReviewerNotes": [
+            "originalRewriteNotes",
+            "sourceFitNotes",
+            "factCheckNotes",
+            "boundaryCheckNotes",
+            "copyingRiskNotes",
+            "humanReviewerInitials"
+          ],
+          "approvalStatus": "not_approved",
+          "learnerFacingRelease": false,
+          "productionReady": false,
+          "educationOnly": true,
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0054",
+          "batchId": "rewrite_batch_01",
+          "module": "交易区间",
+          "topic": "区间突破",
+          "currentGrade": "structural_draft",
+          "currentScore": 84,
+          "rewritePriority": "P0",
+          "riskLevel": "medium",
+          "sourceFamilies": [
+            "BEA",
+            "CFTC",
+            "Federal Reserve",
+            "Project Gutenberg",
+            "Treasury"
+          ],
+          "nextAction": "complete_targeted_source_fit_checklist",
+          "reviewFocus": "Complete source-fit notes after the high-risk lesson in the same batch is resolved.",
+          "sourceFitQuestions": [
+            "Does the source family support this lesson topic directly, or only a boundary note?",
+            "Can the lesson be rewritten as original observation training without copying source body text?",
+            "Are uncertainty and no-action boundaries visible before practice prompts?"
+          ],
+          "rewriteDirections": [
+            "Rewrite only as original educational explanation or observation training.",
+            "Do not copy external source body text into lesson prose.",
+            "Keep the lesson structural_draft until separate human rewrite and factual review are complete."
+          ],
+          "sourceRefsToInspect": [],
+          "requiredReviewerNotes": [
+            "originalRewriteNotes",
+            "sourceFitNotes",
+            "factCheckNotes",
+            "boundaryCheckNotes",
+            "copyingRiskNotes",
+            "humanReviewerInitials"
+          ],
+          "approvalStatus": "not_approved",
+          "learnerFacingRelease": false,
+          "productionReady": false,
+          "educationOnly": true,
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0019",
+          "batchId": "rewrite_batch_01",
+          "module": "反转",
+          "topic": "衰竭证据",
+          "currentGrade": "structural_draft",
+          "currentScore": 87,
+          "rewritePriority": "P1",
+          "riskLevel": "medium",
+          "sourceFamilies": [
+            "BLS",
+            "Federal Reserve",
+            "Project Gutenberg",
+            "Treasury",
+            "federalregister.gov"
+          ],
+          "nextAction": "complete_targeted_source_fit_checklist",
+          "reviewFocus": "Complete source-fit notes after the high-risk lesson in the same batch is resolved.",
+          "sourceFitQuestions": [
+            "Does the source family support this lesson topic directly, or only a boundary note?",
+            "Can the lesson be rewritten as original observation training without copying source body text?",
+            "Are uncertainty and no-action boundaries visible before practice prompts?"
+          ],
+          "rewriteDirections": [
+            "Rewrite only as original educational explanation or observation training.",
+            "Do not copy external source body text into lesson prose.",
+            "Keep the lesson structural_draft until separate human rewrite and factual review are complete."
+          ],
+          "sourceRefsToInspect": [],
+          "requiredReviewerNotes": [
+            "originalRewriteNotes",
+            "sourceFitNotes",
+            "factCheckNotes",
+            "boundaryCheckNotes",
+            "copyingRiskNotes",
+            "humanReviewerInitials"
+          ],
+          "approvalStatus": "not_approved",
+          "learnerFacingRelease": false,
+          "productionReady": false,
+          "educationOnly": true,
+          "mustRemainStructuralDraft": true
+        }
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+      "firstAction": "resolve_high_risk_source_fit_before_batch_rewrite",
+      "riskCounts": {
+        "high": 1,
+        "medium": 2,
+        "low": 3
+      },
+      "sourceFamilies": [
+        "BEA",
+        "BLS",
+        "CFTC",
+        "Federal Reserve",
+        "Investor.gov",
+        "Project Gutenberg",
+        "SEC",
+        "Treasury",
+        "nist.gov"
+      ],
+      "lessonCount": 6,
+      "lessons": [
+        {
+          "lessonId": "lesson_knv2_0075",
+          "batchId": "rewrite_batch_05",
+          "module": "K线与价格行为",
+          "topic": "组合K线",
+          "currentGrade": "structural_draft",
+          "currentScore": 87,
+          "rewritePriority": "P1",
+          "riskLevel": "medium",
+          "sourceFamilies": [
+            "BEA",
+            "Investor.gov",
+            "Project Gutenberg",
+            "SEC",
+            "Treasury"
+          ],
+          "nextAction": "complete_targeted_source_fit_checklist",
+          "reviewFocus": "Complete source-fit notes after the high-risk lesson in the same batch is resolved.",
+          "sourceFitQuestions": [
+            "Does the source family support this lesson topic directly, or only a boundary note?",
+            "Can the lesson be rewritten as original observation training without copying source body text?",
+            "Are uncertainty and no-action boundaries visible before practice prompts?"
+          ],
+          "rewriteDirections": [
+            "Rewrite only as original educational explanation or observation training.",
+            "Do not copy external source body text into lesson prose.",
+            "Keep the lesson structural_draft until separate human rewrite and factual review are complete."
+          ],
+          "sourceRefsToInspect": [],
+          "requiredReviewerNotes": [
+            "originalRewriteNotes",
+            "sourceFitNotes",
+            "factCheckNotes",
+            "boundaryCheckNotes",
+            "copyingRiskNotes",
+            "humanReviewerInitials"
+          ],
+          "approvalStatus": "not_approved",
+          "learnerFacingRelease": false,
+          "productionReady": false,
+          "educationOnly": true,
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0087",
+          "batchId": "rewrite_batch_05",
+          "module": "K线与价格行为",
+          "topic": "流动性扫过",
+          "currentGrade": "structural_draft",
+          "currentScore": 87,
+          "rewritePriority": "P1",
+          "riskLevel": "high",
+          "sourceFamilies": [
+            "BEA",
+            "BLS",
+            "CFTC",
+            "SEC",
+            "Treasury"
+          ],
+          "nextAction": "resolve_high_risk_source_fit_before_rewrite",
+          "reviewFocus": "Decide whether each attached source supports the topic directly or must be kept as boundary-only metadata before any prose rewrite.",
+          "sourceFitQuestions": [
+            "Does each source family support the lesson topic directly, or only a boundary warning?",
+            "Which source should be removed from explanatory prose and kept only as a reviewer citation?",
+            "Does the rewritten lesson still work as original observation training without source-body copying?",
+            "Are no-action, invalidation, and uncertainty visible before any practice prompt?"
+          ],
+          "rewriteDirections": [
+            "Rewrite as observation training: visible evidence first, interpretation limits second, no-action / invalidation / uncertainty third.",
+            "Keep all sources as reviewer-facing boundary evidence only; do not copy source body text into lesson prose.",
+            "Do not add buy/sell/hold, real-time signal, return/win-rate/backtest-profit, broker/order, auto-trading, or real-money guidance.",
+            "If no public-domain historical source is semantically fit, remove historical-language claims and keep the lesson as pure chart-observation practice.",
+            "Move Investor.gov/CFTC fraud context into boundary warnings only; do not use fraud pages to define chart structures.",
+            "Narrow the lesson to one source role per paragraph: term boundary, data boundary, fraud warning, or historical context."
+          ],
+          "sourceRefsToInspect": [
+            {
+              "sourceId": "src_real_11186",
+              "name": "SEC Developer Resources",
+              "url": "https://www.sec.gov/about/developer-resources",
+              "family": "SEC",
+              "sourceType": "official-docs",
+              "sourceUseTier": "green_official_public_domain",
+              "reliabilityGrade": "S",
+              "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+              "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+              "relevanceSignal": "chart_reading"
+            },
+            {
+              "sourceId": "src_real_11209",
+              "name": "CFTC Phony Trading Websites",
+              "url": "https://www.cftc.gov/LearnAndProtect/FraudAwarenessPrevention/CFTCFraudAdvisories/fraudadv_phonywebsites",
+              "family": "CFTC",
+              "sourceType": "official-docs",
+              "sourceUseTier": "green_official_public_domain",
+              "reliabilityGrade": "S",
+              "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+              "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+              "relevanceSignal": "range"
+            },
+            {
+              "sourceId": "src_real_10152",
+              "name": "BLS PPI",
+              "url": "https://www.bls.gov/ppi/",
+              "family": "BLS",
+              "sourceType": "official-docs",
+              "sourceUseTier": "green_official_public_domain",
+              "reliabilityGrade": "S",
+              "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+              "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+              "relevanceSignal": "chart_reading"
+            },
+            {
+              "sourceId": "src_real_10310",
+              "name": "BEA Data Application Programming Interface",
+              "url": "https://apps.bea.gov/api/",
+              "family": "BEA",
+              "sourceType": "official-docs",
+              "sourceUseTier": "green_official_public_domain",
+              "reliabilityGrade": "S",
+              "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+              "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+              "relevanceSignal": "Green chart_price_action authority context and boundary reference; not copied learner-facing content."
+            },
+            {
+              "sourceId": "src_real_10157",
+              "name": "US Treasury Daily Treasury Rates",
+              "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView",
+              "family": "Treasury",
+              "sourceType": "official-docs",
+              "sourceUseTier": "green_official_public_domain",
+              "reliabilityGrade": "S",
+              "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+              "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+              "relevanceSignal": "Green chart_price_action authority context and boundary reference; not copied learner-facing content."
+            }
+          ],
+          "requiredReviewerNotes": [
+            "originalRewriteNotes",
+            "sourceFitNotes",
+            "factCheckNotes",
+            "boundaryCheckNotes",
+            "copyingRiskNotes",
+            "humanReviewerInitials"
+          ],
+          "approvalStatus": "not_approved",
+          "learnerFacingRelease": false,
+          "productionReady": false,
+          "educationOnly": true,
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0159",
+          "batchId": "rewrite_batch_05",
+          "module": "K线与价格行为",
+          "topic": "形态语境",
+          "currentGrade": "structural_draft",
+          "currentScore": 87,
+          "rewritePriority": "P1",
+          "riskLevel": "medium",
+          "sourceFamilies": [
+            "BEA",
+            "Investor.gov",
+            "SEC",
+            "Treasury"
+          ],
+          "nextAction": "complete_targeted_source_fit_checklist",
+          "reviewFocus": "Complete source-fit notes after the high-risk lesson in the same batch is resolved.",
+          "sourceFitQuestions": [
+            "Does the source family support this lesson topic directly, or only a boundary note?",
+            "Can the lesson be rewritten as original observation training without copying source body text?",
+            "Are uncertainty and no-action boundaries visible before practice prompts?"
+          ],
+          "rewriteDirections": [
+            "Rewrite only as original educational explanation or observation training.",
+            "Do not copy external source body text into lesson prose.",
+            "Keep the lesson structural_draft until separate human rewrite and factual review are complete."
+          ],
+          "sourceRefsToInspect": [],
+          "requiredReviewerNotes": [
+            "originalRewriteNotes",
+            "sourceFitNotes",
+            "factCheckNotes",
+            "boundaryCheckNotes",
+            "copyingRiskNotes",
+            "humanReviewerInitials"
+          ],
+          "approvalStatus": "not_approved",
+          "learnerFacingRelease": false,
+          "productionReady": false,
+          "educationOnly": true,
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0011",
+          "batchId": "rewrite_batch_05",
+          "module": "风险管理",
+          "topic": "失效条件",
+          "currentGrade": "structural_draft",
+          "currentScore": 88,
+          "rewritePriority": "P1",
+          "riskLevel": "low",
+          "sourceFamilies": [
+            "CFTC",
+            "Federal Reserve",
+            "SEC",
+            "nist.gov"
+          ],
+          "nextAction": "queue_for_human_rewrite_after_fast_pass_notes",
+          "reviewFocus": "Complete source-fit notes after the high-risk lesson in the same batch is resolved.",
+          "sourceFitQuestions": [
+            "Does the source family support this lesson topic directly, or only a boundary note?",
+            "Can the lesson be rewritten as original observation training without copying source body text?",
+            "Are uncertainty and no-action boundaries visible before practice prompts?"
+          ],
+          "rewriteDirections": [
+            "Rewrite only as original educational explanation or observation training.",
+            "Do not copy external source body text into lesson prose.",
+            "Keep the lesson structural_draft until separate human rewrite and factual review are complete."
+          ],
+          "sourceRefsToInspect": [],
+          "requiredReviewerNotes": [
+            "originalRewriteNotes",
+            "sourceFitNotes",
+            "factCheckNotes",
+            "boundaryCheckNotes",
+            "copyingRiskNotes",
+            "humanReviewerInitials"
+          ],
+          "approvalStatus": "not_approved",
+          "learnerFacingRelease": false,
+          "productionReady": false,
+          "educationOnly": true,
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0059",
+          "batchId": "rewrite_batch_05",
+          "module": "风险管理",
+          "topic": "边界语言",
+          "currentGrade": "structural_draft",
+          "currentScore": 88,
+          "rewritePriority": "P1",
+          "riskLevel": "low",
+          "sourceFamilies": [
+            "CFTC",
+            "Investor.gov",
+            "SEC"
+          ],
+          "nextAction": "queue_for_human_rewrite_after_fast_pass_notes",
+          "reviewFocus": "Complete source-fit notes after the high-risk lesson in the same batch is resolved.",
+          "sourceFitQuestions": [
+            "Does the source family support this lesson topic directly, or only a boundary note?",
+            "Can the lesson be rewritten as original observation training without copying source body text?",
+            "Are uncertainty and no-action boundaries visible before practice prompts?"
+          ],
+          "rewriteDirections": [
+            "Rewrite only as original educational explanation or observation training.",
+            "Do not copy external source body text into lesson prose.",
+            "Keep the lesson structural_draft until separate human rewrite and factual review are complete."
+          ],
+          "sourceRefsToInspect": [],
+          "requiredReviewerNotes": [
+            "originalRewriteNotes",
+            "sourceFitNotes",
+            "factCheckNotes",
+            "boundaryCheckNotes",
+            "copyingRiskNotes",
+            "humanReviewerInitials"
+          ],
+          "approvalStatus": "not_approved",
+          "learnerFacingRelease": false,
+          "productionReady": false,
+          "educationOnly": true,
+          "mustRemainStructuralDraft": true
+        },
+        {
+          "lessonId": "lesson_knv2_0167",
+          "batchId": "rewrite_batch_05",
+          "module": "风险管理",
+          "topic": "可复盘计划",
+          "currentGrade": "structural_draft",
+          "currentScore": 88,
+          "rewritePriority": "P1",
+          "riskLevel": "low",
+          "sourceFamilies": [
+            "CFTC",
+            "Investor.gov",
+            "SEC"
+          ],
+          "nextAction": "queue_for_human_rewrite_after_fast_pass_notes",
+          "reviewFocus": "Complete source-fit notes after the high-risk lesson in the same batch is resolved.",
+          "sourceFitQuestions": [
+            "Does the source family support this lesson topic directly, or only a boundary note?",
+            "Can the lesson be rewritten as original observation training without copying source body text?",
+            "Are uncertainty and no-action boundaries visible before practice prompts?"
+          ],
+          "rewriteDirections": [
+            "Rewrite only as original educational explanation or observation training.",
+            "Do not copy external source body text into lesson prose.",
+            "Keep the lesson structural_draft until separate human rewrite and factual review are complete."
+          ],
+          "sourceRefsToInspect": [],
+          "requiredReviewerNotes": [
+            "originalRewriteNotes",
+            "sourceFitNotes",
+            "factCheckNotes",
+            "boundaryCheckNotes",
+            "copyingRiskNotes",
+            "humanReviewerInitials"
+          ],
+          "approvalStatus": "not_approved",
+          "learnerFacingRelease": false,
+          "productionReady": false,
+          "educationOnly": true,
+          "mustRemainStructuralDraft": true
+        }
+      ]
+    }
+  ],
+  "highRiskWorksheets": [
+    {
+      "lessonId": "lesson_knv2_0068",
+      "batchId": "rewrite_batch_01",
+      "module": "多周期分析",
+      "topic": "D1背景",
+      "currentGrade": "structural_draft",
+      "currentScore": 82,
+      "rewritePriority": "P0",
+      "riskLevel": "high",
+      "sourceFamilies": [
+        "CFTC",
+        "Investor.gov"
+      ],
+      "nextAction": "resolve_high_risk_source_fit_before_rewrite",
+      "reviewFocus": "Decide whether each attached source supports the topic directly or must be kept as boundary-only metadata before any prose rewrite.",
+      "sourceFitQuestions": [
+        "Does each source family support the lesson topic directly, or only a boundary warning?",
+        "Which source should be removed from explanatory prose and kept only as a reviewer citation?",
+        "Does the rewritten lesson still work as original observation training without source-body copying?",
+        "Are no-action, invalidation, and uncertainty visible before any practice prompt?"
+      ],
+      "rewriteDirections": [
+        "Rewrite as observation training: visible evidence first, interpretation limits second, no-action / invalidation / uncertainty third.",
+        "Keep all sources as reviewer-facing boundary evidence only; do not copy source body text into lesson prose.",
+        "Do not add buy/sell/hold, real-time signal, return/win-rate/backtest-profit, broker/order, auto-trading, or real-money guidance.",
+        "If no public-domain historical source is semantically fit, remove historical-language claims and keep the lesson as pure chart-observation practice.",
+        "Move Investor.gov/CFTC fraud context into boundary warnings only; do not use fraud pages to define chart structures.",
+        "Before rewriting, either attach a better chart/historical/context source or explicitly mark the current source mix as boundary-only."
+      ],
+      "sourceRefsToInspect": [
+        {
+          "sourceId": "src_real_11201",
+          "name": "CFTC AI Trading Bots Advisory",
+          "url": "https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/AITradingBots.html",
+          "family": "CFTC",
+          "sourceType": "official-docs",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "timeframe"
+        },
+        {
+          "sourceId": "src_real_11211",
+          "name": "CFTC Commodity ETP Risks",
+          "url": "https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/CustomerAdvisory_CommodityETPs.htm",
+          "family": "CFTC",
+          "sourceType": "official-docs",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "timeframe"
+        },
+        {
+          "sourceId": "src_real_10571",
+          "name": "CFTC Large Trader Reporting",
+          "url": "https://www.cftc.gov/IndustryOversight/MarketSurveillance/LargeTraderReportingProgram/index.htm",
+          "family": "CFTC",
+          "sourceType": "official-docs",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "indicator_pattern_taxonomy"
+        },
+        {
+          "sourceId": "src_real_10956",
+          "name": "Investor.gov Glossary Diversification",
+          "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/diversification",
+          "family": "Investor.gov",
+          "sourceType": "education-reference",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "Green indicator_pattern_taxonomy authority context and boundary reference; not copied learner-facing content."
+        },
+        {
+          "sourceId": "src_real_10297",
+          "name": "CFTC Market Surveillance",
+          "url": "https://www.cftc.gov/IndustryOversight/MarketSurveillance/index.htm",
+          "family": "CFTC",
+          "sourceType": "official-docs",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "Green indicator_pattern_taxonomy authority context and boundary reference; not copied learner-facing content."
+        }
+      ],
+      "requiredReviewerNotes": [
+        "originalRewriteNotes",
+        "sourceFitNotes",
+        "factCheckNotes",
+        "boundaryCheckNotes",
+        "copyingRiskNotes",
+        "humanReviewerInitials"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true,
+      "mustRemainStructuralDraft": true
+    },
+    {
+      "lessonId": "lesson_knv2_0087",
+      "batchId": "rewrite_batch_05",
+      "module": "K线与价格行为",
+      "topic": "流动性扫过",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "rewritePriority": "P1",
+      "riskLevel": "high",
+      "sourceFamilies": [
+        "BEA",
+        "BLS",
+        "CFTC",
+        "SEC",
+        "Treasury"
+      ],
+      "nextAction": "resolve_high_risk_source_fit_before_rewrite",
+      "reviewFocus": "Decide whether each attached source supports the topic directly or must be kept as boundary-only metadata before any prose rewrite.",
+      "sourceFitQuestions": [
+        "Does each source family support the lesson topic directly, or only a boundary warning?",
+        "Which source should be removed from explanatory prose and kept only as a reviewer citation?",
+        "Does the rewritten lesson still work as original observation training without source-body copying?",
+        "Are no-action, invalidation, and uncertainty visible before any practice prompt?"
+      ],
+      "rewriteDirections": [
+        "Rewrite as observation training: visible evidence first, interpretation limits second, no-action / invalidation / uncertainty third.",
+        "Keep all sources as reviewer-facing boundary evidence only; do not copy source body text into lesson prose.",
+        "Do not add buy/sell/hold, real-time signal, return/win-rate/backtest-profit, broker/order, auto-trading, or real-money guidance.",
+        "If no public-domain historical source is semantically fit, remove historical-language claims and keep the lesson as pure chart-observation practice.",
+        "Move Investor.gov/CFTC fraud context into boundary warnings only; do not use fraud pages to define chart structures.",
+        "Narrow the lesson to one source role per paragraph: term boundary, data boundary, fraud warning, or historical context."
+      ],
+      "sourceRefsToInspect": [
+        {
+          "sourceId": "src_real_11186",
+          "name": "SEC Developer Resources",
+          "url": "https://www.sec.gov/about/developer-resources",
+          "family": "SEC",
+          "sourceType": "official-docs",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "chart_reading"
+        },
+        {
+          "sourceId": "src_real_11209",
+          "name": "CFTC Phony Trading Websites",
+          "url": "https://www.cftc.gov/LearnAndProtect/FraudAwarenessPrevention/CFTCFraudAdvisories/fraudadv_phonywebsites",
+          "family": "CFTC",
+          "sourceType": "official-docs",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "range"
+        },
+        {
+          "sourceId": "src_real_10152",
+          "name": "BLS PPI",
+          "url": "https://www.bls.gov/ppi/",
+          "family": "BLS",
+          "sourceType": "official-docs",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "chart_reading"
+        },
+        {
+          "sourceId": "src_real_10310",
+          "name": "BEA Data Application Programming Interface",
+          "url": "https://apps.bea.gov/api/",
+          "family": "BEA",
+          "sourceType": "official-docs",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "Green chart_price_action authority context and boundary reference; not copied learner-facing content."
+        },
+        {
+          "sourceId": "src_real_10157",
+          "name": "US Treasury Daily Treasury Rates",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView",
+          "family": "Treasury",
+          "sourceType": "official-docs",
+          "sourceUseTier": "green_official_public_domain",
+          "reliabilityGrade": "S",
+          "allowedUse": "Use metadata, source refs, taxonomy, glossary seeds, source-boundary notes, and original lesson-rewrite evidence. Cite the agency and access date; spot-check embedded third-party material before quoting.",
+          "disallowedUse": "Do not copy agency logos, photos, third-party inserts, market data beyond source terms, or imply agency endorsement. Do not convert education pages into trading advice, signals, or real-money instructions.",
+          "relevanceSignal": "Green chart_price_action authority context and boundary reference; not copied learner-facing content."
+        }
+      ],
+      "requiredReviewerNotes": [
+        "originalRewriteNotes",
+        "sourceFitNotes",
+        "factCheckNotes",
+        "boundaryCheckNotes",
+        "copyingRiskNotes",
+        "humanReviewerInitials"
+      ],
+      "approvalStatus": "not_approved",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "educationOnly": true,
+      "mustRemainStructuralDraft": true
+    }
+  ],
+  "boundary": "This worksheet is reviewer-facing scaffolding for human source-fit and rewrite work. It does not approve lessons, publish learner-facing content, change grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, or guide real-money decisions."
+}

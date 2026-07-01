@@ -1,0 +1,2160 @@
+{
+  "generatedAt": "2026-06-19T09:47:11.092Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "targetBatches": [
+    "rewrite_batch_01",
+    "rewrite_batch_05"
+  ],
+  "lessonCards": 12,
+  "requiredNoteFields": 6,
+  "matrixRows": 72,
+  "blankNoteFields": 72,
+  "prefilledNoteFields": 0,
+  "directCandidatesToConfirm": 5,
+  "realStatusPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "realStatusOverlayPresent": false,
+  "creationAllowedNow": false,
+  "fieldRules": [
+    {
+      "field": "originalRewriteNotes",
+      "readyWhen": "Reviewer has decided the original education rewrite angle and confirmed it remains structural_draft.",
+      "blocker": "No real human rewrite-angle decision exists yet."
+    },
+    {
+      "field": "sourceFitNotes",
+      "readyWhen": "Reviewer has confirmed each source family as direct evidence, boundary-only context, or unsuitable.",
+      "blocker": "Source roles are still prompts and require human confirmation."
+    },
+    {
+      "field": "factCheckNotes",
+      "readyWhen": "Reviewer has checked claims against source metadata and marked unresolved claims to remove.",
+      "blocker": "No real fact-check pass exists yet."
+    },
+    {
+      "field": "boundaryCheckNotes",
+      "readyWhen": "Reviewer has checked no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+      "blocker": "No real safety-boundary pass exists yet."
+    },
+    {
+      "field": "copyingRiskNotes",
+      "readyWhen": "Reviewer has checked notes and rewrite prose for no copied external source body text.",
+      "blocker": "No real copying-risk pass exists yet."
+    },
+    {
+      "field": "humanReviewerInitials",
+      "readyWhen": "Reviewer has actually completed the required review work for the lesson.",
+      "blocker": "Human initials must remain blank until real review work is complete."
+    }
+  ],
+  "rows": [
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0044",
+      "riskLevel": "medium",
+      "field": "originalRewriteNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has decided the original education rewrite angle and confirmed it remains structural_draft.",
+      "currentBlocker": "No real human rewrite-angle decision exists yet.",
+      "prompt": "Describe the original education rewrite angle after source roles are confirmed.",
+      "mustMention": [
+        "original wording",
+        "observation or education practice",
+        "structural_draft"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "SEC"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0044",
+      "riskLevel": "medium",
+      "field": "sourceFitNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has confirmed each source family as direct evidence, boundary-only context, or unsuitable.",
+      "currentBlocker": "Source roles are still prompts and require human confirmation.",
+      "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval.",
+      "mustMention": [],
+      "roleHintFamilies": [
+        "CFTC",
+        "SEC"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0044",
+      "riskLevel": "medium",
+      "field": "factCheckNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked claims against source metadata and marked unresolved claims to remove.",
+      "currentBlocker": "No real fact-check pass exists yet.",
+      "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles.",
+      "mustMention": [
+        "checked claims",
+        "unresolved claims",
+        "removed or retained"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "SEC"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0044",
+      "riskLevel": "medium",
+      "field": "boundaryCheckNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+      "currentBlocker": "No real safety-boundary pass exists yet.",
+      "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+      "mustMention": [
+        "education-only",
+        "non-production",
+        "no advice",
+        "no signal",
+        "no real-money guidance"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "SEC"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0044",
+      "riskLevel": "medium",
+      "field": "copyingRiskNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked notes and rewrite prose for no copied external source body text.",
+      "currentBlocker": "No real copying-risk pass exists yet.",
+      "prompt": "Confirm no external source body text is copied into notes or lesson prose.",
+      "mustMention": [
+        "no source-body copying",
+        "original wording"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "SEC"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0044",
+      "riskLevel": "medium",
+      "field": "humanReviewerInitials",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has actually completed the required review work for the lesson.",
+      "currentBlocker": "Human initials must remain blank until real review work is complete.",
+      "prompt": "Fill only after real human review work is performed.",
+      "mustMention": [
+        "human initials only"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "SEC"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0068",
+      "riskLevel": "high",
+      "field": "originalRewriteNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has decided the original education rewrite angle and confirmed it remains structural_draft.",
+      "currentBlocker": "No real human rewrite-angle decision exists yet.",
+      "prompt": "Describe the original education rewrite angle after source roles are confirmed.",
+      "mustMention": [
+        "original wording",
+        "observation or education practice",
+        "structural_draft"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "Investor.gov"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0068",
+      "riskLevel": "high",
+      "field": "sourceFitNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has confirmed each source family as direct evidence, boundary-only context, or unsuitable.",
+      "currentBlocker": "Source roles are still prompts and require human confirmation.",
+      "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval.",
+      "mustMention": [],
+      "roleHintFamilies": [
+        "CFTC",
+        "Investor.gov"
+      ],
+      "directCandidatesToConfirm": [
+        "CFTC"
+      ],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0068",
+      "riskLevel": "high",
+      "field": "factCheckNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked claims against source metadata and marked unresolved claims to remove.",
+      "currentBlocker": "No real fact-check pass exists yet.",
+      "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles.",
+      "mustMention": [
+        "checked claims",
+        "unresolved claims",
+        "removed or retained"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "Investor.gov"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0068",
+      "riskLevel": "high",
+      "field": "boundaryCheckNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+      "currentBlocker": "No real safety-boundary pass exists yet.",
+      "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+      "mustMention": [
+        "education-only",
+        "non-production",
+        "no advice",
+        "no signal",
+        "no real-money guidance"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "Investor.gov"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0068",
+      "riskLevel": "high",
+      "field": "copyingRiskNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked notes and rewrite prose for no copied external source body text.",
+      "currentBlocker": "No real copying-risk pass exists yet.",
+      "prompt": "Confirm no external source body text is copied into notes or lesson prose.",
+      "mustMention": [
+        "no source-body copying",
+        "original wording"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "Investor.gov"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0068",
+      "riskLevel": "high",
+      "field": "humanReviewerInitials",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has actually completed the required review work for the lesson.",
+      "currentBlocker": "Human initials must remain blank until real review work is complete.",
+      "prompt": "Fill only after real human review work is performed.",
+      "mustMention": [
+        "human initials only"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "Investor.gov"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0128",
+      "riskLevel": "medium",
+      "field": "originalRewriteNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has decided the original education rewrite angle and confirmed it remains structural_draft.",
+      "currentBlocker": "No real human rewrite-angle decision exists yet.",
+      "prompt": "Describe the original education rewrite angle after source roles are confirmed.",
+      "mustMention": [
+        "original wording",
+        "observation or education practice",
+        "structural_draft"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "Federal Reserve",
+        "Investor.gov"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0128",
+      "riskLevel": "medium",
+      "field": "sourceFitNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has confirmed each source family as direct evidence, boundary-only context, or unsuitable.",
+      "currentBlocker": "Source roles are still prompts and require human confirmation.",
+      "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval.",
+      "mustMention": [],
+      "roleHintFamilies": [
+        "CFTC",
+        "Federal Reserve",
+        "Investor.gov"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0128",
+      "riskLevel": "medium",
+      "field": "factCheckNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked claims against source metadata and marked unresolved claims to remove.",
+      "currentBlocker": "No real fact-check pass exists yet.",
+      "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles.",
+      "mustMention": [
+        "checked claims",
+        "unresolved claims",
+        "removed or retained"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "Federal Reserve",
+        "Investor.gov"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0128",
+      "riskLevel": "medium",
+      "field": "boundaryCheckNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+      "currentBlocker": "No real safety-boundary pass exists yet.",
+      "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+      "mustMention": [
+        "education-only",
+        "non-production",
+        "no advice",
+        "no signal",
+        "no real-money guidance"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "Federal Reserve",
+        "Investor.gov"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0128",
+      "riskLevel": "medium",
+      "field": "copyingRiskNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked notes and rewrite prose for no copied external source body text.",
+      "currentBlocker": "No real copying-risk pass exists yet.",
+      "prompt": "Confirm no external source body text is copied into notes or lesson prose.",
+      "mustMention": [
+        "no source-body copying",
+        "original wording"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "Federal Reserve",
+        "Investor.gov"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0128",
+      "riskLevel": "medium",
+      "field": "humanReviewerInitials",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has actually completed the required review work for the lesson.",
+      "currentBlocker": "Human initials must remain blank until real review work is complete.",
+      "prompt": "Fill only after real human review work is performed.",
+      "mustMention": [
+        "human initials only"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "Federal Reserve",
+        "Investor.gov"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0140",
+      "riskLevel": "medium",
+      "field": "originalRewriteNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has decided the original education rewrite angle and confirmed it remains structural_draft.",
+      "currentBlocker": "No real human rewrite-angle decision exists yet.",
+      "prompt": "Describe the original education rewrite angle after source roles are confirmed.",
+      "mustMention": [
+        "original wording",
+        "observation or education practice",
+        "structural_draft"
+      ],
+      "roleHintFamilies": [
+        "BEA",
+        "CFTC",
+        "Investor.gov",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0140",
+      "riskLevel": "medium",
+      "field": "sourceFitNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has confirmed each source family as direct evidence, boundary-only context, or unsuitable.",
+      "currentBlocker": "Source roles are still prompts and require human confirmation.",
+      "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval.",
+      "mustMention": [],
+      "roleHintFamilies": [
+        "BEA",
+        "CFTC",
+        "Investor.gov",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0140",
+      "riskLevel": "medium",
+      "field": "factCheckNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked claims against source metadata and marked unresolved claims to remove.",
+      "currentBlocker": "No real fact-check pass exists yet.",
+      "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles.",
+      "mustMention": [
+        "checked claims",
+        "unresolved claims",
+        "removed or retained"
+      ],
+      "roleHintFamilies": [
+        "BEA",
+        "CFTC",
+        "Investor.gov",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0140",
+      "riskLevel": "medium",
+      "field": "boundaryCheckNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+      "currentBlocker": "No real safety-boundary pass exists yet.",
+      "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+      "mustMention": [
+        "education-only",
+        "non-production",
+        "no advice",
+        "no signal",
+        "no real-money guidance"
+      ],
+      "roleHintFamilies": [
+        "BEA",
+        "CFTC",
+        "Investor.gov",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0140",
+      "riskLevel": "medium",
+      "field": "copyingRiskNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked notes and rewrite prose for no copied external source body text.",
+      "currentBlocker": "No real copying-risk pass exists yet.",
+      "prompt": "Confirm no external source body text is copied into notes or lesson prose.",
+      "mustMention": [
+        "no source-body copying",
+        "original wording"
+      ],
+      "roleHintFamilies": [
+        "BEA",
+        "CFTC",
+        "Investor.gov",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0140",
+      "riskLevel": "medium",
+      "field": "humanReviewerInitials",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has actually completed the required review work for the lesson.",
+      "currentBlocker": "Human initials must remain blank until real review work is complete.",
+      "prompt": "Fill only after real human review work is performed.",
+      "mustMention": [
+        "human initials only"
+      ],
+      "roleHintFamilies": [
+        "BEA",
+        "CFTC",
+        "Investor.gov",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0054",
+      "riskLevel": "medium",
+      "field": "originalRewriteNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has decided the original education rewrite angle and confirmed it remains structural_draft.",
+      "currentBlocker": "No real human rewrite-angle decision exists yet.",
+      "prompt": "Describe the original education rewrite angle after source roles are confirmed.",
+      "mustMention": [
+        "original wording",
+        "observation or education practice",
+        "structural_draft"
+      ],
+      "roleHintFamilies": [
+        "BEA",
+        "CFTC",
+        "Federal Reserve",
+        "Project Gutenberg",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0054",
+      "riskLevel": "medium",
+      "field": "sourceFitNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has confirmed each source family as direct evidence, boundary-only context, or unsuitable.",
+      "currentBlocker": "Source roles are still prompts and require human confirmation.",
+      "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval.",
+      "mustMention": [],
+      "roleHintFamilies": [
+        "BEA",
+        "CFTC",
+        "Federal Reserve",
+        "Project Gutenberg",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0054",
+      "riskLevel": "medium",
+      "field": "factCheckNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked claims against source metadata and marked unresolved claims to remove.",
+      "currentBlocker": "No real fact-check pass exists yet.",
+      "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles.",
+      "mustMention": [
+        "checked claims",
+        "unresolved claims",
+        "removed or retained"
+      ],
+      "roleHintFamilies": [
+        "BEA",
+        "CFTC",
+        "Federal Reserve",
+        "Project Gutenberg",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0054",
+      "riskLevel": "medium",
+      "field": "boundaryCheckNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+      "currentBlocker": "No real safety-boundary pass exists yet.",
+      "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+      "mustMention": [
+        "education-only",
+        "non-production",
+        "no advice",
+        "no signal",
+        "no real-money guidance"
+      ],
+      "roleHintFamilies": [
+        "BEA",
+        "CFTC",
+        "Federal Reserve",
+        "Project Gutenberg",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0054",
+      "riskLevel": "medium",
+      "field": "copyingRiskNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked notes and rewrite prose for no copied external source body text.",
+      "currentBlocker": "No real copying-risk pass exists yet.",
+      "prompt": "Confirm no external source body text is copied into notes or lesson prose.",
+      "mustMention": [
+        "no source-body copying",
+        "original wording"
+      ],
+      "roleHintFamilies": [
+        "BEA",
+        "CFTC",
+        "Federal Reserve",
+        "Project Gutenberg",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0054",
+      "riskLevel": "medium",
+      "field": "humanReviewerInitials",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has actually completed the required review work for the lesson.",
+      "currentBlocker": "Human initials must remain blank until real review work is complete.",
+      "prompt": "Fill only after real human review work is performed.",
+      "mustMention": [
+        "human initials only"
+      ],
+      "roleHintFamilies": [
+        "BEA",
+        "CFTC",
+        "Federal Reserve",
+        "Project Gutenberg",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0019",
+      "riskLevel": "medium",
+      "field": "originalRewriteNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has decided the original education rewrite angle and confirmed it remains structural_draft.",
+      "currentBlocker": "No real human rewrite-angle decision exists yet.",
+      "prompt": "Describe the original education rewrite angle after source roles are confirmed.",
+      "mustMention": [
+        "original wording",
+        "observation or education practice",
+        "structural_draft"
+      ],
+      "roleHintFamilies": [
+        "BLS",
+        "Federal Reserve",
+        "Project Gutenberg",
+        "Treasury",
+        "federalregister.gov"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0019",
+      "riskLevel": "medium",
+      "field": "sourceFitNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has confirmed each source family as direct evidence, boundary-only context, or unsuitable.",
+      "currentBlocker": "Source roles are still prompts and require human confirmation.",
+      "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval.",
+      "mustMention": [],
+      "roleHintFamilies": [
+        "BLS",
+        "Federal Reserve",
+        "Project Gutenberg",
+        "Treasury",
+        "federalregister.gov"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0019",
+      "riskLevel": "medium",
+      "field": "factCheckNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked claims against source metadata and marked unresolved claims to remove.",
+      "currentBlocker": "No real fact-check pass exists yet.",
+      "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles.",
+      "mustMention": [
+        "checked claims",
+        "unresolved claims",
+        "removed or retained"
+      ],
+      "roleHintFamilies": [
+        "BLS",
+        "Federal Reserve",
+        "Project Gutenberg",
+        "Treasury",
+        "federalregister.gov"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0019",
+      "riskLevel": "medium",
+      "field": "boundaryCheckNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+      "currentBlocker": "No real safety-boundary pass exists yet.",
+      "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+      "mustMention": [
+        "education-only",
+        "non-production",
+        "no advice",
+        "no signal",
+        "no real-money guidance"
+      ],
+      "roleHintFamilies": [
+        "BLS",
+        "Federal Reserve",
+        "Project Gutenberg",
+        "Treasury",
+        "federalregister.gov"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0019",
+      "riskLevel": "medium",
+      "field": "copyingRiskNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked notes and rewrite prose for no copied external source body text.",
+      "currentBlocker": "No real copying-risk pass exists yet.",
+      "prompt": "Confirm no external source body text is copied into notes or lesson prose.",
+      "mustMention": [
+        "no source-body copying",
+        "original wording"
+      ],
+      "roleHintFamilies": [
+        "BLS",
+        "Federal Reserve",
+        "Project Gutenberg",
+        "Treasury",
+        "federalregister.gov"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_01",
+      "lessonId": "lesson_knv2_0019",
+      "riskLevel": "medium",
+      "field": "humanReviewerInitials",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has actually completed the required review work for the lesson.",
+      "currentBlocker": "Human initials must remain blank until real review work is complete.",
+      "prompt": "Fill only after real human review work is performed.",
+      "mustMention": [
+        "human initials only"
+      ],
+      "roleHintFamilies": [
+        "BLS",
+        "Federal Reserve",
+        "Project Gutenberg",
+        "Treasury",
+        "federalregister.gov"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0075",
+      "riskLevel": "medium",
+      "field": "originalRewriteNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has decided the original education rewrite angle and confirmed it remains structural_draft.",
+      "currentBlocker": "No real human rewrite-angle decision exists yet.",
+      "prompt": "Describe the original education rewrite angle after source roles are confirmed.",
+      "mustMention": [
+        "original wording",
+        "observation or education practice",
+        "structural_draft"
+      ],
+      "roleHintFamilies": [
+        "BEA",
+        "Investor.gov",
+        "Project Gutenberg",
+        "SEC",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0075",
+      "riskLevel": "medium",
+      "field": "sourceFitNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has confirmed each source family as direct evidence, boundary-only context, or unsuitable.",
+      "currentBlocker": "Source roles are still prompts and require human confirmation.",
+      "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval.",
+      "mustMention": [],
+      "roleHintFamilies": [
+        "BEA",
+        "Investor.gov",
+        "Project Gutenberg",
+        "SEC",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0075",
+      "riskLevel": "medium",
+      "field": "factCheckNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked claims against source metadata and marked unresolved claims to remove.",
+      "currentBlocker": "No real fact-check pass exists yet.",
+      "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles.",
+      "mustMention": [
+        "checked claims",
+        "unresolved claims",
+        "removed or retained"
+      ],
+      "roleHintFamilies": [
+        "BEA",
+        "Investor.gov",
+        "Project Gutenberg",
+        "SEC",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0075",
+      "riskLevel": "medium",
+      "field": "boundaryCheckNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+      "currentBlocker": "No real safety-boundary pass exists yet.",
+      "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+      "mustMention": [
+        "education-only",
+        "non-production",
+        "no advice",
+        "no signal",
+        "no real-money guidance"
+      ],
+      "roleHintFamilies": [
+        "BEA",
+        "Investor.gov",
+        "Project Gutenberg",
+        "SEC",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0075",
+      "riskLevel": "medium",
+      "field": "copyingRiskNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked notes and rewrite prose for no copied external source body text.",
+      "currentBlocker": "No real copying-risk pass exists yet.",
+      "prompt": "Confirm no external source body text is copied into notes or lesson prose.",
+      "mustMention": [
+        "no source-body copying",
+        "original wording"
+      ],
+      "roleHintFamilies": [
+        "BEA",
+        "Investor.gov",
+        "Project Gutenberg",
+        "SEC",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0075",
+      "riskLevel": "medium",
+      "field": "humanReviewerInitials",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has actually completed the required review work for the lesson.",
+      "currentBlocker": "Human initials must remain blank until real review work is complete.",
+      "prompt": "Fill only after real human review work is performed.",
+      "mustMention": [
+        "human initials only"
+      ],
+      "roleHintFamilies": [
+        "BEA",
+        "Investor.gov",
+        "Project Gutenberg",
+        "SEC",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0087",
+      "riskLevel": "high",
+      "field": "originalRewriteNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has decided the original education rewrite angle and confirmed it remains structural_draft.",
+      "currentBlocker": "No real human rewrite-angle decision exists yet.",
+      "prompt": "Describe the original education rewrite angle after source roles are confirmed.",
+      "mustMention": [
+        "original wording",
+        "observation or education practice",
+        "structural_draft"
+      ],
+      "roleHintFamilies": [
+        "BEA",
+        "BLS",
+        "CFTC",
+        "SEC",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0087",
+      "riskLevel": "high",
+      "field": "sourceFitNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has confirmed each source family as direct evidence, boundary-only context, or unsuitable.",
+      "currentBlocker": "Source roles are still prompts and require human confirmation.",
+      "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval.",
+      "mustMention": [],
+      "roleHintFamilies": [
+        "BEA",
+        "BLS",
+        "CFTC",
+        "SEC",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [
+        "BEA",
+        "BLS",
+        "CFTC",
+        "SEC"
+      ],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0087",
+      "riskLevel": "high",
+      "field": "factCheckNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked claims against source metadata and marked unresolved claims to remove.",
+      "currentBlocker": "No real fact-check pass exists yet.",
+      "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles.",
+      "mustMention": [
+        "checked claims",
+        "unresolved claims",
+        "removed or retained"
+      ],
+      "roleHintFamilies": [
+        "BEA",
+        "BLS",
+        "CFTC",
+        "SEC",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0087",
+      "riskLevel": "high",
+      "field": "boundaryCheckNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+      "currentBlocker": "No real safety-boundary pass exists yet.",
+      "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+      "mustMention": [
+        "education-only",
+        "non-production",
+        "no advice",
+        "no signal",
+        "no real-money guidance"
+      ],
+      "roleHintFamilies": [
+        "BEA",
+        "BLS",
+        "CFTC",
+        "SEC",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0087",
+      "riskLevel": "high",
+      "field": "copyingRiskNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked notes and rewrite prose for no copied external source body text.",
+      "currentBlocker": "No real copying-risk pass exists yet.",
+      "prompt": "Confirm no external source body text is copied into notes or lesson prose.",
+      "mustMention": [
+        "no source-body copying",
+        "original wording"
+      ],
+      "roleHintFamilies": [
+        "BEA",
+        "BLS",
+        "CFTC",
+        "SEC",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0087",
+      "riskLevel": "high",
+      "field": "humanReviewerInitials",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has actually completed the required review work for the lesson.",
+      "currentBlocker": "Human initials must remain blank until real review work is complete.",
+      "prompt": "Fill only after real human review work is performed.",
+      "mustMention": [
+        "human initials only"
+      ],
+      "roleHintFamilies": [
+        "BEA",
+        "BLS",
+        "CFTC",
+        "SEC",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0159",
+      "riskLevel": "medium",
+      "field": "originalRewriteNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has decided the original education rewrite angle and confirmed it remains structural_draft.",
+      "currentBlocker": "No real human rewrite-angle decision exists yet.",
+      "prompt": "Describe the original education rewrite angle after source roles are confirmed.",
+      "mustMention": [
+        "original wording",
+        "observation or education practice",
+        "structural_draft"
+      ],
+      "roleHintFamilies": [
+        "BEA",
+        "Investor.gov",
+        "SEC",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0159",
+      "riskLevel": "medium",
+      "field": "sourceFitNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has confirmed each source family as direct evidence, boundary-only context, or unsuitable.",
+      "currentBlocker": "Source roles are still prompts and require human confirmation.",
+      "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval.",
+      "mustMention": [],
+      "roleHintFamilies": [
+        "BEA",
+        "Investor.gov",
+        "SEC",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0159",
+      "riskLevel": "medium",
+      "field": "factCheckNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked claims against source metadata and marked unresolved claims to remove.",
+      "currentBlocker": "No real fact-check pass exists yet.",
+      "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles.",
+      "mustMention": [
+        "checked claims",
+        "unresolved claims",
+        "removed or retained"
+      ],
+      "roleHintFamilies": [
+        "BEA",
+        "Investor.gov",
+        "SEC",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0159",
+      "riskLevel": "medium",
+      "field": "boundaryCheckNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+      "currentBlocker": "No real safety-boundary pass exists yet.",
+      "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+      "mustMention": [
+        "education-only",
+        "non-production",
+        "no advice",
+        "no signal",
+        "no real-money guidance"
+      ],
+      "roleHintFamilies": [
+        "BEA",
+        "Investor.gov",
+        "SEC",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0159",
+      "riskLevel": "medium",
+      "field": "copyingRiskNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked notes and rewrite prose for no copied external source body text.",
+      "currentBlocker": "No real copying-risk pass exists yet.",
+      "prompt": "Confirm no external source body text is copied into notes or lesson prose.",
+      "mustMention": [
+        "no source-body copying",
+        "original wording"
+      ],
+      "roleHintFamilies": [
+        "BEA",
+        "Investor.gov",
+        "SEC",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0159",
+      "riskLevel": "medium",
+      "field": "humanReviewerInitials",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has actually completed the required review work for the lesson.",
+      "currentBlocker": "Human initials must remain blank until real review work is complete.",
+      "prompt": "Fill only after real human review work is performed.",
+      "mustMention": [
+        "human initials only"
+      ],
+      "roleHintFamilies": [
+        "BEA",
+        "Investor.gov",
+        "SEC",
+        "Treasury"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0011",
+      "riskLevel": "low",
+      "field": "originalRewriteNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has decided the original education rewrite angle and confirmed it remains structural_draft.",
+      "currentBlocker": "No real human rewrite-angle decision exists yet.",
+      "prompt": "Describe the original education rewrite angle after source roles are confirmed.",
+      "mustMention": [
+        "original wording",
+        "observation or education practice",
+        "structural_draft"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "Federal Reserve",
+        "SEC",
+        "nist.gov"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0011",
+      "riskLevel": "low",
+      "field": "sourceFitNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has confirmed each source family as direct evidence, boundary-only context, or unsuitable.",
+      "currentBlocker": "Source roles are still prompts and require human confirmation.",
+      "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval.",
+      "mustMention": [],
+      "roleHintFamilies": [
+        "CFTC",
+        "Federal Reserve",
+        "SEC",
+        "nist.gov"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0011",
+      "riskLevel": "low",
+      "field": "factCheckNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked claims against source metadata and marked unresolved claims to remove.",
+      "currentBlocker": "No real fact-check pass exists yet.",
+      "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles.",
+      "mustMention": [
+        "checked claims",
+        "unresolved claims",
+        "removed or retained"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "Federal Reserve",
+        "SEC",
+        "nist.gov"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0011",
+      "riskLevel": "low",
+      "field": "boundaryCheckNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+      "currentBlocker": "No real safety-boundary pass exists yet.",
+      "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+      "mustMention": [
+        "education-only",
+        "non-production",
+        "no advice",
+        "no signal",
+        "no real-money guidance"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "Federal Reserve",
+        "SEC",
+        "nist.gov"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0011",
+      "riskLevel": "low",
+      "field": "copyingRiskNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked notes and rewrite prose for no copied external source body text.",
+      "currentBlocker": "No real copying-risk pass exists yet.",
+      "prompt": "Confirm no external source body text is copied into notes or lesson prose.",
+      "mustMention": [
+        "no source-body copying",
+        "original wording"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "Federal Reserve",
+        "SEC",
+        "nist.gov"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0011",
+      "riskLevel": "low",
+      "field": "humanReviewerInitials",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has actually completed the required review work for the lesson.",
+      "currentBlocker": "Human initials must remain blank until real review work is complete.",
+      "prompt": "Fill only after real human review work is performed.",
+      "mustMention": [
+        "human initials only"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "Federal Reserve",
+        "SEC",
+        "nist.gov"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0059",
+      "riskLevel": "low",
+      "field": "originalRewriteNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has decided the original education rewrite angle and confirmed it remains structural_draft.",
+      "currentBlocker": "No real human rewrite-angle decision exists yet.",
+      "prompt": "Describe the original education rewrite angle after source roles are confirmed.",
+      "mustMention": [
+        "original wording",
+        "observation or education practice",
+        "structural_draft"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "Investor.gov",
+        "SEC"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0059",
+      "riskLevel": "low",
+      "field": "sourceFitNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has confirmed each source family as direct evidence, boundary-only context, or unsuitable.",
+      "currentBlocker": "Source roles are still prompts and require human confirmation.",
+      "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval.",
+      "mustMention": [],
+      "roleHintFamilies": [
+        "CFTC",
+        "Investor.gov",
+        "SEC"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0059",
+      "riskLevel": "low",
+      "field": "factCheckNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked claims against source metadata and marked unresolved claims to remove.",
+      "currentBlocker": "No real fact-check pass exists yet.",
+      "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles.",
+      "mustMention": [
+        "checked claims",
+        "unresolved claims",
+        "removed or retained"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "Investor.gov",
+        "SEC"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0059",
+      "riskLevel": "low",
+      "field": "boundaryCheckNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+      "currentBlocker": "No real safety-boundary pass exists yet.",
+      "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+      "mustMention": [
+        "education-only",
+        "non-production",
+        "no advice",
+        "no signal",
+        "no real-money guidance"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "Investor.gov",
+        "SEC"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0059",
+      "riskLevel": "low",
+      "field": "copyingRiskNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked notes and rewrite prose for no copied external source body text.",
+      "currentBlocker": "No real copying-risk pass exists yet.",
+      "prompt": "Confirm no external source body text is copied into notes or lesson prose.",
+      "mustMention": [
+        "no source-body copying",
+        "original wording"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "Investor.gov",
+        "SEC"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0059",
+      "riskLevel": "low",
+      "field": "humanReviewerInitials",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has actually completed the required review work for the lesson.",
+      "currentBlocker": "Human initials must remain blank until real review work is complete.",
+      "prompt": "Fill only after real human review work is performed.",
+      "mustMention": [
+        "human initials only"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "Investor.gov",
+        "SEC"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0167",
+      "riskLevel": "low",
+      "field": "originalRewriteNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has decided the original education rewrite angle and confirmed it remains structural_draft.",
+      "currentBlocker": "No real human rewrite-angle decision exists yet.",
+      "prompt": "Describe the original education rewrite angle after source roles are confirmed.",
+      "mustMention": [
+        "original wording",
+        "observation or education practice",
+        "structural_draft"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "Investor.gov",
+        "SEC"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0167",
+      "riskLevel": "low",
+      "field": "sourceFitNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has confirmed each source family as direct evidence, boundary-only context, or unsuitable.",
+      "currentBlocker": "Source roles are still prompts and require human confirmation.",
+      "prompt": "Record human-confirmed direct vs boundary-only roles. Start from the role hints, but do not treat them as approval.",
+      "mustMention": [],
+      "roleHintFamilies": [
+        "CFTC",
+        "Investor.gov",
+        "SEC"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0167",
+      "riskLevel": "low",
+      "field": "factCheckNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked claims against source metadata and marked unresolved claims to remove.",
+      "currentBlocker": "No real fact-check pass exists yet.",
+      "prompt": "List only metadata-supported claims and unresolved claims to remove; do not invent facts from source titles.",
+      "mustMention": [
+        "checked claims",
+        "unresolved claims",
+        "removed or retained"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "Investor.gov",
+        "SEC"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0167",
+      "riskLevel": "low",
+      "field": "boundaryCheckNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+      "currentBlocker": "No real safety-boundary pass exists yet.",
+      "prompt": "Confirm no advice, signal, performance, broker/order, automation, production, or real-money wording.",
+      "mustMention": [
+        "education-only",
+        "non-production",
+        "no advice",
+        "no signal",
+        "no real-money guidance"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "Investor.gov",
+        "SEC"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0167",
+      "riskLevel": "low",
+      "field": "copyingRiskNotes",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has checked notes and rewrite prose for no copied external source body text.",
+      "currentBlocker": "No real copying-risk pass exists yet.",
+      "prompt": "Confirm no external source body text is copied into notes or lesson prose.",
+      "mustMention": [
+        "no source-body copying",
+        "original wording"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "Investor.gov",
+        "SEC"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    },
+    {
+      "batchId": "rewrite_batch_05",
+      "lessonId": "lesson_knv2_0167",
+      "riskLevel": "low",
+      "field": "humanReviewerInitials",
+      "status": "blocked_until_real_human_review",
+      "readyWhen": "Reviewer has actually completed the required review work for the lesson.",
+      "currentBlocker": "Human initials must remain blank until real review work is complete.",
+      "prompt": "Fill only after real human review work is performed.",
+      "mustMention": [
+        "human initials only"
+      ],
+      "roleHintFamilies": [
+        "CFTC",
+        "Investor.gov",
+        "SEC"
+      ],
+      "directCandidatesToConfirm": [],
+      "disallowedNoteContent": [
+        "approval or final-ready wording",
+        "buy/sell/hold or trading signals",
+        "return, win-rate, or backtest-profit claims",
+        "broker/order/automation workflow",
+        "real-money guidance",
+        "copied external source body text"
+      ]
+    }
+  ],
+  "stopConditions": [
+    "Stop if any required note field is prefilled before real human review.",
+    "Stop if docs/LESSON_BATCH_REVIEW_STATUS.json appears without explicit human note-taking.",
+    "Stop if any field asks for approval, release, commercial_ready, production readiness, or grade promotion.",
+    "Stop if any note suggests buy/sell/hold advice, trading signals, broker/order workflow, automation, performance claims, or real-money guidance.",
+    "Stop if any note copies external source body text.",
+    "Stop if yellow, red, or research_only sources are proposed as learner-facing evidence."
+  ],
+  "sourceReports": {
+    "noteStarter": "docs/FIRST_REVIEWER_HUMAN_NOTE_STARTER_TEMPLATE.json",
+    "sourceRoleDecisionTable": "docs/FIRST_REVIEWER_SOURCE_ROLE_DECISION_TABLE.json",
+    "progressDashboard": "docs/FIRST_REVIEWER_PROGRESS_DASHBOARD.json",
+    "creationChecklist": "docs/FIRST_REVIEWER_REAL_OVERLAY_CREATION_CHECKLIST.json",
+    "noteQualityLint": "docs/REVIEWER_NOTE_QUALITY_LINT.json"
+  },
+  "boundary": "This matrix is reviewer-facing note readiness scaffolding only. It does not create docs/LESSON_BATCH_REVIEW_STATUS.json, fill human notes, approve lessons, publish learner-facing content, change lesson grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, or guide real-money decisions."
+}

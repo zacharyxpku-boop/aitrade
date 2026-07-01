@@ -1,0 +1,1259 @@
+{
+  "generatedAt": "2026-06-22T05:58:48.742Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "cockpitStatus": "high_risk_review_cockpit_ready_blocked_on_real_input",
+  "cockpitMode": "codex_self_review_public_grounding_real_reviewer_queue",
+  "sourceCodexSelfReview": "docs/LOCAL_COURSE_HIGH_RISK_SELF_REVIEW_OVERLAY.json",
+  "sourcePublicGroundingMatrix": "docs/LOCAL_COURSE_HIGH_RISK_PUBLIC_GROUNDING_MATRIX.json",
+  "sourceRealReviewerOverlayStarter": "docs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_STARTER.json",
+  "sourceRealReviewerInputValidation": "docs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_INPUT_VALIDATION.json",
+  "lessonCount": 12,
+  "modules": 4,
+  "lessonsWithCodexSelfReview": 12,
+  "lessonsWithPublicGrounding": 12,
+  "lessonsMissingPublicGrounding": 0,
+  "expectedReviewerNotes": 72,
+  "codexSelfReviewNotes": 72,
+  "readyReviewerNotes": 0,
+  "blockedReviewerNotes": 72,
+  "directSourceDecisionCount": 5,
+  "readyDirectSourceDecisions": 0,
+  "blockedDirectSourceDecisions": 5,
+  "readyLessons": 0,
+  "blockedLessons": 12,
+  "realHumanInputEntries": 0,
+  "learnerCitationApprovedLessons": 0,
+  "learnerCitationApprovedDirectSources": 0,
+  "writeAllowedNow": false,
+  "manualAuthorizationRequired": true,
+  "approvalGatePassed": false,
+  "moduleRows": [
+    {
+      "module": "突破",
+      "lessons": 4,
+      "uniqueNodes": 4,
+      "codexSelfReviewNotes": 24,
+      "codexReleaseBlockingNotes": 16,
+      "readyReviewerNotes": 0,
+      "requiredReviewerNotes": 24,
+      "blockedReviewerNotes": 24,
+      "directSourceDecisions": 2,
+      "readyDirectSourceDecisions": 0,
+      "wikipediaRefCount": 16,
+      "publicContextRefCount": 8,
+      "status": "blocked_missing_real_reviewer_input",
+      "firstCandidateId": "local_course_rewrite_batch_04_10",
+      "nextGate": "fill_real_reviewer_notes_and_direct_source_decisions_then_revalidate"
+    },
+    {
+      "module": "市场结构",
+      "lessons": 4,
+      "uniqueNodes": 4,
+      "codexSelfReviewNotes": 24,
+      "codexReleaseBlockingNotes": 16,
+      "readyReviewerNotes": 0,
+      "requiredReviewerNotes": 24,
+      "blockedReviewerNotes": 24,
+      "directSourceDecisions": 2,
+      "readyDirectSourceDecisions": 0,
+      "wikipediaRefCount": 16,
+      "publicContextRefCount": 8,
+      "status": "blocked_missing_real_reviewer_input",
+      "firstCandidateId": "local_course_rewrite_batch_01_03",
+      "nextGate": "fill_real_reviewer_notes_and_direct_source_decisions_then_revalidate"
+    },
+    {
+      "module": "趋势",
+      "lessons": 2,
+      "uniqueNodes": 2,
+      "codexSelfReviewNotes": 12,
+      "codexReleaseBlockingNotes": 8,
+      "readyReviewerNotes": 0,
+      "requiredReviewerNotes": 12,
+      "blockedReviewerNotes": 12,
+      "directSourceDecisions": 1,
+      "readyDirectSourceDecisions": 0,
+      "wikipediaRefCount": 8,
+      "publicContextRefCount": 4,
+      "status": "blocked_missing_real_reviewer_input",
+      "firstCandidateId": "local_course_rewrite_batch_01_07",
+      "nextGate": "fill_real_reviewer_notes_and_direct_source_decisions_then_revalidate"
+    },
+    {
+      "module": "反转",
+      "lessons": 2,
+      "uniqueNodes": 2,
+      "codexSelfReviewNotes": 12,
+      "codexReleaseBlockingNotes": 8,
+      "readyReviewerNotes": 0,
+      "requiredReviewerNotes": 12,
+      "blockedReviewerNotes": 12,
+      "directSourceDecisions": 0,
+      "readyDirectSourceDecisions": 0,
+      "wikipediaRefCount": 8,
+      "publicContextRefCount": 4,
+      "status": "blocked_missing_real_reviewer_input",
+      "firstCandidateId": "local_course_rewrite_batch_01_13",
+      "nextGate": "fill_real_reviewer_notes_and_direct_source_decisions_then_revalidate"
+    }
+  ],
+  "lessonRows": [
+    {
+      "queueRank": 1,
+      "candidateId": "local_course_rewrite_batch_04_10",
+      "overlayId": "overlay_local_course_rewrite_batch_04_10",
+      "batchId": "local_course_rewrite_batch_04",
+      "nodeId": "knv2_0029",
+      "lessonId": "lesson_knv2_0029",
+      "module": "突破",
+      "topic": "假突破",
+      "sourceFitScore": 96,
+      "maxSourceOverlap": 0.0506,
+      "localEvidenceCount": 3,
+      "codexSelfReviewStatus": "codex_self_review_complete_not_approved",
+      "codexSelfReviewNotes": 6,
+      "codexReleaseBlockingNotes": 4,
+      "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+      "wikipediaRefCount": 4,
+      "publicContextRefCount": 2,
+      "selectedPublicRefCount": 6,
+      "publicRefSamples": [
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "DeepSupp: Attention-Driven Correlation Pattern Analysis for Dynamic Time Series Support and Resistance Levels Identification",
+          "url": "https://arxiv.org/abs/2507.01971v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        },
+        {
+          "name": "Evidence and Behaviour of Support and Resistance Levels in Financial Time Series",
+          "url": "https://arxiv.org/abs/2101.07410v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        }
+      ],
+      "validationStatus": "blocked_missing_real_reviewer_input",
+      "realReviewerNotesReady": 0,
+      "realReviewerNotesRequired": 6,
+      "blockedReviewerNotes": 6,
+      "missingFieldCount": 30,
+      "missingFields": [
+        "six_ready_real_reviewer_notes"
+      ],
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "releaseBlocker": true,
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate",
+      "nextReviewerAction": "Open this lesson, inspect Codex self-review and public references, then fill six real reviewer notes in the human-owned draft input copy."
+    },
+    {
+      "queueRank": 2,
+      "candidateId": "local_course_rewrite_batch_05_10",
+      "overlayId": "overlay_local_course_rewrite_batch_05_10",
+      "batchId": "local_course_rewrite_batch_05",
+      "nodeId": "knv2_0089",
+      "lessonId": "lesson_knv2_0089",
+      "module": "突破",
+      "topic": "假突破",
+      "sourceFitScore": 96,
+      "maxSourceOverlap": 0.0506,
+      "localEvidenceCount": 3,
+      "codexSelfReviewStatus": "codex_self_review_complete_not_approved",
+      "codexSelfReviewNotes": 6,
+      "codexReleaseBlockingNotes": 4,
+      "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+      "wikipediaRefCount": 4,
+      "publicContextRefCount": 2,
+      "selectedPublicRefCount": 6,
+      "publicRefSamples": [
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "DeepSupp: Attention-Driven Correlation Pattern Analysis for Dynamic Time Series Support and Resistance Levels Identification",
+          "url": "https://arxiv.org/abs/2507.01971v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        },
+        {
+          "name": "Evidence and Behaviour of Support and Resistance Levels in Financial Time Series",
+          "url": "https://arxiv.org/abs/2101.07410v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        }
+      ],
+      "validationStatus": "blocked_missing_real_reviewer_input",
+      "realReviewerNotesReady": 0,
+      "realReviewerNotesRequired": 6,
+      "blockedReviewerNotes": 6,
+      "missingFieldCount": 30,
+      "missingFields": [
+        "six_ready_real_reviewer_notes"
+      ],
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "releaseBlocker": true,
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate",
+      "nextReviewerAction": "Open this lesson, inspect Codex self-review and public references, then fill six real reviewer notes in the human-owned draft input copy."
+    },
+    {
+      "queueRank": 3,
+      "candidateId": "local_course_rewrite_batch_01_03",
+      "overlayId": "overlay_local_course_rewrite_batch_01_03",
+      "batchId": "local_course_rewrite_batch_01",
+      "nodeId": "knv2_0002",
+      "lessonId": "lesson_knv2_0002",
+      "module": "市场结构",
+      "topic": "高低点",
+      "sourceFitScore": 96,
+      "maxSourceOverlap": 0.0503,
+      "localEvidenceCount": 3,
+      "codexSelfReviewStatus": "codex_self_review_complete_not_approved",
+      "codexSelfReviewNotes": 6,
+      "codexReleaseBlockingNotes": 4,
+      "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+      "wikipediaRefCount": 4,
+      "publicContextRefCount": 2,
+      "selectedPublicRefCount": 6,
+      "publicRefSamples": [
+        {
+          "name": "Wikipedia: High-frequency trading",
+          "url": "https://en.wikipedia.org/wiki/High-frequency_trading",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Limit Order Books",
+          "url": "https://arxiv.org/abs/1012.0349v4",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        },
+        {
+          "name": "Testing if the market microstructure noise is fully explained by the informational content of some variables from the limit order book",
+          "url": "https://arxiv.org/abs/1709.02502v4",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        }
+      ],
+      "validationStatus": "blocked_missing_real_reviewer_input",
+      "realReviewerNotesReady": 0,
+      "realReviewerNotesRequired": 6,
+      "blockedReviewerNotes": 6,
+      "missingFieldCount": 30,
+      "missingFields": [
+        "six_ready_real_reviewer_notes"
+      ],
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "releaseBlocker": true,
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate",
+      "nextReviewerAction": "Open this lesson, inspect Codex self-review and public references, then fill six real reviewer notes in the human-owned draft input copy."
+    },
+    {
+      "queueRank": 4,
+      "candidateId": "local_course_rewrite_batch_01_04",
+      "overlayId": "overlay_local_course_rewrite_batch_01_04",
+      "batchId": "local_course_rewrite_batch_01",
+      "nodeId": "knv2_0062",
+      "lessonId": "lesson_knv2_0062",
+      "module": "市场结构",
+      "topic": "高低点",
+      "sourceFitScore": 96,
+      "maxSourceOverlap": 0.0503,
+      "localEvidenceCount": 3,
+      "codexSelfReviewStatus": "codex_self_review_complete_not_approved",
+      "codexSelfReviewNotes": 6,
+      "codexReleaseBlockingNotes": 4,
+      "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+      "wikipediaRefCount": 4,
+      "publicContextRefCount": 2,
+      "selectedPublicRefCount": 6,
+      "publicRefSamples": [
+        {
+          "name": "Wikipedia: High-frequency trading",
+          "url": "https://en.wikipedia.org/wiki/High-frequency_trading",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Limit Order Books",
+          "url": "https://arxiv.org/abs/1012.0349v4",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        },
+        {
+          "name": "Testing if the market microstructure noise is fully explained by the informational content of some variables from the limit order book",
+          "url": "https://arxiv.org/abs/1709.02502v4",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        }
+      ],
+      "validationStatus": "blocked_missing_real_reviewer_input",
+      "realReviewerNotesReady": 0,
+      "realReviewerNotesRequired": 6,
+      "blockedReviewerNotes": 6,
+      "missingFieldCount": 30,
+      "missingFields": [
+        "six_ready_real_reviewer_notes"
+      ],
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "releaseBlocker": true,
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate",
+      "nextReviewerAction": "Open this lesson, inspect Codex self-review and public references, then fill six real reviewer notes in the human-owned draft input copy."
+    },
+    {
+      "queueRank": 5,
+      "candidateId": "local_course_rewrite_batch_01_07",
+      "overlayId": "overlay_local_course_rewrite_batch_01_07",
+      "batchId": "local_course_rewrite_batch_01",
+      "nodeId": "knv2_0016",
+      "lessonId": "lesson_knv2_0016",
+      "module": "趋势",
+      "topic": "趋势回调",
+      "sourceFitScore": 96,
+      "maxSourceOverlap": 0.0503,
+      "localEvidenceCount": 3,
+      "codexSelfReviewStatus": "codex_self_review_complete_not_approved",
+      "codexSelfReviewNotes": 6,
+      "codexReleaseBlockingNotes": 4,
+      "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+      "wikipediaRefCount": 4,
+      "publicContextRefCount": 2,
+      "selectedPublicRefCount": 6,
+      "publicRefSamples": [
+        {
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Dow theory",
+          "url": "https://en.wikipedia.org/wiki/Dow_theory",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Generating Alpha: A Hybrid AI-Driven Trading System Integrating Technical Analysis, Machine Learning and Financial Sentiment for Regime-Adaptive Equity Strategies",
+          "url": "https://arxiv.org/abs/2601.19504v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        },
+        {
+          "name": "Information ratio analysis of momentum strategies",
+          "url": "https://arxiv.org/abs/1402.3030v2",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        }
+      ],
+      "validationStatus": "blocked_missing_real_reviewer_input",
+      "realReviewerNotesReady": 0,
+      "realReviewerNotesRequired": 6,
+      "blockedReviewerNotes": 6,
+      "missingFieldCount": 30,
+      "missingFields": [
+        "six_ready_real_reviewer_notes"
+      ],
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "releaseBlocker": true,
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate",
+      "nextReviewerAction": "Open this lesson, inspect Codex self-review and public references, then fill six real reviewer notes in the human-owned draft input copy."
+    },
+    {
+      "queueRank": 6,
+      "candidateId": "local_course_rewrite_batch_01_08",
+      "overlayId": "overlay_local_course_rewrite_batch_01_08",
+      "batchId": "local_course_rewrite_batch_01",
+      "nodeId": "knv2_0076",
+      "lessonId": "lesson_knv2_0076",
+      "module": "趋势",
+      "topic": "趋势回调",
+      "sourceFitScore": 96,
+      "maxSourceOverlap": 0.0503,
+      "localEvidenceCount": 3,
+      "codexSelfReviewStatus": "codex_self_review_complete_not_approved",
+      "codexSelfReviewNotes": 6,
+      "codexReleaseBlockingNotes": 4,
+      "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+      "wikipediaRefCount": 4,
+      "publicContextRefCount": 2,
+      "selectedPublicRefCount": 6,
+      "publicRefSamples": [
+        {
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Dow theory",
+          "url": "https://en.wikipedia.org/wiki/Dow_theory",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Generating Alpha: A Hybrid AI-Driven Trading System Integrating Technical Analysis, Machine Learning and Financial Sentiment for Regime-Adaptive Equity Strategies",
+          "url": "https://arxiv.org/abs/2601.19504v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        },
+        {
+          "name": "Information ratio analysis of momentum strategies",
+          "url": "https://arxiv.org/abs/1402.3030v2",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        }
+      ],
+      "validationStatus": "blocked_missing_real_reviewer_input",
+      "realReviewerNotesReady": 0,
+      "realReviewerNotesRequired": 6,
+      "blockedReviewerNotes": 6,
+      "missingFieldCount": 30,
+      "missingFields": [
+        "six_ready_real_reviewer_notes"
+      ],
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "releaseBlocker": true,
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate",
+      "nextReviewerAction": "Open this lesson, inspect Codex self-review and public references, then fill six real reviewer notes in the human-owned draft input copy."
+    },
+    {
+      "queueRank": 7,
+      "candidateId": "local_course_rewrite_batch_01_09",
+      "overlayId": "overlay_local_course_rewrite_batch_01_09",
+      "batchId": "local_course_rewrite_batch_01",
+      "nodeId": "knv2_0053",
+      "lessonId": "lesson_knv2_0053",
+      "module": "突破",
+      "topic": "突破失败",
+      "sourceFitScore": 96,
+      "maxSourceOverlap": 0.0503,
+      "localEvidenceCount": 3,
+      "codexSelfReviewStatus": "codex_self_review_complete_not_approved",
+      "codexSelfReviewNotes": 6,
+      "codexReleaseBlockingNotes": 4,
+      "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+      "wikipediaRefCount": 4,
+      "publicContextRefCount": 2,
+      "selectedPublicRefCount": 6,
+      "publicRefSamples": [
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "DeepSupp: Attention-Driven Correlation Pattern Analysis for Dynamic Time Series Support and Resistance Levels Identification",
+          "url": "https://arxiv.org/abs/2507.01971v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        },
+        {
+          "name": "Evidence and Behaviour of Support and Resistance Levels in Financial Time Series",
+          "url": "https://arxiv.org/abs/2101.07410v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        }
+      ],
+      "validationStatus": "blocked_missing_real_reviewer_input",
+      "realReviewerNotesReady": 0,
+      "realReviewerNotesRequired": 6,
+      "blockedReviewerNotes": 6,
+      "missingFieldCount": 30,
+      "missingFields": [
+        "six_ready_real_reviewer_notes"
+      ],
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "releaseBlocker": true,
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate",
+      "nextReviewerAction": "Open this lesson, inspect Codex self-review and public references, then fill six real reviewer notes in the human-owned draft input copy."
+    },
+    {
+      "queueRank": 8,
+      "candidateId": "local_course_rewrite_batch_01_10",
+      "overlayId": "overlay_local_course_rewrite_batch_01_10",
+      "batchId": "local_course_rewrite_batch_01",
+      "nodeId": "knv2_0113",
+      "lessonId": "lesson_knv2_0113",
+      "module": "突破",
+      "topic": "突破失败",
+      "sourceFitScore": 96,
+      "maxSourceOverlap": 0.0503,
+      "localEvidenceCount": 3,
+      "codexSelfReviewStatus": "codex_self_review_complete_not_approved",
+      "codexSelfReviewNotes": 6,
+      "codexReleaseBlockingNotes": 4,
+      "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+      "wikipediaRefCount": 4,
+      "publicContextRefCount": 2,
+      "selectedPublicRefCount": 6,
+      "publicRefSamples": [
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "DeepSupp: Attention-Driven Correlation Pattern Analysis for Dynamic Time Series Support and Resistance Levels Identification",
+          "url": "https://arxiv.org/abs/2507.01971v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        },
+        {
+          "name": "Evidence and Behaviour of Support and Resistance Levels in Financial Time Series",
+          "url": "https://arxiv.org/abs/2101.07410v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        }
+      ],
+      "validationStatus": "blocked_missing_real_reviewer_input",
+      "realReviewerNotesReady": 0,
+      "realReviewerNotesRequired": 6,
+      "blockedReviewerNotes": 6,
+      "missingFieldCount": 30,
+      "missingFields": [
+        "six_ready_real_reviewer_notes"
+      ],
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "releaseBlocker": true,
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate",
+      "nextReviewerAction": "Open this lesson, inspect Codex self-review and public references, then fill six real reviewer notes in the human-owned draft input copy."
+    },
+    {
+      "queueRank": 9,
+      "candidateId": "local_course_rewrite_batch_01_13",
+      "overlayId": "overlay_local_course_rewrite_batch_01_13",
+      "batchId": "local_course_rewrite_batch_01",
+      "nodeId": "knv2_0055",
+      "lessonId": "lesson_knv2_0055",
+      "module": "反转",
+      "topic": "反转失败",
+      "sourceFitScore": 96,
+      "maxSourceOverlap": 0.0503,
+      "localEvidenceCount": 3,
+      "codexSelfReviewStatus": "codex_self_review_complete_not_approved",
+      "codexSelfReviewNotes": 6,
+      "codexReleaseBlockingNotes": 4,
+      "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+      "wikipediaRefCount": 4,
+      "publicContextRefCount": 2,
+      "selectedPublicRefCount": 6,
+      "publicRefSamples": [
+        {
+          "name": "Wikipedia: Double top and double bottom",
+          "url": "https://en.wikipedia.org/wiki/Double_top_and_double_bottom",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Stock Chart Pattern recognition with Deep Learning",
+          "url": "https://arxiv.org/abs/1808.00418v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        },
+        {
+          "name": "learn-crypto-trading/learn-crypto-trading.github.io README",
+          "url": "https://github.com/learn-crypto-trading/learn-crypto-trading.github.io",
+          "family": "Permissive/Open Source",
+          "excerptPolicy": "cite_and_paraphrase_for_original_lesson",
+          "groundingRole": "open_research_or_public_context_reference"
+        }
+      ],
+      "validationStatus": "blocked_missing_real_reviewer_input",
+      "realReviewerNotesReady": 0,
+      "realReviewerNotesRequired": 6,
+      "blockedReviewerNotes": 6,
+      "missingFieldCount": 30,
+      "missingFields": [
+        "six_ready_real_reviewer_notes"
+      ],
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "releaseBlocker": true,
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate",
+      "nextReviewerAction": "Open this lesson, inspect Codex self-review and public references, then fill six real reviewer notes in the human-owned draft input copy."
+    },
+    {
+      "queueRank": 10,
+      "candidateId": "local_course_rewrite_batch_01_14",
+      "overlayId": "overlay_local_course_rewrite_batch_01_14",
+      "batchId": "local_course_rewrite_batch_01",
+      "nodeId": "knv2_0115",
+      "lessonId": "lesson_knv2_0115",
+      "module": "反转",
+      "topic": "反转失败",
+      "sourceFitScore": 96,
+      "maxSourceOverlap": 0.0503,
+      "localEvidenceCount": 3,
+      "codexSelfReviewStatus": "codex_self_review_complete_not_approved",
+      "codexSelfReviewNotes": 6,
+      "codexReleaseBlockingNotes": 4,
+      "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+      "wikipediaRefCount": 4,
+      "publicContextRefCount": 2,
+      "selectedPublicRefCount": 6,
+      "publicRefSamples": [
+        {
+          "name": "Wikipedia: Double top and double bottom",
+          "url": "https://en.wikipedia.org/wiki/Double_top_and_double_bottom",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Stock Chart Pattern recognition with Deep Learning",
+          "url": "https://arxiv.org/abs/1808.00418v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        },
+        {
+          "name": "learn-crypto-trading/learn-crypto-trading.github.io README",
+          "url": "https://github.com/learn-crypto-trading/learn-crypto-trading.github.io",
+          "family": "Permissive/Open Source",
+          "excerptPolicy": "cite_and_paraphrase_for_original_lesson",
+          "groundingRole": "open_research_or_public_context_reference"
+        }
+      ],
+      "validationStatus": "blocked_missing_real_reviewer_input",
+      "realReviewerNotesReady": 0,
+      "realReviewerNotesRequired": 6,
+      "blockedReviewerNotes": 6,
+      "missingFieldCount": 30,
+      "missingFields": [
+        "six_ready_real_reviewer_notes"
+      ],
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "releaseBlocker": true,
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate",
+      "nextReviewerAction": "Open this lesson, inspect Codex self-review and public references, then fill six real reviewer notes in the human-owned draft input copy."
+    },
+    {
+      "queueRank": 11,
+      "candidateId": "local_course_rewrite_batch_02_03",
+      "overlayId": "overlay_local_course_rewrite_batch_02_03",
+      "batchId": "local_course_rewrite_batch_02",
+      "nodeId": "knv2_0122",
+      "lessonId": "lesson_knv2_0122",
+      "module": "市场结构",
+      "topic": "高低点",
+      "sourceFitScore": 96,
+      "maxSourceOverlap": 0.0503,
+      "localEvidenceCount": 3,
+      "codexSelfReviewStatus": "codex_self_review_complete_not_approved",
+      "codexSelfReviewNotes": 6,
+      "codexReleaseBlockingNotes": 4,
+      "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+      "wikipediaRefCount": 4,
+      "publicContextRefCount": 2,
+      "selectedPublicRefCount": 6,
+      "publicRefSamples": [
+        {
+          "name": "Wikipedia: High-frequency trading",
+          "url": "https://en.wikipedia.org/wiki/High-frequency_trading",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Limit Order Books",
+          "url": "https://arxiv.org/abs/1012.0349v4",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        },
+        {
+          "name": "Testing if the market microstructure noise is fully explained by the informational content of some variables from the limit order book",
+          "url": "https://arxiv.org/abs/1709.02502v4",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        }
+      ],
+      "validationStatus": "blocked_missing_real_reviewer_input",
+      "realReviewerNotesReady": 0,
+      "realReviewerNotesRequired": 6,
+      "blockedReviewerNotes": 6,
+      "missingFieldCount": 30,
+      "missingFields": [
+        "six_ready_real_reviewer_notes"
+      ],
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "releaseBlocker": true,
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate",
+      "nextReviewerAction": "Open this lesson, inspect Codex self-review and public references, then fill six real reviewer notes in the human-owned draft input copy."
+    },
+    {
+      "queueRank": 12,
+      "candidateId": "local_course_rewrite_batch_02_04",
+      "overlayId": "overlay_local_course_rewrite_batch_02_04",
+      "batchId": "local_course_rewrite_batch_02",
+      "nodeId": "knv2_0182",
+      "lessonId": "lesson_knv2_0182",
+      "module": "市场结构",
+      "topic": "高低点",
+      "sourceFitScore": 96,
+      "maxSourceOverlap": 0.0503,
+      "localEvidenceCount": 3,
+      "codexSelfReviewStatus": "codex_self_review_complete_not_approved",
+      "codexSelfReviewNotes": 6,
+      "codexReleaseBlockingNotes": 4,
+      "publicGroundingStatus": "mapped_for_reviewer_not_release_approved",
+      "wikipediaRefCount": 4,
+      "publicContextRefCount": 2,
+      "selectedPublicRefCount": 6,
+      "publicRefSamples": [
+        {
+          "name": "Wikipedia: High-frequency trading",
+          "url": "https://en.wikipedia.org/wiki/High-frequency_trading",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Limit Order Books",
+          "url": "https://arxiv.org/abs/1012.0349v4",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        },
+        {
+          "name": "Testing if the market microstructure noise is fully explained by the informational content of some variables from the limit order book",
+          "url": "https://arxiv.org/abs/1709.02502v4",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review",
+          "groundingRole": "open_research_or_public_context_reference"
+        }
+      ],
+      "validationStatus": "blocked_missing_real_reviewer_input",
+      "realReviewerNotesReady": 0,
+      "realReviewerNotesRequired": 6,
+      "blockedReviewerNotes": 6,
+      "missingFieldCount": 30,
+      "missingFields": [
+        "six_ready_real_reviewer_notes"
+      ],
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "releaseBlocker": true,
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate",
+      "nextReviewerAction": "Open this lesson, inspect Codex self-review and public references, then fill six real reviewer notes in the human-owned draft input copy."
+    }
+  ],
+  "directSourceRows": [
+    {
+      "queueRank": 1,
+      "sourceResolutionId": "direct_source_candidate_resolution_01",
+      "reviewerDecisionId": "real_direct_source_candidate_resolution_01",
+      "candidateId": "local_course_rewrite_batch_04_10",
+      "nodeId": "",
+      "module": "突破",
+      "topic": "假突破",
+      "privateOrDirectCandidateSource": "Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf",
+      "codexSelfReviewDecision": "keep_reviewer_only_background",
+      "publicReplacementRefCount": 3,
+      "publicReplacementRefSamples": [
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        }
+      ],
+      "validationStatus": "blocked_missing_real_reviewer_input",
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "decision",
+        "evidenceChecked",
+        "reviewerNote"
+      ],
+      "learnerCitationApproved": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "readyForApprovalGate": false,
+      "releaseBlocker": true,
+      "nextGate": "fill_direct_source_decision_then_revalidate",
+      "nextReviewerAction": "Decide whether this private/direct source stays reviewer-only or is replaced by public context references; do not promote private PDFs to learner citations."
+    },
+    {
+      "queueRank": 2,
+      "sourceResolutionId": "direct_source_candidate_resolution_02",
+      "reviewerDecisionId": "real_direct_source_candidate_resolution_02",
+      "candidateId": "local_course_rewrite_batch_05_10",
+      "nodeId": "",
+      "module": "突破",
+      "topic": "假突破",
+      "privateOrDirectCandidateSource": "Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf",
+      "codexSelfReviewDecision": "keep_reviewer_only_background",
+      "publicReplacementRefCount": 3,
+      "publicReplacementRefSamples": [
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        }
+      ],
+      "validationStatus": "blocked_missing_real_reviewer_input",
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "decision",
+        "evidenceChecked",
+        "reviewerNote"
+      ],
+      "learnerCitationApproved": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "readyForApprovalGate": false,
+      "releaseBlocker": true,
+      "nextGate": "fill_direct_source_decision_then_revalidate",
+      "nextReviewerAction": "Decide whether this private/direct source stays reviewer-only or is replaced by public context references; do not promote private PDFs to learner citations."
+    },
+    {
+      "queueRank": 3,
+      "sourceResolutionId": "direct_source_candidate_resolution_03",
+      "reviewerDecisionId": "real_direct_source_candidate_resolution_03",
+      "candidateId": "local_course_rewrite_batch_01_03",
+      "nodeId": "",
+      "module": "市场结构",
+      "topic": "高低点",
+      "privateOrDirectCandidateSource": "Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf",
+      "codexSelfReviewDecision": "keep_reviewer_only_background",
+      "publicReplacementRefCount": 3,
+      "publicReplacementRefSamples": [
+        {
+          "name": "Wikipedia: High-frequency trading",
+          "url": "https://en.wikipedia.org/wiki/High-frequency_trading",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Market maker",
+          "url": "https://en.wikipedia.org/wiki/Market_maker",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        }
+      ],
+      "validationStatus": "blocked_missing_real_reviewer_input",
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "decision",
+        "evidenceChecked",
+        "reviewerNote"
+      ],
+      "learnerCitationApproved": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "readyForApprovalGate": false,
+      "releaseBlocker": true,
+      "nextGate": "fill_direct_source_decision_then_revalidate",
+      "nextReviewerAction": "Decide whether this private/direct source stays reviewer-only or is replaced by public context references; do not promote private PDFs to learner citations."
+    },
+    {
+      "queueRank": 4,
+      "sourceResolutionId": "direct_source_candidate_resolution_04",
+      "reviewerDecisionId": "real_direct_source_candidate_resolution_04",
+      "candidateId": "local_course_rewrite_batch_01_04",
+      "nodeId": "",
+      "module": "市场结构",
+      "topic": "高低点",
+      "privateOrDirectCandidateSource": "Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf",
+      "codexSelfReviewDecision": "keep_reviewer_only_background",
+      "publicReplacementRefCount": 3,
+      "publicReplacementRefSamples": [
+        {
+          "name": "Wikipedia: High-frequency trading",
+          "url": "https://en.wikipedia.org/wiki/High-frequency_trading",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Market maker",
+          "url": "https://en.wikipedia.org/wiki/Market_maker",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        }
+      ],
+      "validationStatus": "blocked_missing_real_reviewer_input",
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "decision",
+        "evidenceChecked",
+        "reviewerNote"
+      ],
+      "learnerCitationApproved": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "readyForApprovalGate": false,
+      "releaseBlocker": true,
+      "nextGate": "fill_direct_source_decision_then_revalidate",
+      "nextReviewerAction": "Decide whether this private/direct source stays reviewer-only or is replaced by public context references; do not promote private PDFs to learner citations."
+    },
+    {
+      "queueRank": 5,
+      "sourceResolutionId": "direct_source_candidate_resolution_05",
+      "reviewerDecisionId": "real_direct_source_candidate_resolution_05",
+      "candidateId": "local_course_rewrite_batch_01_07",
+      "nodeId": "",
+      "module": "趋势",
+      "topic": "趋势回调",
+      "privateOrDirectCandidateSource": "Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf",
+      "codexSelfReviewDecision": "keep_reviewer_only_background",
+      "publicReplacementRefCount": 3,
+      "publicReplacementRefSamples": [
+        {
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Dow theory",
+          "url": "https://en.wikipedia.org/wiki/Dow_theory",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        },
+        {
+          "name": "Wikipedia: Trend following trading",
+          "url": "https://en.wikipedia.org/wiki/Trend_following_trading",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required",
+          "groundingRole": "terminology_taxonomy_and_boundary_reference"
+        }
+      ],
+      "validationStatus": "blocked_missing_real_reviewer_input",
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "decision",
+        "evidenceChecked",
+        "reviewerNote"
+      ],
+      "learnerCitationApproved": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "readyForApprovalGate": false,
+      "releaseBlocker": true,
+      "nextGate": "fill_direct_source_decision_then_revalidate",
+      "nextReviewerAction": "Decide whether this private/direct source stays reviewer-only or is replaced by public context references; do not promote private PDFs to learner citations."
+    }
+  ],
+  "reviewerQueue": [
+    {
+      "type": "lesson_notes",
+      "id": "local_course_rewrite_batch_04_10",
+      "module": "突破",
+      "topic": "假突破",
+      "blockedItems": 6,
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate"
+    },
+    {
+      "type": "lesson_notes",
+      "id": "local_course_rewrite_batch_05_10",
+      "module": "突破",
+      "topic": "假突破",
+      "blockedItems": 6,
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate"
+    },
+    {
+      "type": "lesson_notes",
+      "id": "local_course_rewrite_batch_01_03",
+      "module": "市场结构",
+      "topic": "高低点",
+      "blockedItems": 6,
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate"
+    },
+    {
+      "type": "lesson_notes",
+      "id": "local_course_rewrite_batch_01_04",
+      "module": "市场结构",
+      "topic": "高低点",
+      "blockedItems": 6,
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate"
+    },
+    {
+      "type": "lesson_notes",
+      "id": "local_course_rewrite_batch_01_07",
+      "module": "趋势",
+      "topic": "趋势回调",
+      "blockedItems": 6,
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate"
+    },
+    {
+      "type": "lesson_notes",
+      "id": "local_course_rewrite_batch_01_08",
+      "module": "趋势",
+      "topic": "趋势回调",
+      "blockedItems": 6,
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate"
+    },
+    {
+      "type": "lesson_notes",
+      "id": "local_course_rewrite_batch_01_09",
+      "module": "突破",
+      "topic": "突破失败",
+      "blockedItems": 6,
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate"
+    },
+    {
+      "type": "lesson_notes",
+      "id": "local_course_rewrite_batch_01_10",
+      "module": "突破",
+      "topic": "突破失败",
+      "blockedItems": 6,
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate"
+    },
+    {
+      "type": "lesson_notes",
+      "id": "local_course_rewrite_batch_01_13",
+      "module": "反转",
+      "topic": "反转失败",
+      "blockedItems": 6,
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate"
+    },
+    {
+      "type": "lesson_notes",
+      "id": "local_course_rewrite_batch_01_14",
+      "module": "反转",
+      "topic": "反转失败",
+      "blockedItems": 6,
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate"
+    },
+    {
+      "type": "lesson_notes",
+      "id": "local_course_rewrite_batch_02_03",
+      "module": "市场结构",
+      "topic": "高低点",
+      "blockedItems": 6,
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate"
+    },
+    {
+      "type": "lesson_notes",
+      "id": "local_course_rewrite_batch_02_04",
+      "module": "市场结构",
+      "topic": "高低点",
+      "blockedItems": 6,
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate"
+    },
+    {
+      "type": "direct_source_decision",
+      "id": "direct_source_candidate_resolution_01",
+      "module": "突破",
+      "topic": "假突破",
+      "blockedItems": 1,
+      "nextGate": "fill_direct_source_decision_then_revalidate"
+    },
+    {
+      "type": "direct_source_decision",
+      "id": "direct_source_candidate_resolution_02",
+      "module": "突破",
+      "topic": "假突破",
+      "blockedItems": 1,
+      "nextGate": "fill_direct_source_decision_then_revalidate"
+    },
+    {
+      "type": "direct_source_decision",
+      "id": "direct_source_candidate_resolution_03",
+      "module": "市场结构",
+      "topic": "高低点",
+      "blockedItems": 1,
+      "nextGate": "fill_direct_source_decision_then_revalidate"
+    },
+    {
+      "type": "direct_source_decision",
+      "id": "direct_source_candidate_resolution_04",
+      "module": "市场结构",
+      "topic": "高低点",
+      "blockedItems": 1,
+      "nextGate": "fill_direct_source_decision_then_revalidate"
+    },
+    {
+      "type": "direct_source_decision",
+      "id": "direct_source_candidate_resolution_05",
+      "module": "趋势",
+      "topic": "趋势回调",
+      "blockedItems": 1,
+      "nextGate": "fill_direct_source_decision_then_revalidate"
+    }
+  ],
+  "commands": [
+    "npm.cmd run build:local-course-high-risk-review-cockpit",
+    "npm.cmd run check:local-course-high-risk-review-cockpit",
+    "npm.cmd run check:local-course-high-risk-real-reviewer-overlay-input-validation",
+    "npm.cmd run verify"
+  ],
+  "completionRule": "This cockpit is complete when it shows all 12 high-risk lessons, 72 Codex self-review notes, 72 blocked real reviewer notes, and 5 blocked direct-source decisions with public grounding context. It does not complete human review or learner-facing approval.",
+  "boundary": "Reviewer-facing education-only cockpit. It organizes Codex self-review, public/Wikipedia grounding, and real reviewer queue status, but it does not generate real reviewer notes, approve learner-facing release, approve private PDFs as public citations, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, or production readiness."
+}

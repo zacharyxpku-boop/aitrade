@@ -1,0 +1,80 @@
+# First Reviewer Handoff
+
+This handoff gives a human reviewer the first safe operating path for the high-risk source-fit batches.
+It is not completed review, approval, learner-facing release, production readiness, or trading guidance.
+
+## Summary
+
+- Target batches: rewrite_batch_01, rewrite_batch_05
+- Worksheet lessons: 12
+- Draft lesson cards: 12
+- High-risk lessons: 2
+- Negative cases passing: 12/12
+- Status overlay present: false
+- Approval status: not_approved
+- Learner-facing release: false
+- educationOnly: true
+- productionReady: false
+
+## Files
+
+- Worksheet: `docs/FIRST_REVIEWER_WORKSHEET.md` - review source-fit order, high-risk questions, safe rewrite directions, and green-only source metadata
+- Draft status template: `docs/LESSON_BATCH_REVIEW_STATUS_DRAFT_TEMPLATE_FOR_BATCH_01_05.json` - copy only when a human reviewer is ready to create docs/LESSON_BATCH_REVIEW_STATUS.json and record real notes
+- Notes prompt: `docs/FIRST_REVIEWER_NOTES_PROMPT.md` - use before filling real notes to classify source roles, fact-check scope, boundary checks, and copying-risk checks
+- Note quality lint: `docs/REVIEWER_NOTE_QUALITY_LINT.md` - confirm future ready notes are specific, non-placeholder, non-approving, and free of unsafe trading/readiness wording
+- Real overlay creation checklist: `docs/FIRST_REVIEWER_REAL_OVERLAY_CREATION_CHECKLIST.md` - confirm dry-run, overwrite protection, blank-note readiness, and explicit human-decision requirements before creating the real reviewer status overlay
+- Completion audit: `docs/LESSON_BATCH_COMPLETION_AUDIT.md` - confirm whether any real status overlay can advance to a separate human approval review
+- Negative cases: `docs/LESSON_BATCH_STATUS_NEGATIVE_CASES.md` - confirm unsafe or incomplete overlay states are rejected
+- Init protection: `docs/LESSON_BATCH_REVIEW_STATUS_INIT_PROTECTION.md` - confirm write mode will not overwrite an existing reviewer status overlay without explicit force
+- Completed-notes positive example: `docs/LESSON_BATCH_COMPLETED_NOTES_EXAMPLE.md` - confirm a temporary fully noted batch can pass completion audit without touching the real status overlay
+
+## Operating Steps
+
+1. Open docs/FIRST_REVIEWER_WORKSHEET.md and start with the high-risk lesson in each target batch.
+2. Decide which source refs are direct evidence, boundary-only metadata, or unsuitable for explanatory prose.
+3. Use docs/FIRST_REVIEWER_NOTES_PROMPT.md to draft real reviewer notes only after the underlying source-fit and boundary checks are actually performed.
+4. Rewrite only original education prose outside this handoff file; do not copy external source body text.
+5. Run the dry-run status initializer before creating any real status overlay.
+6. Open docs/FIRST_REVIEWER_REAL_OVERLAY_CREATION_CHECKLIST.md before running the write initializer; creationAllowedNow remains false until an explicit human reviewer decision starts real note-taking.
+7. When real review starts, use the explicit write initializer or copy docs/LESSON_BATCH_REVIEW_STATUS_DRAFT_TEMPLATE_FOR_BATCH_01_05.json into docs/LESSON_BATCH_REVIEW_STATUS.json and fill only real reviewer notes.
+8. Run the reviewer note quality lint after notes are filled and before any batch is treated as ready for a separate approval review.
+9. Keep approvalStatus:not_approved and learnerFacingRelease:false even after notes are filled.
+10. Run the required commands before treating a batch as ready for a separate approval review.
+
+## Commands
+
+- `npm.cmd run init:first-reviewer-status-overlay:dry-run`
+- `npm.cmd run check:first-reviewer-status-init-protection`
+- `npm.cmd run check:lesson-batch-completed-notes-example`
+- `npm.cmd run check:first-reviewer-worksheet`
+- `npm.cmd run check:first-reviewer-status-draft-template`
+- `npm.cmd run check:first-reviewer-notes-prompt`
+- `npm.cmd run check:reviewer-note-quality-lint`
+- `npm.cmd run check:first-reviewer-real-overlay-creation-checklist`
+- `npm.cmd run check:lesson-batch-completion`
+- `npm.cmd run check:curriculum-review`
+
+## Do Not Write
+
+- `approved_final`
+- `commercial_ready`
+- `learner_facing_ready`
+- `production_ready`
+- `trading_signal_ready`
+
+## Required Notes
+
+- `originalRewriteNotes`
+- `sourceFitNotes`
+- `factCheckNotes`
+- `boundaryCheckNotes`
+- `copyingRiskNotes`
+- `humanReviewerInitials`
+
+## Ready Rule
+
+A batch can only be ready_for_separate_human_approval_review after every lesson card has all required real reviewer notes; even then, lessons remain structural_draft and not_approved until separate approval.
+
+## Boundary
+
+This handoff is reviewer-facing process guidance only. It does not approve lessons, publish learner-facing content, change grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, or guide real-money decisions.

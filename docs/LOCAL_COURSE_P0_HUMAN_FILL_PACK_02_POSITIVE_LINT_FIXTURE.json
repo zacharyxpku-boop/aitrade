@@ -1,0 +1,440 @@
+{
+  "generatedAt": "2026-06-21T22:33:57.050Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "fixtureOnly": true,
+  "templateStatus": "pack_02_positive_lint_fixture",
+  "sourceFillPack": "docs/LOCAL_COURSE_P0_HUMAN_FILL_PACK_02.json",
+  "packId": "local_course_p0_human_fill_pack_02",
+  "totalEntries": 4,
+  "manualTranscriptionEntries": 4,
+  "sourceReplacementEntries": 0,
+  "filledEntries": 4,
+  "readyForValidationEntries": 4,
+  "targetTaskIds": [
+    "absorb_manual_transcription_13",
+    "absorb_manual_transcription_14",
+    "absorb_manual_transcription_15",
+    "absorb_manual_transcription_16"
+  ],
+  "targetDocumentIds": [
+    "corpus_1580"
+  ],
+  "targetPageNumbers": [
+    5,
+    6,
+    7,
+    8
+  ],
+  "inputEntries": [
+    {
+      "id": "input_copy_absorb_manual_transcription_13",
+      "reviewEntryId": "review_absorb_manual_transcription_13",
+      "taskId": "absorb_manual_transcription_13",
+      "sourcePackCardId": "fill_pack_02_absorb_manual_transcription_13",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 5,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-05.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-05.png",
+      "candidateId": "candidate_batch_04_page_01",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "positive_lint_fixture_ready",
+      "reviewerName": "Codex pack 02 lint positive-control fixture",
+      "reviewedAt": "2026-06-21T00:00:00.000Z",
+      "packQualityRequirements": {
+        "riskTermFlags": [
+          "bearish_bullish_language",
+          "ohlc_definition_language",
+          "shadow_body_language",
+          "market_meaning_language",
+          "platform_color_convention"
+        ],
+        "riskRewriteChecklist": [
+          {
+            "flag": "bearish_bullish_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "ohlc_definition_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "shadow_body_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "market_meaning_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "platform_color_convention",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          }
+        ],
+        "qualityLintRules": [
+          "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+          "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+          "riskRewriteNotes must address every riskTermFlag before validation, especially signal, forecast, support/resistance, homework, and source-recommendation language.",
+          "publicReferenceNotes must name public grounding needed for candlestick terminology, pattern taxonomy, support/resistance claims, or source recommendations.",
+          "originalityNotes must confirm private course wording was not copied into learner-facing content."
+        ],
+        "uncertainRegions": [
+          "Some small labels in the embedded diagram need human confirmation before exact transcription.",
+          "The red/green color convention should be generalized because market platforms and regions differ."
+        ],
+        "candidateSummary": "This page can be rewritten as a neutral candlestick anatomy card: define body and shadows from OHLC values, explain that color conventions vary by platform, and convert bullish/bearish force claims into cautious chart-description vocabulary.",
+        "warning": "Do not copy machine candidate text as human transcription. Verify against the high-resolution preview."
+      },
+      "manualInput": {
+        "humanTranscription": "Positive-control fixture only. A real reviewer would place the human-verified transcription from the high-resolution preview here. This placeholder proves the filled-copy lint and dry-run validation flow for candlestick taxonomy pages; it is not private course transcription.",
+        "humanSummary": "Fixture-only education summary: candlestick anatomy, pattern names, and learning exercises should be handled as chart-literacy context without action advice or predictive claims.",
+        "uncertainWords": [
+          "fixture_only_not_private_course_transcription"
+        ],
+        "publicReferenceNotes": "Public reference needed: verify candlestick anatomy, pattern taxonomy, support/resistance terminology, and any source recommendation against Wikipedia, official documentation, or open educational references before learner-facing use.",
+        "originalityNotes": "Original rewrite required: not copied from private course wording or the machine candidate; paraphrase as original education-only chart-literacy content.",
+        "riskRewriteNotes": "bearish_bullish_language: rewrite or remove this risk before learner-facing use. ohlc_definition_language: rewrite or remove this risk before learner-facing use. shadow_body_language: rewrite or remove this risk before learner-facing use. market_meaning_language: rewrite or remove this risk before learner-facing use. platform_color_convention: rewrite or remove this risk before learner-facing use.",
+        "checklist": {
+          "visualTextCaptured": "done",
+          "chartLabelsCaptured": "done",
+          "unclearAreasFlagged": "done",
+          "noTradingAdviceAdded": "done",
+          "publicSourceGroundingReady": "done",
+          "originalRewriteReady": "done"
+        }
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal, forecast, support/resistance, homework, and source-recommendation language.",
+        "Public reference notes identify candlestick terminology, pattern taxonomy, support/resistance claims, or source recommendations that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_02_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_14",
+      "reviewEntryId": "review_absorb_manual_transcription_14",
+      "taskId": "absorb_manual_transcription_14",
+      "sourcePackCardId": "fill_pack_02_absorb_manual_transcription_14",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 6,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-06.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-06.png",
+      "candidateId": "candidate_batch_04_page_02",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "positive_lint_fixture_ready",
+      "reviewerName": "Codex pack 02 lint positive-control fixture",
+      "reviewedAt": "2026-06-21T00:00:00.000Z",
+      "packQualityRequirements": {
+        "riskTermFlags": [
+          "kline_classification_language",
+          "ohlc_formula_language",
+          "specific_price_levels",
+          "support_resistance_language",
+          "force_comparison_language",
+          "liquidity_condition_language"
+        ],
+        "riskRewriteChecklist": [
+          {
+            "flag": "kline_classification_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "ohlc_formula_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "specific_price_levels",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "support_resistance_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "force_comparison_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "liquidity_condition_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          }
+        ],
+        "qualityLintRules": [
+          "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+          "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+          "riskRewriteNotes must address every riskTermFlag before validation, especially signal, forecast, support/resistance, homework, and source-recommendation language.",
+          "publicReferenceNotes must name public grounding needed for candlestick terminology, pattern taxonomy, support/resistance claims, or source recommendations.",
+          "originalityNotes must confirm private course wording was not copied into learner-facing content."
+        ],
+        "uncertainRegions": [
+          "One yin-line formula appears visually ambiguous and should be checked against the source image by a reviewer.",
+          "Specific price examples and halted-trading references should be removed or generalized unless the reviewer keeps them as non-advice illustrations."
+        ],
+        "candidateSummary": "This page can support a reviewer-only taxonomy draft: map named candlestick shapes to OHLC relationships and rewrite force-comparison statements as tentative visual interpretations that require public grounding and no action advice.",
+        "warning": "Do not copy machine candidate text as human transcription. Verify against the high-resolution preview."
+      },
+      "manualInput": {
+        "humanTranscription": "Positive-control fixture only. A real reviewer would place the human-verified transcription from the high-resolution preview here. This placeholder proves the filled-copy lint and dry-run validation flow for candlestick taxonomy pages; it is not private course transcription.",
+        "humanSummary": "Fixture-only education summary: candlestick anatomy, pattern names, and learning exercises should be handled as chart-literacy context without action advice or predictive claims.",
+        "uncertainWords": [
+          "fixture_only_not_private_course_transcription"
+        ],
+        "publicReferenceNotes": "Public reference needed: verify candlestick anatomy, pattern taxonomy, support/resistance terminology, and any source recommendation against Wikipedia, official documentation, or open educational references before learner-facing use.",
+        "originalityNotes": "Original rewrite required: not copied from private course wording or the machine candidate; paraphrase as original education-only chart-literacy content.",
+        "riskRewriteNotes": "kline_classification_language: rewrite or remove this risk before learner-facing use. ohlc_formula_language: rewrite or remove this risk before learner-facing use. specific_price_levels: rewrite or remove this risk before learner-facing use. support_resistance_language: rewrite or remove this risk before learner-facing use. force_comparison_language: rewrite or remove this risk before learner-facing use. liquidity_condition_language: rewrite or remove this risk before learner-facing use.",
+        "checklist": {
+          "visualTextCaptured": "done",
+          "chartLabelsCaptured": "done",
+          "unclearAreasFlagged": "done",
+          "noTradingAdviceAdded": "done",
+          "publicSourceGroundingReady": "done",
+          "originalRewriteReady": "done"
+        }
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal, forecast, support/resistance, homework, and source-recommendation language.",
+        "Public reference notes identify candlestick terminology, pattern taxonomy, support/resistance claims, or source recommendations that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_02_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_15",
+      "reviewEntryId": "review_absorb_manual_transcription_15",
+      "taskId": "absorb_manual_transcription_15",
+      "sourcePackCardId": "fill_pack_02_absorb_manual_transcription_15",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 7,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-07.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-07.png",
+      "candidateId": "candidate_batch_04_page_03",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "positive_lint_fixture_ready",
+      "reviewerName": "Codex pack 02 lint positive-control fixture",
+      "reviewedAt": "2026-06-21T00:00:00.000Z",
+      "packQualityRequirements": {
+        "riskTermFlags": [
+          "signal_language",
+          "warning_signal_language",
+          "forecast_language",
+          "support_resistance_language",
+          "trend_continuation_language",
+          "liquidity_condition_language"
+        ],
+        "riskRewriteChecklist": [
+          {
+            "flag": "signal_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "warning_signal_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "forecast_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "support_resistance_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "trend_continuation_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "liquidity_condition_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          }
+        ],
+        "qualityLintRules": [
+          "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+          "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+          "riskRewriteNotes must address every riskTermFlag before validation, especially signal, forecast, support/resistance, homework, and source-recommendation language.",
+          "publicReferenceNotes must name public grounding needed for candlestick terminology, pattern taxonomy, support/resistance claims, or source recommendations.",
+          "originalityNotes must confirm private course wording was not copied into learner-facing content."
+        ],
+        "uncertainRegions": [
+          "The embedded comparison chart is small and needs human verification before table-level transcription.",
+          "Several handwritten annotations and subtitle fragments are not reliable enough for direct reuse."
+        ],
+        "candidateSummary": "This page is high risk for learner-facing reuse because it attaches signal and forecast language to many candlestick names. It should be converted into a cautious vocabulary table, with all predictive wording removed or explicitly framed as unverified historical interpretation.",
+        "warning": "Do not copy machine candidate text as human transcription. Verify against the high-resolution preview."
+      },
+      "manualInput": {
+        "humanTranscription": "Positive-control fixture only. A real reviewer would place the human-verified transcription from the high-resolution preview here. This placeholder proves the filled-copy lint and dry-run validation flow for candlestick taxonomy pages; it is not private course transcription.",
+        "humanSummary": "Fixture-only education summary: candlestick anatomy, pattern names, and learning exercises should be handled as chart-literacy context without action advice or predictive claims.",
+        "uncertainWords": [
+          "fixture_only_not_private_course_transcription"
+        ],
+        "publicReferenceNotes": "Public reference needed: verify candlestick anatomy, pattern taxonomy, support/resistance terminology, and any source recommendation against Wikipedia, official documentation, or open educational references before learner-facing use.",
+        "originalityNotes": "Original rewrite required: not copied from private course wording or the machine candidate; paraphrase as original education-only chart-literacy content.",
+        "riskRewriteNotes": "signal_language: rewrite or remove this risk before learner-facing use. warning_signal_language: rewrite or remove this risk before learner-facing use. forecast_language: rewrite or remove this risk before learner-facing use. support_resistance_language: rewrite or remove this risk before learner-facing use. trend_continuation_language: rewrite or remove this risk before learner-facing use. liquidity_condition_language: rewrite or remove this risk before learner-facing use.",
+        "checklist": {
+          "visualTextCaptured": "done",
+          "chartLabelsCaptured": "done",
+          "unclearAreasFlagged": "done",
+          "noTradingAdviceAdded": "done",
+          "publicSourceGroundingReady": "done",
+          "originalRewriteReady": "done"
+        }
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal, forecast, support/resistance, homework, and source-recommendation language.",
+        "Public reference notes identify candlestick terminology, pattern taxonomy, support/resistance claims, or source recommendations that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_02_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_manual_transcription_16",
+      "reviewEntryId": "review_absorb_manual_transcription_16",
+      "taskId": "absorb_manual_transcription_16",
+      "sourcePackCardId": "fill_pack_02_absorb_manual_transcription_16",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 8,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-08.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-08.png",
+      "candidateId": "candidate_batch_04_page_04",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "inputStatus": "positive_lint_fixture_ready",
+      "reviewerName": "Codex pack 02 lint positive-control fixture",
+      "reviewedAt": "2026-06-21T00:00:00.000Z",
+      "packQualityRequirements": {
+        "riskTermFlags": [
+          "study_advice_language",
+          "source_recommendation_language",
+          "copyright_review_required",
+          "homework_instruction_language",
+          "force_comparison_language"
+        ],
+        "riskRewriteChecklist": [
+          {
+            "flag": "study_advice_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "source_recommendation_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "copyright_review_required",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "homework_instruction_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          },
+          {
+            "flag": "force_comparison_language",
+            "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+            "status": "not_started"
+          }
+        ],
+        "qualityLintRules": [
+          "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+          "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+          "riskRewriteNotes must address every riskTermFlag before validation, especially signal, forecast, support/resistance, homework, and source-recommendation language.",
+          "publicReferenceNotes must name public grounding needed for candlestick terminology, pattern taxonomy, support/resistance claims, or source recommendations.",
+          "originalityNotes must confirm private course wording was not copied into learner-facing content."
+        ],
+        "uncertainRegions": [
+          "Book citation details and copyright/source use need reviewer confirmation.",
+          "The homework chart and force-comparison table need exact visual checking before any structured exercise is created."
+        ],
+        "candidateSummary": "This page can become a learning-operations note rather than trading instruction: preserve the meta-learning idea of not rote-memorizing patterns, separate book/source recommendations for reviewer approval, and keep homework as a chart-literacy exercise.",
+        "warning": "Do not copy machine candidate text as human transcription. Verify against the high-resolution preview."
+      },
+      "manualInput": {
+        "humanTranscription": "Positive-control fixture only. A real reviewer would place the human-verified transcription from the high-resolution preview here. This placeholder proves the filled-copy lint and dry-run validation flow for candlestick taxonomy pages; it is not private course transcription.",
+        "humanSummary": "Fixture-only education summary: candlestick anatomy, pattern names, and learning exercises should be handled as chart-literacy context without action advice or predictive claims.",
+        "uncertainWords": [
+          "fixture_only_not_private_course_transcription"
+        ],
+        "publicReferenceNotes": "Public reference needed: verify candlestick anatomy, pattern taxonomy, support/resistance terminology, and any source recommendation against Wikipedia, official documentation, or open educational references before learner-facing use.",
+        "originalityNotes": "Original rewrite required: not copied from private course wording or the machine candidate; paraphrase as original education-only chart-literacy content.",
+        "riskRewriteNotes": "study_advice_language: rewrite or remove this risk before learner-facing use. source_recommendation_language: rewrite or remove this risk before learner-facing use. copyright_review_required: rewrite or remove this risk before learner-facing use. homework_instruction_language: rewrite or remove this risk before learner-facing use. force_comparison_language: rewrite or remove this risk before learner-facing use.",
+        "checklist": {
+          "visualTextCaptured": "done",
+          "chartLabelsCaptured": "done",
+          "unclearAreasFlagged": "done",
+          "noTradingAdviceAdded": "done",
+          "publicSourceGroundingReady": "done",
+          "originalRewriteReady": "done"
+        }
+      },
+      "replacementInput": null,
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal, forecast, support/resistance, homework, and source-recommendation language.",
+        "Public reference notes identify candlestick terminology, pattern taxonomy, support/resistance claims, or source recommendations that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_02_input_then_apply_dry_run_only"
+    }
+  ],
+  "usage": [
+    "This fixture proves pack 02 filled-copy lint can pass a structurally complete input.",
+    "Do not apply this fixture with --write.",
+    "Do not use fixture text as absorbed course content."
+  ],
+  "completionRule": "This input copy template is only a blank carrier for pack 02. It is not ready until a human reviewer fills all required fields, every risk flag is addressed, validation succeeds, and apply dry-run reports ready entries with writtenEntries:0.",
+  "boundary": "Pack 02 positive lint fixture is pipeline validation material only. It is not a human transcription of private course content, must not be written to the real overlay, does not approve learner-facing release, and does not provide trading advice, stock recommendations, live signals, return promises, broker workflows, automation, or real-money guidance."
+}

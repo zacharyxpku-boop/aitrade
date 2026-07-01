@@ -1,0 +1,509 @@
+{
+  "generatedAt": "2026-06-21T22:14:22.363Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "packId": "local_course_p0_human_fill_pack_01",
+  "packStatus": "blank_human_fill_pack_ready",
+  "sourceNoteTemplate": "docs/LOCAL_COURSE_P0_HUMAN_REVIEW_NOTE_TEMPLATE.json",
+  "selectionRationale": "First human-fill pack uses corpus_1580 pages 1-4 because they emphasize provenance, history, and OHLC foundations rather than direct trade execution language.",
+  "totalPackCards": 4,
+  "manualFillCards": 4,
+  "filledCards": 0,
+  "readyForValidationCards": 0,
+  "acceptedForOverlayCards": 0,
+  "targetTaskIds": [
+    "absorb_manual_transcription_09",
+    "absorb_manual_transcription_10",
+    "absorb_manual_transcription_11",
+    "absorb_manual_transcription_12"
+  ],
+  "targetDocumentIds": [
+    "corpus_1580"
+  ],
+  "targetPageNumbers": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "riskTermFlagCounts": {
+    "source_provenance_language": 1,
+    "copyright_language": 1,
+    "historical_origin_language": 1,
+    "market_visualization_language": 1,
+    "historical_market_language": 1,
+    "futures_origin_language": 1,
+    "transaction_scale_language": 1,
+    "public_grounding_required": 1,
+    "success_claim_language": 1,
+    "market_influence_language": 1,
+    "pattern_name_language": 1,
+    "historical_claim_review_required": 1,
+    "ohlc_definition_language": 1,
+    "bullish_candle_language": 1,
+    "example_price_language": 1,
+    "platform_color_convention": 1
+  },
+  "topRiskTermFlags": [
+    {
+      "flag": "source_provenance_language",
+      "count": 1
+    },
+    {
+      "flag": "copyright_language",
+      "count": 1
+    },
+    {
+      "flag": "historical_origin_language",
+      "count": 1
+    },
+    {
+      "flag": "market_visualization_language",
+      "count": 1
+    },
+    {
+      "flag": "historical_market_language",
+      "count": 1
+    },
+    {
+      "flag": "futures_origin_language",
+      "count": 1
+    },
+    {
+      "flag": "transaction_scale_language",
+      "count": 1
+    },
+    {
+      "flag": "public_grounding_required",
+      "count": 1
+    },
+    {
+      "flag": "success_claim_language",
+      "count": 1
+    },
+    {
+      "flag": "market_influence_language",
+      "count": 1
+    },
+    {
+      "flag": "pattern_name_language",
+      "count": 1
+    },
+    {
+      "flag": "historical_claim_review_required",
+      "count": 1
+    },
+    {
+      "flag": "ohlc_definition_language",
+      "count": 1
+    },
+    {
+      "flag": "bullish_candle_language",
+      "count": 1
+    },
+    {
+      "flag": "example_price_language",
+      "count": 1
+    },
+    {
+      "flag": "platform_color_convention",
+      "count": 1
+    }
+  ],
+  "packCards": [
+    {
+      "id": "fill_pack_01_absorb_manual_transcription_09",
+      "noteCardId": "human_note_absorb_manual_transcription_09",
+      "taskId": "absorb_manual_transcription_09",
+      "inputEntryId": "input_absorb_manual_transcription_09",
+      "category": "manual_transcription",
+      "priority": "P0",
+      "documentId": "corpus_1580",
+      "pageNumber": 1,
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-01.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-01.png",
+      "candidateId": "candidate_batch_03_page_01",
+      "matchStatus": "candidate_available_for_human_review",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "fillStatus": "blank_ready_for_human_fill",
+      "reviewerName": "",
+      "reviewedAt": "",
+      "requiredFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "uncertainWords",
+        "visualTextCaptured",
+        "chartLabelsCaptured",
+        "unclearAreasFlagged",
+        "noTradingAdviceAdded",
+        "publicSourceGroundingReady",
+        "originalRewriteReady",
+        "riskRewriteNotes",
+        "publicReferenceNotes",
+        "originalityNotes"
+      ],
+      "fieldValues": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "publicReferenceNotes": "",
+        "originalityNotes": "",
+        "riskRewriteNotes": ""
+      },
+      "checklist": {
+        "visualTextCaptured": "not_started",
+        "chartLabelsCaptured": "not_started",
+        "unclearAreasFlagged": "not_started",
+        "noTradingAdviceAdded": "not_started",
+        "publicSourceGroundingReady": "not_started",
+        "originalRewriteReady": "not_started"
+      },
+      "candidateSummary": "This page can be rewritten as a provenance and historical-origin note for a K-line basics lesson: explain that candlestick charts emerged from historical rice-price recording and later became a market visualization tool, while keeping source attribution and copyright review separate.",
+      "uncertainRegions": [
+        "Exact URL text in the source screenshot needs human confirmation.",
+        "Some historical proper nouns and date ranges should be checked against public references before learner-facing use."
+      ],
+      "riskTermFlags": [
+        "source_provenance_language",
+        "copyright_language",
+        "historical_origin_language",
+        "market_visualization_language"
+      ],
+      "riskRewriteChecklist": [
+        {
+          "flag": "source_provenance_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        },
+        {
+          "flag": "copyright_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        },
+        {
+          "flag": "historical_origin_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        },
+        {
+          "flag": "market_visualization_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        }
+      ],
+      "qualityLintRules": [
+        "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+        "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+        "riskRewriteNotes must address every riskTermFlag before validation.",
+        "publicReferenceNotes must name public grounding needed for historical, terminology, or source claims.",
+        "originalityNotes must confirm private course wording was not copied into learner-facing content."
+      ],
+      "nextGate": "human_fill_pack_then_validate_p0_review_input_copy"
+    },
+    {
+      "id": "fill_pack_01_absorb_manual_transcription_10",
+      "noteCardId": "human_note_absorb_manual_transcription_10",
+      "taskId": "absorb_manual_transcription_10",
+      "inputEntryId": "input_absorb_manual_transcription_10",
+      "category": "manual_transcription",
+      "priority": "P0",
+      "documentId": "corpus_1580",
+      "pageNumber": 2,
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-02.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-02.png",
+      "candidateId": "candidate_batch_03_page_02",
+      "matchStatus": "candidate_available_for_human_review",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "fillStatus": "blank_ready_for_human_fill",
+      "reviewerName": "",
+      "reviewedAt": "",
+      "requiredFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "uncertainWords",
+        "visualTextCaptured",
+        "chartLabelsCaptured",
+        "unclearAreasFlagged",
+        "noTradingAdviceAdded",
+        "publicSourceGroundingReady",
+        "originalRewriteReady",
+        "riskRewriteNotes",
+        "publicReferenceNotes",
+        "originalityNotes"
+      ],
+      "fieldValues": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "publicReferenceNotes": "",
+        "originalityNotes": "",
+        "riskRewriteNotes": ""
+      },
+      "checklist": {
+        "visualTextCaptured": "not_started",
+        "chartLabelsCaptured": "not_started",
+        "unclearAreasFlagged": "not_started",
+        "noTradingAdviceAdded": "not_started",
+        "publicSourceGroundingReady": "not_started",
+        "originalRewriteReady": "not_started"
+      },
+      "candidateSummary": "This page can support a public-grounded history module: learners understand why price-recording tools arose from rice-market logistics, paper claims, and repeated price fluctuation, without treating the story as a trading method.",
+      "uncertainRegions": [
+        "Transaction-scale figures and historical dates require public-source verification.",
+        "Some screenshot subtitle text is not reliable enough for exact transcription."
+      ],
+      "riskTermFlags": [
+        "historical_market_language",
+        "futures_origin_language",
+        "transaction_scale_language",
+        "public_grounding_required"
+      ],
+      "riskRewriteChecklist": [
+        {
+          "flag": "historical_market_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        },
+        {
+          "flag": "futures_origin_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        },
+        {
+          "flag": "transaction_scale_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        },
+        {
+          "flag": "public_grounding_required",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        }
+      ],
+      "qualityLintRules": [
+        "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+        "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+        "riskRewriteNotes must address every riskTermFlag before validation.",
+        "publicReferenceNotes must name public grounding needed for historical, terminology, or source claims.",
+        "originalityNotes must confirm private course wording was not copied into learner-facing content."
+      ],
+      "nextGate": "human_fill_pack_then_validate_p0_review_input_copy"
+    },
+    {
+      "id": "fill_pack_01_absorb_manual_transcription_11",
+      "noteCardId": "human_note_absorb_manual_transcription_11",
+      "taskId": "absorb_manual_transcription_11",
+      "inputEntryId": "input_absorb_manual_transcription_11",
+      "category": "manual_transcription",
+      "priority": "P0",
+      "documentId": "corpus_1580",
+      "pageNumber": 3,
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-03.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-03.png",
+      "candidateId": "candidate_batch_03_page_03",
+      "matchStatus": "candidate_available_for_human_review",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "fillStatus": "blank_ready_for_human_fill",
+      "reviewerName": "",
+      "reviewedAt": "",
+      "requiredFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "uncertainWords",
+        "visualTextCaptured",
+        "chartLabelsCaptured",
+        "unclearAreasFlagged",
+        "noTradingAdviceAdded",
+        "publicSourceGroundingReady",
+        "originalRewriteReady",
+        "riskRewriteNotes",
+        "publicReferenceNotes",
+        "originalityNotes"
+      ],
+      "fieldValues": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "publicReferenceNotes": "",
+        "originalityNotes": "",
+        "riskRewriteNotes": ""
+      },
+      "checklist": {
+        "visualTextCaptured": "not_started",
+        "chartLabelsCaptured": "not_started",
+        "unclearAreasFlagged": "not_started",
+        "noTradingAdviceAdded": "not_started",
+        "publicSourceGroundingReady": "not_started",
+        "originalRewriteReady": "not_started"
+      },
+      "candidateSummary": "This page can be rewritten as a cautious history-and-terminology bridge: introduce chart recording, pattern names, and folklore-like claims as background vocabulary, while avoiding success claims or implying that historical anecdotes validate a trading edge.",
+      "uncertainRegions": [
+        "Winning-streak and wealth-scale claims need source validation or removal.",
+        "Pattern-name translations should be checked against public references before use."
+      ],
+      "riskTermFlags": [
+        "success_claim_language",
+        "market_influence_language",
+        "pattern_name_language",
+        "historical_claim_review_required"
+      ],
+      "riskRewriteChecklist": [
+        {
+          "flag": "success_claim_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        },
+        {
+          "flag": "market_influence_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        },
+        {
+          "flag": "pattern_name_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        },
+        {
+          "flag": "historical_claim_review_required",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        }
+      ],
+      "qualityLintRules": [
+        "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+        "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+        "riskRewriteNotes must address every riskTermFlag before validation.",
+        "publicReferenceNotes must name public grounding needed for historical, terminology, or source claims.",
+        "originalityNotes must confirm private course wording was not copied into learner-facing content."
+      ],
+      "nextGate": "human_fill_pack_then_validate_p0_review_input_copy"
+    },
+    {
+      "id": "fill_pack_01_absorb_manual_transcription_12",
+      "noteCardId": "human_note_absorb_manual_transcription_12",
+      "taskId": "absorb_manual_transcription_12",
+      "inputEntryId": "input_absorb_manual_transcription_12",
+      "category": "manual_transcription",
+      "priority": "P0",
+      "documentId": "corpus_1580",
+      "pageNumber": 4,
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-04.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-04.png",
+      "candidateId": "candidate_batch_03_page_04",
+      "matchStatus": "candidate_available_for_human_review",
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "fillStatus": "blank_ready_for_human_fill",
+      "reviewerName": "",
+      "reviewedAt": "",
+      "requiredFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "uncertainWords",
+        "visualTextCaptured",
+        "chartLabelsCaptured",
+        "unclearAreasFlagged",
+        "noTradingAdviceAdded",
+        "publicSourceGroundingReady",
+        "originalRewriteReady",
+        "riskRewriteNotes",
+        "publicReferenceNotes",
+        "originalityNotes"
+      ],
+      "fieldValues": {
+        "humanTranscription": "",
+        "humanSummary": "",
+        "uncertainWords": [],
+        "publicReferenceNotes": "",
+        "originalityNotes": "",
+        "riskRewriteNotes": ""
+      },
+      "checklist": {
+        "visualTextCaptured": "not_started",
+        "chartLabelsCaptured": "not_started",
+        "unclearAreasFlagged": "not_started",
+        "noTradingAdviceAdded": "not_started",
+        "publicSourceGroundingReady": "not_started",
+        "originalRewriteReady": "not_started"
+      },
+      "candidateSummary": "This page can become a clean foundational concept card: define OHLC and candle body/wicks as chart-reading vocabulary, then use neutral examples to teach what a candle records rather than what action to take.",
+      "uncertainRegions": [
+        "Example prices are visible but should be checked if retained.",
+        "The color convention should be generalized because platforms differ between markets."
+      ],
+      "riskTermFlags": [
+        "ohlc_definition_language",
+        "bullish_candle_language",
+        "example_price_language",
+        "platform_color_convention"
+      ],
+      "riskRewriteChecklist": [
+        {
+          "flag": "ohlc_definition_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        },
+        {
+          "flag": "bullish_candle_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        },
+        {
+          "flag": "example_price_language",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        },
+        {
+          "flag": "platform_color_convention",
+          "requiredAction": "Rewrite or remove risky market-language before any learner-facing use.",
+          "status": "not_started"
+        }
+      ],
+      "qualityLintRules": [
+        "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+        "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+        "riskRewriteNotes must address every riskTermFlag before validation.",
+        "publicReferenceNotes must name public grounding needed for historical, terminology, or source claims.",
+        "originalityNotes must confirm private course wording was not copied into learner-facing content."
+      ],
+      "nextGate": "human_fill_pack_then_validate_p0_review_input_copy"
+    }
+  ],
+  "requiredCommandsAfterHumanFill": [
+    "node scripts/validate-local-course-absorption-p0-review-input.mjs --input <copied-filled-input.json>",
+    "node scripts/apply-local-course-absorption-p0-review-input.mjs --input <copied-filled-input.json>",
+    "npm.cmd run check:local-course-absorption-p0-review-overlay",
+    "npm.cmd run check:local-course-absorption-readiness"
+  ],
+  "completionRule": "This fill pack is complete only as a blank human execution packet. It becomes ready for overlay apply only after a human reviewer fills a copied input file, every quality lint rule passes, dry-run validation succeeds, and no learner-facing release is approved.",
+  "boundary": "P0 human fill pack is blank reviewer work material. It does not perform OCR, fill reviewer fields, approve learner-facing release, copy private course wording into lessons, provide trading advice, stock recommendations, live signals, return promises, broker workflows, automation, or real-money guidance."
+}

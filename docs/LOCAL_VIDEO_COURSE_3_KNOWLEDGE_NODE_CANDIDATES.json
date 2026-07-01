@@ -1,0 +1,3200 @@
+{
+  "generatedAt": "2026-06-24T10:10:49.900Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "candidateStatus": "local_video_course_node_candidates_complete_release_blocked",
+  "candidateMode": "private_video_semantic_rows_to_reviewer_knowledge_node_candidates",
+  "sourceVideos": 37,
+  "semanticAbsorbedRows": 37,
+  "blockedMissingFullTranscriptRows": 0,
+  "candidateRows": 84,
+  "uniqueConcepts": 16,
+  "p0CandidateRows": 20,
+  "learnerFacingReadyRows": 0,
+  "writeAllowedNow": false,
+  "manualAuthorizationRequired": true,
+  "conceptRows": [
+    {
+      "concept": "market_structure",
+      "candidateRows": 13
+    },
+    {
+      "concept": "channels",
+      "candidateRows": 11
+    },
+    {
+      "concept": "trend_structure",
+      "candidateRows": 11
+    },
+    {
+      "concept": "trade_management",
+      "candidateRows": 10
+    },
+    {
+      "concept": "reversal_patterns",
+      "candidateRows": 8
+    },
+    {
+      "concept": "reversals",
+      "candidateRows": 8
+    },
+    {
+      "concept": "trading_styles",
+      "candidateRows": 6
+    },
+    {
+      "concept": "session_open_trading",
+      "candidateRows": 3
+    },
+    {
+      "concept": "trading_ranges",
+      "candidateRows": 3
+    },
+    {
+      "concept": "breakouts",
+      "candidateRows": 2
+    },
+    {
+      "concept": "foundations",
+      "candidateRows": 2
+    },
+    {
+      "concept": "price_action_patterns",
+      "candidateRows": 2
+    },
+    {
+      "concept": "trade_process",
+      "candidateRows": 2
+    },
+    {
+      "concept": "intraday_session_management",
+      "candidateRows": 1
+    },
+    {
+      "concept": "mistake_review",
+      "candidateRows": 1
+    },
+    {
+      "concept": "process_discipline",
+      "candidateRows": 1
+    }
+  ],
+  "candidates": [
+    {
+      "candidateId": "video_node_local_video_course_3_intake_001_foundations",
+      "intakeId": "local_video_course_3_intake_001",
+      "semanticId": "semantic_local_video_course_3_intake_001",
+      "sourceId": "local-video-course-3:a05e0c8db352a8c2d1c1e5d9",
+      "lessonCode": "Video 37A",
+      "lessonTitle": "How to trade如何进行交易",
+      "concept": "foundations",
+      "nodeType": "learning_process_concept",
+      "moduleTags": [
+        "trade_process",
+        "foundations"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.32,
+          "textPreview": "我是愛爾,不魯克斯,感谢您收看不魯克斯交易课程"
+        },
+        {
+          "start": 248.26,
+          "end": 254.34,
+          "textPreview": "收于第一点,那么概率是多少就不重要了,他在下跌"
+        },
+        {
+          "start": 491.47,
+          "end": 502.33,
+          "textPreview": "他们在中间的某个位置卖入并卖出,他们在顶部卖出,然后在中间卖回空头"
+        }
+      ],
+      "privateResearchSummary": "Video 37A is privately indexed for reviewer distillation under foundations, trade_process. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_001_trade_process",
+      "intakeId": "local_video_course_3_intake_001",
+      "semanticId": "semantic_local_video_course_3_intake_001",
+      "sourceId": "local-video-course-3:a05e0c8db352a8c2d1c1e5d9",
+      "lessonCode": "Video 37A",
+      "lessonTitle": "How to trade如何进行交易",
+      "concept": "trade_process",
+      "nodeType": "video_course_concept",
+      "moduleTags": [
+        "trade_process",
+        "foundations"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.32,
+          "textPreview": "我是愛爾,不魯克斯,感谢您收看不魯克斯交易课程"
+        },
+        {
+          "start": 248.26,
+          "end": 254.34,
+          "textPreview": "收于第一点,那么概率是多少就不重要了,他在下跌"
+        },
+        {
+          "start": 491.47,
+          "end": 502.33,
+          "textPreview": "他们在中间的某个位置卖入并卖出,他们在顶部卖出,然后在中间卖回空头"
+        }
+      ],
+      "privateResearchSummary": "Video 37A is privately indexed for reviewer distillation under foundations, trade_process. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_002_foundations",
+      "intakeId": "local_video_course_3_intake_002",
+      "semanticId": "semantic_local_video_course_3_intake_002",
+      "sourceId": "local-video-course-3:6dc4a23f04680def01e16d09",
+      "lessonCode": "Video 37B",
+      "lessonTitle": "How to trade如何进行交易",
+      "concept": "foundations",
+      "nodeType": "learning_process_concept",
+      "moduleTags": [
+        "trade_process",
+        "foundations"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 6.89,
+          "textPreview": "我是愛爾 布魯克斯 感谢您收看布魯克斯交易课程"
+        },
+        {
+          "start": 242,
+          "end": 243,
+          "textPreview": "多头突破"
+        },
+        {
+          "start": 484.55,
+          "end": 485.51,
+          "textPreview": "回车太小"
+        }
+      ],
+      "privateResearchSummary": "Video 37B is privately indexed for reviewer distillation under foundations, trade_process. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_002_trade_process",
+      "intakeId": "local_video_course_3_intake_002",
+      "semanticId": "semantic_local_video_course_3_intake_002",
+      "sourceId": "local-video-course-3:6dc4a23f04680def01e16d09",
+      "lessonCode": "Video 37B",
+      "lessonTitle": "How to trade如何进行交易",
+      "concept": "trade_process",
+      "nodeType": "video_course_concept",
+      "moduleTags": [
+        "trade_process",
+        "foundations"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 6.89,
+          "textPreview": "我是愛爾 布魯克斯 感谢您收看布魯克斯交易课程"
+        },
+        {
+          "start": 242,
+          "end": 243,
+          "textPreview": "多头突破"
+        },
+        {
+          "start": 484.55,
+          "end": 485.51,
+          "textPreview": "回车太小"
+        }
+      ],
+      "privateResearchSummary": "Video 37B is privately indexed for reviewer distillation under foundations, trade_process. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_003_market_structure",
+      "intakeId": "local_video_course_3_intake_003",
+      "semanticId": "semantic_local_video_course_3_intake_003",
+      "sourceId": "local-video-course-3:6a98302ce2d66ca358949aae",
+      "lessonCode": "Video 38B",
+      "lessonTitle": "Trading MTR Tops顶部趋势反转",
+      "concept": "market_structure",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "reversals",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 6,
+      "evidenceAnchors": [
+        {
+          "start": 0.82,
+          "end": 5.66,
+          "textPreview": "我是艾爾,不魯克斯,感謝您收看不魯克斯交易課程"
+        },
+        {
+          "start": 240.82,
+          "end": 243.46,
+          "textPreview": "這將是實際風險的兩倍左右"
+        },
+        {
+          "start": 487.04,
+          "end": 494.64,
+          "textPreview": "如果你願意 可以稱之為淺逃頭間 紙紙位 左間 頭部和右間 喜歡為一個較小的頭間頂"
+        }
+      ],
+      "privateResearchSummary": "Video 38B is privately indexed for reviewer distillation under market_structure, reversal_patterns, reversals. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_003_reversal_patterns",
+      "intakeId": "local_video_course_3_intake_003",
+      "semanticId": "semantic_local_video_course_3_intake_003",
+      "sourceId": "local-video-course-3:6a98302ce2d66ca358949aae",
+      "lessonCode": "Video 38B",
+      "lessonTitle": "Trading MTR Tops顶部趋势反转",
+      "concept": "reversal_patterns",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "reversals",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 6,
+      "evidenceAnchors": [
+        {
+          "start": 0.82,
+          "end": 5.66,
+          "textPreview": "我是艾爾,不魯克斯,感謝您收看不魯克斯交易課程"
+        },
+        {
+          "start": 240.82,
+          "end": 243.46,
+          "textPreview": "這將是實際風險的兩倍左右"
+        },
+        {
+          "start": 487.04,
+          "end": 494.64,
+          "textPreview": "如果你願意 可以稱之為淺逃頭間 紙紙位 左間 頭部和右間 喜歡為一個較小的頭間頂"
+        }
+      ],
+      "privateResearchSummary": "Video 38B is privately indexed for reviewer distillation under market_structure, reversal_patterns, reversals. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_003_reversals",
+      "intakeId": "local_video_course_3_intake_003",
+      "semanticId": "semantic_local_video_course_3_intake_003",
+      "sourceId": "local-video-course-3:6a98302ce2d66ca358949aae",
+      "lessonCode": "Video 38B",
+      "lessonTitle": "Trading MTR Tops顶部趋势反转",
+      "concept": "reversals",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "reversals",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 6,
+      "evidenceAnchors": [
+        {
+          "start": 0.82,
+          "end": 5.66,
+          "textPreview": "我是艾爾,不魯克斯,感謝您收看不魯克斯交易課程"
+        },
+        {
+          "start": 240.82,
+          "end": 243.46,
+          "textPreview": "這將是實際風險的兩倍左右"
+        },
+        {
+          "start": 487.04,
+          "end": 494.64,
+          "textPreview": "如果你願意 可以稱之為淺逃頭間 紙紙位 左間 頭部和右間 喜歡為一個較小的頭間頂"
+        }
+      ],
+      "privateResearchSummary": "Video 38B is privately indexed for reviewer distillation under market_structure, reversal_patterns, reversals. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_004_market_structure",
+      "intakeId": "local_video_course_3_intake_004",
+      "semanticId": "semantic_local_video_course_3_intake_004",
+      "sourceId": "local-video-course-3:1308e74ee1cffdfbfbab6919",
+      "lessonCode": "Video 38C",
+      "lessonTitle": "Trading MTR Tops顶部趋势反转",
+      "concept": "market_structure",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "reversals",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0.94,
+          "end": 5.42,
+          "textPreview": "我是愛爾 不魯克斯 感谢您收看布魯克斯教育課程"
+        },
+        {
+          "start": 243.14,
+          "end": 247.22,
+          "textPreview": "然而 雖然一算還是值得的 他們的出是風險在這裡"
+        },
+        {
+          "start": 488.27,
+          "end": 494.75,
+          "textPreview": "可能會很想 不過可能會上升的相當遠 因為我們正處於一個重要的支撐位水平"
+        }
+      ],
+      "privateResearchSummary": "Video 38C is privately indexed for reviewer distillation under market_structure, reversal_patterns, reversals. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_004_reversal_patterns",
+      "intakeId": "local_video_course_3_intake_004",
+      "semanticId": "semantic_local_video_course_3_intake_004",
+      "sourceId": "local-video-course-3:1308e74ee1cffdfbfbab6919",
+      "lessonCode": "Video 38C",
+      "lessonTitle": "Trading MTR Tops顶部趋势反转",
+      "concept": "reversal_patterns",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "reversals",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0.94,
+          "end": 5.42,
+          "textPreview": "我是愛爾 不魯克斯 感谢您收看布魯克斯教育課程"
+        },
+        {
+          "start": 243.14,
+          "end": 247.22,
+          "textPreview": "然而 雖然一算還是值得的 他們的出是風險在這裡"
+        },
+        {
+          "start": 488.27,
+          "end": 494.75,
+          "textPreview": "可能會很想 不過可能會上升的相當遠 因為我們正處於一個重要的支撐位水平"
+        }
+      ],
+      "privateResearchSummary": "Video 38C is privately indexed for reviewer distillation under market_structure, reversal_patterns, reversals. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_004_reversals",
+      "intakeId": "local_video_course_3_intake_004",
+      "semanticId": "semantic_local_video_course_3_intake_004",
+      "sourceId": "local-video-course-3:1308e74ee1cffdfbfbab6919",
+      "lessonCode": "Video 38C",
+      "lessonTitle": "Trading MTR Tops顶部趋势反转",
+      "concept": "reversals",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "reversals",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0.94,
+          "end": 5.42,
+          "textPreview": "我是愛爾 不魯克斯 感谢您收看布魯克斯教育課程"
+        },
+        {
+          "start": 243.14,
+          "end": 247.22,
+          "textPreview": "然而 雖然一算還是值得的 他們的出是風險在這裡"
+        },
+        {
+          "start": 488.27,
+          "end": 494.75,
+          "textPreview": "可能會很想 不過可能會上升的相當遠 因為我們正處於一個重要的支撐位水平"
+        }
+      ],
+      "privateResearchSummary": "Video 38C is privately indexed for reviewer distillation under market_structure, reversal_patterns, reversals. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_005_market_structure",
+      "intakeId": "local_video_course_3_intake_005",
+      "semanticId": "semantic_local_video_course_3_intake_005",
+      "sourceId": "local-video-course-3:b400d3887aebc5c1582379d0",
+      "lessonCode": "Video 38D",
+      "lessonTitle": "Trading MTR Tops顶部趋势反转",
+      "concept": "market_structure",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "reversals",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 7,
+      "evidenceAnchors": [
+        {
+          "start": 0.82,
+          "end": 5.22,
+          "textPreview": "我是愛爾 不魯克斯 感謝您收看布魯克斯教育課程"
+        },
+        {
+          "start": 244.74,
+          "end": 249.14,
+          "textPreview": "此兩缺口 或此兩下移 因此 空頭不是從雙底開始向上移動"
+        },
+        {
+          "start": 487.14,
+          "end": 490.54,
+          "textPreview": "因此 你的實際風險就是這個封鎖方況的高度"
+        }
+      ],
+      "privateResearchSummary": "Video 38D is privately indexed for reviewer distillation under market_structure, reversal_patterns, reversals. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_005_reversal_patterns",
+      "intakeId": "local_video_course_3_intake_005",
+      "semanticId": "semantic_local_video_course_3_intake_005",
+      "sourceId": "local-video-course-3:b400d3887aebc5c1582379d0",
+      "lessonCode": "Video 38D",
+      "lessonTitle": "Trading MTR Tops顶部趋势反转",
+      "concept": "reversal_patterns",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "reversals",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 7,
+      "evidenceAnchors": [
+        {
+          "start": 0.82,
+          "end": 5.22,
+          "textPreview": "我是愛爾 不魯克斯 感謝您收看布魯克斯教育課程"
+        },
+        {
+          "start": 244.74,
+          "end": 249.14,
+          "textPreview": "此兩缺口 或此兩下移 因此 空頭不是從雙底開始向上移動"
+        },
+        {
+          "start": 487.14,
+          "end": 490.54,
+          "textPreview": "因此 你的實際風險就是這個封鎖方況的高度"
+        }
+      ],
+      "privateResearchSummary": "Video 38D is privately indexed for reviewer distillation under market_structure, reversal_patterns, reversals. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_005_reversals",
+      "intakeId": "local_video_course_3_intake_005",
+      "semanticId": "semantic_local_video_course_3_intake_005",
+      "sourceId": "local-video-course-3:b400d3887aebc5c1582379d0",
+      "lessonCode": "Video 38D",
+      "lessonTitle": "Trading MTR Tops顶部趋势反转",
+      "concept": "reversals",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "reversals",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 7,
+      "evidenceAnchors": [
+        {
+          "start": 0.82,
+          "end": 5.22,
+          "textPreview": "我是愛爾 不魯克斯 感謝您收看布魯克斯教育課程"
+        },
+        {
+          "start": 244.74,
+          "end": 249.14,
+          "textPreview": "此兩缺口 或此兩下移 因此 空頭不是從雙底開始向上移動"
+        },
+        {
+          "start": 487.14,
+          "end": 490.54,
+          "textPreview": "因此 你的實際風險就是這個封鎖方況的高度"
+        }
+      ],
+      "privateResearchSummary": "Video 38D is privately indexed for reviewer distillation under market_structure, reversal_patterns, reversals. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_006_market_structure",
+      "intakeId": "local_video_course_3_intake_006",
+      "semanticId": "semantic_local_video_course_3_intake_006",
+      "sourceId": "local-video-course-3:189a81b446780a5fd03aec13",
+      "lessonCode": "Video 39B",
+      "lessonTitle": "Trading MTR Bottoms底部趋势反转",
+      "concept": "market_structure",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "reversals",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 5.4,
+          "textPreview": "我是愛爾,不魯克斯,感謝您收看不魯克斯交易課程"
+        },
+        {
+          "start": 242.38,
+          "end": 246.38,
+          "textPreview": "你仍然有這個問題買盤壓力不夠"
+        },
+        {
+          "start": 485.61,
+          "end": 488.61,
+          "textPreview": "我們將走高,可能會向上一動雙底的高度"
+        }
+      ],
+      "privateResearchSummary": "Video 39B is privately indexed for reviewer distillation under market_structure, reversal_patterns, reversals. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_006_reversal_patterns",
+      "intakeId": "local_video_course_3_intake_006",
+      "semanticId": "semantic_local_video_course_3_intake_006",
+      "sourceId": "local-video-course-3:189a81b446780a5fd03aec13",
+      "lessonCode": "Video 39B",
+      "lessonTitle": "Trading MTR Bottoms底部趋势反转",
+      "concept": "reversal_patterns",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "reversals",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 5.4,
+          "textPreview": "我是愛爾,不魯克斯,感謝您收看不魯克斯交易課程"
+        },
+        {
+          "start": 242.38,
+          "end": 246.38,
+          "textPreview": "你仍然有這個問題買盤壓力不夠"
+        },
+        {
+          "start": 485.61,
+          "end": 488.61,
+          "textPreview": "我們將走高,可能會向上一動雙底的高度"
+        }
+      ],
+      "privateResearchSummary": "Video 39B is privately indexed for reviewer distillation under market_structure, reversal_patterns, reversals. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_006_reversals",
+      "intakeId": "local_video_course_3_intake_006",
+      "semanticId": "semantic_local_video_course_3_intake_006",
+      "sourceId": "local-video-course-3:189a81b446780a5fd03aec13",
+      "lessonCode": "Video 39B",
+      "lessonTitle": "Trading MTR Bottoms底部趋势反转",
+      "concept": "reversals",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "reversals",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 5.4,
+          "textPreview": "我是愛爾,不魯克斯,感謝您收看不魯克斯交易課程"
+        },
+        {
+          "start": 242.38,
+          "end": 246.38,
+          "textPreview": "你仍然有這個問題買盤壓力不夠"
+        },
+        {
+          "start": 485.61,
+          "end": 488.61,
+          "textPreview": "我們將走高,可能會向上一動雙底的高度"
+        }
+      ],
+      "privateResearchSummary": "Video 39B is privately indexed for reviewer distillation under market_structure, reversal_patterns, reversals. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_007_market_structure",
+      "intakeId": "local_video_course_3_intake_007",
+      "semanticId": "semantic_local_video_course_3_intake_007",
+      "sourceId": "local-video-course-3:10c72e2f59a2c5a06ed98e29",
+      "lessonCode": "Video 39D",
+      "lessonTitle": "Trading MTR Bottoms底部趋势反转",
+      "concept": "market_structure",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "reversals",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.16,
+          "textPreview": "我是愛爾,不魯克斯,感谢您收看不魯克斯教育課程"
+        },
+        {
+          "start": 240.08,
+          "end": 246.68,
+          "textPreview": "多頭不應允許他回到這裡,其他交易者則會將紙紙紙紙放在此處下方,這兩種選擇都可以接受"
+        },
+        {
+          "start": 488.99,
+          "end": 490.79,
+          "textPreview": "如果你再做波段交易"
+        }
+      ],
+      "privateResearchSummary": "Video 39D is privately indexed for reviewer distillation under market_structure, reversal_patterns, reversals. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_007_reversal_patterns",
+      "intakeId": "local_video_course_3_intake_007",
+      "semanticId": "semantic_local_video_course_3_intake_007",
+      "sourceId": "local-video-course-3:10c72e2f59a2c5a06ed98e29",
+      "lessonCode": "Video 39D",
+      "lessonTitle": "Trading MTR Bottoms底部趋势反转",
+      "concept": "reversal_patterns",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "reversals",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.16,
+          "textPreview": "我是愛爾,不魯克斯,感谢您收看不魯克斯教育課程"
+        },
+        {
+          "start": 240.08,
+          "end": 246.68,
+          "textPreview": "多頭不應允許他回到這裡,其他交易者則會將紙紙紙紙放在此處下方,這兩種選擇都可以接受"
+        },
+        {
+          "start": 488.99,
+          "end": 490.79,
+          "textPreview": "如果你再做波段交易"
+        }
+      ],
+      "privateResearchSummary": "Video 39D is privately indexed for reviewer distillation under market_structure, reversal_patterns, reversals. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_007_reversals",
+      "intakeId": "local_video_course_3_intake_007",
+      "semanticId": "semantic_local_video_course_3_intake_007",
+      "sourceId": "local-video-course-3:10c72e2f59a2c5a06ed98e29",
+      "lessonCode": "Video 39D",
+      "lessonTitle": "Trading MTR Bottoms底部趋势反转",
+      "concept": "reversals",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "reversals",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.16,
+          "textPreview": "我是愛爾,不魯克斯,感谢您收看不魯克斯教育課程"
+        },
+        {
+          "start": 240.08,
+          "end": 246.68,
+          "textPreview": "多頭不應允許他回到這裡,其他交易者則會將紙紙紙紙放在此處下方,這兩種選擇都可以接受"
+        },
+        {
+          "start": 488.99,
+          "end": 490.79,
+          "textPreview": "如果你再做波段交易"
+        }
+      ],
+      "privateResearchSummary": "Video 39D is privately indexed for reviewer distillation under market_structure, reversal_patterns, reversals. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_008_breakouts",
+      "intakeId": "local_video_course_3_intake_008",
+      "semanticId": "semantic_local_video_course_3_intake_008",
+      "sourceId": "local-video-course-3:b380a8969f40391e0c013925",
+      "lessonCode": "Video 41A",
+      "lessonTitle": "Trading Breakouts突破交易",
+      "concept": "breakouts",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "breakouts",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 5,
+          "textPreview": "我是愛爾 布魯克斯 感謝您收看布魯克斯教育課程"
+        },
+        {
+          "start": 241.58,
+          "end": 243.02,
+          "textPreview": "這一位這一收盤"
+        },
+        {
+          "start": 482.82,
+          "end": 483.78,
+          "textPreview": "如果你無法決定"
+        }
+      ],
+      "privateResearchSummary": "Video 41A is privately indexed for reviewer distillation under breakouts, market_structure, price_action_patterns. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_008_market_structure",
+      "intakeId": "local_video_course_3_intake_008",
+      "semanticId": "semantic_local_video_course_3_intake_008",
+      "sourceId": "local-video-course-3:b380a8969f40391e0c013925",
+      "lessonCode": "Video 41A",
+      "lessonTitle": "Trading Breakouts突破交易",
+      "concept": "market_structure",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "breakouts",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 5,
+          "textPreview": "我是愛爾 布魯克斯 感謝您收看布魯克斯教育課程"
+        },
+        {
+          "start": 241.58,
+          "end": 243.02,
+          "textPreview": "這一位這一收盤"
+        },
+        {
+          "start": 482.82,
+          "end": 483.78,
+          "textPreview": "如果你無法決定"
+        }
+      ],
+      "privateResearchSummary": "Video 41A is privately indexed for reviewer distillation under breakouts, market_structure, price_action_patterns. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_008_price_action_patterns",
+      "intakeId": "local_video_course_3_intake_008",
+      "semanticId": "semantic_local_video_course_3_intake_008",
+      "sourceId": "local-video-course-3:b380a8969f40391e0c013925",
+      "lessonCode": "Video 41A",
+      "lessonTitle": "Trading Breakouts突破交易",
+      "concept": "price_action_patterns",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "breakouts",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 5,
+          "textPreview": "我是愛爾 布魯克斯 感謝您收看布魯克斯教育課程"
+        },
+        {
+          "start": 241.58,
+          "end": 243.02,
+          "textPreview": "這一位這一收盤"
+        },
+        {
+          "start": 482.82,
+          "end": 483.78,
+          "textPreview": "如果你無法決定"
+        }
+      ],
+      "privateResearchSummary": "Video 41A is privately indexed for reviewer distillation under breakouts, market_structure, price_action_patterns. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_009_breakouts",
+      "intakeId": "local_video_course_3_intake_009",
+      "semanticId": "semantic_local_video_course_3_intake_009",
+      "sourceId": "local-video-course-3:a03fa2826679e74ac40415ca",
+      "lessonCode": "Video 41B",
+      "lessonTitle": "Trading Breakouts突破交易",
+      "concept": "breakouts",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "breakouts",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0.21,
+          "end": 5.13,
+          "textPreview": "我是愛爾,不魯克斯,感谢您收看不魯克斯交易课程"
+        },
+        {
+          "start": 249.88,
+          "end": 258.88,
+          "textPreview": "结婚总有更好的选择,当你拥有像现在这样的强谨多头趋势时,突破的高度是10点,我更高"
+        },
+        {
+          "start": 492.74,
+          "end": 509.42,
+          "textPreview": "回条是多头趋势的暂停,回条通常意味着可以限得高点,低于钱,一根可以限得高点"
+        }
+      ],
+      "privateResearchSummary": "Video 41B is privately indexed for reviewer distillation under breakouts, market_structure, price_action_patterns. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_009_market_structure",
+      "intakeId": "local_video_course_3_intake_009",
+      "semanticId": "semantic_local_video_course_3_intake_009",
+      "sourceId": "local-video-course-3:a03fa2826679e74ac40415ca",
+      "lessonCode": "Video 41B",
+      "lessonTitle": "Trading Breakouts突破交易",
+      "concept": "market_structure",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "breakouts",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0.21,
+          "end": 5.13,
+          "textPreview": "我是愛爾,不魯克斯,感谢您收看不魯克斯交易课程"
+        },
+        {
+          "start": 249.88,
+          "end": 258.88,
+          "textPreview": "结婚总有更好的选择,当你拥有像现在这样的强谨多头趋势时,突破的高度是10点,我更高"
+        },
+        {
+          "start": 492.74,
+          "end": 509.42,
+          "textPreview": "回条是多头趋势的暂停,回条通常意味着可以限得高点,低于钱,一根可以限得高点"
+        }
+      ],
+      "privateResearchSummary": "Video 41B is privately indexed for reviewer distillation under breakouts, market_structure, price_action_patterns. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_009_price_action_patterns",
+      "intakeId": "local_video_course_3_intake_009",
+      "semanticId": "semantic_local_video_course_3_intake_009",
+      "sourceId": "local-video-course-3:a03fa2826679e74ac40415ca",
+      "lessonCode": "Video 41B",
+      "lessonTitle": "Trading Breakouts突破交易",
+      "concept": "price_action_patterns",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "breakouts",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0.21,
+          "end": 5.13,
+          "textPreview": "我是愛爾,不魯克斯,感谢您收看不魯克斯交易课程"
+        },
+        {
+          "start": 249.88,
+          "end": 258.88,
+          "textPreview": "结婚总有更好的选择,当你拥有像现在这样的强谨多头趋势时,突破的高度是10点,我更高"
+        },
+        {
+          "start": 492.74,
+          "end": 509.42,
+          "textPreview": "回条是多头趋势的暂停,回条通常意味着可以限得高点,低于钱,一根可以限得高点"
+        }
+      ],
+      "privateResearchSummary": "Video 41B is privately indexed for reviewer distillation under breakouts, market_structure, price_action_patterns. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_010_market_structure",
+      "intakeId": "local_video_course_3_intake_010",
+      "semanticId": "semantic_local_video_course_3_intake_010",
+      "sourceId": "local-video-course-3:0ef741279b37c3bf858da002",
+      "lessonCode": "Video 42A",
+      "lessonTitle": "Trading Climactic Reversals 交易高潮反转",
+      "concept": "market_structure",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "reversals",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 1.68,
+          "end": 8.8,
+          "textPreview": "我是愛爾,不魯克斯,感谢您收看不魯克斯交易课程,这时关于交易高潮反转的三个视频中的第一个"
+        },
+        {
+          "start": 244.66,
+          "end": 253.66,
+          "textPreview": "市场处于一个非常啥转的区间,尽管市场在这里出现了空头突破,你不得不怀疑,这种价格走适,会持续一场天"
+        },
+        {
+          "start": 488.6,
+          "end": 498.6,
+          "textPreview": "是24买入,这是一次合理的买入,现在我们有了一个清卫的兄弟,这就更好了,因为我们有一对多头贴线行图在多头贴线行图上方买入的概率率高。"
+        }
+      ],
+      "privateResearchSummary": "Video 42A is privately indexed for reviewer distillation under market_structure, reversal_patterns, reversals. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_010_reversal_patterns",
+      "intakeId": "local_video_course_3_intake_010",
+      "semanticId": "semantic_local_video_course_3_intake_010",
+      "sourceId": "local-video-course-3:0ef741279b37c3bf858da002",
+      "lessonCode": "Video 42A",
+      "lessonTitle": "Trading Climactic Reversals 交易高潮反转",
+      "concept": "reversal_patterns",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "reversals",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 1.68,
+          "end": 8.8,
+          "textPreview": "我是愛爾,不魯克斯,感谢您收看不魯克斯交易课程,这时关于交易高潮反转的三个视频中的第一个"
+        },
+        {
+          "start": 244.66,
+          "end": 253.66,
+          "textPreview": "市场处于一个非常啥转的区间,尽管市场在这里出现了空头突破,你不得不怀疑,这种价格走适,会持续一场天"
+        },
+        {
+          "start": 488.6,
+          "end": 498.6,
+          "textPreview": "是24买入,这是一次合理的买入,现在我们有了一个清卫的兄弟,这就更好了,因为我们有一对多头贴线行图在多头贴线行图上方买入的概率率高。"
+        }
+      ],
+      "privateResearchSummary": "Video 42A is privately indexed for reviewer distillation under market_structure, reversal_patterns, reversals. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_010_reversals",
+      "intakeId": "local_video_course_3_intake_010",
+      "semanticId": "semantic_local_video_course_3_intake_010",
+      "sourceId": "local-video-course-3:0ef741279b37c3bf858da002",
+      "lessonCode": "Video 42A",
+      "lessonTitle": "Trading Climactic Reversals 交易高潮反转",
+      "concept": "reversals",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "reversals",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 1.68,
+          "end": 8.8,
+          "textPreview": "我是愛爾,不魯克斯,感谢您收看不魯克斯交易课程,这时关于交易高潮反转的三个视频中的第一个"
+        },
+        {
+          "start": 244.66,
+          "end": 253.66,
+          "textPreview": "市场处于一个非常啥转的区间,尽管市场在这里出现了空头突破,你不得不怀疑,这种价格走适,会持续一场天"
+        },
+        {
+          "start": 488.6,
+          "end": 498.6,
+          "textPreview": "是24买入,这是一次合理的买入,现在我们有了一个清卫的兄弟,这就更好了,因为我们有一对多头贴线行图在多头贴线行图上方买入的概率率高。"
+        }
+      ],
+      "privateResearchSummary": "Video 42A is privately indexed for reviewer distillation under market_structure, reversal_patterns, reversals. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_011_market_structure",
+      "intakeId": "local_video_course_3_intake_011",
+      "semanticId": "semantic_local_video_course_3_intake_011",
+      "sourceId": "local-video-course-3:d9eb5155fe3bd085347134fa",
+      "lessonCode": "Video 42B",
+      "lessonTitle": "Trading Climactic Reversals 交易高潮反转",
+      "concept": "market_structure",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "reversals",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.84,
+          "textPreview": "我是愛爾,不魯克斯,感謝您收看不魯克斯教育課程"
+        },
+        {
+          "start": 246.98,
+          "end": 252.98,
+          "textPreview": "如果繼續下跌,下一個目標就是根據買入高潮的高度,像下一洞的涼度"
+        },
+        {
+          "start": 494.56,
+          "end": 496.56,
+          "textPreview": "然後進行有極致的上行"
+        }
+      ],
+      "privateResearchSummary": "Video 42B is privately indexed for reviewer distillation under market_structure, reversal_patterns, reversals. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_011_reversal_patterns",
+      "intakeId": "local_video_course_3_intake_011",
+      "semanticId": "semantic_local_video_course_3_intake_011",
+      "sourceId": "local-video-course-3:d9eb5155fe3bd085347134fa",
+      "lessonCode": "Video 42B",
+      "lessonTitle": "Trading Climactic Reversals 交易高潮反转",
+      "concept": "reversal_patterns",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "reversals",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.84,
+          "textPreview": "我是愛爾,不魯克斯,感謝您收看不魯克斯教育課程"
+        },
+        {
+          "start": 246.98,
+          "end": 252.98,
+          "textPreview": "如果繼續下跌,下一個目標就是根據買入高潮的高度,像下一洞的涼度"
+        },
+        {
+          "start": 494.56,
+          "end": 496.56,
+          "textPreview": "然後進行有極致的上行"
+        }
+      ],
+      "privateResearchSummary": "Video 42B is privately indexed for reviewer distillation under market_structure, reversal_patterns, reversals. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_011_reversals",
+      "intakeId": "local_video_course_3_intake_011",
+      "semanticId": "semantic_local_video_course_3_intake_011",
+      "sourceId": "local-video-course-3:d9eb5155fe3bd085347134fa",
+      "lessonCode": "Video 42B",
+      "lessonTitle": "Trading Climactic Reversals 交易高潮反转",
+      "concept": "reversals",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "reversals",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.84,
+          "textPreview": "我是愛爾,不魯克斯,感謝您收看不魯克斯教育課程"
+        },
+        {
+          "start": 246.98,
+          "end": 252.98,
+          "textPreview": "如果繼續下跌,下一個目標就是根據買入高潮的高度,像下一洞的涼度"
+        },
+        {
+          "start": 494.56,
+          "end": 496.56,
+          "textPreview": "然後進行有極致的上行"
+        }
+      ],
+      "privateResearchSummary": "Video 42B is privately indexed for reviewer distillation under market_structure, reversal_patterns, reversals. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_012_market_structure",
+      "intakeId": "local_video_course_3_intake_012",
+      "semanticId": "semantic_local_video_course_3_intake_012",
+      "sourceId": "local-video-course-3:5219fd5d9400a65fcdd46be7",
+      "lessonCode": "Video 42C",
+      "lessonTitle": "Trading Climactic Reversals 交易高潮反转",
+      "concept": "market_structure",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "reversals",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 1.65,
+          "end": 8.25,
+          "textPreview": "我是愛爾,不如克斯,感謝您收看不如克斯教育課程,這是關於教育高朝反轉的三個視頻中的第三個"
+        },
+        {
+          "start": 250.23,
+          "end": 255.23,
+          "textPreview": "你會預期至少會有一個小的電子段上升多頭得到了他"
+        },
+        {
+          "start": 498.91,
+          "end": 504.91,
+          "textPreview": "一般來說,在此買入的多頭,大多是在尋找高頭皮的機會,在此處買入的多頭,有些會包頭皮有些會"
+        }
+      ],
+      "privateResearchSummary": "Video 42C is privately indexed for reviewer distillation under market_structure, reversal_patterns, reversals. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_012_reversal_patterns",
+      "intakeId": "local_video_course_3_intake_012",
+      "semanticId": "semantic_local_video_course_3_intake_012",
+      "sourceId": "local-video-course-3:5219fd5d9400a65fcdd46be7",
+      "lessonCode": "Video 42C",
+      "lessonTitle": "Trading Climactic Reversals 交易高潮反转",
+      "concept": "reversal_patterns",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "reversals",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 1.65,
+          "end": 8.25,
+          "textPreview": "我是愛爾,不如克斯,感謝您收看不如克斯教育課程,這是關於教育高朝反轉的三個視頻中的第三個"
+        },
+        {
+          "start": 250.23,
+          "end": 255.23,
+          "textPreview": "你會預期至少會有一個小的電子段上升多頭得到了他"
+        },
+        {
+          "start": 498.91,
+          "end": 504.91,
+          "textPreview": "一般來說,在此買入的多頭,大多是在尋找高頭皮的機會,在此處買入的多頭,有些會包頭皮有些會"
+        }
+      ],
+      "privateResearchSummary": "Video 42C is privately indexed for reviewer distillation under market_structure, reversal_patterns, reversals. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_012_reversals",
+      "intakeId": "local_video_course_3_intake_012",
+      "semanticId": "semantic_local_video_course_3_intake_012",
+      "sourceId": "local-video-course-3:5219fd5d9400a65fcdd46be7",
+      "lessonCode": "Video 42C",
+      "lessonTitle": "Trading Climactic Reversals 交易高潮反转",
+      "concept": "reversals",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "reversals",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 1.65,
+          "end": 8.25,
+          "textPreview": "我是愛爾,不如克斯,感謝您收看不如克斯教育課程,這是關於教育高朝反轉的三個視頻中的第三個"
+        },
+        {
+          "start": 250.23,
+          "end": 255.23,
+          "textPreview": "你會預期至少會有一個小的電子段上升多頭得到了他"
+        },
+        {
+          "start": 498.91,
+          "end": 504.91,
+          "textPreview": "一般來說,在此買入的多頭,大多是在尋找高頭皮的機會,在此處買入的多頭,有些會包頭皮有些會"
+        }
+      ],
+      "privateResearchSummary": "Video 42C is privately indexed for reviewer distillation under market_structure, reversal_patterns, reversals. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_013_channels",
+      "intakeId": "local_video_course_3_intake_013",
+      "semanticId": "semantic_local_video_course_3_intake_013",
+      "sourceId": "local-video-course-3:76e0795d7ab057a55b216dfe",
+      "lessonCode": "Video 43A",
+      "lessonTitle": "TradingTightBullChannels窄幅多头通道",
+      "concept": "channels",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "channels",
+        "trend_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 5,
+          "textPreview": "我是愛爾,不魯克斯,感謝您收看不魯克斯交易課程"
+        },
+        {
+          "start": 246.14,
+          "end": 256.14,
+          "textPreview": "無論何思看圖表,如果發現空頭在多頭區市中,相對容易賺錢,在多頭區市中空頭相對容易賺錢"
+        },
+        {
+          "start": 491.53,
+          "end": 499.93,
+          "textPreview": "他們可能偶爾會賺錢,但他們會在糟糕的交易中,損失更多,最終他們會當天就會虧損"
+        }
+      ],
+      "privateResearchSummary": "Video 43A is privately indexed for reviewer distillation under channels, trend_structure. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_013_trend_structure",
+      "intakeId": "local_video_course_3_intake_013",
+      "semanticId": "semantic_local_video_course_3_intake_013",
+      "sourceId": "local-video-course-3:76e0795d7ab057a55b216dfe",
+      "lessonCode": "Video 43A",
+      "lessonTitle": "TradingTightBullChannels窄幅多头通道",
+      "concept": "trend_structure",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "channels",
+        "trend_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 5,
+          "textPreview": "我是愛爾,不魯克斯,感謝您收看不魯克斯交易課程"
+        },
+        {
+          "start": 246.14,
+          "end": 256.14,
+          "textPreview": "無論何思看圖表,如果發現空頭在多頭區市中,相對容易賺錢,在多頭區市中空頭相對容易賺錢"
+        },
+        {
+          "start": 491.53,
+          "end": 499.93,
+          "textPreview": "他們可能偶爾會賺錢,但他們會在糟糕的交易中,損失更多,最終他們會當天就會虧損"
+        }
+      ],
+      "privateResearchSummary": "Video 43A is privately indexed for reviewer distillation under channels, trend_structure. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_014_channels",
+      "intakeId": "local_video_course_3_intake_014",
+      "semanticId": "semantic_local_video_course_3_intake_014",
+      "sourceId": "local-video-course-3:61cb31c218f31b2f064f5212",
+      "lessonCode": "Video 43C",
+      "lessonTitle": "TradingTightBullChannels窄幅多头通道",
+      "concept": "channels",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "channels",
+        "trend_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.9,
+          "textPreview": "我是愛爾,不魯克斯,感謝您收看不魯克斯交易課程。"
+        },
+        {
+          "start": 242.25,
+          "end": 247.25,
+          "textPreview": "反轉,最好在錢一交易日的低點下方買入而不是買出。"
+        },
+        {
+          "start": 483.7,
+          "end": 495.3,
+          "textPreview": "而不必等待質詋被出局。恐投交易者可能會在這一高點賣出,你可能會在市場中設置現加單,一邊賣出更多。"
+        }
+      ],
+      "privateResearchSummary": "Video 43C is privately indexed for reviewer distillation under channels, trend_structure. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_014_trend_structure",
+      "intakeId": "local_video_course_3_intake_014",
+      "semanticId": "semantic_local_video_course_3_intake_014",
+      "sourceId": "local-video-course-3:61cb31c218f31b2f064f5212",
+      "lessonCode": "Video 43C",
+      "lessonTitle": "TradingTightBullChannels窄幅多头通道",
+      "concept": "trend_structure",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "channels",
+        "trend_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.9,
+          "textPreview": "我是愛爾,不魯克斯,感謝您收看不魯克斯交易課程。"
+        },
+        {
+          "start": 242.25,
+          "end": 247.25,
+          "textPreview": "反轉,最好在錢一交易日的低點下方買入而不是買出。"
+        },
+        {
+          "start": 483.7,
+          "end": 495.3,
+          "textPreview": "而不必等待質詋被出局。恐投交易者可能會在這一高點賣出,你可能會在市場中設置現加單,一邊賣出更多。"
+        }
+      ],
+      "privateResearchSummary": "Video 43C is privately indexed for reviewer distillation under channels, trend_structure. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_015_channels",
+      "intakeId": "local_video_course_3_intake_015",
+      "semanticId": "semantic_local_video_course_3_intake_015",
+      "sourceId": "local-video-course-3:b1515bb3df2178cbc9473404",
+      "lessonCode": "Video 43D",
+      "lessonTitle": "TradingTightBullChannels窄幅多头通道",
+      "concept": "channels",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "channels",
+        "trend_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0.27,
+          "end": 9.01,
+          "textPreview": "我是愛爾,不如克思感謝您收看不如克思交易課程,這是關於交易和緊多頭通道的四個視頻中的第四個。"
+        },
+        {
+          "start": 247.99,
+          "end": 250.19,
+          "textPreview": "因此,你必須想出如何買入。"
+        },
+        {
+          "start": 491.87,
+          "end": 494.87,
+          "textPreview": "也是差不多的價格,這是突破的起點。"
+        }
+      ],
+      "privateResearchSummary": "Video 43D is privately indexed for reviewer distillation under channels, trend_structure. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_015_trend_structure",
+      "intakeId": "local_video_course_3_intake_015",
+      "semanticId": "semantic_local_video_course_3_intake_015",
+      "sourceId": "local-video-course-3:b1515bb3df2178cbc9473404",
+      "lessonCode": "Video 43D",
+      "lessonTitle": "TradingTightBullChannels窄幅多头通道",
+      "concept": "trend_structure",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "channels",
+        "trend_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0.27,
+          "end": 9.01,
+          "textPreview": "我是愛爾,不如克思感謝您收看不如克思交易課程,這是關於交易和緊多頭通道的四個視頻中的第四個。"
+        },
+        {
+          "start": 247.99,
+          "end": 250.19,
+          "textPreview": "因此,你必須想出如何買入。"
+        },
+        {
+          "start": 491.87,
+          "end": 494.87,
+          "textPreview": "也是差不多的價格,這是突破的起點。"
+        }
+      ],
+      "privateResearchSummary": "Video 43D is privately indexed for reviewer distillation under channels, trend_structure. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_016_channels",
+      "intakeId": "local_video_course_3_intake_016",
+      "semanticId": "semantic_local_video_course_3_intake_016",
+      "sourceId": "local-video-course-3:72cb1ff78069e7cbfd9f98dd",
+      "lessonCode": "Video 44A",
+      "lessonTitle": "TradingTightBearChannels窄幅空头通道",
+      "concept": "channels",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "channels",
+        "trend_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.84,
+          "textPreview": "我是愛爾 布魯克斯 感謝您收看布魯克斯交易課程"
+        },
+        {
+          "start": 240.04,
+          "end": 242.24,
+          "textPreview": "最小的頭皮尺寸是一個點"
+        },
+        {
+          "start": 481.47,
+          "end": 482.99,
+          "textPreview": "現在又出現了一個犧牲底"
+        }
+      ],
+      "privateResearchSummary": "Video 44A is privately indexed for reviewer distillation under channels, trend_structure. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_016_trend_structure",
+      "intakeId": "local_video_course_3_intake_016",
+      "semanticId": "semantic_local_video_course_3_intake_016",
+      "sourceId": "local-video-course-3:72cb1ff78069e7cbfd9f98dd",
+      "lessonCode": "Video 44A",
+      "lessonTitle": "TradingTightBearChannels窄幅空头通道",
+      "concept": "trend_structure",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "channels",
+        "trend_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.84,
+          "textPreview": "我是愛爾 布魯克斯 感謝您收看布魯克斯交易課程"
+        },
+        {
+          "start": 240.04,
+          "end": 242.24,
+          "textPreview": "最小的頭皮尺寸是一個點"
+        },
+        {
+          "start": 481.47,
+          "end": 482.99,
+          "textPreview": "現在又出現了一個犧牲底"
+        }
+      ],
+      "privateResearchSummary": "Video 44A is privately indexed for reviewer distillation under channels, trend_structure. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_017_channels",
+      "intakeId": "local_video_course_3_intake_017",
+      "semanticId": "semantic_local_video_course_3_intake_017",
+      "sourceId": "local-video-course-3:3f181111956c414610c8c232",
+      "lessonCode": "Video 44C",
+      "lessonTitle": "Trading Tight Bear Channels窄幅空头通道",
+      "concept": "channels",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "channels",
+        "trend_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 3.8,
+          "textPreview": "我是愛爾 布魯克斯 感谢您收看布魯克斯交易课程"
+        },
+        {
+          "start": 240.58,
+          "end": 241.54,
+          "textPreview": "这是五分钟图"
+        },
+        {
+          "start": 481.16,
+          "end": 482.44,
+          "textPreview": "我们跌止新低"
+        }
+      ],
+      "privateResearchSummary": "Video 44C is privately indexed for reviewer distillation under channels, trend_structure. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_017_trend_structure",
+      "intakeId": "local_video_course_3_intake_017",
+      "semanticId": "semantic_local_video_course_3_intake_017",
+      "sourceId": "local-video-course-3:3f181111956c414610c8c232",
+      "lessonCode": "Video 44C",
+      "lessonTitle": "Trading Tight Bear Channels窄幅空头通道",
+      "concept": "trend_structure",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "channels",
+        "trend_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 3.8,
+          "textPreview": "我是愛爾 布魯克斯 感谢您收看布魯克斯交易课程"
+        },
+        {
+          "start": 240.58,
+          "end": 241.54,
+          "textPreview": "这是五分钟图"
+        },
+        {
+          "start": 481.16,
+          "end": 482.44,
+          "textPreview": "我们跌止新低"
+        }
+      ],
+      "privateResearchSummary": "Video 44C is privately indexed for reviewer distillation under channels, trend_structure. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_018_channels",
+      "intakeId": "local_video_course_3_intake_018",
+      "semanticId": "semantic_local_video_course_3_intake_018",
+      "sourceId": "local-video-course-3:877d8f4b6326f50a71897f0f",
+      "lessonCode": "Video 44D",
+      "lessonTitle": "Trading Tight Bear Channels窄幅空头通道",
+      "concept": "channels",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "channels",
+        "trend_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 3.8,
+          "textPreview": "我是愛爾,不魯克斯,感谢您收看布魯克斯教育課程"
+        },
+        {
+          "start": 244.06,
+          "end": 249.3,
+          "textPreview": "要我們是突破點,要我們是最近賣出高潮的頂部,急最近的主要高低點"
+        },
+        {
+          "start": 488.06,
+          "end": 496.5,
+          "textPreview": "我們突破的這條趨勢線,但現在可以化另一條趨勢線,因此,你可以在趨勢線出賣出,或者在從該組例為反轉下跌勢賣出"
+        }
+      ],
+      "privateResearchSummary": "Video 44D is privately indexed for reviewer distillation under channels, trend_structure. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_018_trend_structure",
+      "intakeId": "local_video_course_3_intake_018",
+      "semanticId": "semantic_local_video_course_3_intake_018",
+      "sourceId": "local-video-course-3:877d8f4b6326f50a71897f0f",
+      "lessonCode": "Video 44D",
+      "lessonTitle": "Trading Tight Bear Channels窄幅空头通道",
+      "concept": "trend_structure",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "channels",
+        "trend_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 3.8,
+          "textPreview": "我是愛爾,不魯克斯,感谢您收看布魯克斯教育課程"
+        },
+        {
+          "start": 244.06,
+          "end": 249.3,
+          "textPreview": "要我們是突破點,要我們是最近賣出高潮的頂部,急最近的主要高低點"
+        },
+        {
+          "start": 488.06,
+          "end": 496.5,
+          "textPreview": "我們突破的這條趨勢線,但現在可以化另一條趨勢線,因此,你可以在趨勢線出賣出,或者在從該組例為反轉下跌勢賣出"
+        }
+      ],
+      "privateResearchSummary": "Video 44D is privately indexed for reviewer distillation under channels, trend_structure. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_019_channels",
+      "intakeId": "local_video_course_3_intake_019",
+      "semanticId": "semantic_local_video_course_3_intake_019",
+      "sourceId": "local-video-course-3:83459694f9207f1e4e294213",
+      "lessonCode": "Video 45A",
+      "lessonTitle": "Trading Broad Bull Channels宽阔的牛市通道",
+      "concept": "channels",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "channels",
+        "trend_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 3.8,
+          "textPreview": "我是愛爾,不魯克斯,感谢您收看不魯克斯交易课程"
+        },
+        {
+          "start": 240.54,
+          "end": 241.9,
+          "textPreview": "空头可能会再次买出"
+        },
+        {
+          "start": 481.18,
+          "end": 483.26,
+          "textPreview": "你就不會看這麼多貧線圖"
+        }
+      ],
+      "privateResearchSummary": "Video 45A is privately indexed for reviewer distillation under channels, trend_structure. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_019_trend_structure",
+      "intakeId": "local_video_course_3_intake_019",
+      "semanticId": "semantic_local_video_course_3_intake_019",
+      "sourceId": "local-video-course-3:83459694f9207f1e4e294213",
+      "lessonCode": "Video 45A",
+      "lessonTitle": "Trading Broad Bull Channels宽阔的牛市通道",
+      "concept": "trend_structure",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "channels",
+        "trend_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 3.8,
+          "textPreview": "我是愛爾,不魯克斯,感谢您收看不魯克斯交易课程"
+        },
+        {
+          "start": 240.54,
+          "end": 241.9,
+          "textPreview": "空头可能会再次买出"
+        },
+        {
+          "start": 481.18,
+          "end": 483.26,
+          "textPreview": "你就不會看這麼多貧線圖"
+        }
+      ],
+      "privateResearchSummary": "Video 45A is privately indexed for reviewer distillation under channels, trend_structure. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_020_channels",
+      "intakeId": "local_video_course_3_intake_020",
+      "semanticId": "semantic_local_video_course_3_intake_020",
+      "sourceId": "local-video-course-3:3426c85a037ac2f2650123ec",
+      "lessonCode": "Video 45C",
+      "lessonTitle": "Trading Broad Bull Channels宽阔的牛市通道",
+      "concept": "channels",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "channels",
+        "trend_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.68,
+          "textPreview": "我是愛爾,不魯克斯,感謝您收看不魯克斯交易課程"
+        },
+        {
+          "start": 246.21,
+          "end": 251.21,
+          "textPreview": "它們希望寬服多頭通道持續下去,但它們知道市場在很多時候處於交易區間"
+        },
+        {
+          "start": 486.54,
+          "end": 492.46,
+          "textPreview": "請介著,市場正處於多投區市中,在某些時候,他會過度到交易區間"
+        }
+      ],
+      "privateResearchSummary": "Video 45C is privately indexed for reviewer distillation under channels, trend_structure. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_020_trend_structure",
+      "intakeId": "local_video_course_3_intake_020",
+      "semanticId": "semantic_local_video_course_3_intake_020",
+      "sourceId": "local-video-course-3:3426c85a037ac2f2650123ec",
+      "lessonCode": "Video 45C",
+      "lessonTitle": "Trading Broad Bull Channels宽阔的牛市通道",
+      "concept": "trend_structure",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "channels",
+        "trend_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.68,
+          "textPreview": "我是愛爾,不魯克斯,感謝您收看不魯克斯交易課程"
+        },
+        {
+          "start": 246.21,
+          "end": 251.21,
+          "textPreview": "它們希望寬服多頭通道持續下去,但它們知道市場在很多時候處於交易區間"
+        },
+        {
+          "start": 486.54,
+          "end": 492.46,
+          "textPreview": "請介著,市場正處於多投區市中,在某些時候,他會過度到交易區間"
+        }
+      ],
+      "privateResearchSummary": "Video 45C is privately indexed for reviewer distillation under channels, trend_structure. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_021_channels",
+      "intakeId": "local_video_course_3_intake_021",
+      "semanticId": "semantic_local_video_course_3_intake_021",
+      "sourceId": "local-video-course-3:254f75373093c0da652699cd",
+      "lessonCode": "Video 45D",
+      "lessonTitle": "Trading Broad Bull Channels宽阔的牛市通道",
+      "concept": "channels",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "channels",
+        "trend_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.04,
+          "textPreview": "我是布魯克斯 感谢您收看布魯克斯交易课程"
+        },
+        {
+          "start": 244.38,
+          "end": 245.5,
+          "textPreview": "这里这里和这里"
+        },
+        {
+          "start": 486,
+          "end": 488.08,
+          "textPreview": "我们人处于多头区始终"
+        }
+      ],
+      "privateResearchSummary": "Video 45D is privately indexed for reviewer distillation under channels, trend_structure. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_021_trend_structure",
+      "intakeId": "local_video_course_3_intake_021",
+      "semanticId": "semantic_local_video_course_3_intake_021",
+      "sourceId": "local-video-course-3:254f75373093c0da652699cd",
+      "lessonCode": "Video 45D",
+      "lessonTitle": "Trading Broad Bull Channels宽阔的牛市通道",
+      "concept": "trend_structure",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "channels",
+        "trend_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.04,
+          "textPreview": "我是布魯克斯 感谢您收看布魯克斯交易课程"
+        },
+        {
+          "start": 244.38,
+          "end": 245.5,
+          "textPreview": "这里这里和这里"
+        },
+        {
+          "start": 486,
+          "end": 488.08,
+          "textPreview": "我们人处于多头区始终"
+        }
+      ],
+      "privateResearchSummary": "Video 45D is privately indexed for reviewer distillation under channels, trend_structure. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_022_channels",
+      "intakeId": "local_video_course_3_intake_022",
+      "semanticId": "semantic_local_video_course_3_intake_022",
+      "sourceId": "local-video-course-3:3be887300efd6b7c40362fc3",
+      "lessonCode": "Video 46A",
+      "lessonTitle": "Trading Broad Bear Channels宽阔的熊通道",
+      "concept": "channels",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "channels",
+        "trend_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.76,
+          "textPreview": "我是愛爾,不魯克斯,感謝您收看不魯克斯交易課程"
+        },
+        {
+          "start": 247.14,
+          "end": 256.34,
+          "textPreview": "交易區間通常會有強烈的上下波動,強烈的多頭圖圖,強市多頭圖圖圖大空頭反轉,大泡手下跌"
+        },
+        {
+          "start": 488.19,
+          "end": 492.35,
+          "textPreview": "例如,這是一個主要的較低高點,這是一個主要的較低高點"
+        }
+      ],
+      "privateResearchSummary": "Video 46A is privately indexed for reviewer distillation under channels, trend_structure. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_022_trend_structure",
+      "intakeId": "local_video_course_3_intake_022",
+      "semanticId": "semantic_local_video_course_3_intake_022",
+      "sourceId": "local-video-course-3:3be887300efd6b7c40362fc3",
+      "lessonCode": "Video 46A",
+      "lessonTitle": "Trading Broad Bear Channels宽阔的熊通道",
+      "concept": "trend_structure",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "channels",
+        "trend_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.76,
+          "textPreview": "我是愛爾,不魯克斯,感謝您收看不魯克斯交易課程"
+        },
+        {
+          "start": 247.14,
+          "end": 256.34,
+          "textPreview": "交易區間通常會有強烈的上下波動,強烈的多頭圖圖,強市多頭圖圖圖大空頭反轉,大泡手下跌"
+        },
+        {
+          "start": 488.19,
+          "end": 492.35,
+          "textPreview": "例如,這是一個主要的較低高點,這是一個主要的較低高點"
+        }
+      ],
+      "privateResearchSummary": "Video 46A is privately indexed for reviewer distillation under channels, trend_structure. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_023_channels",
+      "intakeId": "local_video_course_3_intake_023",
+      "semanticId": "semantic_local_video_course_3_intake_023",
+      "sourceId": "local-video-course-3:1199cd336ffd3747cf1e4ece",
+      "lessonCode": "Video 46D",
+      "lessonTitle": "Trading Broad Bear Channels宽阔的熊通道",
+      "concept": "channels",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "channels",
+        "trend_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.48,
+          "textPreview": "我是愛爾 不魯克斯 感謝您收看布魯克斯交易課程"
+        },
+        {
+          "start": 241.97,
+          "end": 244.09,
+          "textPreview": "下面是其它一些突破點"
+        },
+        {
+          "start": 483.69,
+          "end": 485.69,
+          "textPreview": "可能會下跌三十點"
+        }
+      ],
+      "privateResearchSummary": "Video 46D is privately indexed for reviewer distillation under channels, trend_structure. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_023_trend_structure",
+      "intakeId": "local_video_course_3_intake_023",
+      "semanticId": "semantic_local_video_course_3_intake_023",
+      "sourceId": "local-video-course-3:1199cd336ffd3747cf1e4ece",
+      "lessonCode": "Video 46D",
+      "lessonTitle": "Trading Broad Bear Channels宽阔的熊通道",
+      "concept": "trend_structure",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "channels",
+        "trend_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.48,
+          "textPreview": "我是愛爾 不魯克斯 感謝您收看布魯克斯交易課程"
+        },
+        {
+          "start": 241.97,
+          "end": 244.09,
+          "textPreview": "下面是其它一些突破點"
+        },
+        {
+          "start": 483.69,
+          "end": 485.69,
+          "textPreview": "可能會下跌三十點"
+        }
+      ],
+      "privateResearchSummary": "Video 46D is privately indexed for reviewer distillation under channels, trend_structure. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_024_market_structure",
+      "intakeId": "local_video_course_3_intake_024",
+      "semanticId": "semantic_local_video_course_3_intake_024",
+      "sourceId": "local-video-course-3:9474631e569a7435b57ceba5",
+      "lessonCode": "Video 47A",
+      "lessonTitle": "Trading in Trading Ranges交易区间内交易",
+      "concept": "market_structure",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "trading_ranges",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 1.68,
+          "end": 8.32,
+          "textPreview": "我是愛爾,不如克思,感謝您收看不如克思教育課程,這是關於教育區間的四個視頻中的第一個"
+        },
+        {
+          "start": 246.11,
+          "end": 255.71,
+          "textPreview": "多於買方,在區間中部,教育者會在高點上方使用現假單買出,尤其是當反彈法律時,這看起來更像是交易區間內的多頭配線"
+        },
+        {
+          "start": 503.09,
+          "end": 513.26,
+          "textPreview": "此處反彈強盡,這裡反彈強盡,我總是想知道左邊的課線是什麼樣的"
+        }
+      ],
+      "privateResearchSummary": "Video 47A is privately indexed for reviewer distillation under market_structure, trading_ranges. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_024_trading_ranges",
+      "intakeId": "local_video_course_3_intake_024",
+      "semanticId": "semantic_local_video_course_3_intake_024",
+      "sourceId": "local-video-course-3:9474631e569a7435b57ceba5",
+      "lessonCode": "Video 47A",
+      "lessonTitle": "Trading in Trading Ranges交易区间内交易",
+      "concept": "trading_ranges",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "trading_ranges",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 1.68,
+          "end": 8.32,
+          "textPreview": "我是愛爾,不如克思,感謝您收看不如克思教育課程,這是關於教育區間的四個視頻中的第一個"
+        },
+        {
+          "start": 246.11,
+          "end": 255.71,
+          "textPreview": "多於買方,在區間中部,教育者會在高點上方使用現假單買出,尤其是當反彈法律時,這看起來更像是交易區間內的多頭配線"
+        },
+        {
+          "start": 503.09,
+          "end": 513.26,
+          "textPreview": "此處反彈強盡,這裡反彈強盡,我總是想知道左邊的課線是什麼樣的"
+        }
+      ],
+      "privateResearchSummary": "Video 47A is privately indexed for reviewer distillation under market_structure, trading_ranges. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_025_market_structure",
+      "intakeId": "local_video_course_3_intake_025",
+      "semanticId": "semantic_local_video_course_3_intake_025",
+      "sourceId": "local-video-course-3:ffed6d06613c1158e1b484ff",
+      "lessonCode": "Video 47C",
+      "lessonTitle": "Trading in Trading Ranges交易区间内交易",
+      "concept": "market_structure",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "trading_ranges",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.92,
+          "textPreview": "我是阿爾,不魯克斯,感謝您收看不魯克斯交易課程"
+        },
+        {
+          "start": 242.5,
+          "end": 245.78,
+          "textPreview": "這裡也是一個大的兩條腿形態,一,二"
+        },
+        {
+          "start": 482.75,
+          "end": 486.83,
+          "textPreview": "如果你獲得的這樣一個非常強勁的突破,特別是當有一個可能的"
+        }
+      ],
+      "privateResearchSummary": "Video 47C is privately indexed for reviewer distillation under market_structure, trading_ranges. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_025_trading_ranges",
+      "intakeId": "local_video_course_3_intake_025",
+      "semanticId": "semantic_local_video_course_3_intake_025",
+      "sourceId": "local-video-course-3:ffed6d06613c1158e1b484ff",
+      "lessonCode": "Video 47C",
+      "lessonTitle": "Trading in Trading Ranges交易区间内交易",
+      "concept": "trading_ranges",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "trading_ranges",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.92,
+          "textPreview": "我是阿爾,不魯克斯,感謝您收看不魯克斯交易課程"
+        },
+        {
+          "start": 242.5,
+          "end": 245.78,
+          "textPreview": "這裡也是一個大的兩條腿形態,一,二"
+        },
+        {
+          "start": 482.75,
+          "end": 486.83,
+          "textPreview": "如果你獲得的這樣一個非常強勁的突破,特別是當有一個可能的"
+        }
+      ],
+      "privateResearchSummary": "Video 47C is privately indexed for reviewer distillation under market_structure, trading_ranges. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_026_market_structure",
+      "intakeId": "local_video_course_3_intake_026",
+      "semanticId": "semantic_local_video_course_3_intake_026",
+      "sourceId": "local-video-course-3:1d7c5c94cc621bb39889de3b",
+      "lessonCode": "Video 47D",
+      "lessonTitle": "Trading in Trading Ranges交易区间内交易",
+      "concept": "market_structure",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "trading_ranges",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.4,
+          "textPreview": "我是愛爾不魯克斯 感谢您收看不魯克斯教育課程"
+        },
+        {
+          "start": 241.05,
+          "end": 242.25,
+          "textPreview": "至少比第一次進場"
+        },
+        {
+          "start": 481.98,
+          "end": 483.98,
+          "textPreview": "考慮到上下波董的幅度"
+        }
+      ],
+      "privateResearchSummary": "Video 47D is privately indexed for reviewer distillation under market_structure, trading_ranges. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_026_trading_ranges",
+      "intakeId": "local_video_course_3_intake_026",
+      "semanticId": "semantic_local_video_course_3_intake_026",
+      "sourceId": "local-video-course-3:1d7c5c94cc621bb39889de3b",
+      "lessonCode": "Video 47D",
+      "lessonTitle": "Trading in Trading Ranges交易区间内交易",
+      "concept": "trading_ranges",
+      "nodeType": "price_action_concept",
+      "moduleTags": [
+        "trading_ranges",
+        "market_structure"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.4,
+          "textPreview": "我是愛爾不魯克斯 感谢您收看不魯克斯教育課程"
+        },
+        {
+          "start": 241.05,
+          "end": 242.25,
+          "textPreview": "至少比第一次進場"
+        },
+        {
+          "start": 481.98,
+          "end": 483.98,
+          "textPreview": "考慮到上下波董的幅度"
+        }
+      ],
+      "privateResearchSummary": "Video 47D is privately indexed for reviewer distillation under market_structure, trading_ranges. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_027_session_open_trading",
+      "intakeId": "local_video_course_3_intake_027",
+      "semanticId": "semantic_local_video_course_3_intake_027",
+      "sourceId": "local-video-course-3:2adc7b67a6ed052d4dd9c229",
+      "lessonCode": "Video 48A",
+      "lessonTitle": "Trading the Open开盘交易",
+      "concept": "session_open_trading",
+      "nodeType": "video_course_concept",
+      "moduleTags": [
+        "session_open_trading",
+        "trade_management"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.28,
+          "textPreview": "我是愛爾 不魯克斯 感謝您收看布魯克斯教育課程"
+        },
+        {
+          "start": 240.59,
+          "end": 241.95,
+          "textPreview": "這樣的時候不交易"
+        },
+        {
+          "start": 482.62,
+          "end": 484.7,
+          "textPreview": "或從交易趨勁轉變為突破"
+        }
+      ],
+      "privateResearchSummary": "Video 48A is privately indexed for reviewer distillation under session_open_trading, trade_management. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "p0_human_review_required",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_027_trade_management",
+      "intakeId": "local_video_course_3_intake_027",
+      "semanticId": "semantic_local_video_course_3_intake_027",
+      "sourceId": "local-video-course-3:2adc7b67a6ed052d4dd9c229",
+      "lessonCode": "Video 48A",
+      "lessonTitle": "Trading the Open开盘交易",
+      "concept": "trade_management",
+      "nodeType": "risk_execution_concept",
+      "moduleTags": [
+        "session_open_trading",
+        "trade_management"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.28,
+          "textPreview": "我是愛爾 不魯克斯 感謝您收看布魯克斯教育課程"
+        },
+        {
+          "start": 240.59,
+          "end": 241.95,
+          "textPreview": "這樣的時候不交易"
+        },
+        {
+          "start": 482.62,
+          "end": 484.7,
+          "textPreview": "或從交易趨勁轉變為突破"
+        }
+      ],
+      "privateResearchSummary": "Video 48A is privately indexed for reviewer distillation under session_open_trading, trade_management. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "p0_human_review_required",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_028_session_open_trading",
+      "intakeId": "local_video_course_3_intake_028",
+      "semanticId": "semantic_local_video_course_3_intake_028",
+      "sourceId": "local-video-course-3:81fdf9d068cce6e5e287d574",
+      "lessonCode": "Video 48C",
+      "lessonTitle": "Trading the Open开盘交易",
+      "concept": "session_open_trading",
+      "nodeType": "video_course_concept",
+      "moduleTags": [
+        "session_open_trading",
+        "trade_management"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.48,
+          "textPreview": "我是愛爾,不魯克斯,感謝您收看不魯克斯交易課程"
+        },
+        {
+          "start": 240.07,
+          "end": 241.91,
+          "textPreview": "很可能會反轉下跌"
+        },
+        {
+          "start": 485.64,
+          "end": 487.32,
+          "textPreview": "這個可以寫底部的微部"
+        }
+      ],
+      "privateResearchSummary": "Video 48C is privately indexed for reviewer distillation under session_open_trading, trade_management. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "p0_human_review_required",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_028_trade_management",
+      "intakeId": "local_video_course_3_intake_028",
+      "semanticId": "semantic_local_video_course_3_intake_028",
+      "sourceId": "local-video-course-3:81fdf9d068cce6e5e287d574",
+      "lessonCode": "Video 48C",
+      "lessonTitle": "Trading the Open开盘交易",
+      "concept": "trade_management",
+      "nodeType": "risk_execution_concept",
+      "moduleTags": [
+        "session_open_trading",
+        "trade_management"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.48,
+          "textPreview": "我是愛爾,不魯克斯,感謝您收看不魯克斯交易課程"
+        },
+        {
+          "start": 240.07,
+          "end": 241.91,
+          "textPreview": "很可能會反轉下跌"
+        },
+        {
+          "start": 485.64,
+          "end": 487.32,
+          "textPreview": "這個可以寫底部的微部"
+        }
+      ],
+      "privateResearchSummary": "Video 48C is privately indexed for reviewer distillation under session_open_trading, trade_management. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "p0_human_review_required",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_029_session_open_trading",
+      "intakeId": "local_video_course_3_intake_029",
+      "semanticId": "semantic_local_video_course_3_intake_029",
+      "sourceId": "local-video-course-3:98c30ca3bee3b619058ef7c9",
+      "lessonCode": "Video 48D",
+      "lessonTitle": "Trading the Open开盘交易",
+      "concept": "session_open_trading",
+      "nodeType": "video_course_concept",
+      "moduleTags": [
+        "session_open_trading",
+        "trade_management"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.48,
+          "textPreview": "我是愛爾 布魯克斯 感謝您收看布魯克斯交易課程"
+        },
+        {
+          "start": 243.18,
+          "end": 246.18,
+          "textPreview": "我尋找的是當天的第十八條橫線"
+        },
+        {
+          "start": 483.83,
+          "end": 485.83,
+          "textPreview": "以尋求有極致的波動"
+        }
+      ],
+      "privateResearchSummary": "Video 48D is privately indexed for reviewer distillation under session_open_trading, trade_management. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "p0_human_review_required",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_029_trade_management",
+      "intakeId": "local_video_course_3_intake_029",
+      "semanticId": "semantic_local_video_course_3_intake_029",
+      "sourceId": "local-video-course-3:98c30ca3bee3b619058ef7c9",
+      "lessonCode": "Video 48D",
+      "lessonTitle": "Trading the Open开盘交易",
+      "concept": "trade_management",
+      "nodeType": "risk_execution_concept",
+      "moduleTags": [
+        "session_open_trading",
+        "trade_management"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.48,
+          "textPreview": "我是愛爾 布魯克斯 感謝您收看布魯克斯交易課程"
+        },
+        {
+          "start": 243.18,
+          "end": 246.18,
+          "textPreview": "我尋找的是當天的第十八條橫線"
+        },
+        {
+          "start": 483.83,
+          "end": 485.83,
+          "textPreview": "以尋求有極致的波動"
+        }
+      ],
+      "privateResearchSummary": "Video 48D is privately indexed for reviewer distillation under session_open_trading, trade_management. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "p0_human_review_required",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_030_intraday_session_management",
+      "intakeId": "local_video_course_3_intake_030",
+      "semanticId": "semantic_local_video_course_3_intake_030",
+      "sourceId": "local-video-course-3:3aee8046adf0769a12c9a523",
+      "lessonCode": "Video 48G",
+      "lessonTitle": "Trading the Middle of the Day日内交易",
+      "concept": "intraday_session_management",
+      "nodeType": "risk_execution_concept",
+      "moduleTags": [
+        "intraday_session_management",
+        "trade_management"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.6,
+          "textPreview": "我是愛爾,不魯克斯,感謝您收看不魯克斯交易課程"
+        },
+        {
+          "start": 241.6,
+          "end": 243.52,
+          "textPreview": "在這裡多頭勢途獲得繁轉上漲"
+        },
+        {
+          "start": 485.82,
+          "end": 488.14,
+          "textPreview": "一旦最後一支落空頭賣出"
+        }
+      ],
+      "privateResearchSummary": "Video 48G is privately indexed for reviewer distillation under intraday_session_management, trade_management. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "p0_human_review_required",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_030_trade_management",
+      "intakeId": "local_video_course_3_intake_030",
+      "semanticId": "semantic_local_video_course_3_intake_030",
+      "sourceId": "local-video-course-3:3aee8046adf0769a12c9a523",
+      "lessonCode": "Video 48G",
+      "lessonTitle": "Trading the Middle of the Day日内交易",
+      "concept": "trade_management",
+      "nodeType": "risk_execution_concept",
+      "moduleTags": [
+        "intraday_session_management",
+        "trade_management"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.6,
+          "textPreview": "我是愛爾,不魯克斯,感謝您收看不魯克斯交易課程"
+        },
+        {
+          "start": 241.6,
+          "end": 243.52,
+          "textPreview": "在這裡多頭勢途獲得繁轉上漲"
+        },
+        {
+          "start": 485.82,
+          "end": 488.14,
+          "textPreview": "一旦最後一支落空頭賣出"
+        }
+      ],
+      "privateResearchSummary": "Video 48G is privately indexed for reviewer distillation under intraday_session_management, trade_management. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "p0_human_review_required",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_031_trade_management",
+      "intakeId": "local_video_course_3_intake_031",
+      "semanticId": "semantic_local_video_course_3_intake_031",
+      "sourceId": "local-video-course-3:99c04a7914f1ac67525004d9",
+      "lessonCode": "Video 49A",
+      "lessonTitle": "Swing trading examples波段交易示例",
+      "concept": "trade_management",
+      "nodeType": "risk_execution_concept",
+      "moduleTags": [
+        "trading_styles",
+        "trade_management"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 1.81,
+          "end": 10.21,
+          "textPreview": "我是愛爾,不魯克斯,感謝您收看不魯克斯交易課程,在本市平中,我將舉一些波段交易的例子"
+        },
+        {
+          "start": 243.47,
+          "end": 244.47,
+          "textPreview": "而在某些時候"
+        },
+        {
+          "start": 485.62,
+          "end": 487.62,
+          "textPreview": "我之前談到過這一點"
+        }
+      ],
+      "privateResearchSummary": "Video 49A is privately indexed for reviewer distillation under trade_management, trading_styles. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "p0_human_review_required",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_031_trading_styles",
+      "intakeId": "local_video_course_3_intake_031",
+      "semanticId": "semantic_local_video_course_3_intake_031",
+      "sourceId": "local-video-course-3:99c04a7914f1ac67525004d9",
+      "lessonCode": "Video 49A",
+      "lessonTitle": "Swing trading examples波段交易示例",
+      "concept": "trading_styles",
+      "nodeType": "risk_execution_concept",
+      "moduleTags": [
+        "trading_styles",
+        "trade_management"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 1.81,
+          "end": 10.21,
+          "textPreview": "我是愛爾,不魯克斯,感謝您收看不魯克斯交易課程,在本市平中,我將舉一些波段交易的例子"
+        },
+        {
+          "start": 243.47,
+          "end": 244.47,
+          "textPreview": "而在某些時候"
+        },
+        {
+          "start": 485.62,
+          "end": 487.62,
+          "textPreview": "我之前談到過這一點"
+        }
+      ],
+      "privateResearchSummary": "Video 49A is privately indexed for reviewer distillation under trade_management, trading_styles. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "p0_human_review_required",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_032_trade_management",
+      "intakeId": "local_video_course_3_intake_032",
+      "semanticId": "semantic_local_video_course_3_intake_032",
+      "sourceId": "local-video-course-3:081c2a378933240b1b7abfbe",
+      "lessonCode": "Video 49B",
+      "lessonTitle": "Swing Trading Examples波段交易示例",
+      "concept": "trade_management",
+      "nodeType": "risk_execution_concept",
+      "moduleTags": [
+        "trading_styles",
+        "trade_management"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.28,
+          "textPreview": "我是愛爾,不魯克斯,感谢您收看不魯克斯教育課程"
+        },
+        {
+          "start": 252.36,
+          "end": 262,
+          "textPreview": "贴线不是空头贴线,没有空头体,对多头来说是最起码的良好根据,这一位这我们至少会走高一点,也许是有杰质的"
+        },
+        {
+          "start": 499.3,
+          "end": 507.3,
+          "textPreview": "可能性在接下来的一两个小时内,在这里,我们有大约七十个交易区间的价格走市走盘"
+        }
+      ],
+      "privateResearchSummary": "Video 49B is privately indexed for reviewer distillation under trade_management, trading_styles. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "p0_human_review_required",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_032_trading_styles",
+      "intakeId": "local_video_course_3_intake_032",
+      "semanticId": "semantic_local_video_course_3_intake_032",
+      "sourceId": "local-video-course-3:081c2a378933240b1b7abfbe",
+      "lessonCode": "Video 49B",
+      "lessonTitle": "Swing Trading Examples波段交易示例",
+      "concept": "trading_styles",
+      "nodeType": "risk_execution_concept",
+      "moduleTags": [
+        "trading_styles",
+        "trade_management"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.28,
+          "textPreview": "我是愛爾,不魯克斯,感谢您收看不魯克斯教育課程"
+        },
+        {
+          "start": 252.36,
+          "end": 262,
+          "textPreview": "贴线不是空头贴线,没有空头体,对多头来说是最起码的良好根据,这一位这我们至少会走高一点,也许是有杰质的"
+        },
+        {
+          "start": 499.3,
+          "end": 507.3,
+          "textPreview": "可能性在接下来的一两个小时内,在这里,我们有大约七十个交易区间的价格走市走盘"
+        }
+      ],
+      "privateResearchSummary": "Video 49B is privately indexed for reviewer distillation under trade_management, trading_styles. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "p0_human_review_required",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_033_trade_management",
+      "intakeId": "local_video_course_3_intake_033",
+      "semanticId": "semantic_local_video_course_3_intake_033",
+      "sourceId": "local-video-course-3:1ed95f0199669ec9e3cfef9b",
+      "lessonCode": "Video 49C",
+      "lessonTitle": "Swing Trading Examples波段交易示例",
+      "concept": "trade_management",
+      "nodeType": "risk_execution_concept",
+      "moduleTags": [
+        "trading_styles",
+        "trade_management"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 1.65,
+          "end": 8.05,
+          "textPreview": "我是愛爾,不如克思,感謝您收看不如克思交易課程,這是關於波段交易實力的五個視頻中的第三個"
+        },
+        {
+          "start": 241.9,
+          "end": 245.9,
+          "textPreview": "突破昨日低點失敗,現在市場始終處於多頭撞談"
+        },
+        {
+          "start": 485.34,
+          "end": 491.34,
+          "textPreview": "這個較小的可以線,這個微部和空頭體,意味著動能正在減弱"
+        }
+      ],
+      "privateResearchSummary": "Video 49C is privately indexed for reviewer distillation under trade_management, trading_styles. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "p0_human_review_required",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_033_trading_styles",
+      "intakeId": "local_video_course_3_intake_033",
+      "semanticId": "semantic_local_video_course_3_intake_033",
+      "sourceId": "local-video-course-3:1ed95f0199669ec9e3cfef9b",
+      "lessonCode": "Video 49C",
+      "lessonTitle": "Swing Trading Examples波段交易示例",
+      "concept": "trading_styles",
+      "nodeType": "risk_execution_concept",
+      "moduleTags": [
+        "trading_styles",
+        "trade_management"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 1.65,
+          "end": 8.05,
+          "textPreview": "我是愛爾,不如克思,感謝您收看不如克思交易課程,這是關於波段交易實力的五個視頻中的第三個"
+        },
+        {
+          "start": 241.9,
+          "end": 245.9,
+          "textPreview": "突破昨日低點失敗,現在市場始終處於多頭撞談"
+        },
+        {
+          "start": 485.34,
+          "end": 491.34,
+          "textPreview": "這個較小的可以線,這個微部和空頭體,意味著動能正在減弱"
+        }
+      ],
+      "privateResearchSummary": "Video 49C is privately indexed for reviewer distillation under trade_management, trading_styles. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "p0_human_review_required",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_034_trade_management",
+      "intakeId": "local_video_course_3_intake_034",
+      "semanticId": "semantic_local_video_course_3_intake_034",
+      "sourceId": "local-video-course-3:1f48a244c7758574ac3aca93",
+      "lessonCode": "Video 49D",
+      "lessonTitle": "Swing Trading Examples波段交易示例",
+      "concept": "trade_management",
+      "nodeType": "risk_execution_concept",
+      "moduleTags": [
+        "trading_styles",
+        "trade_management"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 1.65,
+          "end": 5.13,
+          "textPreview": "我是愛爾不魯克斯 感谢您收看不魯克斯交易课程"
+        },
+        {
+          "start": 244.86,
+          "end": 246.38,
+          "textPreview": "在前六根配信中"
+        },
+        {
+          "start": 485.36,
+          "end": 487.36,
+          "textPreview": "都高于空头配信"
+        }
+      ],
+      "privateResearchSummary": "Video 49D is privately indexed for reviewer distillation under trade_management, trading_styles. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "p0_human_review_required",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_034_trading_styles",
+      "intakeId": "local_video_course_3_intake_034",
+      "semanticId": "semantic_local_video_course_3_intake_034",
+      "sourceId": "local-video-course-3:1f48a244c7758574ac3aca93",
+      "lessonCode": "Video 49D",
+      "lessonTitle": "Swing Trading Examples波段交易示例",
+      "concept": "trading_styles",
+      "nodeType": "risk_execution_concept",
+      "moduleTags": [
+        "trading_styles",
+        "trade_management"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 1.65,
+          "end": 5.13,
+          "textPreview": "我是愛爾不魯克斯 感谢您收看不魯克斯交易课程"
+        },
+        {
+          "start": 244.86,
+          "end": 246.38,
+          "textPreview": "在前六根配信中"
+        },
+        {
+          "start": 485.36,
+          "end": 487.36,
+          "textPreview": "都高于空头配信"
+        }
+      ],
+      "privateResearchSummary": "Video 49D is privately indexed for reviewer distillation under trade_management, trading_styles. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "p0_human_review_required",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_035_trade_management",
+      "intakeId": "local_video_course_3_intake_035",
+      "semanticId": "semantic_local_video_course_3_intake_035",
+      "sourceId": "local-video-course-3:9fe48c7a596b073fb88daeed",
+      "lessonCode": "Video 49E",
+      "lessonTitle": "Swing Trading Examples波段交易示例",
+      "concept": "trade_management",
+      "nodeType": "risk_execution_concept",
+      "moduleTags": [
+        "trading_styles",
+        "trade_management"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 1.49,
+          "end": 3.25,
+          "textPreview": "我是愛爾 布魯克斯"
+        },
+        {
+          "start": 242.18,
+          "end": 244.26,
+          "textPreview": "這是一個非常緊密的空頭通道"
+        },
+        {
+          "start": 485.02,
+          "end": 486.02,
+          "textPreview": "收盤是退出"
+        }
+      ],
+      "privateResearchSummary": "Video 49E is privately indexed for reviewer distillation under trade_management, trading_styles. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "p0_human_review_required",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_035_trading_styles",
+      "intakeId": "local_video_course_3_intake_035",
+      "semanticId": "semantic_local_video_course_3_intake_035",
+      "sourceId": "local-video-course-3:9fe48c7a596b073fb88daeed",
+      "lessonCode": "Video 49E",
+      "lessonTitle": "Swing Trading Examples波段交易示例",
+      "concept": "trading_styles",
+      "nodeType": "risk_execution_concept",
+      "moduleTags": [
+        "trading_styles",
+        "trade_management"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 1.49,
+          "end": 3.25,
+          "textPreview": "我是愛爾 布魯克斯"
+        },
+        {
+          "start": 242.18,
+          "end": 244.26,
+          "textPreview": "這是一個非常緊密的空頭通道"
+        },
+        {
+          "start": 485.02,
+          "end": 486.02,
+          "textPreview": "收盤是退出"
+        }
+      ],
+      "privateResearchSummary": "Video 49E is privately indexed for reviewer distillation under trade_management, trading_styles. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "p0_human_review_required",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_036_trade_management",
+      "intakeId": "local_video_course_3_intake_036",
+      "semanticId": "semantic_local_video_course_3_intake_036",
+      "sourceId": "local-video-course-3:e24040786e393f84e13a4c4e",
+      "lessonCode": "Video 50A",
+      "lessonTitle": "Scalping剥头皮交易",
+      "concept": "trade_management",
+      "nodeType": "risk_execution_concept",
+      "moduleTags": [
+        "trading_styles",
+        "trade_management"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.4,
+          "textPreview": "我是愛爾,不魯克斯,感谢您收看不魯克斯教育課程"
+        },
+        {
+          "start": 240.28,
+          "end": 241.68,
+          "textPreview": "現號線下方買入"
+        },
+        {
+          "start": 486.75,
+          "end": 488.43,
+          "textPreview": "他們會在底部買入"
+        }
+      ],
+      "privateResearchSummary": "Video 50A is privately indexed for reviewer distillation under trade_management, trading_styles. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "p0_human_review_required",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_036_trading_styles",
+      "intakeId": "local_video_course_3_intake_036",
+      "semanticId": "semantic_local_video_course_3_intake_036",
+      "sourceId": "local-video-course-3:e24040786e393f84e13a4c4e",
+      "lessonCode": "Video 50A",
+      "lessonTitle": "Scalping剥头皮交易",
+      "concept": "trading_styles",
+      "nodeType": "risk_execution_concept",
+      "moduleTags": [
+        "trading_styles",
+        "trade_management"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 0,
+          "end": 4.4,
+          "textPreview": "我是愛爾,不魯克斯,感谢您收看不魯克斯教育課程"
+        },
+        {
+          "start": 240.28,
+          "end": 241.68,
+          "textPreview": "現號線下方買入"
+        },
+        {
+          "start": 486.75,
+          "end": 488.43,
+          "textPreview": "他們會在底部買入"
+        }
+      ],
+      "privateResearchSummary": "Video 50A is privately indexed for reviewer distillation under trade_management, trading_styles. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "p0_human_review_required",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_037_mistake_review",
+      "intakeId": "local_video_course_3_intake_037",
+      "semanticId": "semantic_local_video_course_3_intake_037",
+      "sourceId": "local-video-course-3:1e8a33f526e53ae5585ddfb8",
+      "lessonCode": "Video 51D",
+      "lessonTitle": "Losing Because of Mistakes因错误而失败的原因",
+      "concept": "mistake_review",
+      "nodeType": "video_course_concept",
+      "moduleTags": [
+        "mistake_review",
+        "process_discipline"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 1.65,
+          "end": 5.13,
+          "textPreview": "我是愛爾 不如克斯 感谢您收看不如克斯交易课程"
+        },
+        {
+          "start": 243.27,
+          "end": 245.31,
+          "textPreview": "他可能会有第二波上场"
+        },
+        {
+          "start": 484.37,
+          "end": 485.37,
+          "textPreview": "信心浅头"
+        }
+      ],
+      "privateResearchSummary": "Video 51D is privately indexed for reviewer distillation under mistake_review, process_discipline. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    },
+    {
+      "candidateId": "video_node_local_video_course_3_intake_037_process_discipline",
+      "intakeId": "local_video_course_3_intake_037",
+      "semanticId": "semantic_local_video_course_3_intake_037",
+      "sourceId": "local-video-course-3:1e8a33f526e53ae5585ddfb8",
+      "lessonCode": "Video 51D",
+      "lessonTitle": "Losing Because of Mistakes因错误而失败的原因",
+      "concept": "process_discipline",
+      "nodeType": "learning_process_concept",
+      "moduleTags": [
+        "mistake_review",
+        "process_discipline"
+      ],
+      "evidenceAnchorCount": 8,
+      "evidenceAnchors": [
+        {
+          "start": 1.65,
+          "end": 5.13,
+          "textPreview": "我是愛爾 不如克斯 感谢您收看不如克斯交易课程"
+        },
+        {
+          "start": 243.27,
+          "end": 245.31,
+          "textPreview": "他可能会有第二波上场"
+        },
+        {
+          "start": 484.37,
+          "end": 485.37,
+          "textPreview": "信心浅头"
+        }
+      ],
+      "privateResearchSummary": "Video 51D is privately indexed for reviewer distillation under mistake_review, process_discipline. Use transcript timestamps as evidence anchors; do not expose the private transcript as learner-facing source text.",
+      "learnerFacingRelease": false,
+      "productionReady": false,
+      "reviewStatus": "needs_reviewer_distillation",
+      "nextGate": "human_reviewer_distillation_public_grounding_and_source_fit_review"
+    }
+  ],
+  "commands": [
+    "npm.cmd run build:local-video-course-knowledge-node-candidates",
+    "npm.cmd run check:local-video-course-knowledge-node-candidates",
+    "npm.cmd run verify"
+  ],
+  "boundary": "Local video course knowledge node candidates are reviewer-facing education-only private research scaffolding. They do not publish copied course material, approve learner-facing citations, generate trading advice, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, write authorization, learner release, or production readiness."
+}

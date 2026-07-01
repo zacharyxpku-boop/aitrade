@@ -1,0 +1,355 @@
+{
+  "generatedAt": "2026-06-19T09:47:02.341Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "dryRunReady": true,
+  "dryRunMode": "blank_reviewer_notes_template_only",
+  "batchId": "rewrite_batch_01",
+  "lessonCards": 6,
+  "requiredNoteFields": [
+    "originalRewriteNotes",
+    "sourceFitNotes",
+    "factCheckNotes",
+    "boundaryCheckNotes",
+    "copyingRiskNotes",
+    "humanReviewerInitials"
+  ],
+  "blankNoteFields": 36,
+  "filledNoteFields": 0,
+  "approvalReviewCandidates": 0,
+  "commercialReadyPromotions": 0,
+  "blankRows": [
+    {
+      "lessonId": "lesson_knv2_0044",
+      "moduleLabel": "multi_timeframe_analysis",
+      "topicLabel": "m15_detail",
+      "sourceFitRisk": "medium",
+      "riskReasons": [
+        "chart_lesson_without_public_domain_historical_context",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "trackingStatus": "not_started",
+      "blankFields": 6
+    },
+    {
+      "lessonId": "lesson_knv2_0068",
+      "moduleLabel": "multi_timeframe_analysis",
+      "topicLabel": "d1_context",
+      "sourceFitRisk": "high",
+      "riskReasons": [
+        "no_expected_family_for_module_domain",
+        "chart_lesson_without_public_domain_historical_context",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "trackingStatus": "not_started",
+      "blankFields": 6
+    },
+    {
+      "lessonId": "lesson_knv2_0128",
+      "moduleLabel": "multi_timeframe_analysis",
+      "topicLabel": "d1_context_variant",
+      "sourceFitRisk": "medium",
+      "riskReasons": [
+        "chart_lesson_without_public_domain_historical_context"
+      ],
+      "trackingStatus": "not_started",
+      "blankFields": 6
+    },
+    {
+      "lessonId": "lesson_knv2_0140",
+      "moduleLabel": "multi_timeframe_analysis",
+      "topicLabel": "h4_structure",
+      "sourceFitRisk": "medium",
+      "riskReasons": [
+        "chart_lesson_without_public_domain_historical_context"
+      ],
+      "trackingStatus": "not_started",
+      "blankFields": 6
+    },
+    {
+      "lessonId": "lesson_knv2_0054",
+      "moduleLabel": "trading_range",
+      "topicLabel": "range_breakout",
+      "sourceFitRisk": "medium",
+      "riskReasons": [
+        "broad_source_family_mix"
+      ],
+      "trackingStatus": "not_started",
+      "blankFields": 6
+    },
+    {
+      "lessonId": "lesson_knv2_0019",
+      "moduleLabel": "reversal",
+      "topicLabel": "exhaustion_evidence",
+      "sourceFitRisk": "medium",
+      "riskReasons": [
+        "broad_source_family_mix"
+      ],
+      "trackingStatus": "not_started",
+      "blankFields": 6
+    }
+  ],
+  "dryRunOverlay": {
+    "educationOnly": true,
+    "productionReady": false,
+    "learnerFacingRelease": false,
+    "approvalStatus": "not_approved",
+    "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+    "dryRunOnly": true,
+    "batchId": "rewrite_batch_01",
+    "reviewStatus": "not_started",
+    "approvalReviewCandidates": 0,
+    "commercialReadyPromotions": 0,
+    "lessonCards": [
+      {
+        "lessonId": "lesson_knv2_0044",
+        "nodeId": "knv2_0044",
+        "moduleLabel": "multi_timeframe_analysis",
+        "topicLabel": "m15_detail",
+        "sourceFitRisk": "medium",
+        "riskReasons": [
+          "chart_lesson_without_public_domain_historical_context",
+          "fraud_source_attached_to_chart_context"
+        ],
+        "trackingStatus": "not_started",
+        "currentGrade": "structural_draft",
+        "mustRemainStructuralDraft": true,
+        "sourceFamilies": [
+          "SEC",
+          "CFTC"
+        ],
+        "originalRewriteNotes": "",
+        "sourceFitNotes": "",
+        "factCheckNotes": "",
+        "boundaryCheckNotes": "",
+        "copyingRiskNotes": "",
+        "humanReviewerInitials": "",
+        "notePrompts": {
+          "originalRewriteNotes": "Record how the human rewrite teaches multi_timeframe_analysis/m15_detail in original prose without copying source text.",
+          "sourceFitNotes": "For high-risk rows, record downgrade/block/boundary-only decisions before any rewrite; fraud/regulatory/macro refs cannot prove chart claims.",
+          "factCheckNotes": "Record facts checked against source identity, release context, terminology, and lesson claims.",
+          "boundaryCheckNotes": "Confirm no advice, signals, forecasts, broker/order workflow, automation, real-money guidance, performance promise, or readiness claim.",
+          "copyingRiskNotes": "Confirm no external body text, rules, tables, charts, UI text, public-domain maxims, or sample notes were copied.",
+          "humanReviewerInitials": "Fill only after a real human reviewer performs the review work."
+        }
+      },
+      {
+        "lessonId": "lesson_knv2_0068",
+        "nodeId": "knv2_0068",
+        "moduleLabel": "multi_timeframe_analysis",
+        "topicLabel": "d1_context",
+        "sourceFitRisk": "high",
+        "riskReasons": [
+          "no_expected_family_for_module_domain",
+          "chart_lesson_without_public_domain_historical_context",
+          "fraud_source_attached_to_chart_context"
+        ],
+        "trackingStatus": "not_started",
+        "currentGrade": "structural_draft",
+        "mustRemainStructuralDraft": true,
+        "sourceFamilies": [
+          "CFTC",
+          "Investor.gov"
+        ],
+        "originalRewriteNotes": "",
+        "sourceFitNotes": "",
+        "factCheckNotes": "",
+        "boundaryCheckNotes": "",
+        "copyingRiskNotes": "",
+        "humanReviewerInitials": "",
+        "notePrompts": {
+          "originalRewriteNotes": "Record how the human rewrite teaches multi_timeframe_analysis/d1_context in original prose without copying source text.",
+          "sourceFitNotes": "For high-risk rows, record downgrade/block/boundary-only decisions before any rewrite; fraud/regulatory/macro refs cannot prove chart claims.",
+          "factCheckNotes": "Record facts checked against source identity, release context, terminology, and lesson claims.",
+          "boundaryCheckNotes": "Confirm no advice, signals, forecasts, broker/order workflow, automation, real-money guidance, performance promise, or readiness claim.",
+          "copyingRiskNotes": "Confirm no external body text, rules, tables, charts, UI text, public-domain maxims, or sample notes were copied.",
+          "humanReviewerInitials": "Fill only after a real human reviewer performs the review work."
+        }
+      },
+      {
+        "lessonId": "lesson_knv2_0128",
+        "nodeId": "knv2_0128",
+        "moduleLabel": "multi_timeframe_analysis",
+        "topicLabel": "d1_context_variant",
+        "sourceFitRisk": "medium",
+        "riskReasons": [
+          "chart_lesson_without_public_domain_historical_context"
+        ],
+        "trackingStatus": "not_started",
+        "currentGrade": "structural_draft",
+        "mustRemainStructuralDraft": true,
+        "sourceFamilies": [
+          "CFTC",
+          "Federal Reserve",
+          "Investor.gov"
+        ],
+        "originalRewriteNotes": "",
+        "sourceFitNotes": "",
+        "factCheckNotes": "",
+        "boundaryCheckNotes": "",
+        "copyingRiskNotes": "",
+        "humanReviewerInitials": "",
+        "notePrompts": {
+          "originalRewriteNotes": "Record how the human rewrite teaches multi_timeframe_analysis/d1_context_variant in original prose without copying source text.",
+          "sourceFitNotes": "For high-risk rows, record downgrade/block/boundary-only decisions before any rewrite; fraud/regulatory/macro refs cannot prove chart claims.",
+          "factCheckNotes": "Record facts checked against source identity, release context, terminology, and lesson claims.",
+          "boundaryCheckNotes": "Confirm no advice, signals, forecasts, broker/order workflow, automation, real-money guidance, performance promise, or readiness claim.",
+          "copyingRiskNotes": "Confirm no external body text, rules, tables, charts, UI text, public-domain maxims, or sample notes were copied.",
+          "humanReviewerInitials": "Fill only after a real human reviewer performs the review work."
+        }
+      },
+      {
+        "lessonId": "lesson_knv2_0140",
+        "nodeId": "knv2_0140",
+        "moduleLabel": "multi_timeframe_analysis",
+        "topicLabel": "h4_structure",
+        "sourceFitRisk": "medium",
+        "riskReasons": [
+          "chart_lesson_without_public_domain_historical_context"
+        ],
+        "trackingStatus": "not_started",
+        "currentGrade": "structural_draft",
+        "mustRemainStructuralDraft": true,
+        "sourceFamilies": [
+          "Treasury",
+          "BEA",
+          "CFTC",
+          "Investor.gov"
+        ],
+        "originalRewriteNotes": "",
+        "sourceFitNotes": "",
+        "factCheckNotes": "",
+        "boundaryCheckNotes": "",
+        "copyingRiskNotes": "",
+        "humanReviewerInitials": "",
+        "notePrompts": {
+          "originalRewriteNotes": "Record how the human rewrite teaches multi_timeframe_analysis/h4_structure in original prose without copying source text.",
+          "sourceFitNotes": "For high-risk rows, record downgrade/block/boundary-only decisions before any rewrite; fraud/regulatory/macro refs cannot prove chart claims.",
+          "factCheckNotes": "Record facts checked against source identity, release context, terminology, and lesson claims.",
+          "boundaryCheckNotes": "Confirm no advice, signals, forecasts, broker/order workflow, automation, real-money guidance, performance promise, or readiness claim.",
+          "copyingRiskNotes": "Confirm no external body text, rules, tables, charts, UI text, public-domain maxims, or sample notes were copied.",
+          "humanReviewerInitials": "Fill only after a real human reviewer performs the review work."
+        }
+      },
+      {
+        "lessonId": "lesson_knv2_0054",
+        "nodeId": "knv2_0054",
+        "moduleLabel": "trading_range",
+        "topicLabel": "range_breakout",
+        "sourceFitRisk": "medium",
+        "riskReasons": [
+          "broad_source_family_mix"
+        ],
+        "trackingStatus": "not_started",
+        "currentGrade": "structural_draft",
+        "mustRemainStructuralDraft": true,
+        "sourceFamilies": [
+          "BEA",
+          "CFTC",
+          "Federal Reserve",
+          "Treasury",
+          "Project Gutenberg"
+        ],
+        "originalRewriteNotes": "",
+        "sourceFitNotes": "",
+        "factCheckNotes": "",
+        "boundaryCheckNotes": "",
+        "copyingRiskNotes": "",
+        "humanReviewerInitials": "",
+        "notePrompts": {
+          "originalRewriteNotes": "Record how the human rewrite teaches trading_range/range_breakout in original prose without copying source text.",
+          "sourceFitNotes": "For high-risk rows, record downgrade/block/boundary-only decisions before any rewrite; fraud/regulatory/macro refs cannot prove chart claims.",
+          "factCheckNotes": "Record facts checked against source identity, release context, terminology, and lesson claims.",
+          "boundaryCheckNotes": "Confirm no advice, signals, forecasts, broker/order workflow, automation, real-money guidance, performance promise, or readiness claim.",
+          "copyingRiskNotes": "Confirm no external body text, rules, tables, charts, UI text, public-domain maxims, or sample notes were copied.",
+          "humanReviewerInitials": "Fill only after a real human reviewer performs the review work."
+        }
+      },
+      {
+        "lessonId": "lesson_knv2_0019",
+        "nodeId": "knv2_0019",
+        "moduleLabel": "reversal",
+        "topicLabel": "exhaustion_evidence",
+        "sourceFitRisk": "medium",
+        "riskReasons": [
+          "broad_source_family_mix"
+        ],
+        "trackingStatus": "not_started",
+        "currentGrade": "structural_draft",
+        "mustRemainStructuralDraft": true,
+        "sourceFamilies": [
+          "Federal Reserve",
+          "BLS",
+          "federalregister.gov",
+          "Treasury",
+          "Project Gutenberg"
+        ],
+        "originalRewriteNotes": "",
+        "sourceFitNotes": "",
+        "factCheckNotes": "",
+        "boundaryCheckNotes": "",
+        "copyingRiskNotes": "",
+        "humanReviewerInitials": "",
+        "notePrompts": {
+          "originalRewriteNotes": "Record how the human rewrite teaches reversal/exhaustion_evidence in original prose without copying source text.",
+          "sourceFitNotes": "For high-risk rows, record downgrade/block/boundary-only decisions before any rewrite; fraud/regulatory/macro refs cannot prove chart claims.",
+          "factCheckNotes": "Record facts checked against source identity, release context, terminology, and lesson claims.",
+          "boundaryCheckNotes": "Confirm no advice, signals, forecasts, broker/order workflow, automation, real-money guidance, performance promise, or readiness claim.",
+          "copyingRiskNotes": "Confirm no external body text, rules, tables, charts, UI text, public-domain maxims, or sample notes were copied.",
+          "humanReviewerInitials": "Fill only after a real human reviewer performs the review work."
+        }
+      }
+    ]
+  },
+  "negativeCases": 8,
+  "negativeCasesPassed": 8,
+  "negativeRows": [
+    {
+      "name": "filled_note_rejected",
+      "passed": true,
+      "errorMessage": "lesson_knv2_0044.sourceFitNotes must remain blank in dry-run"
+    },
+    {
+      "name": "approval_candidate_rejected",
+      "passed": true,
+      "errorMessage": "dry-run overlay cannot create approval review candidates"
+    },
+    {
+      "name": "commercial_promotion_rejected",
+      "passed": true,
+      "errorMessage": "dry-run overlay cannot promote commercial readiness"
+    },
+    {
+      "name": "learner_release_rejected",
+      "passed": true,
+      "errorMessage": "batch 01 dry-run overlay cannot be learner-facing release"
+    },
+    {
+      "name": "grade_override_rejected",
+      "passed": true,
+      "errorMessage": "lesson_knv2_0044 currentGrade must remain structural_draft"
+    },
+    {
+      "name": "signal_wording_rejected",
+      "passed": true,
+      "errorMessage": "lesson_knv2_0044.boundaryCheckNotes contains unsafe status/trading/readiness wording"
+    },
+    {
+      "name": "duplicate_lesson_rejected",
+      "passed": true,
+      "errorMessage": "dry-run overlay must include 6 lesson cards"
+    },
+    {
+      "name": "wrong_batch_rejected",
+      "passed": true,
+      "errorMessage": "dry-run overlay must stay scoped to rewrite_batch_01"
+    }
+  ],
+  "sourceReports": {
+    "editorPacket": "docs/LESSON_BATCH_01_EDITOR_PACKET.json"
+  },
+  "boundary": "This Batch 01 notes dry-run is a blank reviewer-input scaffold only. It does not create real review evidence, approve lessons, publish learner-facing content, change grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, guide real-money decisions, or make the product production-ready."
+}

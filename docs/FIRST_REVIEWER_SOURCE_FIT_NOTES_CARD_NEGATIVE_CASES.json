@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-06-19T09:47:12.883Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "negativeCasesReady": true,
+  "gateMode": "simulated_card_pack_mutation_guard_pre_write_only",
+  "realStatusPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "realStatusOverlayPresent": false,
+  "negativeCases": 15,
+  "passedCases": 15,
+  "failedCases": 0,
+  "caseRows": [
+    {
+      "name": "prefilled_decision_field_rejected",
+      "expectedIssue": "prefilled_field:decision",
+      "passed": true,
+      "issueCount": 1,
+      "issues": [
+        "prefilled_field:decision"
+      ]
+    },
+    {
+      "name": "prefilled_source_role_field_rejected",
+      "expectedIssue": "prefilled_field:sourceRole",
+      "passed": true,
+      "issueCount": 1,
+      "issues": [
+        "prefilled_field:sourceRole"
+      ]
+    },
+    {
+      "name": "prefilled_claim_supported_field_rejected",
+      "expectedIssue": "prefilled_field:claimSupported",
+      "passed": true,
+      "issueCount": 1,
+      "issues": [
+        "prefilled_field:claimSupported"
+      ]
+    },
+    {
+      "name": "prefilled_rewrite_action_field_rejected",
+      "expectedIssue": "prefilled_field:rewriteAction",
+      "passed": true,
+      "issueCount": 1,
+      "issues": [
+        "prefilled_field:rewriteAction"
+      ]
+    },
+    {
+      "name": "prefilled_source_identity_basis_field_rejected",
+      "expectedIssue": "prefilled_field:sourceIdentityBasis",
+      "passed": true,
+      "issueCount": 1,
+      "issues": [
+        "prefilled_field:sourceIdentityBasis"
+      ]
+    },
+    {
+      "name": "prefilled_no_copy_originality_check_field_rejected",
+      "expectedIssue": "prefilled_field:noCopyOriginalityCheck",
+      "passed": true,
+      "issueCount": 1,
+      "issues": [
+        "prefilled_field:noCopyOriginalityCheck"
+      ]
+    },
+    {
+      "name": "prefilled_reviewer_initials_field_rejected",
+      "expectedIssue": "prefilled_field:reviewerInitials",
+      "passed": true,
+      "issueCount": 1,
+      "issues": [
+        "prefilled_field:reviewerInitials"
+      ]
+    },
+    {
+      "name": "approval_readiness_wording_rejected",
+      "expectedIssue": "approval_readiness_wording",
+      "passed": true,
+      "issueCount": 2,
+      "issues": [
+        "prefilled_field:decision",
+        "approval_readiness_wording"
+      ]
+    },
+    {
+      "name": "trading_signal_wording_rejected",
+      "expectedIssue": "trading_or_real_money_wording",
+      "passed": true,
+      "issueCount": 3,
+      "issues": [
+        "prefilled_field:claimSupported",
+        "trading_or_real_money_wording",
+        "macro_or_regulatory_as_chart_proof"
+      ]
+    },
+    {
+      "name": "copied_source_body_instruction_rejected",
+      "expectedIssue": "copied_source_body_instruction",
+      "passed": true,
+      "issueCount": 2,
+      "issues": [
+        "prefilled_field:rewriteAction",
+        "copied_source_body_instruction"
+      ]
+    },
+    {
+      "name": "macro_or_regulatory_as_chart_proof_rejected",
+      "expectedIssue": "macro_or_regulatory_as_chart_proof",
+      "passed": true,
+      "issueCount": 2,
+      "issues": [
+        "prefilled_field:sourceRole",
+        "macro_or_regulatory_as_chart_proof"
+      ]
+    },
+    {
+      "name": "yellow_red_research_only_source_rejected",
+      "expectedIssue": "non_green_source_ref:src_real_11201",
+      "passed": true,
+      "issueCount": 1,
+      "issues": [
+        "non_green_source_ref:src_real_11201"
+      ]
+    },
+    {
+      "name": "commercial_ready_promotion_rejected",
+      "expectedIssue": "commercial_ready_promotion_drift",
+      "passed": true,
+      "issueCount": 1,
+      "issues": [
+        "commercial_ready_promotion_drift"
+      ]
+    },
+    {
+      "name": "real_money_or_broker_workflow_rejected",
+      "expectedIssue": "trading_or_real_money_wording",
+      "passed": true,
+      "issueCount": 2,
+      "issues": [
+        "prefilled_field:rewriteAction",
+        "trading_or_real_money_wording"
+      ]
+    },
+    {
+      "name": "approval_state_drift_rejected",
+      "expectedIssue": "learner_facing_release_drift",
+      "passed": true,
+      "issueCount": 2,
+      "issues": [
+        "learner_facing_release_drift",
+        "approval_status_drift"
+      ]
+    }
+  ],
+  "realBlankFields": 35,
+  "realFilledFields": 0,
+  "greenRefsChecked": 8,
+  "sourceFamilies": [
+    "BEA",
+    "BLS",
+    "CFTC",
+    "SEC"
+  ],
+  "confirmedDecisions": 0,
+  "approvalReviewCandidates": 0,
+  "commercialReadyPromotions": 0,
+  "writeAllowedNow": false,
+  "manualDecisionRequired": true,
+  "humanAuthorizationRecorded": false,
+  "sourceReports": {
+    "sourceFitNotesCardPack": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_CARD_PACK.json",
+    "sourceFitDecisionSummary": "docs/FIRST_REVIEWER_SOURCE_FIT_DECISION_SUMMARY.json",
+    "sourceFitNotesAcceptance": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_ACCEPTANCE.json",
+    "dryRunPacket": "docs/FIRST_REVIEWER_DRY_RUN_PACKET.json",
+    "progressDashboard": "docs/FIRST_REVIEWER_PROGRESS_DASHBOARD.json",
+    "humanExecutionBundle": "docs/FIRST_REVIEWER_HUMAN_EXECUTION_BUNDLE.json"
+  },
+  "boundary": "This negative-case gate mutates only simulated copies of the SourceFitNotes card pack. It does not alter the real blank card pack, create docs/LESSON_BATCH_REVIEW_STATUS.json, fill human notes, confirm source use, approve lessons, publish learner-facing content, promote grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, guide real-money decisions, or allow yellow/red/research_only sources into learner-facing evidence."
+}

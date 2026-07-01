@@ -1,0 +1,383 @@
+{
+  "generatedAt": "2026-06-25T00:00:00.000+08:00",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "writeAllowedNow": false,
+  "auditStatus": "course_5_wave_4_pdf_ai_visual_review_all_samples_covered_release_and_deletion_blocked",
+  "sourceTemplate": "docs/reviewer-inputs/LOCAL_COURSE_5_WAVE_4_PDF_REVIEWER_INPUT_TEMPLATE.json",
+  "batchCount": 3,
+  "templateRows": 27,
+  "coveredRows": 27,
+  "missingRows": 0,
+  "duplicateCoverageRows": 0,
+  "readyForHumanConfirmationRows": 27,
+  "moduleMergeAllowedNow": false,
+  "acceptedForModuleDistillationRows": 0,
+  "acceptedForDeletionReadinessRows": 0,
+  "learnerReadyModules": 0,
+  "sourceFolderMayBeDeleted": false,
+  "batchSummaries": [
+    {
+      "batchId": "batch_001",
+      "inputRows": 27,
+      "readyForConfirmationRows": 9,
+      "firstReviewRowId": "course5_pdf_ocr_visual_review_010",
+      "lastReviewRowId": "course5_pdf_ocr_visual_review_018",
+      "validationStatus": "course_5_wave_4_pdf_ai_visual_review_batch_001_partially_ready_release_and_deletion_blocked",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "batchId": "batch_002",
+      "inputRows": 27,
+      "readyForConfirmationRows": 9,
+      "firstReviewRowId": "course5_wave_4_pdf_supplemental_review_001",
+      "lastReviewRowId": "course5_wave_4_pdf_supplemental_review_009",
+      "validationStatus": "course_5_wave_4_pdf_ai_visual_review_batch_002_partially_ready_release_and_deletion_blocked",
+      "sourceFolderMayBeDeleted": false
+    },
+    {
+      "batchId": "batch_003",
+      "inputRows": 27,
+      "readyForConfirmationRows": 9,
+      "firstReviewRowId": "course5_wave_4_pdf_supplemental_review_010",
+      "lastReviewRowId": "course5_wave_4_pdf_supplemental_review_018",
+      "validationStatus": "course_5_wave_4_pdf_ai_visual_review_batch_003_partially_ready_release_and_deletion_blocked",
+      "sourceFolderMayBeDeleted": false
+    }
+  ],
+  "coverageRows": [
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_010",
+      "executionSampleNo": 1,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/C 高级反转技术分析（下册）-高清修复.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_25acc068277e0d0bf498e3f4/page-0001.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_011",
+      "executionSampleNo": 2,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/C 高级反转技术分析（下册）-高清修复.pdf",
+      "pageNumber": 249,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_25acc068277e0d0bf498e3f4/page-0249.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_012",
+      "executionSampleNo": 3,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/C 高级反转技术分析（下册）-高清修复.pdf",
+      "pageNumber": 497,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_25acc068277e0d0bf498e3f4/page-0497.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_013",
+      "executionSampleNo": 4,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/B 高级反转技术分析（上册）-高清修复.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_10117a870be892d9461608c4/page-0001.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_014",
+      "executionSampleNo": 5,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/B 高级反转技术分析（上册）-高清修复.pdf",
+      "pageNumber": 204,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_10117a870be892d9461608c4/page-0204.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_015",
+      "executionSampleNo": 6,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/B 高级反转技术分析（上册）-高清修复.pdf",
+      "pageNumber": 407,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_10117a870be892d9461608c4/page-0407.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_016",
+      "executionSampleNo": 7,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/A 高级趋势技术分析-高清修复.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_b5c58e891c5e1f77fc35bc23/page-0001.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_017",
+      "executionSampleNo": 8,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/A 高级趋势技术分析-高清修复.pdf",
+      "pageNumber": 203,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_b5c58e891c5e1f77fc35bc23/page-0203.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_018",
+      "executionSampleNo": 9,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/A 高级趋势技术分析-高清修复.pdf",
+      "pageNumber": 405,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_b5c58e891c5e1f77fc35bc23/page-0405.png",
+      "coveredByBatches": [
+        "batch_001"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_4_pdf_supplemental_review_001",
+      "executionSampleNo": 10,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/C 高级反转技术分析（下册）-原版.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_6b0966dcf4f38cd5b8b2a12e/page-0001.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_4_pdf_supplemental_review_002",
+      "executionSampleNo": 11,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/C 高级反转技术分析（下册）-原版.pdf",
+      "pageNumber": 249,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_6b0966dcf4f38cd5b8b2a12e/page-0249.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_4_pdf_supplemental_review_003",
+      "executionSampleNo": 12,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/C 高级反转技术分析（下册）-原版.pdf",
+      "pageNumber": 497,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_6b0966dcf4f38cd5b8b2a12e/page-0497.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_4_pdf_supplemental_review_004",
+      "executionSampleNo": 13,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/高级反转技术分析-（下册）.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_4f0bc04713247326ff958f0d/page-0001.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_4_pdf_supplemental_review_005",
+      "executionSampleNo": 14,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/高级反转技术分析-（下册）.pdf",
+      "pageNumber": 249,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_4f0bc04713247326ff958f0d/page-0249.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_4_pdf_supplemental_review_006",
+      "executionSampleNo": 15,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/高级反转技术分析-（下册）.pdf",
+      "pageNumber": 497,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_4f0bc04713247326ff958f0d/page-0497.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_4_pdf_supplemental_review_007",
+      "executionSampleNo": 16,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/1.高级趋势技术分析.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_99f561183f8bc2257c263d98/page-0001.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_4_pdf_supplemental_review_008",
+      "executionSampleNo": 17,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/1.高级趋势技术分析.pdf",
+      "pageNumber": 203,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_99f561183f8bc2257c263d98/page-0203.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_4_pdf_supplemental_review_009",
+      "executionSampleNo": 18,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/1.高级趋势技术分析.pdf",
+      "pageNumber": 405,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_99f561183f8bc2257c263d98/page-0405.png",
+      "coveredByBatches": [
+        "batch_002"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_4_pdf_supplemental_review_010",
+      "executionSampleNo": 19,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/A 高级趋势技术分析-原版.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_297b4fffaae8af78b2127589/page-0001.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_4_pdf_supplemental_review_011",
+      "executionSampleNo": 20,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/A 高级趋势技术分析-原版.pdf",
+      "pageNumber": 203,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_297b4fffaae8af78b2127589/page-0203.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_4_pdf_supplemental_review_012",
+      "executionSampleNo": 21,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/A 高级趋势技术分析-原版.pdf",
+      "pageNumber": 405,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_297b4fffaae8af78b2127589/page-0405.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_4_pdf_supplemental_review_013",
+      "executionSampleNo": 22,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/B 高级反转技术分析（上册）-原版.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_3be8a44e3759750339a58bf4/page-0001.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_4_pdf_supplemental_review_014",
+      "executionSampleNo": 23,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/B 高级反转技术分析（上册）-原版.pdf",
+      "pageNumber": 204,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_3be8a44e3759750339a58bf4/page-0204.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_4_pdf_supplemental_review_015",
+      "executionSampleNo": 24,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/扫描版PDF（推荐）/B 高级反转技术分析（上册）-原版.pdf",
+      "pageNumber": 407,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_3be8a44e3759750339a58bf4/page-0407.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_4_pdf_supplemental_review_016",
+      "executionSampleNo": 25,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/高级反转技术分析-（上册）.pdf",
+      "pageNumber": 1,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_444171aa4017cdd8e1b4df8f/page-0001.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_4_pdf_supplemental_review_017",
+      "executionSampleNo": 26,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/高级反转技术分析-（上册）.pdf",
+      "pageNumber": 204,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_444171aa4017cdd8e1b4df8f/page-0204.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    },
+    {
+      "reviewRowId": "course5_wave_4_pdf_supplemental_review_018",
+      "executionSampleNo": 27,
+      "relativePath": "4、阿布交易书籍（非常齐全，根据大佬路线，先看视频，再看书）/高级反转技术分析-（上册）.pdf",
+      "pageNumber": 407,
+      "sampleImagePath": "docs/local-course-5-visual-samples/course5_444171aa4017cdd8e1b4df8f/page-0407.png",
+      "coveredByBatches": [
+        "batch_003"
+      ],
+      "coverageCount": 1,
+      "coveredExactlyOnce": true
+    }
+  ],
+  "nextOperationalGates": [
+    "Use this audit as the Wave 4 PDF visual review closure proof.",
+    "Keep OCR, public grounding, and originality review required before module merge.",
+    "Continue Wave 5 PDF review coverage before recomputing Course 5 deletion readiness."
+  ],
+  "completionRule": "Wave 4 PDF AI visual review coverage is complete when every row in the Wave 4 PDF reviewer input template is covered exactly once by Batch 001 through Batch 003 while all release, module merge, and source-folder removal gates remain closed.",
+  "boundary": "Private education-operations audit for Course 5 Wave 4 PDF page sample coverage. It summarizes model-assisted visual review coverage and keeps learner release, module merge, write authorization, and source-folder removal blocked pending OCR, reviewer confirmation, public grounding, originality review, and explicit approval."
+}

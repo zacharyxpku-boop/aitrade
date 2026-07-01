@@ -1,0 +1,186 @@
+{
+  "generatedAt": "2026-06-21T21:55:44.664Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "batchStatus": "machine_assisted_transcription_candidates_ready_for_human_review",
+  "sourceHighResPacket": "docs/LOCAL_COURSE_LOW_EXTRACTION_HIGH_RES_REVIEW_PACKET.json",
+  "batchId": "local_course_high_res_transcription_candidate_batch_05",
+  "documentId": "corpus_1580",
+  "candidatePages": 3,
+  "acceptedForP0OverlayPages": 0,
+  "blockedUntilHumanReviewedPages": 3,
+  "riskTermFlagCounts": {
+    "signal_language": 1,
+    "support_resistance_language": 1,
+    "rebound_language": 1,
+    "turning_point_language": 1,
+    "limit_move_language": 1,
+    "homework_instruction_language": 1,
+    "ohlc_drawing_language": 1,
+    "qr_contact_language": 1,
+    "specific_asset_examples": 1,
+    "specific_price_levels": 1,
+    "selling_pressure_language": 1,
+    "force_comparison_language": 1,
+    "quiz_summary_language": 1,
+    "exam_focus_language": 1,
+    "market_meaning_language": 1,
+    "buyer_seller_dominance_language": 1,
+    "turning_warning_language": 1,
+    "multi_timeframe_language": 1,
+    "trend_reversal_language": 1,
+    "source_recommendation_language": 1
+  },
+  "candidatePagesList": [
+    {
+      "id": "candidate_batch_05_page_01",
+      "documentId": "corpus_1580",
+      "sourceId": "local-investment-course:838b1333e539af7f046b0d35",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "pageNumber": 9,
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "candidateStatus": "machine_assisted_visual_candidate_needs_human_review",
+      "acceptedForP0Overlay": false,
+      "highResPreviewPath": "docs/local-course-low-extraction-high-res-previews/corpus_1580/page-09.png",
+      "highResPreviewBytes": 298539,
+      "visualEvidenceStatus": "high_res_preview_ready_for_manual_transcription",
+      "visibleTextExtract": [
+        "The page continues candlestick classification, listing yang-line, yin-line, and special star-line forms with market-meaning phrases.",
+        "Visible notes include large-yang, small-yang, iron-hammer, large-yin with upper or lower shadow, small-yin with upper or lower shadow, doji, inverted T, one-price line, long-legged doji, and T-line examples.",
+        "Several forms are described with strong trend, support, rebound, pressure, warning, limit-up or limit-down, and turning-point language.",
+        "The page starts a K-line five-element drawing section and says chart drawing should show open, close, high, low, and time, but should not require a concrete trading strategy."
+      ],
+      "educationOnlySummary": "This page can be rewritten as a chart-literacy worksheet: classify candlestick shapes and require learners to identify OHLC and time elements, while removing signal, support, rebound, limit, and turning-point language from learner-facing explanations.",
+      "uncertainRegions": [
+        "The embedded homework slide is small and should be checked manually before exact exercise transcription.",
+        "Limit-up or limit-down wording may be market-specific and should be generalized or removed."
+      ],
+      "riskTermFlags": [
+        "signal_language",
+        "support_resistance_language",
+        "rebound_language",
+        "turning_point_language",
+        "limit_move_language",
+        "homework_instruction_language",
+        "ohlc_drawing_language"
+      ],
+      "rewriteAngles": [
+        "candlestick_classification_without_signal_claims",
+        "ohlc_drawing_as_chart_literacy",
+        "remove_market_specific_limit_language"
+      ],
+      "requiredReviewerActions": [
+        "Open the high-resolution preview and verify every visible-text extract.",
+        "Cross-check candlestick terminology, textbook references, example-asset handling, and market-meaning language against public references before learner-facing rewrite.",
+        "Rewrite source wording into original education-only explanations.",
+        "Run P0 input validation, source-fit review, public grounding, originality review, and approval gates before learner-facing release."
+      ],
+      "nextGate": "human_review_before_p0_overlay_apply"
+    },
+    {
+      "id": "candidate_batch_05_page_02",
+      "documentId": "corpus_1580",
+      "sourceId": "local-investment-course:838b1333e539af7f046b0d35",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "pageNumber": 10,
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "candidateStatus": "machine_assisted_visual_candidate_needs_human_review",
+      "acceptedForP0Overlay": false,
+      "highResPreviewPath": "docs/local-course-low-extraction-high-res-previews/corpus_1580/page-10.png",
+      "highResPreviewBytes": 300606,
+      "visualEvidenceStatus": "high_res_preview_ready_for_manual_transcription",
+      "visibleTextExtract": [
+        "The page includes a QR-code style note saying the corresponding review class should be requested from an assistant, then lists several practice examples.",
+        "Examples mention A-coin, oil price, Ethereum, and BTC with specific open, high, low, close, time, and intraday movement values.",
+        "Visible notes attach interpretations such as strong upper-shadow selling pressure, standard spindle-line formation, strong sideways or accumulation feature, and strong short-side force.",
+        "The page begins a knowledge-summary table covering K-line origin, K-line components, and K-line classification, with difficulty stars and exam-focus notes."
+      ],
+      "educationOnlySummary": "This page should be split into a reviewer-only evidence card: practice examples may inform generic OHLC reading exercises, but coin/oil/BTC values and force interpretations need to be anonymized, public-grounded, or removed before any course use.",
+      "uncertainRegions": [
+        "Several numerical example values are visually small and must not be treated as reliable transcription until human verified.",
+        "The QR/contact prompt is not course knowledge and should not be learner-facing content."
+      ],
+      "riskTermFlags": [
+        "qr_contact_language",
+        "specific_asset_examples",
+        "specific_price_levels",
+        "selling_pressure_language",
+        "force_comparison_language",
+        "quiz_summary_language",
+        "exam_focus_language"
+      ],
+      "rewriteAngles": [
+        "anonymize_asset_examples",
+        "practice_examples_without_market_prediction",
+        "knowledge_summary_requires_public_grounding"
+      ],
+      "requiredReviewerActions": [
+        "Open the high-resolution preview and verify every visible-text extract.",
+        "Cross-check candlestick terminology, textbook references, example-asset handling, and market-meaning language against public references before learner-facing rewrite.",
+        "Rewrite source wording into original education-only explanations.",
+        "Run P0 input validation, source-fit review, public grounding, originality review, and approval gates before learner-facing release."
+      ],
+      "nextGate": "human_review_before_p0_overlay_apply"
+    },
+    {
+      "id": "candidate_batch_05_page_03",
+      "documentId": "corpus_1580",
+      "sourceId": "local-investment-course:838b1333e539af7f046b0d35",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "pageNumber": 11,
+      "educationOnly": true,
+      "productionReady": false,
+      "learnerFacingRelease": false,
+      "approvalStatus": "not_approved",
+      "candidateStatus": "machine_assisted_visual_candidate_needs_human_review",
+      "acceptedForP0Overlay": false,
+      "highResPreviewPath": "docs/local-course-low-extraction-high-res-previews/corpus_1580/page-11.png",
+      "highResPreviewBytes": 127664,
+      "visualEvidenceStatus": "high_res_preview_ready_for_manual_transcription",
+      "visibleTextExtract": [
+        "The page continues the knowledge-summary table with K-line market meaning, K-line drawing logic, practical application, and recommended classic textbook sections.",
+        "Visible notes describe yang lines as buyer-dominant, yin lines as seller-pressure, and star lines as turning-warning signals.",
+        "The drawing-logic section mentions line-chart to K-line conversion, four-price mapping, and a mirror principle for judging the open-close relationship.",
+        "The practical-application section discusses comparing long-short strength, combining daily and 15-minute charts, and misjudgment risks around doji and trend continuation or reversal."
+      ],
+      "educationOnlySummary": "This page can become a final-review checklist after heavy rewrite: keep OHLC mapping and study-plan structure, but convert buyer/seller dominance, turning-warning, multi-timeframe application, and reversal language into neutral risk-aware chart-reading notes.",
+      "uncertainRegions": [
+        "The table is cropped at the top and should be matched with the previous page before final transcription.",
+        "The recommended-textbook row needs citation and source-fit review before use."
+      ],
+      "riskTermFlags": [
+        "market_meaning_language",
+        "buyer_seller_dominance_language",
+        "turning_warning_language",
+        "multi_timeframe_language",
+        "trend_reversal_language",
+        "source_recommendation_language"
+      ],
+      "rewriteAngles": [
+        "summary_table_as_reviewer_checklist",
+        "neutralize_market_meaning_claims",
+        "separate_textbook_recommendation_review"
+      ],
+      "requiredReviewerActions": [
+        "Open the high-resolution preview and verify every visible-text extract.",
+        "Cross-check candlestick terminology, textbook references, example-asset handling, and market-meaning language against public references before learner-facing rewrite.",
+        "Rewrite source wording into original education-only explanations.",
+        "Run P0 input validation, source-fit review, public grounding, originality review, and approval gates before learner-facing release."
+      ],
+      "nextGate": "human_review_before_p0_overlay_apply"
+    }
+  ],
+  "completionRule": "These machine-assisted visual candidates are not human transcriptions and cannot be applied to the P0 review overlay until a reviewer verifies text, resolves uncertain regions, checks public-source grounding, and confirms education-only rewriting boundaries.",
+  "boundary": "High-resolution transcription candidates are reviewer-only working notes. They do not perform accepted OCR, approve learner-facing release, copy private course wording into lessons, provide trading advice, stock recommendations, live signals, return promises, broker workflows, automation, or real-money guidance."
+}

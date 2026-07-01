@@ -1,0 +1,150 @@
+{
+  "generatedAt": "2026-06-22T05:08:30.714Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "launchStatus": "source_fit_real_reviewer_launch_ready_blocked_on_real_input",
+  "launchMode": "first_packet_real_reviewer_execution_start",
+  "reviewerCanStartNow": true,
+  "writeAllowedNow": false,
+  "manualAuthorizationRequired": true,
+  "packetHandoffCoverage": "35/35",
+  "packetHandoffsReady": 35,
+  "totalPackets": 35,
+  "packetsWithInputCopyTemplate": 35,
+  "readyPackets": 0,
+  "blockedPackets": 35,
+  "totalReviewRows": 1638,
+  "readyRows": 0,
+  "blockedRows": 1638,
+  "missingFieldRows": 1638,
+  "realHumanInputEntries": 0,
+  "startPacket": {
+    "order": 1,
+    "packetId": "node-public-source-fit-batch-001-packet",
+    "batchId": "node-public-source-fit-batch-001",
+    "module": "K线与价格行为",
+    "inputCopyPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_001_INPUT_COPY_TEMPLATE.json",
+    "inputCopyTemplatePath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_INPUT_COPY_TEMPLATE.json",
+    "handoffPath": "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_001_HANDOFF.json",
+    "reviewRows": 60,
+    "targetNodes": 10,
+    "readyRows": 0,
+    "blockedRows": 60,
+    "missingFieldRows": 60,
+    "realHumanInputEntries": 0,
+    "handoffStatus": "node_public_source_fit_packet_001_handoff_ready_blocked_on_real_input",
+    "mergePreviewStatus": "packet_merge_preview_blocked_missing_ready_packet_input",
+    "mergeApplyStatus": "blocked_no_ready_merge_rows",
+    "mergeMappedRows": 60,
+    "mergeMissingTargetRows": 0,
+    "mergeAllowedNow": false,
+    "dryRunWrittenRows": 0
+  },
+  "startPacketReviewRows": 60,
+  "startPacketReadyRows": 0,
+  "startPacketBlockedRows": 60,
+  "startPacketMissingFieldRows": 60,
+  "startPacketRealHumanInputEntries": 0,
+  "editableReviewerFields": [
+    "reviewerDecision",
+    "sourceFitNotes",
+    "citationUse",
+    "reviewerName",
+    "reviewedAt",
+    "realHumanInput"
+  ],
+  "lockedFields": [
+    "learnerCitationApproved:false",
+    "copiedTextApproved:false",
+    "writeAllowedNow:false",
+    "productionReady:false",
+    "learnerFacingRelease:false"
+  ],
+  "fieldPolicyRows": [
+    {
+      "field": "reviewerDecision",
+      "reviewerAction": "Fill only after personally checking whether the source supports the node.",
+      "allowedValues": [
+        "accepted",
+        "rejected",
+        "needs_replacement"
+      ],
+      "gate": "required_for_ready_row"
+    },
+    {
+      "field": "sourceFitNotes",
+      "reviewerAction": "Write a concise reviewer note explaining the decision.",
+      "allowedValues": [
+        "human-written note"
+      ],
+      "gate": "required_for_ready_row"
+    },
+    {
+      "field": "citationUse",
+      "reviewerAction": "Describe how the source can be used internally for education planning.",
+      "allowedValues": [
+        "background",
+        "definition",
+        "method_context",
+        "reject"
+      ],
+      "gate": "required_for_ready_row"
+    },
+    {
+      "field": "reviewerName",
+      "reviewerAction": "Identify the real reviewer who inspected the source.",
+      "allowedValues": [
+        "real reviewer identity"
+      ],
+      "gate": "required_for_ready_row"
+    },
+    {
+      "field": "reviewedAt",
+      "reviewerAction": "Use the actual review timestamp.",
+      "allowedValues": [
+        "ISO timestamp"
+      ],
+      "gate": "required_for_ready_row"
+    },
+    {
+      "field": "realHumanInput",
+      "reviewerAction": "Set true only for rows personally reviewed by a real human.",
+      "allowedValues": [
+        true
+      ],
+      "gate": "never_generated_by_codex"
+    }
+  ],
+  "dayOneChecklist": [
+    "Open the packet 001 input copy template.",
+    "Review all 60 packet rows against the node and source evidence.",
+    "Fill only reviewerDecision, sourceFitNotes, citationUse, reviewerName, reviewedAt, and realHumanInput.",
+    "Keep learnerCitationApproved, copiedTextApproved, write flags, learner release flags, and production flags locked false.",
+    "Run packet input validation and stop until all 60 rows are ready.",
+    "Run merge preview and confirm 60 mapped rows, 0 missing target rows, and no write.",
+    "Run dry-run merge apply and confirm writtenRows stays 0 unless a separate exact-path write authorization exists.",
+    "Rebuild the handoff index and progress matrix after authorized review changes."
+  ],
+  "commands": [
+    "npm.cmd run validate:knowledge-node-public-source-fit-review-packet-input-copy-template",
+    "npm.cmd run check:knowledge-node-public-source-fit-review-packet-input-copy-template",
+    "npm.cmd run build:knowledge-node-public-source-fit-review-packet-merge-preview",
+    "npm.cmd run check:knowledge-node-public-source-fit-review-packet-merge-preview",
+    "npm.cmd run apply:knowledge-node-public-source-fit-review-packet-merge",
+    "npm.cmd run check:knowledge-node-public-source-fit-review-packet-merge-apply-report",
+    "npm.cmd run build:knowledge-node-public-source-fit-review-packet-handoff-index",
+    "npm.cmd run check:knowledge-node-public-source-fit-review-packet-handoff-index"
+  ],
+  "hardStops": [
+    "Stop if the reviewer did not personally inspect the node and source.",
+    "Stop if any row uses generated, copied, fixture, or unreviewed text as realHumanInput.",
+    "Stop if learner-facing citation approval or copied-text approval appears in this launch path.",
+    "Stop if merge preview is not packet 001, not 60 mapped rows, or has any missing target row.",
+    "Stop if dry-run merge apply reports writtenRows above 0 without separate exact-path write authorization.",
+    "Stop if any artifact claims production readiness, live signals, stock recommendations, return promises, broker workflows, automation, or real-money guidance."
+  ],
+  "completionRule": "The first source-fit real reviewer launch cannot advance until packet 001 has all 60 rows filled by real human source-fit review input, input validation passes, merge preview maps all 60 rows with 0 missing targets, dry-run apply is reviewed, and a separate exact-path manual authorization exists for any write.",
+  "boundary": "Source-fit real reviewer launch dashboard is reviewer-facing education-only operations material. It starts the first packet's human review loop for all 35 source-fit packet handoffs; it does not generate human decisions, approve copied text, approve learner-facing citations, authorize writes, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, or production readiness."
+}

@@ -1,0 +1,59 @@
+{
+  "generatedAt": "2026-06-25T00:00:00.000+08:00",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "writeAllowedNow": false,
+  "auditStatus": "course_5_followup_ai_absorption_coverage_complete_internal_knowledge_release_blocked",
+  "sourceAbsorption": "docs/LOCAL_COURSE_5_FOLLOWUP_ACCELERATED_AI_ABSORPTION.json",
+  "sourceDeletionReadiness": "docs/LOCAL_COURSE_5_DELETION_READINESS.json",
+  "internalAiAbsorptionComplete": true,
+  "aiAbsorbedRows": 386,
+  "totalFollowupReviewerCards": 386,
+  "p0Rows": 282,
+  "nonP0Rows": 104,
+  "rowsWithMachineDraftCoverage": 386,
+  "rowsWithSampleImageEvidence": 386,
+  "moduleCounts": {
+    "chart_pattern_encyclopedia": 255,
+    "terminology_glossary": 46,
+    "trends_and_channels": 57,
+    "trading_ranges": 36,
+    "reversals": 54,
+    "breakouts_and_pullbacks": 24,
+    "bar_by_bar_reading": 33,
+    "price_action_foundations": 18,
+    "course_slides_alignment": 27,
+    "trade_management": 6,
+    "unclassified_supplement": 13
+  },
+  "dispositionCounts": {
+    "supporting_evidence_only": 21,
+    "module_candidate_after_rewrite": 365
+  },
+  "sourceRetentionCounts": {
+    "retain_source_required": 109,
+    "retain_until_full_ocr_complete": 277
+  },
+  "realReviewerInputRows": 0,
+  "readyReviewerNotes": 0,
+  "humanVerifiedRows": 0,
+  "ocrVerifiedRows": 0,
+  "publicGroundedRows": 0,
+  "originalRewriteReadyRows": 0,
+  "acceptedForModuleDistillationRows": 0,
+  "acceptedForDeletionReadinessRows": 0,
+  "learnerReadyModules": 0,
+  "sourceFolderMayBeDeleted": false,
+  "currentKnowledgeArtifactsCanReplaceSourceFolder": false,
+  "deletionReadinessStatus": "course_5_source_folder_not_deletable_absorption_incomplete",
+  "deletionReadinessStillBlocks": true,
+  "nextOperationalGates": [
+    "AI-only internal absorption is now complete for all Course 5 follow-up visual cards.",
+    "Next acceleration step is module distillation from AI absorbed rows, preserving public grounding and originality gates.",
+    "Source folder removal remains a separate deletion-readiness decision and is not opened by this audit."
+  ],
+  "completionRule": "This audit is complete when all 386 Course 5 follow-up reviewer cards are covered by accelerated AI absorption and every release/delete gate remains explicitly closed.",
+  "boundary": "Private education-operations coverage audit for Course 5 AI absorption. It proves internal AI sedimentation coverage, not OCR completion, human verification, public grounding, learner-facing release, source-folder removal approval, production readiness, live execution cues, return promises, execution-platform integration, automation, or real-world trading guidance."
+}

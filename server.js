@@ -66,6 +66,654 @@ function sendJson(res, status, payload, extraHeaders = {}) {
   res.end(JSON.stringify(payload));
 }
 
+const knowledgeBrowserBoundary =
+  "Education-only knowledge browser data. It does not provide stock recommendations, live trading signals, win-rate or return promises, broker integration, auto-trading, or real-money guidance.";
+
+let knowledgeBrowserCache = null;
+function knowledgeBrowserData() {
+  if (!knowledgeBrowserCache) {
+    const { knowledgeBrowserIndex } = require("./education-knowledge-browser-index");
+    knowledgeBrowserCache = {
+      index: knowledgeBrowserIndex,
+      nodeById: new Map(knowledgeBrowserIndex.learnerFacingNodes.map((node) => [node.id, node])),
+    };
+  }
+  return knowledgeBrowserCache;
+}
+
+function localCourseKnowledgeCoverageData() {
+  const coveragePath = path.join(root, "docs", "LOCAL_COURSE_KNOWLEDGE_COVERAGE.json");
+  if (!fsSync.existsSync(coveragePath)) return null;
+  return JSON.parse(fsSync.readFileSync(coveragePath, "utf8"));
+}
+
+function localCourseSourceQualityAuditData() {
+  const auditPath = path.join(root, "docs", "LOCAL_COURSE_SOURCE_QUALITY_AUDIT.json");
+  if (!fsSync.existsSync(auditPath)) return null;
+  return JSON.parse(fsSync.readFileSync(auditPath, "utf8"));
+}
+
+function localCourseSourceSyncAuditData() {
+  const auditPath = path.join(root, "docs", "LOCAL_COURSE_SOURCE_SYNC_AUDIT.json");
+  if (!fsSync.existsSync(auditPath)) return null;
+  return JSON.parse(fsSync.readFileSync(auditPath, "utf8"));
+}
+
+function localCourseDocumentAbsorptionMapData() {
+  const auditPath = path.join(root, "docs", "LOCAL_COURSE_DOCUMENT_ABSORPTION_MAP.json");
+  if (!fsSync.existsSync(auditPath)) return null;
+  return JSON.parse(fsSync.readFileSync(auditPath, "utf8"));
+}
+
+function localCourseFolderAbsorptionLedgerData() {
+  const ledgerPath = path.join(root, "docs", "LOCAL_COURSE_FOLDER_ABSORPTION_LEDGER.json");
+  if (!fsSync.existsSync(ledgerPath)) return null;
+  return JSON.parse(fsSync.readFileSync(ledgerPath, "utf8"));
+}
+
+function publicSourceGapAuditData() {
+  const auditPath = path.join(root, "docs", "PUBLIC_SOURCE_GAP_AUDIT.json");
+  if (!fsSync.existsSync(auditPath)) return null;
+  return JSON.parse(fsSync.readFileSync(auditPath, "utf8"));
+}
+
+function wikipediaGroundingAuditData() {
+  const auditPath = path.join(root, "docs", "WIKIPEDIA_GROUNDING_AUDIT.json");
+  if (!fsSync.existsSync(auditPath)) return null;
+  return JSON.parse(fsSync.readFileSync(auditPath, "utf8"));
+}
+
+function publicSourceAbsorptionMapData() {
+  const auditPath = path.join(root, "docs", "PUBLIC_SOURCE_ABSORPTION_MAP.json");
+  if (!fsSync.existsSync(auditPath)) return null;
+  return JSON.parse(fsSync.readFileSync(auditPath, "utf8"));
+}
+
+function publicSourceCoverageLedgerData() {
+  const ledgerPath = path.join(root, "docs", "PUBLIC_SOURCE_COVERAGE_LEDGER.json");
+  if (!fsSync.existsSync(ledgerPath)) return null;
+  return JSON.parse(fsSync.readFileSync(ledgerPath, "utf8"));
+}
+
+function knowledgeBaseReadinessGateData() {
+  const gatePath = path.join(root, "docs", "KNOWLEDGE_BASE_READINESS_GATE.json");
+  if (!fsSync.existsSync(gatePath)) return null;
+  return JSON.parse(fsSync.readFileSync(gatePath, "utf8"));
+}
+
+function knowledgeModuleReviewCockpitData() {
+  const cockpitPath = path.join(root, "docs", "KNOWLEDGE_MODULE_REVIEW_COCKPIT.json");
+  if (!fsSync.existsSync(cockpitPath)) return null;
+  return JSON.parse(fsSync.readFileSync(cockpitPath, "utf8"));
+}
+
+function knowledgeReviewerActionQueueData() {
+  const queuePath = path.join(root, "docs", "KNOWLEDGE_REVIEWER_ACTION_QUEUE.json");
+  if (!fsSync.existsSync(queuePath)) return null;
+  return JSON.parse(fsSync.readFileSync(queuePath, "utf8"));
+}
+
+function knowledgeFirstReviewerActionHandoffData() {
+  const handoffPath = path.join(root, "docs", "KNOWLEDGE_FIRST_REVIEWER_ACTION_HANDOFF.json");
+  if (!fsSync.existsSync(handoffPath)) return null;
+  return JSON.parse(fsSync.readFileSync(handoffPath, "utf8"));
+}
+
+function knowledgeFirstReviewerFieldMapData() {
+  const fieldMapPath = path.join(root, "docs", "KNOWLEDGE_FIRST_REVIEWER_FIELD_MAP.json");
+  if (!fsSync.existsSync(fieldMapPath)) return null;
+  return JSON.parse(fsSync.readFileSync(fieldMapPath, "utf8"));
+}
+
+function knowledgeFirstReviewerCompletionGateData() {
+  const gatePath = path.join(root, "docs", "KNOWLEDGE_FIRST_REVIEWER_COMPLETION_GATE.json");
+  if (!fsSync.existsSync(gatePath)) return null;
+  return JSON.parse(fsSync.readFileSync(gatePath, "utf8"));
+}
+
+function knowledgeFirstReviewerExecutionChecklistData() {
+  const checklistPath = path.join(root, "docs", "KNOWLEDGE_FIRST_REVIEWER_EXECUTION_CHECKLIST.json");
+  if (!fsSync.existsSync(checklistPath)) return null;
+  return JSON.parse(fsSync.readFileSync(checklistPath, "utf8"));
+}
+
+function knowledgeFirstReviewerWorkbenchData() {
+  const workbenchPath = path.join(root, "docs", "KNOWLEDGE_FIRST_REVIEWER_WORKBENCH.json");
+  if (!fsSync.existsSync(workbenchPath)) return null;
+  return JSON.parse(fsSync.readFileSync(workbenchPath, "utf8"));
+}
+
+function knowledgeFirstReviewerCardStatusMatrixData() {
+  const matrixPath = path.join(root, "docs", "KNOWLEDGE_FIRST_REVIEWER_CARD_STATUS_MATRIX.json");
+  if (!fsSync.existsSync(matrixPath)) return null;
+  return JSON.parse(fsSync.readFileSync(matrixPath, "utf8"));
+}
+
+function knowledgeFirstReviewerPostInputRouteMapData() {
+  const routeMapPath = path.join(root, "docs", "KNOWLEDGE_FIRST_REVIEWER_POST_INPUT_ROUTE_MAP.json");
+  if (!fsSync.existsSync(routeMapPath)) return null;
+  return JSON.parse(fsSync.readFileSync(routeMapPath, "utf8"));
+}
+
+function knowledgeFirstReviewerInputQueueData() {
+  const queuePath = path.join(root, "docs", "KNOWLEDGE_FIRST_REVIEWER_INPUT_QUEUE.json");
+  if (!fsSync.existsSync(queuePath)) return null;
+  return JSON.parse(fsSync.readFileSync(queuePath, "utf8"));
+}
+
+function knowledgeReleaseBlockerAuditData() {
+  const auditPath = path.join(root, "docs", "KNOWLEDGE_RELEASE_BLOCKER_AUDIT.json");
+  if (!fsSync.existsSync(auditPath)) return null;
+  return JSON.parse(fsSync.readFileSync(auditPath, "utf8"));
+}
+
+function knowledgeCoursePathReadinessAuditData() {
+  const auditPath = path.join(root, "docs", "KNOWLEDGE_COURSE_PATH_READINESS_AUDIT.json");
+  if (!fsSync.existsSync(auditPath)) return null;
+  return JSON.parse(fsSync.readFileSync(auditPath, "utf8"));
+}
+
+function knowledgeModuleReviewSprintPlanData() {
+  const planPath = path.join(root, "docs", "KNOWLEDGE_MODULE_REVIEW_SPRINT_PLAN.json");
+  if (!fsSync.existsSync(planPath)) return null;
+  return JSON.parse(fsSync.readFileSync(planPath, "utf8"));
+}
+
+function knowledgeNodeSourceTriangulationAuditData() {
+  const auditPath = path.join(root, "docs", "KNOWLEDGE_NODE_SOURCE_TRIANGULATION_AUDIT.json");
+  if (!fsSync.existsSync(auditPath)) return null;
+  return JSON.parse(fsSync.readFileSync(auditPath, "utf8"));
+}
+
+function knowledgeNodePublicSourceFitCandidatePackData() {
+  const packPath = path.join(root, "docs", "KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_CANDIDATE_PACK.json");
+  if (!fsSync.existsSync(packPath)) return null;
+  return JSON.parse(fsSync.readFileSync(packPath, "utf8"));
+}
+
+function knowledgeNodePublicSourceFitReviewInputStarterData() {
+  const starterPath = path.join(root, "docs", "KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_STARTER.json");
+  if (!fsSync.existsSync(starterPath)) return null;
+  return JSON.parse(fsSync.readFileSync(starterPath, "utf8"));
+}
+
+function knowledgeNodePublicSourceFitReviewInputValidationData() {
+  const validationPath = path.join(root, "docs", "KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_INPUT_VALIDATION.json");
+  if (!fsSync.existsSync(validationPath)) return null;
+  return JSON.parse(fsSync.readFileSync(validationPath, "utf8"));
+}
+
+function knowledgeNodePublicSourceFitReviewExecutionQueueData() {
+  const queuePath = path.join(root, "docs", "KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_EXECUTION_QUEUE.json");
+  if (!fsSync.existsSync(queuePath)) return null;
+  return JSON.parse(fsSync.readFileSync(queuePath, "utf8"));
+}
+
+function knowledgeNodePublicSourceFitReviewBatchPacketsData() {
+  const packetPath = path.join(root, "docs", "KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_BATCH_PACKETS.json");
+  if (!fsSync.existsSync(packetPath)) return null;
+  return JSON.parse(fsSync.readFileSync(packetPath, "utf8"));
+}
+
+function knowledgeNodePublicSourceFitReviewPacketInputCopyTemplateData() {
+  const templatePath = path.join(root, "docs", "KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_INPUT_COPY_TEMPLATE.json");
+  const inputCopyPath = path.join(root, "docs", "reviewer-inputs", "KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_001_INPUT_COPY_TEMPLATE.json");
+  const validationPath = path.join(root, "docs", "KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_INPUT_COPY_TEMPLATE_VALIDATION.json");
+  if (!fsSync.existsSync(templatePath) || !fsSync.existsSync(inputCopyPath) || !fsSync.existsSync(validationPath)) return null;
+  return {
+    template: JSON.parse(fsSync.readFileSync(templatePath, "utf8")),
+    inputCopy: JSON.parse(fsSync.readFileSync(inputCopyPath, "utf8")),
+    validation: JSON.parse(fsSync.readFileSync(validationPath, "utf8")),
+  };
+}
+
+function knowledgeNodePublicSourceFitReviewPacketMergePreviewData() {
+  const previewPath = path.join(root, "docs", "KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_MERGE_PREVIEW.json");
+  if (!fsSync.existsSync(previewPath)) return null;
+  return JSON.parse(fsSync.readFileSync(previewPath, "utf8"));
+}
+
+function knowledgeNodePublicSourceFitReviewPacketMergeApplyReportData() {
+  const reportPath = path.join(root, "docs", "KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_MERGE_APPLY_REPORT.json");
+  if (!fsSync.existsSync(reportPath)) return null;
+  return JSON.parse(fsSync.readFileSync(reportPath, "utf8"));
+}
+
+function knowledgeNodePublicSourceFitReviewPacket001HandoffData() {
+  const handoffPath = path.join(root, "docs", "KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_001_HANDOFF.json");
+  if (!fsSync.existsSync(handoffPath)) return null;
+  return JSON.parse(fsSync.readFileSync(handoffPath, "utf8"));
+}
+
+function knowledgeNodePublicSourceFitReviewPacketHandoffIndexData() {
+  const indexPath = path.join(root, "docs", "KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_HANDOFF_INDEX.json");
+  if (!fsSync.existsSync(indexPath)) return null;
+  return JSON.parse(fsSync.readFileSync(indexPath, "utf8"));
+}
+
+function knowledgeNodePublicSourceFitRealReviewerLaunchDashboardData() {
+  const dashboardPath = path.join(root, "docs", "KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REAL_REVIEWER_LAUNCH_DASHBOARD.json");
+  if (!fsSync.existsSync(dashboardPath)) return null;
+  return JSON.parse(fsSync.readFileSync(dashboardPath, "utf8"));
+}
+
+function knowledgeNodePublicSourceFitPacket001ReviewerWorkbenchData() {
+  const workbenchPath = path.join(root, "docs", "KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_PACKET_001_REVIEWER_WORKBENCH.json");
+  if (!fsSync.existsSync(workbenchPath)) return null;
+  return JSON.parse(fsSync.readFileSync(workbenchPath, "utf8"));
+}
+
+function knowledgeNodePublicSourceFitReviewerWorkbenchIndexData() {
+  const indexPath = path.join(root, "docs", "KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEWER_WORKBENCH_INDEX.json");
+  if (!fsSync.existsSync(indexPath)) return null;
+  return JSON.parse(fsSync.readFileSync(indexPath, "utf8"));
+}
+
+function knowledgeNodePublicSourceFitReviewerRowBrowserData() {
+  const browserPath = path.join(root, "docs", "KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEWER_ROW_BROWSER.json");
+  if (!fsSync.existsSync(browserPath)) return null;
+  return JSON.parse(fsSync.readFileSync(browserPath, "utf8"));
+}
+
+function knowledgeNodePublicSourceFitReviewProgressMatrixData() {
+  const matrixPath = path.join(root, "docs", "KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PROGRESS_MATRIX.json");
+  if (!fsSync.existsSync(matrixPath)) return null;
+  return JSON.parse(fsSync.readFileSync(matrixPath, "utf8"));
+}
+
+function lowExtractionVisualReviewPacketData() {
+  const packetPath = path.join(root, "docs", "LOCAL_COURSE_LOW_EXTRACTION_VISUAL_REVIEW_PACKET.json");
+  if (!fsSync.existsSync(packetPath)) return null;
+  return JSON.parse(fsSync.readFileSync(packetPath, "utf8"));
+}
+
+function lowExtractionHighResReviewPacketData() {
+  const packetPath = path.join(root, "docs", "LOCAL_COURSE_LOW_EXTRACTION_HIGH_RES_REVIEW_PACKET.json");
+  if (!fsSync.existsSync(packetPath)) return null;
+  return JSON.parse(fsSync.readFileSync(packetPath, "utf8"));
+}
+
+function localCourseHighResTranscriptionCandidateIndexData() {
+  const indexPath = path.join(root, "docs", "LOCAL_COURSE_HIGH_RES_TRANSCRIPTION_CANDIDATE_INDEX.json");
+  if (!fsSync.existsSync(indexPath)) return null;
+  return JSON.parse(fsSync.readFileSync(indexPath, "utf8"));
+}
+
+function localCourseP0CandidateReviewAssistMapData() {
+  const mapPath = path.join(root, "docs", "LOCAL_COURSE_P0_CANDIDATE_REVIEW_ASSIST_MAP.json");
+  if (!fsSync.existsSync(mapPath)) return null;
+  return JSON.parse(fsSync.readFileSync(mapPath, "utf8"));
+}
+
+function localCourseP0ReviewInputDryRunSampleData() {
+  const samplePath = path.join(root, "docs", "LOCAL_COURSE_P0_REVIEW_INPUT_DRY_RUN_SAMPLE.json");
+  const validationPath = path.join(root, "docs", "LOCAL_COURSE_P0_REVIEW_INPUT_DRY_RUN_SAMPLE_VALIDATION.json");
+  const applyPath = path.join(root, "docs", "LOCAL_COURSE_P0_REVIEW_INPUT_DRY_RUN_SAMPLE_APPLY_REPORT.json");
+  if (!fsSync.existsSync(samplePath) || !fsSync.existsSync(validationPath) || !fsSync.existsSync(applyPath)) return null;
+  return {
+    sample: JSON.parse(fsSync.readFileSync(samplePath, "utf8")),
+    validation: JSON.parse(fsSync.readFileSync(validationPath, "utf8")),
+    apply: JSON.parse(fsSync.readFileSync(applyPath, "utf8")),
+  };
+}
+
+function localCourseP0HumanReviewNoteTemplateData() {
+  const templatePath = path.join(root, "docs", "LOCAL_COURSE_P0_HUMAN_REVIEW_NOTE_TEMPLATE.json");
+  if (!fsSync.existsSync(templatePath)) return null;
+  return JSON.parse(fsSync.readFileSync(templatePath, "utf8"));
+}
+
+function localCourseP0HumanFillPack01Data() {
+  const packPath = path.join(root, "docs", "LOCAL_COURSE_P0_HUMAN_FILL_PACK_01.json");
+  if (!fsSync.existsSync(packPath)) return null;
+  return JSON.parse(fsSync.readFileSync(packPath, "utf8"));
+}
+
+function localCourseP0HumanFillPack01InputCopyData() {
+  const templatePath = path.join(root, "docs", "LOCAL_COURSE_P0_HUMAN_FILL_PACK_01_INPUT_COPY_TEMPLATE.json");
+  const validationPath = path.join(root, "docs", "LOCAL_COURSE_P0_HUMAN_FILL_PACK_01_INPUT_COPY_VALIDATION.json");
+  if (!fsSync.existsSync(templatePath) || !fsSync.existsSync(validationPath)) return null;
+  return {
+    template: JSON.parse(fsSync.readFileSync(templatePath, "utf8")),
+    validation: JSON.parse(fsSync.readFileSync(validationPath, "utf8")),
+  };
+}
+
+function localCourseP0HumanReviewBundleData() {
+  const bundlePath = path.join(root, "docs", "LOCAL_COURSE_P0_HUMAN_REVIEW_BUNDLE.json");
+  if (!fsSync.existsSync(bundlePath)) return null;
+  return JSON.parse(fsSync.readFileSync(bundlePath, "utf8"));
+}
+
+function localCourseP0HumanReviewBundleInputCopyData() {
+  const templatePath = path.join(root, "docs", "LOCAL_COURSE_P0_HUMAN_REVIEW_BUNDLE_INPUT_COPY_TEMPLATE.json");
+  const validationPath = path.join(root, "docs", "LOCAL_COURSE_P0_HUMAN_REVIEW_BUNDLE_INPUT_COPY_VALIDATION.json");
+  if (!fsSync.existsSync(templatePath) || !fsSync.existsSync(validationPath)) return null;
+  return {
+    template: JSON.parse(fsSync.readFileSync(templatePath, "utf8")),
+    validation: JSON.parse(fsSync.readFileSync(validationPath, "utf8")),
+  };
+}
+
+function localCourseP0HumanReviewBundlePositiveFixtureData() {
+  const fixturePath = path.join(root, "docs", "LOCAL_COURSE_P0_HUMAN_REVIEW_BUNDLE_POSITIVE_FIXTURE.json");
+  const validationPath = path.join(root, "docs", "LOCAL_COURSE_P0_HUMAN_REVIEW_BUNDLE_POSITIVE_FIXTURE_VALIDATION.json");
+  if (!fsSync.existsSync(fixturePath) || !fsSync.existsSync(validationPath)) return null;
+  return {
+    fixture: JSON.parse(fsSync.readFileSync(fixturePath, "utf8")),
+    validation: JSON.parse(fsSync.readFileSync(validationPath, "utf8")),
+  };
+}
+
+function localCourseP0HumanReviewRealReviewerHandoffData() {
+  const handoffPath = path.join(root, "docs", "LOCAL_COURSE_P0_HUMAN_REVIEW_REAL_REVIEWER_HANDOFF.json");
+  if (!fsSync.existsSync(handoffPath)) return null;
+  return JSON.parse(fsSync.readFileSync(handoffPath, "utf8"));
+}
+
+function localCourseP0RealReviewerInputStarterData() {
+  const starterPath = path.join(root, "docs", "LOCAL_COURSE_P0_REAL_REVIEWER_INPUT_STARTER.json");
+  const validationPath = path.join(root, "docs", "LOCAL_COURSE_P0_REAL_REVIEWER_INPUT_STARTER_VALIDATION.json");
+  if (!fsSync.existsSync(starterPath) || !fsSync.existsSync(validationPath)) return null;
+  return {
+    starter: JSON.parse(fsSync.readFileSync(starterPath, "utf8")),
+    validation: JSON.parse(fsSync.readFileSync(validationPath, "utf8")),
+  };
+}
+
+function localCourseP0RealReviewerTaskBoardData() {
+  const boardPath = path.join(root, "docs", "LOCAL_COURSE_P0_REAL_REVIEWER_TASK_BOARD.json");
+  if (!fsSync.existsSync(boardPath)) return null;
+  return JSON.parse(fsSync.readFileSync(boardPath, "utf8"));
+}
+
+function localCourseP0RealReviewerEvidencePacketData() {
+  const packetPath = path.join(root, "docs", "LOCAL_COURSE_P0_REAL_REVIEWER_EVIDENCE_PACKET.json");
+  if (!fsSync.existsSync(packetPath)) return null;
+  return JSON.parse(fsSync.readFileSync(packetPath, "utf8"));
+}
+
+function localCourseP0RealReviewerSourceFitWorksheetData() {
+  const worksheetPath = path.join(root, "docs", "LOCAL_COURSE_P0_REAL_REVIEWER_SOURCE_FIT_WORKSHEET.json");
+  if (!fsSync.existsSync(worksheetPath)) return null;
+  return JSON.parse(fsSync.readFileSync(worksheetPath, "utf8"));
+}
+
+function localCourseP0RealReviewerSourceFitInputGuideData() {
+  const guidePath = path.join(root, "docs", "LOCAL_COURSE_P0_REAL_REVIEWER_SOURCE_FIT_INPUT_GUIDE.json");
+  if (!fsSync.existsSync(guidePath)) return null;
+  return JSON.parse(fsSync.readFileSync(guidePath, "utf8"));
+}
+
+function localCourseP0RealReviewerSourceFitInputValidationData() {
+  const validationPath = path.join(root, "docs", "LOCAL_COURSE_P0_REAL_REVIEWER_SOURCE_FIT_INPUT_VALIDATION.json");
+  if (!fsSync.existsSync(validationPath)) return null;
+  return JSON.parse(fsSync.readFileSync(validationPath, "utf8"));
+}
+
+function localCourseP0RealReviewerSourceFitHandoffData() {
+  const handoffPath = path.join(root, "docs", "LOCAL_COURSE_P0_REAL_REVIEWER_SOURCE_FIT_HANDOFF.json");
+  if (!fsSync.existsSync(handoffPath)) return null;
+  return JSON.parse(fsSync.readFileSync(handoffPath, "utf8"));
+}
+
+function localCourseP0ReviewOperatorIndexData() {
+  const indexPath = path.join(root, "docs", "LOCAL_COURSE_P0_REVIEW_OPERATOR_INDEX.json");
+  if (!fsSync.existsSync(indexPath)) return null;
+  return JSON.parse(fsSync.readFileSync(indexPath, "utf8"));
+}
+
+function localCourseP0WriteAuthorizationPreviewData() {
+  const previewPath = path.join(root, "docs", "LOCAL_COURSE_P0_WRITE_AUTHORIZATION_PREVIEW.json");
+  if (!fsSync.existsSync(previewPath)) return null;
+  return JSON.parse(fsSync.readFileSync(previewPath, "utf8"));
+}
+
+function localCourseP0ReviewInputNegativeCasesData() {
+  const reportPath = path.join(root, "docs", "LOCAL_COURSE_P0_REVIEW_INPUT_NEGATIVE_CASES.json");
+  if (!fsSync.existsSync(reportPath)) return null;
+  return JSON.parse(fsSync.readFileSync(reportPath, "utf8"));
+}
+
+function lowExtractionTranscriptionOverlayData() {
+  const overlayPath = path.join(root, "docs", "LOCAL_COURSE_LOW_EXTRACTION_TRANSCRIPTION_OVERLAY.json");
+  if (!fsSync.existsSync(overlayPath)) return null;
+  return JSON.parse(fsSync.readFileSync(overlayPath, "utf8"));
+}
+
+function lowExtractionTranscriptIntakeData() {
+  const intakePath = path.join(root, "docs", "LOCAL_COURSE_LOW_EXTRACTION_TRANSCRIPT_INTAKE.json");
+  if (!fsSync.existsSync(intakePath)) return null;
+  return JSON.parse(fsSync.readFileSync(intakePath, "utf8"));
+}
+
+function lowExtractionManualTranscriptionPackData() {
+  const packPath = path.join(root, "docs", "LOCAL_COURSE_LOW_EXTRACTION_MANUAL_TRANSCRIPTION_PACK.json");
+  if (!fsSync.existsSync(packPath)) return null;
+  return JSON.parse(fsSync.readFileSync(packPath, "utf8"));
+}
+
+function lowExtractionSourceReplacementPackData() {
+  const packPath = path.join(root, "docs", "LOCAL_COURSE_LOW_EXTRACTION_SOURCE_REPLACEMENT_PACK.json");
+  if (!fsSync.existsSync(packPath)) return null;
+  return JSON.parse(fsSync.readFileSync(packPath, "utf8"));
+}
+
+function localCourseAbsorptionReadinessAuditData() {
+  const auditPath = path.join(root, "docs", "LOCAL_COURSE_ABSORPTION_READINESS_AUDIT.json");
+  if (!fsSync.existsSync(auditPath)) return null;
+  return JSON.parse(fsSync.readFileSync(auditPath, "utf8"));
+}
+
+function localCourseModuleAbsorptionSelfAuditData() {
+  const auditPath = path.join(root, "docs", "LOCAL_COURSE_MODULE_ABSORPTION_SELF_AUDIT.json");
+  if (!fsSync.existsSync(auditPath)) return null;
+  return JSON.parse(fsSync.readFileSync(auditPath, "utf8"));
+}
+
+function localCourseModuleReviewDossierData() {
+  const dossierPath = path.join(root, "docs", "LOCAL_COURSE_MODULE_REVIEW_DOSSIER.json");
+  if (!fsSync.existsSync(dossierPath)) return null;
+  return JSON.parse(fsSync.readFileSync(dossierPath, "utf8"));
+}
+
+function localCourseReviewGateDashboardData() {
+  const dashboardPath = path.join(root, "docs", "LOCAL_COURSE_REVIEW_GATE_DASHBOARD.json");
+  if (!fsSync.existsSync(dashboardPath)) return null;
+  return JSON.parse(fsSync.readFileSync(dashboardPath, "utf8"));
+}
+
+function localCourseAbsorptionOperatorQueueData() {
+  const queuePath = path.join(root, "docs", "LOCAL_COURSE_ABSORPTION_OPERATOR_QUEUE.json");
+  if (!fsSync.existsSync(queuePath)) return null;
+  return JSON.parse(fsSync.readFileSync(queuePath, "utf8"));
+}
+
+function localCourseAbsorptionP0WorkbenchData() {
+  const workbenchPath = path.join(root, "docs", "LOCAL_COURSE_ABSORPTION_P0_WORKBENCH.json");
+  if (!fsSync.existsSync(workbenchPath)) return null;
+  return JSON.parse(fsSync.readFileSync(workbenchPath, "utf8"));
+}
+
+function localCourseAbsorptionP0ReviewOverlayData() {
+  const overlayPath = path.join(root, "docs", "LOCAL_COURSE_ABSORPTION_P0_REVIEW_OVERLAY.json");
+  if (!fsSync.existsSync(overlayPath)) return null;
+  return JSON.parse(fsSync.readFileSync(overlayPath, "utf8"));
+}
+
+function localCourseSourceReplacementDecisionWorksheetData() {
+  const worksheetPath = path.join(root, "docs", "LOCAL_COURSE_SOURCE_REPLACEMENT_DECISION_WORKSHEET.json");
+  if (!fsSync.existsSync(worksheetPath)) return null;
+  return JSON.parse(fsSync.readFileSync(worksheetPath, "utf8"));
+}
+
+function localCourseRewriteBatchData() {
+  const batchPath = path.join(root, "docs", "LOCAL_COURSE_REWRITE_BATCH_01.json");
+  if (!fsSync.existsSync(batchPath)) return null;
+  return JSON.parse(fsSync.readFileSync(batchPath, "utf8"));
+}
+
+function localCourseRewriteBatchIndexData() {
+  const indexPath = path.join(root, "docs", "LOCAL_COURSE_REWRITE_BATCH_INDEX.json");
+  if (!fsSync.existsSync(indexPath)) return null;
+  return JSON.parse(fsSync.readFileSync(indexPath, "utf8"));
+}
+
+function localCourseRewriteReviewData() {
+  const reportPath = path.join(root, "docs", "LOCAL_COURSE_REWRITE_REVIEW_REPORT.json");
+  if (!fsSync.existsSync(reportPath)) return null;
+  return JSON.parse(fsSync.readFileSync(reportPath, "utf8"));
+}
+
+function localCourseRefinementPacketData() {
+  const packetPath = path.join(root, "docs", "LOCAL_COURSE_REFINEMENT_PACKET.json");
+  if (!fsSync.existsSync(packetPath)) return null;
+  return JSON.parse(fsSync.readFileSync(packetPath, "utf8"));
+}
+
+function localCourseHighRiskSelfReviewOverlayData() {
+  const overlayPath = path.join(root, "docs", "LOCAL_COURSE_HIGH_RISK_SELF_REVIEW_OVERLAY.json");
+  if (!fsSync.existsSync(overlayPath)) return null;
+  return JSON.parse(fsSync.readFileSync(overlayPath, "utf8"));
+}
+
+function localCourseHighRiskPublicGroundingMatrixData() {
+  const matrixPath = path.join(root, "docs", "LOCAL_COURSE_HIGH_RISK_PUBLIC_GROUNDING_MATRIX.json");
+  if (!fsSync.existsSync(matrixPath)) return null;
+  return JSON.parse(fsSync.readFileSync(matrixPath, "utf8"));
+}
+
+function localCourseHighRiskRealReviewerOverlayStarterData() {
+  const starterPath = path.join(root, "docs", "LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_STARTER.json");
+  const draftPath = path.join(root, "docs", "reviewer-inputs", "LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json");
+  if (!fsSync.existsSync(starterPath) || !fsSync.existsSync(draftPath)) return null;
+  return {
+    starter: JSON.parse(fsSync.readFileSync(starterPath, "utf8")),
+    draft: JSON.parse(fsSync.readFileSync(draftPath, "utf8")),
+  };
+}
+
+function localCourseHighRiskRealReviewerOverlayInputValidationData() {
+  const validationPath = path.join(root, "docs", "LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_INPUT_VALIDATION.json");
+  if (!fsSync.existsSync(validationPath)) return null;
+  return JSON.parse(fsSync.readFileSync(validationPath, "utf8"));
+}
+
+function localCourseHighRiskReviewCockpitData() {
+  const cockpitPath = path.join(root, "docs", "LOCAL_COURSE_HIGH_RISK_REVIEW_COCKPIT.json");
+  if (!fsSync.existsSync(cockpitPath)) return null;
+  return JSON.parse(fsSync.readFileSync(cockpitPath, "utf8"));
+}
+
+let knowledgeLessonCache = null;
+function knowledgeLessonData() {
+  if (!knowledgeLessonCache) {
+    const { knowledgeLessons } = require("./education-knowledge-lessons");
+    knowledgeLessonCache = {
+      lessonByNodeId: new Map(knowledgeLessons.map((lesson) => [lesson.nodeId, lesson])),
+    };
+  }
+  return knowledgeLessonCache;
+}
+
+let fullKnowledgeCurriculumCache = null;
+function fullKnowledgeCurriculumData() {
+  if (!fullKnowledgeCurriculumCache) {
+    const { curriculumPaths } = require("./education-curriculum-paths");
+    fullKnowledgeCurriculumCache = {
+      curriculumPaths,
+      pathById: new Map(curriculumPaths.map((path) => [path.id, path])),
+    };
+  }
+  return fullKnowledgeCurriculumCache;
+}
+
+function knowledgeBrowserEnvelope(payload) {
+  return {
+    educationOnly: true,
+    productionReady: false,
+    boundary: knowledgeBrowserBoundary,
+    ...payload,
+  };
+}
+
+function lightweightLessonForNode(node) {
+  return {
+    id: `lesson_${node.id}`,
+    nodeId: node.id,
+    module: node.module,
+    topic: node.topic,
+    title: node.title,
+    educationOnly: true,
+    productionReady: false,
+    reviewStatus: "curriculum_draft",
+    sourceEvidence: {
+      reviewedSourceRefCount: (node.reviewedSourceRefs || []).length,
+      authorityContextRefCount: (node.authorityContextRefs || []).length,
+      sourceUseBoundary: "Sources support taxonomy, context, and boundary review only. Lesson wording must remain original and education-only.",
+    },
+    learnerBoundary: "This lesson summary is for education and review practice only. It does not recommend securities, provide live signals, promise results, connect brokers, automate orders, or guide real funds.",
+  };
+}
+
+function lightweightCurriculumData() {
+  const { index } = knowledgeBrowserData();
+  const curriculumPaths = index.modules.map((module, indexNumber) => {
+    const lessonIds = (module.entryNodeIds || []).map((nodeId) => `lesson_${nodeId}`);
+    return {
+      id: `path_${indexNumber + 1}`,
+      module: module.title,
+      educationOnly: true,
+      productionReady: false,
+      prerequisitePathIds: indexNumber === 0 ? [] : [`path_${indexNumber}`],
+      nextPathId: indexNumber < index.modules.length - 1 ? `path_${indexNumber + 2}` : "",
+      lessonCount: module.learnerFacingNodes,
+      unitCount: Math.max(1, Math.ceil(module.learnerFacingNodes / 10)),
+      estimatedMinutes: module.learnerFacingNodes * 8,
+      entryLessonId: lessonIds[0] || "",
+      units: [
+        {
+          id: `unit_${indexNumber + 1}_1`,
+          title: `${module.title} foundation`,
+          lessonIds,
+          prerequisiteUnitIds: [],
+          nextUnitId: module.learnerFacingNodes > 10 ? `unit_${indexNumber + 1}_2` : "",
+          focus: "foundation",
+          estimatedMinutes: Math.min(module.learnerFacingNodes, 10) * 8,
+          checkpoint: {
+            prompt: "Summarize visible evidence, uncertainty, common mistake, and education-only boundary before moving on.",
+            passCriteria: [
+              "Describes evidence before interpretation.",
+              "Names uncertainty or a counterexample.",
+              "Avoids action guidance and performance claims.",
+            ],
+          },
+        },
+      ],
+      boundary: "Curriculum path summary organizes education-only lesson drafts. It is not final course approval, trading guidance, or production readiness.",
+    };
+  });
+  return {
+    curriculumPaths,
+    pathById: new Map(curriculumPaths.map((path) => [path.id, path])),
+  };
+}
+
+function knowledgeNodeSummary(node) {
+  return {
+    id: node.id,
+    title: node.title,
+    module: node.module,
+    topic: node.topic,
+    difficulty: node.difficulty,
+    difficultyStage: node.difficultyStage,
+    sourceGroundingStatus: node.sourceGroundingStatus,
+    reviewedSourceRefCount: (node.reviewedSourceRefs || []).length,
+    reviewStatus: node.reviewStatus,
+    route: node.ui?.route,
+  };
+}
+
 function readBody(req, { raw = false } = {}) {
   return new Promise((resolve, reject) => {
     let body = "";
@@ -15393,6 +16041,4304 @@ async function handleApi(req, res, pathname) {
       questionGenerator: questionGenerator.providerStatus(),
       aiCoach: providerStatus(),
     });
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/overview") {
+    const { index } = knowledgeBrowserData();
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      meta: index.meta,
+      sourceSummary: index.sourceSummary,
+      qualitySummary: index.qualitySummary,
+      masterKnowledgeDatabase: {
+        databaseStatus: index.masterKnowledgeDatabase?.databaseStatus,
+        educationOnly: index.masterKnowledgeDatabase?.educationOnly,
+        productionReady: index.masterKnowledgeDatabase?.productionReady,
+        learnerFacingRelease: index.masterKnowledgeDatabase?.learnerFacingRelease,
+        approvalStatus: index.masterKnowledgeDatabase?.approvalStatus,
+        writeAllowedNow: index.masterKnowledgeDatabase?.writeAllowedNow,
+        totals: index.masterKnowledgeDatabase?.totals,
+        knowledgeBrowserSurface: index.masterKnowledgeDatabase?.knowledgeBrowserSurface,
+      },
+      sourceTopicCoverage: {
+        domains: index.sourceTopicCoverage.domains,
+        domainsMeetingSourceMinimum: index.sourceTopicCoverage.domainsMeetingSourceMinimum,
+        domainsMeetingLearnerFacingMinimum: index.sourceTopicCoverage.domainsMeetingLearnerFacingMinimum,
+      },
+      localCourse5Knowledge: {
+        status: index.localCourse5Knowledge?.status,
+        sourceRows: index.localCourse5Knowledge?.sourceRows,
+        moduleRows: index.localCourse5Knowledge?.moduleRows,
+        lessonSeedRows: index.localCourse5Knowledge?.lessonSeedRows,
+        internalKnowledgeNodeRows: index.localCourse5Knowledge?.internalKnowledgeNodeRows,
+        learnerFacingRelease: index.localCourse5Knowledge?.learnerFacingRelease,
+        sourceFolderMayBeDeleted: index.localCourse5Knowledge?.sourceFolderMayBeDeleted,
+      },
+      modules: index.modules,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/master-knowledge-database") {
+    const { index } = knowledgeBrowserData();
+    const database = index.masterKnowledgeDatabase;
+    if (!database) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "master knowledge database not generated" }));
+      return;
+    }
+    const requestUrl = new URL(req.url, `http://${req.headers.host || "localhost"}`);
+    const module = requestUrl.searchParams.get("module") || "";
+    const cardsLimit = Math.min(Math.max(Number(requestUrl.searchParams.get("cardsLimit") || 120), 20), 240);
+    const selectedModule = module
+      ? database.masterModules.find((row) => row.module === module || row.moduleId === module)
+      : database.masterModules[0];
+    const scopedCards = selectedModule
+      ? database.retrievalCards.filter((card) => card.module === selectedModule.module).slice(0, cardsLimit)
+      : database.retrievalCards.slice(0, cardsLimit);
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      databaseStatus: database.databaseStatus,
+      educationOnly: database.educationOnly,
+      productionReady: database.productionReady,
+      learnerFacingRelease: database.learnerFacingRelease,
+      approvalStatus: database.approvalStatus,
+      writeAllowedNow: database.writeAllowedNow,
+      totals: database.totals,
+      databaseLayers: database.databaseLayers,
+      masterModules: database.masterModules,
+      selectedModule,
+      moduleCards: scopedCards,
+      relationshipEdges: database.relationshipEdges.slice(0, 120),
+      qualityDashboard: database.qualityDashboard,
+      retrievalViews: database.retrievalViews,
+      ontologyMap: database.ontologyMap,
+      knowledgeBrowserSurface: database.knowledgeBrowserSurface,
+      boundary: database.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-5-knowledge") {
+    const { index } = knowledgeBrowserData();
+    sendJson(res, 200, knowledgeBrowserEnvelope(index.localCourse5Knowledge));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-base-readiness-gate") {
+    const gate = knowledgeBaseReadinessGateData();
+    if (!gate) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge base readiness gate not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: gate.approvalStatus,
+      learnerFacingRelease: gate.learnerFacingRelease,
+      readinessStatus: gate.readinessStatus,
+      knowledgeBaseUsefulnessStatus: gate.knowledgeBaseUsefulnessStatus,
+      gateMode: gate.gateMode,
+      localSourceRoot: gate.localSourceRoot,
+      localPhysicalFiles: gate.localPhysicalFiles,
+      localUniquePdfHashes: gate.localUniquePdfHashes,
+      localMappedUniquePdfFiles: gate.localMappedUniquePdfFiles,
+      localUnmappedUniquePdfFiles: gate.localUnmappedUniquePdfFiles,
+      localDocumentNodeMatches: gate.localDocumentNodeMatches,
+      publicCorpusDocuments: gate.publicCorpusDocuments,
+      wikipediaDocuments: gate.wikipediaDocuments,
+      officialLikeDocuments: gate.officialLikeDocuments,
+      publicMappedDocuments: gate.publicMappedDocuments,
+      publicDocumentNodeMatches: gate.publicDocumentNodeMatches,
+      knowledgeNodes: gate.knowledgeNodes,
+      moduleGroundedNodes: gate.moduleGroundedNodes,
+      directTriangulatedNodes: gate.directTriangulatedNodes,
+      sourceFitReviewRows: gate.sourceFitReviewRows,
+      readySourceFitReviewRows: gate.readySourceFitReviewRows,
+      blockedSourceFitReviewRows: gate.blockedSourceFitReviewRows,
+      realHumanInputEntries: gate.realHumanInputEntries,
+      highRiskLessons: gate.highRiskLessons,
+      highRiskReadyReviewerNotes: gate.highRiskReadyReviewerNotes,
+      highRiskBlockedReviewerNotes: gate.highRiskBlockedReviewerNotes,
+      highRiskReadyDirectSourceDecisions: gate.highRiskReadyDirectSourceDecisions,
+      highRiskBlockedDirectSourceDecisions: gate.highRiskBlockedDirectSourceDecisions,
+      packetHandoffCoverage: gate.packetHandoffCoverage,
+      reviewerCanStartNow: gate.reviewerCanStartNow,
+      internalReadyGates: gate.internalReadyGates,
+      learnerFacingBlockedGates: gate.learnerFacingBlockedGates,
+      writeAllowedNow: gate.writeAllowedNow,
+      manualAuthorizationRequired: gate.manualAuthorizationRequired,
+      gateRows: gate.gateRows || [],
+      nextActionQueue: gate.nextActionQueue || [],
+      commands: gate.commands || [],
+      completionRule: gate.completionRule,
+      boundary: gate.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-module-review-cockpit") {
+    const cockpit = knowledgeModuleReviewCockpitData();
+    if (!cockpit) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge module review cockpit not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: cockpit.approvalStatus,
+      learnerFacingRelease: cockpit.learnerFacingRelease,
+      cockpitStatus: cockpit.cockpitStatus,
+      cockpitMode: cockpit.cockpitMode,
+      sourceRoot: cockpit.sourceRoot,
+      modules: cockpit.modules,
+      internalNavigationReadyModules: cockpit.internalNavigationReadyModules,
+      learnerReleaseReadyModules: cockpit.learnerReleaseReadyModules,
+      localCourseDocuments: cockpit.localCourseDocuments,
+      localCourseChunks: cockpit.localCourseChunks,
+      matchedKnowledgeNodes: cockpit.matchedKnowledgeNodes,
+      readyForRewriteReviewNodes: cockpit.readyForRewriteReviewNodes,
+      publicCorpusDocuments: cockpit.publicCorpusDocuments,
+      wikipediaDocuments: cockpit.wikipediaDocuments,
+      officialLikeDocuments: cockpit.officialLikeDocuments,
+      sourceFitReviewRows: cockpit.sourceFitReviewRows,
+      readySourceFitReviewRows: cockpit.readySourceFitReviewRows,
+      blockedSourceFitReviewRows: cockpit.blockedSourceFitReviewRows,
+      highRiskLessons: cockpit.highRiskLessons,
+      highRiskReadyReviewerNotes: cockpit.highRiskReadyReviewerNotes,
+      highRiskBlockedReviewerNotes: cockpit.highRiskBlockedReviewerNotes,
+      realHumanInputEntries: cockpit.realHumanInputEntries,
+      readinessStatus: cockpit.readinessStatus,
+      knowledgeBaseUsefulnessStatus: cockpit.knowledgeBaseUsefulnessStatus,
+      writeAllowedNow: cockpit.writeAllowedNow,
+      manualAuthorizationRequired: cockpit.manualAuthorizationRequired,
+      moduleRows: (cockpit.moduleRows || []).map((row) => ({
+        order: row.order,
+        moduleId: row.moduleId,
+        browserModuleId: row.browserModuleId,
+        module: row.module,
+        expectedDomain: row.expectedDomain,
+        topics: row.topics,
+        coursePath: row.coursePath,
+        entryNodeIds: row.entryNodeIds,
+        learnerFacingNodes: row.learnerFacingNodes,
+        localCourseDocuments: row.localCourseDocuments,
+        nodesWithLocalCourseMatches: row.nodesWithLocalCourseMatches,
+        readyForRewriteReview: row.readyForRewriteReview,
+        publicEvidenceDocs: row.publicEvidenceDocs,
+        wikipediaEvidenceDocs: row.wikipediaEvidenceDocs,
+        officialLikeEvidenceDocs: row.officialLikeEvidenceDocs,
+        directTriangulatedNodes: row.directTriangulatedNodes,
+        nodesNeedingDirectTriangulation: row.nodesNeedingDirectTriangulation,
+        sourceFitPackets: row.sourceFitPackets,
+        sourceFitRows: row.sourceFitRows,
+        readySourceFitRows: row.readySourceFitRows,
+        blockedSourceFitRows: row.blockedSourceFitRows,
+        firstBlockedPacketId: row.firstBlockedPacketId,
+        highRiskLessons: row.highRiskLessons,
+        highRiskBlockedLessons: row.highRiskBlockedLessons,
+        requiredHighRiskNotes: row.requiredHighRiskNotes,
+        readyHighRiskNotes: row.readyHighRiskNotes,
+        blockedHighRiskNotes: row.blockedHighRiskNotes,
+        directSourceDecisions: row.directSourceDecisions,
+        readyDirectSourceDecisions: row.readyDirectSourceDecisions,
+        publicEvidenceSamples: row.publicEvidenceSamples,
+        highRiskLessonPreview: row.highRiskLessonPreview,
+        reviewStatus: row.reviewStatus,
+        internalNavigationReady: row.internalNavigationReady,
+        learnerFacingRelease: row.learnerFacingRelease,
+        writeAllowedNow: row.writeAllowedNow,
+        realHumanInputEntries: row.realHumanInputEntries,
+        nextReviewerAction: row.nextReviewerAction,
+        boundary: row.boundary,
+      })),
+      priorityModuleRows: cockpit.priorityModuleRows || [],
+      commands: cockpit.commands || [],
+      completionRule: cockpit.completionRule,
+      boundary: cockpit.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-reviewer-action-queue") {
+    const queue = knowledgeReviewerActionQueueData();
+    if (!queue) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge reviewer action queue not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: queue.approvalStatus,
+      learnerFacingRelease: queue.learnerFacingRelease,
+      queueStatus: queue.queueStatus,
+      queueMode: queue.queueMode,
+      readinessStatus: queue.readinessStatus,
+      knowledgeBaseUsefulnessStatus: queue.knowledgeBaseUsefulnessStatus,
+      modules: queue.modules,
+      internalNavigationReadyModules: queue.internalNavigationReadyModules,
+      totalActionRows: queue.totalActionRows,
+      highRiskLessonActions: queue.highRiskLessonActions,
+      directSourceDecisionActions: queue.directSourceDecisionActions,
+      sourceFitPacketActions: queue.sourceFitPacketActions,
+      blockedWorkItems: queue.blockedWorkItems,
+      readyWorkItems: queue.readyWorkItems,
+      sourceFitReviewRows: queue.sourceFitReviewRows,
+      highRiskReviewerNotes: queue.highRiskReviewerNotes,
+      directSourceDecisions: queue.directSourceDecisions,
+      realHumanInputEntries: queue.realHumanInputEntries,
+      learnerCitationApprovedRows: queue.learnerCitationApprovedRows,
+      learnerReleaseReadyModules: queue.learnerReleaseReadyModules,
+      writeAllowedNow: queue.writeAllowedNow,
+      manualAuthorizationRequired: queue.manualAuthorizationRequired,
+      firstActionRows: (queue.firstActionRows || []).map((row) => ({
+        queueRank: row.queueRank,
+        actionId: row.actionId,
+        actionType: row.actionType,
+        priorityBand: row.priorityBand,
+        module: row.module,
+        topic: row.topic,
+        owner: row.owner,
+        blockedItems: row.blockedItems,
+        readyItems: row.readyItems,
+        targetId: row.targetId,
+        nodeId: row.nodeId,
+        lessonId: row.lessonId,
+        inputPath: row.inputPath,
+        validationCommand: row.validationCommand,
+        nextGate: row.nextGate,
+        actionLabel: row.actionLabel,
+        reviewerInstruction: row.reviewerInstruction,
+        evidenceSamples: row.evidenceSamples,
+        reviewStatus: row.reviewStatus,
+        learnerFacingRelease: row.learnerFacingRelease,
+        writeAllowedNow: row.writeAllowedNow,
+        realHumanInput: row.realHumanInput,
+      })),
+      moduleRows: queue.moduleRows || [],
+      commands: queue.commands || [],
+      completionRule: queue.completionRule,
+      boundary: queue.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-first-reviewer-action-handoff") {
+    const handoff = knowledgeFirstReviewerActionHandoffData();
+    if (!handoff) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge first reviewer action handoff not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: handoff.approvalStatus,
+      learnerFacingRelease: handoff.learnerFacingRelease,
+      handoffStatus: handoff.handoffStatus,
+      handoffMode: handoff.handoffMode,
+      queueStatus: handoff.queueStatus,
+      queueMode: handoff.queueMode,
+      readinessStatus: handoff.readinessStatus,
+      knowledgeBaseUsefulnessStatus: handoff.knowledgeBaseUsefulnessStatus,
+      totalQueueActions: handoff.totalQueueActions,
+      totalQueueBlockedWorkItems: handoff.totalQueueBlockedWorkItems,
+      handoffActionRows: handoff.handoffActionRows,
+      highRiskLessonActions: handoff.highRiskLessonActions,
+      directSourceDecisionActions: handoff.directSourceDecisionActions,
+      sourceFitPacketActions: handoff.sourceFitPacketActions,
+      blockedWorkItems: handoff.blockedWorkItems,
+      readyWorkItems: handoff.readyWorkItems,
+      highRiskReviewerNotes: handoff.highRiskReviewerNotes,
+      directSourceDecisions: handoff.directSourceDecisions,
+      sourceFitReviewRows: handoff.sourceFitReviewRows,
+      sourceFitPacketIds: handoff.sourceFitPacketIds || [],
+      realHumanInputEntries: handoff.realHumanInputEntries,
+      learnerCitationApprovedRows: handoff.learnerCitationApprovedRows,
+      learnerReleaseReadyModules: handoff.learnerReleaseReadyModules,
+      writeAllowedNow: handoff.writeAllowedNow,
+      manualAuthorizationRequired: handoff.manualAuthorizationRequired,
+      firstActionRows: (handoff.firstActionRows || []).map((row) => ({
+        handoffRank: row.handoffRank,
+        queueRank: row.queueRank,
+        actionId: row.actionId,
+        actionType: row.actionType,
+        priorityBand: row.priorityBand,
+        module: row.module,
+        topic: row.topic,
+        owner: row.owner,
+        blockedItems: row.blockedItems,
+        readyItems: row.readyItems,
+        targetId: row.targetId,
+        nodeId: row.nodeId,
+        lessonId: row.lessonId,
+        inputPath: row.inputPath,
+        validationCommand: row.validationCommand,
+        nextGate: row.nextGate,
+        actionLabel: row.actionLabel,
+        reviewerInstruction: row.reviewerInstruction,
+        evidenceSamples: row.evidenceSamples,
+        reviewStatus: row.reviewStatus,
+        learnerFacingRelease: row.learnerFacingRelease,
+        writeAllowedNow: row.writeAllowedNow,
+        realHumanInput: row.realHumanInput,
+      })),
+      reviewerChecklist: handoff.reviewerChecklist || [],
+      acceptanceGates: handoff.acceptanceGates || [],
+      commands: handoff.commands || [],
+      completionRule: handoff.completionRule,
+      boundary: handoff.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-first-reviewer-field-map") {
+    const fieldMap = knowledgeFirstReviewerFieldMapData();
+    if (!fieldMap) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge first reviewer field map not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: fieldMap.approvalStatus,
+      learnerFacingRelease: fieldMap.learnerFacingRelease,
+      fieldMapStatus: fieldMap.fieldMapStatus,
+      fieldMapMode: fieldMap.fieldMapMode,
+      handoffStatus: fieldMap.handoffStatus,
+      validationStatus: fieldMap.validationStatus,
+      handoffActionRows: fieldMap.handoffActionRows,
+      mappedActionRows: fieldMap.mappedActionRows,
+      highRiskLessonActions: fieldMap.highRiskLessonActions,
+      directSourceDecisionActions: fieldMap.directSourceDecisionActions,
+      sourceFitPacketActions: fieldMap.sourceFitPacketActions,
+      highRiskReviewerNoteFields: fieldMap.highRiskReviewerNoteFields,
+      directSourceDecisionFields: fieldMap.directSourceDecisionFields,
+      sourceFitReviewRows: fieldMap.sourceFitReviewRows,
+      blockedWorkItems: fieldMap.blockedWorkItems,
+      readyWorkItems: fieldMap.readyWorkItems,
+      realHumanInputEntries: fieldMap.realHumanInputEntries,
+      learnerCitationApprovedRows: fieldMap.learnerCitationApprovedRows,
+      learnerReleaseReadyModules: fieldMap.learnerReleaseReadyModules,
+      writeAllowedNow: fieldMap.writeAllowedNow,
+      manualAuthorizationRequired: fieldMap.manualAuthorizationRequired,
+      inputPaths: fieldMap.inputPaths || [],
+      fieldRows: (fieldMap.fieldRows || []).map((row) => ({
+        handoffRank: row.handoffRank,
+        queueRank: row.queueRank,
+        actionId: row.actionId,
+        actionType: row.actionType,
+        module: row.module,
+        topic: row.topic,
+        targetId: row.targetId,
+        lessonId: row.lessonId,
+        draftPath: row.draftPath,
+        jsonPath: row.jsonPath,
+        blockedItems: row.blockedItems,
+        mappedFieldCount: row.mappedFieldCount,
+        fieldKind: row.fieldKind,
+        reviewerTask: row.reviewerTask,
+        notePaths: row.notePaths,
+        requiredFields: row.requiredFields,
+        allowedDecisionValues: row.allowedDecisionValues,
+        packetInputPath: row.packetInputPath,
+        packetInputExists: row.packetInputExists,
+        reviewStatus: row.reviewStatus,
+        learnerFacingRelease: row.learnerFacingRelease,
+        writeAllowedNow: row.writeAllowedNow,
+        realHumanInput: row.realHumanInput,
+      })),
+      reviewerChecklist: fieldMap.reviewerChecklist || [],
+      commands: fieldMap.commands || [],
+      completionRule: fieldMap.completionRule,
+      boundary: fieldMap.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-first-reviewer-completion-gate") {
+    const gate = knowledgeFirstReviewerCompletionGateData();
+    if (!gate) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge first reviewer completion gate not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: gate.approvalStatus,
+      learnerFacingRelease: gate.learnerFacingRelease,
+      completionGateStatus: gate.completionGateStatus,
+      gateMode: gate.gateMode,
+      fieldMapStatus: gate.fieldMapStatus,
+      handoffStatus: gate.handoffStatus,
+      handoffActionRows: gate.handoffActionRows,
+      mappedActionRows: gate.mappedActionRows,
+      requiredWorkItems: gate.requiredWorkItems,
+      readyWorkItems: gate.readyWorkItems,
+      blockedWorkItems: gate.blockedWorkItems,
+      highRiskReviewerNoteFields: gate.highRiskReviewerNoteFields,
+      highRiskReadyReviewerNotes: gate.highRiskReadyReviewerNotes,
+      highRiskBlockedReviewerNotes: gate.highRiskBlockedReviewerNotes,
+      directSourceDecisionFields: gate.directSourceDecisionFields,
+      readyDirectSourceDecisions: gate.readyDirectSourceDecisions,
+      blockedDirectSourceDecisions: gate.blockedDirectSourceDecisions,
+      sourceFitReviewRows: gate.sourceFitReviewRows,
+      readySourceFitReviewRows: gate.readySourceFitReviewRows,
+      blockedSourceFitReviewRows: gate.blockedSourceFitReviewRows,
+      missingSourceFitFieldRows: gate.missingSourceFitFieldRows,
+      realHumanInputEntries: gate.realHumanInputEntries,
+      learnerCitationApprovedRows: gate.learnerCitationApprovedRows,
+      learnerReleaseReadyModules: gate.learnerReleaseReadyModules,
+      writeAllowedNow: gate.writeAllowedNow,
+      manualAuthorizationRequired: gate.manualAuthorizationRequired,
+      readyForSeparateApproval: gate.readyForSeparateApproval,
+      inputPaths: gate.inputPaths || [],
+      validationPaths: gate.validationPaths || [],
+      gateRows: gate.gateRows || [],
+      commands: gate.commands || [],
+      completionRule: gate.completionRule,
+      boundary: gate.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-first-reviewer-execution-checklist") {
+    const checklist = knowledgeFirstReviewerExecutionChecklistData();
+    if (!checklist) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge first reviewer execution checklist not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: checklist.approvalStatus,
+      learnerFacingRelease: checklist.learnerFacingRelease,
+      executionChecklistStatus: checklist.executionChecklistStatus,
+      executionChecklistMode: checklist.executionChecklistMode,
+      handoffStatus: checklist.handoffStatus,
+      fieldMapStatus: checklist.fieldMapStatus,
+      completionGateStatus: checklist.completionGateStatus,
+      sprintPlanStatus: checklist.sprintPlanStatus,
+      handoffActionRows: checklist.handoffActionRows,
+      mappedActionRows: checklist.mappedActionRows,
+      executionRowCount: checklist.executionRowCount,
+      requiredWorkItems: checklist.requiredWorkItems,
+      readyWorkItems: checklist.readyWorkItems,
+      blockedWorkItems: checklist.blockedWorkItems,
+      highRiskLessonActions: checklist.highRiskLessonActions,
+      highRiskReviewerNoteFields: checklist.highRiskReviewerNoteFields,
+      highRiskReadyReviewerNotes: checklist.highRiskReadyReviewerNotes,
+      highRiskBlockedReviewerNotes: checklist.highRiskBlockedReviewerNotes,
+      directSourceDecisionActions: checklist.directSourceDecisionActions,
+      directSourceDecisionFields: checklist.directSourceDecisionFields,
+      readyDirectSourceDecisions: checklist.readyDirectSourceDecisions,
+      blockedDirectSourceDecisions: checklist.blockedDirectSourceDecisions,
+      sourceFitPacketActions: checklist.sourceFitPacketActions,
+      sourceFitReviewRows: checklist.sourceFitReviewRows,
+      readySourceFitReviewRows: checklist.readySourceFitReviewRows,
+      blockedSourceFitReviewRows: checklist.blockedSourceFitReviewRows,
+      firstSprintBlockedWorkItems: checklist.firstSprintBlockedWorkItems,
+      totalReviewerBacklogWorkItems: checklist.totalReviewerBacklogWorkItems,
+      inputPaths: checklist.inputPaths || [],
+      validationPaths: checklist.validationPaths || [],
+      stageRows: checklist.stageRows || [],
+      firstExecutionRows: (checklist.executionRows || []).slice(0, 20),
+      realHumanInputEntries: checklist.realHumanInputEntries,
+      learnerCitationApprovedRows: checklist.learnerCitationApprovedRows,
+      learnerReleaseReadyModules: checklist.learnerReleaseReadyModules,
+      readyForSeparateApproval: checklist.readyForSeparateApproval,
+      writeAllowedNow: checklist.writeAllowedNow,
+      manualAuthorizationRequired: checklist.manualAuthorizationRequired,
+      reviewerStartChecklist: checklist.reviewerStartChecklist || [],
+      commands: checklist.commands || [],
+      completionRule: checklist.completionRule,
+      boundary: checklist.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-first-reviewer-workbench") {
+    const workbench = knowledgeFirstReviewerWorkbenchData();
+    if (!workbench) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge first reviewer workbench not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: workbench.approvalStatus,
+      learnerFacingRelease: workbench.learnerFacingRelease,
+      workbenchStatus: workbench.workbenchStatus,
+      workbenchMode: workbench.workbenchMode,
+      handoffStatus: workbench.handoffStatus,
+      fieldMapStatus: workbench.fieldMapStatus,
+      completionGateStatus: workbench.completionGateStatus,
+      executionChecklistStatus: workbench.executionChecklistStatus,
+      handoffActionRows: workbench.handoffActionRows,
+      mappedActionRows: workbench.mappedActionRows,
+      executionRowCount: workbench.executionRowCount,
+      actionCards: workbench.actionCards,
+      requiredWorkItems: workbench.requiredWorkItems,
+      readyWorkItems: workbench.readyWorkItems,
+      blockedWorkItems: workbench.blockedWorkItems,
+      highRiskLessonActions: workbench.highRiskLessonActions,
+      highRiskReviewerNoteFields: workbench.highRiskReviewerNoteFields,
+      highRiskReadyReviewerNotes: workbench.highRiskReadyReviewerNotes,
+      highRiskBlockedReviewerNotes: workbench.highRiskBlockedReviewerNotes,
+      directSourceDecisionActions: workbench.directSourceDecisionActions,
+      directSourceDecisionFields: workbench.directSourceDecisionFields,
+      readyDirectSourceDecisions: workbench.readyDirectSourceDecisions,
+      blockedDirectSourceDecisions: workbench.blockedDirectSourceDecisions,
+      sourceFitPacketActions: workbench.sourceFitPacketActions,
+      sourceFitReviewRows: workbench.sourceFitReviewRows,
+      readySourceFitReviewRows: workbench.readySourceFitReviewRows,
+      blockedSourceFitReviewRows: workbench.blockedSourceFitReviewRows,
+      inputPaths: workbench.inputPaths || [],
+      validationPaths: workbench.validationPaths || [],
+      stageRows: workbench.stageRows || [],
+      phaseRows: workbench.phaseRows || [],
+      actionCardRows: workbench.actionCardRows || [],
+      realHumanInputEntries: workbench.realHumanInputEntries,
+      learnerCitationApprovedRows: workbench.learnerCitationApprovedRows,
+      learnerReleaseReadyModules: workbench.learnerReleaseReadyModules,
+      readyForSeparateApproval: workbench.readyForSeparateApproval,
+      writeAllowedNow: workbench.writeAllowedNow,
+      manualAuthorizationRequired: workbench.manualAuthorizationRequired,
+      reviewerGuardrails: workbench.reviewerGuardrails || [],
+      commands: workbench.commands || [],
+      completionRule: workbench.completionRule,
+      boundary: workbench.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-first-reviewer-card-status-matrix") {
+    const matrix = knowledgeFirstReviewerCardStatusMatrixData();
+    if (!matrix) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge first reviewer card status matrix not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: matrix.approvalStatus,
+      learnerFacingRelease: matrix.learnerFacingRelease,
+      matrixStatus: matrix.matrixStatus,
+      matrixMode: matrix.matrixMode,
+      workbenchStatus: matrix.workbenchStatus,
+      completionGateStatus: matrix.completionGateStatus,
+      actionCards: matrix.actionCards,
+      cardStatusRows: matrix.cardStatusRows,
+      phaseStatusRows: matrix.phaseStatusRows,
+      validationStatusRows: matrix.validationStatusRows,
+      requiredWorkItems: matrix.requiredWorkItems,
+      readyWorkItems: matrix.readyWorkItems,
+      blockedWorkItems: matrix.blockedWorkItems,
+      highRiskReviewerNoteFields: matrix.highRiskReviewerNoteFields,
+      highRiskReadyReviewerNotes: matrix.highRiskReadyReviewerNotes,
+      highRiskBlockedReviewerNotes: matrix.highRiskBlockedReviewerNotes,
+      directSourceDecisionFields: matrix.directSourceDecisionFields,
+      readyDirectSourceDecisions: matrix.readyDirectSourceDecisions,
+      blockedDirectSourceDecisions: matrix.blockedDirectSourceDecisions,
+      sourceFitReviewRows: matrix.sourceFitReviewRows,
+      readySourceFitReviewRows: matrix.readySourceFitReviewRows,
+      blockedSourceFitReviewRows: matrix.blockedSourceFitReviewRows,
+      missingSourceFitFieldRows: matrix.missingSourceFitFieldRows,
+      validationMissingFieldRows: matrix.validationMissingFieldRows,
+      realHumanInputEntries: matrix.realHumanInputEntries,
+      learnerCitationApprovedRows: matrix.learnerCitationApprovedRows,
+      learnerReleaseReadyModules: matrix.learnerReleaseReadyModules,
+      readyForSeparateApproval: matrix.readyForSeparateApproval,
+      writeAllowedNow: matrix.writeAllowedNow,
+      manualAuthorizationRequired: matrix.manualAuthorizationRequired,
+      validationStatusRowsData: matrix.validationRows || [],
+      phaseStatusRowsData: matrix.phaseRows || [],
+      cardRows: matrix.cardRows || [],
+      nextBestActions: matrix.nextBestActions || [],
+      commands: matrix.commands || [],
+      completionRule: matrix.completionRule,
+      boundary: matrix.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-first-reviewer-post-input-route-map") {
+    const routeMap = knowledgeFirstReviewerPostInputRouteMapData();
+    if (!routeMap) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge first reviewer post-input route map not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: routeMap.approvalStatus,
+      learnerFacingRelease: routeMap.learnerFacingRelease,
+      routeMapStatus: routeMap.routeMapStatus,
+      routeMapMode: routeMap.routeMapMode,
+      cardMatrixStatus: routeMap.cardMatrixStatus,
+      workbenchStatus: routeMap.workbenchStatus,
+      completionGateStatus: routeMap.completionGateStatus,
+      routeRows: routeMap.routeRows,
+      validationRoutes: routeMap.validationRoutes,
+      sourceFitMergeRoutes: routeMap.sourceFitMergeRoutes,
+      highRiskApprovalRoutes: routeMap.highRiskApprovalRoutes,
+      requiredWorkItems: routeMap.requiredWorkItems,
+      readyWorkItems: routeMap.readyWorkItems,
+      blockedWorkItems: routeMap.blockedWorkItems,
+      highRiskReviewerNoteFields: routeMap.highRiskReviewerNoteFields,
+      directSourceDecisionFields: routeMap.directSourceDecisionFields,
+      sourceFitReviewRows: routeMap.sourceFitReviewRows,
+      readySourceFitReviewRows: routeMap.readySourceFitReviewRows,
+      blockedSourceFitReviewRows: routeMap.blockedSourceFitReviewRows,
+      realHumanInputEntries: routeMap.realHumanInputEntries,
+      learnerCitationApprovedRows: routeMap.learnerCitationApprovedRows,
+      learnerReleaseReadyModules: routeMap.learnerReleaseReadyModules,
+      readyForSeparateApproval: routeMap.readyForSeparateApproval,
+      mergeAllowedNow: routeMap.mergeAllowedNow,
+      writeAllowedNow: routeMap.writeAllowedNow,
+      manualAuthorizationRequired: routeMap.manualAuthorizationRequired,
+      routeRowsData: routeMap.routeRowsData || [],
+      lockedGates: routeMap.lockedGates || [],
+      commands: routeMap.commands || [],
+      completionRule: routeMap.completionRule,
+      boundary: routeMap.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-first-reviewer-input-queue") {
+    const queue = knowledgeFirstReviewerInputQueueData();
+    if (!queue) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge first reviewer input queue not generated" }));
+      return;
+    }
+    const requestUrl = new URL(req.url, `http://${req.headers.host || "localhost"}`);
+    const itemTypeFilter = (requestUrl.searchParams.get("itemType") || "").trim().toLowerCase();
+    const routeFilter = (requestUrl.searchParams.get("route") || "").trim().toLowerCase();
+    const moduleFilter = (requestUrl.searchParams.get("module") || "").trim().toLowerCase();
+    const statusFilter = (requestUrl.searchParams.get("status") || "").trim().toLowerCase();
+    const textFilter = (requestUrl.searchParams.get("q") || "").trim().toLowerCase();
+    const offset = Math.max(0, Number.parseInt(requestUrl.searchParams.get("offset") || "0", 10) || 0);
+    const requestedLimit = Number.parseInt(requestUrl.searchParams.get("limit") || "80", 10);
+    const limit = Math.max(1, Math.min(Number.isFinite(requestedLimit) && requestedLimit > 0 ? requestedLimit : 80, 200));
+    const allQueueRows = queue.queueRowsData || [];
+    const filteredRows = allQueueRows.filter((row) => {
+      if (itemTypeFilter && row.itemType?.toLowerCase() !== itemTypeFilter) return false;
+      if (routeFilter && row.routeId?.toLowerCase() !== routeFilter) return false;
+      if (moduleFilter && !row.module?.toLowerCase().includes(moduleFilter)) return false;
+      if (statusFilter && row.fillStatus?.toLowerCase() !== statusFilter) return false;
+      if (textFilter) {
+        const evidenceText = (row.evidenceSamples || [])
+          .map((sample) => [sample.name, sample.url, sample.family, sample.excerptPolicy].join(" "))
+          .join(" ");
+        const haystack = [
+          row.itemRank,
+          row.itemType,
+          row.routeId,
+          row.actionId,
+          row.module,
+          row.topic,
+          row.targetId,
+          row.nodeId,
+          row.lessonId,
+          row.inputPath,
+          row.jsonPath,
+          row.prompt,
+          evidenceText,
+        ].join(" ").toLowerCase();
+        if (!haystack.includes(textFilter)) return false;
+      }
+      return true;
+    });
+    const pagedRows = filteredRows.slice(offset, offset + limit);
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: queue.approvalStatus,
+      learnerFacingRelease: queue.learnerFacingRelease,
+      queueStatus: queue.queueStatus,
+      queueMode: queue.queueMode,
+      fieldMapStatus: queue.fieldMapStatus,
+      workbenchStatus: queue.workbenchStatus,
+      routeMapStatus: queue.routeMapStatus,
+      actionCards: queue.actionCards,
+      routeRows: queue.routeRows,
+      queueRows: queue.queueRows,
+      highRiskNoteRows: queue.highRiskNoteRows,
+      directSourceDecisionRows: queue.directSourceDecisionRows,
+      sourceFitReviewRows: queue.sourceFitReviewRows,
+      readyRows: queue.readyRows,
+      blockedRows: queue.blockedRows,
+      realHumanInputEntries: queue.realHumanInputEntries,
+      learnerCitationApprovedRows: queue.learnerCitationApprovedRows,
+      copiedTextApprovedRows: queue.copiedTextApprovedRows,
+      readyForSeparateApproval: queue.readyForSeparateApproval,
+      mergeAllowedNow: queue.mergeAllowedNow,
+      writeAllowedNow: queue.writeAllowedNow,
+      manualAuthorizationRequired: queue.manualAuthorizationRequired,
+      inputPaths: queue.inputPaths || [],
+      routeBreakdownRows: queue.routeBreakdownRows || [],
+      queueRowsData: pagedRows,
+      totalQueueRowsData: allQueueRows.length,
+      rowQuery: {
+        itemType: itemTypeFilter,
+        route: routeFilter,
+        module: moduleFilter,
+        status: statusFilter,
+        q: textFilter,
+        offset,
+        limit,
+        returnedRows: pagedRows.length,
+        totalFilteredRows: filteredRows.length,
+        totalRowsBeforeFilter: allQueueRows.length,
+        hasMoreRows: offset + pagedRows.length < filteredRows.length,
+      },
+      commands: queue.commands || [],
+      completionRule: queue.completionRule,
+      boundary: queue.boundary,
+    })); 
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-first-reviewer-input-queue-detail") {
+    const queue = knowledgeFirstReviewerInputQueueData();
+    if (!queue) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge first reviewer input queue not generated" }));
+      return;
+    }
+    const requestUrl = new URL(req.url, `http://${req.headers.host || "localhost"}`);
+    const itemRank = Number.parseInt(requestUrl.searchParams.get("itemRank") || "", 10);
+    if (!Number.isFinite(itemRank) || itemRank < 1) {
+      sendJson(res, 400, knowledgeBrowserEnvelope({
+        error: "itemRank is required",
+        detailStatus: "first_reviewer_input_queue_detail_missing_item_rank",
+        detailMode: "single_human_owned_input_row_readonly_context",
+      }));
+      return;
+    }
+    const rows = queue.queueRowsData || [];
+    const row = rows.find((item) => item.itemRank === itemRank);
+    if (!row) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({
+        error: "itemRank not found",
+        detailStatus: "first_reviewer_input_queue_detail_not_found",
+        detailMode: "single_human_owned_input_row_readonly_context",
+        itemRank,
+      }));
+      return;
+    }
+    const rowIndex = rows.findIndex((item) => item.itemRank === itemRank);
+    const nearbyRows = rows.slice(Math.max(0, rowIndex - 3), rowIndex + 4);
+    const sameRouteRows = rows
+      .filter((item) => item.routeId === row.routeId)
+      .slice(0, 12);
+    const sameNodeRows = row.nodeId
+      ? rows.filter((item) => item.nodeId === row.nodeId).slice(0, 12)
+      : [];
+    const sameActionRows = rows
+      .filter((item) => item.actionId === row.actionId)
+      .slice(0, 12);
+    const editableFieldPaths = Object.fromEntries((row.requiredFields || []).map((field) => [field, `${row.inputPath}#${row.jsonPath}.${field}`]));
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: queue.approvalStatus,
+      learnerFacingRelease: queue.learnerFacingRelease,
+      detailStatus: "first_reviewer_input_queue_detail_ready_blocked_on_real_input",
+      detailMode: "single_human_owned_input_row_readonly_context",
+      queueStatus: queue.queueStatus,
+      itemRank,
+      row,
+      routeRow: (queue.routeBreakdownRows || []).find((item) => item.routeId === row.routeId) || null,
+      nearbyRows,
+      sameRouteRows,
+      sameNodeRows,
+      sameActionRows,
+      editableFieldPaths,
+      requiredFields: row.requiredFields || [],
+      allowedDecisionValues: row.allowedDecisionValues || [],
+      evidenceSamples: row.evidenceSamples || [],
+      realHumanInputEntries: queue.realHumanInputEntries,
+      learnerCitationApprovedRows: queue.learnerCitationApprovedRows,
+      copiedTextApprovedRows: queue.copiedTextApprovedRows,
+      readyForSeparateApproval: false,
+      mergeAllowedNow: false,
+      writeAllowedNow: false,
+      manualAuthorizationRequired: true,
+      completionRule: "This single first reviewer input row remains blocked until a real human reviewer fills the listed required fields in the mapped input copy and the relevant validation gate passes. It does not generate reviewer notes, approve copied text, approve learner-facing citations, merge packet rows, or unlock learner release.",
+      boundary: "Reviewer-facing education-only first reviewer input detail. No automated human decisions, no learner-facing approval, no stock recommendations, no signals, no broker workflow, no automation, and no real-money trading instruction.",
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-release-blocker-audit") {
+    const audit = knowledgeReleaseBlockerAuditData();
+    if (!audit) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge release blocker audit not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: audit.approvalStatus,
+      learnerFacingRelease: audit.learnerFacingRelease,
+      auditStatus: audit.auditStatus,
+      auditMode: audit.auditMode,
+      knowledgeBaseUsefulnessStatus: audit.knowledgeBaseUsefulnessStatus,
+      internalUseStatus: audit.internalUseStatus,
+      learnerUseStatus: audit.learnerUseStatus,
+      localCourseAbsorbed: audit.localCourseAbsorbed,
+      publicSourcesAbsorbed: audit.publicSourcesAbsorbed,
+      internalWorkbenchReady: audit.internalWorkbenchReady,
+      learnerReleaseBlocked: audit.learnerReleaseBlocked,
+      physicalPdfFiles: audit.physicalPdfFiles,
+      uniquePdfHashes: audit.uniquePdfHashes,
+      mappedUniquePdfFiles: audit.mappedUniquePdfFiles,
+      publicCorpusDocuments: audit.publicCorpusDocuments,
+      wikipediaDocuments: audit.wikipediaDocuments,
+      officialLikeDocuments: audit.officialLikeDocuments,
+      mappedPublicDocuments: audit.mappedPublicDocuments,
+      moduleGroundedNodes: audit.moduleGroundedNodes,
+      modules: audit.modules,
+      internalNavigationReadyModules: audit.internalNavigationReadyModules,
+      learnerReleaseReadyModules: audit.learnerReleaseReadyModules,
+      reviewerActionRows: audit.reviewerActionRows,
+      reviewerBlockedWorkItems: audit.reviewerBlockedWorkItems,
+      reviewerReadyWorkItems: audit.reviewerReadyWorkItems,
+      firstHandoffActionRows: audit.firstHandoffActionRows,
+      firstHandoffRequiredWorkItems: audit.firstHandoffRequiredWorkItems,
+      firstHandoffReadyWorkItems: audit.firstHandoffReadyWorkItems,
+      firstHandoffBlockedWorkItems: audit.firstHandoffBlockedWorkItems,
+      sourceFitReviewRows: audit.sourceFitReviewRows,
+      readySourceFitReviewRows: audit.readySourceFitReviewRows,
+      blockedSourceFitReviewRows: audit.blockedSourceFitReviewRows,
+      realHumanInputEntries: audit.realHumanInputEntries,
+      learnerCitationApprovedRows: audit.learnerCitationApprovedRows,
+      writeAllowedNow: audit.writeAllowedNow,
+      manualAuthorizationRequired: audit.manualAuthorizationRequired,
+      stageRows: audit.stageRows || [],
+      releaseBlockerRows: audit.releaseBlockerRows || [],
+      nextBestActions: audit.nextBestActions || [],
+      commands: audit.commands || [],
+      completionRule: audit.completionRule,
+      boundary: audit.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-course-path-readiness-audit") {
+    const audit = knowledgeCoursePathReadinessAuditData();
+    if (!audit) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge course path readiness audit not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: audit.approvalStatus,
+      learnerFacingRelease: audit.learnerFacingRelease,
+      auditStatus: audit.auditStatus,
+      auditMode: audit.auditMode,
+      releaseBlockerAuditStatus: audit.releaseBlockerAuditStatus,
+      knowledgeBaseUsefulnessStatus: audit.knowledgeBaseUsefulnessStatus,
+      modules: audit.modules,
+      coursePaths: audit.coursePaths,
+      internalReadyPaths: audit.internalReadyPaths,
+      learnerReleaseReadyPaths: audit.learnerReleaseReadyPaths,
+      blockedLearnerReleasePaths: audit.blockedLearnerReleasePaths,
+      totalLessons: audit.totalLessons,
+      totalUnits: audit.totalUnits,
+      totalEstimatedMinutes: audit.totalEstimatedMinutes,
+      nodesWithLocalCourseMatches: audit.nodesWithLocalCourseMatches,
+      learnerFacingNodes: audit.learnerFacingNodes,
+      sourceFitReviewRows: audit.sourceFitReviewRows,
+      readySourceFitReviewRows: audit.readySourceFitReviewRows,
+      blockedSourceFitReviewRows: audit.blockedSourceFitReviewRows,
+      highRiskBlockedLessons: audit.highRiskBlockedLessons,
+      highRiskBlockedReviewerNotes: audit.highRiskBlockedReviewerNotes,
+      directSourceDecisions: audit.directSourceDecisions,
+      readyDirectSourceDecisions: audit.readyDirectSourceDecisions,
+      realHumanInputEntries: audit.realHumanInputEntries,
+      learnerCitationApprovedRows: audit.learnerCitationApprovedRows,
+      writeAllowedNow: audit.writeAllowedNow,
+      manualAuthorizationRequired: audit.manualAuthorizationRequired,
+      pathRows: audit.pathRows || [],
+      nextBestActions: audit.nextBestActions || [],
+      commands: audit.commands || [],
+      completionRule: audit.completionRule,
+      boundary: audit.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-module-review-sprint-plan") {
+    const plan = knowledgeModuleReviewSprintPlanData();
+    if (!plan) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge module review sprint plan not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: plan.approvalStatus,
+      learnerFacingRelease: plan.learnerFacingRelease,
+      sprintPlanStatus: plan.sprintPlanStatus,
+      sprintPlanMode: plan.sprintPlanMode,
+      coursePathAuditStatus: plan.coursePathAuditStatus,
+      actionQueueStatus: plan.actionQueueStatus,
+      progressMatrixStatus: plan.progressMatrixStatus,
+      firstCompletionGateStatus: plan.firstCompletionGateStatus,
+      modules: plan.modules,
+      coursePaths: plan.coursePaths,
+      sprintRows: plan.sprintRows,
+      totalReviewerActions: plan.totalReviewerActions,
+      totalBlockedWorkItems: plan.totalBlockedWorkItems,
+      totalReadyWorkItems: plan.totalReadyWorkItems,
+      firstSprintBlockedWorkItems: plan.firstSprintBlockedWorkItems,
+      firstSprintReadyWorkItems: plan.firstSprintReadyWorkItems,
+      highRiskSprintModules: plan.highRiskSprintModules,
+      sourceFitReviewRows: plan.sourceFitReviewRows,
+      readySourceFitReviewRows: plan.readySourceFitReviewRows,
+      blockedSourceFitReviewRows: plan.blockedSourceFitReviewRows,
+      highRiskBlockedLessons: plan.highRiskBlockedLessons,
+      highRiskBlockedReviewerNotes: plan.highRiskBlockedReviewerNotes,
+      directSourceDecisions: plan.directSourceDecisions,
+      readyDirectSourceDecisions: plan.readyDirectSourceDecisions,
+      realHumanInputEntries: plan.realHumanInputEntries,
+      learnerCitationApprovedRows: plan.learnerCitationApprovedRows,
+      learnerReleaseReadyPaths: plan.learnerReleaseReadyPaths,
+      writeAllowedNow: plan.writeAllowedNow,
+      manualAuthorizationRequired: plan.manualAuthorizationRequired,
+      firstSprintRows: plan.firstSprintRows || [],
+      moduleSprintRows: plan.moduleSprintRows || [],
+      nextBestActions: plan.nextBestActions || [],
+      commands: plan.commands || [],
+      completionRule: plan.completionRule,
+      boundary: plan.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/modules") {
+    const { index } = knowledgeBrowserData();
+    sendJson(res, 200, knowledgeBrowserEnvelope({ modules: index.modules }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-coverage") {
+    const coverage = localCourseKnowledgeCoverageData();
+    if (!coverage) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course coverage report not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      tier: coverage.tier,
+      documents: coverage.documents,
+      chunks: coverage.chunks,
+      matchedNodes: coverage.matchedNodes,
+      readyForRewriteReviewNodes: coverage.readyForRewriteReviewNodes,
+      moduleCoverage: coverage.moduleCoverage,
+      domainCoverage: (coverage.domainCoverage || []).slice(0, 12),
+      boundary: coverage.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-source-quality") {
+    const audit = localCourseSourceQualityAuditData();
+    if (!audit) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course source quality audit not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: audit.approvalStatus,
+      learnerFacingRelease: audit.learnerFacingRelease,
+      sourceRoot: audit.sourceRoot,
+      folderFiles: audit.folderFiles,
+      extensionCounts: audit.extensionCounts,
+      pdfOnlyFolder: audit.pdfOnlyFolder,
+      manifestPdfFiles: audit.manifestPdfFiles,
+      uniquePdfFiles: audit.uniquePdfFiles,
+      duplicatePdfFiles: audit.duplicatePdfFiles,
+      importedUniquePdfFiles: audit.importedUniquePdfFiles,
+      missingUniquePdfFiles: audit.missingUniquePdfFiles,
+      localPrivateCourseCorpusDocs: audit.localPrivateCourseCorpusDocs,
+      extractionCounts: audit.extractionCounts,
+      fullExtractionDocs: audit.fullExtractionDocs,
+      lowExtractionDocs: audit.lowExtractionDocs,
+      forbiddenLanguageDocs: audit.forbiddenLanguageDocs,
+      sourceQualityReviewRequired: audit.sourceQualityReviewRequired,
+      absorptionStatus: audit.absorptionStatus,
+      lowExtractionList: (audit.lowExtractionList || []).slice(0, 10),
+      forbiddenLanguageList: (audit.forbiddenLanguageList || []).slice(0, 10),
+      boundary: audit.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-source-sync-audit") {
+    const audit = localCourseSourceSyncAuditData();
+    if (!audit) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course source sync audit not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: audit.approvalStatus,
+      learnerFacingRelease: audit.learnerFacingRelease,
+      syncStatus: audit.syncStatus,
+      syncMode: audit.syncMode,
+      sourceRoot: audit.sourceRoot,
+      sourceRootAvailable: audit.sourceRootAvailable,
+      currentPdfFiles: audit.currentPdfFiles,
+      currentUniquePdfHashes: audit.currentUniquePdfHashes,
+      currentDuplicatePdfFiles: audit.currentDuplicatePdfFiles,
+      manifestPdfFiles: audit.manifestPdfFiles,
+      manifestUniquePdfFiles: audit.manifestUniquePdfFiles,
+      harvestReportTotalPdfFiles: audit.harvestReportTotalPdfFiles,
+      harvestReportUniquePdfFiles: audit.harvestReportUniquePdfFiles,
+      localPrivateCourseCorpusDocs: audit.localPrivateCourseCorpusDocs,
+      corpusDocsForCurrentUniqueHashes: audit.corpusDocsForCurrentUniqueHashes,
+      missingCurrentFilesFromManifest: audit.missingCurrentFilesFromManifest,
+      staleManifestFiles: audit.staleManifestFiles,
+      missingCurrentUniqueHashesFromCorpus: audit.missingCurrentUniqueHashesFromCorpus,
+      corpusDocsMissingSourceFile: audit.corpusDocsMissingSourceFile,
+      learnerFacingAllowedDocs: audit.learnerFacingAllowedDocs,
+      productionReadyDocs: audit.productionReadyDocs,
+      writeAllowedNow: audit.writeAllowedNow,
+      manualAuthorizationRequired: audit.manualAuthorizationRequired,
+      duplicateRows: audit.duplicateRows || [],
+      corpusDocSamples: audit.corpusDocSamples || [],
+      commands: audit.commands || [],
+      completionRule: audit.completionRule,
+      boundary: audit.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-document-absorption-map") {
+    const audit = localCourseDocumentAbsorptionMapData();
+    if (!audit) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course document absorption map not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: audit.approvalStatus,
+      learnerFacingRelease: audit.learnerFacingRelease,
+      auditStatus: audit.auditStatus,
+      auditMode: audit.auditMode,
+      sourceRoot: audit.sourceRoot,
+      physicalPdfFiles: audit.physicalPdfFiles,
+      duplicatePdfFiles: audit.duplicatePdfFiles,
+      uniquePdfFiles: audit.uniquePdfFiles,
+      localPrivateCourseCorpusDocs: audit.localPrivateCourseCorpusDocs,
+      mappedUniquePdfFiles: audit.mappedUniquePdfFiles,
+      unmappedUniquePdfFiles: audit.unmappedUniquePdfFiles,
+      mappedToMultipleModules: audit.mappedToMultipleModules,
+      totalDocumentNodeMatches: audit.totalDocumentNodeMatches,
+      coverageTopMatchedPdfFiles: audit.coverageTopMatchedPdfFiles,
+      reverseScoredMatchedPdfFiles: audit.reverseScoredMatchedPdfFiles,
+      maxNodeMatchesPerDocument: audit.maxNodeMatchesPerDocument,
+      lowOrThinExtractionMappedDocs: audit.lowOrThinExtractionMappedDocs,
+      lowExtractionDocs: audit.lowExtractionDocs,
+      manualTranscriptionPages: audit.manualTranscriptionPages,
+      sourceReplacementCandidates: audit.sourceReplacementCandidates,
+      learnerFacingAllowedDocs: audit.learnerFacingAllowedDocs,
+      productionReadyDocs: audit.productionReadyDocs,
+      writeAllowedNow: audit.writeAllowedNow,
+      manualAuthorizationRequired: audit.manualAuthorizationRequired,
+      moduleRows: (audit.moduleRows || []).slice(0, 12),
+      extractionAttentionRows: (audit.extractionAttentionRows || []).slice(0, 12),
+      topMappedDocumentRows: (audit.topMappedDocumentRows || []).slice(0, 12),
+      commands: audit.commands || [],
+      completionRule: audit.completionRule,
+      boundary: audit.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-folder-absorption-ledger") {
+    const ledger = localCourseFolderAbsorptionLedgerData();
+    if (!ledger) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course folder absorption ledger not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: ledger.approvalStatus,
+      learnerFacingRelease: ledger.learnerFacingRelease,
+      ledgerStatus: ledger.ledgerStatus,
+      ledgerMode: ledger.ledgerMode,
+      sourceRoot: ledger.sourceRoot,
+      sourceRootAvailable: ledger.sourceRootAvailable,
+      physicalFiles: ledger.physicalFiles,
+      physicalPdfFiles: ledger.physicalPdfFiles,
+      nonPdfFiles: ledger.nonPdfFiles,
+      totalMb: ledger.totalMb,
+      directories: ledger.directories,
+      uniquePdfHashes: ledger.uniquePdfHashes,
+      duplicatePdfFiles: ledger.duplicatePdfFiles,
+      manifestPdfFiles: ledger.manifestPdfFiles,
+      manifestUniquePdfFiles: ledger.manifestUniquePdfFiles,
+      corpusDocsForCurrentUniqueHashes: ledger.corpusDocsForCurrentUniqueHashes,
+      mappedUniquePdfFiles: ledger.mappedUniquePdfFiles,
+      unmappedUniquePdfFiles: ledger.unmappedUniquePdfFiles,
+      totalDocumentNodeMatches: ledger.totalDocumentNodeMatches,
+      matchedKnowledgeNodes: ledger.matchedKnowledgeNodes,
+      readyForRewriteReviewNodes: ledger.readyForRewriteReviewNodes,
+      lowOrThinExtractionMappedDocs: ledger.lowOrThinExtractionMappedDocs,
+      lowExtractionDocs: ledger.lowExtractionDocs,
+      manualTranscriptionPages: ledger.manualTranscriptionPages,
+      sourceReplacementCandidates: ledger.sourceReplacementCandidates,
+      publicReferenceReadyModules: ledger.publicReferenceReadyModules,
+      modules: ledger.modules,
+      learnerFacingAllowedDocs: ledger.learnerFacingAllowedDocs,
+      productionReadyDocs: ledger.productionReadyDocs,
+      writeAllowedNow: ledger.writeAllowedNow,
+      manualAuthorizationRequired: ledger.manualAuthorizationRequired,
+      extensionRows: ledger.extensionRows || [],
+      directoryRows: ledger.directoryRows || [],
+      duplicateRows: ledger.duplicateRows || [],
+      extractionAttentionRows: ledger.extractionAttentionRows || [],
+      topPhysicalFiles: ledger.topPhysicalFiles || [],
+      commands: ledger.commands || [],
+      completionRule: ledger.completionRule,
+      boundary: ledger.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/public-source-gap") {
+    const audit = publicSourceGapAuditData();
+    if (!audit) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "public source gap audit not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: audit.approvalStatus,
+      learnerFacingRelease: audit.learnerFacingRelease,
+      publicCorpusDocuments: audit.publicCorpusDocuments,
+      wikipediaDocuments: audit.wikipediaDocuments,
+      officialLikeDocuments: audit.officialLikeDocuments,
+      modules: audit.modules,
+      modulesWithPublicEvidence: audit.modulesWithPublicEvidence,
+      modulesWithWikipediaEvidence: audit.modulesWithWikipediaEvidence,
+      modulesWithTwoWikipediaEvidence: audit.modulesWithTwoWikipediaEvidence,
+      modulesWithHostDiversity: audit.modulesWithHostDiversity,
+      publicReferenceReadyModules: audit.publicReferenceReadyModules,
+      wikipediaThinModules: audit.wikipediaThinModules,
+      weakModules: audit.weakModules,
+      moduleRows: (audit.moduleRows || []).map((row) => ({
+        moduleId: row.moduleId,
+        module: row.module,
+        topPublicEvidenceDocs: row.topPublicEvidenceDocs,
+        wikipediaEvidenceDocs: row.wikipediaEvidenceDocs,
+        officialLikeEvidenceDocs: row.officialLikeEvidenceDocs,
+        uniqueHosts: row.uniqueHosts,
+        readinessStatus: row.readinessStatus,
+        evidenceSamples: (row.evidenceSamples || []).slice(0, 4),
+        wikipediaEvidenceSamples: (row.wikipediaEvidenceSamples || []).slice(0, 4),
+      })),
+      boundary: audit.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/wikipedia-grounding-audit") {
+    const audit = wikipediaGroundingAuditData();
+    if (!audit) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "Wikipedia grounding audit not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: audit.approvalStatus,
+      learnerFacingRelease: audit.learnerFacingRelease,
+      auditStatus: audit.auditStatus,
+      auditMode: audit.auditMode,
+      corpusDocuments: audit.corpusDocuments,
+      publicCorpusDocuments: audit.publicCorpusDocuments,
+      wikipediaDocuments: audit.wikipediaDocuments,
+      wikipediaDocumentsFromPublicGap: audit.wikipediaDocumentsFromPublicGap,
+      recentHarvestArticlesAttempted: audit.recentHarvestArticlesAttempted,
+      recentHarvestArticlesStored: audit.recentHarvestArticlesStored,
+      recentHarvestSkipped: audit.recentHarvestSkipped,
+      modules: audit.modules,
+      modulesWithWikipediaGrounding: audit.modulesWithWikipediaGrounding,
+      modulesWithTwoWikipediaGroundingDocs: audit.modulesWithTwoWikipediaGroundingDocs,
+      modulesWithWikipediaSamples: audit.modulesWithWikipediaSamples,
+      wikipediaThinModules: audit.wikipediaThinModules || [],
+      highRiskLessonsWithAtLeastThreeWikipediaRefs: audit.highRiskLessonsWithAtLeastThreeWikipediaRefs,
+      highRiskWikipediaRefCount: audit.highRiskWikipediaRefCount,
+      highRiskLearnerCitationApprovedLessons: audit.highRiskLearnerCitationApprovedLessons,
+      learnerCitationApprovedModules: audit.learnerCitationApprovedModules,
+      writeAllowedNow: audit.writeAllowedNow,
+      manualAuthorizationRequired: audit.manualAuthorizationRequired,
+      moduleRows: (audit.moduleRows || []).map((row) => ({
+        moduleId: row.moduleId,
+        module: row.module,
+        learnerFacingNodes: row.learnerFacingNodes,
+        wikipediaEvidenceDocs: row.wikipediaEvidenceDocs,
+        wikipediaSamples: row.wikipediaSamples,
+        topPublicEvidenceDocs: row.topPublicEvidenceDocs,
+        officialLikeEvidenceDocs: row.officialLikeEvidenceDocs,
+        uniqueHosts: row.uniqueHosts,
+        readinessStatus: row.readinessStatus,
+        wikipediaGroundingReady: row.wikipediaGroundingReady,
+        learnerCitationApproved: row.learnerCitationApproved,
+        learnerFacingRelease: row.learnerFacingRelease,
+        nextGate: row.nextGate,
+        boundary: row.boundary,
+      })),
+      highRiskLessonRows: (audit.highRiskLessonRows || []).slice(0, 12),
+      wikipediaDocSamples: audit.wikipediaDocSamples || [],
+      commands: audit.commands || [],
+      completionRule: audit.completionRule,
+      boundary: audit.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/public-source-absorption-map") {
+    const audit = publicSourceAbsorptionMapData();
+    if (!audit) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "public source absorption map not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: audit.approvalStatus,
+      learnerFacingRelease: audit.learnerFacingRelease,
+      auditStatus: audit.auditStatus,
+      auditMode: audit.auditMode,
+      corpusDocuments: audit.corpusDocuments,
+      publicCorpusDocuments: audit.publicCorpusDocuments,
+      wikipediaDocuments: audit.wikipediaDocuments,
+      officialLikeDocuments: audit.officialLikeDocuments,
+      mappedPublicDocuments: audit.mappedPublicDocuments,
+      unmappedPublicDocuments: audit.unmappedPublicDocuments,
+      mappedWikipediaDocuments: audit.mappedWikipediaDocuments,
+      unmappedWikipediaDocuments: audit.unmappedWikipediaDocuments,
+      mappedOfficialLikeDocuments: audit.mappedOfficialLikeDocuments,
+      unmappedOfficialLikeDocuments: audit.unmappedOfficialLikeDocuments,
+      shareAlikeDocuments: audit.shareAlikeDocuments,
+      openAccessDocuments: audit.openAccessDocuments,
+      permissiveDocuments: audit.permissiveDocuments,
+      publicDomainDocuments: audit.publicDomainDocuments,
+      totalPublicDocumentNodeMatches: audit.totalPublicDocumentNodeMatches,
+      modulesWithPublicSourceMapping: audit.modulesWithPublicSourceMapping,
+      modulesWithWikipediaMapping: audit.modulesWithWikipediaMapping,
+      learnerCitationApprovedDocuments: audit.learnerCitationApprovedDocuments,
+      writeAllowedNow: audit.writeAllowedNow,
+      manualAuthorizationRequired: audit.manualAuthorizationRequired,
+      moduleRows: (audit.moduleRows || []).slice(0, 12),
+      wikipediaRows: (audit.wikipediaRows || []).slice(0, 12),
+      officialLikeRows: (audit.officialLikeRows || []).slice(0, 12),
+      topMappedPublicRows: (audit.topMappedPublicRows || []).slice(0, 12),
+      commands: audit.commands || [],
+      completionRule: audit.completionRule,
+      boundary: audit.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/public-source-coverage-ledger") {
+    const ledger = publicSourceCoverageLedgerData();
+    if (!ledger) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "public source coverage ledger not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: ledger.approvalStatus,
+      learnerFacingRelease: ledger.learnerFacingRelease,
+      ledgerStatus: ledger.ledgerStatus,
+      ledgerMode: ledger.ledgerMode,
+      corpusDocuments: ledger.corpusDocuments,
+      publicCorpusDocuments: ledger.publicCorpusDocuments,
+      wikipediaDocuments: ledger.wikipediaDocuments,
+      officialLikeDocuments: ledger.officialLikeDocuments,
+      mappedPublicDocuments: ledger.mappedPublicDocuments,
+      unmappedPublicDocuments: ledger.unmappedPublicDocuments,
+      mappedWikipediaDocuments: ledger.mappedWikipediaDocuments,
+      unmappedWikipediaDocuments: ledger.unmappedWikipediaDocuments,
+      mappedOfficialLikeDocuments: ledger.mappedOfficialLikeDocuments,
+      unmappedOfficialLikeDocuments: ledger.unmappedOfficialLikeDocuments,
+      totalPublicDocumentNodeMatches: ledger.totalPublicDocumentNodeMatches,
+      modules: ledger.modules,
+      publicReferenceReadyModules: ledger.publicReferenceReadyModules,
+      modulesWithWikipediaGrounding: ledger.modulesWithWikipediaGrounding,
+      modulesWithTwoWikipediaGroundingDocs: ledger.modulesWithTwoWikipediaGroundingDocs,
+      nodes: ledger.nodes,
+      localReadyNodes: ledger.localReadyNodes,
+      directPublicReadyNodes: ledger.directPublicReadyNodes,
+      directWikipediaReadyNodes: ledger.directWikipediaReadyNodes,
+      directOfficialReadyNodes: ledger.directOfficialReadyNodes,
+      directTriangulatedNodes: ledger.directTriangulatedNodes,
+      moduleGroundedNodes: ledger.moduleGroundedNodes,
+      candidateTargetNodes: ledger.candidateTargetNodes,
+      sourceFitCandidates: ledger.sourceFitCandidates,
+      wikipediaCandidates: ledger.wikipediaCandidates,
+      officialCandidates: ledger.officialCandidates,
+      sourceFitReviewRows: ledger.sourceFitReviewRows,
+      readySourceFitReviewRows: ledger.readySourceFitReviewRows,
+      blockedSourceFitReviewRows: ledger.blockedSourceFitReviewRows,
+      rowsWithUrl: ledger.rowsWithUrl,
+      realHumanInputEntries: ledger.realHumanInputEntries,
+      learnerCitationApprovedDocuments: ledger.learnerCitationApprovedDocuments,
+      learnerCitationApprovedNodes: ledger.learnerCitationApprovedNodes,
+      learnerCitationApprovedCandidates: ledger.learnerCitationApprovedCandidates,
+      learnerCitationApprovedRows: ledger.learnerCitationApprovedRows,
+      writeAllowedNow: ledger.writeAllowedNow,
+      manualAuthorizationRequired: ledger.manualAuthorizationRequired,
+      moduleRows: ledger.moduleRows || [],
+      topMappedPublicRows: ledger.topMappedPublicRows || [],
+      wikipediaDocSamples: ledger.wikipediaDocSamples || [],
+      nodeSpecificPublicGapSamples: ledger.nodeSpecificPublicGapSamples || [],
+      commands: ledger.commands || [],
+      completionRule: ledger.completionRule,
+      boundary: ledger.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-node-source-triangulation-audit") {
+    const audit = knowledgeNodeSourceTriangulationAuditData();
+    if (!audit) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge node source triangulation audit not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: audit.approvalStatus,
+      learnerFacingRelease: audit.learnerFacingRelease,
+      auditStatus: audit.auditStatus,
+      auditMode: audit.auditMode,
+      nodes: audit.nodes,
+      modules: audit.modules,
+      localReadyNodes: audit.localReadyNodes,
+      directPublicReadyNodes: audit.directPublicReadyNodes,
+      directWikipediaReadyNodes: audit.directWikipediaReadyNodes,
+      directOfficialReadyNodes: audit.directOfficialReadyNodes,
+      directTriangulatedNodes: audit.directTriangulatedNodes,
+      moduleGroundedNodes: audit.moduleGroundedNodes,
+      attentionNodes: audit.attentionNodes,
+      learnerCitationApprovedNodes: audit.learnerCitationApprovedNodes,
+      writeAllowedNow: audit.writeAllowedNow,
+      manualAuthorizationRequired: audit.manualAuthorizationRequired,
+      moduleRows: audit.moduleRows || [],
+      directTriangulatedSamples: (audit.directTriangulatedSamples || []).slice(0, 6),
+      nodeSpecificPublicGapSamples: (audit.nodeSpecificPublicGapSamples || []).slice(0, 8),
+      commands: audit.commands || [],
+      completionRule: audit.completionRule,
+      boundary: audit.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-node-public-source-fit-candidate-pack") {
+    const pack = knowledgeNodePublicSourceFitCandidatePackData();
+    if (!pack) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge node public source-fit candidate pack not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: pack.approvalStatus,
+      learnerFacingRelease: pack.learnerFacingRelease,
+      packStatus: pack.packStatus,
+      packMode: pack.packMode,
+      nodes: pack.nodes,
+      directTriangulatedNodes: pack.directTriangulatedNodes,
+      candidateTargetNodes: pack.candidateTargetNodes,
+      readyCandidateRows: pack.readyCandidateRows,
+      attentionCandidateRows: pack.attentionCandidateRows,
+      totalCandidates: pack.totalCandidates,
+      wikipediaCandidates: pack.wikipediaCandidates,
+      officialCandidates: pack.officialCandidates,
+      learnerCitationApprovedCandidates: pack.learnerCitationApprovedCandidates,
+      reviewerAcceptedCandidates: pack.reviewerAcceptedCandidates,
+      writeAllowedNow: pack.writeAllowedNow,
+      manualAuthorizationRequired: pack.manualAuthorizationRequired,
+      moduleRows: pack.moduleRows || [],
+      sampleCandidateRows: (pack.sampleCandidateRows || []).slice(0, 8),
+      commands: pack.commands || [],
+      completionRule: pack.completionRule,
+      boundary: pack.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-node-public-source-fit-review-input-starter") {
+    const starter = knowledgeNodePublicSourceFitReviewInputStarterData();
+    if (!starter) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge node public source-fit review input starter not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: starter.approvalStatus,
+      learnerFacingRelease: starter.learnerFacingRelease,
+      starterStatus: starter.starterStatus,
+      candidateTargetNodes: starter.candidateTargetNodes,
+      reviewRows: starter.reviewRows,
+      readyReviewRows: starter.readyReviewRows,
+      blockedReviewRows: starter.blockedReviewRows,
+      realHumanInputEntries: starter.realHumanInputEntries,
+      learnerCitationApprovedRows: starter.learnerCitationApprovedRows,
+      copiedTextApprovedRows: starter.copiedTextApprovedRows,
+      writeAllowedNow: starter.writeAllowedNow,
+      manualAuthorizationRequired: starter.manualAuthorizationRequired,
+      draftInputPath: starter.draftInputPath,
+      draftInputMarkdownPath: starter.draftInputMarkdownPath,
+      commands: starter.commands || [],
+      completionRule: starter.completionRule,
+      boundary: starter.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-node-public-source-fit-review-input-validation") {
+    const validation = knowledgeNodePublicSourceFitReviewInputValidationData();
+    if (!validation) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge node public source-fit review input validation not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: validation.approvalStatus,
+      learnerFacingRelease: validation.learnerFacingRelease,
+      validationStatus: validation.validationStatus,
+      inputRows: validation.inputRows,
+      readyRows: validation.readyRows,
+      blockedRows: validation.blockedRows,
+      missingFieldRows: validation.missingFieldRows,
+      invalidDecisionRows: validation.invalidDecisionRows,
+      forbiddenHitRows: validation.forbiddenHitRows,
+      realHumanInputEntries: validation.realHumanInputEntries,
+      learnerCitationApprovedRows: validation.learnerCitationApprovedRows,
+      copiedTextApprovedRows: validation.copiedTextApprovedRows,
+      fixtureReadyRows: validation.fixtureReadyRows,
+      allowFixture: validation.allowFixture,
+      writeAllowedNow: validation.writeAllowedNow,
+      manualAuthorizationRequired: validation.manualAuthorizationRequired,
+      blockedSamples: (validation.blockedSamples || []).slice(0, 8),
+      completionRule: validation.completionRule,
+      boundary: validation.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-node-public-source-fit-review-execution-queue") {
+    const queue = knowledgeNodePublicSourceFitReviewExecutionQueueData();
+    if (!queue) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge node public source-fit review execution queue not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: queue.approvalStatus,
+      learnerFacingRelease: queue.learnerFacingRelease,
+      queueStatus: queue.queueStatus,
+      queueMode: queue.queueMode,
+      batchSize: queue.batchSize,
+      modules: queue.modules,
+      candidateTargetNodes: queue.candidateTargetNodes,
+      reviewRows: queue.reviewRows,
+      validationStatus: queue.validationStatus,
+      readyRows: queue.readyRows,
+      blockedRows: queue.blockedRows,
+      missingFieldRows: queue.missingFieldRows,
+      forbiddenHitRows: queue.forbiddenHitRows,
+      realHumanInputEntries: queue.realHumanInputEntries,
+      learnerCitationApprovedRows: queue.learnerCitationApprovedRows,
+      copiedTextApprovedRows: queue.copiedTextApprovedRows,
+      totalBatches: queue.totalBatches,
+      blockedBatches: queue.blockedBatches,
+      readyBatches: queue.readyBatches,
+      writeAllowedNow: queue.writeAllowedNow,
+      manualAuthorizationRequired: queue.manualAuthorizationRequired,
+      upstreamReviewGateStatus: queue.upstreamReviewGateStatus,
+      firstPriorityBatches: (queue.firstPriorityBatches || []).slice(0, 6),
+      moduleRows: queue.moduleRows || [],
+      batchRows: (queue.batchRows || []).slice(0, 12),
+      reviewerChecklist: queue.reviewerChecklist || [],
+      commands: queue.commands || [],
+      completionRule: queue.completionRule,
+      boundary: queue.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-node-public-source-fit-review-batch-packets") {
+    const packet = knowledgeNodePublicSourceFitReviewBatchPacketsData();
+    if (!packet) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge node public source-fit review batch packets not generated" }));
+      return;
+    }
+    const requestUrl = new URL(req.url, "http://localhost");
+    const requestedPacketId = requestUrl.searchParams.get("packetId") || packet.firstPriorityPackets?.[0]?.packetId || "";
+    const selectedPacket = (packet.batchPackets || []).find((row) => row.packetId === requestedPacketId) || (packet.batchPackets || [])[0] || null;
+    const selectedPacketRows = selectedPacket ? (selectedPacket.packetRows || []).slice(0, 12) : [];
+    const selectedPacketDetail = selectedPacket ? {
+      packetId: selectedPacket.packetId,
+      batchId: selectedPacket.batchId,
+      order: selectedPacket.order,
+      module: selectedPacket.module,
+      packetStatus: selectedPacket.packetStatus,
+      owner: selectedPacket.owner,
+      inputPath: selectedPacket.inputPath,
+      targetNodes: selectedPacket.targetNodes,
+      reviewRows: selectedPacket.reviewRows,
+      readyRows: selectedPacket.readyRows,
+      blockedRows: selectedPacket.blockedRows,
+      wikipediaRows: selectedPacket.wikipediaRows,
+      officialRows: selectedPacket.officialRows,
+      displayedRows: selectedPacketRows.length,
+      packetRows: selectedPacketRows.map((row) => ({
+        inputRowIndex: row.inputRowIndex,
+        reviewId: row.reviewId,
+        nodeId: row.nodeId,
+        title: row.title,
+        module: row.module,
+        topic: row.topic,
+        documentId: row.documentId,
+        sourceId: row.sourceId,
+        name: row.name,
+        url: row.url,
+        tier: row.tier,
+        family: row.family,
+        sourceRole: row.sourceRole,
+        excerptPolicy: row.excerptPolicy,
+        fitScore: row.fitScore,
+        requiredDecisionValues: row.requiredDecisionValues || [],
+        fillableFields: row.fillableFields || {},
+        fixedFields: row.fixedFields || {},
+        reviewStatus: row.reviewStatus,
+        reviewerInstruction: row.reviewerInstruction,
+      })),
+      acceptanceChecks: selectedPacket.acceptanceChecks || [],
+      command: selectedPacket.command,
+      nextGate: selectedPacket.nextGate,
+    } : null;
+    const selectedPacketWorkbench = selectedPacket ? {
+      workbenchStatus: "selected_packet_review_workbench_ready_release_blocked",
+      workbenchMode: "front_end_internal_browser_for_real_reviewer_packet_execution",
+      packetId: selectedPacket.packetId,
+      batchId: selectedPacket.batchId,
+      module: selectedPacket.module,
+      owner: selectedPacket.owner,
+      inputPath: selectedPacket.inputPath,
+      reviewRows: selectedPacket.reviewRows,
+      displayedRows: selectedPacketRows.length,
+      targetNodes: selectedPacket.targetNodes,
+      wikipediaRows: selectedPacket.wikipediaRows,
+      officialRows: selectedPacket.officialRows,
+      readyRows: selectedPacket.readyRows,
+      blockedRows: selectedPacket.blockedRows,
+      writeAllowedNow: false,
+      learnerFacingRelease: false,
+      fixedFieldPolicy: [
+        "learnerCitationApproved stays false until a separate release approval gate exists.",
+        "copiedTextApproved stays false; public sources support original rewriting only.",
+        "educationOnly remains true and productionReady remains false.",
+      ],
+      fillableFieldPointers: selectedPacketRows.slice(0, 6).map((row) => ({
+        inputRowIndex: row.inputRowIndex,
+        reviewId: row.reviewId,
+        reviewerDecision: row.fillableFields?.reviewerDecision,
+        sourceFitNotes: row.fillableFields?.sourceFitNotes,
+        citationUse: row.fillableFields?.citationUse,
+        reviewerName: row.fillableFields?.reviewerName,
+        reviewedAt: row.fillableFields?.reviewedAt,
+      })),
+      rowEvidencePreview: selectedPacketRows.slice(0, 6).map((row) => ({
+        inputRowIndex: row.inputRowIndex,
+        reviewId: row.reviewId,
+        nodeId: row.nodeId,
+        title: row.title,
+        topic: row.topic,
+        sourceName: row.name,
+        url: row.url,
+        family: row.family,
+        fitScore: row.fitScore,
+        reviewStatus: row.reviewStatus,
+      })),
+      acceptanceChecks: selectedPacket.acceptanceChecks || [],
+      command: selectedPacket.command,
+      nextGate: selectedPacket.nextGate,
+      boundary: "Reviewer workbench only. It exposes packet evidence and fillable JSON pointers but does not create human judgments, approve citations, approve copied text, write lessons, or authorize release.",
+    } : null;
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: packet.approvalStatus,
+      learnerFacingRelease: packet.learnerFacingRelease,
+      packetStatus: packet.packetStatus,
+      packetMode: packet.packetMode,
+      sourceQueuePath: packet.sourceQueuePath,
+      sourceDraftInputPath: packet.sourceDraftInputPath,
+      modules: packet.modules,
+      totalBatches: packet.totalBatches,
+      totalPackets: packet.totalPackets,
+      candidateTargetNodes: packet.candidateTargetNodes,
+      reviewRows: packet.reviewRows,
+      readyRows: packet.readyRows,
+      blockedRows: packet.blockedRows,
+      missingFieldRows: packet.missingFieldRows,
+      realHumanInputEntries: packet.realHumanInputEntries,
+      learnerCitationApprovedRows: packet.learnerCitationApprovedRows,
+      copiedTextApprovedRows: packet.copiedTextApprovedRows,
+      writeAllowedNow: packet.writeAllowedNow,
+      manualAuthorizationRequired: packet.manualAuthorizationRequired,
+      firstPriorityPackets: packet.firstPriorityPackets || [],
+      selectedPacket: selectedPacketDetail,
+      selectedPacketWorkbench,
+      batchPackets: (packet.batchPackets || []).slice(0, 8).map((row) => ({
+        packetId: row.packetId,
+        batchId: row.batchId,
+        order: row.order,
+        module: row.module,
+        packetStatus: row.packetStatus,
+        owner: row.owner,
+        inputPath: row.inputPath,
+        targetNodes: row.targetNodes,
+        reviewRows: row.reviewRows,
+        readyRows: row.readyRows,
+        blockedRows: row.blockedRows,
+        wikipediaRows: row.wikipediaRows,
+        officialRows: row.officialRows,
+        sampleRows: row.sampleRows || [],
+        acceptanceChecks: row.acceptanceChecks || [],
+        command: row.command,
+        nextGate: row.nextGate,
+      })),
+      commands: packet.commands || [],
+      completionRule: packet.completionRule,
+      boundary: packet.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-node-public-source-fit-review-packet-input-copy-template") {
+    const packetTemplate = knowledgeNodePublicSourceFitReviewPacketInputCopyTemplateData();
+    if (!packetTemplate) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge node public source-fit packet input copy template not generated" }));
+      return;
+    }
+    const { template, inputCopy, validation } = packetTemplate;
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: template.approvalStatus,
+      learnerFacingRelease: template.learnerFacingRelease,
+      templateStatus: template.templateStatus,
+      templateMode: template.templateMode,
+      inputStatus: inputCopy.inputStatus,
+      inputMode: inputCopy.inputMode,
+      validationStatus: validation.validationStatus,
+      packetId: template.packetId,
+      batchId: template.batchId,
+      module: template.module,
+      inputCopyPath: template.inputCopyPath,
+      inputCopyMarkdownPath: template.inputCopyMarkdownPath,
+      sourceBatchPacketsPath: template.sourceBatchPacketsPath,
+      sourceDraftInputPath: template.sourceDraftInputPath,
+      targetNodes: template.targetNodes,
+      reviewRows: template.reviewRows,
+      readyReviewRows: template.readyReviewRows,
+      blockedReviewRows: template.blockedReviewRows,
+      validationInputRows: validation.inputRows,
+      validationReadyRows: validation.readyRows,
+      validationBlockedRows: validation.blockedRows,
+      validationMissingFieldRows: validation.missingFieldRows,
+      validationInvalidDecisionRows: validation.invalidDecisionRows,
+      validationForbiddenHitRows: validation.forbiddenHitRows,
+      realHumanInputEntries: validation.realHumanInputEntries,
+      learnerCitationApprovedRows: validation.learnerCitationApprovedRows,
+      copiedTextApprovedRows: validation.copiedTextApprovedRows,
+      writeAllowedNow: template.writeAllowedNow,
+      manualAuthorizationRequired: template.manualAuthorizationRequired,
+      fillableFieldRows: template.fillableFieldRows || [],
+      rowEvidencePreview: (inputCopy.rows || []).slice(0, 8).map((row, index) => ({
+        order: index + 1,
+        reviewId: row.reviewId,
+        nodeId: row.nodeId,
+        documentId: row.documentId,
+        title: row.title,
+        topic: row.topic,
+        sourceName: row.name,
+        url: row.url,
+        family: row.family,
+        fitScore: row.fitScore,
+      })),
+      commands: template.commands || [],
+      validatorCommand: template.validatorCommand,
+      completionRule: template.completionRule,
+      boundary: template.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-node-public-source-fit-review-packet-merge-preview") {
+    const preview = knowledgeNodePublicSourceFitReviewPacketMergePreviewData();
+    if (!preview) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge node public source-fit packet merge preview not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: preview.approvalStatus,
+      learnerFacingRelease: preview.learnerFacingRelease,
+      mergePreviewStatus: preview.mergePreviewStatus,
+      mergePreviewMode: preview.mergePreviewMode,
+      packetId: preview.packetId,
+      batchId: preview.batchId,
+      module: preview.module,
+      packetInputPath: preview.packetInputPath,
+      packetValidationPath: preview.packetValidationPath,
+      fullDraftInputPath: preview.fullDraftInputPath,
+      fullValidationPath: preview.fullValidationPath,
+      packetRows: preview.packetRows,
+      fullDraftRows: preview.fullDraftRows,
+      fullValidationRows: preview.fullValidationRows,
+      mappedRows: preview.mappedRows,
+      missingTargetRows: preview.missingTargetRows,
+      readyRows: preview.readyRows,
+      blockedRows: preview.blockedRows,
+      packetValidationStatus: preview.packetValidationStatus,
+      packetReadyRows: preview.packetReadyRows,
+      packetBlockedRows: preview.packetBlockedRows,
+      packetMissingFieldRows: preview.packetMissingFieldRows,
+      packetForbiddenHitRows: preview.packetForbiddenHitRows,
+      packetRealHumanInputEntries: preview.packetRealHumanInputEntries,
+      fullDraftReadyRowsBeforeMerge: preview.fullDraftReadyRowsBeforeMerge,
+      fullDraftBlockedRowsBeforeMerge: preview.fullDraftBlockedRowsBeforeMerge,
+      mergeAllowedNow: preview.mergeAllowedNow,
+      writeAllowedNow: preview.writeAllowedNow,
+      manualAuthorizationRequired: preview.manualAuthorizationRequired,
+      sampleMergeRows: preview.sampleMergeRows || [],
+      commands: preview.commands || [],
+      completionRule: preview.completionRule,
+      boundary: preview.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-node-public-source-fit-review-packet-merge-apply-report") {
+    const report = knowledgeNodePublicSourceFitReviewPacketMergeApplyReportData();
+    if (!report) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge node public source-fit packet merge apply report not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: report.approvalStatus,
+      learnerFacingRelease: report.learnerFacingRelease,
+      applyMode: report.applyMode,
+      applyStatus: report.applyStatus,
+      packetId: report.packetId,
+      batchId: report.batchId,
+      module: report.module,
+      packetInputPath: report.packetInputPath,
+      packetValidationPath: report.packetValidationPath,
+      fullDraftPath: report.fullDraftPath,
+      mergePreviewPath: report.mergePreviewPath,
+      totalRows: report.totalRows,
+      readyToMergeRows: report.readyToMergeRows,
+      blockedRows: report.blockedRows,
+      writtenRows: report.writtenRows,
+      mergeAllowedNow: report.mergeAllowedNow,
+      writeAllowedNow: report.writeAllowedNow,
+      manualAuthorizationRequired: report.manualAuthorizationRequired,
+      fullDraftRows: report.fullDraftRows,
+      applyRows: (report.applyRows || []).slice(0, 12),
+      nextStep: report.nextStep,
+      boundary: report.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-node-public-source-fit-review-packet-001-handoff") {
+    const handoff = knowledgeNodePublicSourceFitReviewPacket001HandoffData();
+    if (!handoff) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge node public source-fit packet 001 handoff not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: handoff.approvalStatus,
+      learnerFacingRelease: handoff.learnerFacingRelease,
+      handoffStatus: handoff.handoffStatus,
+      handoffMode: handoff.handoffMode,
+      packetId: handoff.packetId,
+      batchId: handoff.batchId,
+      module: handoff.module,
+      inputCopyPath: handoff.inputCopyPath,
+      reviewRows: handoff.reviewRows,
+      targetNodes: handoff.targetNodes,
+      packetReadyRows: handoff.packetReadyRows,
+      packetBlockedRows: handoff.packetBlockedRows,
+      packetMissingFieldRows: handoff.packetMissingFieldRows,
+      packetRealHumanInputEntries: handoff.packetRealHumanInputEntries,
+      mergeMappedRows: handoff.mergeMappedRows,
+      mergeReadyRows: handoff.mergeReadyRows,
+      mergeBlockedRows: handoff.mergeBlockedRows,
+      mergeAllowedNow: handoff.mergeAllowedNow,
+      mergeDryRunWrittenRows: handoff.mergeDryRunWrittenRows,
+      progressReadyPackets: handoff.progressReadyPackets,
+      progressBlockedPackets: handoff.progressBlockedPackets,
+      writeAllowedNow: handoff.writeAllowedNow,
+      manualAuthorizationRequired: handoff.manualAuthorizationRequired,
+      phaseRows: handoff.phaseRows || [],
+      hardStops: handoff.hardStops || [],
+      commands: handoff.commands || [],
+      completionRule: handoff.completionRule,
+      boundary: handoff.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-node-public-source-fit-review-packet-handoff-index") {
+    const index = knowledgeNodePublicSourceFitReviewPacketHandoffIndexData();
+    if (!index) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge node public source-fit packet handoff index not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: index.approvalStatus,
+      learnerFacingRelease: index.learnerFacingRelease,
+      indexStatus: index.indexStatus,
+      indexMode: index.indexMode,
+      totalPackets: index.totalPackets,
+      packetsWithHandoff: index.packetsWithHandoff,
+      packetsWithoutHandoff: index.packetsWithoutHandoff,
+      packetsWithInputCopyTemplate: index.packetsWithInputCopyTemplate,
+      packetsWithoutInputCopyTemplate: index.packetsWithoutInputCopyTemplate,
+      readyPackets: index.readyPackets,
+      blockedPackets: index.blockedPackets,
+      totalReviewRows: index.totalReviewRows,
+      readyRows: index.readyRows,
+      blockedRows: index.blockedRows,
+      missingFieldRows: index.missingFieldRows,
+      realHumanInputEntries: index.realHumanInputEntries,
+      firstBlockedPacketId: index.firstBlockedPacketId,
+      firstHandoffPacketId: index.firstHandoffPacketId,
+      writeAllowedNow: index.writeAllowedNow,
+      manualAuthorizationRequired: index.manualAuthorizationRequired,
+      firstPriorityRows: index.firstPriorityRows || [],
+      packetRows: index.packetRows || [],
+      commands: index.commands || [],
+      completionRule: index.completionRule,
+      boundary: index.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-node-public-source-fit-real-reviewer-launch-dashboard") {
+    const dashboard = knowledgeNodePublicSourceFitRealReviewerLaunchDashboardData();
+    if (!dashboard) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge node public source-fit real reviewer launch dashboard not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: dashboard.approvalStatus,
+      learnerFacingRelease: dashboard.learnerFacingRelease,
+      launchStatus: dashboard.launchStatus,
+      launchMode: dashboard.launchMode,
+      reviewerCanStartNow: dashboard.reviewerCanStartNow,
+      packetHandoffCoverage: dashboard.packetHandoffCoverage,
+      packetHandoffsReady: dashboard.packetHandoffsReady,
+      totalPackets: dashboard.totalPackets,
+      packetsWithInputCopyTemplate: dashboard.packetsWithInputCopyTemplate,
+      readyPackets: dashboard.readyPackets,
+      blockedPackets: dashboard.blockedPackets,
+      totalReviewRows: dashboard.totalReviewRows,
+      readyRows: dashboard.readyRows,
+      blockedRows: dashboard.blockedRows,
+      missingFieldRows: dashboard.missingFieldRows,
+      realHumanInputEntries: dashboard.realHumanInputEntries,
+      startPacket: dashboard.startPacket,
+      startPacketReviewRows: dashboard.startPacketReviewRows,
+      startPacketReadyRows: dashboard.startPacketReadyRows,
+      startPacketBlockedRows: dashboard.startPacketBlockedRows,
+      editableReviewerFields: dashboard.editableReviewerFields || [],
+      lockedFields: dashboard.lockedFields || [],
+      fieldPolicyRows: dashboard.fieldPolicyRows || [],
+      dayOneChecklist: dashboard.dayOneChecklist || [],
+      commands: dashboard.commands || [],
+      hardStops: dashboard.hardStops || [],
+      writeAllowedNow: dashboard.writeAllowedNow,
+      manualAuthorizationRequired: dashboard.manualAuthorizationRequired,
+      completionRule: dashboard.completionRule,
+      boundary: dashboard.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-node-public-source-fit-packet-001-reviewer-workbench") {
+    const workbench = knowledgeNodePublicSourceFitPacket001ReviewerWorkbenchData();
+    if (!workbench) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge node public source-fit packet 001 reviewer workbench not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: workbench.approvalStatus,
+      learnerFacingRelease: workbench.learnerFacingRelease,
+      workbenchStatus: workbench.workbenchStatus,
+      workbenchMode: workbench.workbenchMode,
+      packetId: workbench.packetId,
+      batchId: workbench.batchId,
+      module: workbench.module,
+      inputCopyPath: workbench.inputCopyPath,
+      validationPath: workbench.validationPath,
+      mergePreviewPath: workbench.mergePreviewPath,
+      applyReportPath: workbench.applyReportPath,
+      nodeCount: workbench.nodeCount,
+      reviewRows: workbench.reviewRows,
+      readyRows: workbench.readyRows,
+      blockedRows: workbench.blockedRows,
+      missingFieldRows: workbench.missingFieldRows,
+      invalidDecisionRows: workbench.invalidDecisionRows,
+      forbiddenHitRows: workbench.forbiddenHitRows,
+      realHumanInputEntries: workbench.realHumanInputEntries,
+      learnerCitationApprovedRows: workbench.learnerCitationApprovedRows,
+      copiedTextApprovedRows: workbench.copiedTextApprovedRows,
+      mergeMappedRows: workbench.mergeMappedRows,
+      mergeMissingTargetRows: workbench.mergeMissingTargetRows,
+      dryRunWrittenRows: workbench.dryRunWrittenRows,
+      reviewerEditableFields: workbench.reviewerEditableFields || [],
+      lockedFields: workbench.lockedFields || [],
+      nodeRows: workbench.nodeRows || [],
+      rows: workbench.rows || [],
+      commands: workbench.commands || [],
+      writeAllowedNow: workbench.writeAllowedNow,
+      manualAuthorizationRequired: workbench.manualAuthorizationRequired,
+      completionRule: workbench.completionRule,
+      boundary: workbench.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-node-public-source-fit-reviewer-workbench-index") {
+    const index = knowledgeNodePublicSourceFitReviewerWorkbenchIndexData();
+    if (!index) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge node public source-fit reviewer workbench index not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: index.approvalStatus,
+      learnerFacingRelease: index.learnerFacingRelease,
+      workbenchIndexStatus: index.workbenchIndexStatus,
+      workbenchIndexMode: index.workbenchIndexMode,
+      totalPackets: index.totalPackets,
+      packetsWithHandoff: index.packetsWithHandoff,
+      packetsWithInputCopyTemplate: index.packetsWithInputCopyTemplate,
+      packetsWithValidation: index.packetsWithValidation,
+      packetsWithDetailedRowBrowser: index.packetsWithDetailedRowBrowser,
+      modules: index.modules,
+      totalReviewRows: index.totalReviewRows,
+      readyRows: index.readyRows,
+      blockedRows: index.blockedRows,
+      missingFieldRows: index.missingFieldRows,
+      realHumanInputEntries: index.realHumanInputEntries,
+      learnerCitationApprovedRows: index.learnerCitationApprovedRows,
+      copiedTextApprovedRows: index.copiedTextApprovedRows,
+      firstBlockedPacketId: index.firstBlockedPacketId,
+      packetRows: index.packetRows || [],
+      moduleRows: index.moduleRows || [],
+      commands: index.commands || [],
+      writeAllowedNow: index.writeAllowedNow,
+      manualAuthorizationRequired: index.manualAuthorizationRequired,
+      completionRule: index.completionRule,
+      boundary: index.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-node-public-source-fit-reviewer-row-browser") {
+    const browser = knowledgeNodePublicSourceFitReviewerRowBrowserData();
+    if (!browser) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge node public source-fit reviewer row browser not generated" }));
+      return;
+    }
+    const requestUrl = new URL(req.url, `http://${req.headers.host || "localhost"}`);
+    const hasRowQuery = ["limit", "offset", "packet", "family", "module", "status", "q"].some((key) =>
+      requestUrl.searchParams.has(key));
+    const packetFilter = (requestUrl.searchParams.get("packet") || "").trim().toLowerCase();
+    const familyFilter = (requestUrl.searchParams.get("family") || "").trim().toLowerCase();
+    const moduleFilter = (requestUrl.searchParams.get("module") || "").trim().toLowerCase();
+    const statusFilter = (requestUrl.searchParams.get("status") || "").trim().toLowerCase();
+    const textFilter = (requestUrl.searchParams.get("q") || "").trim().toLowerCase();
+    const offset = Math.max(0, Number.parseInt(requestUrl.searchParams.get("offset") || "0", 10) || 0);
+    const requestedLimit = Number.parseInt(requestUrl.searchParams.get("limit") || "", 10);
+    const limit = hasRowQuery
+      ? Math.max(1, Math.min(Number.isFinite(requestedLimit) && requestedLimit > 0 ? requestedLimit : 80, 200))
+      : (browser.rows || []).length;
+    const filteredRows = (browser.rows || []).filter((row) => {
+      if (packetFilter && row.packetNumber?.toLowerCase() !== packetFilter && row.packetId?.toLowerCase() !== packetFilter) return false;
+      if (familyFilter && row.family?.toLowerCase() !== familyFilter) return false;
+      if (moduleFilter && !row.module?.toLowerCase().includes(moduleFilter)) return false;
+      if (
+        statusFilter &&
+        row.validationStatus?.toLowerCase() !== statusFilter &&
+        row.reviewStatus?.toLowerCase() !== statusFilter
+      ) return false;
+      if (textFilter) {
+        const haystack = [
+          row.reviewId,
+          row.nodeId,
+          row.documentId,
+          row.sourceName,
+          row.url,
+          row.family,
+          row.module,
+          row.title,
+          row.topic,
+        ].join(" ").toLowerCase();
+        if (!haystack.includes(textFilter)) return false;
+      }
+      return true;
+    });
+    const pagedRows = filteredRows.slice(offset, offset + limit);
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: browser.approvalStatus,
+      learnerFacingRelease: browser.learnerFacingRelease,
+      rowBrowserStatus: browser.rowBrowserStatus,
+      rowBrowserMode: browser.rowBrowserMode,
+      totalPackets: browser.totalPackets,
+      modules: browser.modules,
+      totalReviewRows: browser.totalReviewRows,
+      readyRows: browser.readyRows,
+      blockedRows: browser.blockedRows,
+      missingFieldRows: browser.missingFieldRows,
+      realHumanInputEntries: browser.realHumanInputEntries,
+      learnerCitationApprovedRows: browser.learnerCitationApprovedRows,
+      copiedTextApprovedRows: browser.copiedTextApprovedRows,
+      rowsWithUrl: browser.rowsWithUrl,
+      wikipediaRows: browser.wikipediaRows,
+      officialRows: browser.officialRows,
+      openResearchRows: browser.openResearchRows,
+      packetRows: browser.packetRows || [],
+      moduleRows: browser.moduleRows || [],
+      familyRows: browser.familyRows || [],
+      rows: pagedRows,
+      rowQuery: {
+        packet: packetFilter,
+        family: familyFilter,
+        module: moduleFilter,
+        status: statusFilter,
+        q: textFilter,
+        offset,
+        limit,
+        returnedRows: pagedRows.length,
+        totalFilteredRows: filteredRows.length,
+        totalRowsBeforeFilter: (browser.rows || []).length,
+        hasMoreRows: offset + pagedRows.length < filteredRows.length,
+      },
+      commands: browser.commands || [],
+      writeAllowedNow: browser.writeAllowedNow,
+      manualAuthorizationRequired: browser.manualAuthorizationRequired,
+      completionRule: browser.completionRule,
+      boundary: browser.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-node-public-source-fit-reviewer-row-detail") {
+    const browser = knowledgeNodePublicSourceFitReviewerRowBrowserData();
+    if (!browser) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge node public source-fit reviewer row browser not generated" }));
+      return;
+    }
+    const requestUrl = new URL(req.url, `http://${req.headers.host || "localhost"}`);
+    const reviewId = (requestUrl.searchParams.get("reviewId") || "").trim();
+    if (!reviewId) {
+      sendJson(res, 400, knowledgeBrowserEnvelope({
+        error: "reviewId is required",
+        detailStatus: "source_fit_reviewer_row_detail_missing_review_id",
+        detailMode: "single_row_readonly_source_fit_review_context",
+      }));
+      return;
+    }
+    const rows = browser.rows || [];
+    const detail = rows.find((row) => row.reviewId === reviewId);
+    if (!detail) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({
+        error: "reviewId not found",
+        detailStatus: "source_fit_reviewer_row_detail_not_found",
+        detailMode: "single_row_readonly_source_fit_review_context",
+        reviewId,
+      }));
+      return;
+    }
+    const packetRows = rows.filter((row) => row.packetId === detail.packetId);
+    const packetIndex = packetRows.findIndex((row) => row.reviewId === detail.reviewId);
+    const nearbyStart = Math.max(0, packetIndex - 3);
+    const nearbyPacketRows = packetRows.slice(nearbyStart, nearbyStart + 7);
+    const sameNodeRows = rows
+      .filter((row) => row.nodeId === detail.nodeId)
+      .slice(0, 12);
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: browser.approvalStatus,
+      learnerFacingRelease: browser.learnerFacingRelease,
+      detailStatus: "source_fit_reviewer_row_detail_ready_blocked_on_real_input",
+      detailMode: "single_row_readonly_source_fit_review_context",
+      reviewId,
+      row: detail,
+      packetRow: (browser.packetRows || []).find((row) => row.packetId === detail.packetId) || null,
+      moduleRow: (browser.moduleRows || []).find((row) => row.module === detail.module) || null,
+      sameNodeRows,
+      nearbyPacketRows,
+      editableFieldPaths: detail.editableFieldPaths || {},
+      missingFields: detail.missingFields || [],
+      writeAllowedNow: false,
+      manualAuthorizationRequired: true,
+      completionRule: "This single row remains blocked until a real human reviewer fills reviewerDecision, sourceFitNotes, citationUse, reviewerName, and reviewedAt in the packet input copy and the validation gate passes.",
+      boundary: "Reviewer-facing education-only source-fit context. No automated human decisions, no learner-facing approval, no stock recommendations, no signals, no broker workflow, and no real-money trading instruction.",
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/knowledge-node-public-source-fit-review-progress-matrix") {
+    const matrix = knowledgeNodePublicSourceFitReviewProgressMatrixData();
+    if (!matrix) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "knowledge node public source-fit review progress matrix not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: matrix.approvalStatus,
+      learnerFacingRelease: matrix.learnerFacingRelease,
+      matrixStatus: matrix.matrixStatus,
+      matrixMode: matrix.matrixMode,
+      sourcePacketsPath: matrix.sourcePacketsPath,
+      sourceValidationPath: matrix.sourceValidationPath,
+      modules: matrix.modules,
+      totalPackets: matrix.totalPackets,
+      totalReviewRows: matrix.totalReviewRows,
+      validationStatus: matrix.validationStatus,
+      readyRows: matrix.readyRows,
+      blockedRows: matrix.blockedRows,
+      missingFieldRows: matrix.missingFieldRows,
+      invalidDecisionRows: matrix.invalidDecisionRows,
+      forbiddenHitRows: matrix.forbiddenHitRows,
+      realHumanInputEntries: matrix.realHumanInputEntries,
+      learnerCitationApprovedRows: matrix.learnerCitationApprovedRows,
+      copiedTextApprovedRows: matrix.copiedTextApprovedRows,
+      readyPackets: matrix.readyPackets,
+      blockedPackets: matrix.blockedPackets,
+      readyModules: matrix.readyModules,
+      blockedModules: matrix.blockedModules,
+      overallProgressPercent: matrix.overallProgressPercent,
+      firstBlockedPacketId: matrix.firstBlockedPacketId,
+      writeAllowedNow: matrix.writeAllowedNow,
+      manualAuthorizationRequired: matrix.manualAuthorizationRequired,
+      firstPriorityBlockedPackets: matrix.firstPriorityBlockedPackets || [],
+      moduleRows: matrix.moduleRows || [],
+      packetRows: (matrix.packetRows || []).slice(0, 12),
+      commands: matrix.commands || [],
+      completionRule: matrix.completionRule,
+      boundary: matrix.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/low-extraction-visual-review") {
+    const packet = lowExtractionVisualReviewPacketData();
+    if (!packet) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "low extraction visual review packet not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: packet.approvalStatus,
+      learnerFacingRelease: packet.learnerFacingRelease,
+      packetStatus: packet.packetStatus,
+      lowExtractionDocs: packet.lowExtractionDocs,
+      totalPages: packet.totalPages,
+      previewPages: packet.previewPages,
+      cards: (packet.cards || []).map((card) => ({
+        id: card.id,
+        sourceId: card.sourceId,
+        sourceRelativePath: card.sourceRelativePath,
+        sourceModule: card.sourceModule,
+        charCount: card.charCount,
+        textExtraction: card.textExtraction,
+        parserTextChars: card.parserTextChars,
+        pageCount: card.pageCount,
+        previewPageCount: card.previewPageCount,
+        visualReviewStatus: card.visualReviewStatus,
+        firstPreviewPath: card.previewPages?.[0]?.previewPath || "",
+        reviewerChecklist: card.reviewerChecklist,
+      })),
+      boundary: packet.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/low-extraction-high-res-review") {
+    const packet = lowExtractionHighResReviewPacketData();
+    if (!packet) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "low extraction high-res review packet not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: packet.approvalStatus,
+      learnerFacingRelease: packet.learnerFacingRelease,
+      packetStatus: packet.packetStatus,
+      screenshotScale: packet.screenshotScale,
+      lowExtractionDocs: packet.lowExtractionDocs,
+      totalPages: packet.totalPages,
+      highResPreviewPages: packet.highResPreviewPages,
+      manualTranscriptionHighResPages: packet.manualTranscriptionHighResPages,
+      sourceReplacementHighResPages: packet.sourceReplacementHighResPages,
+      totalHighResPreviewBytes: packet.totalHighResPreviewBytes,
+      minHighResPreviewBytes: packet.minHighResPreviewBytes,
+      maxHighResPreviewBytes: packet.maxHighResPreviewBytes,
+      documentRows: packet.documentRows,
+      pageRows: (packet.pageRows || []).slice(0, 8).map((row) => ({
+        id: row.id,
+        documentId: row.documentId,
+        sourceRelativePath: row.sourceRelativePath,
+        sourceModule: row.sourceModule,
+        pageNumber: row.pageNumber,
+        intakeStatus: row.intakeStatus,
+        visualEvidenceStatus: row.visualEvidenceStatus,
+        lowResPreviewPath: row.lowResPreviewPath,
+        highResPreviewPath: row.highResPreviewPath,
+        highResPreviewUrl: `/${String(row.highResPreviewPath || "").replace(/\\/g, "/")}`,
+        highResPreviewBytes: row.highResPreviewBytes,
+        width: row.width,
+        height: row.height,
+        byteGrowth: row.byteGrowth,
+        transcriptionStatus: row.transcriptionStatus,
+        reviewerUse: row.reviewerUse,
+        nextGate: row.nextGate,
+      })),
+      completionRule: packet.completionRule,
+      boundary: packet.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-high-res-transcription-candidates") {
+    const index = localCourseHighResTranscriptionCandidateIndexData();
+    if (!index) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course high-res transcription candidate index not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: index.approvalStatus,
+      learnerFacingRelease: index.learnerFacingRelease,
+      indexStatus: index.indexStatus,
+      batchCount: index.batchCount,
+      documentIds: index.documentIds,
+      documentId: index.documentIds?.[0] || "",
+      candidatePages: index.candidatePages,
+      candidatePageNumbers: index.candidatePageNumbers,
+      acceptedForP0OverlayPages: index.acceptedForP0OverlayPages,
+      blockedUntilHumanReviewedPages: index.blockedUntilHumanReviewedPages,
+      riskTermFlagCounts: index.riskTermFlagCounts,
+      topRiskTermFlags: index.topRiskTermFlags,
+      candidatePagesList: (index.pageRows || []).slice(0, 8).map((page) => ({
+        id: page.id,
+        documentId: page.documentId,
+        sourceRelativePath: page.sourceRelativePath,
+        sourceModule: page.sourceModule,
+        pageNumber: page.pageNumber,
+        candidateStatus: page.candidateStatus,
+        acceptedForP0Overlay: page.acceptedForP0Overlay,
+        highResPreviewPath: page.highResPreviewPath,
+        highResPreviewUrl: `/${String(page.highResPreviewPath || "").replace(/\\/g, "/")}`,
+        visibleTextExtract: page.visibleTextExtract,
+        educationOnlySummary: page.educationOnlySummary,
+        uncertainRegions: page.uncertainRegions,
+        riskTermFlags: page.riskTermFlags,
+        rewriteAngles: page.rewriteAngles,
+        requiredReviewerActions: page.requiredReviewerActions,
+        nextGate: page.nextGate,
+      })),
+      completionRule: index.completionRule,
+      boundary: index.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-p0-candidate-review-assist-map") {
+    const assistMap = localCourseP0CandidateReviewAssistMapData();
+    if (!assistMap) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course P0 candidate review assist map not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: assistMap.approvalStatus,
+      learnerFacingRelease: assistMap.learnerFacingRelease,
+      assistMapStatus: assistMap.assistMapStatus,
+      totalP0Tasks: assistMap.totalP0Tasks,
+      manualTranscriptionTasks: assistMap.manualTranscriptionTasks,
+      sourceReplacementTasks: assistMap.sourceReplacementTasks,
+      manualTasksWithCandidate: assistMap.manualTasksWithCandidate,
+      manualTasksMissingCandidate: assistMap.manualTasksMissingCandidate,
+      sourceReplacementTasksWithoutCandidate: assistMap.sourceReplacementTasksWithoutCandidate,
+      acceptedForP0OverlayTasks: assistMap.acceptedForP0OverlayTasks,
+      blockedUntilHumanReviewedTasks: assistMap.blockedUntilHumanReviewedTasks,
+      candidatePagesIndexed: assistMap.candidatePagesIndexed,
+      topRiskTermFlags: assistMap.topRiskTermFlags,
+      taskRows: (assistMap.taskRows || []).slice(0, 8).map((row) => ({
+        id: row.id,
+        taskId: row.taskId,
+        category: row.category,
+        documentId: row.documentId,
+        pageNumber: row.pageNumber,
+        sourceRelativePath: row.sourceRelativePath,
+        sourceModule: row.sourceModule,
+        previewUrl: row.previewUrl,
+        highResPreviewUrl: row.highResPreviewUrl,
+        candidateId: row.candidateId,
+        candidateStatus: row.candidateStatus,
+        matchStatus: row.matchStatus,
+        acceptedForP0Overlay: row.acceptedForP0Overlay,
+        reviewAssistUse: row.reviewAssistUse,
+        candidateSummary: row.candidateSummary,
+        riskTermFlags: row.riskTermFlags,
+        uncertainRegions: row.uncertainRegions,
+        nextGate: row.nextGate,
+      })),
+      completionRule: assistMap.completionRule,
+      boundary: assistMap.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-p0-review-input-dry-run-sample") {
+    const dryRun = localCourseP0ReviewInputDryRunSampleData();
+    if (!dryRun) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course P0 review input dry-run sample not generated" }));
+      return;
+    }
+    const { sample, validation, apply } = dryRun;
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: sample.approvalStatus,
+      learnerFacingRelease: sample.learnerFacingRelease,
+      fixtureOnly: sample.fixtureOnly,
+      templateStatus: sample.templateStatus,
+      totalEntries: sample.totalEntries,
+      filledEntries: sample.filledEntries,
+      readyForValidationEntries: sample.readyForValidationEntries,
+      dryRunTargetTaskIds: sample.dryRunTargetTaskIds,
+      validationStatus: validation.validationStatus,
+      validationReadyEntries: validation.readyEntries,
+      validationBlockedEntries: validation.blockedEntries,
+      forbiddenHitEntries: validation.forbiddenHitEntries,
+      applyMode: apply.applyMode,
+      applyStatus: apply.applyStatus,
+      readyToApplyEntries: apply.readyToApplyEntries,
+      applyBlockedEntries: apply.blockedEntries,
+      writtenEntries: apply.writtenEntries,
+      sampleRows: (sample.inputEntries || [])
+        .filter((entry) => (sample.dryRunTargetTaskIds || []).includes(entry.taskId))
+        .map((entry) => ({
+          id: entry.id,
+          taskId: entry.taskId,
+          category: entry.category,
+          documentId: entry.documentId,
+          pageNumber: entry.pageNumber,
+          inputStatus: entry.inputStatus,
+          candidateId: entry.dryRunCandidateAssist?.candidateId || "",
+          matchStatus: entry.dryRunCandidateAssist?.matchStatus || "",
+          highResPreviewUrl: entry.dryRunCandidateAssist?.highResPreviewUrl || "",
+          riskTermFlags: entry.dryRunCandidateAssist?.riskTermFlags || [],
+          fixtureOnlyReason: entry.dryRunCandidateAssist?.fixtureOnlyReason || "",
+          humanSummary: entry.manualInput?.humanSummary || "",
+        })),
+      usage: sample.usage,
+      boundary: sample.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-p0-human-review-note-template") {
+    const template = localCourseP0HumanReviewNoteTemplateData();
+    if (!template) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course P0 human review note template not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: template.approvalStatus,
+      learnerFacingRelease: template.learnerFacingRelease,
+      templateStatus: template.templateStatus,
+      totalP0Tasks: template.totalP0Tasks,
+      manualReviewCards: template.manualReviewCards,
+      sourceReplacementReviewCards: template.sourceReplacementReviewCards,
+      filledNoteCards: template.filledNoteCards,
+      readyForValidationCards: template.readyForValidationCards,
+      acceptedForOverlayCards: template.acceptedForOverlayCards,
+      manualCardsWithCandidate: template.manualCardsWithCandidate,
+      manualCardsMissingCandidate: template.manualCardsMissingCandidate,
+      requiredManualFields: template.requiredManualFields,
+      requiredReplacementFields: template.requiredReplacementFields,
+      topRiskTermFlags: template.topRiskTermFlags,
+      noteCards: (template.noteCards || []).slice(0, 8).map((card) => ({
+        id: card.id,
+        taskId: card.taskId,
+        inputEntryId: card.inputEntryId,
+        category: card.category,
+        documentId: card.documentId,
+        pageNumber: card.pageNumber,
+        sourceRelativePath: card.sourceRelativePath,
+        sourceModule: card.sourceModule,
+        previewUrl: card.previewUrl,
+        highResPreviewUrl: card.highResPreviewUrl,
+        candidateId: card.candidateId,
+        matchStatus: card.matchStatus,
+        noteStatus: card.noteStatus,
+        requiredFieldCount: card.requiredFields?.length || 0,
+        riskTermFlags: card.riskTermFlags,
+        riskRewriteChecklist: (card.riskRewriteChecklist || []).slice(0, 6),
+        forbiddenClaims: card.forbiddenClaims,
+        nextGate: card.nextGate,
+      })),
+      usage: template.usage,
+      completionRule: template.completionRule,
+      boundary: template.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-p0-human-fill-pack-01") {
+    const pack = localCourseP0HumanFillPack01Data();
+    if (!pack) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course P0 human fill pack 01 not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: pack.approvalStatus,
+      learnerFacingRelease: pack.learnerFacingRelease,
+      packId: pack.packId,
+      packStatus: pack.packStatus,
+      selectionRationale: pack.selectionRationale,
+      totalPackCards: pack.totalPackCards,
+      manualFillCards: pack.manualFillCards,
+      filledCards: pack.filledCards,
+      readyForValidationCards: pack.readyForValidationCards,
+      acceptedForOverlayCards: pack.acceptedForOverlayCards,
+      targetTaskIds: pack.targetTaskIds,
+      targetDocumentIds: pack.targetDocumentIds,
+      targetPageNumbers: pack.targetPageNumbers,
+      topRiskTermFlags: pack.topRiskTermFlags,
+      requiredCommandsAfterHumanFill: pack.requiredCommandsAfterHumanFill,
+      packCards: (pack.packCards || []).map((card) => ({
+        id: card.id,
+        noteCardId: card.noteCardId,
+        taskId: card.taskId,
+        inputEntryId: card.inputEntryId,
+        category: card.category,
+        documentId: card.documentId,
+        pageNumber: card.pageNumber,
+        sourceRelativePath: card.sourceRelativePath,
+        sourceModule: card.sourceModule,
+        previewUrl: card.previewUrl,
+        highResPreviewUrl: card.highResPreviewUrl,
+        candidateId: card.candidateId,
+        matchStatus: card.matchStatus,
+        fillStatus: card.fillStatus,
+        requiredFieldCount: card.requiredFields?.length || 0,
+        riskTermFlags: card.riskTermFlags,
+        riskRewriteChecklist: card.riskRewriteChecklist,
+        qualityLintRules: card.qualityLintRules,
+        nextGate: card.nextGate,
+      })),
+      completionRule: pack.completionRule,
+      boundary: pack.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-p0-human-fill-pack-01-input-copy") {
+    const inputCopy = localCourseP0HumanFillPack01InputCopyData();
+    if (!inputCopy) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course P0 human fill pack 01 input copy not generated" }));
+      return;
+    }
+    const { template, validation } = inputCopy;
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: template.approvalStatus,
+      learnerFacingRelease: template.learnerFacingRelease,
+      fixtureOnly: template.fixtureOnly,
+      templateStatus: template.templateStatus,
+      packId: template.packId,
+      totalEntries: template.totalEntries,
+      manualTranscriptionEntries: template.manualTranscriptionEntries,
+      sourceReplacementEntries: template.sourceReplacementEntries,
+      filledEntries: template.filledEntries,
+      readyForValidationEntries: template.readyForValidationEntries,
+      targetTaskIds: template.targetTaskIds,
+      targetDocumentIds: template.targetDocumentIds,
+      targetPageNumbers: template.targetPageNumbers,
+      validationStatus: validation.validationStatus,
+      validationReadyEntries: validation.readyEntries,
+      validationBlockedEntries: validation.blockedEntries,
+      forbiddenHitEntries: validation.forbiddenHitEntries,
+      inputEntries: (template.inputEntries || []).map((entry) => ({
+        id: entry.id,
+        taskId: entry.taskId,
+        category: entry.category,
+        documentId: entry.documentId,
+        pageNumber: entry.pageNumber,
+        highResPreviewUrl: entry.highResPreviewUrl,
+        candidateId: entry.candidateId,
+        inputStatus: entry.inputStatus,
+        riskTermFlags: entry.packQualityRequirements?.riskTermFlags || [],
+        qualityLintRules: entry.packQualityRequirements?.qualityLintRules || [],
+        missingFields: (validation.validationRows || []).find((row) => row.id === entry.id)?.missingFields || [],
+        nextGate: entry.nextGate,
+      })),
+      usage: template.usage,
+      completionRule: template.completionRule,
+      boundary: template.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-p0-human-review-bundle") {
+    const bundle = localCourseP0HumanReviewBundleData();
+    if (!bundle) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course P0 human review bundle not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: bundle.approvalStatus,
+      learnerFacingRelease: bundle.learnerFacingRelease,
+      bundleStatus: bundle.bundleStatus,
+      manualPackCount: bundle.manualPackCount,
+      sourceReplacementPackCount: bundle.sourceReplacementPackCount,
+      totalPackRows: bundle.totalPackRows,
+      manualTranscriptionEntries: bundle.manualTranscriptionEntries,
+      sourceReplacementEntries: bundle.sourceReplacementEntries,
+      totalReviewEntries: bundle.totalReviewEntries,
+      filledEntries: bundle.filledEntries,
+      validationReadyEntries: bundle.validationReadyEntries,
+      validationBlockedEntries: bundle.validationBlockedEntries,
+      lintReadyEntries: bundle.lintReadyEntries,
+      lintBlockedEntries: bundle.lintBlockedEntries,
+      acceptedForOverlayEntries: bundle.acceptedForOverlayEntries,
+      positiveFixtureReadyEntries: bundle.positiveFixtureReadyEntries,
+      fixtureOnlyReadyEntries: bundle.fixtureOnlyReadyEntries,
+      fixtureWrittenEntries: bundle.fixtureWrittenEntries,
+      realHumanInputEntries: bundle.realHumanInputEntries,
+      writeAllowedNow: bundle.writeAllowedNow,
+      approvalGatePassed: bundle.approvalGatePassed,
+      humanApprovalRequired: bundle.humanApprovalRequired,
+      realReviewerInputRequired: bundle.realReviewerInputRequired,
+      packRows: (bundle.packRows || []).map((row) => ({
+        packNumber: row.packNumber,
+        packId: row.packId,
+        category: row.category,
+        packStatus: row.packStatus,
+        templateStatus: row.templateStatus,
+        totalPackCards: row.totalPackCards,
+        totalInputEntries: row.totalInputEntries,
+        filledEntries: row.filledEntries,
+        validationReadyEntries: row.validationReadyEntries,
+        acceptedForOverlayCards: row.acceptedForOverlayCards,
+        validation: row.validation,
+        lint: row.lint,
+        positiveFixture: row.positiveFixture,
+        targetTaskIds: row.targetTaskIds,
+        targetDocumentIds: row.targetDocumentIds,
+        targetPageNumbers: row.targetPageNumbers,
+        topRiskTermFlags: row.topRiskTermFlags,
+        sampleCards: row.sampleCards,
+      })),
+      completionRule: bundle.completionRule,
+      boundary: bundle.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-p0-human-review-bundle-input-copy") {
+    const inputCopy = localCourseP0HumanReviewBundleInputCopyData();
+    if (!inputCopy) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course P0 human review bundle input copy not generated" }));
+      return;
+    }
+    const { template, validation } = inputCopy;
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: template.approvalStatus,
+      learnerFacingRelease: template.learnerFacingRelease,
+      fixtureOnly: template.fixtureOnly,
+      templateStatus: template.templateStatus,
+      validationStatus: validation.validationStatus,
+      totalEntries: template.totalEntries,
+      manualTranscriptionEntries: template.manualTranscriptionEntries,
+      sourceReplacementEntries: template.sourceReplacementEntries,
+      filledEntries: template.filledEntries,
+      readyForValidationEntries: template.readyForValidationEntries,
+      validationReadyEntries: validation.readyEntries,
+      validationBlockedEntries: validation.blockedEntries,
+      forbiddenHitEntries: validation.forbiddenHitEntries,
+      sourceTemplatePaths: template.sourceTemplatePaths,
+      targetTaskIds: template.targetTaskIds,
+      targetDocumentIds: template.targetDocumentIds,
+      inputEntries: (template.inputEntries || []).map((entry) => ({
+        id: entry.id,
+        taskId: entry.taskId,
+        category: entry.category,
+        documentId: entry.documentId,
+        pageNumber: entry.pageNumber,
+        highResPreviewUrl: entry.highResPreviewUrl,
+        candidateId: entry.candidateId,
+        inputStatus: entry.inputStatus,
+        bundleInputStatus: entry.bundleInputStatus,
+        sourceTemplatePath: entry.sourceTemplatePath,
+        riskTermFlags: entry.packQualityRequirements?.riskTermFlags || [],
+        missingFields: (validation.validationRows || []).find((row) => row.id === entry.id)?.missingFields || [],
+        nextGate: entry.nextGate,
+      })),
+      usage: template.usage,
+      completionRule: template.completionRule,
+      boundary: template.boundary,
+      validationBoundary: validation.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-p0-human-review-bundle-positive-fixture") {
+    const positiveFixture = localCourseP0HumanReviewBundlePositiveFixtureData();
+    if (!positiveFixture) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course P0 human review bundle positive fixture not generated" }));
+      return;
+    }
+    const { fixture, validation } = positiveFixture;
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: fixture.approvalStatus,
+      learnerFacingRelease: fixture.learnerFacingRelease,
+      fixtureOnly: fixture.fixtureOnly,
+      templateStatus: fixture.templateStatus,
+      validationStatus: validation.validationStatus,
+      fixtureValidationAllowed: validation.fixtureValidationAllowed,
+      totalEntries: fixture.totalEntries,
+      manualTranscriptionEntries: fixture.manualTranscriptionEntries,
+      sourceReplacementEntries: fixture.sourceReplacementEntries,
+      filledEntries: fixture.filledEntries,
+      readyForValidationEntries: fixture.readyForValidationEntries,
+      validationReadyEntries: validation.readyEntries,
+      validationBlockedEntries: validation.blockedEntries,
+      forbiddenHitEntries: validation.forbiddenHitEntries,
+      sourceFixturePaths: fixture.sourceFixturePaths,
+      targetTaskIds: fixture.targetTaskIds,
+      targetDocumentIds: fixture.targetDocumentIds,
+      sampleEntries: (fixture.inputEntries || []).slice(0, 6).map((entry) => ({
+        id: entry.id,
+        taskId: entry.taskId,
+        category: entry.category,
+        documentId: entry.documentId,
+        pageNumber: entry.pageNumber,
+        sourceRelativePath: entry.sourceRelativePath,
+        inputStatus: entry.inputStatus,
+        bundleInputStatus: entry.bundleInputStatus,
+        sourceFixturePath: entry.sourceFixturePath,
+        reviewerName: entry.reviewerName,
+        reviewedAt: entry.reviewedAt,
+        nextGate: entry.nextGate,
+      })),
+      usage: fixture.usage,
+      completionRule: fixture.completionRule,
+      boundary: fixture.boundary,
+      validationBoundary: validation.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-p0-human-review-real-reviewer-handoff") {
+    const handoff = localCourseP0HumanReviewRealReviewerHandoffData();
+    if (!handoff) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course P0 human review real reviewer handoff not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: handoff.approvalStatus,
+      learnerFacingRelease: handoff.learnerFacingRelease,
+      handoffStatus: handoff.handoffStatus,
+      handoffMode: handoff.handoffMode,
+      totalReviewEntries: handoff.totalReviewEntries,
+      manualTranscriptionEntries: handoff.manualTranscriptionEntries,
+      sourceReplacementEntries: handoff.sourceReplacementEntries,
+      blankInputValidationStatus: handoff.blankInputValidationStatus,
+      blankInputReadyEntries: handoff.blankInputReadyEntries,
+      blankInputBlockedEntries: handoff.blankInputBlockedEntries,
+      positiveFixtureValidationStatus: handoff.positiveFixtureValidationStatus,
+      positiveFixtureReadyEntries: handoff.positiveFixtureReadyEntries,
+      positiveFixtureBlockedEntries: handoff.positiveFixtureBlockedEntries,
+      positiveFixtureOnly: handoff.positiveFixtureOnly,
+      realHumanInputEntries: handoff.realHumanInputEntries,
+      writeAllowedNow: handoff.writeAllowedNow,
+      manualAuthorizationRequired: handoff.manualAuthorizationRequired,
+      fileRows: handoff.fileRows || [],
+      commandRows: handoff.commandRows || [],
+      reviewerRules: handoff.reviewerRules || [],
+      completionRule: handoff.completionRule,
+      boundary: handoff.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-p0-real-reviewer-input-starter") {
+    const data = localCourseP0RealReviewerInputStarterData();
+    if (!data) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course P0 real reviewer input starter not generated" }));
+      return;
+    }
+    const { starter, validation } = data;
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: starter.approvalStatus,
+      learnerFacingRelease: starter.learnerFacingRelease,
+      starterStatus: starter.starterStatus,
+      starterMode: starter.starterMode,
+      sourceTemplatePath: starter.sourceTemplatePath,
+      draftInputPath: starter.draftInputPath,
+      draftValidationJsonPath: starter.draftValidationJsonPath,
+      totalEntries: starter.totalEntries,
+      manualTranscriptionEntries: starter.manualTranscriptionEntries,
+      sourceReplacementEntries: starter.sourceReplacementEntries,
+      filledEntries: starter.filledEntries,
+      readyForValidationEntries: starter.readyForValidationEntries,
+      validationStatus: validation.validationStatus,
+      validationReadyEntries: validation.readyEntries,
+      validationBlockedEntries: validation.blockedEntries,
+      realHumanInputEntries: starter.realHumanInputEntries,
+      writeAllowedNow: starter.writeAllowedNow,
+      manualAuthorizationRequired: starter.manualAuthorizationRequired,
+      reviewerOwnedCopy: validation.reviewerOwnedCopy,
+      fixtureOnly: validation.fixtureOnly,
+      reviewerSteps: starter.reviewerSteps || [],
+      commands: starter.commands || [],
+      sampleRows: (validation.validationRows || []).slice(0, 6).map((row) => ({
+        id: row.id,
+        taskId: row.taskId,
+        category: row.category,
+        documentId: row.documentId,
+        pageNumber: row.pageNumber,
+        validationStatus: row.validationStatus,
+        missingFields: row.missingFields,
+        nextGate: row.nextGate,
+      })),
+      completionRule: starter.completionRule,
+      boundary: starter.boundary,
+      validationBoundary: validation.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-p0-real-reviewer-task-board") {
+    const board = localCourseP0RealReviewerTaskBoardData();
+    if (!board) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course P0 real reviewer task board not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: board.approvalStatus,
+      learnerFacingRelease: board.learnerFacingRelease,
+      boardStatus: board.boardStatus,
+      boardMode: board.boardMode,
+      starterPath: board.starterPath,
+      draftInputPath: board.draftInputPath,
+      validationPath: board.validationPath,
+      totalTasks: board.totalTasks,
+      manualTranscriptionTasks: board.manualTranscriptionTasks,
+      sourceReplacementTasks: board.sourceReplacementTasks,
+      readyTasks: board.readyTasks,
+      blockedTasks: board.blockedTasks,
+      rowsMissingReviewerIdentity: board.rowsMissingReviewerIdentity,
+      realHumanInputEntries: board.realHumanInputEntries,
+      writeAllowedNow: board.writeAllowedNow,
+      manualAuthorizationRequired: board.manualAuthorizationRequired,
+      groupedCounts: board.groupedCounts,
+      taskRows: (board.taskRows || []).slice(0, 8).map((row) => ({
+        order: row.order,
+        id: row.id,
+        taskId: row.taskId,
+        category: row.category,
+        sourceRelativePath: row.sourceRelativePath,
+        sourceModule: row.sourceModule,
+        documentId: row.documentId,
+        pageNumber: row.pageNumber,
+        previewUrl: row.previewUrl,
+        highResPreviewUrl: row.highResPreviewUrl,
+        candidateId: row.candidateId,
+        validationStatus: row.validationStatus,
+        readyForOverlayApply: row.readyForOverlayApply,
+        missingFields: row.missingFields,
+        riskTermFlags: row.riskTermFlags,
+        candidateSummary: row.candidateSummary,
+        reviewerAction: row.reviewerAction,
+        nextGate: row.nextGate,
+      })),
+      commands: board.commands || [],
+      completionRule: board.completionRule,
+      boundary: board.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-p0-real-reviewer-evidence-packet") {
+    const packet = localCourseP0RealReviewerEvidencePacketData();
+    if (!packet) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course P0 real reviewer evidence packet not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: packet.approvalStatus,
+      learnerFacingRelease: packet.learnerFacingRelease,
+      packetStatus: packet.packetStatus,
+      packetMode: packet.packetMode,
+      sourceTaskBoard: packet.sourceTaskBoard,
+      sourcePublicGapAudit: packet.sourcePublicGapAudit,
+      totalTasks: packet.totalTasks,
+      tasksWithSuggestedRefs: packet.tasksWithSuggestedRefs,
+      totalSuggestedRefs: packet.totalSuggestedRefs,
+      tasksWithWikipediaRefs: packet.tasksWithWikipediaRefs,
+      tasksWithPublicContextRefs: packet.tasksWithPublicContextRefs,
+      learnerCitationApprovedTasks: packet.learnerCitationApprovedTasks,
+      realHumanInputEntries: packet.realHumanInputEntries,
+      writeAllowedNow: packet.writeAllowedNow,
+      manualAuthorizationRequired: packet.manualAuthorizationRequired,
+      taskRows: (packet.taskRows || []).slice(0, 8).map((row) => ({
+        order: row.order,
+        id: row.id,
+        taskId: row.taskId,
+        category: row.category,
+        sourceRelativePath: row.sourceRelativePath,
+        sourceModule: row.sourceModule,
+        documentId: row.documentId,
+        pageNumber: row.pageNumber,
+        candidateId: row.candidateId,
+        riskTermFlags: row.riskTermFlags,
+        suggestedRefCount: row.suggestedRefCount,
+        wikipediaRefCount: row.wikipediaRefCount,
+        publicContextRefCount: row.publicContextRefCount,
+        suggestedPublicRefs: (row.suggestedPublicRefs || []).slice(0, 6),
+        sourceFitPrompt: row.sourceFitPrompt,
+        publicReferenceNotesPrompt: row.publicReferenceNotesPrompt,
+        claimBoundary: row.claimBoundary,
+        learnerCitationApproved: row.learnerCitationApproved,
+        nextGate: row.nextGate,
+      })),
+      commands: packet.commands || [],
+      completionRule: packet.completionRule,
+      boundary: packet.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-p0-real-reviewer-source-fit-worksheet") {
+    const worksheet = localCourseP0RealReviewerSourceFitWorksheetData();
+    if (!worksheet) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course P0 real reviewer source-fit worksheet not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: worksheet.approvalStatus,
+      learnerFacingRelease: worksheet.learnerFacingRelease,
+      worksheetStatus: worksheet.worksheetStatus,
+      worksheetMode: worksheet.worksheetMode,
+      sourceEvidencePacket: worksheet.sourceEvidencePacket,
+      sourceInputStarter: worksheet.sourceInputStarter,
+      sourceTaskBoard: worksheet.sourceTaskBoard,
+      totalCards: worksheet.totalCards,
+      manualTranscriptionCards: worksheet.manualTranscriptionCards,
+      sourceReplacementCards: worksheet.sourceReplacementCards,
+      totalBlankFields: worksheet.totalBlankFields,
+      cardsWithSuggestedRefs: worksheet.cardsWithSuggestedRefs,
+      cardsWithWikipediaRefs: worksheet.cardsWithWikipediaRefs,
+      cardsWithPublicContextRefs: worksheet.cardsWithPublicContextRefs,
+      reviewerFilledCards: worksheet.reviewerFilledCards,
+      generatedDecisions: worksheet.generatedDecisions,
+      learnerCitationApprovedCards: worksheet.learnerCitationApprovedCards,
+      realHumanInputEntries: worksheet.realHumanInputEntries,
+      writeAllowedNow: worksheet.writeAllowedNow,
+      manualAuthorizationRequired: worksheet.manualAuthorizationRequired,
+      cards: (worksheet.cards || []).slice(0, 8).map((card) => ({
+        order: card.order,
+        id: card.id,
+        taskId: card.taskId,
+        inputEntryId: card.inputEntryId,
+        category: card.category,
+        sourceRelativePath: card.sourceRelativePath,
+        sourceModule: card.sourceModule,
+        documentId: card.documentId,
+        pageNumber: card.pageNumber,
+        candidateId: card.candidateId,
+        validationStatus: card.validationStatus,
+        readyForOverlayApply: card.readyForOverlayApply,
+        blankFields: card.blankFields,
+        blankFieldCount: card.blankFieldCount,
+        requiredReviewerDecisions: card.requiredReviewerDecisions,
+        suggestedPublicRefs: (card.suggestedPublicRefs || []).slice(0, 6),
+        acceptanceChecks: card.acceptanceChecks,
+        unsafeAutofillFields: card.unsafeAutofillFields,
+        generatedDecision: card.generatedDecision,
+        reviewerFilled: card.reviewerFilled,
+        learnerCitationApproved: card.learnerCitationApproved,
+        nextGate: card.nextGate,
+      })),
+      commands: worksheet.commands || [],
+      completionRule: worksheet.completionRule,
+      boundary: worksheet.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-p0-real-reviewer-source-fit-input-guide") {
+    const guide = localCourseP0RealReviewerSourceFitInputGuideData();
+    if (!guide) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course P0 real reviewer source-fit input guide not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: guide.approvalStatus,
+      learnerFacingRelease: guide.learnerFacingRelease,
+      guideStatus: guide.guideStatus,
+      guideMode: guide.guideMode,
+      sourceWorksheet: guide.sourceWorksheet,
+      sourceDraftInput: guide.sourceDraftInput,
+      totalGuideRows: guide.totalGuideRows,
+      manualTranscriptionRows: guide.manualTranscriptionRows,
+      sourceReplacementRows: guide.sourceReplacementRows,
+      rowsWithSourceFitFieldPath: guide.rowsWithSourceFitFieldPath,
+      rowsWithPublicReferenceNotesFieldPath: guide.rowsWithPublicReferenceNotesFieldPath,
+      rowsWithSuggestedRefs: guide.rowsWithSuggestedRefs,
+      rowsWithWikipediaRefs: guide.rowsWithWikipediaRefs,
+      rowsWithPublicContextRefs: guide.rowsWithPublicContextRefs,
+      reviewerFilledRows: guide.reviewerFilledRows,
+      generatedDecisions: guide.generatedDecisions,
+      learnerCitationApprovedRows: guide.learnerCitationApprovedRows,
+      realHumanInputEntries: guide.realHumanInputEntries,
+      writeAllowedNow: guide.writeAllowedNow,
+      manualAuthorizationRequired: guide.manualAuthorizationRequired,
+      forbiddenPhrases: guide.forbiddenPhrases || [],
+      guideRows: (guide.guideRows || []).slice(0, 8).map((row) => ({
+        order: row.order,
+        id: row.id,
+        cardId: row.cardId,
+        inputEntryId: row.inputEntryId,
+        taskId: row.taskId,
+        category: row.category,
+        sourceRelativePath: row.sourceRelativePath,
+        documentId: row.documentId,
+        pageNumber: row.pageNumber,
+        jsonPointer: row.jsonPointer,
+        requiredFieldPaths: row.requiredFieldPaths,
+        sourceFitFieldPath: row.sourceFitFieldPath,
+        publicReferenceNotesFieldPath: row.publicReferenceNotesFieldPath,
+        suggestedRefIds: (row.suggestedRefIds || []).slice(0, 6),
+        suggestedRefCount: row.suggestedRefCount,
+        wikipediaRefCount: row.wikipediaRefCount,
+        publicContextRefCount: row.publicContextRefCount,
+        requiredReviewerDecisionValues: row.requiredReviewerDecisionValues,
+        unsafeAutofillFields: row.unsafeAutofillFields,
+        fillInstructions: row.fillInstructions,
+        validationCommand: row.validationCommand,
+        reviewerFilled: row.reviewerFilled,
+        generatedDecision: row.generatedDecision,
+        learnerCitationApproved: row.learnerCitationApproved,
+        nextGate: row.nextGate,
+      })),
+      commands: guide.commands || [],
+      completionRule: guide.completionRule,
+      boundary: guide.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-p0-real-reviewer-source-fit-input-validation") {
+    const validation = localCourseP0RealReviewerSourceFitInputValidationData();
+    if (!validation) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course P0 real reviewer source-fit input validation not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: validation.approvalStatus,
+      learnerFacingRelease: validation.learnerFacingRelease,
+      validationStatus: validation.validationStatus,
+      validationMode: validation.validationMode,
+      inputPath: validation.inputPath,
+      guidePath: validation.guidePath,
+      fixtureOnly: validation.fixtureOnly,
+      fixtureValidationAllowed: validation.fixtureValidationAllowed,
+      totalRows: validation.totalRows,
+      readyRows: validation.readyRows,
+      blockedRows: validation.blockedRows,
+      missingFieldRows: validation.missingFieldRows,
+      qualityIssueRows: validation.qualityIssueRows,
+      forbiddenHitRows: validation.forbiddenHitRows,
+      realHumanInputEntries: validation.realHumanInputEntries,
+      fixtureReadyRows: validation.fixtureReadyRows,
+      generatedDecisions: validation.generatedDecisions,
+      learnerCitationApprovedRows: validation.learnerCitationApprovedRows,
+      writeAllowedNow: validation.writeAllowedNow,
+      manualAuthorizationRequired: validation.manualAuthorizationRequired,
+      allowedDecisionValues: validation.allowedDecisionValues || [],
+      forbiddenPhrases: validation.forbiddenPhrases || [],
+      validationRows: (validation.validationRows || []).slice(0, 8).map((row) => ({
+        id: row.id,
+        inputEntryId: row.inputEntryId,
+        taskId: row.taskId,
+        category: row.category,
+        documentId: row.documentId,
+        pageNumber: row.pageNumber,
+        sourceFitFieldPath: row.sourceFitFieldPath,
+        publicReferenceNotesFieldPath: row.publicReferenceNotesFieldPath,
+        suggestedRefCount: row.suggestedRefCount,
+        validationStatus: row.validationStatus,
+        readyForSourceFitGate: row.readyForSourceFitGate,
+        missingFields: row.missingFields,
+        qualityIssues: row.qualityIssues,
+        forbiddenHits: row.forbiddenHits,
+        nextGate: row.nextGate,
+      })),
+      completionRule: validation.completionRule,
+      boundary: validation.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-p0-real-reviewer-source-fit-handoff") {
+    const handoff = localCourseP0RealReviewerSourceFitHandoffData();
+    if (!handoff) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course P0 real reviewer source-fit handoff not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: handoff.approvalStatus,
+      learnerFacingRelease: handoff.learnerFacingRelease,
+      handoffStatus: handoff.handoffStatus,
+      handoffMode: handoff.handoffMode,
+      totalP0Tasks: handoff.totalP0Tasks,
+      totalSourceFitCards: handoff.totalSourceFitCards,
+      totalGuideRows: handoff.totalGuideRows,
+      sourceFitRealReadyRows: handoff.sourceFitRealReadyRows,
+      sourceFitRealBlockedRows: handoff.sourceFitRealBlockedRows,
+      sourceFitFixtureReadyRows: handoff.sourceFitFixtureReadyRows,
+      writeAllowedNow: handoff.writeAllowedNow,
+      realHumanInputEntries: handoff.realHumanInputEntries,
+      manualAuthorizationRequired: handoff.manualAuthorizationRequired,
+      fixtureOnlyInputsRejectedForWrite: handoff.fixtureOnlyInputsRejectedForWrite,
+      phaseRows: (handoff.phaseRows || []).slice(0, 7).map((row) => ({
+        order: row.order,
+        id: row.id,
+        status: row.status,
+        inputFile: row.inputFile,
+        command: row.command,
+        reviewerAction: row.reviewerAction,
+        hardStop: row.hardStop,
+      })),
+      hardStops: handoff.hardStops || [],
+      commands: handoff.commands || [],
+      completionRule: handoff.completionRule,
+      boundary: handoff.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-p0-review-operator-index") {
+    const index = localCourseP0ReviewOperatorIndexData();
+    if (!index) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course P0 review operator index not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: index.approvalStatus,
+      learnerFacingRelease: index.learnerFacingRelease,
+      indexStatus: index.indexStatus,
+      totalP0Tasks: index.totalP0Tasks,
+      manualTranscriptionTasks: index.manualTranscriptionTasks,
+      sourceReplacementTasks: index.sourceReplacementTasks,
+      manualPackCount: index.manualPackCount,
+      manualPackCards: index.manualPackCards,
+      sourceReplacementPackEntries: index.sourceReplacementPackEntries,
+      totalReviewPackEntries: index.totalReviewPackEntries,
+      reviewPackCoverageComplete: index.reviewPackCoverageComplete,
+      overlayStatus: index.overlayStatus,
+      overlayNotStartedTasks: index.overlayNotStartedTasks,
+      overlayReadyForValidationTasks: index.overlayReadyForValidationTasks,
+      overlayAcceptedForNextGateTasks: index.overlayAcceptedForNextGateTasks,
+      blankInputReadyEntries: index.blankInputReadyEntries,
+      blankInputBlockedEntries: index.blankInputBlockedEntries,
+      positiveFixtureReadyToApplyEntries: index.positiveFixtureReadyToApplyEntries,
+      positiveFixtureWrittenEntries: index.positiveFixtureWrittenEntries,
+      sourceReplacementTargetsWithCandidates: index.sourceReplacementTargetsWithCandidates,
+      sourceReplacementTargetsWithDirectReplacementCandidates: index.sourceReplacementTargetsWithDirectReplacementCandidates,
+      sourceReplacementApprovedReplacements: index.sourceReplacementApprovedReplacements,
+      packRows: (index.packRows || []).map((row) => ({
+        packNumber: row.packNumber,
+        packId: row.packId,
+        category: row.category,
+        packStatus: row.packStatus,
+        templateStatus: row.templateStatus,
+        documentIds: row.documentIds,
+        pageNumbers: row.pageNumbers,
+        taskIds: row.taskIds,
+        totalEntries: row.totalEntries,
+        blankReadyEntries: row.blankReadyEntries,
+        filledEntries: row.filledEntries,
+        validationReadyEntries: row.validationReadyEntries,
+        validationBlockedEntries: row.validationBlockedEntries,
+        lintReadyEntries: row.lintReadyEntries,
+        lintBlockedEntries: row.lintBlockedEntries,
+        positiveFixtureReadyToApplyEntries: row.positiveFixtureReadyToApplyEntries,
+        positiveFixtureWrittenEntries: row.positiveFixtureWrittenEntries,
+        inputCopyPath: row.inputCopyPath,
+        packPath: row.packPath,
+        nextGate: row.nextGate,
+      })),
+      nextOperatorSteps: index.nextOperatorSteps,
+      completionRule: index.completionRule,
+      boundary: index.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-p0-write-authorization-preview") {
+    const preview = localCourseP0WriteAuthorizationPreviewData();
+    if (!preview) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course P0 write authorization preview not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: preview.approvalStatus,
+      learnerFacingRelease: preview.learnerFacingRelease,
+      previewStatus: preview.previewStatus,
+      writeAllowedNow: preview.writeAllowedNow,
+      manualAuthorizationRequired: preview.manualAuthorizationRequired,
+      machineCheckedGatesPassed: preview.machineCheckedGatesPassed,
+      realReviewerInputRequired: preview.realReviewerInputRequired,
+      fixtureOnlyInputsRejectedForWrite: preview.fixtureOnlyInputsRejectedForWrite,
+      totalP0Tasks: preview.totalP0Tasks,
+      totalReviewPackEntries: preview.totalReviewPackEntries,
+      blankValidationReadyEntries: preview.blankValidationReadyEntries,
+      blankValidationBlockedEntries: preview.blankValidationBlockedEntries,
+      blankLintReadyEntries: preview.blankLintReadyEntries,
+      blankLintBlockedEntries: preview.blankLintBlockedEntries,
+      fixtureReadyToApplyEntries: preview.fixtureReadyToApplyEntries,
+      fixtureOnlyReadyEntries: preview.fixtureOnlyReadyEntries,
+      fixtureWrittenEntries: preview.fixtureWrittenEntries,
+      sourceFitValidationStatus: preview.sourceFitValidationStatus,
+      sourceFitReadyRows: preview.sourceFitReadyRows,
+      sourceFitBlockedRows: preview.sourceFitBlockedRows,
+      sourceFitMissingFieldRows: preview.sourceFitMissingFieldRows,
+      sourceFitForbiddenHitRows: preview.sourceFitForbiddenHitRows,
+      sourceFitFixtureValidationStatus: preview.sourceFitFixtureValidationStatus,
+      sourceFitFixtureReadyRows: preview.sourceFitFixtureReadyRows,
+      sourceFitFixtureRealHumanInputEntries: preview.sourceFitFixtureRealHumanInputEntries,
+      highRiskRealReviewerValidationStatus: preview.highRiskRealReviewerValidationStatus,
+      highRiskReadyLessons: preview.highRiskReadyLessons,
+      highRiskBlockedLessons: preview.highRiskBlockedLessons,
+      highRiskReadyReviewerNotes: preview.highRiskReadyReviewerNotes,
+      highRiskBlockedReviewerNotes: preview.highRiskBlockedReviewerNotes,
+      highRiskReadyDirectSourceDecisions: preview.highRiskReadyDirectSourceDecisions,
+      highRiskBlockedDirectSourceDecisions: preview.highRiskBlockedDirectSourceDecisions,
+      highRiskMissingFieldRows: preview.highRiskMissingFieldRows,
+      highRiskForbiddenHitRows: preview.highRiskForbiddenHitRows,
+      highRiskRealHumanInputEntries: preview.highRiskRealHumanInputEntries,
+      nodePublicSourceFitValidationStatus: preview.nodePublicSourceFitValidationStatus,
+      nodePublicSourceFitInputRows: preview.nodePublicSourceFitInputRows,
+      nodePublicSourceFitReadyRows: preview.nodePublicSourceFitReadyRows,
+      nodePublicSourceFitBlockedRows: preview.nodePublicSourceFitBlockedRows,
+      nodePublicSourceFitMissingFieldRows: preview.nodePublicSourceFitMissingFieldRows,
+      nodePublicSourceFitForbiddenHitRows: preview.nodePublicSourceFitForbiddenHitRows,
+      nodePublicSourceFitRealHumanInputEntries: preview.nodePublicSourceFitRealHumanInputEntries,
+      nodePublicSourceFitLearnerCitationApprovedRows: preview.nodePublicSourceFitLearnerCitationApprovedRows,
+      nodePublicSourceFitCopiedTextApprovedRows: preview.nodePublicSourceFitCopiedTextApprovedRows,
+      nodePublicSourceFitProgressMatrixStatus: preview.nodePublicSourceFitProgressMatrixStatus,
+      nodePublicSourceFitProgressValidationStatus: preview.nodePublicSourceFitProgressValidationStatus,
+      nodePublicSourceFitProgressTotalPackets: preview.nodePublicSourceFitProgressTotalPackets,
+      nodePublicSourceFitReadyPackets: preview.nodePublicSourceFitReadyPackets,
+      nodePublicSourceFitBlockedPackets: preview.nodePublicSourceFitBlockedPackets,
+      nodePublicSourceFitReadyModules: preview.nodePublicSourceFitReadyModules,
+      nodePublicSourceFitBlockedModules: preview.nodePublicSourceFitBlockedModules,
+      nodePublicSourceFitOverallProgressPercent: preview.nodePublicSourceFitOverallProgressPercent,
+      nodePublicSourceFitFirstBlockedPacketId: preview.nodePublicSourceFitFirstBlockedPacketId,
+      overlayStatus: preview.overlayStatus,
+      overlayReadyForValidationTasks: preview.overlayReadyForValidationTasks,
+      overlayAcceptedForNextGateTasks: preview.overlayAcceptedForNextGateTasks,
+      readinessStatus: preview.readinessStatus,
+      openBlockers: preview.openBlockers,
+      gates: (preview.gates || []).map((gate) => ({
+        id: gate.id,
+        status: gate.status,
+        blocksWrite: gate.blocksWrite,
+        evidence: gate.evidence,
+      })),
+      blockedReasons: preview.blockedReasons,
+      requiredWritePreconditions: preview.requiredWritePreconditions,
+      nextGate: preview.nextGate,
+      completionRule: preview.completionRule,
+      boundary: preview.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-p0-review-input-negative-cases") {
+    const report = localCourseP0ReviewInputNegativeCasesData();
+    if (!report) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course P0 review input negative cases not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: report.approvalStatus,
+      learnerFacingRelease: report.learnerFacingRelease,
+      reportStatus: report.reportStatus,
+      totalNegativeCases: report.totalNegativeCases,
+      blockedNegativeCases: report.blockedNegativeCases,
+      manualBadLintStatus: report.manualBadLintStatus,
+      manualBadCandidateCopyIssueEntries: report.manualBadCandidateCopyIssueEntries,
+      manualBadForbiddenHitEntries: report.manualBadForbiddenHitEntries,
+      sourceBadLintStatus: report.sourceBadLintStatus,
+      sourceBadDirectCandidateMisuseEntries: report.sourceBadDirectCandidateMisuseEntries,
+      sourceBadInvalidDecisionEntries: report.sourceBadInvalidDecisionEntries,
+      writeAllowedNow: report.writeAllowedNow,
+      fixtureOnlyReadyEntries: report.fixtureOnlyReadyEntries,
+      fixtureWrittenEntries: report.fixtureWrittenEntries,
+      overlayStatus: report.overlayStatus,
+      negativeCases: (report.negativeCases || []).map((item) => ({
+        id: item.id,
+        category: item.category,
+        expectedStatus: item.expectedStatus,
+        observedStatus: item.observedStatus,
+        evidence: item.evidence,
+      })),
+      completionRule: report.completionRule,
+      boundary: report.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/low-extraction-transcription-overlay") {
+    const overlay = lowExtractionTranscriptionOverlayData();
+    if (!overlay) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "low extraction transcription overlay not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: overlay.approvalStatus,
+      learnerFacingRelease: overlay.learnerFacingRelease,
+      overlayStatus: overlay.overlayStatus,
+      lowExtractionDocs: overlay.lowExtractionDocs,
+      totalPages: overlay.totalPages,
+      previewPages: overlay.previewPages,
+      transcriptionPages: overlay.transcriptionPages,
+      pagesNotStarted: overlay.pagesNotStarted,
+      pagesTranscribed: overlay.pagesTranscribed,
+      pagesUnusable: overlay.pagesUnusable,
+      pagesNeedSourceReplacement: overlay.pagesNeedSourceReplacement,
+      publicSourceGroundingNeededPages: overlay.publicSourceGroundingNeededPages,
+      documentRows: overlay.documentRows,
+      pageEntries: (overlay.pageEntries || []).slice(0, 8).map((entry) => ({
+        id: entry.id,
+        documentId: entry.documentId,
+        sourceRelativePath: entry.sourceRelativePath,
+        sourceModule: entry.sourceModule,
+        pageNumber: entry.pageNumber,
+        previewPath: entry.previewPath,
+        transcriptionStatus: entry.transcriptionStatus,
+        visualDecision: entry.visualDecision,
+        publicSourceGroundingNeeded: entry.publicSourceGroundingNeeded,
+      })),
+      allowedPageStatuses: overlay.allowedPageStatuses,
+      boundary: overlay.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/low-extraction-transcript-intake") {
+    const intake = lowExtractionTranscriptIntakeData();
+    if (!intake) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "low extraction transcript intake not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: intake.approvalStatus,
+      learnerFacingRelease: intake.learnerFacingRelease,
+      intakeStatus: intake.intakeStatus,
+      lowExtractionDocs: intake.lowExtractionDocs,
+      totalPages: intake.totalPages,
+      manualTranscriptionCandidatePages: intake.manualTranscriptionCandidatePages,
+      blankPreviewPages: intake.blankPreviewPages,
+      transcriptCandidatePages: intake.transcriptCandidatePages,
+      acceptedTranscriptPages: intake.acceptedTranscriptPages,
+      sourceReplacementCandidatePages: intake.sourceReplacementCandidatePages,
+      documentRows: intake.documentRows,
+      pageRows: (intake.pageRows || []).slice(0, 8).map((row) => ({
+        id: row.id,
+        documentId: row.documentId,
+        sourceRelativePath: row.sourceRelativePath,
+        sourceModule: row.sourceModule,
+        pageNumber: row.pageNumber,
+        previewPath: row.previewPath,
+        previewBytes: row.previewBytes,
+        transcriptionStatus: row.transcriptionStatus,
+        intakeStatus: row.intakeStatus,
+        nextGate: row.nextGate,
+      })),
+      boundary: intake.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/low-extraction-manual-transcription-pack") {
+    const pack = lowExtractionManualTranscriptionPackData();
+    if (!pack) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "low extraction manual transcription pack not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: pack.approvalStatus,
+      learnerFacingRelease: pack.learnerFacingRelease,
+      packStatus: pack.packStatus,
+      lowExtractionDocs: pack.lowExtractionDocs,
+      manualTranscriptionDocuments: pack.manualTranscriptionDocuments,
+      manualTranscriptionPages: pack.manualTranscriptionPages,
+      acceptedTranscriptPages: pack.acceptedTranscriptPages,
+      documentRows: pack.documentRows,
+      transcriptionCards: (pack.transcriptionCards || []).slice(0, 8).map((card) => ({
+        id: card.id,
+        documentId: card.documentId,
+        sourceRelativePath: card.sourceRelativePath,
+        sourceModule: card.sourceModule,
+        pageNumber: card.pageNumber,
+        previewPath: card.previewPath,
+        previewBytes: card.previewBytes,
+        intakeStatus: card.intakeStatus,
+        humanTranscription: card.humanTranscription,
+        humanSummary: card.humanSummary,
+        qualityChecklist: card.qualityChecklist,
+        nextGate: card.nextGate,
+      })),
+      boundary: pack.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/low-extraction-source-replacement-pack") {
+    const pack = lowExtractionSourceReplacementPackData();
+    if (!pack) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "low extraction source replacement pack not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: pack.approvalStatus,
+      learnerFacingRelease: pack.learnerFacingRelease,
+      packStatus: pack.packStatus,
+      replacementDocuments: pack.replacementDocuments,
+      replacementCandidates: pack.replacementCandidates,
+      blankPreviewPages: pack.blankPreviewPages,
+      acceptedTranscriptPages: pack.acceptedTranscriptPages,
+      documentRows: pack.documentRows,
+      replacementCards: (pack.replacementCards || []).slice(0, 8).map((card) => ({
+        id: card.id,
+        documentId: card.documentId,
+        sourceRelativePath: card.sourceRelativePath,
+        sourceModule: card.sourceModule,
+        pageNumber: card.pageNumber,
+        previewPath: card.previewPath,
+        previewBytes: card.previewBytes,
+        intakeStatus: card.intakeStatus,
+        replacementStatus: card.replacementStatus,
+        requiredAction: card.requiredAction,
+        nextGate: card.nextGate,
+      })),
+      actions: pack.actions,
+      boundary: pack.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-absorption-readiness") {
+    const audit = localCourseAbsorptionReadinessAuditData();
+    if (!audit) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course absorption readiness audit not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: audit.approvalStatus,
+      learnerFacingRelease: audit.learnerFacingRelease,
+      readinessStatus: audit.readinessStatus,
+      sourceRoot: audit.sourceRoot,
+      importedUniquePdfFiles: audit.importedUniquePdfFiles,
+      uniquePdfFiles: audit.uniquePdfFiles,
+      localCourseDocuments: audit.localCourseDocuments,
+      localCourseChunks: audit.localCourseChunks,
+      matchedKnowledgeNodes: audit.matchedKnowledgeNodes,
+      readyForRewriteReviewNodes: audit.readyForRewriteReviewNodes,
+      publicCorpusDocuments: audit.publicCorpusDocuments,
+      wikipediaDocuments: audit.wikipediaDocuments,
+      officialLikeDocuments: audit.officialLikeDocuments,
+      publicReferenceReadyModules: audit.publicReferenceReadyModules,
+      modules: audit.modules,
+      rewriteDrafts: audit.rewriteDrafts,
+      reviewerCandidates: audit.reviewerCandidates,
+      manualTranscriptionPages: audit.manualTranscriptionPages,
+      sourceReplacementCandidates: audit.sourceReplacementCandidates,
+      riskyLanguageDocs: audit.riskyLanguageDocs,
+      acceptedTranscriptPages: audit.acceptedTranscriptPages,
+      openBlockers: audit.openBlockers,
+      phaseRows: audit.phaseRows,
+      blockers: audit.blockers,
+      completionRule: audit.completionRule,
+      boundary: audit.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-module-absorption-self-audit") {
+    const audit = localCourseModuleAbsorptionSelfAuditData();
+    if (!audit) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course module absorption self-audit not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: audit.approvalStatus,
+      learnerFacingRelease: audit.learnerFacingRelease,
+      auditStatus: audit.auditStatus,
+      courseUsabilityStatus: audit.courseUsabilityStatus,
+      sourceRoot: audit.sourceRoot,
+      modules: audit.modules,
+      researchLayerReadyModules: audit.researchLayerReadyModules,
+      localResearchReadyModules: audit.localResearchReadyModules,
+      publicReferenceReadyModules: audit.publicReferenceReadyModules,
+      rewriteDraftReadyModules: audit.rewriteDraftReadyModules,
+      modulesWithHighRiskReleaseBlockers: audit.modulesWithHighRiskReleaseBlockers,
+      localCourseDocuments: audit.localCourseDocuments,
+      localCourseChunks: audit.localCourseChunks,
+      importedUniquePdfFiles: audit.importedUniquePdfFiles,
+      uniquePdfFiles: audit.uniquePdfFiles,
+      matchedKnowledgeNodes: audit.matchedKnowledgeNodes,
+      readyForRewriteReviewNodes: audit.readyForRewriteReviewNodes,
+      publicCorpusDocuments: audit.publicCorpusDocuments,
+      wikipediaDocuments: audit.wikipediaDocuments,
+      officialLikeDocuments: audit.officialLikeDocuments,
+      rewriteDrafts: audit.rewriteDrafts,
+      rewriteCandidatesReadyForSeparateReview: audit.rewriteCandidatesReadyForSeparateReview,
+      copyRiskIssues: audit.copyRiskIssues,
+      safetyIssues: audit.safetyIssues,
+      manualTranscriptionPages: audit.manualTranscriptionPages,
+      sourceReplacementCandidates: audit.sourceReplacementCandidates,
+      p0ReviewEntries: audit.p0ReviewEntries,
+      p0ValidationBlockedEntries: audit.p0ValidationBlockedEntries,
+      realHumanInputEntries: audit.realHumanInputEntries,
+      highRiskLessonCount: audit.highRiskLessonCount,
+      highRiskLessonsWithPublicGrounding: audit.highRiskLessonsWithPublicGrounding,
+      highRiskReleaseBlockingLessons: audit.highRiskReleaseBlockingLessons,
+      highRiskCodexSelfReviewNotes: audit.highRiskCodexSelfReviewNotes,
+      highRiskExpectedSelfReviewNotes: audit.highRiskExpectedSelfReviewNotes,
+      directSourceCandidateResolutions: audit.directSourceCandidateResolutions,
+      writeAllowedNow: audit.writeAllowedNow,
+      manualAuthorizationRequired: audit.manualAuthorizationRequired,
+      releaseBlockers: audit.releaseBlockers || [],
+      moduleRows: (audit.moduleRows || []).map((row) => ({
+        moduleId: row.moduleId,
+        module: row.module,
+        expectedDomain: row.expectedDomain,
+        learnerFacingNodes: row.learnerFacingNodes,
+        localCourseDocuments: row.localCourseDocuments,
+        readyForRewriteReview: row.readyForRewriteReview,
+        publicEvidenceDocs: row.publicEvidenceDocs,
+        wikipediaEvidenceDocs: row.wikipediaEvidenceDocs,
+        officialLikeEvidenceDocs: row.officialLikeEvidenceDocs,
+        rewriteDrafts: row.rewriteDrafts,
+        highRiskLessons: row.highRiskLessons,
+        highRiskReleaseBlockers: row.highRiskReleaseBlockers,
+        directSourceCandidates: row.directSourceCandidates,
+        researchLayerStatus: row.researchLayerStatus,
+        releaseGateStatus: row.releaseGateStatus,
+        nextGate: row.nextGate,
+      })),
+      completionRule: audit.completionRule,
+      boundary: audit.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-module-review-dossier") {
+    const dossier = localCourseModuleReviewDossierData();
+    if (!dossier) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course module review dossier not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: dossier.approvalStatus,
+      learnerFacingRelease: dossier.learnerFacingRelease,
+      dossierStatus: dossier.dossierStatus,
+      dossierMode: dossier.dossierMode,
+      sourceRoot: dossier.sourceRoot,
+      modules: dossier.modules,
+      researchLayerReadyModules: dossier.researchLayerReadyModules,
+      rowsWithCoursePath: dossier.rowsWithCoursePath,
+      rowsWithPublicEvidenceSamples: dossier.rowsWithPublicEvidenceSamples,
+      rowsWithEntryNodes: dossier.rowsWithEntryNodes,
+      rowsWithHighRiskBlockers: dossier.rowsWithHighRiskBlockers,
+      highRiskPreviewRows: dossier.highRiskPreviewRows,
+      highRiskPreviewReleaseBlockers: dossier.highRiskPreviewReleaseBlockers,
+      highRiskPreviewLearnerCitationApproved: dossier.highRiskPreviewLearnerCitationApproved,
+      learnerReleaseReadyModules: dossier.learnerReleaseReadyModules,
+      localCourseDocuments: dossier.localCourseDocuments,
+      localCourseChunks: dossier.localCourseChunks,
+      matchedKnowledgeNodes: dossier.matchedKnowledgeNodes,
+      readyForRewriteReviewNodes: dossier.readyForRewriteReviewNodes,
+      publicCorpusDocuments: dossier.publicCorpusDocuments,
+      wikipediaDocuments: dossier.wikipediaDocuments,
+      officialLikeDocuments: dossier.officialLikeDocuments,
+      curriculumPaths: dossier.curriculumPaths,
+      totalPathLessons: dossier.totalPathLessons,
+      p0SourceFitHandoffStatus: dossier.p0SourceFitHandoffStatus,
+      p0SourceFitRealReadyRows: dossier.p0SourceFitRealReadyRows,
+      p0SourceFitRealBlockedRows: dossier.p0SourceFitRealBlockedRows,
+      p0SourceFitFixtureReadyRows: dossier.p0SourceFitFixtureReadyRows,
+      writeAuthorizationStatus: dossier.writeAuthorizationStatus,
+      writeAllowedNow: dossier.writeAllowedNow,
+      realHumanInputEntries: dossier.realHumanInputEntries,
+      manualAuthorizationRequired: dossier.manualAuthorizationRequired,
+      globalReleaseBlockers: dossier.globalReleaseBlockers || [],
+      moduleRows: (dossier.moduleRows || []).map((row) => ({
+        moduleId: row.moduleId,
+        browserModuleId: row.browserModuleId,
+        module: row.module,
+        expectedDomain: row.expectedDomain,
+        topics: row.topics,
+        entryNodeIds: row.entryNodeIds,
+        learnerFacingNodes: row.learnerFacingNodes,
+        localCourseDocuments: row.localCourseDocuments,
+        readyForRewriteReview: row.readyForRewriteReview,
+        publicEvidenceDocs: row.publicEvidenceDocs,
+        wikipediaEvidenceDocs: row.wikipediaEvidenceDocs,
+        officialLikeEvidenceDocs: row.officialLikeEvidenceDocs,
+        uniqueHosts: row.uniqueHosts,
+        publicEvidenceSamples: row.publicEvidenceSamples,
+        coursePath: row.coursePath,
+        rewriteDrafts: row.rewriteDrafts,
+        highRiskLessons: row.highRiskLessons,
+        highRiskReleaseBlockers: row.highRiskReleaseBlockers,
+        highRiskLessonPreview: row.highRiskLessonPreview,
+        directSourceCandidates: row.directSourceCandidates,
+        learnerReleaseReady: row.learnerReleaseReady,
+        reviewStatus: row.reviewStatus,
+        nextReviewerAction: row.nextReviewerAction,
+        boundary: row.boundary,
+      })),
+      commands: dossier.commands || [],
+      completionRule: dossier.completionRule,
+      boundary: dossier.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-review-gate-dashboard") {
+    const dashboard = localCourseReviewGateDashboardData();
+    if (!dashboard) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course review gate dashboard not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: dashboard.approvalStatus,
+      learnerFacingRelease: dashboard.learnerFacingRelease,
+      dashboardStatus: dashboard.dashboardStatus,
+      dashboardMode: dashboard.dashboardMode,
+      sourceRoot: dashboard.sourceRoot,
+      localCourseDocuments: dashboard.localCourseDocuments,
+      localCourseChunks: dashboard.localCourseChunks,
+      currentUniquePdfHashes: dashboard.currentUniquePdfHashes,
+      corpusDocsForCurrentUniqueHashes: dashboard.corpusDocsForCurrentUniqueHashes,
+      modules: dashboard.modules,
+      researchLayerReadyModules: dashboard.researchLayerReadyModules,
+      publicReferenceReadyModules: dashboard.publicReferenceReadyModules,
+      modulesWithWikipediaGrounding: dashboard.modulesWithWikipediaGrounding,
+      rewriteReadyNodes: dashboard.rewriteReadyNodes,
+      matchedKnowledgeNodes: dashboard.matchedKnowledgeNodes,
+      rewriteDrafts: dashboard.rewriteDrafts,
+      highRiskLessons: dashboard.highRiskLessons,
+      highRiskLessonsWithPublicGrounding: dashboard.highRiskLessonsWithPublicGrounding,
+      highRiskLessonsWithAtLeastThreeWikipediaRefs: dashboard.highRiskLessonsWithAtLeastThreeWikipediaRefs,
+      highRiskReleaseBlockingLessons: dashboard.highRiskReleaseBlockingLessons,
+      codexSelfReviewNotes: dashboard.codexSelfReviewNotes,
+      expectedSelfReviewNotes: dashboard.expectedSelfReviewNotes,
+      highRiskRealReviewerValidationStatus: dashboard.highRiskRealReviewerValidationStatus,
+      highRiskRealReviewerReadyLessons: dashboard.highRiskRealReviewerReadyLessons,
+      highRiskRealReviewerBlockedLessons: dashboard.highRiskRealReviewerBlockedLessons,
+      highRiskRealReviewerNotesReady: dashboard.highRiskRealReviewerNotesReady,
+      highRiskRealReviewerNotesBlocked: dashboard.highRiskRealReviewerNotesBlocked,
+      highRiskDirectSourceDecisionsReady: dashboard.highRiskDirectSourceDecisionsReady,
+      highRiskDirectSourceDecisionsBlocked: dashboard.highRiskDirectSourceDecisionsBlocked,
+      realHumanInputEntries: dashboard.realHumanInputEntries,
+      p0Tasks: dashboard.p0Tasks,
+      p0ReadyTasks: dashboard.p0ReadyTasks,
+      p0BlockedTasks: dashboard.p0BlockedTasks,
+      manualTranscriptionTasks: dashboard.manualTranscriptionTasks,
+      sourceReplacementTasks: dashboard.sourceReplacementTasks,
+      sourceFitReadyRows: dashboard.sourceFitReadyRows,
+      sourceFitBlockedRows: dashboard.sourceFitBlockedRows,
+      sourceFitFixtureReadyRows: dashboard.sourceFitFixtureReadyRows,
+      nodePublicSourceFitValidationStatus: dashboard.nodePublicSourceFitValidationStatus,
+      nodePublicSourceFitInputRows: dashboard.nodePublicSourceFitInputRows,
+      nodePublicSourceFitReadyRows: dashboard.nodePublicSourceFitReadyRows,
+      nodePublicSourceFitBlockedRows: dashboard.nodePublicSourceFitBlockedRows,
+      nodePublicSourceFitMissingFieldRows: dashboard.nodePublicSourceFitMissingFieldRows,
+      nodePublicSourceFitForbiddenHitRows: dashboard.nodePublicSourceFitForbiddenHitRows,
+      nodePublicSourceFitRealHumanInputEntries: dashboard.nodePublicSourceFitRealHumanInputEntries,
+      nodePublicSourceFitLearnerCitationApprovedRows: dashboard.nodePublicSourceFitLearnerCitationApprovedRows,
+      nodePublicSourceFitCopiedTextApprovedRows: dashboard.nodePublicSourceFitCopiedTextApprovedRows,
+      nodePublicSourceFitProgressMatrixStatus: dashboard.nodePublicSourceFitProgressMatrixStatus,
+      nodePublicSourceFitProgressValidationStatus: dashboard.nodePublicSourceFitProgressValidationStatus,
+      nodePublicSourceFitProgressTotalPackets: dashboard.nodePublicSourceFitProgressTotalPackets,
+      nodePublicSourceFitReadyPackets: dashboard.nodePublicSourceFitReadyPackets,
+      nodePublicSourceFitBlockedPackets: dashboard.nodePublicSourceFitBlockedPackets,
+      nodePublicSourceFitReadyModules: dashboard.nodePublicSourceFitReadyModules,
+      nodePublicSourceFitBlockedModules: dashboard.nodePublicSourceFitBlockedModules,
+      nodePublicSourceFitOverallProgressPercent: dashboard.nodePublicSourceFitOverallProgressPercent,
+      nodePublicSourceFitProgressReadyRows: dashboard.nodePublicSourceFitProgressReadyRows,
+      nodePublicSourceFitProgressBlockedRows: dashboard.nodePublicSourceFitProgressBlockedRows,
+      nodePublicSourceFitFirstBlockedPacketId: dashboard.nodePublicSourceFitFirstBlockedPacketId,
+      learnerCitationApprovedLessons: dashboard.learnerCitationApprovedLessons,
+      learnerReleaseReadyModules: dashboard.learnerReleaseReadyModules,
+      writeAllowedNow: dashboard.writeAllowedNow,
+      manualAuthorizationRequired: dashboard.manualAuthorizationRequired,
+      releaseBlockerCount: dashboard.releaseBlockerCount,
+      summaryGates: dashboard.summaryGates || [],
+      moduleGateRows: (dashboard.moduleGateRows || []).map((row) => ({
+        moduleId: row.moduleId,
+        module: row.module,
+        learnerFacingNodes: row.learnerFacingNodes,
+        localCourseDocuments: row.localCourseDocuments,
+        readyForRewriteReview: row.readyForRewriteReview,
+        localResearchReady: row.localResearchReady,
+        publicReferenceReady: row.publicReferenceReady,
+        wikipediaGroundingReady: row.wikipediaGroundingReady,
+        publicEvidenceDocs: row.publicEvidenceDocs,
+        wikipediaEvidenceDocs: row.wikipediaEvidenceDocs,
+        officialLikeEvidenceDocs: row.officialLikeEvidenceDocs,
+        highRiskLessons: row.highRiskLessons,
+        highRiskReleaseBlockers: row.highRiskReleaseBlockers,
+        selectedWikipediaRefs: row.selectedWikipediaRefs,
+        learnerCitationApproved: row.learnerCitationApproved,
+        learnerReleaseReady: row.learnerReleaseReady,
+        p0Tasks: row.p0Tasks,
+        p0ReadyTasks: row.p0ReadyTasks,
+        p0BlockedTasks: row.p0BlockedTasks,
+        coursePathId: row.coursePathId,
+        reviewGateStatus: row.reviewGateStatus,
+        nextGate: row.nextGate,
+        samplePublicRefs: row.samplePublicRefs || [],
+      })),
+      highRiskLessonRows: dashboard.highRiskLessonRows || [],
+      nextActionRows: dashboard.nextActionRows || [],
+      commands: dashboard.commands || [],
+      completionRule: dashboard.completionRule,
+      boundary: dashboard.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-absorption-queue") {
+    const queue = localCourseAbsorptionOperatorQueueData();
+    if (!queue) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course absorption operator queue not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: queue.approvalStatus,
+      learnerFacingRelease: queue.learnerFacingRelease,
+      queueStatus: queue.queueStatus,
+      readinessStatus: queue.readinessStatus,
+      sourceRoot: queue.sourceRoot,
+      totalTasks: queue.totalTasks,
+      openTasks: queue.openTasks,
+      blockedLearnerFacingRelease: queue.blockedLearnerFacingRelease,
+      byCategory: queue.byCategory,
+      byPriority: queue.byPriority,
+      firstP0Tasks: queue.firstP0Tasks,
+      queueItems: (queue.queueItems || []).slice(0, 16),
+      completionRule: queue.completionRule,
+      boundary: queue.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-absorption-p0-workbench") {
+    const workbench = localCourseAbsorptionP0WorkbenchData();
+    if (!workbench) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course absorption P0 workbench not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: workbench.approvalStatus,
+      learnerFacingRelease: workbench.learnerFacingRelease,
+      workbenchStatus: workbench.workbenchStatus,
+      totalP0Tasks: workbench.totalP0Tasks,
+      manualTranscriptionTasks: workbench.manualTranscriptionTasks,
+      sourceReplacementTasks: workbench.sourceReplacementTasks,
+      completedTasks: workbench.completedTasks,
+      openTasks: workbench.openTasks,
+      workbenchTasks: (workbench.workbenchTasks || []).slice(0, 8).map((task) => ({
+        id: task.id,
+        category: task.category,
+        priority: task.priority,
+        status: task.status,
+        title: task.title,
+        documentId: task.documentId,
+        sourceRelativePath: task.sourceRelativePath,
+        sourceModule: task.sourceModule,
+        pageNumber: task.pageNumber,
+        previewPath: task.previewPath,
+        previewUrl: task.previewUrl,
+        learnerFacingRelease: task.learnerFacingRelease,
+        approvalStatus: task.approvalStatus,
+        workbenchMode: task.workbenchMode,
+        fieldSchema: task.fieldSchema,
+        acceptanceCriteria: task.acceptanceCriteria,
+        nextCommandHints: task.nextCommandHints,
+        nextGate: task.nextGate,
+      })),
+      completionRule: workbench.completionRule,
+      boundary: workbench.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-absorption-p0-review-overlay") {
+    const overlay = localCourseAbsorptionP0ReviewOverlayData();
+    if (!overlay) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course absorption P0 review overlay not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: overlay.approvalStatus,
+      learnerFacingRelease: overlay.learnerFacingRelease,
+      overlayStatus: overlay.overlayStatus,
+      totalP0Tasks: overlay.totalP0Tasks,
+      manualTranscriptionTasks: overlay.manualTranscriptionTasks,
+      sourceReplacementTasks: overlay.sourceReplacementTasks,
+      notStartedTasks: overlay.notStartedTasks,
+      inProgressTasks: overlay.inProgressTasks,
+      readyForValidationTasks: overlay.readyForValidationTasks,
+      acceptedForNextGateTasks: overlay.acceptedForNextGateTasks,
+      blockedTasks: overlay.blockedTasks,
+      reviewEntries: (overlay.reviewEntries || []).slice(0, 8).map((entry) => ({
+        id: entry.id,
+        taskId: entry.taskId,
+        category: entry.category,
+        priority: entry.priority,
+        sourceRelativePath: entry.sourceRelativePath,
+        sourceModule: entry.sourceModule,
+        documentId: entry.documentId,
+        pageNumber: entry.pageNumber,
+        previewPath: entry.previewPath,
+        previewUrl: entry.previewUrl,
+        workbenchMode: entry.workbenchMode,
+        reviewStatus: entry.reviewStatus,
+        validationStatus: entry.validationStatus,
+        fieldCompletion: entry.fieldCompletion,
+        nextGate: entry.nextGate,
+      })),
+      completionRule: overlay.completionRule,
+      boundary: overlay.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-source-replacement-decisions") {
+    const worksheet = localCourseSourceReplacementDecisionWorksheetData();
+    if (!worksheet) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course source replacement decision worksheet not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: worksheet.approvalStatus,
+      learnerFacingRelease: worksheet.learnerFacingRelease,
+      worksheetStatus: worksheet.worksheetStatus,
+      replacementTargets: worksheet.replacementTargets,
+      targetsWithCandidates: worksheet.targetsWithCandidates,
+      targetsWithDirectReplacementCandidates: worksheet.targetsWithDirectReplacementCandidates,
+      totalCandidateRows: worksheet.totalCandidateRows,
+      notStartedDecisions: worksheet.notStartedDecisions,
+      readyDecisions: worksheet.readyDecisions,
+      approvedReplacements: worksheet.approvedReplacements,
+      unrecoverableMarked: worksheet.unrecoverableMarked,
+      allowedDecisions: worksheet.allowedDecisions,
+      decisionRows: (worksheet.decisionRows || []).slice(0, 8).map((row) => ({
+        id: row.id,
+        targetId: row.targetId,
+        documentId: row.documentId,
+        sourceRelativePath: row.sourceRelativePath,
+        sourceModule: row.sourceModule,
+        pageNumber: row.pageNumber,
+        previewPath: row.previewPath,
+        decisionStatus: row.decisionStatus,
+        selectedDecision: row.selectedDecision,
+        candidateCount: row.candidateCount,
+        directReplacementCandidateCount: row.directReplacementCandidateCount,
+        recommendedAction: row.recommendedAction,
+        topCandidates: (row.topCandidates || []).slice(0, 3),
+        validationStatus: row.validationStatus,
+        fieldCompletion: row.fieldCompletion,
+        nextGate: row.nextGate,
+      })),
+      completionRule: worksheet.completionRule,
+      boundary: worksheet.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-rewrite-intake") {
+    const coverage = localCourseKnowledgeCoverageData();
+    if (!coverage) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course coverage report not generated" }));
+      return;
+    }
+    const url = new URL(req.url, `http://${req.headers.host || "localhost"}`);
+    const limit = Math.min(120, Math.max(1, Number.parseInt(url.searchParams.get("limit") || "40", 10) || 40));
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      total: coverage.rewriteIntake?.length || 0,
+      limit,
+      rewriteIntake: (coverage.rewriteIntake || []).slice(0, limit),
+      boundary: "Rewrite intake uses local private course notes as reviewer-only background. Do not copy local PDF wording or mark learner-facing release approved.",
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-rewrite-batch-01") {
+    const batch = localCourseRewriteBatchData();
+    if (!batch) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course rewrite batch not generated" }));
+      return;
+    }
+    const url = new URL(req.url, `http://${req.headers.host || "localhost"}`);
+    const limit = Math.min(24, Math.max(1, Number.parseInt(url.searchParams.get("limit") || "6", 10) || 6));
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      batchId: batch.batchId,
+      approvalStatus: batch.approvalStatus,
+      learnerFacingRelease: batch.learnerFacingRelease,
+      sourceDocuments: batch.sourceDocuments,
+      sourceChunks: batch.sourceChunks,
+      drafts: batch.drafts,
+      modules: batch.modules,
+      draftItems: (batch.draftItems || []).slice(0, limit).map((item) => ({
+        id: item.id,
+        nodeId: item.nodeId,
+        lessonId: item.lessonId,
+        module: item.module,
+        topic: item.topic,
+        title: item.title,
+        status: item.status,
+        nextGate: item.nextGate,
+        localCourseEvidence: (item.localCourseEvidence || []).slice(0, 3).map((evidence) => ({
+          documentId: evidence.documentId,
+          sourceRelativePath: evidence.sourceRelativePath,
+          sourceModule: evidence.sourceModule,
+          useBoundary: evidence.useBoundary,
+        })),
+      })),
+      boundary: batch.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-rewrite-batches") {
+    const index = localCourseRewriteBatchIndexData();
+    if (!index) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course rewrite batch index not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: index.approvalStatus,
+      learnerFacingRelease: index.learnerFacingRelease,
+      sourceDocuments: index.sourceDocuments,
+      sourceChunks: index.sourceChunks,
+      totalRewriteIntake: index.totalRewriteIntake,
+      totalDrafts: index.totalDrafts,
+      batches: index.batches,
+      moduleCounts: index.moduleCounts,
+      boundary: index.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-rewrite-review") {
+    const report = localCourseRewriteReviewData();
+    if (!report) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course rewrite review report not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: report.approvalStatus,
+      learnerFacingRelease: report.learnerFacingRelease,
+      batches: report.batches,
+      draftsReviewed: report.draftsReviewed,
+      readyForSeparateReviewCandidates: report.readyForSeparateReviewCandidates,
+      copyRiskIssues: report.copyRiskIssues,
+      safetyIssues: report.safetyIssues,
+      structureIssues: report.structureIssues,
+      maxSourceOverlap: report.maxSourceOverlap,
+      moduleCounts: report.moduleCounts,
+      boundary: report.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-refinement-packet") {
+    const packet = localCourseRefinementPacketData();
+    if (!packet) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course refinement packet not generated" }));
+      return;
+    }
+    const url = new URL(req.url, `http://${req.headers.host || "localhost"}`);
+    const limit = Math.max(1, Math.min(Number(url.searchParams.get("limit") || 24), 120));
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: packet.approvalStatus,
+      learnerFacingRelease: packet.learnerFacingRelease,
+      packetStatus: packet.packetStatus,
+      batches: packet.batches,
+      modules: packet.modules,
+      draftsReviewed: packet.draftsReviewed,
+      readyForSeparateReviewCandidates: packet.readyForSeparateReviewCandidates,
+      candidateCards: packet.candidateCards,
+      copyRiskIssues: packet.copyRiskIssues,
+      safetyIssues: packet.safetyIssues,
+      structureIssues: packet.structureIssues,
+      maxSourceOverlap: packet.maxSourceOverlap,
+      highRiskOverlay: packet.highRiskOverlay,
+      directSourceCandidateResolutions: packet.directSourceCandidateResolutions,
+      candidateCardsList: (packet.candidateCardsList || []).slice(0, limit),
+      boundary: packet.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-high-risk-self-review-overlay") {
+    const overlay = localCourseHighRiskSelfReviewOverlayData();
+    if (!overlay) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course high-risk self-review overlay not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: overlay.approvalStatus,
+      learnerFacingRelease: overlay.learnerFacingRelease,
+      overlayId: overlay.overlayId,
+      overlayStatus: overlay.overlayStatus,
+      reviewerType: overlay.reviewerType,
+      lessonCount: overlay.lessonCount,
+      reviewerNotesReviewed: overlay.reviewerNotesReviewed,
+      expectedReviewerNotes: overlay.expectedReviewerNotes,
+      releaseBlockingNotes: overlay.releaseBlockingNotes,
+      releaseReadyNotes: overlay.releaseReadyNotes,
+      directSourceCandidateResolutionsReviewed: overlay.directSourceCandidateResolutionsReviewed,
+      directSourceCandidatesApprovedForLearnerCitation: overlay.directSourceCandidatesApprovedForLearnerCitation,
+      writeAllowedNow: overlay.writeAllowedNow,
+      approvalGatePassed: overlay.approvalGatePassed,
+      humanApprovalRequired: overlay.humanApprovalRequired,
+      publicGroundingRequired: overlay.publicGroundingRequired,
+      dimensionCounts: overlay.dimensionCounts,
+      lessons: (overlay.lessons || []).slice(0, 12).map((lesson) => ({
+        candidateId: lesson.candidateId,
+        nodeId: lesson.nodeId,
+        lessonId: lesson.lessonId,
+        module: lesson.module,
+        topic: lesson.topic,
+        maxSourceOverlap: lesson.maxSourceOverlap,
+        selfReviewStatus: lesson.selfReviewStatus,
+        reviewerNotesReviewed: lesson.reviewerNotesReviewed,
+        releaseBlockingNotes: lesson.releaseBlockingNotes,
+        releaseReadyNotes: lesson.releaseReadyNotes,
+      })),
+      directSourceSelfReview: (overlay.directSourceSelfReview || []).map((row) => ({
+        id: row.id,
+        candidateId: row.candidateId,
+        module: row.module,
+        topic: row.topic,
+        candidateSource: row.candidateSource,
+        selfReviewDecision: row.selfReviewDecision,
+        releaseBlocker: row.releaseBlocker,
+      })),
+      completionRule: overlay.completionRule,
+      boundary: overlay.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-high-risk-public-grounding-matrix") {
+    const matrix = localCourseHighRiskPublicGroundingMatrixData();
+    if (!matrix) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course high-risk public grounding matrix not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: matrix.approvalStatus,
+      learnerFacingRelease: matrix.learnerFacingRelease,
+      matrixStatus: matrix.matrixStatus,
+      lessonCount: matrix.lessonCount,
+      lessonsWithPublicGrounding: matrix.lessonsWithPublicGrounding,
+      lessonsMissingPublicGrounding: matrix.lessonsMissingPublicGrounding,
+      lessonsWithAtLeastThreeWikipediaRefs: matrix.lessonsWithAtLeastThreeWikipediaRefs,
+      totalWikipediaRefs: matrix.totalWikipediaRefs,
+      totalPublicContextRefs: matrix.totalPublicContextRefs,
+      directSourceCandidateResolutionsMapped: matrix.directSourceCandidateResolutionsMapped,
+      directSourceCandidatesApprovedForLearnerCitation: matrix.directSourceCandidatesApprovedForLearnerCitation,
+      releaseReadyLessons: matrix.releaseReadyLessons,
+      learnerCitationApprovedLessons: matrix.learnerCitationApprovedLessons,
+      releaseBlockingLessons: matrix.releaseBlockingLessons,
+      humanApprovalRequired: matrix.humanApprovalRequired,
+      writeAllowedNow: matrix.writeAllowedNow,
+      approvalGatePassed: matrix.approvalGatePassed,
+      modulesCovered: matrix.modulesCovered,
+      moduleRows: matrix.moduleRows,
+      lessonRows: (matrix.lessonRows || []).slice(0, 12).map((row) => ({
+        candidateId: row.candidateId,
+        nodeId: row.nodeId,
+        lessonId: row.lessonId,
+        module: row.module,
+        topic: row.topic,
+        publicGroundingStatus: row.publicGroundingStatus,
+        wikipediaRefs: (row.wikipediaRefs || []).slice(0, 4).map((ref) => ({
+          sourceId: ref.sourceId,
+          name: ref.name,
+          url: ref.url,
+          tier: ref.tier,
+          excerptPolicy: ref.excerptPolicy,
+        })),
+        publicContextRefs: (row.publicContextRefs || []).slice(0, 2).map((ref) => ({
+          sourceId: ref.sourceId,
+          name: ref.name,
+          url: ref.url,
+          tier: ref.tier,
+          family: ref.family,
+          excerptPolicy: ref.excerptPolicy,
+        })),
+        learnerCitationApproved: row.learnerCitationApproved,
+        releaseBlocker: row.releaseBlocker,
+        nextGate: row.nextGate,
+      })),
+      directSourceRows: (matrix.directSourceRows || []).map((row) => ({
+        id: row.id,
+        candidateId: row.candidateId,
+        module: row.module,
+        topic: row.topic,
+        selfReviewDecision: row.selfReviewDecision,
+        publicReplacementRefCount: (row.publicReplacementRefs || []).length,
+        learnerCitationApproved: row.learnerCitationApproved,
+        releaseBlocker: row.releaseBlocker,
+      })),
+      completionRule: matrix.completionRule,
+      boundary: matrix.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-high-risk-real-reviewer-overlay-starter") {
+    const packet = localCourseHighRiskRealReviewerOverlayStarterData();
+    if (!packet) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course high-risk real reviewer overlay starter not generated" }));
+      return;
+    }
+    const { starter, draft } = packet;
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: starter.approvalStatus,
+      learnerFacingRelease: starter.learnerFacingRelease,
+      starterStatus: starter.starterStatus,
+      starterMode: starter.starterMode,
+      draftInputPath: starter.draftInputPath,
+      draftStatus: draft.draftStatus,
+      draftMode: draft.draftMode,
+      lessonCount: starter.lessonCount,
+      directSourceDecisionCount: starter.directSourceDecisionCount,
+      expectedReviewerNotes: starter.expectedReviewerNotes,
+      totalReviewerNotes: starter.totalReviewerNotes,
+      blankReviewerNotes: starter.blankReviewerNotes,
+      readyReviewerNotes: starter.readyReviewerNotes,
+      blankDirectSourceDecisions: starter.blankDirectSourceDecisions,
+      readyDirectSourceDecisions: starter.readyDirectSourceDecisions,
+      codexSelfReviewNotes: starter.codexSelfReviewNotes,
+      realHumanInputEntries: starter.realHumanInputEntries,
+      writeAllowedNow: starter.writeAllowedNow,
+      manualAuthorizationRequired: starter.manualAuthorizationRequired,
+      allowedNoteDecisionValues: starter.allowedNoteDecisionValues || [],
+      allowedDirectSourceDecisionValues: starter.allowedDirectSourceDecisionValues || [],
+      validationSummary: starter.validationSummary,
+      lessonRows: (starter.lessonRows || []).slice(0, 12).map((row) => ({
+        order: row.order,
+        candidateId: row.candidateId,
+        nodeId: row.nodeId,
+        lessonId: row.lessonId,
+        module: row.module,
+        topic: row.topic,
+        maxSourceOverlap: row.maxSourceOverlap,
+        publicGroundingStatus: row.publicGroundingStatus,
+        wikipediaRefCount: row.wikipediaRefCount,
+        publicContextRefCount: row.publicContextRefCount,
+        selectedPublicRefCount: row.selectedPublicRefCount,
+        directSourceCandidate: row.directSourceCandidate,
+        codexSelfReviewNotes: row.codexSelfReviewNotes,
+        realReviewerNotesRequired: row.realReviewerNotesRequired,
+        realReviewerNotesReady: row.realReviewerNotesReady,
+        releaseBlocker: row.releaseBlocker,
+        learnerFacingRelease: row.learnerFacingRelease,
+        approvalStatus: row.approvalStatus,
+        nextGate: row.nextGate,
+        publicRefSamples: row.publicRefSamples || [],
+      })),
+      directSourceDecisionRows: (starter.directSourceDecisionRows || []).map((row) => ({
+        id: row.id,
+        sourceResolutionId: row.sourceResolutionId,
+        candidateId: row.candidateId,
+        module: row.module,
+        topic: row.topic,
+        privateOrDirectCandidateSource: row.privateOrDirectCandidateSource,
+        codexSelfReviewDecision: row.codexSelfReviewDecision,
+        publicReplacementRefCount: row.publicReplacementRefCount,
+        learnerCitationApproved: row.learnerCitationApproved,
+        learnerFacingRelease: row.learnerFacingRelease,
+        approvalStatus: row.approvalStatus,
+        decisionStatus: row.decisionStatus,
+        readyForApprovalGate: row.readyForApprovalGate,
+        releaseBlocker: row.releaseBlocker,
+        nextGate: row.nextGate,
+      })),
+      commands: starter.commands || [],
+      completionRule: starter.completionRule,
+      boundary: starter.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-high-risk-real-reviewer-overlay-input-validation") {
+    const validation = localCourseHighRiskRealReviewerOverlayInputValidationData();
+    if (!validation) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course high-risk real reviewer overlay input validation not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: validation.approvalStatus,
+      learnerFacingRelease: validation.learnerFacingRelease,
+      validationStatus: validation.validationStatus,
+      validationMode: validation.validationMode,
+      inputPath: validation.inputPath,
+      starterPath: validation.starterPath,
+      fixtureOnly: validation.fixtureOnly,
+      fixtureValidationAllowed: validation.fixtureValidationAllowed,
+      lessonCount: validation.lessonCount,
+      readyLessons: validation.readyLessons,
+      blockedLessons: validation.blockedLessons,
+      totalReviewerNotes: validation.totalReviewerNotes,
+      readyReviewerNotes: validation.readyReviewerNotes,
+      blockedReviewerNotes: validation.blockedReviewerNotes,
+      directSourceDecisionCount: validation.directSourceDecisionCount,
+      readyDirectSourceDecisions: validation.readyDirectSourceDecisions,
+      blockedDirectSourceDecisions: validation.blockedDirectSourceDecisions,
+      missingFieldRows: validation.missingFieldRows,
+      qualityIssueRows: validation.qualityIssueRows,
+      forbiddenHitRows: validation.forbiddenHitRows,
+      realHumanInputEntries: validation.realHumanInputEntries,
+      generatedDecisions: validation.generatedDecisions,
+      learnerCitationApprovedLessons: validation.learnerCitationApprovedLessons,
+      learnerCitationApprovedDirectSources: validation.learnerCitationApprovedDirectSources,
+      writeAllowedNow: validation.writeAllowedNow,
+      manualAuthorizationRequired: validation.manualAuthorizationRequired,
+      allowedNoteDecisionValues: validation.allowedNoteDecisionValues || [],
+      allowedDirectSourceDecisionValues: validation.allowedDirectSourceDecisionValues || [],
+      forbiddenPhrases: validation.forbiddenPhrases || [],
+      lessonValidationRows: (validation.lessonValidationRows || []).slice(0, 12),
+      noteValidationRows: (validation.noteValidationRows || []).slice(0, 12),
+      directSourceValidationRows: validation.directSourceValidationRows || [],
+      completionRule: validation.completionRule,
+      boundary: validation.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/local-course-high-risk-review-cockpit") {
+    const cockpit = localCourseHighRiskReviewCockpitData();
+    if (!cockpit) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "local course high-risk review cockpit not generated" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      approvalStatus: cockpit.approvalStatus,
+      learnerFacingRelease: cockpit.learnerFacingRelease,
+      cockpitStatus: cockpit.cockpitStatus,
+      cockpitMode: cockpit.cockpitMode,
+      lessonCount: cockpit.lessonCount,
+      modules: cockpit.modules,
+      lessonsWithCodexSelfReview: cockpit.lessonsWithCodexSelfReview,
+      lessonsWithPublicGrounding: cockpit.lessonsWithPublicGrounding,
+      lessonsMissingPublicGrounding: cockpit.lessonsMissingPublicGrounding,
+      expectedReviewerNotes: cockpit.expectedReviewerNotes,
+      codexSelfReviewNotes: cockpit.codexSelfReviewNotes,
+      readyReviewerNotes: cockpit.readyReviewerNotes,
+      blockedReviewerNotes: cockpit.blockedReviewerNotes,
+      directSourceDecisionCount: cockpit.directSourceDecisionCount,
+      readyDirectSourceDecisions: cockpit.readyDirectSourceDecisions,
+      blockedDirectSourceDecisions: cockpit.blockedDirectSourceDecisions,
+      readyLessons: cockpit.readyLessons,
+      blockedLessons: cockpit.blockedLessons,
+      realHumanInputEntries: cockpit.realHumanInputEntries,
+      learnerCitationApprovedLessons: cockpit.learnerCitationApprovedLessons,
+      learnerCitationApprovedDirectSources: cockpit.learnerCitationApprovedDirectSources,
+      writeAllowedNow: cockpit.writeAllowedNow,
+      manualAuthorizationRequired: cockpit.manualAuthorizationRequired,
+      approvalGatePassed: cockpit.approvalGatePassed,
+      moduleRows: cockpit.moduleRows || [],
+      lessonRows: (cockpit.lessonRows || []).slice(0, 12),
+      directSourceRows: cockpit.directSourceRows || [],
+      reviewerQueue: cockpit.reviewerQueue || [],
+      commands: cockpit.commands || [],
+      completionRule: cockpit.completionRule,
+      boundary: cockpit.boundary,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/nodes") {
+    const { index } = knowledgeBrowserData();
+    const url = new URL(req.url, `http://${req.headers.host || "localhost"}`);
+    const moduleFilter = url.searchParams.get("module");
+    const offset = Math.max(0, Number.parseInt(url.searchParams.get("offset") || "0", 10) || 0);
+    const limit = Math.min(100, Math.max(1, Number.parseInt(url.searchParams.get("limit") || "50", 10) || 50));
+    const moduleEntry = moduleFilter ? index.modules.find((item) => item.id === moduleFilter) : null;
+    if (moduleFilter && !moduleEntry) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "unknown module id" }));
+      return;
+    }
+    const nodes = index.learnerFacingNodes.filter((node) => !moduleEntry || node.module === moduleEntry.title);
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      total: nodes.length,
+      offset,
+      limit,
+      nodes: nodes.slice(offset, offset + limit).map(knowledgeNodeSummary),
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && /^\/api\/knowledge-browser\/nodes\/[^/]+\/evidence$/.test(pathname)) {
+    const { nodeById } = knowledgeBrowserData();
+    const nodeId = decodeURIComponent(pathname.split("/")[4]);
+    const node = nodeById.get(nodeId);
+    if (!node) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "unknown learner-facing node id" }));
+      return;
+    }
+    const { searchChunks, queryTermsForNode } = require("./education-corpus-retrieval");
+    const evidence = searchChunks(`${queryTermsForNode(node)} ${node.topic}`, {
+      limit: 5,
+      allowedTiers: ["public_domain", "open_access", "share_alike", "permissive"],
+    });
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      nodeId,
+      evidenceUse: "Reviewer tooling and local AI-explanation grounding. Public-domain excerpts are reviewer-facing; open-access chunks are pointer-only and require citation plus original paraphrase.",
+      evidence,
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname.startsWith("/api/knowledge-browser/nodes/")) {
+    const { nodeById } = knowledgeBrowserData();
+    const url = new URL(req.url, `http://${req.headers.host || "localhost"}`);
+    const full = url.searchParams.get("full") === "1";
+    const nodeId = decodeURIComponent(pathname.slice("/api/knowledge-browser/nodes/".length));
+    const node = nodeById.get(nodeId);
+    if (!node) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "unknown learner-facing node id" }));
+      return;
+    }
+    const lesson = full
+      ? knowledgeLessonData().lessonByNodeId.get(nodeId) || null
+      : lightweightLessonForNode(node);
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      node,
+      lesson,
+      lessonMode: full ? "full" : "summary",
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/knowledge-browser/curriculum") {
+    const url = new URL(req.url, `http://${req.headers.host || "localhost"}`);
+    const full = url.searchParams.get("full") === "1";
+    const { curriculumPaths } = full ? fullKnowledgeCurriculumData() : lightweightCurriculumData();
+    sendJson(res, 200, knowledgeBrowserEnvelope({
+      paths: curriculumPaths.map((path) => ({
+        id: path.id,
+        module: path.module,
+        lessonCount: path.lessonCount,
+        unitCount: path.unitCount,
+        estimatedMinutes: path.estimatedMinutes,
+        prerequisitePathIds: path.prerequisitePathIds,
+        nextPathId: path.nextPathId,
+        entryLessonId: path.entryLessonId,
+        boundary: path.boundary,
+      })),
+      curriculumMode: full ? "full" : "summary",
+    }));
+    return;
+  }
+
+  if (req.method === "GET" && pathname.startsWith("/api/knowledge-browser/curriculum/")) {
+    const url = new URL(req.url, `http://${req.headers.host || "localhost"}`);
+    const full = url.searchParams.get("full") === "1";
+    const { pathById } = full ? fullKnowledgeCurriculumData() : lightweightCurriculumData();
+    const pathId = decodeURIComponent(pathname.slice("/api/knowledge-browser/curriculum/".length));
+    const curriculumPath = pathById.get(pathId);
+    if (!curriculumPath) {
+      sendJson(res, 404, knowledgeBrowserEnvelope({ error: "unknown curriculum path id" }));
+      return;
+    }
+    sendJson(res, 200, knowledgeBrowserEnvelope({ path: curriculumPath, curriculumMode: full ? "full" : "summary" }));
     return;
   }
 

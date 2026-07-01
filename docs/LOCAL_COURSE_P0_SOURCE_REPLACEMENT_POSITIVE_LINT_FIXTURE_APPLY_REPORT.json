@@ -1,0 +1,59 @@
+{
+  "generatedAt": "2026-06-21T22:48:16.899Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "applyMode": "dry_run",
+  "fixtureOnly": true,
+  "applyStatus": "ready_entries_not_written",
+  "inputPath": "docs\\LOCAL_COURSE_P0_SOURCE_REPLACEMENT_POSITIVE_LINT_FIXTURE.json",
+  "overlayPath": "docs/LOCAL_COURSE_ABSORPTION_P0_REVIEW_OVERLAY.json",
+  "totalEntries": 3,
+  "readyToApplyEntries": 3,
+  "blockedEntries": 0,
+  "writtenEntries": 0,
+  "applyRows": [
+    {
+      "id": "input_copy_absorb_source_replacement_01",
+      "taskId": "absorb_source_replacement_01",
+      "reviewEntryId": "review_absorb_source_replacement_01",
+      "category": "source_replacement",
+      "sourceRelativePath": "系统课02进阶/19_9119：高中毕业集训总结年后展望_笔记.pdf",
+      "pageNumber": 1,
+      "applyStatus": "ready_to_apply",
+      "willWrite": false,
+      "missingFields": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_source_replacement_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_source_replacement_02",
+      "taskId": "absorb_source_replacement_02",
+      "reviewEntryId": "review_absorb_source_replacement_02",
+      "category": "source_replacement",
+      "sourceRelativePath": "专享07庄家篇/14_0814-【复训】-分析行情挖掘机会_笔记.pdf",
+      "pageNumber": 1,
+      "applyStatus": "ready_to_apply",
+      "willWrite": false,
+      "missingFields": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_source_replacement_input_then_apply_dry_run_only"
+    },
+    {
+      "id": "input_copy_absorb_source_replacement_03",
+      "taskId": "absorb_source_replacement_03",
+      "reviewEntryId": "review_absorb_source_replacement_03",
+      "category": "source_replacement",
+      "sourceRelativePath": "K线怎么看/06_第6讲：常见的持仓信号-进攻金K（2）_笔记.pdf",
+      "pageNumber": 1,
+      "applyStatus": "ready_to_apply",
+      "willWrite": false,
+      "missingFields": [],
+      "forbiddenHits": [],
+      "nextGate": "validate_source_replacement_input_then_apply_dry_run_only"
+    }
+  ],
+  "nextStep": "Rerun with --write only after confirming the dry-run report.",
+  "boundary": "P0 review input apply is a guarded overlay update pipeline. Dry-run mode writes no overlay changes. It does not approve learner-facing release, provide trading advice, stock recommendations, live signals, return promises, broker workflows, automation, or real-money guidance."
+}

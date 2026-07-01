@@ -1,0 +1,20 @@
+# Local Course 5 Wave 5 PDF AI Visual Review Batch 004
+
+Course 5 Wave 5 PDF AI visual review batch 004 is private reviewer-facing education operations material. It records page-level visual observations and visible text cues for twelve Wave 5 PDF samples so they can receive later human confirmation and OCR review. It does not complete OCR, replace human approval, merge content into learner-facing modules, approve source-folder removal, approve learner-facing release, copy private source wording, provide stock recommendations, live signals, return promises, execution instructions, automation, write authorization, or production readiness.
+
+| Review row | Sample | Page | Module placement | Visual observation |
+|---|---:|---:|---|---|
+| course5_wave_5_pdf_supplemental_review_019 | 37 | 1 | chart_pattern_encyclopedia; source_identity; taxonomy_range_q_to_sl | The page is a cover slide with large title typography, author attribution, and a right-side chart motif showing a sharp decline and rebound. |
+| course5_wave_5_pdf_supplemental_review_020 | 38 | 198 | chart_pattern_encyclopedia; wedge_patterns; trading_range_after_trend; failed_reversal_context | The chart shows an initial decline, an extended trading range highlighted in blue, wedge markings, double-bottom context labels, moving-average interaction, and a later strong upward leg. |
+| course5_wave_5_pdf_supplemental_review_021 | 39 | 394 | chart_pattern_encyclopedia; source_identity; source_version_consistency | The page repeats the Part 12 cover-slide layout with author attribution and the same right-side chart motif. |
+| course5_wave_5_pdf_supplemental_review_022 | 40 | 1 | chart_pattern_encyclopedia; source_identity; taxonomy_range_gd_n_to_gt | The page is a cover slide with large orange title text, author attribution, and a right-side chart motif. |
+| course5_wave_5_pdf_supplemental_review_023 | 41 | 206 | chart_pattern_encyclopedia; triangle_patterns; trading_range_open; ema_context | The chart shows a compact triangle near the left, colored boxes marking key bars, a moving-average line, a later strong upward leg, and a broader post-move consolidation area. |
+| course5_wave_5_pdf_supplemental_review_024 | 42 | 410 | chart_pattern_encyclopedia; source_identity; source_version_consistency | The page repeats the Part 6 cover-slide layout with author attribution and the right-side chart motif. |
+| course5_wave_5_pdf_supplemental_review_025 | 43 | 1 | chart_pattern_encyclopedia; source_identity; taxonomy_range_m | The page is a cover slide with large title typography, author attribution, and a right-side chart motif showing a decline and rebound. |
+| course5_wave_5_pdf_supplemental_review_026 | 44 | 192 | chart_pattern_encyclopedia; major_trend_reversal; double_top_context; channel_exhaustion | The chart shows an earlier rally, a long horizontal resistance reference, a later near-retest marked with red boxes, a moving-average line, and a sharp downward sequence afterward. |
+| course5_wave_5_pdf_supplemental_review_027 | 45 | 383 | chart_pattern_encyclopedia; source_identity; source_version_consistency | The page repeats the Part 10 cover-slide layout with author attribution and the same right-side chart motif. |
+| course5_wave_5_pdf_supplemental_review_028 | 46 | 1 | chart_pattern_encyclopedia; source_identity; taxonomy_range_gu_to_gu_m | The page is a cover slide with large title text, author attribution, and a right-side chart motif. |
+| course5_wave_5_pdf_supplemental_review_029 | 47 | 174 | chart_pattern_encyclopedia; double_top_context; failed_breakout_context; trading_range_open | The chart shows two attempts near a horizontal resistance line, colored highlight boxes, a moving average, a mid-chart pullback, and a later renewed rise followed by volatile bars. |
+| course5_wave_5_pdf_supplemental_review_030 | 48 | 346 | chart_pattern_encyclopedia; source_identity; source_version_consistency | The page repeats the Part 7 cover-slide layout with author attribution and the right-side chart motif. |
+
+Source folder may be deleted: false

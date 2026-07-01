@@ -1,0 +1,146 @@
+{
+  "generatedAt": "2026-06-19T09:39:02.231Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "authorizationPreviewReady": true,
+  "authorizationMode": "manual_authorization_preview_only",
+  "realStatusPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "realStatusOverlayPresent": false,
+  "writeAllowedNow": false,
+  "creationAllowedNow": false,
+  "startAllowedNow": false,
+  "manualDecisionRequired": true,
+  "humanAuthorizationRecorded": false,
+  "targetBatches": [
+    "rewrite_batch_01",
+    "rewrite_batch_05"
+  ],
+  "authorizationItems": [
+    {
+      "name": "Reviewer identity",
+      "machineStatus": "not_machine_satisfied",
+      "humanRequirement": "A real human reviewer must be named before write mode.",
+      "evidence": "Generated checks cannot identify a human reviewer.",
+      "writeImpact": "Blocks write."
+    },
+    {
+      "name": "Scope limit",
+      "machineStatus": "machine_checked",
+      "humanRequirement": "Human reviewer must accept scope limited to rewrite_batch_01 and rewrite_batch_05.",
+      "evidence": "targetBatches:rewrite_batch_01,rewrite_batch_05.",
+      "writeImpact": "Allows only blank-overlay initialization for the first reviewer scope after human decision."
+    },
+    {
+      "name": "Frozen packet",
+      "machineStatus": "machine_checked",
+      "humanRequirement": "Reviewer must use the frozen packet as day-of-review sequence.",
+      "evidence": "freezeReady:true; frozenSteps:40.",
+      "writeImpact": "Prevents ad hoc write flow."
+    },
+    {
+      "name": "Sequence consistency",
+      "machineStatus": "machine_checked",
+      "humanRequirement": "Reviewer must not skip ordered gates.",
+      "evidence": "failedChecks:0.",
+      "writeImpact": "Keeps first-reviewer order coherent."
+    },
+    {
+      "name": "Write readiness lock",
+      "machineStatus": "machine_checked_write_blocked",
+      "humanRequirement": "Human decision is still required even though the lock is ready.",
+      "evidence": "lockReady:true; writeAllowedNow:false; manualDecisionRequired:true.",
+      "writeImpact": "Blocks generated write authorization."
+    },
+    {
+      "name": "Dry-run initializer",
+      "machineStatus": "machine_checked_preview_only",
+      "humanRequirement": "Human must run dry-run immediately before any later write.",
+      "evidence": "mode:dry_run; wroteStatusOverlay:false; notesFilled:0.",
+      "writeImpact": "Previews write shape without creating real notes."
+    },
+    {
+      "name": "Overwrite protection",
+      "machineStatus": "machine_checked",
+      "humanRequirement": "Human must stop if a real overlay appears.",
+      "evidence": "3/3 protection cases passed.",
+      "writeImpact": "Protects future human notes from accidental overwrite."
+    },
+    {
+      "name": "Direct candidates",
+      "machineStatus": "not_human_confirmed",
+      "humanRequirement": "Human must confirm, downgrade, or block each direct candidate in sourceFitNotes.",
+      "evidence": "confirmedDecisions:0; sourceFitConfirmed:0.",
+      "writeImpact": "Blocks source confirmation and learner-facing evidence upgrades."
+    },
+    {
+      "name": "Blank notes",
+      "machineStatus": "machine_checked_blank",
+      "humanRequirement": "Human notes must start blank and be written from actual review work.",
+      "evidence": "blankNoteFields:72; completeNoteCards:0.",
+      "writeImpact": "Blocks treating generated scaffolding as evidence."
+    },
+    {
+      "name": "Generated-sample boundary",
+      "machineStatus": "machine_checked_boundary",
+      "humanRequirement": "Generated prompts, examples, drills, checklists, and freeze packets cannot be copied as real notes.",
+      "evidence": "All upstream reports keep learnerFacingRelease:false and approvalStatus:not_approved.",
+      "writeImpact": "Blocks approval/release drift."
+    },
+    {
+      "name": "Green-only evidence boundary",
+      "machineStatus": "machine_checked_boundary",
+      "humanRequirement": "Human must keep yellow/red/research_only outside learner-facing evidence.",
+      "evidence": "Dry-run and freeze hard stops include yellow/red/research_only isolation.",
+      "writeImpact": "Blocks unsafe evidence promotion."
+    },
+    {
+      "name": "Launch and approval boundary",
+      "machineStatus": "machine_checked_not_ready",
+      "humanRequirement": "Human cannot infer approval, commercial readiness, internal trial, launch, or production readiness from this preview.",
+      "evidence": "internalTrialReady:false; launchReady:false; productionReady:false.",
+      "writeImpact": "Blocks release/readiness claims."
+    }
+  ],
+  "machineGates": 10,
+  "machineGatesSatisfied": 10,
+  "completeNoteCards": 0,
+  "approvalReviewCandidates": 0,
+  "confirmedDecisions": 0,
+  "internalTrialReady": false,
+  "launchReady": false,
+  "dryRunCommand": "npm.cmd run init:first-reviewer-status-overlay:dry-run",
+  "writeCommandPreview": "npm.cmd run init:first-reviewer-status-overlay:write",
+  "hardStops": [
+    "Do not run write mode from generated authorization preview alone.",
+    "Stop if a real human reviewer has not been identified.",
+    "Stop if scope expands beyond rewrite_batch_01 and rewrite_batch_05.",
+    "Stop if docs/LESSON_BATCH_REVIEW_STATUS.json already exists.",
+    "Stop if generated prompts, examples, drills, checklists, or packet rows are treated as real reviewer notes.",
+    "Stop if direct candidates are treated as confirmed without original human sourceFitNotes.",
+    "Stop if any artifact implies approval, learner-facing release, commercial_ready promotion, internalTrialReady, launchReady, or productionReady.",
+    "Stop if notes or lesson text include trading advice, signals, performance claims, broker/order workflow, automation, copied external source prose, or real-money guidance.",
+    "Stop if yellow, red, or research_only sources are proposed as learner-facing evidence."
+  ],
+  "sourceReports": {
+    "dryRunPacket": "docs/FIRST_REVIEWER_DRY_RUN_PACKET.json",
+    "progressDashboard": "docs/FIRST_REVIEWER_PROGRESS_DASHBOARD.json",
+    "humanExecutionBundle": "docs/FIRST_REVIEWER_HUMAN_EXECUTION_BUNDLE.json",
+    "operatorIndex": "docs/FIRST_REVIEWER_OPERATOR_INDEX.json",
+    "prewriteSampleDossier": "docs/FIRST_REVIEWER_PREWRITE_SAMPLE_DOSSIER.json",
+    "sequenceConsistency": "docs/FIRST_REVIEWER_SEQUENCE_CONSISTENCY.json",
+    "dayOfReviewPacketFreeze": "docs/FIRST_REVIEWER_DAY_OF_REVIEW_PACKET_FREEZE.json",
+    "humanReviewStartChecklist": "docs/FIRST_REVIEWER_HUMAN_REVIEW_START_CHECKLIST.json",
+    "creationChecklist": "docs/FIRST_REVIEWER_REAL_OVERLAY_CREATION_CHECKLIST.json",
+    "realOverlayPreflight": "docs/FIRST_REVIEWER_REAL_OVERLAY_PREFLIGHT_SUMMARY.json",
+    "writeReadinessLock": "docs/FIRST_REVIEWER_REAL_OVERLAY_WRITE_READINESS_LOCK.json",
+    "initDryRun": "docs/LESSON_BATCH_REVIEW_STATUS_INIT_DRY_RUN.json",
+    "initProtection": "docs/LESSON_BATCH_REVIEW_STATUS_INIT_PROTECTION.json",
+    "directCandidateWorksheet": "docs/FIRST_REVIEWER_DIRECT_CANDIDATE_DECISION_WORKSHEET.json",
+    "sourceFitNotesAcceptance": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_ACCEPTANCE.json",
+    "launchReadinessDashboard": "docs/FIRST_REVIEWER_LAUNCH_READINESS_DASHBOARD.json"
+  },
+  "boundary": "This authorization preview is generated reviewer-facing operations scaffolding only. It does not authorize write mode, create docs/LESSON_BATCH_REVIEW_STATUS.json, fill human notes, confirm source use, approve lessons, publish learner-facing content, promote grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, guide real-money decisions, grant internal-trial readiness, launch the course, or make the product production-ready."
+}

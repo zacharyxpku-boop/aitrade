@@ -1,0 +1,738 @@
+{
+  "generatedAt": "2026-06-24T10:10:49.991Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "queueStatus": "local_video_course_review_queue_all_transcripts_ready_release_blocked",
+  "queueMode": "video_semantic_absorption_to_human_review_queue",
+  "sourceVideos": 37,
+  "queueRows": 37,
+  "readyRows": 37,
+  "p0Rows": 10,
+  "blockedRows": 0,
+  "learnerFacingReadyRows": 0,
+  "writeAllowedNow": false,
+  "manualAuthorizationRequired": true,
+  "rows": [
+    {
+      "queueId": "video_review_local_video_course_3_intake_001",
+      "intakeId": "local_video_course_3_intake_001",
+      "lessonCode": "Video 37A",
+      "lessonTitle": "How to trade如何进行交易",
+      "reviewPriority": "p1",
+      "reviewStatus": "ready_for_standard_reviewer_distillation",
+      "candidateCount": 2,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_002",
+      "intakeId": "local_video_course_3_intake_002",
+      "lessonCode": "Video 37B",
+      "lessonTitle": "How to trade如何进行交易",
+      "reviewPriority": "p1",
+      "reviewStatus": "ready_for_standard_reviewer_distillation",
+      "candidateCount": 2,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_003",
+      "intakeId": "local_video_course_3_intake_003",
+      "lessonCode": "Video 38B",
+      "lessonTitle": "Trading MTR Tops顶部趋势反转",
+      "reviewPriority": "p1",
+      "reviewStatus": "ready_for_standard_reviewer_distillation",
+      "candidateCount": 3,
+      "evidenceAnchorCount": 6,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_004",
+      "intakeId": "local_video_course_3_intake_004",
+      "lessonCode": "Video 38C",
+      "lessonTitle": "Trading MTR Tops顶部趋势反转",
+      "reviewPriority": "p1",
+      "reviewStatus": "ready_for_standard_reviewer_distillation",
+      "candidateCount": 3,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_005",
+      "intakeId": "local_video_course_3_intake_005",
+      "lessonCode": "Video 38D",
+      "lessonTitle": "Trading MTR Tops顶部趋势反转",
+      "reviewPriority": "p1",
+      "reviewStatus": "ready_for_standard_reviewer_distillation",
+      "candidateCount": 3,
+      "evidenceAnchorCount": 7,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_006",
+      "intakeId": "local_video_course_3_intake_006",
+      "lessonCode": "Video 39B",
+      "lessonTitle": "Trading MTR Bottoms底部趋势反转",
+      "reviewPriority": "p1",
+      "reviewStatus": "ready_for_standard_reviewer_distillation",
+      "candidateCount": 3,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_007",
+      "intakeId": "local_video_course_3_intake_007",
+      "lessonCode": "Video 39D",
+      "lessonTitle": "Trading MTR Bottoms底部趋势反转",
+      "reviewPriority": "p1",
+      "reviewStatus": "ready_for_standard_reviewer_distillation",
+      "candidateCount": 3,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_008",
+      "intakeId": "local_video_course_3_intake_008",
+      "lessonCode": "Video 41A",
+      "lessonTitle": "Trading Breakouts突破交易",
+      "reviewPriority": "p1",
+      "reviewStatus": "ready_for_standard_reviewer_distillation",
+      "candidateCount": 3,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_009",
+      "intakeId": "local_video_course_3_intake_009",
+      "lessonCode": "Video 41B",
+      "lessonTitle": "Trading Breakouts突破交易",
+      "reviewPriority": "p1",
+      "reviewStatus": "ready_for_standard_reviewer_distillation",
+      "candidateCount": 3,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_010",
+      "intakeId": "local_video_course_3_intake_010",
+      "lessonCode": "Video 42A",
+      "lessonTitle": "Trading Climactic Reversals 交易高潮反转",
+      "reviewPriority": "p1",
+      "reviewStatus": "ready_for_standard_reviewer_distillation",
+      "candidateCount": 3,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_011",
+      "intakeId": "local_video_course_3_intake_011",
+      "lessonCode": "Video 42B",
+      "lessonTitle": "Trading Climactic Reversals 交易高潮反转",
+      "reviewPriority": "p1",
+      "reviewStatus": "ready_for_standard_reviewer_distillation",
+      "candidateCount": 3,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_012",
+      "intakeId": "local_video_course_3_intake_012",
+      "lessonCode": "Video 42C",
+      "lessonTitle": "Trading Climactic Reversals 交易高潮反转",
+      "reviewPriority": "p1",
+      "reviewStatus": "ready_for_standard_reviewer_distillation",
+      "candidateCount": 3,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_013",
+      "intakeId": "local_video_course_3_intake_013",
+      "lessonCode": "Video 43A",
+      "lessonTitle": "TradingTightBullChannels窄幅多头通道",
+      "reviewPriority": "p1",
+      "reviewStatus": "ready_for_standard_reviewer_distillation",
+      "candidateCount": 2,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_014",
+      "intakeId": "local_video_course_3_intake_014",
+      "lessonCode": "Video 43C",
+      "lessonTitle": "TradingTightBullChannels窄幅多头通道",
+      "reviewPriority": "p1",
+      "reviewStatus": "ready_for_standard_reviewer_distillation",
+      "candidateCount": 2,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_015",
+      "intakeId": "local_video_course_3_intake_015",
+      "lessonCode": "Video 43D",
+      "lessonTitle": "TradingTightBullChannels窄幅多头通道",
+      "reviewPriority": "p1",
+      "reviewStatus": "ready_for_standard_reviewer_distillation",
+      "candidateCount": 2,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_016",
+      "intakeId": "local_video_course_3_intake_016",
+      "lessonCode": "Video 44A",
+      "lessonTitle": "TradingTightBearChannels窄幅空头通道",
+      "reviewPriority": "p1",
+      "reviewStatus": "ready_for_standard_reviewer_distillation",
+      "candidateCount": 2,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_017",
+      "intakeId": "local_video_course_3_intake_017",
+      "lessonCode": "Video 44C",
+      "lessonTitle": "Trading Tight Bear Channels窄幅空头通道",
+      "reviewPriority": "p1",
+      "reviewStatus": "ready_for_standard_reviewer_distillation",
+      "candidateCount": 2,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_018",
+      "intakeId": "local_video_course_3_intake_018",
+      "lessonCode": "Video 44D",
+      "lessonTitle": "Trading Tight Bear Channels窄幅空头通道",
+      "reviewPriority": "p1",
+      "reviewStatus": "ready_for_standard_reviewer_distillation",
+      "candidateCount": 2,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_019",
+      "intakeId": "local_video_course_3_intake_019",
+      "lessonCode": "Video 45A",
+      "lessonTitle": "Trading Broad Bull Channels宽阔的牛市通道",
+      "reviewPriority": "p1",
+      "reviewStatus": "ready_for_standard_reviewer_distillation",
+      "candidateCount": 2,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_020",
+      "intakeId": "local_video_course_3_intake_020",
+      "lessonCode": "Video 45C",
+      "lessonTitle": "Trading Broad Bull Channels宽阔的牛市通道",
+      "reviewPriority": "p1",
+      "reviewStatus": "ready_for_standard_reviewer_distillation",
+      "candidateCount": 2,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_021",
+      "intakeId": "local_video_course_3_intake_021",
+      "lessonCode": "Video 45D",
+      "lessonTitle": "Trading Broad Bull Channels宽阔的牛市通道",
+      "reviewPriority": "p1",
+      "reviewStatus": "ready_for_standard_reviewer_distillation",
+      "candidateCount": 2,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_022",
+      "intakeId": "local_video_course_3_intake_022",
+      "lessonCode": "Video 46A",
+      "lessonTitle": "Trading Broad Bear Channels宽阔的熊通道",
+      "reviewPriority": "p1",
+      "reviewStatus": "ready_for_standard_reviewer_distillation",
+      "candidateCount": 2,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_023",
+      "intakeId": "local_video_course_3_intake_023",
+      "lessonCode": "Video 46D",
+      "lessonTitle": "Trading Broad Bear Channels宽阔的熊通道",
+      "reviewPriority": "p1",
+      "reviewStatus": "ready_for_standard_reviewer_distillation",
+      "candidateCount": 2,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_024",
+      "intakeId": "local_video_course_3_intake_024",
+      "lessonCode": "Video 47A",
+      "lessonTitle": "Trading in Trading Ranges交易区间内交易",
+      "reviewPriority": "p1",
+      "reviewStatus": "ready_for_standard_reviewer_distillation",
+      "candidateCount": 2,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_025",
+      "intakeId": "local_video_course_3_intake_025",
+      "lessonCode": "Video 47C",
+      "lessonTitle": "Trading in Trading Ranges交易区间内交易",
+      "reviewPriority": "p1",
+      "reviewStatus": "ready_for_standard_reviewer_distillation",
+      "candidateCount": 2,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_026",
+      "intakeId": "local_video_course_3_intake_026",
+      "lessonCode": "Video 47D",
+      "lessonTitle": "Trading in Trading Ranges交易区间内交易",
+      "reviewPriority": "p1",
+      "reviewStatus": "ready_for_standard_reviewer_distillation",
+      "candidateCount": 2,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_027",
+      "intakeId": "local_video_course_3_intake_027",
+      "lessonCode": "Video 48A",
+      "lessonTitle": "Trading the Open开盘交易",
+      "reviewPriority": "p0",
+      "reviewStatus": "ready_for_p0_human_review",
+      "candidateCount": 2,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "risk_language_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_028",
+      "intakeId": "local_video_course_3_intake_028",
+      "lessonCode": "Video 48C",
+      "lessonTitle": "Trading the Open开盘交易",
+      "reviewPriority": "p0",
+      "reviewStatus": "ready_for_p0_human_review",
+      "candidateCount": 2,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "risk_language_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_029",
+      "intakeId": "local_video_course_3_intake_029",
+      "lessonCode": "Video 48D",
+      "lessonTitle": "Trading the Open开盘交易",
+      "reviewPriority": "p0",
+      "reviewStatus": "ready_for_p0_human_review",
+      "candidateCount": 2,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "risk_language_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_030",
+      "intakeId": "local_video_course_3_intake_030",
+      "lessonCode": "Video 48G",
+      "lessonTitle": "Trading the Middle of the Day日内交易",
+      "reviewPriority": "p0",
+      "reviewStatus": "ready_for_p0_human_review",
+      "candidateCount": 2,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "risk_language_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_031",
+      "intakeId": "local_video_course_3_intake_031",
+      "lessonCode": "Video 49A",
+      "lessonTitle": "Swing trading examples波段交易示例",
+      "reviewPriority": "p0",
+      "reviewStatus": "ready_for_p0_human_review",
+      "candidateCount": 2,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "risk_language_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_032",
+      "intakeId": "local_video_course_3_intake_032",
+      "lessonCode": "Video 49B",
+      "lessonTitle": "Swing Trading Examples波段交易示例",
+      "reviewPriority": "p0",
+      "reviewStatus": "ready_for_p0_human_review",
+      "candidateCount": 2,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "risk_language_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_033",
+      "intakeId": "local_video_course_3_intake_033",
+      "lessonCode": "Video 49C",
+      "lessonTitle": "Swing Trading Examples波段交易示例",
+      "reviewPriority": "p0",
+      "reviewStatus": "ready_for_p0_human_review",
+      "candidateCount": 2,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "risk_language_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_034",
+      "intakeId": "local_video_course_3_intake_034",
+      "lessonCode": "Video 49D",
+      "lessonTitle": "Swing Trading Examples波段交易示例",
+      "reviewPriority": "p0",
+      "reviewStatus": "ready_for_p0_human_review",
+      "candidateCount": 2,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "risk_language_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_035",
+      "intakeId": "local_video_course_3_intake_035",
+      "lessonCode": "Video 49E",
+      "lessonTitle": "Swing Trading Examples波段交易示例",
+      "reviewPriority": "p0",
+      "reviewStatus": "ready_for_p0_human_review",
+      "candidateCount": 2,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "risk_language_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_036",
+      "intakeId": "local_video_course_3_intake_036",
+      "lessonCode": "Video 50A",
+      "lessonTitle": "Scalping剥头皮交易",
+      "reviewPriority": "p0",
+      "reviewStatus": "ready_for_p0_human_review",
+      "candidateCount": 2,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "risk_language_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    },
+    {
+      "queueId": "video_review_local_video_course_3_intake_037",
+      "intakeId": "local_video_course_3_intake_037",
+      "lessonCode": "Video 51D",
+      "lessonTitle": "Losing Because of Mistakes因错误而失败的原因",
+      "reviewPriority": "p1",
+      "reviewStatus": "ready_for_standard_reviewer_distillation",
+      "candidateCount": 2,
+      "evidenceAnchorCount": 8,
+      "requiredChecks": [
+        "transcript_quality_check",
+        "public_grounding_check",
+        "no_trading_advice_check",
+        "source_fit_review"
+      ],
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false,
+      "nextGate": "human_review_notes_then_public_grounding_source_fit"
+    }
+  ],
+  "commands": [
+    "npm.cmd run build:local-video-course-review-queue",
+    "npm.cmd run check:local-video-course-review-queue",
+    "npm.cmd run verify"
+  ],
+  "boundary": "Local video course review queue is reviewer-facing education-only operations material. It queues private transcript-derived semantic rows for human review and public grounding; it does not publish copied course material, approve learner-facing citations, generate trading advice, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, write authorization, learner release, or production readiness."
+}

@@ -1,0 +1,115 @@
+{
+  "generatedAt": "2026-06-19T09:47:05.473Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "preflightReady": true,
+  "preflightMode": "all_batch_real_overlay_preflight_manual_required",
+  "realStatusPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "realStatusOverlayPresent": false,
+  "writeAllowedNow": false,
+  "manualDecisionRequired": true,
+  "humanAuthorizationRecorded": false,
+  "rewriteBatches": 8,
+  "lessonCards": 48,
+  "dedicatedEditorPackets": 8,
+  "dedicatedNotesDryRuns": 8,
+  "fullyCoveredBatches": 8,
+  "uncoveredBatches": 0,
+  "riskCounts": {
+    "high": 2,
+    "medium": 21,
+    "low": 25
+  },
+  "blankNoteFields": 288,
+  "filledNoteFields": 0,
+  "statusTemplateBlankNoteFields": 288,
+  "statusTemplateFilledNoteFields": 0,
+  "nonGreenRefs": 0,
+  "completeNoteCards": 0,
+  "readyBatches": 0,
+  "approvalReviewCandidates": 0,
+  "commercialReadyPromotions": 0,
+  "internalTrialReady": false,
+  "launchReady": false,
+  "gateRows": [
+    {
+      "name": "All-batch packet coverage",
+      "status": "machine_checked",
+      "evidence": "8/8 dedicated editor packets and notes dry-runs are present.",
+      "writeImpact": "Allows reviewer orientation only; does not allow real notes or approval."
+    },
+    {
+      "name": "All-batch blank status template",
+      "status": "blank_pre_write",
+      "evidence": "8 batches, 48 lesson cards, 288 blank note fields, 0 filled fields.",
+      "writeImpact": "Template may be copied only after explicit human note-taking authorization."
+    },
+    {
+      "name": "Real overlay absence",
+      "status": "write_blocked",
+      "evidence": "docs/LESSON_BATCH_REVIEW_STATUS.json is absent.",
+      "writeImpact": "Generated checks cannot create the real overlay."
+    },
+    {
+      "name": "First-reviewer write lock",
+      "status": "blocked_manual_required",
+      "evidence": "writeAllowedNow:false; manualDecisionRequired:true; humanAuthorizationRecorded:false.",
+      "writeImpact": "Any future first-reviewer write remains scoped and human-authorized only."
+    },
+    {
+      "name": "Evidence and source boundary",
+      "status": "green_only_pre_write",
+      "evidence": "nonGreenRefs:0; yellow/red/research_only are not learner-facing evidence.",
+      "writeImpact": "Blocks unsafe source promotion."
+    },
+    {
+      "name": "Approval and release boundary",
+      "status": "not_ready",
+      "evidence": "0 complete note cards, 0 ready batches, 0 approval candidates, 0 commercial-ready promotions.",
+      "writeImpact": "Blocks approval, learner-facing release, internal-trial readiness, launch readiness, and production readiness."
+    }
+  ],
+  "manualAuthorizationItems": [
+    "A real human reviewer must be identified before any write initializer is run in write mode.",
+    "The human reviewer must choose an explicit scope; current first-reviewer write tooling is scoped to rewrite_batch_01 and rewrite_batch_05, not all 48 lessons.",
+    "The reviewer must run dry-run and overwrite-protection checks immediately before a future write.",
+    "Generated prompts, examples, dashboards, drills, and packets must not be pasted as real reviewer notes.",
+    "Every direct source-fit candidate must be confirmed, downgraded, or blocked in original human sourceFitNotes before evidence intake.",
+    "No artifact may claim approval, learner-facing release, internal-trial readiness, launch readiness, commercial readiness, production readiness, trading advice, performance, broker/order workflow, automation, real-money guidance, or copied source text."
+  ],
+  "requiredCommandsBeforeWrite": [
+    "npm.cmd run init:first-reviewer-status-overlay:dry-run",
+    "npm.cmd run check:first-reviewer-status-init-protection",
+    "npm.cmd run check:first-reviewer-real-overlay-preflight-summary",
+    "npm.cmd run check:first-reviewer-real-overlay-write-readiness-lock",
+    "npm.cmd run check:first-reviewer-real-overlay-write-authorization-preview",
+    "npm.cmd run check:lesson-batch-review-overlay-preflight"
+  ],
+  "writeCommandPreview": "npm.cmd run init:first-reviewer-status-overlay:write",
+  "requiredCommandsAfterWrite": [
+    "npm.cmd run check:first-reviewer-real-overlay-diff-audit",
+    "npm.cmd run check:reviewer-note-quality-lint",
+    "npm.cmd run check:first-reviewer-source-fit-notes-acceptance",
+    "npm.cmd run check:lesson-batch-completion",
+    "npm.cmd run check:first-reviewer-evidence-intake-summary",
+    "npm.cmd run check:first-reviewer-separate-approval-review-gate",
+    "npm.cmd run check:first-reviewer-release-readiness-negative-cases",
+    "npm.cmd run check:curriculum-review",
+    "npm.cmd run check:knowledge-base",
+    "npm.cmd run check:knowledge-browser"
+  ],
+  "sourceReports": {
+    "operatorDashboard": "docs/LESSON_BATCH_REVIEW_OPERATOR_DASHBOARD.json",
+    "packetCoverage": "docs/LESSON_BATCH_PACKET_COVERAGE.json",
+    "completionAudit": "docs/LESSON_BATCH_COMPLETION_AUDIT.json",
+    "statusTemplate": "docs/LESSON_BATCH_REVIEW_STATUS_TEMPLATE.json",
+    "sourceFitDashboard": "docs/SOURCE_FIT_REVIEWER_DASHBOARD.json",
+    "firstReviewerPreflight": "docs/FIRST_REVIEWER_REAL_OVERLAY_PREFLIGHT_SUMMARY.json",
+    "firstReviewerWriteLock": "docs/FIRST_REVIEWER_REAL_OVERLAY_WRITE_READINESS_LOCK.json",
+    "firstReviewerAuthorization": "docs/FIRST_REVIEWER_REAL_OVERLAY_WRITE_AUTHORIZATION_PREVIEW.json"
+  },
+  "boundary": "This all-batch overlay preflight is reviewer-facing operations scaffolding only. It does not authorize write mode, create docs/LESSON_BATCH_REVIEW_STATUS.json, fill human notes, confirm source use, approve lessons, publish learner-facing content, promote grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, guide real-money decisions, grant internal-trial readiness, launch the course, or make the product production-ready."
+}

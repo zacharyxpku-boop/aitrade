@@ -1,0 +1,3955 @@
+{
+  "generatedAt": "2026-06-22T06:17:25.745Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "ledgerStatus": "public_source_coverage_ledger_ready_release_blocked",
+  "ledgerMode": "public_wikipedia_official_source_absorption_and_source_fit_queue",
+  "corpusDocuments": 1494,
+  "publicCorpusDocuments": 1196,
+  "wikipediaDocuments": 96,
+  "officialLikeDocuments": 202,
+  "mappedPublicDocuments": 1196,
+  "unmappedPublicDocuments": 0,
+  "mappedWikipediaDocuments": 96,
+  "unmappedWikipediaDocuments": 0,
+  "mappedOfficialLikeDocuments": 202,
+  "unmappedOfficialLikeDocuments": 0,
+  "totalPublicDocumentNodeMatches": 9568,
+  "modules": 12,
+  "publicReferenceReadyModules": 12,
+  "modulesWithWikipediaGrounding": 12,
+  "modulesWithTwoWikipediaGroundingDocs": 12,
+  "nodes": 360,
+  "localReadyNodes": 360,
+  "directPublicReadyNodes": 103,
+  "directWikipediaReadyNodes": 84,
+  "directOfficialReadyNodes": 83,
+  "directTriangulatedNodes": 87,
+  "moduleGroundedNodes": 360,
+  "candidateTargetNodes": 273,
+  "sourceFitCandidates": 1638,
+  "wikipediaCandidates": 1122,
+  "officialCandidates": 243,
+  "sourceFitReviewRows": 1638,
+  "readySourceFitReviewRows": 0,
+  "blockedSourceFitReviewRows": 1638,
+  "rowsWithUrl": 1638,
+  "realHumanInputEntries": 0,
+  "learnerCitationApprovedDocuments": 0,
+  "learnerCitationApprovedNodes": 0,
+  "learnerCitationApprovedCandidates": 0,
+  "learnerCitationApprovedRows": 0,
+  "writeAllowedNow": false,
+  "manualAuthorizationRequired": true,
+  "moduleRows": [
+    {
+      "module": "多周期分析",
+      "learnerFacingNodes": 30,
+      "publicReferenceStatus": "public_reference_ready_for_reviewer",
+      "matchedPublicDocs": 214,
+      "topPublicEvidenceDocs": 40,
+      "wikipediaEvidenceDocs": 34,
+      "officialLikeEvidenceDocs": 3,
+      "uniqueHosts": 4,
+      "mappedPublicDocuments": 0,
+      "directPublicReadyNodes": 8,
+      "directWikipediaReadyNodes": 8,
+      "directOfficialReadyNodes": 8,
+      "directTriangulatedNodes": 8,
+      "moduleGroundedNodes": 30,
+      "nodesNeedingDirectTriangulation": 22,
+      "sourceFitCandidateRows": 132,
+      "wikipediaCandidateRows": 88,
+      "officialCandidateRows": 22,
+      "reviewRows": 132,
+      "readyReviewRows": 0,
+      "blockedReviewRows": 132,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "status": "public_layer_mapped_source_fit_blocked_on_real_review",
+      "nextGate": "real_reviewer_accept_reject_or_background_each_source_fit_candidate",
+      "sampleEvidence": [
+        {
+          "documentId": "corpus_0299",
+          "sourceId": "arxiv:2501.12239v1",
+          "name": "Investigating Market Strength Prediction with CNNs on Candlestick Chart Images",
+          "url": "https://arxiv.org/abs/2501.12239v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_1133",
+          "sourceId": "arxiv:2410.06935v2",
+          "name": "Predicting Market Trends with Enhanced Technical Indicator Integration and Classification Models",
+          "url": "https://arxiv.org/abs/2410.06935v2",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_1583",
+          "sourceId": "wikipedia:112577",
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1584",
+          "sourceId": "wikipedia:1142120",
+          "name": "Wikipedia: Candlestick chart",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_chart",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ]
+    },
+    {
+      "module": "反转",
+      "learnerFacingNodes": 30,
+      "publicReferenceStatus": "public_reference_ready_for_reviewer",
+      "matchedPublicDocs": 31,
+      "topPublicEvidenceDocs": 31,
+      "wikipediaEvidenceDocs": 10,
+      "officialLikeEvidenceDocs": 1,
+      "uniqueHosts": 5,
+      "mappedPublicDocuments": 0,
+      "directPublicReadyNodes": 8,
+      "directWikipediaReadyNodes": 8,
+      "directOfficialReadyNodes": 8,
+      "directTriangulatedNodes": 8,
+      "moduleGroundedNodes": 30,
+      "nodesNeedingDirectTriangulation": 22,
+      "sourceFitCandidateRows": 132,
+      "wikipediaCandidateRows": 88,
+      "officialCandidateRows": 22,
+      "reviewRows": 132,
+      "readyReviewRows": 0,
+      "blockedReviewRows": 132,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "status": "public_layer_mapped_source_fit_blocked_on_real_review",
+      "nextGate": "real_reviewer_accept_reject_or_background_each_source_fit_candidate",
+      "sampleEvidence": [
+        {
+          "documentId": "corpus_0411",
+          "sourceId": "wikipedia:23469024",
+          "name": "Wikipedia: Double top and double bottom",
+          "url": "https://en.wikipedia.org/wiki/Double_top_and_double_bottom",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0411",
+          "sourceId": "wikipedia:23469024",
+          "name": "Wikipedia: Double top and double bottom",
+          "url": "https://en.wikipedia.org/wiki/Double_top_and_double_bottom",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ]
+    },
+    {
+      "module": "风险管理",
+      "learnerFacingNodes": 30,
+      "publicReferenceStatus": "public_reference_ready_for_reviewer",
+      "matchedPublicDocs": 311,
+      "topPublicEvidenceDocs": 40,
+      "wikipediaEvidenceDocs": 17,
+      "officialLikeEvidenceDocs": 13,
+      "uniqueHosts": 4,
+      "mappedPublicDocuments": 0,
+      "directPublicReadyNodes": 12,
+      "directWikipediaReadyNodes": 8,
+      "directOfficialReadyNodes": 8,
+      "directTriangulatedNodes": 8,
+      "moduleGroundedNodes": 30,
+      "nodesNeedingDirectTriangulation": 22,
+      "sourceFitCandidateRows": 132,
+      "wikipediaCandidateRows": 88,
+      "officialCandidateRows": 22,
+      "reviewRows": 132,
+      "readyReviewRows": 0,
+      "blockedReviewRows": 132,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "status": "public_layer_mapped_source_fit_blocked_on_real_review",
+      "nextGate": "real_reviewer_accept_reject_or_background_each_source_fit_candidate",
+      "sampleEvidence": [
+        {
+          "documentId": "corpus_1132",
+          "sourceId": "arxiv:2412.15448v2",
+          "name": "Risk-Adjusted Performance of Random Forest Models in High-Frequency Trading",
+          "url": "https://arxiv.org/abs/2412.15448v2",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0796",
+          "sourceId": "arxiv:2404.18029v2",
+          "name": "Value-at-Risk- and Expectile-based Systemic Risk Measures and Second-order Asymptotics: With Applications to Diversification",
+          "url": "https://arxiv.org/abs/2404.18029v2",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0458",
+          "sourceId": "wikipedia:1376839",
+          "name": "Wikipedia: Leverage (finance)",
+          "url": "https://en.wikipedia.org/wiki/Leverage_(finance)",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0419",
+          "sourceId": "wikipedia:26404",
+          "name": "Wikipedia: Risk management",
+          "url": "https://en.wikipedia.org/wiki/Risk_management",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ]
+    },
+    {
+      "module": "回测误区",
+      "learnerFacingNodes": 30,
+      "publicReferenceStatus": "public_reference_ready_for_reviewer",
+      "matchedPublicDocs": 164,
+      "topPublicEvidenceDocs": 40,
+      "wikipediaEvidenceDocs": 7,
+      "officialLikeEvidenceDocs": 0,
+      "uniqueHosts": 3,
+      "mappedPublicDocuments": 0,
+      "directPublicReadyNodes": 12,
+      "directWikipediaReadyNodes": 8,
+      "directOfficialReadyNodes": 8,
+      "directTriangulatedNodes": 8,
+      "moduleGroundedNodes": 30,
+      "nodesNeedingDirectTriangulation": 22,
+      "sourceFitCandidateRows": 132,
+      "wikipediaCandidateRows": 88,
+      "officialCandidateRows": 22,
+      "reviewRows": 132,
+      "readyReviewRows": 0,
+      "blockedReviewRows": 132,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "status": "public_layer_mapped_source_fit_blocked_on_real_review",
+      "nextGate": "real_reviewer_accept_reject_or_background_each_source_fit_candidate",
+      "sampleEvidence": [
+        {
+          "documentId": "corpus_0209",
+          "sourceId": "arxiv:1905.05023v1",
+          "name": "Avoiding Backtesting Overfitting by Covariance-Penalties: an empirical investigation of the ordinary and total least squares cases",
+          "url": "https://arxiv.org/abs/1905.05023v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0288",
+          "sourceId": "arxiv:2412.18405v1",
+          "name": "Generalized Mean Absolute Directional Loss as a Solution to Overfitting and High Transaction Costs in Machine Learning Models Used in High-Frequency Algorithmic Investment Strategies",
+          "url": "https://arxiv.org/abs/2412.18405v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0452",
+          "sourceId": "wikipedia:10283346",
+          "name": "Wikipedia: Backtesting",
+          "url": "https://en.wikipedia.org/wiki/Backtesting",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0415",
+          "sourceId": "wikipedia:416612",
+          "name": "Wikipedia: Cross-validation (statistics)",
+          "url": "https://en.wikipedia.org/wiki/Cross-validation_(statistics)",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ]
+    },
+    {
+      "module": "交易区间",
+      "learnerFacingNodes": 30,
+      "publicReferenceStatus": "public_reference_ready_for_reviewer",
+      "matchedPublicDocs": 211,
+      "topPublicEvidenceDocs": 40,
+      "wikipediaEvidenceDocs": 24,
+      "officialLikeEvidenceDocs": 3,
+      "uniqueHosts": 3,
+      "mappedPublicDocuments": 0,
+      "directPublicReadyNodes": 8,
+      "directWikipediaReadyNodes": 8,
+      "directOfficialReadyNodes": 8,
+      "directTriangulatedNodes": 8,
+      "moduleGroundedNodes": 30,
+      "nodesNeedingDirectTriangulation": 22,
+      "sourceFitCandidateRows": 132,
+      "wikipediaCandidateRows": 88,
+      "officialCandidateRows": 22,
+      "reviewRows": 132,
+      "readyReviewRows": 0,
+      "blockedReviewRows": 132,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "status": "public_layer_mapped_source_fit_blocked_on_real_review",
+      "nextGate": "real_reviewer_accept_reject_or_background_each_source_fit_candidate",
+      "sampleEvidence": [
+        {
+          "documentId": "corpus_0312",
+          "sourceId": "arxiv:2101.07410v1",
+          "name": "Evidence and Behaviour of Support and Resistance Levels in Financial Time Series",
+          "url": "https://arxiv.org/abs/2101.07410v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0314",
+          "sourceId": "arxiv:2103.02331v2",
+          "name": "The Support and Resistance Line Method: An Analysis via Optimal Stopping",
+          "url": "https://arxiv.org/abs/2103.02331v2",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0408",
+          "sourceId": "wikipedia:564701",
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0445",
+          "sourceId": "wikipedia:63082",
+          "name": "Wikipedia: Market trend",
+          "url": "https://en.wikipedia.org/wiki/Market_trend",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ]
+    },
+    {
+      "module": "交易心理",
+      "learnerFacingNodes": 30,
+      "publicReferenceStatus": "public_reference_ready_for_reviewer",
+      "matchedPublicDocs": 19,
+      "topPublicEvidenceDocs": 19,
+      "wikipediaEvidenceDocs": 10,
+      "officialLikeEvidenceDocs": 0,
+      "uniqueHosts": 3,
+      "mappedPublicDocuments": 0,
+      "directPublicReadyNodes": 8,
+      "directWikipediaReadyNodes": 8,
+      "directOfficialReadyNodes": 8,
+      "directTriangulatedNodes": 8,
+      "moduleGroundedNodes": 30,
+      "nodesNeedingDirectTriangulation": 22,
+      "sourceFitCandidateRows": 132,
+      "wikipediaCandidateRows": 88,
+      "officialCandidateRows": 22,
+      "reviewRows": 132,
+      "readyReviewRows": 0,
+      "blockedReviewRows": 132,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "status": "public_layer_mapped_source_fit_blocked_on_real_review",
+      "nextGate": "real_reviewer_accept_reject_or_background_each_source_fit_candidate",
+      "sampleEvidence": [
+        {
+          "documentId": "corpus_0459",
+          "sourceId": "wikipedia:177698",
+          "name": "Wikipedia: Behavioral economics",
+          "url": "https://en.wikipedia.org/wiki/Behavioral_economics",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0460",
+          "sourceId": "wikipedia:197284",
+          "name": "Wikipedia: Prospect theory",
+          "url": "https://en.wikipedia.org/wiki/Prospect_theory",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0459",
+          "sourceId": "wikipedia:177698",
+          "name": "Wikipedia: Behavioral economics",
+          "url": "https://en.wikipedia.org/wiki/Behavioral_economics",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0460",
+          "sourceId": "wikipedia:197284",
+          "name": "Wikipedia: Prospect theory",
+          "url": "https://en.wikipedia.org/wiki/Prospect_theory",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ]
+    },
+    {
+      "module": "趋势",
+      "learnerFacingNodes": 30,
+      "publicReferenceStatus": "public_reference_ready_for_reviewer",
+      "matchedPublicDocs": 192,
+      "topPublicEvidenceDocs": 40,
+      "wikipediaEvidenceDocs": 29,
+      "officialLikeEvidenceDocs": 1,
+      "uniqueHosts": 3,
+      "mappedPublicDocuments": 0,
+      "directPublicReadyNodes": 8,
+      "directWikipediaReadyNodes": 8,
+      "directOfficialReadyNodes": 8,
+      "directTriangulatedNodes": 8,
+      "moduleGroundedNodes": 30,
+      "nodesNeedingDirectTriangulation": 22,
+      "sourceFitCandidateRows": 132,
+      "wikipediaCandidateRows": 88,
+      "officialCandidateRows": 22,
+      "reviewRows": 132,
+      "readyReviewRows": 0,
+      "blockedReviewRows": 132,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "status": "public_layer_mapped_source_fit_blocked_on_real_review",
+      "nextGate": "real_reviewer_accept_reject_or_background_each_source_fit_candidate",
+      "sampleEvidence": [
+        {
+          "documentId": "corpus_1583",
+          "sourceId": "wikipedia:112577",
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1142",
+          "sourceId": "arxiv:2601.19504v1",
+          "name": "Generating Alpha: A Hybrid AI-Driven Trading System Integrating Technical Analysis, Machine Learning and Financial Sentiment for Regime-Adaptive Equity Strategies",
+          "url": "https://arxiv.org/abs/2601.19504v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_1583",
+          "sourceId": "wikipedia:112577",
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0444",
+          "sourceId": "wikipedia:323441",
+          "name": "Wikipedia: Dow theory",
+          "url": "https://en.wikipedia.org/wiki/Dow_theory",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ]
+    },
+    {
+      "module": "市场结构",
+      "learnerFacingNodes": 30,
+      "publicReferenceStatus": "public_reference_ready_for_reviewer",
+      "matchedPublicDocs": 482,
+      "topPublicEvidenceDocs": 40,
+      "wikipediaEvidenceDocs": 45,
+      "officialLikeEvidenceDocs": 24,
+      "uniqueHosts": 3,
+      "mappedPublicDocuments": 0,
+      "directPublicReadyNodes": 8,
+      "directWikipediaReadyNodes": 8,
+      "directOfficialReadyNodes": 8,
+      "directTriangulatedNodes": 8,
+      "moduleGroundedNodes": 30,
+      "nodesNeedingDirectTriangulation": 22,
+      "sourceFitCandidateRows": 132,
+      "wikipediaCandidateRows": 88,
+      "officialCandidateRows": 22,
+      "reviewRows": 132,
+      "readyReviewRows": 0,
+      "blockedReviewRows": 132,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "status": "public_layer_mapped_source_fit_blocked_on_real_review",
+      "nextGate": "real_reviewer_accept_reject_or_background_each_source_fit_candidate",
+      "sampleEvidence": [
+        {
+          "documentId": "corpus_0630",
+          "sourceId": "arxiv:1012.0349v4",
+          "name": "Limit Order Books",
+          "url": "https://arxiv.org/abs/1012.0349v4",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0834",
+          "sourceId": "arxiv:1709.02502v4",
+          "name": "Testing if the market microstructure noise is fully explained by the informational content of some variables from the limit order book",
+          "url": "https://arxiv.org/abs/1709.02502v4",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0471",
+          "sourceId": "wikipedia:23550923",
+          "name": "Wikipedia: High-frequency trading",
+          "url": "https://en.wikipedia.org/wiki/High-frequency_trading",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0408",
+          "sourceId": "wikipedia:564701",
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ]
+    },
+    {
+      "module": "突破",
+      "learnerFacingNodes": 30,
+      "publicReferenceStatus": "public_reference_ready_for_reviewer",
+      "matchedPublicDocs": 497,
+      "topPublicEvidenceDocs": 40,
+      "wikipediaEvidenceDocs": 37,
+      "officialLikeEvidenceDocs": 6,
+      "uniqueHosts": 3,
+      "mappedPublicDocuments": 0,
+      "directPublicReadyNodes": 3,
+      "directWikipediaReadyNodes": 0,
+      "directOfficialReadyNodes": 3,
+      "directTriangulatedNodes": 3,
+      "moduleGroundedNodes": 30,
+      "nodesNeedingDirectTriangulation": 27,
+      "sourceFitCandidateRows": 162,
+      "wikipediaCandidateRows": 108,
+      "officialCandidateRows": 27,
+      "reviewRows": 162,
+      "readyReviewRows": 0,
+      "blockedReviewRows": 162,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "status": "public_layer_mapped_source_fit_blocked_on_real_review",
+      "nextGate": "real_reviewer_accept_reject_or_background_each_source_fit_candidate",
+      "sampleEvidence": [
+        {
+          "documentId": "corpus_0408",
+          "sourceId": "wikipedia:564701",
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0313",
+          "sourceId": "arxiv:2507.01971v1",
+          "name": "DeepSupp: Attention-Driven Correlation Pattern Analysis for Dynamic Time Series Support and Resistance Levels Identification",
+          "url": "https://arxiv.org/abs/2507.01971v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0408",
+          "sourceId": "wikipedia:564701",
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1583",
+          "sourceId": "wikipedia:112577",
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ]
+    },
+    {
+      "module": "图表阅读基础",
+      "learnerFacingNodes": 30,
+      "publicReferenceStatus": "public_reference_ready_for_reviewer",
+      "matchedPublicDocs": 550,
+      "topPublicEvidenceDocs": 40,
+      "wikipediaEvidenceDocs": 49,
+      "officialLikeEvidenceDocs": 18,
+      "uniqueHosts": 4,
+      "mappedPublicDocuments": 0,
+      "directPublicReadyNodes": 12,
+      "directWikipediaReadyNodes": 12,
+      "directOfficialReadyNodes": 8,
+      "directTriangulatedNodes": 12,
+      "moduleGroundedNodes": 30,
+      "nodesNeedingDirectTriangulation": 18,
+      "sourceFitCandidateRows": 108,
+      "wikipediaCandidateRows": 72,
+      "officialCandidateRows": 18,
+      "reviewRows": 108,
+      "readyReviewRows": 0,
+      "blockedReviewRows": 108,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "status": "public_layer_mapped_source_fit_blocked_on_real_review",
+      "nextGate": "real_reviewer_accept_reject_or_background_each_source_fit_candidate",
+      "sampleEvidence": [
+        {
+          "documentId": "corpus_0313",
+          "sourceId": "arxiv:2507.01971v1",
+          "name": "DeepSupp: Attention-Driven Correlation Pattern Analysis for Dynamic Time Series Support and Resistance Levels Identification",
+          "url": "https://arxiv.org/abs/2507.01971v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0408",
+          "sourceId": "wikipedia:564701",
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0408",
+          "sourceId": "wikipedia:564701",
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1588",
+          "sourceId": "wikipedia:32033902",
+          "name": "Wikipedia: Price action trading",
+          "url": "https://en.wikipedia.org/wiki/Price_action_trading",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ]
+    },
+    {
+      "module": "新闻/情绪/事件偏见",
+      "learnerFacingNodes": 30,
+      "publicReferenceStatus": "public_reference_ready_for_reviewer",
+      "matchedPublicDocs": 35,
+      "topPublicEvidenceDocs": 35,
+      "wikipediaEvidenceDocs": 8,
+      "officialLikeEvidenceDocs": 0,
+      "uniqueHosts": 3,
+      "mappedPublicDocuments": 0,
+      "directPublicReadyNodes": 12,
+      "directWikipediaReadyNodes": 8,
+      "directOfficialReadyNodes": 8,
+      "directTriangulatedNodes": 8,
+      "moduleGroundedNodes": 30,
+      "nodesNeedingDirectTriangulation": 22,
+      "sourceFitCandidateRows": 132,
+      "wikipediaCandidateRows": 88,
+      "officialCandidateRows": 22,
+      "reviewRows": 132,
+      "readyReviewRows": 0,
+      "blockedReviewRows": 132,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "status": "public_layer_mapped_source_fit_blocked_on_real_review",
+      "nextGate": "real_reviewer_accept_reject_or_background_each_source_fit_candidate",
+      "sampleEvidence": [
+        {
+          "documentId": "corpus_0425",
+          "sourceId": "wikipedia:2852956",
+          "name": "Wikipedia: Market sentiment",
+          "url": "https://en.wikipedia.org/wiki/Market_sentiment",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0430",
+          "sourceId": "wikipedia:21118575",
+          "name": "Wikipedia: News analytics",
+          "url": "https://en.wikipedia.org/wiki/News_analytics",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0425",
+          "sourceId": "wikipedia:2852956",
+          "name": "Wikipedia: Market sentiment",
+          "url": "https://en.wikipedia.org/wiki/Market_sentiment",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0430",
+          "sourceId": "wikipedia:21118575",
+          "name": "Wikipedia: News analytics",
+          "url": "https://en.wikipedia.org/wiki/News_analytics",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ]
+    },
+    {
+      "module": "K线与价格行为",
+      "learnerFacingNodes": 30,
+      "publicReferenceStatus": "public_reference_ready_for_reviewer",
+      "matchedPublicDocs": 54,
+      "topPublicEvidenceDocs": 40,
+      "wikipediaEvidenceDocs": 11,
+      "officialLikeEvidenceDocs": 0,
+      "uniqueHosts": 4,
+      "mappedPublicDocuments": 0,
+      "directPublicReadyNodes": 4,
+      "directWikipediaReadyNodes": 0,
+      "directOfficialReadyNodes": 0,
+      "directTriangulatedNodes": 0,
+      "moduleGroundedNodes": 30,
+      "nodesNeedingDirectTriangulation": 30,
+      "sourceFitCandidateRows": 180,
+      "wikipediaCandidateRows": 150,
+      "officialCandidateRows": 0,
+      "reviewRows": 180,
+      "readyReviewRows": 0,
+      "blockedReviewRows": 180,
+      "realHumanInputEntries": 0,
+      "learnerCitationApprovedRows": 0,
+      "status": "public_layer_mapped_source_fit_blocked_on_real_review",
+      "nextGate": "real_reviewer_accept_reject_or_background_each_source_fit_candidate",
+      "sampleEvidence": [
+        {
+          "documentId": "corpus_0406",
+          "sourceId": "wikipedia:27866580",
+          "name": "Wikipedia: Candlestick pattern",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_pattern",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0301",
+          "sourceId": "arxiv:2604.12659v1",
+          "name": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+          "url": "https://arxiv.org/abs/2604.12659v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0406",
+          "sourceId": "wikipedia:27866580",
+          "name": "Wikipedia: Candlestick pattern",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_pattern",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ]
+    }
+  ],
+  "topMappedPublicRows": [
+    {
+      "documentId": "corpus_1258",
+      "name": "Principles of political economy — Carey, Henry Charles, 1793-1879 (1837)",
+      "family": "archive.org",
+      "tier": "public_domain",
+      "matchedNodeCount": 8,
+      "matchedModules": [
+        "市场结构"
+      ],
+      "excerptPolicy": "cite_and_paraphrase_with_embedded_third_party_spot_check"
+    },
+    {
+      "documentId": "corpus_1247",
+      "name": "An inquiry into the nature and causes of the wealth of nations — Smith, Adam, 1723-1790 (1893)",
+      "family": "archive.org",
+      "tier": "public_domain",
+      "matchedNodeCount": 8,
+      "matchedModules": [
+        "市场结构"
+      ],
+      "excerptPolicy": "cite_and_paraphrase_with_embedded_third_party_spot_check"
+    },
+    {
+      "documentId": "corpus_1254",
+      "name": "Principles of economics [microform]; an introductory volume — Marshall, Alfred, 1842-1924 (1916)",
+      "family": "archive.org",
+      "tier": "public_domain",
+      "matchedNodeCount": 8,
+      "matchedModules": [
+        "市场结构"
+      ],
+      "excerptPolicy": "cite_and_paraphrase_with_embedded_third_party_spot_check"
+    },
+    {
+      "documentId": "corpus_1255",
+      "name": "Principles of economics — Marshall, Alfred, 1842-1924 (1895)",
+      "family": "archive.org",
+      "tier": "public_domain",
+      "matchedNodeCount": 8,
+      "matchedModules": [
+        "市场结构"
+      ],
+      "excerptPolicy": "cite_and_paraphrase_with_embedded_third_party_spot_check"
+    },
+    {
+      "documentId": "corpus_1253",
+      "name": "PRINCIPLES OF ECONOMICS ... EIGHTH EDITION — Alfred marshall (1922)",
+      "family": "archive.org",
+      "tier": "public_domain",
+      "matchedNodeCount": 8,
+      "matchedModules": [
+        "市场结构"
+      ],
+      "excerptPolicy": "cite_and_paraphrase_with_embedded_third_party_spot_check"
+    },
+    {
+      "documentId": "corpus_1239",
+      "name": "Extraordinary popular delusions and the madness of crowds — Charles Mackay, LL.D. (1841)",
+      "family": "archive.org",
+      "tier": "public_domain",
+      "matchedNodeCount": 8,
+      "matchedModules": [
+        "市场结构"
+      ],
+      "excerptPolicy": "cite_and_paraphrase_with_embedded_third_party_spot_check"
+    },
+    {
+      "documentId": "corpus_1240",
+      "name": "Memoirs of Extraordinary Popular Delusions and the Madness of Crowds — Charles Mackey (1852)",
+      "family": "archive.org",
+      "tier": "public_domain",
+      "matchedNodeCount": 8,
+      "matchedModules": [
+        "市场结构"
+      ],
+      "excerptPolicy": "cite_and_paraphrase_with_embedded_third_party_spot_check"
+    },
+    {
+      "documentId": "corpus_1267",
+      "name": "An inquiry into the principles of political economy. 2 — Steuart, James (1767)",
+      "family": "archive.org",
+      "tier": "public_domain",
+      "matchedNodeCount": 8,
+      "matchedModules": [
+        "多周期分析",
+        "趋势",
+        "市场结构",
+        "图表阅读基础"
+      ],
+      "excerptPolicy": "cite_and_paraphrase_with_embedded_third_party_spot_check"
+    },
+    {
+      "documentId": "corpus_1238",
+      "name": "The work of Wall Street, an account of the functions, methods and history of the New York money and stock markets; — Pratt, Sereno Stansbury, 1858-1915 (1921)",
+      "family": "archive.org",
+      "tier": "public_domain",
+      "matchedNodeCount": 8,
+      "matchedModules": [
+        "市场结构"
+      ],
+      "excerptPolicy": "cite_and_paraphrase_with_embedded_third_party_spot_check"
+    },
+    {
+      "documentId": "corpus_0129",
+      "name": "SEC EDGAR Company Tickers JSON",
+      "family": "Official/Public Domain",
+      "tier": "public_domain",
+      "matchedNodeCount": 8,
+      "matchedModules": [
+        "市场结构"
+      ],
+      "excerptPolicy": "cite_and_paraphrase_with_embedded_third_party_spot_check"
+    },
+    {
+      "documentId": "corpus_1266",
+      "name": "Notes on Malthus' Principles of Political Economy — David Ricardo (1928)",
+      "family": "archive.org",
+      "tier": "public_domain",
+      "matchedNodeCount": 8,
+      "matchedModules": [
+        "市场结构"
+      ],
+      "excerptPolicy": "cite_and_paraphrase_with_embedded_third_party_spot_check"
+    },
+    {
+      "documentId": "corpus_1172",
+      "name": "The stock exchange from within /4cby W. C. Van Antwerp. Illustrated from photographs — Van Antwerp, William Clarkson, 1867-1938 (1913)",
+      "family": "archive.org",
+      "tier": "public_domain",
+      "matchedNodeCount": 8,
+      "matchedModules": [
+        "市场结构"
+      ],
+      "excerptPolicy": "cite_and_paraphrase_with_embedded_third_party_spot_check"
+    }
+  ],
+  "wikipediaDocSamples": [
+    {
+      "id": "corpus_0406",
+      "sourceId": "wikipedia:27866580",
+      "name": "Wikipedia: Candlestick pattern",
+      "url": "https://en.wikipedia.org/wiki/Candlestick_pattern",
+      "tier": "share_alike",
+      "charCount": 2288,
+      "attribution": "\"Candlestick pattern\" by Wikipedia contributors, CC BY-SA 4.0, https://en.wikipedia.org/wiki/Candlestick_pattern",
+      "licenseEvidence": "Wikipedia text is CC BY-SA 4.0; reuse requires attribution and share-alike on adaptations.",
+      "excerptPolicy": "attribution_and_share_alike_required",
+      "learnerFacingApproved": false
+    },
+    {
+      "id": "corpus_0407",
+      "sourceId": "wikipedia:21020925",
+      "name": "Wikipedia: Doji",
+      "url": "https://en.wikipedia.org/wiki/Doji",
+      "tier": "share_alike",
+      "charCount": 2688,
+      "attribution": "\"Doji\" by Wikipedia contributors, CC BY-SA 4.0, https://en.wikipedia.org/wiki/Doji",
+      "licenseEvidence": "Wikipedia text is CC BY-SA 4.0; reuse requires attribution and share-alike on adaptations.",
+      "excerptPolicy": "attribution_and_share_alike_required",
+      "learnerFacingApproved": false
+    },
+    {
+      "id": "corpus_0408",
+      "sourceId": "wikipedia:564701",
+      "name": "Wikipedia: Support and resistance",
+      "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+      "tier": "share_alike",
+      "charCount": 3762,
+      "attribution": "\"Support and resistance\" by Wikipedia contributors, CC BY-SA 4.0, https://en.wikipedia.org/wiki/Support_and_resistance",
+      "licenseEvidence": "Wikipedia text is CC BY-SA 4.0; reuse requires attribution and share-alike on adaptations.",
+      "excerptPolicy": "attribution_and_share_alike_required",
+      "learnerFacingApproved": false
+    },
+    {
+      "id": "corpus_0409",
+      "sourceId": "wikipedia:1650818",
+      "name": "Wikipedia: Chart pattern",
+      "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+      "tier": "share_alike",
+      "charCount": 2636,
+      "attribution": "\"Chart pattern\" by Wikipedia contributors, CC BY-SA 4.0, https://en.wikipedia.org/wiki/Chart_pattern",
+      "licenseEvidence": "Wikipedia text is CC BY-SA 4.0; reuse requires attribution and share-alike on adaptations.",
+      "excerptPolicy": "attribution_and_share_alike_required",
+      "learnerFacingApproved": false
+    },
+    {
+      "id": "corpus_0410",
+      "sourceId": "wikipedia:16363792",
+      "name": "Wikipedia: Head and shoulders (chart pattern)",
+      "url": "https://en.wikipedia.org/wiki/Head_and_shoulders_(chart_pattern)",
+      "tier": "share_alike",
+      "charCount": 4891,
+      "attribution": "\"Head and shoulders (chart pattern)\" by Wikipedia contributors, CC BY-SA 4.0, https://en.wikipedia.org/wiki/Head_and_shoulders_(chart_pattern)",
+      "licenseEvidence": "Wikipedia text is CC BY-SA 4.0; reuse requires attribution and share-alike on adaptations.",
+      "excerptPolicy": "attribution_and_share_alike_required",
+      "learnerFacingApproved": false
+    },
+    {
+      "id": "corpus_0411",
+      "sourceId": "wikipedia:23469024",
+      "name": "Wikipedia: Double top and double bottom",
+      "url": "https://en.wikipedia.org/wiki/Double_top_and_double_bottom",
+      "tier": "share_alike",
+      "charCount": 2327,
+      "attribution": "\"Double top and double bottom\" by Wikipedia contributors, CC BY-SA 4.0, https://en.wikipedia.org/wiki/Double_top_and_double_bottom",
+      "licenseEvidence": "Wikipedia text is CC BY-SA 4.0; reuse requires attribution and share-alike on adaptations.",
+      "excerptPolicy": "attribution_and_share_alike_required",
+      "learnerFacingApproved": false
+    },
+    {
+      "id": "corpus_0412",
+      "sourceId": "wikipedia:3742177",
+      "name": "Wikipedia: Trend line (technical analysis)",
+      "url": "https://en.wikipedia.org/wiki/Trend_line_(technical_analysis)",
+      "tier": "share_alike",
+      "charCount": 3344,
+      "attribution": "\"Trend line (technical analysis)\" by Wikipedia contributors, CC BY-SA 4.0, https://en.wikipedia.org/wiki/Trend_line_(technical_analysis)",
+      "licenseEvidence": "Wikipedia text is CC BY-SA 4.0; reuse requires attribution and share-alike on adaptations.",
+      "excerptPolicy": "attribution_and_share_alike_required",
+      "learnerFacingApproved": false
+    },
+    {
+      "id": "corpus_0413",
+      "sourceId": "wikipedia:25181901",
+      "name": "Wikipedia: Fibonacci retracement",
+      "url": "https://en.wikipedia.org/wiki/Fibonacci_retracement",
+      "tier": "share_alike",
+      "charCount": 2392,
+      "attribution": "\"Fibonacci retracement\" by Wikipedia contributors, CC BY-SA 4.0, https://en.wikipedia.org/wiki/Fibonacci_retracement",
+      "licenseEvidence": "Wikipedia text is CC BY-SA 4.0; reuse requires attribution and share-alike on adaptations.",
+      "excerptPolicy": "attribution_and_share_alike_required",
+      "learnerFacingApproved": false
+    },
+    {
+      "id": "corpus_0414",
+      "sourceId": "wikipedia:289430",
+      "name": "Wikipedia: Elliott wave principle",
+      "url": "https://en.wikipedia.org/wiki/Elliott_wave_principle",
+      "tier": "share_alike",
+      "charCount": 12919,
+      "attribution": "\"Elliott wave principle\" by Wikipedia contributors, CC BY-SA 4.0, https://en.wikipedia.org/wiki/Elliott_wave_principle",
+      "licenseEvidence": "Wikipedia text is CC BY-SA 4.0; reuse requires attribution and share-alike on adaptations.",
+      "excerptPolicy": "attribution_and_share_alike_required",
+      "learnerFacingApproved": false
+    },
+    {
+      "id": "corpus_0415",
+      "sourceId": "wikipedia:416612",
+      "name": "Wikipedia: Cross-validation (statistics)",
+      "url": "https://en.wikipedia.org/wiki/Cross-validation_(statistics)",
+      "tier": "share_alike",
+      "charCount": 37415,
+      "attribution": "\"Cross-validation (statistics)\" by Wikipedia contributors, CC BY-SA 4.0, https://en.wikipedia.org/wiki/Cross-validation_(statistics)",
+      "licenseEvidence": "Wikipedia text is CC BY-SA 4.0; reuse requires attribution and share-alike on adaptations.",
+      "excerptPolicy": "attribution_and_share_alike_required",
+      "learnerFacingApproved": false
+    },
+    {
+      "id": "corpus_0416",
+      "sourceId": "wikipedia:9444220",
+      "name": "Wikipedia: Multiple comparisons problem",
+      "url": "https://en.wikipedia.org/wiki/Multiple_comparisons_problem",
+      "tier": "share_alike",
+      "charCount": 18109,
+      "attribution": "\"Multiple comparisons problem\" by Wikipedia contributors, CC BY-SA 4.0, https://en.wikipedia.org/wiki/Multiple_comparisons_problem",
+      "licenseEvidence": "Wikipedia text is CC BY-SA 4.0; reuse requires attribution and share-alike on adaptations.",
+      "excerptPolicy": "attribution_and_share_alike_required",
+      "learnerFacingApproved": false
+    },
+    {
+      "id": "corpus_0417",
+      "sourceId": "wikipedia:934837",
+      "name": "Wikipedia: Sharpe ratio",
+      "url": "https://en.wikipedia.org/wiki/Sharpe_ratio",
+      "tier": "share_alike",
+      "charCount": 17326,
+      "attribution": "\"Sharpe ratio\" by Wikipedia contributors, CC BY-SA 4.0, https://en.wikipedia.org/wiki/Sharpe_ratio",
+      "licenseEvidence": "Wikipedia text is CC BY-SA 4.0; reuse requires attribution and share-alike on adaptations.",
+      "excerptPolicy": "attribution_and_share_alike_required",
+      "learnerFacingApproved": false
+    }
+  ],
+  "nodeSpecificPublicGapSamples": [
+    {
+      "nodeId": "knv2_0003",
+      "title": "K线与价格行为：单根K线误区 教学节点 1",
+      "module": "K线与价格行为",
+      "topic": "单根K线误区",
+      "reviewStatus": "reviewed",
+      "localEvidenceCount": 5,
+      "directPublicEvidenceCount": 2,
+      "directWikipediaEvidenceCount": 0,
+      "directOfficialEvidenceCount": 0,
+      "modulePublicEvidenceDocs": 40,
+      "moduleWikipediaEvidenceDocs": 11,
+      "moduleOfficialLikeEvidenceDocs": 0,
+      "moduleUniqueHosts": 4,
+      "triangulationStatus": "module_grounded_pending_node_specific_public_review",
+      "learnerCitationApproved": false,
+      "writeAllowedNow": false,
+      "localEvidence": [
+        {
+          "documentId": "corpus_1582",
+          "name": "本地投资课程：VWAP",
+          "sourceRelativePath": "VWAP.pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 609772,
+          "score": 54,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1572",
+          "name": "本地投资课程：Fabio两种剥头皮交易策略的结构与可行性深度分析",
+          "sourceRelativePath": "Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 33105,
+          "score": 45,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1304",
+          "name": "本地投资课程：突破白皮书研究（整理）(1)",
+          "sourceRelativePath": "突破白皮书研究（整理）(1).pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 28278,
+          "score": 39,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1368",
+          "name": "本地投资课程：09_0409-【复训】-复训布林带基本用法及形态_笔记(1)",
+          "sourceRelativePath": "专享04指标篇/09_0409-【复训】-复训布林带基本用法及形态_笔记(1).pdf",
+          "sourceModule": "专享04指标篇",
+          "charCount": 11373,
+          "score": 37,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1374",
+          "name": "本地投资课程：04_0604-【复训】价格行为基础复盘_笔记",
+          "sourceRelativePath": "专享05裸K篇/04_0604-【复训】价格行为基础复盘_笔记.pdf",
+          "sourceModule": "专享05裸K篇",
+          "charCount": 12892,
+          "score": 35,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        }
+      ],
+      "directPublicEvidence": [
+        {
+          "documentId": "corpus_0884",
+          "sourceId": "github:quantium-ai/patternity",
+          "name": "quantium-ai/patternity README",
+          "url": "https://github.com/quantium-ai/patternity",
+          "tier": "permissive",
+          "family": "Permissive/Open Source",
+          "excerptPolicy": "cite_and_paraphrase_for_original_lesson"
+        },
+        {
+          "documentId": "corpus_0983",
+          "sourceId": "github:joaquinbejar/OptionChain-Simulator",
+          "name": "joaquinbejar/OptionChain-Simulator README",
+          "url": "https://github.com/joaquinbejar/OptionChain-Simulator",
+          "tier": "permissive",
+          "family": "Permissive/Open Source",
+          "excerptPolicy": "cite_and_paraphrase_for_original_lesson"
+        }
+      ],
+      "directWikipediaEvidence": [],
+      "directOfficialEvidence": [],
+      "modulePublicEvidenceSamples": [
+        {
+          "documentId": "corpus_0406",
+          "sourceId": "wikipedia:27866580",
+          "name": "Wikipedia: Candlestick pattern",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_pattern",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 11,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "wick"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0301",
+          "sourceId": "arxiv:2604.12659v1",
+          "name": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+          "url": "https://arxiv.org/abs/2604.12659v1",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 8,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "price action",
+            "wick",
+            "chart pattern"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 8,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1588",
+          "sourceId": "wikipedia:32033902",
+          "name": "Wikipedia: Price action trading",
+          "url": "https://en.wikipedia.org/wiki/Price_action_trading",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 7,
+          "matchedTerms": [
+            "candlestick",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0297",
+          "sourceId": "arxiv:1901.05237v2",
+          "name": "Encoding Candlesticks as Images for Patterns Classification Using Convolutional Neural Networks",
+          "url": "https://arxiv.org/abs/1901.05237v2",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 6,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "price action"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "moduleWikipediaEvidenceSamples": [
+        {
+          "documentId": "corpus_0406",
+          "sourceId": "wikipedia:27866580",
+          "name": "Wikipedia: Candlestick pattern",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_pattern",
+          "tier": "share_alike",
+          "score": 11,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "wick"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "tier": "share_alike",
+          "score": 8,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1588",
+          "sourceId": "wikipedia:32033902",
+          "name": "Wikipedia: Price action trading",
+          "url": "https://en.wikipedia.org/wiki/Price_action_trading",
+          "tier": "share_alike",
+          "score": 7,
+          "matchedTerms": [
+            "candlestick",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1584",
+          "sourceId": "wikipedia:1142120",
+          "name": "Wikipedia: Candlestick chart",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_chart",
+          "tier": "share_alike",
+          "score": 6,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "wick"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0407",
+          "sourceId": "wikipedia:21020925",
+          "name": "Wikipedia: Doji",
+          "url": "https://en.wikipedia.org/wiki/Doji",
+          "tier": "share_alike",
+          "score": 6,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ],
+      "nextGate": "promote_module_public_sources_to_node_specific_source_fit_candidates"
+    },
+    {
+      "nodeId": "knv2_0015",
+      "title": "K线与价格行为：组合K线 教学节点 2",
+      "module": "K线与价格行为",
+      "topic": "组合K线",
+      "reviewStatus": "reviewed",
+      "localEvidenceCount": 5,
+      "directPublicEvidenceCount": 1,
+      "directWikipediaEvidenceCount": 0,
+      "directOfficialEvidenceCount": 0,
+      "modulePublicEvidenceDocs": 40,
+      "moduleWikipediaEvidenceDocs": 11,
+      "moduleOfficialLikeEvidenceDocs": 0,
+      "moduleUniqueHosts": 4,
+      "triangulationStatus": "module_grounded_pending_node_specific_public_review",
+      "learnerCitationApproved": false,
+      "writeAllowedNow": false,
+      "localEvidence": [
+        {
+          "documentId": "corpus_1582",
+          "name": "本地投资课程：VWAP",
+          "sourceRelativePath": "VWAP.pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 609772,
+          "score": 56,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1572",
+          "name": "本地投资课程：Fabio两种剥头皮交易策略的结构与可行性深度分析",
+          "sourceRelativePath": "Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 33105,
+          "score": 47,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1304",
+          "name": "本地投资课程：突破白皮书研究（整理）(1)",
+          "sourceRelativePath": "突破白皮书研究（整理）(1).pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 28278,
+          "score": 40,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1368",
+          "name": "本地投资课程：09_0409-【复训】-复训布林带基本用法及形态_笔记(1)",
+          "sourceRelativePath": "专享04指标篇/09_0409-【复训】-复训布林带基本用法及形态_笔记(1).pdf",
+          "sourceModule": "专享04指标篇",
+          "charCount": 11373,
+          "score": 36,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1374",
+          "name": "本地投资课程：04_0604-【复训】价格行为基础复盘_笔记",
+          "sourceRelativePath": "专享05裸K篇/04_0604-【复训】价格行为基础复盘_笔记.pdf",
+          "sourceModule": "专享05裸K篇",
+          "charCount": 12892,
+          "score": 35,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        }
+      ],
+      "directPublicEvidence": [
+        {
+          "documentId": "corpus_0884",
+          "sourceId": "github:quantium-ai/patternity",
+          "name": "quantium-ai/patternity README",
+          "url": "https://github.com/quantium-ai/patternity",
+          "tier": "permissive",
+          "family": "Permissive/Open Source",
+          "excerptPolicy": "cite_and_paraphrase_for_original_lesson"
+        }
+      ],
+      "directWikipediaEvidence": [],
+      "directOfficialEvidence": [],
+      "modulePublicEvidenceSamples": [
+        {
+          "documentId": "corpus_0406",
+          "sourceId": "wikipedia:27866580",
+          "name": "Wikipedia: Candlestick pattern",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_pattern",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 11,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "wick"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0301",
+          "sourceId": "arxiv:2604.12659v1",
+          "name": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+          "url": "https://arxiv.org/abs/2604.12659v1",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 8,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "price action",
+            "wick",
+            "chart pattern"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 8,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1588",
+          "sourceId": "wikipedia:32033902",
+          "name": "Wikipedia: Price action trading",
+          "url": "https://en.wikipedia.org/wiki/Price_action_trading",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 7,
+          "matchedTerms": [
+            "candlestick",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0297",
+          "sourceId": "arxiv:1901.05237v2",
+          "name": "Encoding Candlesticks as Images for Patterns Classification Using Convolutional Neural Networks",
+          "url": "https://arxiv.org/abs/1901.05237v2",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 6,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "price action"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "moduleWikipediaEvidenceSamples": [
+        {
+          "documentId": "corpus_0406",
+          "sourceId": "wikipedia:27866580",
+          "name": "Wikipedia: Candlestick pattern",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_pattern",
+          "tier": "share_alike",
+          "score": 11,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "wick"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "tier": "share_alike",
+          "score": 8,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1588",
+          "sourceId": "wikipedia:32033902",
+          "name": "Wikipedia: Price action trading",
+          "url": "https://en.wikipedia.org/wiki/Price_action_trading",
+          "tier": "share_alike",
+          "score": 7,
+          "matchedTerms": [
+            "candlestick",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1584",
+          "sourceId": "wikipedia:1142120",
+          "name": "Wikipedia: Candlestick chart",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_chart",
+          "tier": "share_alike",
+          "score": 6,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "wick"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0407",
+          "sourceId": "wikipedia:21020925",
+          "name": "Wikipedia: Doji",
+          "url": "https://en.wikipedia.org/wiki/Doji",
+          "tier": "share_alike",
+          "score": 6,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ],
+      "nextGate": "promote_module_public_sources_to_node_specific_source_fit_candidates"
+    },
+    {
+      "nodeId": "knv2_0027",
+      "title": "K线与价格行为：流动性扫过 教学节点 3",
+      "module": "K线与价格行为",
+      "topic": "流动性扫过",
+      "reviewStatus": "reviewed",
+      "localEvidenceCount": 5,
+      "directPublicEvidenceCount": 1,
+      "directWikipediaEvidenceCount": 0,
+      "directOfficialEvidenceCount": 0,
+      "modulePublicEvidenceDocs": 40,
+      "moduleWikipediaEvidenceDocs": 11,
+      "moduleOfficialLikeEvidenceDocs": 0,
+      "moduleUniqueHosts": 4,
+      "triangulationStatus": "module_grounded_pending_node_specific_public_review",
+      "learnerCitationApproved": false,
+      "writeAllowedNow": false,
+      "localEvidence": [
+        {
+          "documentId": "corpus_1582",
+          "name": "本地投资课程：VWAP",
+          "sourceRelativePath": "VWAP.pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 609772,
+          "score": 55,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1572",
+          "name": "本地投资课程：Fabio两种剥头皮交易策略的结构与可行性深度分析",
+          "sourceRelativePath": "Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 33105,
+          "score": 46,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1304",
+          "name": "本地投资课程：突破白皮书研究（整理）(1)",
+          "sourceRelativePath": "突破白皮书研究（整理）(1).pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 28278,
+          "score": 39,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1542",
+          "name": "本地投资课程：20_1409-【复训】订单流交流会_笔记",
+          "sourceRelativePath": "专享12订单篇/20_1409-【复训】订单流交流会_笔记.pdf",
+          "sourceModule": "专享12订单篇",
+          "charCount": 8701,
+          "score": 34,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1374",
+          "name": "本地投资课程：04_0604-【复训】价格行为基础复盘_笔记",
+          "sourceRelativePath": "专享05裸K篇/04_0604-【复训】价格行为基础复盘_笔记.pdf",
+          "sourceModule": "专享05裸K篇",
+          "charCount": 12892,
+          "score": 33,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        }
+      ],
+      "directPublicEvidence": [
+        {
+          "documentId": "corpus_0884",
+          "sourceId": "github:quantium-ai/patternity",
+          "name": "quantium-ai/patternity README",
+          "url": "https://github.com/quantium-ai/patternity",
+          "tier": "permissive",
+          "family": "Permissive/Open Source",
+          "excerptPolicy": "cite_and_paraphrase_for_original_lesson"
+        }
+      ],
+      "directWikipediaEvidence": [],
+      "directOfficialEvidence": [],
+      "modulePublicEvidenceSamples": [
+        {
+          "documentId": "corpus_0406",
+          "sourceId": "wikipedia:27866580",
+          "name": "Wikipedia: Candlestick pattern",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_pattern",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 11,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "wick"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0301",
+          "sourceId": "arxiv:2604.12659v1",
+          "name": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+          "url": "https://arxiv.org/abs/2604.12659v1",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 8,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "price action",
+            "wick",
+            "chart pattern"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 8,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1588",
+          "sourceId": "wikipedia:32033902",
+          "name": "Wikipedia: Price action trading",
+          "url": "https://en.wikipedia.org/wiki/Price_action_trading",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 7,
+          "matchedTerms": [
+            "candlestick",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0297",
+          "sourceId": "arxiv:1901.05237v2",
+          "name": "Encoding Candlesticks as Images for Patterns Classification Using Convolutional Neural Networks",
+          "url": "https://arxiv.org/abs/1901.05237v2",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 6,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "price action"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "moduleWikipediaEvidenceSamples": [
+        {
+          "documentId": "corpus_0406",
+          "sourceId": "wikipedia:27866580",
+          "name": "Wikipedia: Candlestick pattern",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_pattern",
+          "tier": "share_alike",
+          "score": 11,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "wick"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "tier": "share_alike",
+          "score": 8,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1588",
+          "sourceId": "wikipedia:32033902",
+          "name": "Wikipedia: Price action trading",
+          "url": "https://en.wikipedia.org/wiki/Price_action_trading",
+          "tier": "share_alike",
+          "score": 7,
+          "matchedTerms": [
+            "candlestick",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1584",
+          "sourceId": "wikipedia:1142120",
+          "name": "Wikipedia: Candlestick chart",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_chart",
+          "tier": "share_alike",
+          "score": 6,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "wick"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0407",
+          "sourceId": "wikipedia:21020925",
+          "name": "Wikipedia: Doji",
+          "url": "https://en.wikipedia.org/wiki/Doji",
+          "tier": "share_alike",
+          "score": 6,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ],
+      "nextGate": "promote_module_public_sources_to_node_specific_source_fit_candidates"
+    },
+    {
+      "nodeId": "knv2_0039",
+      "title": "K线与价格行为：形态语境 教学节点 4",
+      "module": "K线与价格行为",
+      "topic": "形态语境",
+      "reviewStatus": "reviewed",
+      "localEvidenceCount": 5,
+      "directPublicEvidenceCount": 1,
+      "directWikipediaEvidenceCount": 0,
+      "directOfficialEvidenceCount": 0,
+      "modulePublicEvidenceDocs": 40,
+      "moduleWikipediaEvidenceDocs": 11,
+      "moduleOfficialLikeEvidenceDocs": 0,
+      "moduleUniqueHosts": 4,
+      "triangulationStatus": "module_grounded_pending_node_specific_public_review",
+      "learnerCitationApproved": false,
+      "writeAllowedNow": false,
+      "localEvidence": [
+        {
+          "documentId": "corpus_1582",
+          "name": "本地投资课程：VWAP",
+          "sourceRelativePath": "VWAP.pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 609772,
+          "score": 55,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1572",
+          "name": "本地投资课程：Fabio两种剥头皮交易策略的结构与可行性深度分析",
+          "sourceRelativePath": "Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 33105,
+          "score": 46,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1304",
+          "name": "本地投资课程：突破白皮书研究（整理）(1)",
+          "sourceRelativePath": "突破白皮书研究（整理）(1).pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 28278,
+          "score": 39,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1368",
+          "name": "本地投资课程：09_0409-【复训】-复训布林带基本用法及形态_笔记(1)",
+          "sourceRelativePath": "专享04指标篇/09_0409-【复训】-复训布林带基本用法及形态_笔记(1).pdf",
+          "sourceModule": "专享04指标篇",
+          "charCount": 11373,
+          "score": 35,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1374",
+          "name": "本地投资课程：04_0604-【复训】价格行为基础复盘_笔记",
+          "sourceRelativePath": "专享05裸K篇/04_0604-【复训】价格行为基础复盘_笔记.pdf",
+          "sourceModule": "专享05裸K篇",
+          "charCount": 12892,
+          "score": 34,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        }
+      ],
+      "directPublicEvidence": [
+        {
+          "documentId": "corpus_0884",
+          "sourceId": "github:quantium-ai/patternity",
+          "name": "quantium-ai/patternity README",
+          "url": "https://github.com/quantium-ai/patternity",
+          "tier": "permissive",
+          "family": "Permissive/Open Source",
+          "excerptPolicy": "cite_and_paraphrase_for_original_lesson"
+        }
+      ],
+      "directWikipediaEvidence": [],
+      "directOfficialEvidence": [],
+      "modulePublicEvidenceSamples": [
+        {
+          "documentId": "corpus_0406",
+          "sourceId": "wikipedia:27866580",
+          "name": "Wikipedia: Candlestick pattern",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_pattern",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 11,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "wick"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0301",
+          "sourceId": "arxiv:2604.12659v1",
+          "name": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+          "url": "https://arxiv.org/abs/2604.12659v1",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 8,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "price action",
+            "wick",
+            "chart pattern"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 8,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1588",
+          "sourceId": "wikipedia:32033902",
+          "name": "Wikipedia: Price action trading",
+          "url": "https://en.wikipedia.org/wiki/Price_action_trading",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 7,
+          "matchedTerms": [
+            "candlestick",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0297",
+          "sourceId": "arxiv:1901.05237v2",
+          "name": "Encoding Candlesticks as Images for Patterns Classification Using Convolutional Neural Networks",
+          "url": "https://arxiv.org/abs/1901.05237v2",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 6,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "price action"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "moduleWikipediaEvidenceSamples": [
+        {
+          "documentId": "corpus_0406",
+          "sourceId": "wikipedia:27866580",
+          "name": "Wikipedia: Candlestick pattern",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_pattern",
+          "tier": "share_alike",
+          "score": 11,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "wick"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "tier": "share_alike",
+          "score": 8,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1588",
+          "sourceId": "wikipedia:32033902",
+          "name": "Wikipedia: Price action trading",
+          "url": "https://en.wikipedia.org/wiki/Price_action_trading",
+          "tier": "share_alike",
+          "score": 7,
+          "matchedTerms": [
+            "candlestick",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1584",
+          "sourceId": "wikipedia:1142120",
+          "name": "Wikipedia: Candlestick chart",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_chart",
+          "tier": "share_alike",
+          "score": 6,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "wick"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0407",
+          "sourceId": "wikipedia:21020925",
+          "name": "Wikipedia: Doji",
+          "url": "https://en.wikipedia.org/wiki/Doji",
+          "tier": "share_alike",
+          "score": 6,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ],
+      "nextGate": "promote_module_public_sources_to_node_specific_source_fit_candidates"
+    },
+    {
+      "nodeId": "knv2_0041",
+      "title": "突破：突破回踩 教学节点 4",
+      "module": "突破",
+      "topic": "突破回踩",
+      "reviewStatus": "reviewed",
+      "localEvidenceCount": 5,
+      "directPublicEvidenceCount": 0,
+      "directWikipediaEvidenceCount": 0,
+      "directOfficialEvidenceCount": 0,
+      "modulePublicEvidenceDocs": 40,
+      "moduleWikipediaEvidenceDocs": 37,
+      "moduleOfficialLikeEvidenceDocs": 6,
+      "moduleUniqueHosts": 3,
+      "triangulationStatus": "module_grounded_pending_node_specific_public_review",
+      "learnerCitationApproved": false,
+      "writeAllowedNow": false,
+      "localEvidence": [
+        {
+          "documentId": "corpus_1582",
+          "name": "本地投资课程：VWAP",
+          "sourceRelativePath": "VWAP.pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 609772,
+          "score": 54,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1572",
+          "name": "本地投资课程：Fabio两种剥头皮交易策略的结构与可行性深度分析",
+          "sourceRelativePath": "Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 33105,
+          "score": 47,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1304",
+          "name": "本地投资课程：突破白皮书研究（整理）(1)",
+          "sourceRelativePath": "突破白皮书研究（整理）(1).pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 28278,
+          "score": 42,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1385",
+          "name": "本地投资课程：13_0613-【正课】交易区间内的交易._笔记(1)(1)",
+          "sourceRelativePath": "专享05裸K篇/13_0613-【正课】交易区间内的交易._笔记(1)(1).pdf",
+          "sourceModule": "专享05裸K篇",
+          "charCount": 19444,
+          "score": 36,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1368",
+          "name": "本地投资课程：09_0409-【复训】-复训布林带基本用法及形态_笔记(1)",
+          "sourceRelativePath": "专享04指标篇/09_0409-【复训】-复训布林带基本用法及形态_笔记(1).pdf",
+          "sourceModule": "专享04指标篇",
+          "charCount": 11373,
+          "score": 36,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        }
+      ],
+      "directPublicEvidence": [],
+      "directWikipediaEvidence": [],
+      "directOfficialEvidence": [],
+      "modulePublicEvidenceSamples": [
+        {
+          "documentId": "corpus_0408",
+          "sourceId": "wikipedia:564701",
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 11,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "volatility",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0313",
+          "sourceId": "arxiv:2507.01971v1",
+          "name": "DeepSupp: Attention-Driven Correlation Pattern Analysis for Dynamic Time Series Support and Resistance Levels Identification",
+          "url": "https://arxiv.org/abs/2507.01971v1",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 10,
+          "matchedTerms": [
+            "breakout",
+            "support",
+            "resistance",
+            "technical analysis"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0312",
+          "sourceId": "arxiv:2101.07410v1",
+          "name": "Evidence and Behaviour of Support and Resistance Levels in Financial Time Series",
+          "url": "https://arxiv.org/abs/2101.07410v1",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 10,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "volatility",
+            "technical analysis"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0314",
+          "sourceId": "arxiv:2103.02331v2",
+          "name": "The Support and Resistance Line Method: An Analysis via Optimal Stopping",
+          "url": "https://arxiv.org/abs/2103.02331v2",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 10,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "volatility",
+            "technical analysis"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_1583",
+          "sourceId": "wikipedia:112577",
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 9,
+          "matchedTerms": [
+            "breakout",
+            "support",
+            "resistance",
+            "volatility",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ],
+      "moduleWikipediaEvidenceSamples": [
+        {
+          "documentId": "corpus_0408",
+          "sourceId": "wikipedia:564701",
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "tier": "share_alike",
+          "score": 11,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "volatility",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1583",
+          "sourceId": "wikipedia:112577",
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "tier": "share_alike",
+          "score": 9,
+          "matchedTerms": [
+            "breakout",
+            "support",
+            "resistance",
+            "volatility",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "tier": "share_alike",
+          "score": 7,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1115",
+          "sourceId": "wikipedia:23264244",
+          "name": "Wikipedia: Gap (chart pattern)",
+          "url": "https://en.wikipedia.org/wiki/Gap_(chart_pattern)",
+          "tier": "share_alike",
+          "score": 7,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0410",
+          "sourceId": "wikipedia:16363792",
+          "name": "Wikipedia: Head and shoulders (chart pattern)",
+          "url": "https://en.wikipedia.org/wiki/Head_and_shoulders_(chart_pattern)",
+          "tier": "share_alike",
+          "score": 6,
+          "matchedTerms": [
+            "support",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ],
+      "nextGate": "promote_module_public_sources_to_node_specific_source_fit_candidates"
+    },
+    {
+      "nodeId": "knv2_0051",
+      "title": "K线与价格行为：行为证据 教学节点 5",
+      "module": "K线与价格行为",
+      "topic": "行为证据",
+      "reviewStatus": "reviewed",
+      "localEvidenceCount": 5,
+      "directPublicEvidenceCount": 0,
+      "directWikipediaEvidenceCount": 0,
+      "directOfficialEvidenceCount": 0,
+      "modulePublicEvidenceDocs": 40,
+      "moduleWikipediaEvidenceDocs": 11,
+      "moduleOfficialLikeEvidenceDocs": 0,
+      "moduleUniqueHosts": 4,
+      "triangulationStatus": "module_grounded_pending_node_specific_public_review",
+      "learnerCitationApproved": false,
+      "writeAllowedNow": false,
+      "localEvidence": [
+        {
+          "documentId": "corpus_1582",
+          "name": "本地投资课程：VWAP",
+          "sourceRelativePath": "VWAP.pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 609772,
+          "score": 55,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1572",
+          "name": "本地投资课程：Fabio两种剥头皮交易策略的结构与可行性深度分析",
+          "sourceRelativePath": "Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 33105,
+          "score": 46,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1304",
+          "name": "本地投资课程：突破白皮书研究（整理）(1)",
+          "sourceRelativePath": "突破白皮书研究（整理）(1).pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 28278,
+          "score": 38,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1368",
+          "name": "本地投资课程：09_0409-【复训】-复训布林带基本用法及形态_笔记(1)",
+          "sourceRelativePath": "专享04指标篇/09_0409-【复训】-复训布林带基本用法及形态_笔记(1).pdf",
+          "sourceModule": "专享04指标篇",
+          "charCount": 11373,
+          "score": 34,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1374",
+          "name": "本地投资课程：04_0604-【复训】价格行为基础复盘_笔记",
+          "sourceRelativePath": "专享05裸K篇/04_0604-【复训】价格行为基础复盘_笔记.pdf",
+          "sourceModule": "专享05裸K篇",
+          "charCount": 12892,
+          "score": 33,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        }
+      ],
+      "directPublicEvidence": [],
+      "directWikipediaEvidence": [],
+      "directOfficialEvidence": [],
+      "modulePublicEvidenceSamples": [
+        {
+          "documentId": "corpus_0406",
+          "sourceId": "wikipedia:27866580",
+          "name": "Wikipedia: Candlestick pattern",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_pattern",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 11,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "wick"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0301",
+          "sourceId": "arxiv:2604.12659v1",
+          "name": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+          "url": "https://arxiv.org/abs/2604.12659v1",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 8,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "price action",
+            "wick",
+            "chart pattern"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 8,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1588",
+          "sourceId": "wikipedia:32033902",
+          "name": "Wikipedia: Price action trading",
+          "url": "https://en.wikipedia.org/wiki/Price_action_trading",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 7,
+          "matchedTerms": [
+            "candlestick",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0297",
+          "sourceId": "arxiv:1901.05237v2",
+          "name": "Encoding Candlesticks as Images for Patterns Classification Using Convolutional Neural Networks",
+          "url": "https://arxiv.org/abs/1901.05237v2",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 6,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "price action"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "moduleWikipediaEvidenceSamples": [
+        {
+          "documentId": "corpus_0406",
+          "sourceId": "wikipedia:27866580",
+          "name": "Wikipedia: Candlestick pattern",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_pattern",
+          "tier": "share_alike",
+          "score": 11,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "wick"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "tier": "share_alike",
+          "score": 8,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1588",
+          "sourceId": "wikipedia:32033902",
+          "name": "Wikipedia: Price action trading",
+          "url": "https://en.wikipedia.org/wiki/Price_action_trading",
+          "tier": "share_alike",
+          "score": 7,
+          "matchedTerms": [
+            "candlestick",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1584",
+          "sourceId": "wikipedia:1142120",
+          "name": "Wikipedia: Candlestick chart",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_chart",
+          "tier": "share_alike",
+          "score": 6,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "wick"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0407",
+          "sourceId": "wikipedia:21020925",
+          "name": "Wikipedia: Doji",
+          "url": "https://en.wikipedia.org/wiki/Doji",
+          "tier": "share_alike",
+          "score": 6,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ],
+      "nextGate": "promote_module_public_sources_to_node_specific_source_fit_candidates"
+    },
+    {
+      "nodeId": "knv2_0053",
+      "title": "突破：突破失败 教学节点 5",
+      "module": "突破",
+      "topic": "突破失败",
+      "reviewStatus": "reviewed",
+      "localEvidenceCount": 5,
+      "directPublicEvidenceCount": 0,
+      "directWikipediaEvidenceCount": 0,
+      "directOfficialEvidenceCount": 0,
+      "modulePublicEvidenceDocs": 40,
+      "moduleWikipediaEvidenceDocs": 37,
+      "moduleOfficialLikeEvidenceDocs": 6,
+      "moduleUniqueHosts": 3,
+      "triangulationStatus": "module_grounded_pending_node_specific_public_review",
+      "learnerCitationApproved": false,
+      "writeAllowedNow": false,
+      "localEvidence": [
+        {
+          "documentId": "corpus_1582",
+          "name": "本地投资课程：VWAP",
+          "sourceRelativePath": "VWAP.pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 609772,
+          "score": 55,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1572",
+          "name": "本地投资课程：Fabio两种剥头皮交易策略的结构与可行性深度分析",
+          "sourceRelativePath": "Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 33105,
+          "score": 49,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1304",
+          "name": "本地投资课程：突破白皮书研究（整理）(1)",
+          "sourceRelativePath": "突破白皮书研究（整理）(1).pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 28278,
+          "score": 42,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1368",
+          "name": "本地投资课程：09_0409-【复训】-复训布林带基本用法及形态_笔记(1)",
+          "sourceRelativePath": "专享04指标篇/09_0409-【复训】-复训布林带基本用法及形态_笔记(1).pdf",
+          "sourceModule": "专享04指标篇",
+          "charCount": 11373,
+          "score": 39,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1385",
+          "name": "本地投资课程：13_0613-【正课】交易区间内的交易._笔记(1)(1)",
+          "sourceRelativePath": "专享05裸K篇/13_0613-【正课】交易区间内的交易._笔记(1)(1).pdf",
+          "sourceModule": "专享05裸K篇",
+          "charCount": 19444,
+          "score": 36,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        }
+      ],
+      "directPublicEvidence": [],
+      "directWikipediaEvidence": [],
+      "directOfficialEvidence": [],
+      "modulePublicEvidenceSamples": [
+        {
+          "documentId": "corpus_0408",
+          "sourceId": "wikipedia:564701",
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 11,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "volatility",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0313",
+          "sourceId": "arxiv:2507.01971v1",
+          "name": "DeepSupp: Attention-Driven Correlation Pattern Analysis for Dynamic Time Series Support and Resistance Levels Identification",
+          "url": "https://arxiv.org/abs/2507.01971v1",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 10,
+          "matchedTerms": [
+            "breakout",
+            "support",
+            "resistance",
+            "technical analysis"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0312",
+          "sourceId": "arxiv:2101.07410v1",
+          "name": "Evidence and Behaviour of Support and Resistance Levels in Financial Time Series",
+          "url": "https://arxiv.org/abs/2101.07410v1",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 10,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "volatility",
+            "technical analysis"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0314",
+          "sourceId": "arxiv:2103.02331v2",
+          "name": "The Support and Resistance Line Method: An Analysis via Optimal Stopping",
+          "url": "https://arxiv.org/abs/2103.02331v2",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 10,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "volatility",
+            "technical analysis"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_1583",
+          "sourceId": "wikipedia:112577",
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 9,
+          "matchedTerms": [
+            "breakout",
+            "support",
+            "resistance",
+            "volatility",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ],
+      "moduleWikipediaEvidenceSamples": [
+        {
+          "documentId": "corpus_0408",
+          "sourceId": "wikipedia:564701",
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "tier": "share_alike",
+          "score": 11,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "volatility",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1583",
+          "sourceId": "wikipedia:112577",
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "tier": "share_alike",
+          "score": 9,
+          "matchedTerms": [
+            "breakout",
+            "support",
+            "resistance",
+            "volatility",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "tier": "share_alike",
+          "score": 7,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1115",
+          "sourceId": "wikipedia:23264244",
+          "name": "Wikipedia: Gap (chart pattern)",
+          "url": "https://en.wikipedia.org/wiki/Gap_(chart_pattern)",
+          "tier": "share_alike",
+          "score": 7,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0410",
+          "sourceId": "wikipedia:16363792",
+          "name": "Wikipedia: Head and shoulders (chart pattern)",
+          "url": "https://en.wikipedia.org/wiki/Head_and_shoulders_(chart_pattern)",
+          "tier": "share_alike",
+          "score": 6,
+          "matchedTerms": [
+            "support",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ],
+      "nextGate": "promote_module_public_sources_to_node_specific_source_fit_candidates"
+    },
+    {
+      "nodeId": "knv2_0063",
+      "title": "K线与价格行为：单根K线误区 教学节点 6",
+      "module": "K线与价格行为",
+      "topic": "单根K线误区",
+      "reviewStatus": "reviewed",
+      "localEvidenceCount": 5,
+      "directPublicEvidenceCount": 0,
+      "directWikipediaEvidenceCount": 0,
+      "directOfficialEvidenceCount": 0,
+      "modulePublicEvidenceDocs": 40,
+      "moduleWikipediaEvidenceDocs": 11,
+      "moduleOfficialLikeEvidenceDocs": 0,
+      "moduleUniqueHosts": 4,
+      "triangulationStatus": "module_grounded_pending_node_specific_public_review",
+      "learnerCitationApproved": false,
+      "writeAllowedNow": false,
+      "localEvidence": [
+        {
+          "documentId": "corpus_1582",
+          "name": "本地投资课程：VWAP",
+          "sourceRelativePath": "VWAP.pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 609772,
+          "score": 54,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1572",
+          "name": "本地投资课程：Fabio两种剥头皮交易策略的结构与可行性深度分析",
+          "sourceRelativePath": "Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 33105,
+          "score": 45,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1304",
+          "name": "本地投资课程：突破白皮书研究（整理）(1)",
+          "sourceRelativePath": "突破白皮书研究（整理）(1).pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 28278,
+          "score": 39,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1368",
+          "name": "本地投资课程：09_0409-【复训】-复训布林带基本用法及形态_笔记(1)",
+          "sourceRelativePath": "专享04指标篇/09_0409-【复训】-复训布林带基本用法及形态_笔记(1).pdf",
+          "sourceModule": "专享04指标篇",
+          "charCount": 11373,
+          "score": 37,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1374",
+          "name": "本地投资课程：04_0604-【复训】价格行为基础复盘_笔记",
+          "sourceRelativePath": "专享05裸K篇/04_0604-【复训】价格行为基础复盘_笔记.pdf",
+          "sourceModule": "专享05裸K篇",
+          "charCount": 12892,
+          "score": 35,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        }
+      ],
+      "directPublicEvidence": [],
+      "directWikipediaEvidence": [],
+      "directOfficialEvidence": [],
+      "modulePublicEvidenceSamples": [
+        {
+          "documentId": "corpus_0406",
+          "sourceId": "wikipedia:27866580",
+          "name": "Wikipedia: Candlestick pattern",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_pattern",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 11,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "wick"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0301",
+          "sourceId": "arxiv:2604.12659v1",
+          "name": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+          "url": "https://arxiv.org/abs/2604.12659v1",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 8,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "price action",
+            "wick",
+            "chart pattern"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 8,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1588",
+          "sourceId": "wikipedia:32033902",
+          "name": "Wikipedia: Price action trading",
+          "url": "https://en.wikipedia.org/wiki/Price_action_trading",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 7,
+          "matchedTerms": [
+            "candlestick",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0297",
+          "sourceId": "arxiv:1901.05237v2",
+          "name": "Encoding Candlesticks as Images for Patterns Classification Using Convolutional Neural Networks",
+          "url": "https://arxiv.org/abs/1901.05237v2",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 6,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "price action"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "moduleWikipediaEvidenceSamples": [
+        {
+          "documentId": "corpus_0406",
+          "sourceId": "wikipedia:27866580",
+          "name": "Wikipedia: Candlestick pattern",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_pattern",
+          "tier": "share_alike",
+          "score": 11,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "wick"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "tier": "share_alike",
+          "score": 8,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1588",
+          "sourceId": "wikipedia:32033902",
+          "name": "Wikipedia: Price action trading",
+          "url": "https://en.wikipedia.org/wiki/Price_action_trading",
+          "tier": "share_alike",
+          "score": 7,
+          "matchedTerms": [
+            "candlestick",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1584",
+          "sourceId": "wikipedia:1142120",
+          "name": "Wikipedia: Candlestick chart",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_chart",
+          "tier": "share_alike",
+          "score": 6,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "wick"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0407",
+          "sourceId": "wikipedia:21020925",
+          "name": "Wikipedia: Doji",
+          "url": "https://en.wikipedia.org/wiki/Doji",
+          "tier": "share_alike",
+          "score": 6,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ],
+      "nextGate": "promote_module_public_sources_to_node_specific_source_fit_candidates"
+    },
+    {
+      "nodeId": "knv2_0065",
+      "title": "突破：突破前压缩 教学节点 6",
+      "module": "突破",
+      "topic": "突破前压缩",
+      "reviewStatus": "reviewed",
+      "localEvidenceCount": 5,
+      "directPublicEvidenceCount": 0,
+      "directWikipediaEvidenceCount": 0,
+      "directOfficialEvidenceCount": 0,
+      "modulePublicEvidenceDocs": 40,
+      "moduleWikipediaEvidenceDocs": 37,
+      "moduleOfficialLikeEvidenceDocs": 6,
+      "moduleUniqueHosts": 3,
+      "triangulationStatus": "module_grounded_pending_node_specific_public_review",
+      "learnerCitationApproved": false,
+      "writeAllowedNow": false,
+      "localEvidence": [
+        {
+          "documentId": "corpus_1582",
+          "name": "本地投资课程：VWAP",
+          "sourceRelativePath": "VWAP.pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 609772,
+          "score": 56,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1572",
+          "name": "本地投资课程：Fabio两种剥头皮交易策略的结构与可行性深度分析",
+          "sourceRelativePath": "Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 33105,
+          "score": 47,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1304",
+          "name": "本地投资课程：突破白皮书研究（整理）(1)",
+          "sourceRelativePath": "突破白皮书研究（整理）(1).pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 28278,
+          "score": 42,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1368",
+          "name": "本地投资课程：09_0409-【复训】-复训布林带基本用法及形态_笔记(1)",
+          "sourceRelativePath": "专享04指标篇/09_0409-【复训】-复训布林带基本用法及形态_笔记(1).pdf",
+          "sourceModule": "专享04指标篇",
+          "charCount": 11373,
+          "score": 36,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1385",
+          "name": "本地投资课程：13_0613-【正课】交易区间内的交易._笔记(1)(1)",
+          "sourceRelativePath": "专享05裸K篇/13_0613-【正课】交易区间内的交易._笔记(1)(1).pdf",
+          "sourceModule": "专享05裸K篇",
+          "charCount": 19444,
+          "score": 35,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        }
+      ],
+      "directPublicEvidence": [],
+      "directWikipediaEvidence": [],
+      "directOfficialEvidence": [],
+      "modulePublicEvidenceSamples": [
+        {
+          "documentId": "corpus_0408",
+          "sourceId": "wikipedia:564701",
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 11,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "volatility",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0313",
+          "sourceId": "arxiv:2507.01971v1",
+          "name": "DeepSupp: Attention-Driven Correlation Pattern Analysis for Dynamic Time Series Support and Resistance Levels Identification",
+          "url": "https://arxiv.org/abs/2507.01971v1",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 10,
+          "matchedTerms": [
+            "breakout",
+            "support",
+            "resistance",
+            "technical analysis"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0312",
+          "sourceId": "arxiv:2101.07410v1",
+          "name": "Evidence and Behaviour of Support and Resistance Levels in Financial Time Series",
+          "url": "https://arxiv.org/abs/2101.07410v1",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 10,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "volatility",
+            "technical analysis"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0314",
+          "sourceId": "arxiv:2103.02331v2",
+          "name": "The Support and Resistance Line Method: An Analysis via Optimal Stopping",
+          "url": "https://arxiv.org/abs/2103.02331v2",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 10,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "volatility",
+            "technical analysis"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_1583",
+          "sourceId": "wikipedia:112577",
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 9,
+          "matchedTerms": [
+            "breakout",
+            "support",
+            "resistance",
+            "volatility",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ],
+      "moduleWikipediaEvidenceSamples": [
+        {
+          "documentId": "corpus_0408",
+          "sourceId": "wikipedia:564701",
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "tier": "share_alike",
+          "score": 11,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "volatility",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1583",
+          "sourceId": "wikipedia:112577",
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "tier": "share_alike",
+          "score": 9,
+          "matchedTerms": [
+            "breakout",
+            "support",
+            "resistance",
+            "volatility",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "tier": "share_alike",
+          "score": 7,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1115",
+          "sourceId": "wikipedia:23264244",
+          "name": "Wikipedia: Gap (chart pattern)",
+          "url": "https://en.wikipedia.org/wiki/Gap_(chart_pattern)",
+          "tier": "share_alike",
+          "score": 7,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0410",
+          "sourceId": "wikipedia:16363792",
+          "name": "Wikipedia: Head and shoulders (chart pattern)",
+          "url": "https://en.wikipedia.org/wiki/Head_and_shoulders_(chart_pattern)",
+          "tier": "share_alike",
+          "score": 6,
+          "matchedTerms": [
+            "support",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ],
+      "nextGate": "promote_module_public_sources_to_node_specific_source_fit_candidates"
+    },
+    {
+      "nodeId": "knv2_0075",
+      "title": "K线与价格行为：组合K线 教学节点 7",
+      "module": "K线与价格行为",
+      "topic": "组合K线",
+      "reviewStatus": "reviewed",
+      "localEvidenceCount": 5,
+      "directPublicEvidenceCount": 0,
+      "directWikipediaEvidenceCount": 0,
+      "directOfficialEvidenceCount": 0,
+      "modulePublicEvidenceDocs": 40,
+      "moduleWikipediaEvidenceDocs": 11,
+      "moduleOfficialLikeEvidenceDocs": 0,
+      "moduleUniqueHosts": 4,
+      "triangulationStatus": "module_grounded_pending_node_specific_public_review",
+      "learnerCitationApproved": false,
+      "writeAllowedNow": false,
+      "localEvidence": [
+        {
+          "documentId": "corpus_1582",
+          "name": "本地投资课程：VWAP",
+          "sourceRelativePath": "VWAP.pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 609772,
+          "score": 56,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1572",
+          "name": "本地投资课程：Fabio两种剥头皮交易策略的结构与可行性深度分析",
+          "sourceRelativePath": "Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 33105,
+          "score": 47,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1304",
+          "name": "本地投资课程：突破白皮书研究（整理）(1)",
+          "sourceRelativePath": "突破白皮书研究（整理）(1).pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 28278,
+          "score": 40,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1368",
+          "name": "本地投资课程：09_0409-【复训】-复训布林带基本用法及形态_笔记(1)",
+          "sourceRelativePath": "专享04指标篇/09_0409-【复训】-复训布林带基本用法及形态_笔记(1).pdf",
+          "sourceModule": "专享04指标篇",
+          "charCount": 11373,
+          "score": 36,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1374",
+          "name": "本地投资课程：04_0604-【复训】价格行为基础复盘_笔记",
+          "sourceRelativePath": "专享05裸K篇/04_0604-【复训】价格行为基础复盘_笔记.pdf",
+          "sourceModule": "专享05裸K篇",
+          "charCount": 12892,
+          "score": 35,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        }
+      ],
+      "directPublicEvidence": [],
+      "directWikipediaEvidence": [],
+      "directOfficialEvidence": [],
+      "modulePublicEvidenceSamples": [
+        {
+          "documentId": "corpus_0406",
+          "sourceId": "wikipedia:27866580",
+          "name": "Wikipedia: Candlestick pattern",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_pattern",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 11,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "wick"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0301",
+          "sourceId": "arxiv:2604.12659v1",
+          "name": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+          "url": "https://arxiv.org/abs/2604.12659v1",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 8,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "price action",
+            "wick",
+            "chart pattern"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 8,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1588",
+          "sourceId": "wikipedia:32033902",
+          "name": "Wikipedia: Price action trading",
+          "url": "https://en.wikipedia.org/wiki/Price_action_trading",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 7,
+          "matchedTerms": [
+            "candlestick",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0297",
+          "sourceId": "arxiv:1901.05237v2",
+          "name": "Encoding Candlesticks as Images for Patterns Classification Using Convolutional Neural Networks",
+          "url": "https://arxiv.org/abs/1901.05237v2",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 6,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "price action"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "moduleWikipediaEvidenceSamples": [
+        {
+          "documentId": "corpus_0406",
+          "sourceId": "wikipedia:27866580",
+          "name": "Wikipedia: Candlestick pattern",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_pattern",
+          "tier": "share_alike",
+          "score": 11,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "wick"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "tier": "share_alike",
+          "score": 8,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1588",
+          "sourceId": "wikipedia:32033902",
+          "name": "Wikipedia: Price action trading",
+          "url": "https://en.wikipedia.org/wiki/Price_action_trading",
+          "tier": "share_alike",
+          "score": 7,
+          "matchedTerms": [
+            "candlestick",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1584",
+          "sourceId": "wikipedia:1142120",
+          "name": "Wikipedia: Candlestick chart",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_chart",
+          "tier": "share_alike",
+          "score": 6,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "wick"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0407",
+          "sourceId": "wikipedia:21020925",
+          "name": "Wikipedia: Doji",
+          "url": "https://en.wikipedia.org/wiki/Doji",
+          "tier": "share_alike",
+          "score": 6,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ],
+      "nextGate": "promote_module_public_sources_to_node_specific_source_fit_candidates"
+    },
+    {
+      "nodeId": "knv2_0077",
+      "title": "突破：有效突破 教学节点 7",
+      "module": "突破",
+      "topic": "有效突破",
+      "reviewStatus": "reviewed",
+      "localEvidenceCount": 5,
+      "directPublicEvidenceCount": 0,
+      "directWikipediaEvidenceCount": 0,
+      "directOfficialEvidenceCount": 0,
+      "modulePublicEvidenceDocs": 40,
+      "moduleWikipediaEvidenceDocs": 37,
+      "moduleOfficialLikeEvidenceDocs": 6,
+      "moduleUniqueHosts": 3,
+      "triangulationStatus": "module_grounded_pending_node_specific_public_review",
+      "learnerCitationApproved": false,
+      "writeAllowedNow": false,
+      "localEvidence": [
+        {
+          "documentId": "corpus_1582",
+          "name": "本地投资课程：VWAP",
+          "sourceRelativePath": "VWAP.pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 609772,
+          "score": 55,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1572",
+          "name": "本地投资课程：Fabio两种剥头皮交易策略的结构与可行性深度分析",
+          "sourceRelativePath": "Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 33105,
+          "score": 46,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1304",
+          "name": "本地投资课程：突破白皮书研究（整理）(1)",
+          "sourceRelativePath": "突破白皮书研究（整理）(1).pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 28278,
+          "score": 42,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1368",
+          "name": "本地投资课程：09_0409-【复训】-复训布林带基本用法及形态_笔记(1)",
+          "sourceRelativePath": "专享04指标篇/09_0409-【复训】-复训布林带基本用法及形态_笔记(1).pdf",
+          "sourceModule": "专享04指标篇",
+          "charCount": 11373,
+          "score": 39,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1352",
+          "name": "本地投资课程：02_0302-【正课】-V形顶底双重顶底三重顶底_笔记",
+          "sourceRelativePath": "专享03形态篇/02_0302-【正课】-V形顶底双重顶底三重顶底_笔记.pdf",
+          "sourceModule": "专享03形态篇",
+          "charCount": 11009,
+          "score": 37,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        }
+      ],
+      "directPublicEvidence": [],
+      "directWikipediaEvidence": [],
+      "directOfficialEvidence": [],
+      "modulePublicEvidenceSamples": [
+        {
+          "documentId": "corpus_0408",
+          "sourceId": "wikipedia:564701",
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 11,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "volatility",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0313",
+          "sourceId": "arxiv:2507.01971v1",
+          "name": "DeepSupp: Attention-Driven Correlation Pattern Analysis for Dynamic Time Series Support and Resistance Levels Identification",
+          "url": "https://arxiv.org/abs/2507.01971v1",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 10,
+          "matchedTerms": [
+            "breakout",
+            "support",
+            "resistance",
+            "technical analysis"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0312",
+          "sourceId": "arxiv:2101.07410v1",
+          "name": "Evidence and Behaviour of Support and Resistance Levels in Financial Time Series",
+          "url": "https://arxiv.org/abs/2101.07410v1",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 10,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "volatility",
+            "technical analysis"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0314",
+          "sourceId": "arxiv:2103.02331v2",
+          "name": "The Support and Resistance Line Method: An Analysis via Optimal Stopping",
+          "url": "https://arxiv.org/abs/2103.02331v2",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 10,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "volatility",
+            "technical analysis"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_1583",
+          "sourceId": "wikipedia:112577",
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 9,
+          "matchedTerms": [
+            "breakout",
+            "support",
+            "resistance",
+            "volatility",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ],
+      "moduleWikipediaEvidenceSamples": [
+        {
+          "documentId": "corpus_0408",
+          "sourceId": "wikipedia:564701",
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "tier": "share_alike",
+          "score": 11,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "volatility",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1583",
+          "sourceId": "wikipedia:112577",
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "tier": "share_alike",
+          "score": 9,
+          "matchedTerms": [
+            "breakout",
+            "support",
+            "resistance",
+            "volatility",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "tier": "share_alike",
+          "score": 7,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1115",
+          "sourceId": "wikipedia:23264244",
+          "name": "Wikipedia: Gap (chart pattern)",
+          "url": "https://en.wikipedia.org/wiki/Gap_(chart_pattern)",
+          "tier": "share_alike",
+          "score": 7,
+          "matchedTerms": [
+            "support",
+            "resistance",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0410",
+          "sourceId": "wikipedia:16363792",
+          "name": "Wikipedia: Head and shoulders (chart pattern)",
+          "url": "https://en.wikipedia.org/wiki/Head_and_shoulders_(chart_pattern)",
+          "tier": "share_alike",
+          "score": 6,
+          "matchedTerms": [
+            "support",
+            "chart pattern",
+            "technical analysis"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ],
+      "nextGate": "promote_module_public_sources_to_node_specific_source_fit_candidates"
+    },
+    {
+      "nodeId": "knv2_0087",
+      "title": "K线与价格行为：流动性扫过 教学节点 8",
+      "module": "K线与价格行为",
+      "topic": "流动性扫过",
+      "reviewStatus": "reviewed",
+      "localEvidenceCount": 5,
+      "directPublicEvidenceCount": 0,
+      "directWikipediaEvidenceCount": 0,
+      "directOfficialEvidenceCount": 0,
+      "modulePublicEvidenceDocs": 40,
+      "moduleWikipediaEvidenceDocs": 11,
+      "moduleOfficialLikeEvidenceDocs": 0,
+      "moduleUniqueHosts": 4,
+      "triangulationStatus": "module_grounded_pending_node_specific_public_review",
+      "learnerCitationApproved": false,
+      "writeAllowedNow": false,
+      "localEvidence": [
+        {
+          "documentId": "corpus_1582",
+          "name": "本地投资课程：VWAP",
+          "sourceRelativePath": "VWAP.pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 609772,
+          "score": 55,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1572",
+          "name": "本地投资课程：Fabio两种剥头皮交易策略的结构与可行性深度分析",
+          "sourceRelativePath": "Fabio两种剥头皮交易策略的结构与可行性深度分析.pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 33105,
+          "score": 46,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1304",
+          "name": "本地投资课程：突破白皮书研究（整理）(1)",
+          "sourceRelativePath": "突破白皮书研究（整理）(1).pdf",
+          "sourceModule": "根目录PDF",
+          "charCount": 28278,
+          "score": 39,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1542",
+          "name": "本地投资课程：20_1409-【复训】订单流交流会_笔记",
+          "sourceRelativePath": "专享12订单篇/20_1409-【复训】订单流交流会_笔记.pdf",
+          "sourceModule": "专享12订单篇",
+          "charCount": 8701,
+          "score": 34,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        },
+        {
+          "documentId": "corpus_1374",
+          "name": "本地投资课程：04_0604-【复训】价格行为基础复盘_笔记",
+          "sourceRelativePath": "专享05裸K篇/04_0604-【复训】价格行为基础复盘_笔记.pdf",
+          "sourceModule": "专享05裸K篇",
+          "charCount": 12892,
+          "score": 33,
+          "extractionBucket": "usable_private_research_text",
+          "useBoundary": "Local private course evidence for reviewer distillation only. Do not copy text learner-facing; rewrite as original education content and keep approval blocked."
+        }
+      ],
+      "directPublicEvidence": [],
+      "directWikipediaEvidence": [],
+      "directOfficialEvidence": [],
+      "modulePublicEvidenceSamples": [
+        {
+          "documentId": "corpus_0406",
+          "sourceId": "wikipedia:27866580",
+          "name": "Wikipedia: Candlestick pattern",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_pattern",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 11,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "wick"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0301",
+          "sourceId": "arxiv:2604.12659v1",
+          "name": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+          "url": "https://arxiv.org/abs/2604.12659v1",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 8,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "price action",
+            "wick",
+            "chart pattern"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 8,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1588",
+          "sourceId": "wikipedia:32033902",
+          "name": "Wikipedia: Price action trading",
+          "url": "https://en.wikipedia.org/wiki/Price_action_trading",
+          "tier": "share_alike",
+          "family": "Wikipedia",
+          "score": 7,
+          "matchedTerms": [
+            "candlestick",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0297",
+          "sourceId": "arxiv:1901.05237v2",
+          "name": "Encoding Candlesticks as Images for Patterns Classification Using Convolutional Neural Networks",
+          "url": "https://arxiv.org/abs/1901.05237v2",
+          "tier": "open_access",
+          "family": "Open Research",
+          "score": 6,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "price action"
+          ],
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "moduleWikipediaEvidenceSamples": [
+        {
+          "documentId": "corpus_0406",
+          "sourceId": "wikipedia:27866580",
+          "name": "Wikipedia: Candlestick pattern",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_pattern",
+          "tier": "share_alike",
+          "score": 11,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "wick"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0409",
+          "sourceId": "wikipedia:1650818",
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "tier": "share_alike",
+          "score": 8,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1588",
+          "sourceId": "wikipedia:32033902",
+          "name": "Wikipedia: Price action trading",
+          "url": "https://en.wikipedia.org/wiki/Price_action_trading",
+          "tier": "share_alike",
+          "score": 7,
+          "matchedTerms": [
+            "candlestick",
+            "doji",
+            "price action",
+            "chart pattern"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_1584",
+          "sourceId": "wikipedia:1142120",
+          "name": "Wikipedia: Candlestick chart",
+          "url": "https://en.wikipedia.org/wiki/Candlestick_chart",
+          "tier": "share_alike",
+          "score": 6,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "wick"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "documentId": "corpus_0407",
+          "sourceId": "wikipedia:21020925",
+          "name": "Wikipedia: Doji",
+          "url": "https://en.wikipedia.org/wiki/Doji",
+          "tier": "share_alike",
+          "score": 6,
+          "matchedTerms": [
+            "candlestick",
+            "candlestick pattern",
+            "doji"
+          ],
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ],
+      "nextGate": "promote_module_public_sources_to_node_specific_source_fit_candidates"
+    }
+  ],
+  "commands": [
+    "npm.cmd run build:public-source-coverage-ledger",
+    "npm.cmd run check:public-source-coverage-ledger",
+    "npm.cmd run check:public-source-absorption-map",
+    "npm.cmd run check:knowledge-node-source-triangulation-audit",
+    "npm.cmd run verify"
+  ],
+  "completionRule": "This ledger is complete when public, Wikipedia, and official-like corpus documents are mapped to knowledge nodes, module-level public grounding is ready across all modules, and remaining node-specific source-fit rows are visible as real-reviewer work. It does not approve learner-facing citations or replace human source-fit review.",
+  "boundary": "Public source coverage ledger for reviewer-facing education-only governance. Public, Wikipedia, official/public-domain, open-access, and permissive sources support source-fit review and original lesson rewriting only; this ledger does not approve copied text, learner-facing citations, stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, or production readiness."
+}

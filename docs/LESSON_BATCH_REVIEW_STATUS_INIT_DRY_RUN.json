@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-06-18T10:43:49.882Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "mode": "dry_run",
+  "wroteStatusOverlay": false,
+  "statusOverlayExistedBeforeRun": false,
+  "targetPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "targetBatches": [
+    "rewrite_batch_01",
+    "rewrite_batch_05"
+  ],
+  "lessonCards": 12,
+  "notesFilled": 0,
+  "sourceDraft": "docs/LESSON_BATCH_REVIEW_STATUS_DRAFT_TEMPLATE_FOR_BATCH_01_05.json",
+  "sourceHandoff": "docs/FIRST_REVIEWER_HANDOFF.json",
+  "commands": {
+    "dryRun": "npm.cmd run init:first-reviewer-status-overlay:dry-run",
+    "write": "npm.cmd run init:first-reviewer-status-overlay:write",
+    "validate": "npm.cmd run check:lesson-batch-completion"
+  },
+  "safetyRules": [
+    "Default dry-run mode must not create docs/LESSON_BATCH_REVIEW_STATUS.json.",
+    "Use --write only when a human reviewer is ready to record real notes.",
+    "Do not overwrite an existing status overlay without separately preserving human notes.",
+    "Keep all notes blank until review work has actually been performed.",
+    "Keep approvalStatus:not_approved and learnerFacingRelease:false."
+  ],
+  "boundary": "This initializer only creates or previews a blank reviewer-status overlay. It does not approve lessons, publish learner-facing content, change lesson grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, or guide real-money decisions."
+}

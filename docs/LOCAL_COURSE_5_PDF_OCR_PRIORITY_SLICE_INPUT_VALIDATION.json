@@ -1,0 +1,730 @@
+{
+  "generatedAt": "2026-06-24T18:35:32.618Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "writeAllowedNow": false,
+  "validationStatus": "course_5_pdf_ocr_priority_slice_input_blocked_missing_or_invalid_real_ocr_or_visual_input",
+  "validationMode": "pdf_ocr_priority_slice_real_reviewer_input_gate",
+  "inputPath": "docs/reviewer-inputs/LOCAL_COURSE_5_PDF_OCR_PRIORITY_SLICE_INPUT_TEMPLATE.json",
+  "slicePath": "docs/LOCAL_COURSE_5_PDF_OCR_PRIORITY_SLICE.json",
+  "inputRows": 36,
+  "readyRows": 0,
+  "blockedRows": 36,
+  "missingFieldRows": 36,
+  "qualityIssueRows": 0,
+  "forbiddenHitRows": 0,
+  "acceptedForPdfVisualSemanticReviewRows": 0,
+  "acceptedForModuleDistillationRows": 0,
+  "acceptedForDeletionReadinessRows": 0,
+  "sourceFolderMayBeDeleted": false,
+  "learnerReadyModules": 0,
+  "forbiddenPhrases": [
+    "buy signal",
+    "sell signal",
+    "must buy",
+    "must sell",
+    "recommended buy",
+    "recommended sell",
+    "guaranteed return",
+    "win rate",
+    "profit target",
+    "stop loss instruction",
+    "real money",
+    "broker",
+    "auto trading",
+    "approved for release",
+    "learner-facing approved",
+    "write allowed",
+    "delete source"
+  ],
+  "validationRows": [
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_001",
+      "recordId": "course5_0a5fa56ee4758f70d7195444",
+      "pageNumber": 1,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_002",
+      "recordId": "course5_0a5fa56ee4758f70d7195444",
+      "pageNumber": 4514,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_003",
+      "recordId": "course5_0a5fa56ee4758f70d7195444",
+      "pageNumber": 9027,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_004",
+      "recordId": "course5_59235195b08cebb31f8b37e5",
+      "pageNumber": 1,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_005",
+      "recordId": "course5_59235195b08cebb31f8b37e5",
+      "pageNumber": 4511,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_006",
+      "recordId": "course5_59235195b08cebb31f8b37e5",
+      "pageNumber": 9020,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_007",
+      "recordId": "course5_f5163fadd2e7bd8072f91d0f",
+      "pageNumber": 1,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_008",
+      "recordId": "course5_f5163fadd2e7bd8072f91d0f",
+      "pageNumber": 4512,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_009",
+      "recordId": "course5_f5163fadd2e7bd8072f91d0f",
+      "pageNumber": 9022,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_010",
+      "recordId": "course5_25acc068277e0d0bf498e3f4",
+      "pageNumber": 1,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_011",
+      "recordId": "course5_25acc068277e0d0bf498e3f4",
+      "pageNumber": 249,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_012",
+      "recordId": "course5_25acc068277e0d0bf498e3f4",
+      "pageNumber": 497,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_013",
+      "recordId": "course5_10117a870be892d9461608c4",
+      "pageNumber": 1,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_014",
+      "recordId": "course5_10117a870be892d9461608c4",
+      "pageNumber": 204,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_015",
+      "recordId": "course5_10117a870be892d9461608c4",
+      "pageNumber": 407,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_016",
+      "recordId": "course5_b5c58e891c5e1f77fc35bc23",
+      "pageNumber": 1,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_017",
+      "recordId": "course5_b5c58e891c5e1f77fc35bc23",
+      "pageNumber": 203,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_018",
+      "recordId": "course5_b5c58e891c5e1f77fc35bc23",
+      "pageNumber": 405,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_019",
+      "recordId": "course5_30e5099e072da50c56639a98",
+      "pageNumber": 1,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_020",
+      "recordId": "course5_30e5099e072da50c56639a98",
+      "pageNumber": 1410,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_021",
+      "recordId": "course5_30e5099e072da50c56639a98",
+      "pageNumber": 2818,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_022",
+      "recordId": "course5_eed6a89ae2181c36ffdf7979",
+      "pageNumber": 1,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_023",
+      "recordId": "course5_eed6a89ae2181c36ffdf7979",
+      "pageNumber": 249,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_024",
+      "recordId": "course5_eed6a89ae2181c36ffdf7979",
+      "pageNumber": 496,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_025",
+      "recordId": "course5_fecbbd73dace293ba4925406",
+      "pageNumber": 1,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_026",
+      "recordId": "course5_fecbbd73dace293ba4925406",
+      "pageNumber": 699,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_027",
+      "recordId": "course5_fecbbd73dace293ba4925406",
+      "pageNumber": 1397,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_028",
+      "recordId": "course5_64b71d522ff893e8d7223b14",
+      "pageNumber": 1,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_029",
+      "recordId": "course5_64b71d522ff893e8d7223b14",
+      "pageNumber": 223,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_030",
+      "recordId": "course5_64b71d522ff893e8d7223b14",
+      "pageNumber": 445,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_031",
+      "recordId": "course5_eb0f1ede0ca3bc4fcd9e9ae2",
+      "pageNumber": 1,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_032",
+      "recordId": "course5_eb0f1ede0ca3bc4fcd9e9ae2",
+      "pageNumber": 254,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_033",
+      "recordId": "course5_eb0f1ede0ca3bc4fcd9e9ae2",
+      "pageNumber": 507,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_034",
+      "recordId": "course5_63c2216fcf1e81f48021e86b",
+      "pageNumber": 1,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_035",
+      "recordId": "course5_63c2216fcf1e81f48021e86b",
+      "pageNumber": 277,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    },
+    {
+      "reviewRowId": "course5_pdf_ocr_visual_review_036",
+      "recordId": "course5_63c2216fcf1e81f48021e86b",
+      "pageNumber": 552,
+      "validationStatus": "blocked_missing_or_invalid_priority_slice_ocr_input",
+      "readyForPrioritySliceSemanticReviewGate": false,
+      "missingFields": [
+        "reviewerOwnedOcrTextExcerpt",
+        "reviewerOwnedVisualObservation",
+        "paraphrasedTeachingConcept",
+        "modulePlacement",
+        "evidenceLimitations",
+        "reviewerNameOrInitials",
+        "reviewedAt"
+      ],
+      "qualityIssues": [],
+      "forbiddenHits": [],
+      "nextGate": "fill_real_priority_slice_ocr_or_visual_reviewer_fields_then_revalidate"
+    }
+  ],
+  "completionRule": "Priority slice input validation passes only when all 36 rows contain real OCR or visual reviewer-owned fields, no copied machine summaries, no forbidden trading advice language, public grounding remains required, and no release/delete boundary drifts. Passing validation still does not approve learner-facing release, module distillation, or source deletion.",
+  "boundary": "Course 5 PDF OCR priority slice input validation is private reviewer-facing education operations material. It validates reviewer-owned OCR excerpts, visual observations, paraphrased teaching concepts, module placement, evidence limitations, and public-grounding requirements for the first controlled Course 5 PDF OCR slice. It does not generate reviewer conclusions, accept machine drafts as human review, delete files, approve learner-facing release, approve source-folder deletion, copy private source wording, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, write authorization, or production readiness."
+}

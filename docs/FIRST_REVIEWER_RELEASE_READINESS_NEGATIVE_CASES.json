@@ -1,0 +1,75 @@
+{
+  "generatedAt": "2026-06-19T09:47:12.211Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "negativeCases": 8,
+  "passedCases": 8,
+  "failedCases": 0,
+  "rows": [
+    {
+      "name": "approval_status_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "release readiness gate candidate must stay not_approved"
+    },
+    {
+      "name": "learner_facing_release_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "release readiness gate candidate cannot be learner-facing release"
+    },
+    {
+      "name": "production_ready_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "release readiness gate candidate must keep productionReady false"
+    },
+    {
+      "name": "auto_approved_lessons_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "autoApprovedLessons must stay 0"
+    },
+    {
+      "name": "learner_facing_candidate_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "learnerFacingReleaseCandidates must stay 0"
+    },
+    {
+      "name": "commercial_ready_promotion_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "commercialReadyPromotions must stay 0"
+    },
+    {
+      "name": "production_ready_claim_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "productionReadyClaims must stay 0"
+    },
+    {
+      "name": "candidate_row_approval_wording_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "errorMessage": "lesson_knv2_0068 contains release/approval wording"
+    }
+  ],
+  "realApprovalReviewCandidates": 0,
+  "autoApprovedLessons": 0,
+  "learnerFacingReleaseCandidates": 0,
+  "commercialReadyPromotions": 0,
+  "productionReadyClaims": 0,
+  "sourceReports": {
+    "dryRunPacket": "docs/FIRST_REVIEWER_DRY_RUN_PACKET.json",
+    "progressDashboard": "docs/FIRST_REVIEWER_PROGRESS_DASHBOARD.json",
+    "humanExecutionBundle": "docs/FIRST_REVIEWER_HUMAN_EXECUTION_BUNDLE.json",
+    "separateApprovalGate": "docs/FIRST_REVIEWER_SEPARATE_APPROVAL_REVIEW_GATE.json",
+    "evidenceIntakeSummary": "docs/FIRST_REVIEWER_EVIDENCE_INTAKE_SUMMARY.json",
+    "lessonBatchNegativeCases": "docs/LESSON_BATCH_STATUS_NEGATIVE_CASES.json"
+  },
+  "boundary": "These negative cases only guard against release/readiness drift. They do not approve lessons, publish learner-facing content, change grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, or guide real-money decisions."
+}

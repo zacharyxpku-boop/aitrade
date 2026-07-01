@@ -1,0 +1,187 @@
+{
+  "generatedAt": "2026-06-19T09:47:14.031Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "runbookReady": true,
+  "runbookMode": "printable_pre_write_operator_runbook",
+  "realStatusPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "realStatusOverlayPresent": false,
+  "writeAllowedNow": false,
+  "executionAllowedNow": false,
+  "lessonChecklists": 12,
+  "requiredNoteFields": 72,
+  "directCandidatesToResolve": 5,
+  "sourceFitDecisionRows": 5,
+  "sourceFitNotesCards": 5,
+  "sourceFitNotesCardNegativeCases": 15,
+  "sourceFitNotesPositiveSamples": 3,
+  "sourceFitNotesHumanFillPreflightRows": 5,
+  "completeNoteCards": 0,
+  "approvalReviewCandidates": 0,
+  "internalTrialReady": false,
+  "launchReady": false,
+  "beforeStartBoxes": [
+    "I am using this as reviewer-facing scaffolding, not final course material.",
+    "I have not created or overwritten docs/LESSON_BATCH_REVIEW_STATUS.json.",
+    "I will keep all generated prompts, examples, and source excerpts out of real notes unless actual human review supports original wording.",
+    "I will keep every lesson structural_draft until separate human rewrite and factual review are complete."
+  ],
+  "runbookItems": [
+    {
+      "order": 1,
+      "label": "Open operator index",
+      "sourceFile": "docs/FIRST_REVIEWER_OPERATOR_INDEX.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-operator-index",
+      "action": "Confirm this is the active entrypoint and all readiness flags remain false.",
+      "stopIf": "Any readiness, release, approval, or production flag turns true."
+    },
+    {
+      "order": 2,
+      "label": "Read the one-page execution order",
+      "sourceFile": "docs/FIRST_REVIEWER_HUMAN_EXECUTION_BUNDLE.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-human-execution-bundle",
+      "action": "Use the bundle to confirm the longer file order after this page.",
+      "stopIf": "The bundle stops being pre_write_manual_review_index."
+    },
+    {
+      "order": 3,
+      "label": "Use the printable lesson pack",
+      "sourceFile": "docs/FIRST_REVIEWER_PRINTABLE_CHECKLIST_PACK.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-printable-checklist-pack",
+      "action": "Work through 12 lesson cards, 72 note fields, and 5 direct candidates on paper or manually.",
+      "stopIf": "Any note field is prefilled by generated scaffolding."
+    },
+    {
+      "order": 4,
+      "label": "Resolve direct candidates",
+      "sourceFile": "docs/FIRST_REVIEWER_DIRECT_CANDIDATE_DECISION_WORKSHEET.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-direct-candidate-decision-worksheet",
+      "action": "Choose confirm after review, downgrade, or block for every direct-candidate source role.",
+      "stopIf": "A generated row is treated as confirmed source evidence."
+    },
+    {
+      "order": 5,
+      "label": "Read source-fit summary",
+      "sourceFile": "docs/FIRST_REVIEWER_SOURCE_FIT_DECISION_SUMMARY.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-source-fit-decision-summary",
+      "action": "Compare confirm, downgrade, and block criteria before any future sourceFitNotes are written.",
+      "stopIf": "The summary is treated as a decision, confirmation, approval, or write authorization."
+    },
+    {
+      "order": 6,
+      "label": "Use blank sourceFitNotes cards",
+      "sourceFile": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_CARD_PACK.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-source-fit-notes-card-pack",
+      "action": "Prepare the 5 blank cards and leave all 35 required fields empty until real review.",
+      "stopIf": "Any card field is prefilled or treated as a real note."
+    },
+    {
+      "order": 7,
+      "label": "Check card misuse guards",
+      "sourceFile": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_CARD_NEGATIVE_CASES.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-source-fit-notes-card-negative-cases",
+      "action": "Confirm simulated card prefill, unsafe wording, source misuse, and yellow/red drift are rejected.",
+      "stopIf": "A polluted card state is treated as a valid note or source confirmation."
+    },
+    {
+      "order": 8,
+      "label": "Read positive note shapes",
+      "sourceFile": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_POSITIVE_MATRIX.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-source-fit-notes-positive-matrix",
+      "action": "Use sample-only confirm, downgrade, and block note shapes as writing guidance.",
+      "stopIf": "Sample text is copied as real reviewer evidence or treated as source confirmation."
+    },
+    {
+      "order": 9,
+      "label": "Run sourceFitNotes fill preflight",
+      "sourceFile": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_HUMAN_FILL_PREFLIGHT.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-source-fit-notes-human-fill-preflight",
+      "action": "Check reviewer identity, 5 candidate decisions, source identity basis, and no-copy requirements before real note entry.",
+      "stopIf": "Preflight output is treated as write permission or real source confirmation."
+    },
+    {
+      "order": 10,
+      "label": "Check note wording before write",
+      "sourceFile": "docs/FIRST_REVIEWER_SAFE_NOTE_EXAMPLES.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-safe-note-examples",
+      "action": "Use examples only for safe shape; write original notes only after real review.",
+      "stopIf": "Examples, prompts, or source body text are copied into notes."
+    },
+    {
+      "order": 11,
+      "label": "Run preflight before any overlay write",
+      "sourceFile": "docs/FIRST_REVIEWER_REAL_OVERLAY_PREFLIGHT_SUMMARY.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-real-overlay-preflight-summary",
+      "action": "Confirm writeAllowedNow remains false until explicit human note-taking starts.",
+      "stopIf": "The real overlay appears without deliberate human start."
+    },
+    {
+      "order": 12,
+      "label": "Audit dry-run bundle consistency",
+      "sourceFile": "docs/FIRST_REVIEWER_REAL_OVERLAY_DRY_RUN_BUNDLE_AUDIT.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-real-overlay-dry-run-bundle-audit",
+      "action": "Confirm dry-run, overwrite protection, day-zero handoff, final rehearsal, and write locks still agree.",
+      "stopIf": "The audit grants write permission or finds command-order drift."
+    },
+    {
+      "order": 10,
+      "label": "After future write, run command pack",
+      "sourceFile": "docs/FIRST_REVIEWER_POST_WRITE_COMMAND_PACK.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-post-write-command-pack",
+      "action": "Use the strict post-write command order only after a human-created overlay exists.",
+      "stopIf": "Execution is treated as proof while the overlay is absent."
+    },
+    {
+      "order": 11,
+      "label": "Intake complete notes only",
+      "sourceFile": "docs/FIRST_REVIEWER_EVIDENCE_INTAKE_SUMMARY.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-evidence-intake-summary",
+      "action": "Use intake as triage after real notes pass lint and completion.",
+      "stopIf": "Incomplete notes become approval candidates."
+    },
+    {
+      "order": 12,
+      "label": "Keep separate approval separate",
+      "sourceFile": "docs/FIRST_REVIEWER_SEPARATE_APPROVAL_REVIEW_GATE.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-separate-approval-review-gate",
+      "action": "Send only complete intake candidates to a later separate human approval review.",
+      "stopIf": "Any auto-approval, release, grade promotion, or production claim appears."
+    },
+    {
+      "order": 13,
+      "label": "Read launch blockers",
+      "sourceFile": "docs/FIRST_REVIEWER_LAUNCH_READINESS_DASHBOARD.md",
+      "checkCommand": "npm.cmd run check:first-reviewer-launch-readiness-dashboard",
+      "action": "Treat the dashboard as a blocker map, not readiness.",
+      "stopIf": "internalTrialReady, launchReady, or productionReady becomes true."
+    }
+  ],
+  "hardStops": [
+    "Stop if any artifact claims approval, learner-facing release, commercial readiness, internal-trial readiness, launch readiness, or production readiness.",
+    "Stop if any note contains buy/sell/hold advice, trading signals, performance claims, broker/order workflow, automation, copied source prose, or real-money guidance.",
+    "Stop if any yellow, red, or research_only source is proposed as learner-facing evidence.",
+    "Stop if real reviewer notes are created by generated scaffolding rather than deliberate human review."
+  ],
+  "sourceReports": {
+    "operatorIndex": "docs/FIRST_REVIEWER_OPERATOR_INDEX.json",
+    "dryRunPacket": "docs/FIRST_REVIEWER_DRY_RUN_PACKET.json",
+    "progressDashboard": "docs/FIRST_REVIEWER_PROGRESS_DASHBOARD.json",
+    "humanExecutionBundle": "docs/FIRST_REVIEWER_HUMAN_EXECUTION_BUNDLE.json",
+    "printableChecklistPack": "docs/FIRST_REVIEWER_PRINTABLE_CHECKLIST_PACK.json",
+    "sourceFitDecisionSummary": "docs/FIRST_REVIEWER_SOURCE_FIT_DECISION_SUMMARY.json",
+    "sourceFitNotesCardPack": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_CARD_PACK.json",
+    "sourceFitNotesCardNegativeCases": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_CARD_NEGATIVE_CASES.json",
+    "sourceFitNotesPositiveMatrix": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_POSITIVE_MATRIX.json",
+    "sourceFitNotesHumanFillPreflight": "docs/FIRST_REVIEWER_SOURCE_FIT_NOTES_HUMAN_FILL_PREFLIGHT.json",
+    "preflightSummary": "docs/FIRST_REVIEWER_REAL_OVERLAY_PREFLIGHT_SUMMARY.json",
+    "realOverlayDryRunBundleAudit": "docs/FIRST_REVIEWER_REAL_OVERLAY_DRY_RUN_BUNDLE_AUDIT.json",
+    "postWriteCommandPack": "docs/FIRST_REVIEWER_POST_WRITE_COMMAND_PACK.json",
+    "evidenceIntakeSummary": "docs/FIRST_REVIEWER_EVIDENCE_INTAKE_SUMMARY.json",
+    "separateApprovalGate": "docs/FIRST_REVIEWER_SEPARATE_APPROVAL_REVIEW_GATE.json",
+    "launchReadinessDashboard": "docs/FIRST_REVIEWER_LAUNCH_READINESS_DASHBOARD.json"
+  },
+  "boundary": "This one-page runbook is reviewer-facing manual scaffolding only. It does not create docs/LESSON_BATCH_REVIEW_STATUS.json, fill human notes, confirm source use, approve lessons, publish learner-facing content, change grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, guide real-money decisions, grant internal-trial readiness, or make the product production-ready."
+}

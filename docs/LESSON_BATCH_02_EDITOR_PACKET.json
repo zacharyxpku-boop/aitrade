@@ -1,0 +1,478 @@
+{
+  "generatedAt": "2026-06-19T09:47:02.560Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "packetReady": true,
+  "packetMode": "targeted_human_editor_packet_for_structural_drafts",
+  "batchId": "rewrite_batch_02",
+  "modules": [
+    "reversal",
+    "trading_range",
+    "trading_psychology"
+  ],
+  "sourceFamilies": [
+    "BLS",
+    "financialresearch.gov",
+    "Treasury",
+    "Internet Archive",
+    "Federal Reserve",
+    "BEA",
+    "CFTC",
+    "federalregister.gov",
+    "Investor.gov",
+    "Project Gutenberg",
+    "SEC",
+    "Census",
+    "consumerfinance.gov"
+  ],
+  "priorityFocus": "P1",
+  "riskCounts": {
+    "low": 4,
+    "medium": 2
+  },
+  "lessonCards": [
+    {
+      "lessonId": "lesson_knv2_0187",
+      "nodeId": "knv2_0187",
+      "moduleLabel": "reversal",
+      "topicLabel": "reversal_definition",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "rewritePriority": "P1",
+      "sourceFitRisk": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "If using public-domain classics, keep only historical language or observation context; remove old trading-rule voice."
+      ],
+      "handAuthored": false,
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "BLS",
+        "financialresearch.gov",
+        "Treasury",
+        "Internet Archive"
+      ],
+      "greenReviewedRefs": 3,
+      "greenAuthorityRefs": 2,
+      "nonGreenRefs": 0,
+      "sourceBoundary": [
+        "Use green refs as source identity, behavior-risk, fraud/data/regulatory/historical context, or boundary evidence only.",
+        "Macro, regulatory, and systemic-risk sources cannot prove range edges, reversal definitions, or price-action mechanics.",
+        "Consumer-protection and fraud sources can frame confirmation bias, FOMO, and scam risk; they cannot validate chart interpretation.",
+        "Public-domain classics may support historical language or observation exercises only after removing advice and profit voice.",
+        "Keep yellow, red, and research_only sources out of learner-facing evidence."
+      ],
+      "licenseBoundary": [
+        "Agency/public-document metadata may support reviewer notes, but learner-facing prose must be original.",
+        "Do not copy agency logos, UI text, rule text, tables, charts, third-party inserts, or boilerplate.",
+        "Do not preserve public-domain buy/sell rules, profit language, or market maxims.",
+        "No source identity may imply regulator endorsement, forecast ability, trading-system validity, or commercial readiness."
+      ],
+      "rewriteInstructions": [
+        "Rewrite reversal / reversal_definition as original teaching prose for interpretation practice.",
+        "Reversal language must stay definitional and evidence-limited; no reversal confirmation rule or direction forecast.",
+        "Start with observable facts, separate interpretation from fact, and require at least one alternative explanation.",
+        "Convert source references into source-fit and boundary checks; do not convert them into signals or procedures.",
+        "End with a no-action learner note: what is known, unknown, and what evidence would weaken the interpretation.",
+        "Leave the lesson structural_draft until a real human records all required reviewer notes."
+      ],
+      "reviewerChecklist": [
+        "Original prose: no copied or lightly rewritten external source body text.",
+        "Source fit: every consumer/fraud/regulatory/macro/historical family is downgraded, blocked, or boundary-limited as needed.",
+        "Boundary: no buy/sell/hold, signal wording, broker/order workflow, automation, real-money guidance, forecast, or performance promise.",
+        "License fit: no agency/rule/table/chart/UI/public-domain trading maxim copied.",
+        "Teaching quality: includes misconception, observation task, alternative explanation, invalidation condition, and reflection prompt.",
+        "Status: remains structural_draft and not_approved after this packet."
+      ],
+      "sourceFamilyGuidance": [
+        {
+          "family": "BLS",
+          "editorUse": "Macro/data-release context only; cannot validate range edges, reversals, or price-action mechanics."
+        },
+        {
+          "family": "financialresearch.gov",
+          "editorUse": "Regulatory, disclosure, or systemic-risk context only; no chart-pattern validation or course approval."
+        },
+        {
+          "family": "Treasury",
+          "editorUse": "Macro/data-release context only; cannot validate range edges, reversals, or price-action mechanics."
+        },
+        {
+          "family": "Internet Archive",
+          "editorUse": "Public-domain historical language and observation context only; strip buy/sell rules, profit claims, and market maxims."
+        }
+      ]
+    },
+    {
+      "lessonId": "lesson_knv2_0006",
+      "nodeId": "knv2_0006",
+      "moduleLabel": "trading_range",
+      "topicLabel": "range_upper_boundary",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "rewritePriority": "P1",
+      "sourceFitRisk": "medium",
+      "riskReasons": [
+        "chart_lesson_without_public_domain_historical_context"
+      ],
+      "reviewerFocus": [
+        "Check whether chart-language claims need public-domain historical context or should be rewritten as pure observation training."
+      ],
+      "handAuthored": false,
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "Federal Reserve",
+        "BLS",
+        "BEA",
+        "Treasury"
+      ],
+      "greenReviewedRefs": 3,
+      "greenAuthorityRefs": 2,
+      "nonGreenRefs": 0,
+      "sourceBoundary": [
+        "Use green refs as source identity, behavior-risk, fraud/data/regulatory/historical context, or boundary evidence only.",
+        "Macro, regulatory, and systemic-risk sources cannot prove range edges, reversal definitions, or price-action mechanics.",
+        "Consumer-protection and fraud sources can frame confirmation bias, FOMO, and scam risk; they cannot validate chart interpretation.",
+        "Public-domain classics may support historical language or observation exercises only after removing advice and profit voice.",
+        "Keep yellow, red, and research_only sources out of learner-facing evidence."
+      ],
+      "licenseBoundary": [
+        "Agency/public-document metadata may support reviewer notes, but learner-facing prose must be original.",
+        "Do not copy agency logos, UI text, rule text, tables, charts, third-party inserts, or boilerplate.",
+        "Do not preserve public-domain buy/sell rules, profit language, or market maxims.",
+        "No source identity may imply regulator endorsement, forecast ability, trading-system validity, or commercial readiness."
+      ],
+      "rewriteInstructions": [
+        "Rewrite trading_range / range_upper_boundary as original teaching prose for interpretation practice.",
+        "Medium source-fit risk: require explicit notes for chart-context gaps, broad authority mixing, and fraud-source downgrade.",
+        "Start with observable facts, separate interpretation from fact, and require at least one alternative explanation.",
+        "Convert source references into source-fit and boundary checks; do not convert them into signals or procedures.",
+        "End with a no-action learner note: what is known, unknown, and what evidence would weaken the interpretation.",
+        "Leave the lesson structural_draft until a real human records all required reviewer notes."
+      ],
+      "reviewerChecklist": [
+        "Original prose: no copied or lightly rewritten external source body text.",
+        "Source fit: every consumer/fraud/regulatory/macro/historical family is downgraded, blocked, or boundary-limited as needed.",
+        "Boundary: no buy/sell/hold, signal wording, broker/order workflow, automation, real-money guidance, forecast, or performance promise.",
+        "License fit: no agency/rule/table/chart/UI/public-domain trading maxim copied.",
+        "Teaching quality: includes misconception, observation task, alternative explanation, invalidation condition, and reflection prompt.",
+        "Status: remains structural_draft and not_approved after this packet."
+      ],
+      "sourceFamilyGuidance": [
+        {
+          "family": "Federal Reserve",
+          "editorUse": "Macro/data-release context only; cannot validate range edges, reversals, or price-action mechanics."
+        },
+        {
+          "family": "BLS",
+          "editorUse": "Macro/data-release context only; cannot validate range edges, reversals, or price-action mechanics."
+        },
+        {
+          "family": "BEA",
+          "editorUse": "Macro/data-release context only; cannot validate range edges, reversals, or price-action mechanics."
+        },
+        {
+          "family": "Treasury",
+          "editorUse": "Macro/data-release context only; cannot validate range edges, reversals, or price-action mechanics."
+        }
+      ]
+    },
+    {
+      "lessonId": "lesson_knv2_0018",
+      "nodeId": "knv2_0018",
+      "moduleLabel": "trading_range",
+      "topicLabel": "range_lower_boundary",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "rewritePriority": "P1",
+      "sourceFitRisk": "medium",
+      "riskReasons": [
+        "broad_source_family_mix",
+        "fraud_source_attached_to_chart_context"
+      ],
+      "reviewerFocus": [
+        "Narrow the rewrite to source-boundary context only; do not blend unrelated authority into a stronger learner-facing claim.",
+        "Use fraud sources only for boundary warnings, not for explaining chart mechanics.",
+        "If using public-domain classics, keep only historical language or observation context; remove old trading-rule voice."
+      ],
+      "handAuthored": false,
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "CFTC",
+        "federalregister.gov",
+        "Investor.gov",
+        "Treasury",
+        "Project Gutenberg"
+      ],
+      "greenReviewedRefs": 3,
+      "greenAuthorityRefs": 2,
+      "nonGreenRefs": 0,
+      "sourceBoundary": [
+        "Use green refs as source identity, behavior-risk, fraud/data/regulatory/historical context, or boundary evidence only.",
+        "Macro, regulatory, and systemic-risk sources cannot prove range edges, reversal definitions, or price-action mechanics.",
+        "Consumer-protection and fraud sources can frame confirmation bias, FOMO, and scam risk; they cannot validate chart interpretation.",
+        "Public-domain classics may support historical language or observation exercises only after removing advice and profit voice.",
+        "Keep yellow, red, and research_only sources out of learner-facing evidence."
+      ],
+      "licenseBoundary": [
+        "Agency/public-document metadata may support reviewer notes, but learner-facing prose must be original.",
+        "Do not copy agency logos, UI text, rule text, tables, charts, third-party inserts, or boilerplate.",
+        "Do not preserve public-domain buy/sell rules, profit language, or market maxims.",
+        "No source identity may imply regulator endorsement, forecast ability, trading-system validity, or commercial readiness."
+      ],
+      "rewriteInstructions": [
+        "Rewrite trading_range / range_lower_boundary as original teaching prose for interpretation practice.",
+        "Medium source-fit risk: require explicit notes for chart-context gaps, broad authority mixing, and fraud-source downgrade.",
+        "Start with observable facts, separate interpretation from fact, and require at least one alternative explanation.",
+        "Convert source references into source-fit and boundary checks; do not convert them into signals or procedures.",
+        "End with a no-action learner note: what is known, unknown, and what evidence would weaken the interpretation.",
+        "Leave the lesson structural_draft until a real human records all required reviewer notes."
+      ],
+      "reviewerChecklist": [
+        "Original prose: no copied or lightly rewritten external source body text.",
+        "Source fit: every consumer/fraud/regulatory/macro/historical family is downgraded, blocked, or boundary-limited as needed.",
+        "Boundary: no buy/sell/hold, signal wording, broker/order workflow, automation, real-money guidance, forecast, or performance promise.",
+        "License fit: no agency/rule/table/chart/UI/public-domain trading maxim copied.",
+        "Teaching quality: includes misconception, observation task, alternative explanation, invalidation condition, and reflection prompt.",
+        "Status: remains structural_draft and not_approved after this packet."
+      ],
+      "sourceFamilyGuidance": [
+        {
+          "family": "CFTC",
+          "editorUse": "Fraud, phony-system, investor-protection, or commodity-risk boundary only; never range or reversal proof."
+        },
+        {
+          "family": "federalregister.gov",
+          "editorUse": "Regulatory, disclosure, or systemic-risk context only; no chart-pattern validation or course approval."
+        },
+        {
+          "family": "Investor.gov",
+          "editorUse": "Fraud, phony-system, investor-protection, or commodity-risk boundary only; never range or reversal proof."
+        },
+        {
+          "family": "Treasury",
+          "editorUse": "Macro/data-release context only; cannot validate range edges, reversals, or price-action mechanics."
+        },
+        {
+          "family": "Project Gutenberg",
+          "editorUse": "Public-domain historical language and observation context only; strip buy/sell rules, profit claims, and market maxims."
+        }
+      ]
+    },
+    {
+      "lessonId": "lesson_knv2_0030",
+      "nodeId": "knv2_0030",
+      "moduleLabel": "trading_range",
+      "topicLabel": "range_middle",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "rewritePriority": "P1",
+      "sourceFitRisk": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "If using public-domain classics, keep only historical language or observation context; remove old trading-rule voice."
+      ],
+      "handAuthored": false,
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "SEC",
+        "Census",
+        "BEA",
+        "Internet Archive"
+      ],
+      "greenReviewedRefs": 3,
+      "greenAuthorityRefs": 2,
+      "nonGreenRefs": 0,
+      "sourceBoundary": [
+        "Use green refs as source identity, behavior-risk, fraud/data/regulatory/historical context, or boundary evidence only.",
+        "Macro, regulatory, and systemic-risk sources cannot prove range edges, reversal definitions, or price-action mechanics.",
+        "Consumer-protection and fraud sources can frame confirmation bias, FOMO, and scam risk; they cannot validate chart interpretation.",
+        "Public-domain classics may support historical language or observation exercises only after removing advice and profit voice.",
+        "Keep yellow, red, and research_only sources out of learner-facing evidence."
+      ],
+      "licenseBoundary": [
+        "Agency/public-document metadata may support reviewer notes, but learner-facing prose must be original.",
+        "Do not copy agency logos, UI text, rule text, tables, charts, third-party inserts, or boilerplate.",
+        "Do not preserve public-domain buy/sell rules, profit language, or market maxims.",
+        "No source identity may imply regulator endorsement, forecast ability, trading-system validity, or commercial readiness."
+      ],
+      "rewriteInstructions": [
+        "Rewrite trading_range / range_middle as original teaching prose for interpretation practice.",
+        "Range language must stay descriptive and scenario-based; no support/resistance signal, entry trigger, or bounce/break rule.",
+        "Start with observable facts, separate interpretation from fact, and require at least one alternative explanation.",
+        "Convert source references into source-fit and boundary checks; do not convert them into signals or procedures.",
+        "End with a no-action learner note: what is known, unknown, and what evidence would weaken the interpretation.",
+        "Leave the lesson structural_draft until a real human records all required reviewer notes."
+      ],
+      "reviewerChecklist": [
+        "Original prose: no copied or lightly rewritten external source body text.",
+        "Source fit: every consumer/fraud/regulatory/macro/historical family is downgraded, blocked, or boundary-limited as needed.",
+        "Boundary: no buy/sell/hold, signal wording, broker/order workflow, automation, real-money guidance, forecast, or performance promise.",
+        "License fit: no agency/rule/table/chart/UI/public-domain trading maxim copied.",
+        "Teaching quality: includes misconception, observation task, alternative explanation, invalidation condition, and reflection prompt.",
+        "Status: remains structural_draft and not_approved after this packet."
+      ],
+      "sourceFamilyGuidance": [
+        {
+          "family": "SEC",
+          "editorUse": "Regulatory, disclosure, or systemic-risk context only; no chart-pattern validation or course approval."
+        },
+        {
+          "family": "Census",
+          "editorUse": "Macro/data-release context only; cannot validate range edges, reversals, or price-action mechanics."
+        },
+        {
+          "family": "BEA",
+          "editorUse": "Macro/data-release context only; cannot validate range edges, reversals, or price-action mechanics."
+        },
+        {
+          "family": "Internet Archive",
+          "editorUse": "Public-domain historical language and observation context only; strip buy/sell rules, profit claims, and market maxims."
+        }
+      ]
+    },
+    {
+      "lessonId": "lesson_knv2_0024",
+      "nodeId": "knv2_0024",
+      "moduleLabel": "trading_psychology",
+      "topicLabel": "confirmation_bias",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "rewritePriority": "P1",
+      "sourceFitRisk": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "Confirm source-to-topic fit during human rewrite; keep all sources as boundary evidence only."
+      ],
+      "handAuthored": false,
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "consumerfinance.gov",
+        "CFTC"
+      ],
+      "greenReviewedRefs": 3,
+      "greenAuthorityRefs": 2,
+      "nonGreenRefs": 0,
+      "sourceBoundary": [
+        "Use green refs as source identity, behavior-risk, fraud/data/regulatory/historical context, or boundary evidence only.",
+        "Macro, regulatory, and systemic-risk sources cannot prove range edges, reversal definitions, or price-action mechanics.",
+        "Consumer-protection and fraud sources can frame confirmation bias, FOMO, and scam risk; they cannot validate chart interpretation.",
+        "Public-domain classics may support historical language or observation exercises only after removing advice and profit voice.",
+        "Keep yellow, red, and research_only sources out of learner-facing evidence."
+      ],
+      "licenseBoundary": [
+        "Agency/public-document metadata may support reviewer notes, but learner-facing prose must be original.",
+        "Do not copy agency logos, UI text, rule text, tables, charts, third-party inserts, or boilerplate.",
+        "Do not preserve public-domain buy/sell rules, profit language, or market maxims.",
+        "No source identity may imply regulator endorsement, forecast ability, trading-system validity, or commercial readiness."
+      ],
+      "rewriteInstructions": [
+        "Rewrite trading_psychology / confirmation_bias as original teaching prose for interpretation practice.",
+        "Psychology language must stay behavior-risk oriented; no claim that bias labels predict future market movement.",
+        "Start with observable facts, separate interpretation from fact, and require at least one alternative explanation.",
+        "Convert source references into source-fit and boundary checks; do not convert them into signals or procedures.",
+        "End with a no-action learner note: what is known, unknown, and what evidence would weaken the interpretation.",
+        "Leave the lesson structural_draft until a real human records all required reviewer notes."
+      ],
+      "reviewerChecklist": [
+        "Original prose: no copied or lightly rewritten external source body text.",
+        "Source fit: every consumer/fraud/regulatory/macro/historical family is downgraded, blocked, or boundary-limited as needed.",
+        "Boundary: no buy/sell/hold, signal wording, broker/order workflow, automation, real-money guidance, forecast, or performance promise.",
+        "License fit: no agency/rule/table/chart/UI/public-domain trading maxim copied.",
+        "Teaching quality: includes misconception, observation task, alternative explanation, invalidation condition, and reflection prompt.",
+        "Status: remains structural_draft and not_approved after this packet."
+      ],
+      "sourceFamilyGuidance": [
+        {
+          "family": "consumerfinance.gov",
+          "editorUse": "Consumer-protection and behavior-risk boundary only; useful for bias framing, not chart or market proof."
+        },
+        {
+          "family": "CFTC",
+          "editorUse": "Fraud, phony-system, investor-protection, or commodity-risk boundary only; never range or reversal proof."
+        }
+      ]
+    },
+    {
+      "lessonId": "lesson_knv2_0132",
+      "nodeId": "knv2_0132",
+      "moduleLabel": "trading_psychology",
+      "topicLabel": "fear_of_missing_out",
+      "currentGrade": "structural_draft",
+      "currentScore": 87,
+      "rewritePriority": "P1",
+      "sourceFitRisk": "low",
+      "riskReasons": [],
+      "reviewerFocus": [
+        "Confirm source-to-topic fit during human rewrite; keep all sources as boundary evidence only."
+      ],
+      "handAuthored": false,
+      "mustRemainStructuralDraft": true,
+      "sourceFamilies": [
+        "consumerfinance.gov",
+        "CFTC"
+      ],
+      "greenReviewedRefs": 3,
+      "greenAuthorityRefs": 2,
+      "nonGreenRefs": 0,
+      "sourceBoundary": [
+        "Use green refs as source identity, behavior-risk, fraud/data/regulatory/historical context, or boundary evidence only.",
+        "Macro, regulatory, and systemic-risk sources cannot prove range edges, reversal definitions, or price-action mechanics.",
+        "Consumer-protection and fraud sources can frame confirmation bias, FOMO, and scam risk; they cannot validate chart interpretation.",
+        "Public-domain classics may support historical language or observation exercises only after removing advice and profit voice.",
+        "Keep yellow, red, and research_only sources out of learner-facing evidence."
+      ],
+      "licenseBoundary": [
+        "Agency/public-document metadata may support reviewer notes, but learner-facing prose must be original.",
+        "Do not copy agency logos, UI text, rule text, tables, charts, third-party inserts, or boilerplate.",
+        "Do not preserve public-domain buy/sell rules, profit language, or market maxims.",
+        "No source identity may imply regulator endorsement, forecast ability, trading-system validity, or commercial readiness."
+      ],
+      "rewriteInstructions": [
+        "Rewrite trading_psychology / fear_of_missing_out as original teaching prose for interpretation practice.",
+        "Psychology language must stay behavior-risk oriented; no claim that bias labels predict future market movement.",
+        "Start with observable facts, separate interpretation from fact, and require at least one alternative explanation.",
+        "Convert source references into source-fit and boundary checks; do not convert them into signals or procedures.",
+        "End with a no-action learner note: what is known, unknown, and what evidence would weaken the interpretation.",
+        "Leave the lesson structural_draft until a real human records all required reviewer notes."
+      ],
+      "reviewerChecklist": [
+        "Original prose: no copied or lightly rewritten external source body text.",
+        "Source fit: every consumer/fraud/regulatory/macro/historical family is downgraded, blocked, or boundary-limited as needed.",
+        "Boundary: no buy/sell/hold, signal wording, broker/order workflow, automation, real-money guidance, forecast, or performance promise.",
+        "License fit: no agency/rule/table/chart/UI/public-domain trading maxim copied.",
+        "Teaching quality: includes misconception, observation task, alternative explanation, invalidation condition, and reflection prompt.",
+        "Status: remains structural_draft and not_approved after this packet."
+      ],
+      "sourceFamilyGuidance": [
+        {
+          "family": "consumerfinance.gov",
+          "editorUse": "Consumer-protection and behavior-risk boundary only; useful for bias framing, not chart or market proof."
+        },
+        {
+          "family": "CFTC",
+          "editorUse": "Fraud, phony-system, investor-protection, or commodity-risk boundary only; never range or reversal proof."
+        }
+      ]
+    }
+  ],
+  "nonGreenRefs": 0,
+  "handAuthoredLessons": 0,
+  "commercialReadyPromotions": 0,
+  "reviewerNoteFields": [
+    "originalRewriteNotes",
+    "sourceFitNotes",
+    "factCheckNotes",
+    "boundaryCheckNotes",
+    "copyingRiskNotes",
+    "humanReviewerInitials"
+  ],
+  "sourceReports": {
+    "workbench": "docs/LESSON_REWRITE_WORKBENCH.json",
+    "sourceFitRisk": "docs/LESSON_SOURCE_FIT_RISK_SUMMARY.json"
+  },
+  "boundary": "This Batch 02 editor packet is reviewer-facing editing scaffolding only. It does not create learner-facing final prose, approve lessons, publish content, change grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, guide real-money decisions, or make the product production-ready."
+}

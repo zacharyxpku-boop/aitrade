@@ -1,0 +1,626 @@
+{
+  "generatedAt": "2026-06-19T09:47:10.447Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "targetBatches": [
+    "rewrite_batch_01",
+    "rewrite_batch_05"
+  ],
+  "sourceWorksheet": "docs/FIRST_REVIEWER_WORKSHEET.json",
+  "sourceDryRunPacket": "docs/FIRST_REVIEWER_DRY_RUN_PACKET.json",
+  "realStatusPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "realStatusOverlayPresent": false,
+  "highRiskLessons": 2,
+  "sourceFamilyDecisions": 45,
+  "directCandidatesNeedingConfirmation": 5,
+  "roleLegend": [
+    {
+      "role": "direct_candidate_needs_human_confirmation",
+      "meaning": "Potentially direct evidence, but a human must confirm source-topic fit before use."
+    },
+    {
+      "role": "filing_or_data_boundary",
+      "meaning": "SEC filing/data/disclosure literacy boundary, not copied prose."
+    },
+    {
+      "role": "investor_protection_boundary",
+      "meaning": "Investor-protection or fraud-warning boundary, not chart authority."
+    },
+    {
+      "role": "fraud_or_market_boundary",
+      "meaning": "CFTC fraud/system/market-risk boundary, not trading advice."
+    },
+    {
+      "role": "macro_data_context",
+      "meaning": "BLS/BEA macro data definition or release-reading context."
+    },
+    {
+      "role": "macro_rates_context",
+      "meaning": "Rates/macro context without directional claims."
+    },
+    {
+      "role": "historical_context",
+      "meaning": "Public-domain historical language only, with advice/profit wording removed."
+    },
+    {
+      "role": "metadata_only_until_confirmed",
+      "meaning": "Metadata or boundary-only until human confirmation."
+    }
+  ],
+  "lessonRows": [
+    {
+      "lessonId": "lesson_knv2_0044",
+      "batchId": "rewrite_batch_01",
+      "module": "多周期分析",
+      "topic": "M15细节",
+      "riskLevel": "medium",
+      "currentGrade": "structural_draft",
+      "mustRemainStructuralDraft": true,
+      "firstDecision": "Use the high-risk decision in the same batch as context, then confirm roles.",
+      "sourceFamilyRoles": [
+        {
+          "family": "CFTC",
+          "suggestedRole": "fraud_or_market_boundary",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for commodity, fraud, system-risk, or market-oversight boundaries; do not use as chart-pattern authority unless source title directly fits."
+        },
+        {
+          "family": "SEC",
+          "suggestedRole": "filing_or_data_boundary",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for filing/data-access/disclosure-literacy boundaries; direct prose support needs human confirmation."
+        }
+      ],
+      "humanDecisionRequired": true,
+      "allowedNextStatus": "not_started_or_ready_for_separate_human_approval_review_only_after_real_notes"
+    },
+    {
+      "lessonId": "lesson_knv2_0068",
+      "batchId": "rewrite_batch_01",
+      "module": "多周期分析",
+      "topic": "D1背景",
+      "riskLevel": "high",
+      "currentGrade": "structural_draft",
+      "mustRemainStructuralDraft": true,
+      "firstDecision": "Resolve source role before any prose rewrite.",
+      "sourceFamilyRoles": [
+        {
+          "family": "CFTC",
+          "suggestedRole": "direct_candidate_needs_human_confirmation",
+          "confidence": "medium",
+          "sourceRefsToInspect": [
+            {
+              "sourceId": "src_real_11201",
+              "name": "CFTC AI Trading Bots Advisory",
+              "url": "https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/AITradingBots.html",
+              "sourceUseTier": "green_official_public_domain",
+              "reliabilityGrade": "S",
+              "relevanceSignal": "timeframe"
+            },
+            {
+              "sourceId": "src_real_11211",
+              "name": "CFTC Commodity ETP Risks",
+              "url": "https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/CustomerAdvisory_CommodityETPs.htm",
+              "sourceUseTier": "green_official_public_domain",
+              "reliabilityGrade": "S",
+              "relevanceSignal": "timeframe"
+            },
+            {
+              "sourceId": "src_real_10571",
+              "name": "CFTC Large Trader Reporting",
+              "url": "https://www.cftc.gov/IndustryOversight/MarketSurveillance/LargeTraderReportingProgram/index.htm",
+              "sourceUseTier": "green_official_public_domain",
+              "reliabilityGrade": "S",
+              "relevanceSignal": "indicator_pattern_taxonomy"
+            },
+            {
+              "sourceId": "src_real_10297",
+              "name": "CFTC Market Surveillance",
+              "url": "https://www.cftc.gov/IndustryOversight/MarketSurveillance/index.htm",
+              "sourceUseTier": "green_official_public_domain",
+              "reliabilityGrade": "S",
+              "relevanceSignal": "Green indicator_pattern_taxonomy authority context and boundary reference; not copied learner-facing content."
+            }
+          ],
+          "reviewerDecision": "Inspect source title and metadata. If it directly supports the lesson topic, keep as direct evidence; otherwise downgrade to boundary-only context."
+        },
+        {
+          "family": "Investor.gov",
+          "suggestedRole": "investor_protection_boundary",
+          "confidence": "medium",
+          "sourceRefsToInspect": [
+            {
+              "sourceId": "src_real_10956",
+              "name": "Investor.gov Glossary Diversification",
+              "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/diversification",
+              "sourceUseTier": "green_official_public_domain",
+              "reliabilityGrade": "S",
+              "relevanceSignal": "Green indicator_pattern_taxonomy authority context and boundary reference; not copied learner-facing content."
+            }
+          ],
+          "reviewerDecision": "Use for investor-protection, glossary, and fraud-warning boundaries; do not use to define chart structures."
+        }
+      ],
+      "humanDecisionRequired": true,
+      "allowedNextStatus": "not_started_or_ready_for_separate_human_approval_review_only_after_real_notes"
+    },
+    {
+      "lessonId": "lesson_knv2_0128",
+      "batchId": "rewrite_batch_01",
+      "module": "多周期分析",
+      "topic": "D1背景",
+      "riskLevel": "medium",
+      "currentGrade": "structural_draft",
+      "mustRemainStructuralDraft": true,
+      "firstDecision": "Use the high-risk decision in the same batch as context, then confirm roles.",
+      "sourceFamilyRoles": [
+        {
+          "family": "CFTC",
+          "suggestedRole": "fraud_or_market_boundary",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for commodity, fraud, system-risk, or market-oversight boundaries; do not use as chart-pattern authority unless source title directly fits."
+        },
+        {
+          "family": "Federal Reserve",
+          "suggestedRole": "macro_rates_context",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for macro/rates context or data-boundary notes; do not convert into directional market claims."
+        },
+        {
+          "family": "Investor.gov",
+          "suggestedRole": "investor_protection_boundary",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for investor-protection, glossary, and fraud-warning boundaries; do not use to define chart structures."
+        }
+      ],
+      "humanDecisionRequired": true,
+      "allowedNextStatus": "not_started_or_ready_for_separate_human_approval_review_only_after_real_notes"
+    },
+    {
+      "lessonId": "lesson_knv2_0140",
+      "batchId": "rewrite_batch_01",
+      "module": "多周期分析",
+      "topic": "H4结构",
+      "riskLevel": "medium",
+      "currentGrade": "structural_draft",
+      "mustRemainStructuralDraft": true,
+      "firstDecision": "Use the high-risk decision in the same batch as context, then confirm roles.",
+      "sourceFamilyRoles": [
+        {
+          "family": "BEA",
+          "suggestedRole": "macro_data_context",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for data-definition and release-reading boundaries; do not use as chart-pattern proof."
+        },
+        {
+          "family": "CFTC",
+          "suggestedRole": "fraud_or_market_boundary",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for commodity, fraud, system-risk, or market-oversight boundaries; do not use as chart-pattern authority unless source title directly fits."
+        },
+        {
+          "family": "Investor.gov",
+          "suggestedRole": "investor_protection_boundary",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for investor-protection, glossary, and fraud-warning boundaries; do not use to define chart structures."
+        },
+        {
+          "family": "Treasury",
+          "suggestedRole": "macro_rates_context",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for macro/rates context or data-boundary notes; do not convert into directional market claims."
+        }
+      ],
+      "humanDecisionRequired": true,
+      "allowedNextStatus": "not_started_or_ready_for_separate_human_approval_review_only_after_real_notes"
+    },
+    {
+      "lessonId": "lesson_knv2_0054",
+      "batchId": "rewrite_batch_01",
+      "module": "交易区间",
+      "topic": "区间突破",
+      "riskLevel": "medium",
+      "currentGrade": "structural_draft",
+      "mustRemainStructuralDraft": true,
+      "firstDecision": "Use the high-risk decision in the same batch as context, then confirm roles.",
+      "sourceFamilyRoles": [
+        {
+          "family": "BEA",
+          "suggestedRole": "macro_data_context",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for data-definition and release-reading boundaries; do not use as chart-pattern proof."
+        },
+        {
+          "family": "CFTC",
+          "suggestedRole": "fraud_or_market_boundary",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for commodity, fraud, system-risk, or market-oversight boundaries; do not use as chart-pattern authority unless source title directly fits."
+        },
+        {
+          "family": "Federal Reserve",
+          "suggestedRole": "macro_rates_context",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for macro/rates context or data-boundary notes; do not convert into directional market claims."
+        },
+        {
+          "family": "Project Gutenberg",
+          "suggestedRole": "historical_context",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use only for historical language, terminology evolution, and observation framing; remove any buy/sell or profit wording."
+        },
+        {
+          "family": "Treasury",
+          "suggestedRole": "macro_rates_context",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for macro/rates context or data-boundary notes; do not convert into directional market claims."
+        }
+      ],
+      "humanDecisionRequired": true,
+      "allowedNextStatus": "not_started_or_ready_for_separate_human_approval_review_only_after_real_notes"
+    },
+    {
+      "lessonId": "lesson_knv2_0019",
+      "batchId": "rewrite_batch_01",
+      "module": "反转",
+      "topic": "衰竭证据",
+      "riskLevel": "medium",
+      "currentGrade": "structural_draft",
+      "mustRemainStructuralDraft": true,
+      "firstDecision": "Use the high-risk decision in the same batch as context, then confirm roles.",
+      "sourceFamilyRoles": [
+        {
+          "family": "BLS",
+          "suggestedRole": "macro_data_context",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for data-definition and release-reading boundaries; do not use as chart-pattern proof."
+        },
+        {
+          "family": "Federal Reserve",
+          "suggestedRole": "macro_rates_context",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for macro/rates context or data-boundary notes; do not convert into directional market claims."
+        },
+        {
+          "family": "Project Gutenberg",
+          "suggestedRole": "historical_context",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use only for historical language, terminology evolution, and observation framing; remove any buy/sell or profit wording."
+        },
+        {
+          "family": "Treasury",
+          "suggestedRole": "macro_rates_context",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for macro/rates context or data-boundary notes; do not convert into directional market claims."
+        },
+        {
+          "family": "federalregister.gov",
+          "suggestedRole": "metadata_only_until_confirmed",
+          "confidence": "low",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Keep as metadata or source-boundary context until a human confirms direct lesson fit."
+        }
+      ],
+      "humanDecisionRequired": true,
+      "allowedNextStatus": "not_started_or_ready_for_separate_human_approval_review_only_after_real_notes"
+    },
+    {
+      "lessonId": "lesson_knv2_0075",
+      "batchId": "rewrite_batch_05",
+      "module": "K线与价格行为",
+      "topic": "组合K线",
+      "riskLevel": "medium",
+      "currentGrade": "structural_draft",
+      "mustRemainStructuralDraft": true,
+      "firstDecision": "Use the high-risk decision in the same batch as context, then confirm roles.",
+      "sourceFamilyRoles": [
+        {
+          "family": "BEA",
+          "suggestedRole": "macro_data_context",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for data-definition and release-reading boundaries; do not use as chart-pattern proof."
+        },
+        {
+          "family": "Investor.gov",
+          "suggestedRole": "investor_protection_boundary",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for investor-protection, glossary, and fraud-warning boundaries; do not use to define chart structures."
+        },
+        {
+          "family": "Project Gutenberg",
+          "suggestedRole": "historical_context",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use only for historical language, terminology evolution, and observation framing; remove any buy/sell or profit wording."
+        },
+        {
+          "family": "SEC",
+          "suggestedRole": "filing_or_data_boundary",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for filing/data-access/disclosure-literacy boundaries; direct prose support needs human confirmation."
+        },
+        {
+          "family": "Treasury",
+          "suggestedRole": "macro_rates_context",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for macro/rates context or data-boundary notes; do not convert into directional market claims."
+        }
+      ],
+      "humanDecisionRequired": true,
+      "allowedNextStatus": "not_started_or_ready_for_separate_human_approval_review_only_after_real_notes"
+    },
+    {
+      "lessonId": "lesson_knv2_0087",
+      "batchId": "rewrite_batch_05",
+      "module": "K线与价格行为",
+      "topic": "流动性扫过",
+      "riskLevel": "high",
+      "currentGrade": "structural_draft",
+      "mustRemainStructuralDraft": true,
+      "firstDecision": "Resolve source role before any prose rewrite.",
+      "sourceFamilyRoles": [
+        {
+          "family": "BEA",
+          "suggestedRole": "direct_candidate_needs_human_confirmation",
+          "confidence": "medium",
+          "sourceRefsToInspect": [
+            {
+              "sourceId": "src_real_10310",
+              "name": "BEA Data Application Programming Interface",
+              "url": "https://apps.bea.gov/api/",
+              "sourceUseTier": "green_official_public_domain",
+              "reliabilityGrade": "S",
+              "relevanceSignal": "Green chart_price_action authority context and boundary reference; not copied learner-facing content."
+            }
+          ],
+          "reviewerDecision": "Inspect source title and metadata. If it directly supports the lesson topic, keep as direct evidence; otherwise downgrade to boundary-only context."
+        },
+        {
+          "family": "BLS",
+          "suggestedRole": "direct_candidate_needs_human_confirmation",
+          "confidence": "medium",
+          "sourceRefsToInspect": [
+            {
+              "sourceId": "src_real_10152",
+              "name": "BLS PPI",
+              "url": "https://www.bls.gov/ppi/",
+              "sourceUseTier": "green_official_public_domain",
+              "reliabilityGrade": "S",
+              "relevanceSignal": "chart_reading"
+            }
+          ],
+          "reviewerDecision": "Inspect source title and metadata. If it directly supports the lesson topic, keep as direct evidence; otherwise downgrade to boundary-only context."
+        },
+        {
+          "family": "CFTC",
+          "suggestedRole": "direct_candidate_needs_human_confirmation",
+          "confidence": "medium",
+          "sourceRefsToInspect": [
+            {
+              "sourceId": "src_real_11209",
+              "name": "CFTC Phony Trading Websites",
+              "url": "https://www.cftc.gov/LearnAndProtect/FraudAwarenessPrevention/CFTCFraudAdvisories/fraudadv_phonywebsites",
+              "sourceUseTier": "green_official_public_domain",
+              "reliabilityGrade": "S",
+              "relevanceSignal": "range"
+            }
+          ],
+          "reviewerDecision": "Inspect source title and metadata. If it directly supports the lesson topic, keep as direct evidence; otherwise downgrade to boundary-only context."
+        },
+        {
+          "family": "SEC",
+          "suggestedRole": "direct_candidate_needs_human_confirmation",
+          "confidence": "medium",
+          "sourceRefsToInspect": [
+            {
+              "sourceId": "src_real_11186",
+              "name": "SEC Developer Resources",
+              "url": "https://www.sec.gov/about/developer-resources",
+              "sourceUseTier": "green_official_public_domain",
+              "reliabilityGrade": "S",
+              "relevanceSignal": "chart_reading"
+            }
+          ],
+          "reviewerDecision": "Inspect source title and metadata. If it directly supports the lesson topic, keep as direct evidence; otherwise downgrade to boundary-only context."
+        },
+        {
+          "family": "Treasury",
+          "suggestedRole": "macro_rates_context",
+          "confidence": "medium",
+          "sourceRefsToInspect": [
+            {
+              "sourceId": "src_real_10157",
+              "name": "US Treasury Daily Treasury Rates",
+              "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView",
+              "sourceUseTier": "green_official_public_domain",
+              "reliabilityGrade": "S",
+              "relevanceSignal": "Green chart_price_action authority context and boundary reference; not copied learner-facing content."
+            }
+          ],
+          "reviewerDecision": "Use for macro/rates context or data-boundary notes; do not convert into directional market claims."
+        }
+      ],
+      "humanDecisionRequired": true,
+      "allowedNextStatus": "not_started_or_ready_for_separate_human_approval_review_only_after_real_notes"
+    },
+    {
+      "lessonId": "lesson_knv2_0159",
+      "batchId": "rewrite_batch_05",
+      "module": "K线与价格行为",
+      "topic": "形态语境",
+      "riskLevel": "medium",
+      "currentGrade": "structural_draft",
+      "mustRemainStructuralDraft": true,
+      "firstDecision": "Use the high-risk decision in the same batch as context, then confirm roles.",
+      "sourceFamilyRoles": [
+        {
+          "family": "BEA",
+          "suggestedRole": "macro_data_context",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for data-definition and release-reading boundaries; do not use as chart-pattern proof."
+        },
+        {
+          "family": "Investor.gov",
+          "suggestedRole": "investor_protection_boundary",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for investor-protection, glossary, and fraud-warning boundaries; do not use to define chart structures."
+        },
+        {
+          "family": "SEC",
+          "suggestedRole": "filing_or_data_boundary",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for filing/data-access/disclosure-literacy boundaries; direct prose support needs human confirmation."
+        },
+        {
+          "family": "Treasury",
+          "suggestedRole": "macro_rates_context",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for macro/rates context or data-boundary notes; do not convert into directional market claims."
+        }
+      ],
+      "humanDecisionRequired": true,
+      "allowedNextStatus": "not_started_or_ready_for_separate_human_approval_review_only_after_real_notes"
+    },
+    {
+      "lessonId": "lesson_knv2_0011",
+      "batchId": "rewrite_batch_05",
+      "module": "风险管理",
+      "topic": "失效条件",
+      "riskLevel": "low",
+      "currentGrade": "structural_draft",
+      "mustRemainStructuralDraft": true,
+      "firstDecision": "Use the high-risk decision in the same batch as context, then confirm roles.",
+      "sourceFamilyRoles": [
+        {
+          "family": "CFTC",
+          "suggestedRole": "fraud_or_market_boundary",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for commodity, fraud, system-risk, or market-oversight boundaries; do not use as chart-pattern authority unless source title directly fits."
+        },
+        {
+          "family": "Federal Reserve",
+          "suggestedRole": "macro_rates_context",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for macro/rates context or data-boundary notes; do not convert into directional market claims."
+        },
+        {
+          "family": "SEC",
+          "suggestedRole": "filing_or_data_boundary",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for filing/data-access/disclosure-literacy boundaries; direct prose support needs human confirmation."
+        },
+        {
+          "family": "nist.gov",
+          "suggestedRole": "technical_data_integrity_boundary",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for data-integrity or technical boundary notes only."
+        }
+      ],
+      "humanDecisionRequired": true,
+      "allowedNextStatus": "not_started_or_ready_for_separate_human_approval_review_only_after_real_notes"
+    },
+    {
+      "lessonId": "lesson_knv2_0059",
+      "batchId": "rewrite_batch_05",
+      "module": "风险管理",
+      "topic": "边界语言",
+      "riskLevel": "low",
+      "currentGrade": "structural_draft",
+      "mustRemainStructuralDraft": true,
+      "firstDecision": "Use the high-risk decision in the same batch as context, then confirm roles.",
+      "sourceFamilyRoles": [
+        {
+          "family": "CFTC",
+          "suggestedRole": "fraud_or_market_boundary",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for commodity, fraud, system-risk, or market-oversight boundaries; do not use as chart-pattern authority unless source title directly fits."
+        },
+        {
+          "family": "Investor.gov",
+          "suggestedRole": "investor_protection_boundary",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for investor-protection, glossary, and fraud-warning boundaries; do not use to define chart structures."
+        },
+        {
+          "family": "SEC",
+          "suggestedRole": "filing_or_data_boundary",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for filing/data-access/disclosure-literacy boundaries; direct prose support needs human confirmation."
+        }
+      ],
+      "humanDecisionRequired": true,
+      "allowedNextStatus": "not_started_or_ready_for_separate_human_approval_review_only_after_real_notes"
+    },
+    {
+      "lessonId": "lesson_knv2_0167",
+      "batchId": "rewrite_batch_05",
+      "module": "风险管理",
+      "topic": "可复盘计划",
+      "riskLevel": "low",
+      "currentGrade": "structural_draft",
+      "mustRemainStructuralDraft": true,
+      "firstDecision": "Use the high-risk decision in the same batch as context, then confirm roles.",
+      "sourceFamilyRoles": [
+        {
+          "family": "CFTC",
+          "suggestedRole": "fraud_or_market_boundary",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for commodity, fraud, system-risk, or market-oversight boundaries; do not use as chart-pattern authority unless source title directly fits."
+        },
+        {
+          "family": "Investor.gov",
+          "suggestedRole": "investor_protection_boundary",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for investor-protection, glossary, and fraud-warning boundaries; do not use to define chart structures."
+        },
+        {
+          "family": "SEC",
+          "suggestedRole": "filing_or_data_boundary",
+          "confidence": "medium",
+          "sourceRefsToInspect": [],
+          "reviewerDecision": "Use for filing/data-access/disclosure-literacy boundaries; direct prose support needs human confirmation."
+        }
+      ],
+      "humanDecisionRequired": true,
+      "allowedNextStatus": "not_started_or_ready_for_separate_human_approval_review_only_after_real_notes"
+    }
+  ],
+  "boundary": "This source-role table is reviewer-facing scaffolding only. It does not approve sources, create real reviewer notes, publish learner-facing content, change grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, or guide real-money decisions."
+}

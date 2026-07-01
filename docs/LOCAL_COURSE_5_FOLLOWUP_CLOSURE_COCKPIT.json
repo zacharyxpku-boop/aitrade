@@ -1,0 +1,130 @@
+{
+  "generatedAt": "2026-06-24T18:21:24.836Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "writeAllowedNow": false,
+  "cockpitStatus": "course_5_followup_closure_cockpit_ready_folder_deletion_blocked",
+  "sourceRoot": "C:\\Users\\86136\\Desktop\\5",
+  "sourceFolderMayBeDeleted": false,
+  "currentKnowledgeArtifactsCanReplaceSourceFolder": false,
+  "totalFiles": 134,
+  "uniquePrimaryRows": 131,
+  "textAbsorbedRows": 82,
+  "totalExtractedChars": 15315443,
+  "followupRequiredRows": 49,
+  "unresolvedSourceRows": 49,
+  "pdfFollowupRows": 41,
+  "zipFollowupRows": 8,
+  "fullTextOcrRequiredRows": 41,
+  "ocrUnavailableBlockingRows": 41,
+  "canAdvanceWithVisualReviewNowRows": 49,
+  "canFullyResolveWithLocalToolsNowRows": 8,
+  "teachingModules": 13,
+  "lessonSeeds": 52,
+  "evidenceAnchors": 96,
+  "modulesBlockedByVisualOrOcr": 11,
+  "learnerReadyModules": 0,
+  "sampleRows": 206,
+  "machineDraftRows": 206,
+  "validationInputRows": 206,
+  "readyInputRows": 0,
+  "blockedInputRows": 206,
+  "missingFieldRows": 206,
+  "acceptedForModuleDistillationRows": 0,
+  "acceptedForDeletionReadinessRows": 0,
+  "zipImageEntries": 10569,
+  "pdfPages": 44398,
+  "deletionGate": {
+    "readinessStatus": "course_5_source_folder_not_deletable_absorption_incomplete",
+    "sourceFolderStillPresentAtBuild": true,
+    "deleteExecutedNow": false,
+    "deletionRequiresExplicitUserConfirmation": true,
+    "reason": "Course 5 has been inventoried, text-extracted where possible, sampled visually, and mapped into private teaching-module candidates, but 49 source rows still require OCR, visual semantic review, or ZIP image-package review before the source folder can be considered replaceable."
+  },
+  "closureBlockers": [
+    {
+      "blocker": "pdf_ocr_or_real_visual_review_missing",
+      "count": 121,
+      "evidence": "docs/LOCAL_COURSE_5_PDF_OCR_VISUAL_REVIEW_INPUT_VALIDATION.json"
+    },
+    {
+      "blocker": "zip_real_visual_review_missing",
+      "count": 85,
+      "evidence": "docs/LOCAL_COURSE_5_ZIP_IMAGE_PACKAGE_REVIEW_INPUT_VALIDATION.json"
+    },
+    {
+      "blocker": "ocr_engine_unavailable_for_full_text_pdf_resolution",
+      "count": 41,
+      "evidence": "docs/LOCAL_COURSE_5_OCR_VISUAL_EXECUTION_ROUTER.json"
+    },
+    {
+      "blocker": "no_rows_accepted_for_module_distillation_or_deletion_readiness",
+      "count": 206,
+      "evidence": "docs/LOCAL_COURSE_5_TEACHING_MODULE_DISTILLATION.json"
+    }
+  ],
+  "workstreams": [
+    {
+      "workstream": "pdf_ocr_visual_review",
+      "sourceRows": 41,
+      "sourcePages": 44398,
+      "sampleRows": 121,
+      "machineDraftRows": 121,
+      "inputRows": 121,
+      "readyRows": 0,
+      "blockedRows": 121,
+      "missingFieldRows": 121,
+      "localOcrAvailable": false,
+      "canFullyResolveWithLocalToolsNowRows": 0,
+      "status": "course_5_pdf_ocr_visual_review_input_blocked_missing_or_invalid_real_ocr_or_visual_input",
+      "executionPack": "docs/LOCAL_COURSE_5_PDF_OCR_VISUAL_EXECUTION_PACK.json",
+      "machineDrafts": "docs/LOCAL_COURSE_5_PDF_MACHINE_VISUAL_SEMANTIC_DRAFTS.json",
+      "validation": "docs/LOCAL_COURSE_5_PDF_OCR_VISUAL_REVIEW_INPUT_VALIDATION.json"
+    },
+    {
+      "workstream": "zip_image_package_review",
+      "sourceRows": 8,
+      "sourceImageEntries": 10569,
+      "sampleRows": 85,
+      "machineDraftRows": 85,
+      "inputRows": 85,
+      "readyRows": 0,
+      "blockedRows": 85,
+      "missingFieldRows": 85,
+      "localOcrAvailable": false,
+      "canFullyResolveWithLocalToolsNowRows": 8,
+      "status": "course_5_zip_image_package_review_input_blocked_missing_or_invalid_real_visual_input",
+      "executionPack": "docs/LOCAL_COURSE_5_ZIP_IMAGE_PACKAGE_EXECUTION_PACK.json",
+      "machineDrafts": "docs/LOCAL_COURSE_5_ZIP_MACHINE_VISUAL_SEMANTIC_DRAFTS.json",
+      "validation": "docs/LOCAL_COURSE_5_ZIP_IMAGE_PACKAGE_REVIEW_INPUT_VALIDATION.json"
+    }
+  ],
+  "nextOperationalGates": [
+    "Install or provide a trusted OCR path for the 41 PDF follow-up rows, or keep those source files in cold storage.",
+    "Fill real OCR/visual reviewer fields for 121 PDF sample rows and re-run PDF input validation.",
+    "Fill real visual reviewer fields for 85 ZIP image-package sample rows and re-run ZIP input validation.",
+    "Only after validation has ready rows, merge accepted paraphrased concepts into teaching-module distillation.",
+    "Recompute deletion readiness after all 49 follow-up source rows have accepted replacement evidence or explicit future-loss acceptance."
+  ],
+  "commands": [
+    "npm.cmd run build:local-course-5-followup-closure-cockpit",
+    "npm.cmd run check:local-course-5-followup-closure-cockpit",
+    "npm.cmd run verify"
+  ],
+  "sourceArtifacts": {
+    "retention": "docs/LOCAL_COURSE_5_SOURCE_RETENTION_MANIFEST.json",
+    "router": "docs/LOCAL_COURSE_5_OCR_VISUAL_EXECUTION_ROUTER.json",
+    "teaching": "docs/LOCAL_COURSE_5_TEACHING_MODULE_DISTILLATION.json",
+    "zipExecution": "docs/LOCAL_COURSE_5_ZIP_IMAGE_PACKAGE_EXECUTION_PACK.json",
+    "zipDrafts": "docs/LOCAL_COURSE_5_ZIP_MACHINE_VISUAL_SEMANTIC_DRAFTS.json",
+    "zipValidation": "docs/LOCAL_COURSE_5_ZIP_IMAGE_PACKAGE_REVIEW_INPUT_VALIDATION.json",
+    "pdfExecution": "docs/LOCAL_COURSE_5_PDF_OCR_VISUAL_EXECUTION_PACK.json",
+    "pdfDrafts": "docs/LOCAL_COURSE_5_PDF_MACHINE_VISUAL_SEMANTIC_DRAFTS.json",
+    "pdfValidation": "docs/LOCAL_COURSE_5_PDF_OCR_VISUAL_REVIEW_INPUT_VALIDATION.json",
+    "deletion": "docs/LOCAL_COURSE_5_DELETION_READINESS.json"
+  },
+  "completionRule": "This closure cockpit is complete when it proves every Course 5 follow-up source row is represented in PDF/ZIP execution, machine-draft orientation, reviewer-input validation, teaching-module status, and deletion-readiness gates, while keeping deletion and learner-facing release blocked until real OCR/reviewer evidence is accepted.",
+  "boundary": "Course 5 follow-up closure cockpit is private reviewer-facing education operations material. It unifies source-retention, OCR/visual routing, PDF and ZIP execution packs, machine semantic drafts, reviewer-input validations, teaching-module distillation, and deletion-readiness gates. It does not perform OCR, generate reviewer conclusions, accept machine drafts as human review, delete files, approve source-folder deletion, approve learner-facing release, copy private source wording, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, write authorization, or production readiness."
+}

@@ -1,0 +1,93 @@
+{
+  "generatedAt": "2026-06-19T09:47:13.198Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "acceptanceGateReady": true,
+  "gateMode": "future_real_sourceFitNotes_quality_gate_only",
+  "realStatusPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "realStatusOverlayPresent": false,
+  "decisionRowsCovered": 5,
+  "allowedDecisionValues": [
+    "confirm_direct_evidence_after_human_review",
+    "downgrade_to_boundary_only",
+    "blocked_needs_rewrite_or_source_replacement"
+  ],
+  "requiredAnchors": [
+    "decision:",
+    "source role:",
+    "claim:",
+    "rewrite action:"
+  ],
+  "acceptanceRules": [
+    "A future real sourceFitNotes entry must include one allowed decision value.",
+    "It must name the source role and source identity or metadata basis.",
+    "It must state the lesson claim that is supported, unsupported, or being narrowed.",
+    "It must state a rewrite action: confirm as direct evidence, downgrade to boundary-only, or block for rewrite/source replacement.",
+    "It must be original human review prose and must not copy external source body text.",
+    "It must not contain approval, learner-facing release, commercial readiness, production readiness, trading advice, signals, performance, broker/order workflow, automation, or real-money guidance."
+  ],
+  "positiveControls": 5,
+  "positiveControlsPassed": 5,
+  "negativeCases": 6,
+  "negativeCasesPassed": 6,
+  "negativeCaseRows": [
+    {
+      "name": "blank_source_fit_note_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "issueCount": 9,
+      "message": "rewrite_batch_01.lesson_knv2_0068.CFTC sourceFitNotes is blank; rewrite_batch_01.lesson_knv2_0068.CFTC sourceFitNotes is too short for direct-candidate acceptance; rewrite_batch_01.lesson_knv2_0068.CFTC sourceFitNotes lacks an allowed decision value; rewrite_batch_01.lesson_knv2_0068.CFTC sourceFitNotes lacks decision:; rewrite_batch_01.lesson_knv2_0068.CFTC sourceFitNotes lacks source role:; rewrite_batch_01.lesson_knv2_0068.CFTC sourceFitNotes lacks claim:; rewrite_batch_01.lesson_knv2_0068.CFTC sourceFitNotes lacks rewrite action:; rewrite_batch_01.lesson_knv2_0068.CFTC sourceFitNotes lacks source identity or metadata reference; rewrite_batch_01.lesson_knv2_0068.CFTC sourceFitNotes lacks decision/action wording"
+    },
+    {
+      "name": "missing_decision_value_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "issueCount": 2,
+      "message": "rewrite_batch_01.lesson_knv2_0068.CFTC sourceFitNotes lacks an allowed decision value; rewrite_batch_01.lesson_knv2_0068.CFTC sourceFitNotes lacks decision:"
+    },
+    {
+      "name": "generic_confirmation_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "issueCount": 1,
+      "message": "rewrite_batch_01.lesson_knv2_0068.CFTC sourceFitNotes is too short for direct-candidate acceptance"
+    },
+    {
+      "name": "approval_wording_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "issueCount": 1,
+      "message": "rewrite_batch_01.lesson_knv2_0068.CFTC sourceFitNotes contains approval/readiness wording"
+    },
+    {
+      "name": "trading_signal_wording_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "issueCount": 1,
+      "message": "rewrite_batch_01.lesson_knv2_0068.CFTC sourceFitNotes contains trading or real-money wording"
+    },
+    {
+      "name": "copying_risk_wording_rejected",
+      "expectedFailure": true,
+      "passed": true,
+      "issueCount": 1,
+      "message": "rewrite_batch_01.lesson_knv2_0068.CFTC sourceFitNotes contains copying-risk wording"
+    }
+  ],
+  "realNoteIssues": 0,
+  "confirmedDecisions": 0,
+  "approvalReviewCandidates": 0,
+  "sourceReports": {
+    "dryRunPacket": "docs/FIRST_REVIEWER_DRY_RUN_PACKET.json",
+    "progressDashboard": "docs/FIRST_REVIEWER_PROGRESS_DASHBOARD.json",
+    "humanExecutionBundle": "docs/FIRST_REVIEWER_HUMAN_EXECUTION_BUNDLE.json",
+    "noteQualityLint": "docs/REVIEWER_NOTE_QUALITY_LINT.json",
+    "directCandidateDecisionWorksheet": "docs/FIRST_REVIEWER_DIRECT_CANDIDATE_DECISION_WORKSHEET.json",
+    "evidenceIntakeSummary": "docs/FIRST_REVIEWER_EVIDENCE_INTAKE_SUMMARY.json",
+    "separateApprovalGate": "docs/FIRST_REVIEWER_SEPARATE_APPROVAL_REVIEW_GATE.json"
+  },
+  "boundary": "This sourceFitNotes acceptance gate defines future real-note quality criteria only. It does not create docs/LESSON_BATCH_REVIEW_STATUS.json, fill human notes, confirm source use, approve lessons, publish learner-facing content, change grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, guide real-money decisions, or make the product production-ready."
+}

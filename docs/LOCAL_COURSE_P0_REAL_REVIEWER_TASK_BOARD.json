@@ -1,0 +1,1137 @@
+{
+  "generatedAt": "2026-06-22T00:20:55.533Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "boardStatus": "p0_real_reviewer_task_board_ready_all_tasks_blocked",
+  "boardMode": "reviewer_execution_board_for_blank_owned_copy",
+  "starterPath": "docs/LOCAL_COURSE_P0_REAL_REVIEWER_INPUT_STARTER.json",
+  "draftInputPath": "docs/reviewer-inputs/LOCAL_COURSE_P0_HUMAN_REVIEW_BUNDLE_REAL_INPUT_DRAFT.json",
+  "validationPath": "docs/LOCAL_COURSE_P0_REAL_REVIEWER_INPUT_STARTER_VALIDATION.json",
+  "totalTasks": 22,
+  "manualTranscriptionTasks": 19,
+  "sourceReplacementTasks": 3,
+  "readyTasks": 0,
+  "blockedTasks": 22,
+  "rowsMissingReviewerIdentity": 22,
+  "realHumanInputEntries": 0,
+  "writeAllowedNow": false,
+  "manualAuthorizationRequired": true,
+  "groupedCounts": {
+    "byCategory": {
+      "manual_transcription": 19,
+      "source_replacement": 3
+    },
+    "byDocument": {
+      "corpus_1580": 11,
+      "corpus_1313": 8,
+      "corpus_1329": 1,
+      "corpus_1431": 1,
+      "corpus_1577": 1
+    }
+  },
+  "taskRows": [
+    {
+      "order": 1,
+      "id": "input_copy_absorb_manual_transcription_09",
+      "taskId": "absorb_manual_transcription_09",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 1,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-01.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-01.png",
+      "candidateId": "candidate_batch_03_page_01",
+      "validationStatus": "blocked_missing_reviewer_input",
+      "readyForOverlayApply": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "sourceFitNote",
+        "rewriteBoundaryNote",
+        "manualChecklist"
+      ],
+      "riskTermFlags": [
+        "source_provenance_language",
+        "copyright_language",
+        "historical_origin_language",
+        "market_visualization_language"
+      ],
+      "qualityLintRules": [
+        "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+        "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+        "riskRewriteNotes must address every riskTermFlag before validation.",
+        "publicReferenceNotes must name public grounding needed for historical, terminology, or source claims.",
+        "originalityNotes must confirm private course wording was not copied into learner-facing content."
+      ],
+      "uncertainRegions": [
+        "Exact URL text in the source screenshot needs human confirmation.",
+        "Some historical proper nouns and date ranges should be checked against public references before learner-facing use."
+      ],
+      "candidateSummary": "This page can be rewritten as a provenance and historical-origin note for a K-line basics lesson: explain that candlestick charts emerged from historical rice-price recording and later became a market visualization tool, while keeping source attribution and copyright review separate.",
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag.",
+        "Public reference notes identify historical, terminology, or source claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_01_input_then_apply_dry_run_only",
+      "reviewerAction": "Inspect preview/high-res preview, then fill human transcription, education-only summary, source-fit/public refs, originality notes, risk rewrite notes, and checklist."
+    },
+    {
+      "order": 2,
+      "id": "input_copy_absorb_manual_transcription_10",
+      "taskId": "absorb_manual_transcription_10",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 2,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-02.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-02.png",
+      "candidateId": "candidate_batch_03_page_02",
+      "validationStatus": "blocked_missing_reviewer_input",
+      "readyForOverlayApply": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "sourceFitNote",
+        "rewriteBoundaryNote",
+        "manualChecklist"
+      ],
+      "riskTermFlags": [
+        "historical_market_language",
+        "futures_origin_language",
+        "transaction_scale_language",
+        "public_grounding_required"
+      ],
+      "qualityLintRules": [
+        "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+        "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+        "riskRewriteNotes must address every riskTermFlag before validation.",
+        "publicReferenceNotes must name public grounding needed for historical, terminology, or source claims.",
+        "originalityNotes must confirm private course wording was not copied into learner-facing content."
+      ],
+      "uncertainRegions": [
+        "Transaction-scale figures and historical dates require public-source verification.",
+        "Some screenshot subtitle text is not reliable enough for exact transcription."
+      ],
+      "candidateSummary": "This page can support a public-grounded history module: learners understand why price-recording tools arose from rice-market logistics, paper claims, and repeated price fluctuation, without treating the story as a trading method.",
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag.",
+        "Public reference notes identify historical, terminology, or source claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_01_input_then_apply_dry_run_only",
+      "reviewerAction": "Inspect preview/high-res preview, then fill human transcription, education-only summary, source-fit/public refs, originality notes, risk rewrite notes, and checklist."
+    },
+    {
+      "order": 3,
+      "id": "input_copy_absorb_manual_transcription_11",
+      "taskId": "absorb_manual_transcription_11",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 3,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-03.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-03.png",
+      "candidateId": "candidate_batch_03_page_03",
+      "validationStatus": "blocked_missing_reviewer_input",
+      "readyForOverlayApply": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "sourceFitNote",
+        "rewriteBoundaryNote",
+        "manualChecklist"
+      ],
+      "riskTermFlags": [
+        "success_claim_language",
+        "market_influence_language",
+        "pattern_name_language",
+        "historical_claim_review_required"
+      ],
+      "qualityLintRules": [
+        "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+        "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+        "riskRewriteNotes must address every riskTermFlag before validation.",
+        "publicReferenceNotes must name public grounding needed for historical, terminology, or source claims.",
+        "originalityNotes must confirm private course wording was not copied into learner-facing content."
+      ],
+      "uncertainRegions": [
+        "Winning-streak and wealth-scale claims need source validation or removal.",
+        "Pattern-name translations should be checked against public references before use."
+      ],
+      "candidateSummary": "This page can be rewritten as a cautious history-and-terminology bridge: introduce chart recording, pattern names, and folklore-like claims as background vocabulary, while avoiding success claims or implying that historical anecdotes validate a trading edge.",
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag.",
+        "Public reference notes identify historical, terminology, or source claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_01_input_then_apply_dry_run_only",
+      "reviewerAction": "Inspect preview/high-res preview, then fill human transcription, education-only summary, source-fit/public refs, originality notes, risk rewrite notes, and checklist."
+    },
+    {
+      "order": 4,
+      "id": "input_copy_absorb_manual_transcription_12",
+      "taskId": "absorb_manual_transcription_12",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 4,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-04.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-04.png",
+      "candidateId": "candidate_batch_03_page_04",
+      "validationStatus": "blocked_missing_reviewer_input",
+      "readyForOverlayApply": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "sourceFitNote",
+        "rewriteBoundaryNote",
+        "manualChecklist"
+      ],
+      "riskTermFlags": [
+        "ohlc_definition_language",
+        "bullish_candle_language",
+        "example_price_language",
+        "platform_color_convention"
+      ],
+      "qualityLintRules": [
+        "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+        "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+        "riskRewriteNotes must address every riskTermFlag before validation.",
+        "publicReferenceNotes must name public grounding needed for historical, terminology, or source claims.",
+        "originalityNotes must confirm private course wording was not copied into learner-facing content."
+      ],
+      "uncertainRegions": [
+        "Example prices are visible but should be checked if retained.",
+        "The color convention should be generalized because platforms differ between markets."
+      ],
+      "candidateSummary": "This page can become a clean foundational concept card: define OHLC and candle body/wicks as chart-reading vocabulary, then use neutral examples to teach what a candle records rather than what action to take.",
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag.",
+        "Public reference notes identify historical, terminology, or source claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_01_input_then_apply_dry_run_only",
+      "reviewerAction": "Inspect preview/high-res preview, then fill human transcription, education-only summary, source-fit/public refs, originality notes, risk rewrite notes, and checklist."
+    },
+    {
+      "order": 5,
+      "id": "input_copy_absorb_manual_transcription_13",
+      "taskId": "absorb_manual_transcription_13",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 5,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-05.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-05.png",
+      "candidateId": "candidate_batch_04_page_01",
+      "validationStatus": "blocked_missing_reviewer_input",
+      "readyForOverlayApply": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "sourceFitNote",
+        "rewriteBoundaryNote",
+        "manualChecklist"
+      ],
+      "riskTermFlags": [
+        "bearish_bullish_language",
+        "ohlc_definition_language",
+        "shadow_body_language",
+        "market_meaning_language",
+        "platform_color_convention"
+      ],
+      "qualityLintRules": [
+        "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+        "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+        "riskRewriteNotes must address every riskTermFlag before validation, especially signal, forecast, support/resistance, homework, and source-recommendation language.",
+        "publicReferenceNotes must name public grounding needed for candlestick terminology, pattern taxonomy, support/resistance claims, or source recommendations.",
+        "originalityNotes must confirm private course wording was not copied into learner-facing content."
+      ],
+      "uncertainRegions": [
+        "Some small labels in the embedded diagram need human confirmation before exact transcription.",
+        "The red/green color convention should be generalized because market platforms and regions differ."
+      ],
+      "candidateSummary": "This page can be rewritten as a neutral candlestick anatomy card: define body and shadows from OHLC values, explain that color conventions vary by platform, and convert bullish/bearish force claims into cautious chart-description vocabulary.",
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal, forecast, support/resistance, homework, and source-recommendation language.",
+        "Public reference notes identify candlestick terminology, pattern taxonomy, support/resistance claims, or source recommendations that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_02_input_then_apply_dry_run_only",
+      "reviewerAction": "Inspect preview/high-res preview, then fill human transcription, education-only summary, source-fit/public refs, originality notes, risk rewrite notes, and checklist."
+    },
+    {
+      "order": 6,
+      "id": "input_copy_absorb_manual_transcription_14",
+      "taskId": "absorb_manual_transcription_14",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 6,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-06.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-06.png",
+      "candidateId": "candidate_batch_04_page_02",
+      "validationStatus": "blocked_missing_reviewer_input",
+      "readyForOverlayApply": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "sourceFitNote",
+        "rewriteBoundaryNote",
+        "manualChecklist"
+      ],
+      "riskTermFlags": [
+        "kline_classification_language",
+        "ohlc_formula_language",
+        "specific_price_levels",
+        "support_resistance_language",
+        "force_comparison_language",
+        "liquidity_condition_language"
+      ],
+      "qualityLintRules": [
+        "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+        "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+        "riskRewriteNotes must address every riskTermFlag before validation, especially signal, forecast, support/resistance, homework, and source-recommendation language.",
+        "publicReferenceNotes must name public grounding needed for candlestick terminology, pattern taxonomy, support/resistance claims, or source recommendations.",
+        "originalityNotes must confirm private course wording was not copied into learner-facing content."
+      ],
+      "uncertainRegions": [
+        "One yin-line formula appears visually ambiguous and should be checked against the source image by a reviewer.",
+        "Specific price examples and halted-trading references should be removed or generalized unless the reviewer keeps them as non-advice illustrations."
+      ],
+      "candidateSummary": "This page can support a reviewer-only taxonomy draft: map named candlestick shapes to OHLC relationships and rewrite force-comparison statements as tentative visual interpretations that require public grounding and no action advice.",
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal, forecast, support/resistance, homework, and source-recommendation language.",
+        "Public reference notes identify candlestick terminology, pattern taxonomy, support/resistance claims, or source recommendations that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_02_input_then_apply_dry_run_only",
+      "reviewerAction": "Inspect preview/high-res preview, then fill human transcription, education-only summary, source-fit/public refs, originality notes, risk rewrite notes, and checklist."
+    },
+    {
+      "order": 7,
+      "id": "input_copy_absorb_manual_transcription_15",
+      "taskId": "absorb_manual_transcription_15",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 7,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-07.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-07.png",
+      "candidateId": "candidate_batch_04_page_03",
+      "validationStatus": "blocked_missing_reviewer_input",
+      "readyForOverlayApply": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "sourceFitNote",
+        "rewriteBoundaryNote",
+        "manualChecklist"
+      ],
+      "riskTermFlags": [
+        "signal_language",
+        "warning_signal_language",
+        "forecast_language",
+        "support_resistance_language",
+        "trend_continuation_language",
+        "liquidity_condition_language"
+      ],
+      "qualityLintRules": [
+        "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+        "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+        "riskRewriteNotes must address every riskTermFlag before validation, especially signal, forecast, support/resistance, homework, and source-recommendation language.",
+        "publicReferenceNotes must name public grounding needed for candlestick terminology, pattern taxonomy, support/resistance claims, or source recommendations.",
+        "originalityNotes must confirm private course wording was not copied into learner-facing content."
+      ],
+      "uncertainRegions": [
+        "The embedded comparison chart is small and needs human verification before table-level transcription.",
+        "Several handwritten annotations and subtitle fragments are not reliable enough for direct reuse."
+      ],
+      "candidateSummary": "This page is high risk for learner-facing reuse because it attaches signal and forecast language to many candlestick names. It should be converted into a cautious vocabulary table, with all predictive wording removed or explicitly framed as unverified historical interpretation.",
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal, forecast, support/resistance, homework, and source-recommendation language.",
+        "Public reference notes identify candlestick terminology, pattern taxonomy, support/resistance claims, or source recommendations that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_02_input_then_apply_dry_run_only",
+      "reviewerAction": "Inspect preview/high-res preview, then fill human transcription, education-only summary, source-fit/public refs, originality notes, risk rewrite notes, and checklist."
+    },
+    {
+      "order": 8,
+      "id": "input_copy_absorb_manual_transcription_16",
+      "taskId": "absorb_manual_transcription_16",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 8,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-08.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-08.png",
+      "candidateId": "candidate_batch_04_page_04",
+      "validationStatus": "blocked_missing_reviewer_input",
+      "readyForOverlayApply": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "sourceFitNote",
+        "rewriteBoundaryNote",
+        "manualChecklist"
+      ],
+      "riskTermFlags": [
+        "study_advice_language",
+        "source_recommendation_language",
+        "copyright_review_required",
+        "homework_instruction_language",
+        "force_comparison_language"
+      ],
+      "qualityLintRules": [
+        "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+        "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+        "riskRewriteNotes must address every riskTermFlag before validation, especially signal, forecast, support/resistance, homework, and source-recommendation language.",
+        "publicReferenceNotes must name public grounding needed for candlestick terminology, pattern taxonomy, support/resistance claims, or source recommendations.",
+        "originalityNotes must confirm private course wording was not copied into learner-facing content."
+      ],
+      "uncertainRegions": [
+        "Book citation details and copyright/source use need reviewer confirmation.",
+        "The homework chart and force-comparison table need exact visual checking before any structured exercise is created."
+      ],
+      "candidateSummary": "This page can become a learning-operations note rather than trading instruction: preserve the meta-learning idea of not rote-memorizing patterns, separate book/source recommendations for reviewer approval, and keep homework as a chart-literacy exercise.",
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal, forecast, support/resistance, homework, and source-recommendation language.",
+        "Public reference notes identify candlestick terminology, pattern taxonomy, support/resistance claims, or source recommendations that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_02_input_then_apply_dry_run_only",
+      "reviewerAction": "Inspect preview/high-res preview, then fill human transcription, education-only summary, source-fit/public refs, originality notes, risk rewrite notes, and checklist."
+    },
+    {
+      "order": 9,
+      "id": "input_copy_absorb_manual_transcription_17",
+      "taskId": "absorb_manual_transcription_17",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 9,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-09.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-09.png",
+      "candidateId": "candidate_batch_05_page_01",
+      "validationStatus": "blocked_missing_reviewer_input",
+      "readyForOverlayApply": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "sourceFitNote",
+        "rewriteBoundaryNote",
+        "manualChecklist"
+      ],
+      "riskTermFlags": [
+        "signal_language",
+        "support_resistance_language",
+        "rebound_language",
+        "turning_point_language",
+        "limit_move_language",
+        "homework_instruction_language",
+        "ohlc_drawing_language"
+      ],
+      "qualityLintRules": [
+        "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+        "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+        "riskRewriteNotes must address every riskTermFlag before validation, especially signal, turning-point, asset-example, QR/contact, and reversal language.",
+        "publicReferenceNotes must name public grounding needed for candlestick practice examples, OHLC drawing, source recommendations, or market-meaning claims.",
+        "originalityNotes must confirm private course wording was not copied into learner-facing content."
+      ],
+      "uncertainRegions": [
+        "The embedded homework slide is small and should be checked manually before exact exercise transcription.",
+        "Limit-up or limit-down wording may be market-specific and should be generalized or removed."
+      ],
+      "candidateSummary": "This page can be rewritten as a chart-literacy worksheet: classify candlestick shapes and require learners to identify OHLC and time elements, while removing signal, support, rebound, limit, and turning-point language from learner-facing explanations.",
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal, turning-point, asset-example, QR/contact, and reversal language.",
+        "Public reference notes identify practice examples, OHLC drawing, source recommendations, or market-meaning claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_03_input_then_apply_dry_run_only",
+      "reviewerAction": "Inspect preview/high-res preview, then fill human transcription, education-only summary, source-fit/public refs, originality notes, risk rewrite notes, and checklist."
+    },
+    {
+      "order": 10,
+      "id": "input_copy_absorb_manual_transcription_18",
+      "taskId": "absorb_manual_transcription_18",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 10,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-10.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-10.png",
+      "candidateId": "candidate_batch_05_page_02",
+      "validationStatus": "blocked_missing_reviewer_input",
+      "readyForOverlayApply": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "sourceFitNote",
+        "rewriteBoundaryNote",
+        "manualChecklist"
+      ],
+      "riskTermFlags": [
+        "qr_contact_language",
+        "specific_asset_examples",
+        "specific_price_levels",
+        "selling_pressure_language",
+        "force_comparison_language",
+        "quiz_summary_language",
+        "exam_focus_language"
+      ],
+      "qualityLintRules": [
+        "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+        "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+        "riskRewriteNotes must address every riskTermFlag before validation, especially signal, turning-point, asset-example, QR/contact, and reversal language.",
+        "publicReferenceNotes must name public grounding needed for candlestick practice examples, OHLC drawing, source recommendations, or market-meaning claims.",
+        "originalityNotes must confirm private course wording was not copied into learner-facing content."
+      ],
+      "uncertainRegions": [
+        "Several numerical example values are visually small and must not be treated as reliable transcription until human verified.",
+        "The QR/contact prompt is not course knowledge and should not be learner-facing content."
+      ],
+      "candidateSummary": "This page should be split into a reviewer-only evidence card: practice examples may inform generic OHLC reading exercises, but coin/oil/BTC values and force interpretations need to be anonymized, public-grounded, or removed before any course use.",
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal, turning-point, asset-example, QR/contact, and reversal language.",
+        "Public reference notes identify practice examples, OHLC drawing, source recommendations, or market-meaning claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_03_input_then_apply_dry_run_only",
+      "reviewerAction": "Inspect preview/high-res preview, then fill human transcription, education-only summary, source-fit/public refs, originality notes, risk rewrite notes, and checklist."
+    },
+    {
+      "order": 11,
+      "id": "input_copy_absorb_manual_transcription_19",
+      "taskId": "absorb_manual_transcription_19",
+      "category": "manual_transcription",
+      "sourceRelativePath": "K线怎么看/第一讲：K线背后的奥秘.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1580",
+      "pageNumber": 11,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1580/page-11.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1580/page-11.png",
+      "candidateId": "candidate_batch_05_page_03",
+      "validationStatus": "blocked_missing_reviewer_input",
+      "readyForOverlayApply": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "sourceFitNote",
+        "rewriteBoundaryNote",
+        "manualChecklist"
+      ],
+      "riskTermFlags": [
+        "market_meaning_language",
+        "buyer_seller_dominance_language",
+        "turning_warning_language",
+        "multi_timeframe_language",
+        "trend_reversal_language",
+        "source_recommendation_language"
+      ],
+      "qualityLintRules": [
+        "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+        "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+        "riskRewriteNotes must address every riskTermFlag before validation, especially signal, turning-point, asset-example, QR/contact, and reversal language.",
+        "publicReferenceNotes must name public grounding needed for candlestick practice examples, OHLC drawing, source recommendations, or market-meaning claims.",
+        "originalityNotes must confirm private course wording was not copied into learner-facing content."
+      ],
+      "uncertainRegions": [
+        "The table is cropped at the top and should be matched with the previous page before final transcription.",
+        "The recommended-textbook row needs citation and source-fit review before use."
+      ],
+      "candidateSummary": "This page can become a final-review checklist after heavy rewrite: keep OHLC mapping and study-plan structure, but convert buyer/seller dominance, turning-warning, multi-timeframe application, and reversal language into neutral risk-aware chart-reading notes.",
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal, turning-point, asset-example, QR/contact, and reversal language.",
+        "Public reference notes identify practice examples, OHLC drawing, source recommendations, or market-meaning claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_03_input_then_apply_dry_run_only",
+      "reviewerAction": "Inspect preview/high-res preview, then fill human transcription, education-only summary, source-fit/public refs, originality notes, risk rewrite notes, and checklist."
+    },
+    {
+      "order": 12,
+      "id": "input_copy_absorb_manual_transcription_01",
+      "taskId": "absorb_manual_transcription_01",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1313",
+      "pageNumber": 1,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1313/page-01.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1313/page-01.png",
+      "candidateId": "candidate_batch_01_page_01",
+      "validationStatus": "blocked_missing_reviewer_input",
+      "readyForOverlayApply": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "sourceFitNote",
+        "rewriteBoundaryNote",
+        "manualChecklist"
+      ],
+      "riskTermFlags": [
+        "position_language",
+        "entry_language",
+        "stop_loss_language",
+        "specific_price_levels",
+        "counter_trend_language"
+      ],
+      "qualityLintRules": [
+        "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+        "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+        "riskRewriteNotes must address every riskTermFlag before validation, especially entry_language, stop_loss_language, position_language, specific_price_levels, risk_reward_language.",
+        "publicReferenceNotes must name public grounding needed for terminology, chart examples, cycle concepts, or case-study claims.",
+        "originalityNotes must confirm private course wording was not copied into learner-facing content."
+      ],
+      "uncertainRegions": [
+        "Some small chart annotations are too small for reliable exact transcription.",
+        "Several numeric labels in embedded chart screenshots need human confirmation."
+      ],
+      "candidateSummary": "This page can be rewritten as an education-only lesson on multi-timeframe context: first identify the large-cycle environment, then use the smaller cycle to observe structure, evidence quality, invalidation, and position-management concepts without turning them into trade instructions.",
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially entry_language, stop_loss_language, position_language, specific_price_levels, risk_reward_language.",
+        "Public reference notes identify terminology, chart examples, cycle concepts, or case-study claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_04_input_then_apply_dry_run_only",
+      "reviewerAction": "Inspect preview/high-res preview, then fill human transcription, education-only summary, source-fit/public refs, originality notes, risk rewrite notes, and checklist."
+    },
+    {
+      "order": 13,
+      "id": "input_copy_absorb_manual_transcription_02",
+      "taskId": "absorb_manual_transcription_02",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1313",
+      "pageNumber": 2,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1313/page-02.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1313/page-02.png",
+      "candidateId": "candidate_batch_01_page_02",
+      "validationStatus": "blocked_missing_reviewer_input",
+      "readyForOverlayApply": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "sourceFitNote",
+        "rewriteBoundaryNote",
+        "manualChecklist"
+      ],
+      "riskTermFlags": [
+        "entry_language",
+        "stop_loss_language",
+        "risk_reward_language",
+        "right_side_confirmation_language"
+      ],
+      "qualityLintRules": [
+        "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+        "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+        "riskRewriteNotes must address every riskTermFlag before validation, especially entry_language, stop_loss_language, position_language, specific_price_levels, risk_reward_language.",
+        "publicReferenceNotes must name public grounding needed for terminology, chart examples, cycle concepts, or case-study claims.",
+        "originalityNotes must confirm private course wording was not copied into learner-facing content."
+      ],
+      "uncertainRegions": [
+        "Exact chart labels and some chart-side text require human confirmation.",
+        "Some bullet indentation and sub-bullet ordering may need reviewer cleanup."
+      ],
+      "candidateSummary": "This page can support a lesson on evidence stacking across cycles: use moving-average context, repeated tests, volume/structure confirmation, and false-breakout awareness as study prompts rather than action signals.",
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially entry_language, stop_loss_language, position_language, specific_price_levels, risk_reward_language.",
+        "Public reference notes identify terminology, chart examples, cycle concepts, or case-study claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_04_input_then_apply_dry_run_only",
+      "reviewerAction": "Inspect preview/high-res preview, then fill human transcription, education-only summary, source-fit/public refs, originality notes, risk rewrite notes, and checklist."
+    },
+    {
+      "order": 14,
+      "id": "input_copy_absorb_manual_transcription_03",
+      "taskId": "absorb_manual_transcription_03",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1313",
+      "pageNumber": 3,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1313/page-03.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1313/page-03.png",
+      "candidateId": "candidate_batch_01_page_03",
+      "validationStatus": "blocked_missing_reviewer_input",
+      "readyForOverlayApply": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "sourceFitNote",
+        "rewriteBoundaryNote",
+        "manualChecklist"
+      ],
+      "riskTermFlags": [
+        "pattern_signal_language",
+        "pressure_level_language",
+        "risk_reward_language",
+        "entry_avoidance_language"
+      ],
+      "qualityLintRules": [
+        "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+        "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+        "riskRewriteNotes must address every riskTermFlag before validation, especially entry_language, stop_loss_language, position_language, specific_price_levels, risk_reward_language.",
+        "publicReferenceNotes must name public grounding needed for terminology, chart examples, cycle concepts, or case-study claims.",
+        "originalityNotes must confirm private course wording was not copied into learner-facing content."
+      ],
+      "uncertainRegions": [
+        "Exact wedge chart annotations are partially legible but should be checked.",
+        "The risk-reward example needs careful rewriting so it does not become performance guidance."
+      ],
+      "candidateSummary": "This page can be transformed into a classroom concept on pattern recognition and multi-period coordination: describe wedge/three-push forms as observation vocabulary, then require learners to state uncertainty, confirmation needs, and when not to act.",
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially entry_language, stop_loss_language, position_language, specific_price_levels, risk_reward_language.",
+        "Public reference notes identify terminology, chart examples, cycle concepts, or case-study claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_04_input_then_apply_dry_run_only",
+      "reviewerAction": "Inspect preview/high-res preview, then fill human transcription, education-only summary, source-fit/public refs, originality notes, risk rewrite notes, and checklist."
+    },
+    {
+      "order": 15,
+      "id": "input_copy_absorb_manual_transcription_04",
+      "taskId": "absorb_manual_transcription_04",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1313",
+      "pageNumber": 4,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1313/page-04.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1313/page-04.png",
+      "candidateId": "candidate_batch_01_page_04",
+      "validationStatus": "blocked_missing_reviewer_input",
+      "readyForOverlayApply": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "sourceFitNote",
+        "rewriteBoundaryNote",
+        "manualChecklist"
+      ],
+      "riskTermFlags": [
+        "order_management_language",
+        "position_language",
+        "entry_language",
+        "risk_control_language",
+        "specific_price_levels"
+      ],
+      "qualityLintRules": [
+        "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+        "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+        "riskRewriteNotes must address every riskTermFlag before validation, especially entry_language, stop_loss_language, position_language, specific_price_levels, risk_reward_language.",
+        "publicReferenceNotes must name public grounding needed for terminology, chart examples, cycle concepts, or case-study claims.",
+        "originalityNotes must confirm private course wording was not copied into learner-facing content."
+      ],
+      "uncertainRegions": [
+        "Some numerical ranges and chart labels need human confirmation.",
+        "Several source bullets use operational trading wording that must be rewritten before any learner-facing use."
+      ],
+      "candidateSummary": "This page can be rewritten as an education-only review of cycle conflict and decision hygiene: learners practice separating context, structure verification, order-management vocabulary, and risk-control language without receiving a trade setup.",
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially entry_language, stop_loss_language, position_language, specific_price_levels, risk_reward_language.",
+        "Public reference notes identify terminology, chart examples, cycle concepts, or case-study claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_04_input_then_apply_dry_run_only",
+      "reviewerAction": "Inspect preview/high-res preview, then fill human transcription, education-only summary, source-fit/public refs, originality notes, risk rewrite notes, and checklist."
+    },
+    {
+      "order": 16,
+      "id": "input_copy_absorb_manual_transcription_05",
+      "taskId": "absorb_manual_transcription_05",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1313",
+      "pageNumber": 5,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1313/page-05.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1313/page-05.png",
+      "candidateId": "candidate_batch_02_page_01",
+      "validationStatus": "blocked_missing_reviewer_input",
+      "readyForOverlayApply": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "sourceFitNote",
+        "rewriteBoundaryNote",
+        "manualChecklist"
+      ],
+      "riskTermFlags": [
+        "profit_loss_language",
+        "cycle_switching_language",
+        "specific_price_levels",
+        "indicator_parameter_language",
+        "signal_language"
+      ],
+      "qualityLintRules": [
+        "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+        "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+        "riskRewriteNotes must address every riskTermFlag before validation, especially signal_language, execution_strategy_language, pending_order_language, stop_loss_language, target_area_language, profit_loss_language.",
+        "publicReferenceNotes must name public grounding needed for terminology, chart examples, cycle concepts, or case-study claims.",
+        "originalityNotes must confirm private course wording was not copied into learner-facing content."
+      ],
+      "uncertainRegions": [
+        "Exact numeric levels and percentage references need human confirmation.",
+        "The first chart annotations and several short bullets are partially legible."
+      ],
+      "candidateSummary": "This page should be rewritten as a study checklist for evidence validity: learners compare completed versus unfinished structures, review when cycle switching creates confusion, and treat indicator/level references as examples for observation rather than instructions.",
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal_language, execution_strategy_language, pending_order_language, stop_loss_language, target_area_language, profit_loss_language.",
+        "Public reference notes identify terminology, chart examples, cycle concepts, or case-study claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_05_input_then_apply_dry_run_only",
+      "reviewerAction": "Inspect preview/high-res preview, then fill human transcription, education-only summary, source-fit/public refs, originality notes, risk rewrite notes, and checklist."
+    },
+    {
+      "order": 17,
+      "id": "input_copy_absorb_manual_transcription_06",
+      "taskId": "absorb_manual_transcription_06",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1313",
+      "pageNumber": 6,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1313/page-06.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1313/page-06.png",
+      "candidateId": "candidate_batch_02_page_02",
+      "validationStatus": "blocked_missing_reviewer_input",
+      "readyForOverlayApply": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "sourceFitNote",
+        "rewriteBoundaryNote",
+        "manualChecklist"
+      ],
+      "riskTermFlags": [
+        "execution_strategy_language",
+        "pending_order_language",
+        "retracement_level_language",
+        "signal_confirmation_language",
+        "small_cycle_language",
+        "risk_control_language"
+      ],
+      "qualityLintRules": [
+        "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+        "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+        "riskRewriteNotes must address every riskTermFlag before validation, especially signal_language, execution_strategy_language, pending_order_language, stop_loss_language, target_area_language, profit_loss_language.",
+        "publicReferenceNotes must name public grounding needed for terminology, chart examples, cycle concepts, or case-study claims.",
+        "originalityNotes must confirm private course wording was not copied into learner-facing content."
+      ],
+      "uncertainRegions": [
+        "Some chart labels and exact retracement ranges require human verification.",
+        "The execution-strategy bullets must be carefully rewritten to avoid instructions."
+      ],
+      "candidateSummary": "This page can support an education-only lesson on structural confirmation and false precision: learners identify when a visible pattern still lacks sufficient evidence, then explain why very small-cycle signals and fragmented setups can create review errors.",
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal_language, execution_strategy_language, pending_order_language, stop_loss_language, target_area_language, profit_loss_language.",
+        "Public reference notes identify terminology, chart examples, cycle concepts, or case-study claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_05_input_then_apply_dry_run_only",
+      "reviewerAction": "Inspect preview/high-res preview, then fill human transcription, education-only summary, source-fit/public refs, originality notes, risk rewrite notes, and checklist."
+    },
+    {
+      "order": 18,
+      "id": "input_copy_absorb_manual_transcription_07",
+      "taskId": "absorb_manual_transcription_07",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1313",
+      "pageNumber": 7,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1313/page-07.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1313/page-07.png",
+      "candidateId": "candidate_batch_02_page_03",
+      "validationStatus": "blocked_missing_reviewer_input",
+      "readyForOverlayApply": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "sourceFitNote",
+        "rewriteBoundaryNote",
+        "manualChecklist"
+      ],
+      "riskTermFlags": [
+        "signal_confirmation_language",
+        "support_position_language",
+        "position_management_language",
+        "cycle_switching_language",
+        "difficulty_rating_language"
+      ],
+      "qualityLintRules": [
+        "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+        "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+        "riskRewriteNotes must address every riskTermFlag before validation, especially signal_language, execution_strategy_language, pending_order_language, stop_loss_language, target_area_language, profit_loss_language.",
+        "publicReferenceNotes must name public grounding needed for terminology, chart examples, cycle concepts, or case-study claims.",
+        "originalityNotes must confirm private course wording was not copied into learner-facing content."
+      ],
+      "uncertainRegions": [
+        "Some table cells are small and require reviewer verification.",
+        "Star ratings are visible but should be treated as source difficulty hints, not product grading until reviewed."
+      ],
+      "candidateSummary": "This page is useful as a structured curriculum map: convert the source table into a learner-facing concept taxonomy covering cycle relationship, pattern recognition, review mistakes, uncertainty, and difficulty level without preserving operational trade actions.",
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal_language, execution_strategy_language, pending_order_language, stop_loss_language, target_area_language, profit_loss_language.",
+        "Public reference notes identify terminology, chart examples, cycle concepts, or case-study claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_05_input_then_apply_dry_run_only",
+      "reviewerAction": "Inspect preview/high-res preview, then fill human transcription, education-only summary, source-fit/public refs, originality notes, risk rewrite notes, and checklist."
+    },
+    {
+      "order": 19,
+      "id": "input_copy_absorb_manual_transcription_08",
+      "taskId": "absorb_manual_transcription_08",
+      "category": "manual_transcription",
+      "sourceRelativePath": "系统课02进阶/03_9103：你必须学会：在大周期发现小周期发生了什么，没有商量！.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1313",
+      "pageNumber": 8,
+      "previewUrl": "/docs/local-course-low-extraction-previews/corpus_1313/page-08.png",
+      "highResPreviewUrl": "/docs/local-course-low-extraction-high-res-previews/corpus_1313/page-08.png",
+      "candidateId": "candidate_batch_02_page_04",
+      "validationStatus": "blocked_missing_reviewer_input",
+      "readyForOverlayApply": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "humanTranscription",
+        "humanSummary",
+        "sourceFitNote",
+        "rewriteBoundaryNote",
+        "manualChecklist"
+      ],
+      "riskTermFlags": [
+        "entry_language",
+        "target_area_language",
+        "stop_loss_language",
+        "profit_loss_language",
+        "specific_price_levels",
+        "case_study_language"
+      ],
+      "qualityLintRules": [
+        "humanTranscription must be human-verified against high-res preview, not copied from the machine candidate.",
+        "humanSummary must be education-only and cannot contain advice, signal, return, broker, automation, or real-money guidance.",
+        "riskRewriteNotes must address every riskTermFlag before validation, especially signal_language, execution_strategy_language, pending_order_language, stop_loss_language, target_area_language, profit_loss_language.",
+        "publicReferenceNotes must name public grounding needed for terminology, chart examples, cycle concepts, or case-study claims.",
+        "originalityNotes must confirm private course wording was not copied into learner-facing content."
+      ],
+      "uncertainRegions": [
+        "The table starts mid-row from the previous page; reviewer should merge it with page 7 before final transcription.",
+        "Specific level ranges and case labels require human confirmation."
+      ],
+      "candidateSummary": "This page can become a reviewer-only source for a lesson-map appendix: summarize cycle-switching logic and case-analysis vocabulary as conceptual review prompts, while replacing target/stop/profit wording with neutral evidence, uncertainty, and risk-boundary language.",
+      "acceptanceCriteria": [
+        "Human transcription is verified from the high-resolution preview and does not copy machine candidate wording.",
+        "Human summary is education-only and contains no trading advice, signal, return promise, broker workflow, automation, or real-money guidance.",
+        "Risk rewrite notes address every riskTermFlag, especially signal_language, execution_strategy_language, pending_order_language, stop_loss_language, target_area_language, profit_loss_language.",
+        "Public reference notes identify terminology, chart examples, cycle concepts, or case-study claims that need public grounding.",
+        "Originality notes confirm private course wording is not copied into learner-facing lessons."
+      ],
+      "nextGate": "validate_pack_05_input_then_apply_dry_run_only",
+      "reviewerAction": "Inspect preview/high-res preview, then fill human transcription, education-only summary, source-fit/public refs, originality notes, risk rewrite notes, and checklist."
+    },
+    {
+      "order": 20,
+      "id": "input_copy_absorb_source_replacement_01",
+      "taskId": "absorb_source_replacement_01",
+      "category": "source_replacement",
+      "sourceRelativePath": "系统课02进阶/19_9119：高中毕业集训总结年后展望_笔记.pdf",
+      "sourceModule": "系统课02进阶",
+      "documentId": "corpus_1329",
+      "pageNumber": 1,
+      "validationStatus": "blocked_missing_reviewer_input",
+      "readyForOverlayApply": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "selectedDecision",
+        "replacementSourcePath",
+        "replacementNote",
+        "rerunEvidence",
+        "replacementChecklist"
+      ],
+      "riskTermFlags": [],
+      "qualityLintRules": [],
+      "uncertainRegions": [],
+      "candidateSummary": "",
+      "acceptanceCriteria": [
+        "Reviewer selected one allowed source replacement decision.",
+        "No neighbor candidate is treated as direct replacement unless independently confirmed.",
+        "Replacement note explains source identity, readability, and no inference from blank private content.",
+        "Rerun evidence names harvest, preview, or quality checks to inspect before the next gate.",
+        "Dry-run apply reports ready entries with writtenEntries:0 before any write authorization."
+      ],
+      "nextGate": "validate_source_replacement_input_then_apply_dry_run_only",
+      "reviewerAction": "Inspect blank-preview source, choose replacement/unrecoverable decision, attach replacement path or rationale, rerun evidence, and checklist."
+    },
+    {
+      "order": 21,
+      "id": "input_copy_absorb_source_replacement_02",
+      "taskId": "absorb_source_replacement_02",
+      "category": "source_replacement",
+      "sourceRelativePath": "专享07庄家篇/14_0814-【复训】-分析行情挖掘机会_笔记.pdf",
+      "sourceModule": "专享07庄家篇",
+      "documentId": "corpus_1431",
+      "pageNumber": 1,
+      "validationStatus": "blocked_missing_reviewer_input",
+      "readyForOverlayApply": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "selectedDecision",
+        "replacementSourcePath",
+        "replacementNote",
+        "rerunEvidence",
+        "replacementChecklist"
+      ],
+      "riskTermFlags": [],
+      "qualityLintRules": [],
+      "uncertainRegions": [],
+      "candidateSummary": "",
+      "acceptanceCriteria": [
+        "Reviewer selected one allowed source replacement decision.",
+        "No neighbor candidate is treated as direct replacement unless independently confirmed.",
+        "Replacement note explains source identity, readability, and no inference from blank private content.",
+        "Rerun evidence names harvest, preview, or quality checks to inspect before the next gate.",
+        "Dry-run apply reports ready entries with writtenEntries:0 before any write authorization."
+      ],
+      "nextGate": "validate_source_replacement_input_then_apply_dry_run_only",
+      "reviewerAction": "Inspect blank-preview source, choose replacement/unrecoverable decision, attach replacement path or rationale, rerun evidence, and checklist."
+    },
+    {
+      "order": 22,
+      "id": "input_copy_absorb_source_replacement_03",
+      "taskId": "absorb_source_replacement_03",
+      "category": "source_replacement",
+      "sourceRelativePath": "K线怎么看/06_第6讲：常见的持仓信号-进攻金K（2）_笔记.pdf",
+      "sourceModule": "K线怎么看",
+      "documentId": "corpus_1577",
+      "pageNumber": 1,
+      "validationStatus": "blocked_missing_reviewer_input",
+      "readyForOverlayApply": false,
+      "missingFields": [
+        "reviewerName",
+        "reviewedAt",
+        "selectedDecision",
+        "replacementSourcePath",
+        "replacementNote",
+        "rerunEvidence",
+        "replacementChecklist"
+      ],
+      "riskTermFlags": [],
+      "qualityLintRules": [],
+      "uncertainRegions": [],
+      "candidateSummary": "",
+      "acceptanceCriteria": [
+        "Reviewer selected one allowed source replacement decision.",
+        "No neighbor candidate is treated as direct replacement unless independently confirmed.",
+        "Replacement note explains source identity, readability, and no inference from blank private content.",
+        "Rerun evidence names harvest, preview, or quality checks to inspect before the next gate.",
+        "Dry-run apply reports ready entries with writtenEntries:0 before any write authorization."
+      ],
+      "nextGate": "validate_source_replacement_input_then_apply_dry_run_only",
+      "reviewerAction": "Inspect blank-preview source, choose replacement/unrecoverable decision, attach replacement path or rationale, rerun evidence, and checklist."
+    }
+  ],
+  "commands": [
+    "npm.cmd run validate:local-course-p0-human-review-bundle-input-copy -- --input docs/reviewer-inputs/LOCAL_COURSE_P0_HUMAN_REVIEW_BUNDLE_REAL_INPUT_DRAFT.json --output-json docs/LOCAL_COURSE_P0_REAL_REVIEWER_INPUT_STARTER_VALIDATION.json --output-md docs/LOCAL_COURSE_P0_REAL_REVIEWER_INPUT_STARTER_VALIDATION.md",
+    "npm.cmd run check:local-course-p0-real-reviewer-input-starter",
+    "npm.cmd run check:local-course-p0-real-reviewer-task-board",
+    "npm.cmd run check:local-course-p0-write-authorization-preview"
+  ],
+  "completionRule": "This task board makes the 22 P0 reviewer tasks executable, but it does not fill reviewer notes, does not complete human review, does not approve learner-facing release, and does not authorize overlay writes.",
+  "boundary": "P0 real reviewer task board is reviewer-facing education-only operations material. It organizes missing real reviewer input and evidence links; it does not create reviewer judgment, infer private-course content, approve learner-facing release, write overlay changes, provide stock recommendations, live signals, return promises, broker workflows, automation, or real-money guidance."
+}

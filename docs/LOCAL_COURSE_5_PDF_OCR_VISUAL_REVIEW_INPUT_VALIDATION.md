@@ -1,0 +1,37 @@
+# Course 5 PDF OCR And Visual Review Input Validation
+
+- Validation status: course_5_pdf_ocr_visual_review_input_blocked_missing_or_invalid_real_ocr_or_visual_input
+- Input rows: 121
+- Ready rows: 0
+- Blocked rows: 121
+- Missing-field rows: 121
+- Quality-issue rows: 0
+- Forbidden-hit rows: 0
+- Source folder may be deleted: false
+
+## First Issues
+
+- course5_pdf_ocr_visual_review_001: reviewerObservedPageElements; reviewerOcrOrManualText; reviewerTeachingModulePlacement; reviewerParaphrasedConceptNote; reviewerDeletionReadinessEvidence; reviewerNameOrInitials; reviewedAt
+- course5_pdf_ocr_visual_review_002: reviewerObservedPageElements; reviewerOcrOrManualText; reviewerTeachingModulePlacement; reviewerParaphrasedConceptNote; reviewerDeletionReadinessEvidence; reviewerNameOrInitials; reviewedAt
+- course5_pdf_ocr_visual_review_003: reviewerObservedPageElements; reviewerOcrOrManualText; reviewerTeachingModulePlacement; reviewerParaphrasedConceptNote; reviewerDeletionReadinessEvidence; reviewerNameOrInitials; reviewedAt
+- course5_pdf_ocr_visual_review_004: reviewerObservedPageElements; reviewerOcrOrManualText; reviewerTeachingModulePlacement; reviewerParaphrasedConceptNote; reviewerDeletionReadinessEvidence; reviewerNameOrInitials; reviewedAt
+- course5_pdf_ocr_visual_review_005: reviewerObservedPageElements; reviewerOcrOrManualText; reviewerTeachingModulePlacement; reviewerParaphrasedConceptNote; reviewerDeletionReadinessEvidence; reviewerNameOrInitials; reviewedAt
+- course5_pdf_ocr_visual_review_006: reviewerObservedPageElements; reviewerOcrOrManualText; reviewerTeachingModulePlacement; reviewerParaphrasedConceptNote; reviewerDeletionReadinessEvidence; reviewerNameOrInitials; reviewedAt
+- course5_pdf_ocr_visual_review_007: reviewerObservedPageElements; reviewerOcrOrManualText; reviewerTeachingModulePlacement; reviewerParaphrasedConceptNote; reviewerDeletionReadinessEvidence; reviewerNameOrInitials; reviewedAt
+- course5_pdf_ocr_visual_review_008: reviewerObservedPageElements; reviewerOcrOrManualText; reviewerTeachingModulePlacement; reviewerParaphrasedConceptNote; reviewerDeletionReadinessEvidence; reviewerNameOrInitials; reviewedAt
+- course5_pdf_ocr_visual_review_009: reviewerObservedPageElements; reviewerOcrOrManualText; reviewerTeachingModulePlacement; reviewerParaphrasedConceptNote; reviewerDeletionReadinessEvidence; reviewerNameOrInitials; reviewedAt
+- course5_pdf_ocr_visual_review_010: reviewerObservedPageElements; reviewerOcrOrManualText; reviewerTeachingModulePlacement; reviewerParaphrasedConceptNote; reviewerDeletionReadinessEvidence; reviewerNameOrInitials; reviewedAt
+- course5_pdf_ocr_visual_review_011: reviewerObservedPageElements; reviewerOcrOrManualText; reviewerTeachingModulePlacement; reviewerParaphrasedConceptNote; reviewerDeletionReadinessEvidence; reviewerNameOrInitials; reviewedAt
+- course5_pdf_ocr_visual_review_012: reviewerObservedPageElements; reviewerOcrOrManualText; reviewerTeachingModulePlacement; reviewerParaphrasedConceptNote; reviewerDeletionReadinessEvidence; reviewerNameOrInitials; reviewedAt
+- course5_pdf_ocr_visual_review_013: reviewerObservedPageElements; reviewerOcrOrManualText; reviewerTeachingModulePlacement; reviewerParaphrasedConceptNote; reviewerDeletionReadinessEvidence; reviewerNameOrInitials; reviewedAt
+- course5_pdf_ocr_visual_review_014: reviewerObservedPageElements; reviewerOcrOrManualText; reviewerTeachingModulePlacement; reviewerParaphrasedConceptNote; reviewerDeletionReadinessEvidence; reviewerNameOrInitials; reviewedAt
+- course5_pdf_ocr_visual_review_015: reviewerObservedPageElements; reviewerOcrOrManualText; reviewerTeachingModulePlacement; reviewerParaphrasedConceptNote; reviewerDeletionReadinessEvidence; reviewerNameOrInitials; reviewedAt
+- course5_pdf_ocr_visual_review_016: reviewerObservedPageElements; reviewerOcrOrManualText; reviewerTeachingModulePlacement; reviewerParaphrasedConceptNote; reviewerDeletionReadinessEvidence; reviewerNameOrInitials; reviewedAt
+- course5_pdf_ocr_visual_review_017: reviewerObservedPageElements; reviewerOcrOrManualText; reviewerTeachingModulePlacement; reviewerParaphrasedConceptNote; reviewerDeletionReadinessEvidence; reviewerNameOrInitials; reviewedAt
+- course5_pdf_ocr_visual_review_018: reviewerObservedPageElements; reviewerOcrOrManualText; reviewerTeachingModulePlacement; reviewerParaphrasedConceptNote; reviewerDeletionReadinessEvidence; reviewerNameOrInitials; reviewedAt
+- course5_pdf_ocr_visual_review_019: reviewerObservedPageElements; reviewerOcrOrManualText; reviewerTeachingModulePlacement; reviewerParaphrasedConceptNote; reviewerDeletionReadinessEvidence; reviewerNameOrInitials; reviewedAt
+- course5_pdf_ocr_visual_review_020: reviewerObservedPageElements; reviewerOcrOrManualText; reviewerTeachingModulePlacement; reviewerParaphrasedConceptNote; reviewerDeletionReadinessEvidence; reviewerNameOrInitials; reviewedAt
+
+## Boundary
+
+Course 5 PDF OCR and visual reviewer input validation is private reviewer-facing education operations material. It validates human/OCR-owned page observations, manual/OCR text notes, module placement, paraphrased concept notes, and deletion-readiness evidence; it does not generate reviewer conclusions, accept machine drafts as human review, delete files, approve learner-facing release, copy private source wording, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, write authorization, or production readiness.

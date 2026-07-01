@@ -1,0 +1,107 @@
+{
+  "generatedAt": "2026-06-19T09:39:02.506Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "expectedOutcome": "keep_as_structural_draft_after_rewrite_until_human_approval",
+  "auditReady": true,
+  "auditMode": "real_overlay_dry_run_bundle_sanity_pre_write_only",
+  "targetBatches": [
+    "rewrite_batch_01",
+    "rewrite_batch_05"
+  ],
+  "realStatusPath": "docs/LESSON_BATCH_REVIEW_STATUS.json",
+  "dryRunSafe": true,
+  "overwriteProtectionPassed": true,
+  "commandOrderConsistent": true,
+  "forbiddenActionsAligned": true,
+  "realStatusOverlayPresent": false,
+  "writeAllowedNow": false,
+  "manualDecisionRequired": true,
+  "humanAuthorizationRecorded": false,
+  "approvalReviewCandidates": 0,
+  "commercialReadyPromotions": 0,
+  "internalTrialReady": false,
+  "launchReady": false,
+  "preWriteCommandOrder": [
+    "npm.cmd run check:first-reviewer-operator-index",
+    "npm.cmd run check:first-reviewer-day-of-review-packet-freeze",
+    "npm.cmd run check:first-reviewer-real-overlay-write-readiness-lock",
+    "npm.cmd run check:first-reviewer-real-overlay-write-authorization-preview",
+    "npm.cmd run init:first-reviewer-status-overlay:dry-run",
+    "npm.cmd run check:first-reviewer-status-init-protection",
+    "manual human action only",
+    "npm.cmd run init:first-reviewer-status-overlay:write"
+  ],
+  "finalRehearsalCommandOrder": [
+    "npm.cmd run check:lesson-batch-review-operator-index",
+    "npm.cmd run check:first-reviewer-operator-index",
+    "npm.cmd run check:first-reviewer-rehearsal-checklist",
+    "npm.cmd run check:first-reviewer-direct-candidate-decision-worksheet",
+    "npm.cmd run check:first-reviewer-source-fit-decision-summary",
+    "npm.cmd run check:first-reviewer-real-overlay-write-readiness-lock",
+    "npm.cmd run check:first-reviewer-real-overlay-write-authorization-preview",
+    "npm.cmd run check:first-reviewer-day-zero-write-handoff",
+    "npm.cmd run check:first-reviewer-day-zero-final-rehearsal-checklist",
+    "npm.cmd run init:first-reviewer-status-overlay:dry-run",
+    "npm.cmd run check:first-reviewer-status-init-protection"
+  ],
+  "auditRows": [
+    {
+      "name": "initializer_dry_run_preview_only",
+      "passed": true,
+      "evidence": "mode:dry_run; wroteStatusOverlay:false; notesFilled:0"
+    },
+    {
+      "name": "overwrite_protection_3_of_3",
+      "passed": true,
+      "evidence": "protectionCases:3; passedCases:3; realStatusOverlayTouched:false"
+    },
+    {
+      "name": "day_zero_handoff_pre_write_only",
+      "passed": true,
+      "evidence": "8 pre-write rows, 12 future post-write rows, 2 human blockers"
+    },
+    {
+      "name": "final_rehearsal_pre_write_only",
+      "passed": true,
+      "evidence": "12 lesson cards, 72 blank notes, 5 unconfirmed direct candidates, 5 source-fit decision rows"
+    },
+    {
+      "name": "authorization_preview_not_authorization",
+      "passed": true,
+      "evidence": "humanAuthorizationRecorded:false; writeAllowedNow:false"
+    },
+    {
+      "name": "write_readiness_lock_blocked",
+      "passed": true,
+      "evidence": "lockReady:true; manualDecisionRequired:true; writeAllowedNow:false"
+    },
+    {
+      "name": "command_order_consistent",
+      "passed": true,
+      "evidence": "day-zero and final rehearsal command orders match expected dry-run bundle route"
+    },
+    {
+      "name": "forbidden_actions_aligned",
+      "passed": true,
+      "evidence": "write, approval, readiness, trading, broker, automation, real-money, copying, and yellow/red leaks remain blocked"
+    },
+    {
+      "name": "real_overlay_absent",
+      "passed": true,
+      "evidence": "docs/LESSON_BATCH_REVIEW_STATUS.json is absent"
+    }
+  ],
+  "sourceReports": {
+    "initDryRun": "docs/LESSON_BATCH_REVIEW_STATUS_INIT_DRY_RUN.json",
+    "initProtection": "docs/LESSON_BATCH_REVIEW_STATUS_INIT_PROTECTION.json",
+    "dayZeroWriteHandoff": "docs/FIRST_REVIEWER_DAY_ZERO_WRITE_HANDOFF.json",
+    "finalRehearsalChecklist": "docs/FIRST_REVIEWER_DAY_ZERO_FINAL_REHEARSAL_CHECKLIST.json",
+    "authorizationPreview": "docs/FIRST_REVIEWER_REAL_OVERLAY_WRITE_AUTHORIZATION_PREVIEW.json",
+    "writeReadinessLock": "docs/FIRST_REVIEWER_REAL_OVERLAY_WRITE_READINESS_LOCK.json",
+    "creationChecklist": "docs/FIRST_REVIEWER_REAL_OVERLAY_CREATION_CHECKLIST.json"
+  },
+  "boundary": "This dry-run bundle audit is generated reviewer-facing operations scaffolding only. It does not authorize write mode, create docs/LESSON_BATCH_REVIEW_STATUS.json, fill human notes, confirm source use, approve lessons, publish learner-facing content, promote grades, certify commercial readiness, provide trading advice, imply performance, connect brokers, automate trading, guide real-money decisions, grant internal-trial readiness, launch the course, make the product production-ready, or use yellow/red/research_only sources as learner-facing evidence."
+}

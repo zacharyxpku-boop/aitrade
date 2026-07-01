@@ -1,0 +1,1004 @@
+{
+  "generatedAt": "2026-06-22T07:45:53.711Z",
+  "educationOnly": true,
+  "productionReady": false,
+  "learnerFacingRelease": false,
+  "approvalStatus": "not_approved",
+  "executionChecklistStatus": "first_reviewer_execution_checklist_ready_blocked_on_real_input",
+  "executionChecklistMode": "day_one_20_actions_257_work_items_execution_sequence",
+  "handoffStatus": "first_reviewer_action_handoff_ready_blocked_on_real_input",
+  "fieldMapStatus": "first_reviewer_field_map_ready_blocked_on_real_input",
+  "completionGateStatus": "first_reviewer_completion_gate_blocked_missing_real_input",
+  "sprintPlanStatus": "module_review_sprint_plan_ready_release_blocked",
+  "handoffActionRows": 20,
+  "mappedActionRows": 20,
+  "executionRowCount": 20,
+  "requiredWorkItems": 257,
+  "readyWorkItems": 0,
+  "blockedWorkItems": 257,
+  "highRiskLessonActions": 12,
+  "highRiskReviewerNoteFields": 72,
+  "highRiskReadyReviewerNotes": 0,
+  "highRiskBlockedReviewerNotes": 72,
+  "directSourceDecisionActions": 5,
+  "directSourceDecisionFields": 5,
+  "readyDirectSourceDecisions": 0,
+  "blockedDirectSourceDecisions": 5,
+  "sourceFitPacketActions": 3,
+  "sourceFitReviewRows": 180,
+  "readySourceFitReviewRows": 0,
+  "blockedSourceFitReviewRows": 180,
+  "firstSprintBlockedWorkItems": 257,
+  "totalReviewerBacklogWorkItems": 1715,
+  "inputPaths": [
+    "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+    "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_001_INPUT_COPY_TEMPLATE.json",
+    "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_002_INPUT_COPY_TEMPLATE.json",
+    "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_003_INPUT_COPY_TEMPLATE.json"
+  ],
+  "validationPaths": [
+    "docs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_INPUT_VALIDATION.json",
+    "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_INPUT_COPY_TEMPLATE_VALIDATION.json",
+    "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_002_INPUT_COPY_TEMPLATE_VALIDATION.json",
+    "docs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_003_INPUT_COPY_TEMPLATE_VALIDATION.json"
+  ],
+  "stageRows": [
+    {
+      "stageRank": 1,
+      "stageId": "preflight_open_input_copies",
+      "label": "Open the four reviewer-owned input copies",
+      "requiredItems": 4,
+      "readyItems": 4,
+      "blockedItems": 0,
+      "nextAction": "Confirm every input copy exists before any reviewer writes into it.",
+      "reviewStatus": "execution_preflight_ready"
+    },
+    {
+      "stageRank": 2,
+      "stageId": "fill_high_risk_reviewer_notes",
+      "label": "Fill 72 high-risk reviewer notes",
+      "requiredItems": 72,
+      "readyItems": 0,
+      "blockedItems": 72,
+      "nextAction": "Fill every mapped realReviewerNotes slot in the high-risk overlay draft, then rerun overlay validation.",
+      "reviewStatus": "execution_blocked_missing_real_reviewer_input"
+    },
+    {
+      "stageRank": 3,
+      "stageId": "resolve_direct_source_decisions",
+      "label": "Resolve 5 direct-source decisions",
+      "requiredItems": 5,
+      "readyItems": 0,
+      "blockedItems": 5,
+      "nextAction": "Fill every directSourceDecisionRows decision without approving learner-facing citations.",
+      "reviewStatus": "execution_blocked_missing_real_reviewer_input"
+    },
+    {
+      "stageRank": 4,
+      "stageId": "fill_source_fit_packets_001_003",
+      "label": "Fill 180 source-fit rows in packets 001-003",
+      "requiredItems": 180,
+      "readyItems": 0,
+      "blockedItems": 180,
+      "nextAction": "Fill packet rows with reviewerDecision, sourceFitNotes, citationUse, reviewerName, reviewedAt, and realHumanInput.",
+      "reviewStatus": "execution_blocked_missing_real_reviewer_input"
+    },
+    {
+      "stageRank": 5,
+      "stageId": "run_validation_and_keep_release_locked",
+      "label": "Run validation and keep release locked",
+      "requiredItems": 257,
+      "readyItems": 0,
+      "blockedItems": 257,
+      "nextAction": "Rerun completion gate and keep learner release blocked until a separate approval gate passes.",
+      "reviewStatus": "execution_blocked_before_separate_approval"
+    }
+  ],
+  "executionRows": [
+    {
+      "executionRank": 1,
+      "queueRank": 1,
+      "executionPhase": "phase_1_fill_high_risk_reviewer_notes",
+      "actionId": "high-risk-lesson-notes:local_course_rewrite_batch_04_10",
+      "actionType": "high_risk_lesson_reviewer_notes",
+      "module": "突破",
+      "topic": "假突破",
+      "targetId": "local_course_rewrite_batch_04_10",
+      "nodeId": "knv2_0029",
+      "lessonId": "lesson_knv2_0029",
+      "blockedItems": 6,
+      "readyItems": 0,
+      "inputPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "lessonRows[0]",
+      "mappedFieldCount": 6,
+      "validationCommand": "npm.cmd run check:local-course-high-risk-real-reviewer-overlay-input-validation",
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate",
+      "reviewerTask": "Fill six real reviewer notes in the mapped note slots after real review.",
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "DeepSupp: Attention-Driven Correlation Pattern Analysis for Dynamic Time Series Support and Resistance Levels Identification",
+          "url": "https://arxiv.org/abs/2507.01971v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "reviewStatus": "execution_blocked_missing_real_reviewer_input",
+      "realHumanInputEntries": 0,
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionRank": 2,
+      "queueRank": 2,
+      "executionPhase": "phase_1_fill_high_risk_reviewer_notes",
+      "actionId": "high-risk-lesson-notes:local_course_rewrite_batch_05_10",
+      "actionType": "high_risk_lesson_reviewer_notes",
+      "module": "突破",
+      "topic": "假突破",
+      "targetId": "local_course_rewrite_batch_05_10",
+      "nodeId": "knv2_0089",
+      "lessonId": "lesson_knv2_0089",
+      "blockedItems": 6,
+      "readyItems": 0,
+      "inputPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "lessonRows[1]",
+      "mappedFieldCount": 6,
+      "validationCommand": "npm.cmd run check:local-course-high-risk-real-reviewer-overlay-input-validation",
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate",
+      "reviewerTask": "Fill six real reviewer notes in the mapped note slots after real review.",
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "DeepSupp: Attention-Driven Correlation Pattern Analysis for Dynamic Time Series Support and Resistance Levels Identification",
+          "url": "https://arxiv.org/abs/2507.01971v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "reviewStatus": "execution_blocked_missing_real_reviewer_input",
+      "realHumanInputEntries": 0,
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionRank": 3,
+      "queueRank": 3,
+      "executionPhase": "phase_1_fill_high_risk_reviewer_notes",
+      "actionId": "high-risk-lesson-notes:local_course_rewrite_batch_01_03",
+      "actionType": "high_risk_lesson_reviewer_notes",
+      "module": "市场结构",
+      "topic": "高低点",
+      "targetId": "local_course_rewrite_batch_01_03",
+      "nodeId": "knv2_0002",
+      "lessonId": "lesson_knv2_0002",
+      "blockedItems": 6,
+      "readyItems": 0,
+      "inputPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "lessonRows[2]",
+      "mappedFieldCount": 6,
+      "validationCommand": "npm.cmd run check:local-course-high-risk-real-reviewer-overlay-input-validation",
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate",
+      "reviewerTask": "Fill six real reviewer notes in the mapped note slots after real review.",
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: High-frequency trading",
+          "url": "https://en.wikipedia.org/wiki/High-frequency_trading",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Limit Order Books",
+          "url": "https://arxiv.org/abs/1012.0349v4",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "reviewStatus": "execution_blocked_missing_real_reviewer_input",
+      "realHumanInputEntries": 0,
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionRank": 4,
+      "queueRank": 4,
+      "executionPhase": "phase_1_fill_high_risk_reviewer_notes",
+      "actionId": "high-risk-lesson-notes:local_course_rewrite_batch_01_04",
+      "actionType": "high_risk_lesson_reviewer_notes",
+      "module": "市场结构",
+      "topic": "高低点",
+      "targetId": "local_course_rewrite_batch_01_04",
+      "nodeId": "knv2_0062",
+      "lessonId": "lesson_knv2_0062",
+      "blockedItems": 6,
+      "readyItems": 0,
+      "inputPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "lessonRows[3]",
+      "mappedFieldCount": 6,
+      "validationCommand": "npm.cmd run check:local-course-high-risk-real-reviewer-overlay-input-validation",
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate",
+      "reviewerTask": "Fill six real reviewer notes in the mapped note slots after real review.",
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: High-frequency trading",
+          "url": "https://en.wikipedia.org/wiki/High-frequency_trading",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Limit Order Books",
+          "url": "https://arxiv.org/abs/1012.0349v4",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "reviewStatus": "execution_blocked_missing_real_reviewer_input",
+      "realHumanInputEntries": 0,
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionRank": 5,
+      "queueRank": 5,
+      "executionPhase": "phase_1_fill_high_risk_reviewer_notes",
+      "actionId": "high-risk-lesson-notes:local_course_rewrite_batch_01_07",
+      "actionType": "high_risk_lesson_reviewer_notes",
+      "module": "趋势",
+      "topic": "趋势回调",
+      "targetId": "local_course_rewrite_batch_01_07",
+      "nodeId": "knv2_0016",
+      "lessonId": "lesson_knv2_0016",
+      "blockedItems": 6,
+      "readyItems": 0,
+      "inputPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "lessonRows[4]",
+      "mappedFieldCount": 6,
+      "validationCommand": "npm.cmd run check:local-course-high-risk-real-reviewer-overlay-input-validation",
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate",
+      "reviewerTask": "Fill six real reviewer notes in the mapped note slots after real review.",
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Dow theory",
+          "url": "https://en.wikipedia.org/wiki/Dow_theory",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Generating Alpha: A Hybrid AI-Driven Trading System Integrating Technical Analysis, Machine Learning and Financial Sentiment for Regime-Adaptive Equity Strategies",
+          "url": "https://arxiv.org/abs/2601.19504v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "reviewStatus": "execution_blocked_missing_real_reviewer_input",
+      "realHumanInputEntries": 0,
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionRank": 6,
+      "queueRank": 6,
+      "executionPhase": "phase_1_fill_high_risk_reviewer_notes",
+      "actionId": "high-risk-lesson-notes:local_course_rewrite_batch_01_08",
+      "actionType": "high_risk_lesson_reviewer_notes",
+      "module": "趋势",
+      "topic": "趋势回调",
+      "targetId": "local_course_rewrite_batch_01_08",
+      "nodeId": "knv2_0076",
+      "lessonId": "lesson_knv2_0076",
+      "blockedItems": 6,
+      "readyItems": 0,
+      "inputPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "lessonRows[5]",
+      "mappedFieldCount": 6,
+      "validationCommand": "npm.cmd run check:local-course-high-risk-real-reviewer-overlay-input-validation",
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate",
+      "reviewerTask": "Fill six real reviewer notes in the mapped note slots after real review.",
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Dow theory",
+          "url": "https://en.wikipedia.org/wiki/Dow_theory",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Generating Alpha: A Hybrid AI-Driven Trading System Integrating Technical Analysis, Machine Learning and Financial Sentiment for Regime-Adaptive Equity Strategies",
+          "url": "https://arxiv.org/abs/2601.19504v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "reviewStatus": "execution_blocked_missing_real_reviewer_input",
+      "realHumanInputEntries": 0,
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionRank": 7,
+      "queueRank": 7,
+      "executionPhase": "phase_1_fill_high_risk_reviewer_notes",
+      "actionId": "high-risk-lesson-notes:local_course_rewrite_batch_01_09",
+      "actionType": "high_risk_lesson_reviewer_notes",
+      "module": "突破",
+      "topic": "突破失败",
+      "targetId": "local_course_rewrite_batch_01_09",
+      "nodeId": "knv2_0053",
+      "lessonId": "lesson_knv2_0053",
+      "blockedItems": 6,
+      "readyItems": 0,
+      "inputPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "lessonRows[6]",
+      "mappedFieldCount": 6,
+      "validationCommand": "npm.cmd run check:local-course-high-risk-real-reviewer-overlay-input-validation",
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate",
+      "reviewerTask": "Fill six real reviewer notes in the mapped note slots after real review.",
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "DeepSupp: Attention-Driven Correlation Pattern Analysis for Dynamic Time Series Support and Resistance Levels Identification",
+          "url": "https://arxiv.org/abs/2507.01971v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "reviewStatus": "execution_blocked_missing_real_reviewer_input",
+      "realHumanInputEntries": 0,
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionRank": 8,
+      "queueRank": 8,
+      "executionPhase": "phase_1_fill_high_risk_reviewer_notes",
+      "actionId": "high-risk-lesson-notes:local_course_rewrite_batch_01_10",
+      "actionType": "high_risk_lesson_reviewer_notes",
+      "module": "突破",
+      "topic": "突破失败",
+      "targetId": "local_course_rewrite_batch_01_10",
+      "nodeId": "knv2_0113",
+      "lessonId": "lesson_knv2_0113",
+      "blockedItems": 6,
+      "readyItems": 0,
+      "inputPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "lessonRows[7]",
+      "mappedFieldCount": 6,
+      "validationCommand": "npm.cmd run check:local-course-high-risk-real-reviewer-overlay-input-validation",
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate",
+      "reviewerTask": "Fill six real reviewer notes in the mapped note slots after real review.",
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "DeepSupp: Attention-Driven Correlation Pattern Analysis for Dynamic Time Series Support and Resistance Levels Identification",
+          "url": "https://arxiv.org/abs/2507.01971v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "reviewStatus": "execution_blocked_missing_real_reviewer_input",
+      "realHumanInputEntries": 0,
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionRank": 9,
+      "queueRank": 9,
+      "executionPhase": "phase_1_fill_high_risk_reviewer_notes",
+      "actionId": "high-risk-lesson-notes:local_course_rewrite_batch_01_13",
+      "actionType": "high_risk_lesson_reviewer_notes",
+      "module": "反转",
+      "topic": "反转失败",
+      "targetId": "local_course_rewrite_batch_01_13",
+      "nodeId": "knv2_0055",
+      "lessonId": "lesson_knv2_0055",
+      "blockedItems": 6,
+      "readyItems": 0,
+      "inputPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "lessonRows[8]",
+      "mappedFieldCount": 6,
+      "validationCommand": "npm.cmd run check:local-course-high-risk-real-reviewer-overlay-input-validation",
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate",
+      "reviewerTask": "Fill six real reviewer notes in the mapped note slots after real review.",
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: Double top and double bottom",
+          "url": "https://en.wikipedia.org/wiki/Double_top_and_double_bottom",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Stock Chart Pattern recognition with Deep Learning",
+          "url": "https://arxiv.org/abs/1808.00418v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "reviewStatus": "execution_blocked_missing_real_reviewer_input",
+      "realHumanInputEntries": 0,
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionRank": 10,
+      "queueRank": 10,
+      "executionPhase": "phase_1_fill_high_risk_reviewer_notes",
+      "actionId": "high-risk-lesson-notes:local_course_rewrite_batch_01_14",
+      "actionType": "high_risk_lesson_reviewer_notes",
+      "module": "反转",
+      "topic": "反转失败",
+      "targetId": "local_course_rewrite_batch_01_14",
+      "nodeId": "knv2_0115",
+      "lessonId": "lesson_knv2_0115",
+      "blockedItems": 6,
+      "readyItems": 0,
+      "inputPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "lessonRows[9]",
+      "mappedFieldCount": 6,
+      "validationCommand": "npm.cmd run check:local-course-high-risk-real-reviewer-overlay-input-validation",
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate",
+      "reviewerTask": "Fill six real reviewer notes in the mapped note slots after real review.",
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: Double top and double bottom",
+          "url": "https://en.wikipedia.org/wiki/Double_top_and_double_bottom",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Stock Chart Pattern recognition with Deep Learning",
+          "url": "https://arxiv.org/abs/1808.00418v1",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "reviewStatus": "execution_blocked_missing_real_reviewer_input",
+      "realHumanInputEntries": 0,
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionRank": 11,
+      "queueRank": 11,
+      "executionPhase": "phase_1_fill_high_risk_reviewer_notes",
+      "actionId": "high-risk-lesson-notes:local_course_rewrite_batch_02_03",
+      "actionType": "high_risk_lesson_reviewer_notes",
+      "module": "市场结构",
+      "topic": "高低点",
+      "targetId": "local_course_rewrite_batch_02_03",
+      "nodeId": "knv2_0122",
+      "lessonId": "lesson_knv2_0122",
+      "blockedItems": 6,
+      "readyItems": 0,
+      "inputPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "lessonRows[10]",
+      "mappedFieldCount": 6,
+      "validationCommand": "npm.cmd run check:local-course-high-risk-real-reviewer-overlay-input-validation",
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate",
+      "reviewerTask": "Fill six real reviewer notes in the mapped note slots after real review.",
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: High-frequency trading",
+          "url": "https://en.wikipedia.org/wiki/High-frequency_trading",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Limit Order Books",
+          "url": "https://arxiv.org/abs/1012.0349v4",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "reviewStatus": "execution_blocked_missing_real_reviewer_input",
+      "realHumanInputEntries": 0,
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionRank": 12,
+      "queueRank": 12,
+      "executionPhase": "phase_1_fill_high_risk_reviewer_notes",
+      "actionId": "high-risk-lesson-notes:local_course_rewrite_batch_02_04",
+      "actionType": "high_risk_lesson_reviewer_notes",
+      "module": "市场结构",
+      "topic": "高低点",
+      "targetId": "local_course_rewrite_batch_02_04",
+      "nodeId": "knv2_0182",
+      "lessonId": "lesson_knv2_0182",
+      "blockedItems": 6,
+      "readyItems": 0,
+      "inputPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "lessonRows[11]",
+      "mappedFieldCount": 6,
+      "validationCommand": "npm.cmd run check:local-course-high-risk-real-reviewer-overlay-input-validation",
+      "nextGate": "fill_6_real_reviewer_notes_then_revalidate",
+      "reviewerTask": "Fill six real reviewer notes in the mapped note slots after real review.",
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: High-frequency trading",
+          "url": "https://en.wikipedia.org/wiki/High-frequency_trading",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Limit Order Books",
+          "url": "https://arxiv.org/abs/1012.0349v4",
+          "family": "Open Research",
+          "excerptPolicy": "pointer_or_quote_only_after_license_review"
+        }
+      ],
+      "reviewStatus": "execution_blocked_missing_real_reviewer_input",
+      "realHumanInputEntries": 0,
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionRank": 13,
+      "queueRank": 13,
+      "executionPhase": "phase_2_resolve_direct_source_candidates",
+      "actionId": "direct-source-decision:direct_source_candidate_resolution_01",
+      "actionType": "direct_source_candidate_decision",
+      "module": "突破",
+      "topic": "假突破",
+      "targetId": "direct_source_candidate_resolution_01",
+      "nodeId": "",
+      "lessonId": "local_course_rewrite_batch_04_10",
+      "blockedItems": 1,
+      "readyItems": 0,
+      "inputPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "directSourceDecisionRows[0]",
+      "mappedFieldCount": 1,
+      "validationCommand": "npm.cmd run check:local-course-high-risk-real-reviewer-overlay-input-validation",
+      "nextGate": "fill_direct_source_decision_then_revalidate",
+      "reviewerTask": "Fill reviewerName, reviewedAt, decision, evidenceChecked, and reviewerNote for this direct-source decision.",
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ],
+      "reviewStatus": "execution_blocked_missing_real_reviewer_input",
+      "realHumanInputEntries": 0,
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionRank": 14,
+      "queueRank": 14,
+      "executionPhase": "phase_2_resolve_direct_source_candidates",
+      "actionId": "direct-source-decision:direct_source_candidate_resolution_02",
+      "actionType": "direct_source_candidate_decision",
+      "module": "突破",
+      "topic": "假突破",
+      "targetId": "direct_source_candidate_resolution_02",
+      "nodeId": "",
+      "lessonId": "local_course_rewrite_batch_05_10",
+      "blockedItems": 1,
+      "readyItems": 0,
+      "inputPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "directSourceDecisionRows[1]",
+      "mappedFieldCount": 1,
+      "validationCommand": "npm.cmd run check:local-course-high-risk-real-reviewer-overlay-input-validation",
+      "nextGate": "fill_direct_source_decision_then_revalidate",
+      "reviewerTask": "Fill reviewerName, reviewedAt, decision, evidenceChecked, and reviewerNote for this direct-source decision.",
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Chart pattern",
+          "url": "https://en.wikipedia.org/wiki/Chart_pattern",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ],
+      "reviewStatus": "execution_blocked_missing_real_reviewer_input",
+      "realHumanInputEntries": 0,
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionRank": 15,
+      "queueRank": 15,
+      "executionPhase": "phase_2_resolve_direct_source_candidates",
+      "actionId": "direct-source-decision:direct_source_candidate_resolution_03",
+      "actionType": "direct_source_candidate_decision",
+      "module": "市场结构",
+      "topic": "高低点",
+      "targetId": "direct_source_candidate_resolution_03",
+      "nodeId": "",
+      "lessonId": "local_course_rewrite_batch_01_03",
+      "blockedItems": 1,
+      "readyItems": 0,
+      "inputPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "directSourceDecisionRows[2]",
+      "mappedFieldCount": 1,
+      "validationCommand": "npm.cmd run check:local-course-high-risk-real-reviewer-overlay-input-validation",
+      "nextGate": "fill_direct_source_decision_then_revalidate",
+      "reviewerTask": "Fill reviewerName, reviewedAt, decision, evidenceChecked, and reviewerNote for this direct-source decision.",
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: High-frequency trading",
+          "url": "https://en.wikipedia.org/wiki/High-frequency_trading",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Market maker",
+          "url": "https://en.wikipedia.org/wiki/Market_maker",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ],
+      "reviewStatus": "execution_blocked_missing_real_reviewer_input",
+      "realHumanInputEntries": 0,
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionRank": 16,
+      "queueRank": 16,
+      "executionPhase": "phase_2_resolve_direct_source_candidates",
+      "actionId": "direct-source-decision:direct_source_candidate_resolution_04",
+      "actionType": "direct_source_candidate_decision",
+      "module": "市场结构",
+      "topic": "高低点",
+      "targetId": "direct_source_candidate_resolution_04",
+      "nodeId": "",
+      "lessonId": "local_course_rewrite_batch_01_04",
+      "blockedItems": 1,
+      "readyItems": 0,
+      "inputPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "directSourceDecisionRows[3]",
+      "mappedFieldCount": 1,
+      "validationCommand": "npm.cmd run check:local-course-high-risk-real-reviewer-overlay-input-validation",
+      "nextGate": "fill_direct_source_decision_then_revalidate",
+      "reviewerTask": "Fill reviewerName, reviewedAt, decision, evidenceChecked, and reviewerNote for this direct-source decision.",
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: High-frequency trading",
+          "url": "https://en.wikipedia.org/wiki/High-frequency_trading",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Support and resistance",
+          "url": "https://en.wikipedia.org/wiki/Support_and_resistance",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Market maker",
+          "url": "https://en.wikipedia.org/wiki/Market_maker",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ],
+      "reviewStatus": "execution_blocked_missing_real_reviewer_input",
+      "realHumanInputEntries": 0,
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionRank": 17,
+      "queueRank": 17,
+      "executionPhase": "phase_2_resolve_direct_source_candidates",
+      "actionId": "direct-source-decision:direct_source_candidate_resolution_05",
+      "actionType": "direct_source_candidate_decision",
+      "module": "趋势",
+      "topic": "趋势回调",
+      "targetId": "direct_source_candidate_resolution_05",
+      "nodeId": "",
+      "lessonId": "local_course_rewrite_batch_01_07",
+      "blockedItems": 1,
+      "readyItems": 0,
+      "inputPath": "docs/reviewer-inputs/LOCAL_COURSE_HIGH_RISK_REAL_REVIEWER_OVERLAY_DRAFT.json",
+      "jsonPath": "directSourceDecisionRows[4]",
+      "mappedFieldCount": 1,
+      "validationCommand": "npm.cmd run check:local-course-high-risk-real-reviewer-overlay-input-validation",
+      "nextGate": "fill_direct_source_decision_then_revalidate",
+      "reviewerTask": "Fill reviewerName, reviewedAt, decision, evidenceChecked, and reviewerNote for this direct-source decision.",
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: Technical analysis",
+          "url": "https://en.wikipedia.org/wiki/Technical_analysis",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Dow theory",
+          "url": "https://en.wikipedia.org/wiki/Dow_theory",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        },
+        {
+          "name": "Wikipedia: Trend following trading",
+          "url": "https://en.wikipedia.org/wiki/Trend_following_trading",
+          "family": "Wikipedia",
+          "excerptPolicy": "attribution_and_share_alike_required"
+        }
+      ],
+      "reviewStatus": "execution_blocked_missing_real_reviewer_input",
+      "realHumanInputEntries": 0,
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionRank": 18,
+      "queueRank": 18,
+      "executionPhase": "phase_3_fill_source_fit_packet_rows",
+      "actionId": "source-fit-batch:node-public-source-fit-batch-001",
+      "actionType": "source_fit_packet_rows",
+      "module": "K线与价格行为",
+      "topic": "",
+      "targetId": "node-public-source-fit-batch-001",
+      "nodeId": "",
+      "lessonId": "",
+      "blockedItems": 60,
+      "readyItems": 0,
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_001_INPUT_COPY_TEMPLATE.json",
+      "jsonPath": "reviewRows[*]",
+      "mappedFieldCount": 60,
+      "validationCommand": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt",
+      "reviewerTask": "Fill reviewerDecision, sourceFitNotes, citationUse, reviewerName, reviewedAt, and realHumanInput for each packet row after real review.",
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: Candlestick chart",
+          "url": "",
+          "family": "Wikipedia",
+          "excerptPolicy": ""
+        },
+        {
+          "name": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+          "url": "",
+          "family": "Open Research",
+          "excerptPolicy": ""
+        },
+        {
+          "name": "Wikipedia: Candlestick pattern",
+          "url": "",
+          "family": "Wikipedia",
+          "excerptPolicy": ""
+        }
+      ],
+      "reviewStatus": "execution_blocked_missing_real_reviewer_input",
+      "realHumanInputEntries": 0,
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionRank": 19,
+      "queueRank": 19,
+      "executionPhase": "phase_3_fill_source_fit_packet_rows",
+      "actionId": "source-fit-batch:node-public-source-fit-batch-002",
+      "actionType": "source_fit_packet_rows",
+      "module": "K线与价格行为",
+      "topic": "",
+      "targetId": "node-public-source-fit-batch-002",
+      "nodeId": "",
+      "lessonId": "",
+      "blockedItems": 60,
+      "readyItems": 0,
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_002_INPUT_COPY_TEMPLATE.json",
+      "jsonPath": "reviewRows[*]",
+      "mappedFieldCount": 60,
+      "validationCommand": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt",
+      "reviewerTask": "Fill reviewerDecision, sourceFitNotes, citationUse, reviewerName, reviewedAt, and realHumanInput for each packet row after real review.",
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: Candlestick chart",
+          "url": "",
+          "family": "Wikipedia",
+          "excerptPolicy": ""
+        },
+        {
+          "name": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+          "url": "",
+          "family": "Open Research",
+          "excerptPolicy": ""
+        },
+        {
+          "name": "Wikipedia: Candlestick pattern",
+          "url": "",
+          "family": "Wikipedia",
+          "excerptPolicy": ""
+        }
+      ],
+      "reviewStatus": "execution_blocked_missing_real_reviewer_input",
+      "realHumanInputEntries": 0,
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false
+    },
+    {
+      "executionRank": 20,
+      "queueRank": 20,
+      "executionPhase": "phase_3_fill_source_fit_packet_rows",
+      "actionId": "source-fit-batch:node-public-source-fit-batch-003",
+      "actionType": "source_fit_packet_rows",
+      "module": "K线与价格行为",
+      "topic": "",
+      "targetId": "node-public-source-fit-batch-003",
+      "nodeId": "",
+      "lessonId": "",
+      "blockedItems": 60,
+      "readyItems": 0,
+      "inputPath": "docs/reviewer-inputs/KNOWLEDGE_NODE_PUBLIC_SOURCE_FIT_REVIEW_PACKET_003_INPUT_COPY_TEMPLATE.json",
+      "jsonPath": "reviewRows[*]",
+      "mappedFieldCount": 60,
+      "validationCommand": "npm.cmd run validate:knowledge-node-public-source-fit-review-input && npm.cmd run check:knowledge-node-public-source-fit-review-input-validation",
+      "nextGate": "real reviewer completes decisions, notes, citationUse, reviewerName, reviewedAt",
+      "reviewerTask": "Fill reviewerDecision, sourceFitNotes, citationUse, reviewerName, reviewedAt, and realHumanInput for each packet row after real review.",
+      "evidenceSamples": [
+        {
+          "name": "Wikipedia: Candlestick chart",
+          "url": "",
+          "family": "Wikipedia",
+          "excerptPolicy": ""
+        },
+        {
+          "name": "Do VLMs Truly \"Read\" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting",
+          "url": "",
+          "family": "Open Research",
+          "excerptPolicy": ""
+        },
+        {
+          "name": "Wikipedia: Candlestick pattern",
+          "url": "",
+          "family": "Wikipedia",
+          "excerptPolicy": ""
+        }
+      ],
+      "reviewStatus": "execution_blocked_missing_real_reviewer_input",
+      "realHumanInputEntries": 0,
+      "learnerFacingRelease": false,
+      "writeAllowedNow": false
+    }
+  ],
+  "realHumanInputEntries": 0,
+  "learnerCitationApprovedRows": 0,
+  "learnerReleaseReadyModules": 0,
+  "readyForSeparateApproval": false,
+  "writeAllowedNow": false,
+  "manualAuthorizationRequired": true,
+  "reviewerStartChecklist": [
+    "Use only the four reviewer-owned input copies listed in inputPaths.",
+    "Start with the 12 high-risk lesson actions before source-fit packets.",
+    "Fill direct-source decisions after checking public replacement samples and source dependency risk.",
+    "Fill packets 001-003 source-fit rows only after inspecting each node/source pair.",
+    "Run every validation command and rebuild the completion gate after real reviewer input is saved.",
+    "Do not unlock learner-facing release without a separate approval gate after all 257 items are ready."
+  ],
+  "commands": [
+    "npm.cmd run build:knowledge-first-reviewer-execution-checklist",
+    "npm.cmd run check:knowledge-first-reviewer-execution-checklist",
+    "npm.cmd run check:knowledge-first-reviewer-action-handoff",
+    "npm.cmd run check:knowledge-first-reviewer-field-map",
+    "npm.cmd run check:knowledge-first-reviewer-completion-gate",
+    "npm.cmd run check:knowledge-module-review-sprint-plan",
+    "npm.cmd run verify"
+  ],
+  "completionRule": "This first reviewer execution checklist is complete when the first 20 handoff actions are sequenced into day-one execution stages with the four input copies, four validation outputs, 72 high-risk reviewer note fields, 5 direct-source decision fields, 180 source-fit packet rows, and the 257-item completion gate. It does not complete review, generate reviewer notes, approve copied text, approve learner-facing citations, or unlock learner release.",
+  "boundary": "Knowledge first reviewer execution checklist is reviewer-facing education-only operations material for absorbed local course material and public/Wikipedia/official source-fit review rows. It organizes 20 first reviewer actions, 257 first-handoff work items, 72 high-risk reviewer notes, 5 direct-source decisions, and 180 source-fit packet rows; it does not generate reviewer notes, approve copied text, approve learner-facing citations, provide stock recommendations, live signals, return promises, broker workflows, automation, real-money guidance, write authorization, learner release, or production readiness."
+}
